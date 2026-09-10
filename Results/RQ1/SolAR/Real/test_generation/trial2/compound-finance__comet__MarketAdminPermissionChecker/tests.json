@@ -1,0 +1,175 @@
+[
+  [
+    {
+      "args": [
+        "address_00036",
+        "address_00404",
+        "address_00410"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00398",
+      "method": "setMarketAdmin",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "address_00404",
+        "address_00023"
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00404",
+      "method": "setMarketAdminPauseGuardian",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "address_00404",
+        "address_00023"
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "pauseMarketAdmin",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00398",
+      "method": "checkUpdatePermission",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00404",
+      "method": "setMarketAdminPauseGuardian",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "address_00184",
+        "address_00023"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "pauseMarketAdmin",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "address_00032",
+        "address_00023"
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00184",
+      "method": "checkUpdatePermission",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "address_00036",
+        "address_00032"
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "unpauseMarketAdmin",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00184",
+        "address_00023",
+        "address_00021"
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00404",
+      "method": "setMarketAdminPauseGuardian",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "unpauseMarketAdmin",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

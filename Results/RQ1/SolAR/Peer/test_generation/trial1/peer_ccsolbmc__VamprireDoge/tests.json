@@ -1,0 +1,116 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        10
+      ],
+      "frm": "address_00021",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        "address_00404",
+        18
+      ],
+      "frm": "address_00019",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "fun",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        59676451515203236642150160270591962645968883338398324353547595653739391886089
+      ],
+      "frm": "address_00184",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        "address_00404",
+        11
+      ],
+      "frm": "address_00019",
+      "method": "transferFrom",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00404",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        "address_00036",
+        831808341372110235898586689562736792025047289469111512061026960342623797052
+      ],
+      "frm": "address_00184",
+      "method": "transferFrom",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

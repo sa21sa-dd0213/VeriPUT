@@ -1,0 +1,1177 @@
+{
+  "compile_failed": 12,
+  "compile_ok": 105,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 136,
+      "function": "createProxy",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "implementation",
+      "replacement_expression": "address(this)",
+      "start_line": 136
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 136,
+      "function": "createProxy",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "implementation",
+      "replacement_expression": "address(0)",
+      "start_line": 136
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 275,
+      "function": "fallback",
+      "mutant_id": "m000003",
+      "operator": "AVR",
+      "original_expression": "beacon",
+      "replacement_expression": "address(this)",
+      "start_line": 275
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 275,
+      "function": "fallback",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "beacon",
+      "replacement_expression": "address(0)",
+      "start_line": 275
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 118,
+      "function": "constructor",
+      "mutant_id": "m000005",
+      "operator": "AVR",
+      "original_expression": "admin",
+      "replacement_expression": "address(this)",
+      "start_line": 118
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 118,
+      "function": "constructor",
+      "mutant_id": "m000006",
+      "operator": "AVR",
+      "original_expression": "admin",
+      "replacement_expression": "address(0)",
+      "start_line": 118
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 137,
+      "function": "createProxy",
+      "mutant_id": "m000007",
+      "operator": "AVR",
+      "original_expression": "_implementation",
+      "replacement_expression": "address(this)",
+      "start_line": 137
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 137,
+      "function": "createProxy",
+      "mutant_id": "m000008",
+      "operator": "AVR",
+      "original_expression": "_implementation",
+      "replacement_expression": "address(0)",
+      "start_line": 137
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 171,
+      "function": "setImplementation",
+      "mutant_id": "m000009",
+      "operator": "AVR",
+      "original_expression": "newImplementation",
+      "replacement_expression": "address(this)",
+      "start_line": 171
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 171,
+      "function": "setImplementation",
+      "mutant_id": "m000010",
+      "operator": "AVR",
+      "original_expression": "newImplementation",
+      "replacement_expression": "address(0)",
+      "start_line": 171
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 183,
+      "function": "setUpgradeAdmin",
+      "mutant_id": "m000011",
+      "operator": "AVR",
+      "original_expression": "newUpgradeAdmin",
+      "replacement_expression": "address(this)",
+      "start_line": 183
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 183,
+      "function": "setUpgradeAdmin",
+      "mutant_id": "m000012",
+      "operator": "AVR",
+      "original_expression": "newUpgradeAdmin",
+      "replacement_expression": "address(0)",
+      "start_line": 183
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 27,
+      "function": "deployMetaProxy",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "modifier:nonReentrant",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 107,
+      "function": "modifier:adminOnly",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 107
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 114,
+      "function": "constructor",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 114
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 137,
+      "function": "createProxy",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 137
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 139,
+      "function": "createProxy",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 139
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 139,
+      "function": "createProxy",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 139
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 139,
+      "function": "createProxy",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 139
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 170,
+      "function": "setImplementation",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 170
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 201,
+      "function": "isProxy",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 201
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 215,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 215
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 215,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 215
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 215,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 215
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 216,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 216
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 216,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 216
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 216,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 216
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 216,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 216
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 216,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 216
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 218,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 218,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 219
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 219
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 219
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 219
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 220,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 220
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 220,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 220
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "constructor",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 254
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "constructor",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 254
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "constructor",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 254
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 121,
+      "function": "constructor",
+      "mutant_id": "m000042",
+      "operator": "CCD",
+      "original_expression": "constructor(address admin) {\n        emit Genesis();\n\n        if (admin == address(0)) revert E_BadAddress();\n\n        reentrancyLock = REENTRANCYLOCK__UNLOCKED;\n\n        upgradeAdmin = admin;\n\n        emit SetUpgradeAdmin(admin);\n    }",
+      "replacement_expression": "",
+      "start_line": 111
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 272,
+      "function": "constructor",
+      "mutant_id": "m000043",
+      "operator": "CCD",
+      "original_expression": "constructor(bytes memory trailingData) {\n        emit Genesis();\n\n        require(trailingData.length <= MAX_TRAILING_DATA_LENGTH, \"trailing data too long\");\n\n        \n        beacon = msg.sender;\n\n        \n        assembly {\n            sstore(BEACON_SLOT, caller())\n        }\n\n        \n        metadataLength = trailingData.length;\n\n        \n        assembly {\n            mstore(trailingData, MAX_TRAILING_DATA_LENGTH)\n        }\n        (metadata0, metadata1, metadata2, metadata3) = abi.decode(trailingData, (bytes32, bytes32, bytes32, bytes32));\n    }",
+      "replacement_expression": "",
+      "start_line": 251
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 27,
+      "function": "deployMetaProxy",
+      "mutant_id": "m000044",
+      "operator": "CSC",
+      "original_expression": "addr == address(0)",
+      "replacement_expression": "true",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 27,
+      "function": "deployMetaProxy",
+      "mutant_id": "m000045",
+      "operator": "CSC",
+      "original_expression": "addr == address(0)",
+      "replacement_expression": "false",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "modifier:nonReentrant",
+      "mutant_id": "m000046",
+      "operator": "CSC",
+      "original_expression": "reentrancyLock == REENTRANCYLOCK__LOCKED",
+      "replacement_expression": "true",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "modifier:nonReentrant",
+      "mutant_id": "m000047",
+      "operator": "CSC",
+      "original_expression": "reentrancyLock == REENTRANCYLOCK__LOCKED",
+      "replacement_expression": "false",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 107,
+      "function": "modifier:adminOnly",
+      "mutant_id": "m000048",
+      "operator": "CSC",
+      "original_expression": "msg.sender != upgradeAdmin",
+      "replacement_expression": "true",
+      "start_line": 107
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 107,
+      "function": "modifier:adminOnly",
+      "mutant_id": "m000049",
+      "operator": "CSC",
+      "original_expression": "msg.sender != upgradeAdmin",
+      "replacement_expression": "false",
+      "start_line": 107
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 114,
+      "function": "constructor",
+      "mutant_id": "m000050",
+      "operator": "CSC",
+      "original_expression": "admin == address(0)",
+      "replacement_expression": "true",
+      "start_line": 114
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 114,
+      "function": "constructor",
+      "mutant_id": "m000051",
+      "operator": "CSC",
+      "original_expression": "admin == address(0)",
+      "replacement_expression": "false",
+      "start_line": 114
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 137,
+      "function": "createProxy",
+      "mutant_id": "m000052",
+      "operator": "CSC",
+      "original_expression": "desiredImplementation == address(0)",
+      "replacement_expression": "true",
+      "start_line": 137
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 137,
+      "function": "createProxy",
+      "mutant_id": "m000053",
+      "operator": "CSC",
+      "original_expression": "desiredImplementation == address(0)",
+      "replacement_expression": "false",
+      "start_line": 137
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 139,
+      "function": "createProxy",
+      "mutant_id": "m000054",
+      "operator": "CSC",
+      "original_expression": "desiredImplementation == address(0) || desiredImplementation != _implementation",
+      "replacement_expression": "true",
+      "start_line": 139
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 139,
+      "function": "createProxy",
+      "mutant_id": "m000055",
+      "operator": "CSC",
+      "original_expression": "desiredImplementation == address(0) || desiredImplementation != _implementation",
+      "replacement_expression": "false",
+      "start_line": 139
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "createProxy",
+      "mutant_id": "m000056",
+      "operator": "CSC",
+      "original_expression": "upgradeable",
+      "replacement_expression": "true",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "createProxy",
+      "mutant_id": "m000057",
+      "operator": "CSC",
+      "original_expression": "upgradeable",
+      "replacement_expression": "false",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 150,
+      "function": "createProxy",
+      "mutant_id": "m000058",
+      "operator": "CSC",
+      "original_expression": "else {\n            proxy = deployMetaProxy(desiredImplementation, prefixTrailingData);\n        }",
+      "replacement_expression": "",
+      "start_line": 148
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 170,
+      "function": "setImplementation",
+      "mutant_id": "m000059",
+      "operator": "CSC",
+      "original_expression": "newImplementation.code.length == 0",
+      "replacement_expression": "true",
+      "start_line": 170
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 170,
+      "function": "setImplementation",
+      "mutant_id": "m000060",
+      "operator": "CSC",
+      "original_expression": "newImplementation.code.length == 0",
+      "replacement_expression": "false",
+      "start_line": 170
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 194,
+      "function": "getProxyConfig",
+      "mutant_id": "m000061",
+      "operator": "CSC",
+      "original_expression": "config.upgradeable",
+      "replacement_expression": "true",
+      "start_line": 194
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 194,
+      "function": "getProxyConfig",
+      "mutant_id": "m000062",
+      "operator": "CSC",
+      "original_expression": "config.upgradeable",
+      "replacement_expression": "false",
+      "start_line": 194
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 215,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000063",
+      "operator": "CSC",
+      "original_expression": "end == type(uint256).max",
+      "replacement_expression": "true",
+      "start_line": 215
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 215,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000064",
+      "operator": "CSC",
+      "original_expression": "end == type(uint256).max",
+      "replacement_expression": "false",
+      "start_line": 215
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 216,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000065",
+      "operator": "CSC",
+      "original_expression": "end < start || end > proxyList.length",
+      "replacement_expression": "true",
+      "start_line": 216
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 216,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000066",
+      "operator": "CSC",
+      "original_expression": "end < start || end > proxyList.length",
+      "replacement_expression": "false",
+      "start_line": 216
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 20,
+      "function": "deployMetaProxy",
+      "mutant_id": "m000067",
+      "operator": "DLR",
+      "original_expression": "bytes memory metadata",
+      "replacement_expression": "bytes storage metadata",
+      "start_line": 20
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 21,
+      "function": "deployMetaProxy",
+      "mutant_id": "m000068",
+      "operator": "DLR",
+      "original_expression": "bytes memory code",
+      "replacement_expression": "bytes storage code",
+      "start_line": 21
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 131,
+      "function": "createProxy",
+      "mutant_id": "m000069",
+      "operator": "DLR",
+      "original_expression": "bytes memory trailingData",
+      "replacement_expression": "bytes storage trailingData",
+      "start_line": 131
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 143,
+      "function": "createProxy",
+      "mutant_id": "m000070",
+      "operator": "DLR",
+      "original_expression": "bytes memory prefixTrailingData",
+      "replacement_expression": "bytes storage prefixTrailingData",
+      "start_line": 143
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 192,
+      "function": "getProxyConfig",
+      "mutant_id": "m000071",
+      "operator": "DLR",
+      "original_expression": "ProxyConfig memory config",
+      "replacement_expression": "ProxyConfig storage config",
+      "start_line": 192
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 214,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000072",
+      "operator": "DLR",
+      "original_expression": "address[] memory list",
+      "replacement_expression": "address[] storage list",
+      "start_line": 214
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 251,
+      "function": "constructor",
+      "mutant_id": "m000073",
+      "operator": "DLR",
+      "original_expression": "bytes memory trailingData",
+      "replacement_expression": "bytes storage trailingData",
+      "start_line": 251
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "constructor",
+      "mutant_id": "m000074",
+      "operator": "EED",
+      "original_expression": "emit Genesis();",
+      "replacement_expression": "/* emit Genesis(); */",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "constructor",
+      "mutant_id": "m000075",
+      "operator": "EED",
+      "original_expression": "emit SetUpgradeAdmin(admin);",
+      "replacement_expression": "/* emit SetUpgradeAdmin(admin); */",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 159,
+      "function": "createProxy",
+      "mutant_id": "m000076",
+      "operator": "EED",
+      "original_expression": "emit ProxyCreated(proxy, upgradeable, desiredImplementation, trailingData);",
+      "replacement_expression": "/* emit ProxyCreated(proxy, upgradeable, desiredImplementation, trailingData); */",
+      "start_line": 159
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 172,
+      "function": "setImplementation",
+      "mutant_id": "m000077",
+      "operator": "EED",
+      "original_expression": "emit SetImplementation(newImplementation);",
+      "replacement_expression": "/* emit SetImplementation(newImplementation); */",
+      "start_line": 172
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 184,
+      "function": "setUpgradeAdmin",
+      "mutant_id": "m000078",
+      "operator": "EED",
+      "original_expression": "emit SetUpgradeAdmin(newUpgradeAdmin);",
+      "replacement_expression": "/* emit SetUpgradeAdmin(newUpgradeAdmin); */",
+      "start_line": 184
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 252,
+      "function": "constructor",
+      "mutant_id": "m000079",
+      "operator": "EED",
+      "original_expression": "emit Genesis();",
+      "replacement_expression": "/* emit Genesis(); */",
+      "start_line": 252
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 143,
+      "function": "createProxy",
+      "mutant_id": "m000080",
+      "operator": "ECS",
+      "original_expression": "bytes4(0)",
+      "replacement_expression": "bytes3(0)",
+      "start_line": 143
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "constructor",
+      "mutant_id": "m000081",
+      "operator": "EHD",
+      "original_expression": "require(trailingData.length <= MAX_TRAILING_DATA_LENGTH, \"trailing data too long\");",
+      "replacement_expression": "/* require(trailingData.length <= MAX_TRAILING_DATA_LENGTH, \"trailing data too long\"); */",
+      "start_line": 254
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 27,
+      "function": "deployMetaProxy",
+      "mutant_id": "m000082",
+      "operator": "EHD",
+      "original_expression": "revert E_DeploymentFailed();",
+      "replacement_expression": "/* revert E_DeploymentFailed(); */",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "modifier:nonReentrant",
+      "mutant_id": "m000083",
+      "operator": "EHD",
+      "original_expression": "revert E_Reentrancy();",
+      "replacement_expression": "/* revert E_Reentrancy(); */",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 107,
+      "function": "modifier:adminOnly",
+      "mutant_id": "m000084",
+      "operator": "EHD",
+      "original_expression": "revert E_Unauthorized();",
+      "replacement_expression": "/* revert E_Unauthorized(); */",
+      "start_line": 107
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 114,
+      "function": "constructor",
+      "mutant_id": "m000085",
+      "operator": "EHD",
+      "original_expression": "revert E_BadAddress();",
+      "replacement_expression": "/* revert E_BadAddress(); */",
+      "start_line": 114
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 139,
+      "function": "createProxy",
+      "mutant_id": "m000086",
+      "operator": "EHD",
+      "original_expression": "revert E_Implementation();",
+      "replacement_expression": "/* revert E_Implementation(); */",
+      "start_line": 139
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 170,
+      "function": "setImplementation",
+      "mutant_id": "m000087",
+      "operator": "EHD",
+      "original_expression": "revert E_BadAddress();",
+      "replacement_expression": "/* revert E_BadAddress(); */",
+      "start_line": 170
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 216,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000088",
+      "operator": "EHD",
+      "original_expression": "revert E_BadQuery();",
+      "replacement_expression": "/* revert E_BadQuery(); */",
+      "start_line": 216
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 157,
+      "function": "createProxy",
+      "mutant_id": "m000089",
+      "operator": "FCD",
+      "original_expression": "IComponent(proxy).initialize(msg.sender);",
+      "replacement_expression": "/*IComponent(proxy).initialize(msg.sender);*/",
+      "start_line": 157
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 157,
+      "function": "createProxy",
+      "mutant_id": "m000090",
+      "operator": "FCD",
+      "original_expression": "IComponent(proxy).",
+      "replacement_expression": "/*IComponent(proxy).*/",
+      "start_line": 157
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 15,
+      "function": "stateVariable",
+      "mutant_id": "m000091",
+      "operator": "HLR",
+      "original_expression": "hex\"600b380380600b3d393df3363d3d373d3d3d3d60368038038091363936013d73\"",
+      "replacement_expression": "hex\"600b380380600c00000000000000000000000000000000000000000000000000\"",
+      "start_line": 15
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "stateVariable",
+      "mutant_id": "m000092",
+      "operator": "HLR",
+      "original_expression": "hex\"5af43d3d93803e603457fd5bf3\"",
+      "replacement_expression": "hex\"5af43d3d938040000000000000\"",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 27,
+      "function": "deployMetaProxy",
+      "mutant_id": "m000093",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 39,
+      "function": "stateVariable",
+      "mutant_id": "m000094",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 39
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 39,
+      "function": "stateVariable",
+      "mutant_id": "m000095",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 39
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "stateVariable",
+      "mutant_id": "m000096",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "stateVariable",
+      "mutant_id": "m000097",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 114,
+      "function": "constructor",
+      "mutant_id": "m000098",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 114
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 137,
+      "function": "createProxy",
+      "mutant_id": "m000099",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 137
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 139,
+      "function": "createProxy",
+      "mutant_id": "m000100",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 139
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 143,
+      "function": "createProxy",
+      "mutant_id": "m000101",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 143
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 170,
+      "function": "setImplementation",
+      "mutant_id": "m000102",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 170
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 201,
+      "function": "isProxy",
+      "mutant_id": "m000103",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 201
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 240,
+      "function": "stateVariable",
+      "mutant_id": "m000104",
+      "operator": "ILR",
+      "original_expression": "128",
+      "replacement_expression": "127",
+      "start_line": 240
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 240,
+      "function": "stateVariable",
+      "mutant_id": "m000105",
+      "operator": "ILR",
+      "original_expression": "128",
+      "replacement_expression": "129",
+      "start_line": 240
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000106",
+      "operator": "LSC",
+      "original_expression": "i < end - start",
+      "replacement_expression": "false",
+      "start_line": 219
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 135,
+      "function": "createProxy",
+      "mutant_id": "m000107",
+      "operator": "MOD",
+      "original_expression": "function createProxy(address desiredImplementation, bool upgradeable, bytes memory trailingData)\n        external\n        nonReentrant\n        returns (address)\n    ",
+      "replacement_expression": "function createProxy(address desiredImplementation, bool upgradeable, bytes memory trailingData)\n        external\n        \n        returns (address)\n    ",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 169,
+      "function": "setImplementation",
+      "mutant_id": "m000108",
+      "operator": "MOD",
+      "original_expression": "function setImplementation(address newImplementation) external nonReentrant adminOnly ",
+      "replacement_expression": "function setImplementation(address newImplementation) external  adminOnly ",
+      "start_line": 169
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 169,
+      "function": "setImplementation",
+      "mutant_id": "m000109",
+      "operator": "MOD",
+      "original_expression": "function setImplementation(address newImplementation) external nonReentrant adminOnly ",
+      "replacement_expression": "function setImplementation(address newImplementation) external nonReentrant  ",
+      "start_line": 169
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 182,
+      "function": "setUpgradeAdmin",
+      "mutant_id": "m000110",
+      "operator": "MOD",
+      "original_expression": "function setUpgradeAdmin(address newUpgradeAdmin) external nonReentrant adminOnly ",
+      "replacement_expression": "function setUpgradeAdmin(address newUpgradeAdmin) external  adminOnly ",
+      "start_line": 182
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 182,
+      "function": "setUpgradeAdmin",
+      "mutant_id": "m000111",
+      "operator": "MOD",
+      "original_expression": "function setUpgradeAdmin(address newUpgradeAdmin) external nonReentrant adminOnly ",
+      "replacement_expression": "function setUpgradeAdmin(address newUpgradeAdmin) external nonReentrant  ",
+      "start_line": 182
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 274,
+      "function": "",
+      "mutant_id": "m000112",
+      "operator": "PKD",
+      "original_expression": "fallback() external payable ",
+      "replacement_expression": "fallback() external  ",
+      "start_line": 274
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 161,
+      "function": "createProxy",
+      "mutant_id": "m000113",
+      "operator": "RSD",
+      "original_expression": "return proxy;",
+      "replacement_expression": "/* return proxy; */",
+      "start_line": 161
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 201,
+      "function": "isProxy",
+      "mutant_id": "m000114",
+      "operator": "RSD",
+      "original_expression": "return proxyLookup[proxy].implementation != address(0);",
+      "replacement_expression": "/* return proxyLookup[proxy].implementation != address(0); */",
+      "start_line": 201
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 207,
+      "function": "getProxyListLength",
+      "mutant_id": "m000115",
+      "operator": "RSD",
+      "original_expression": "return proxyList.length;",
+      "replacement_expression": "/* return proxyList.length; */",
+      "start_line": 207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000116",
+      "operator": "UORD",
+      "original_expression": "++i",
+      "replacement_expression": "--i",
+      "start_line": 219
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "getProxyListSlice",
+      "mutant_id": "m000117",
+      "operator": "UORD",
+      "original_expression": "++i",
+      "replacement_expression": " i",
+      "start_line": 219
+    }
+  ],
+  "subject_id": "euler-xyz__euler-vault-kit__GenericFactory"
+}

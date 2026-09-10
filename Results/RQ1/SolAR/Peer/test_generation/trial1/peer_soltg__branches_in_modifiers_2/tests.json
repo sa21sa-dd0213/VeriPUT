@@ -1,0 +1,93 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "f",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        106846807036097804292969923112946618658678148647762382073857351515299414703134
+      ],
+      "frm": "address_00398",
+      "method": "set",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        10
+      ],
+      "frm": "address_00021",
+      "method": "set",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "f",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "f",
+      "n": 5,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "f",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        8
+      ],
+      "frm": "address_00184",
+      "method": "set",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        100003417280944522443475171331217583102768733529182330859519116831036672892880
+      ],
+      "frm": "address_00036",
+      "method": "set",
+      "n": 4,
+      "value": 0
+    }
+  ]
+]

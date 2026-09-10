@@ -1,0 +1,8 @@
+{
+  "contract": "Synth",
+  "dataset": "Patch",
+  "solc": "0.8.35",
+  "solc_bin": "solc",
+  "source_form": "normalized-flat",
+  "subject_id": "ct_20_Pool_sol_Synth_sol_Failing_Max_Value_Al"
+}

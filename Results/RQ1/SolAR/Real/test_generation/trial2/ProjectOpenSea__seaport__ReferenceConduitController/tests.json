@@ -1,0 +1,274 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00184",
+      "method": "acceptOwnership",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00398",
+      "method": "cancelOwnershipTransfer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00021",
+      "method": "getPotentialOwner",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00410",
+      "method": "getTotalChannels",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00019",
+      "method": "getKey",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00410",
+      "method": "getChannels",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "getConduitCodeHashes",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_0023179596f765455537061466a68",
+        "address_00036"
+      ],
+      "frm": "address_00036",
+      "method": "createConduit",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "getConduitCodeHashes",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_003426e446f4a6658437442695a70"
+      ],
+      "frm": "address_00019",
+      "method": "getConduit",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "getConduitCodeHashes",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        "address_00023"
+      ],
+      "frm": "address_00019",
+      "method": "transferOwnership",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "getConduitCodeHashes",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00036",
+      "method": "ownerOf",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00357497946636278625061466f49"
+      ],
+      "frm": "address_00184",
+      "method": "getConduit",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        "address_00036"
+      ],
+      "frm": "address_00410",
+      "method": "getChannelStatus",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "getConduitCodeHashes",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00023",
+      "method": "getTotalChannels",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        "address_00401",
+        false
+      ],
+      "frm": "address_00401",
+      "method": "updateChannel",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "getConduitCodeHashes",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

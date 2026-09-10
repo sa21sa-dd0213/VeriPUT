@@ -1,0 +1,267 @@
+Compiling `src/flat.sol`... Done! (0.592215875s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.597162164s)
+Loaded 0 transaction sequences from corpus/reproducers
+Loaded 0 transaction sequences from corpus/coverage
+[Worker 0] New coverage: 2641 instr, 1 contracts, 1 seqs in corpus
+Saved reproducer to corpus/coverage/8634344609673989224.txt
+[Worker 0] New coverage: 2673 instr, 1 contracts, 2 seqs in corpus
+Saved reproducer to corpus/coverage/3457120836032916118.txt
+[Worker 0] New coverage: 2676 instr, 1 contracts, 3 seqs in corpus
+Saved reproducer to corpus/coverage/3710635174942390894.txt
+[Worker 0] New coverage: 2716 instr, 1 contracts, 4 seqs in corpus
+Saved reproducer to corpus/coverage/1080897248001869503.txt
+[Worker 0] New coverage: 2787 instr, 1 contracts, 5 seqs in corpus
+Saved reproducer to corpus/coverage/716963613320951728.txt
+[Worker 0] New coverage: 2795 instr, 1 contracts, 6 seqs in corpus
+Saved reproducer to corpus/coverage/3501211288515217488.txt
+[Worker 0] New coverage: 2798 instr, 1 contracts, 7 seqs in corpus
+Saved reproducer to corpus/coverage/6522033983048162599.txt
+[Worker 0] New coverage: 2894 instr, 1 contracts, 8 seqs in corpus
+[status] tests: 0/22, fuzzing: 3938/100000000, values: [], cov: 2894, corpus: 8, gas/s: 48743546
+Saved reproducer to corpus/coverage/3104052604467963128.txt
+[status] tests: 0/22, fuzzing: 8281/100000000, values: [], cov: 2894, corpus: 8, gas/s: 53599857
+[status] tests: 0/22, fuzzing: 12435/100000000, values: [], cov: 2894, corpus: 8, gas/s: 51331088
+[Worker 0] New coverage: 3042 instr, 1 contracts, 9 seqs in corpus
+Saved reproducer to corpus/coverage/51828132843653209.txt
+[Worker 0] New coverage: 3093 instr, 1 contracts, 10 seqs in corpus
+Saved reproducer to corpus/coverage/6861998903399055207.txt
+[status] tests: 0/22, fuzzing: 16181/100000000, values: [], cov: 3093, corpus: 10, gas/s: 46605565
+[Worker 0] New coverage: 3213 instr, 1 contracts, 11 seqs in corpus
+Saved reproducer to corpus/coverage/4228894478731541176.txt
+[status] tests: 0/22, fuzzing: 20170/100000000, values: [], cov: 3213, corpus: 11, gas/s: 49603211
+[Worker 0] New coverage: 3256 instr, 1 contracts, 12 seqs in corpus
+Saved reproducer to corpus/coverage/8303097906739740006.txt
+[Worker 0] New coverage: 3256 instr, 1 contracts, 13 seqs in corpus
+Saved reproducer to corpus/coverage/2435026931976969191.txt
+[status] tests: 0/22, fuzzing: 24363/100000000, values: [], cov: 3256, corpus: 13, gas/s: 77515977
+[status] tests: 0/22, fuzzing: 28175/100000000, values: [], cov: 3256, corpus: 13, gas/s: 47205774
+[status] tests: 0/22, fuzzing: 32260/100000000, values: [], cov: 3256, corpus: 13, gas/s: 50496839
+[status] tests: 0/22, fuzzing: 36433/100000000, values: [], cov: 3256, corpus: 13, gas/s: 51964067
+[status] tests: 0/22, fuzzing: 40299/100000000, values: [], cov: 3256, corpus: 13, gas/s: 48115120
+[Worker 0] New coverage: 3273 instr, 1 contracts, 14 seqs in corpus
+Saved reproducer to corpus/coverage/7129865396935889268.txt
+[status] tests: 0/22, fuzzing: 44508/100000000, values: [], cov: 3273, corpus: 14, gas/s: 51812441
+[status] tests: 0/22, fuzzing: 48104/100000000, values: [], cov: 3273, corpus: 14, gas/s: 44303312
+[status] tests: 0/22, fuzzing: 51962/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47632600
+[status] tests: 0/22, fuzzing: 56149/100000000, values: [], cov: 3273, corpus: 14, gas/s: 51446041
+[status] tests: 0/22, fuzzing: 60122/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49322808
+[status] tests: 0/22, fuzzing: 64052/100000000, values: [], cov: 3273, corpus: 14, gas/s: 71601059
+[status] tests: 0/22, fuzzing: 67790/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46009447
+[status] tests: 0/22, fuzzing: 71787/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49511609
+[status] tests: 0/22, fuzzing: 75478/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45105088
+[status] tests: 0/22, fuzzing: 79097/100000000, values: [], cov: 3273, corpus: 14, gas/s: 44589249
+[status] tests: 0/22, fuzzing: 82693/100000000, values: [], cov: 3273, corpus: 14, gas/s: 44166132
+[status] tests: 0/22, fuzzing: 86287/100000000, values: [], cov: 3273, corpus: 14, gas/s: 44487249
+[status] tests: 0/22, fuzzing: 90300/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48817031
+[status] tests: 0/22, fuzzing: 93962/100000000, values: [], cov: 3273, corpus: 14, gas/s: 44681709
+[status] tests: 0/22, fuzzing: 97709/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45765434
+[status] tests: 0/22, fuzzing: 101527/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47043620
+[status] tests: 0/22, fuzzing: 105212/100000000, values: [], cov: 3273, corpus: 14, gas/s: 68243855
+[status] tests: 0/22, fuzzing: 109288/100000000, values: [], cov: 3273, corpus: 14, gas/s: 50263332
+[status] tests: 0/22, fuzzing: 112870/100000000, values: [], cov: 3273, corpus: 14, gas/s: 44605327
+[status] tests: 0/22, fuzzing: 116651/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46849890
+[status] tests: 0/22, fuzzing: 120543/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47373778
+[status] tests: 0/22, fuzzing: 124398/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47748789
+[status] tests: 0/22, fuzzing: 128132/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45704844
+[status] tests: 0/22, fuzzing: 132027/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47876357
+[status] tests: 0/22, fuzzing: 135872/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47872843
+[status] tests: 0/22, fuzzing: 139704/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47110220
+[status] tests: 0/22, fuzzing: 143641/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48603073
+[status] tests: 0/22, fuzzing: 147406/100000000, values: [], cov: 3273, corpus: 14, gas/s: 69282476
+[status] tests: 0/22, fuzzing: 151224/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45811145
+[status] tests: 0/22, fuzzing: 155121/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47775375
+[status] tests: 0/22, fuzzing: 158968/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47721974
+[status] tests: 0/22, fuzzing: 162792/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46933798
+[status] tests: 0/22, fuzzing: 166563/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46374098
+[status] tests: 0/22, fuzzing: 170372/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45989361
+[status] tests: 0/22, fuzzing: 174333/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48953874
+[status] tests: 0/22, fuzzing: 178539/100000000, values: [], cov: 3273, corpus: 14, gas/s: 51136397
+[status] tests: 0/22, fuzzing: 182416/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47485944
+[status] tests: 0/22, fuzzing: 186355/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48548227
+[status] tests: 0/22, fuzzing: 190099/100000000, values: [], cov: 3273, corpus: 14, gas/s: 69081999
+[status] tests: 0/22, fuzzing: 193887/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46785761
+[status] tests: 0/22, fuzzing: 197826/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48024266
+[status] tests: 0/22, fuzzing: 201804/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49008139
+[status] tests: 0/22, fuzzing: 205701/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47669926
+[status] tests: 0/22, fuzzing: 209447/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46275835
+[status] tests: 0/22, fuzzing: 213312/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47785260
+[status] tests: 0/22, fuzzing: 217052/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45727204
+[status] tests: 0/22, fuzzing: 220956/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48139326
+[status] tests: 0/22, fuzzing: 224633/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45421758
+[status] tests: 0/22, fuzzing: 228242/100000000, values: [], cov: 3273, corpus: 14, gas/s: 44563516
+[status] tests: 0/22, fuzzing: 232153/100000000, values: [], cov: 3273, corpus: 14, gas/s: 71633325
+[status] tests: 0/22, fuzzing: 236098/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48310764
+[status] tests: 0/22, fuzzing: 239878/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46615492
+[status] tests: 0/22, fuzzing: 243999/100000000, values: [], cov: 3273, corpus: 14, gas/s: 50923728
+[status] tests: 0/22, fuzzing: 248002/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49331237
+[status] tests: 0/22, fuzzing: 251967/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48922855
+[status] tests: 0/22, fuzzing: 256012/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49607633
+[status] tests: 0/22, fuzzing: 260044/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49139102
+[status] tests: 0/22, fuzzing: 264071/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49365491
+[status] tests: 0/22, fuzzing: 268009/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47930869
+[status] tests: 0/22, fuzzing: 271930/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47793185
+[status] tests: 0/22, fuzzing: 275828/100000000, values: [], cov: 3273, corpus: 14, gas/s: 71769025
+[status] tests: 0/22, fuzzing: 279762/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48500724
+[status] tests: 0/22, fuzzing: 283662/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47256336
+[status] tests: 0/22, fuzzing: 287620/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48116123
+[status] tests: 0/22, fuzzing: 291491/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47518783
+[status] tests: 0/22, fuzzing: 295415/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48349377
+[status] tests: 0/22, fuzzing: 299359/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48648189
+[status] tests: 0/22, fuzzing: 303102/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45484873
+[status] tests: 0/22, fuzzing: 306997/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47942698
+[status] tests: 0/22, fuzzing: 310783/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46219040
+[status] tests: 0/22, fuzzing: 314818/100000000, values: [], cov: 3273, corpus: 14, gas/s: 73667284
+[status] tests: 0/22, fuzzing: 318741/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48343573
+[status] tests: 0/22, fuzzing: 322741/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48994256
+[status] tests: 0/22, fuzzing: 326699/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48717609
+[status] tests: 0/22, fuzzing: 330501/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46521210
+[status] tests: 0/22, fuzzing: 334423/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47801941
+[status] tests: 0/22, fuzzing: 338197/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46802683
+[status] tests: 0/22, fuzzing: 341930/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45748796
+[status] tests: 0/22, fuzzing: 345927/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48404258
+[status] tests: 0/22, fuzzing: 349707/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46738493
+[status] tests: 0/22, fuzzing: 353502/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46556694
+[status] tests: 0/22, fuzzing: 357430/100000000, values: [], cov: 3273, corpus: 14, gas/s: 72229707
+[status] tests: 0/22, fuzzing: 361223/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46597241
+[status] tests: 0/22, fuzzing: 364965/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46019272
+[status] tests: 0/22, fuzzing: 368828/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47003502
+[status] tests: 0/22, fuzzing: 372568/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46021483
+[status] tests: 0/22, fuzzing: 376339/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46321239
+[status] tests: 0/22, fuzzing: 380152/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46488169
+[status] tests: 0/22, fuzzing: 383777/100000000, values: [], cov: 3273, corpus: 14, gas/s: 44653180
+[status] tests: 0/22, fuzzing: 387567/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46481935
+[status] tests: 0/22, fuzzing: 391155/100000000, values: [], cov: 3273, corpus: 14, gas/s: 44138244
+[status] tests: 0/22, fuzzing: 395097/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48106107
+[status] tests: 0/22, fuzzing: 398856/100000000, values: [], cov: 3273, corpus: 14, gas/s: 69185450
+[status] tests: 0/22, fuzzing: 402438/100000000, values: [], cov: 3273, corpus: 14, gas/s: 44206827
+[status] tests: 0/22, fuzzing: 406061/100000000, values: [], cov: 3273, corpus: 14, gas/s: 44004136
+[status] tests: 0/22, fuzzing: 409705/100000000, values: [], cov: 3273, corpus: 14, gas/s: 44705850
+[status] tests: 0/22, fuzzing: 413580/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47674867
+[status] tests: 0/22, fuzzing: 417400/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45991995
+[status] tests: 0/22, fuzzing: 421329/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47399118
+[status] tests: 0/22, fuzzing: 424993/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45022033
+[status] tests: 0/22, fuzzing: 428917/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48388007
+[status] tests: 0/22, fuzzing: 432816/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47566272
+[status] tests: 0/22, fuzzing: 436622/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47328517
+[status] tests: 0/22, fuzzing: 440393/100000000, values: [], cov: 3273, corpus: 14, gas/s: 69318407
+[status] tests: 0/22, fuzzing: 444318/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48192526
+[status] tests: 0/22, fuzzing: 448055/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45726228
+[status] tests: 0/22, fuzzing: 452020/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48458943
+[status] tests: 0/22, fuzzing: 455900/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47252445
+[status] tests: 0/22, fuzzing: 459614/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45168563
+[status] tests: 0/22, fuzzing: 463319/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45861950
+[status] tests: 0/22, fuzzing: 467325/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49328012
+[status] tests: 0/22, fuzzing: 471084/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46011109
+[status] tests: 0/22, fuzzing: 474950/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47581454
+[status] tests: 0/22, fuzzing: 478734/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45846448
+[status] tests: 0/22, fuzzing: 482514/100000000, values: [], cov: 3273, corpus: 14, gas/s: 68754897
+[status] tests: 0/22, fuzzing: 486434/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48524594
+[status] tests: 0/22, fuzzing: 490034/100000000, values: [], cov: 3273, corpus: 14, gas/s: 43844757
+[status] tests: 0/22, fuzzing: 493838/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46273974
+[status] tests: 0/22, fuzzing: 497520/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45123121
+[status] tests: 0/22, fuzzing: 501426/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47961833
+[status] tests: 0/22, fuzzing: 505310/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47914011
+[status] tests: 0/22, fuzzing: 509230/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48340142
+[status] tests: 0/22, fuzzing: 513399/100000000, values: [], cov: 3273, corpus: 14, gas/s: 50730165
+[status] tests: 0/22, fuzzing: 517363/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48275585
+[status] tests: 0/22, fuzzing: 521106/100000000, values: [], cov: 3273, corpus: 14, gas/s: 69696378
+[status] tests: 0/22, fuzzing: 524943/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46039316
+[status] tests: 0/22, fuzzing: 528776/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46992567
+[status] tests: 0/22, fuzzing: 532546/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45991528
+[status] tests: 0/22, fuzzing: 536176/100000000, values: [], cov: 3273, corpus: 14, gas/s: 44576311
+[status] tests: 0/22, fuzzing: 540030/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47246068
+[status] tests: 0/22, fuzzing: 543697/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45398107
+[status] tests: 0/22, fuzzing: 547575/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47682434
+[status] tests: 0/22, fuzzing: 551544/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48185261
+[status] tests: 0/22, fuzzing: 555376/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47141990
+[status] tests: 0/22, fuzzing: 559261/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47381859
+[status] tests: 0/22, fuzzing: 563030/100000000, values: [], cov: 3273, corpus: 14, gas/s: 70042471
+[status] tests: 0/22, fuzzing: 566931/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47398392
+[status] tests: 0/22, fuzzing: 570605/100000000, values: [], cov: 3273, corpus: 14, gas/s: 44484286
+[status] tests: 0/22, fuzzing: 574305/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45750366
+[status] tests: 0/22, fuzzing: 578151/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47248588
+[status] tests: 0/22, fuzzing: 582040/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47216231
+[status] tests: 0/22, fuzzing: 586135/100000000, values: [], cov: 3273, corpus: 14, gas/s: 50251678
+[status] tests: 0/22, fuzzing: 589753/100000000, values: [], cov: 3273, corpus: 14, gas/s: 43914942
+[status] tests: 0/22, fuzzing: 593692/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47598714
+[status] tests: 0/22, fuzzing: 597812/100000000, values: [], cov: 3273, corpus: 14, gas/s: 50545740
+[status] tests: 0/22, fuzzing: 601519/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45499979
+[status] tests: 0/22, fuzzing: 605738/100000000, values: [], cov: 3273, corpus: 14, gas/s: 77862273
+[status] tests: 0/22, fuzzing: 609778/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49672284
+[status] tests: 0/22, fuzzing: 613635/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47582253
+[status] tests: 0/22, fuzzing: 617554/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47521881
+[status] tests: 0/22, fuzzing: 621689/100000000, values: [], cov: 3273, corpus: 14, gas/s: 50636363
+[status] tests: 0/22, fuzzing: 625504/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46822482
+[status] tests: 0/22, fuzzing: 629617/100000000, values: [], cov: 3273, corpus: 14, gas/s: 50014421
+[status] tests: 0/22, fuzzing: 633612/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49061542
+[status] tests: 0/22, fuzzing: 637683/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49790991
+[status] tests: 0/22, fuzzing: 641498/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47218691
+[status] tests: 0/22, fuzzing: 645465/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48572094
+[status] tests: 0/22, fuzzing: 649565/100000000, values: [], cov: 3273, corpus: 14, gas/s: 74598337
+[status] tests: 0/22, fuzzing: 653426/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47470170
+[status] tests: 0/22, fuzzing: 657340/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47493257
+[status] tests: 0/22, fuzzing: 661473/100000000, values: [], cov: 3273, corpus: 14, gas/s: 50630231
+[status] tests: 0/22, fuzzing: 665266/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47003506
+[status] tests: 0/22, fuzzing: 669223/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48294040
+[status] tests: 0/22, fuzzing: 673311/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49739067
+[status] tests: 0/22, fuzzing: 677158/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47387433
+[status] tests: 0/22, fuzzing: 681014/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47172058
+[status] tests: 0/22, fuzzing: 684773/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45612682
+[status] tests: 0/22, fuzzing: 688841/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49708599
+[status] tests: 0/22, fuzzing: 692977/100000000, values: [], cov: 3273, corpus: 14, gas/s: 76554184
+[status] tests: 0/22, fuzzing: 696870/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47807151
+[status] tests: 0/22, fuzzing: 700925/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49024084
+[status] tests: 0/22, fuzzing: 704548/100000000, values: [], cov: 3273, corpus: 14, gas/s: 44822286
+[status] tests: 0/22, fuzzing: 708568/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49419041
+[status] tests: 0/22, fuzzing: 712511/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48020628
+[status] tests: 0/22, fuzzing: 716369/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47230886
+[status] tests: 0/22, fuzzing: 720231/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47058904
+[status] tests: 0/22, fuzzing: 724243/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48366808
+[status] tests: 0/22, fuzzing: 728238/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49507268
+[status] tests: 0/22, fuzzing: 732177/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47803015
+[status] tests: 0/22, fuzzing: 736095/100000000, values: [], cov: 3273, corpus: 14, gas/s: 72037122
+[status] tests: 0/22, fuzzing: 740012/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48172889
+[status] tests: 0/22, fuzzing: 743788/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46267110
+[status] tests: 0/22, fuzzing: 747653/100000000, values: [], cov: 3273, corpus: 14, gas/s: 47523589
+[status] tests: 0/22, fuzzing: 751353/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45412258
+[status] tests: 0/22, fuzzing: 755093/100000000, values: [], cov: 3273, corpus: 14, gas/s: 45705966
+[status] tests: 0/22, fuzzing: 759253/100000000, values: [], cov: 3273, corpus: 14, gas/s: 51178646
+[status] tests: 0/22, fuzzing: 763069/100000000, values: [], cov: 3273, corpus: 14, gas/s: 46791950
+[status] tests: 0/22, fuzzing: 767099/100000000, values: [], cov: 3273, corpus: 14, gas/s: 48755609
+[status] tests: 0/22, fuzzing: 771162/100000000, values: [], cov: 3273, corpus: 14, gas/s: 49518800
+[Worker 0] Time limit reached. Stopping.
+[status] tests: 0/22, fuzzing: 774394/100000000, values: [], cov: 3273, corpus: 14, gas/s: 39873974
+name(): passing
+approve(address,uint256): passing
+totalSupply(): passing
+transferFrom(address,address,uint256): passing
+delBot(address): passing
+decimals(): passing
+setCooldownEnabled(bool): passing
+manualsend(): passing
+balanceOf(address): passing
+renounceOwnership(): passing
+owner(): passing
+symbol(): passing
+receive(): passing
+transfer(address,uint256): passing
+setBots(address[]): passing
+manualswap(): passing
+openTrading(): passing
+sdc(): passing
+setMaxTxPercent(uint256): passing
+allowance(address,address): passing
+abc(address,address): passing
+AssertionFailed(..): passing
+
+Unique instructions: 3273
+Unique codehashes: 1
+Corpus size: 14
+Seed: 9201392603457136211
+Total calls: 774394
+
+Saving test reproducers... Done! (0.000000935s)
+Saving corpus... Done! (0.000823827s)
+Saving foundry reproducers... Done! (0.000587163s)
+Saving coverage... Done! (0.044796779s)

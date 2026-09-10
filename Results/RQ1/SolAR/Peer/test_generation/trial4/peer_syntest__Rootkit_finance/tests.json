@@ -1,0 +1,154 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 128392429776586374
+    },
+    {
+      "args": [
+        "address_00401",
+        "address_00032",
+        18
+      ],
+      "frm": "address_00410",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        0
+      ],
+      "frm": "address_00398",
+      "method": "approve",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        0
+      ],
+      "frm": "address_00398",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00019",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        "address_00019",
+        82626526609511438965834961865253553851326773536642503340388575270985012088980
+      ],
+      "frm": "address_00398",
+      "method": "transferFrom",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398",
+        "address_00021"
+      ],
+      "frm": "address_00404",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        0
+      ],
+      "frm": "address_00398",
+      "method": "approve",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        2020
+      ],
+      "frm": "address_00401",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        4
+      ],
+      "frm": "address_00398",
+      "method": "approve",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

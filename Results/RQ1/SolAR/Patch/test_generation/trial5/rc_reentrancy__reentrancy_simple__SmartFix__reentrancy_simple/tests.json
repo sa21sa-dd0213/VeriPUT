@@ -1,0 +1,75 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "addToBalance",
+      "n": 2,
+      "value": 47281953024042211
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "addToBalance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "withdrawBalance",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00404",
+      "method": "getBalance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "withdrawBalance",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

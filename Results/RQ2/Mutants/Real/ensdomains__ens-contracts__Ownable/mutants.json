@@ -1,0 +1,97 @@
+{
+  "compile_failed": 1,
+  "compile_ok": 8,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "transferOwnership",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(this)",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "transferOwnership",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(0)",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "isOwner",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "constructor",
+      "mutant_id": "m000004",
+      "operator": "CCD",
+      "original_expression": "constructor() public {\n        owner = msg.sender;\n    }",
+      "replacement_expression": "",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "transferOwnership",
+      "mutant_id": "m000005",
+      "operator": "EED",
+      "original_expression": "emit OwnershipTransferred(owner, newOwner);",
+      "replacement_expression": "/* emit OwnershipTransferred(owner, newOwner); */",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "modifier:onlyOwner",
+      "mutant_id": "m000006",
+      "operator": "EHD",
+      "original_expression": "require(isOwner(msg.sender));",
+      "replacement_expression": "/* require(isOwner(msg.sender)); */",
+      "start_line": 14
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 14,
+      "function": "modifier:onlyOwner",
+      "mutant_id": "m000007",
+      "operator": "FCD",
+      "original_expression": "isOwner(msg.sender))",
+      "replacement_expression": "/*isOwner(msg.sender))*/",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "transferOwnership",
+      "mutant_id": "m000008",
+      "operator": "MOD",
+      "original_expression": "function transferOwnership(address newOwner) public onlyOwner ",
+      "replacement_expression": "function transferOwnership(address newOwner) public  ",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "isOwner",
+      "mutant_id": "m000009",
+      "operator": "RSD",
+      "original_expression": "return owner == addr;",
+      "replacement_expression": "/* return owner == addr; */",
+      "start_line": 28
+    }
+  ],
+  "subject_id": "ensdomains__ens-contracts__Ownable"
+}

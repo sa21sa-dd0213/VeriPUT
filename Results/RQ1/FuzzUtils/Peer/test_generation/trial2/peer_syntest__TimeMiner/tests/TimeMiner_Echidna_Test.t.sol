@@ -1,0 +1,15338 @@
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.13;
+
+
+
+
+
+import "forge-std/Test.sol";
+import "forge-std/console2.sol";
+import "../src/flat.sol";
+
+contract TimeMiner_Echidna_Test is Test {
+    TimeMiner target;
+
+    function setUp() public {
+        target = new TimeMiner();
+    }
+    
+    function test_auto_preSaleFinished_0() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 33199);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 15979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913128639938);
+        
+        vm.warp(block.timestamp + 395196);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(92291204678326744348727437966115287238834246368165577029123750520283071480736, 9939364999354494664406630418880751589460743490020879900322728668988356467501);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 59900);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 1524785993);
+        
+        vm.warp(block.timestamp + 119685);
+        vm.roll(block.number + 40740);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 94302830980651095057779852642163463063245030298368831384472360671164262759214);
+        
+        vm.warp(block.timestamp + 514417);
+        vm.roll(block.number + 4999);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 61285);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 76388321607529833139}(105587562905919104191466272368062252855632249944115223037798635586194548606989);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 42216);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 110576692464290038027394789145035259190123394087245220998153791683890719790387);
+        
+        vm.warp(block.timestamp + 520981);
+        vm.roll(block.number + 3467);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 3599}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 3602);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 68612);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 16631);
+        vm.roll(block.number + 417);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 69483712954301277365511581730273042110254262231041595533321714649681917217865);
+        
+        vm.warp(block.timestamp + 418394);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 105587562905919104191466272368062252855632249944115223037798635586194548606989);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 36276);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(13030331254533089469773255581481932240721822599493812651141731766893609793570);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 14967);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 497190);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 389741);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 92346875967387314858326100339858006580069473476723431362834653858870727748541);
+        
+        vm.warp(block.timestamp + 74146);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 15984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000020000, true);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 21486542864214851569}(19746555036491651586436923678859158007169865154913521351712187772537137723984);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(835569654007278096140275925455810668879541863327, 48151204637191005436395370950295454187738610236128986377460566823445158257361);
+        
+        vm.warp(block.timestamp + 255102);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 27383);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 202691);
+        vm.roll(block.number + 33204);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(30165035926373368374238442937827431968602016139275771083146728380555166230510);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 1);
+        
+        vm.warp(block.timestamp + 306553);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 49523);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 3601);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 8910);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 692);
+        vm.roll(block.number + 58545);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 514417);
+        vm.roll(block.number + 29229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 4370000);
+        
+        vm.warp(block.timestamp + 42371);
+        vm.roll(block.number + 51444);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 418395);
+        vm.roll(block.number + 515);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129636335);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 40741);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(4320462031180795392249218824826012702522531130762673510648064146505156066920);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 303208);
+        vm.roll(block.number + 24763);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 453325);
+        vm.roll(block.number + 27383);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(6966010815671057761, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 418394);
+        vm.roll(block.number + 19893);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 445123);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 23);
+        vm.roll(block.number + 29223);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 68609);
+        vm.roll(block.number + 21);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 880);
+        
+        vm.warp(block.timestamp + 412760);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 68608);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 56266);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 74146);
+        vm.roll(block.number + 51821);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 8136);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 10596801148122);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 33199);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 318773);
+        vm.roll(block.number + 36992);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 320763);
+        vm.roll(block.number + 36279);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 40611781056194210878}(37);
+        
+        vm.warp(block.timestamp + 119688);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, false);
+        
+        vm.warp(block.timestamp + 3599);
+        vm.roll(block.number + 25);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(49338018373544346292057505484758864241989057730292869073414207115408282696842, 68518483320804011290182237626113050057504840522831140822810988695070299939960);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 3599);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129639932, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 16631);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 12000000);
+        
+        vm.warp(block.timestamp + 33620);
+        vm.roll(block.number + 2272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 531979);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 531976);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, 17534615977400650443811965370406404472848387785463477665675086048061023126877);
+        
+        vm.warp(block.timestamp + 25469);
+        vm.roll(block.number + 56261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 322351);
+        vm.roll(block.number + 24762);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 558883);
+        vm.roll(block.number + 3499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 94917098919371363651926582307361675147009819774770778723512490653189833359462);
+        
+        vm.warp(block.timestamp + 230643);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000020000, true);
+        
+        vm.warp(block.timestamp + 21);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(51222339535165894769325713230557613835334180319497956154838743863601227249467, 51937022765575123651915070280007240469914186393517866453894219903074541178368);
+        
+        vm.warp(block.timestamp + 395197);
+        vm.roll(block.number + 38640);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 24317);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 51444);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 318774);
+        vm.roll(block.number + 1424);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 69635929442572968995017800240057486114579328645389528820906851261939783140741);
+        
+        vm.warp(block.timestamp + 68611);
+        vm.roll(block.number + 28433);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 53986);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.tokensToClaim(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 119686);
+        vm.roll(block.number + 46955);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(9766022489032672562598873319763646466619354261778286948657088556104389336153);
+        
+        vm.warp(block.timestamp + 3601);
+        vm.roll(block.number + 55);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000020000, true);
+        
+        vm.warp(block.timestamp + 412760);
+        vm.roll(block.number + 5000);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(111041706989549428436178599140855708913974473447084200922520795333501758156239);
+        
+        vm.warp(block.timestamp + 68608);
+        vm.roll(block.number + 29225);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 67125467668355474129}(3603);
+        
+        vm.warp(block.timestamp + 318775);
+        vm.roll(block.number + 32301);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 514412);
+        vm.roll(block.number + 42834);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000, 44586026154319778081072505439746097719379979999657954470880422422459918342868);
+        
+        vm.warp(block.timestamp + 514412);
+        vm.roll(block.number + 1424);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 126221);
+        vm.roll(block.number + 10354);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 318776);
+        vm.roll(block.number + 29226);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(53869380187148907604528682454912561490875151128191362192167955108698532853320);
+        
+        vm.warp(block.timestamp + 322185);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000001fffffffE, 77287311770773841301782782621728514082868282103075633111159433300368008684469);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 49526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 67125467668354474132}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 412762);
+        vm.roll(block.number + 417);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 172835);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 155750);
+        vm.roll(block.number + 49525);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 49017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 22606);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584006913129639933);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 24000003}(267);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 10787);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+    }
+    
+    
+    function test_auto_transfer_1() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 69421592877790260786394013664909629110907556495007340010795947189667378914693);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(83139737705898914080168219902598693061561715036224298439703791344668489570584, 90211558252046026857880514078242916351205078592573132182852973180458192230183);
+        
+        vm.warp(block.timestamp + 223059);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(104510289546923359902214721749214311227702198039580499862909754262475577622747);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 38971);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 356827);
+        vm.roll(block.number + 49820);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 267}(1153443827418577407928858137137);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 40742);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 584961);
+        vm.roll(block.number + 28251);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 439989);
+        vm.roll(block.number + 111);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 229884);
+        vm.roll(block.number + 51717);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 514417);
+        vm.roll(block.number + 10865);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 596338);
+        vm.roll(block.number + 59305);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 342486);
+        vm.roll(block.number + 54092);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 44295);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 993);
+        vm.roll(block.number + 23740);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(58500000);
+        
+        vm.warp(block.timestamp + 175424);
+        vm.roll(block.number + 39821);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 363802);
+        vm.roll(block.number + 43713);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 44366396573800475671}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 293600);
+        vm.roll(block.number + 35468);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 43966874174637324520172061141801388096175446814986531346043341431955999750494);
+        
+        vm.warp(block.timestamp + 477891);
+        vm.roll(block.number + 19230);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 204580);
+        vm.roll(block.number + 52149);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 509462);
+        vm.roll(block.number + 52);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 301857);
+        vm.roll(block.number + 4807);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 61000000}(175);
+        
+        vm.warp(block.timestamp + 388827);
+        vm.roll(block.number + 6946);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 76876);
+        vm.roll(block.number + 41289);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 159935);
+        vm.roll(block.number + 47623);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 178743);
+        vm.roll(block.number + 13039);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 581);
+        
+        vm.warp(block.timestamp + 333928);
+        vm.roll(block.number + 397);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 501551);
+        vm.roll(block.number + 47004);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 45206701450491752622597398463002469196712891522360689668007447058245454389226);
+        
+        vm.warp(block.timestamp + 290378);
+        vm.roll(block.number + 34073);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 25961);
+        vm.roll(block.number + 18313);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 86157);
+        vm.roll(block.number + 442);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 16561774986071970413104696292136711113067925183502866469923430053114251148088);
+        
+        vm.warp(block.timestamp + 389128);
+        vm.roll(block.number + 52426);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 796);
+        
+        vm.warp(block.timestamp + 406545);
+        vm.roll(block.number + 46411);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 47435313389545874856}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 231108);
+        vm.roll(block.number + 16661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 192840);
+        vm.roll(block.number + 14906);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.tokensToClaim(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 420104);
+        vm.roll(block.number + 30944);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 25862079452191769821}(91257824247135793842739249526103071594583075808286219715787425113736033481355);
+        
+        vm.warp(block.timestamp + 99493);
+        vm.roll(block.number + 49737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 580171);
+        vm.roll(block.number + 26722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 36966652042262569699243165102307977754274135163056565781661368436455265764112);
+        
+        vm.warp(block.timestamp + 157);
+        vm.roll(block.number + 29215);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 305547);
+        vm.roll(block.number + 28804);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 417364);
+        vm.roll(block.number + 32267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 570960);
+        vm.roll(block.number + 28);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 21458493343654464666}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 313784);
+        vm.roll(block.number + 54550);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 33655206359937836208}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 338622);
+        vm.roll(block.number + 17939);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 87808551608020625138}(30550780448757724402858389690423255658296350447915247820243797077755887515038);
+        
+        vm.warp(block.timestamp + 290062);
+        vm.roll(block.number + 48112);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 114118902052165218887650092975455318745962932641913805907768887558523842016431);
+        
+        vm.warp(block.timestamp + 307896);
+        vm.roll(block.number + 26254);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 37701484521622221582565773533056102369443219022401407474806621634171790238916);
+        
+        vm.warp(block.timestamp + 351628);
+        vm.roll(block.number + 13532);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 71002);
+        vm.roll(block.number + 50120);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 18392);
+        vm.roll(block.number + 8635);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 388878);
+        vm.roll(block.number + 4956);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 135212);
+        vm.roll(block.number + 1081);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 43417631358025997356}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 184);
+        vm.roll(block.number + 48921);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 45073647226414656757760356532436207833045378561699548934301769122079034996938);
+        
+        vm.warp(block.timestamp + 502487);
+        vm.roll(block.number + 36281);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 298764);
+        vm.roll(block.number + 51762);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(71464839618916560961854185959537417110453152950317636222212371957849617701901, 109784593824404304282910701822611423460680960661139612264317882792892283670849);
+        
+        vm.warp(block.timestamp + 283955);
+        vm.roll(block.number + 10936);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(74632755353485558999019974105608257069597557281895324191722973831571174472171, 1869840302389927314791348558785789040870396431560);
+        
+        vm.warp(block.timestamp + 208);
+        vm.roll(block.number + 44401);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(468);
+        
+        vm.warp(block.timestamp + 269470);
+        vm.roll(block.number + 18940);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 33338722473687828477482265489609603879135627055455662275132685415438703251307);
+        
+        vm.warp(block.timestamp + 481020);
+        vm.roll(block.number + 16094);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(46772830646308882662431465498498012558032024945960590949722188161230108681225, 68258520816848434249754927267008025018522361852598907022483568042776077919856);
+        
+        vm.warp(block.timestamp + 578265);
+        vm.roll(block.number + 14023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 381101);
+        vm.roll(block.number + 168);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 54828550879671671330328098723586631275212726694647473927583302421135354726898);
+        
+        vm.warp(block.timestamp + 504616);
+        vm.roll(block.number + 25169);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 456089);
+        vm.roll(block.number + 52337);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 62381252045990007536221590435247810253285384916907054597386679271670965416069);
+        
+        vm.warp(block.timestamp + 507766);
+        vm.roll(block.number + 17950);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 316744);
+        vm.roll(block.number + 57746);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(80483102810351711620550579325179847225873437211964977856733531129286775693722);
+        
+        vm.warp(block.timestamp + 530028);
+        vm.roll(block.number + 53177);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 100550858292440180081396621730661414012096751607085030592604745954416319266045);
+        
+        vm.warp(block.timestamp + 523960);
+        vm.roll(block.number + 11562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 235996);
+        vm.roll(block.number + 6622);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(22337547483174792424601752457809449159512819883766668656662529141259890881868);
+        
+        vm.warp(block.timestamp + 569836);
+        vm.roll(block.number + 12521);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000020000, true);
+        
+        vm.warp(block.timestamp + 538380);
+        vm.roll(block.number + 14168);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 225241);
+        vm.roll(block.number + 4998);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000020000, 99689252638478212443448584516426186818466001319965603835891019217016621265856);
+        
+        vm.warp(block.timestamp + 117842);
+        vm.roll(block.number + 4531);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 426229);
+        vm.roll(block.number + 13742);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 501071);
+        vm.roll(block.number + 15174);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 56480339489885245964339507882109725487460125235895180633731976097930618405464);
+        
+        vm.warp(block.timestamp + 533057);
+        vm.roll(block.number + 41360);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000, 19468712787679257693782927134378242474835743293426734859292440515955061321379);
+        
+        vm.warp(block.timestamp + 76860);
+        vm.roll(block.number + 456);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 111115);
+        vm.roll(block.number + 32754);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 95951014733229809686421433707716064344570530677157628422192739074797060782684);
+        
+        vm.warp(block.timestamp + 275506);
+        vm.roll(block.number + 7639);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(6566968424586354310750100830654058475551608264368573913454216734099600485257);
+        
+        vm.warp(block.timestamp + 213748);
+        vm.roll(block.number + 8604);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000000000, true);
+        
+        vm.warp(block.timestamp + 120706);
+        vm.roll(block.number + 30762);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 514950);
+        vm.roll(block.number + 46253);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 85543694062607180615320443587574094819476635036215489031848183551772628150383);
+        
+        vm.warp(block.timestamp + 477891);
+        vm.roll(block.number + 10729);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 351136);
+        vm.roll(block.number + 44);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 2593);
+        vm.roll(block.number + 9273);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 284578);
+        vm.roll(block.number + 12882);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 21831307528021641387660218479855275789069162408151071052094960917856972389920);
+        
+        vm.warp(block.timestamp + 37366);
+        vm.roll(block.number + 659);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 26488193288671868271136308086651207103482476677616809497270615465593204328193);
+        
+        vm.warp(block.timestamp + 3104);
+        vm.roll(block.number + 9843);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 27);
+        vm.roll(block.number + 33807);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(647039470962242629982738107531256117723224728418570754868649468980109355426);
+        
+        vm.warp(block.timestamp + 392618);
+        vm.roll(block.number + 3349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 77727122541922749913389776182653335459713842498474962939985630968554795778810);
+        
+        vm.warp(block.timestamp + 214051);
+        vm.roll(block.number + 14552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 877);
+        vm.roll(block.number + 36751);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 463433);
+        vm.roll(block.number + 28610);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 506);
+        vm.roll(block.number + 39539);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 79077289510568856094633813281299975805886197122475384867715154217055573350896);
+    }
+    
+    
+    function test_auto_transferFrom_2() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 69421592877790260786394013664909629110907556495007340010795947189667378914693);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 7541);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 326786);
+        vm.roll(block.number + 32307);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 190081);
+        vm.roll(block.number + 12540);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 40744);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 29081);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 2263814384821167129360555852796309292054962897954700409037258932358241747561);
+        
+        vm.warp(block.timestamp + 322350);
+        vm.roll(block.number + 3601);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(52011026723380361473603800658377312553824370067890231561152661123192514731741);
+        
+        vm.warp(block.timestamp + 598531);
+        vm.roll(block.number + 40082);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 10494);
+        vm.roll(block.number + 21844);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 36125822750411482260170530625988240531249807279712160766195660268266271889122);
+        
+        vm.warp(block.timestamp + 172835);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 253765);
+        vm.roll(block.number + 24762);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 62125467668355474134}(115792089237316195423570985008687907853269984665640564039457584007913128639936);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 23718);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 417);
+        
+        vm.warp(block.timestamp + 575565);
+        vm.roll(block.number + 2388);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 27540848903458924010}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 46309);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(110076648867237716861723292784241685854109193077980057843296743337393080443128);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 49525);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 99411651684669776978104048336618865285639754836707643514154452665608102274300);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 23);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 1425);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 56802646418245516612272652692324203830081703132899029820641589761051622908972);
+        
+        vm.warp(block.timestamp + 445123);
+        vm.roll(block.number + 4899);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 531978);
+        vm.roll(block.number + 7730);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 593093);
+        vm.roll(block.number + 29225);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(82078746254255543889503895620852067548343587059293967303200440882951986055799);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 15564);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(44597460384473281610739005508134358229495625682518939930599744128483886302576);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 7799257779506036155449121558374879646039697316971468023351633263843048463552);
+        
+        vm.warp(block.timestamp + 514416);
+        vm.roll(block.number + 37285);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 87043169900747901012}(89029818431055022469174176495147397205656042753863280756010142447636068565364);
+        
+        vm.warp(block.timestamp + 455852);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 2067);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 54885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 77613);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 578378);
+        vm.roll(block.number + 42590);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(76736441586785121570575764946461493028268248352145468040322351898720368515450);
+        
+        vm.warp(block.timestamp + 527);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(23065042026613476682880429170909157522555070861809447480096288640769576271526);
+        
+        vm.warp(block.timestamp + 412758);
+        vm.roll(block.number + 40155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 11520);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 32798);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(103017441232192099654491335395275843167072185289019548469074432861937600951677, 10771076330331287489809584615016914966944272379265565738049323930270172970530);
+        
+        vm.warp(block.timestamp + 594253);
+        vm.roll(block.number + 20991);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 142297);
+        vm.roll(block.number + 53331);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 90830);
+        vm.roll(block.number + 30398);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 387022);
+        vm.roll(block.number + 12857);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 2907478787319180726}(1094056323921102145264363233593066993263072566869364979937237968177381688872);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 53045);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000000000, 57693249403345312478347695573501092206759344691625988658790526965168208694895);
+        
+        vm.warp(block.timestamp + 158349);
+        vm.roll(block.number + 7696);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 401307);
+        vm.roll(block.number + 3099);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 465);
+        vm.roll(block.number + 5778);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 79172827623976013546549053538211306007367549085332184414516532751123730303356);
+        
+        vm.warp(block.timestamp + 294889);
+        vm.roll(block.number + 53023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 30398);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 65994605733580595230285130291922739365586937576477805436965729888380745467838);
+        
+        vm.warp(block.timestamp + 226899);
+        vm.roll(block.number + 9550);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 514417);
+        vm.roll(block.number + 18829);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 33323228810165468285292346842970574927675207543860349256055106351687888069033);
+        
+        vm.warp(block.timestamp + 532786);
+        vm.roll(block.number + 51339);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 73024);
+        vm.roll(block.number + 7022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 88760533066733675885312868864402448067987848100115122128364031030343012985502);
+        
+        vm.warp(block.timestamp + 453913);
+        vm.roll(block.number + 39409);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 378092);
+        vm.roll(block.number + 44881);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 46417982050497087520636255950176060367784358087899902213363511651091226569150);
+        
+        vm.warp(block.timestamp + 366250);
+        vm.roll(block.number + 34479);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 161870);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 39602614392633443655262940145294767427991928551448040416734248433992180797561);
+        
+        vm.warp(block.timestamp + 317807);
+        vm.roll(block.number + 54433);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 562427);
+        vm.roll(block.number + 22529);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 43867847235889511425133426556304387771316230879459553240164638593035885884173);
+        
+        vm.warp(block.timestamp + 329314);
+        vm.roll(block.number + 25288);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125466668355474134}(902);
+        
+        vm.warp(block.timestamp + 95978);
+        vm.roll(block.number + 33158);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 108638);
+        vm.roll(block.number + 22084);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 590645);
+        vm.roll(block.number + 13009);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 237);
+        vm.roll(block.number + 40347);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 661451981}(372725074618422343206407046256720945813238823824533386456626520773745191);
+        
+        vm.warp(block.timestamp + 109636);
+        vm.roll(block.number + 20647);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 72467967740734659428019272307980086730300617951281083);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 36400);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 267277);
+        vm.roll(block.number + 55997);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 17089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 48499592236950163435247545589977561252178678640435921758890009711428822718839);
+        
+        vm.warp(block.timestamp + 429437);
+        vm.roll(block.number + 19334);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(11827639686315492985287520837260357989933996535169668772927943141120880718122, 753);
+        
+        vm.warp(block.timestamp + 317405);
+        vm.roll(block.number + 48605);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 47289016626847629748}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 91217);
+        vm.roll(block.number + 1096);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 26845);
+        vm.roll(block.number + 24652);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 271062);
+        vm.roll(block.number + 47555);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 46952449318313407261212927104179009843703786007369227983906653911859885997083);
+        
+        vm.warp(block.timestamp + 415296);
+        vm.roll(block.number + 30807);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 106163);
+        vm.roll(block.number + 13068);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 144153);
+        vm.roll(block.number + 20868);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000010000, false);
+        
+        vm.warp(block.timestamp + 574148);
+        vm.roll(block.number + 57856);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(81982365199114624509495268654034310369027515157022901372254104229951939643, 4909673800080496144873077077778066887301431153152231506707405445835947901838);
+        
+        vm.warp(block.timestamp + 292111);
+        vm.roll(block.number + 60059);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 978);
+        vm.roll(block.number + 19942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 108805485181435435513737055880292124961648540033691933600639876619750347490969);
+        
+        vm.warp(block.timestamp + 108604);
+        vm.roll(block.number + 18646);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 99251568793308019573435407319412362729128051085024643383006300470397001394037);
+        
+        vm.warp(block.timestamp + 576579);
+        vm.roll(block.number + 23633);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(91300416755053276214174241617645603906581003331985343168373979341729623048395, 102663752605259447993078457494232874045729309885845484933623306200224140057507);
+        
+        vm.warp(block.timestamp + 171);
+        vm.roll(block.number + 43656);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.balanceOf(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 264076);
+        vm.roll(block.number + 57525);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 35609);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 659);
+        vm.roll(block.number + 13715);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 197858);
+        vm.roll(block.number + 33323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 323347);
+        vm.roll(block.number + 57935);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(26611505664952079712982963859583235018842791472016161029156761027985321594885, 736);
+        
+        vm.warp(block.timestamp + 251195);
+        vm.roll(block.number + 55410);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 116037);
+        vm.roll(block.number + 9792);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 98625);
+        vm.roll(block.number + 2953);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639914);
+        
+        vm.warp(block.timestamp + 114490);
+        vm.roll(block.number + 39278);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000020000, 50437029283587689541016449699717895066354125200056080301312337380819374516812);
+        
+        vm.warp(block.timestamp + 456);
+        vm.roll(block.number + 25935);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 211633);
+        vm.roll(block.number + 4393);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(388);
+        
+        vm.warp(block.timestamp + 264263);
+        vm.roll(block.number + 51752);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 339850);
+        vm.roll(block.number + 40082);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(140551463536160254089062761707812899402695327705956257742098659);
+        
+        vm.warp(block.timestamp + 418395);
+        vm.roll(block.number + 25327);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 542878);
+        vm.roll(block.number + 51032);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+    }
+    
+    
+    function test_auto_approve_3() public { 
+        
+        vm.warp(block.timestamp + 449614);
+        vm.roll(block.number + 36764);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 820);
+        
+        vm.warp(block.timestamp + 95978);
+        vm.roll(block.number + 13811);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 53686321431533907387}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 266173);
+        vm.roll(block.number + 43905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, false);
+        
+        vm.warp(block.timestamp + 33620);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 64855);
+        vm.roll(block.number + 49052);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 366633);
+        vm.roll(block.number + 45435);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 246);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 493900);
+        vm.roll(block.number + 9241);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 515}(23999997);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 39249);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 377);
+        vm.roll(block.number + 56232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 385335);
+        vm.roll(block.number + 29753);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 926);
+        vm.roll(block.number + 55990);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 49367352349902766678}(718);
+        
+        vm.warp(block.timestamp + 101014);
+        vm.roll(block.number + 27617);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 352942);
+        vm.roll(block.number + 31101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 349075);
+        vm.roll(block.number + 45846);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 68611);
+        vm.roll(block.number + 11582);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 108638);
+        vm.roll(block.number + 21122);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000020000, 57648633778747312819780774547475191780417912054555538476475945013156120520286);
+        
+        vm.warp(block.timestamp + 584353);
+        vm.roll(block.number + 20162);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(9903544469302391474237340620354541079901172954237079233459375148988010185964);
+        
+        vm.warp(block.timestamp + 563761);
+        vm.roll(block.number + 21561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 326786);
+        vm.roll(block.number + 20858);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639909);
+        
+        vm.warp(block.timestamp + 73);
+        vm.roll(block.number + 20759);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 296636);
+        vm.roll(block.number + 783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 902}(3354118537611753606506500529603398170310470891290231104766421756147924018899);
+        
+        vm.warp(block.timestamp + 453913);
+        vm.roll(block.number + 51108);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 134927);
+        vm.roll(block.number + 56266);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 65441604490918687236}(23180450975341944974129115572808562126607168573552812578080796563528411568803);
+        
+        vm.warp(block.timestamp + 74551);
+        vm.roll(block.number + 23797);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(636, 48054088312248161847068158088144439246760688693683811483785086313002400599417);
+        
+        vm.warp(block.timestamp + 394206);
+        vm.roll(block.number + 532);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 12895101966014557518059772067207890911);
+        
+        vm.warp(block.timestamp + 119532);
+        vm.roll(block.number + 58456);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 3597);
+        vm.roll(block.number + 51185);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 105075516329607447223319571701311581802948490266722021486387636042815542180222);
+        
+        vm.warp(block.timestamp + 142163);
+        vm.roll(block.number + 12540);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 22279);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(8615545138216059190871014248487052127877699582234595754803467413468560237019);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 40179);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(464);
+        
+        vm.warp(block.timestamp + 335765);
+        vm.roll(block.number + 28610);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(1086654211758439568334491442835349121519975033016944853017386429644355236632);
+        
+        vm.warp(block.timestamp + 56745);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 26948995417097110425841685184854251670990534917366221884209131443757675698123);
+        
+        vm.warp(block.timestamp + 310069);
+        vm.roll(block.number + 3603);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(7554479236835998430513963551766750057978001020165427561757591234946803961767);
+        
+        vm.warp(block.timestamp + 351081);
+        vm.roll(block.number + 59481);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 554);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 441453);
+        vm.roll(block.number + 37781);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(64413390932531167666172406726633150132410973938909990667088857299276006159709, 52106256772757876167286496370828396868854579643993401769814810813497690937161);
+        
+        vm.warp(block.timestamp + 119686);
+        vm.roll(block.number + 25879);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 184781);
+        vm.roll(block.number + 44118);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 330610);
+        vm.roll(block.number + 25664);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 493900);
+        vm.roll(block.number + 13261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(76146366869263651431879278590874745004972351078865889257706277999221700645521);
+        
+        vm.warp(block.timestamp + 433303);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 78384);
+        vm.roll(block.number + 12506);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 116773);
+        vm.roll(block.number + 28551);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 119532);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 105413271338301053400158579193080069318640127635629524359356481836725493638869);
+        
+        vm.warp(block.timestamp + 439997);
+        vm.roll(block.number + 9176);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 92792821263489549181}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 24473);
+        vm.roll(block.number + 965);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(58663607188762429603423878270981534785541557057115927172776547694201364601752, 39481346657345111829453050835745741943951775062128630562443926155297665624001);
+        
+        vm.warp(block.timestamp + 424079);
+        vm.roll(block.number + 54470);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 455852);
+        vm.roll(block.number + 2953);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(70567443894126595618730883531158584313215669621809631321052687881985722592301);
+        
+        vm.warp(block.timestamp + 59796);
+        vm.roll(block.number + 41764);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000020000, false);
+        
+        vm.warp(block.timestamp + 24691);
+        vm.roll(block.number + 941);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000020000, 82570413009129756549829238581504372477783276555661913244100155895177531873162);
+        
+        vm.warp(block.timestamp + 316211);
+        vm.roll(block.number + 19937);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 382122);
+        vm.roll(block.number + 29034);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 318776);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 85409519617392854843501949444432642185663580510606446706682555075791722094096);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 4999);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 418397);
+        vm.roll(block.number + 15983);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 47051531077371023595505919143905281919848426460287401989272617205314666905623);
+        
+        vm.warp(block.timestamp + 377477);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, 1344462913999172983360968746489524904848800524627535208781043030545238401768);
+        
+        vm.warp(block.timestamp + 10494);
+        vm.roll(block.number + 1424);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 33201);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 330964);
+        vm.roll(block.number + 25288);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 15792);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 445123);
+        vm.roll(block.number + 22932);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 98625);
+        vm.roll(block.number + 44295);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 57314914420420775267}(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 532);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 340360);
+        vm.roll(block.number + 24761);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 53965);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 108638);
+        vm.roll(block.number + 22932);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 73919265579526306802}(809);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 19438);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 14154);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 531979);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 120100);
+        vm.roll(block.number + 12540);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 571860);
+        vm.roll(block.number + 21352);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 106551870401212532181807433992735477196983844823390081467317758185601552444402);
+        
+        vm.warp(block.timestamp + 219763);
+        vm.roll(block.number + 46073);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 508784);
+        vm.roll(block.number + 1422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 103970);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 22772}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 320939);
+        vm.roll(block.number + 14154);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 301250);
+        vm.roll(block.number + 29547);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 384064);
+        vm.roll(block.number + 8834);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 170049);
+        vm.roll(block.number + 56067);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 34886);
+        vm.roll(block.number + 17971);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 4584545321113246952967323935076061049708687094728011974440380988782362558472);
+        
+        vm.warp(block.timestamp + 326786);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000000000, 83852929507281946624409794046197873349169220693125355958968546712535822259636);
+        
+        vm.warp(block.timestamp + 24);
+        vm.roll(block.number + 56261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, false);
+        
+        vm.warp(block.timestamp + 317217);
+        vm.roll(block.number + 2300);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 138334);
+        vm.roll(block.number + 36127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(57143802254747425701687775109817334584002880644113987246747186620207238260865);
+        
+        vm.warp(block.timestamp + 514413);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 584353);
+        vm.roll(block.number + 2272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 411249);
+        vm.roll(block.number + 32305);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 22);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 83263024930871277790620843193205890281145114524444245240961055059709078690642);
+        
+        vm.warp(block.timestamp + 122455);
+        vm.roll(block.number + 28749);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 24000002);
+        
+        vm.warp(block.timestamp + 202688);
+        vm.roll(block.number + 40740);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 288);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 119685);
+        vm.roll(block.number + 3599);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 86163);
+        vm.roll(block.number + 7295);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(23999999);
+        
+        vm.warp(block.timestamp + 130244);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 1178080780098328126}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 202685);
+        vm.roll(block.number + 15534);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 39852860726810035420795420228194760037089625015835792980011843959416654118157);
+        
+        vm.warp(block.timestamp + 812);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(0, 16955433020222483485670750448977764558235508349189714574442568472893498610994);
+        
+        vm.warp(block.timestamp + 508784);
+        vm.roll(block.number + 26656);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+    }
+    
+    
+    function test_auto_transferFrom_4() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 69421592877790260786394013664909629110907556495007340010795947189667378914693);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(83139737705898914080168219902598693061561715036224298439703791344668489570584, 90211558252046026857880514078242916351205078592573132182852973180458192230183);
+        
+        vm.warp(block.timestamp + 223059);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(104510289546923359902214721749214311227702198039580499862909754262475577622747);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 38971);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 356827);
+        vm.roll(block.number + 49820);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 267}(1153443827418577407928858137137);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 40742);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 166441);
+        vm.roll(block.number + 25844);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 259173);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 39256);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 41289);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 335765);
+        vm.roll(block.number + 752);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 368352);
+        vm.roll(block.number + 672);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 34367);
+        vm.roll(block.number + 34414);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(96863181165779669173077500059131037916939333354612633528624157930004801677382, 94793056148215398363385933748707950271003890291023962215470608251434435279850);
+        
+        vm.warp(block.timestamp + 74146);
+        vm.roll(block.number + 43362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 441453);
+        vm.roll(block.number + 7541);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 45788910123907809312667043505813251370425565865985365083849848537038076184326);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 10873);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 94480744500101525262}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 3601);
+        vm.roll(block.number + 24985);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 467763);
+        vm.roll(block.number + 4998);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 670780677356136008}(5841359578103725214230145477681116372580635180063610690791629638626084792011);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 190129);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 16262);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 393);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 32301);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 79702055901335079528432631227765125057413189372906873566832295876723115943230);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 16262);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 5003);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 70089742150289225956}(15118073757848856758720689412073719197158027036428190627051455854570307480307);
+        
+        vm.warp(block.timestamp + 315963);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 3702120399968169508231036120827154749011796446072885383392032817746856011184);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 32325);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000020000, true);
+        
+        vm.warp(block.timestamp + 514414);
+        vm.roll(block.number + 2835);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 184781);
+        vm.roll(block.number + 41764);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 574924);
+        vm.roll(block.number + 40082);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 87324);
+        vm.roll(block.number + 40740);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 15984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 107511426299576126499770662687069344562027708178771991598731817345593751865674);
+        
+        vm.warp(block.timestamp + 16631);
+        vm.roll(block.number + 59934);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 96803048703524169240952596131991523069275965662405893499366236321963197436771);
+        
+        vm.warp(block.timestamp + 318775);
+        vm.roll(block.number + 35425);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000020000, 9165770765324540224253147790426586261040575802168098331948898948317970514878);
+        
+        vm.warp(block.timestamp + 235);
+        vm.roll(block.number + 44549);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 53857);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, false);
+        
+        vm.warp(block.timestamp + 190081);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 41061627975156557020604966455246357);
+        
+        vm.warp(block.timestamp + 242022);
+        vm.roll(block.number + 1400);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 60549696247299284343209946650697627131501023225932050774376835378167408033997);
+        
+        vm.warp(block.timestamp + 68612);
+        vm.roll(block.number + 46538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 412759);
+        vm.roll(block.number + 29547);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 69100468706274483466085133189067511483464628951541142939377207981313305609312);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 4999);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 92019893726001798732446610327838658247305644791740922970458799947303274572087);
+        
+        vm.warp(block.timestamp + 377477);
+        vm.roll(block.number + 23);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 879);
+        vm.roll(block.number + 29753);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 27992331922535464881766236668544301015210340271439967412157942187353034129698);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 49052);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 33198);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 110166048467179295854643411764752122446429929276083637843911606278899912068632);
+        
+        vm.warp(block.timestamp + 131262);
+        vm.roll(block.number + 48226);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 39272211697205994273654687530138892749351940370079746772480032058088978816438);
+        
+        vm.warp(block.timestamp + 230);
+        vm.roll(block.number + 14151);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 532);
+        vm.roll(block.number + 43961);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(46829733556593946443371634223855654990233988624136343159756832860309516503930, 91888204518783754067898033653469817182433604557109721590321023802340034292756);
+        
+        vm.warp(block.timestamp + 374036);
+        vm.roll(block.number + 47845);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 66687444594804382716477738724922721636946308139260419667192569232273163060817);
+        
+        vm.warp(block.timestamp + 272718);
+        vm.roll(block.number + 45912);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 531978);
+        vm.roll(block.number + 56397);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 24000002}(46829733556593946443371634223855654990233988624136343159756832860309516503930);
+        
+        vm.warp(block.timestamp + 353833);
+        vm.roll(block.number + 21092);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 392591);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 8585391950249344883813166795840737839410504250753572577344650022361966936767);
+        
+        vm.warp(block.timestamp + 436794);
+        vm.roll(block.number + 52720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(1524785991, 25532475697505654429400175492010666790495349034004497192091581661130385471495);
+        
+        vm.warp(block.timestamp + 171457);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 80765208032007787377378280980043451219589739991511392331291934560055205035467);
+        
+        vm.warp(block.timestamp + 398952);
+        vm.roll(block.number + 41257);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 81876159567794426368}(72669338552514800044821086859813241686933716642636061155375435570322882098669);
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 36598);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 514415);
+        vm.roll(block.number + 58906);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 91327257325059537502736551955933706168585057616006191614046159116644642552481);
+        
+        vm.warp(block.timestamp + 212524);
+        vm.roll(block.number + 52369);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 412760);
+        vm.roll(block.number + 31550);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 109720076961557418646182840833120781657426710400638149902158138345905247431010);
+        
+        vm.warp(block.timestamp + 170232);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 158349);
+        vm.roll(block.number + 74);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 3365733);
+        
+        vm.warp(block.timestamp + 545889);
+        vm.roll(block.number + 45911);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 475285);
+        vm.roll(block.number + 9253);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 571925);
+        vm.roll(block.number + 49522);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 83263024930871277790620843193205890281145114524444245240961055059709078690642);
+        
+        vm.warp(block.timestamp + 322353);
+        vm.roll(block.number + 46174);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 287532);
+        vm.roll(block.number + 26296);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 588964);
+        vm.roll(block.number + 691);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 475285);
+        vm.roll(block.number + 60419);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(2541301031065915087763709492258090221244012518068559461257464900818376418299);
+        
+        vm.warp(block.timestamp + 201);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(67397915788882108221901319116382085789606148344961171730876028393561161539201, 941);
+        
+        vm.warp(block.timestamp + 353833);
+        vm.roll(block.number + 35133);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 103970);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 918);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 24009);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 202688);
+        vm.roll(block.number + 14347);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(88899225546658943851036770265026775503721641991032275735301751477502207977200, 31395617346613951089756774273721411320543843263051788090010750308380053220478);
+        
+        vm.warp(block.timestamp + 758);
+        vm.roll(block.number + 36277);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 24);
+        vm.roll(block.number + 727);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 346419);
+        vm.roll(block.number + 7567);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 229536);
+        vm.roll(block.number + 22283);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 370624);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 379267);
+        vm.roll(block.number + 42701);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 109233851467836925211755860068287585806310557345039531202179005529512869898219);
+        
+        vm.warp(block.timestamp + 26845);
+        vm.roll(block.number + 3602);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(74);
+        
+        vm.warp(block.timestamp + 202688);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 591457);
+        vm.roll(block.number + 19893);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 29666533824030175214349753909230699030766157882095899476787098440307452572763);
+        
+        vm.warp(block.timestamp + 64491);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 93985614497278604309533484875222657693410501904543373922432314592939456777061);
+        
+        vm.warp(block.timestamp + 276788);
+        vm.roll(block.number + 2388);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 334485);
+        vm.roll(block.number + 521);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 319507);
+        vm.roll(block.number + 56478);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 507680);
+        vm.roll(block.number + 40665);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 23999998);
+    }
+    
+    
+    function test_auto_preSale_5() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 69421592877790260786394013664909629110907556495007340010795947189667378914693);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 7541);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 326786);
+        vm.roll(block.number + 32307);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 190081);
+        vm.roll(block.number + 12540);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 40744);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 29081);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 2263814384821167129360555852796309292054962897954700409037258932358241747561);
+        
+        vm.warp(block.timestamp + 322350);
+        vm.roll(block.number + 3601);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(52011026723380361473603800658377312553824370067890231561152661123192514731741);
+        
+        vm.warp(block.timestamp + 598531);
+        vm.roll(block.number + 40082);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 10494);
+        vm.roll(block.number + 21844);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 36125822750411482260170530625988240531249807279712160766195660268266271889122);
+        
+        vm.warp(block.timestamp + 172835);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 253765);
+        vm.roll(block.number + 24762);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 62125467668355474134}(115792089237316195423570985008687907853269984665640564039457584007913128639936);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 23718);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 417);
+        
+        vm.warp(block.timestamp + 575565);
+        vm.roll(block.number + 2388);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 27540848903458924010}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 46309);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(110076648867237716861723292784241685854109193077980057843296743337393080443128);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 49525);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 99411651684669776978104048336618865285639754836707643514154452665608102274300);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 23);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 1425);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 56802646418245516612272652692324203830081703132899029820641589761051622908972);
+        
+        vm.warp(block.timestamp + 445123);
+        vm.roll(block.number + 4899);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 531978);
+        vm.roll(block.number + 7730);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 593093);
+        vm.roll(block.number + 29225);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(82078746254255543889503895620852067548343587059293967303200440882951986055799);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 15564);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(44597460384473281610739005508134358229495625682518939930599744128483886302576);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 7799257779506036155449121558374879646039697316971468023351633263843048463552);
+        
+        vm.warp(block.timestamp + 514416);
+        vm.roll(block.number + 37285);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 87043169900747901012}(89029818431055022469174176495147397205656042753863280756010142447636068565364);
+        
+        vm.warp(block.timestamp + 455852);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 2067);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 54885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 77613);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 578378);
+        vm.roll(block.number + 42590);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(76736441586785121570575764946461493028268248352145468040322351898720368515450);
+        
+        vm.warp(block.timestamp + 527);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(23065042026613476682880429170909157522555070861809447480096288640769576271526);
+        
+        vm.warp(block.timestamp + 412758);
+        vm.roll(block.number + 40155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 11520);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 32798);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(103017441232192099654491335395275843167072185289019548469074432861937600951677, 10771076330331287489809584615016914966944272379265565738049323930270172970530);
+        
+        vm.warp(block.timestamp + 594253);
+        vm.roll(block.number + 20991);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 142297);
+        vm.roll(block.number + 53331);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 90830);
+        vm.roll(block.number + 30398);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 387022);
+        vm.roll(block.number + 12857);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 2907478787319180726}(1094056323921102145264363233593066993263072566869364979937237968177381688872);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 53045);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000000000, 57693249403345312478347695573501092206759344691625988658790526965168208694895);
+        
+        vm.warp(block.timestamp + 158349);
+        vm.roll(block.number + 7696);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 401307);
+        vm.roll(block.number + 3099);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 465);
+        vm.roll(block.number + 5778);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 79172827623976013546549053538211306007367549085332184414516532751123730303356);
+        
+        vm.warp(block.timestamp + 294889);
+        vm.roll(block.number + 53023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 30398);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 65994605733580595230285130291922739365586937576477805436965729888380745467838);
+        
+        vm.warp(block.timestamp + 226899);
+        vm.roll(block.number + 9550);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 514417);
+        vm.roll(block.number + 18829);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 33323228810165468285292346842970574927675207543860349256055106351687888069033);
+        
+        vm.warp(block.timestamp + 532786);
+        vm.roll(block.number + 51339);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 73024);
+        vm.roll(block.number + 7022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 88760533066733675885312868864402448067987848100115122128364031030343012985502);
+        
+        vm.warp(block.timestamp + 453913);
+        vm.roll(block.number + 39409);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 378092);
+        vm.roll(block.number + 44881);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 46417982050497087520636255950176060367784358087899902213363511651091226569150);
+        
+        vm.warp(block.timestamp + 366250);
+        vm.roll(block.number + 34479);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 161870);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 39602614392633443655262940145294767427991928551448040416734248433992180797561);
+        
+        vm.warp(block.timestamp + 317807);
+        vm.roll(block.number + 54433);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 562427);
+        vm.roll(block.number + 22529);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 43867847235889511425133426556304387771316230879459553240164638593035885884173);
+        
+        vm.warp(block.timestamp + 329314);
+        vm.roll(block.number + 25288);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125466668355474134}(902);
+        
+        vm.warp(block.timestamp + 95978);
+        vm.roll(block.number + 33158);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 108638);
+        vm.roll(block.number + 22084);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 26845);
+        vm.roll(block.number + 14527);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 4077626821325270386}(405);
+        
+        vm.warp(block.timestamp + 267076);
+        vm.roll(block.number + 24498);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(59198659053386185149474844074979958245592400018581305000848215230250257949359, 25198862782371309732120727011825698551383793730249201394125253898108989134885);
+        
+        vm.warp(block.timestamp + 353644);
+        vm.roll(block.number + 24557);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.infoStableSystem();
+        
+        vm.warp(block.timestamp + 508783);
+        vm.roll(block.number + 57079);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 70702236412112787871}(89018026043534057240906804408932196504398653585142265718740751269650642645874);
+        
+        vm.warp(block.timestamp + 27953);
+        vm.roll(block.number + 55075);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 374103);
+        vm.roll(block.number + 9245);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 75593569151068672837002149336186619324309512145900476481108638099153461887773);
+        
+        vm.warp(block.timestamp + 413593);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 121059);
+        vm.roll(block.number + 792);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 429437);
+        vm.roll(block.number + 14836);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 532786);
+        vm.roll(block.number + 14556);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 19627);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 318777);
+        vm.roll(block.number + 1778);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 340000000);
+        
+        vm.warp(block.timestamp + 114153);
+        vm.roll(block.number + 24557);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 314285);
+        vm.roll(block.number + 30037);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(418);
+        
+        vm.warp(block.timestamp + 229536);
+        vm.roll(block.number + 27);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 110322048972484106753928042239540862966287958989699030728677780271194990722876);
+        
+        vm.warp(block.timestamp + 388416);
+        vm.roll(block.number + 403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 16237746490852015106}(2546889065230772396457675960919672719769948235773522679);
+        
+        vm.warp(block.timestamp + 578422);
+        vm.roll(block.number + 857);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 358308);
+        vm.roll(block.number + 25664);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 120807);
+        vm.roll(block.number + 29077);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 34264774227255795079769498743344285985286462091931012807985328276701499840730);
+        
+        vm.warp(block.timestamp + 68608);
+        vm.roll(block.number + 54442);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 158995);
+        vm.roll(block.number + 18771);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 530656);
+        vm.roll(block.number + 45547);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 64120721907595032740}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 64345);
+        vm.roll(block.number + 54199);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 549690);
+        vm.roll(block.number + 18045);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 18994);
+        vm.roll(block.number + 43436);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 432537);
+        vm.roll(block.number + 802);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(10414597443370914189553906922660819542231129039153939727541101458546702277189, 179);
+        
+        vm.warp(block.timestamp + 531976);
+        vm.roll(block.number + 2063);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 966);
+        
+        vm.warp(block.timestamp + 482893);
+        vm.roll(block.number + 31637);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 25998);
+        vm.roll(block.number + 40082);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 281164);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 74072912887745911840619208325295466480878313223373938136992008190266600687090);
+        
+        vm.warp(block.timestamp + 428755);
+        vm.roll(block.number + 37772);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(393, 10189064312007190884731313697779294584130533312099935041988194373176919210816);
+        
+        vm.warp(block.timestamp + 396507);
+        vm.roll(block.number + 33588);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 582793);
+        vm.roll(block.number + 184);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 55802486512607469197887531028204833176586483050515575213970067650244576987896);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 6801);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 245935);
+        vm.roll(block.number + 36276);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 39224398136264630248}(7994814641285013387714569344107501173566184276734678300420004669963020387189);
+    }
+    
+    
+    function test_auto_preSaleFinished_6() public { 
+        
+        vm.warp(block.timestamp + 318776);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 85409519617392854843501949444432642185663580510606446706682555075791722094096);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 4999);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 418397);
+        vm.roll(block.number + 15983);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 47051531077371023595505919143905281919848426460287401989272617205314666905623);
+        
+        vm.warp(block.timestamp + 377477);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, 1344462913999172983360968746489524904848800524627535208781043030545238401768);
+        
+        vm.warp(block.timestamp + 10494);
+        vm.roll(block.number + 1424);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 33201);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 330964);
+        vm.roll(block.number + 25288);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 15792);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 445123);
+        vm.roll(block.number + 22932);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 98625);
+        vm.roll(block.number + 44295);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 57314914420420775267}(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 532);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 340360);
+        vm.roll(block.number + 24761);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 53965);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 108638);
+        vm.roll(block.number + 22932);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 73919265579526306802}(809);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 19438);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 14154);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 531979);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 120100);
+        vm.roll(block.number + 12540);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 571860);
+        vm.roll(block.number + 21352);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 106551870401212532181807433992735477196983844823390081467317758185601552444402);
+        
+        vm.warp(block.timestamp + 219763);
+        vm.roll(block.number + 46073);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 508784);
+        vm.roll(block.number + 1422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 103970);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 22772}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 320939);
+        vm.roll(block.number + 14154);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 301250);
+        vm.roll(block.number + 29547);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 384064);
+        vm.roll(block.number + 8834);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 170049);
+        vm.roll(block.number + 56067);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 34886);
+        vm.roll(block.number + 17971);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 4584545321113246952967323935076061049708687094728011974440380988782362558472);
+        
+        vm.warp(block.timestamp + 326786);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000000000, 83852929507281946624409794046197873349169220693125355958968546712535822259636);
+        
+        vm.warp(block.timestamp + 24);
+        vm.roll(block.number + 56261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, false);
+        
+        vm.warp(block.timestamp + 317217);
+        vm.roll(block.number + 2300);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 138334);
+        vm.roll(block.number + 36127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(57143802254747425701687775109817334584002880644113987246747186620207238260865);
+        
+        vm.warp(block.timestamp + 514413);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 584353);
+        vm.roll(block.number + 2272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 411249);
+        vm.roll(block.number + 32305);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 22);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 83263024930871277790620843193205890281145114524444245240961055059709078690642);
+        
+        vm.warp(block.timestamp + 122455);
+        vm.roll(block.number + 28749);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 24000002);
+        
+        vm.warp(block.timestamp + 202688);
+        vm.roll(block.number + 40740);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 288);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 119685);
+        vm.roll(block.number + 3599);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 86163);
+        vm.roll(block.number + 7295);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(23999999);
+        
+        vm.warp(block.timestamp + 130244);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 1178080780098328126}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 202685);
+        vm.roll(block.number + 15534);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 39852860726810035420795420228194760037089625015835792980011843959416654118157);
+        
+        vm.warp(block.timestamp + 812);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(0, 16955433020222483485670750448977764558235508349189714574442568472893498610994);
+        
+        vm.warp(block.timestamp + 508784);
+        vm.roll(block.number + 26656);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 33203);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(0);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 40347);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 119689);
+        vm.roll(block.number + 55);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 361581);
+        vm.roll(block.number + 5003);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(27139502843286433669741579603678563552509298973994279053124386490667182075441, 24513883466259727122081887886131044457968755651149854021607252159450094186435);
+        
+        vm.warp(block.timestamp + 492);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 13656804139515586997}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 43427);
+        vm.roll(block.number + 40741);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 4999809246085260147479777589804562209956680312063495484588530083965643816390);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 5259);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.allowance(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 202688);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 21393);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 395201);
+        vm.roll(block.number + 32307);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 104177264055684630400577848185510807619946751823934331438155051424419906037301);
+        
+        vm.warp(block.timestamp + 342410);
+        vm.roll(block.number + 939);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 395201);
+        vm.roll(block.number + 1422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 206787);
+        vm.roll(block.number + 23797);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 514418);
+        vm.roll(block.number + 51339);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 63081433496059334993805469637726415906694494617148421089368805561421305956764);
+        
+        vm.warp(block.timestamp + 63325);
+        vm.roll(block.number + 33200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 14283);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 322350);
+        vm.roll(block.number + 15980);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 50761);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 162183);
+        vm.roll(block.number + 29226);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 531979);
+        vm.roll(block.number + 377);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(107961233367034555334382598049192143751505046914242225595578828777819304291030, 35656895029821436796510031217262657754254947175695059635611597165536834677675);
+        
+        vm.warp(block.timestamp + 317217);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 95309101068017797178}(5);
+        
+        vm.warp(block.timestamp + 339233);
+        vm.roll(block.number + 6622);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 941);
+        
+        vm.warp(block.timestamp + 361581);
+        vm.roll(block.number + 5395);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 633}(1077312952339088125809230904743598);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 516568);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 598531);
+        vm.roll(block.number + 56261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 100446058366196079863386387417132831132674234209308442228315838195918284856500);
+        
+        vm.warp(block.timestamp + 531975);
+        vm.roll(block.number + 3583);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 18284891037599885052}(43052309875715825768630314566421798831455689253668532096793653570770378934607);
+        
+        vm.warp(block.timestamp + 205639);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 87043169900747901012}(110018068736196315978461718376028646697135432164984916008193420155400475148322);
+        
+        vm.warp(block.timestamp + 369746);
+        vm.roll(block.number + 49521);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 1374684764383623202828409791822499976275918917268402110691993533864714666490);
+        
+        vm.warp(block.timestamp + 86163);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 253765);
+        vm.roll(block.number + 43088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 334227);
+        vm.roll(block.number + 42701);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 348073);
+        vm.roll(block.number + 49525);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 68613);
+        vm.roll(block.number + 26);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 129824);
+        vm.roll(block.number + 5000);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 377);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 369427);
+        vm.roll(block.number + 9550);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(126, 259372570720537185973175870334536204095899852644014942950529481);
+        
+        vm.warp(block.timestamp + 287864);
+        vm.roll(block.number + 38092);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 28627);
+        vm.roll(block.number + 49527);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 24000000}(167500000);
+        
+        vm.warp(block.timestamp + 386945);
+        vm.roll(block.number + 3602);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 26592500358492599692}(39128840039164560660834876840347408080533630359308137095893368469390419230541);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 51339);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 3599);
+        vm.roll(block.number + 3601);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(19741707076162827295775508267066418070289706112879152688943777410709610053668);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 7730);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000000000, false);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 126);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 515);
+        vm.roll(block.number + 8570);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 589647);
+        vm.roll(block.number + 9243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 270368);
+        vm.roll(block.number + 21254);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 199996);
+        vm.roll(block.number + 13246);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(60549696247299284343209946650697627131501023225932050774376835378167408033997);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 16262);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 490220);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(1086654211758439568334491442835349121519975033016944853017386429644355236632, 93702545011641248997788206746389006215806853395655829715185924264730389961789);
+        
+        vm.warp(block.timestamp + 508779);
+        vm.roll(block.number + 8295);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 163107);
+        vm.roll(block.number + 29081);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+    }
+    
+    
+    function test_auto_changePreSalePriceIfToHigh_7() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 69421592877790260786394013664909629110907556495007340010795947189667378914693);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(83139737705898914080168219902598693061561715036224298439703791344668489570584, 90211558252046026857880514078242916351205078592573132182852973180458192230183);
+        
+        vm.warp(block.timestamp + 223059);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(104510289546923359902214721749214311227702198039580499862909754262475577622747);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 38971);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 356827);
+        vm.roll(block.number + 49820);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 267}(1153443827418577407928858137137);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 40742);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 166441);
+        vm.roll(block.number + 25844);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 259173);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 39256);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 41289);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 335765);
+        vm.roll(block.number + 752);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 368352);
+        vm.roll(block.number + 672);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 34367);
+        vm.roll(block.number + 34414);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(96863181165779669173077500059131037916939333354612633528624157930004801677382, 94793056148215398363385933748707950271003890291023962215470608251434435279850);
+        
+        vm.warp(block.timestamp + 74146);
+        vm.roll(block.number + 43362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 441453);
+        vm.roll(block.number + 7541);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 45788910123907809312667043505813251370425565865985365083849848537038076184326);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 10873);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 94480744500101525262}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 3601);
+        vm.roll(block.number + 24985);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 467763);
+        vm.roll(block.number + 4998);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 670780677356136008}(5841359578103725214230145477681116372580635180063610690791629638626084792011);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 190129);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 16262);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 393);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 32301);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 79702055901335079528432631227765125057413189372906873566832295876723115943230);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 16262);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 5003);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 70089742150289225956}(15118073757848856758720689412073719197158027036428190627051455854570307480307);
+        
+        vm.warp(block.timestamp + 315963);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 3702120399968169508231036120827154749011796446072885383392032817746856011184);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 32325);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000020000, true);
+        
+        vm.warp(block.timestamp + 514414);
+        vm.roll(block.number + 2835);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 184781);
+        vm.roll(block.number + 41764);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 574924);
+        vm.roll(block.number + 40082);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 87324);
+        vm.roll(block.number + 40740);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 15984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 107511426299576126499770662687069344562027708178771991598731817345593751865674);
+        
+        vm.warp(block.timestamp + 16631);
+        vm.roll(block.number + 59934);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 96803048703524169240952596131991523069275965662405893499366236321963197436771);
+        
+        vm.warp(block.timestamp + 318775);
+        vm.roll(block.number + 35425);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000020000, 9165770765324540224253147790426586261040575802168098331948898948317970514878);
+        
+        vm.warp(block.timestamp + 235);
+        vm.roll(block.number + 44549);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 53857);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, false);
+        
+        vm.warp(block.timestamp + 190081);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 41061627975156557020604966455246357);
+        
+        vm.warp(block.timestamp + 242022);
+        vm.roll(block.number + 1400);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 60549696247299284343209946650697627131501023225932050774376835378167408033997);
+        
+        vm.warp(block.timestamp + 68612);
+        vm.roll(block.number + 46538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 412759);
+        vm.roll(block.number + 29547);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 69100468706274483466085133189067511483464628951541142939377207981313305609312);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 4999);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 92019893726001798732446610327838658247305644791740922970458799947303274572087);
+        
+        vm.warp(block.timestamp + 377477);
+        vm.roll(block.number + 23);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 879);
+        vm.roll(block.number + 29753);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 27992331922535464881766236668544301015210340271439967412157942187353034129698);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 49052);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 33198);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 110166048467179295854643411764752122446429929276083637843911606278899912068632);
+        
+        vm.warp(block.timestamp + 324069);
+        vm.roll(block.number + 59911);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 58146928305139461593}(28595411815114905198264993095264774556703896471841316189209347005878096869692);
+        
+        vm.warp(block.timestamp + 872);
+        vm.roll(block.number + 27383);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 24000003);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 2835);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 411249);
+        vm.roll(block.number + 27099);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000010000, false);
+        
+        vm.warp(block.timestamp + 271003);
+        vm.roll(block.number + 29227);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 24985);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 334261);
+        vm.roll(block.number + 9241);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 59911);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 45);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 361581);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 6866);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1000000000000);
+        
+        vm.warp(block.timestamp + 391061);
+        vm.roll(block.number + 49522);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 69483712954301277365511581730273042110254262231041595533321714649681917217865);
+        
+        vm.warp(block.timestamp + 258200);
+        vm.roll(block.number + 19870);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 229);
+        
+        vm.warp(block.timestamp + 318776);
+        vm.roll(block.number + 59911);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 692);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 87260350407357887287760379985983334901783506433573015899331689396557677313699);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 28450);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 287864);
+        vm.roll(block.number + 32301);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 284336);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 318778);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 184216);
+        vm.roll(block.number + 16177);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 21262);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 31847392686105713143111021426755946778461035872550517350199815291660990762026);
+        
+        vm.warp(block.timestamp + 188879);
+        vm.roll(block.number + 27321);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 48337819795964469566}(83891616692488876665939253342611199608492091506403302878417586669065278819143);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 40742);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 172835);
+        vm.roll(block.number + 44279);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 536886);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 322352);
+        vm.roll(block.number + 288);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 115656101474616772101439920130929220749391117937904688303956330063692679389881);
+        
+        vm.warp(block.timestamp + 119685);
+        vm.roll(block.number + 45547);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(21476468832346219715966302813821522782154539777172294967759877226265803225661, 600);
+        
+        vm.warp(block.timestamp + 412763);
+        vm.roll(block.number + 672);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 13811);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(14479871558494343546047459983557490313418233527762037605063386984226245443025, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 313975);
+        vm.roll(block.number + 38971);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 32304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 119689);
+        vm.roll(block.number + 24764);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 633);
+        vm.roll(block.number + 49526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000020000, true);
+        
+        vm.warp(block.timestamp + 3597);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 395196);
+        vm.roll(block.number + 31511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 202687);
+        vm.roll(block.number + 56264);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 792);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 21262);
+        vm.roll(block.number + 30398);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129636339);
+        
+        vm.warp(block.timestamp + 68611);
+        vm.roll(block.number + 54950);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 469779);
+        vm.roll(block.number + 14232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(78038882537119019730556682580996450388916654423592098555878286866706174811354);
+    }
+    
+    
+    function test_auto_transfer_8() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 33199);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 15979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913128639938);
+        
+        vm.warp(block.timestamp + 395196);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(92291204678326744348727437966115287238834246368165577029123750520283071480736, 9939364999354494664406630418880751589460743490020879900322728668988356467501);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 59900);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 1524785993);
+        
+        vm.warp(block.timestamp + 119685);
+        vm.roll(block.number + 40740);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 531980);
+        vm.roll(block.number + 36277);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 139039);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 571138);
+        vm.roll(block.number + 1426);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 342410);
+        vm.roll(block.number + 9241);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668354474133}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 32306);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 37);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 40744);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 23);
+        vm.roll(block.number + 15978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 52879262649791713072}(955);
+        
+        vm.warp(block.timestamp + 445123);
+        vm.roll(block.number + 58335);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 7149940420871316427848074309721918032292549863614410976087210820454471938704);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 55);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(964, 999999999997);
+        
+        vm.warp(block.timestamp + 318777);
+        vm.roll(block.number + 1426);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000000000, true);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 26087);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 64392618840262950424150151019496602854245410236806971605034571670831949843681);
+        
+        vm.warp(block.timestamp + 514413);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 62125467668355474135}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 55);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 672);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(115024028031575333530191493815480091918387748247581853356801352809996590564382, 30093895333386045401719303726780798735279307157659796182622350059027211373024);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 5001);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129639911, 24365215710730282626462175308818673329811492848506165298044492097494493858472);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129639933, 22925561008400747340648409245019576999938272510112201026495516652963304366443);
+        
+        vm.warp(block.timestamp + 68611);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 24);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 395197);
+        vm.roll(block.number + 56263);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 56728);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 30929);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 588390);
+        vm.roll(block.number + 19893);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 30680210278194226423}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 5002);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 46922);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 30962714804078221913419483764283656966899691290336688391637949228341067260753);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(23999998);
+        
+        vm.warp(block.timestamp + 232817);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 412758);
+        vm.roll(block.number + 50526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 54470);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129639931, 27102768689253069913574324055248695561847448947734607786323600404185232278898);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 9867);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 4370001}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 24761);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 27);
+        vm.roll(block.number + 29223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125467668355474110}(11999998);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 67125467668355470532}(80503189630206819672343905073202950962764733466203947488613968975252256581086);
+        
+        vm.warp(block.timestamp + 202690);
+        vm.roll(block.number + 29229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 119690);
+        vm.roll(block.number + 5002);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 37104877002393865235725751227786730214295382162578099977797773122847751608265);
+        
+        vm.warp(block.timestamp + 508781);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 65592604328924620340}(113918400202034905425960608526968542163336921449163648155705090773537755602240);
+        
+        vm.warp(block.timestamp + 270785);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(10765348783237170657945409793987264454832879958447993340134244558590212098176, 104156352821134478419000127312532965506412692806765996550033878276471038094251);
+        
+        vm.warp(block.timestamp + 74146);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 105587562905919104191466272368062252855632249944115223037798635586194548606989);
+        
+        vm.warp(block.timestamp + 131780);
+        vm.roll(block.number + 36281);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 49338018373544346292057505484758864241989057730292869073414207115408282696842);
+        
+        vm.warp(block.timestamp + 3603);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 47794);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 253765);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 67125466668355474133}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 302742);
+        vm.roll(block.number + 9240);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 322454);
+        vm.roll(block.number + 9243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 24763);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 1524785993);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 68545619173339273276}(13394871972864174435520349257496498576811062133532810504372909801077515788926);
+        
+        vm.warp(block.timestamp + 322354);
+        vm.roll(block.number + 1425);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(49865971012347362725206841235861812207922431954060289339564673523016792118046);
+        
+        vm.warp(block.timestamp + 445123);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 60657864553903070334587416085707479141501036725606466592145958569775309421071);
+        
+        vm.warp(block.timestamp + 418392);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125467668355470534}(23333874103951770142728468311994211484771548958809557699986412446427963167901);
+        
+        vm.warp(block.timestamp + 253767);
+        vm.roll(block.number + 40741);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 4215660353768127088}(477);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039452584007913129639938);
+        
+        vm.warp(block.timestamp + 453325);
+        vm.roll(block.number + 9244);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000000000, false);
+        
+        vm.warp(block.timestamp + 119688);
+        vm.roll(block.number + 49204);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(1000000000001, 5);
+        
+        vm.warp(block.timestamp + 515);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(691);
+        
+        vm.warp(block.timestamp + 96805);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 26}(329);
+        
+        vm.warp(block.timestamp + 145370);
+        vm.roll(block.number + 9240);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 41290255796141879142}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 322353);
+        vm.roll(block.number + 37844);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 5000000000000000002);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 27);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 466943);
+        vm.roll(block.number + 56263);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129639910, 16115796528367548615727843185206280939153452823969508740680053335265561538096);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 3}(72346737027313753898904913964385667548132765228429348118453070820954215255808);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913128639936);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(34530735416923046515217548779480624400244438174399862670937454156806499618630);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(78486115143863740218823997679448247583731937232739495262133739488052342993088, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039452584007913129639937);
+        
+        vm.warp(block.timestamp + 514418);
+        vm.roll(block.number + 36281);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 999998);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 62125467668355474131}(24000001);
+        
+        vm.warp(block.timestamp + 253765);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 29574);
+        vm.roll(block.number + 27);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 395200);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 102797290754493424813106662629366785225423627828087999182514937258407416577862);
+        
+        vm.warp(block.timestamp + 119689);
+        vm.roll(block.number + 3598);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 172048);
+        vm.roll(block.number + 24);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 318772);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 15474);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129636333);
+        
+        vm.warp(block.timestamp + 23);
+        vm.roll(block.number + 29229);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 119684);
+        vm.roll(block.number + 2589);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 36277);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 1000000000002);
+        
+        vm.warp(block.timestamp + 201707);
+        vm.roll(block.number + 19166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 34277431032992204142}(288);
+        
+        vm.warp(block.timestamp + 253763);
+        vm.roll(block.number + 29223);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+    }
+    
+    
+    function test_auto_whitelist_9() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 69421592877790260786394013664909629110907556495007340010795947189667378914693);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(83139737705898914080168219902598693061561715036224298439703791344668489570584, 90211558252046026857880514078242916351205078592573132182852973180458192230183);
+        
+        vm.warp(block.timestamp + 223059);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(104510289546923359902214721749214311227702198039580499862909754262475577622747);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 38971);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 356827);
+        vm.roll(block.number + 49820);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 267}(1153443827418577407928858137137);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 40742);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 166441);
+        vm.roll(block.number + 25844);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 259173);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 39256);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 41289);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 335765);
+        vm.roll(block.number + 752);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 368352);
+        vm.roll(block.number + 672);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 34367);
+        vm.roll(block.number + 34414);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(96863181165779669173077500059131037916939333354612633528624157930004801677382, 94793056148215398363385933748707950271003890291023962215470608251434435279850);
+        
+        vm.warp(block.timestamp + 74146);
+        vm.roll(block.number + 43362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 96926);
+        vm.roll(block.number + 4933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(10725366759355488542658186306444306142691173177310059453999371869460524724501, 356);
+        
+        vm.warp(block.timestamp + 135212);
+        vm.roll(block.number + 35567);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 435589);
+        vm.roll(block.number + 419);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 1249110528204}(29514388924203272350442795451058303271992380755889997624444681936889770000024);
+        
+        vm.warp(block.timestamp + 440483);
+        vm.roll(block.number + 47905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 52928714514921553220253953099929075682048017698331662970267935676447930529269);
+        
+        vm.warp(block.timestamp + 294889);
+        vm.roll(block.number + 39886);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 513297);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 490);
+        
+        vm.warp(block.timestamp + 477487);
+        vm.roll(block.number + 37733);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 34);
+        
+        vm.warp(block.timestamp + 442439);
+        vm.roll(block.number + 39862);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 307728);
+        vm.roll(block.number + 21381);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 96007454128595567057}(6015850997045171143868214002653098241751644215877006194397745552439656363550);
+        
+        vm.warp(block.timestamp + 487439);
+        vm.roll(block.number + 16768);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 604680);
+        vm.roll(block.number + 44560);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 195362);
+        vm.roll(block.number + 906);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 89743786515718007639782584648120915181742028271458939131514270030085715267807);
+        
+        vm.warp(block.timestamp + 406002);
+        vm.roll(block.number + 36049);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 270834);
+        vm.roll(block.number + 24764);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 724);
+        
+        vm.warp(block.timestamp + 573724);
+        vm.roll(block.number + 24278);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 600500);
+        vm.roll(block.number + 29381);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 277091);
+        vm.roll(block.number + 23156);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 90349548235441189551}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 287315);
+        vm.roll(block.number + 5925);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 118980);
+        vm.roll(block.number + 47529);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 61280947192212822879}(14368867960683572190497397886579690);
+        
+        vm.warp(block.timestamp + 260143);
+        vm.roll(block.number + 45272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 37547798832153154236}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 92108);
+        vm.roll(block.number + 32811);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 30387285495512836644}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 309794);
+        vm.roll(block.number + 3600);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 392791);
+        vm.roll(block.number + 25967);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 81235748106836286659518786162421720017041482425215235412068757511948332935406);
+        
+        vm.warp(block.timestamp + 210160);
+        vm.roll(block.number + 4249);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, 34549295313728348723177855676505182315388200086206912901115782240736991212940);
+        
+        vm.warp(block.timestamp + 471443);
+        vm.roll(block.number + 42635);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 80709);
+        vm.roll(block.number + 50316);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 40350);
+        vm.roll(block.number + 48880);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 335500000}(110176975348027049354167865220189313090522112479621789809409364991163077052400);
+        
+        vm.warp(block.timestamp + 13320);
+        vm.roll(block.number + 45586);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 44403);
+        vm.roll(block.number + 438);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 29028447491179136167615391676106354487141607783425584365298799063750416126061);
+        
+        vm.warp(block.timestamp + 47293);
+        vm.roll(block.number + 39780);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 469371);
+        vm.roll(block.number + 12707);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 6702369664639470283}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 418394);
+        vm.roll(block.number + 2226);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 54007087738254572788}(456);
+        
+        vm.warp(block.timestamp + 131849);
+        vm.roll(block.number + 52990);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 22143100129488626414779703170311668150045517607329717978036741799696937697042);
+        
+        vm.warp(block.timestamp + 386243);
+        vm.roll(block.number + 5839);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 225705);
+        vm.roll(block.number + 51663);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 30419578812187223110}(893);
+        
+        vm.warp(block.timestamp + 59105);
+        vm.roll(block.number + 41203);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 305342);
+        vm.roll(block.number + 56221);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(54489754333411477370334751393942006229784023540465655426565811203474374756726, 74330883789708045407768154503250588519080878274131912984527580670160520590177);
+        
+        vm.warp(block.timestamp + 9826);
+        vm.roll(block.number + 34012);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 430761);
+        vm.roll(block.number + 47929);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 52359847543329509996}(59930817880320423184413010649747063826227727043894816095818195897749627663777);
+        
+        vm.warp(block.timestamp + 572586);
+        vm.roll(block.number + 38570);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(27334876892755082452830874566588681371265180268970497743200669137700464018075);
+        
+        vm.warp(block.timestamp + 56433);
+        vm.roll(block.number + 11051);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 230772);
+        vm.roll(block.number + 17141);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(42823281032936377906121101973638234091830210972064666806982524889982451190224);
+        
+        vm.warp(block.timestamp + 359038);
+        vm.roll(block.number + 872);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 279175);
+        vm.roll(block.number + 27526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 241);
+        vm.roll(block.number + 34680);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 1664468810751115723398868998551929477379958241947678663736717183261028273427);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 17678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 552215);
+        vm.roll(block.number + 28988);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(53901376614386255600187288410311609694873418831814801577856956047293912419018);
+        
+        vm.warp(block.timestamp + 234417);
+        vm.roll(block.number + 50396);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 1392153859876003742}(108634819065600030546754257483845065894110600121458733003683172945693258619290);
+        
+        vm.warp(block.timestamp + 245869);
+        vm.roll(block.number + 33917);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(74171127439712732792919387586455784907248267966549264556761546043459069031345, 63839143884371627802277835601076170228465147525707735790228669657567559064227);
+        
+        vm.warp(block.timestamp + 70938);
+        vm.roll(block.number + 45445);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 564996);
+        vm.roll(block.number + 6515);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 536284);
+        vm.roll(block.number + 47205);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(409);
+        
+        vm.warp(block.timestamp + 82213);
+        vm.roll(block.number + 50630);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 593345);
+        vm.roll(block.number + 967);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 317436);
+        vm.roll(block.number + 15702);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 426181);
+        vm.roll(block.number + 31646);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 155720);
+        vm.roll(block.number + 313);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000000000, false);
+        
+        vm.warp(block.timestamp + 18671);
+        vm.roll(block.number + 45911);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 76838821214768279023535923907135442187838382421240553708750522737423850821936);
+        
+        vm.warp(block.timestamp + 507766);
+        vm.roll(block.number + 55425);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.infoStableSystem();
+        
+        vm.warp(block.timestamp + 114405);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 309730);
+        vm.roll(block.number + 10201);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 6752);
+        vm.roll(block.number + 29761);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 334395);
+        vm.roll(block.number + 38779);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 53342);
+        vm.roll(block.number + 42843);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000000000, 6080073976586642538624881550623687786576699261337087312593046368088820073227);
+        
+        vm.warp(block.timestamp + 289973);
+        vm.roll(block.number + 41989);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 156121);
+        vm.roll(block.number + 31718);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 18145196059872135352}(550);
+        
+        vm.warp(block.timestamp + 565839);
+        vm.roll(block.number + 26782);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(6165893035797641702794300214721475546042103104057659068725892568617887078130, 30530093638324092467693512054082538390743527790303668379206022675207084938015);
+        
+        vm.warp(block.timestamp + 600694);
+        vm.roll(block.number + 53059);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 299993);
+        vm.roll(block.number + 2213);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 85241842465590152448}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 561291);
+        vm.roll(block.number + 29134);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 434);
+        vm.roll(block.number + 941);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 79374167669985464356696059949353611785954334931494861164524098887410811027350);
+        
+        vm.warp(block.timestamp + 406343);
+        vm.roll(block.number + 16700);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, false);
+        
+        vm.warp(block.timestamp + 392618);
+        vm.roll(block.number + 14946);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 13696523505337509048384501148904414465761874016264438030449069029313208025991);
+        
+        vm.warp(block.timestamp + 509664);
+        vm.roll(block.number + 55779);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 43246572702910383145}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 27219);
+        vm.roll(block.number + 6207);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 192842);
+        vm.roll(block.number + 33433);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 80430164354277493698}(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 129103);
+        vm.roll(block.number + 24351);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+    }
+    
+    
+    function test_auto_preSale_10() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 69421592877790260786394013664909629110907556495007340010795947189667378914693);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(83139737705898914080168219902598693061561715036224298439703791344668489570584, 90211558252046026857880514078242916351205078592573132182852973180458192230183);
+        
+        vm.warp(block.timestamp + 223059);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(104510289546923359902214721749214311227702198039580499862909754262475577622747);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 38971);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 356827);
+        vm.roll(block.number + 49820);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 267}(1153443827418577407928858137137);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 40742);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 166441);
+        vm.roll(block.number + 25844);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 259173);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 39256);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 41289);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 335765);
+        vm.roll(block.number + 752);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 368352);
+        vm.roll(block.number + 672);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 34367);
+        vm.roll(block.number + 34414);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(96863181165779669173077500059131037916939333354612633528624157930004801677382, 94793056148215398363385933748707950271003890291023962215470608251434435279850);
+        
+        vm.warp(block.timestamp + 74146);
+        vm.roll(block.number + 43362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 96926);
+        vm.roll(block.number + 4933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(10725366759355488542658186306444306142691173177310059453999371869460524724501, 356);
+        
+        vm.warp(block.timestamp + 135212);
+        vm.roll(block.number + 35567);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 435589);
+        vm.roll(block.number + 419);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 1249110528204}(29514388924203272350442795451058303271992380755889997624444681936889770000024);
+        
+        vm.warp(block.timestamp + 440483);
+        vm.roll(block.number + 47905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 52928714514921553220253953099929075682048017698331662970267935676447930529269);
+        
+        vm.warp(block.timestamp + 294889);
+        vm.roll(block.number + 39886);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 513297);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 490);
+        
+        vm.warp(block.timestamp + 477487);
+        vm.roll(block.number + 37733);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 34);
+        
+        vm.warp(block.timestamp + 580808);
+        vm.roll(block.number + 12713);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 355105);
+        vm.roll(block.number + 29415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 745);
+        vm.roll(block.number + 28873);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 974}(58464478251658278287295144115609695162879256608923644085354072766863596467848);
+        
+        vm.warp(block.timestamp + 70958);
+        vm.roll(block.number + 32696);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(67671254845360581588241782233822697593718500002120866139882045674210472338595);
+        
+        vm.warp(block.timestamp + 53501);
+        vm.roll(block.number + 51185);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 197}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 79);
+        vm.roll(block.number + 19716);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 201168);
+        vm.roll(block.number + 52306);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, false);
+        
+        vm.warp(block.timestamp + 338697);
+        vm.roll(block.number + 45518);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 494733);
+        vm.roll(block.number + 374);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 171779);
+        vm.roll(block.number + 40746);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 23601);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 883);
+        vm.roll(block.number + 29355);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(40482188998179519621770428526654469856408085941200762286797094271847235896882, 0);
+        
+        vm.warp(block.timestamp + 17654);
+        vm.roll(block.number + 36277);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 86817332417084301652035428491861893064683867524013847906908521461016726563703);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 20482);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(89946548840150181459446419605198806160504663982800758375727946444152268274953);
+        
+        vm.warp(block.timestamp + 304147);
+        vm.roll(block.number + 18593);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 506485);
+        vm.roll(block.number + 31928);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(55793823628738352526088387665361313468261494572178070102168360974858588883591, 85576716563255364491793566052845576674101858323025575843430340184631692145173);
+        
+        vm.warp(block.timestamp + 83954);
+        vm.roll(block.number + 1262);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 273500000}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 322351);
+        vm.roll(block.number + 13081);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 549208);
+        vm.roll(block.number + 293);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 30376);
+        vm.roll(block.number + 10469);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.isWhitelisted(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 97998);
+        vm.roll(block.number + 28162);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 10494);
+        vm.roll(block.number + 67);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(84749558114497997013301338939273602340890253165895152726039693482349045369283, 113840283821987720984172209781169134455343600537357017069662439773347632061981);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 20807);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 346419);
+        vm.roll(block.number + 39150);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 47360);
+        vm.roll(block.number + 46349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 563289);
+        vm.roll(block.number + 43961);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 151229);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 577969);
+        vm.roll(block.number + 182);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 37974);
+        vm.roll(block.number + 24870);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 277152);
+        vm.roll(block.number + 31548);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 40835026581336329122857594847485637164802450306385826967677860793309877720694);
+        
+        vm.warp(block.timestamp + 176787);
+        vm.roll(block.number + 9617);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 70207920250402216549}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 429179);
+        vm.roll(block.number + 2072);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000, 599);
+        
+        vm.warp(block.timestamp + 362613);
+        vm.roll(block.number + 51587);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 112412904535873579922518672444569618653880612028219166634922092146011926415077);
+        
+        vm.warp(block.timestamp + 235576);
+        vm.roll(block.number + 987);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 44391207271354108611212239504265452350279992506738575023212026313946543577597);
+        
+        vm.warp(block.timestamp + 170049);
+        vm.roll(block.number + 23537);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 405783);
+        vm.roll(block.number + 2873);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 267352);
+        vm.roll(block.number + 51951);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(8550443198629186690327652188871995915926341474737203910965401473677478245535, 35325948044230700890083103628631154459094072503912383257058720909359934631084);
+        
+        vm.warp(block.timestamp + 679);
+        vm.roll(block.number + 59620);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 545684);
+        vm.roll(block.number + 50836);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 59129);
+        vm.roll(block.number + 25169);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 119689);
+        vm.roll(block.number + 59399);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000010000, false);
+        
+        vm.warp(block.timestamp + 117710);
+        vm.roll(block.number + 25133);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 14911752522662142472679579158072497379646785246116053447937033499171030151706);
+        
+        vm.warp(block.timestamp + 582215);
+        vm.roll(block.number + 21823);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(3598, 11760075050222834292257808429042274074401691671213076899350786456355550049283);
+        
+        vm.warp(block.timestamp + 1001);
+        vm.roll(block.number + 377);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 387681);
+        vm.roll(block.number + 28633);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 28402887955445671099}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 6134);
+        vm.roll(block.number + 23411);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 297693);
+        vm.roll(block.number + 576);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(61716502268339895354439172973601653376172278148574591531601832062178845175398, 66916358975474047755893184730322333646252985309769426842842196226957739017204);
+        
+        vm.warp(block.timestamp + 190081);
+        vm.roll(block.number + 33426);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 446310);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 1697304055180321720281693985);
+        
+        vm.warp(block.timestamp + 557923);
+        vm.roll(block.number + 46823);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 83176);
+        vm.roll(block.number + 237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 91364);
+        vm.roll(block.number + 280);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 513583);
+        vm.roll(block.number + 32306);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 247635);
+        vm.roll(block.number + 40179);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 79152621837518327769}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 555698);
+        vm.roll(block.number + 11374);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129636335);
+        
+        vm.warp(block.timestamp + 275847);
+        vm.roll(block.number + 44091);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 260818);
+        vm.roll(block.number + 35490);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000010000, false);
+        
+        vm.warp(block.timestamp + 420222);
+        vm.roll(block.number + 29442);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 397678);
+        vm.roll(block.number + 1531);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(70000000, 3922618563387003869667441731749939147041086972434);
+        
+        vm.warp(block.timestamp + 102980);
+        vm.roll(block.number + 4230);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 251677);
+        vm.roll(block.number + 8220);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 66962759624423428313353337186287557505642992608105547244863324620291499688312);
+        
+        vm.warp(block.timestamp + 41661);
+        vm.roll(block.number + 119);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 236);
+        
+        vm.warp(block.timestamp + 926);
+        vm.roll(block.number + 549);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, false);
+        
+        vm.warp(block.timestamp + 72911);
+        vm.roll(block.number + 1294);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 342410);
+        vm.roll(block.number + 36088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 483277);
+        vm.roll(block.number + 16094);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 82815970009574940394}(113866369344922482246963409387818328739858647925979641009508642479832039844203);
+        
+        vm.warp(block.timestamp + 526950);
+        vm.roll(block.number + 27650);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 452643);
+        vm.roll(block.number + 26264);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 393756);
+        vm.roll(block.number + 20793);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 141148);
+        vm.roll(block.number + 941);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 35007403312962276369}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+    }
+    
+    
+    function test_auto_changePreSalePriceIfToHigh_11() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 33199);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 193858);
+        vm.roll(block.number + 24);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 72421);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 503270);
+        vm.roll(block.number + 3601);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 86163);
+        vm.roll(block.number + 52369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 53037798801895427788404373376079076816335631918435942964920799161890270658632);
+        
+        vm.warp(block.timestamp + 588390);
+        vm.roll(block.number + 2067);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 12409537439284123198}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913117639935, 60493065489276862296883601869687488052168324752273801331995927557372339619451);
+        
+        vm.warp(block.timestamp + 68608);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125467668331474129}(0);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 63081433496059334993805469637726415906694494617148421089368805561421305956764);
+        
+        vm.warp(block.timestamp + 222080);
+        vm.roll(block.number + 43585);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 3603);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913117639938, 0);
+        
+        vm.warp(block.timestamp + 125737);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 902}(104165389500949914842845798329369348159369228542556458920997834302568432203751);
+        
+        vm.warp(block.timestamp + 412760);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 66470328158484661063605520895990668865081060772845526672718709770128081260452);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 34339121185061341028068304046306643259563422336015001161370543661834308258555);
+        
+        vm.warp(block.timestamp + 126221);
+        vm.roll(block.number + 51227);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 143666);
+        vm.roll(block.number + 38971);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 72033331903554151853}(109361721998174462188340805476433569408187785765934051302433618338286737087448);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 5002);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 35323233491515881582221211231583278715102824367974223358124818496527679756143);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 155750);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 156121);
+        vm.roll(block.number + 417);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 75649336972932641157}(83360834206752781962253963936198461856599502342531843614572962559605023559996);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 115464598830573188050615633970827621459325624338994936600106317068048067247659);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 15982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 66470328158484661063605520895990668865081060772845526672718709770128081260452);
+        
+        vm.warp(block.timestamp + 531974);
+        vm.roll(block.number + 521);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 247862);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 56512);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 508784);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 267}(10331851230521666683826445920475465155671955807890227043019953862369032550208);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 25169);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 64491);
+        vm.roll(block.number + 20648);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 15980);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125467668355441364}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 418534);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 45328462029094540023338637282214509691733686988207259053772363249036301009375);
+        
+        vm.warp(block.timestamp + 418398);
+        vm.roll(block.number + 38971);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 872);
+        vm.roll(block.number + 29228);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 55410331527637283644}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 514416);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(94073533523134030631848519908714029160592381386974664088810902778593795269935);
+        
+        vm.warp(block.timestamp + 211279);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(13605631645064932530057055818088071525177470712171178467734593059933252393005);
+        
+        vm.warp(block.timestamp + 119690);
+        vm.roll(block.number + 29753);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 253762);
+        vm.roll(block.number + 14494);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 4999999999999999999);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 3}(115792089237316195423570985008687907853269984665640564039457584007913105639939);
+        
+        vm.warp(block.timestamp + 174482);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 577419);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 1559494685360148595}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 55);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 395200);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, 37812247650020792658165068729830363430891756450766951897536072362380172286634);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 5000000000000000002);
+        
+        vm.warp(block.timestamp + 171779);
+        vm.roll(block.number + 108);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 70747545499450622848}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 29223);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(45384976256545758763509792563455717852733371308938754924595901172807842669776);
+        
+        vm.warp(block.timestamp + 318777);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 7645);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 11715136140718190487}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 86246600064797074745419679617084586856038810028425961559013455000093685653694);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 67125467668354474133}(72139812429670528245887814668277830853914722890952646418118241960353701870121);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000000000, 49102729286373740231140946979426444924038105628639809004429725601757025942490);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 46706);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129636339);
+        
+        vm.warp(block.timestamp + 318777);
+        vm.roll(block.number + 44867);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 7624506430260779304574845405053332653572828164158900841453471270568256963056);
+        
+        vm.warp(block.timestamp + 170232);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 13321491117875629186}(879);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 27334);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 29125583776630135832}(3679282048963134059315699909499950549880124922372540901249250162714836187423);
+        
+        vm.warp(block.timestamp + 88532);
+        vm.roll(block.number + 24764);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 68609);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 19438);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 514415);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355474128}(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 1421);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 53236386364746345973642305851500298679564345168271032196018123095797628013967);
+        
+        vm.warp(block.timestamp + 322352);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 418392);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 278750);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 954397240);
+        
+        vm.warp(block.timestamp + 508782);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(22857464231232626975148936992105399042436093263683765207500900663468023791034, 305);
+        
+        vm.warp(block.timestamp + 508778);
+        vm.roll(block.number + 36281);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 205681);
+        vm.roll(block.number + 32302);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 49524);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 10031189036195827391}(6122717417577442710476709857178087293983851949845925368172342751374780618616);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 93594382503779142634077079301536558074910738465872634454021343802523173564047);
+        
+        vm.warp(block.timestamp + 463331);
+        vm.roll(block.number + 91);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 36278);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 11999997}(3597);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 29228);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 75918894846242752669118680376891345888367773282718132085039134002762304366742);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 52590);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 25169);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 318772);
+        vm.roll(block.number + 29224);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 218386);
+        vm.roll(block.number + 15534);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 172);
+        
+        vm.warp(block.timestamp + 514413);
+        vm.roll(block.number + 40744);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 5000);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913105639936, 4370000);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 15984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 27);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 418398);
+        vm.roll(block.number + 2436);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 114057153268086807443440789730139203569662128466362388117166546817864429108443);
+        
+        vm.warp(block.timestamp + 88532);
+        vm.roll(block.number + 5259);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 902}(4370000);
+        
+        vm.warp(block.timestamp + 258012);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 202688);
+        vm.roll(block.number + 5003);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 300);
+        vm.roll(block.number + 49527);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 81825512261119971844945207839156126469972022506983464539676906240362606067785);
+        
+        vm.warp(block.timestamp + 68608);
+        vm.roll(block.number + 56264);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 335765);
+        vm.roll(block.number + 2067);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 44080603989127346030712404545104678912959102851636907974264816053607935462784);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 28610);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 7653223811283001252744580966076993453005019794311736300441940704911746728574);
+        
+        vm.warp(block.timestamp + 563526);
+        vm.roll(block.number + 41764);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 47205766327754644904492542749152122494036044165638678626218805997105421269080);
+        
+        vm.warp(block.timestamp + 544547);
+        vm.roll(block.number + 20568);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(50605021294938637504413254961738301499809531626598027076598270647822206423617);
+    }
+    
+    
+    function test_auto_transfer_12() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 69421592877790260786394013664909629110907556495007340010795947189667378914693);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(83139737705898914080168219902598693061561715036224298439703791344668489570584, 90211558252046026857880514078242916351205078592573132182852973180458192230183);
+        
+        vm.warp(block.timestamp + 223059);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(104510289546923359902214721749214311227702198039580499862909754262475577622747);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 38971);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 356827);
+        vm.roll(block.number + 49820);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 267}(1153443827418577407928858137137);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 40742);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 166441);
+        vm.roll(block.number + 25844);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 259173);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 39256);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 41289);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 335765);
+        vm.roll(block.number + 752);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 368352);
+        vm.roll(block.number + 672);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 34367);
+        vm.roll(block.number + 34414);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(96863181165779669173077500059131037916939333354612633528624157930004801677382, 94793056148215398363385933748707950271003890291023962215470608251434435279850);
+        
+        vm.warp(block.timestamp + 74146);
+        vm.roll(block.number + 43362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 96926);
+        vm.roll(block.number + 4933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(10725366759355488542658186306444306142691173177310059453999371869460524724501, 356);
+        
+        vm.warp(block.timestamp + 135212);
+        vm.roll(block.number + 35567);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 435589);
+        vm.roll(block.number + 419);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 1249110528204}(29514388924203272350442795451058303271992380755889997624444681936889770000024);
+        
+        vm.warp(block.timestamp + 440483);
+        vm.roll(block.number + 47905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 52928714514921553220253953099929075682048017698331662970267935676447930529269);
+        
+        vm.warp(block.timestamp + 294889);
+        vm.roll(block.number + 39886);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 513297);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 490);
+        
+        vm.warp(block.timestamp + 477487);
+        vm.roll(block.number + 37733);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 34);
+        
+        vm.warp(block.timestamp + 442439);
+        vm.roll(block.number + 39862);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 307728);
+        vm.roll(block.number + 21381);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 96007454128595567057}(6015850997045171143868214002653098241751644215877006194397745552439656363550);
+        
+        vm.warp(block.timestamp + 487439);
+        vm.roll(block.number + 16768);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 604680);
+        vm.roll(block.number + 44560);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 195362);
+        vm.roll(block.number + 906);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 89743786515718007639782584648120915181742028271458939131514270030085715267807);
+        
+        vm.warp(block.timestamp + 406002);
+        vm.roll(block.number + 36049);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 270834);
+        vm.roll(block.number + 24764);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 724);
+        
+        vm.warp(block.timestamp + 573724);
+        vm.roll(block.number + 24278);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 600500);
+        vm.roll(block.number + 29381);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 277091);
+        vm.roll(block.number + 23156);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 90349548235441189551}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 287315);
+        vm.roll(block.number + 5925);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 118980);
+        vm.roll(block.number + 47529);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 61280947192212822879}(14368867960683572190497397886579690);
+        
+        vm.warp(block.timestamp + 260143);
+        vm.roll(block.number + 45272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 37547798832153154236}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 92108);
+        vm.roll(block.number + 32811);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 30387285495512836644}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 309794);
+        vm.roll(block.number + 3600);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 392791);
+        vm.roll(block.number + 25967);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 81235748106836286659518786162421720017041482425215235412068757511948332935406);
+        
+        vm.warp(block.timestamp + 210160);
+        vm.roll(block.number + 4249);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, 34549295313728348723177855676505182315388200086206912901115782240736991212940);
+        
+        vm.warp(block.timestamp + 79775);
+        vm.roll(block.number + 3300);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 935);
+        vm.roll(block.number + 12006);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 337);
+        
+        vm.warp(block.timestamp + 244500);
+        vm.roll(block.number + 12047);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 268693);
+        vm.roll(block.number + 16066);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 32394617055413272146825663225388201990723345243575525734192588194039187987263);
+        
+        vm.warp(block.timestamp + 224);
+        vm.roll(block.number + 15664);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 424877);
+        vm.roll(block.number + 18544);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 826);
+        
+        vm.warp(block.timestamp + 574405);
+        vm.roll(block.number + 12724);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 159815);
+        vm.roll(block.number + 29513);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 44165411690866171933710037876498816830903206608541066769313108067192364578452);
+        
+        vm.warp(block.timestamp + 246045);
+        vm.roll(block.number + 17453);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 97320143698219983919}(91132352253389370538640379037253605554839155515099269487528194671787481037558);
+        
+        vm.warp(block.timestamp + 273149);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 253500000);
+        
+        vm.warp(block.timestamp + 922);
+        vm.roll(block.number + 28530);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 506167);
+        vm.roll(block.number + 26646);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 149222);
+        vm.roll(block.number + 12609);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(29266684416277506496009728322481110855830736210347096966582160498839444061775);
+        
+        vm.warp(block.timestamp + 136795);
+        vm.roll(block.number + 57350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000000000, false);
+        
+        vm.warp(block.timestamp + 701);
+        vm.roll(block.number + 22410);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000030000, 68231930301690465238752675772407473396665966996290942582462952956196441705138);
+        
+        vm.warp(block.timestamp + 573412);
+        vm.roll(block.number + 14930);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 25854449297363917554864271463466433699240926466586793560183897754822197766857);
+        
+        vm.warp(block.timestamp + 476187);
+        vm.roll(block.number + 60157);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(115754632218444499780364573361734701327836148985191105998447111640509885477552);
+        
+        vm.warp(block.timestamp + 857);
+        vm.roll(block.number + 54642);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 547684);
+        vm.roll(block.number + 9042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 379914);
+        vm.roll(block.number + 7074);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(92740867353944755380469808272271716900555369133644245690825518368046014772353, 42281243560567463668062025504483378432754132306616895021609280100777878116277);
+        
+        vm.warp(block.timestamp + 263387);
+        vm.roll(block.number + 30694);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 111}(49744576689393399064012521341967543793259480504928199787866320893258461473019);
+        
+        vm.warp(block.timestamp + 273121);
+        vm.roll(block.number + 7046);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(5420498579708877296955528369973286340708671423142388122815737014577411176000);
+        
+        vm.warp(block.timestamp + 155288);
+        vm.roll(block.number + 45585);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 204870);
+        vm.roll(block.number + 2762);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 413301);
+        vm.roll(block.number + 33926);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000000000, false);
+        
+        vm.warp(block.timestamp + 68434);
+        vm.roll(block.number + 54525);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(286);
+        
+        vm.warp(block.timestamp + 405131);
+        vm.roll(block.number + 45716);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 225);
+        vm.roll(block.number + 53757);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 133415334149736535}(92066013216024773392348450853392032723894222672717170820967234589051211844803);
+        
+        vm.warp(block.timestamp + 457811);
+        vm.roll(block.number + 20817);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 202431);
+        vm.roll(block.number + 37845);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 557028);
+        vm.roll(block.number + 45241);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 77299);
+        vm.roll(block.number + 34024);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 344984);
+        vm.roll(block.number + 52525);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 29430454911803777586825959084988327164408536310247458838568079052653538301744);
+        
+        vm.warp(block.timestamp + 570002);
+        vm.roll(block.number + 208);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 536469);
+        vm.roll(block.number + 2662);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(40070455541983854857993921231951314298600585370463552266014725409063754752261);
+        
+        vm.warp(block.timestamp + 313975);
+        vm.roll(block.number + 58769);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 243083);
+        vm.roll(block.number + 16768);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 53733540133766868442}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 99639);
+        vm.roll(block.number + 26072);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 289585);
+        vm.roll(block.number + 29134);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 407853);
+        vm.roll(block.number + 24697);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 91503777416066879418135545886242589336071263947897950329361498991415638601407);
+        
+        vm.warp(block.timestamp + 307481);
+        vm.roll(block.number + 26836);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 359768);
+        vm.roll(block.number + 51881);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(36010228390981716562678308543290800306069319226388990751967063228917410450791);
+        
+        vm.warp(block.timestamp + 566880);
+        vm.roll(block.number + 42427);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 336742);
+        vm.roll(block.number + 45247);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.allowance(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 259654);
+        vm.roll(block.number + 3734);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 311476);
+        vm.roll(block.number + 19430);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 56792);
+        vm.roll(block.number + 1427);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(42657943047471279364899816232383657746897801843820916331164822021737082312611, 9967819467467605285014513734591844326444353281775754717361087125905939105148);
+        
+        vm.warp(block.timestamp + 331973);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 43159553826162243430449033627721006046562114748948555137902305768798205204951);
+        
+        vm.warp(block.timestamp + 351373);
+        vm.roll(block.number + 658);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, false);
+        
+        vm.warp(block.timestamp + 481629);
+        vm.roll(block.number + 990);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(0, 150);
+        
+        vm.warp(block.timestamp + 484823);
+        vm.roll(block.number + 3382);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 54920);
+        vm.roll(block.number + 403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 61948918929778964218461686232529134483438860557075726008619906332124449350480);
+        
+        vm.warp(block.timestamp + 77);
+        vm.roll(block.number + 2281);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 102626104302968227082534106340669776346874959906711782958804689531876300554418);
+    }
+    
+    
+    function test_auto_transfer_13() public { 
+        
+        vm.warp(block.timestamp + 246424);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 22);
+        
+        vm.warp(block.timestamp + 495);
+        vm.roll(block.number + 16252);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 41123788869466840763831923818510626075415938665336153242646389791287973434404);
+        
+        vm.warp(block.timestamp + 497272);
+        vm.roll(block.number + 59050);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 68610);
+        vm.roll(block.number + 58528);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 543874);
+        vm.roll(block.number + 38092);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 340931);
+        vm.roll(block.number + 58528);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 253767);
+        vm.roll(block.number + 50761);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 21395);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 199996);
+        vm.roll(block.number + 48144);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 14863702075168062366}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 467763);
+        vm.roll(block.number + 48056);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 570150);
+        vm.roll(block.number + 293);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 492);
+        vm.roll(block.number + 35);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 171779);
+        vm.roll(block.number + 51128);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 56260);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 497272);
+        vm.roll(block.number + 49523);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 1000002}(12580672103674171077922955673791194675248697531392776812669956377320287391103);
+        
+        vm.warp(block.timestamp + 398952);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 388416);
+        vm.roll(block.number + 33453);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 44688);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 589518);
+        vm.roll(block.number + 8928);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 439615);
+        vm.roll(block.number + 26819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 318775);
+        vm.roll(block.number + 692);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 515);
+        vm.roll(block.number + 55);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(11955094354360110411003118015666493258900761718958590277739731005568261156180);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 73);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 508779);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 999997}(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 283367);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(82075809909440825032704118869582321852884485126359732376213242695201205998851);
+        
+        vm.warp(block.timestamp + 219028);
+        vm.roll(block.number + 19870);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 223059);
+        vm.roll(block.number + 20419);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 3600);
+        vm.roll(block.number + 33203);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 293);
+        
+        vm.warp(block.timestamp + 508780);
+        vm.roll(block.number + 28889);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 467763);
+        vm.roll(block.number + 321);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 525876);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 33199);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 193858);
+        vm.roll(block.number + 24);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 72421);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 503270);
+        vm.roll(block.number + 3601);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 86163);
+        vm.roll(block.number + 52369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 53037798801895427788404373376079076816335631918435942964920799161890270658632);
+    }
+    
+    
+    function test_auto_setStableCoinSystem_14() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 69421592877790260786394013664909629110907556495007340010795947189667378914693);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 7541);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 326786);
+        vm.roll(block.number + 32307);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 190081);
+        vm.roll(block.number + 12540);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 40744);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 29081);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 2263814384821167129360555852796309292054962897954700409037258932358241747561);
+        
+        vm.warp(block.timestamp + 322350);
+        vm.roll(block.number + 3601);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(52011026723380361473603800658377312553824370067890231561152661123192514731741);
+        
+        vm.warp(block.timestamp + 598531);
+        vm.roll(block.number + 40082);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 10494);
+        vm.roll(block.number + 21844);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 36125822750411482260170530625988240531249807279712160766195660268266271889122);
+        
+        vm.warp(block.timestamp + 172835);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 253765);
+        vm.roll(block.number + 24762);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 62125467668355474134}(115792089237316195423570985008687907853269984665640564039457584007913128639936);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 23718);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 417);
+        
+        vm.warp(block.timestamp + 575565);
+        vm.roll(block.number + 2388);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 27540848903458924010}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 46309);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(110076648867237716861723292784241685854109193077980057843296743337393080443128);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 49525);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 99411651684669776978104048336618865285639754836707643514154452665608102274300);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 23);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 1425);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 56802646418245516612272652692324203830081703132899029820641589761051622908972);
+        
+        vm.warp(block.timestamp + 445123);
+        vm.roll(block.number + 4899);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 531978);
+        vm.roll(block.number + 7730);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 593093);
+        vm.roll(block.number + 29225);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(82078746254255543889503895620852067548343587059293967303200440882951986055799);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 15564);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(44597460384473281610739005508134358229495625682518939930599744128483886302576);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 7799257779506036155449121558374879646039697316971468023351633263843048463552);
+        
+        vm.warp(block.timestamp + 514416);
+        vm.roll(block.number + 37285);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 87043169900747901012}(89029818431055022469174176495147397205656042753863280756010142447636068565364);
+        
+        vm.warp(block.timestamp + 455852);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 2067);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 15380);
+        vm.roll(block.number + 417);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(289);
+        
+        vm.warp(block.timestamp + 96814);
+        vm.roll(block.number + 27);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 509683);
+        vm.roll(block.number + 41979);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 76569429649820105523550899345043937340394827362098266433067794547848504580131);
+        
+        vm.warp(block.timestamp + 170232);
+        vm.roll(block.number + 50322);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, false);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 12540);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 424079);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 33620);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 219763);
+        vm.roll(block.number + 17012);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 90685836343459617596}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 417184);
+        vm.roll(block.number + 36280);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 98625);
+        vm.roll(block.number + 23704);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 272545);
+        vm.roll(block.number + 29547);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 40532967309862874439}(10357632569381553655408053090174597251949389662238696667951983927667525709670);
+        
+        vm.warp(block.timestamp + 51135);
+        vm.roll(block.number + 752);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 39256);
+        vm.roll(block.number + 9658);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 574924);
+        vm.roll(block.number + 184);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000, 38152098032283493897884490652978782024026692857869668502660453628369617495786);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 5277);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 96814);
+        vm.roll(block.number + 51108);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 43427);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 88532);
+        vm.roll(block.number + 57646);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 418392);
+        vm.roll(block.number + 10873);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 33620);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 98016652140140171637876290304869962052611920870862570421666303609889255052676);
+        
+        vm.warp(block.timestamp + 508779);
+        vm.roll(block.number + 36990);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(52480252765915362274660899712601480554198278379655246612540000411814668428014, 647);
+        
+        vm.warp(block.timestamp + 454070);
+        vm.roll(block.number + 22452);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 111081946148185758211182516911575553836027213956707778151467320448564224107230);
+        
+        vm.warp(block.timestamp + 119688);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(1249110528204, 57546530844155203668296312625794430576049588875856743907806307710526952465132);
+        
+        vm.warp(block.timestamp + 258793);
+        vm.roll(block.number + 1858);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 139018700682310790347549209054602413434201332305857039486151335456312975647);
+        
+        vm.warp(block.timestamp + 334227);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 156121);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 101005);
+        vm.roll(block.number + 18397);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 775);
+        
+        vm.warp(block.timestamp + 70938);
+        vm.roll(block.number + 28690);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 300}(27375730673506349414901486339962061756661224708214358867413639466964262269180);
+        
+        vm.warp(block.timestamp + 203771);
+        vm.roll(block.number + 31117);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 125737);
+        vm.roll(block.number + 25399);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67089438871336510164}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 210583);
+        vm.roll(block.number + 30821);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 15534);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129639931, 36641371571126657617797680681393261259165787893222860433664254465703308006874);
+        
+        vm.warp(block.timestamp + 25998);
+        vm.roll(block.number + 42834);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 435480);
+        vm.roll(block.number + 23627);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125467668331474129}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 582153);
+        vm.roll(block.number + 51632);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 297403);
+        vm.roll(block.number + 29224);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(71248157380033201828592314772029907508181366345161992582583206865973065062561, 84378940382140182003305828498788649712899493279293479543370816027192083022284);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 21254);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 65994605733580595230285130291922739365586937576477805436965729888380745467838);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(30012207402525637816701531086530591824491996793385625011270399372849123141855, 1430141188182479941198529816571536803325639757831840223768711389261015422521);
+        
+        vm.warp(block.timestamp + 418395);
+        vm.roll(block.number + 23797);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 1000000000001);
+        
+        vm.warp(block.timestamp + 49553);
+        vm.roll(block.number + 7541);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 2755);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(16767719540997828311185767984434431948704112881980948443674964854113959689345, 18981475294842976739592269938764831718123056946023677883371865364723275326788);
+        
+        vm.warp(block.timestamp + 82758);
+        vm.roll(block.number + 29229);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 446919);
+        vm.roll(block.number + 22);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 11854691289150667387}(91447135759831550873916401404994204093485087144040449907080081449392314710575);
+        
+        vm.warp(block.timestamp + 26);
+        vm.roll(block.number + 29223);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 369427);
+        vm.roll(block.number + 32306);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 481612);
+        vm.roll(block.number + 41979);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 39306974044934786097018608642372691848786677696120773226280599471802453197351);
+        
+        vm.warp(block.timestamp + 314285);
+        vm.roll(block.number + 32304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 172281);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(45140316625423887686282777463321286056113141238118640950155167293553775446645, 840);
+        
+        vm.warp(block.timestamp + 20196);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 51775);
+        vm.roll(block.number + 4999);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 213695);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 758);
+        vm.roll(block.number + 59884);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 241744);
+        vm.roll(block.number + 40557);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 89647);
+        vm.roll(block.number + 30821);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 34367);
+        vm.roll(block.number + 23185);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 342410);
+        vm.roll(block.number + 2668);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(975);
+        
+        vm.warp(block.timestamp + 40076);
+        vm.roll(block.number + 6292);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 393);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 95309101068017797178}(90242687890657623169692228801054617143676169535019014997950969096265413603839);
+        
+        vm.warp(block.timestamp + 16625);
+        vm.roll(block.number + 42290);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000020000, 57564144538523360536707080771280071067272551493886821974851885392019841699020);
+        
+        vm.warp(block.timestamp + 316211);
+        vm.roll(block.number + 45435);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 391061);
+        vm.roll(block.number + 715);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 48384479333542209141}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 13246);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+    }
+    
+    
+    function test_auto_preSale_15() public { 
+        
+        vm.warp(block.timestamp + 270368);
+        vm.roll(block.number + 21254);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 199996);
+        vm.roll(block.number + 13246);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(60549696247299284343209946650697627131501023225932050774376835378167408033997);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 16262);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 490220);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(1086654211758439568334491442835349121519975033016944853017386429644355236632, 93702545011641248997788206746389006215806853395655829715185924264730389961789);
+        
+        vm.warp(block.timestamp + 508779);
+        vm.roll(block.number + 8295);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 163107);
+        vm.roll(block.number + 29081);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 9241);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 571925);
+        vm.roll(block.number + 53610);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5513574101301205547, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 202690);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 47886841344324209533898594138992048507518811931718985397355528082121757641844);
+        
+        vm.warp(block.timestamp + 190081);
+        vm.roll(block.number + 29547);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 430323);
+        vm.roll(block.number + 33);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 6842996456625988747}(6554608974393205702582104225123365824942165095039317229460052262917998934528);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 26296);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 3327187427004500608927397186779790494904945327433763788063597929872113120260);
+        
+        vm.warp(block.timestamp + 209253);
+        vm.roll(block.number + 40741);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 114348063144075425374931788062784363800469624362199165036670367067477974716561);
+        
+        vm.warp(block.timestamp + 484070);
+        vm.roll(block.number + 55588);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 297403);
+        vm.roll(block.number + 21254);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 304766);
+        vm.roll(block.number + 43097);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(58474969079294806607528522444341469860910530718051229052214784690366831487537, 30838700729366462650962728179976118915239616586075940072480123553006980704476);
+        
+        vm.warp(block.timestamp + 188294);
+        vm.roll(block.number + 44279);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 16631);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 92792821263489549181}(44080603989127346030712404545104678912959102851636907974264816053607935462784);
+        
+        vm.warp(block.timestamp + 431296);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 3603}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 35);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 412760);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 633);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 35458262766883952078173983725334324271549588130891447889344745018741844275782);
+        
+        vm.warp(block.timestamp + 769);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 72070264431133065351}(27);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 28116);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(251184172323070374735936806472649146135287963957750637818415360026667);
+        
+        vm.warp(block.timestamp + 28306);
+        vm.roll(block.number + 39899);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584006913129639934, 108520286621192698053046237168408660823814962667522729816055822425107367781628);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5002);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 596552);
+        vm.roll(block.number + 25669);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000000000, 88453670528029319114501203926696013690897056069043129839185757860418305551896);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 54164);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 418392);
+        vm.roll(block.number + 9170);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 17270126393010823819683379030072171103778259944261987043743724678670577956856);
+        
+        vm.warp(block.timestamp + 598531);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 23148723575618860367}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 9240);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(89399272590933224569285544417954452503521654285677948167258501022920397681714, 40073339545678007623828361228533054754124537029135938518517655910602281926907);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 9240);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125467668355474129}(1249110528204);
+        
+        vm.warp(block.timestamp + 508779);
+        vm.roll(block.number + 2300);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 492);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 300);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 427480);
+        vm.roll(block.number + 24764);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 418518);
+        vm.roll(block.number + 15982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 301250);
+        vm.roll(block.number + 930);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 9244);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125467668331474130}(115792089237316195423570985008687907853269984665640564039457584007913105639933);
+        
+        vm.warp(block.timestamp + 418394);
+        vm.roll(block.number + 28433);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000000000, false);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 14710);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 106253);
+        vm.roll(block.number + 9176);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 56994);
+        vm.roll(block.number + 792);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 26592500358492599692}(1);
+        
+        vm.warp(block.timestamp + 286096);
+        vm.roll(block.number + 44821);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(22094692644413613948412514872695658492460544034729011697237067738789921439546, 68950387867999603408242242758273845714177947726577424106406408948114487519155);
+        
+        vm.warp(block.timestamp + 508784);
+        vm.roll(block.number + 47279);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 9993298871979639776}(471);
+        
+        vm.warp(block.timestamp + 527183);
+        vm.roll(block.number + 2067);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 8136);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 660}(57549494657797669280368247306619402637814125138055037594821056135150317556644);
+        
+        vm.warp(block.timestamp + 368245);
+        vm.roll(block.number + 27526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(88450048305867903433983140158534365586434476097588525099245909480144806145879, 48950506601493594313147595333985112637554479478109138607344737460665260356175);
+        
+        vm.warp(block.timestamp + 531977);
+        vm.roll(block.number + 32302);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 318773);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 3597);
+        vm.roll(block.number + 13246);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 62125467668355474134}(88644597790900302616551904666279488983879526549210496803519863375178598242350);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 29225);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, 61354625703270843518844825201215872173167081605402477518612784583205604875307);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 2637);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 27555);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 89);
+        vm.roll(block.number + 59884);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 31717551758531539662008948483744766493775685384875176322637522361293928564503);
+        
+        vm.warp(block.timestamp + 540149);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 238677);
+        vm.roll(block.number + 30398);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 52879262649791713072}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253767);
+        vm.roll(block.number + 57191);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 166441);
+        vm.roll(block.number + 56966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 569694);
+        vm.roll(block.number + 28433);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 103970);
+        vm.roll(block.number + 1427);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000000000, 111672160265371859443251601171343288597653595237249635415086496789530524559914);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 1426);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 432);
+        
+        vm.warp(block.timestamp + 395201);
+        vm.roll(block.number + 2637);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 872);
+        vm.roll(block.number + 13750);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(93702545011641248997788206746389006215806853395655829715185924264730389961789);
+        
+        vm.warp(block.timestamp + 119689);
+        vm.roll(block.number + 58906);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 25715);
+        vm.roll(block.number + 5492);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 5}(2502595940682860776316306602922290103427639021895041850920802647263458555143);
+        
+        vm.warp(block.timestamp + 509683);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(86711175544139213688141272853088194956058648490875811059550309636391150363270);
+        
+        vm.warp(block.timestamp + 531974);
+        vm.roll(block.number + 10050);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 51329);
+        vm.roll(block.number + 12558);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 412759);
+        vm.roll(block.number + 15980);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 318775);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 2298);
+        vm.roll(block.number + 42290);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 438886);
+        vm.roll(block.number + 6118);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 81259491439691957055}(40328280649042824345426636781089655982422261984320829732222612446979503462866);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 1424);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 121640);
+        vm.roll(block.number + 12658);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 36276);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 83308650937862004996}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 430323);
+        vm.roll(block.number + 9244);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 32302);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 125737);
+        vm.roll(block.number + 4899);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(91888204518783754067898033653469817182433604557109721590321023802340034292756);
+        
+        vm.warp(block.timestamp + 484070);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 43427);
+        vm.roll(block.number + 733);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.totalSupply();
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 902);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 57020194350175494792}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 432654);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 95978);
+        vm.roll(block.number + 33199);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(26867539983659100749569944266363542076719652653713897308798993887265790134257, 27);
+        
+        vm.warp(block.timestamp + 295645);
+        vm.roll(block.number + 1421);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 475285);
+        vm.roll(block.number + 15983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 0);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 342410);
+        vm.roll(block.number + 32301);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67089438871336510164}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 269136);
+        vm.roll(block.number + 1767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, false);
+        
+        vm.warp(block.timestamp + 219925);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+    }
+    
+    
+    function test_auto_preSale_16() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 55);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 91340049001261458422620833779396505402116879398991323277325934209056717941634);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(71531222237188899531630266878508760754491139135156474447636448919132350375833);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 270039);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 49204);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(111140766282918542548260462650741892498288436765975660479113007735403219082975, 370);
+        
+        vm.warp(block.timestamp + 517097);
+        vm.roll(block.number + 32301);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000, 24);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 19391);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 902);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 56262);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 339850);
+        vm.roll(block.number + 36280);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 67125467668354474131}(87873413689138665687970222009035696035769747942998150888905935925822642937905);
+        
+        vm.warp(block.timestamp + 318774);
+        vm.roll(block.number + 33864);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 158607);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 8169343976793123318975918777932759447092139830494795843835120358725629705655);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 19438);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 87083);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 55427);
+        vm.roll(block.number + 36276);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 902}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 508781);
+        vm.roll(block.number + 902);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 4}(93852445040045616242257242421113695993038204808806138411403922361439910391767);
+        
+        vm.warp(block.timestamp + 412763);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 76388321607529833139}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 28767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 50356027841661349294475653905857207591388201088043744921049773820516057530414);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 29228);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 274735);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 23911523454522353846002291423356316336465373837212590592768736788863695233771);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 23);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 692);
+        vm.roll(block.number + 60057);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(39891403769070357608360706074220217342807438868709149699258948257100539889829);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(19208478677279918982833166973732588440480027572582183462330580794107159910407);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 54470);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 29484187685475077489}(89953945933216398453244487662689269441848717890556881117054543364175751205919);
+        
+        vm.warp(block.timestamp + 313975);
+        vm.roll(block.number + 29547);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(39578216298937219389966408976254618204168294008058980162595389186907224505685);
+        
+        vm.warp(block.timestamp + 17);
+        vm.roll(block.number + 15982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 28849362882406007168621691880149563326100264305491794564987557388700712355184);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 1767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 1000001);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 26);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 288);
+        vm.roll(block.number + 54470);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 14527);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(11999999, 112998759574035160679898650869492669300697488070536857549628275665891765333713);
+        
+        vm.warp(block.timestamp + 27);
+        vm.roll(block.number + 3603);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 37139575787076060721}(836);
+        
+        vm.warp(block.timestamp + 322354);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 52776643215059666278}(75795622715493438562624341353402972225203253282394868959088483582947517330716);
+        
+        vm.warp(block.timestamp + 418394);
+        vm.roll(block.number + 1424);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(93269500231565912927669794813230795672455425625026068650346265031187240034381, 5520607742701818396346063579825510362624387538294426982644761390666887941685);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(84503607784510942761820180876476427066960853555234500423586955127114843905988);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 3603);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 33199);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 33204);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(3602, 88072476467887508169591194904057123367139268307656778565989464424869173681770);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 418395);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 155750);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 55);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 26592500358492599692}(47214558232609817055977806691934339392111080080851449048483300947924664774701);
+        
+        vm.warp(block.timestamp + 322352);
+        vm.roll(block.number + 32301);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 47854364062465679749744707884171355918126527838862851335878842928817765688240);
+        
+        vm.warp(block.timestamp + 184781);
+        vm.roll(block.number + 58101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 49017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 4719123898101381694906186734685599990661956843021923006249978270695819133977);
+        
+        vm.warp(block.timestamp + 253767);
+        vm.roll(block.number + 27383);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 593093);
+        vm.roll(block.number + 1421);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(50725125482763197075405864283179420196315759304321996423725787394500526377348);
+        
+        vm.warp(block.timestamp + 514416);
+        vm.roll(block.number + 27);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(57421737259142242986706693683423961338821362155968636836252139810600314579230, 108613713228902477157450408218280809962283107546929825264586922671107737124087);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 1278640437934149969271789199663976520);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 95092135764801322279}(871);
+        
+        vm.warp(block.timestamp + 16631);
+        vm.roll(block.number + 44295);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(0);
+        
+        vm.warp(block.timestamp + 412759);
+        vm.roll(block.number + 56261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 902);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 61632797304000540304632783790832349255830933075250834362791558584949675002406);
+        
+        vm.warp(block.timestamp + 377477);
+        vm.roll(block.number + 29009);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129639931, 4726608381721108745631922040900494792505421507040181552888158493741820351959);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 46706);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 412759);
+        vm.roll(block.number + 37);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(89862131188219823064602191537201468381931577954528742163151640203181855998565);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 56230);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 253765);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584006913129639937);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 28651);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 514414);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 21);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 119688);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125467668343474130}(0);
+        
+        vm.warp(block.timestamp + 259303);
+        vm.roll(block.number + 36277);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 339850);
+        vm.roll(block.number + 15982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 508779);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 402829);
+        vm.roll(block.number + 692);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 56262);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 92792821263489549181}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 172048);
+        vm.roll(block.number + 40743);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 3598);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 32302);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, false);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 497190);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 55);
+        vm.roll(block.number + 8136);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(86708114464548533489802589462996377769930573498883149441091657394944520835995, 115792089237316195423570985008687907853269984665640564039457584007913129639910);
+        
+        vm.warp(block.timestamp + 531975);
+        vm.roll(block.number + 54470);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 37091238346678546552}(43380852466685413186932235113214475111624203386746598428078623698181424949900);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 55267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 22);
+        vm.roll(block.number + 27710);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 322350);
+        vm.roll(block.number + 3597);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 99928);
+        vm.roll(block.number + 56650);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 395198);
+        vm.roll(block.number + 5001);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(64845704864874547369407589663769214775304300485566377863053531907554188017302, 115792089237316195423570985008687907853269984665640564039457584007913129636336);
+        
+        vm.warp(block.timestamp + 531974);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 30680210278194226423}(47072604541193093882854515818644301144940186176874587796498247671975500696611);
+        
+        vm.warp(block.timestamp + 23);
+        vm.roll(block.number + 24760);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 1427);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(33692011565143268724402252087500788661611747546588943396188194112095445939265, 115741430932239707451265291943754542857113479690554361919268827568150627788190);
+        
+        vm.warp(block.timestamp + 318777);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF, 324868390652172796692647189359156100814711163175346190569210055777337285149);
+        
+        vm.warp(block.timestamp + 28967);
+        vm.roll(block.number + 56263);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 267);
+        
+        vm.warp(block.timestamp + 378652);
+        vm.roll(block.number + 1422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 0);
+        
+        vm.warp(block.timestamp + 21262);
+        vm.roll(block.number + 29547);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 62125467668355474129}(4394971787795942899677997032330545470763012455398482913647602872816254215148);
+    }
+    
+    
+    function test_auto_preSaleFinished_17() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 327883);
+        vm.roll(block.number + 45476);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 47293004689698568543}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 465859);
+        vm.roll(block.number + 1960);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 223385);
+        vm.roll(block.number + 54073);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000000000, true);
+        
+        vm.warp(block.timestamp + 529);
+        vm.roll(block.number + 37512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 50168642485471843962}(6599999964237165211000264091628590577150257311014199195029936981042934844704);
+        
+        vm.warp(block.timestamp + 75936);
+        vm.roll(block.number + 24980);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 582994);
+        vm.roll(block.number + 8847);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 24223950274024372036}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 965);
+        vm.roll(block.number + 368);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 358466);
+        vm.roll(block.number + 41286);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 522809);
+        vm.roll(block.number + 45955);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 382416);
+        vm.roll(block.number + 55359);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 368);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 11057);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 223059);
+        vm.roll(block.number + 20584);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000000000, 64165008848491213350496332287553309022628010738986798231881497727708069263964);
+        
+        vm.warp(block.timestamp + 507918);
+        vm.roll(block.number + 934);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 213973);
+        vm.roll(block.number + 25879);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 224240);
+        vm.roll(block.number + 24714);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 92805);
+        vm.roll(block.number + 939);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(84006852952658214317669907461278629842728265535274905391611586195338366165218, 313000000);
+        
+        vm.warp(block.timestamp + 20916);
+        vm.roll(block.number + 224);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 301867);
+        vm.roll(block.number + 36866);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 498918);
+        vm.roll(block.number + 25057);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 88747969508043582577}(109112192116193908352021621570979898635846723324707209592404936706989081791946);
+        
+        vm.warp(block.timestamp + 524017);
+        vm.roll(block.number + 25520);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 59679);
+        vm.roll(block.number + 558);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 77727122541922749913389776182653335459713842498474962939985630968554795778810);
+        
+        vm.warp(block.timestamp + 443127);
+        vm.roll(block.number + 38547);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 539581);
+        vm.roll(block.number + 376);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 972);
+        vm.roll(block.number + 54474);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 427110);
+        vm.roll(block.number + 52117);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 518438);
+        vm.roll(block.number + 3433);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 77990129969144879680173261572346922639888914793785554416255961632565044904282);
+        
+        vm.warp(block.timestamp + 373603);
+        vm.roll(block.number + 108);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 150492);
+        vm.roll(block.number + 8429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 81251347899875217750673991391592223262067928671068432686716835552002260010509);
+        
+        vm.warp(block.timestamp + 533684);
+        vm.roll(block.number + 22818);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 14481520384231652314241310713978810060258229733825649823029161120144123298119);
+        
+        vm.warp(block.timestamp + 561490);
+        vm.roll(block.number + 34263);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 112013);
+        vm.roll(block.number + 53919);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, false);
+        
+        vm.warp(block.timestamp + 141541);
+        vm.roll(block.number + 22201);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 435204);
+        vm.roll(block.number + 40695);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 310}(35977626);
+        
+        vm.warp(block.timestamp + 105142);
+        vm.roll(block.number + 43067);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 773);
+        vm.roll(block.number + 57855);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(369);
+        
+        vm.warp(block.timestamp + 565715);
+        vm.roll(block.number + 521);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000020000, true);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 1048);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 603186);
+        vm.roll(block.number + 41500);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000030000, 52144041302318374775266514889737767969530717256221067019263413859784105862262);
+        
+        vm.warp(block.timestamp + 548528);
+        vm.roll(block.number + 27560);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 397788);
+        vm.roll(block.number + 1423);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, 85239546393588009400223181750790665660829969332597361755700038491631973140922);
+        
+        vm.warp(block.timestamp + 225326);
+        vm.roll(block.number + 43837);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(33835880266783951542488415973280897936807191099034082402211915918232489025597);
+        
+        vm.warp(block.timestamp + 150162);
+        vm.roll(block.number + 50768);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 82118293126462639819492081552331811396407656770016986208824308637466617232067);
+        
+        vm.warp(block.timestamp + 381351);
+        vm.roll(block.number + 41494);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 3631707183496459241379035338502644988446696663785444957730405564277301180868);
+        
+        vm.warp(block.timestamp + 455);
+        vm.roll(block.number + 18579);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 56113498269007727117}(105);
+        
+        vm.warp(block.timestamp + 411201);
+        vm.roll(block.number + 14352);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 226559);
+        vm.roll(block.number + 21316);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(58030504060572970993438293034356402309546874792069750745398581651925716607778, 60306576006918830260680487184079021228553231947865895943895812180419757187821);
+        
+        vm.warp(block.timestamp + 180339);
+        vm.roll(block.number + 43535);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 296733);
+        vm.roll(block.number + 13132);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(59866035066865726687852364215944576481968301758892000082381515550363496139173, 26371036135774563489733508976779173844873377938495569778483948337286022991069);
+        
+        vm.warp(block.timestamp + 226757);
+        vm.roll(block.number + 27047);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 331530);
+        vm.roll(block.number + 14422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(187);
+        
+        vm.warp(block.timestamp + 436360);
+        vm.roll(block.number + 13080);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 345590);
+        vm.roll(block.number + 4736);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 112868056641383870408276138813552610259304861346963937637064080400039674525818);
+        
+        vm.warp(block.timestamp + 118918);
+        vm.roll(block.number + 48958);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 345263);
+        vm.roll(block.number + 98);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 6825875075742738728547693442800955215335504127777454858165776899450217161619);
+        
+        vm.warp(block.timestamp + 156417);
+        vm.roll(block.number + 18689);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 539002);
+        vm.roll(block.number + 14787);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 74691939858051455642}(3593960140471322869003434365544774398308255186651518644569228032579814409600);
+        
+        vm.warp(block.timestamp + 281544);
+        vm.roll(block.number + 37917);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 119685);
+        vm.roll(block.number + 26119);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 213658);
+        vm.roll(block.number + 55607);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(24038623987834981675054882994567868641081395170337771937968932615974799202261, 380);
+        
+        vm.warp(block.timestamp + 25961);
+        vm.roll(block.number + 22510);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 264);
+        
+        vm.warp(block.timestamp + 580300);
+        vm.roll(block.number + 516);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 556777);
+        vm.roll(block.number + 29894);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 93547594614135279214}(582);
+        
+        vm.warp(block.timestamp + 81723);
+        vm.roll(block.number + 24497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 368236);
+        vm.roll(block.number + 709);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 45407);
+        vm.roll(block.number + 11072);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 480261);
+        vm.roll(block.number + 41194);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 317405);
+        vm.roll(block.number + 6726);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 217522);
+        vm.roll(block.number + 79);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 101863514226378229552328915922172705373445582779882444532049309073773601405543);
+        
+        vm.warp(block.timestamp + 165810);
+        vm.roll(block.number + 51979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 1118793}(6548568348219996578152592808090116810452662905294);
+        
+        vm.warp(block.timestamp + 77693);
+        vm.roll(block.number + 301);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 38083851314529636650015431753924530174102958874622631866852494538140998181895);
+        
+        vm.warp(block.timestamp + 351835);
+        vm.roll(block.number + 34038);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 455652);
+        vm.roll(block.number + 11876);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 17797);
+        vm.roll(block.number + 31093);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 42293);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 321281);
+        vm.roll(block.number + 30033);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 28452);
+        vm.roll(block.number + 50732);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(102575925033107946672184564550463248324223669798130888878130713999888295998006, 21697796098148394719246930869214234252679637939291507001517458128707149950686);
+        
+        vm.warp(block.timestamp + 411674);
+        vm.roll(block.number + 1351);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000010000, true);
+        
+        vm.warp(block.timestamp + 370462);
+        vm.roll(block.number + 58063);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 494446);
+        vm.roll(block.number + 12078);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 213748);
+        vm.roll(block.number + 6105);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 107110836048565126095333471223593723179936279678782622595689201238157596487854);
+        
+        vm.warp(block.timestamp + 324189);
+        vm.roll(block.number + 57339);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 2555739989407947551702699787507081096063974684004790376808875702568588625240);
+        
+        vm.warp(block.timestamp + 382840);
+        vm.roll(block.number + 44563);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 147760);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000030000, 94416753219638539689767828000560417576779553053100902944721137844543989690626);
+        
+        vm.warp(block.timestamp + 231171);
+        vm.roll(block.number + 542);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 152378);
+        vm.roll(block.number + 59249);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 567852);
+        vm.roll(block.number + 49919);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 505359);
+        vm.roll(block.number + 32001);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 596560);
+        vm.roll(block.number + 17939);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.tokensToClaim(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 436495);
+        vm.roll(block.number + 35697);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 543);
+        vm.roll(block.number + 57000);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 11923281595863184414}(82031418905993882696502481457477156865079091899848477866824640333629669054220);
+        
+        vm.warp(block.timestamp + 156417);
+        vm.roll(block.number + 14481);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 74284573085336536957707699937561602751501880429774964377347004063613434366776);
+        
+        vm.warp(block.timestamp + 83954);
+        vm.roll(block.number + 13064);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(22863263996068693784635033144521145797156831022902502128960836884447728515612, 202900009160630144844184743544942334524175487736864189070023299);
+        
+        vm.warp(block.timestamp + 79273);
+        vm.roll(block.number + 56966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 74353);
+        vm.roll(block.number + 42238);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000020000, true);
+        
+        vm.warp(block.timestamp + 382);
+        vm.roll(block.number + 13947);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 470877);
+        vm.roll(block.number + 55708);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 310456);
+        vm.roll(block.number + 38159);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 170);
+        vm.roll(block.number + 41755);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000000000, true);
+        
+        vm.warp(block.timestamp + 504616);
+        vm.roll(block.number + 59620);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+    }
+    
+    
+    function test_auto_transferFrom_18() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 69421592877790260786394013664909629110907556495007340010795947189667378914693);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(83139737705898914080168219902598693061561715036224298439703791344668489570584, 90211558252046026857880514078242916351205078592573132182852973180458192230183);
+        
+        vm.warp(block.timestamp + 223059);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(104510289546923359902214721749214311227702198039580499862909754262475577622747);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 38971);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 356827);
+        vm.roll(block.number + 49820);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 267}(1153443827418577407928858137137);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 40742);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 166441);
+        vm.roll(block.number + 25844);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 259173);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 39256);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 41289);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 335765);
+        vm.roll(block.number + 752);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 368352);
+        vm.roll(block.number + 672);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 218865);
+        vm.roll(block.number + 377);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 107330489136712340553680234507975579089195927383373491323016625537318107389620);
+        
+        vm.warp(block.timestamp + 290082);
+        vm.roll(block.number + 16134);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129639931, 22978864413153928166418730217686627550648091149779917488589642051833723625323);
+        
+        vm.warp(block.timestamp + 283378);
+        vm.roll(block.number + 51444);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 425);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 112613330431987586211023237652336688425886583280108664821871867439377121978223);
+        
+        vm.warp(block.timestamp + 412617);
+        vm.roll(block.number + 660);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 98827613795824009827}(44080603989127346030712404545104678912959102851636907974264816053607935462784);
+        
+        vm.warp(block.timestamp + 330964);
+        vm.roll(block.number + 12255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 275993);
+        vm.roll(block.number + 1246);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 303206);
+        vm.roll(block.number + 57746);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 57278858873159344988363429463366146689929546608684280974898910511332921754594);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 47643);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 220121);
+        vm.roll(block.number + 692);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 691637478220113883359930876890167000849216682);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 26107);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(96276271780014346457002932344522817168378593964127634679367368715335517015252);
+        
+        vm.warp(block.timestamp + 543874);
+        vm.roll(block.number + 57137);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(80308661511815815514393251946408000052701472171365260666380720222337594276610, 42897117442505959);
+        
+        vm.warp(block.timestamp + 506690);
+        vm.roll(block.number + 29355);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 137369);
+        vm.roll(block.number + 527);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(93257832481010926097697763720547131881675041595217063691352687168077319905306, 38501200439417499424744509143989474527523845359276087658317974669710291558363);
+        
+        vm.warp(block.timestamp + 276788);
+        vm.roll(block.number + 15978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 388416);
+        vm.roll(block.number + 16134);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 181144);
+        vm.roll(block.number + 24979);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(247831618, 18224457376993612185693625823342623081939512589991605448729993231018462530592);
+        
+        vm.warp(block.timestamp + 407200);
+        vm.roll(block.number + 32744);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 85977);
+        vm.roll(block.number + 29123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 70938);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 37911);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 69025424625919994267338738890259311241748500374819802081438169798881956479213);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 56260);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 275993);
+        vm.roll(block.number + 12540);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 12661228952759838607797149766582677745336875058987565678868251033815102790009);
+        
+        vm.warp(block.timestamp + 357211);
+        vm.roll(block.number + 19811);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 556816);
+        vm.roll(block.number + 14574);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 47950045490219319168854533205691337379493534177589926459470293779963567482471);
+        
+        vm.warp(block.timestamp + 412762);
+        vm.roll(block.number + 51832);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 4096632058599946535221919797196842984622601250259321344571162815586548498056);
+        
+        vm.warp(block.timestamp + 660);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 412764);
+        vm.roll(block.number + 44688);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 228549);
+        vm.roll(block.number + 14154);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 43390962434543730294}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 547938);
+        vm.roll(block.number + 7977);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 539);
+        vm.roll(block.number + 14154);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 76097503516944485194541153653891639061622161758341853582696310512633716141580);
+        
+        vm.warp(block.timestamp + 418394);
+        vm.roll(block.number + 267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 252832);
+        vm.roll(block.number + 43961);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 224206);
+        vm.roll(block.number + 554);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 964);
+        
+        vm.warp(block.timestamp + 412617);
+        vm.roll(block.number + 42127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 174929);
+        vm.roll(block.number + 3568);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 51769437185435170269}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 180733);
+        vm.roll(block.number + 3597);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 33938475774498854223914);
+        
+        vm.warp(block.timestamp + 412762);
+        vm.roll(block.number + 201);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(50047721756236613455014529675730388132738514335614055046481927710383664854721);
+        
+        vm.warp(block.timestamp + 566018);
+        vm.roll(block.number + 2063);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 6622);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 119532);
+        vm.roll(block.number + 27048);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 349075);
+        vm.roll(block.number + 44881);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 206787);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 89);
+        vm.roll(block.number + 12558);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 53113);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 38124378465289458520042479665615159630597460158330556104833592542262348373801);
+        
+        vm.warp(block.timestamp + 330566);
+        vm.roll(block.number + 21122);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 470191);
+        vm.roll(block.number + 44295);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 547688);
+        vm.roll(block.number + 25266);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 325220);
+        vm.roll(block.number + 27048);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(9353585316639295342399616363118268284912653323638987177228552729324910271236);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 4997);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 202690);
+        vm.roll(block.number + 32307);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(7438605002015521351540938605235583595211840162038612797097221932453575460489);
+        
+        vm.warp(block.timestamp + 86501);
+        vm.roll(block.number + 29547);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 411201);
+        vm.roll(block.number + 34005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(2730288298702083241474003595569703424530536688820755606931242374975043458205);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 73);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 43931491599483071911}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 25664);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 134927);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 111595);
+        vm.roll(block.number + 25224);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 280768);
+        vm.roll(block.number + 934);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 2813027144240117205501988916319649129647409967179910224088918967552594791697);
+        
+        vm.warp(block.timestamp + 497302);
+        vm.roll(block.number + 49831);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 296636);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 11104063747036565933098138861709630922233587000048256105084696657481353379908);
+        
+        vm.warp(block.timestamp + 86163);
+        vm.roll(block.number + 33202);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 472701);
+        vm.roll(block.number + 34074);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 56745);
+        vm.roll(block.number + 58597);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 76675);
+        vm.roll(block.number + 50685);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 67488);
+        vm.roll(block.number + 42590);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(66470328158484661063605520895990668865081060772845526672718709770128081260452);
+        
+        vm.warp(block.timestamp + 541123);
+        vm.roll(block.number + 49523);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, false);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 49353);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 15890435531732342140516984699169462205139867713529197016779243010697017346314);
+        
+        vm.warp(block.timestamp + 23);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 536018);
+        vm.roll(block.number + 48380);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000, 58663607188762429603423878270981534785541557057115927172776547694201364601752);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 31784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 683);
+        vm.roll(block.number + 17012);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, false);
+        
+        vm.warp(block.timestamp + 297961);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 576579);
+        vm.roll(block.number + 4899);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 116251);
+        vm.roll(block.number + 14164);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 395198);
+        vm.roll(block.number + 3602);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(2419665166717668667594088371165724273536785891065165630253855472);
+        
+        vm.warp(block.timestamp + 309025);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 1648608338813503721616154827389301422154408218183050577792689855113823961804);
+    }
+    
+    
+    function test_auto_preSaleFinished_19() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 33199);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 15979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913128639938);
+        
+        vm.warp(block.timestamp + 395196);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(92291204678326744348727437966115287238834246368165577029123750520283071480736, 9939364999354494664406630418880751589460743490020879900322728668988356467501);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 59900);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 1524785993);
+        
+        vm.warp(block.timestamp + 119685);
+        vm.roll(block.number + 40740);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 202687);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 412763);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 322352);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 21532003470265547675950710935114225964625680539994992064246747078282719192731);
+        
+        vm.warp(block.timestamp + 68612);
+        vm.roll(block.number + 15978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(57308417672132618425025840997037888813287766550703098614906146911924037405249, 93613155831892566942424447190399671450425135966157819530351179895957135253914);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 48499592236950163435247545589977561252178678640435921758890009711428822718839);
+        
+        vm.warp(block.timestamp + 26);
+        vm.roll(block.number + 25);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000, 108771779166582420578918151980065386974690263066684002120137349179237879137393);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 1424);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, false);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 36282);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(31251918349901580498228131761412588666005163112590143012683954468360820419717, 115792089237316195423570985008687907853269984665640564039457584006913129639935);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 412759);
+        vm.roll(block.number + 44739);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 58175927063942617136}(115792089237316195423570985008687907853269984665640564039457584007913129636337);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 395197);
+        vm.roll(block.number + 12167);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 36278);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584006913129639936);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 270368);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 119685);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 21);
+        
+        vm.warp(block.timestamp + 68613);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668331474131}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 418398);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 412759);
+        vm.roll(block.number + 4998);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 15979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 322350);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 27);
+        vm.roll(block.number + 29226);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 318778);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 92610842243027239794766953102390514979718438442444815871101312030352327767974);
+        
+        vm.warp(block.timestamp + 508781);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 672}(115792089237316195423570985008687907853269984665640564039457584007913117639936);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 15982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 37492);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000010000, false);
+        
+        vm.warp(block.timestamp + 531976);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 96805);
+        vm.roll(block.number + 24762);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 81160);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913105639937);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 55);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 72890514780322495417}(89597530127125730130720829420958369386879386024776757133545473916982401782921);
+        
+        vm.warp(block.timestamp + 144871);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129639913, 41022794007201383396005592927241689839152921644889065840175061740994587978420);
+        
+        vm.warp(block.timestamp + 119688);
+        vm.roll(block.number + 9241);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000010000, false);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000020000, false);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 29226);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 15978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 508783);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 253761);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 6554545616270477098143097013897715559945481735148156667252838663429675268272);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 55888);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 182405);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 322353);
+        vm.roll(block.number + 40741);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 21}(2583622142278420384575928668821224886240653160532188088723529590050735141499);
+        
+        vm.warp(block.timestamp + 305259);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 29224);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(70254373202073191512635633215095354879102198465430046586031191237102500687892);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 417);
+        vm.roll(block.number + 33203);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(7967355005396800785185078064559522934751305355211137285361512189245790717060);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 56263);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 322350);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 514416);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 25);
+        vm.roll(block.number + 24759);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 119690);
+        vm.roll(block.number + 9245);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 412763);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 51131);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 23);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 25835211872213594989}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 3597);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 184781);
+        vm.roll(block.number + 12563);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(922);
+        
+        vm.warp(block.timestamp + 68612);
+        vm.roll(block.number + 15978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 109455666332994724662894629242159514750384696137792823910338219794634278671438);
+        
+        vm.warp(block.timestamp + 61534);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 77646604964002614368886043631981873377406967026380352104227216399239353989982);
+        
+        vm.warp(block.timestamp + 418397);
+        vm.roll(block.number + 15978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 25);
+        vm.roll(block.number + 3601);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000030000, 84888565187081176370332083463179355477725396768265379690904683683335895932319);
+        
+        vm.warp(block.timestamp + 318773);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 2907);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000, 12000001);
+        
+        vm.warp(block.timestamp + 253763);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(14568392255673992971565423336896918612601234686477842956820167220796312845813);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 46575);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 1524785993}(70394629296048016065055513342292987952557813879784781503177197584174273081477);
+        
+        vm.warp(block.timestamp + 339850);
+        vm.roll(block.number + 15978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 255}(290);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 692);
+        
+        vm.warp(block.timestamp + 253763);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 72890514780322495417}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 32306);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(87638515678125306299059326031463644729566537478667931345376919597074105784158, 0);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 13814239286680317373}(112599904618562830378422028101701396736155416111164942366577150229403528732367);
+        
+        vm.warp(block.timestamp + 57078);
+        vm.roll(block.number + 29229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 514416);
+        vm.roll(block.number + 24032);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(13263006412572015301150979311800561336616866258829156551788819165988129413111, 3597);
+        
+        vm.warp(block.timestamp + 525470);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 270368);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 56455);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639909);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 445123);
+        vm.roll(block.number + 7730);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 395198);
+        vm.roll(block.number + 9239);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(23999997);
+        
+        vm.warp(block.timestamp + 276241);
+        vm.roll(block.number + 24759);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+    }
+    
+    
+    function test_auto_approve_20() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 503270);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(35988401728169779205263630676721358840590400524580821669694357019916205172323);
+        
+        vm.warp(block.timestamp + 692);
+        vm.roll(block.number + 58337);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 26819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 74054962876358544874908595587241939005987948069011372933124498753796840239851);
+        
+        vm.warp(block.timestamp + 555592);
+        vm.roll(block.number + 26819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 104104955061817896944289528625390879049363541286351513740481726258333447724731);
+        
+        vm.warp(block.timestamp + 435480);
+        vm.roll(block.number + 36205);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 219028);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 7490196573942368378}(45583039391397779287138227978994972711791266103286380449434633371806562756751);
+        
+        vm.warp(block.timestamp + 182634);
+        vm.roll(block.number + 24533);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 331343);
+        vm.roll(block.number + 35);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 395199);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 32302);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 10311);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 24954484091174294092}(43111257602612472785341012852370955719460397504006169526336647578636763364015);
+        
+        vm.warp(block.timestamp + 445123);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 51868565195402039930370840663511426057899189764968138476312437221292691510768);
+        
+        vm.warp(block.timestamp + 514415);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(6871174172998455339486714404162315580814501200031550875380235742353873524554);
+        
+        vm.warp(block.timestamp + 243772);
+        vm.roll(block.number + 14167);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 411400);
+        vm.roll(block.number + 34526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 470668);
+        vm.roll(block.number + 3603);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000020000, 95010772103542933229280274991709245352632208358966189262209803935267576977973);
+        
+        vm.warp(block.timestamp + 253761);
+        vm.roll(block.number + 6236);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 32441132765262140189500017487293397743167556518035458832670691708306762973844);
+        
+        vm.warp(block.timestamp + 3597);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125467668347085524}(707);
+        
+        vm.warp(block.timestamp + 377);
+        vm.roll(block.number + 10880);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(8357966824346351214175532882411693455804578947253958197079770, 91319588470935233184306238056393678826322084117873936932340217322615645435223);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 5492);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 56654516254216349460}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 211036);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 90423898269396485799}(46629942527101521503160893083846455070391551951380049306227565325727469255878);
+        
+        vm.warp(block.timestamp + 422440);
+        vm.roll(block.number + 145);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 122455);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 783);
+        
+        vm.warp(block.timestamp + 3597);
+        vm.roll(block.number + 8928);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 41290255796141879142}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 525755);
+        vm.roll(block.number + 672);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(45328462029094540023338637282214509691733686988207259053772363249036301009375, 1000002);
+        
+        vm.warp(block.timestamp + 68610);
+        vm.roll(block.number + 454);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(152083457371740546106427);
+        
+        vm.warp(block.timestamp + 543764);
+        vm.roll(block.number + 32304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 67364489461152352961123074689356261853440195602195618541952403178618453654779);
+        
+        vm.warp(block.timestamp + 77613);
+        vm.roll(block.number + 43585);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000030000, 1794117176441294372351313058509199672773102616588005008788320330188702);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 3966);
+        vm.roll(block.number + 51040);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 13394871972864174435520349257496498576811062133532810504372909801077515788926);
+        
+        vm.warp(block.timestamp + 475285);
+        vm.roll(block.number + 21352);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 47929);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 30089169587953847143699696055378740450410561398273129219657309720638980672654);
+        
+        vm.warp(block.timestamp + 443549);
+        vm.roll(block.number + 45215);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 24759);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 211036);
+        vm.roll(block.number + 16515);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 68440093855279899675}(69483712954301277365511581730273042110254262231041595533321714649681917217865);
+        
+        vm.warp(block.timestamp + 362769);
+        vm.roll(block.number + 10873);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 259173);
+        vm.roll(block.number + 5000);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 3599);
+        vm.roll(block.number + 7629);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 28627);
+        vm.roll(block.number + 49052);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 633);
+        vm.roll(block.number + 38422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 117025);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(89200816778021042757510281034770124989227035613300410290013062907078448314138);
+        
+        vm.warp(block.timestamp + 172048);
+        vm.roll(block.number + 1858);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 45706586422156388254572951108283770254262955424759066740830284586106113232900);
+        
+        vm.warp(block.timestamp + 32158);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(80512539225123883402379570032011794527173259062634118353334410728013753325626);
+        
+        vm.warp(block.timestamp + 466855);
+        vm.roll(block.number + 53610);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000020000, true);
+        
+        vm.warp(block.timestamp + 356827);
+        vm.roll(block.number + 32301);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 427000000);
+        
+        vm.warp(block.timestamp + 211036);
+        vm.roll(block.number + 35871);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 96814);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(86711175544139213688141272853088194956058648490875811059550309636391150363270);
+        
+        vm.warp(block.timestamp + 267209);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 119690);
+        vm.roll(block.number + 33198);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 40731883996129086681}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 136660);
+        vm.roll(block.number + 57646);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 114069170233394324857445990780914359809613517380989848706593412640404777909761);
+        
+        vm.warp(block.timestamp + 126221);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(100694693328443309007705975626076352428986609141021494425008204486382889816278, 93846746008298129641742550118279733125538749097727148454561590626228412160627);
+        
+        vm.warp(block.timestamp + 672);
+        vm.roll(block.number + 36598);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 232817);
+        vm.roll(block.number + 3603);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 65428436383290149961}(4370001);
+        
+        vm.warp(block.timestamp + 498966);
+        vm.roll(block.number + 2999);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 24000000}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 202690);
+        vm.roll(block.number + 56262);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 44867);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000000000, 104104955061817896944289528625390879049363541286351513740481726258333447724731);
+        
+        vm.warp(block.timestamp + 527183);
+        vm.roll(block.number + 672);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(48950506601493594313147595333985112637554479478109138607344737460665260356175);
+        
+        vm.warp(block.timestamp + 253762);
+        vm.roll(block.number + 16177);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 59884);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 321950);
+        vm.roll(block.number + 36598);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 469779);
+        vm.roll(block.number + 29227);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 37939660498112306783734836056847796046664421058299862714216705315686274950258);
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 29512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 206787);
+        vm.roll(block.number + 40740);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(68744950512557665396450189182068633484489443542430956975011727317566392689276, 115792089237316195423570985008687907853269984665640564039457584007913129636334);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(25, 33805992608455659889033231363558511873392243276695005592714813029106555147574);
+        
+        vm.warp(block.timestamp + 206787);
+        vm.roll(block.number + 5277);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 570150);
+        vm.roll(block.number + 49052);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 999999999998);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 74);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 267);
+        vm.roll(block.number + 20162);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000000000, true);
+        
+        vm.warp(block.timestamp + 418394);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 107669);
+        vm.roll(block.number + 33748);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000000000, 3327187427004500608927397186779790494904945327433763788063597929872113120260);
+        
+        vm.warp(block.timestamp + 453325);
+        vm.roll(block.number + 49130);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 315728);
+        vm.roll(block.number + 29229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(19619989247474217011076707412013880059328215078652546959497791431659208552425);
+        
+        vm.warp(block.timestamp + 74240);
+        vm.roll(block.number + 56266);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 99115437937748786764}(55324390703061889687263104492213939188927842265300667259483780656226414980923);
+        
+        vm.warp(block.timestamp + 577419);
+        vm.roll(block.number + 49052);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 588500000}(86279939463379521950624036121060686803493634641270213583420097519338307393968);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 41089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 116016);
+        vm.roll(block.number + 16177);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 347526);
+        vm.roll(block.number + 9176);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 320939);
+        vm.roll(block.number + 16515);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 15571480484179749200447438748686798514668440399781070584054012337694181406048);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 322354);
+        vm.roll(block.number + 288);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 36277);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 184);
+        
+        vm.warp(block.timestamp + 218386);
+        vm.roll(block.number + 55);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 137369);
+        vm.roll(block.number + 33201);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913105639935);
+        
+        vm.warp(block.timestamp + 10494);
+        vm.roll(block.number + 25327);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 60247);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000010000, 2650200678572350661257255570101196943272357360979308561313874761510743014144);
+        
+        vm.warp(block.timestamp + 317689);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 633);
+    }
+    
+    
+    function test_auto_whitelist_21() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 33199);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 15979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913128639938);
+        
+        vm.warp(block.timestamp + 395196);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(92291204678326744348727437966115287238834246368165577029123750520283071480736, 9939364999354494664406630418880751589460743490020879900322728668988356467501);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 59900);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 1524785993);
+        
+        vm.warp(block.timestamp + 119685);
+        vm.roll(block.number + 40740);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 531980);
+        vm.roll(block.number + 36277);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 139039);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 571138);
+        vm.roll(block.number + 1426);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 342410);
+        vm.roll(block.number + 9241);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668354474133}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 32306);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 37);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 40744);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 23);
+        vm.roll(block.number + 15978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 52879262649791713072}(955);
+        
+        vm.warp(block.timestamp + 445123);
+        vm.roll(block.number + 58335);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 7149940420871316427848074309721918032292549863614410976087210820454471938704);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 55);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(964, 999999999997);
+        
+        vm.warp(block.timestamp + 318777);
+        vm.roll(block.number + 1426);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000000000, true);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 26087);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 64392618840262950424150151019496602854245410236806971605034571670831949843681);
+        
+        vm.warp(block.timestamp + 514413);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 62125467668355474135}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 55);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 672);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(115024028031575333530191493815480091918387748247581853356801352809996590564382, 30093895333386045401719303726780798735279307157659796182622350059027211373024);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 5001);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129639911, 24365215710730282626462175308818673329811492848506165298044492097494493858472);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129639933, 22925561008400747340648409245019576999938272510112201026495516652963304366443);
+        
+        vm.warp(block.timestamp + 68611);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 24);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 395197);
+        vm.roll(block.number + 56263);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 56728);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 30929);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 588390);
+        vm.roll(block.number + 19893);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 30680210278194226423}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 5002);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 46922);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 30962714804078221913419483764283656966899691290336688391637949228341067260753);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(23999998);
+        
+        vm.warp(block.timestamp + 232817);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 412758);
+        vm.roll(block.number + 50526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 54470);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129639931, 27102768689253069913574324055248695561847448947734607786323600404185232278898);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 9867);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 4370001}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 24761);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 27);
+        vm.roll(block.number + 29223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125467668355474110}(11999998);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 67125467668355470532}(80503189630206819672343905073202950962764733466203947488613968975252256581086);
+        
+        vm.warp(block.timestamp + 202690);
+        vm.roll(block.number + 29229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 119690);
+        vm.roll(block.number + 5002);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 37104877002393865235725751227786730214295382162578099977797773122847751608265);
+        
+        vm.warp(block.timestamp + 508781);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 65592604328924620340}(113918400202034905425960608526968542163336921449163648155705090773537755602240);
+        
+        vm.warp(block.timestamp + 270785);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(10765348783237170657945409793987264454832879958447993340134244558590212098176, 104156352821134478419000127312532965506412692806765996550033878276471038094251);
+        
+        vm.warp(block.timestamp + 74146);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 105587562905919104191466272368062252855632249944115223037798635586194548606989);
+        
+        vm.warp(block.timestamp + 131780);
+        vm.roll(block.number + 36281);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 49338018373544346292057505484758864241989057730292869073414207115408282696842);
+        
+        vm.warp(block.timestamp + 3603);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 47794);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 253765);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 67125466668355474133}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 302742);
+        vm.roll(block.number + 9240);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 322454);
+        vm.roll(block.number + 9243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 24763);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 1524785993);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 68545619173339273276}(13394871972864174435520349257496498576811062133532810504372909801077515788926);
+        
+        vm.warp(block.timestamp + 322354);
+        vm.roll(block.number + 1425);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(49865971012347362725206841235861812207922431954060289339564673523016792118046);
+        
+        vm.warp(block.timestamp + 445123);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 60657864553903070334587416085707479141501036725606466592145958569775309421071);
+        
+        vm.warp(block.timestamp + 418392);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125467668355470534}(23333874103951770142728468311994211484771548958809557699986412446427963167901);
+        
+        vm.warp(block.timestamp + 253767);
+        vm.roll(block.number + 40741);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 4215660353768127088}(477);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039452584007913129639938);
+        
+        vm.warp(block.timestamp + 453325);
+        vm.roll(block.number + 9244);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000000000, false);
+        
+        vm.warp(block.timestamp + 119688);
+        vm.roll(block.number + 49204);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(1000000000001, 5);
+        
+        vm.warp(block.timestamp + 515);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(691);
+        
+        vm.warp(block.timestamp + 96805);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 26}(329);
+        
+        vm.warp(block.timestamp + 145370);
+        vm.roll(block.number + 9240);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 41290255796141879142}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 322353);
+        vm.roll(block.number + 37844);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 5000000000000000002);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 27);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 466943);
+        vm.roll(block.number + 56263);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129639910, 16115796528367548615727843185206280939153452823969508740680053335265561538096);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 3}(72346737027313753898904913964385667548132765228429348118453070820954215255808);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913128639936);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(34530735416923046515217548779480624400244438174399862670937454156806499618630);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(78486115143863740218823997679448247583731937232739495262133739488052342993088, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039452584007913129639937);
+        
+        vm.warp(block.timestamp + 514418);
+        vm.roll(block.number + 36281);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 999998);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 62125467668355474131}(24000001);
+        
+        vm.warp(block.timestamp + 253765);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 29574);
+        vm.roll(block.number + 27);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 395200);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 102797290754493424813106662629366785225423627828087999182514937258407416577862);
+        
+        vm.warp(block.timestamp + 119689);
+        vm.roll(block.number + 3598);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 172048);
+        vm.roll(block.number + 24);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 318772);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 15474);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129636333);
+        
+        vm.warp(block.timestamp + 23);
+        vm.roll(block.number + 29229);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 119684);
+        vm.roll(block.number + 2589);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 412758);
+        vm.roll(block.number + 24759);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 44867);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(72355112038666265409118346603090007669033204823635992812294877954628407571024, 532);
+        
+        vm.warp(block.timestamp + 453325);
+        vm.roll(block.number + 56266);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+    }
+    
+    
+    function test_auto_transferFrom_22() public { 
+        
+        vm.warp(block.timestamp + 246424);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 22);
+        
+        vm.warp(block.timestamp + 495);
+        vm.roll(block.number + 16252);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 41123788869466840763831923818510626075415938665336153242646389791287973434404);
+        
+        vm.warp(block.timestamp + 497272);
+        vm.roll(block.number + 59050);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 68610);
+        vm.roll(block.number + 58528);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 543874);
+        vm.roll(block.number + 38092);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 340931);
+        vm.roll(block.number + 58528);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 253767);
+        vm.roll(block.number + 50761);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 21395);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 199996);
+        vm.roll(block.number + 48144);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 14863702075168062366}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 467763);
+        vm.roll(block.number + 48056);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 570150);
+        vm.roll(block.number + 293);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 492);
+        vm.roll(block.number + 35);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 171779);
+        vm.roll(block.number + 51128);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 56260);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 2901);
+        vm.roll(block.number + 4254);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 301);
+        vm.roll(block.number + 6399);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 126601);
+        vm.roll(block.number + 11720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 92738815234359476667}(78526497661681209428431291239053204110373292845851689630312469152349774363336);
+        
+        vm.warp(block.timestamp + 533);
+        vm.roll(block.number + 22183);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 956);
+        vm.roll(block.number + 28162);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 245633);
+        vm.roll(block.number + 418);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 134922);
+        vm.roll(block.number + 29229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 382);
+        vm.roll(block.number + 49366);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 315624);
+        vm.roll(block.number + 46233);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 17755);
+        vm.roll(block.number + 15984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 416051);
+        vm.roll(block.number + 36282);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 468627);
+        vm.roll(block.number + 2017);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 276898);
+        vm.roll(block.number + 56147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 62884194524452951056713781225260111447531284976883104664972950249624935008576);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 56976);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 127386);
+        vm.roll(block.number + 36116);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 103547032911383244226639068040160454670815178932184188469929842289585650042120);
+        
+        vm.warp(block.timestamp + 279314);
+        vm.roll(block.number + 758);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 477501);
+        vm.roll(block.number + 46286);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 477973);
+        vm.roll(block.number + 13872);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, 378);
+        
+        vm.warp(block.timestamp + 218865);
+        vm.roll(block.number + 54861);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 573919);
+        vm.roll(block.number + 71);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 408604);
+        vm.roll(block.number + 42001);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 582215);
+        vm.roll(block.number + 56011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 285);
+        vm.roll(block.number + 37018);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 5693986136819548481981547622081856576361207817298818715065505438223943468283);
+        
+        vm.warp(block.timestamp + 316813);
+        vm.roll(block.number + 27804);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 469779);
+        vm.roll(block.number + 7956);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 10589266332165550131539953260130753810169279104024045014117853054920338159242);
+        
+        vm.warp(block.timestamp + 274074);
+        vm.roll(block.number + 38638);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, 924);
+        
+        vm.warp(block.timestamp + 28235);
+        vm.roll(block.number + 59819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(657);
+        
+        vm.warp(block.timestamp + 229707);
+        vm.roll(block.number + 42483);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 77223483066054048213}(42349716597678694182561543916131202384985977237694151791680125189970148134536);
+        
+        vm.warp(block.timestamp + 143256);
+        vm.roll(block.number + 43795);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(9027465115847684063219821616043074617956010672694914600741880473084301404014, 88728703352919994117299468288719482210224959987761537846345550906497978571367);
+        
+        vm.warp(block.timestamp + 456);
+        vm.roll(block.number + 733);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 11482028639742059270430703058201102879066126524);
+        
+        vm.warp(block.timestamp + 504692);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 30322771606435625678107618697220371904511730298302245404558441952602444851935);
+        
+        vm.warp(block.timestamp + 224068);
+        vm.roll(block.number + 15984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(19024390);
+        
+        vm.warp(block.timestamp + 86501);
+        vm.roll(block.number + 48798);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 22681409741732240178}(54864098521437185275426762517998150863813239095767817408654890280382421981089);
+        
+        vm.warp(block.timestamp + 40204);
+        vm.roll(block.number + 7701);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 562637);
+        vm.roll(block.number + 987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 235576);
+        vm.roll(block.number + 27711);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 233943);
+        vm.roll(block.number + 37393);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 683);
+        vm.roll(block.number + 55640);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 960}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 359450);
+        vm.roll(block.number + 26169);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 520498);
+        vm.roll(block.number + 39205);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(58638494801371870119036395843834137418987909771398135781542074450940163438079);
+        
+        vm.warp(block.timestamp + 407241);
+        vm.roll(block.number + 8220);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 502613);
+        vm.roll(block.number + 45367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 293140);
+        vm.roll(block.number + 45367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000020000, false);
+        
+        vm.warp(block.timestamp + 384764);
+        vm.roll(block.number + 6622);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(521, 100412768444596263852860048653737659974780611626663717932525388428428494816537);
+        
+        vm.warp(block.timestamp + 531980);
+        vm.roll(block.number + 34200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 43312531965162279333}(47823004154870143325689220510140522810632754684953303441444766935018381018656);
+        
+        vm.warp(block.timestamp + 165738);
+        vm.roll(block.number + 37480);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 111);
+        
+        vm.warp(block.timestamp + 143256);
+        vm.roll(block.number + 36277);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 45583039391397779287138227978994972711791266103286380449434633371806562756751);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 53061);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 34340);
+        vm.roll(block.number + 873);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 141312);
+        vm.roll(block.number + 56459);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.allInfoFor(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 321417);
+        vm.roll(block.number + 16424);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(3433100304100210756409729296067764560021588948371508033741003910899753596483, 10025456360378870125400552820267117383038572161544501471798932257020091866408);
+        
+        vm.warp(block.timestamp + 523963);
+        vm.roll(block.number + 40082);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000000000, 83327833714087425660073049160517911695354599627728890182926838742836041496712);
+        
+        vm.warp(block.timestamp + 384764);
+        vm.roll(block.number + 21376);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 269526);
+        vm.roll(block.number + 43);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(97226351230483940598343267036614589749868056563197671665114916800740207709227, 66837563477050916835584636782206344310935026189228593533619002791015177958861);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 20051);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000010000, 57114051258888755190721663931205142852214255509662038387561866519950568878539);
+        
+        vm.warp(block.timestamp + 431818);
+        vm.roll(block.number + 40520);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 468627);
+        vm.roll(block.number + 43234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 402456);
+        vm.roll(block.number + 15216);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 510073);
+        vm.roll(block.number + 241);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 69468897255245660198}(57578712590298004341509060782689153696447428951056459518399223931014986116267);
+        
+        vm.warp(block.timestamp + 441891);
+        vm.roll(block.number + 5446);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000000000, false);
+        
+        vm.warp(block.timestamp + 347048);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 423710);
+        vm.roll(block.number + 29958);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 497620470}(55866242101995515870510419415200122305604578524209714904336520907731400001947);
+        
+        vm.warp(block.timestamp + 598);
+        vm.roll(block.number + 36027);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, false);
+        
+        vm.warp(block.timestamp + 514414);
+        vm.roll(block.number + 28322);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 178296);
+        vm.roll(block.number + 53592);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 60377068375617053886}(253);
+        
+        vm.warp(block.timestamp + 503270);
+        vm.roll(block.number + 46233);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 112268);
+        vm.roll(block.number + 791);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000030000, 78986114358693011878741838244689194045008973755865188700136986479706593116250);
+        
+        vm.warp(block.timestamp + 226138);
+        vm.roll(block.number + 7361);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000020000, true);
+        
+        vm.warp(block.timestamp + 125646);
+        vm.roll(block.number + 18451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(352, 59733121536502067637096046711362451998260789481091654136767703882503013422042);
+        
+        vm.warp(block.timestamp + 596167);
+        vm.roll(block.number + 59);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 41535172023873183294912014157694942759654460215978015833195457844081754159209);
+        
+        vm.warp(block.timestamp + 419592);
+        vm.roll(block.number + 297);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 102803361810660211272454354497852485545211582105825541949443042015500428192152);
+        
+        vm.warp(block.timestamp + 272188);
+        vm.roll(block.number + 52680);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(20188644169378233422587235307018615799794753376074735310169419086585710685950, 49416124667306828046369915733718360040213953392333493376392877265202677878674);
+        
+        vm.warp(block.timestamp + 353843);
+        vm.roll(block.number + 36800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 593840);
+        vm.roll(block.number + 9284);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 255933);
+        vm.roll(block.number + 44174);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 108233285126422711747721768995040181907223344961348798906402430278446386163453);
+        
+        vm.warp(block.timestamp + 433195);
+        vm.roll(block.number + 20474);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 107620);
+        vm.roll(block.number + 50706);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 42761214761093997186449811757353577260785909858001698796627757103126052395308);
+        
+        vm.warp(block.timestamp + 4991);
+        vm.roll(block.number + 39019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 161491);
+        vm.roll(block.number + 6316);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 498966);
+        vm.roll(block.number + 49525);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 62961173789042260763374409266086494724874889573919883691825154186667822325607);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 7701);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 85653854159645099923890845377042701038290786610508269833873405335613848557711);
+        
+        vm.warp(block.timestamp + 498621);
+        vm.roll(block.number + 515);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 91);
+        vm.roll(block.number + 32376);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 43607);
+        vm.roll(block.number + 37781);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 101005);
+        vm.roll(block.number + 41088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+    }
+    
+    
+    function test_auto_approve_23() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 33199);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 15979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913128639938);
+        
+        vm.warp(block.timestamp + 395196);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(92291204678326744348727437966115287238834246368165577029123750520283071480736, 9939364999354494664406630418880751589460743490020879900322728668988356467501);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 59900);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 1524785993);
+        
+        vm.warp(block.timestamp + 119685);
+        vm.roll(block.number + 40740);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 202687);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 412763);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 322352);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 21532003470265547675950710935114225964625680539994992064246747078282719192731);
+        
+        vm.warp(block.timestamp + 68612);
+        vm.roll(block.number + 15978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(57308417672132618425025840997037888813287766550703098614906146911924037405249, 93613155831892566942424447190399671450425135966157819530351179895957135253914);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 48499592236950163435247545589977561252178678640435921758890009711428822718839);
+        
+        vm.warp(block.timestamp + 26);
+        vm.roll(block.number + 25);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000, 108771779166582420578918151980065386974690263066684002120137349179237879137393);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 1424);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, false);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 36282);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(31251918349901580498228131761412588666005163112590143012683954468360820419717, 115792089237316195423570985008687907853269984665640564039457584006913129639935);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 418393);
+        vm.roll(block.number + 24760);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 23);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 3601}(65212271692699068499386394075613672379012291482240688790863904771591985424200);
+        
+        vm.warp(block.timestamp + 514418);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(25, 1400494448430683566245441530701653901289432824159404942329011843074659245);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 32301);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 2);
+        
+        vm.warp(block.timestamp + 508780);
+        vm.roll(block.number + 32302);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(100502754722466141247296452289279097966356646337534740451771505256594106701755);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 40744);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 416437);
+        vm.roll(block.number + 24832);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 119689);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 71625280364039160077638102653340090512438959302321826725643618172742850610648);
+        
+        vm.warp(block.timestamp + 119688);
+        vm.roll(block.number + 40741);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 1099511627775}(49296159565629008568894084406494188807950224652412901254920);
+        
+        vm.warp(block.timestamp + 412762);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, false);
+        
+        vm.warp(block.timestamp + 395196);
+        vm.roll(block.number + 36282);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000000000, false);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 29226);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 49525);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, false);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 3600);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 82080596593210861154}(68497019171519391286430237787283898205649180874646618618444737068042596286245);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 38075);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 318777);
+        vm.roll(block.number + 9241);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(3602, 12669237019527426507310246568796335324451786571654364552146671852083858536020);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 40740);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 999999}(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 24000002);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 56264);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639915);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 114849820835860982391436702099953059827384660187640492727163444355183872794438);
+        
+        vm.warp(block.timestamp + 253767);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 476570);
+        vm.roll(block.number + 32302);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 895);
+        
+        vm.warp(block.timestamp + 119687);
+        vm.roll(block.number + 5002);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 22);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129639934, 899);
+        
+        vm.warp(block.timestamp + 3599);
+        vm.roll(block.number + 23);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 24000003);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 514417);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 23);
+        
+        vm.warp(block.timestamp + 3603);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 26);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913117639937, 83220974999441989282395651330147270474627916131254241445218275515132544647292);
+        
+        vm.warp(block.timestamp + 514417);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 36473261711652815641047900861010554920442882407328614239220709824353918624146);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 32302);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 2);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(79273003420077794593306720442626713447043564153906548356178304426372192147693, 60505995972123402932929032927280871182926717150142699476874734678597690821878);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 44777619046943032062309741574998617825193107959394441297672583618258033143968);
+        
+        vm.warp(block.timestamp + 68611);
+        vm.roll(block.number + 56261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 418398);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 514412);
+        vm.roll(block.number + 9245);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(110180903947402133372288138099167844431788218386112247402147542357932302393487, 115792089237316195423570985008687907853269984665640564039457584007913129639909);
+        
+        vm.warp(block.timestamp + 202685);
+        vm.roll(block.number + 45000);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 78303023134277185937698615047151602993626620021650467068000750568798866404702);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 4998);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(836, 94635111668314837907587148171394904202433701059202795467090614733057840447705);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 56266);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 57132168796375834355}(87222601402014663304731610918129574152573817186773327500433029062779459809875);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129639915, 23999997);
+        
+        vm.warp(block.timestamp + 318772);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039452584007913129639936);
+        
+        vm.warp(block.timestamp + 318772);
+        vm.roll(block.number + 36276);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 52140161511014536809858539581706701225367345727938102764227739106911601528540);
+        
+        vm.warp(block.timestamp + 3603);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 20564942423458970768}(86736138693060752921120305526248375643490519650913782279802194595413483646564);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 23218);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 25);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 112621208737412471314021832925287519680349298574334705341028098085673065315252);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 3602);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913128639937);
+        
+        vm.warp(block.timestamp + 418392);
+        vm.roll(block.number + 49523);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(11999998);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000000000, false);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 322352);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 1000003);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 17891);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(3602, 44213730384431746977957007959122619375529624319050023911184217473165066789345);
+        
+        vm.warp(block.timestamp + 253765);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129636339, 115792089237316195423570985008687907853269984665640564039457584007913105639939);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(1524785992, 64119205797112192514411335089078616512551993227940925981166943278818652201942);
+        
+        vm.warp(block.timestamp + 253761);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(41907283212829077149805284020417029263903125623792288917508986096259294756050, 38341900671334511977395585012965038537269374878901615620218372340838540123258);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 64006);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(2429233997635937935390160559824318448247334645325864580694037559959847927893, 106869688290386138160392272179014876883836108320804285253450519445630778517925);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 324868390652172796692647189359156100814711163175346190569210055777337285149);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 24761);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 69985660057198860640324772945037609314830133760192030325256934712904939434341);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 20116447539894129155525032197751635545881180222426946448973447998287601887389);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 29227);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 107874086740969167429551417866531696813591421549705028154963236189713496690392);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 531978);
+        vm.roll(block.number + 29223);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 4369999);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 59717);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000020000, true);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 5003);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 5000000000000000003);
+        
+        vm.warp(block.timestamp + 68610);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 418392);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 3597);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 91600326841549688498837545599286075835945354801412808595987400469027174836613);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 33201);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000020000, 1000000000002);
+    }
+    
+    
+    function test_auto_approve_24() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 69421592877790260786394013664909629110907556495007340010795947189667378914693);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 7541);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 326786);
+        vm.roll(block.number + 32307);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 190081);
+        vm.roll(block.number + 12540);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 40744);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 29081);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 2263814384821167129360555852796309292054962897954700409037258932358241747561);
+        
+        vm.warp(block.timestamp + 322350);
+        vm.roll(block.number + 3601);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(52011026723380361473603800658377312553824370067890231561152661123192514731741);
+        
+        vm.warp(block.timestamp + 598531);
+        vm.roll(block.number + 40082);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 10494);
+        vm.roll(block.number + 21844);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 36125822750411482260170530625988240531249807279712160766195660268266271889122);
+        
+        vm.warp(block.timestamp + 172835);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 253765);
+        vm.roll(block.number + 24762);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 62125467668355474134}(115792089237316195423570985008687907853269984665640564039457584007913128639936);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 23718);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 417);
+        
+        vm.warp(block.timestamp + 575565);
+        vm.roll(block.number + 2388);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 27540848903458924010}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 46309);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(110076648867237716861723292784241685854109193077980057843296743337393080443128);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 49525);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 99411651684669776978104048336618865285639754836707643514154452665608102274300);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 23);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 1425);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 56802646418245516612272652692324203830081703132899029820641589761051622908972);
+        
+        vm.warp(block.timestamp + 445123);
+        vm.roll(block.number + 4899);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 531978);
+        vm.roll(block.number + 7730);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 593093);
+        vm.roll(block.number + 29225);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(82078746254255543889503895620852067548343587059293967303200440882951986055799);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 15564);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(44597460384473281610739005508134358229495625682518939930599744128483886302576);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 7799257779506036155449121558374879646039697316971468023351633263843048463552);
+        
+        vm.warp(block.timestamp + 514416);
+        vm.roll(block.number + 37285);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 87043169900747901012}(89029818431055022469174176495147397205656042753863280756010142447636068565364);
+        
+        vm.warp(block.timestamp + 455852);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 2067);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 15380);
+        vm.roll(block.number + 417);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(289);
+        
+        vm.warp(block.timestamp + 96814);
+        vm.roll(block.number + 27);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 509683);
+        vm.roll(block.number + 41979);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 76569429649820105523550899345043937340394827362098266433067794547848504580131);
+        
+        vm.warp(block.timestamp + 170232);
+        vm.roll(block.number + 50322);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, false);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 12540);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 424079);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 33620);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 219763);
+        vm.roll(block.number + 17012);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 90685836343459617596}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 417184);
+        vm.roll(block.number + 36280);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 98625);
+        vm.roll(block.number + 23704);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 272545);
+        vm.roll(block.number + 29547);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 40532967309862874439}(10357632569381553655408053090174597251949389662238696667951983927667525709670);
+        
+        vm.warp(block.timestamp + 51135);
+        vm.roll(block.number + 752);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 39256);
+        vm.roll(block.number + 9658);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 574924);
+        vm.roll(block.number + 184);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000, 38152098032283493897884490652978782024026692857869668502660453628369617495786);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 5277);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 96814);
+        vm.roll(block.number + 51108);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 43427);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 88532);
+        vm.roll(block.number + 57646);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 418392);
+        vm.roll(block.number + 10873);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 33620);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 98016652140140171637876290304869962052611920870862570421666303609889255052676);
+        
+        vm.warp(block.timestamp + 508779);
+        vm.roll(block.number + 36990);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(52480252765915362274660899712601480554198278379655246612540000411814668428014, 647);
+        
+        vm.warp(block.timestamp + 454070);
+        vm.roll(block.number + 22452);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 111081946148185758211182516911575553836027213956707778151467320448564224107230);
+        
+        vm.warp(block.timestamp + 119688);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(1249110528204, 57546530844155203668296312625794430576049588875856743907806307710526952465132);
+        
+        vm.warp(block.timestamp + 258793);
+        vm.roll(block.number + 1858);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 139018700682310790347549209054602413434201332305857039486151335456312975647);
+        
+        vm.warp(block.timestamp + 334227);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 156121);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 509475);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 29547);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 660);
+        vm.roll(block.number + 24764);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(0);
+        
+        vm.warp(block.timestamp + 66610);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 90028247862237557086156905737873615317019920461271372579122508774727936961050);
+        
+        vm.warp(block.timestamp + 10311);
+        vm.roll(block.number + 23797);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(96178515886183971253167427035126439198751107730596452341207810148587640657356);
+        
+        vm.warp(block.timestamp + 313975);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(94280174282713858584383930948027262086115224415132388468237993663524835614306);
+        
+        vm.warp(block.timestamp + 101005);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(65995318400350442621778022070992926138287572393223973044506783442849819426140, 52511126844795492228406489954312498965643172792134125288223611946371500079428);
+        
+        vm.warp(block.timestamp + 243772);
+        vm.roll(block.number + 733);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 293);
+        vm.roll(block.number + 28610);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 22277771817928755542}(111393943637813503577061297949126101684355259113681378629797012433258760709285);
+        
+        vm.warp(block.timestamp + 22772);
+        vm.roll(block.number + 53592);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 395202);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 335765);
+        vm.roll(block.number + 5492);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, true);
+        
+        vm.warp(block.timestamp + 567369);
+        vm.roll(block.number + 20699);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(114849820835860982391436702099953059827384660187640492727163444355183872794438, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 812);
+        vm.roll(block.number + 51227);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 469779);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 11912655980213613654508355017369125290167820182866387229364728399112872682902);
+        
+        vm.warp(block.timestamp + 412761);
+        vm.roll(block.number + 19870);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 330964);
+        vm.roll(block.number + 45556);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 573104);
+        vm.roll(block.number + 33199);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 318775);
+        vm.roll(block.number + 35235);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 33}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 119684);
+        vm.roll(block.number + 49527);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 514418);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 531977);
+        vm.roll(block.number + 45215);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, false);
+        
+        vm.warp(block.timestamp + 111072);
+        vm.roll(block.number + 27526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 369427);
+        vm.roll(block.number + 55085);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 28627);
+        vm.roll(block.number + 56210);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 47929);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 68610);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 45269357355221936434767063125999705321823225710009744748356060311584544655942);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 105844671951822096859643473707858064768294141469977195078730723242156517609924);
+        
+        vm.warp(block.timestamp + 401519);
+        vm.roll(block.number + 515);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 153986);
+        vm.roll(block.number + 15534);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125466668355474134}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 1426);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 51128);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 16239286549549075480960266493258995230833548099790843376047792052213420896712);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 11275);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 186168);
+        vm.roll(block.number + 8928);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 2131069566150529062322599670247201597132529046151862550267393896158851000549);
+    }
+    
+    
+    function test_auto_transfer_25() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 69421592877790260786394013664909629110907556495007340010795947189667378914693);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(83139737705898914080168219902598693061561715036224298439703791344668489570584, 90211558252046026857880514078242916351205078592573132182852973180458192230183);
+        
+        vm.warp(block.timestamp + 223059);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(104510289546923359902214721749214311227702198039580499862909754262475577622747);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 38971);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 356827);
+        vm.roll(block.number + 49820);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 267}(1153443827418577407928858137137);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 40742);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 166441);
+        vm.roll(block.number + 25844);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 259173);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 39256);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 41289);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 335765);
+        vm.roll(block.number + 752);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 368352);
+        vm.roll(block.number + 672);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 34367);
+        vm.roll(block.number + 34414);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(96863181165779669173077500059131037916939333354612633528624157930004801677382, 94793056148215398363385933748707950271003890291023962215470608251434435279850);
+        
+        vm.warp(block.timestamp + 74146);
+        vm.roll(block.number + 43362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 441453);
+        vm.roll(block.number + 7541);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 45788910123907809312667043505813251370425565865985365083849848537038076184326);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 10873);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 94480744500101525262}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 3601);
+        vm.roll(block.number + 24985);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 467763);
+        vm.roll(block.number + 4998);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 670780677356136008}(5841359578103725214230145477681116372580635180063610690791629638626084792011);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 190129);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 16262);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 393);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 32301);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 79702055901335079528432631227765125057413189372906873566832295876723115943230);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 16262);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 5003);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 70089742150289225956}(15118073757848856758720689412073719197158027036428190627051455854570307480307);
+        
+        vm.warp(block.timestamp + 315963);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 3702120399968169508231036120827154749011796446072885383392032817746856011184);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 32325);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000020000, true);
+        
+        vm.warp(block.timestamp + 514414);
+        vm.roll(block.number + 2835);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 184781);
+        vm.roll(block.number + 41764);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 574924);
+        vm.roll(block.number + 40082);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 87324);
+        vm.roll(block.number + 40740);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 15984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 107511426299576126499770662687069344562027708178771991598731817345593751865674);
+        
+        vm.warp(block.timestamp + 16631);
+        vm.roll(block.number + 59934);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 96803048703524169240952596131991523069275965662405893499366236321963197436771);
+        
+        vm.warp(block.timestamp + 318775);
+        vm.roll(block.number + 35425);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000020000, 9165770765324540224253147790426586261040575802168098331948898948317970514878);
+        
+        vm.warp(block.timestamp + 235);
+        vm.roll(block.number + 44549);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 53857);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, false);
+        
+        vm.warp(block.timestamp + 190081);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 41061627975156557020604966455246357);
+        
+        vm.warp(block.timestamp + 242022);
+        vm.roll(block.number + 1400);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 60549696247299284343209946650697627131501023225932050774376835378167408033997);
+        
+        vm.warp(block.timestamp + 68612);
+        vm.roll(block.number + 46538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 412759);
+        vm.roll(block.number + 29547);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 69100468706274483466085133189067511483464628951541142939377207981313305609312);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 4999);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 92019893726001798732446610327838658247305644791740922970458799947303274572087);
+        
+        vm.warp(block.timestamp + 377477);
+        vm.roll(block.number + 23);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 879);
+        vm.roll(block.number + 29753);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 27992331922535464881766236668544301015210340271439967412157942187353034129698);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 49052);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 33198);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 110166048467179295854643411764752122446429929276083637843911606278899912068632);
+        
+        vm.warp(block.timestamp + 324069);
+        vm.roll(block.number + 59911);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 58146928305139461593}(28595411815114905198264993095264774556703896471841316189209347005878096869692);
+        
+        vm.warp(block.timestamp + 872);
+        vm.roll(block.number + 27383);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 24000003);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 2835);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 411249);
+        vm.roll(block.number + 27099);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000010000, false);
+        
+        vm.warp(block.timestamp + 271003);
+        vm.roll(block.number + 29227);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 24985);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 334261);
+        vm.roll(block.number + 9241);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 59911);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 45);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 361581);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 6866);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1000000000000);
+        
+        vm.warp(block.timestamp + 391061);
+        vm.roll(block.number + 49522);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 69483712954301277365511581730273042110254262231041595533321714649681917217865);
+        
+        vm.warp(block.timestamp + 258200);
+        vm.roll(block.number + 19870);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 229);
+        
+        vm.warp(block.timestamp + 318776);
+        vm.roll(block.number + 59911);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 692);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 87260350407357887287760379985983334901783506433573015899331689396557677313699);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 28450);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 287864);
+        vm.roll(block.number + 32301);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 284336);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 318778);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 48056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 51775);
+        vm.roll(block.number + 57935);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000000000, false);
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 321);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(92024008882714415179206610755428705328294202210369155541334524743006937482203);
+        
+        vm.warp(block.timestamp + 166731);
+        vm.roll(block.number + 30181);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 352942);
+        vm.roll(block.number + 5259);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 155288);
+        vm.roll(block.number + 39616);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 340360);
+        vm.roll(block.number + 58988);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(50356027841661349294475653905857207591388201088043744921049773820516057530414, 14967423688560572503470823900693760785022501933944587199274454988811737096355);
+        
+        vm.warp(block.timestamp + 188267);
+        vm.roll(block.number + 36084);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 98579848495016200856}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 364750);
+        vm.roll(block.number + 44295);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 604764);
+        vm.roll(block.number + 2637);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 65877619577986453844497536623980509115847550408223266959265918717613583281156);
+        
+        vm.warp(block.timestamp + 201796);
+        vm.roll(block.number + 10050);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.isWhitelisted(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 21262);
+        vm.roll(block.number + 59347);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 412758);
+        vm.roll(block.number + 781);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 536573);
+        vm.roll(block.number + 60008);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(6424953744297965487254100292017947052790338859079286370535838919769551716425, 47343741733643902282370180068769165519477123764535582406961271031072365200462);
+        
+        vm.warp(block.timestamp + 382122);
+        vm.roll(block.number + 808);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 468683);
+        vm.roll(block.number + 50761);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(15137357635198392750474700734990182178245289937399617456786279364088424096772, 29702225605370364446089981843017889897295828717356356720556609356490279714676);
+        
+        vm.warp(block.timestamp + 492);
+        vm.roll(block.number + 51040);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 75739);
+        vm.roll(block.number + 879);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 59162160173291225001789009652382685966938191003247771985582671921300151234484);
+        
+        vm.warp(block.timestamp + 246424);
+        vm.roll(block.number + 24829);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 244203);
+        vm.roll(block.number + 37789);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 91609508690565209560094976634744481990505443189068928682257176722992619994122);
+        
+        vm.warp(block.timestamp + 316211);
+        vm.roll(block.number + 31731);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 202688);
+        vm.roll(block.number + 37781);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+    }
+    
+    
+    function test_auto_setStableCoinSystem_26() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 33199);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 193858);
+        vm.roll(block.number + 24);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 72421);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 503270);
+        vm.roll(block.number + 3601);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 86163);
+        vm.roll(block.number + 52369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 53037798801895427788404373376079076816335631918435942964920799161890270658632);
+        
+        vm.warp(block.timestamp + 588390);
+        vm.roll(block.number + 2067);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 12409537439284123198}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913117639935, 60493065489276862296883601869687488052168324752273801331995927557372339619451);
+        
+        vm.warp(block.timestamp + 68608);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125467668331474129}(0);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 63081433496059334993805469637726415906694494617148421089368805561421305956764);
+        
+        vm.warp(block.timestamp + 222080);
+        vm.roll(block.number + 43585);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 3603);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913117639938, 0);
+        
+        vm.warp(block.timestamp + 125737);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 902}(104165389500949914842845798329369348159369228542556458920997834302568432203751);
+        
+        vm.warp(block.timestamp + 412760);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 66470328158484661063605520895990668865081060772845526672718709770128081260452);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 34339121185061341028068304046306643259563422336015001161370543661834308258555);
+        
+        vm.warp(block.timestamp + 126221);
+        vm.roll(block.number + 51227);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 143666);
+        vm.roll(block.number + 38971);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 72033331903554151853}(109361721998174462188340805476433569408187785765934051302433618338286737087448);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 5002);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 35323233491515881582221211231583278715102824367974223358124818496527679756143);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 155750);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 156121);
+        vm.roll(block.number + 417);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 75649336972932641157}(83360834206752781962253963936198461856599502342531843614572962559605023559996);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 115464598830573188050615633970827621459325624338994936600106317068048067247659);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 15982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 66470328158484661063605520895990668865081060772845526672718709770128081260452);
+        
+        vm.warp(block.timestamp + 531974);
+        vm.roll(block.number + 521);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 318776);
+        vm.roll(block.number + 33201);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 514416);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 82576842231272324486364674324194179523046987599697146745577598419203214066618);
+        
+        vm.warp(block.timestamp + 531977);
+        vm.roll(block.number + 22772);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 232817);
+        vm.roll(block.number + 14710);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 26799511293357189639}(879);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 13811);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 244931);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(70811459304787230878615187241843125048820515756035048966754290239180307590938);
+        
+        vm.warp(block.timestamp + 33620);
+        vm.roll(block.number + 4984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115106168492723814830455956736953517170928555955661958883468530699564896651174);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 74);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 94480744500101525262}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 51775);
+        vm.roll(block.number + 45643);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 990);
+        
+        vm.warp(block.timestamp + 230);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 1878270150592681860067227953282973581065536731891235719541627879337953712536);
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(442, 99627730249418959325897121829632758194576959403963454632076732269516271042910);
+        
+        vm.warp(block.timestamp + 554380);
+        vm.roll(block.number + 45334);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(93753514714131476133700362871372329770285433227925043356912748137362829578958);
+        
+        vm.warp(block.timestamp + 3602);
+        vm.roll(block.number + 33200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(68230472987486652187644530073990628802631684413463292608007291794017002733451, 82390674146792270066672853794907623420480835098416976777867570147451088344058);
+        
+        vm.warp(block.timestamp + 202686);
+        vm.roll(block.number + 21352);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 100581742409136562105758678396859283462146237012273348107214200509069167745640);
+        
+        vm.warp(block.timestamp + 314109);
+        vm.roll(block.number + 37285);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(35458262766883952078173983725334324271549588130891447889344745018741844275782, 72974519825120729824137839972013223741764836171469838154268170991162772294539);
+        
+        vm.warp(block.timestamp + 320939);
+        vm.roll(block.number + 34073);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 475085);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913128639933);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 902);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 49198777222580496263557797496599995178972573896254545234714202771593009141669);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 6236);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000020000, 7038331361496491116176915676756795025159085063490131792761311993756668909255);
+        
+        vm.warp(block.timestamp + 231108);
+        vm.roll(block.number + 6214);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 16631);
+        vm.roll(block.number + 13811);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(115792089237316195423570985008687907853269984665640564039457584007913129636338, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 540149);
+        vm.roll(block.number + 22);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 60909339304566865645}(103592227263217901537290786037216647960186688087493462017466500168179176796283);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 12262);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 40914);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000000000, 0);
+        
+        vm.warp(block.timestamp + 373036);
+        vm.roll(block.number + 28450);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 72780235676966470179}(6424953744297965487254100292017947052790338859079286370535838919769551716425);
+        
+        vm.warp(block.timestamp + 130244);
+        vm.roll(block.number + 25664);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 23);
+        vm.roll(block.number + 51675);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(8065359429891573773640507007102479482369779975888390990308298934411242965883);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 47929);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 242022);
+        vm.roll(block.number + 48226);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 82758);
+        vm.roll(block.number + 24760);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 129824);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 27555);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(51937022765575123651915070280007240469914186393517866453894219903074541178368, 24);
+        
+        vm.warp(block.timestamp + 414433);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 4999999999999999999}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 439664);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(11104063747036565933098138861709630922233587000048256105084696657481353379908);
+        
+        vm.warp(block.timestamp + 334227);
+        vm.roll(block.number + 25664);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 448116);
+        vm.roll(block.number + 59672);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 119686);
+        vm.roll(block.number + 19782);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 16631);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125466668355474132}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 24762);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 144871);
+        vm.roll(block.number + 35775);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 21);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 24762);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 7817441330306651040814422283676686503561306750087371990906202554346803706167);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 3603);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 55752529188701881549040959605987913057519623290233620372054606473886400717454);
+        
+        vm.warp(block.timestamp + 508778);
+        vm.roll(block.number + 1752);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 27560608701214495684}(69886057752762796477150884412231327500554967693125203626108601076221650696401);
+        
+        vm.warp(block.timestamp + 792);
+        vm.roll(block.number + 30398);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 70560556613013380565259452558540575463641253517796399843427717457241813509857);
+        
+        vm.warp(block.timestamp + 15380);
+        vm.roll(block.number + 902);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 136660);
+        vm.roll(block.number + 36847);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 31511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000020000, 32126894721677352248224603544483280550383126652430191830458193554902093595370);
+        
+        vm.warp(block.timestamp + 182634);
+        vm.roll(block.number + 1422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 15973036279881493943094710927773218337144966479863930339259671554257963247990);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 263183);
+        vm.roll(block.number + 30398);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 433303);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 361581);
+        vm.roll(block.number + 51040);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 20196);
+        vm.roll(block.number + 26389);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 85326715152392794256393635661349311105422442542873829967845308196815598389509);
+        
+        vm.warp(block.timestamp + 238903);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 577419);
+        vm.roll(block.number + 33198);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(82604502880811279427875061676549327437718412037317558033236328595962336398461, 454);
+        
+        vm.warp(block.timestamp + 410548);
+        vm.roll(block.number + 521);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 68440093855279899675}(59497691579294984815548682018568706068872494163387108227861014271778892513673);
+        
+        vm.warp(block.timestamp + 958);
+        vm.roll(block.number + 25327);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125467668354474135}(58652590370882506328172104178226957163834916906752608597144523109526845539851);
+        
+        vm.warp(block.timestamp + 475285);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 672);
+        vm.roll(block.number + 40082);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 455852);
+        vm.roll(block.number + 48112);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 475285);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(69483712954301277365511581730273042110254262231041595533321714649681917217865, 0);
+        
+        vm.warp(block.timestamp + 51775);
+        vm.roll(block.number + 29081);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 377);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF, 35918979110975773536366869091653267713079507390546523073026137725177235432113);
+        
+        vm.warp(block.timestamp + 190081);
+        vm.roll(block.number + 55588);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 571925);
+        vm.roll(block.number + 33577);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+    }
+    
+    
+    function test_auto_transferFrom_27() public { 
+        
+        vm.warp(block.timestamp + 246424);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 22);
+        
+        vm.warp(block.timestamp + 495);
+        vm.roll(block.number + 16252);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 41123788869466840763831923818510626075415938665336153242646389791287973434404);
+        
+        vm.warp(block.timestamp + 497272);
+        vm.roll(block.number + 59050);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 68610);
+        vm.roll(block.number + 58528);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 543874);
+        vm.roll(block.number + 38092);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 340931);
+        vm.roll(block.number + 58528);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 253767);
+        vm.roll(block.number + 50761);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 21395);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 199996);
+        vm.roll(block.number + 48144);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 14863702075168062366}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 467763);
+        vm.roll(block.number + 48056);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 570150);
+        vm.roll(block.number + 293);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 492);
+        vm.roll(block.number + 35);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 171779);
+        vm.roll(block.number + 51128);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 56260);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 497272);
+        vm.roll(block.number + 49523);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 1000002}(12580672103674171077922955673791194675248697531392776812669956377320287391103);
+        
+        vm.warp(block.timestamp + 398952);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 388416);
+        vm.roll(block.number + 33453);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 44688);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 589518);
+        vm.roll(block.number + 8928);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 439615);
+        vm.roll(block.number + 26819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 318775);
+        vm.roll(block.number + 692);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 515);
+        vm.roll(block.number + 55);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(11955094354360110411003118015666493258900761718958590277739731005568261156180);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 73);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 508779);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 999997}(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 283367);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(82075809909440825032704118869582321852884485126359732376213242695201205998851);
+        
+        vm.warp(block.timestamp + 219028);
+        vm.roll(block.number + 19870);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 223059);
+        vm.roll(block.number + 20419);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 3600);
+        vm.roll(block.number + 33203);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 293);
+        
+        vm.warp(block.timestamp + 508780);
+        vm.roll(block.number + 28889);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 467763);
+        vm.roll(block.number + 321);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 525876);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 251);
+        vm.roll(block.number + 950);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 83615519291853160414800170756542917244339243876429409685221859920959507169090);
+        
+        vm.warp(block.timestamp + 467763);
+        vm.roll(block.number + 12506);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 24473);
+        vm.roll(block.number + 26107);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 162554);
+        vm.roll(block.number + 21918);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 13980917085925497956998369632152866615759399315899453530479343242621310372428);
+        
+        vm.warp(block.timestamp + 252002);
+        vm.roll(block.number + 22679);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(35238789436509121788260411526347253776825558878373925167980640273287573808730);
+        
+        vm.warp(block.timestamp + 243772);
+        vm.roll(block.number + 9173);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 299542);
+        vm.roll(block.number + 533);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 24473);
+        vm.roll(block.number + 633);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 76691);
+        vm.roll(block.number + 43918);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 253566);
+        vm.roll(block.number + 59690);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039452584007913129639938);
+        
+        vm.warp(block.timestamp + 252832);
+        vm.roll(block.number + 26107);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 1991);
+        vm.roll(block.number + 1793);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 29545775976116272844240645813935969673983418063154789823263475475721885431496);
+        
+        vm.warp(block.timestamp + 395202);
+        vm.roll(block.number + 612);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 423340);
+        vm.roll(block.number + 6052);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 1186);
+        
+        vm.warp(block.timestamp + 603107);
+        vm.roll(block.number + 34074);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 165072);
+        vm.roll(block.number + 53700);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 709);
+        
+        vm.warp(block.timestamp + 260805);
+        vm.roll(block.number + 53592);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 163107);
+        vm.roll(block.number + 53935);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 19084);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 253762);
+        vm.roll(block.number + 39382);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 151229);
+        vm.roll(block.number + 6321);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 63608);
+        vm.roll(block.number + 10042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000000000, true);
+        
+        vm.warp(block.timestamp + 92869);
+        vm.roll(block.number + 36431);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 172835);
+        vm.roll(block.number + 11920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(20685076587930238552349120227487442067895862027186040962034220819344056303768, 58103261896587035807830010623344137655495859243677019285072609287126497196937);
+        
+        vm.warp(block.timestamp + 305788);
+        vm.roll(block.number + 8883);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 62158656097267315469}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 280768);
+        vm.roll(block.number + 9256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 86801905748669781013}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 312638);
+        vm.roll(block.number + 13051);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 293);
+        vm.roll(block.number + 40914);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(47187998255219274074449838621018241786306369321944354294323381676503685017300);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 7701);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000001fffffffE, 6983091404584280735787561609530791734053893202574065977472450337550451373807);
+        
+        vm.warp(block.timestamp + 691);
+        vm.roll(block.number + 5317);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 147563);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 43278001858091256907951634362740859513926776686698898620016119550025653286721);
+        
+        vm.warp(block.timestamp + 601672);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 103560595483810671645682664928492944399439493334069698583438248144446574263218);
+        
+        vm.warp(block.timestamp + 403539);
+        vm.roll(block.number + 33203);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 126221);
+        vm.roll(block.number + 53857);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 113748587843283550882327174945354716738221821138493498465403491094639422312733);
+        
+        vm.warp(block.timestamp + 172835);
+        vm.roll(block.number + 3041);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(40421968686952485468670926840793958745746945277789965724157335339946500194788, 30838700729366462650962728179976118915239616586075940072480123553006980704476);
+        
+        vm.warp(block.timestamp + 86501);
+        vm.roll(block.number + 492);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 266423);
+        vm.roll(block.number + 28889);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 46417982050497087520636255950176060367784358087899902213363511651091226569150);
+        
+        vm.warp(block.timestamp + 417);
+        vm.roll(block.number + 57818);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 50537945281000955336926098111888343535287075279786318460042377404507574211569);
+        
+        vm.warp(block.timestamp + 287864);
+        vm.roll(block.number + 40799);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 773}(42802654395497393719523990613618504013265183648424892783058165101211621663779);
+        
+        vm.warp(block.timestamp + 36295);
+        vm.roll(block.number + 20354);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 522663);
+        vm.roll(block.number + 11374);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 22337109385599532036950591047986925391498833790883255831385402445918771347355);
+        
+        vm.warp(block.timestamp + 600694);
+        vm.roll(block.number + 34852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 41668882712250083290652643278443630064794275464066036104677062823776673441050);
+        
+        vm.warp(block.timestamp + 550904);
+        vm.roll(block.number + 55298);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 31251196627300216555930978620908200889454305464315542210734903946657075050369);
+        
+        vm.warp(block.timestamp + 114917);
+        vm.roll(block.number + 54180);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 101380714158353104727318522114640465254359070008324411174029231286084251566822);
+        
+        vm.warp(block.timestamp + 340931);
+        vm.roll(block.number + 15983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 319507);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 28607118001497900196038914986284941160802851006499936763032713359892963769164);
+        
+        vm.warp(block.timestamp + 454328);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.allInfoFor(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 85742);
+        vm.roll(block.number + 37911);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 4999);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 352);
+        
+        vm.warp(block.timestamp + 260640);
+        vm.roll(block.number + 35975);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 59062);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, false);
+        
+        vm.warp(block.timestamp + 135249);
+        vm.roll(block.number + 23156);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(17014649315660883805873929883280659642210243424750488550192600911549033529760);
+        
+        vm.warp(block.timestamp + 269873);
+        vm.roll(block.number + 13750);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 72642);
+        vm.roll(block.number + 59880);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000010000, 5196875743404684115358454922162675553556233235992547982664639589870276034042);
+        
+        vm.warp(block.timestamp + 296636);
+        vm.roll(block.number + 24652);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000010000, true);
+        
+        vm.warp(block.timestamp + 542845);
+        vm.roll(block.number + 48682);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(29119330652028383249673848530207906114125648999690021752688071284341060322953, 41230806116327500675205032833498317513001506463355647510719960865127151566181);
+        
+        vm.warp(block.timestamp + 336049);
+        vm.roll(block.number + 44316);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 454328);
+        vm.roll(block.number + 1767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 101003670810700875986575547625991460316859366632257461840570354103292422068793);
+        
+        vm.warp(block.timestamp + 139395);
+        vm.roll(block.number + 30702);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 311901);
+        vm.roll(block.number + 9256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 85104782479385732237}(98600771895317285959663309231226500174010099499274910701794625255780658854246);
+        
+        vm.warp(block.timestamp + 377);
+        vm.roll(block.number + 52842);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 77421427619706593511274352641732482226065537052049340974358666839503024119707);
+    }
+    
+    
+    function test_auto_approve_28() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 69421592877790260786394013664909629110907556495007340010795947189667378914693);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(83139737705898914080168219902598693061561715036224298439703791344668489570584, 90211558252046026857880514078242916351205078592573132182852973180458192230183);
+        
+        vm.warp(block.timestamp + 223059);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(104510289546923359902214721749214311227702198039580499862909754262475577622747);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 38971);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 356827);
+        vm.roll(block.number + 49820);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 267}(1153443827418577407928858137137);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 40742);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 166441);
+        vm.roll(block.number + 25844);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 259173);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 39256);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 41289);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 335765);
+        vm.roll(block.number + 752);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 368352);
+        vm.roll(block.number + 672);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 34367);
+        vm.roll(block.number + 34414);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(96863181165779669173077500059131037916939333354612633528624157930004801677382, 94793056148215398363385933748707950271003890291023962215470608251434435279850);
+        
+        vm.warp(block.timestamp + 74146);
+        vm.roll(block.number + 43362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 441453);
+        vm.roll(block.number + 7541);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 45788910123907809312667043505813251370425565865985365083849848537038076184326);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 10873);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 94480744500101525262}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 3601);
+        vm.roll(block.number + 24985);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 467763);
+        vm.roll(block.number + 4998);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 670780677356136008}(5841359578103725214230145477681116372580635180063610690791629638626084792011);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 190129);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 16262);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 393);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 32301);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 79702055901335079528432631227765125057413189372906873566832295876723115943230);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 16262);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 5003);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 70089742150289225956}(15118073757848856758720689412073719197158027036428190627051455854570307480307);
+        
+        vm.warp(block.timestamp + 315963);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 3702120399968169508231036120827154749011796446072885383392032817746856011184);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 32325);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000020000, true);
+        
+        vm.warp(block.timestamp + 514414);
+        vm.roll(block.number + 2835);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 184781);
+        vm.roll(block.number + 41764);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 574924);
+        vm.roll(block.number + 40082);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 87324);
+        vm.roll(block.number + 40740);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 15984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 107511426299576126499770662687069344562027708178771991598731817345593751865674);
+        
+        vm.warp(block.timestamp + 16631);
+        vm.roll(block.number + 59934);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 96803048703524169240952596131991523069275965662405893499366236321963197436771);
+        
+        vm.warp(block.timestamp + 318775);
+        vm.roll(block.number + 35425);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000020000, 9165770765324540224253147790426586261040575802168098331948898948317970514878);
+        
+        vm.warp(block.timestamp + 235);
+        vm.roll(block.number + 44549);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 53857);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, false);
+        
+        vm.warp(block.timestamp + 190081);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 41061627975156557020604966455246357);
+        
+        vm.warp(block.timestamp + 242022);
+        vm.roll(block.number + 1400);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 60549696247299284343209946650697627131501023225932050774376835378167408033997);
+        
+        vm.warp(block.timestamp + 68612);
+        vm.roll(block.number + 46538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 412759);
+        vm.roll(block.number + 29547);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 69100468706274483466085133189067511483464628951541142939377207981313305609312);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 4999);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 92019893726001798732446610327838658247305644791740922970458799947303274572087);
+        
+        vm.warp(block.timestamp + 377477);
+        vm.roll(block.number + 23);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 879);
+        vm.roll(block.number + 29753);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 27992331922535464881766236668544301015210340271439967412157942187353034129698);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 49052);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 33198);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 110166048467179295854643411764752122446429929276083637843911606278899912068632);
+        
+        vm.warp(block.timestamp + 324069);
+        vm.roll(block.number + 59911);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 58146928305139461593}(28595411815114905198264993095264774556703896471841316189209347005878096869692);
+        
+        vm.warp(block.timestamp + 872);
+        vm.roll(block.number + 27383);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 24000003);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 2835);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 411249);
+        vm.roll(block.number + 27099);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000010000, false);
+        
+        vm.warp(block.timestamp + 271003);
+        vm.roll(block.number + 29227);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 24985);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 334261);
+        vm.roll(block.number + 9241);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 59911);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 45);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 361581);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 6866);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1000000000000);
+        
+        vm.warp(block.timestamp + 391061);
+        vm.roll(block.number + 49522);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 69483712954301277365511581730273042110254262231041595533321714649681917217865);
+        
+        vm.warp(block.timestamp + 258200);
+        vm.roll(block.number + 19870);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 229);
+        
+        vm.warp(block.timestamp + 318776);
+        vm.roll(block.number + 59911);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 692);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 87260350407357887287760379985983334901783506433573015899331689396557677313699);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 28450);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 287864);
+        vm.roll(block.number + 32301);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 3598);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 284336);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 318778);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 184216);
+        vm.roll(block.number + 16177);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 21262);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 31847392686105713143111021426755946778461035872550517350199815291660990762026);
+        
+        vm.warp(block.timestamp + 188879);
+        vm.roll(block.number + 27321);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 48337819795964469566}(83891616692488876665939253342611199608492091506403302878417586669065278819143);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 40742);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 172835);
+        vm.roll(block.number + 44279);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 536886);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 588408);
+        vm.roll(block.number + 14232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 68613);
+        vm.roll(block.number + 19870);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(13394871972864174435520349257496498576811062133532810504372909801077515788926);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 31980);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 412759);
+        vm.roll(block.number + 26264);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(60824907704718781433636301678910640734243320112550859143474982873742311765712, 30838700729366462650962728179976118915239616586075940072480123553006980704476);
+        
+        vm.warp(block.timestamp + 374036);
+        vm.roll(block.number + 50322);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 593093);
+        vm.roll(block.number + 48144);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 454);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 15348);
+        vm.roll(block.number + 15063);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 65535}(46617076236439663256566942095271209270993593589061165353481982062023013376285);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 57869);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 395199);
+        vm.roll(block.number + 2835);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 43427);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(105993289648131653578110018287095292316879069391158402652725611188187853458020);
+        
+        vm.warp(block.timestamp + 246424);
+        vm.roll(block.number + 29225);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 213197);
+        vm.roll(block.number + 23189);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.balanceOfTokenCirculation(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 465612);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 35195901165664968971}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 51775);
+        vm.roll(block.number + 2835);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 633);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+    }
+    
+    
+    function test_auto_approve_29() public { 
+        
+        vm.warp(block.timestamp + 449614);
+        vm.roll(block.number + 36764);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 820);
+        
+        vm.warp(block.timestamp + 95978);
+        vm.roll(block.number + 13811);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 53686321431533907387}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 266173);
+        vm.roll(block.number + 43905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, false);
+        
+        vm.warp(block.timestamp + 33620);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 64855);
+        vm.roll(block.number + 49052);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 366633);
+        vm.roll(block.number + 45435);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 246);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 493900);
+        vm.roll(block.number + 9241);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 515}(23999997);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 39249);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 377);
+        vm.roll(block.number + 56232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 385335);
+        vm.roll(block.number + 29753);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 926);
+        vm.roll(block.number + 55990);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 49367352349902766678}(718);
+        
+        vm.warp(block.timestamp + 101014);
+        vm.roll(block.number + 27617);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 352942);
+        vm.roll(block.number + 31101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 349075);
+        vm.roll(block.number + 45846);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 68611);
+        vm.roll(block.number + 11582);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 108638);
+        vm.roll(block.number + 21122);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000020000, 57648633778747312819780774547475191780417912054555538476475945013156120520286);
+        
+        vm.warp(block.timestamp + 584353);
+        vm.roll(block.number + 20162);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(9903544469302391474237340620354541079901172954237079233459375148988010185964);
+        
+        vm.warp(block.timestamp + 563761);
+        vm.roll(block.number + 21561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 326786);
+        vm.roll(block.number + 20858);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639909);
+        
+        vm.warp(block.timestamp + 73);
+        vm.roll(block.number + 20759);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 296636);
+        vm.roll(block.number + 783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 902}(3354118537611753606506500529603398170310470891290231104766421756147924018899);
+        
+        vm.warp(block.timestamp + 453913);
+        vm.roll(block.number + 51108);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 134927);
+        vm.roll(block.number + 56266);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 65441604490918687236}(23180450975341944974129115572808562126607168573552812578080796563528411568803);
+        
+        vm.warp(block.timestamp + 74551);
+        vm.roll(block.number + 23797);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(636, 48054088312248161847068158088144439246760688693683811483785086313002400599417);
+        
+        vm.warp(block.timestamp + 394206);
+        vm.roll(block.number + 532);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 12895101966014557518059772067207890911);
+        
+        vm.warp(block.timestamp + 119532);
+        vm.roll(block.number + 58456);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 3597);
+        vm.roll(block.number + 51185);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 105075516329607447223319571701311581802948490266722021486387636042815542180222);
+        
+        vm.warp(block.timestamp + 142163);
+        vm.roll(block.number + 12540);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 22279);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(8615545138216059190871014248487052127877699582234595754803467413468560237019);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 40179);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(464);
+        
+        vm.warp(block.timestamp + 335765);
+        vm.roll(block.number + 28610);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(1086654211758439568334491442835349121519975033016944853017386429644355236632);
+        
+        vm.warp(block.timestamp + 56745);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 26948995417097110425841685184854251670990534917366221884209131443757675698123);
+        
+        vm.warp(block.timestamp + 310069);
+        vm.roll(block.number + 3603);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(7554479236835998430513963551766750057978001020165427561757591234946803961767);
+        
+        vm.warp(block.timestamp + 351081);
+        vm.roll(block.number + 59481);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 554);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 441453);
+        vm.roll(block.number + 37781);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(64413390932531167666172406726633150132410973938909990667088857299276006159709, 52106256772757876167286496370828396868854579643993401769814810813497690937161);
+        
+        vm.warp(block.timestamp + 119686);
+        vm.roll(block.number + 25879);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 184781);
+        vm.roll(block.number + 44118);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 330610);
+        vm.roll(block.number + 25664);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 493900);
+        vm.roll(block.number + 13261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(76146366869263651431879278590874745004972351078865889257706277999221700645521);
+        
+        vm.warp(block.timestamp + 433303);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 78384);
+        vm.roll(block.number + 12506);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 116773);
+        vm.roll(block.number + 28551);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 86501);
+        vm.roll(block.number + 14);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 279217);
+        vm.roll(block.number + 10791);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 66622);
+        vm.roll(block.number + 2676);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000030000, 13776439527102441929343876651975082035827124501274773842788687673331382454854);
+        
+        vm.warp(block.timestamp + 83041);
+        vm.roll(block.number + 28610);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 499587);
+        vm.roll(block.number + 879);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 59347);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, false);
+        
+        vm.warp(block.timestamp + 174773);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(15761657181548397207418357306514163219137057914850406438480676145091378228136);
+        
+        vm.warp(block.timestamp + 34886);
+        vm.roll(block.number + 23712);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 242959);
+        vm.roll(block.number + 30181);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 1000002}(46326108811957505385978556198789088784089479145451994064474507777659275958405);
+        
+        vm.warp(block.timestamp + 467040);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 385830);
+        vm.roll(block.number + 27650);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 123557);
+        vm.roll(block.number + 44137);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, true);
+        
+        vm.warp(block.timestamp + 231271);
+        vm.roll(block.number + 14050);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 43728028479772774848337887258168056493694615699750847545182409515217941643265);
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 758);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 493900);
+        vm.roll(block.number + 34302);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(104311551397004483058416185182980524175528739920002923065468422537363101996708, 111321542500767291312952328933858500261678368581090938250853436931320315976154);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 28450);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 15505044505246865151329820647678096262360837042969086859888725628504047208515);
+        
+        vm.warp(block.timestamp + 155288);
+        vm.roll(block.number + 6014);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 57869);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 570150);
+        vm.roll(block.number + 53113);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(32598055362813810702862343963786272421872287646893700238298935069000789623921);
+        
+        vm.warp(block.timestamp + 554380);
+        vm.roll(block.number + 22084);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(20791879090887770242301305931691312930301955233261227697605408231238157, 109123051138429953190273200645806142222625169486943736155848477306987456935709);
+        
+        vm.warp(block.timestamp + 74);
+        vm.roll(block.number + 55075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 214634);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 430323);
+        vm.roll(block.number + 36281);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 532);
+        vm.roll(block.number + 35297);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 514415);
+        vm.roll(block.number + 16262);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000000000, 112637587776935472047190461648976763797847683995599277336604499546277054416486);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 2830);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 24000000);
+        
+        vm.warp(block.timestamp + 64334);
+        vm.roll(block.number + 3602);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, false);
+        
+        vm.warp(block.timestamp + 3603);
+        vm.roll(block.number + 1460);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 83176);
+        vm.roll(block.number + 45911);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 448116);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 502971);
+        vm.roll(block.number + 59481);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(41522564634810627532833347210197490122752440459602433237039552445149155213781);
+        
+        vm.warp(block.timestamp + 282783);
+        vm.roll(block.number + 44187);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(17);
+        
+        vm.warp(block.timestamp + 267);
+        vm.roll(block.number + 36278);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 193182);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000, 28429720180910967352330527877862166906668930534239559930098166345314657985779);
+        
+        vm.warp(block.timestamp + 489076);
+        vm.roll(block.number + 41289);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 114917);
+        vm.roll(block.number + 31637);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 527435267264120721912869385412);
+        
+        vm.warp(block.timestamp + 236265);
+        vm.roll(block.number + 46823);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 217);
+        vm.roll(block.number + 14519);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 86851881207619278656119724047502613266483176760669908207094838828309932459740);
+        
+        vm.warp(block.timestamp + 475285);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000, 83491141567088703188484261425583297065174444153364055456387765864717820995230);
+        
+        vm.warp(block.timestamp + 586875);
+        vm.roll(block.number + 22931);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 43313294264727617031}(24641865779852870823429156796607108856537047913333439919631802420826442490715);
+        
+        vm.warp(block.timestamp + 159106);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 328162);
+        vm.roll(block.number + 9241);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000000000, 12235472206814329964643725460366471499110223506174610353956522128053683447008);
+        
+        vm.warp(block.timestamp + 403185);
+        vm.roll(block.number + 52316);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 24000002}(74988123344677684587060133100545716815184873299071335871647211242698427095955);
+        
+        vm.warp(block.timestamp + 502768);
+        vm.roll(block.number + 60059);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 244203);
+        vm.roll(block.number + 11760);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 590777);
+        vm.roll(block.number + 59511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 161870);
+        vm.roll(block.number + 91);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 110);
+        
+        vm.warp(block.timestamp + 531978);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 253767);
+        vm.roll(block.number + 49226);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 92159445664058568386}(48239363916864351177301692273182959988434987684326776536586650443849452425306);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 58337);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 335765);
+        vm.roll(block.number + 3599);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 75739);
+        vm.roll(block.number + 15982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 186168);
+        vm.roll(block.number + 10241);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 85977);
+        vm.roll(block.number + 44401);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 88262717108174192783692292700583485674977545612678944125341518370426437601918);
+    }
+    
+    
+    function test_auto_changePreSalePriceIfToHigh_30() public { 
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 67125467668355470530}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 32303);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 444085);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 48499);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 60781);
+        vm.roll(block.number + 40745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 11796181706105456278}(87474886946100383738262903137187778835313627483920795124031381495220475918993);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 672);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 11191);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 69421592877790260786394013664909629110907556495007340010795947189667378914693);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 7541);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 326786);
+        vm.roll(block.number + 32307);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 190081);
+        vm.roll(block.number + 12540);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 40744);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 29081);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 2263814384821167129360555852796309292054962897954700409037258932358241747561);
+        
+        vm.warp(block.timestamp + 322350);
+        vm.roll(block.number + 3601);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(52011026723380361473603800658377312553824370067890231561152661123192514731741);
+        
+        vm.warp(block.timestamp + 598531);
+        vm.roll(block.number + 40082);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 10494);
+        vm.roll(block.number + 21844);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 36125822750411482260170530625988240531249807279712160766195660268266271889122);
+        
+        vm.warp(block.timestamp + 172835);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 253765);
+        vm.roll(block.number + 24762);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 62125467668355474134}(115792089237316195423570985008687907853269984665640564039457584007913128639936);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 23718);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 417);
+        
+        vm.warp(block.timestamp + 575565);
+        vm.roll(block.number + 2388);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 27540848903458924010}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 46309);
+        vm.roll(block.number + 55754);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(110076648867237716861723292784241685854109193077980057843296743337393080443128);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 49525);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 99411651684669776978104048336618865285639754836707643514154452665608102274300);
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 23);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 1425);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 56802646418245516612272652692324203830081703132899029820641589761051622908972);
+        
+        vm.warp(block.timestamp + 445123);
+        vm.roll(block.number + 4899);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 531978);
+        vm.roll(block.number + 7730);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 752);
+        vm.roll(block.number + 40741);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.whitelist(0x0000000000000000000000000000000000010000, false);
+        
+        vm.warp(block.timestamp + 119686);
+        vm.roll(block.number + 59884);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 184}(11999997);
+        
+        vm.warp(block.timestamp + 144871);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 430323);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 265664);
+        vm.roll(block.number + 58906);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000030000, 102617280466663016189472254615545805809193659702773428495096974456857893816731);
+        
+        vm.warp(block.timestamp + 395196);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 442781);
+        vm.roll(block.number + 29224);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 22564351838043189575450800432472412992042874714823153712632725209992105467649);
+        
+        vm.warp(block.timestamp + 68610);
+        vm.roll(block.number + 33200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125467668343474133}(22);
+        
+        vm.warp(block.timestamp + 531979);
+        vm.roll(block.number + 29224);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 98348815055075830730168084794263986507368899145724712698810124233917247303075);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 9244);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 356827);
+        vm.roll(block.number + 25);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, true);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 521);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 418396);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 98790430516873962235950404630787919299984087003353899002046528663896654450749);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 51227);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 78404589338281758443}(25516282247650686411059371039328907535630580259703199494454974403925880547831);
+        
+        vm.warp(block.timestamp + 412760);
+        vm.roll(block.number + 31729);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 412760);
+        vm.roll(block.number + 5492);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 508784);
+        vm.roll(block.number + 24459);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 10354);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSale{value: 67125467668355474004}(4369999);
+        
+        vm.warp(block.timestamp + 119687);
+        vm.roll(block.number + 25288);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584006913129639938);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 56067);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 362939);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000001fffffffE, false);
+        
+        vm.warp(block.timestamp + 38287);
+        vm.roll(block.number + 29262);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 593093);
+        vm.roll(block.number + 12558);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 1044);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 27831921651334126774634895814653123071441549942422885692331711656217847119149);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 44401);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x00000000000000000000000000000000FFFFfFFF, true);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(64692705325970748107334596735811279213274788566527066240375441060935431045328);
+        
+        vm.warp(block.timestamp + 498966);
+        vm.roll(block.number + 26976);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x00000000000000000000000000000002fFffFffD, true);
+        
+        vm.warp(block.timestamp + 3601);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(29035188918913783257203663718443398120561843536766473120772462091893352657251, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 242022);
+        vm.roll(block.number + 52369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(278, 90511070812866954491855606302480370034476801742292155167781095854115327280591);
+        
+        vm.warp(block.timestamp + 108638);
+        vm.roll(block.number + 9240);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setStableCoinSystem(false);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 392556);
+        vm.roll(block.number + 54330);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 112291971798723588667193307196396882173508760759782471237175794639522302624807);
+        
+        vm.warp(block.timestamp + 274629);
+        vm.roll(block.number + 59204);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 67125467668331474129}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 40179);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 74988871877518547020266799061284487585532361105136804178612737170367397653920);
+        
+        vm.warp(block.timestamp + 55);
+        vm.roll(block.number + 42874);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(38295642849732059211770965185855302165047054935448529175384575111349242326863);
+        
+        vm.warp(block.timestamp + 322349);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(69421592877790260786394013664909629110907556495007340010795947189667378914693);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 475285);
+        vm.roll(block.number + 38971);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 300203);
+        vm.roll(block.number + 14527);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(75279454571115189917457045091053054597035186384777303527246471306049918204813, 89057902904039333860754884470554536118101706210108697133576294318429278846320);
+        
+        vm.warp(block.timestamp + 9552);
+        vm.roll(block.number + 15534);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 391061);
+        vm.roll(block.number + 54944);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 312170010344282552746469242960);
+        
+        vm.warp(block.timestamp + 475285);
+        vm.roll(block.number + 2067);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 31717551758531539662008948483744766493775685384875176322637522361293928564503);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 48226);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 49017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.whitelist(0x0000000000000000000000000000000000030000, true);
+        
+        vm.warp(block.timestamp + 284336);
+        vm.roll(block.number + 45643);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 47166074988271620881209671860030011602568583604549148429232092779434578280014);
+        
+        vm.warp(block.timestamp + 531975);
+        vm.roll(block.number + 52316);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(253);
+        
+        vm.warp(block.timestamp + 443127);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 633);
+        vm.roll(block.number + 23);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000030000, 3598);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 3601);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(52070532551380128238543081417398353982514075280924856333590606891730346083865, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setStableCoinSystem(true);
+        
+        vm.warp(block.timestamp + 3602);
+        vm.roll(block.number + 33204);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 453325);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(1355798825950755491645598967474233659171843119217857165079324193422558914105, 274319606820941081604966527186993229450404858887439305190356);
+        
+        vm.warp(block.timestamp + 508778);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000020000, 14368867960683572190497397886579690);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 9243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 322352);
+        vm.roll(block.number + 515);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913128639939);
+        
+        vm.warp(block.timestamp + 190081);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 5000000000000000002}(0);
+        
+        vm.warp(block.timestamp + 475285);
+        vm.roll(block.number + 672);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(42696055507374711514979151043535800184583304844152178593876301485312437229490, 59025943852819228304136739682202611003521374713000013171200664714478182892776);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.changePreSalePriceIfToHigh(31905448640108860615861922318626508999620065457319554343073576923013571097889);
+        
+        vm.warp(block.timestamp + 53986);
+        vm.roll(block.number + 15984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 119684);
+        vm.roll(block.number + 20162);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setPrizeFromNewAddress(5000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913128639935);
+        
+        vm.warp(block.timestamp + 508783);
+        vm.roll(block.number + 33203);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setStableCoinSystem(false);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSaleFinished();
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 902);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setPrizeFromNewAddress(88444359235777751735978124405757345440157200913076945864404537992294460982651, 213);
+        
+        vm.warp(block.timestamp + 427091);
+        vm.roll(block.number + 40746);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.preSale{value: 1000000}(30429520504243228179069165550611736406256465404828229331797593776956872940225);
+        
+        vm.warp(block.timestamp + 377477);
+        vm.roll(block.number + 515);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.whitelist(0x0000000000000000000000000000000000030000, false);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 9241);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 77702447804498173772252570516555118684477170499018563402117395752508423416731);
+        
+        vm.warp(block.timestamp + 318772);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.changePreSalePriceIfToHigh(0);
+        
+        vm.warp(block.timestamp + 531976);
+        vm.roll(block.number + 49521);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.preSale{value: 58724854429039756785}(64392618840262950424150151019496602854245410236806971605034571670831949843681);
+        
+        vm.warp(block.timestamp + 411249);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.changePreSalePriceIfToHigh(115792089237316195423570985008687907853269984665640564039457584007913129639911);
+    }
+    
+}
+
+    

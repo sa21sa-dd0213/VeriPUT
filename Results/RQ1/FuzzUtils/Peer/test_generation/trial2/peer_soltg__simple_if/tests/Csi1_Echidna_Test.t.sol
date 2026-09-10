@@ -1,0 +1,1024 @@
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.13;
+
+
+
+
+
+import "forge-std/Test.sol";
+import "forge-std/console2.sol";
+import "../src/flat.sol";
+
+contract Csi1_Echidna_Test is Test {
+    Csi1 target;
+
+    function setUp() public {
+        target = new Csi1();
+    }
+    
+    function test_auto_simple_if_0() public { 
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(52893292768828550610351088480056510699130654617371428204719408652066558688674);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(6);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(0);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(2);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(94985318063708988228514482059495063414088034941689760564244745773705232438551);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(62309453723297592519092867472970949051274965461312218673515345849119025366508);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(81988174660571405302348570732060692048189431210676260017103831725617809129562);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(25546462822654247256478916066411222327029048165598771494027981977497397987301);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 223945);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 379653);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(84365278575233779194997029733648992100036769715690804271371524728073701853283);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(1);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(3180944);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(5);
+        
+        vm.warp(block.timestamp + 542714);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 37354);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(51494328339228324159857991114781888240209937680589030083997418670495765960834);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(3073992423973430481372194607425393621916871400082163683244072379682659812390);
+        
+        vm.warp(block.timestamp + 337264);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(9854264394268194102483693767087685813104538313818234464499083443061769018996);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(1524785991);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(709);
+        
+        vm.warp(block.timestamp + 259878);
+        vm.roll(block.number + 17058);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(1524785993);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 5747);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(23947322977868952459181866544842341751365134100065999585351808797280745771632);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(85611849701131878792554528051997376578612853518905834223003907498125884345425);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(4370001);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(97119478322736280418412329047048770221997550524479478608955118284531436878302);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(40173473283781027782738243391448046090298458096526882967876210359391817690935);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 768);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 238948);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(81883048442976360294182042539600680559445308154069423457759049205317828557292);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(71172807783422972577044078755656612818783216108115624558509411307338108014274);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(8);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(1524785992);
+        
+        vm.warp(block.timestamp + 369785);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(6);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 398127);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(77501418714678275742090069265972706654090823801684787132858572116379697333008);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(49259830513163523552366873641719988691780684312676042422096810260452117710562);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(63217227079834908912108800923326481028875939418519849769281163300033220979683);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(8);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(8320839688552437311328408816377647909453390612922185320788616663788633506230);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(3815906064210657497862646418983399878851567170351877058029968876093215533997);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(22852337229870919753267982445794446162904656490495037009443069126304597744439);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(4370000);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(158722760040633307827219);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 48439);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 54373);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(1524785993);
+        
+        vm.warp(block.timestamp + 275913);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(90057316999536671613925418981680569146679075158310451409542450213611445241111);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(2);
+        
+        vm.warp(block.timestamp + 185204);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(0);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(74508687200622888704670052716239793959986849662579703232460674980558840065617);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(0);
+        
+        vm.warp(block.timestamp + 471135);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(1524785993);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(15382978932885125366798720159505172211708714658386588220278381245621820662088);
+        
+        vm.warp(block.timestamp + 580028);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(5962923998000514739122114824859203435625929752571455769381606858738244250511);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(30900612224571028464938452159924757319345650574134988496990360763777885691719);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(75763533887611570490801692592374360216311827067656797751677214980568095968574);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(98544667879389647126293860809003708006095090482927460948561695247196683509559);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(4370001);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(90283330548625417384578985589263146963855346847683789835935196500535452059171);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(111192230698689097494040446689655756295393854010084646054946453909630231828540);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(65314616018336079936225123225664675938969441238645481853184908023002307552996);
+        
+        vm.warp(block.timestamp + 403215);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(62703851897454722533936018208787398592519931564265885598544793267878348365024);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 37133);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(17760090688975271993506407329942125786391961145984530201164287755747177687028);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(0);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 33579);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(55866220260796276059785906687590930786596534598013689426760574093673064366418);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    }
+    
+    
+    function test_auto_simple_if_1() public { 
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(43201784861335930629950593491589333993023933962862821725789108902775032406455);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(22852337229870919753267982445794446162904656490495037009443069126304597744439);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(4370000);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(158722760040633307827219);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 48439);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 54373);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(1524785993);
+        
+        vm.warp(block.timestamp + 275913);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(90057316999536671613925418981680569146679075158310451409542450213611445241111);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(2);
+        
+        vm.warp(block.timestamp + 185204);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(0);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(74508687200622888704670052716239793959986849662579703232460674980558840065617);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(0);
+        
+        vm.warp(block.timestamp + 471135);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(1524785993);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(15382978932885125366798720159505172211708714658386588220278381245621820662088);
+        
+        vm.warp(block.timestamp + 580028);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(5962923998000514739122114824859203435625929752571455769381606858738244250511);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(30900612224571028464938452159924757319345650574134988496990360763777885691719);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(75763533887611570490801692592374360216311827067656797751677214980568095968574);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(98544667879389647126293860809003708006095090482927460948561695247196683509559);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(4370001);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(90283330548625417384578985589263146963855346847683789835935196500535452059171);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(111192230698689097494040446689655756295393854010084646054946453909630231828540);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(65314616018336079936225123225664675938969441238645481853184908023002307552996);
+        
+        vm.warp(block.timestamp + 403215);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(62703851897454722533936018208787398592519931564265885598544793267878348365024);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 37133);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(17760090688975271993506407329942125786391961145984530201164287755747177687028);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(0);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 33579);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(55866220260796276059785906687590930786596534598013689426760574093673064366418);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(17569878141435197563527707831903711233048224073731015991632349525783524101196);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(39539618573172976935905394391540621689621613373121194102927535317058055070627);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(4);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(160);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(104700667437356064826918922983423649795360340166869182807064950040316713026303);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 7036);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(3);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(43780463527426732312466910766704976954026055050504704755926873597454091984536);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(5);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(85782742314367218763110822925474579339681992129981864347389342070248039028359);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(4);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(102963823630111257783288433668765749371575507077116694507364615069880783094261);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 213251);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(100170859641723446933174703251330686839108840050612825517716851942212593027302);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(4370000);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(60768826331364636689908610359628192780292312356151507775789509783777157905708);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 20386);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(89704120889435032379856062443909615286613857435431278946985382396393730481576);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(67154946112963562740386379915050187305382561267287881772108869507558574623430);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(81046539267099029782296705237999603392741135635148627745540026084140196737269);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(35159698660177850808283398324934137758305306237160392676168258426392065473347);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(97271432785252127462620372030750801596230011816834212962841287998898391715703);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(95806882600490800560344468364583552994722230600487628805919389858964699196649);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(9483156959339301117139684541421214164259917562686724411045744109877107788899);
+        
+        vm.warp(block.timestamp + 32493);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(61728403530808111552264720745185366884112023861550042366339392524422631369582);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(5);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(75468370289505089910132463037902331741497325267568350186087414406482010346507);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(20510865014436599662590498023736312873688983104626915549884689913754813351323);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(9914280529611983327625165498459698744358076752885698663720037722565672026725);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(6172235667164403304216988688708624157253301698571588292233104374034305619249);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(96191248215472612043705717280513203331471317731208088199077454805573676758796);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(1524785991);
+        
+        vm.warp(block.timestamp + 247538);
+        vm.roll(block.number + 47280);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(6);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(1524785991);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(284);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(7);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(52201999209029989667455272655908169672564659636537176430101172040981693470996);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(32873608710975286868055910982568549866394974440733322177967553501002408830633);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 35555);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(6);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(41308151336792466314857869772138496015690425278546389714058654518107623010275);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(7);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(2);
+        
+        vm.warp(block.timestamp + 228329);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(104845031841817731732331425984565604303438793061126190759949091597950563708830);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(108994118159756900555636988950388491519370488886546577190082225416775983464187);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(26712716475463253383424695287964243295787799790192325278690554924133545998468);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(107565308357881395300678682530147204417774172321147785227034332613168652140179);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(108892602831445104450032189494472940121723431849902690904321994163432611095343);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 44263);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(559);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(110979482213978550785455312364294410013765465086286314554934373724980366986779);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(709);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(584);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(4369999);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(62786068358518297949181457229446201047004432049154117850195365962212884368623);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 51956);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(1524785991);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(52);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(90673001364255911569146401295567309461455258667958130141695430010887651894298);
+        
+        vm.warp(block.timestamp + 402365);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(2304568100088028717742394209089138923018656458141820951284115910177097152894);
+        
+        vm.warp(block.timestamp + 65808);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(22177989785573545757844645295804597906033615234031957539182674706236715578636);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(24172713741805543469964851157708962129452980134842967088683120291308265440553);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(2751418);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.simple_if(98832559357456006861212554163543691126260494547653348163031310746462222875282);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.simple_if(2104404692031664401367143989339569166451302262423045908867900868541519172875);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.simple_if(99899371232825187529515466536220907824557771102854961709741279460759625598665);
+    }
+    
+}
+
+    

@@ -1,0 +1,21 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        true
+      ],
+      "frm": "address_00401",
+      "method": "setController",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

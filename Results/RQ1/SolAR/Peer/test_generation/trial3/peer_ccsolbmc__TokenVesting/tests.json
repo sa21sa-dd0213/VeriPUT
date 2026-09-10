@@ -1,0 +1,247 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00404",
+      "method": "revoke_issuer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        58
+      ],
+      "frm": "address_00404",
+      "method": "withdraw_from_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00401",
+      "method": "set_controller",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        1,
+        1
+      ],
+      "frm": "address_00401",
+      "method": "create_tranche",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        249,
+        0
+      ],
+      "frm": "address_00023",
+      "method": "move_into_tranche",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        99603532296537303602848565661793457446151299620049573718177286497218829901783,
+        "address_00001000000000000000000000000"
+      ],
+      "frm": "address_00023",
+      "method": "stake_tokens",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        99603532296537303602848565661793457446151299620049573718177286497218829901783,
+        "address_00001000000000000000000000000"
+      ],
+      "frm": "address_00023",
+      "method": "stake_tokens",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        15278142880997866074609908640539018570612056526777022607703137884087328928674
+      ],
+      "frm": "address_00036",
+      "method": "remove_stake",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        61,
+        11783038890364068097763809072140502948332047202159026268078153751531749727519
+      ],
+      "frm": "address_00184",
+      "method": "issue_into_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        5603567747873252640946490523292575924698027248428370773992582889253437969525
+      ],
+      "frm": "address_00032",
+      "method": "permit_issuer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        2
+      ],
+      "frm": "address_00021",
+      "method": "get_vested_for_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00023",
+      "method": "user_total_all_tranches",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        60
+      ],
+      "frm": "address_00032",
+      "method": "get_tranche_balance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1,
+        1
+      ],
+      "frm": "address_00401",
+      "method": "create_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

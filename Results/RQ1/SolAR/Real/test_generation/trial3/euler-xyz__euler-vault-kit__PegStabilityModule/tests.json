@@ -1,0 +1,233 @@
+[
+  [
+    {
+      "args": [
+        "address_00021",
+        "address_00021",
+        "address_00021",
+        31,
+        165,
+        27377789310041629467468588455310847326889358830116224276051076007234548443390
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        255
+      ],
+      "frm": "address_00410",
+      "method": "quoteToUnderlyingGivenOut",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        46681
+      ],
+      "frm": "address_00023",
+      "method": "quoteToUnderlyingGivenIn",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "address_00410",
+        "address_00019",
+        71,
+        100,
+        43699866565212083492826062886695170759663030133466518305481517803728928215309
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        80
+      ],
+      "frm": "address_00404",
+      "method": "quoteToSynthGivenOut",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "address_00410",
+        "address_00019",
+        71,
+        100,
+        43699866565212083492826062886695170759663030133466518305481517803728928215309
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        76276197789990426816896707387357909044029589639152072773672078682375914561681
+      ],
+      "frm": "address_00023",
+      "method": "quoteToSynthGivenIn",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        46681
+      ],
+      "frm": "address_00023",
+      "method": "quoteToUnderlyingGivenIn",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404",
+        "address_00410",
+        "address_00032",
+        76,
+        97,
+        43699866565212083492826062886695170759663030133466518305481517803728928215309
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1363,
+        "address_00410"
+      ],
+      "frm": "address_00021",
+      "method": "swapToSynthGivenOut",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "address_00410",
+        "address_00398",
+        100,
+        31,
+        18
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        104177333675126059630614107189589638159155789929341940250553959330630834617315
+      ],
+      "frm": "address_00036",
+      "method": "quoteToUnderlyingGivenIn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "address_00410",
+        "address_00019",
+        71,
+        100,
+        43699866565212083492826062886695170759663030133466518305481517803728928215309
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        71,
+        "address_00019"
+      ],
+      "frm": "address_00184",
+      "method": "swapToSynthGivenIn",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        46681
+      ],
+      "frm": "address_00023",
+      "method": "quoteToUnderlyingGivenIn",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "address_00410",
+        "address_00019",
+        71,
+        100,
+        43699866565212083492826062886695170759663030133466518305481517803728928215309
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        40,
+        "address_00401"
+      ],
+      "frm": "address_00032",
+      "method": "swapToUnderlyingGivenOut",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404",
+        "address_00398",
+        "address_00404",
+        576,
+        719,
+        255
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0,
+        "address_00032"
+      ],
+      "frm": "address_00401",
+      "method": "swapToUnderlyingGivenIn",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

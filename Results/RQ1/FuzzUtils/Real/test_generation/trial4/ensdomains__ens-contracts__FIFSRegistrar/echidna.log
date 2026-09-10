@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.689272268s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.672722033s)
+
+echidna: Constructor arguments are required: [("ensAddr",address),("node",bytes32)]

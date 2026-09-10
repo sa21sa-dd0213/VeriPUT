@@ -1,0 +1,207 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        21000000
+      ],
+      "frm": "address_00036",
+      "method": "increaseApproval",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        5
+      ],
+      "frm": "address_00032",
+      "method": "increaseApproval",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00023",
+      "method": "transferOwnership",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        "address_00036"
+      ],
+      "frm": "address_00398",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        21000000
+      ],
+      "frm": "address_00036",
+      "method": "increaseApproval",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        84082248597993099406966268997469356977409476205823609392773453332255069806804
+      ],
+      "frm": "address_00021",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "_fallback",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00036",
+      "method": "transferableTokens",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00404",
+      "method": "transferOwnership",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00398",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        3173394698477877375662317279611541378463292197581285331427868880350133139315
+      ],
+      "frm": "address_00410",
+      "method": "decreaseApproval",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        "address_00019",
+        157768833157110482
+      ],
+      "frm": "address_00404",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        2021
+      ],
+      "frm": "address_00019",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

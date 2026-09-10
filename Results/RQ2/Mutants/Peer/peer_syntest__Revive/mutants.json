@@ -1,0 +1,2677 @@
+{
+  "compile_failed": 46,
+  "compile_ok": 221,
+  "mutants": [
+    {
+      "compile_status": "failed",
+      "end_line": 543,
+      "function": "lock",
+      "mutant_id": "m000001",
+      "operator": "ACM",
+      "original_expression": "tokensLocked(msg.sender, _reason)",
+      "replacement_expression": "tokensLocked(_to, _reason)",
+      "start_line": 543
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 571,
+      "function": "transferWithLock",
+      "mutant_id": "m000002",
+      "operator": "ACM",
+      "original_expression": "tokensLocked(_to, _reason)",
+      "replacement_expression": "tokensLocked(msg.sender, _reason)",
+      "start_line": 571
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 630,
+      "function": "totalBalanceOf",
+      "mutant_id": "m000003",
+      "operator": "ACM",
+      "original_expression": "tokensLocked(_of, lockReason[_of][i])",
+      "replacement_expression": "tokensLocked(msg.sender, _reason)",
+      "start_line": 630
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 365,
+      "function": "_transferOwnership",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(this)",
+      "start_line": 365
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 365,
+      "function": "_transferOwnership",
+      "mutant_id": "m000005",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(0)",
+      "start_line": 365
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "mul",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "mul",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "mul",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 54,
+      "function": "mul",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 54
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 54,
+      "function": "mul",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 54
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 54,
+      "function": "mul",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 54
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 54,
+      "function": "mul",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 54
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 54,
+      "function": "mul",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 54
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "div",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "div",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "div",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "div",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 75,
+      "function": "sub",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 75
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 75,
+      "function": "sub",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 75
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 75,
+      "function": "sub",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 75
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "sub",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "sub",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "add",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "add",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "add",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "add",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "add",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "mod",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "mod",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " % ",
+      "replacement_expression": " / ",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 229,
+      "function": "_transfer",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 229
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 244,
+      "function": "_mint",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 244
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 258,
+      "function": "_burn",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 258
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 272,
+      "function": "_approve",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 272
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 273,
+      "function": "_approve",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 273
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 335,
+      "function": "isOwner",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 335
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 363,
+      "function": "_transferOwnership",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 363
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 518,
+      "function": "stateVariable",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": "*",
+      "replacement_expression": "+",
+      "start_line": 518
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 518,
+      "function": "stateVariable",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": "*",
+      "replacement_expression": "**",
+      "start_line": 518
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 518,
+      "function": "stateVariable",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": "*",
+      "replacement_expression": "+",
+      "start_line": 518
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 518,
+      "function": "stateVariable",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": "*",
+      "replacement_expression": "**",
+      "start_line": 518
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 518,
+      "function": "stateVariable",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": "**",
+      "replacement_expression": "*",
+      "start_line": 518
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 518,
+      "function": "stateVariable",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": "**",
+      "replacement_expression": "*",
+      "start_line": 518
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 543,
+      "function": "lock",
+      "mutant_id": "m000043",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 543
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 544,
+      "function": "lock",
+      "mutant_id": "m000044",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 544
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 546,
+      "function": "lock",
+      "mutant_id": "m000045",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 546
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 571,
+      "function": "transferWithLock",
+      "mutant_id": "m000046",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 571
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "transferWithLock",
+      "mutant_id": "m000047",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 574,
+      "function": "transferWithLock",
+      "mutant_id": "m000048",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 574
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 614,
+      "function": "tokensLockedAtTime",
+      "mutant_id": "m000049",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 614
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 614,
+      "function": "tokensLockedAtTime",
+      "mutant_id": "m000050",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 614
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 629,
+      "function": "totalBalanceOf",
+      "mutant_id": "m000051",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 629
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 629,
+      "function": "totalBalanceOf",
+      "mutant_id": "m000052",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 629
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 643,
+      "function": "extendLock",
+      "mutant_id": "m000053",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 643
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 643,
+      "function": "extendLock",
+      "mutant_id": "m000054",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 643
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 660,
+      "function": "increaseLockAmount",
+      "mutant_id": "m000055",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 660
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 660,
+      "function": "increaseLockAmount",
+      "mutant_id": "m000056",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 660
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 679,
+      "function": "tokensUnlockable",
+      "mutant_id": "m000057",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 679
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 679,
+      "function": "tokensUnlockable",
+      "mutant_id": "m000058",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 679
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 679,
+      "function": "tokensUnlockable",
+      "mutant_id": "m000059",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 679
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 679,
+      "function": "tokensUnlockable",
+      "mutant_id": "m000060",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 679
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 693,
+      "function": "unlock",
+      "mutant_id": "m000061",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 693
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 693,
+      "function": "unlock",
+      "mutant_id": "m000062",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 693
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 695,
+      "function": "unlock",
+      "mutant_id": "m000063",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 695
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 695,
+      "function": "unlock",
+      "mutant_id": "m000064",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 695
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 702,
+      "function": "unlock",
+      "mutant_id": "m000065",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 702
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 702,
+      "function": "unlock",
+      "mutant_id": "m000066",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 702
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 715,
+      "function": "getUnlockableTokens",
+      "mutant_id": "m000067",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 715
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 715,
+      "function": "getUnlockableTokens",
+      "mutant_id": "m000068",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 715
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 161,
+      "function": "transfer",
+      "mutant_id": "m000069",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 161
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 175,
+      "function": "approve",
+      "mutant_id": "m000070",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 175
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 189,
+      "function": "transferFrom",
+      "mutant_id": "m000071",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 189
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 204,
+      "function": "increaseAllowance",
+      "mutant_id": "m000072",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 204
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "decreaseAllowance",
+      "mutant_id": "m000073",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 219
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 551,
+      "function": "lock",
+      "mutant_id": "m000074",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 551
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 554,
+      "function": "lock",
+      "mutant_id": "m000075",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 554
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 579,
+      "function": "transferWithLock",
+      "mutant_id": "m000076",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 579
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 582,
+      "function": "transferWithLock",
+      "mutant_id": "m000077",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 582
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 648,
+      "function": "extendLock",
+      "mutant_id": "m000078",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 648
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 666,
+      "function": "increaseLockAmount",
+      "mutant_id": "m000079",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 666
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 697,
+      "function": "unlock",
+      "mutant_id": "m000080",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 697
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 314,
+      "function": "constructor",
+      "mutant_id": "m000081",
+      "operator": "CCD",
+      "original_expression": "constructor ()  {\n        _owner = msg.sender;\n        emit OwnershipTransferred(address(0), _owner);\n    }",
+      "replacement_expression": "",
+      "start_line": 311
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 526,
+      "function": "constructor",
+      "mutant_id": "m000082",
+      "operator": "CCD",
+      "original_expression": "constructor()  {\n        _mint(msg.sender, TOTAL_SUPPLY);\n    }",
+      "replacement_expression": "",
+      "start_line": 524
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "mul",
+      "mutant_id": "m000083",
+      "operator": "CSC",
+      "original_expression": "a == 0",
+      "replacement_expression": "true",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "mul",
+      "mutant_id": "m000084",
+      "operator": "CSC",
+      "original_expression": "a == 0",
+      "replacement_expression": "false",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 546,
+      "function": "lock",
+      "mutant_id": "m000085",
+      "operator": "CSC",
+      "original_expression": "locked[msg.sender][_reason].amount == 0",
+      "replacement_expression": "true",
+      "start_line": 546
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 546,
+      "function": "lock",
+      "mutant_id": "m000086",
+      "operator": "CSC",
+      "original_expression": "locked[msg.sender][_reason].amount == 0",
+      "replacement_expression": "false",
+      "start_line": 546
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 574,
+      "function": "transferWithLock",
+      "mutant_id": "m000087",
+      "operator": "CSC",
+      "original_expression": "locked[_to][_reason].amount == 0",
+      "replacement_expression": "true",
+      "start_line": 574
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 574,
+      "function": "transferWithLock",
+      "mutant_id": "m000088",
+      "operator": "CSC",
+      "original_expression": "locked[_to][_reason].amount == 0",
+      "replacement_expression": "false",
+      "start_line": 574
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 597,
+      "function": "tokensLocked",
+      "mutant_id": "m000089",
+      "operator": "CSC",
+      "original_expression": "!locked[_of][_reason].claimed",
+      "replacement_expression": "true",
+      "start_line": 597
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 597,
+      "function": "tokensLocked",
+      "mutant_id": "m000090",
+      "operator": "CSC",
+      "original_expression": "!locked[_of][_reason].claimed",
+      "replacement_expression": "false",
+      "start_line": 597
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 614,
+      "function": "tokensLockedAtTime",
+      "mutant_id": "m000091",
+      "operator": "CSC",
+      "original_expression": "locked[_of][_reason].validity > _time",
+      "replacement_expression": "true",
+      "start_line": 614
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 614,
+      "function": "tokensLockedAtTime",
+      "mutant_id": "m000092",
+      "operator": "CSC",
+      "original_expression": "locked[_of][_reason].validity > _time",
+      "replacement_expression": "false",
+      "start_line": 614
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 679,
+      "function": "tokensUnlockable",
+      "mutant_id": "m000093",
+      "operator": "CSC",
+      "original_expression": "locked[_of][_reason].validity <= block.timestamp && !locked[_of][_reason].claimed",
+      "replacement_expression": "true",
+      "start_line": 679
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 679,
+      "function": "tokensUnlockable",
+      "mutant_id": "m000094",
+      "operator": "CSC",
+      "original_expression": "locked[_of][_reason].validity <= block.timestamp && !locked[_of][_reason].claimed",
+      "replacement_expression": "false",
+      "start_line": 679
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 695,
+      "function": "unlock",
+      "mutant_id": "m000095",
+      "operator": "CSC",
+      "original_expression": "lockedTokens > 0",
+      "replacement_expression": "true",
+      "start_line": 695
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 695,
+      "function": "unlock",
+      "mutant_id": "m000096",
+      "operator": "CSC",
+      "original_expression": "lockedTokens > 0",
+      "replacement_expression": "false",
+      "start_line": 695
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 702,
+      "function": "unlock",
+      "mutant_id": "m000097",
+      "operator": "CSC",
+      "original_expression": "unlockableTokens > 0",
+      "replacement_expression": "true",
+      "start_line": 702
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 702,
+      "function": "unlock",
+      "mutant_id": "m000098",
+      "operator": "CSC",
+      "original_expression": "unlockableTokens > 0",
+      "replacement_expression": "false",
+      "start_line": 702
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 233,
+      "function": "_transfer",
+      "mutant_id": "m000099",
+      "operator": "EED",
+      "original_expression": "emit Transfer(from, to, value);",
+      "replacement_expression": "/* emit Transfer(from, to, value); */",
+      "start_line": 233
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 248,
+      "function": "_mint",
+      "mutant_id": "m000100",
+      "operator": "EED",
+      "original_expression": "emit Transfer(address(0), account, value);",
+      "replacement_expression": "/* emit Transfer(address(0), account, value); */",
+      "start_line": 248
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 262,
+      "function": "_burn",
+      "mutant_id": "m000101",
+      "operator": "EED",
+      "original_expression": "emit Transfer(account, address(0), value);",
+      "replacement_expression": "/* emit Transfer(account, address(0), value); */",
+      "start_line": 262
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 276,
+      "function": "_approve",
+      "mutant_id": "m000102",
+      "operator": "EED",
+      "original_expression": "emit Approval(owner, spender, value);",
+      "replacement_expression": "/* emit Approval(owner, spender, value); */",
+      "start_line": 276
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 313,
+      "function": "constructor",
+      "mutant_id": "m000103",
+      "operator": "EED",
+      "original_expression": "emit OwnershipTransferred(address(0), _owner);",
+      "replacement_expression": "/* emit OwnershipTransferred(address(0), _owner); */",
+      "start_line": 313
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 346,
+      "function": "renounceOwnership",
+      "mutant_id": "m000104",
+      "operator": "EED",
+      "original_expression": "emit OwnershipTransferred(_owner, address(0));",
+      "replacement_expression": "/* emit OwnershipTransferred(_owner, address(0)); */",
+      "start_line": 346
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 364,
+      "function": "_transferOwnership",
+      "mutant_id": "m000105",
+      "operator": "EED",
+      "original_expression": "emit OwnershipTransferred(_owner, newOwner);",
+      "replacement_expression": "/* emit OwnershipTransferred(_owner, newOwner); */",
+      "start_line": 364
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 553,
+      "function": "lock",
+      "mutant_id": "m000106",
+      "operator": "EED",
+      "original_expression": "emit Locked(msg.sender, _reason, _amount, validUntil);",
+      "replacement_expression": "/* emit Locked(msg.sender, _reason, _amount, validUntil); */",
+      "start_line": 553
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 581,
+      "function": "transferWithLock",
+      "mutant_id": "m000107",
+      "operator": "EED",
+      "original_expression": "emit Locked(_to, _reason, _amount, validUntil);",
+      "replacement_expression": "/* emit Locked(_to, _reason, _amount, validUntil); */",
+      "start_line": 581
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 647,
+      "function": "extendLock",
+      "mutant_id": "m000108",
+      "operator": "EED",
+      "original_expression": "emit Locked(msg.sender, _reason, locked[msg.sender][_reason].amount, locked[msg.sender][_reason].validity);",
+      "replacement_expression": "/* emit Locked(msg.sender, _reason, locked[msg.sender][_reason].amount, locked[msg.sender][_reason].validity); */",
+      "start_line": 647
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 665,
+      "function": "increaseLockAmount",
+      "mutant_id": "m000109",
+      "operator": "EED",
+      "original_expression": "emit Locked(msg.sender, _reason, locked[msg.sender][_reason].amount, locked[msg.sender][_reason].validity);",
+      "replacement_expression": "/* emit Locked(msg.sender, _reason, locked[msg.sender][_reason].amount, locked[msg.sender][_reason].validity); */",
+      "start_line": 665
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 698,
+      "function": "unlock",
+      "mutant_id": "m000110",
+      "operator": "EED",
+      "original_expression": "emit Unlocked(_of, lockReason[_of][i], lockedTokens);",
+      "replacement_expression": "/* emit Unlocked(_of, lockReason[_of][i], lockedTokens); */",
+      "start_line": 698
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 518,
+      "function": "stateVariable",
+      "mutant_id": "m000111",
+      "operator": "ECS",
+      "original_expression": "uint256(decimals)",
+      "replacement_expression": "uint248(decimals)",
+      "start_line": 518
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 54,
+      "function": "mul",
+      "mutant_id": "m000112",
+      "operator": "EHD",
+      "original_expression": "require(c / a == b);",
+      "replacement_expression": "/* require(c / a == b); */",
+      "start_line": 54
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "div",
+      "mutant_id": "m000113",
+      "operator": "EHD",
+      "original_expression": "require(b > 0);",
+      "replacement_expression": "/* require(b > 0); */",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 75,
+      "function": "sub",
+      "mutant_id": "m000114",
+      "operator": "EHD",
+      "original_expression": "require(b <= a);",
+      "replacement_expression": "/* require(b <= a); */",
+      "start_line": 75
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "add",
+      "mutant_id": "m000115",
+      "operator": "EHD",
+      "original_expression": "require(c >= a);",
+      "replacement_expression": "/* require(c >= a); */",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "mod",
+      "mutant_id": "m000116",
+      "operator": "EHD",
+      "original_expression": "require(b != 0);",
+      "replacement_expression": "/* require(b != 0); */",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 229,
+      "function": "_transfer",
+      "mutant_id": "m000117",
+      "operator": "EHD",
+      "original_expression": "require(to != address(0));",
+      "replacement_expression": "/* require(to != address(0)); */",
+      "start_line": 229
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 244,
+      "function": "_mint",
+      "mutant_id": "m000118",
+      "operator": "EHD",
+      "original_expression": "require(account != address(0));",
+      "replacement_expression": "/* require(account != address(0)); */",
+      "start_line": 244
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 258,
+      "function": "_burn",
+      "mutant_id": "m000119",
+      "operator": "EHD",
+      "original_expression": "require(account != address(0));",
+      "replacement_expression": "/* require(account != address(0)); */",
+      "start_line": 258
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 272,
+      "function": "_approve",
+      "mutant_id": "m000120",
+      "operator": "EHD",
+      "original_expression": "require(spender != address(0));",
+      "replacement_expression": "/* require(spender != address(0)); */",
+      "start_line": 272
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 273,
+      "function": "_approve",
+      "mutant_id": "m000121",
+      "operator": "EHD",
+      "original_expression": "require(owner != address(0));",
+      "replacement_expression": "/* require(owner != address(0)); */",
+      "start_line": 273
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 327,
+      "function": "modifier:onlyOwner",
+      "mutant_id": "m000122",
+      "operator": "EHD",
+      "original_expression": "require(isOwner());",
+      "replacement_expression": "/* require(isOwner()); */",
+      "start_line": 327
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 363,
+      "function": "_transferOwnership",
+      "mutant_id": "m000123",
+      "operator": "EHD",
+      "original_expression": "require(newOwner != address(0));",
+      "replacement_expression": "/* require(newOwner != address(0)); */",
+      "start_line": 363
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 543,
+      "function": "lock",
+      "mutant_id": "m000124",
+      "operator": "EHD",
+      "original_expression": "require(tokensLocked(msg.sender, _reason) == 0, ALREADY_LOCKED);",
+      "replacement_expression": "/* require(tokensLocked(msg.sender, _reason) == 0, ALREADY_LOCKED); */",
+      "start_line": 543
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 544,
+      "function": "lock",
+      "mutant_id": "m000125",
+      "operator": "EHD",
+      "original_expression": "require(_amount != 0, AMOUNT_ZERO);",
+      "replacement_expression": "/* require(_amount != 0, AMOUNT_ZERO); */",
+      "start_line": 544
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 571,
+      "function": "transferWithLock",
+      "mutant_id": "m000126",
+      "operator": "EHD",
+      "original_expression": "require(tokensLocked(_to, _reason) == 0, ALREADY_LOCKED);",
+      "replacement_expression": "/* require(tokensLocked(_to, _reason) == 0, ALREADY_LOCKED); */",
+      "start_line": 571
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "transferWithLock",
+      "mutant_id": "m000127",
+      "operator": "EHD",
+      "original_expression": "require(_amount != 0, AMOUNT_ZERO);",
+      "replacement_expression": "/* require(_amount != 0, AMOUNT_ZERO); */",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 643,
+      "function": "extendLock",
+      "mutant_id": "m000128",
+      "operator": "EHD",
+      "original_expression": "require(tokensLocked(msg.sender, _reason) > 0, NOT_LOCKED);",
+      "replacement_expression": "/* require(tokensLocked(msg.sender, _reason) > 0, NOT_LOCKED); */",
+      "start_line": 643
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 660,
+      "function": "increaseLockAmount",
+      "mutant_id": "m000129",
+      "operator": "EHD",
+      "original_expression": "require(tokensLocked(msg.sender, _reason) > 0, NOT_LOCKED);",
+      "replacement_expression": "/* require(tokensLocked(msg.sender, _reason) > 0, NOT_LOCKED); */",
+      "start_line": 660
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 506,
+      "function": "recoverERC20",
+      "mutant_id": "m000130",
+      "operator": "ETR",
+      "original_expression": "IERC20(tokenAddress).transfer",
+      "replacement_expression": "IERC20(tokenAddress).send",
+      "start_line": 506
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 506,
+      "function": "recoverERC20",
+      "mutant_id": "m000131",
+      "operator": "ETR",
+      "original_expression": "IERC20(tokenAddress).transfer",
+      "replacement_expression": "IERC20(tokenAddress).call{value: owner()}(\"\")",
+      "start_line": 506
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 703,
+      "function": "unlock",
+      "mutant_id": "m000132",
+      "operator": "ETR",
+      "original_expression": "this.transfer",
+      "replacement_expression": "this.send",
+      "start_line": 703
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 703,
+      "function": "unlock",
+      "mutant_id": "m000133",
+      "operator": "ETR",
+      "original_expression": "this.transfer",
+      "replacement_expression": "this.call{value: _of}(\"\")",
+      "start_line": 703
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 721,
+      "function": "recoverERC20",
+      "mutant_id": "m000134",
+      "operator": "ETR",
+      "original_expression": "this.transfer",
+      "replacement_expression": "this.send",
+      "start_line": 721
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 721,
+      "function": "recoverERC20",
+      "mutant_id": "m000135",
+      "operator": "ETR",
+      "original_expression": "this.transfer",
+      "replacement_expression": "this.call{value: owner()}(\"\")",
+      "start_line": 721
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 160,
+      "function": "transfer",
+      "mutant_id": "m000136",
+      "operator": "FCD",
+      "original_expression": "_transfer(msg.sender, to, value);",
+      "replacement_expression": "/*_transfer(msg.sender, to, value);*/",
+      "start_line": 160
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "approve",
+      "mutant_id": "m000137",
+      "operator": "FCD",
+      "original_expression": "_approve(msg.sender, spender, value);",
+      "replacement_expression": "/*_approve(msg.sender, spender, value);*/",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 187,
+      "function": "transferFrom",
+      "mutant_id": "m000138",
+      "operator": "FCD",
+      "original_expression": "_transfer(from, to, value);",
+      "replacement_expression": "/*_transfer(from, to, value);*/",
+      "start_line": 187
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 188,
+      "function": "transferFrom",
+      "mutant_id": "m000139",
+      "operator": "FCD",
+      "original_expression": "_approve(from, msg.sender, _allowed[from][msg.sender].sub(value));",
+      "replacement_expression": "/*_approve(from, msg.sender, _allowed[from][msg.sender].sub(value));*/",
+      "start_line": 188
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 188,
+      "function": "transferFrom",
+      "mutant_id": "m000140",
+      "operator": "FCD",
+      "original_expression": "_allowed[from][msg.sender].sub(value))",
+      "replacement_expression": "/*_allowed[from][msg.sender].sub(value))*/",
+      "start_line": 188
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 203,
+      "function": "increaseAllowance",
+      "mutant_id": "m000141",
+      "operator": "FCD",
+      "original_expression": "_approve(msg.sender, spender, _allowed[msg.sender][spender].add(addedValue));",
+      "replacement_expression": "/*_approve(msg.sender, spender, _allowed[msg.sender][spender].add(addedValue));*/",
+      "start_line": 203
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 203,
+      "function": "increaseAllowance",
+      "mutant_id": "m000142",
+      "operator": "FCD",
+      "original_expression": "_allowed[msg.sender][spender].add(addedValue))",
+      "replacement_expression": "/*_allowed[msg.sender][spender].add(addedValue))*/",
+      "start_line": 203
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 218,
+      "function": "decreaseAllowance",
+      "mutant_id": "m000143",
+      "operator": "FCD",
+      "original_expression": "_approve(msg.sender, spender, _allowed[msg.sender][spender].sub(subtractedValue));",
+      "replacement_expression": "/*_approve(msg.sender, spender, _allowed[msg.sender][spender].sub(subtractedValue));*/",
+      "start_line": 218
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 218,
+      "function": "decreaseAllowance",
+      "mutant_id": "m000144",
+      "operator": "FCD",
+      "original_expression": "_allowed[msg.sender][spender].sub(subtractedValue))",
+      "replacement_expression": "/*_allowed[msg.sender][spender].sub(subtractedValue))*/",
+      "start_line": 218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 288,
+      "function": "_burnFrom",
+      "mutant_id": "m000145",
+      "operator": "FCD",
+      "original_expression": "_burn(account, value);",
+      "replacement_expression": "/*_burn(account, value);*/",
+      "start_line": 288
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 289,
+      "function": "_burnFrom",
+      "mutant_id": "m000146",
+      "operator": "FCD",
+      "original_expression": "_approve(account, msg.sender, _allowed[account][msg.sender].sub(value));",
+      "replacement_expression": "/*_approve(account, msg.sender, _allowed[account][msg.sender].sub(value));*/",
+      "start_line": 289
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 289,
+      "function": "_burnFrom",
+      "mutant_id": "m000147",
+      "operator": "FCD",
+      "original_expression": "_allowed[account][msg.sender].sub(value))",
+      "replacement_expression": "/*_allowed[account][msg.sender].sub(value))*/",
+      "start_line": 289
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 327,
+      "function": "modifier:onlyOwner",
+      "mutant_id": "m000148",
+      "operator": "FCD",
+      "original_expression": "isOwner())",
+      "replacement_expression": "/*isOwner())*/",
+      "start_line": 327
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 355,
+      "function": "transferOwnership",
+      "mutant_id": "m000149",
+      "operator": "FCD",
+      "original_expression": "_transferOwnership(newOwner);",
+      "replacement_expression": "/*_transferOwnership(newOwner);*/",
+      "start_line": 355
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 506,
+      "function": "recoverERC20",
+      "mutant_id": "m000150",
+      "operator": "FCD",
+      "original_expression": "IERC20(tokenAddress).",
+      "replacement_expression": "/*IERC20(tokenAddress).*/",
+      "start_line": 506
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 539,
+      "function": "lock",
+      "mutant_id": "m000151",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 539
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 569,
+      "function": "transferWithLock",
+      "mutant_id": "m000152",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 569
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 679,
+      "function": "tokensUnlockable",
+      "mutant_id": "m000153",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 679
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "mul",
+      "mutant_id": "m000154",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "mul",
+      "mutant_id": "m000155",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "div",
+      "mutant_id": "m000156",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "mod",
+      "mutant_id": "m000157",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 229,
+      "function": "_transfer",
+      "mutant_id": "m000158",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 229
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 244,
+      "function": "_mint",
+      "mutant_id": "m000159",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 244
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 248,
+      "function": "_mint",
+      "mutant_id": "m000160",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 248
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 258,
+      "function": "_burn",
+      "mutant_id": "m000161",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 258
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 262,
+      "function": "_burn",
+      "mutant_id": "m000162",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 262
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 272,
+      "function": "_approve",
+      "mutant_id": "m000163",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 272
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 273,
+      "function": "_approve",
+      "mutant_id": "m000164",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 273
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 313,
+      "function": "constructor",
+      "mutant_id": "m000165",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 313
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 346,
+      "function": "renounceOwnership",
+      "mutant_id": "m000166",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 346
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 347,
+      "function": "renounceOwnership",
+      "mutant_id": "m000167",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 347
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 363,
+      "function": "_transferOwnership",
+      "mutant_id": "m000168",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 363
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 517,
+      "function": "stateVariable",
+      "mutant_id": "m000169",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "17",
+      "start_line": 517
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 517,
+      "function": "stateVariable",
+      "mutant_id": "m000170",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "19",
+      "start_line": 517
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 518,
+      "function": "stateVariable",
+      "mutant_id": "m000171",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "2",
+      "start_line": 518
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 518,
+      "function": "stateVariable",
+      "mutant_id": "m000172",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "4",
+      "start_line": 518
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 518,
+      "function": "stateVariable",
+      "mutant_id": "m000173",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 518
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 518,
+      "function": "stateVariable",
+      "mutant_id": "m000174",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 518
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 518,
+      "function": "stateVariable",
+      "mutant_id": "m000175",
+      "operator": "ILR",
+      "original_expression": "9",
+      "replacement_expression": "8",
+      "start_line": 518
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 518,
+      "function": "stateVariable",
+      "mutant_id": "m000176",
+      "operator": "ILR",
+      "original_expression": "9",
+      "replacement_expression": "10",
+      "start_line": 518
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 543,
+      "function": "lock",
+      "mutant_id": "m000177",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 543
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 544,
+      "function": "lock",
+      "mutant_id": "m000178",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 544
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 546,
+      "function": "lock",
+      "mutant_id": "m000179",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 546
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 571,
+      "function": "transferWithLock",
+      "mutant_id": "m000180",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 571
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "transferWithLock",
+      "mutant_id": "m000181",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 574,
+      "function": "transferWithLock",
+      "mutant_id": "m000182",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 574
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 629,
+      "function": "totalBalanceOf",
+      "mutant_id": "m000183",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 629
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 643,
+      "function": "extendLock",
+      "mutant_id": "m000184",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 643
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 660,
+      "function": "increaseLockAmount",
+      "mutant_id": "m000185",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 660
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 693,
+      "function": "unlock",
+      "mutant_id": "m000186",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 693
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 695,
+      "function": "unlock",
+      "mutant_id": "m000187",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 695
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 702,
+      "function": "unlock",
+      "mutant_id": "m000188",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 702
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 715,
+      "function": "getUnlockableTokens",
+      "mutant_id": "m000189",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 715
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 629,
+      "function": "totalBalanceOf",
+      "mutant_id": "m000190",
+      "operator": "LSC",
+      "original_expression": "i < lockReason[_of].length",
+      "replacement_expression": "false",
+      "start_line": 629
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 693,
+      "function": "unlock",
+      "mutant_id": "m000191",
+      "operator": "LSC",
+      "original_expression": "i < lockReason[_of].length",
+      "replacement_expression": "false",
+      "start_line": 693
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 715,
+      "function": "getUnlockableTokens",
+      "mutant_id": "m000192",
+      "operator": "LSC",
+      "original_expression": "i < lockReason[_of].length",
+      "replacement_expression": "false",
+      "start_line": 715
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 345,
+      "function": "renounceOwnership",
+      "mutant_id": "m000193",
+      "operator": "MOD",
+      "original_expression": "function renounceOwnership() public onlyOwner ",
+      "replacement_expression": "function renounceOwnership() public  ",
+      "start_line": 345
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 354,
+      "function": "transferOwnership",
+      "mutant_id": "m000194",
+      "operator": "MOD",
+      "original_expression": "function transferOwnership(address newOwner) public onlyOwner ",
+      "replacement_expression": "function transferOwnership(address newOwner) public  ",
+      "start_line": 354
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 505,
+      "function": "recoverERC20",
+      "mutant_id": "m000195",
+      "operator": "MOD",
+      "original_expression": "function recoverERC20(address tokenAddress, uint256 tokenAmount) public onlyOwner ",
+      "replacement_expression": "function recoverERC20(address tokenAddress, uint256 tokenAmount) public  ",
+      "start_line": 505
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 720,
+      "function": "recoverERC20",
+      "mutant_id": "m000196",
+      "operator": "MOD",
+      "original_expression": "function recoverERC20(uint256 tokenAmount) public onlyOwner ",
+      "replacement_expression": "function recoverERC20(uint256 tokenAmount) public  ",
+      "start_line": 720
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 16,
+      "function": "transfer",
+      "mutant_id": "m000197",
+      "operator": "OLFD",
+      "original_expression": "function transfer(address to, uint256 value) external returns (bool);",
+      "replacement_expression": "",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "approve",
+      "mutant_id": "m000198",
+      "operator": "OLFD",
+      "original_expression": "function approve(address spender, uint256 value) external returns (bool);",
+      "replacement_expression": "",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "transferFrom",
+      "mutant_id": "m000199",
+      "operator": "OLFD",
+      "original_expression": "function transferFrom(address from, address to, uint256 value) external returns (bool);",
+      "replacement_expression": "",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "totalSupply",
+      "mutant_id": "m000200",
+      "operator": "OLFD",
+      "original_expression": "function totalSupply() external view returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "balanceOf",
+      "mutant_id": "m000201",
+      "operator": "OLFD",
+      "original_expression": "function balanceOf(address who) external view returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "allowance",
+      "mutant_id": "m000202",
+      "operator": "OLFD",
+      "original_expression": "function allowance(address owner, address spender) external view returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 26
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 133,
+      "function": "totalSupply",
+      "mutant_id": "m000203",
+      "operator": "OLFD",
+      "original_expression": "function totalSupply() public view returns (uint256) {\n        return _totalSupply;\n    }",
+      "replacement_expression": "",
+      "start_line": 131
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 142,
+      "function": "balanceOf",
+      "mutant_id": "m000204",
+      "operator": "OLFD",
+      "original_expression": "function balanceOf(address owner) public view returns (uint256) {\n        return _balances[owner];\n    }",
+      "replacement_expression": "",
+      "start_line": 140
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 152,
+      "function": "allowance",
+      "mutant_id": "m000205",
+      "operator": "OLFD",
+      "original_expression": "function allowance(address owner, address spender) public view returns (uint256) {\n        return _allowed[owner][spender];\n    }",
+      "replacement_expression": "",
+      "start_line": 150
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 162,
+      "function": "transfer",
+      "mutant_id": "m000206",
+      "operator": "OLFD",
+      "original_expression": "function transfer(address to, uint256 value) public returns (bool) {\n        _transfer(msg.sender, to, value);\n        return true;\n    }",
+      "replacement_expression": "",
+      "start_line": 159
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 176,
+      "function": "approve",
+      "mutant_id": "m000207",
+      "operator": "OLFD",
+      "original_expression": "function approve(address spender, uint256 value) public returns (bool) {\n        _approve(msg.sender, spender, value);\n        return true;\n    }",
+      "replacement_expression": "",
+      "start_line": 173
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 190,
+      "function": "transferFrom",
+      "mutant_id": "m000208",
+      "operator": "OLFD",
+      "original_expression": "function transferFrom(address from, address to, uint256 value) public returns (bool) {\n        _transfer(from, to, value);\n        _approve(from, msg.sender, _allowed[from][msg.sender].sub(value));\n        return true;\n    }",
+      "replacement_expression": "",
+      "start_line": 186
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 426,
+      "function": "lock",
+      "mutant_id": "m000209",
+      "operator": "OLFD",
+      "original_expression": "function lock(bytes32 _reason, uint256 _amount, uint256 _time)\n    public virtual returns (bool);",
+      "replacement_expression": "",
+      "start_line": 425
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 436,
+      "function": "tokensLocked",
+      "mutant_id": "m000210",
+      "operator": "OLFD",
+      "original_expression": "function tokensLocked(address _of, bytes32 _reason)\n    public view virtual returns (uint256 amount);",
+      "replacement_expression": "",
+      "start_line": 435
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 447,
+      "function": "tokensLockedAtTime",
+      "mutant_id": "m000211",
+      "operator": "OLFD",
+      "original_expression": "function tokensLockedAtTime(address _of, bytes32 _reason, uint256 _time)\n    public view virtual returns (uint256 amount);",
+      "replacement_expression": "",
+      "start_line": 446
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 454,
+      "function": "totalBalanceOf",
+      "mutant_id": "m000212",
+      "operator": "OLFD",
+      "original_expression": "function totalBalanceOf(address _of)\n    public view virtual returns (uint256 amount);",
+      "replacement_expression": "",
+      "start_line": 453
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 462,
+      "function": "extendLock",
+      "mutant_id": "m000213",
+      "operator": "OLFD",
+      "original_expression": "function extendLock(bytes32 _reason, uint256 _time)\n    public virtual returns (bool);",
+      "replacement_expression": "",
+      "start_line": 461
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 470,
+      "function": "increaseLockAmount",
+      "mutant_id": "m000214",
+      "operator": "OLFD",
+      "original_expression": "function increaseLockAmount(bytes32 _reason, uint256 _amount)\n    public virtual returns (bool);",
+      "replacement_expression": "",
+      "start_line": 469
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 478,
+      "function": "tokensUnlockable",
+      "mutant_id": "m000215",
+      "operator": "OLFD",
+      "original_expression": "function tokensUnlockable(address _of, bytes32 _reason)\n    public view virtual returns (uint256 amount);",
+      "replacement_expression": "",
+      "start_line": 477
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 485,
+      "function": "unlock",
+      "mutant_id": "m000216",
+      "operator": "OLFD",
+      "original_expression": "function unlock(address _of)\n    public virtual returns (uint256 unlockableTokens);",
+      "replacement_expression": "",
+      "start_line": 484
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 492,
+      "function": "getUnlockableTokens",
+      "mutant_id": "m000217",
+      "operator": "OLFD",
+      "original_expression": "function getUnlockableTokens(address _of)\n    public view virtual returns (uint256 unlockableTokens);",
+      "replacement_expression": "",
+      "start_line": 491
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 507,
+      "function": "recoverERC20",
+      "mutant_id": "m000218",
+      "operator": "OLFD",
+      "original_expression": "function recoverERC20(address tokenAddress, uint256 tokenAmount) public onlyOwner {\n        IERC20(tokenAddress).transfer(owner(), tokenAmount);\n    }",
+      "replacement_expression": "",
+      "start_line": 505
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 722,
+      "function": "recoverERC20",
+      "mutant_id": "m000219",
+      "operator": "OLFD",
+      "original_expression": "function recoverERC20(uint256 tokenAmount) public onlyOwner {\n        this.transfer(owner(), tokenAmount);\n    }",
+      "replacement_expression": "",
+      "start_line": 720
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 555,
+      "function": "lock",
+      "mutant_id": "m000220",
+      "operator": "ORFD",
+      "original_expression": "function lock(bytes32 _reason, uint256 _amount, uint256 _time)\n    public\n    override returns (bool)\n    {\n        uint256 validUntil = block.timestamp.add(_time); //solhint-disable-line\n\n        // If tokens are already locked, then functions extendLock or\n        // increaseLockAmount should be used to make any changes\n        require(tokensLocked(msg.sender, _reason) == 0, ALREADY_LOCKED);\n        require(_amount != 0, AMOUNT_ZERO);\n\n        if (locked[msg.sender][_reason].amount == 0)\n            lockReason[msg.sender].push(_reason);\n\n        transfer(address(this), _amount);\n\n        locked[msg.sender][_reason] = lockToken(_amount, validUntil, false);\n\n        emit Locked(msg.sender, _reason, _amount, validUntil);\n        return true;\n    }",
+      "replacement_expression": "",
+      "start_line": 535
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 599,
+      "function": "tokensLocked",
+      "mutant_id": "m000221",
+      "operator": "ORFD",
+      "original_expression": "function tokensLocked(address _of, bytes32 _reason)\n    public\n    view\n    override returns (uint256 amount)\n    {\n        if (!locked[_of][_reason].claimed)\n            amount = locked[_of][_reason].amount;\n    }",
+      "replacement_expression": "",
+      "start_line": 592
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 616,
+      "function": "tokensLockedAtTime",
+      "mutant_id": "m000222",
+      "operator": "ORFD",
+      "original_expression": "function tokensLockedAtTime(address _of, bytes32 _reason, uint256 _time)\n    public\n    view\n    override returns (uint256 amount)\n    {\n        if (locked[_of][_reason].validity > _time)\n            amount = locked[_of][_reason].amount;\n    }",
+      "replacement_expression": "",
+      "start_line": 609
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 632,
+      "function": "totalBalanceOf",
+      "mutant_id": "m000223",
+      "operator": "ORFD",
+      "original_expression": "function totalBalanceOf(address _of)\n    public\n    view\n    override returns (uint256 amount)\n    {\n        amount = balanceOf(_of);\n\n        for (uint256 i = 0; i < lockReason[_of].length; i++) {\n            amount = amount.add(tokensLocked(_of, lockReason[_of][i]));\n        }\n    }",
+      "replacement_expression": "",
+      "start_line": 622
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 649,
+      "function": "extendLock",
+      "mutant_id": "m000224",
+      "operator": "ORFD",
+      "original_expression": "function extendLock(bytes32 _reason, uint256 _time)\n    public\n    override returns (bool)\n    {\n        require(tokensLocked(msg.sender, _reason) > 0, NOT_LOCKED);\n\n        locked[msg.sender][_reason].validity = locked[msg.sender][_reason].validity.add(_time);\n\n        emit Locked(msg.sender, _reason, locked[msg.sender][_reason].amount, locked[msg.sender][_reason].validity);\n        return true;\n    }",
+      "replacement_expression": "",
+      "start_line": 639
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 667,
+      "function": "increaseLockAmount",
+      "mutant_id": "m000225",
+      "operator": "ORFD",
+      "original_expression": "function increaseLockAmount(bytes32 _reason, uint256 _amount)\n    public\n    override returns (bool)\n    {\n        require(tokensLocked(msg.sender, _reason) > 0, NOT_LOCKED);\n        transfer(address(this), _amount);\n\n        locked[msg.sender][_reason].amount = locked[msg.sender][_reason].amount.add(_amount);\n\n        emit Locked(msg.sender, _reason, locked[msg.sender][_reason].amount, locked[msg.sender][_reason].validity);\n        return true;\n    }",
+      "replacement_expression": "",
+      "start_line": 656
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 681,
+      "function": "tokensUnlockable",
+      "mutant_id": "m000226",
+      "operator": "ORFD",
+      "original_expression": "function tokensUnlockable(address _of, bytes32 _reason)\n    public\n    view\n    override returns (uint256 amount)\n    {\n        if (locked[_of][_reason].validity <= block.timestamp && !locked[_of][_reason].claimed) //solhint-disable-line\n            amount = locked[_of][_reason].amount;\n    }",
+      "replacement_expression": "",
+      "start_line": 674
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 704,
+      "function": "unlock",
+      "mutant_id": "m000227",
+      "operator": "ORFD",
+      "original_expression": "function unlock(address _of)\n    public\n    override returns (uint256 unlockableTokens)\n    {\n        uint256 lockedTokens;\n\n        for (uint256 i = 0; i < lockReason[_of].length; i++) {\n            lockedTokens = tokensUnlockable(_of, lockReason[_of][i]);\n            if (lockedTokens > 0) {\n                unlockableTokens = unlockableTokens.add(lockedTokens);\n                locked[_of][lockReason[_of][i]].claimed = true;\n                emit Unlocked(_of, lockReason[_of][i], lockedTokens);\n            }\n        }\n\n        if (unlockableTokens > 0)\n            this.transfer(_of, unlockableTokens);\n    }",
+      "replacement_expression": "",
+      "start_line": 687
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 718,
+      "function": "getUnlockableTokens",
+      "mutant_id": "m000228",
+      "operator": "ORFD",
+      "original_expression": "function getUnlockableTokens(address _of)\n    public\n    view\n    override returns (uint256 unlockableTokens)\n    {\n        for (uint256 i = 0; i < lockReason[_of].length; i++) {\n            unlockableTokens = unlockableTokens.add(tokensUnlockable(_of, lockReason[_of][i]));\n        }\n    }",
+      "replacement_expression": "",
+      "start_line": 710
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 56,
+      "function": "mul",
+      "mutant_id": "m000229",
+      "operator": "RSD",
+      "original_expression": "return c;",
+      "replacement_expression": "/* return c; */",
+      "start_line": 56
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 68,
+      "function": "div",
+      "mutant_id": "m000230",
+      "operator": "RSD",
+      "original_expression": "return c;",
+      "replacement_expression": "/* return c; */",
+      "start_line": 68
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 78,
+      "function": "sub",
+      "mutant_id": "m000231",
+      "operator": "RSD",
+      "original_expression": "return c;",
+      "replacement_expression": "/* return c; */",
+      "start_line": 78
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 88,
+      "function": "add",
+      "mutant_id": "m000232",
+      "operator": "RSD",
+      "original_expression": "return c;",
+      "replacement_expression": "/* return c; */",
+      "start_line": 88
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "mod",
+      "mutant_id": "m000233",
+      "operator": "RSD",
+      "original_expression": "return a % b;",
+      "replacement_expression": "/* return a % b; */",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 132,
+      "function": "totalSupply",
+      "mutant_id": "m000234",
+      "operator": "RSD",
+      "original_expression": "return _totalSupply;",
+      "replacement_expression": "/* return _totalSupply; */",
+      "start_line": 132
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 141,
+      "function": "balanceOf",
+      "mutant_id": "m000235",
+      "operator": "RSD",
+      "original_expression": "return _balances[owner];",
+      "replacement_expression": "/* return _balances[owner]; */",
+      "start_line": 141
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "allowance",
+      "mutant_id": "m000236",
+      "operator": "RSD",
+      "original_expression": "return _allowed[owner][spender];",
+      "replacement_expression": "/* return _allowed[owner][spender]; */",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 161,
+      "function": "transfer",
+      "mutant_id": "m000237",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 161
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 175,
+      "function": "approve",
+      "mutant_id": "m000238",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 175
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 189,
+      "function": "transferFrom",
+      "mutant_id": "m000239",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 189
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 204,
+      "function": "increaseAllowance",
+      "mutant_id": "m000240",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 204
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "decreaseAllowance",
+      "mutant_id": "m000241",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 219
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 320,
+      "function": "owner",
+      "mutant_id": "m000242",
+      "operator": "RSD",
+      "original_expression": "return _owner;",
+      "replacement_expression": "/* return _owner; */",
+      "start_line": 320
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 335,
+      "function": "isOwner",
+      "mutant_id": "m000243",
+      "operator": "RSD",
+      "original_expression": "return msg.sender == _owner;",
+      "replacement_expression": "/* return msg.sender == _owner; */",
+      "start_line": 335
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 554,
+      "function": "lock",
+      "mutant_id": "m000244",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 554
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 582,
+      "function": "transferWithLock",
+      "mutant_id": "m000245",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 582
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 648,
+      "function": "extendLock",
+      "mutant_id": "m000246",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 648
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 666,
+      "function": "increaseLockAmount",
+      "mutant_id": "m000247",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 666
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 543,
+      "function": "lock",
+      "mutant_id": "m000248",
+      "operator": "SKID",
+      "original_expression": "tokensLocked",
+      "replacement_expression": "super.tokensLocked",
+      "start_line": 543
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 571,
+      "function": "transferWithLock",
+      "mutant_id": "m000249",
+      "operator": "SKID",
+      "original_expression": "tokensLocked",
+      "replacement_expression": "super.tokensLocked",
+      "start_line": 571
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 630,
+      "function": "totalBalanceOf",
+      "mutant_id": "m000250",
+      "operator": "SKID",
+      "original_expression": "tokensLocked",
+      "replacement_expression": "super.tokensLocked",
+      "start_line": 630
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 643,
+      "function": "extendLock",
+      "mutant_id": "m000251",
+      "operator": "SKID",
+      "original_expression": "tokensLocked",
+      "replacement_expression": "super.tokensLocked",
+      "start_line": 643
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 660,
+      "function": "increaseLockAmount",
+      "mutant_id": "m000252",
+      "operator": "SKID",
+      "original_expression": "tokensLocked",
+      "replacement_expression": "super.tokensLocked",
+      "start_line": 660
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 694,
+      "function": "unlock",
+      "mutant_id": "m000253",
+      "operator": "SKID",
+      "original_expression": "tokensUnlockable",
+      "replacement_expression": "super.tokensUnlockable",
+      "start_line": 694
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 716,
+      "function": "getUnlockableTokens",
+      "mutant_id": "m000254",
+      "operator": "SKID",
+      "original_expression": "tokensUnlockable",
+      "replacement_expression": "super.tokensUnlockable",
+      "start_line": 716
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 511,
+      "function": "stateVariable",
+      "mutant_id": "m000255",
+      "operator": "SLR",
+      "original_expression": "'Tokens already locked'",
+      "replacement_expression": "\"\"",
+      "start_line": 511
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 512,
+      "function": "stateVariable",
+      "mutant_id": "m000256",
+      "operator": "SLR",
+      "original_expression": "'No tokens locked'",
+      "replacement_expression": "\"\"",
+      "start_line": 512
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 513,
+      "function": "stateVariable",
+      "mutant_id": "m000257",
+      "operator": "SLR",
+      "original_expression": "'Amount can not be 0'",
+      "replacement_expression": "\"\"",
+      "start_line": 513
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 515,
+      "function": "stateVariable",
+      "mutant_id": "m000258",
+      "operator": "SLR",
+      "original_expression": "\"RVV\"",
+      "replacement_expression": "\"\"",
+      "start_line": 515
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 516,
+      "function": "stateVariable",
+      "mutant_id": "m000259",
+      "operator": "SLR",
+      "original_expression": "\"Revive\"",
+      "replacement_expression": "\"\"",
+      "start_line": 516
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 597,
+      "function": "tokensLocked",
+      "mutant_id": "m000260",
+      "operator": "UORD",
+      "original_expression": "!locked[_of][_reason].claimed",
+      "replacement_expression": " locked[_of][_reason].claimed",
+      "start_line": 597
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 629,
+      "function": "totalBalanceOf",
+      "mutant_id": "m000261",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 629
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 629,
+      "function": "totalBalanceOf",
+      "mutant_id": "m000262",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 629
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 679,
+      "function": "tokensUnlockable",
+      "mutant_id": "m000263",
+      "operator": "UORD",
+      "original_expression": "!locked[_of][_reason].claimed",
+      "replacement_expression": " locked[_of][_reason].claimed",
+      "start_line": 679
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 693,
+      "function": "unlock",
+      "mutant_id": "m000264",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 693
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 693,
+      "function": "unlock",
+      "mutant_id": "m000265",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 693
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 715,
+      "function": "getUnlockableTokens",
+      "mutant_id": "m000266",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 715
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 715,
+      "function": "getUnlockableTokens",
+      "mutant_id": "m000267",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 715
+    }
+  ],
+  "subject_id": "peer_syntest__Revive"
+}

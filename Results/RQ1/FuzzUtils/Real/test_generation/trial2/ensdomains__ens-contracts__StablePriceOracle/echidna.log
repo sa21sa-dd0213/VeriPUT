@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.696905571s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.740255881s)
+
+echidna: Constructor arguments are required: [("_usdOracle",address),("_rentPrices",uint256[])]

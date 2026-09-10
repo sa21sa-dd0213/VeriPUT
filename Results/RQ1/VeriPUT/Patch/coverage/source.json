@@ -1,0 +1,2505 @@
+{
+  "dataset": "Patch",
+  "tool": "VeriPUT",
+  "trials": [
+    {
+      "pooled": {
+        "branch": {
+          "covered": 347,
+          "total": 1288
+        },
+        "function": {
+          "covered": 528,
+          "total": 1016
+        },
+        "line": {
+          "covered": 1625,
+          "total": 4585
+        }
+      },
+      "subjects": [
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 5,
+              "total": 23
+            },
+            "function": {
+              "covered": 15,
+              "total": 29
+            },
+            "line": {
+              "covered": 37,
+              "total": 106
+            }
+          },
+          "subject_id": "acfix_002_Templedao",
+          "valid_unit_count": 19
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 2
+            },
+            "function": {
+              "covered": 2,
+              "total": 3
+            },
+            "line": {
+              "covered": 4,
+              "total": 7
+            }
+          },
+          "subject_id": "acfix_015_CVE_2018_10666",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 3,
+              "total": 3
+            },
+            "line": {
+              "covered": 7,
+              "total": 7
+            }
+          },
+          "subject_id": "acfix_016_CVE_2018_10705",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 17,
+              "total": 26
+            },
+            "function": {
+              "covered": 14,
+              "total": 19
+            },
+            "line": {
+              "covered": 60,
+              "total": 84
+            }
+          },
+          "subject_id": "acfix_021_CVE_2018_19832",
+          "valid_unit_count": 20
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 10,
+              "total": 14
+            },
+            "function": {
+              "covered": 6,
+              "total": 8
+            },
+            "line": {
+              "covered": 29,
+              "total": 34
+            }
+          },
+          "subject_id": "acfix_022_CVE_2018_19833",
+          "valid_unit_count": 11
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 3,
+              "total": 3
+            },
+            "line": {
+              "covered": 5,
+              "total": 5
+            }
+          },
+          "subject_id": "acfix_026_CVE_2019_15080",
+          "valid_unit_count": 6
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 3,
+              "total": 3
+            },
+            "line": {
+              "covered": 5,
+              "total": 5
+            }
+          },
+          "subject_id": "acfix_030_CVE_2021_34272",
+          "valid_unit_count": 6
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 3,
+              "total": 3
+            },
+            "line": {
+              "covered": 5,
+              "total": 5
+            }
+          },
+          "subject_id": "acfix_031_CVE_2021_34273",
+          "valid_unit_count": 6
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 6,
+              "total": 25
+            },
+            "function": {
+              "covered": 15,
+              "total": 20
+            },
+            "line": {
+              "covered": 51,
+              "total": 77
+            }
+          },
+          "subject_id": "acfix_032_CVE_2021_39167",
+          "valid_unit_count": 11
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 6,
+              "total": 25
+            },
+            "function": {
+              "covered": 15,
+              "total": 20
+            },
+            "line": {
+              "covered": 51,
+              "total": 77
+            }
+          },
+          "subject_id": "acfix_033_CVE_2021_39168",
+          "valid_unit_count": 11
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 2,
+              "total": 2
+            }
+          },
+          "subject_id": "acfix_077_L1Block",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 2
+            },
+            "function": {
+              "covered": 1,
+              "total": 2
+            },
+            "line": {
+              "covered": 2,
+              "total": 5
+            }
+          },
+          "subject_id": "acfix_088_EmergencyOracleFactory",
+          "valid_unit_count": 3
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 4
+            },
+            "function": {
+              "covered": 3,
+              "total": 4
+            },
+            "line": {
+              "covered": 7,
+              "total": 9
+            }
+          },
+          "subject_id": "acfix_3_5_015_CVE_2018_10666",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 4
+            },
+            "function": {
+              "covered": 2,
+              "total": 4
+            },
+            "line": {
+              "covered": 4,
+              "total": 9
+            }
+          },
+          "subject_id": "acfix_3_5_016_CVE_2018_10705",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 8
+            },
+            "function": {
+              "covered": 1,
+              "total": 5
+            },
+            "line": {
+              "covered": 3,
+              "total": 19
+            }
+          },
+          "subject_id": "acfix_3_5_076_RoundFactory",
+          "valid_unit_count": 10
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 2
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 3,
+              "total": 11
+            }
+          },
+          "subject_id": "acfix_3_5_077_L1Block",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 2
+            },
+            "function": {
+              "covered": 1,
+              "total": 2
+            },
+            "line": {
+              "covered": 2,
+              "total": 5
+            }
+          },
+          "subject_id": "acfix_3_5_088_EmergencyOracleFactory",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 23
+            },
+            "function": {
+              "covered": 4,
+              "total": 25
+            },
+            "line": {
+              "covered": 22,
+              "total": 113
+            }
+          },
+          "subject_id": "acfix_3_5_101_ANCHToken",
+          "valid_unit_count": 11
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 14,
+              "total": 14
+            },
+            "function": {
+              "covered": 15,
+              "total": 15
+            },
+            "line": {
+              "covered": 30,
+              "total": 54
+            }
+          },
+          "subject_id": "acfix_fixlink_DepositLog",
+          "valid_unit_count": 40
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 7,
+              "total": 19
+            },
+            "function": {
+              "covered": 15,
+              "total": 26
+            },
+            "line": {
+              "covered": 53,
+              "total": 125
+            }
+          },
+          "subject_id": "acfix_fixlink_DnGmxBatchingManager",
+          "valid_unit_count": 14
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 2
+            },
+            "function": {
+              "covered": 2,
+              "total": 7
+            },
+            "line": {
+              "covered": 8,
+              "total": 29
+            }
+          },
+          "subject_id": "acfix_fixlink_MStableYieldSource",
+          "valid_unit_count": 5
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 21
+            },
+            "function": {
+              "covered": 2,
+              "total": 45
+            },
+            "line": {
+              "covered": 4,
+              "total": 173
+            }
+          },
+          "subject_id": "acfix_fixlink_Product",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 21
+            },
+            "function": {
+              "covered": 2,
+              "total": 46
+            },
+            "line": {
+              "covered": 4,
+              "total": 175
+            }
+          },
+          "subject_id": "acfix_fixlink_Product2",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 5,
+              "total": 23
+            },
+            "function": {
+              "covered": 15,
+              "total": 29
+            },
+            "line": {
+              "covered": 37,
+              "total": 106
+            }
+          },
+          "subject_id": "acfix_llama3_002_Templedao",
+          "valid_unit_count": 17
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 6,
+              "total": 15
+            },
+            "function": {
+              "covered": 16,
+              "total": 16
+            },
+            "line": {
+              "covered": 35,
+              "total": 60
+            }
+          },
+          "subject_id": "acfix_llama3_017_CVE_2018_11329",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 12,
+              "total": 16
+            },
+            "function": {
+              "covered": 7,
+              "total": 8
+            },
+            "line": {
+              "covered": 31,
+              "total": 34
+            }
+          },
+          "subject_id": "acfix_llama3_022_CVE_2018_19833",
+          "valid_unit_count": 11
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 19,
+              "total": 28
+            },
+            "function": {
+              "covered": 14,
+              "total": 19
+            },
+            "line": {
+              "covered": 60,
+              "total": 84
+            }
+          },
+          "subject_id": "acfix_llama3_024_CVE_2019_15078",
+          "valid_unit_count": 12
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 8,
+              "total": 8
+            },
+            "line": {
+              "covered": 13,
+              "total": 13
+            }
+          },
+          "subject_id": "acfix_real_BaseEscalationManager",
+          "valid_unit_count": 5
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 4,
+              "total": 29
+            },
+            "function": {
+              "covered": 6,
+              "total": 10
+            },
+            "line": {
+              "covered": 15,
+              "total": 47
+            }
+          },
+          "subject_id": "acfix_real_FlashGovernanceArbiter",
+          "valid_unit_count": 16
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 29
+            },
+            "function": {
+              "covered": 9,
+              "total": 28
+            },
+            "line": {
+              "covered": 32,
+              "total": 122
+            }
+          },
+          "subject_id": "ct_20_Pool_sol_Synth_sol_Failing_Max_Value_Al",
+          "valid_unit_count": 18
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 6,
+              "total": 38
+            },
+            "function": {
+              "covered": 11,
+              "total": 16
+            },
+            "line": {
+              "covered": 44,
+              "total": 102
+            }
+          },
+          "subject_id": "ct_5_Proposals_can_be_cancelled",
+          "valid_unit_count": 13
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 2
+            },
+            "function": {
+              "covered": 1,
+              "total": 21
+            },
+            "line": {
+              "covered": 2,
+              "total": 79
+            }
+          },
+          "subject_id": "pop_001_Multicall",
+          "valid_unit_count": 6
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 54
+            },
+            "function": {
+              "covered": 4,
+              "total": 26
+            },
+            "line": {
+              "covered": 10,
+              "total": 205
+            }
+          },
+          "subject_id": "pop_009_PrivatePool",
+          "valid_unit_count": 8
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 52
+            },
+            "function": {
+              "covered": 4,
+              "total": 25
+            },
+            "line": {
+              "covered": 10,
+              "total": 195
+            }
+          },
+          "subject_id": "pop_018_PrivatePool",
+          "valid_unit_count": 9
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 4,
+              "total": 14
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 6,
+              "total": 43
+            }
+          },
+          "subject_id": "pop_020_GSPFunding",
+          "valid_unit_count": 10
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 67
+            },
+            "function": {
+              "covered": 5,
+              "total": 23
+            },
+            "line": {
+              "covered": 16,
+              "total": 167
+            }
+          },
+          "subject_id": "pop_032_PuttyV2",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 51
+            },
+            "function": {
+              "covered": 4,
+              "total": 25
+            },
+            "line": {
+              "covered": 10,
+              "total": 196
+            }
+          },
+          "subject_id": "pop_033_PrivatePool",
+          "valid_unit_count": 8
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 9
+            },
+            "function": {
+              "covered": 4,
+              "total": 7
+            },
+            "line": {
+              "covered": 16,
+              "total": 44
+            }
+          },
+          "subject_id": "pop_042_VaultAdapter",
+          "valid_unit_count": 7
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 8
+            },
+            "function": {
+              "covered": 5,
+              "total": 15
+            },
+            "line": {
+              "covered": 15,
+              "total": 58
+            }
+          },
+          "subject_id": "pop_046_CVXStaker",
+          "valid_unit_count": 20
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 52
+            },
+            "function": {
+              "covered": 4,
+              "total": 26
+            },
+            "line": {
+              "covered": 10,
+              "total": 201
+            }
+          },
+          "subject_id": "pop_048_PrivatePool",
+          "valid_unit_count": 8
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 22
+            },
+            "function": {
+              "covered": 23,
+              "total": 23
+            },
+            "line": {
+              "covered": 52,
+              "total": 113
+            }
+          },
+          "subject_id": "pop_049_Cooler",
+          "valid_unit_count": 15
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 5
+            },
+            "function": {
+              "covered": 23,
+              "total": 40
+            },
+            "line": {
+              "covered": 61,
+              "total": 116
+            }
+          },
+          "subject_id": "pop_051_LiquidityPool",
+          "valid_unit_count": 16
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 73
+            },
+            "function": {
+              "covered": 4,
+              "total": 22
+            },
+            "line": {
+              "covered": 14,
+              "total": 162
+            }
+          },
+          "subject_id": "pop_058_PuttyV2",
+          "valid_unit_count": 3
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 5
+            },
+            "function": {
+              "covered": 7,
+              "total": 14
+            },
+            "line": {
+              "covered": 13,
+              "total": 61
+            }
+          },
+          "subject_id": "pop_066_LRTDepositPool",
+          "valid_unit_count": 13
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 11
+            },
+            "function": {
+              "covered": 1,
+              "total": 26
+            },
+            "line": {
+              "covered": 2,
+              "total": 97
+            }
+          },
+          "subject_id": "pop_070_PhiNFT1155",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 9,
+              "total": 36
+            },
+            "function": {
+              "covered": 6,
+              "total": 18
+            },
+            "line": {
+              "covered": 18,
+              "total": 77
+            }
+          },
+          "subject_id": "pop_077_GameItems",
+          "valid_unit_count": 14
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 5,
+              "total": 17
+            },
+            "function": {
+              "covered": 4,
+              "total": 9
+            },
+            "line": {
+              "covered": 13,
+              "total": 60
+            }
+          },
+          "subject_id": "pop_077_MergingPool",
+          "valid_unit_count": 12
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 6,
+              "total": 6
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 7,
+              "total": 7
+            }
+          },
+          "subject_id": "rc_access_control__mycontract__SolGPT__mycontract_2round",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 6,
+              "total": 6
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 7,
+              "total": 7
+            }
+          },
+          "subject_id": "rc_access_control__mycontract__SolGPT__mycontract_3round",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 5,
+              "total": 5
+            }
+          },
+          "subject_id": "rc_access_control__mycontract__sGuard__mycontract",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 5,
+              "total": 5
+            }
+          },
+          "subject_id": "rc_access_control__phishable__SmartFix__phishable",
+          "valid_unit_count": 3
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 5,
+              "total": 5
+            }
+          },
+          "subject_id": "rc_access_control__phishable__TIPS__phishable",
+          "valid_unit_count": 3
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 5,
+              "total": 5
+            }
+          },
+          "subject_id": "rc_access_control__phishable__sGuardPlus__phishable",
+          "valid_unit_count": 3
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 5,
+              "total": 5
+            }
+          },
+          "subject_id": "rc_access_control__phishable__sGuard__phishable",
+          "valid_unit_count": 3
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 2
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 4,
+              "total": 4
+            }
+          },
+          "subject_id": "rc_access_control__proxy__SolGPT__proxy_4round",
+          "valid_unit_count": 1
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 3,
+              "total": 3
+            }
+          },
+          "subject_id": "rc_access_control__simple_suicide__SmartFix__simple_suicide",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 0
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 2,
+              "total": 2
+            }
+          },
+          "subject_id": "rc_access_control__simple_suicide__sGuardPlus__simple_suicide",
+          "valid_unit_count": 3
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 4,
+              "total": 4
+            },
+            "function": {
+              "covered": 5,
+              "total": 5
+            },
+            "line": {
+              "covered": 15,
+              "total": 16
+            }
+          },
+          "subject_id": "rc_access_control__wallet_02_refund_nosub__SmartFix__wallet_02_refund_nosub",
+          "valid_unit_count": 5
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 4,
+              "total": 4
+            },
+            "function": {
+              "covered": 5,
+              "total": 5
+            },
+            "line": {
+              "covered": 14,
+              "total": 15
+            }
+          },
+          "subject_id": "rc_access_control__wallet_02_refund_nosub__SolGPT__wallet_02_refund_nosub_2round",
+          "valid_unit_count": 5
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 5,
+              "total": 11
+            },
+            "function": {
+              "covered": 3,
+              "total": 3
+            },
+            "line": {
+              "covered": 9,
+              "total": 14
+            }
+          },
+          "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_1round",
+          "valid_unit_count": 3
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 5,
+              "total": 13
+            },
+            "function": {
+              "covered": 3,
+              "total": 3
+            },
+            "line": {
+              "covered": 9,
+              "total": 15
+            }
+          },
+          "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_2round",
+          "valid_unit_count": 3
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 5,
+              "total": 11
+            },
+            "function": {
+              "covered": 3,
+              "total": 3
+            },
+            "line": {
+              "covered": 9,
+              "total": 14
+            }
+          },
+          "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_3round",
+          "valid_unit_count": 3
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 6
+            },
+            "function": {
+              "covered": 0,
+              "total": 3
+            },
+            "line": {
+              "covered": 0,
+              "total": 7
+            }
+          },
+          "subject_id": "rc_reentrancy__modifier_reentrancy__SmartFix__modifier_reentrancy",
+          "valid_unit_count": 1
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 4
+            },
+            "function": {
+              "covered": 1,
+              "total": 2
+            },
+            "line": {
+              "covered": 8,
+              "total": 10
+            }
+          },
+          "subject_id": "rc_reentrancy__reentrancy_bonus__SmartFix__reentrancy_bonus",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 3
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 6,
+              "total": 10
+            }
+          },
+          "subject_id": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_1round",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 3
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 6,
+              "total": 10
+            }
+          },
+          "subject_id": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_4round",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 3
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 6,
+              "total": 11
+            }
+          },
+          "subject_id": "rc_reentrancy__reentrancy_dao__sGuardPlus__reentrancy_dao",
+          "valid_unit_count": 5
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 3
+            },
+            "function": {
+              "covered": 3,
+              "total": 3
+            },
+            "line": {
+              "covered": 10,
+              "total": 10
+            }
+          },
+          "subject_id": "rc_reentrancy__reentrancy_simple__SmartFix__reentrancy_simple",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 1
+            },
+            "function": {
+              "covered": 3,
+              "total": 3
+            },
+            "line": {
+              "covered": 7,
+              "total": 8
+            }
+          },
+          "subject_id": "rc_reentrancy__reentrancy_simple__sGuard__reentrancy_simple",
+          "valid_unit_count": 9
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 3
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 4,
+              "total": 10
+            }
+          },
+          "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_1round",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 3
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 4,
+              "total": 10
+            }
+          },
+          "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_2round",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 3
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 4,
+              "total": 10
+            }
+          },
+          "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_3round",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 4,
+              "total": 5
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 5,
+              "total": 6
+            }
+          },
+          "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_1round",
+          "valid_unit_count": 1
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 4,
+              "total": 5
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 5,
+              "total": 6
+            }
+          },
+          "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_2round",
+          "valid_unit_count": 1
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 4,
+              "total": 5
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 4,
+              "total": 6
+            }
+          },
+          "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_3round",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 4,
+              "total": 5
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 5,
+              "total": 6
+            }
+          },
+          "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_4round",
+          "valid_unit_count": 1
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 20
+            },
+            "function": {
+              "covered": 12,
+              "total": 20
+            },
+            "line": {
+              "covered": 30,
+              "total": 64
+            }
+          },
+          "subject_id": "rc_unchecked_low_level_calls__address_00020__SolGPT__address_00020_3round",
+          "valid_unit_count": 25
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 4
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 6,
+              "total": 6
+            }
+          },
+          "subject_id": "rc_unchecked_low_level_calls__address_00034__SolGPT__address_00034_3round",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 4
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 6,
+              "total": 6
+            }
+          },
+          "subject_id": "rc_unchecked_low_level_calls__address_00038__SolGPT__address_00038_2round",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 4
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 6,
+              "total": 6
+            }
+          },
+          "subject_id": "rc_unchecked_low_level_calls__address_00038__SolGPT__address_00038_3round",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 4
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 6,
+              "total": 6
+            }
+          },
+          "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_1round",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 4
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 6,
+              "total": 6
+            }
+          },
+          "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_2round",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 4
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 6,
+              "total": 6
+            }
+          },
+          "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_3round",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 4,
+              "total": 16
+            },
+            "function": {
+              "covered": 9,
+              "total": 20
+            },
+            "line": {
+              "covered": 24,
+              "total": 65
+            }
+          },
+          "subject_id": "rc_unchecked_low_level_calls__address_00397__TIPS__address_00397U2",
+          "valid_unit_count": 16
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 12
+            },
+            "function": {
+              "covered": 0,
+              "total": 2
+            },
+            "line": {
+              "covered": 0,
+              "total": 11
+            }
+          },
+          "subject_id": "rc_unchecked_low_level_calls__address_00402__SolGPT__address_00402_1round",
+          "valid_unit_count": 1
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 2
+            },
+            "function": {
+              "covered": 2,
+              "total": 2
+            },
+            "line": {
+              "covered": 6,
+              "total": 6
+            }
+          },
+          "subject_id": "rc_unchecked_low_level_calls__address_00412__sGuardPlus__address_00412",
+          "valid_unit_count": 5
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 3
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 7,
+              "total": 8
+            }
+          },
+          "subject_id": "rc_unchecked_low_level_calls__address_00419__TIPS__address_00419U1",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 6
+            },
+            "function": {
+              "covered": 3,
+              "total": 3
+            },
+            "line": {
+              "covered": 13,
+              "total": 17
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00031__SmartFix",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 7
+            },
+            "function": {
+              "covered": 6,
+              "total": 6
+            },
+            "line": {
+              "covered": 16,
+              "total": 23
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00059__SmartFix",
+          "valid_unit_count": 10
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 5,
+              "total": 9
+            },
+            "function": {
+              "covered": 6,
+              "total": 6
+            },
+            "line": {
+              "covered": 23,
+              "total": 23
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00152__SmartFix",
+          "valid_unit_count": 8
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 7
+            },
+            "function": {
+              "covered": 6,
+              "total": 6
+            },
+            "line": {
+              "covered": 23,
+              "total": 23
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00202__SmartFix",
+          "valid_unit_count": 8
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 5
+            },
+            "function": {
+              "covered": 4,
+              "total": 4
+            },
+            "line": {
+              "covered": 13,
+              "total": 18
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00396__SmartFix",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 2
+            },
+            "function": {
+              "covered": 4,
+              "total": 4
+            },
+            "line": {
+              "covered": 12,
+              "total": 16
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00396__sGuard",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 5
+            },
+            "function": {
+              "covered": 4,
+              "total": 4
+            },
+            "line": {
+              "covered": 13,
+              "total": 18
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00399__SmartFix",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 2
+            },
+            "function": {
+              "covered": 4,
+              "total": 4
+            },
+            "line": {
+              "covered": 12,
+              "total": 16
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00399__sGuard",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 6,
+              "total": 10
+            },
+            "function": {
+              "covered": 6,
+              "total": 6
+            },
+            "line": {
+              "covered": 25,
+              "total": 25
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00400__SmartFix",
+          "valid_unit_count": 10
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 5
+            },
+            "function": {
+              "covered": 6,
+              "total": 6
+            },
+            "line": {
+              "covered": 22,
+              "total": 22
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00400__sGuard",
+          "valid_unit_count": 9
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 7
+            },
+            "function": {
+              "covered": 6,
+              "total": 6
+            },
+            "line": {
+              "covered": 23,
+              "total": 23
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00407__SmartFix",
+          "valid_unit_count": 8
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 6
+            },
+            "function": {
+              "covered": 3,
+              "total": 3
+            },
+            "line": {
+              "covered": 13,
+              "total": 17
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00411__SmartFix",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 5,
+              "total": 8
+            },
+            "function": {
+              "covered": 6,
+              "total": 6
+            },
+            "line": {
+              "covered": 24,
+              "total": 24
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00413__SmartFix",
+          "valid_unit_count": 10
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 5
+            },
+            "function": {
+              "covered": 6,
+              "total": 6
+            },
+            "line": {
+              "covered": 22,
+              "total": 22
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00413__sGuard",
+          "valid_unit_count": 9
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 5
+            },
+            "function": {
+              "covered": 4,
+              "total": 4
+            },
+            "line": {
+              "covered": 13,
+              "total": 18
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00421__SmartFix",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 2
+            },
+            "function": {
+              "covered": 4,
+              "total": 4
+            },
+            "line": {
+              "covered": 12,
+              "total": 16
+            }
+          },
+          "subject_id": "rcx_reentrancy__address_00421__sGuard",
+          "valid_unit_count": 4
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 6,
+              "total": 7
+            },
+            "function": {
+              "covered": 3,
+              "total": 3
+            },
+            "line": {
+              "covered": 11,
+              "total": 11
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00037__SmartFix",
+          "valid_unit_count": 3
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 6
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 2,
+              "total": 8
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00105__SmartFix",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 5
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 2,
+              "total": 8
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00105__TIPS",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 4
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 2,
+              "total": 7
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00105__sGuard",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 6,
+              "total": 7
+            },
+            "function": {
+              "covered": 3,
+              "total": 3
+            },
+            "line": {
+              "covered": 11,
+              "total": 11
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00224__SmartFix",
+          "valid_unit_count": 3
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 4
+            },
+            "function": {
+              "covered": 3,
+              "total": 5
+            },
+            "line": {
+              "covered": 7,
+              "total": 11
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00226__SmartFix",
+          "valid_unit_count": 6
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 3
+            },
+            "function": {
+              "covered": 3,
+              "total": 5
+            },
+            "line": {
+              "covered": 6,
+              "total": 11
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00226__TIPS",
+          "valid_unit_count": 6
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 2
+            },
+            "function": {
+              "covered": 3,
+              "total": 5
+            },
+            "line": {
+              "covered": 6,
+              "total": 10
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00226__sGuard",
+          "valid_unit_count": 6
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 4
+            },
+            "function": {
+              "covered": 3,
+              "total": 5
+            },
+            "line": {
+              "covered": 6,
+              "total": 11
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00226__sGuardPlus",
+          "valid_unit_count": 6
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 3
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 6,
+              "total": 7
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00403__TIPS",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 6,
+              "total": 6
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00403__sGuard",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 3,
+              "total": 4
+            },
+            "function": {
+              "covered": 4,
+              "total": 5
+            },
+            "line": {
+              "covered": 9,
+              "total": 11
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00408__SmartFix",
+          "valid_unit_count": 7
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 3
+            },
+            "function": {
+              "covered": 3,
+              "total": 5
+            },
+            "line": {
+              "covered": 6,
+              "total": 11
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00408__TIPS",
+          "valid_unit_count": 6
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 4,
+              "total": 5
+            },
+            "line": {
+              "covered": 8,
+              "total": 10
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00408__sGuard",
+          "valid_unit_count": 7
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 4
+            },
+            "function": {
+              "covered": 3,
+              "total": 5
+            },
+            "line": {
+              "covered": 6,
+              "total": 11
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00408__sGuardPlus",
+          "valid_unit_count": 6
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 3
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 6,
+              "total": 7
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00415__TIPS",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 6,
+              "total": 6
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00415__sGuard",
+          "valid_unit_count": 5
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 1,
+              "total": 1
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 5,
+              "total": 5
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00422__TIPS",
+          "valid_unit_count": 3
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 0
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 4,
+              "total": 4
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuard",
+          "valid_unit_count": 2
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 2,
+              "total": 2
+            },
+            "function": {
+              "covered": 1,
+              "total": 1
+            },
+            "line": {
+              "covered": 5,
+              "total": 5
+            }
+          },
+          "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuardPlus",
+          "valid_unit_count": 3
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 26
+            },
+            "function": {
+              "covered": 1,
+              "total": 16
+            },
+            "line": {
+              "covered": 12,
+              "total": 83
+            }
+          },
+          "subject_id": "reprod_DCFToken",
+          "valid_unit_count": 7
+        }
+      ],
+      "trial": 1
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+[
+  [
+    {
+      "args": [
+        "address_00023",
+        "address_00398"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00021",
+      "method": "setMigrator",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        false
+      ],
+      "frm": "address_00023",
+      "method": "withdrawAll",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "address_00021"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00019",
+      "method": "rewardPeriodFinish",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "address_00021"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "stakeAll",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        7
+      ],
+      "frm": "address_00404",
+      "method": "stakeFor",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "address_00021"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        "address_00398"
+      ],
+      "frm": "address_00410",
+      "method": "earned",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        20
+      ],
+      "frm": "address_00023",
+      "method": "migrateWithdraw",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "address_00021"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        false
+      ],
+      "frm": "address_00023",
+      "method": "withdrawAll",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023",
+        "address_00032"
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        false
+      ],
+      "frm": "address_00023",
+      "method": "withdrawAll",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00184",
+        "address_00398"
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00401",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        0,
+        false
+      ],
+      "frm": "address_00184",
+      "method": "withdraw",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "address_00021"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        "address_00032"
+      ],
+      "frm": "address_00401",
+      "method": "getReward",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        false
+      ],
+      "frm": "address_00023",
+      "method": "withdrawAll",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "address_00036"
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00401",
+      "method": "getRewards",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "address_00021"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "stakeAll",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023",
+        "address_00032"
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00023",
+      "method": "rewardPerToken",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        false
+      ],
+      "frm": "address_00023",
+      "method": "withdrawAll",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "address_00021"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        32
+      ],
+      "frm": "address_00404",
+      "method": "migrateStake",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "stakeAll",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023",
+        "address_00398"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        103715780703320074735641512537123576344192035223545676971560206708329654328697
+      ],
+      "frm": "address_00019",
+      "method": "notifyRewardAmount",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        false
+      ],
+      "frm": "address_00023",
+      "method": "withdrawAll",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "address_00021"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00021",
+      "method": "addReward",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        true
+      ],
+      "frm": "address_00023",
+      "method": "withdrawAll",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023",
+        "address_00032"
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        7
+      ],
+      "frm": "address_00401",
+      "method": "stake",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        false
+      ],
+      "frm": "address_00023",
+      "method": "withdrawAll",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00032",
+        "address_00023"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00184",
+      "method": "setRewardDistributor",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        true
+      ],
+      "frm": "address_00023",
+      "method": "withdrawAll",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

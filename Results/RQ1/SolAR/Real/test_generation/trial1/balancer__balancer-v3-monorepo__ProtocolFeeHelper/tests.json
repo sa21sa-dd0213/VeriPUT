@@ -1,0 +1,46 @@
+[
+  [
+    {
+      "args": [
+        "address_00023",
+        "address_00036"
+      ],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        111891674400508317665771206309426760578212235567300711048567129522819157261038
+      ],
+      "frm": "address_00036",
+      "method": "setProtocolYieldFeePercentage",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00032",
+        "address_00023"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        487
+      ],
+      "frm": "address_00404",
+      "method": "setProtocolSwapFeePercentage",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

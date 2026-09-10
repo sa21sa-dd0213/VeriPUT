@@ -1,0 +1,270 @@
+[
+  [
+    {
+      "args": [
+        "address_00184",
+        "address_0004646734d79546272764a6d5a4f"
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        6998448714956187111743552509874209986147772384494706144126527588411694943774,
+        63886683274197448771185190322945600336965013930470950078014510369006275901740
+      ],
+      "frm": "address_00404",
+      "method": "renew",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        27454272039794426553767549459313087602888006495037432343017374413682881582309
+      ],
+      "frm": "address_00019",
+      "method": "available",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404",
+        "address_00125417276734d6c786d55526c4f"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00401",
+      "method": "addController",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404",
+        "address_00125417276734d6c786d55526c4f"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        105435692758756342873906009469825386137952302301452304549638645071936340030288,
+        20
+      ],
+      "frm": "address_00023",
+      "method": "renew",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404",
+        "address_00125417276734d6c786d55526c4f"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        3
+      ],
+      "frm": "address_00410",
+      "method": "nameExpires",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404",
+        "address_00125417276734d6c786d55526c4f"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00036",
+      "method": "removeController",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "address_002646345207774776d7452417367"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1,
+        90
+      ],
+      "frm": "address_00032",
+      "method": "renew",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        256,
+        "address_00021",
+        16
+      ],
+      "frm": "address_00410",
+      "method": "register",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404",
+        "address_00125417276734d6c786d55526c4f"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        3709996309613496264276146669139849559126108903467035648535575473800157972836,
+        "address_00184",
+        90
+      ],
+      "frm": "address_00184",
+      "method": "registerOnly",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        8308180210415575054397828580523790355527660553521036357190551938649756766494
+      ],
+      "frm": "address_00398",
+      "method": "ownerOf",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404",
+        "address_00125417276734d6c786d55526c4f"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00401",
+      "method": "setResolver",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00001",
+        "address_00125417276734d6c786d55526c4f"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1796443467329766489485819916918387652321906099388826170877320633342209560925,
+        "address_00410",
+        128
+      ],
+      "frm": "address_00032",
+      "method": "registerOnly",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404",
+        "address_00326765177794a74785465644344"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        29583913487517543067145997411013135513946982712571269568565652648754973375671,
+        "address_00398"
+      ],
+      "frm": "address_00019",
+      "method": "reclaim",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404",
+        "address_00125417276734d6c786d55526c4f"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x4a695743"
+      ],
+      "frm": "address_00019",
+      "method": "supportsInterface",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

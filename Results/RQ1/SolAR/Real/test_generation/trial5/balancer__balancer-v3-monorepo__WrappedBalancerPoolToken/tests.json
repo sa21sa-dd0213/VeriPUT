@@ -1,0 +1,72 @@
+[
+  [
+    {
+      "args": [
+        "address_00023",
+        "address_00021",
+        "\"19I_z01\"",
+        " DanyZkbcyxWivQbfOVlgKPshFYqWeCsH TXVzyrgAl BFBlSHsxhapQILXIlZHmeQQNUIqNZHzEjZeMritiLI xlfwmtDkqQpHOilwdIj wuralFRjOLnBvNcIOw ojyiQeJEuNQvTpJSYXXoWhdPtMXGjEiiljWbCTsQWMPaXqKAPCCuUIukyGuCQDpmeutxxMALkcNupocXVLYVAzE dpmrkMctdiEIWUHXXbsqPGksTlZMOTmW XCFxm"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        47
+      ],
+      "frm": "address_00019",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023",
+        "address_00401",
+        "\"19_01\"",
+        " DanyZkbcyxWivQbfOVlgKPshFYqWeCsH TXVzyrgAl BFBlSHsxhapQILXIlZHmeQQNUIqNZHzEjZeMritiLI xlfwmtDkqQpHOilwdIj wuralFRjOLnBvNcIOw ojyiQeJEuNQvTpJSYXXoWhdPtMXGjEiiljWbCTsQWMPaXqKAPCCuUIukyGuCQDpmeutxxMALkcNupocXVLYVAzE dpmrkMctdiEIWUHXXbsqPGksTlZMOTmW XCFxm"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        56153649271184493703717936383253797121647498439341875087288781598089976366330
+      ],
+      "frm": "address_00184",
+      "method": "mint",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "address_00036",
+        "NSCpQdTWNQrOkzaMSGscxZVGLgfIQehtvOyJIEyzagKbHQYUtkTEPzSDbUHaqJjluexOMeNxTjuGHFRgZchAQLdbqterktRzvfjXmOOOhJ",
+        "\"\""
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        1
+      ],
+      "frm": "address_00023",
+      "method": "burnFrom",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

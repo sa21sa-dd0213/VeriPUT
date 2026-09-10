@@ -1,0 +1,221 @@
+// SPDX-License-Identifier: MIT
+
+
+
+
+
+
+pragma solidity >=0.8.0;
+
+import {Test} from "forge-std/Test.sol";
+import {Rubixi} from "../src/flat.sol";
+
+contract RubixiCovTest_Rubixi_changeOwner_put7p1 is Test {
+  Rubixi c0;
+  function setUp() public {
+    c0 = new Rubixi();
+  }
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  function _veriput_parameterized(address p_msg_sender, address _owner) internal {
+    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
+    _owner = address(uint160(bound(uint256(uint160(_owner)), 0, 1461501637330902918203684832716283019655932542975)));
+    
+    
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(5))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
+
+    }
+
+    
+    uint256 _pre_creator = (uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975);
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
+    vm.prank(p_msg_sender);
+    
+    c0.changeOwner(_owner);
+    
+    if (p_msg_sender == address(uint160(4294967295)) && _owner == address(uint160(0))) {
+
+
+
+
+
+
+    }
+    
+    uint256 _post_creator = (uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_post_creator, _pre_creator, "creator: post == pre");
+    
+    unchecked { assertEq(_post_creator, (uint256(_pre_creator) / uint256(1)), "creator: post == (pre / 1)"); }
+    
+  }
+
+
+  
+  function test_put_Rubixi_changeOwner_path7p1(address p_msg_sender, address _owner) public {
+    _veriput_parameterized(p_msg_sender, _owner);
+    
+    { RubixiCovTest_Rubixi_changeOwner_concrete7p1__basis_root__W _veriput_w = new RubixiCovTest_Rubixi_changeOwner_concrete7p1__basis_root__W(); _veriput_w.setUp(); _veriput_w._w_test_cov_0(); }
+}
+}
+
+
+
+
+
+
+
+
+contract RubixiCovTest_Rubixi_changeOwner_concrete7p1__basis_root__W is Test {
+  Rubixi c0;
+  function setUp() public {
+    c0 = new Rubixi();
+  }
+  
+  
+  function _w_test_cov_0() public {
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+
+    }
+
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+
+    }
+
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(5))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
+
+    }
+
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(10) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+
+    }
+
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+
+    }
+
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(3))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(300) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+
+    }
+
+    
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
+    vm.prank(address(uint160(4294967295)), address(uint160(0)));
+    c0.changeOwner(address(uint160(0)));
+    uint256 _veriput_fixed_state_balance_0 = uint256(vm.load(address(c0), bytes32(uint256(0))));
+
+    uint256 _veriput_fixed_state_collectedFees_1 = uint256(vm.load(address(c0), bytes32(uint256(1))));
+
+    uint256 _veriput_fixed_state_creator_2 = (uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975);
+
+    uint256 _veriput_fixed_state_feePercent_3 = uint256(vm.load(address(c0), bytes32(uint256(2))));
+
+    uint256 _veriput_fixed_state_payoutOrder_4 = uint256(vm.load(address(c0), bytes32(uint256(4))));
+
+    uint256 _veriput_fixed_state_pyramidMultiplier_5 = uint256(vm.load(address(c0), bytes32(uint256(3))));
+
+  }
+  
+  
+  
+  
+}

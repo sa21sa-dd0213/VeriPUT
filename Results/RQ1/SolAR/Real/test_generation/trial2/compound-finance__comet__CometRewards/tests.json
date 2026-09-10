@@ -1,0 +1,163 @@
+[
+  [
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        "address_00410",
+        18
+      ],
+      "frm": "address_00398",
+      "method": "withdrawToken",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        "address_00023",
+        "address_00410",
+        true
+      ],
+      "frm": "address_00019",
+      "method": "claimTo",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        "address_00021"
+      ],
+      "frm": "address_00184",
+      "method": "getRewardOwed",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        "address_00021"
+      ],
+      "frm": "address_00184",
+      "method": "getRewardOwed",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398",
+        "address_00398"
+      ],
+      "frm": "address_00036",
+      "method": "setRewardConfig",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00001"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        "address_00404",
+        8
+      ],
+      "frm": "address_00184",
+      "method": "setRewardConfigWithMultiplier",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00184",
+      "method": "transferGovernor",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00001"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        "address_00023",
+        true
+      ],
+      "frm": "address_00398",
+      "method": "claim",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

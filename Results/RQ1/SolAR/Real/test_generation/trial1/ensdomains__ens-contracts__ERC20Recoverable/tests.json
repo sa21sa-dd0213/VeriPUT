@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        "address_00021",
+        20
+      ],
+      "frm": "address_00410",
+      "method": "recoverFunds",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

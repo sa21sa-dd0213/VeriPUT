@@ -1,0 +1,8 @@
+{
+  "contract": "Roulette",
+  "dataset": "Patch",
+  "solc": "0.8.35",
+  "solc_bin": "solc",
+  "source_form": "normalized-flat",
+  "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_4round"
+}

@@ -1,0 +1,10418 @@
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.13;
+
+
+
+
+
+import "forge-std/Test.sol";
+import "forge-std/console2.sol";
+import "../src/flat.sol";
+
+contract ShibaJail_Echidna_Test is Test {
+    ShibaJail target;
+
+    function setUp() public {
+        target = new ShibaJail();
+    }
+    
+    function test_auto_asdf_1() public { 
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 100);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 51);
+        vm.roll(block.number + 4996);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 14442464105903229760354790191888398564069543746036073221383626831076505848783);
+        address[] memory dynaddressArr_0 = new address[](13);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 181447);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 42509967538307618939062736792731785817496712420521656249407138074617131248813);
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 58426);
+        vm.roll(block.number + 28);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 16194);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 39580899943310837617514515259265728692015646111944810185431578692207966338997);
+        
+        vm.warp(block.timestamp + 97);
+        vm.roll(block.number + 4926);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 27);
+        vm.roll(block.number + 22803);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 976);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 58358);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 46156);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 4925);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 27902);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(15351504058132214014575338207903087553086841525118644731451620266006829194396);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 58766);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(39306247288489675430673548547294811959139364508597280308723954309499089951987);
+        
+        vm.warp(block.timestamp + 233042);
+        vm.roll(block.number + 36155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 6205662193574511707515449770593555859001608082606826126249967142084392500673);
+        
+        vm.warp(block.timestamp + 210434);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 49);
+        vm.roll(block.number + 60286);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 579340);
+        vm.roll(block.number + 49);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x0000000000000000000000000000000000020000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 388254);
+        vm.roll(block.number + 11632);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(7152657013444148925813453563064040375441470887702254804958939554190638905033);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 531340);
+        vm.roll(block.number + 47504);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 1000000000000000001);
+        
+        vm.warp(block.timestamp + 330198);
+        vm.roll(block.number + 16198);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        dynaddressArr_0 = new address[](25);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[24] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 4926);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 181447);
+        vm.roll(block.number + 53495);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 58428);
+        vm.roll(block.number + 43667);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        dynaddressArr_0 = new address[](25);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 444151);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 213479);
+        vm.roll(block.number + 50589);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 263947);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 402937);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 7433);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 49309);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0);
+        
+        vm.warp(block.timestamp + 160545);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 9388);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+
+        vm.warp(block.timestamp + 181447);
+        vm.roll(block.number + 4996);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 27924);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 101);
+        vm.roll(block.number + 48897);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 877);
+        vm.roll(block.number + 28754);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 386816);
+        vm.roll(block.number + 52064);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 92222375438452839506961565681985792557915815440593796277277173735212755798215);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 8961);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 60289);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(98660075521234473545063362549663283068796065730102095271073179319728616828711);
+        dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 29);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(77807568766428561436865561492106172052176470376668716380817817122502399056578);
+        
+        vm.warp(block.timestamp + 597464);
+        vm.roll(block.number + 16196);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000001fffffffE, 88963933286689405987733686159352464097515796511766158541814354290830599278401);
+        
+        vm.warp(block.timestamp + 386815);
+        vm.roll(block.number + 49308);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 34026);
+        vm.roll(block.number + 21631);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 97);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        dynaddressArr_0 = new address[](29);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[28] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 60289);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 263946);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115052397411939263085884952299246364112415014564473627075163898443330264855823);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 49310);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 388254);
+        vm.roll(block.number + 59);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 58426);
+        vm.roll(block.number + 19353);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 97);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 538921);
+        vm.roll(block.number + 58359);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 51);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(26760210606915360051358558962301930784299944884594836659985908219617577765770);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 30);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF, 20103707121058550264929720731616463733825876128157024800708018287988238091414);
+        
+        vm.warp(block.timestamp + 1000);
+        vm.roll(block.number + 19828);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 16195);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 540357);
+        vm.roll(block.number + 59);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 97);
+        vm.roll(block.number + 49312);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 9925);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.allowance(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000);
+        dynaddressArr_0 = new address[](14);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 97);
+        vm.roll(block.number + 431);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 982);
+        vm.roll(block.number + 17659);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(110204605186848349721320762191648862457673421889147531855034480480810972267328);
+        
+        vm.warp(block.timestamp + 417480);
+        vm.roll(block.number + 40827);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 386815);
+        vm.roll(block.number + 100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 143165);
+        vm.roll(block.number + 16198);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 322277);
+        vm.roll(block.number + 56);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 60289);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 1000);
+        vm.roll(block.number + 5219);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 112425946230527953992433496235945921171565900140207786013334543614545352452528);
+        
+        vm.warp(block.timestamp + 396847);
+        vm.roll(block.number + 29549);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000000000, 25757109093754972219396203724048837217443420935815625897215667465730660298045);
+        
+        vm.warp(block.timestamp + 49);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 48275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000020000);
+        dynaddressArr_0 = new address[](3);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 33265);
+        vm.roll(block.number + 20677);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 28);
+        vm.roll(block.number + 19352);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 266345);
+        vm.roll(block.number + 47504);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 494951);
+        vm.roll(block.number + 50467);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(142927250046);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 14165);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 301333);
+        vm.roll(block.number + 4994);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 306744);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 735252769792884853522815642469561146253979827147695421568912939603767858516);
+        
+        vm.warp(block.timestamp + 530521);
+        vm.roll(block.number + 4921);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 99);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 347841);
+        vm.roll(block.number + 27);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 52725159261455687114430028675221238628489275125568060812665580948077594568109);
+        
+        vm.warp(block.timestamp + 27);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF);
+    }
+    
+    
+    function test_auto_manualswap_2() public { 
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 21382);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 82389479468375268756846069710787477547797751424102795681888048122932703852244);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 58429);
+        vm.roll(block.number + 5213);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 508386);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 106947600569870468560054712048909218710680760755153501028902708227507345045623);
+        
+        vm.warp(block.timestamp + 31);
+        vm.roll(block.number + 60291);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 96616908359804049497419741745538375294807572572698075652596079081371246424103);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007912129639935);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 263945);
+        vm.roll(block.number + 46150);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 273);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 32671);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 322273);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 509797);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 60289);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 98);
+        vm.roll(block.number + 4996);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 402001);
+        vm.roll(block.number + 7144);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(48918989789734146673239935832499057903713687448074566906295757672836985299562);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 58358);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 538916);
+        vm.roll(block.number + 7143);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 6);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 4993);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 101);
+        vm.roll(block.number + 7146);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000000000, 52612870235592192843048852183320434022659770105679862472187832702073003315793);
+        
+        vm.warp(block.timestamp + 322274);
+        vm.roll(block.number + 4925);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 7588);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(84094434549583441164046046635626589975295527685115835940634629488005209838179);
+        
+        vm.warp(block.timestamp + 386821);
+        vm.roll(block.number + 16196);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        address[] memory dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 95100);
+        vm.roll(block.number + 58360);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 58431);
+        vm.roll(block.number + 2781);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 58431);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 8007713138937528431100379652847611439314241895199616353856243393830891499400);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 56357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 79075792359300179811291372244709640865318829289365643279925256148941644412403);
+        dynaddressArr_0 = new address[](21);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 322345);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 4370001);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 40038);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 31);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 386818);
+        vm.roll(block.number + 32231);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 27);
+        vm.roll(block.number + 7145);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 3);
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 387432);
+        vm.roll(block.number + 60292);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 19352);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 40827);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 49312);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 999999999999999998);
+        
+        vm.warp(block.timestamp + 103);
+        vm.roll(block.number + 5219);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 212918);
+        vm.roll(block.number + 21867);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 388260);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 46156);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5216);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 347837);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 4926);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 388258);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 538917);
+        vm.roll(block.number + 31);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 58426);
+        vm.roll(block.number + 16199);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 322272);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        dynaddressArr_0 = new address[](21);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 540356);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 379479);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 28);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(5238242675933921831512621375846572668390163945968728257307841287382457114150);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 17598);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 49308);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 305824);
+        vm.roll(block.number + 5890);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 579338);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 4995);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 7149);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 386819);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 16195);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 21762391174929316304473373901226621467576334348735180112140109037915063488653);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 5218);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 3298484216952732389668855059813382592724183825636710648725827197);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        dynaddressArr_0 = new address[](23);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 19355);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 33);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000000000, 35625493807125869289057473376390321063818537621184605301141296193000070959112);
+        dynaddressArr_0 = new address[](26);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[25] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 388256);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 51);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 574324);
+        vm.roll(block.number + 7145);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        dynaddressArr_0 = new address[](32);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[27] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[30] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 347839);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+    }
+    
+    
+    function test_auto_approve_3() public { 
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 100);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 51);
+        vm.roll(block.number + 4996);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 14442464105903229760354790191888398564069543746036073221383626831076505848783);
+        address[] memory dynaddressArr_0 = new address[](13);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 181447);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 42509967538307618939062736792731785817496712420521656249407138074617131248813);
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 58426);
+        vm.roll(block.number + 28);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 16194);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 39580899943310837617514515259265728692015646111944810185431578692207966338997);
+        
+        vm.warp(block.timestamp + 97);
+        vm.roll(block.number + 4926);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 27);
+        vm.roll(block.number + 22803);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 27322);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 7148);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        dynaddressArr_0 = new address[](17);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 301333);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 347840);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 106776426304809172219076028637635717957828678980052855747274148761625771298857);
+        
+        vm.warp(block.timestamp + 423061);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 99);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 200219);
+        vm.roll(block.number + 18731);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 231194);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 310836);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 59123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 474);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 540361);
+        vm.roll(block.number + 47585);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 95299180806015199743800990727271018065185998095559316450263962353013815404457);
+        
+        vm.warp(block.timestamp + 388256);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(24426448015519670408842815760269953829975544511029221596743129559208530108238);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 60291);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 6);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 21185);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 402937);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 564202);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(14089683995583215379006465197160855612689610921650042662666204582700485243386);
+        
+        vm.warp(block.timestamp + 91521);
+        vm.roll(block.number + 47944);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 322342);
+        vm.roll(block.number + 22136);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 482);
+        
+        vm.warp(block.timestamp + 41667);
+        vm.roll(block.number + 28489);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 98);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 538919);
+        vm.roll(block.number + 2226);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039456584007913129639936);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 7145);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 540356);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 14165);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 480136);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 31);
+        vm.roll(block.number + 9071);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 98427093573325047925451988959590963128222623379327580960293025857545001489122);
+        
+        vm.warp(block.timestamp + 538920);
+        vm.roll(block.number + 17318);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 540356);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 51);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.balanceOf(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 445457);
+        vm.roll(block.number + 49342);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 184912);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 124209);
+        vm.roll(block.number + 46150);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(91900016731448475255581152211138461521058939893055261971463117307802870130581);
+        
+        vm.warp(block.timestamp + 379110);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 171);
+        vm.roll(block.number + 46153);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 474);
+        vm.roll(block.number + 7143);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 28);
+        
+        vm.warp(block.timestamp + 386817);
+        vm.roll(block.number + 4926);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 49312);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 49629);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 22136);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 192663);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 152790);
+        vm.roll(block.number + 45406);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 417480);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 313328);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 479205098085990628391023393117261819954097110491231762489138023749425818076);
+        
+        vm.warp(block.timestamp + 537253);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 301333);
+        vm.roll(block.number + 19713);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(20534505927672352734441051544500075873310158626466108269368031651369567694614);
+        dynaddressArr_0 = new address[](2);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 477177);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 181447);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 60);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 449137);
+        vm.roll(block.number + 17318);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 347838);
+        vm.roll(block.number + 804);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 341069);
+        vm.roll(block.number + 49310);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 388259);
+        vm.roll(block.number + 36160);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 99);
+        vm.roll(block.number + 4995);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 83380765802405673222254698859226801898160054090383396612719720708245006373431);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 386775);
+        vm.roll(block.number + 100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 388999);
+        vm.roll(block.number + 5216);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 386816);
+        vm.roll(block.number + 652);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 538919);
+        vm.roll(block.number + 16194);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(27720442845606610246134582797111414805576953742501720872525201789585820045741);
+        
+        vm.warp(block.timestamp + 594614);
+        vm.roll(block.number + 36155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 33265);
+        vm.roll(block.number + 9071);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 60);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 341069);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 233042);
+        vm.roll(block.number + 103);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 155645);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 70061930966066197123965188287911960932946171087805009018115308095901723640578);
+        dynaddressArr_0 = new address[](29);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[23] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[25] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[26] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 5216);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 16341);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 28);
+        vm.roll(block.number + 5216);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 372961);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(1524785991);
+        
+        vm.warp(block.timestamp + 340783);
+        vm.roll(block.number + 26627);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 137958);
+        vm.roll(block.number + 6684);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 538920);
+        vm.roll(block.number + 16195);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 347839);
+        vm.roll(block.number + 7639);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 347842);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 321859);
+        vm.roll(block.number + 49306);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 252322);
+        vm.roll(block.number + 7148);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 347836);
+        vm.roll(block.number + 43667);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 538919);
+        vm.roll(block.number + 2226);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 105697);
+        vm.roll(block.number + 32042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 52502);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 378880);
+        vm.roll(block.number + 57717);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 30);
+        vm.roll(block.number + 10959);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 95766221841126683431220139208157583963410919010800077056722513207340787803764);
+    }
+    
+    
+    function test_auto_blockBots_4() public { 
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 21382);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 82389479468375268756846069710787477547797751424102795681888048122932703852244);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 58429);
+        vm.roll(block.number + 5213);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 508386);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 106947600569870468560054712048909218710680760755153501028902708227507345045623);
+        
+        vm.warp(block.timestamp + 31);
+        vm.roll(block.number + 60291);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 96616908359804049497419741745538375294807572572698075652596079081371246424103);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007912129639935);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 529780);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 33508);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007813129639935);
+        
+        vm.warp(block.timestamp + 28);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 347838);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 179872);
+        vm.roll(block.number + 19349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 19351);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 7149);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 388259);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(103062740526101781638229891298623841879803249776477932896094914690330934281598);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 16196);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 41230813496558858778384467099807060476406744875722222162017101385371858598207);
+        
+        vm.warp(block.timestamp + 540356);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 49312);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 9650);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 20939234795330947793590732320847804717050202428898709774025489905767164931251);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 322342);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 107912);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 103);
+        vm.roll(block.number + 7146);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 46151);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 58425);
+        vm.roll(block.number + 4921);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        address[] memory dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 540360);
+        vm.roll(block.number + 59281);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 102);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 33);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 120865);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        dynaddressArr_0 = new address[](26);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[25] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 814);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 46962813065336778966281065737116429069176950400520134145076247569657713913913);
+        
+        vm.warp(block.timestamp + 322275);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039456584007913129639935);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 538917);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 55216082751354782898243531838044971546529862281227739479982358925325902887204);
+        dynaddressArr_0 = new address[](27);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 49306);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322278);
+        vm.roll(block.number + 4994);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 453089);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 386816);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 579339);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 33);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 347839);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 347841);
+        vm.roll(block.number + 60290);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        dynaddressArr_0 = new address[](7);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000000000;
+
+        vm.warp(block.timestamp + 322277);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 538917);
+        vm.roll(block.number + 99);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 5214);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 579340);
+        vm.roll(block.number + 5216);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 320561);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000);
+        dynaddressArr_0 = new address[](28);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[3] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[17] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[27] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 538918);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322274);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 579338);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 341069);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 5219);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 7148);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000010000;
+
+        vm.warp(block.timestamp + 51);
+        vm.roll(block.number + 7143);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 58356);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 32089627503537825025104657178167696199389423817363024585209295126766332740101);
+        
+        vm.warp(block.timestamp + 386818);
+        vm.roll(block.number + 33);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 29);
+        vm.roll(block.number + 7149);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 60290);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 62917);
+        vm.roll(block.number + 36155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 322345);
+        vm.roll(block.number + 16196);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 51255);
+        vm.roll(block.number + 16195);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 46154);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 322275);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 19353);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 38662);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        dynaddressArr_0 = new address[](30);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[28] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 49308);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 99);
+        vm.roll(block.number + 19352);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 58426);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 28);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 48562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 33);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 388255);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 58429);
+        vm.roll(block.number + 46151);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 595927);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 208063);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000020000, 81722098830685698068807534090881471117530628996940298032053073956903938119225);
+        dynaddressArr_0 = new address[](11);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000010000;
+
+        vm.warp(block.timestamp + 533647);
+        vm.roll(block.number + 4921);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 49311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        dynaddressArr_0 = new address[](22);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+    }
+    
+    
+    function test_auto_approve_5() public { 
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 21382);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 82389479468375268756846069710787477547797751424102795681888048122932703852244);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 58429);
+        vm.roll(block.number + 5213);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 508386);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 106947600569870468560054712048909218710680760755153501028902708227507345045623);
+        
+        vm.warp(block.timestamp + 31);
+        vm.roll(block.number + 60291);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 96616908359804049497419741745538375294807572572698075652596079081371246424103);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007912129639935);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 529780);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 33508);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007813129639935);
+        
+        vm.warp(block.timestamp + 28);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 347838);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 179872);
+        vm.roll(block.number + 19349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 19351);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 7149);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 388259);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(103062740526101781638229891298623841879803249776477932896094914690330934281598);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 111647041850662361251648579931125768048311358046126142938200527989443860770857);
+        
+        vm.warp(block.timestamp + 386815);
+        vm.roll(block.number + 4991);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 58607358892311691627950439991660706783340535372472252631902847078698598179413);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 99999999998);
+        
+        vm.warp(block.timestamp + 386815);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(4370000);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 999999999999999997);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(44280718414391971826588692597046664850653897504848371813185806631522452627272);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 6684);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 46156);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 386821);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        address[] memory dynaddressArr_0 = new address[](4);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 97385);
+        vm.roll(block.number + 39592);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 330154);
+        vm.roll(block.number + 7147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639909);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 19350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 538921);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000010000, 83977378104362461874086362898215963067102450322918194466357032537522484129255);
+        
+        vm.warp(block.timestamp + 386815);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 11722);
+        vm.roll(block.number + 23803);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 14165);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(9);
+        
+        vm.warp(block.timestamp + 246627);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 263947);
+        vm.roll(block.number + 982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(0);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 43238);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 43397);
+        vm.roll(block.number + 4991);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 39124);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639935);
+        
+        vm.warp(block.timestamp + 101);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 388254);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 44255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 58430);
+        vm.roll(block.number + 26814);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        dynaddressArr_0 = new address[](25);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[18] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 465257);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 579334);
+        vm.roll(block.number + 98);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 388255);
+        vm.roll(block.number + 4921);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 416300);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 39580899943310837617514515259265728692015646111944810185431578692207966338997);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 27);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 19349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 263950);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 448);
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 16196);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 386816);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 455105);
+        vm.roll(block.number + 27902);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 4997);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 24);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 58357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 271792);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(false);
+        dynaddressArr_0 = new address[](30);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[28] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 49310);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 347840);
+        vm.roll(block.number + 58598);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 99999999998);
+        
+        vm.warp(block.timestamp + 106308);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        dynaddressArr_0 = new address[](31);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[3] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[25] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[26] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[27] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[30] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 386815);
+        vm.roll(block.number + 4993);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 82079935195556328875411249924682750240505652498944296719588701669723114818147);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 46154);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 106666058791289432275355052374184699537704190047854098868041671868608248406108);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 322345);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 4994);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 4923);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039456584007913129639938);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 7149);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 55569310246406387560290205229066983259862671081984216995725758414234642911479);
+        
+        vm.warp(block.timestamp + 538918);
+        vm.roll(block.number + 4996);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322345);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(68501400046831946732840235687495200898697375151142928719258030365133476788908);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 19350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 263950);
+        vm.roll(block.number + 30490);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 46151);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 31);
+        vm.roll(block.number + 16196);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 347837);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(40490751145968504326769532698925411130526420011204698959599561445349457893729);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+    }
+    
+    
+    function test_auto_renounceOwnership_6() public { 
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 21382);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 82389479468375268756846069710787477547797751424102795681888048122932703852244);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 58429);
+        vm.roll(block.number + 5213);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 508386);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 106947600569870468560054712048909218710680760755153501028902708227507345045623);
+        
+        vm.warp(block.timestamp + 31);
+        vm.roll(block.number + 60291);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 96616908359804049497419741745538375294807572572698075652596079081371246424103);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007912129639935);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 263945);
+        vm.roll(block.number + 46150);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 273);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 32671);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 322273);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 509797);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 60289);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 98);
+        vm.roll(block.number + 4996);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 402001);
+        vm.roll(block.number + 7144);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(48918989789734146673239935832499057903713687448074566906295757672836985299562);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 58358);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 538916);
+        vm.roll(block.number + 7143);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 6);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 4993);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 101);
+        vm.roll(block.number + 7146);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000000000, 52612870235592192843048852183320434022659770105679862472187832702073003315793);
+        
+        vm.warp(block.timestamp + 322274);
+        vm.roll(block.number + 4925);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 7588);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(84094434549583441164046046635626589975295527685115835940634629488005209838179);
+        
+        vm.warp(block.timestamp + 386821);
+        vm.roll(block.number + 16196);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        address[] memory dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 95100);
+        vm.roll(block.number + 58360);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 58431);
+        vm.roll(block.number + 2781);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 58431);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 8007713138937528431100379652847611439314241895199616353856243393830891499400);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 56357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 79075792359300179811291372244709640865318829289365643279925256148941644412403);
+        dynaddressArr_0 = new address[](21);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 322345);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 4370001);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 40038);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 31);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 386818);
+        vm.roll(block.number + 32231);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322275);
+        vm.roll(block.number + 33);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322275);
+        vm.roll(block.number + 49311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 9318);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 99999999999999999998);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 99);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 474912);
+        vm.roll(block.number + 5215);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 16193);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 263944);
+        vm.roll(block.number + 46155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        dynaddressArr_0 = new address[](8);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 5213);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 426518);
+        vm.roll(block.number + 58362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 4690);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 24077973481303576062798487939666767609809989879215777946854201502572967535424);
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 7149);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 540356);
+        vm.roll(block.number + 49310);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000010000, 3124856066251329916736429464765087593927683700378011051768499138500090253914);
+        
+        vm.warp(block.timestamp + 347842);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 540357);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 99999999998);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 54173);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 91106362569664596715472644906817764256573530669380867612670334326157230474312);
+        
+        vm.warp(block.timestamp + 540357);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 322342);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 322275);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 59);
+        
+        vm.warp(block.timestamp + 579335);
+        vm.roll(block.number + 51579);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 58430);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        dynaddressArr_0 = new address[](11);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 322728);
+        vm.roll(block.number + 4924);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 33);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 58356);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 594614);
+        vm.roll(block.number + 60288);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 4997);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(71604740421316456096444252335502756891806238752564869921730802730030570948693);
+        
+        vm.warp(block.timestamp + 451297);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 263944);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 42636);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 79987491764732660244093196325316851393261323089486658155814867185388027529356);
+        dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 5219);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 7148);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 263945);
+        vm.roll(block.number + 24401);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322342);
+        vm.roll(block.number + 42440);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 30);
+        vm.roll(block.number + 9575);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 36155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 49306);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(43401380989391205815841661762687199273991266839010585549226444191239918629180);
+        
+        vm.warp(block.timestamp + 322272);
+        vm.roll(block.number + 4927);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 388254);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 322272);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 321618);
+        vm.roll(block.number + 49307);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 51);
+        
+        vm.warp(block.timestamp + 99);
+        vm.roll(block.number + 30);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 60291);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 984);
+        dynaddressArr_0 = new address[](18);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 496490);
+        vm.roll(block.number + 5217);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007813129639937);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 60289);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+    }
+    
+    
+    function test_auto_setMaxTxPercent_7() public { 
+        
+        vm.warp(block.timestamp + 351910);
+        vm.roll(block.number + 39290);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 14352880941807185805041867620989159470959053092345822491365079500994078160049);
+        
+        vm.warp(block.timestamp + 226967);
+        vm.roll(block.number + 21185);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 315997);
+        vm.roll(block.number + 40051);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 130917);
+        vm.roll(block.number + 19975);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 25196);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 150488);
+        vm.roll(block.number + 46134);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 924);
+        vm.roll(block.number + 2248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000, 29469486290862888159092937424153633527001676616872030146518650246833449488451);
+        
+        vm.warp(block.timestamp + 585359);
+        vm.roll(block.number + 36202);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF);
+        address[] memory dynaddressArr_0 = new address[](22);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 331852);
+        vm.roll(block.number + 56872);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 595053);
+        vm.roll(block.number + 5862);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000030000, 803);
+        
+        vm.warp(block.timestamp + 524525);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 553589);
+        vm.roll(block.number + 51074);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 200406);
+        vm.roll(block.number + 349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 534492);
+        vm.roll(block.number + 48024);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 971);
+        vm.roll(block.number + 8196);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 240260);
+        vm.roll(block.number + 48975);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 45475);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 27702602052596769184804622945801878216613657284901695013801866402167287229980);
+        dynaddressArr_0 = new address[](32);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[18] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[19] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[22] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[24] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[25] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[27] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[28] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 337704);
+        vm.roll(block.number + 43968);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 376911);
+        vm.roll(block.number + 54591);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 388258);
+        vm.roll(block.number + 628);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 486695);
+        vm.roll(block.number + 4531);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 426771);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 347588);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 145344);
+        vm.roll(block.number + 35264);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 581877);
+        vm.roll(block.number + 45736);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 349117);
+        vm.roll(block.number + 11111);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 61541);
+        vm.roll(block.number + 57815);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 292636);
+        vm.roll(block.number + 930);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 379570);
+        vm.roll(block.number + 22803);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 127650);
+        vm.roll(block.number + 31434);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 204455);
+        vm.roll(block.number + 49398);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 320646);
+        vm.roll(block.number + 59217);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 34012805319299056593161945661307468578712078973265494922543568676895632572333);
+        
+        vm.warp(block.timestamp + 100);
+        vm.roll(block.number + 46151);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 322345);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000000FFFFfFFF);
+        dynaddressArr_0 = new address[](27);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[3] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[24] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x0000000000000000000000000000000000010000;
+
+        vm.warp(block.timestamp + 461930);
+        vm.roll(block.number + 760);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 58427);
+        vm.roll(block.number + 17634);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 486331);
+        vm.roll(block.number + 49629);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 143423);
+        vm.roll(block.number + 56619);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 561943);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 970);
+        vm.roll(block.number + 59089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 764);
+        vm.roll(block.number + 43593);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(33807142965064828516660752215577135073991157613080360286312112442358443955554);
+        
+        vm.warp(block.timestamp + 160329);
+        vm.roll(block.number + 12735);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 330289);
+        vm.roll(block.number + 34085);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 292107);
+        vm.roll(block.number + 924);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 181447);
+        vm.roll(block.number + 16028);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 459487);
+        vm.roll(block.number + 13472);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 8799);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 108254079022582590371671214459613041999192999778373808811580381829170160634656);
+        
+        vm.warp(block.timestamp + 483153);
+        vm.roll(block.number + 19350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 709);
+        
+        vm.warp(block.timestamp + 38750);
+        vm.roll(block.number + 34311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.owner();
+        
+        vm.warp(block.timestamp + 212899);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000030000, 800);
+        dynaddressArr_0 = new address[](25);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[9] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 301392);
+        vm.roll(block.number + 21875);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 414832);
+        vm.roll(block.number + 29306);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 539462);
+        vm.roll(block.number + 38009);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(1335965783933576488195064814700157437617);
+        
+        vm.warp(block.timestamp + 882);
+        vm.roll(block.number + 8438);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 572578);
+        vm.roll(block.number + 30123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 54838);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 386610);
+        vm.roll(block.number + 6958);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 579339);
+        vm.roll(block.number + 60292);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 269954);
+        vm.roll(block.number + 20080);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 51378);
+        vm.roll(block.number + 5708);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 409461);
+        vm.roll(block.number + 58359);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 592092);
+        vm.roll(block.number + 6377);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 175937);
+        vm.roll(block.number + 48756);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 60);
+        vm.roll(block.number + 34570);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 46793);
+        vm.roll(block.number + 54916);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 11406);
+        vm.roll(block.number + 48723);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000010000;
+
+        vm.warp(block.timestamp + 551166);
+        vm.roll(block.number + 3201);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 475658);
+        vm.roll(block.number + 7060);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 41193);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 524812);
+        vm.roll(block.number + 38776);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 936);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 579336);
+        vm.roll(block.number + 14839);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 496150);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 520043);
+        vm.roll(block.number + 26183);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        dynaddressArr_0 = new address[](17);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 451417);
+        vm.roll(block.number + 23585);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 388256);
+        vm.roll(block.number + 16194);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 546089);
+        vm.roll(block.number + 45475);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 764);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 118532);
+        vm.roll(block.number + 1000);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 101587467671791674110317694908994087044142262999555619626526225718735854167910);
+        
+        vm.warp(block.timestamp + 506319);
+        vm.roll(block.number + 37429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 285);
+        vm.roll(block.number + 15718);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 362364);
+        vm.roll(block.number + 16196);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 9071);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 5687);
+        vm.roll(block.number + 25963);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 108747);
+        vm.roll(block.number + 52878);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 258728);
+        vm.roll(block.number + 48086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 95554560177520453688691817448562222618684527915018489970289801785700933421983);
+        
+        vm.warp(block.timestamp + 467491);
+        vm.roll(block.number + 936);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(3051033985196468229332654289287999540198018548532523964736048337573357565928);
+        dynaddressArr_0 = new address[](46);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[3] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[9] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[10] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[14] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[15] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[16] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[17] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[18] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[19] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[20] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[21] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[22] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[29] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[31] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[34] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[35] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[36] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[38] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[39] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[40] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[41] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[42] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[43] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[44] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[45] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 509192);
+        vm.roll(block.number + 52830);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 734);
+        vm.roll(block.number + 566);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 108136);
+        vm.roll(block.number + 42237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 61289);
+        vm.roll(block.number + 44235);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 447680);
+        vm.roll(block.number + 58126);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 286205);
+        vm.roll(block.number + 8716);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 310394);
+        vm.roll(block.number + 59089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 642);
+        vm.roll(block.number + 25614);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 53625);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 412880);
+        vm.roll(block.number + 31544);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 170879);
+        vm.roll(block.number + 43652);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 26717);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+    }
+    
+    
+    function test_auto_manualsend_8() public { 
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 21382);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 82389479468375268756846069710787477547797751424102795681888048122932703852244);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 58429);
+        vm.roll(block.number + 5213);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 508386);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 106947600569870468560054712048909218710680760755153501028902708227507345045623);
+        
+        vm.warp(block.timestamp + 31);
+        vm.roll(block.number + 60291);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 96616908359804049497419741745538375294807572572698075652596079081371246424103);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007912129639935);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 263945);
+        vm.roll(block.number + 46150);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 273);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 32671);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 322273);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 509797);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 60289);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 98);
+        vm.roll(block.number + 4996);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 402001);
+        vm.roll(block.number + 7144);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(48918989789734146673239935832499057903713687448074566906295757672836985299562);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 58358);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 538916);
+        vm.roll(block.number + 7143);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 6);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 4993);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 101);
+        vm.roll(block.number + 7146);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000000000, 52612870235592192843048852183320434022659770105679862472187832702073003315793);
+        
+        vm.warp(block.timestamp + 322274);
+        vm.roll(block.number + 4925);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 7588);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(84094434549583441164046046635626589975295527685115835940634629488005209838179);
+        
+        vm.warp(block.timestamp + 386821);
+        vm.roll(block.number + 16196);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        address[] memory dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 95100);
+        vm.roll(block.number + 58360);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 58431);
+        vm.roll(block.number + 2781);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 58431);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 8007713138937528431100379652847611439314241895199616353856243393830891499400);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 56357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 79075792359300179811291372244709640865318829289365643279925256148941644412403);
+        dynaddressArr_0 = new address[](21);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 322345);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 4370001);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 40038);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 31);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 386818);
+        vm.roll(block.number + 32231);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322275);
+        vm.roll(block.number + 33);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322275);
+        vm.roll(block.number + 49311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 9318);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 99999999999999999998);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 99);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 474912);
+        vm.roll(block.number + 5215);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 16193);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 263944);
+        vm.roll(block.number + 46155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        dynaddressArr_0 = new address[](8);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 5213);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 426518);
+        vm.roll(block.number + 58362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 4690);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 24077973481303576062798487939666767609809989879215777946854201502572967535424);
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 7149);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 540356);
+        vm.roll(block.number + 49310);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000010000, 3124856066251329916736429464765087593927683700378011051768499138500090253914);
+        
+        vm.warp(block.timestamp + 347842);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 540357);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 99999999998);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 54173);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 91106362569664596715472644906817764256573530669380867612670334326157230474312);
+        
+        vm.warp(block.timestamp + 102);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(115552916209548536231174443335820415684823076220162533088289934063891313976495);
+        
+        vm.warp(block.timestamp + 579339);
+        vm.roll(block.number + 99);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, 382);
+        
+        vm.warp(block.timestamp + 386816);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        dynaddressArr_0 = new address[](19);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 317584);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 322276);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 386818);
+        vm.roll(block.number + 60290);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        dynaddressArr_0 = new address[](22);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 386815);
+        vm.roll(block.number + 19353);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 347840);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 1000000001);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 19350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 386818);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 347841);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 388258);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 64616859166391293937302126602918416810327789510201914264611856523247755020199);
+        dynaddressArr_0 = new address[](8);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 101);
+        vm.roll(block.number + 54114);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 46457);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639906);
+        
+        vm.warp(block.timestamp + 347842);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 58357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 27);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 347839);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, 78680992651412108467709866332165319950516543740300615717995688985794557162357);
+        
+        vm.warp(block.timestamp + 538917);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 263948);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 97);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 15814);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000000000, 100);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(91754420307226227468054488675775428991859009113684009164941388291332324545916);
+        
+        vm.warp(block.timestamp + 538920);
+        vm.roll(block.number + 4924);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+    }
+    
+    
+    function test_auto_asdf_9() public { 
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 100);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 51);
+        vm.roll(block.number + 4996);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 14442464105903229760354790191888398564069543746036073221383626831076505848783);
+        address[] memory dynaddressArr_0 = new address[](13);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 181447);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 42509967538307618939062736792731785817496712420521656249407138074617131248813);
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 58426);
+        vm.roll(block.number + 28);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 16194);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 39580899943310837617514515259265728692015646111944810185431578692207966338997);
+        
+        vm.warp(block.timestamp + 97);
+        vm.roll(block.number + 4926);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 27);
+        vm.roll(block.number + 22803);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 976);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 58358);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 46156);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 468595);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(57775253110095510247442595264800924955553817879528299909113967459408961351702);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 1541);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 78314734877695417990753951100917580964713338509621580994855753220383370319874);
+        
+        vm.warp(block.timestamp + 432143);
+        vm.roll(block.number + 4991);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 308960);
+        vm.roll(block.number + 20725);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 291417);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 7144);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, 41256898168482953285960760942872336462067279477659164016119432045224524205879);
+        
+        vm.warp(block.timestamp + 369144);
+        vm.roll(block.number + 16341);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(1021);
+        
+        vm.warp(block.timestamp + 67197);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322276);
+        vm.roll(block.number + 31);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 28);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 549658);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 51263);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 540355);
+        vm.roll(block.number + 54148);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 379570);
+        vm.roll(block.number + 22803);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 16164646767778720100851394868200503267727639433947824906764653756714181638510);
+        
+        vm.warp(block.timestamp + 415454);
+        vm.roll(block.number + 4993);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 155645);
+        vm.roll(block.number + 28754);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 263947);
+        vm.roll(block.number + 5217);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23343651058774435013950725419208531733776188641260244127024959255022809666217);
+        
+        vm.warp(block.timestamp + 258728);
+        vm.roll(block.number + 18605);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 4926);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 361415);
+        vm.roll(block.number + 36155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, 23634806770648272082622872398771682447170887673108373540027388080912511089961);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 9373);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 98);
+        vm.roll(block.number + 30690);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 464209);
+        vm.roll(block.number + 5216);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 402937);
+        vm.roll(block.number + 19355);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 579337);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 47);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 263950);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 96408523391965748210784508469790425183003051811096139839606388593635014871584);
+        dynaddressArr_0 = new address[](31);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[30] = 0x0000000000000000000000000000000000010000;
+
+        vm.warp(block.timestamp + 30);
+        vm.roll(block.number + 99);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 498749);
+        vm.roll(block.number + 46151);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 98);
+        vm.roll(block.number + 49306);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 542);
+        
+        vm.warp(block.timestamp + 77475);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.allowance(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 93948);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 95526);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 458482);
+        vm.roll(block.number + 59073);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 572440);
+        vm.roll(block.number + 6300);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 58425);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 98);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 322278);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 99);
+        vm.roll(block.number + 43968);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 69697911299909921769222704436581256902551012602375871915997936557058219258674);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 53074);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 263947);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 133843);
+        vm.roll(block.number + 19352);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 388257);
+        vm.roll(block.number + 14264);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 30);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 49309);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 628);
+        dynaddressArr_0 = new address[](11);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 16199);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.receive();
+        
+        vm.warp(block.timestamp + 386122);
+        vm.roll(block.number + 4927);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 566159);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 445457);
+        vm.roll(block.number + 8394);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(53233311685681258840831495998268449192664437943033985148833912370570050582005);
+        
+        vm.warp(block.timestamp + 388258);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 321859);
+        vm.roll(block.number + 52064);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 386815);
+        vm.roll(block.number + 3151);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 287127);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 458482);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 49629);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        dynaddressArr_0 = new address[](17);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 46153);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 26505);
+        vm.roll(block.number + 19828);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 50589);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 491980);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 22621);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 155645);
+        vm.roll(block.number + 43728);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 464209);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 32);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 10853);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(107227703800643395200873991326114503627138508023040728986661620032191209290024);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 22136);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 16518);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 52955564027487484932089867475775537958504260864522101725679713970125242964807);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 347842);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 19828);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 447869);
+        vm.roll(block.number + 47);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 290717);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 576447);
+        vm.roll(block.number + 6813);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 1000);
+        vm.roll(block.number + 4926);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 381);
+        
+        vm.warp(block.timestamp + 537253);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+    }
+    
+    
+    function test_auto_asdf1_10() public { 
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 21382);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 82389479468375268756846069710787477547797751424102795681888048122932703852244);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 58429);
+        vm.roll(block.number + 5213);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 508386);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 106947600569870468560054712048909218710680760755153501028902708227507345045623);
+        
+        vm.warp(block.timestamp + 31);
+        vm.roll(block.number + 60291);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 96616908359804049497419741745538375294807572572698075652596079081371246424103);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007912129639935);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 529780);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 33508);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007813129639935);
+        
+        vm.warp(block.timestamp + 28);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 347838);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 179872);
+        vm.roll(block.number + 19349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 19351);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 7149);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 388259);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(103062740526101781638229891298623841879803249776477932896094914690330934281598);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 111647041850662361251648579931125768048311358046126142938200527989443860770857);
+        
+        vm.warp(block.timestamp + 386815);
+        vm.roll(block.number + 4991);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 58607358892311691627950439991660706783340535372472252631902847078698598179413);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 99999999998);
+        
+        vm.warp(block.timestamp + 386815);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(4370000);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 999999999999999997);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(44280718414391971826588692597046664850653897504848371813185806631522452627272);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 6684);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 46156);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 386821);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        address[] memory dynaddressArr_0 = new address[](4);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 97385);
+        vm.roll(block.number + 39592);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 330154);
+        vm.roll(block.number + 7147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639909);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 19350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 538921);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000010000, 83977378104362461874086362898215963067102450322918194466357032537522484129255);
+        
+        vm.warp(block.timestamp + 386815);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 11722);
+        vm.roll(block.number + 23803);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 14165);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(9);
+        
+        vm.warp(block.timestamp + 246627);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 263947);
+        vm.roll(block.number + 982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(0);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 43238);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 43397);
+        vm.roll(block.number + 4991);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 39124);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639935);
+        
+        vm.warp(block.timestamp + 101);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 388254);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 44255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 26613);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 41287382647988086225206235652745601905921799326788754645648317334333568391798);
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 42590);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 374445);
+        vm.roll(block.number + 58);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 325732);
+        vm.roll(block.number + 28272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490564);
+        vm.roll(block.number + 739);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 458394);
+        vm.roll(block.number + 33091);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 540361);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 401695);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 499282);
+        vm.roll(block.number + 5216);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 8961);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 28754);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 64741);
+        vm.roll(block.number + 14165);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 33091);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 318458);
+        vm.roll(block.number + 8961);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 118482);
+        vm.roll(block.number + 55761);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 59386);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 285);
+        vm.roll(block.number + 35781);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 37796);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 58431);
+        vm.roll(block.number + 26998);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 2226);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 545134);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 552154);
+        vm.roll(block.number + 21177);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 51);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 7148);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 46153);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 445457);
+        vm.roll(block.number + 4991);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 4370000);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 46050);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 149409);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 472649);
+        vm.roll(block.number + 35096);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 269673);
+        vm.roll(block.number + 57717);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decimals();
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 43357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 100773046813619232131582837412643092992553352372046202753305630165482058261970);
+        
+        vm.warp(block.timestamp + 63);
+        vm.roll(block.number + 7149);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 482313);
+        vm.roll(block.number + 58359);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 60);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 262570);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 340);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 28);
+        vm.roll(block.number + 51);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 347841);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 704);
+        
+        vm.warp(block.timestamp + 403884);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 538922);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000030000, 55458240070572120058431291411680178860328700125876208861488902448861830785429);
+        
+        vm.warp(block.timestamp + 87771);
+        vm.roll(block.number + 9082);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23764238449933839253473566019710327687179159002188251021045696730212570888914);
+        
+        vm.warp(block.timestamp + 597362);
+        vm.roll(block.number + 59620);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+    }
+    
+    
+    function test_auto_transfer_11() public { 
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 21382);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 82389479468375268756846069710787477547797751424102795681888048122932703852244);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 58429);
+        vm.roll(block.number + 5213);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 508386);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 106947600569870468560054712048909218710680760755153501028902708227507345045623);
+        
+        vm.warp(block.timestamp + 31);
+        vm.roll(block.number + 60291);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 96616908359804049497419741745538375294807572572698075652596079081371246424103);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007912129639935);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 263945);
+        vm.roll(block.number + 46150);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 273);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 32671);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 322273);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 509797);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 60289);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 98);
+        vm.roll(block.number + 4996);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 402001);
+        vm.roll(block.number + 7144);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(48918989789734146673239935832499057903713687448074566906295757672836985299562);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 58358);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 538916);
+        vm.roll(block.number + 7143);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 6);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 4993);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 101);
+        vm.roll(block.number + 7146);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000000000, 52612870235592192843048852183320434022659770105679862472187832702073003315793);
+        
+        vm.warp(block.timestamp + 322274);
+        vm.roll(block.number + 4925);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 7588);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(84094434549583441164046046635626589975295527685115835940634629488005209838179);
+        
+        vm.warp(block.timestamp + 386821);
+        vm.roll(block.number + 16196);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        address[] memory dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 95100);
+        vm.roll(block.number + 58360);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 58431);
+        vm.roll(block.number + 2781);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 58431);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 8007713138937528431100379652847611439314241895199616353856243393830891499400);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 56357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 79075792359300179811291372244709640865318829289365643279925256148941644412403);
+        dynaddressArr_0 = new address[](21);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 322345);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 4370001);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 40038);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 36155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 388256);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 38346);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        dynaddressArr_0 = new address[](6);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000020000;
+
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 49308);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 322276);
+        vm.roll(block.number + 17598);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 97);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 5219);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 58426);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(0);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 23031498015642311118290624182530558277846395692235488296580625954271394243338);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 579336);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 341069);
+        vm.roll(block.number + 4924);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 93764);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639905);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 16195);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 42459);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 579335);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 97);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 40827);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 471148);
+        vm.roll(block.number + 98);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 540355);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 388255);
+        vm.roll(block.number + 17598);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 6);
+        
+        vm.warp(block.timestamp + 33);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 16198);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639907);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 322277);
+        vm.roll(block.number + 49312);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 46151);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 29);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 120967);
+        vm.roll(block.number + 51);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 58426);
+        vm.roll(block.number + 44571);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000000000, 30);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 9);
+        
+        vm.warp(block.timestamp + 387016);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 103);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 579335);
+        vm.roll(block.number + 31);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 322278);
+        vm.roll(block.number + 49306);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 263947);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(229);
+        
+        vm.warp(block.timestamp + 322274);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 11119451819954137130539334436819272363401029147227032976663711516913747856045);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 64616859166391293937302126602918416810327789510201914264611856523247755020199);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 263944);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 4921);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 322275);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 5217);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 322275);
+        vm.roll(block.number + 12466);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 322273);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 36950374260095387354102411698009331490165821709453005947943846434989116770470);
+    }
+    
+    
+    function test_auto_blockBots_12() public { 
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 100);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 51);
+        vm.roll(block.number + 4996);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 14442464105903229760354790191888398564069543746036073221383626831076505848783);
+        address[] memory dynaddressArr_0 = new address[](13);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 181447);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 42509967538307618939062736792731785817496712420521656249407138074617131248813);
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 58426);
+        vm.roll(block.number + 28);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 16194);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 39580899943310837617514515259265728692015646111944810185431578692207966338997);
+        
+        vm.warp(block.timestamp + 97);
+        vm.roll(block.number + 4926);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 27);
+        vm.roll(block.number + 22803);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 976);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 58358);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 46156);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 4925);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 27902);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(15351504058132214014575338207903087553086841525118644731451620266006829194396);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 58766);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(39306247288489675430673548547294811959139364508597280308723954309499089951987);
+        
+        vm.warp(block.timestamp + 233042);
+        vm.roll(block.number + 36155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 6205662193574511707515449770593555859001608082606826126249967142084392500673);
+        
+        vm.warp(block.timestamp + 210434);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 49);
+        vm.roll(block.number + 60286);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 579340);
+        vm.roll(block.number + 49);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x0000000000000000000000000000000000020000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 388254);
+        vm.roll(block.number + 11632);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(7152657013444148925813453563064040375441470887702254804958939554190638905033);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 531340);
+        vm.roll(block.number + 47504);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 1000000000000000001);
+        
+        vm.warp(block.timestamp + 330198);
+        vm.roll(block.number + 16198);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        dynaddressArr_0 = new address[](25);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[24] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 4926);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 181447);
+        vm.roll(block.number + 53495);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 58428);
+        vm.roll(block.number + 43667);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        dynaddressArr_0 = new address[](25);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 444151);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 213479);
+        vm.roll(block.number + 50589);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 263947);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 402937);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 7433);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 49309);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0);
+        
+        vm.warp(block.timestamp + 160545);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 9388);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+
+        vm.warp(block.timestamp + 181447);
+        vm.roll(block.number + 4996);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 27924);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 101);
+        vm.roll(block.number + 48897);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 877);
+        vm.roll(block.number + 28754);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 386816);
+        vm.roll(block.number + 52064);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 92222375438452839506961565681985792557915815440593796277277173735212755798215);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 8961);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 60289);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(98660075521234473545063362549663283068796065730102095271073179319728616828711);
+        dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 29);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(77807568766428561436865561492106172052176470376668716380817817122502399056578);
+        
+        vm.warp(block.timestamp + 597464);
+        vm.roll(block.number + 16196);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000001fffffffE, 88963933286689405987733686159352464097515796511766158541814354290830599278401);
+        
+        vm.warp(block.timestamp + 386815);
+        vm.roll(block.number + 49308);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 34026);
+        vm.roll(block.number + 21631);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 97);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        dynaddressArr_0 = new address[](29);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[28] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 60289);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 263946);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115052397411939263085884952299246364112415014564473627075163898443330264855823);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 49310);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 388254);
+        vm.roll(block.number + 59);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 58426);
+        vm.roll(block.number + 19353);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 97);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 538921);
+        vm.roll(block.number + 58359);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 51);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(26760210606915360051358558962301930784299944884594836659985908219617577765770);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 30);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF, 20103707121058550264929720731616463733825876128157024800708018287988238091414);
+        
+        vm.warp(block.timestamp + 1000);
+        vm.roll(block.number + 19828);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 403884);
+        vm.roll(block.number + 100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 4997);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 60985701573274243807300943211089902130365145085615911905526275551402189152160);
+        dynaddressArr_0 = new address[](19);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 58361);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 28);
+        vm.roll(block.number + 43667);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 1000);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 58430);
+        vm.roll(block.number + 19713);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 38461);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 26505);
+        vm.roll(block.number + 49307);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 540359);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 16265142583255917885191356586083570124287307279599274480905817403033882983114);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 58356);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 14634208107365047151134543314159760910698395387477463480013936391507836853510);
+        
+        vm.warp(block.timestamp + 231194);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 183810);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 103);
+        vm.roll(block.number + 27902);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 388999);
+        vm.roll(block.number + 1808);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 388254);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        dynaddressArr_0 = new address[](28);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[10] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 44354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 43987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        dynaddressArr_0 = new address[](1);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 47);
+        vm.roll(block.number + 16876);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 59123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 99999999997);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 19353);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 388259);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 84537);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+    }
+    
+    
+    function test_auto_transferFrom_13() public { 
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 21382);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 82389479468375268756846069710787477547797751424102795681888048122932703852244);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 58429);
+        vm.roll(block.number + 5213);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 508386);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 106947600569870468560054712048909218710680760755153501028902708227507345045623);
+        
+        vm.warp(block.timestamp + 31);
+        vm.roll(block.number + 60291);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 96616908359804049497419741745538375294807572572698075652596079081371246424103);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007912129639935);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 347840);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 89596215979482357366338691536443476110584183724756271797521217072619258151048);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(114202183798974116141558933234051952986213421119388129102935394981577956014493);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 36560);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 538920);
+        vm.roll(block.number + 4922);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 388257);
+        vm.roll(block.number + 5214);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        address[] memory dynaddressArr_0 = new address[](39);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[9] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[10] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[14] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[15] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[16] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[17] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[18] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[19] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[20] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[32] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[34] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[35] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[36] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 7143);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 55723);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 452755);
+        vm.roll(block.number + 40827);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000030000, 144);
+        
+        vm.warp(block.timestamp + 540359);
+        vm.roll(block.number + 7144);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 40827);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 101);
+        vm.roll(block.number + 43667);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 540361);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000020000;
+
+        vm.warp(block.timestamp + 540360);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 322277);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 540355);
+        vm.roll(block.number + 19350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 49309);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639905);
+        dynaddressArr_0 = new address[](28);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[25] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 594614);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 525615);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 172931);
+        vm.roll(block.number + 23995);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 98);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 58428);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 538919);
+        vm.roll(block.number + 4927);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 579339);
+        vm.roll(block.number + 59);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 540361);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 23365765145645003047470831482725390763749273495786912910848582560790873422129);
+        
+        vm.warp(block.timestamp + 263949);
+        vm.roll(block.number + 8961);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 99);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 579340);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 100);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 19350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 58431);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 21576);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(54893062343744245160851825534718889384396500915635416887476481536726783834339);
+        
+        vm.warp(block.timestamp + 101689);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 549362);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000, 8789318382988314572677630850445454985977715524566490085445463114971938698209);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 388257);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        dynaddressArr_0 = new address[](22);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 322275);
+        vm.roll(block.number + 5219);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 16199);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 19352);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000, 65676387417223450377345876217885698346572020641814020006616254569743974002715);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 66534100369023869379945665427548348158739828636302818156846133671376863797870);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 30);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 538921);
+        vm.roll(block.number + 23047);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 31);
+        vm.roll(block.number + 5214);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        dynaddressArr_0 = new address[](26);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[20] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[25] = 0x0000000000000000000000000000000000000000;
+
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 58427);
+        vm.roll(block.number + 16197);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 14692617795245976915384698508266319033229679586341453375151883783818327299661);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 60288);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 341069);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(999999997);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 60290);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 67427750740740712477734711889753034331569983581582730460278185550248495570081);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 16197);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 322342);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 58430);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 388260);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 4149);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        dynaddressArr_0 = new address[](29);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[27] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 490057);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 58358);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(96575237186883336713980876477032125232862326259322012888126725850296636600490);
+        
+        vm.warp(block.timestamp + 417480);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(20939234795330947793590732320847804717050202428898709774025489905767164931251);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 29);
+        vm.roll(block.number + 6438);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 60292);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 102);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 263944);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 83526418952405655697332712023479275333778338770726537802127303866089756465984);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(87803872380783491168833295198834166682223616436647206029367275560779553861061);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 237838);
+        vm.roll(block.number + 39975);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 4926);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 388772);
+        vm.roll(block.number + 58359);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 59);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 4704481950266716985351349192511);
+        
+        vm.warp(block.timestamp + 105697);
+        vm.roll(block.number + 5215);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 458250);
+        vm.roll(block.number + 5217);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 100);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 322274);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 16193);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 100000000000000000002);
+    }
+    
+    
+    function test_auto_asdf1_14() public { 
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 21382);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 82389479468375268756846069710787477547797751424102795681888048122932703852244);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 58429);
+        vm.roll(block.number + 5213);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 508386);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 106947600569870468560054712048909218710680760755153501028902708227507345045623);
+        
+        vm.warp(block.timestamp + 31);
+        vm.roll(block.number + 60291);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 96616908359804049497419741745538375294807572572698075652596079081371246424103);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007912129639935);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 529780);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 33508);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007813129639935);
+        
+        vm.warp(block.timestamp + 28);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 347838);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 179872);
+        vm.roll(block.number + 19349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 19351);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 7149);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 388259);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(103062740526101781638229891298623841879803249776477932896094914690330934281598);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 16196);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 41230813496558858778384467099807060476406744875722222162017101385371858598207);
+        
+        vm.warp(block.timestamp + 540356);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 49312);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 9650);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 20939234795330947793590732320847804717050202428898709774025489905767164931251);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 322342);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 107912);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 103);
+        vm.roll(block.number + 7146);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 46151);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 58425);
+        vm.roll(block.number + 4921);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        address[] memory dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 540360);
+        vm.roll(block.number + 59281);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 102);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 33);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 120865);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        dynaddressArr_0 = new address[](26);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[25] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 814);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 46962813065336778966281065737116429069176950400520134145076247569657713913913);
+        
+        vm.warp(block.timestamp + 322275);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039456584007913129639935);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 538917);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 55216082751354782898243531838044971546529862281227739479982358925325902887204);
+        dynaddressArr_0 = new address[](27);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 49306);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322278);
+        vm.roll(block.number + 4994);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 453089);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 386816);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 579339);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 33);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 347839);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 347841);
+        vm.roll(block.number + 60290);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        dynaddressArr_0 = new address[](7);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000000000;
+
+        vm.warp(block.timestamp + 322277);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+        dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 58357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 56761);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 322274);
+        vm.roll(block.number + 4927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 322272);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 97);
+        vm.roll(block.number + 46156);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x0000000000000000000000000000000000020000);
+        dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 322273);
+        vm.roll(block.number + 49308);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        dynaddressArr_0 = new address[](29);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[18] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[26] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 1005);
+        vm.roll(block.number + 11911);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 51);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 27);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 579340);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 322342);
+        vm.roll(block.number + 36560);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 417480);
+        vm.roll(block.number + 5214);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        dynaddressArr_0 = new address[](11);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 58431);
+        vm.roll(block.number + 7144);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 29);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 43667);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 538919);
+        vm.roll(block.number + 49306);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 540361);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 29);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 579337);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 646);
+        
+        vm.warp(block.timestamp + 540359);
+        vm.roll(block.number + 49900);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 0);
+        
+        vm.warp(block.timestamp + 347840);
+        vm.roll(block.number + 49312);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 46151);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 47651126226380357392711539704337551047743510882162717457932970203820900163381);
+        
+        vm.warp(block.timestamp + 58431);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 470773);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 34791);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 386816);
+        vm.roll(block.number + 46156);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 16196);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x0000000000000000000000000000000000030000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 58356);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 388259);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.name();
+        
+        vm.warp(block.timestamp + 161093);
+        vm.roll(block.number + 44052);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 46156);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 579337);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 540361);
+        vm.roll(block.number + 19353);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+    }
+    
+    
+    function test_auto_setCooldownEnabled_15() public { 
+        
+        vm.warp(block.timestamp + 351910);
+        vm.roll(block.number + 39290);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 14352880941807185805041867620989159470959053092345822491365079500994078160049);
+        
+        vm.warp(block.timestamp + 226967);
+        vm.roll(block.number + 21185);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 315997);
+        vm.roll(block.number + 40051);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 130917);
+        vm.roll(block.number + 19975);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 25196);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 150488);
+        vm.roll(block.number + 46134);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 924);
+        vm.roll(block.number + 2248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000, 29469486290862888159092937424153633527001676616872030146518650246833449488451);
+        
+        vm.warp(block.timestamp + 338775);
+        vm.roll(block.number + 58251);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 44279422500528640463010614328002250465149742746017496702684976966147529666);
+        
+        vm.warp(block.timestamp + 33203);
+        vm.roll(block.number + 27322);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 388255);
+        vm.roll(block.number + 55005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 291347);
+        vm.roll(block.number + 26);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 486884);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 517030);
+        vm.roll(block.number + 42872);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 274701);
+        vm.roll(block.number + 18413);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 539462);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 426771);
+        vm.roll(block.number + 5217);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 40450822947135367461241093586825352772981584024284435218248035486967183761429);
+        
+        vm.warp(block.timestamp + 274701);
+        vm.roll(block.number + 47859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 29947);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 549);
+        
+        vm.warp(block.timestamp + 582037);
+        vm.roll(block.number + 8505);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        address[] memory dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 192416);
+        vm.roll(block.number + 5652);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 414014);
+        vm.roll(block.number + 7143);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 322342);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000030000, 108486969384771261024491504380383807565329737410761257652765499192685106317527);
+        
+        vm.warp(block.timestamp + 836);
+        vm.roll(block.number + 26706);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 388999);
+        vm.roll(block.number + 50084);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 514689);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 431);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 1584);
+        vm.roll(block.number + 10457);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 19352);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 59144);
+        vm.roll(block.number + 804);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 105313847233401471947892915482616683861496971633167887061074773240058520760564);
+        dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000000000;
+
+        vm.warp(block.timestamp + 471459);
+        vm.roll(block.number + 27768);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 127795);
+        vm.roll(block.number + 44032);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 254128);
+        vm.roll(block.number + 49306);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 20673);
+        vm.roll(block.number + 3735);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 163541);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 539430);
+        vm.roll(block.number + 16685);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 40);
+        vm.roll(block.number + 18731);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 265699);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 520043);
+        vm.roll(block.number + 9071);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 453400);
+        vm.roll(block.number + 12791);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000000000, 9913408154916972160714675666745470507010497956116626158349920511770741930264);
+        
+        vm.warp(block.timestamp + 48);
+        vm.roll(block.number + 633);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 5555);
+        vm.roll(block.number + 15175);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 6958);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 501703);
+        vm.roll(block.number + 18304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 1890);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 4157);
+        vm.roll(block.number + 37);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 277432);
+        vm.roll(block.number + 49810);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 225953);
+        vm.roll(block.number + 474);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 337840);
+        vm.roll(block.number + 33);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 301392);
+        vm.roll(block.number + 51098);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 181447);
+        vm.roll(block.number + 11561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 301630);
+        vm.roll(block.number + 53876);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 274232);
+        vm.roll(block.number + 10335);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.totalSupply();
+        
+        vm.warp(block.timestamp + 362390);
+        vm.roll(block.number + 832);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 91953);
+        vm.roll(block.number + 3116);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 103545135470052929529972565284485036535735581396728822446100404014086290158278);
+        
+        vm.warp(block.timestamp + 192416);
+        vm.roll(block.number + 45876);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 244608);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 338499);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 524282);
+        vm.roll(block.number + 17573);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 8579);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 274232);
+        vm.roll(block.number + 19077);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 209698);
+        vm.roll(block.number + 52070);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 138);
+        vm.roll(block.number + 58226);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 325732);
+        vm.roll(block.number + 53612);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 64806);
+        vm.roll(block.number + 804);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 84102);
+        vm.roll(block.number + 24410);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 597849);
+        vm.roll(block.number + 206);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000000000, 1220);
+        
+        vm.warp(block.timestamp + 579339);
+        vm.roll(block.number + 36560);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 244445);
+        vm.roll(block.number + 12239);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 347839);
+        vm.roll(block.number + 16672);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 41408373552126252810863742994602300928236524081900246444790520968756855774764);
+        
+        vm.warp(block.timestamp + 206201);
+        vm.roll(block.number + 51920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 82332227050815758157028851143915441430664520151427435453535130673023222962757);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 94714485101420666520677788513017368559036433243785661106875497695290154362925);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 59454);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 55);
+        vm.roll(block.number + 340);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        dynaddressArr_0 = new address[](22);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[20] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[21] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 59886);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 310836);
+        vm.roll(block.number + 18413);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 201436);
+        vm.roll(block.number + 49954);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 31758);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 59);
+        vm.roll(block.number + 628);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 34);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 73807831683566625716727506311793244310639849663833514562935441812456884764997);
+        
+        vm.warp(block.timestamp + 970);
+        vm.roll(block.number + 50771);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 37796);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 21382);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322348);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 82389479468375268756846069710787477547797751424102795681888048122932703852244);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 58429);
+        vm.roll(block.number + 5213);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 508386);
+        vm.roll(block.number + 101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 106947600569870468560054712048909218710680760755153501028902708227507345045623);
+        
+        vm.warp(block.timestamp + 31);
+        vm.roll(block.number + 60291);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 96616908359804049497419741745538375294807572572698075652596079081371246424103);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007912129639935);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 529780);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 33508);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007813129639935);
+        
+        vm.warp(block.timestamp + 28);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 347838);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 179872);
+        vm.roll(block.number + 19349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 19351);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+    }
+    
+    
+    function test_auto_approve_16() public { 
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 100);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 51);
+        vm.roll(block.number + 4996);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 14442464105903229760354790191888398564069543746036073221383626831076505848783);
+        address[] memory dynaddressArr_0 = new address[](13);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 181447);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 42509967538307618939062736792731785817496712420521656249407138074617131248813);
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 58426);
+        vm.roll(block.number + 28);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 16194);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 39580899943310837617514515259265728692015646111944810185431578692207966338997);
+        
+        vm.warp(block.timestamp + 97);
+        vm.roll(block.number + 4926);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 27);
+        vm.roll(block.number + 22803);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 976);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 58358);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 46156);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 468595);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(57775253110095510247442595264800924955553817879528299909113967459408961351702);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 1541);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 78314734877695417990753951100917580964713338509621580994855753220383370319874);
+        
+        vm.warp(block.timestamp + 432143);
+        vm.roll(block.number + 4991);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 308960);
+        vm.roll(block.number + 20725);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setMaxTxPercent(94185256192734229199246645909003492636998835464461316168864331615473273507027);
+        
+        vm.warp(block.timestamp + 291417);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 7144);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, 41256898168482953285960760942872336462067279477659164016119432045224524205879);
+        
+        vm.warp(block.timestamp + 369144);
+        vm.roll(block.number + 16341);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setMaxTxPercent(1021);
+        
+        vm.warp(block.timestamp + 67197);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 322276);
+        vm.roll(block.number + 31);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 28);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 549658);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000, 10);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 51263);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 540355);
+        vm.roll(block.number + 54148);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 379570);
+        vm.roll(block.number + 22803);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 16164646767778720100851394868200503267727639433947824906764653756714181638510);
+        
+        vm.warp(block.timestamp + 415454);
+        vm.roll(block.number + 4993);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 155645);
+        vm.roll(block.number + 28754);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 263947);
+        vm.roll(block.number + 5217);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23343651058774435013950725419208531733776188641260244127024959255022809666217);
+        
+        vm.warp(block.timestamp + 258728);
+        vm.roll(block.number + 18605);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 4926);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 361415);
+        vm.roll(block.number + 36155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unblockBot(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, 23634806770648272082622872398771682447170887673108373540027388080912511089961);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 9373);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 98);
+        vm.roll(block.number + 30690);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 464209);
+        vm.roll(block.number + 5216);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 402937);
+        vm.roll(block.number + 19355);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 579337);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 47);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 263950);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 96408523391965748210784508469790425183003051811096139839606388593635014871584);
+        dynaddressArr_0 = new address[](31);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[30] = 0x0000000000000000000000000000000000010000;
+
+        vm.warp(block.timestamp + 30);
+        vm.roll(block.number + 99);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 498749);
+        vm.roll(block.number + 46151);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 98);
+        vm.roll(block.number + 49306);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 542);
+        
+        vm.warp(block.timestamp + 77475);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.allowance(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 93948);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 95526);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 458482);
+        vm.roll(block.number + 59073);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 572440);
+        vm.roll(block.number + 6300);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 58425);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 98);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 322278);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 99);
+        vm.roll(block.number + 43968);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 69697911299909921769222704436581256902551012602375871915997936557058219258674);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 53074);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 263947);
+        vm.roll(block.number + 60287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unblockBot(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 133843);
+        vm.roll(block.number + 19352);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 388257);
+        vm.roll(block.number + 14264);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 30);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 49309);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 628);
+        dynaddressArr_0 = new address[](11);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 63);
+        vm.roll(block.number + 20725);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 106517876601623114191495129956429731836302949396864510202567375781745706334264);
+        
+        vm.warp(block.timestamp + 98);
+        vm.roll(block.number + 49310);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        dynaddressArr_0 = new address[](19);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 291118);
+        vm.roll(block.number + 4926);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322275);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 134631);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 109379);
+        vm.roll(block.number + 16193);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.startTrading();
+        
+        vm.warp(block.timestamp + 146);
+        vm.roll(block.number + 28272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.setCooldownEnabled(false);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 9071);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 213477);
+        vm.roll(block.number + 2092);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 338775);
+        vm.roll(block.number + 16195);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 33265);
+        vm.roll(block.number + 16725);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 541270);
+        vm.roll(block.number + 28272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 150488);
+        vm.roll(block.number + 25196);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 1021);
+        vm.roll(block.number + 17825);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.owner();
+        
+        vm.warp(block.timestamp + 601855);
+        vm.roll(block.number + 35615);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 546691);
+        vm.roll(block.number + 38461);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 347842);
+        vm.roll(block.number + 36734);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 37546);
+        vm.roll(block.number + 10430);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setMaxTxPercent(879);
+        
+        vm.warp(block.timestamp + 110186);
+        vm.roll(block.number + 4994);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 23194129459323740554795433501266573739404571002151443319581335685128362231454);
+        
+        vm.warp(block.timestamp + 231194);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        dynaddressArr_0 = new address[](35);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[25] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[26] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[27] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[34] = 0x0000000000000000000000000000000000030000;
+
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.blockBots(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 435416);
+        vm.roll(block.number + 43728);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.asdf1();
+        
+        vm.warp(block.timestamp + 340014);
+        vm.roll(block.number + 12137);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 84102);
+        vm.roll(block.number + 21066);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualsend();
+        
+        vm.warp(block.timestamp + 62166);
+        vm.roll(block.number + 46558);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.asdf(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 346);
+        vm.roll(block.number + 23675);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.manualswap();
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unblockBot(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 51098);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 78912794326762853851757496174906918496009374452045654190585093541016377483736);
+        
+        vm.warp(block.timestamp + 64806);
+        vm.roll(block.number + 1005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+        
+        vm.warp(block.timestamp + 374445);
+        vm.roll(block.number + 52830);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.setCooldownEnabled(true);
+        
+        vm.warp(block.timestamp + 579335);
+        vm.roll(block.number + 236);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 30);
+    }
+    
+}
+
+    

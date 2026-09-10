@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "bid",
+      "n": 2,
+      "value": 19493571163031316
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "bid",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (1.223208078s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.964047848s)
+
+echidna: Constructor arguments are required: [("coinType_",uint256),("owner_",address),("parentNode_",bytes32),("oldReverseResolver_",address)]

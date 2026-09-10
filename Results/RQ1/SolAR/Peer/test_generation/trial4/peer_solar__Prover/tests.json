@@ -1,0 +1,116 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        "address_00001000000000000000000000000"
+      ],
+      "frm": "address_00410",
+      "method": "entryInformation",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_0012874724d4c5664207242544451"
+      ],
+      "frm": "address_00184",
+      "method": "addEntry",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "registeredUsers",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_001007470524957716b7257524272"
+      ],
+      "frm": "address_00036",
+      "method": "addEntry",
+      "n": 2,
+      "value": 45154599519896448
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "registeredUsers",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_000785746766e67625a7557617277"
+      ],
+      "frm": "address_00398",
+      "method": "deleteEntry",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00398",
+      "method": "userEntries",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

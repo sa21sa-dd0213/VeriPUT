@@ -1,0 +1,757 @@
+{
+  "compile_failed": 6,
+  "compile_ok": 69,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "_transferOwnership",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "_owner",
+      "replacement_expression": "address(this)",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "_transferOwnership",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "_owner",
+      "replacement_expression": "address(0)",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "setMarketAdmin",
+      "mutant_id": "m000003",
+      "operator": "AVR",
+      "original_expression": "marketAdmin",
+      "replacement_expression": "address(this)",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "setMarketAdmin",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "marketAdmin",
+      "replacement_expression": "address(0)",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 200,
+      "function": "setMarketAdminPauseGuardian",
+      "mutant_id": "m000005",
+      "operator": "AVR",
+      "original_expression": "marketAdminPauseGuardian",
+      "replacement_expression": "address(this)",
+      "start_line": 200
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 200,
+      "function": "setMarketAdminPauseGuardian",
+      "mutant_id": "m000006",
+      "operator": "AVR",
+      "original_expression": "marketAdminPauseGuardian",
+      "replacement_expression": "address(0)",
+      "start_line": 200
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 143,
+      "function": "_transferOwnership",
+      "mutant_id": "m000007",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(this)",
+      "start_line": 143
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 143,
+      "function": "_transferOwnership",
+      "mutant_id": "m000008",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(0)",
+      "start_line": 143
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 173,
+      "function": "constructor",
+      "mutant_id": "m000009",
+      "operator": "AVR",
+      "original_expression": "marketAdmin_",
+      "replacement_expression": "address(this)",
+      "start_line": 173
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 173,
+      "function": "constructor",
+      "mutant_id": "m000010",
+      "operator": "AVR",
+      "original_expression": "marketAdmin_",
+      "replacement_expression": "address(0)",
+      "start_line": 173
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "constructor",
+      "mutant_id": "m000011",
+      "operator": "AVR",
+      "original_expression": "marketAdminPauseGuardian_",
+      "replacement_expression": "address(this)",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "constructor",
+      "mutant_id": "m000012",
+      "operator": "AVR",
+      "original_expression": "marketAdminPauseGuardian_",
+      "replacement_expression": "address(0)",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 187,
+      "function": "setMarketAdmin",
+      "mutant_id": "m000013",
+      "operator": "AVR",
+      "original_expression": "newMarketAdmin",
+      "replacement_expression": "address(this)",
+      "start_line": 187
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 187,
+      "function": "setMarketAdmin",
+      "mutant_id": "m000014",
+      "operator": "AVR",
+      "original_expression": "newMarketAdmin",
+      "replacement_expression": "address(0)",
+      "start_line": 187
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 201,
+      "function": "setMarketAdminPauseGuardian",
+      "mutant_id": "m000015",
+      "operator": "AVR",
+      "original_expression": "newPauseGuardian",
+      "replacement_expression": "address(this)",
+      "start_line": 201
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 201,
+      "function": "setMarketAdminPauseGuardian",
+      "mutant_id": "m000016",
+      "operator": "AVR",
+      "original_expression": "newPauseGuardian",
+      "replacement_expression": "address(0)",
+      "start_line": 201
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "constructor",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "_checkOwner",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "_checkOwner",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "_checkOwner",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "transferOwnership",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "pauseMarketAdmin",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "pauseMarketAdmin",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "pauseMarketAdmin",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "pauseMarketAdmin",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "pauseMarketAdmin",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 232,
+      "function": "checkUpdatePermission",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 232
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 212,
+      "function": "pauseMarketAdmin",
+      "mutant_id": "m000028",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 212
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "pauseMarketAdmin",
+      "mutant_id": "m000029",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 222,
+      "function": "unpauseMarketAdmin",
+      "mutant_id": "m000030",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 222
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 223,
+      "function": "unpauseMarketAdmin",
+      "mutant_id": "m000031",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 223
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 89,
+      "function": "constructor",
+      "mutant_id": "m000032",
+      "operator": "CCD",
+      "original_expression": "constructor(address initialOwner) {\n        if (initialOwner == address(0)) {\n            revert OwnableInvalidOwner(address(0));\n        }\n        _transferOwnership(initialOwner);\n    }",
+      "replacement_expression": "",
+      "start_line": 84
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 175,
+      "function": "constructor",
+      "mutant_id": "m000033",
+      "operator": "CCD",
+      "original_expression": "constructor(address initialOwner, address marketAdmin_, address marketAdminPauseGuardian_) Ownable(initialOwner) {\n        marketAdmin = marketAdmin_;\n        marketAdminPauseGuardian = marketAdminPauseGuardian_;\n    }",
+      "replacement_expression": "",
+      "start_line": 172
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "constructor",
+      "mutant_id": "m000034",
+      "operator": "CSC",
+      "original_expression": "initialOwner == address(0)",
+      "replacement_expression": "true",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "constructor",
+      "mutant_id": "m000035",
+      "operator": "CSC",
+      "original_expression": "initialOwner == address(0)",
+      "replacement_expression": "false",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "_checkOwner",
+      "mutant_id": "m000036",
+      "operator": "CSC",
+      "original_expression": "owner() != _msgSender()",
+      "replacement_expression": "true",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "_checkOwner",
+      "mutant_id": "m000037",
+      "operator": "CSC",
+      "original_expression": "owner() != _msgSender()",
+      "replacement_expression": "false",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "transferOwnership",
+      "mutant_id": "m000038",
+      "operator": "CSC",
+      "original_expression": "newOwner == address(0)",
+      "replacement_expression": "true",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "transferOwnership",
+      "mutant_id": "m000039",
+      "operator": "CSC",
+      "original_expression": "newOwner == address(0)",
+      "replacement_expression": "false",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "pauseMarketAdmin",
+      "mutant_id": "m000040",
+      "operator": "CSC",
+      "original_expression": "msg.sender != owner() && msg.sender != marketAdminPauseGuardian",
+      "replacement_expression": "true",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "pauseMarketAdmin",
+      "mutant_id": "m000041",
+      "operator": "CSC",
+      "original_expression": "msg.sender != owner() && msg.sender != marketAdminPauseGuardian",
+      "replacement_expression": "false",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 232,
+      "function": "checkUpdatePermission",
+      "mutant_id": "m000042",
+      "operator": "CSC",
+      "original_expression": "callerAddress != marketAdmin",
+      "replacement_expression": "true",
+      "start_line": 232
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 232,
+      "function": "checkUpdatePermission",
+      "mutant_id": "m000043",
+      "operator": "CSC",
+      "original_expression": "callerAddress != marketAdmin",
+      "replacement_expression": "false",
+      "start_line": 232
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 233,
+      "function": "checkUpdatePermission",
+      "mutant_id": "m000044",
+      "operator": "CSC",
+      "original_expression": "marketAdminPaused",
+      "replacement_expression": "true",
+      "start_line": 233
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 233,
+      "function": "checkUpdatePermission",
+      "mutant_id": "m000045",
+      "operator": "CSC",
+      "original_expression": "marketAdminPaused",
+      "replacement_expression": "false",
+      "start_line": 233
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 144,
+      "function": "_transferOwnership",
+      "mutant_id": "m000046",
+      "operator": "EED",
+      "original_expression": "emit OwnershipTransferred(oldOwner, newOwner);",
+      "replacement_expression": "/* emit OwnershipTransferred(oldOwner, newOwner); */",
+      "start_line": 144
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 188,
+      "function": "setMarketAdmin",
+      "mutant_id": "m000047",
+      "operator": "EED",
+      "original_expression": "emit SetMarketAdmin(oldMarketAdmin, newMarketAdmin);",
+      "replacement_expression": "/* emit SetMarketAdmin(oldMarketAdmin, newMarketAdmin); */",
+      "start_line": 188
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 202,
+      "function": "setMarketAdminPauseGuardian",
+      "mutant_id": "m000048",
+      "operator": "EED",
+      "original_expression": "emit SetMarketAdminPauseGuardian(oldPauseGuardian, newPauseGuardian);",
+      "replacement_expression": "/* emit SetMarketAdminPauseGuardian(oldPauseGuardian, newPauseGuardian); */",
+      "start_line": 202
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "pauseMarketAdmin",
+      "mutant_id": "m000049",
+      "operator": "EED",
+      "original_expression": "emit MarketAdminPaused(msg.sender, true);",
+      "replacement_expression": "/* emit MarketAdminPaused(msg.sender, true); */",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 223,
+      "function": "unpauseMarketAdmin",
+      "mutant_id": "m000050",
+      "operator": "EED",
+      "original_expression": "emit MarketAdminPaused(msg.sender, false);",
+      "replacement_expression": "/* emit MarketAdminPaused(msg.sender, false); */",
+      "start_line": 223
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "constructor",
+      "mutant_id": "m000051",
+      "operator": "EHD",
+      "original_expression": "revert OwnableInvalidOwner(address(0));",
+      "replacement_expression": "/* revert OwnableInvalidOwner(address(0)); */",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 111,
+      "function": "_checkOwner",
+      "mutant_id": "m000052",
+      "operator": "EHD",
+      "original_expression": "revert OwnableUnauthorizedAccount(_msgSender());",
+      "replacement_expression": "/* revert OwnableUnauthorizedAccount(_msgSender()); */",
+      "start_line": 111
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 132,
+      "function": "transferOwnership",
+      "mutant_id": "m000053",
+      "operator": "EHD",
+      "original_expression": "revert OwnableInvalidOwner(address(0));",
+      "replacement_expression": "/* revert OwnableInvalidOwner(address(0)); */",
+      "start_line": 132
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "pauseMarketAdmin",
+      "mutant_id": "m000054",
+      "operator": "EHD",
+      "original_expression": "revert Unauthorized();",
+      "replacement_expression": "/* revert Unauthorized(); */",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 232,
+      "function": "checkUpdatePermission",
+      "mutant_id": "m000055",
+      "operator": "EHD",
+      "original_expression": "revert Unauthorized();",
+      "replacement_expression": "/* revert Unauthorized(); */",
+      "start_line": 232
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 233,
+      "function": "checkUpdatePermission",
+      "mutant_id": "m000056",
+      "operator": "EHD",
+      "original_expression": "revert MarketAdminIsPaused();",
+      "replacement_expression": "/* revert MarketAdminIsPaused(); */",
+      "start_line": 233
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "modifier:onlyOwner",
+      "mutant_id": "m000057",
+      "operator": "FCD",
+      "original_expression": "_checkOwner();",
+      "replacement_expression": "/*_checkOwner();*/",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "renounceOwnership",
+      "mutant_id": "m000058",
+      "operator": "FCD",
+      "original_expression": "_transferOwnership(address(0));",
+      "replacement_expression": "/*_transferOwnership(address(0));*/",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 134,
+      "function": "transferOwnership",
+      "mutant_id": "m000059",
+      "operator": "FCD",
+      "original_expression": "_transferOwnership(newOwner);",
+      "replacement_expression": "/*_transferOwnership(newOwner);*/",
+      "start_line": 134
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "constructor",
+      "mutant_id": "m000060",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "constructor",
+      "mutant_id": "m000061",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "renounceOwnership",
+      "mutant_id": "m000062",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "transferOwnership",
+      "mutant_id": "m000063",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 132,
+      "function": "transferOwnership",
+      "mutant_id": "m000064",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 132
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 122,
+      "function": "renounceOwnership",
+      "mutant_id": "m000065",
+      "operator": "MOD",
+      "original_expression": "function renounceOwnership() public virtual onlyOwner ",
+      "replacement_expression": "function renounceOwnership() public virtual  ",
+      "start_line": 122
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 130,
+      "function": "transferOwnership",
+      "mutant_id": "m000066",
+      "operator": "MOD",
+      "original_expression": "function transferOwnership(address newOwner) public virtual onlyOwner ",
+      "replacement_expression": "function transferOwnership(address newOwner) public virtual  ",
+      "start_line": 130
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 172,
+      "function": "constructor",
+      "mutant_id": "m000067",
+      "operator": "MOD",
+      "original_expression": "constructor(address initialOwner, address marketAdmin_, address marketAdminPauseGuardian_) Ownable(initialOwner) ",
+      "replacement_expression": "constructor(address initialOwner, address marketAdmin_, address marketAdminPauseGuardian_)  ",
+      "start_line": 172
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 185,
+      "function": "setMarketAdmin",
+      "mutant_id": "m000068",
+      "operator": "MOD",
+      "original_expression": "function setMarketAdmin(address newMarketAdmin) external onlyOwner ",
+      "replacement_expression": "function setMarketAdmin(address newMarketAdmin) external  ",
+      "start_line": 185
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 199,
+      "function": "setMarketAdminPauseGuardian",
+      "mutant_id": "m000069",
+      "operator": "MOD",
+      "original_expression": "function setMarketAdminPauseGuardian(address newPauseGuardian) external onlyOwner ",
+      "replacement_expression": "function setMarketAdminPauseGuardian(address newPauseGuardian) external  ",
+      "start_line": 199
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 221,
+      "function": "unpauseMarketAdmin",
+      "mutant_id": "m000070",
+      "operator": "MOD",
+      "original_expression": "function unpauseMarketAdmin() external onlyOwner ",
+      "replacement_expression": "function unpauseMarketAdmin() external  ",
+      "start_line": 221
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 47,
+      "function": "checkUpdatePermission",
+      "mutant_id": "m000071",
+      "operator": "OLFD",
+      "original_expression": "function checkUpdatePermission(address callerAddress) external view;",
+      "replacement_expression": "",
+      "start_line": 47
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 234,
+      "function": "checkUpdatePermission",
+      "mutant_id": "m000072",
+      "operator": "OLFD",
+      "original_expression": "function checkUpdatePermission(address callerAddress) external view {\n        if (callerAddress != marketAdmin) revert Unauthorized();\n        if (marketAdminPaused) revert MarketAdminIsPaused();\n    }",
+      "replacement_expression": "",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "_msgSender",
+      "mutant_id": "m000073",
+      "operator": "RSD",
+      "original_expression": "return msg.sender;",
+      "replacement_expression": "/* return msg.sender; */",
+      "start_line": 20
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 24,
+      "function": "_msgData",
+      "mutant_id": "m000074",
+      "operator": "RSD",
+      "original_expression": "return msg.data;",
+      "replacement_expression": "/* return msg.data; */",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 103,
+      "function": "owner",
+      "mutant_id": "m000075",
+      "operator": "RSD",
+      "original_expression": "return _owner;",
+      "replacement_expression": "/* return _owner; */",
+      "start_line": 103
+    }
+  ],
+  "subject_id": "compound-finance__comet__MarketAdminPermissionChecker"
+}

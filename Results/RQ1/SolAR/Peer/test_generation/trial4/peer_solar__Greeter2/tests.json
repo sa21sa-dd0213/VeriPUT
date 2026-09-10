@@ -1,0 +1,85 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "address_00021",
+      "method": "sayGoodbye",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        112
+      ],
+      "frm": "address_00023",
+      "method": "sayHello",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        186,
+        "\"Goodbye!\""
+      ],
+      "frm": "address_00401",
+      "method": "changeHello",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        2,
+        ""
+      ],
+      "frm": "address_00021",
+      "method": "changeGoodbye",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        163
+      ],
+      "frm": "address_00184",
+      "method": "sayGoodbye",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

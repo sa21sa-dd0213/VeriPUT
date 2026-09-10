@@ -1,0 +1,94 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00401",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        22744057021794576818891217510866761385716378786964185891154985938129311054986
+      ],
+      "frm": "address_00398",
+      "method": "approve",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "fun",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00398",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        10
+      ],
+      "frm": "address_00398",
+      "method": "transfer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        "address_00032",
+        94013244073507640780586205793015149058614823682855589004857675058397582037745
+      ],
+      "frm": "address_00401",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

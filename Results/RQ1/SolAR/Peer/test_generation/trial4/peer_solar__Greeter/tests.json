@@ -1,0 +1,86 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        130,
+        ""
+      ],
+      "frm": "address_00404",
+      "method": "changeGoodbye",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        2,
+        "\"\uc798\uac00!\""
+      ],
+      "frm": "address_00398",
+      "method": "changeHello",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        4
+      ],
+      "frm": "address_00032",
+      "method": "sayGoodbye",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        130,
+        ""
+      ],
+      "frm": "address_00404",
+      "method": "changeGoodbye",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        4
+      ],
+      "frm": "address_00021",
+      "method": "sayHello",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

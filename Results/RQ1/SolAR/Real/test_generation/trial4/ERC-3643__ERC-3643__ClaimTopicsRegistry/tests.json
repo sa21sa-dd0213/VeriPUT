@@ -1,0 +1,151 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        80085653909335507007897857050396592347609169522329782818872876740396583974567
+      ],
+      "frm": "address_00032",
+      "method": "addClaimTopic",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "init",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "init",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "init",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "getClaimTopics",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "init",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        50
+      ],
+      "frm": "address_00398",
+      "method": "addClaimTopic",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [
+        11783507968729575684215788467042425701728153828565164874699337096752063027457
+      ],
+      "frm": "address_00401",
+      "method": "addClaimTopic",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "getClaimTopics",
+      "n": 6,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "getClaimTopics",
+      "n": 7,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "getClaimTopics",
+      "n": 8,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "init",
+      "n": 9,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "getClaimTopics",
+      "n": 10,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "getClaimTopics",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

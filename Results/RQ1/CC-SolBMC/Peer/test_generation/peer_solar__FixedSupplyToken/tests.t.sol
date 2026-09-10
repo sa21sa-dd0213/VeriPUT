@@ -1,0 +1,80 @@
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.7.0;
+
+import "forge-std/Test.sol";
+import "../src/Target.sol";
+
+contract CCSolBMCDerived is Test {
+    FixedSupplyToken target;
+    address caller = address(0xCA11E4);
+
+    receive() external payable {}
+
+    function setUp() public {
+        
+        
+        
+        target = new FixedSupplyToken();
+    }
+
+    function test_ce_0_transfer() public {
+        
+
+        target.transfer(address(uint160(0)), 0);
+    }
+    function test_ce_1_transfer() public {
+        
+
+        target.transfer(address(uint160(0)), 39);
+    }
+    function test_ce_2_transfer() public {
+        
+
+        target.transfer(address(uint160(0)), 1);
+    }
+    function test_ce_3_transfer() public {
+        
+
+        target.transfer(address(uint160(7719)), 1);
+    }
+    function test_ce_4_transfer() public {
+        
+
+        target.transfer(address(uint160(38)), 0);
+    }
+    function test_ce_5_transferFrom() public {
+        
+
+        target.transferFrom(address(uint160(7719)), address(uint160(0)), 0);
+    }
+    function test_ce_6_transferFrom() public {
+        
+
+        target.transferFrom(address(uint160(7719)), address(uint160(0)), 39);
+    }
+    function test_ce_7_transferFrom() public {
+        
+
+        target.transferFrom(address(uint160(2437)), address(uint160(0)), 0);
+    }
+    function test_ce_8_transferFrom() public {
+        
+
+        target.transferFrom(address(uint160(2437)), address(uint160(0)), 39);
+    }
+    function test_ce_9_transferFrom() public {
+        
+
+        target.transferFrom(address(uint160(2437)), address(uint160(0)), 1);
+    }
+    function test_ce_10_transferFrom() public {
+        
+
+        target.transferFrom(address(uint160(11797)), address(uint160(7719)), 1);
+    }
+    function test_ce_11_transferFrom() public {
+        
+
+        target.transferFrom(address(uint160(8855)), address(uint160(38)), 0);
+    }
+}

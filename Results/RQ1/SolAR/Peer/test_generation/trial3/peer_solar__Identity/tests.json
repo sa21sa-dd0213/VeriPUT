@@ -1,0 +1,230 @@
+[
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        ""
+      ],
+      "frm": "address_00036",
+      "method": "getValue",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00021",
+      "method": "hasPermission",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00019",
+      "method": "isOwner",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00184",
+      "method": "removePermission",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00184",
+      "method": "removeMender",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        " hqTOWTcGcwdZvCHpevvKecOuixCiapJoeYkfdWltIAWqeRffuKQwNLFtRhKS lutxodaFTbSgUaBztLpjeCBXpvxpNMeXMbDzIOuydQUFQVCsQaQwbhKbxcWkaAZODullMMGpHVamE UxSEfzAaoDpNNEXWodfgPZWTLuNHeG",
+        16284124923440444009061473120061739403884566968489728500497492349862362435209
+      ],
+      "frm": "address_00401",
+      "method": "vote",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00021",
+      "method": "recover",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00001"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "EpFCvIAhzaYYzxgTdTIBfSebgQCxLMvhJvijPtVtxvLTtzRC"
+      ],
+      "frm": "address_00404",
+      "method": "getHighestVote",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00036",
+      "method": "addMender",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        ""
+      ],
+      "frm": "address_00036",
+      "method": "getValue",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00401",
+      "method": "addPermission",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00398",
+      "method": "isOwner",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        ""
+      ],
+      "frm": "address_00036",
+      "method": "getValue",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

@@ -1,0 +1,87 @@
+{
+  "compile_failed": 8,
+  "compile_ok": 0,
+  "mutants": [
+    {
+      "compile_status": "failed",
+      "end_line": 35,
+      "function": "constructor",
+      "mutant_id": "m000001",
+      "operator": "CCD",
+      "original_expression": "constructor(string memory version_) {\n        _setVersion(version_);\n    }",
+      "replacement_expression": "",
+      "start_line": 33
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 15,
+      "function": "version",
+      "mutant_id": "m000002",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 15
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 33,
+      "function": "constructor",
+      "mutant_id": "m000003",
+      "operator": "DLR",
+      "original_expression": "string memory version_",
+      "replacement_expression": "string storage version_",
+      "start_line": 33
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 41,
+      "function": "version",
+      "mutant_id": "m000004",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 41
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 46,
+      "function": "_setVersion",
+      "mutant_id": "m000005",
+      "operator": "DLR",
+      "original_expression": "string memory newVersion",
+      "replacement_expression": "string storage newVersion",
+      "start_line": 46
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 15,
+      "function": "version",
+      "mutant_id": "m000006",
+      "operator": "OLFD",
+      "original_expression": "function version() external view returns (string memory);",
+      "replacement_expression": "",
+      "start_line": 15
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 43,
+      "function": "version",
+      "mutant_id": "m000007",
+      "operator": "OLFD",
+      "original_expression": "function version() external view returns (string memory) {\n        return _version;\n    }",
+      "replacement_expression": "",
+      "start_line": 41
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 42,
+      "function": "version",
+      "mutant_id": "m000008",
+      "operator": "RSD",
+      "original_expression": "return _version;",
+      "replacement_expression": "/* return _version; */",
+      "start_line": 42
+    }
+  ],
+  "subject_id": "balancer__balancer-v3-monorepo__Version"
+}

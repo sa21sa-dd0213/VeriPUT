@@ -1,0 +1,39 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        "address_00404",
+        "address_00036",
+        3
+      ],
+      "frm": "address_00184",
+      "method": "transferUniswapV3MigratorProxy",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "fun",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

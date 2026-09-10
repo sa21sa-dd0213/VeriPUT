@@ -1,0 +1,568 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "debt",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        23202689223937563891661077111033385924631670600415578127363225265899388907988
+      ],
+      "frm": "address_00032",
+      "method": "isDefaulted",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        10,
+        false
+      ],
+      "frm": "address_00184",
+      "method": "setDirectRepay",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        363
+      ],
+      "frm": "address_00184",
+      "method": "isActive",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        46416952476130626111561798897680388300560936463639796781069895402432276989004
+      ],
+      "frm": "address_00184",
+      "method": "claimDefaulted",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        100
+      ],
+      "frm": "address_00401",
+      "method": "getLoan",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        10,
+        false
+      ],
+      "frm": "address_00184",
+      "method": "setDirectRepay",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        365
+      ],
+      "frm": "address_00184",
+      "method": "rescindRequest",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        10,
+        false
+      ],
+      "frm": "address_00184",
+      "method": "setDirectRepay",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        87846912932099347417056796782957467624313828156948535174722823228610642509801,
+        40,
+        59426226485103754220343155441904637882528164292389246215572196004368364004934,
+        100
+      ],
+      "frm": "address_00036",
+      "method": "requestLoan",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "collateral",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00032",
+      "method": "delegateVoting",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        365
+      ],
+      "frm": "address_00023",
+      "method": "approveTransfer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        6037363936610000000000000000000000000000000000000000000000000000
+      ],
+      "frm": "address_00023",
+      "method": "isActive",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        365,
+        85573022731292056884932774622723397105354637609304544572891540895272095416620
+      ],
+      "frm": "address_00032",
+      "method": "repayLoan",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        10,
+        false
+      ],
+      "frm": "address_00184",
+      "method": "setDirectRepay",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        61098909292457226985795476889474654734749645411021366663185354873683693667068
+      ],
+      "frm": "address_00021",
+      "method": "newCollateralFor",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "owner",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        10,
+        false
+      ],
+      "frm": "address_00184",
+      "method": "setDirectRepay",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        2
+      ],
+      "frm": "address_00032",
+      "method": "claimRepaid",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "factory",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        10,
+        false
+      ],
+      "frm": "address_00184",
+      "method": "setDirectRepay",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        15
+      ],
+      "frm": "address_00023",
+      "method": "transferOwnership",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        7514755224329681676394356520966700209417162505338681014502314408499033205962
+      ],
+      "frm": "address_00410",
+      "method": "getRequest",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        2
+      ],
+      "frm": "address_00032",
+      "method": "claimRepaid",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        14,
+        100,
+        40380545668452083354392589433698632187191795754105506830186489143049173637971
+      ],
+      "frm": "address_00404",
+      "method": "interestFor",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        26073115575537060897389338055639914113448038183547087178053958740381457209059,
+        112517257465947050635790497404036115194641038604570380413636332210033463270299
+      ],
+      "frm": "address_00021",
+      "method": "collateralFor",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "collateral",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        28,
+        true,
+        false
+      ],
+      "frm": "address_00021",
+      "method": "clearRequest",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        4,
+        false,
+        false
+      ],
+      "frm": "address_00184",
+      "method": "clearRequest",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        24166764607030094685038777603610204240982374142831854815809250335128094360749,
+        365,
+        14730554952983910921732661790592935930102153761839871677878842736503509034180,
+        9584090660445873998926962868470369384410462907212227875974039434380793334501
+      ],
+      "frm": "address_00021",
+      "method": "provideNewTermsForRoll",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        10,
+        false
+      ],
+      "frm": "address_00184",
+      "method": "setDirectRepay",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        32
+      ],
+      "frm": "address_00401",
+      "method": "rollLoan",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        365,
+        13,
+        34
+      ],
+      "frm": "address_00184",
+      "method": "interestFor",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        10,
+        false
+      ],
+      "frm": "address_00184",
+      "method": "setDirectRepay",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        10,
+        false
+      ],
+      "frm": "address_00184",
+      "method": "setDirectRepay",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        34
+      ],
+      "frm": "address_00023",
+      "method": "approveTransfer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        2
+      ],
+      "frm": "address_00032",
+      "method": "claimRepaid",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

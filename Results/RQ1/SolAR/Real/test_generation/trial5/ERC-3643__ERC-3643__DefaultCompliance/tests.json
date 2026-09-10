@@ -1,0 +1,61 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        "address_00023",
+        32
+      ],
+      "frm": "address_00184",
+      "method": "transferred",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        "address_00021",
+        73901996594270450642062211061006049980247295113672063718878583735383427127277
+      ],
+      "frm": "address_00036",
+      "method": "canTransfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        0
+      ],
+      "frm": "address_00021",
+      "method": "destroyed",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

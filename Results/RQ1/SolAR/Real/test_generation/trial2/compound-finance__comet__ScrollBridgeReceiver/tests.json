@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00036",
+      "method": "changeL2Messenger",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

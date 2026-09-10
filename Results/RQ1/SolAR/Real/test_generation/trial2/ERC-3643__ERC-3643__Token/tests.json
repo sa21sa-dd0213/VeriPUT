@@ -1,0 +1,879 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "version",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00021",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "compliance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00021",
+      "method": "balanceOf",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "paused",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        59867249781502216331260438641677977698903778986360827726369513969222831337624
+      ],
+      "frm": "address_00023",
+      "method": "unfreezePartialTokens",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        16377275935375786845768063599166496762745593868371346087931476748956614812726
+      ],
+      "frm": "address_00401",
+      "method": "increaseAllowance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        "address_00019",
+        39003710288327440846278093895175902307463014125438885830396168249543833634099
+      ],
+      "frm": "address_00019",
+      "method": "forcedTransfer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00032",
+      "method": "setOnchainID",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        115583333299860696334444580044698666723923819604907690249866021401662818146856
+      ],
+      "frm": "address_00404",
+      "method": "decreaseAllowance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "unpause",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00021",
+      "method": "balanceOf",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        68277586330255954499802729885315567170830872318819284167208761762162911309823
+      ],
+      "frm": "address_00184",
+      "method": "mint",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00021",
+      "method": "balanceOf",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "decimals",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00021",
+      "method": "balanceOf",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        "address_00019",
+        49
+      ],
+      "frm": "address_00401",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00023",
+      "method": "setCompliance",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        59867249781502216331260438641677977698903778986360827726369513969222831337624
+      ],
+      "frm": "address_00023",
+      "method": "unfreezePartialTokens",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        8
+      ],
+      "frm": "address_00036",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00021",
+      "method": "balanceOf",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00019",
+      "method": "getFrozenTokens",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        [
+          "address_00019",
+          "address_00032",
+          "address_00032",
+          "address_00401",
+          "address_00023",
+          "address_00036",
+          "address_00021"
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "frm": "address_00184",
+      "method": "batchSetAddressFrozen",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        32
+      ],
+      "frm": "address_00036",
+      "method": "unfreezePartialTokens",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "identityRegistry",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "version",
+      "n": 5,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        256
+      ],
+      "frm": "address_00021",
+      "method": "freezePartialTokens",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        68277586330255954499802729885315567170830872318819284167208761762162911309823
+      ],
+      "frm": "address_00184",
+      "method": "mint",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "version",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "name",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "\"ERC20: burn from the zero address\""
+      ],
+      "frm": "address_00184",
+      "method": "setSymbol",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        "address_00019",
+        39003710288327440846278093895175902307463014125438885830396168249543833634097
+      ],
+      "frm": "address_00019",
+      "method": "forcedTransfer",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        ""
+      ],
+      "frm": "address_00021",
+      "method": "setName",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        20
+      ],
+      "frm": "address_00184",
+      "method": "increaseAllowance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00401",
+      "method": "setIdentityRegistry",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        true
+      ],
+      "frm": "address_00404",
+      "method": "setAddressFrozen",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        49
+      ],
+      "frm": "address_00401",
+      "method": "decreaseAllowance",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00021",
+      "method": "balanceOf",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "\"ERC20: burn from  thel zero address\""
+      ],
+      "frm": "address_00184",
+      "method": "setSymbol",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "onchainID",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        "address_00032",
+        "viFTLmdFlAGleMTHtdBGlYqjILZgFOQAoIjAwVlaBWWEnbfZBEkENHxnyWUYJtqIyE DhEiKifAnxip MCtAy",
+        "cpcXZLBKSsrgHgKnMWHtbIEHIIQyQEiFVYRPsOgVJxAxZN xWpSwsveQArXueqNHABoZmJiFTnATeFyraybpwYjccEvCgCfBLeBvDYIJOsDDYBqKXUJEOTTXaZBgJzRcumX QNqQsFpvrWyVdKmzkaXdKP",
+        148,
+        "address_00398"
+      ],
+      "frm": "address_00184",
+      "method": "init",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        17
+      ],
+      "frm": "address_00036",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        "address_00032",
+        "viFTLmdFlAGleMTHtdBGlYqjILZgFOQAoIjAwVlaBWWEnbfZBEkENHxnyWUYJtqIyE DhEiKifAnxip MCtAy",
+        "cpcXZLBKSsrgHgKnMWHtbIEHIIQyQEiFVYRPsOgVJxAxZN xWpSwsveQArXueqNHABoZmJiFTnATeFyraybpwYjccEvCgCfBLeBvDYIJOsDDYBqKXUJEOTTXaZBgJzRcumX QNqQsFpvrWyVdKmzkaXdKP",
+        148,
+        "address_00398"
+      ],
+      "frm": "address_00184",
+      "method": "init",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00023",
+      "method": "setCompliance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        105315029985419269685528246693168958559291827187702870627971278166543604989386
+      ],
+      "frm": "address_00184",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00398",
+      "method": "isFrozen",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        "address_00021"
+      ],
+      "frm": "address_00023",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        [
+          "address_00184",
+          "address_00404",
+          "address_00410",
+          "address_00401",
+          "address_00401"
+        ],
+        [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false,
+          true
+        ]
+      ],
+      "frm": "address_00401",
+      "method": "batchSetAddressFrozen",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00021",
+      "method": "balanceOf",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        20
+      ],
+      "frm": "address_00404",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00032",
+      "method": "setOnchainID",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        47520627477972192507347646347022897235181090147440400256641689204859136561038
+      ],
+      "frm": "address_00036",
+      "method": "decreaseAllowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        "address_00019",
+        39003710288327440846278093895175902307463014125438885830396168249543833634099
+      ],
+      "frm": "address_00019",
+      "method": "forcedTransfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "symbol",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        "address_00404",
+        "address_00019"
+      ],
+      "frm": "address_00398",
+      "method": "recoveryAddress",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "YkNDZmGEzuPwzfBpwblDadGBnwgiDIfjSeEMI"
+      ],
+      "frm": "address_00184",
+      "method": "setSymbol",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "pause",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        68277586330255954499802729885315567170830872318819284167208761762162911309814
+      ],
+      "frm": "address_00184",
+      "method": "mint",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "version",
+      "n": 4,
+      "value": 0
+    }
+  ]
+]

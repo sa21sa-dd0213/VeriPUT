@@ -1,0 +1,278 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00401",
+      "method": "getChannels",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_001965564764870446759667a2065"
+      ],
+      "frm": "address_00398",
+      "method": "getConduit",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00021",
+      "method": "getPotentialOwner",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00401",
+      "method": "getKey",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00023",
+      "method": "cancelOwnershipTransfer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_001965564764870446759667a2065"
+      ],
+      "frm": "address_00398",
+      "method": "getConduit",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00350525a4a416a49634c56426561",
+        "address_00023"
+      ],
+      "frm": "address_00401",
+      "method": "createConduit",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_001965564764870446759667a2065"
+      ],
+      "frm": "address_00398",
+      "method": "getConduit",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        "address_00032"
+      ],
+      "frm": "address_00410",
+      "method": "transferOwnership",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_001965564764870446759667a2065"
+      ],
+      "frm": "address_00398",
+      "method": "getConduit",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00032",
+      "method": "ownerOf",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_001965564764870446759667a2065"
+      ],
+      "frm": "address_00398",
+      "method": "getConduit",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        4
+      ],
+      "frm": "address_00021",
+      "method": "getChannel",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00023",
+      "method": "acceptOwnership",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00036",
+      "method": "getTotalChannels",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_001975541764870446759667a2065"
+      ],
+      "frm": "address_00398",
+      "method": "getConduit",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        "address_00023"
+      ],
+      "frm": "address_00023",
+      "method": "getChannelStatus",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        "address_00410",
+        true
+      ],
+      "frm": "address_00021",
+      "method": "updateChannel",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

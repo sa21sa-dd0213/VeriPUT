@@ -1,0 +1,4 @@
+Compiling `src/flat.sol`... Done! (0.603597415s)
+Analyzing contract: <workspace>
+
+echidna: ABI is empty, are you sure your constructor is right?

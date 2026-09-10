@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.471610116s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.405359674s)
+
+echidna: Constructor arguments are required: [("ezETHRateProvider",address),("decimals_",uint8),("description_",string)]

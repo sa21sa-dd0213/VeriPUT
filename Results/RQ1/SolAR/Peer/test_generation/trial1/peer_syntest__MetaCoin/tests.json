@@ -1,0 +1,21 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        1
+      ],
+      "frm": "address_00032",
+      "method": "sendCoin",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

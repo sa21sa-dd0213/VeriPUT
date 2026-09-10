@@ -1,0 +1,238 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        63,
+        81926842858332292995358351227387871083987251121940526950304034102720883570683
+      ],
+      "frm": "address_00032",
+      "method": "move_into_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1
+      ],
+      "frm": "address_00184",
+      "method": "withdraw_from_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00398",
+      "method": "revoke_issuer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00398",
+      "method": "set_controller",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        62732347733807999213803877299784069430160463642690179294607766764386101940433,
+        "address_00001000000000000000000000000"
+      ],
+      "frm": "address_00398",
+      "method": "stake_tokens",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        0,
+        1
+      ],
+      "frm": "address_00032",
+      "method": "issue_into_tranche",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398",
+        92,
+        115707202853336400023558865175880667413521061212117415646480525016448560147655
+      ],
+      "frm": "address_00184",
+      "method": "move_into_tranche",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "address_00398",
+      "method": "remove_stake",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        107
+      ],
+      "frm": "address_00036",
+      "method": "get_tranche_balance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        32
+      ],
+      "frm": "address_00401",
+      "method": "get_vested_for_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        1
+      ],
+      "frm": "address_00036",
+      "method": "permit_issuer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00404",
+      "method": "user_total_all_tranches",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        249,
+        25720262500591148485874864488958332633826720743621935875867500610238442324154
+      ],
+      "frm": "address_00184",
+      "method": "create_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

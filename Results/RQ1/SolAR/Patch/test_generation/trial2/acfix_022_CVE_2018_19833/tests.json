@@ -1,0 +1,152 @@
+[
+  [
+    {
+      "args": [
+        88313918509848543529791064463782442229445926606012993055741971158207957598142,
+        "bjPHuURXvmEeVrdozCzrTdaJgszIAPhrhkkJhPMhXbl oLedsQMXk",
+        "bzsayhdwdjsIaGsEXwKNofmnFXoVnKyDXsXDPDJPtgrVclSrYjErFwxGfcRtoiRlGcqOTKrABYwozvkZDPXRBDf UPSuGNQLDnXaaLiYTfZKtwdQOtruJprKJaauGUBACxBHQp VhBNVCVXLVKRWoNIRMFZFpieDxY"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        0
+      ],
+      "frm": "address_00019",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        77108231785132639861783698875481508288941319553161149850440791666806887486578,
+        "sZkZuoceqoEkxzutoQdBFzZpekkOYPahFdneKZICwvZXtmgwnjcGIpXJcJFSN jBtXr",
+        "kPiJMHYYczAjMeAnluyIBmDZWQ QtcdHeRRSTOAAYJontTNXgV dGNmkWUwdqNwYToAseafrZdUtlASnaYpqVIYKJobwvJkGlxxfgvDShGgdsIwCqURAHDQRoTvGgqUHaxkIlIwWvkWSHBlBbyppPP INeExGeFUzUBehTuVaPbrvQlqAJdBayyGeXpNaRYPpkjlTmTQTXIcbVWOlckutHUgxSEtCstRIW"
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        false
+      ],
+      "frm": "address_00019",
+      "method": "freezeAccount",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        88313918509848543529791064463782442229445926606012993055741971158207957598142,
+        "bjPHuURXvmEeVrdozCzrTdaJgszIAPhrhkkJhPMhXbl oLedsQMXk",
+        "bzsayhdwdjsIaGsEXwKNofmnFXoVnKyDXsXDPDJPtgrVclSrYjErFwxGfcRtoiRlGcqOTKrABYwozvkZDPXRBDf UPSuGNQLDnXaaLiYTfZKtwdQOtruJprKJaauGUBACxBHQp VhBNVCVXLVKRWoNIRMFZFpieDxY"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398",
+        12574607628755596996422390731456072584870032026115540070413016439861116906851
+      ],
+      "frm": "address_00019",
+      "method": "mintToken",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "owned",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        76634436384750128179849781279824456086880330720350592060891210693560538902825
+      ],
+      "frm": "address_00410",
+      "method": "burn",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        10,
+        "YbrytMoKprqXqclqwzeCCHUaeG",
+        "NusVzaXQXuOduxjfLe TdYKYwejDKRgBkNuKCFtcQLXXeQJBQLqQkezJHAomLRFoDshcyTISkYueDkJOzGbdSvnarUXfQnpJrnC  IEKgYQGDgjYorLJlBdizSavVVVANtBhmNsXEz iFlOy Q jxvQvlifY"
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "owned",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        2,
+        "NHuWXSHnnyJHPMMfRt pbUTQIW",
+        "NusVzaXQXuOduxjfLe TdYKYwejDKRgBkNuKCFtcQLXXeQJBQLqQkezJHAomLRFoDshcyTISkYueDkJOzGbdSvnarUXfQnpJrnC  IEKgYQGDgjYorLJlBdizSavVVVANtBhmNsXEz iFlOy Q jxvQvlifY"
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398",
+        69407736148300971928519661776928736841927580560206404983504719901120252755992
+      ],
+      "frm": "address_00036",
+      "method": "mintToken",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        88313918509848543529791064463782442229445926606012993055741971158207957598142,
+        "bjPHuURXvmEeVrdozCzrTdaJgszIAPhrhkkJhPMhXbl oLedsQMXk",
+        "bzsayhdwdjsIaGsEXwKNofmnFXoVnKyDXsXDPDJPtgrVclSrYjErFwxGfcRtoiRlGcqOTKrABYwozvkZDPXRBDf UPSuGNQLDnXaaLiYTfZKtwdQOtruJprKJaauGUBACxBHQp VhBNVCVXLVKRWoNIRMFZFpieDxY"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        76634436384750128179849781279824456086880330720350592060891210693560538902825
+      ],
+      "frm": "address_00410",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

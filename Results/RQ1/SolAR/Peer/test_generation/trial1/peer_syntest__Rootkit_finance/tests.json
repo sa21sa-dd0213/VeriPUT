@@ -1,0 +1,113 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00401",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 136194332857011268
+    },
+    {
+      "args": [
+        "address_00021",
+        "address_00401"
+      ],
+      "frm": "address_00404",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 44077698119949747
+    },
+    {
+      "args": [
+        "address_00398",
+        0
+      ],
+      "frm": "address_00410",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 136194332857011268
+    },
+    {
+      "args": [
+        "address_00023",
+        74249446296009833171043228354862495817710200154549326384555422907149443249193
+      ],
+      "frm": "address_00404",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 136194332857011268
+    },
+    {
+      "args": [
+        "address_00032",
+        "address_00184",
+        100761593133036232082435776247526383829354717613163159136641657221812199758030
+      ],
+      "frm": "address_00398",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 44077698119949747
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

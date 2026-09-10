@@ -1,0 +1,140 @@
+[
+  [
+    {
+      "args": [
+        0,
+        "WjRMHJQOyFBxYkeeXBsblikFijeOadJThqWNKuTFbqzNxsXwWWJYJqJeodN KAEasWYTzcrclfEJZTGwEgrjqKNjCaPLcjtVtlwiwweKRcliVOmUHTYweCZ",
+        "UhoHBOLVO PCuiGKjz"
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "address_00023",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "KCga bAQEo bLPxiizHTUSPWnnoztSH VIxCKnpyIXltVVvVPLplQ rCleLrpWMQxXgBzktfVzDCtjHGbHbQvVoqNBfoBjVT",
+        "wUGObVZDaisCXSKCLKaJbCYjTljyHDvHYzWPNKaqHRRguLMrgBCSKcwpaezzRgPuMDkVAeCwkzucmUAUxmCamDjpnlT ZWATbbKASxuicShCFOZQCGU FqGtGWgfZKWhgoKZpoN ByJKDwKLknihxSFQyDqzxePYIGLLFoedSJegJWALezdjNHYsDvwuGxnFwiJEtWboDTlqXgVaxgjOXCwXXGnutPMyKfIRRELRiCjfjjMsDAl"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        10
+      ],
+      "frm": "address_00401",
+      "method": "mintToken",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "owned",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "KCga bAQEo bLPxiizHTUSPWnnoztSH VIxCKnpyIXltVVvVPLplQ rCleLrpWMQxXgBzktfVzDCtjHGbHbQvVoqNBfoBjVT",
+        "wUGObVZDaisCXSKCLKaJbCYjTljyHDvHYzWPNKaqHRRguLMrgBCSKcwpaezzRgPuMDkVAeCwkzucmUAUxmCamDjpnlT ZWATbbKASxuicShCFOZQCGU FqGtGWgfZKWhgoKZpoN ByJKDwKLknihxSFQyDqzxePYIGLLFoedSJegJWALezdjNHYsDvwuGxnFwiJEtWboDTlqXgVaxgjOXCwXXGnutPMyKfIRRELRiCjfjjMsDAl"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "owned",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "ywatIhXfPXfRGxAJFVsZyDpbEfcOePq xWgWPUxmAEAlvptAFhvBmcGrqtmGAZTJyOdRIVVVOmclFdRwLtLE ihhgAyGff",
+        "CbxpjZWb fQlKEoDxfyArLrcrHZIkLffgDyoQkSZVPEqMOAhjcFFmcOm zDRuzRM gbGZKBjifMJTYxSaRqhttGIpkzgzmnMLxxYTbYvutqt UZwpMNdkymZhCLFJsXskNhFwOiYqiWNYOHUZJsvnVlaLuNO NvhHhyaAIoDuYSpWlItDXqGIelxsYZpXPAztWLqElxqzYb"
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "owned",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "KCga bAQEo bLPxiizHTUSPWnnoztSH VIxCKnpyIXltVVvVPLplQ rCleLrpWMQxXgBzktfVzDCtjHGbHbQvVoqNBfoBjVT",
+        "wUGObVZDaisCXSKCLKaJbCYjTljyHDvHYzWPNKaqHRRguLMrgBCSKcwpaezzRgPuMDkVAeCwkzucmUAUxmCamDjpnlT ZWATbbKASxuicShCFOZQCGU FqGtGWgfZKWhgoKZpoN ByJKDwKLknihxSFQyDqzxePYIGLLFoedSJegJWALezdjNHYsDvwuGxnFwiJEtWboDTlqXgVaxgjOXCwXXGnutPMyKfIRRELRiCjfjjMsDAl"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        false
+      ],
+      "frm": "address_00401",
+      "method": "freezeAccount",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "WjRMHJQOyFBxYkeeXBsblikFijeOadJThqWNKuTFbqzNxsXwWWJYJqJeodN KAEasWYTzcrclfEJZTGwEgrjqKNjCaPLcjtVtlwiwweKRcliVOmUHTYweCZ",
+        "UhoHBOLVO PCuiGKjz"
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        89772209935769813345788419732865875376026673420367787317738164169646267080506
+      ],
+      "frm": "address_00398",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

@@ -1,0 +1,113 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        "address_00019",
+        82975737496373525398211338987872408620209870633090313726909349381966440556797
+      ],
+      "frm": "address_00036",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 19840019391992192
+    },
+    {
+      "args": [
+        "address_00398",
+        105105242725651001007907974761420200490674377385061561352129469149213703023034
+      ],
+      "frm": "address_00019",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        "address_00019"
+      ],
+      "frm": "address_00021",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 64711442763834081
+    },
+    {
+      "args": [
+        "address_00036",
+        255
+      ],
+      "frm": "address_00184",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 64711442763834081
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00410",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.913135716s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.689567179s)
+
+echidna: Constructor arguments are required: [("dao",address)]

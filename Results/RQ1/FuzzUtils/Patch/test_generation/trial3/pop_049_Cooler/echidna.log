@@ -1,0 +1,121 @@
+Compiling `src/flat.sol`... Done! (1.025022916s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (1.059005868s)
+Loaded 0 transaction sequences from corpus/reproducers
+Loaded 0 transaction sequences from corpus/coverage
+[Worker 0] New coverage: 1323 instr, 1 contracts, 1 seqs in corpus
+Saved reproducer to corpus/coverage/5657457994802835188.txt
+[Worker 0] New coverage: 1326 instr, 1 contracts, 2 seqs in corpus
+Saved reproducer to corpus/coverage/5550784705898004074.txt
+[Worker 0] New coverage: 1356 instr, 1 contracts, 3 seqs in corpus
+Saved reproducer to corpus/coverage/7296674510675880972.txt
+[Worker 0] New coverage: 1474 instr, 1 contracts, 4 seqs in corpus
+Saved reproducer to corpus/coverage/5436996957028895366.txt
+[Worker 0] New coverage: 1503 instr, 1 contracts, 5 seqs in corpus
+Saved reproducer to corpus/coverage/8069634102258194966.txt
+[Worker 0] New coverage: 1544 instr, 1 contracts, 6 seqs in corpus
+Saved reproducer to corpus/coverage/4136443043680195105.txt
+[Worker 0] New coverage: 1595 instr, 1 contracts, 7 seqs in corpus
+Saved reproducer to corpus/coverage/4733595671810376655.txt
+[Worker 0] New coverage: 1625 instr, 1 contracts, 8 seqs in corpus
+Saved reproducer to corpus/coverage/1574655070700775394.txt
+[Worker 0] New coverage: 1689 instr, 1 contracts, 9 seqs in corpus
+Saved reproducer to corpus/coverage/2702385616620159245.txt
+[status] tests: 0/27, fuzzing: 6941/100000000, values: [], cov: 1689, corpus: 9, gas/s: 78859747
+[status] tests: 0/27, fuzzing: 14059/100000000, values: [], cov: 1689, corpus: 9, gas/s: 83746851
+[Worker 0] New coverage: 1759 instr, 1 contracts, 10 seqs in corpus
+Saved reproducer to corpus/coverage/8843196038910137330.txt
+[Worker 0] New coverage: 1790 instr, 1 contracts, 11 seqs in corpus
+Saved reproducer to corpus/coverage/7234978204564489132.txt
+[status] tests: 0/27, fuzzing: 21160/100000000, values: [], cov: 1790, corpus: 11, gas/s: 84178021
+[Worker 0] New coverage: 1851 instr, 1 contracts, 12 seqs in corpus
+Saved reproducer to corpus/coverage/8912006386348481149.txt
+[status] tests: 0/27, fuzzing: 28292/100000000, values: [], cov: 1851, corpus: 12, gas/s: 83622183
+[Worker 0] New coverage: 1983 instr, 1 contracts, 13 seqs in corpus
+Saved reproducer to corpus/coverage/9037231256043638329.txt
+[status] tests: 0/27, fuzzing: 34974/100000000, values: [], cov: 1983, corpus: 13, gas/s: 78020098
+[status] tests: 0/27, fuzzing: 41469/100000000, values: [], cov: 1983, corpus: 13, gas/s: 78197075
+[status] tests: 0/27, fuzzing: 47952/100000000, values: [], cov: 1983, corpus: 13, gas/s: 77490377
+[Worker 0] New coverage: 2000 instr, 1 contracts, 14 seqs in corpus
+Saved reproducer to corpus/coverage/8155849445476532505.txt
+[status] tests: 0/27, fuzzing: 54344/100000000, values: [], cov: 2000, corpus: 14, gas/s: 73344739
+[status] tests: 0/27, fuzzing: 61027/100000000, values: [], cov: 2000, corpus: 14, gas/s: 78433228
+[Worker 0] New coverage: 2034 instr, 1 contracts, 15 seqs in corpus
+Saved reproducer to corpus/coverage/5431210255606218218.txt
+[status] tests: 0/27, fuzzing: 67839/100000000, values: [], cov: 2034, corpus: 15, gas/s: 122387110
+[status] tests: 0/27, fuzzing: 74697/100000000, values: [], cov: 2034, corpus: 15, gas/s: 80655313
+[status] tests: 0/27, fuzzing: 81585/100000000, values: [], cov: 2034, corpus: 15, gas/s: 81607317
+[status] tests: 0/27, fuzzing: 88502/100000000, values: [], cov: 2034, corpus: 15, gas/s: 81083401
+[status] tests: 0/27, fuzzing: 94924/100000000, values: [], cov: 2034, corpus: 15, gas/s: 73751426
+[status] tests: 0/27, fuzzing: 101799/100000000, values: [], cov: 2034, corpus: 15, gas/s: 80604137
+[status] tests: 0/27, fuzzing: 109034/100000000, values: [], cov: 2034, corpus: 15, gas/s: 85172122
+[status] tests: 0/27, fuzzing: 115536/100000000, values: [], cov: 2034, corpus: 15, gas/s: 76367996
+[status] tests: 0/27, fuzzing: 122615/100000000, values: [], cov: 2034, corpus: 15, gas/s: 84472706
+[status] tests: 0/27, fuzzing: 129418/100000000, values: [], cov: 2034, corpus: 15, gas/s: 78987199
+[Worker 0] New coverage: 2126 instr, 1 contracts, 16 seqs in corpus
+Saved reproducer to corpus/coverage/1494051726730093731.txt
+[status] tests: 0/27, fuzzing: 136351/100000000, values: [], cov: 2126, corpus: 16, gas/s: 80154402
+[status] tests: 0/27, fuzzing: 143619/100000000, values: [], cov: 2126, corpus: 16, gas/s: 124411601
+[status] tests: 0/27, fuzzing: 150649/100000000, values: [], cov: 2126, corpus: 16, gas/s: 79816587
+[status] tests: 0/27, fuzzing: 157528/100000000, values: [], cov: 2126, corpus: 16, gas/s: 79461549
+[status] tests: 0/27, fuzzing: 164409/100000000, values: [], cov: 2126, corpus: 16, gas/s: 79364824
+[status] tests: 0/27, fuzzing: 171116/100000000, values: [], cov: 2126, corpus: 16, gas/s: 76656134
+[status] tests: 0/27, fuzzing: 177598/100000000, values: [], cov: 2126, corpus: 16, gas/s: 75360782
+[status] tests: 0/27, fuzzing: 184577/100000000, values: [], cov: 2126, corpus: 16, gas/s: 80409581
+[status] tests: 0/27, fuzzing: 191828/100000000, values: [], cov: 2126, corpus: 16, gas/s: 83445383
+[status] tests: 0/27, fuzzing: 198854/100000000, values: [], cov: 2126, corpus: 16, gas/s: 80887765
+[status] tests: 0/27, fuzzing: 205386/100000000, values: [], cov: 2126, corpus: 16, gas/s: 74655490
+[status] tests: 0/27, fuzzing: 212751/100000000, values: [], cov: 2126, corpus: 16, gas/s: 85511735
+[status] tests: 0/27, fuzzing: 219505/100000000, values: [], cov: 2126, corpus: 16, gas/s: 118137850
+[status] tests: 0/27, fuzzing: 226378/100000000, values: [], cov: 2126, corpus: 16, gas/s: 80948003
+[status] tests: 0/27, fuzzing: 233556/100000000, values: [], cov: 2126, corpus: 16, gas/s: 82339627
+[status] tests: 0/27, fuzzing: 240872/100000000, values: [], cov: 2126, corpus: 16, gas/s: 85156128
+[status] tests: 0/27, fuzzing: 247439/100000000, values: [], cov: 2126, corpus: 16, gas/s: 74852229
+[Worker 0] Crashed:
+
+Internal Error: unimplemented precompiled contract address_00003 -- CallStack (from HasCallStack):
+  internalError, called at src/EVM.hs:2925:10 in hevm-0.57.0-BrlEaXZTAyMON9Utv9KwA:EVM
+CallStack (from HasCallStack):
+  error, called at src/EVM/Types.hs:1539:19 in hevm-0.57.0-BrlEaXZTAyMON9Utv9KwA:EVM.Types
+  internalError, called at src/EVM.hs:2925:10 in hevm-0.57.0-BrlEaXZTAyMON9Utv9KwA:EVM
+
+Please report it to https://github.com/crytic/echidna/issues
+[status] tests: 0/27, fuzzing: 248163/100000000, values: [], cov: 2126, corpus: 16, gas/s: 0
+debt(): passing
+rescindRequest(uint256): passing
+isDefaulted(uint256): passing
+getLoan(uint256): passing
+claimDefaulted(uint256): passing
+approvals(uint256): passing
+requestLoan(uint256,uint256,uint256,uint256): passing
+delegateVoting(address): passing
+requests(uint256): passing
+isActive(uint256): passing
+repayLoan(uint256,uint256): passing
+owner(): passing
+newCollateralFor(uint256): passing
+collateralFor(uint256,uint256): passing
+interestFor(uint256,uint256,uint256): passing
+claimRepaid(uint256): passing
+factory(): passing
+getRequest(uint256): passing
+transferOwnership(uint256): passing
+collateral(): passing
+provideNewTermsForRoll(uint256,uint256,uint256,uint256): passing
+clearRequest(uint256,bool,bool): passing
+loans(uint256): passing
+rollLoan(uint256): passing
+setDirectRepay(uint256,bool): passing
+approveTransfer(address,uint256): passing
+AssertionFailed(..): passing
+
+Unique instructions: 2126
+Unique codehashes: 1
+Corpus size: 16
+Seed: 5097562297148535020
+Total calls: 248163
+
+Saving test reproducers... Done! (0.000001629s)
+Saving corpus... Done! (0.001111671s)
+Saving foundry reproducers... Done! (0.000541408s)
+Saving coverage... Done! (0.085874546s)

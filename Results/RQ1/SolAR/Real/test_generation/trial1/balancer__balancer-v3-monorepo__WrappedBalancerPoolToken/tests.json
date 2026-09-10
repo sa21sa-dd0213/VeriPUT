@@ -1,0 +1,72 @@
+[
+  [
+    {
+      "args": [
+        "address_00404",
+        "address_00032",
+        "FyQJBbEttuNQqeYkNVbFFJRcqTNUOsIUTVvLefUUekWL",
+        "\"Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)\""
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        487
+      ],
+      "frm": "address_00036",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "address_00032",
+        "\"19_01\"",
+        "\"f\""
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        108951598382011922273915077837496364034934010211468655233860117968729464741387
+      ],
+      "frm": "address_00032",
+      "method": "burnFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "address_00023",
+        "FyQJBbEttuNQqeYkNVbFFJRcqTNUOsIUTVvLefUUekWL",
+        "\"Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)\""
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        84513688721276281681794037762223129267703447259387290965032364044205261358016
+      ],
+      "frm": "address_00184",
+      "method": "mint",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

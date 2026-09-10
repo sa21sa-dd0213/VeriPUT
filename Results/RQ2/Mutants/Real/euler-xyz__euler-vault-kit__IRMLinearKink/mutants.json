@@ -1,0 +1,397 @@
+{
+  "compile_failed": 4,
+  "compile_ok": 35,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 84,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000001",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 84
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000002",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000003",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "computeInterestRate",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 75,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 75
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 75,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 75
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 79,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 79,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 79,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 79,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 83,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 83
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 83,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 83
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 83,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 83
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 84,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 84
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 84,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 84
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 90,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 90
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 90,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 90
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "constructor",
+      "mutant_id": "m000023",
+      "operator": "CCD",
+      "original_expression": "constructor(uint256 baseRate_, uint256 slope1_, uint256 slope2_, uint32 kink_) {\n        baseRate = baseRate_;\n        slope1 = slope1_;\n        slope2 = slope2_;\n        kink = kink_;\n    }",
+      "replacement_expression": "",
+      "start_line": 45
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "computeInterestRate",
+      "mutant_id": "m000024",
+      "operator": "CSC",
+      "original_expression": "msg.sender != vault",
+      "replacement_expression": "true",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "computeInterestRate",
+      "mutant_id": "m000025",
+      "operator": "CSC",
+      "original_expression": "msg.sender != vault",
+      "replacement_expression": "false",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 83,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000026",
+      "operator": "CSC",
+      "original_expression": "utilization <= kink",
+      "replacement_expression": "true",
+      "start_line": 83
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 83,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000027",
+      "operator": "CSC",
+      "original_expression": "utilization <= kink",
+      "replacement_expression": "false",
+      "start_line": 83
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 93,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000028",
+      "operator": "CSC",
+      "original_expression": "else {\n            ir += kink * slope1;\n\n            uint256 utilizationOverKink;\n            unchecked {\n                utilizationOverKink = utilization - kink;\n            }\n            ir += slope2 * utilizationOverKink;\n        }",
+      "replacement_expression": "",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 79,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000029",
+      "operator": "ECS",
+      "original_expression": "uint32(borrows * type(uint32).max / totalAssets)",
+      "replacement_expression": "uint24(borrows * type(uint32).max / totalAssets)",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "computeInterestRate",
+      "mutant_id": "m000030",
+      "operator": "EHD",
+      "original_expression": "revert E_IRMUpdateUnauthorized();",
+      "replacement_expression": "/* revert E_IRMUpdateUnauthorized(); */",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000031",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 78,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000032",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 78
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 18,
+      "function": "computeInterestRate",
+      "mutant_id": "m000033",
+      "operator": "OLFD",
+      "original_expression": "function computeInterestRate(address vault, uint256 cash, uint256 borrows) external returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 18
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 25,
+      "function": "computeInterestRateView",
+      "mutant_id": "m000034",
+      "operator": "OLFD",
+      "original_expression": "function computeInterestRateView(address vault, uint256 cash, uint256 borrows) external view returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 25
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 62,
+      "function": "computeInterestRate",
+      "mutant_id": "m000035",
+      "operator": "ORFD",
+      "original_expression": "function computeInterestRate(address vault, uint256 cash, uint256 borrows)\n        external\n        view\n        override\n        returns (uint256)\n    {\n        if (msg.sender != vault) revert E_IRMUpdateUnauthorized();\n\n        return computeInterestRateInternal(vault, cash, borrows);\n    }",
+      "replacement_expression": "",
+      "start_line": 53
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 72,
+      "function": "computeInterestRateView",
+      "mutant_id": "m000036",
+      "operator": "ORFD",
+      "original_expression": "function computeInterestRateView(address vault, uint256 cash, uint256 borrows)\n        external\n        view\n        override\n        returns (uint256)\n    {\n        return computeInterestRateInternal(vault, cash, borrows);\n    }",
+      "replacement_expression": "",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 61,
+      "function": "computeInterestRate",
+      "mutant_id": "m000037",
+      "operator": "RSD",
+      "original_expression": "return computeInterestRateInternal(vault, cash, borrows);",
+      "replacement_expression": "computeInterestRateInternal(vault, cash, borrows);",
+      "start_line": 61
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 71,
+      "function": "computeInterestRateView",
+      "mutant_id": "m000038",
+      "operator": "RSD",
+      "original_expression": "return computeInterestRateInternal(vault, cash, borrows);",
+      "replacement_expression": "computeInterestRateInternal(vault, cash, borrows);",
+      "start_line": 71
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "computeInterestRateInternal",
+      "mutant_id": "m000039",
+      "operator": "RSD",
+      "original_expression": "return ir;",
+      "replacement_expression": "/* return ir; */",
+      "start_line": 95
+    }
+  ],
+  "subject_id": "euler-xyz__euler-vault-kit__IRMLinearKink"
+}

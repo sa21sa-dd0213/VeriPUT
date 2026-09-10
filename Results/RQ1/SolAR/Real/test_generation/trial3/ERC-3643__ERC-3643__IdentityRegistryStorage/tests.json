@@ -1,0 +1,449 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00036",
+      "method": "removeIdentityFromStorage",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "init",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "init",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "init",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        "address_00019"
+      ],
+      "frm": "address_00023",
+      "method": "modifyStoredIdentity",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        "address_00410"
+      ],
+      "frm": "address_00410",
+      "method": "modifyStoredIdentity",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        1
+      ],
+      "frm": "address_00398",
+      "method": "modifyStoredInvestorCountry",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "linkedIdentityRegistries",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        "address_00021",
+        30509
+      ],
+      "frm": "address_00404",
+      "method": "addIdentityToStorage",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "init",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        "address_00184"
+      ],
+      "frm": "address_00032",
+      "method": "modifyStoredIdentity",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "init",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00036",
+      "method": "unbindIdentityRegistry",
+      "n": 6,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00021",
+      "method": "storedInvestorCountry",
+      "n": 7,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00401",
+      "method": "bindIdentityRegistry",
+      "n": 8,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398",
+        "address_00023",
+        48647
+      ],
+      "frm": "address_00404",
+      "method": "addIdentityToStorage",
+      "n": 9,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00404",
+      "method": "removeIdentityFromStorage",
+      "n": 10,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00036",
+      "method": "storedIdentity",
+      "n": 11,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00021",
+      "method": "bindIdentityRegistry",
+      "n": 12,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398",
+        "address_00023"
+      ],
+      "frm": "address_00023",
+      "method": "modifyStoredIdentity",
+      "n": 13,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        "address_00410",
+        17
+      ],
+      "frm": "address_00398",
+      "method": "addIdentityToStorage",
+      "n": 14,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00184",
+      "method": "storedIdentity",
+      "n": 15,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        "address_00410"
+      ],
+      "frm": "address_00023",
+      "method": "modifyStoredIdentity",
+      "n": 16,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00401",
+      "method": "storedInvestorCountry",
+      "n": 17,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        "address_00401"
+      ],
+      "frm": "address_00021",
+      "method": "modifyStoredIdentity",
+      "n": 18,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "linkedIdentityRegistries",
+      "n": 19,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "linkedIdentityRegistries",
+      "n": 20,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00401",
+      "method": "storedInvestorCountry",
+      "n": 21,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "init",
+      "n": 22,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        "address_00021"
+      ],
+      "frm": "address_00019",
+      "method": "modifyStoredIdentity",
+      "n": 23,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        "address_00401"
+      ],
+      "frm": "address_00184",
+      "method": "modifyStoredIdentity",
+      "n": 24,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        "address_00410",
+        735
+      ],
+      "frm": "address_00184",
+      "method": "addIdentityToStorage",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00032",
+      "method": "unbindIdentityRegistry",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00036",
+      "method": "removeIdentityFromStorage",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00021",
+      "method": "storedIdentity",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "init",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00184",
+      "method": "bindIdentityRegistry",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00410",
+      "method": "storedInvestorCountry",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

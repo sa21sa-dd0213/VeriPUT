@@ -1,0 +1,273 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_001786541574b626852724c494b41",
+        "address_00184"
+      ],
+      "frm": "address_00023",
+      "method": "setOwner",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_000604445657a58516d20704b795a",
+        "address_002534d624a6c4e626b745965206b",
+        "address_00032",
+        "address_00021",
+        14021045306080736283
+      ],
+      "frm": "address_00036",
+      "method": "setSubnodeRecord",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00289436878724267687452477151",
+        "address_00401",
+        "address_00019",
+        15966841440833235977
+      ],
+      "frm": "address_00404",
+      "method": "setRecord",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_0009665426a56204a704977594449"
+      ],
+      "frm": "address_00401",
+      "method": "recordExists",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        "address_00023"
+      ],
+      "frm": "address_00404",
+      "method": "isApprovedForAll",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00135474a61665845487676434350",
+        "address_0032976536d6e5671456844785751",
+        "address_00184",
+        "address_00019",
+        256
+      ],
+      "frm": "address_00023",
+      "method": "setSubnodeRecord",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        true
+      ],
+      "frm": "address_00019",
+      "method": "setApprovalForAll",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_0009549426a56204a534977724449"
+      ],
+      "frm": "address_00401",
+      "method": "recordExists",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_001897556466e7442644952494150"
+      ],
+      "frm": "address_00184",
+      "method": "resolver",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_0016866565077526261634179774f",
+        "address_00019"
+      ],
+      "frm": "address_00404",
+      "method": "setResolver",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00001000000000000000000000000"
+      ],
+      "frm": "address_00023",
+      "method": "owner",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_001534a6a78574b534c4d58707a41"
+      ],
+      "frm": "address_00021",
+      "method": "ttl",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_001266a6f6c5671534557446c694c",
+        "address_00404"
+      ],
+      "frm": "address_00023",
+      "method": "setResolver",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_0009549426a56204a534977724449"
+      ],
+      "frm": "address_00401",
+      "method": "recordExists",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_000737145576157414753756f6c6e",
+        8
+      ],
+      "frm": "address_00398",
+      "method": "setTTL",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_0027772417a4e525541785676514e",
+        "address_000624266504d694d466976424553",
+        "address_00021"
+      ],
+      "frm": "address_00032",
+      "method": "setSubnodeOwner",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

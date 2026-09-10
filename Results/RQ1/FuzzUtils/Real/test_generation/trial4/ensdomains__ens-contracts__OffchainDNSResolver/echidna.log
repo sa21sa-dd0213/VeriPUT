@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (2.035516945s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (1.653170528s)
+
+echidna: Constructor arguments are required: [("_ens",address),("_oracle",address),("_gatewayURL",string)]

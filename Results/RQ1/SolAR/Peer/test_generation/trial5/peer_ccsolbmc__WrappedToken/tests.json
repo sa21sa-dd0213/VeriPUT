@@ -1,0 +1,219 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        2691
+      ],
+      "frm": "address_00019",
+      "method": "transferBackingTokenFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "queryToken",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        88424903394369640145210890388798649038645425821885934992635166748136905426929
+      ],
+      "frm": "address_00019",
+      "method": "wrap",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        22693225682469620464533867350033841506375057152436876593106431426370853221385
+      ],
+      "frm": "address_00019",
+      "method": "setHeldAmtReq",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        198246239
+      ],
+      "frm": "address_00021",
+      "method": "unwrap",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        "\"_MINTTO\"",
+        "\"safeDecreaseAllowance\"",
+        148,
+        0,
+        "address_00401"
+      ],
+      "frm": "address_00401",
+      "method": "abca4",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        42146
+      ],
+      "frm": "address_00401",
+      "method": "transferBackingTokenTo",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        4
+      ],
+      "frm": "address_00021",
+      "method": "burnFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        "\"_MINTTO\"",
+        "\"safeDecreaseAllowance\"",
+        148,
+        0,
+        "address_00401"
+      ],
+      "frm": "address_00401",
+      "method": "abca4",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        10248500856511231284970336234031060070140482571878677663025335935390166182653
+      ],
+      "frm": "address_00032",
+      "method": "mintTo",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        88424903394369640145210890388798649038645425821885934992635166748136905426923
+      ],
+      "frm": "address_00019",
+      "method": "wrap",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "decimals",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        88424903394369640145210890388798649038645425821885934992635166748136905426929
+      ],
+      "frm": "address_00019",
+      "method": "wrap",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

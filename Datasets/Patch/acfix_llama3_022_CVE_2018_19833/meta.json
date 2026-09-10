@@ -1,0 +1,8 @@
+{
+  "contract": "ERCDDAToken",
+  "dataset": "Patch",
+  "solc": "0.8.35",
+  "solc_bin": "solc",
+  "source_form": "normalized-flat",
+  "subject_id": "acfix_llama3_022_CVE_2018_19833"
+}

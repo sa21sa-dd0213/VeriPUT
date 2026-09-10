@@ -1,0 +1,457 @@
+Compiling `src/flat.sol`... Done! (3.085879848s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (2.09301421s)
+Loaded 0 transaction sequences from corpus/reproducers
+Loaded 0 transaction sequences from corpus/coverage
+[Worker 0] New coverage: 1828 instr, 1 contracts, 1 seqs in corpus
+Saved reproducer to corpus/coverage/86571455724945169.txt
+[Worker 0] Test setDNSRecords(bytes32,bytes) falsified!
+  Call sequence:
+OwnedResolver.setABI("\130a@}\177P|\132\240\146\SUB\189UJ.E\DEL\225T\216Ns\180P!\187\GS\211\US\247+\146",17637791820067579291437083276426520199348986226590411007207173796545754948524,"\DLE\241:\140\255+\175b\166'\SUB\195\238J\177\198\143Q\141{\rLdDo\EOT\DC3\176\169j\133\189\DC1\v\238A\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL`\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\160\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL Ownable: caller is not the owner\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\FS\190\217\&3\130@&\240p\240\128\165\&2\254\182\172\RS\186\ETXa\251w\227\\0;\219K\146\NUL\NUL\NUL\NUL") from: address_00009 Time delay: 322153 seconds Block delay: 4786
+OwnedResolver.setABI("Ownable: caller is not the owner",85260671399970378892994603985298144060191039629348619816880112942013076147398,"\n\241y\215supportsInterface(bytes4)\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL@\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\STXj\US\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL") from: address_00008 Time delay: 33 seconds Block delay: 45263
+OwnedResolver.setText("\248$\145c\167\132\217X\158\138\152lB\184\"\224\156\&3\230Pw\172\214_\190y\220B\213\228;\147","supportsInterface(bytes4)","Ownable: new owner is the zero address") from: address_00010 Time delay: 447588 seconds Block delay: 23
+OwnedResolver.setAddr("Ownable: caller is not the ower\234",115792089237316195423570985008687907853269984665640564039457584007910982156287,"Ownable: caller is not the owner") from: address_00008 Time delay: 440095 seconds Block delay: 23275
+OwnedResolver.transferOwnership(0x1fffffffe) from: address_00008 Time delay: 22 seconds Block delay: 5001
+OwnedResolver.setContenthash("supportsInterface(bytes4)\NUL\NUL\NUL\NUL\NUL\NUL\NUL","Ownable  caller:is not the owner") from: address_00008 Time delay: 111322 seconds Block delay: 60267
+OwnedResolver.clearRecords("\NAK.\255\137\231H\130\t1\250\185\192;i\179o\167\DC3\184\DLE\ETX\209\RS\231l\156c\183\251\132\163\174") from: address_00009 Time delay: 33 seconds Block delay: 53678
+OwnedResolver.setABI("Ownable: caller is not the owner",85260671399970378892994603985298144060191039629348619816880112942013076147398,"\n\241y\215supportsInterface(bytes4)\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL@\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\STXj\US\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL") from: address_00009 Time delay: 322314 seconds Block delay: 35248
+OwnedResolver.clearRecords("\n\128\SOV6|\146\DC4T\DC3\250UZ\f\"\186\132c\SO>\209=K\131\&3\DC4\166Ur~mc") from: address_00009 Time delay: 195123 seconds Block delay: 3661
+OwnedResolver.setDNSRecords("Ownable: caller is not the owner","Onable: caller is not the owner") from: address_00010 Time delay: 242 seconds Block delay: 22909
+
+Saved reproducer to corpus/reproducers-unshrunk/4007375320660473299.txt
+[Worker 0] New coverage: 2723 instr, 1 contracts, 2 seqs in corpus
+Saved reproducer to corpus/coverage/5663895859601899719.txt
+[status] tests: 1/30, fuzzing: 303/100000000, values: [], cov: 2723, corpus: 2, shrinking: W0:2890/5000(1), gas/s: 2556248
+[Worker 0] New coverage: 2726 instr, 1 contracts, 3 seqs in corpus
+Saved reproducer to corpus/coverage/7133870252662024151.txt
+[Worker 0] New coverage: 3545 instr, 1 contracts, 4 seqs in corpus
+Saved reproducer to corpus/coverage/4216628137947545515.txt
+[Worker 0] New coverage: 4126 instr, 1 contracts, 5 seqs in corpus
+Saved reproducer to corpus/coverage/3188096137013224930.txt
+[Worker 0] New coverage: 4616 instr, 1 contracts, 6 seqs in corpus
+Saved reproducer to corpus/coverage/1193976884475319606.txt
+[Worker 0] New coverage: 5377 instr, 1 contracts, 7 seqs in corpus
+Saved reproducer to corpus/coverage/7079649644949054031.txt
+[Worker 0] New coverage: 5384 instr, 1 contracts, 8 seqs in corpus
+Saved reproducer to corpus/coverage/3540302473902915148.txt
+[Worker 0] New coverage: 5594 instr, 1 contracts, 9 seqs in corpus
+Saved reproducer to corpus/coverage/6013041946637565919.txt
+[Worker 0] New coverage: 5617 instr, 1 contracts, 10 seqs in corpus
+Saved reproducer to corpus/coverage/2506117768239505404.txt
+[Worker 0] New coverage: 6117 instr, 1 contracts, 11 seqs in corpus
+Saved reproducer to corpus/coverage/2391322886586687613.txt
+[Worker 0] New coverage: 6157 instr, 1 contracts, 12 seqs in corpus
+Saved reproducer to corpus/coverage/5196491824006012435.txt
+[status] tests: 1/30, fuzzing: 5492/100000000, values: [], cov: 6157, corpus: 12, gas/s: 49650077
+[Worker 0] New coverage: 6472 instr, 1 contracts, 13 seqs in corpus
+Saved reproducer to corpus/coverage/5535965323483339913.txt
+[Worker 0] New coverage: 6492 instr, 1 contracts, 14 seqs in corpus
+Saved reproducer to corpus/coverage/290529071240352849.txt
+[Worker 0] New coverage: 6638 instr, 1 contracts, 15 seqs in corpus
+Saved reproducer to corpus/coverage/2887785721189726556.txt
+[Worker 0] New coverage: 6774 instr, 1 contracts, 16 seqs in corpus
+Saved reproducer to corpus/coverage/2615643537445375482.txt
+[Worker 0] New coverage: 7021 instr, 1 contracts, 17 seqs in corpus
+Saved reproducer to corpus/coverage/5811178843888357411.txt
+[Worker 0] New coverage: 7249 instr, 1 contracts, 18 seqs in corpus
+Saved reproducer to corpus/coverage/6728485530823826680.txt
+[status] tests: 1/30, fuzzing: 10644/100000000, values: [], cov: 7249, corpus: 18, gas/s: 48918919
+[status] tests: 1/30, fuzzing: 15817/100000000, values: [], cov: 7249, corpus: 18, gas/s: 73001668
+[status] tests: 1/30, fuzzing: 20632/100000000, values: [], cov: 7249, corpus: 18, gas/s: 46610041
+[Worker 0] New coverage: 7671 instr, 1 contracts, 19 seqs in corpus
+Saved reproducer to corpus/coverage/3926449008928805174.txt
+[Worker 0] New coverage: 7671 instr, 1 contracts, 20 seqs in corpus
+Saved reproducer to corpus/coverage/5342267175120260197.txt
+[Worker 0] New coverage: 7755 instr, 1 contracts, 21 seqs in corpus
+Saved reproducer to corpus/coverage/4929680287895059133.txt
+[Worker 0] New coverage: 7977 instr, 1 contracts, 22 seqs in corpus
+Saved reproducer to corpus/coverage/3552928641690380494.txt
+[status] tests: 1/30, fuzzing: 25367/100000000, values: [], cov: 7977, corpus: 22, gas/s: 45402936
+[Worker 0] New coverage: 8024 instr, 1 contracts, 23 seqs in corpus
+Saved reproducer to corpus/coverage/736917274728797344.txt
+[status] tests: 1/30, fuzzing: 30464/100000000, values: [], cov: 8024, corpus: 23, gas/s: 50056818
+[Worker 0] New coverage: 8232 instr, 1 contracts, 24 seqs in corpus
+Saved reproducer to corpus/coverage/7584537407804698216.txt
+[status] tests: 1/30, fuzzing: 35282/100000000, values: [], cov: 8232, corpus: 24, gas/s: 46315002
+[status] tests: 1/30, fuzzing: 40459/100000000, values: [], cov: 8232, corpus: 24, gas/s: 50286803
+[status] tests: 1/30, fuzzing: 45201/100000000, values: [], cov: 8232, corpus: 24, gas/s: 46956210
+[Worker 0] New coverage: 8465 instr, 1 contracts, 25 seqs in corpus
+Saved reproducer to corpus/coverage/1828287508863876032.txt
+[Worker 0] New coverage: 8585 instr, 1 contracts, 26 seqs in corpus
+Saved reproducer to corpus/coverage/2256263645396213163.txt
+[Worker 0] New coverage: 8961 instr, 1 contracts, 27 seqs in corpus
+Saved reproducer to corpus/coverage/2929651616811675907.txt
+[status] tests: 1/30, fuzzing: 49403/100000000, values: [], cov: 8961, corpus: 27, gas/s: 42320259
+[status] tests: 1/30, fuzzing: 53964/100000000, values: [], cov: 8961, corpus: 27, gas/s: 44851361
+[Worker 0] New coverage: 8961 instr, 1 contracts, 28 seqs in corpus
+Saved reproducer to corpus/coverage/1716159492919817061.txt
+[status] tests: 1/30, fuzzing: 58308/100000000, values: [], cov: 8961, corpus: 28, gas/s: 42965944
+[Worker 0] New coverage: 8994 instr, 1 contracts, 29 seqs in corpus
+Saved reproducer to corpus/coverage/1190843829641329416.txt
+[status] tests: 1/30, fuzzing: 62873/100000000, values: [], cov: 8994, corpus: 29, gas/s: 45532358
+[status] tests: 1/30, fuzzing: 67555/100000000, values: [], cov: 8994, corpus: 29, gas/s: 69483630
+[Worker 0] New coverage: 9050 instr, 1 contracts, 30 seqs in corpus
+Saved reproducer to corpus/coverage/138947499217903788.txt
+[status] tests: 1/30, fuzzing: 72466/100000000, values: [], cov: 9050, corpus: 30, gas/s: 49114681
+[Worker 0] New coverage: 9064 instr, 1 contracts, 31 seqs in corpus
+Saved reproducer to corpus/coverage/7604728264870568947.txt
+[status] tests: 1/30, fuzzing: 77923/100000000, values: [], cov: 9064, corpus: 31, gas/s: 53020286
+[Worker 0] New coverage: 9085 instr, 1 contracts, 32 seqs in corpus
+Saved reproducer to corpus/coverage/331418008601979458.txt
+[Worker 0] New coverage: 9231 instr, 1 contracts, 33 seqs in corpus
+Saved reproducer to corpus/coverage/2951775095949324524.txt
+[status] tests: 1/30, fuzzing: 82740/100000000, values: [], cov: 9231, corpus: 33, gas/s: 45569481
+[Worker 0] New coverage: 9372 instr, 1 contracts, 34 seqs in corpus
+Saved reproducer to corpus/coverage/1594442379439000596.txt
+[status] tests: 1/30, fuzzing: 87717/100000000, values: [], cov: 9372, corpus: 34, gas/s: 47961251
+[Worker 0] New coverage: 9379 instr, 1 contracts, 35 seqs in corpus
+Saved reproducer to corpus/coverage/887740572399132753.txt
+[status] tests: 1/30, fuzzing: 92396/100000000, values: [], cov: 9379, corpus: 35, gas/s: 45885304
+[status] tests: 1/30, fuzzing: 97030/100000000, values: [], cov: 9379, corpus: 35, gas/s: 44980375
+[status] tests: 1/30, fuzzing: 100886/100000000, values: [], cov: 9379, corpus: 35, gas/s: 37876134
+[status] tests: 1/30, fuzzing: 105223/100000000, values: [], cov: 9379, corpus: 35, gas/s: 41700611
+[status] tests: 1/30, fuzzing: 109781/100000000, values: [], cov: 9379, corpus: 35, gas/s: 43843023
+[status] tests: 1/30, fuzzing: 114473/100000000, values: [], cov: 9379, corpus: 35, gas/s: 45809002
+[status] tests: 1/30, fuzzing: 118972/100000000, values: [], cov: 9379, corpus: 35, gas/s: 66367005
+[status] tests: 1/30, fuzzing: 123858/100000000, values: [], cov: 9379, corpus: 35, gas/s: 48073994
+[status] tests: 1/30, fuzzing: 128519/100000000, values: [], cov: 9379, corpus: 35, gas/s: 43164464
+[status] tests: 1/30, fuzzing: 132732/100000000, values: [], cov: 9379, corpus: 35, gas/s: 40879265
+[status] tests: 1/30, fuzzing: 137489/100000000, values: [], cov: 9379, corpus: 35, gas/s: 45331098
+[status] tests: 1/30, fuzzing: 141856/100000000, values: [], cov: 9379, corpus: 35, gas/s: 41407584
+[Worker 0] New coverage: 9381 instr, 1 contracts, 36 seqs in corpus
+Saved reproducer to corpus/coverage/8482427239105203892.txt
+[status] tests: 1/30, fuzzing: 146918/100000000, values: [], cov: 9381, corpus: 36, gas/s: 48163484
+[status] tests: 1/30, fuzzing: 150756/100000000, values: [], cov: 9381, corpus: 36, gas/s: 38470067
+[status] tests: 1/30, fuzzing: 154441/100000000, values: [], cov: 9381, corpus: 36, gas/s: 34264159
+[status] tests: 1/30, fuzzing: 159496/100000000, values: [], cov: 9381, corpus: 36, gas/s: 46611944
+[status] tests: 1/30, fuzzing: 164096/100000000, values: [], cov: 9381, corpus: 36, gas/s: 42901166
+[status] tests: 1/30, fuzzing: 169089/100000000, values: [], cov: 9381, corpus: 36, gas/s: 70374061
+[status] tests: 1/30, fuzzing: 173537/100000000, values: [], cov: 9381, corpus: 36, gas/s: 44226061
+[Worker 0] New coverage: 9381 instr, 1 contracts, 37 seqs in corpus
+Saved reproducer to corpus/coverage/7105832367413444307.txt
+[status] tests: 1/30, fuzzing: 178113/100000000, values: [], cov: 9381, corpus: 37, gas/s: 46435637
+[status] tests: 1/30, fuzzing: 182960/100000000, values: [], cov: 9381, corpus: 37, gas/s: 49580475
+[status] tests: 1/30, fuzzing: 188064/100000000, values: [], cov: 9381, corpus: 37, gas/s: 71499589
+[status] tests: 1/30, fuzzing: 192681/100000000, values: [], cov: 9381, corpus: 37, gas/s: 55557493
+[status] tests: 1/30, fuzzing: 197106/100000000, values: [], cov: 9381, corpus: 37, gas/s: 57193211
+[status] tests: 1/30, fuzzing: 201973/100000000, values: [], cov: 9381, corpus: 37, gas/s: 48767289
+[status] tests: 1/30, fuzzing: 206458/100000000, values: [], cov: 9381, corpus: 37, gas/s: 58949404
+[status] tests: 1/30, fuzzing: 211373/100000000, values: [], cov: 9381, corpus: 37, gas/s: 55046670
+[status] tests: 1/30, fuzzing: 216221/100000000, values: [], cov: 9381, corpus: 37, gas/s: 81004015
+[status] tests: 1/30, fuzzing: 221206/100000000, values: [], cov: 9381, corpus: 37, gas/s: 63028284
+[status] tests: 1/30, fuzzing: 226223/100000000, values: [], cov: 9381, corpus: 37, gas/s: 63091733
+[status] tests: 1/30, fuzzing: 231372/100000000, values: [], cov: 9381, corpus: 37, gas/s: 60696735
+[Worker 0] New coverage: 9381 instr, 1 contracts, 38 seqs in corpus
+Saved reproducer to corpus/coverage/1650449375513475083.txt
+[status] tests: 1/30, fuzzing: 236332/100000000, values: [], cov: 9381, corpus: 38, gas/s: 63451267
+[status] tests: 1/30, fuzzing: 241055/100000000, values: [], cov: 9381, corpus: 38, gas/s: 57214823
+[status] tests: 1/30, fuzzing: 245369/100000000, values: [], cov: 9381, corpus: 38, gas/s: 54631898
+[status] tests: 1/30, fuzzing: 250030/100000000, values: [], cov: 9381, corpus: 38, gas/s: 52848571
+[status] tests: 1/30, fuzzing: 254866/100000000, values: [], cov: 9381, corpus: 38, gas/s: 57931493
+[status] tests: 1/30, fuzzing: 259824/100000000, values: [], cov: 9381, corpus: 38, gas/s: 64025048
+[status] tests: 1/30, fuzzing: 264121/100000000, values: [], cov: 9381, corpus: 38, gas/s: 40537421
+[status] tests: 1/30, fuzzing: 268652/100000000, values: [], cov: 9381, corpus: 38, gas/s: 73504989
+[status] tests: 1/30, fuzzing: 273279/100000000, values: [], cov: 9381, corpus: 38, gas/s: 52174007
+[status] tests: 1/30, fuzzing: 278006/100000000, values: [], cov: 9381, corpus: 38, gas/s: 49502015
+[status] tests: 1/30, fuzzing: 282689/100000000, values: [], cov: 9381, corpus: 38, gas/s: 55720629
+[status] tests: 1/30, fuzzing: 287322/100000000, values: [], cov: 9381, corpus: 38, gas/s: 45429543
+[status] tests: 1/30, fuzzing: 291934/100000000, values: [], cov: 9381, corpus: 38, gas/s: 48416693
+[status] tests: 1/30, fuzzing: 296912/100000000, values: [], cov: 9381, corpus: 38, gas/s: 55629030
+[status] tests: 1/30, fuzzing: 301780/100000000, values: [], cov: 9381, corpus: 38, gas/s: 57636773
+[Worker 0] New coverage: 9381 instr, 1 contracts, 39 seqs in corpus
+Saved reproducer to corpus/coverage/6678069222001432621.txt
+[status] tests: 1/30, fuzzing: 306586/100000000, values: [], cov: 9381, corpus: 39, gas/s: 50760533
+[Worker 0] New coverage: 9381 instr, 1 contracts, 40 seqs in corpus
+Saved reproducer to corpus/coverage/6221312574325561672.txt
+[status] tests: 1/30, fuzzing: 311700/100000000, values: [], cov: 9381, corpus: 40, gas/s: 76329360
+[status] tests: 1/30, fuzzing: 316911/100000000, values: [], cov: 9381, corpus: 40, gas/s: 61644651
+[status] tests: 1/30, fuzzing: 321931/100000000, values: [], cov: 9381, corpus: 40, gas/s: 94480709
+[status] tests: 1/30, fuzzing: 326986/100000000, values: [], cov: 9381, corpus: 40, gas/s: 49804558
+[status] tests: 1/30, fuzzing: 331922/100000000, values: [], cov: 9381, corpus: 40, gas/s: 56628224
+[Worker 0] New coverage: 9388 instr, 1 contracts, 41 seqs in corpus
+Saved reproducer to corpus/coverage/8815397337898637303.txt
+[status] tests: 1/30, fuzzing: 337319/100000000, values: [], cov: 9388, corpus: 41, gas/s: 58480679
+[status] tests: 1/30, fuzzing: 342335/100000000, values: [], cov: 9388, corpus: 41, gas/s: 54544743
+[status] tests: 1/30, fuzzing: 347520/100000000, values: [], cov: 9388, corpus: 41, gas/s: 72084600
+[status] tests: 1/30, fuzzing: 352828/100000000, values: [], cov: 9388, corpus: 41, gas/s: 73072834
+[status] tests: 1/30, fuzzing: 357858/100000000, values: [], cov: 9388, corpus: 41, gas/s: 53899058
+[status] tests: 1/30, fuzzing: 362041/100000000, values: [], cov: 9388, corpus: 41, gas/s: 38619498
+[status] tests: 1/30, fuzzing: 367124/100000000, values: [], cov: 9388, corpus: 41, gas/s: 60219638
+[status] tests: 1/30, fuzzing: 372282/100000000, values: [], cov: 9388, corpus: 41, gas/s: 51998658
+[status] tests: 1/30, fuzzing: 377571/100000000, values: [], cov: 9388, corpus: 41, gas/s: 84960273
+[status] tests: 1/30, fuzzing: 382332/100000000, values: [], cov: 9388, corpus: 41, gas/s: 47530460
+[status] tests: 1/30, fuzzing: 387106/100000000, values: [], cov: 9388, corpus: 41, gas/s: 64966445
+[status] tests: 1/30, fuzzing: 391715/100000000, values: [], cov: 9388, corpus: 41, gas/s: 42917499
+[status] tests: 1/30, fuzzing: 396361/100000000, values: [], cov: 9388, corpus: 41, gas/s: 50444663
+[status] tests: 1/30, fuzzing: 400937/100000000, values: [], cov: 9388, corpus: 41, gas/s: 58272041
+[status] tests: 1/30, fuzzing: 405563/100000000, values: [], cov: 9388, corpus: 41, gas/s: 51221596
+[status] tests: 1/30, fuzzing: 410309/100000000, values: [], cov: 9388, corpus: 41, gas/s: 55824180
+[status] tests: 1/30, fuzzing: 415193/100000000, values: [], cov: 9388, corpus: 41, gas/s: 61713158
+[status] tests: 1/30, fuzzing: 419757/100000000, values: [], cov: 9388, corpus: 41, gas/s: 54732736
+[status] tests: 1/30, fuzzing: 424352/100000000, values: [], cov: 9388, corpus: 41, gas/s: 83937879
+[status] tests: 1/30, fuzzing: 428733/100000000, values: [], cov: 9388, corpus: 41, gas/s: 53307279
+[status] tests: 1/30, fuzzing: 433495/100000000, values: [], cov: 9388, corpus: 41, gas/s: 53271771
+[status] tests: 1/30, fuzzing: 438411/100000000, values: [], cov: 9388, corpus: 41, gas/s: 56551092
+[status] tests: 1/30, fuzzing: 443099/100000000, values: [], cov: 9388, corpus: 41, gas/s: 55300663
+[status] tests: 1/30, fuzzing: 447673/100000000, values: [], cov: 9388, corpus: 41, gas/s: 47339981
+[status] tests: 1/30, fuzzing: 452381/100000000, values: [], cov: 9388, corpus: 41, gas/s: 52047886
+[status] tests: 1/30, fuzzing: 457062/100000000, values: [], cov: 9388, corpus: 41, gas/s: 50550280
+[status] tests: 1/30, fuzzing: 461601/100000000, values: [], cov: 9388, corpus: 41, gas/s: 46535588
+[status] tests: 1/30, fuzzing: 465872/100000000, values: [], cov: 9388, corpus: 41, gas/s: 44877804
+[Worker 0] New coverage: 9388 instr, 1 contracts, 42 seqs in corpus
+Saved reproducer to corpus/coverage/8596264691413189257.txt
+[status] tests: 1/30, fuzzing: 470847/100000000, values: [], cov: 9388, corpus: 42, gas/s: 54807188
+[Worker 0] New coverage: 9391 instr, 1 contracts, 43 seqs in corpus
+[status] tests: 1/30, fuzzing: 475708/100000000, values: [], cov: 9391, corpus: 43, gas/s: 86091116
+Saved reproducer to corpus/coverage/1422425431833297291.txt
+[status] tests: 1/30, fuzzing: 480535/100000000, values: [], cov: 9391, corpus: 43, gas/s: 50484147
+[status] tests: 1/30, fuzzing: 485500/100000000, values: [], cov: 9391, corpus: 43, gas/s: 55480888
+[Worker 0] Test resolve(bytes,bytes) falsified!
+  Call sequence:
+OwnedResolver.setDNSRecords("\208\SI\212\233U\189%\147 j\161f\141\f\247^L\SI\164\233\154\DC1O\210\136\198\215\&0\244\180[\196","\206=\236\220\f\133\219\147l\CAN\138w]C\200/\146\169\129\146\200\154\&6\a\RSh\RSKz\162F\158$\RS[\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL@\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL$\242\253\227\139\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\SOH\255\255\255\254\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL") from: address_00010 Time delay: 283601 seconds Block delay: 12155
+OwnedResolver.transferOwnership(0x30000) from: address_00010 Time delay: 904 seconds Block delay: 55060
+OwnedResolver.setPubkey("\198\t=\175\250\208ga\b\226 T\140CC\212\RS\149\175\164u\ENQ0\DC1\219\182\129\201+c\EM\163","\212\239\184\173\201+Z\216\147\224\tq\202\140m;P\234\&0:\150d-\SO3\229\184\129\233+\208\SOH","\255\153K\150\176\155\237\GSQ\136\139\159\171X\131\203~\201J\229%X`\SUBk\193v\210\240\142\183\226") from: address_00009 Time delay: 478643 seconds Block delay: 48289
+OwnedResolver.clearRecords("\172`\GS\210\ACKDG`\137\170I\227\NUL\144\143\141\162j\192U\135L+\219\186\176\199\227\204HU\195") from: address_00009 Time delay: 401476 seconds Block delay: 45779
+OwnedResolver.transferOwnership(0xa329c0648769a73afac7f9381e08fb43dbea72) from: address_00010 Time delay: 415236 seconds Block delay: 242
+OwnedResolver.setInterface("Ownable: caller is not the owner","A\210\237\ENQ",0x1fffffffe) from: address_00008 Time delay: 161092 seconds Block delay: 36519
+OwnedResolver.renounceOwnership() from: address_00009 Time delay: 322346 seconds Block delay: 28
+OwnedResolver.setAddr("g\249\169 \168\STX\230\213E\216\SYN\250\r;&\165\172<\183 \191\253\ESC\207\ACK<\EOT\199\210x4\f",0x1fffffffe) from: address_00009 Time delay: 254414 seconds Block delay: 57122
+OwnedResolver.setABI("6Z\219t\254\ENQ\252a\223\158\&1\247\165\143\153\224\154\&2\205%\130A\153p\162\236\142^v\239mY",4370001,"w7\"\DC3\NAK\131\&6z\207\SO\132)L\168\nW\179\194\&1\STX{\153\219\203U8\151\r\186\162&\190q\198\157P\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL@\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\CAN\DC3\205w\EOTP\193\193\193\193\193\193\193\193\ENQh@\133\154\&80\157\182\229\161\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL") from: address_00010 Time delay: 464384 seconds Block delay: 13952
+OwnedResolver.clearRecords("\230\232]\215@V\234\235x$+\NUL\224\198Z\218\&4\242fo\ETB\208w\131\144}G\228\&8\172\245\STX") from: address_00009 Time delay: 388293 seconds Block delay: 47440
+OwnedResolver.setABI("B\162\213\243\200\158\f\GS\133\197\206\203\198\174\253\210\155\250\136\&8{S[@f\210\233%\221s\245\&2",17776565409580075759302410706177417168186416185704061977001768154695987946303,"7\a\EM\160\154") from: address_00010 Time delay: 119877 seconds Block delay: 22616
+OwnedResolver.setInterface("\234\202\ETB\202\&7:N\159\158\&9z\231N\133\228\197j<9\186\f,\227\215\171\233\&3XM\242\146B","\US\SO\163p",0x1fffffffe) from: address_00008 Time delay: 94364 seconds Block delay: 4781
+OwnedResolver.setABI("Ownable: oaller is nct the owner",85260671399970378892994603985298144060191039629348619816880112942013076147398,"\n\241y\215supportsInterface(bytes4)\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL@\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\STXj\US\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL") from: address_00010 Time delay: 385723 seconds Block delay: 1984
+OwnedResolver.transferOwnership(0x2fffffffd) from: address_00009 Time delay: 400981 seconds Block delay: 30
+OwnedResolver.setContenthash("\212\239\&2\DC4\212a(\DEL\DC4\189h\197EO\160J\151\182I\246\152\132M=\187B\161\140j\246\152u","\DLE\241:\140\171\n\141Z\192o\186\226';qe0\249\185\189\SYN\172~\148\178\189\238\181\155\239\155\n'j\140\248\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL`\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\160\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\ETB\185\250\&3\178\ax\155\221\US\217\251\153\246O\183\SOHOd\219\245\181E\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\ETB\b>\176S\151]\168\190\154JR\175s<\196\158TG\210\186\SO\246\141\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL") from: address_00010 Time delay: 509076 seconds Block delay: 240
+OwnedResolver.renounceOwnership() from: address_00008 Time delay: 7 seconds Block delay: 5006
+OwnedResolver.setPubkey("\211\224w\138\DLE\141\183]\GS\232\220\151/\236m\165v\129\&1\230g\197\r\SYN3\249-\237m\148p\153","\STX\225\&5\182r\252\135h\DC2$s\FS\140\146\153\183\201?\184\f\139\133\141$o\191\209\234\145M\NUL\233","\168\195\248\&8xP\252X\169:\138\DC4\244a\223\n\251 \n\200\186L\196z\EM^7^\169H5R") from: address_00008 Time delay: 111322 seconds Block delay: 54155
+OwnedResolver.setDNSRecords("\DC4\208\217\177\&6\223P\USz\241\161\154\172dC)\220\"\224\251\227c\178\223.Sn\248\187\155\247b","\RS\244\252\194") from: address_00009 Time delay: 5 seconds Block delay: 34239
+OwnedResolver.setAddr("\160\192\242\243-\243G\253\194\218\184\FSmP\254`\143w\\1o\GSwb\165\ETB\188\n\r\DC20\200",0xffffffff) from: address_00008 Time delay: 591326 seconds Block delay: 40464
+OwnedResolver.setInterface("M\230b\DC3/1\DC2t\199\194.\RSH,\243uDv5\215\191\150p\135\215\DC2\178e\217\239\217o","\SUBf\NAK ",0xffffffff) from: address_00010 Time delay: 240651 seconds Block delay: 60248
+OwnedResolver.setZonehash("supportsInterface(bytes4)\NUL\NUL\NUL\NUL\NUL\NUL\NUL","\184\167\203G&\221\160\186") from: address_00008 Time delay: 6 seconds Block delay: 23653
+OwnedResolver.setDNSRecords("\DC1\225\170:\208\209\186s\149\185$5,\243!8\251\161\246\146$u\250\183\SUBG\236\DC1\237\199\167\138","6\ETX\215X\128W|K\r20\221\r/\ENQ\v\252\194Yv,\147\219Tv-\172\t\FS\251\SOH]\149\STX\229\201") from: address_00010 Time delay: 487075 seconds Block delay: 1362
+OwnedResolver.setABI("Ownable: caller is not the owner",85260671399970378892994603985298144060191039629348619816880112942013076147398,"\n\241y\215supportsInterface(bytes4)\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL@\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\STXj\US\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL") from: address_00008
+OwnedResolver.transferOwnership(0xffffffff) from: address_00009 Time delay: 127 seconds Block delay: 4803
+OwnedResolver.setAddr("\160\192\242\243-\243G\253\194\218\184mP\254`\143w\\1o\GSwb\165\ETB\188\n\r\DC20\200\137",0xffffffff) from: address_00008 Time delay: 322344 seconds Block delay: 224
+OwnedResolver.setInterface("Ownable: caller is not the owner","A\210\237S",0x1fffffffe) from: address_00010 Time delay: 18 seconds Block delay: 28972
+OwnedResolver.setAddr("\154H\199)\DEL\235R\154J\242\192\ETX\188\232[\194\244aN\146w\SO\252\234\241(87ayV\219",0x1fffffffe) from: address_00008 Time delay: 392966 seconds Block delay: 17176
+OwnedResolver.setContenthash("supportsInterface(bytes4)\NUL\NUL\NUL\NUL\NUL\NUL\NUL","Ownable  caller:is not the owner") from: address_00009 Time delay: 428509 seconds Block delay: 11281
+OwnedResolver.clearRecords("\n\128\144\SOV6|\146\DC4T\250UZ\f\"\186\132c\SO>\209=K\131\&3\DC4\166Ur~m\216") from: address_00010 Time delay: 186722 seconds Block delay: 30256
+OwnedResolver.setZonehash("\DC1\165?\150\185w\200\231:\178G\234\194n\154\188\208\203n\DC3\240\166\240&Y\201N\232]%,R","6\ETX\215X8\230J\201\248\162\251\240\151B\167^\176Z\252\192\DC2\144\241\158\FS\128\236Ui4Wt\190\171\"\200") from: address_00008 Time delay: 501 seconds Block delay: 58783
+OwnedResolver.renounceOwnership() from: address_00008 Time delay: 238039 seconds Block delay: 54809
+OwnedResolver.renounceOwnership() from: address_00008 Time delay: 522178 seconds Block delay: 4996
+OwnedResolver.setName("\ETX\132V\143\193\DC1Y}\248\fm\FSV\148\238\DEL\151\129\187\202\148l\230\128\248\152\193*\145\221\236\&4","\SO\ACK\193\185\t\183\195-\v\ENQ+\225<\n\199\SO%62YD\227|\185\&8\SOnnnnnn\176") from: address_00010 Time delay: 566039 seconds Block delay: 2526
+OwnedResolver.setText("\231>n\187<\r\147\GSa\151#\162N\RS\232\167_\194\224\219_\250#%X\171C\220\204\154\143\EM","\151","S\246p\SOH    \222\141\ETBZ\237\rN") from: address_00010 Time delay: 318197 seconds Block delay: 13056
+OwnedResolver.setInterface("Ownable: caller is not the owner","A\210\237\ENQ",0x1fffffffe) from: address_00010 Time delay: 400906 seconds Block delay: 227
+OwnedResolver.setName("spportsInterface(bytes4)\NUL\NUL\NUL\NUL\NUL\NUL\NULU","supportsInterbace(fytes4)") from: address_00008 Time delay: 518283 seconds Block delay: 239
+OwnedResolver.setZonehash("Ownable: caller is not the owner"," wnable:Ocaler is not the owner") from: address_00009 Time delay: 501 seconds Block delay: 4265
+OwnedResolver.setText("PD\141\STX\200\203\212\142\191<T\218\251\235\139\160\ACK\157@1\CAN\164\135=\229\249\245\231\213\f\219\197","\248\213X''''''''''\DELG=\227\ETB\SI@\250","\207k\143xb\DLEs\147\CAN\224E\SUB\DC1\220\238\DC2\DC2") from: address_00009 Time delay: 172101 seconds Block delay: 46741
+OwnedResolver.setName("\r)7x\v\246\220T;\b\157\186`u\159\173\218\EM\GS\159R\241k\145{[\224\221\146\ENQO8","I\200\ETB3\230") from: address_00008 Time delay: 322314 seconds Block delay: 42101
+OwnedResolver.setZonehash("Ownable: caller is not the owner"," wnable:Ocaller is not the owner") from: address_00010 Time delay: 7 seconds Block delay: 34360
+OwnedResolver.setZonehash("Ownable: caller isnot the owner."," wnable:Ocaller is not the owner") from: address_00010 Time delay: 164371 seconds Block delay: 227
+OwnedResolver.clearRecords("V\235{E\213\249\NUL\145J%\ACK,\156\159w8Lt\244\185\246\DC1\155\a\214\DLE\181\255\165\248\141\207") from: address_00010 Time delay: 405050 seconds Block delay: 39445
+OwnedResolver.clearRecords("\n\128\144\SOV6|\146\DC4T\DC3\250UZ\f\"\186\132c\DC4>\209=K\131\&3\SO\166Ur~m") from: address_00008 Time delay: 595989 seconds Block delay: 59
+OwnedResolver.clearRecords("B\162\213\243\200\158\f\GS\133\v\197\206\203\198\174\253\210\155\250\136\&8{S[@f\210\233%\221s,") from: address_00010 Time delay: 322247 seconds Block delay: 54494
+OwnedResolver.clearRecords("\n\128\144\SOV6|\146T\DC3\250UZ\f\"\186\132c\SO>\209=K\131\&3\DC4\166Ur~m\185") from: address_00008 Time delay: 565088 seconds Block delay: 2692
+OwnedResolver.renounceOwnership() from: address_00008 Time delay: 44330 seconds Block delay: 4456
+OwnedResolver.setName("Z\192k?{\186:\209\240\185IH\233\161\254\CAN\178.s-\186\174!)\162\134\"\b\239\143\166z","\233^\189-W\GS\138_@\248\128B\FS:~a\157") from: address_00009 Time delay: 82672 seconds Block delay: 33560
+OwnedResolver.transferOwnership(0x1fffffffe) from: address_00008 Time delay: 201509 seconds Block delay: 59224
+OwnedResolver.setText("v\244\201\&3\248rx\204bu\n\238\152\b*iZa\169&\133]\210\155\239\233\225l\140B\207\229","\DC3\205w\EOTP\193\ENQh@\133\154\&80\157\182\229\161","Ownable: new owne is the zero address") from: address_00010 Time delay: 240716 seconds Block delay: 11550
+OwnedResolver.setInterface("NEr2\211\135!\187\129\128\199\242\159\248NG\140qTMf\128\144\"\194\154Wa\NUL\DLE\225r","$\230^\155",0x20000) from: address_00010 Time delay: 35888 seconds Block delay: 11942
+OwnedResolver.setAddr("\205\240\238\158\160{#\159:)@\131\142\227\154\SO\v\149j7\177\ETB\DC1\239wl\172\STX\137\130+\NUL",9739059796874654295752012785090944250561977135075919670478607781520389522329,"\166P\CANq") from: address_00009 Time delay: 437838 seconds Block delay: 7323
+OwnedResolver.setDNSRecords("\227\ETB\GSl\214{\SUB\134\148\&6{\STXc\CANN/\228\195Qq\237\183\149\235P\249\156#\176\244y\ACK","supportsInteerface(bytes4)") from: address_00010 Time delay: 198598 seconds Block delay: 4785
+OwnedResolver.setZonehash("\214\152\240\177\243m&&\149\176\f\165\&9\205c\203\142[\ACK\201\235\248\207?\203\188@\210\SUB\233K\248","w7\"\DC3m\133(k\249F\138Oa\199\CANT\222sd\132r\ESC\171\183\210\173\SI\140\DC2D\153\180\199\198\199\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL@\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EM3\218\193\"\EOT\183\ETB\149\214dt\239`\170\194\ENQ}\178R?\243\ESC\236\154\139\NUL\NUL\NUL\NUL\NUL\NUL\NUL") from: address_00009 Time delay: 355837 seconds Block delay: 20241
+OwnedResolver.setText("v\244\201\&3\248rx\204bu\n\238\152\b*iZa\169&\133]\210\155\239\233\225l\140B\207\229","\DC3\205w\EOTP\193\ENQh@\133\154\&80\157\182\229\161","Ownable: new ower is the zero address") from: address_00010 Time delay: 116188 seconds Block delay: 30042
+OwnedResolver.setText("(\155\DEL\SUB\\VA\162\DC4#\f\181\216\243\157hj\241iH\164\&2KS|1\tm\SO\164\181\&2","\129\US\213\147\225\&3\US\214sssssssss$\195\140&\153\145F\226RD\250.A","\CAN#;B\210\179\199\236\FS\215@\CAN\157>\141u]9k\202\190{D\232\177\177uuuuuuuu\218V\149\216") from: address_00008 Time delay: 175133 seconds Block delay: 3
+OwnedResolver.clearRecords("\DC1JBt\205t:*\US\162\134B\\\250&\165>\158\173Pz\167\134\148h\145\DC3\202\DC4\222\203\223") from: address_00010 Time delay: 198992 seconds Block delay: 54494
+OwnedResolver.transferOwnership(0xffffffff) from: address_00008 Time delay: 510234 seconds Block delay: 127
+OwnedResolver.setDNSRecords("\227\ETB\GSl\214{\SUB\134\148\&6{\STXc\CANN/\228\195Qq\237\183\149\235P\249\156#\176\244y\ACK","supportsInnnnnnterface(bytes4)") from: address_00008 Time delay: 322357 seconds Block delay: 27700
+OwnedResolver.setContenthash("\187\&9\201\254\209\199\232\163\176\233\194q\166\173\217\179\223c\164\185\STX5\244]jW\178>|9\164\&5",")\205b\234X\141\194\v\SO\234\&5\249\174 \169\145x&\246}\149\191\151\214|\192\240\249^\216\NUL_l0\150[2\241\EM\241\253\180k4.c(\199p\184Gwi\168\241\197w\STX\179\ESC\202\189\r\205\201\SOHh\135\184\v\165\217\136F@>\160D\129\133t\STX6\183\171)9\252\DC3{^:Z\191\249\245a@\152\200") from: address_00009 Time delay: 20 seconds Block delay: 43870
+OwnedResolver.setABI("Ownable: caller is not the owner",85260671399970378892994603985298144060191039629348619816880112942013076147398,"\n\241y\215supportsInterface(bytes4)\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL@\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\STXj\US\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL") from: address_00010 Time delay: 63035 seconds Block delay: 35
+OwnedResolver.setInterface("wA\241\205\169\222.b~<<\193\DC3\141\156\223\CAN9\190\219\184'Dj\144jR\189\241\203z{","\212\212\212\212",0x20000) from: address_00008 Time delay: 19029 seconds Block delay: 2738
+OwnedResolver.setDNSRecords("$\ESC\142\213\177`\208\237\a\141\151KZ\188\142\197s\195\157\242i\177L\232z\159\140\ESC\DC1\219\"\174","I\183\245\245\245") from: address_00009 Time delay: 562147 seconds Block delay: 14262
+OwnedResolver.setAddr("Ownable: caller is not the owner",115792089237316195423570985008687907853269984665640564039457584007910982156287,"Ownable: calleh is not tre owner") from: address_00009 Time delay: 418233 seconds Block delay: 12619
+OwnedResolver.setAddr("\181\175\217\FS\175\184\212\a1\DC1\232:\173\\m\249\195\153\184\&8\156(\135:\146\174Le\239\131l\v",11452809144813480758823981497470437201300386627643257293031253256045882298619,"6\ETX\215X\"1\SOP\129\152\219\&0Ns\217\&7d\209\160i\a\173\129\187\&7\DC1\238\139\193+?\219\129\SOH\251\170") from: address_00010 Time delay: 7510 seconds Block delay: 35200
+OwnedResolver.clearRecords("\150e3k\213\129\212\200\167]b\198q\197\217\174Y\fx}\DC1\154\SO/\218g\204\232\151\202\248\FS") from: address_00009 Time delay: 322342 seconds Block delay: 31264
+OwnedResolver.setAddr("\179D\232\241\131V\SYNG\FSZ\209\176f<\159\251\158Xg54\161i\246j\DC2\196\245\f+\SOH\177",0x10000) from: address_00008 Time delay: 184147 seconds Block delay: 50471
+OwnedResolver.clearRecords("e\237(@+|\172&&\ETXi\184\159\EM\191\224\156\221\SI\223\DC4\DC3@b\132j\184\SI\155\218\ESCM") from: address_00008 Time delay: 96524 seconds Block delay: 11905
+OwnedResolver.setContenthash("}>Be\151\211\&8\164\143]\188h\174\151u\141u\ESC\203N\186D(-I\151\ESC\213\185\161\CAN\b","\n\241y\215hK\240T\217%\158\FS\151)'\CAN\133\134\197\170\226\DC3\215\212x[\236c\DC40`\234\224\&8&\152\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL@\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL$6\ETX\215XO\233'\168u\222\217V\244`\r\177\159q\138\193\128\245\SO\220\229bX\181\DELh\237\r\DC2\190\230\202\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL") from: address_00010 Time delay: 190893 seconds Block delay: 47333
+OwnedResolver.setDNSRecords("\255\227r\134\134\SUB\141e\184\162\r;\229\133q\171d,\244\247U\ACKR\201\128\237\128bg+\194\155","6\ETX\215X\193\NUL4!\141\135bj\176\172r\185\207\134\215\208@\231\254\152jYt\136\US5\SYNp\171L(\253") from: address_00010 Time delay: 356549 seconds Block delay: 2
+OwnedResolver.setDNSRecords("\212\223_\175\205\250=v5m\187n\212\242\185\155\170\230\RS\STX\186`q\175sz\220\132\&6k\t\217","\CANPq\166") from: address_00008 Time delay: 303624 seconds Block delay: 4
+OwnedResolver.setAddr("\181\155V\225\ACK!\194\232/v\202\210ru\234\151\157\253\138\175\b\197p2\253\129\&7w\CAN\EOTi\180",0x1fffffffe) from: address_00010 Time delay: 49899 seconds Block delay: 120
+OwnedResolver.setInterface("Ownable: caller  s not theiowner","A\210\237\ENQ",0x1fffffffe) from: address_00008 Time delay: 401051 seconds Block delay: 18708
+OwnedResolver.setZonehash("Ownable: caller is not the owner"," wnable:Ocaller is not the owner") from: address_00008 Time delay: 218670 seconds Block delay: 60054
+OwnedResolver.setName("supportsInterface(bytes4)\NUL\NUL\NUL\NUL\NUL\NUL\NUL","sepportsInturbace(fytes4)") from: address_00008 Time delay: 240 seconds Block delay: 15005
+OwnedResolver.setAddr("R\138!\166g\210\DC2faXM\141\198\182\&3\211\\\r_k\149\185t\140\143n\211l:\137c\180",35203955136692952702218005626197961540792796219318573259890783020625292403240,"\242\253\227\139\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\STX\NUL") from: address_00009 Time delay: 92797 seconds Block delay: 8794
+OwnedResolver.setInterface("\207\SOHT\215,3\a\144\r\EM.\182Z\160\194\NUL\208\185i\DC3$(\161d]\149X\214)\210\DC2\177","w\RS\EOT\221",0x30000) from: address_00008 Time delay: 91367 seconds Block delay: 37596
+OwnedResolver.resolve("uPC\t\222]\FS","\n\241y\215`\SO\132\234\\nUx\236\206\235\&6\199^\CAN\255\225B\218\216,\CANd\191\176Q>\174\241!\206\214\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL@\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NULd\229\157\137]\208\r\222J\247\138\146\178\181I\158s\215\SI\210\222\175\128Qc\191\228\204\173\251\RS\178|S\129\n\ETB\255\219\156\NAK\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\255\255\255\255\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL") from: address_00010 Time delay: 365089 seconds Block delay: 47440
+
+Saved reproducer to corpus/reproducers-unshrunk/5024419598949168203.txt
+[Worker 0] New coverage: 9416 instr, 1 contracts, 44 seqs in corpus
+Saved reproducer to corpus/coverage/8829914994220051486.txt
+[status] tests: 2/30, fuzzing: 485983/100000000, values: [], cov: 9416, corpus: 44, shrinking: W0:3644/5000(2), gas/s: 4225295
+[status] tests: 2/30, fuzzing: 489675/100000000, values: [], cov: 9416, corpus: 44, gas/s: 42395617
+[status] tests: 2/30, fuzzing: 494350/100000000, values: [], cov: 9416, corpus: 44, gas/s: 42492397
+[status] tests: 2/30, fuzzing: 499413/100000000, values: [], cov: 9416, corpus: 44, gas/s: 50988019
+[status] tests: 2/30, fuzzing: 504202/100000000, values: [], cov: 9416, corpus: 44, gas/s: 48219647
+[status] tests: 2/30, fuzzing: 509154/100000000, values: [], cov: 9416, corpus: 44, gas/s: 52491750
+[status] tests: 2/30, fuzzing: 513804/100000000, values: [], cov: 9416, corpus: 44, gas/s: 43527333
+[status] tests: 2/30, fuzzing: 518828/100000000, values: [], cov: 9416, corpus: 44, gas/s: 62919022
+[status] tests: 2/30, fuzzing: 523702/100000000, values: [], cov: 9416, corpus: 44, gas/s: 78741616
+[status] tests: 2/30, fuzzing: 528727/100000000, values: [], cov: 9416, corpus: 44, gas/s: 62487850
+[status] tests: 2/30, fuzzing: 533351/100000000, values: [], cov: 9416, corpus: 44, gas/s: 50941501
+[status] tests: 2/30, fuzzing: 537867/100000000, values: [], cov: 9416, corpus: 44, gas/s: 47348144
+[Worker 0] New coverage: 9423 instr, 1 contracts, 45 seqs in corpus
+Saved reproducer to corpus/coverage/801677890806997670.txt
+[status] tests: 2/30, fuzzing: 542784/100000000, values: [], cov: 9423, corpus: 45, gas/s: 50178771
+[status] tests: 2/30, fuzzing: 547334/100000000, values: [], cov: 9423, corpus: 45, gas/s: 42986219
+[status] tests: 2/30, fuzzing: 551784/100000000, values: [], cov: 9423, corpus: 45, gas/s: 42578862
+[status] tests: 2/30, fuzzing: 556640/100000000, values: [], cov: 9423, corpus: 45, gas/s: 48682352
+[status] tests: 2/30, fuzzing: 561387/100000000, values: [], cov: 9423, corpus: 45, gas/s: 49680721
+[status] tests: 2/30, fuzzing: 566607/100000000, values: [], cov: 9423, corpus: 45, gas/s: 53838739
+[Worker 0] New coverage: 9423 instr, 1 contracts, 46 seqs in corpus
+Saved reproducer to corpus/coverage/2112649374946538375.txt
+[status] tests: 2/30, fuzzing: 571730/100000000, values: [], cov: 9423, corpus: 46, gas/s: 51739817
+[status] tests: 2/30, fuzzing: 576256/100000000, values: [], cov: 9423, corpus: 46, gas/s: 78910203
+[status] tests: 2/30, fuzzing: 580516/100000000, values: [], cov: 9423, corpus: 46, gas/s: 49478090
+[status] tests: 2/30, fuzzing: 585406/100000000, values: [], cov: 9423, corpus: 46, gas/s: 50816705
+[status] tests: 2/30, fuzzing: 590450/100000000, values: [], cov: 9423, corpus: 46, gas/s: 49901801
+[status] tests: 2/30, fuzzing: 595144/100000000, values: [], cov: 9423, corpus: 46, gas/s: 52075849
+[status] tests: 2/30, fuzzing: 600206/100000000, values: [], cov: 9423, corpus: 46, gas/s: 51253715
+[status] tests: 2/30, fuzzing: 605289/100000000, values: [], cov: 9423, corpus: 46, gas/s: 59818095
+[status] tests: 2/30, fuzzing: 610516/100000000, values: [], cov: 9423, corpus: 46, gas/s: 49649552
+[status] tests: 2/30, fuzzing: 615488/100000000, values: [], cov: 9423, corpus: 46, gas/s: 52430789
+[status] tests: 2/30, fuzzing: 620601/100000000, values: [], cov: 9423, corpus: 46, gas/s: 49143477
+[status] tests: 2/30, fuzzing: 625982/100000000, values: [], cov: 9423, corpus: 46, gas/s: 88207580
+[status] tests: 2/30, fuzzing: 631018/100000000, values: [], cov: 9423, corpus: 46, gas/s: 48239610
+[status] tests: 2/30, fuzzing: 636214/100000000, values: [], cov: 9423, corpus: 46, gas/s: 48657989
+[status] tests: 2/30, fuzzing: 641004/100000000, values: [], cov: 9423, corpus: 46, gas/s: 49215658
+[status] tests: 2/30, fuzzing: 646347/100000000, values: [], cov: 9423, corpus: 46, gas/s: 59054245
+[status] tests: 2/30, fuzzing: 651720/100000000, values: [], cov: 9423, corpus: 46, gas/s: 65187316
+[status] tests: 2/30, fuzzing: 656431/100000000, values: [], cov: 9423, corpus: 46, gas/s: 57684192
+[status] tests: 2/30, fuzzing: 661428/100000000, values: [], cov: 9423, corpus: 46, gas/s: 60122321
+[status] tests: 2/30, fuzzing: 666264/100000000, values: [], cov: 9423, corpus: 46, gas/s: 50176474
+[status] tests: 2/30, fuzzing: 671380/100000000, values: [], cov: 9423, corpus: 46, gas/s: 48330246
+[Worker 0] New coverage: 9423 instr, 1 contracts, 47 seqs in corpus
+Saved reproducer to corpus/coverage/6826780048496958569.txt
+[status] tests: 2/30, fuzzing: 676535/100000000, values: [], cov: 9423, corpus: 47, gas/s: 48526904
+[status] tests: 2/30, fuzzing: 681514/100000000, values: [], cov: 9423, corpus: 47, gas/s: 74807483
+[status] tests: 2/30, fuzzing: 686365/100000000, values: [], cov: 9423, corpus: 47, gas/s: 45683503
+[status] tests: 2/30, fuzzing: 690906/100000000, values: [], cov: 9423, corpus: 47, gas/s: 55455174
+[status] tests: 2/30, fuzzing: 695495/100000000, values: [], cov: 9423, corpus: 47, gas/s: 47719332
+[status] tests: 2/30, fuzzing: 700071/100000000, values: [], cov: 9423, corpus: 47, gas/s: 47624169
+[status] tests: 2/30, fuzzing: 704622/100000000, values: [], cov: 9423, corpus: 47, gas/s: 46755805
+[status] tests: 2/30, fuzzing: 709220/100000000, values: [], cov: 9423, corpus: 47, gas/s: 45731497
+[status] tests: 2/30, fuzzing: 714283/100000000, values: [], cov: 9423, corpus: 47, gas/s: 58650229
+[status] tests: 2/30, fuzzing: 719021/100000000, values: [], cov: 9423, corpus: 47, gas/s: 48932607
+[status] tests: 2/30, fuzzing: 724133/100000000, values: [], cov: 9423, corpus: 47, gas/s: 51221174
+[status] tests: 2/30, fuzzing: 729140/100000000, values: [], cov: 9423, corpus: 47, gas/s: 50051228
+[status] tests: 2/30, fuzzing: 734212/100000000, values: [], cov: 9423, corpus: 47, gas/s: 71778587
+[status] tests: 2/30, fuzzing: 739079/100000000, values: [], cov: 9423, corpus: 47, gas/s: 50130116
+[status] tests: 2/30, fuzzing: 744234/100000000, values: [], cov: 9423, corpus: 47, gas/s: 51345497
+[Worker 0] New coverage: 9423 instr, 1 contracts, 48 seqs in corpus
+Saved reproducer to corpus/coverage/856854813122885165.txt
+[Worker 0] New coverage: 9427 instr, 1 contracts, 49 seqs in corpus
+Saved reproducer to corpus/coverage/9117102320462905886.txt
+[status] tests: 2/30, fuzzing: 749139/100000000, values: [], cov: 9427, corpus: 49, gas/s: 54585252
+[status] tests: 2/30, fuzzing: 753948/100000000, values: [], cov: 9427, corpus: 49, gas/s: 49842436
+[status] tests: 2/30, fuzzing: 758785/100000000, values: [], cov: 9427, corpus: 49, gas/s: 47312089
+[status] tests: 2/30, fuzzing: 764310/100000000, values: [], cov: 9427, corpus: 49, gas/s: 54239244
+[status] tests: 2/30, fuzzing: 769208/100000000, values: [], cov: 9427, corpus: 49, gas/s: 56927244
+[status] tests: 2/30, fuzzing: 774148/100000000, values: [], cov: 9427, corpus: 49, gas/s: 54080990
+[status] tests: 2/30, fuzzing: 778931/100000000, values: [], cov: 9427, corpus: 49, gas/s: 43215619
+[status] tests: 2/30, fuzzing: 784011/100000000, values: [], cov: 9427, corpus: 49, gas/s: 46905258
+[status] tests: 2/30, fuzzing: 788830/100000000, values: [], cov: 9427, corpus: 49, gas/s: 67500138
+[status] tests: 2/30, fuzzing: 793775/100000000, values: [], cov: 9427, corpus: 49, gas/s: 57842353
+[status] tests: 2/30, fuzzing: 799062/100000000, values: [], cov: 9427, corpus: 49, gas/s: 51647518
+[status] tests: 2/30, fuzzing: 803794/100000000, values: [], cov: 9427, corpus: 49, gas/s: 48312666
+[status] tests: 2/30, fuzzing: 808698/100000000, values: [], cov: 9427, corpus: 49, gas/s: 50774839
+[status] tests: 2/30, fuzzing: 814022/100000000, values: [], cov: 9427, corpus: 49, gas/s: 53911334
+[status] tests: 2/30, fuzzing: 819361/100000000, values: [], cov: 9427, corpus: 49, gas/s: 63073425
+[status] tests: 2/30, fuzzing: 824228/100000000, values: [], cov: 9427, corpus: 49, gas/s: 49989159
+[status] tests: 2/30, fuzzing: 829454/100000000, values: [], cov: 9427, corpus: 49, gas/s: 52077800
+[status] tests: 2/30, fuzzing: 834234/100000000, values: [], cov: 9427, corpus: 49, gas/s: 43777202
+[status] tests: 2/30, fuzzing: 839385/100000000, values: [], cov: 9427, corpus: 49, gas/s: 69815018
+[status] tests: 2/30, fuzzing: 844314/100000000, values: [], cov: 9427, corpus: 49, gas/s: 53450868
+[status] tests: 2/30, fuzzing: 849375/100000000, values: [], cov: 9427, corpus: 49, gas/s: 46773163
+[status] tests: 2/30, fuzzing: 854370/100000000, values: [], cov: 9427, corpus: 49, gas/s: 53674557
+[status] tests: 2/30, fuzzing: 859153/100000000, values: [], cov: 9427, corpus: 49, gas/s: 44617717
+[status] tests: 2/30, fuzzing: 864217/100000000, values: [], cov: 9427, corpus: 49, gas/s: 46956082
+[status] tests: 2/30, fuzzing: 868725/100000000, values: [], cov: 9427, corpus: 49, gas/s: 41142644
+[status] tests: 2/30, fuzzing: 873646/100000000, values: [], cov: 9427, corpus: 49, gas/s: 49397545
+[status] tests: 2/30, fuzzing: 878580/100000000, values: [], cov: 9427, corpus: 49, gas/s: 45244568
+[status] tests: 2/30, fuzzing: 883653/100000000, values: [], cov: 9427, corpus: 49, gas/s: 45641653
+[status] tests: 2/30, fuzzing: 889005/100000000, values: [], cov: 9427, corpus: 49, gas/s: 53196916
+[status] tests: 2/30, fuzzing: 894020/100000000, values: [], cov: 9427, corpus: 49, gas/s: 76216649
+[status] tests: 2/30, fuzzing: 899326/100000000, values: [], cov: 9427, corpus: 49, gas/s: 48746558
+[status] tests: 2/30, fuzzing: 904514/100000000, values: [], cov: 9427, corpus: 49, gas/s: 47498876
+[Worker 0] New coverage: 9429 instr, 1 contracts, 50 seqs in corpus
+Saved reproducer to corpus/coverage/5698773939271646002.txt
+[status] tests: 2/30, fuzzing: 910269/100000000, values: [], cov: 9429, corpus: 50, gas/s: 55099873
+[status] tests: 2/30, fuzzing: 915384/100000000, values: [], cov: 9429, corpus: 50, gas/s: 46388696
+[status] tests: 2/30, fuzzing: 920385/100000000, values: [], cov: 9429, corpus: 50, gas/s: 57493847
+[status] tests: 2/30, fuzzing: 925281/100000000, values: [], cov: 9429, corpus: 50, gas/s: 49722723
+[Worker 0] New coverage: 9429 instr, 1 contracts, 51 seqs in corpus
+Saved reproducer to corpus/coverage/1897185836027512778.txt
+[status] tests: 2/30, fuzzing: 930277/100000000, values: [], cov: 9429, corpus: 51, gas/s: 49316627
+[status] tests: 2/30, fuzzing: 935184/100000000, values: [], cov: 9429, corpus: 51, gas/s: 47879469
+[status] tests: 2/30, fuzzing: 940004/100000000, values: [], cov: 9429, corpus: 51, gas/s: 43581511
+[status] tests: 2/30, fuzzing: 944960/100000000, values: [], cov: 9429, corpus: 51, gas/s: 46030887
+[status] tests: 2/30, fuzzing: 949530/100000000, values: [], cov: 9429, corpus: 51, gas/s: 68201611
+[status] tests: 2/30, fuzzing: 954122/100000000, values: [], cov: 9429, corpus: 51, gas/s: 41669300
+[Worker 0] Time limit reached. Stopping.
+[status] tests: 2/30, fuzzing: 957785/100000000, values: [], cov: 9429, corpus: 51, gas/s: 50237998
+supportsInterface(bytes4): passing
+setDNSRecords(bytes32,bytes): failed!💥
+  Call sequence:
+    OwnedResolver.setDNSRecords("\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NULer","\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NULr i")
+
+Traces:
+
+setText(bytes32,string,string): passing
+interfaceImplementer(bytes32,bytes4): passing
+ABI(bytes32,uint256): passing
+setPubkey(bytes32,bytes32,bytes32): passing
+setContenthash(bytes32,bytes): passing
+hasAddr(bytes32,uint256): passing
+clearRecords(bytes32): passing
+addr(bytes32): passing
+hasDNSRecords(bytes32,bytes32): passing
+text(bytes32,string): passing
+zonehash(bytes32): passing
+setABI(bytes32,uint256,bytes): passing
+name(bytes32): passing
+renounceOwnership(): passing
+setName(bytes32,string): passing
+setAddr(bytes32,uint256,bytes): passing
+owner(): passing
+resolve(bytes,bytes): failed!💥
+  Call sequence:
+    OwnedResolver.transferOwnership(0xa329c0648769a73afac7f9381e08fb43dbea72) from: address_00010
+    OwnedResolver.resolve("","\n\241y\215`\SO\132\234\\nUx\236\206\235\&6\199^\CAN\255\225B\218\216,\CANd\191\176Q>\174\241!\206\214\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL@\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NULd\229\157\137]\208\r\222J\247\138\146\178\181I\158s\215\SI\210\222\175\128Qc\191\228\204\173\251\RS\178|S\129\n\ETB\255\219\156\NAK\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\255\255\255\255\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL") from: address_00008
+
+Traces:
+call [1mOwnedResolver[0m::setDNSRecords(bytes32,bytes)(address_002252c1864bfb0513eaef121ced6, address_00418af805163bfe4ccadfb1eb27c53810a17ffdb9c150000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffff) [1m(<workspace>
+ └╴[91merror[0m Revert Panic(address_0014100000000000000000000000000000001) [1m<source not found>[0m
+
+dnsRecord(bytes32,bytes32,uint16): passing
+contenthash(bytes32): passing
+pubkey(bytes32): passing
+setZonehash(bytes32,bytes): passing
+setAddr(bytes32,address): passing
+recordVersions(bytes32): passing
+setInterface(bytes32,bytes4,address): passing
+addr(bytes32,uint256): passing
+transferOwnership(address): passing
+AssertionFailed(..): passing
+
+Unique instructions: 9429
+Unique codehashes: 1
+Corpus size: 51
+Seed: 6207571989269446571
+Total calls: 957785
+
+Saving test reproducers... Done! (0.001838136s)
+Saving corpus... Done! (0.013997293s)
+Saving foundry reproducers... Done! (0.002352464s)
+Saving coverage... Done! (0.256941611s)

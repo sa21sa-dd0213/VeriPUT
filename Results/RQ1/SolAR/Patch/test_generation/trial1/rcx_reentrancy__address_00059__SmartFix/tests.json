@@ -1,0 +1,131 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "Initialized",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "Deposit",
+      "n": 2,
+      "value": 30430855683271283
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        5
+      ],
+      "frm": "address_00184",
+      "method": "SetMinSum",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00036",
+      "method": "SetLogFile",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        38629376824793611936024625005108874178234746936204807990580442190595306767702
+      ],
+      "frm": "address_00184",
+      "method": "Collect",
+      "n": 2,
+      "value": 1000000000000000000
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00036",
+      "method": "SetLogFile",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "Deposit",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        115652739775443604948054588995268634988447645997888930082915483958573710876055
+      ],
+      "frm": "address_00410",
+      "method": "SetMinSum",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00036",
+      "method": "SetLogFile",
+      "n": 4,
+      "value": 0
+    }
+  ]
+]

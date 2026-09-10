@@ -1,0 +1,8 @@
+{
+  "contract": "demo",
+  "dataset": "Patch",
+  "solc": "0.8.35",
+  "solc_bin": "solc",
+  "source_form": "normalized-flat",
+  "subject_id": "rcx_unchecked_low_level_calls__address_00415__TIPS"
+}

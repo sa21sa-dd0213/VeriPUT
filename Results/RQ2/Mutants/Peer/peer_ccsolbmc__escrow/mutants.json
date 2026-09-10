@@ -1,0 +1,357 @@
+{
+  "compile_failed": 4,
+  "compile_ok": 31,
+  "mutants": [
+    {
+      "compile_status": "failed",
+      "end_line": 51,
+      "function": "aadfg",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "_buyer",
+      "replacement_expression": "address(this)",
+      "start_line": 51
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 51,
+      "function": "aadfg",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "_buyer",
+      "replacement_expression": "address(0)",
+      "start_line": 51
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 52,
+      "function": "aadfg",
+      "mutant_id": "m000003",
+      "operator": "AVR",
+      "original_expression": "_sender",
+      "replacement_expression": "address(this)",
+      "start_line": 52
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 52,
+      "function": "aadfg",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "_sender",
+      "replacement_expression": "address(0)",
+      "start_line": 52
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 27,
+      "function": "modifier:instate",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 34,
+      "function": "modifier:onlyBuyer",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " ||\n\t\t\t\t",
+      "replacement_expression": " &&\n\t\t\t\t",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "modifier:onlyBuyer",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 34,
+      "function": "modifier:onlyBuyer",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 34
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "modifier:onlySeller",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 27,
+      "function": "modifier:instate",
+      "mutant_id": "m000010",
+      "operator": "EHD",
+      "original_expression": "require(state == expected_state);",
+      "replacement_expression": "/* require(state == expected_state); */",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 34,
+      "function": "modifier:onlyBuyer",
+      "mutant_id": "m000011",
+      "operator": "EHD",
+      "original_expression": "require(msg.sender == buyer ||\n\t\t\t\tmsg.sender == arbiter);",
+      "replacement_expression": "/* require(msg.sender == buyer ||\n\t\t\t\tmsg.sender == arbiter); */",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "modifier:onlySeller",
+      "mutant_id": "m000012",
+      "operator": "EHD",
+      "original_expression": "require(msg.sender == seller);",
+      "replacement_expression": "/* require(msg.sender == seller); */",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "aadfg",
+      "mutant_id": "m000013",
+      "operator": "ER",
+      "original_expression": "State.awate_payment",
+      "replacement_expression": "State.awate_delivery",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "aadfg",
+      "mutant_id": "m000014",
+      "operator": "ER",
+      "original_expression": "State.awate_payment",
+      "replacement_expression": "State.complete",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "confirm_payment",
+      "mutant_id": "m000015",
+      "operator": "ER",
+      "original_expression": "State.awate_delivery",
+      "replacement_expression": "State.awate_payment",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "confirm_payment",
+      "mutant_id": "m000016",
+      "operator": "ER",
+      "original_expression": "State.awate_delivery",
+      "replacement_expression": "State.complete",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "confirm_payment",
+      "mutant_id": "m000017",
+      "operator": "ER",
+      "original_expression": "State.awate_payment",
+      "replacement_expression": "State.awate_delivery",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "confirm_payment",
+      "mutant_id": "m000018",
+      "operator": "ER",
+      "original_expression": "State.awate_payment",
+      "replacement_expression": "State.complete",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 69,
+      "function": "confirm_Delivery",
+      "mutant_id": "m000019",
+      "operator": "ER",
+      "original_expression": "State.complete",
+      "replacement_expression": "State.awate_payment",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 69,
+      "function": "confirm_Delivery",
+      "mutant_id": "m000020",
+      "operator": "ER",
+      "original_expression": "State.complete",
+      "replacement_expression": "State.awate_delivery",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 66,
+      "function": "confirm_Delivery",
+      "mutant_id": "m000021",
+      "operator": "ER",
+      "original_expression": "State.awate_delivery",
+      "replacement_expression": "State.awate_payment",
+      "start_line": 66
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 66,
+      "function": "confirm_Delivery",
+      "mutant_id": "m000022",
+      "operator": "ER",
+      "original_expression": "State.awate_delivery",
+      "replacement_expression": "State.complete",
+      "start_line": 66
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "ReturnPayment",
+      "mutant_id": "m000023",
+      "operator": "ER",
+      "original_expression": "State.awate_delivery",
+      "replacement_expression": "State.awate_payment",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "ReturnPayment",
+      "mutant_id": "m000024",
+      "operator": "ER",
+      "original_expression": "State.awate_delivery",
+      "replacement_expression": "State.complete",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 68,
+      "function": "confirm_Delivery",
+      "mutant_id": "m000025",
+      "operator": "ETR",
+      "original_expression": "seller.transfer",
+      "replacement_expression": "seller.send",
+      "start_line": 68
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 68,
+      "function": "confirm_Delivery",
+      "mutant_id": "m000026",
+      "operator": "ETR",
+      "original_expression": "seller.transfer",
+      "replacement_expression": "seller.call{value: address(this).balance}(\"\")",
+      "start_line": 68
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "ReturnPayment",
+      "mutant_id": "m000027",
+      "operator": "ETR",
+      "original_expression": "buyer.transfer",
+      "replacement_expression": "buyer.send",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "ReturnPayment",
+      "mutant_id": "m000028",
+      "operator": "ETR",
+      "original_expression": "buyer.transfer",
+      "replacement_expression": "buyer.call{value: address(this).balance}(\"\")",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "confirm_payment",
+      "mutant_id": "m000029",
+      "operator": "MOD",
+      "original_expression": "function confirm_payment() onlyBuyer instate(\n\tState.awate_payment) public payable",
+      "replacement_expression": "function confirm_payment()  instate(\n\tState.awate_payment) public payable",
+      "start_line": 57
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "confirm_payment",
+      "mutant_id": "m000030",
+      "operator": "MOD",
+      "original_expression": "function confirm_payment() onlyBuyer instate(\n\tState.awate_payment) public payable",
+      "replacement_expression": "function confirm_payment() onlyBuyer  public payable",
+      "start_line": 57
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 66,
+      "function": "confirm_Delivery",
+      "mutant_id": "m000031",
+      "operator": "MOD",
+      "original_expression": "function confirm_Delivery() onlyBuyer instate(\n\tState.awate_delivery) public",
+      "replacement_expression": "function confirm_Delivery()  instate(\n\tState.awate_delivery) public",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 66,
+      "function": "confirm_Delivery",
+      "mutant_id": "m000032",
+      "operator": "MOD",
+      "original_expression": "function confirm_Delivery() onlyBuyer instate(\n\tState.awate_delivery) public",
+      "replacement_expression": "function confirm_Delivery() onlyBuyer  public",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "ReturnPayment",
+      "mutant_id": "m000033",
+      "operator": "MOD",
+      "original_expression": "function ReturnPayment() onlySeller instate(\n\tState.awate_delivery)public",
+      "replacement_expression": "function ReturnPayment()  instate(\n\tState.awate_delivery)public",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "ReturnPayment",
+      "mutant_id": "m000034",
+      "operator": "MOD",
+      "original_expression": "function ReturnPayment() onlySeller instate(\n\tState.awate_delivery)public",
+      "replacement_expression": "function ReturnPayment() onlySeller public",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "confirm_payment",
+      "mutant_id": "m000035",
+      "operator": "PKD",
+      "original_expression": "function confirm_payment() onlyBuyer instate(\n\tState.awate_payment) public payable",
+      "replacement_expression": "function confirm_payment() onlyBuyer instate(\n\tState.awate_payment) public ",
+      "start_line": 57
+    }
+  ],
+  "subject_id": "peer_ccsolbmc__escrow"
+}

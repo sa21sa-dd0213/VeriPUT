@@ -1,0 +1,302 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        42,
+        31011608840249474827911890456180282329002424998615230654836320364052578087839
+      ],
+      "frm": "address_00404",
+      "method": "move_into_tranche",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        9489,
+        "address_00048616772716948626a414e6d65"
+      ],
+      "frm": "address_00184",
+      "method": "stake_tokens",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00036",
+      "method": "revoke_issuer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        22057048784101864099715321477780353540263297088069826998951935430490831935487,
+        106151658141311171101422529574321407918083032396435191034653812138429956932832
+      ],
+      "frm": "address_00019",
+      "method": "create_tranche",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        64
+      ],
+      "frm": "address_00184",
+      "method": "withdraw_from_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00398",
+      "method": "set_controller",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        64
+      ],
+      "frm": "address_00184",
+      "method": "withdraw_from_tranche",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        48025545,
+        "address_00027416a7252584a496d727a6270"
+      ],
+      "frm": "address_00019",
+      "method": "stake_tokens",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        0,
+        4092052750436963295948324384096365182105969047404375546772446733793723894707
+      ],
+      "frm": "address_00404",
+      "method": "issue_into_tranche",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "address_00036",
+      "method": "withdraw_from_tranche",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        41021679088090272603173862980872734605469410799500347469939630044805256145996
+      ],
+      "frm": "address_00401",
+      "method": "remove_stake",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        58
+      ],
+      "frm": "address_00184",
+      "method": "withdraw_from_tranche",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        73749992973914662774224066885352743504245726256162162562980684499750382866337,
+        "address_00001000000000000000000000000"
+      ],
+      "frm": "address_00023",
+      "method": "stake_tokens",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        169
+      ],
+      "frm": "address_00036",
+      "method": "get_vested_for_tranche",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        28312053944904172134066875968489389927633421286147917906283286319570772911861
+      ],
+      "frm": "address_00021",
+      "method": "permit_issuer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        64
+      ],
+      "frm": "address_00184",
+      "method": "withdraw_from_tranche",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00401",
+      "method": "user_total_all_tranches",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        203
+      ],
+      "frm": "address_00036",
+      "method": "get_tranche_balance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00401",
+      "method": "user_total_all_tranches",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        22057048784101864099715321477780353540263297088069826998951935430490831935487,
+        106151658141311171101422529574321407918083032396435191034653812138429956932832
+      ],
+      "frm": "address_00019",
+      "method": "create_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

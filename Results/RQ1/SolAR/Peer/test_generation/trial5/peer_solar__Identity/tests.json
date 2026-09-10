@@ -1,0 +1,251 @@
+[
+  [
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00410",
+      "method": "recover",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00398",
+      "method": "isOwner",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "zgjdisEkQXFHoRbSLtlloSylnydKnyCQxqxwacUqLZLfwftyiYRyJo GItYSvVlYbHsUKjgYl ZcklqKfnkLsPaLEncQmqXTLndHbykffyyVRiFBifdTBrhyatevxFRQxCFktDMXD nRRTYUmKIlJOTEJyxUTyWQSvRZheozGUDqesITPkiZUJIxaZpWNPBtvMtKEjYmsACubyNhBMbVhGabPLhUHHVhNUFIQboTdtCiiyFTdvI qalbCh"
+      ],
+      "frm": "address_00019",
+      "method": "getHighestVote",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00019",
+      "method": "addMender",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00021",
+      "method": "addPermission",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00401",
+      "method": "removePermission",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00019",
+      "method": "hasPermission",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00021",
+      "method": "removeMender",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "SzvMd MwfnKKSnE IHDgbDIKuHdpBdVffpcoZGJWIWZDEmWiHxIuPxSehenlbSCcKxzynbNhQxZtzroBxEydKCasKPWxXgPqfygGrCTCdWyvJKVHKbUvaNDprBW gkDeQtAeJFQqxYCQwnEPbnsUEKADzHXNuzVYORXvTrWCgpKdD",
+        114371851848155094256807459952413929800976948195552785622520262654218012534149
+      ],
+      "frm": "address_00398",
+      "method": "vote",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00401",
+      "method": "removePermission",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "qSdpc qbGRRfpLytymdVfMX EzWNMZdMhLyEGzFOBXcaRJWohYXqiRLVCncSGzUFByTjBCCnyq pDtjUetdExoJ lpaJo UdeOnBWvQzgdpprsawHB"
+      ],
+      "frm": "address_00019",
+      "method": "getValue",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00036",
+      "method": "removeMender",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "qSdpc qbGRRfpLytymdVfMX EzWNMZdMhLyEGzFOBXcaRJWohYXqiRLVCncSGzUFByTjBCCnyq pDtjUetdExoJ lpaJo UdeOnBWvQzgdpprsawHB"
+      ],
+      "frm": "address_00019",
+      "method": "getValue",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "",
+        48047859743458261648351076438915793678458125901669968034635255696039535963525
+      ],
+      "frm": "address_00021",
+      "method": "vote",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

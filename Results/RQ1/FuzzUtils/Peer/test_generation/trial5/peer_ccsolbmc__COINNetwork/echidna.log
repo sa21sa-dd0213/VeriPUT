@@ -1,0 +1,4 @@
+Compiling `src/flat.sol`... Done! (0.626602764s)
+Analyzing contract: <workspace>
+
+echidna: No bytecode found for contract "<workspace>"

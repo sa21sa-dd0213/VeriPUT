@@ -1,0 +1,152 @@
+// SPDX-License-Identifier: MIT
+
+
+
+
+
+
+pragma solidity >=0.8.0;
+
+import {Test} from "forge-std/Test.sol";
+import {BERNIE} from "../src/flat.sol";
+
+contract BERNIECovTest_BERNIE_decimals_put3p1 is Test {
+  BERNIE c0;
+  function setUp() public {
+    c0 = new BERNIE();
+    
+    address _esbmc_ext_mock_0 = address(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
+
+
+
+  }
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  function _veriput_parameterized(address p_msg_sender) internal {
+    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
+    
+    uint256 _ret_pre_decimals = (uint256(vm.load(address(c0), bytes32(uint256(3)))) & 255);
+    uint256 _pre_decimals = (uint256(vm.load(address(c0), bytes32(uint256(3)))) & 255);
+    
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
+    vm.prank(p_msg_sender);
+    uint8 _put_ret = c0.decimals();
+    
+    if (p_msg_sender == address(uint160(0))) {
+      assertEq(_put_ret, uint8(18), "fixed witness return");
+
+
+
+
+
+
+
+
+
+
+
+    }
+    
+    uint256 _post_decimals = (uint256(vm.load(address(c0), bytes32(uint256(3)))) & 255);
+    assertEq(_post_decimals, _pre_decimals, "_decimals: post == pre");
+    
+    
+    
+    
+    
+    
+    unchecked { assertLe(_post_decimals, (uint256(_pre_decimals) + uint256(_pre_decimals)), "_decimals: post in [0, (pre + pre)]"); }
+    
+    
+    
+    unchecked { assertLe(_post_decimals, (uint256(0) + uint256(255)), "_decimals: post in [0, (msg.value + 255)]"); }
+    
+    
+    
+    unchecked { assertLe(_post_decimals, (uint256(255) - uint256(_pre_decimals)), "_decimals: post in [0, (255 - pre)]"); }
+    
+    
+    assertTrue(uint256(_put_ret) != 0, "return: return != 0");
+    assertEq(uint256(_put_ret), _ret_pre_decimals, "return: return == state._decimals");
+    
+  }
+
+
+  
+  function test_put_BERNIE_decimals_path3p1(address p_msg_sender) public {
+    _veriput_parameterized(p_msg_sender);
+  }
+}

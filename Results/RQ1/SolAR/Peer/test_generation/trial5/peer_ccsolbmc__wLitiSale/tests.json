@@ -1,0 +1,596 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "withdrawAllTokens",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "getSaleSupplyTotal",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        2691
+      ],
+      "frm": "address_00184",
+      "method": "setReferrerBonusPercent",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "getSaleEndTime",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        2015,
+        2691,
+        3
+      ],
+      "frm": "address_00021",
+      "method": "createSale",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "getSaleSupplyLeft",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        2015,
+        2691,
+        3
+      ],
+      "frm": "address_00021",
+      "method": "createSale",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        2021
+      ],
+      "frm": "address_00019",
+      "method": "getWeiRaised",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        2021
+      ],
+      "frm": "address_00401",
+      "method": "setTokenPrice",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        2021,
+        2691,
+        2
+      ],
+      "frm": "address_00021",
+      "method": "createSale",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        2021
+      ],
+      "frm": "address_00019",
+      "method": "getWeiRaised",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "getTokenPrice",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        2021,
+        2691,
+        0
+      ],
+      "frm": "address_00021",
+      "method": "createSale",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        522
+      ],
+      "frm": "address_00184",
+      "method": "withdrawToken",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "withdrawAllTokens",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "isSaleActive",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        2015,
+        2691,
+        3
+      ],
+      "frm": "address_00021",
+      "method": "createSale",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        2021,
+        "address_00401",
+        "address_00184"
+      ],
+      "frm": "address_00401",
+      "method": "purchaseTokens",
+      "n": 2,
+      "value": 88128945428345540
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "withdrawAllTokens",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "getETHWallet",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00401",
+      "method": "setMasterReferrerWallet",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00401",
+      "method": "getReferrerBonusPercent",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        15760970587156349396131515091157621110264174775653181193819873846023471597262
+      ],
+      "frm": "address_00398",
+      "method": "getWeiRaised",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        2015,
+        2691,
+        3
+      ],
+      "frm": "address_00021",
+      "method": "createSale",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "getSaleCount",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        2015,
+        2691,
+        3
+      ],
+      "frm": "address_00021",
+      "method": "createSale",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "getSaleStartTime",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00401",
+      "method": "isReferrer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        2015,
+        2691,
+        3
+      ],
+      "frm": "address_00021",
+      "method": "createSale",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00019",
+      "method": "setETHWallet",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00401",
+      "method": "setMasterReferrerWallet",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        1
+      ],
+      "frm": "address_00019",
+      "method": "addReferrer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        2015,
+        2691,
+        3
+      ],
+      "frm": "address_00021",
+      "method": "createSale",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00184",
+      "method": "removeReferrer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "getMasterReferrerWallet",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        2015,
+        2691,
+        3
+      ],
+      "frm": "address_00021",
+      "method": "createSale",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00401",
+      "method": "setMasterReferrerWallet",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        27583160896784428694969540474580003117571153435327291273272443195745664729992
+      ],
+      "frm": "address_00410",
+      "method": "setMaxBonusPercent",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        2015,
+        2691,
+        3
+      ],
+      "frm": "address_00021",
+      "method": "createSale",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "getMasterReferrerWallet",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "getMaxBonusPercent",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        2021,
+        2691,
+        2
+      ],
+      "frm": "address_00021",
+      "method": "createSale",
+      "n": 4,
+      "value": 0
+    }
+  ]
+]

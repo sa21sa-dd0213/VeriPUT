@@ -1,0 +1,36 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 1000000000000000000
+    },
+    {
+      "args": [
+        200
+      ],
+      "frm": "address_00036",
+      "method": "guess",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 1000000000000000000
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "isComplete",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

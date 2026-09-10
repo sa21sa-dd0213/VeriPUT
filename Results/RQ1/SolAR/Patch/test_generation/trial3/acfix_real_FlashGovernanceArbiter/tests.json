@@ -1,0 +1,131 @@
+[
+  [
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        "address_00023",
+        "address_00023",
+        2
+      ],
+      "frm": "address_00032",
+      "method": "burnFlashGovernanceAsset",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        2,
+        90172722078512728487864037591766221908334651974750222416109903552843252852364
+      ],
+      "frm": "address_00410",
+      "method": "enforceToleranceInt",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1,
+        61392795396760814334793057167294934031356485055634593157491997104441230074554
+      ],
+      "frm": "address_00019",
+      "method": "enforceTolerance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        false
+      ],
+      "frm": "address_00032",
+      "method": "setEnforcement",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        "address_00410",
+        false
+      ],
+      "frm": "address_00036",
+      "method": "assertGovernanceApproved",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        180,
+        69421428088474466120557810043535112099198506640702166945042714517451322664114,
+        0
+      ],
+      "frm": "address_00401",
+      "method": "configureSecurityParameters",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

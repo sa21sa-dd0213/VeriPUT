@@ -1,0 +1,80 @@
+[
+  [
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00373725a736e494e456a6d557375"
+      ],
+      "frm": "address_00021",
+      "method": "resolver",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_001206b7956505771526445557549"
+      ],
+      "frm": "address_00410",
+      "method": "resolver",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00308736f5120624266625a6d6f46"
+      ],
+      "frm": "address_00398",
+      "method": "owner",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_002815567714276644a5a67415366"
+      ],
+      "frm": "address_00019",
+      "method": "owner",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00001000000000000000000000000"
+      ],
+      "frm": "address_00023",
+      "method": "ttl",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

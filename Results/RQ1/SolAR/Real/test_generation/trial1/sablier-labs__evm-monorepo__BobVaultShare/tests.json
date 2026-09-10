@@ -1,0 +1,76 @@
+[
+  [
+    {
+      "args": [
+        " NhCbMYTPatqRSrYtludNFyAulyJNtIgDubwxHcGhnuxZXejHnQSVDHBsNMHwPydxbXGYz kbzixQtIK KtuwiXpLzQVHZpUfnagpCRtgcgLndTsrhCRiOZGWTWiSYXeIoYCunZzkvhxcpJrzGjicLyJpnmjQwKgctwwIiz",
+        "\"memory-safe\"",
+        119,
+        "address_00021",
+        25
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        10202132980589021787518576676696560532546316615229221452077871225585166857145,
+        "address_00404",
+        72172561010687829513693649457524211618629144203042986678080390759097842400946
+      ],
+      "frm": "address_00398",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "qoNyiovpEruaPMyLuRtIpNipzKKZLBqaARPoFuGn VTCrGmJSLRMeUbvJSMRaHsfmFkANfqan QmagcOJgkhDhElCgoOGJqcgeSBVlvubrSubYyNPfok",
+        "\"memory-safe\"",
+        20,
+        "address_00023",
+        43593927596850597150706129881359089399908685535680811104646803589201394357946
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        10000000000000059,
+        "address_00410",
+        66364249260647758540068110107385755472249116521623715700422548204137243248530
+      ],
+      "frm": "address_00404",
+      "method": "mint",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "\"memory-safe\"",
+        "zAPtnQlkhwskYrdlSBZwYcBxBgMgRyTaWIgoHlAbYADvOzggRfdwJtlxDNfzfdNyyUkwEDqAPNzPScaZhvharFckbvHEEYJOV RIqYYAYvafSYaUyvyTHiAMspPwUFuvrjBjFBMxbTlyUDXOlsGjMjPTwyzaaAttLWje UZBdWDhjHrUIXXRwUryOsSa hPOn",
+        47,
+        "address_00404",
+        10000000002
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "decimals",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

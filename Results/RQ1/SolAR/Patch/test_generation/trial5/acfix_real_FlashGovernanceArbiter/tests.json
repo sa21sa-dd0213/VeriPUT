@@ -1,0 +1,153 @@
+[
+  [
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398",
+        "address_00032",
+        "address_00398",
+        107193896345475624731323288404279129030870056796893858207023635067579629498484
+      ],
+      "frm": "address_00184",
+      "method": "burnFlashGovernanceAsset",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        100,
+        43944473483457574073214876113879661777022049495624934748557195825480881918149,
+        1
+      ],
+      "frm": "address_00410",
+      "method": "configureSecurityParameters",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        113059069917678718490931517363362767128170779770006107661671700080062085692717,
+        20
+      ],
+      "frm": "address_00032",
+      "method": "enforceTolerance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        "address_00398",
+        true
+      ],
+      "frm": "address_00404",
+      "method": "assertGovernanceApproved",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        -68621156301554858995693418725310149700024625240643822761334886260003741812314,
+        -13752428564646943595609912441933431396130743627071207244713067892721717616663
+      ],
+      "frm": "address_00410",
+      "method": "enforceToleranceInt",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        false
+      ],
+      "frm": "address_00410",
+      "method": "setEnforcement",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        "address_00019",
+        false
+      ],
+      "frm": "address_00398",
+      "method": "assertGovernanceApproved",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        100,
+        43944473483457574073214876113879661777022049495624934748557195825480881918149,
+        1
+      ],
+      "frm": "address_00410",
+      "method": "configureSecurityParameters",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

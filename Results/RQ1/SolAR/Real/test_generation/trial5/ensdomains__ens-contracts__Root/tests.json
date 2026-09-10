@@ -1,0 +1,83 @@
+[
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00021",
+      "method": "setResolver",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x5662636c"
+      ],
+      "frm": "address_00401",
+      "method": "supportsInterface",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00283495441526b6d487443494f4e"
+      ],
+      "frm": "address_00184",
+      "method": "lock",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_0024976724944465465436c43496f",
+        "address_00404"
+      ],
+      "frm": "address_00032",
+      "method": "setSubnodeOwner",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

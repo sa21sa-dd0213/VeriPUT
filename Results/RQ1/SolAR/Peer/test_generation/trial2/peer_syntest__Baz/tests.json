@@ -1,0 +1,65 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        100158011429160390798005594842388621835059618582170101513633178047107207308449,
+        1,
+        -47306214229333388135477962043735155323226835996515871712533627114818477534562
+      ],
+      "frm": "address_00032",
+      "method": "baz",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "echidna_all_states",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "echidna_all_states",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        43228733791477562432062922908628146355972779091905500601651677427944320699044,
+        4,
+        5
+      ],
+      "frm": "address_00410",
+      "method": "baz",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

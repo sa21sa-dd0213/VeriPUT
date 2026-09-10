@@ -1,0 +1,584 @@
+[
+  [
+    {
+      "args": [
+        "address_00021",
+        108531653788795300546070452313150944694959361725818540169512405054756907511530
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "OpenToThePublic",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00184",
+        255
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "OpenToThePublic",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        255
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "currentDifficulty",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00021",
+        108531653788795300546070452313150944694959361725818540169512405054756907511530
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "OpenToThePublic",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "wager",
+      "n": 3,
+      "value": 44082324832968699
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023",
+        83277053390050811868900371909910964819672521180653141548314777756237904597485
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "wager",
+      "n": 2,
+      "value": 44082324832968699
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023",
+        83277053390050811868900371909910964819672521180653141548314777756237904597480
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "winnersPot",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00032",
+        83277053390050811868900371909910964819672521180653141548314777756237904597484
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "ethBalance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "donate",
+      "n": 3,
+      "value": 193933639044195940
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023",
+        83277053390050811868900371909910964819672521180653141548314777756237904597480
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "address_00023",
+      "method": "AdjustDifficulty",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023",
+        83277053390050811868900371909910964819672521180653141548314777756237904597485
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "play",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00021",
+        108531653788795300546070452313150944694959361725818540169512405054756907511530
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "OpenToThePublic",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "play",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023",
+        83277053390050811868900371909910964819672521180653141548314777756237904597485
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "currentBetLimit",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        "address_00398",
+        7074599042427947089898586941563277001072006256751766514764818905363100280154
+      ],
+      "frm": "address_00398",
+      "method": "transferAnyERC20Token",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "wager",
+      "n": 4,
+      "value": 44082324832968699
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00036",
+        2
+      ],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        256
+      ],
+      "frm": "address_00021",
+      "method": "AdjustBetAmounts",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023",
+        83277053390050811868900371909910964819672521180653141548314777756237904597485
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "OpenToThePublic",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "wager",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "ethBalance",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "donate",
+      "n": 5,
+      "value": 193933639044195940
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023",
+        23537532282833656899596629598170311821572148380868938928958416816074426302618
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "winnersPot",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00036",
+      "method": "hasPlayerWagered",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        1724123592493868648128638987322412005624080865547938309142987169516064532934
+      ],
+      "frm": "address_00410",
+      "method": "AdjustBetAmounts",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "_fallback",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "play",
+      "n": 6,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "OpenToThePublic",
+      "n": 7,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "_fallback",
+      "n": 8,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "_fallback",
+      "n": 9,
+      "value": 68868184405619593
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "currentBetLimit",
+      "n": 10,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "currentBetLimit",
+      "n": 11,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "play",
+      "n": 12,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "OpenToThePublic",
+      "n": 13,
+      "value": 0
+    },
+    {
+      "args": [
+        20
+      ],
+      "frm": "address_00023",
+      "method": "AdjustBetAmounts",
+      "n": 14,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "currentDifficulty",
+      "n": 15,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "donate",
+      "n": 16,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "currentBetLimit",
+      "n": 17,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "currentBetLimit",
+      "n": 18,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "currentDifficulty",
+      "n": 19,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "OpenToThePublic",
+      "n": 20,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00021",
+      "method": "hasPlayerWagered",
+      "n": 21,
+      "value": 0
+    },
+    {
+      "args": [
+        20
+      ],
+      "frm": "address_00019",
+      "method": "AdjustBetAmounts",
+      "n": 22,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "OpenToThePublic",
+      "n": 23,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "winnersPot",
+      "n": 24,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "OpenToThePublic",
+      "n": 25,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "address_00021",
+      "method": "AdjustDifficulty",
+      "n": 26,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00032",
+      "method": "hasPlayerWagered",
+      "n": 27,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023",
+        83277053390050811868900371909910964819672521180653141548314777756237904597485
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "donate",
+      "n": 2,
+      "value": 193933639044195940
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023",
+        108531653788795300546070452313150944694959361725818540169512405054756907511530
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00184",
+      "method": "hasPlayerWagered",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00023",
+        83277053390050811868900371909910964819672521180653141548314777756237904597485
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        "address_00404",
+        108410852382357769161060114216535244413338355040901444331411580772600896399045
+      ],
+      "frm": "address_00019",
+      "method": "transferAnyERC20Token",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

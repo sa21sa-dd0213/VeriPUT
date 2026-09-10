@@ -1,0 +1,8 @@
+{
+  "contract": "Proxy",
+  "dataset": "Patch",
+  "solc": "0.8.35",
+  "solc_bin": "solc",
+  "source_form": "normalized-flat",
+  "subject_id": "rc_access_control__proxy__SolGPT__proxy_4round"
+}

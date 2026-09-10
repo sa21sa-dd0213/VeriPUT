@@ -1,0 +1,347 @@
+{
+  "compile_failed": 0,
+  "compile_ok": 34,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "check",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "check",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "check",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "check",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "check",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "check",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "check",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "check",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "check",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "conditional_increment",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "conditional_increment",
+      "mutant_id": "m000011",
+      "operator": "CSC",
+      "original_expression": "x == 0",
+      "replacement_expression": "true",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "conditional_increment",
+      "mutant_id": "m000012",
+      "operator": "CSC",
+      "original_expression": "x == 0",
+      "replacement_expression": "false",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "check",
+      "mutant_id": "m000013",
+      "operator": "EHD",
+      "original_expression": "require(x == 0);",
+      "replacement_expression": "/* require(x == 0); */",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "check",
+      "mutant_id": "m000014",
+      "operator": "EHD",
+      "original_expression": "require(y == 0);",
+      "replacement_expression": "/* require(y == 0); */",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "check",
+      "mutant_id": "m000015",
+      "operator": "EHD",
+      "original_expression": "assert(x == 0);",
+      "replacement_expression": "/* assert(x == 0); */",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "check",
+      "mutant_id": "m000016",
+      "operator": "EHD",
+      "original_expression": "assert(x == 1);",
+      "replacement_expression": "/* assert(x == 1); */",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "check",
+      "mutant_id": "m000017",
+      "operator": "EHD",
+      "original_expression": "assert(x == 2);",
+      "replacement_expression": "/* assert(x == 2); */",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "check",
+      "mutant_id": "m000018",
+      "operator": "FCD",
+      "original_expression": "conditional_increment();",
+      "replacement_expression": "/*conditional_increment();*/",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "check",
+      "mutant_id": "m000019",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "check",
+      "mutant_id": "m000020",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "check",
+      "mutant_id": "m000021",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "check",
+      "mutant_id": "m000022",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "check",
+      "mutant_id": "m000023",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "check",
+      "mutant_id": "m000024",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "check",
+      "mutant_id": "m000025",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "conditional_increment",
+      "mutant_id": "m000026",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "conditional_increment",
+      "mutant_id": "m000027",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "conditional_increment",
+      "mutant_id": "m000028",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "conditional_increment",
+      "mutant_id": "m000029",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "conditional_increment",
+      "mutant_id": "m000030",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "conditional_increment",
+      "mutant_id": "m000031",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "conditional_increment",
+      "mutant_id": "m000032",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "conditional_increment",
+      "mutant_id": "m000033",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "conditional_increment",
+      "mutant_id": "m000034",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 22
+    }
+  ],
+  "subject_id": "peer_soltg__simple_if_tuple"
+}

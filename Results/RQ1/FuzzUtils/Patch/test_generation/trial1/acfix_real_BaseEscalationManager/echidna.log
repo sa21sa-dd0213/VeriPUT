@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.45232654s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.6542866s)
+
+echidna: Constructor arguments are required: [("_optimisticAsserter",address)]

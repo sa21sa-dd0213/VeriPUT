@@ -1,0 +1,107 @@
+{
+  "compile_failed": 2,
+  "compile_ok": 8,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 32,
+      "function": "performCreate2",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 32
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "performCreate",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 49
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 25,
+      "function": "performCreate2",
+      "mutant_id": "m000003",
+      "operator": "DLR",
+      "original_expression": "bytes memory deploymentData",
+      "replacement_expression": "bytes storage deploymentData",
+      "start_line": 25
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 42,
+      "function": "performCreate",
+      "mutant_id": "m000004",
+      "operator": "DLR",
+      "original_expression": "bytes memory deploymentData",
+      "replacement_expression": "bytes storage deploymentData",
+      "start_line": 42
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "performCreate2",
+      "mutant_id": "m000005",
+      "operator": "EED",
+      "original_expression": "emit ContractCreation(newContract);",
+      "replacement_expression": "/* emit ContractCreation(newContract); */",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "performCreate",
+      "mutant_id": "m000006",
+      "operator": "EED",
+      "original_expression": "emit ContractCreation(newContract);",
+      "replacement_expression": "/* emit ContractCreation(newContract); */",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 32,
+      "function": "performCreate2",
+      "mutant_id": "m000007",
+      "operator": "EHD",
+      "original_expression": "require(newContract != address(0), \"Could not deploy contract\");",
+      "replacement_expression": "/* require(newContract != address(0), \"Could not deploy contract\"); */",
+      "start_line": 32
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "performCreate",
+      "mutant_id": "m000008",
+      "operator": "EHD",
+      "original_expression": "require(newContract != address(0), \"Could not deploy contract\");",
+      "replacement_expression": "/* require(newContract != address(0), \"Could not deploy contract\"); */",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 32,
+      "function": "performCreate2",
+      "mutant_id": "m000009",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 32
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "performCreate",
+      "mutant_id": "m000010",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 49
+    }
+  ],
+  "subject_id": "safe-fndn__safe-smart-account__CreateCall"
+}

@@ -1,0 +1,8264 @@
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.13;
+
+
+
+
+
+import "forge-std/Test.sol";
+import "forge-std/console2.sol";
+import "../src/flat.sol";
+
+contract IdentityManager_Echidna_Test is Test {
+    IdentityManager target;
+
+    function setUp() public {
+        target = new IdentityManager();
+    }
+    
+    function test_auto_removeValidator_0() public { 
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(92527361570554414474727890897727080001133248121542308528294860067669353625727);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(1524785993);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(63049608697682693232320118839098339935788045622886363515430704219844594108892);
+        
+        vm.warp(block.timestamp + 168515);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.getIdentity(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(83810284106625590663102215623893210006766528134543806955785249070495516939661);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(2);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(109430270372346648211486250467779244017911556524522108122273097958372632169322);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(64666853899249808728611419580791415301108430368817717142834238225642897697544);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 47427);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(0);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(51454035577518554841274364526124886811297508276613226672604172458566592531442);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(4370001);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(79070050302926798161997496080500197346639520938120397340114722315788254474673);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(23945660698502839394007939179458356297786028398460062045829904665016258831897);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(33213493748689597252054553377926529476775821382796177783756614890619896212614, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(27398271475267280661961174528955239334066026513015473311991348521868296125800);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(53692740372083123176489554029003901303468922684512912987901959743690710456324, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 484537);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 424424);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(0);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(57776707280629442900137053114875801736093748128501843897765963678695545381305, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(6);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(4370000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 1127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 75133);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 445180);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(29, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(4);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 54666);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(58088059828072071379486303232464633953458395503802040353598400425737767238380);
+    }
+    
+    
+    function test_auto_recover_1() public { 
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(51454035577518554841274364526124886811297508276613226672604172458566592531442);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(4370001);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(79070050302926798161997496080500197346639520938120397340114722315788254474673);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(23945660698502839394007939179458356297786028398460062045829904665016258831897);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(33213493748689597252054553377926529476775821382796177783756614890619896212614, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(27398271475267280661961174528955239334066026513015473311991348521868296125800);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(53692740372083123176489554029003901303468922684512912987901959743690710456324, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 484537);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 424424);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(0);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(57776707280629442900137053114875801736093748128501843897765963678695545381305, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(6);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(4370000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 1127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 75133);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 445180);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(29, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(4);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 54666);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(58088059828072071379486303232464633953458395503802040353598400425737767238380);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(3);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 37483);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(97457255604280711279743588750394092816543200327742575286769946968233823343590);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(92099476617637371620793886094609569256450594873960686863637061837856754341905);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(40293081235980330739661048814434994973453946289375257271911296126308369245309);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(135186145309354447817101633045294348920326129068493521982946099907573922240);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(1524785992, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(7);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(4);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(540);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(84808057022109830001084521311163359155362528572600631855407575836707368414171);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(89319451852523379509645845140112554069851541030178318106765398835700574623300);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 41506);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 77001);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(95717326846623309261536517093477717865499482681979690007917987464823230964579);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(39396889550065044755215156885814506935518924007329630229443215762345343370811);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(75, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 15428);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(103606777284625455443047487842808283529284847392450169824382660245498514106888, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(102179367092438033554330989310402156326138870072283232071154250135630447161749);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(103175571706452416415780231676301945566476141635569345233837036194090866062800);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(3087794917586435189214615205711794141147434086323011459210713370538940828908);
+        
+        vm.warp(block.timestamp + 230019);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 42020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 54842);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(10621245843922053210214508734445766994244939932181882287399470173243689931700);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(443);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(95812587151854101725988238991079788175413271578116005910887906323322537940106, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(2, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(86903269205769760419334917725238177097816375587898248329129345182122421309725);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(1);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(40401009212248358009503272182132347589960059018464658359319337432001718537567);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+    }
+    
+    
+    function test_auto_convertAddress_2() public { 
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(34679893648652288763391323879608892226598748200372961080968410151322982874960);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(1524785991);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(82931256349465586877013821866012452214583806335178679857997325449831810844758);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(85684491517089703111332281, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(113);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 6530);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 279948);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(6);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(63980500418356410609345282474961237318728769921555468567644348071385490853903);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(38175098960273967094263777901779284630063137482326929760268353147425496876715);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 413464);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(25139859193193965330476083529958895915773851296201344204044948971751009278246, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(1524785992);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(90910627325917700394099485904632091569905044188360911943192937143173653456529);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(26482971415653269449195967702707694172524506837036276939335222970066866760936);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(29925041844077291587384650720474992044867515916775362706687229874948614127213, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 493334);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 1410);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 109253);
+        vm.roll(block.number + 31983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(99811539068468590586121799746122695222562536349782082393730736973247706995989, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(61478030770415969439582580200097591809680249424369025934794165469323657864910);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 329848);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 150861);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 345750);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(4);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(4370000);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(67708773831391331348906489626826420410655206356546557745443501748343668715758);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(861);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 4269);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 54054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(0, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(1524785992);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(4968635640653540904017043108390999595958358711958, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.equals(2, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(4369999);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(63853439826092152151559711243870961726051341777470816121396149095859867297573);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(85974917899203579830598906309686319215502869517683074321692983404631634688162);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 45028);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 560109);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(25657021247137003841612882920806509104773455333636012075528153689203768081699);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 42680);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(43429364661184329628234464010968156308575162815917026741348468360524080521902, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(1524785993);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(94814679977645842282250298188244073903242125924973120167230235070587214676961);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 21782);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 55291);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(20475455596425183183510468307780340187367212574031055257192541944195158254826);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 51030);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(1);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 53391);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 2595);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(47792796353065295675322293715319345638900490157247161019550275535405956639166);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 58296);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(1);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(3);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 51814);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(623);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(3);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+    }
+    
+    
+    function test_auto_removeValidator_3() public { 
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(51454035577518554841274364526124886811297508276613226672604172458566592531442);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(4370001);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(92527361570554414474727890897727080001133248121542308528294860067669353625727);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(79070050302926798161997496080500197346639520938120397340114722315788254474673);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(23945660698502839394007939179458356297786028398460062045829904665016258831897);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(1524785993);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(33213493748689597252054553377926529476775821382796177783756614890619896212614, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(63049608697682693232320118839098339935788045622886363515430704219844594108892);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(27398271475267280661961174528955239334066026513015473311991348521868296125800);
+        
+        vm.warp(block.timestamp + 168515);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.getIdentity(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(53692740372083123176489554029003901303468922684512912987901959743690710456324, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 484537);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(83810284106625590663102215623893210006766528134543806955785249070495516939661);
+        
+        vm.warp(block.timestamp + 424424);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(0);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(57776707280629442900137053114875801736093748128501843897765963678695545381305, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(2);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(109430270372346648211486250467779244017911556524522108122273097958372632169322);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(6);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(4370000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 1127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(64666853899249808728611419580791415301108430368817717142834238225642897697544);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 47427);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 75133);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(0);
+        
+        vm.warp(block.timestamp + 445180);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(29, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(51454035577518554841274364526124886811297508276613226672604172458566592531442);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(4);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 54666);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(58088059828072071379486303232464633953458395503802040353598400425737767238380);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(3);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 36347);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(4369999);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 28685);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(35356946724645478405776824298297676820438815889277066452926949440507756380448);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(7);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(5);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(36711830691025322311564385923404899797864730286876117188239910107268906919994);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39200305251034235872989838353904135681739457871908003890222034806572372937119, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 485285);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.isSender(4);
+        
+        vm.warp(block.timestamp + 52402);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 59309);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(10314599754654632305848892561253936223346171724912379025698831982293241465409);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(112488459195250858184830711924107290495576770719683522430416436348034048434604);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 513411);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 176641);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(72329431382708779098879095555099439907303000469951546279936527775454822407493, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 105374);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(78725175574286771117051995261108021591339024355125904761745209556901167316092, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(3);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(4370001);
+    }
+    
+    
+    function test_auto_removeValidator_4() public { 
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(51454035577518554841274364526124886811297508276613226672604172458566592531442);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(4370001);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(79070050302926798161997496080500197346639520938120397340114722315788254474673);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(23945660698502839394007939179458356297786028398460062045829904665016258831897);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(33213493748689597252054553377926529476775821382796177783756614890619896212614, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(27398271475267280661961174528955239334066026513015473311991348521868296125800);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(53692740372083123176489554029003901303468922684512912987901959743690710456324, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 484537);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 424424);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(0);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(57776707280629442900137053114875801736093748128501843897765963678695545381305, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(6);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(4370000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 1127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 75133);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 445180);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(29, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(4);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 54666);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(58088059828072071379486303232464633953458395503802040353598400425737767238380);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(3);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 37483);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(97457255604280711279743588750394092816543200327742575286769946968233823343590);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(92099476617637371620793886094609569256450594873960686863637061837856754341905);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(40293081235980330739661048814434994973453946289375257271911296126308369245309);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(135186145309354447817101633045294348920326129068493521982946099907573922240);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(1524785992, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(7);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(4);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(540);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(84808057022109830001084521311163359155362528572600631855407575836707368414171);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(89319451852523379509645845140112554069851541030178318106765398835700574623300);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 41506);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 77001);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(95717326846623309261536517093477717865499482681979690007917987464823230964579);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(39396889550065044755215156885814506935518924007329630229443215762345343370811);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(75, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(3280786603948615370164295540946179552371675926250232004731020973288177346623, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639933, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 432054);
+        vm.roll(block.number + 75);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 5030);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(105920102455516249103618372815934571621760264623414709520745258916770183333417);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(204);
+        
+        vm.warp(block.timestamp + 106244);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 40257);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(2);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115376145591881811058236427297604453075311254095851768424016274606883486248268);
+        
+        vm.warp(block.timestamp + 186270);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(292469692607050726256257862802335684269090);
+    }
+    
+    
+    function test_auto_convertAddress_5() public { 
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(51454035577518554841274364526124886811297508276613226672604172458566592531442);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(4370001);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(79070050302926798161997496080500197346639520938120397340114722315788254474673);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(23945660698502839394007939179458356297786028398460062045829904665016258831897);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(33213493748689597252054553377926529476775821382796177783756614890619896212614, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(27398271475267280661961174528955239334066026513015473311991348521868296125800);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(53692740372083123176489554029003901303468922684512912987901959743690710456324, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 484537);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 424424);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(0);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(57776707280629442900137053114875801736093748128501843897765963678695545381305, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(6);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(4370000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 1127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 75133);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 445180);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(29, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(4);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 54666);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(58088059828072071379486303232464633953458395503802040353598400425737767238380);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(3);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 36347);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(4369999);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 28685);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(35356946724645478405776824298297676820438815889277066452926949440507756380448);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(7);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(5);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(36711830691025322311564385923404899797864730286876117188239910107268906919994);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39200305251034235872989838353904135681739457871908003890222034806572372937119, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 485285);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.isSender(4);
+        
+        vm.warp(block.timestamp + 52402);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 59309);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(10314599754654632305848892561253936223346171724912379025698831982293241465409);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(112488459195250858184830711924107290495576770719683522430416436348034048434604);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 513411);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 176641);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(72329431382708779098879095555099439907303000469951546279936527775454822407493, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 105374);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(78725175574286771117051995261108021591339024355125904761745209556901167316092, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(3);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(4370001);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(51171579352562561563694850515140176741309536410278736988356552941550468307259, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115746750592075514724978839216346883825797510102373727487178430504417498989716);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(100555676019110942481259552014494076969714675708882612049390242978120322377998);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(4369999);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(45880610525173898358710566406961207849578623485935136241404296784669143224057);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 242603);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(2793321712721700610687937197651985908956898720401864819663897088529070535409, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(41965557002269141204791045259857749073843179673421079048221735292188096722636);
+        
+        vm.warp(block.timestamp + 107127);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(105560098214850132577643208148457739675172901666807750104796424424450851675447);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 31661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(0);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(50217100095800771286587641969364597954030108661972810333508229515770775325778);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 17446);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(3);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+    }
+    
+    
+    function test_auto_stopValidatingFor_6() public { 
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(92527361570554414474727890897727080001133248121542308528294860067669353625727);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(1524785993);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(63049608697682693232320118839098339935788045622886363515430704219844594108892);
+        
+        vm.warp(block.timestamp + 168515);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.getIdentity(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(83810284106625590663102215623893210006766528134543806955785249070495516939661);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(2);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(109430270372346648211486250467779244017911556524522108122273097958372632169322);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(64666853899249808728611419580791415301108430368817717142834238225642897697544);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 47427);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(0);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(51454035577518554841274364526124886811297508276613226672604172458566592531442);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 5419);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(2);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 37021);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(13839358077454889961208684687253320358306036118508505818651791149100844597975);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 275560);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(331, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(27848621769805515479052645167797615319942753433210054319752950418556750441791, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(29151860758065678597473952271288742648236618935589175462046225383586881670591);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639935, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(79639691735680763477745942450237382461835965476247996888482648187457802727705);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(4369999);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 196404);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 121546);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(105402435453528754889790985999546638272142413371009771353594986909403935497282);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639933, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(88425209674694653162252659135620963091732942793143333202073825650438698489081);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addressKnown(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 116477);
+        vm.roll(block.number + 42912);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(1);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(5927738531577651745888148733880446546149021368216210169395432045062973868211, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(0);
+        
+        vm.warp(block.timestamp + 346015);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(36652903482750772230058614559868320388412294251454955957946312735991470144687);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 28417);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(4369999);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 122215);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(26373263951308086355343860751097748002376462788762574727531155943406744830635);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 37613);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(33633217212832487305723056696315180571483247823052771878719185816592110773910, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 338383);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 173739);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(54627105048170454248378856303908249406073540340391540279675825521269369754922, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(8015338725057739079594509878124606279411749138865947613605442260995227179217, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(40, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 492770);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 54961);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(12256190390877941032247054338621866318964891901939163332585910017371462392151);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(310);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(77876600330870086280244056261913311928239943250960741925068204150241773823403);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(6);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(2);
+        
+        vm.warp(block.timestamp + 253000);
+        vm.roll(block.number + 56482);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(11988075153068610946272443353499311963443077815433950593884812824286802068714, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(4370000);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(3, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(69841202838033428754627686864800588873615279611846584208457636554178219906534);
+    }
+    
+    
+    function test_auto_removeValidator_7() public { 
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(34679893648652288763391323879608892226598748200372961080968410151322982874960);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(1524785991);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(82931256349465586877013821866012452214583806335178679857997325449831810844758);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(85684491517089703111332281, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(113);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 6530);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 279948);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(6);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(63980500418356410609345282474961237318728769921555468567644348071385490853903);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(38175098960273967094263777901779284630063137482326929760268353147425496876715);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 413464);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(25139859193193965330476083529958895915773851296201344204044948971751009278246, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(1524785992);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(90910627325917700394099485904632091569905044188360911943192937143173653456529);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(26482971415653269449195967702707694172524506837036276939335222970066866760936);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(29925041844077291587384650720474992044867515916775362706687229874948614127213, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 493334);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 1410);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 109253);
+        vm.roll(block.number + 31983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(99811539068468590586121799746122695222562536349782082393730736973247706995989, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(61478030770415969439582580200097591809680249424369025934794165469323657864910);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(1524785992);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(114025203388566481724356202037724331684337487147626010848813772723018779167823, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 20645);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 55479);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(0);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(94674415155863398019268727607239649104715644938412441580939305602769472474144);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 568392);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(25676081607769892243873651202268291059527680860005599833801450883538988032181);
+        
+        vm.warp(block.timestamp + 287112);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(7830146);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 319763);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(92527361570554414474727890897727080001133248121542308528294860067669353625727);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(1524785993);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(63049608697682693232320118839098339935788045622886363515430704219844594108892);
+        
+        vm.warp(block.timestamp + 168515);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.getIdentity(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(83810284106625590663102215623893210006766528134543806955785249070495516939661);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(2);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(109430270372346648211486250467779244017911556524522108122273097958372632169322);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(64666853899249808728611419580791415301108430368817717142834238225642897697544);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 47427);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(0);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(51454035577518554841274364526124886811297508276613226672604172458566592531442);
+    }
+    
+    
+    function test_auto_addValidator_8() public { 
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(34679893648652288763391323879608892226598748200372961080968410151322982874960);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(1524785991);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(82931256349465586877013821866012452214583806335178679857997325449831810844758);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(85684491517089703111332281, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(113);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 6530);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 279948);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(6);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(63980500418356410609345282474961237318728769921555468567644348071385490853903);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(38175098960273967094263777901779284630063137482326929760268353147425496876715);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 413464);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(25139859193193965330476083529958895915773851296201344204044948971751009278246, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(1524785992);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(90910627325917700394099485904632091569905044188360911943192937143173653456529);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(26482971415653269449195967702707694172524506837036276939335222970066866760936);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(29925041844077291587384650720474992044867515916775362706687229874948614127213, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 493334);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 1410);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 109253);
+        vm.roll(block.number + 31983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(99811539068468590586121799746122695222562536349782082393730736973247706995989, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(61478030770415969439582580200097591809680249424369025934794165469323657864910);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 329848);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 150861);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 345750);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(4);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(4370000);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(67708773831391331348906489626826420410655206356546557745443501748343668715758);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(861);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(5);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(2, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 167265);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addressKnown(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(24260749223833666374109188770602029385751974788113140784648444348393869274649);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(60821793801696511320415417069170586891301428814090798994492154146418439065052, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 256728);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(3);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(74521499375822322530258425812258330404270131490697906465709329055044321090280, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(16671081735783006755640854667218610677766481255165444386572385212982830959385);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 106891);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(4);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 46088);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(4);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 171543);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(85411498897575080827476695983232409154392990480855518839558919156170393096886);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(33326377408046373080289328121023515091192448021136213555470922682253100490518);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(21825686678985355170593115128631827145058005036975936611850893901896336110412);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(57606535556219706555200177933621123397556519293136648468582503245301962945901);
+        
+        vm.warp(block.timestamp + 166864);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(102404138251100011413589737521151285103728813304464082616473741101876247702445);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 2729);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(24538479306639645753165031564978151088319682076819495923268610648173092378330);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(16428386734364229524208279422285075745247748826959112143498485759935720205645);
+        
+        vm.warp(block.timestamp + 445426);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+    }
+    
+    
+    function test_auto_addValidator_9() public { 
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(4406285777799140735463234911462981878228996538755211663257936504494780266825);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(86797833972542176281895818284322133427979011456135176423523609395628602244583);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(4370000);
+        
+        vm.warp(block.timestamp + 582805);
+        vm.roll(block.number + 47498);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(73482526449671432187725845161460281404401295662241503350439867615799687062897);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(15285635476354543292295663809208375445810626178530926059206392347);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(1524785992);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 288898);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(1);
+        
+        vm.warp(block.timestamp + 401452);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(4370000);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(93704637355394233313161894717126740736930773135844631551102116855972028257800);
+        
+        vm.warp(block.timestamp + 505406);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(51423029353049832454185163889835282976702544806547474413835813200257316875458);
+        
+        vm.warp(block.timestamp + 151395);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(1269, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(69439862297215315557810574963592035540041457561836532626938051201000055976365);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(5, 0x0000000000000000000000000000000000010000);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 4784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(4);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 19118);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(759439817671526175034259106698095289486757328695845022308468560298687986148);
+        
+        vm.warp(block.timestamp + 224918);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(108384237132576067274545329342331774615677150941180030761260079799276601809556, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 142598);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5327);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 40610);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(1107658456500100312179070208372280461271847253994897814749515613149937441986);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(103501760726309883998263186076103602063622199578584093424140094337413709872883);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(89996305124458815695028796742675605663827219253923812265654857228633947742259, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(6105288296091436534572664845983257771764324264479673277336380749484);
+        
+        vm.warp(block.timestamp + 574668);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 39796);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(46482831888911908381801031728791357726105192832892448608784891204469210705876);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 32606);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(50812531525839040480378062338735622546032646367649684691798827896004010328025, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(50723516651258684283752723872090563731216160978794968737954796868953790103599, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.equals(6, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 361968);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(1524785993, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(64646710195221465533036546738885798305865840778441850094588237309601297299904, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 13964);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(27074040973435044259466535013787667676664847383750536254877556080156840767030);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(7);
+        
+        vm.warp(block.timestamp + 52034);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(4370001);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(6872830768852942340485379587601774433475461425903733072016856977021134259271);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(1721741094482292696850554147134170897964476637634396596639866370210600657418, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 345411);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639933, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 22271);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(113953912312511122403666196799713156395409494326065165253086111221158670031815, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(63662539638103516477457020258288778007033623287340776226291317737813076210269, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 21308);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(19358200679798929275052305164106149938680286592305091047934380079421464735396);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+    }
+    
+    
+    function test_auto_recover_10() public { 
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(51454035577518554841274364526124886811297508276613226672604172458566592531442);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(4370001);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(79070050302926798161997496080500197346639520938120397340114722315788254474673);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(23945660698502839394007939179458356297786028398460062045829904665016258831897);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(33213493748689597252054553377926529476775821382796177783756614890619896212614, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(27398271475267280661961174528955239334066026513015473311991348521868296125800);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(53692740372083123176489554029003901303468922684512912987901959743690710456324, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 484537);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 424424);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(0);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(57776707280629442900137053114875801736093748128501843897765963678695545381305, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(6);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(4370000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 1127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 75133);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 445180);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(29, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(4);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 54666);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(58088059828072071379486303232464633953458395503802040353598400425737767238380);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(3);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 37483);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(97457255604280711279743588750394092816543200327742575286769946968233823343590);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(92099476617637371620793886094609569256450594873960686863637061837856754341905);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 15882);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(26337868878973780349680341150986395612748377502080834610713084858674291467538);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 42532);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(53353974484058948752758108499761151316455696366557382111123087975955206966926);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(4);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(0);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 542908);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(39113913468165618098784615232010148218194814161816035851443722468673061510635);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(818);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.identityExists(6);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(4370000);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 32448);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(3);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(3128460470373508872846554945506243877657221457740383219860075579889226730931);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 54742);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 36685);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(75527346302701045188325802265236609768727779384937354153330414208022537853674);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(99881280200409909337776316948027329756265091706418564197457230741332582719599);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(73876397658993850870554709745328790134183650782193984064860073430933798122923);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 474981);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 577944);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(939, 0x00000000000000000000000000000002fFffFffD);
+    }
+    
+    
+    function test_auto_recover_11() public { 
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(92527361570554414474727890897727080001133248121542308528294860067669353625727);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(1524785993);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(63049608697682693232320118839098339935788045622886363515430704219844594108892);
+        
+        vm.warp(block.timestamp + 168515);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.getIdentity(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(83810284106625590663102215623893210006766528134543806955785249070495516939661);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(2);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(109430270372346648211486250467779244017911556524522108122273097958372632169322);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(64666853899249808728611419580791415301108430368817717142834238225642897697544);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 47427);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(0);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(51454035577518554841274364526124886811297508276613226672604172458566592531442);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(4370001);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(79070050302926798161997496080500197346639520938120397340114722315788254474673);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(23945660698502839394007939179458356297786028398460062045829904665016258831897);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(33213493748689597252054553377926529476775821382796177783756614890619896212614, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(27398271475267280661961174528955239334066026513015473311991348521868296125800);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(53692740372083123176489554029003901303468922684512912987901959743690710456324, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 484537);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 424424);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(0);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(57776707280629442900137053114875801736093748128501843897765963678695545381305, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(6);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(4370000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 1127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(26825865719188962568101608411936016301303943478693870326124053415893735518143);
+        
+        vm.warp(block.timestamp + 201693);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 194246);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(72467879353436239922252521910022024550143467406286079519720303986344907240720);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 26707);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(42683876604460332909034987500486774421884408848431195083711553575862611769758, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(88165372640027561221547173222552729553469257947062442162264032492460464386514, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 14608);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(3);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(32069513643386476921416688938206139379791026800225255083031278014192820872529, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 11807);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(69253124712103489291883688000031511375359774260439807729829429277681557339028);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.equals(115792089237316195423570985008687907853269984665640564039457584007913129639934, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 187878);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 148141);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 23602);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 4924);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 252719);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(0, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(5171925);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 57376);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(4370000);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(2);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 191043);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(35187212318862032968462911650125438936219778209933866854534271208225387567993);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(90450788909249770512080705511198823811000565644691287731740629312371198452355);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(51523143816460592026827847760359847134593279032000106480387666282946815423981);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(776, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 131145);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(4, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(114423858286023606635651724701591287883863527561429019274197806968859858279322, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(74683632468774713775623317207591770589993839475388126953764268632243898991486, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(1524785993, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 354346);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(53712969540096810114137457554984137909255347833367110141424857045709707928455);
+        
+        vm.warp(block.timestamp + 455709);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+    }
+    
+    
+    function test_auto_recover_12() public { 
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(34679893648652288763391323879608892226598748200372961080968410151322982874960);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(1524785991);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(82931256349465586877013821866012452214583806335178679857997325449831810844758);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(85684491517089703111332281, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(113);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 6530);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 279948);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(6);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(63980500418356410609345282474961237318728769921555468567644348071385490853903);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(38175098960273967094263777901779284630063137482326929760268353147425496876715);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 413464);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(25139859193193965330476083529958895915773851296201344204044948971751009278246, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(1524785992);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(90910627325917700394099485904632091569905044188360911943192937143173653456529);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(26482971415653269449195967702707694172524506837036276939335222970066866760936);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(29925041844077291587384650720474992044867515916775362706687229874948614127213, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 493334);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 1410);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 109253);
+        vm.roll(block.number + 31983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(99811539068468590586121799746122695222562536349782082393730736973247706995989, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(61478030770415969439582580200097591809680249424369025934794165469323657864910);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(1524785992);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(114025203388566481724356202037724331684337487147626010848813772723018779167823, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 20645);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 55479);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(0);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(94674415155863398019268727607239649104715644938412441580939305602769472474144);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 568392);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(25676081607769892243873651202268291059527680860005599833801450883538988032181);
+        
+        vm.warp(block.timestamp + 287112);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 39463);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 21150);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(592);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639934, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(4);
+        
+        vm.warp(block.timestamp + 203910);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 127812);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(12);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 473545);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(97185096833788346283410947307940769491039950767693015367759590701380288994385, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 584929);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(97921409826584692217888141172178696663082346373967758795104019505097507201817);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(6);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 40169);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(256);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(1524785993);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(58004338837690043966105707497825526168816010261026071244974688872002667236245);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 45881);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 455257);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(2);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(106661440166520642462056092509177554343103015792967349538047104823706430425787, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(3803960991569172606699631197179202192366897652769181559619924760);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(48038294596923146079796095766334186010452498385191609605165156082264363314109, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 341824);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(24793410165232161579215590983022750483713688926021924275881418132859391039652);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 71071);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(88947644119521859619534298392229296618843508693012706100105998372949844869860, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(4370000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+    }
+    
+    
+    function test_auto_stopValidatingFor_13() public { 
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(51454035577518554841274364526124886811297508276613226672604172458566592531442);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(4370001);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(79070050302926798161997496080500197346639520938120397340114722315788254474673);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(23945660698502839394007939179458356297786028398460062045829904665016258831897);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(33213493748689597252054553377926529476775821382796177783756614890619896212614, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(27398271475267280661961174528955239334066026513015473311991348521868296125800);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(53692740372083123176489554029003901303468922684512912987901959743690710456324, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 484537);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 424424);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(0);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(57776707280629442900137053114875801736093748128501843897765963678695545381305, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(148, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(106955021608089269372421429307171166814888774458894252895802362253113531320311);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(27018475475859831293074422162355191601263040562754445069005969028907369210940);
+        
+        vm.warp(block.timestamp + 164323);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639935, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 562993);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(241990229416690810877546360105840412856742);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(56381097411014102897665775237045622580588794472374758553525374398354389061847, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 48316);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 141373);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(17686080815913032580514678);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(1524785992);
+        
+        vm.warp(block.timestamp + 254215);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(109465817404249757007236483501566703896420256684870912866300772989813339954515, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 4812);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(109398386794738933438165173813770520141730307583475361296161345375539682401069);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(28231227942126815203394837537179425098673567272837691173613494203933346203726);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(4369999, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 47920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(1);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(4370001);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 20020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(95222671998121045772550441472317351184371956508733256527672483595847205597318, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 5424);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(27924633375587467275862243784354391760426479290347670968831533023506300214281);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 556965);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 132832);
+        vm.roll(block.number + 38244);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(71521467801718347567536552689321874371928043020685943314682981132164130005138);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(526);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(4385082285853123965312254986978765261534609047769096443620779510537621706137, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(55733679807900139522417473801234143154320552011660602188412989187898907388461, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 89407);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(15282468710132689689032221075987557901238193969796527484535253651334864499782);
+        
+        vm.warp(block.timestamp + 564256);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(1524785993, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(113276950523316261674366703174797736492902342086088940119859217906874314419455);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 35206);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(3);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639931, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(68192861599103659386058950424477617465495916764859054983757462904979934533763);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(85609772984703112795891516964677931544960209705888893249315461667152945721310);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(78963928449451937026479429526502718223092050341778509906810262197636359103084);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(5773149332047707299376114826177117754407304581863418489126298495880337626231, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 38264);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(43);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(9010884342693250580523188377513306178448785647886589892309513885739133469993, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(95743562317972923081291673486756989583590496948803047936578191068226588690970, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 34702);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(1524785991);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(1015);
+        
+        vm.warp(block.timestamp + 552800);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115581309027782870787362090271615634800246156230854495744715182767905739829233);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(979, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(40004085633470577653581255774518365883031044743383781713803093211409484018137, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(44264371710583524018089389033417936809078326395233492737307818981430540583762, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(606, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(82712029398219516482202981256323915566144641303542881032103330513662409817376, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(73590246708193423033069111431620919852101461520304973272843304932278794298623);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 47111);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 9809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(18362227284537131393177771680432853180469117645632827701461599810356921058647);
+        
+        vm.warp(block.timestamp + 306075);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(101564863562662887551532100269102290778051423628038030487043609964740811209327);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(12562220614098951616809021604423682969624670021380119958492403649278471224000);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 16450);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(30205302496694964272460100670763700447225573934937322273756131559299515390957, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(98801706272577838829418373643860228327575182290041283191130156379576422761249);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(922, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(86362155026063182555113548136157148158079733753477225349304886643365155215013);
+    }
+    
+    
+    function test_auto_recover_14() public { 
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(92527361570554414474727890897727080001133248121542308528294860067669353625727);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(1524785993);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(63049608697682693232320118839098339935788045622886363515430704219844594108892);
+        
+        vm.warp(block.timestamp + 168515);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.getIdentity(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(83810284106625590663102215623893210006766528134543806955785249070495516939661);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(2);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(109430270372346648211486250467779244017911556524522108122273097958372632169322);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(64666853899249808728611419580791415301108430368817717142834238225642897697544);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 47427);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(0);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(51454035577518554841274364526124886811297508276613226672604172458566592531442);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 5419);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(2);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(46899186552447942075490033614958159663724716822915651473677221703804726237154);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(57773004549690154223839943729987284281397617846076752566432064229663238943306);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(51984677871429133109650069232691897169007874106928864388465052235798887158308);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 2928);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 38575);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(1524785991, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 250827);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(37002322874639327552822756868599908695133657603924191680496604570217233846342);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361918);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 484970);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(30692131934598275329511786804846101916469287173585292667978011405222920625261);
+        
+        vm.warp(block.timestamp + 516441);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(8, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 412677);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(7);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(8);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 561306);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(6810510640752597477581251417912210903543200819328815858048991427533794286991);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(11644333372113351909082761778517399694718511703176991995593560300668944146260);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 480274);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 378239);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 368490);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(85441394701276611708879748924430659528731149404949271110021244886430963839515);
+        
+        vm.warp(block.timestamp + 184259);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(78728866947756875462419307595251785443431202656329955322616315577297748602728);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.identityExists(6);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(88031463027948964370939838647671946203539652346103514639547674961904729492980);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(108544705724549700253690780753565851817100843314401567125103001516127524762583);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(6);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(2356318584189228527408424404348344115361291782724300508532706266340849716601);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(61036849507758445315367906159219129377789835245331656379430580971951720714546);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(36913372206607472877379391741227734718725823879985903229563195744766674316827, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(94835696109213558358856300320101374460613881802521882284917544897046830337936, 0x0000000000000000000000000000000000010000);
+    }
+    
+    
+    function test_auto_stopValidatingFor_15() public { 
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(51454035577518554841274364526124886811297508276613226672604172458566592531442);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(4370001);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(79070050302926798161997496080500197346639520938120397340114722315788254474673);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(23945660698502839394007939179458356297786028398460062045829904665016258831897);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(33213493748689597252054553377926529476775821382796177783756614890619896212614, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(27398271475267280661961174528955239334066026513015473311991348521868296125800);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(53692740372083123176489554029003901303468922684512912987901959743690710456324, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 484537);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 424424);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(0);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(57776707280629442900137053114875801736093748128501843897765963678695545381305, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(6);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(4370000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 1127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 75133);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 445180);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(29, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(4);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 54666);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(58088059828072071379486303232464633953458395503802040353598400425737767238380);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(3);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 36347);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(4369999);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 28685);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(35356946724645478405776824298297676820438815889277066452926949440507756380448);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(7);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(5);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(36711830691025322311564385923404899797864730286876117188239910107268906919994);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39200305251034235872989838353904135681739457871908003890222034806572372937119, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 485285);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.isSender(4);
+        
+        vm.warp(block.timestamp + 52402);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 59309);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(10314599754654632305848892561253936223346171724912379025698831982293241465409);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(112488459195250858184830711924107290495576770719683522430416436348034048434604);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 513411);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 176641);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(72329431382708779098879095555099439907303000469951546279936527775454822407493, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 105374);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(78725175574286771117051995261108021591339024355125904761745209556901167316092, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(3);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(4370001);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(51171579352562561563694850515140176741309536410278736988356552941550468307259, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115746750592075514724978839216346883825797510102373727487178430504417498989716);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(100555676019110942481259552014494076969714675708882612049390242978120322377998);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(4369999);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(45880610525173898358710566406961207849578623485935136241404296784669143224057);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 242603);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(958, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 3834);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(3, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 156368);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(44550715716354540866641301852444502253746299167511179706118724161767205756878);
+    }
+    
+    
+    function test_auto_stopValidatingFor_16() public { 
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(51454035577518554841274364526124886811297508276613226672604172458566592531442);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(4370001);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(79070050302926798161997496080500197346639520938120397340114722315788254474673);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(23945660698502839394007939179458356297786028398460062045829904665016258831897);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(33213493748689597252054553377926529476775821382796177783756614890619896212614, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(27398271475267280661961174528955239334066026513015473311991348521868296125800);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(53692740372083123176489554029003901303468922684512912987901959743690710456324, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 484537);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 424424);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(0);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(57776707280629442900137053114875801736093748128501843897765963678695545381305, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(6);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(4370000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 1127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 75133);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 445180);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(29, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(4);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 54666);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(58088059828072071379486303232464633953458395503802040353598400425737767238380);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(3);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(39681723559598582591776181527592037518160864459064738977634912825815661854282, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(6);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(24592765602283662354489864891483263922735073846347925348305498458737839200483, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(363);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 37719);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(97765657384511799483973010927906727899527686076011212376259490821878183759262);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(64177502064217870413653997847230552851020582197863672034383765712180457263744, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 54201);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(1524785991);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(4);
+        
+        vm.warp(block.timestamp + 571944);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(4370000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(101435945835072123031738509551025543668979557667452136676395804038677582659132);
+        
+        vm.warp(block.timestamp + 104764);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 1740);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(8408974082729649417396639029234907091446382661376455227730394578778424803484);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 31934);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.recover(1524785992, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 180237);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(336);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(66606169286668626535380044109062455957630003874105678313175561958110867225696, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(4369999);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 599118);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(20538713244411305186033225405302325339182017492356284888971678821962473560856);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(5, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.recover(73776285178058823208201406599585227596133223570377941665279521591636340633508, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.removeValidator(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 60426);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(29044216067256803205791859417956684890925261303971455023965195919050150849898);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(74677333841970240063440441094640601180095911020262935909679226770456384758556);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.recover(315, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 20478);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(26064231210338640801436586080128323042728774101359503825235745308640927210553);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 27289);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.stopValidatingFor(4370001);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.convertAddress(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.removeValidator(1524785991);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 252789);
+        vm.roll(block.number + 14899);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addValidator(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addValidator(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 347312);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(4);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 58646);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.stopValidatingFor(60288643480940562318045165235453366444111215569060292792349041980585831365581);
+    }
+    
+}
+
+    

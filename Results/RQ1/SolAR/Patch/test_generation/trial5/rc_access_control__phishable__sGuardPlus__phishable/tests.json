@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00184",
+      "method": "withdrawAll",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

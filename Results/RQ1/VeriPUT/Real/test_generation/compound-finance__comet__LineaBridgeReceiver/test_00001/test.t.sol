@@ -1,0 +1,50 @@
+// SPDX-License-Identifier: MIT
+
+
+
+
+
+
+pragma solidity >=0.8.0;
+
+import {Test} from "forge-std/Test.sol";
+import {LineaBridgeReceiver} from "../src/flat.sol";
+
+contract LineaBridgeReceiverCovTest_0 is Test {
+  LineaBridgeReceiver c0;
+  function setUp() public {
+    c0 = new LineaBridgeReceiver(address(uint160(1)));
+    
+    address _esbmc_ctor_state_mock_0_0 = address(uint160(1));
+
+  }
+  
+  
+}
+
+contract LineaBridgeReceiverCovTest_1_LineaBridgeReceiver_fallback_concrete14_fb is Test {
+  LineaBridgeReceiver c0;
+  function setUp() public {
+    c0 = new LineaBridgeReceiver(address(uint160(0)));
+    
+    address _esbmc_ctor_state_mock_1_0 = address(uint160(0));
+
+
+  }
+  
+  
+  function test_cov_1() public {
+    vm.prank(address(uint160(1)));
+    (bool ok2, ) = address(c0).call(hex"deadbeef");
+    uint256 _veriput_fixed_state_govTimelock_46_1 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
+
+    uint256 _veriput_fixed_state_initialized_50_2 = ((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 160) & 255);
+
+    uint256 _veriput_fixed_state_localTimelock_48_3 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
+
+    uint256 _veriput_fixed_state_proposalCount_52_4 = uint256(vm.load(address(c0), bytes32(uint256(2))));
+
+  }
+  
+  
+}

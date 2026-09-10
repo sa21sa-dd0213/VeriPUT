@@ -1,0 +1,123 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 44135126115720233
+    },
+    {
+      "args": [
+        "address_00021",
+        "address_00184",
+        26827288648007475002473693546166454411109944320008701140351981776211045475473
+      ],
+      "frm": "address_00032",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 193540622957214033
+    },
+    {
+      "args": [
+        "address_00184",
+        "address_00019"
+      ],
+      "frm": "address_00032",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        63042919643384489354559845060662445380444996743391365169206363748515324277501
+      ],
+      "frm": "address_00032",
+      "method": "approve",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 189399204528324101
+    },
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00019",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        "address_00032"
+      ],
+      "frm": "address_00021",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        87254193446553456728315166941331253093362569030698113801747085869663819411105
+      ],
+      "frm": "address_00032",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

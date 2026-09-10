@@ -1,0 +1,60 @@
+[
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_002687777697a4a58704b62506d49"
+      ],
+      "frm": "address_00019",
+      "method": "owner",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00086716a4473556947674b4d7350"
+      ],
+      "frm": "address_00184",
+      "method": "resolver",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00138424f584c726a62414c657241"
+      ],
+      "frm": "address_00401",
+      "method": "owner",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00250626d49595a65482050547944"
+      ],
+      "frm": "address_00410",
+      "method": "ttl",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

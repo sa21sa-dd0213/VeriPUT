@@ -1,0 +1,133 @@
+[
+  [
+    {
+      "args": [
+        19846001149513580908964687977949686733550044120535488640419698556446412578983,
+        "yikPSsEOcIPddXGxsNhRLYUaGLyqyArhYPYrxEtwDPIzDzVNUKQhbNIRTxjedawTgNLWXGYeOXbNetVzmDKmRIrYoAQkiKotTdckuAJqvdzoSWFIMyEDoz",
+        "VOqBEfvbWJZBLtUSObsqDjXPQpaYSLnIgIrRawpsSydfPHJwEFTqbMzxqfzRMMOqHoTfJcQLYNirlVVPMs"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        35425165133878134471251722219854903436163933692083437852591845200590920029359
+      ],
+      "frm": "address_00398",
+      "method": "mintToken",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        255,
+        "yikPSsEOcIPddXGxsNhRLYUaGLyqyArhYPYrxEtwDPIzDzVNUKQhbNIRTxjedawTgNLWXGYeOXbNetVzmDKmRIrYoAQkiKotTdckuAJqvdzoSWFIMyEDoz",
+        "VOqBEfvbWJZBLtUSObsqDjXPQpaYSLnIgIrRawpsSydfPHJwEFTqbMzxqfzRMMOqHoTfJcQLYNirlVVPMs"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        10
+      ],
+      "frm": "address_00036",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        10,
+        "vIhXazNeAIsvNiLkzvbTDofwILkSohJUeLZMciOPQXgitw BARVVrOPqFIsBGiiUGmdJmuOhqJexqHmNzCTJzComhdQpVND umyie nDBMTmTyKgRIjowIblqrKGEmCiFvjMsonlUKphnhJocGRzxzKyQwzaXEXjIx HpeEpLzWVOpzewL",
+        ""
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        true
+      ],
+      "frm": "address_00410",
+      "method": "freezeAccount",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        10,
+        "crtsQGw",
+        ""
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "owned",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        19846001149513580908964687977949686733550044120535488640419698556446412578983,
+        "yikPSsEOcIPddXGxsNhRLYUaGLyqyArhYPYrxEtwDPIzDzVNUKQhbNIRTxjedawTgNLWXGYeOXbNetVzmDKmRIrYoAQkiKotTdckuAJqvdzoSWFIMyEDoz",
+        "VOqBEfvbWJZBLtUSObsqDjXPQpaYSLnIgIrRawpsSydfPHJwEFTqbMzxqfzRMMOqHoTfJcQLYNirlVVPMs"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "owned",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        255,
+        "MvNJEkcvPhURhpswkfAyUksgJmVrSKxkvjlUeExCVKokPKltvVfJFgYNfVFcxeLscHNBzw",
+        "VaFWChAkwmdMlBuQ IcLxDVtCotGXXBLqNjMDDnpgNOfGnGgckTQ zcKTvlEUEqqeigrrthRguDmj ksvwYtqqdxfLsIDSPcELOUEEKFkyRw"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        0
+      ],
+      "frm": "address_00021",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

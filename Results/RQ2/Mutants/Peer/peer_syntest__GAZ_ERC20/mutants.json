@@ -1,0 +1,1297 @@
+{
+  "compile_failed": 10,
+  "compile_ok": 119,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "add",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "add",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "add",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "add",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "add",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "add",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "add",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "add",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "add",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "add",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "add",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "add",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "add",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "add",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "add",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "add",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "sub",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "sub",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "sub",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "sub",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "sub",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "sub",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "sub",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "sub",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "sub",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "sub",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "sub",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "sub",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "sub",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "sub",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "sub",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "sub",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "mul",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 22
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 22,
+      "function": "mul",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "mul",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "mul",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "mul",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "mul",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "mul",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "mul",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "mul",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "mul",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "mul",
+      "mutant_id": "m000043",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "mul",
+      "mutant_id": "m000044",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 27,
+      "function": "add",
+      "mutant_id": "m000045",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 27,
+      "function": "add",
+      "mutant_id": "m000046",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 27,
+      "function": "add",
+      "mutant_id": "m000047",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 27,
+      "function": "add",
+      "mutant_id": "m000048",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 27,
+      "function": "add",
+      "mutant_id": "m000049",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 30,
+      "function": "sub",
+      "mutant_id": "m000050",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 30
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 30,
+      "function": "sub",
+      "mutant_id": "m000051",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 30
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 30,
+      "function": "sub",
+      "mutant_id": "m000052",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 30
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 30,
+      "function": "sub",
+      "mutant_id": "m000053",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 30
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 30,
+      "function": "sub",
+      "mutant_id": "m000054",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 30
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "mul",
+      "mutant_id": "m000055",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "mul",
+      "mutant_id": "m000056",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "mul",
+      "mutant_id": "m000057",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "mul",
+      "mutant_id": "m000058",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "mul",
+      "mutant_id": "m000059",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "mul",
+      "mutant_id": "m000060",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "mul",
+      "mutant_id": "m000061",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "mul",
+      "mutant_id": "m000062",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "mul",
+      "mutant_id": "m000063",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "stateVariable",
+      "mutant_id": "m000064",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 37
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 37,
+      "function": "stateVariable",
+      "mutant_id": "m000065",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "stateVariable",
+      "mutant_id": "m000066",
+      "operator": "BOR",
+      "original_expression": " ** ",
+      "replacement_expression": " * ",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 66,
+      "function": "transferFrom",
+      "mutant_id": "m000067",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 66
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 66,
+      "function": "transferFrom",
+      "mutant_id": "m000068",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 66
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 66,
+      "function": "transferFrom",
+      "mutant_id": "m000069",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 66
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 66,
+      "function": "transferFrom",
+      "mutant_id": "m000070",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 66
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 66,
+      "function": "transferFrom",
+      "mutant_id": "m000071",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 66
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "transferFrom",
+      "mutant_id": "m000072",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "transferFrom",
+      "mutant_id": "m000073",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "transferFrom",
+      "mutant_id": "m000074",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "transferFrom",
+      "mutant_id": "m000075",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "transferFrom",
+      "mutant_id": "m000076",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "transferFrom",
+      "mutant_id": "m000077",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "approve",
+      "mutant_id": "m000078",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "transferFrom",
+      "mutant_id": "m000079",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 46,
+      "function": "constructor",
+      "mutant_id": "m000080",
+      "operator": "CCD",
+      "original_expression": "constructor() {\n        balanceOf[msg.sender] = totalSupply;\n    }",
+      "replacement_expression": "",
+      "start_line": 44
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 66,
+      "function": "transferFrom",
+      "mutant_id": "m000081",
+      "operator": "CSC",
+      "original_expression": "src != msg.sender && allowance[src][msg.sender] != type(uint).max",
+      "replacement_expression": "true",
+      "start_line": 66
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 66,
+      "function": "transferFrom",
+      "mutant_id": "m000082",
+      "operator": "CSC",
+      "original_expression": "src != msg.sender && allowance[src][msg.sender] != type(uint).max",
+      "replacement_expression": "false",
+      "start_line": 66
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 54,
+      "function": "approve",
+      "mutant_id": "m000083",
+      "operator": "EED",
+      "original_expression": "emit Approval(msg.sender, guy, wad);",
+      "replacement_expression": "/* emit Approval(msg.sender, guy, wad); */",
+      "start_line": 54
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 73,
+      "function": "transferFrom",
+      "mutant_id": "m000084",
+      "operator": "EED",
+      "original_expression": "emit Transfer(src, dst, wad);",
+      "replacement_expression": "/* emit Transfer(src, dst, wad); */",
+      "start_line": 73
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 12,
+      "function": "add",
+      "mutant_id": "m000085",
+      "operator": "ECS",
+      "original_expression": "uint(y)",
+      "replacement_expression": "uint248(y)",
+      "start_line": 12
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 17,
+      "function": "sub",
+      "mutant_id": "m000086",
+      "operator": "ECS",
+      "original_expression": "uint(y)",
+      "replacement_expression": "uint248(y)",
+      "start_line": 17
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 22,
+      "function": "mul",
+      "mutant_id": "m000087",
+      "operator": "ECS",
+      "original_expression": "int(x)",
+      "replacement_expression": "int248(x)",
+      "start_line": 22
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 23,
+      "function": "mul",
+      "mutant_id": "m000088",
+      "operator": "ECS",
+      "original_expression": "int(x)",
+      "replacement_expression": "int248(x)",
+      "start_line": 23
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 24,
+      "function": "mul",
+      "mutant_id": "m000089",
+      "operator": "ECS",
+      "original_expression": "int(x)",
+      "replacement_expression": "int248(x)",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "add",
+      "mutant_id": "m000090",
+      "operator": "EHD",
+      "original_expression": "require(y >= 0 || z <= x);",
+      "replacement_expression": "/* require(y >= 0 || z <= x); */",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "add",
+      "mutant_id": "m000091",
+      "operator": "EHD",
+      "original_expression": "require(y <= 0 || z >= x);",
+      "replacement_expression": "/* require(y <= 0 || z >= x); */",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "sub",
+      "mutant_id": "m000092",
+      "operator": "EHD",
+      "original_expression": "require(y <= 0 || z <= x);",
+      "replacement_expression": "/* require(y <= 0 || z <= x); */",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "sub",
+      "mutant_id": "m000093",
+      "operator": "EHD",
+      "original_expression": "require(y >= 0 || z >= x);",
+      "replacement_expression": "/* require(y >= 0 || z >= x); */",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "mul",
+      "mutant_id": "m000094",
+      "operator": "EHD",
+      "original_expression": "require(int(x) >= 0);",
+      "replacement_expression": "/* require(int(x) >= 0); */",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "mul",
+      "mutant_id": "m000095",
+      "operator": "EHD",
+      "original_expression": "require(y == 0 || z / y == int(x));",
+      "replacement_expression": "/* require(y == 0 || z / y == int(x)); */",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 27,
+      "function": "add",
+      "mutant_id": "m000096",
+      "operator": "EHD",
+      "original_expression": "require((z = x + y) >= x);",
+      "replacement_expression": "/* require((z = x + y) >= x); */",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 30,
+      "function": "sub",
+      "mutant_id": "m000097",
+      "operator": "EHD",
+      "original_expression": "require((z = x - y) <= x);",
+      "replacement_expression": "/* require((z = x - y) <= x); */",
+      "start_line": 30
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "mul",
+      "mutant_id": "m000098",
+      "operator": "EHD",
+      "original_expression": "require(y == 0 || (z = x * y) / y == x);",
+      "replacement_expression": "/* require(y == 0 || (z = x * y) / y == x); */",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "transferFrom",
+      "mutant_id": "m000099",
+      "operator": "EHD",
+      "original_expression": "require(allowance[src][msg.sender] >= wad, \"gaz/insufficient-approval\");",
+      "replacement_expression": "/* require(allowance[src][msg.sender] >= wad, \"gaz/insufficient-approval\"); */",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "transferFrom",
+      "mutant_id": "m000100",
+      "operator": "EHD",
+      "original_expression": "require(balanceOf[src] >= wad, \"gaz/insuff-balance\");",
+      "replacement_expression": "/* require(balanceOf[src] >= wad, \"gaz/insuff-balance\"); */",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "add",
+      "mutant_id": "m000101",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "add",
+      "mutant_id": "m000102",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "sub",
+      "mutant_id": "m000103",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "sub",
+      "mutant_id": "m000104",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "mul",
+      "mutant_id": "m000105",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "mul",
+      "mutant_id": "m000106",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "mul",
+      "mutant_id": "m000107",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "stateVariable",
+      "mutant_id": "m000108",
+      "operator": "ILR",
+      "original_expression": "66666666",
+      "replacement_expression": "66666665",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "stateVariable",
+      "mutant_id": "m000109",
+      "operator": "ILR",
+      "original_expression": "66666666",
+      "replacement_expression": "66666667",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "stateVariable",
+      "mutant_id": "m000110",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "stateVariable",
+      "mutant_id": "m000111",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "stateVariable",
+      "mutant_id": "m000112",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "17",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "stateVariable",
+      "mutant_id": "m000113",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "19",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 42,
+      "function": "stateVariable",
+      "mutant_id": "m000114",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "17",
+      "start_line": 42
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 42,
+      "function": "stateVariable",
+      "mutant_id": "m000115",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "19",
+      "start_line": 42
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 15,
+      "function": "add",
+      "mutant_id": "m000116",
+      "operator": "OLFD",
+      "original_expression": "function add(uint x, int y) internal pure returns (uint z) {\n        z = x + uint(y);\n        require(y >= 0 || z <= x);\n        require(y <= 0 || z >= x);\n    }",
+      "replacement_expression": "",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "sub",
+      "mutant_id": "m000117",
+      "operator": "OLFD",
+      "original_expression": "function sub(uint x, int y) internal pure returns (uint z) {\n        z = x - uint(y);\n        require(y <= 0 || z <= x);\n        require(y >= 0 || z >= x);\n    }",
+      "replacement_expression": "",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 25,
+      "function": "mul",
+      "mutant_id": "m000118",
+      "operator": "OLFD",
+      "original_expression": "function mul(uint x, int y) internal pure returns (int z) {\n        z = int(x) * y;\n        require(int(x) >= 0);\n        require(y == 0 || z / y == int(x));\n    }",
+      "replacement_expression": "",
+      "start_line": 21
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 28,
+      "function": "add",
+      "mutant_id": "m000119",
+      "operator": "OLFD",
+      "original_expression": "function add(uint x, uint y) internal pure returns (uint z) {\n        require((z = x + y) >= x);\n    }",
+      "replacement_expression": "",
+      "start_line": 26
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 31,
+      "function": "sub",
+      "mutant_id": "m000120",
+      "operator": "OLFD",
+      "original_expression": "function sub(uint x, uint y) internal pure returns (uint z) {\n        require((z = x - y) <= x);\n    }",
+      "replacement_expression": "",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 34,
+      "function": "mul",
+      "mutant_id": "m000121",
+      "operator": "OLFD",
+      "original_expression": "function mul(uint x, uint y) internal pure returns (uint z) {\n        require(y == 0 || (z = x * y) / y == x);\n    }",
+      "replacement_expression": "",
+      "start_line": 32
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "approve",
+      "mutant_id": "m000122",
+      "operator": "OLFD",
+      "original_expression": "function approve(address guy) external returns (bool) {\n        return approve(guy, type(uint).max);\n    }",
+      "replacement_expression": "",
+      "start_line": 48
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 56,
+      "function": "approve",
+      "mutant_id": "m000123",
+      "operator": "OLFD",
+      "original_expression": "function approve(address guy, uint wad) public returns (bool) {\n        allowance[msg.sender][guy] = wad;\n        emit Approval(msg.sender, guy, wad);\n        return true;\n    }",
+      "replacement_expression": "",
+      "start_line": 52
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "approve",
+      "mutant_id": "m000124",
+      "operator": "RSD",
+      "original_expression": "return approve(guy, type(uint).max);",
+      "replacement_expression": "approve(guy, type(uint).max);",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "approve",
+      "mutant_id": "m000125",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "transfer",
+      "mutant_id": "m000126",
+      "operator": "RSD",
+      "original_expression": "return transferFrom(msg.sender, dst, wad);",
+      "replacement_expression": "transferFrom(msg.sender, dst, wad);",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "transferFrom",
+      "mutant_id": "m000127",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "stateVariable",
+      "mutant_id": "m000128",
+      "operator": "SLR",
+      "original_expression": "\"GAZ\"",
+      "replacement_expression": "\"\"",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "stateVariable",
+      "mutant_id": "m000129",
+      "operator": "SLR",
+      "original_expression": "\"gazelle\"",
+      "replacement_expression": "\"\"",
+      "start_line": 41
+    }
+  ],
+  "subject_id": "peer_syntest__GAZ_ERC20"
+}

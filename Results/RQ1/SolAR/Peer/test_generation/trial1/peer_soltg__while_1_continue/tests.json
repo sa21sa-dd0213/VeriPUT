@@ -1,0 +1,21 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        4,
+        false
+      ],
+      "frm": "address_00398",
+      "method": "f",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

@@ -1,0 +1,67 @@
+{
+  "compile_failed": 1,
+  "compile_ok": 5,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "reserveSeqId",
+      "mutant_id": "m000001",
+      "operator": "EED",
+      "original_expression": "emit SequenceIdReserved(designator, seqId, msg.sender);",
+      "replacement_expression": "/* emit SequenceIdReserved(designator, seqId, msg.sender); */",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "reserveSeqId",
+      "mutant_id": "m000002",
+      "operator": "OLFD",
+      "original_expression": "function reserveSeqId(string calldata designator) external returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 14
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 43,
+      "function": "reserveSeqId",
+      "mutant_id": "m000003",
+      "operator": "OLFD",
+      "original_expression": "function reserveSeqId(string calldata designator) external returns (uint256) {\n        uint256 seqId = ++counters[designator];\n\n        emit SequenceIdReserved(designator, seqId, msg.sender);\n\n        return seqId;\n    }",
+      "replacement_expression": "",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 42,
+      "function": "reserveSeqId",
+      "mutant_id": "m000004",
+      "operator": "RSD",
+      "original_expression": "return seqId;",
+      "replacement_expression": "/* return seqId; */",
+      "start_line": 42
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "reserveSeqId",
+      "mutant_id": "m000005",
+      "operator": "UORD",
+      "original_expression": "++counters[designator]",
+      "replacement_expression": "--counters[designator]",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "reserveSeqId",
+      "mutant_id": "m000006",
+      "operator": "UORD",
+      "original_expression": "++counters[designator]",
+      "replacement_expression": " counters[designator]",
+      "start_line": 38
+    }
+  ],
+  "subject_id": "euler-xyz__euler-vault-kit__SequenceRegistry"
+}

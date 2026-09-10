@@ -1,0 +1,42 @@
+[
+  [
+    {
+      "args": [
+        "address_00036",
+        18,
+        "fXCqdgRAYdYwHrJncYJyBhMRFSxYtkhnZGAUwkXuLBvyTqankwppKXycnpMfYpOckaqPpFsCaqrSthRAHkuMspF MxNtWOoKakDZYJnqlpbu"
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "latestRoundData",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00036",
+        1,
+        "QmZbKqyDUTUdLVEsiuaMTWXfpUKCoEeUMcujhAavrkoeyRDWboXYdyewqqgq"
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "version",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

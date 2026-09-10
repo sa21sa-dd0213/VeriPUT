@@ -1,0 +1,84 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 1000000000000000000
+    },
+    {
+      "args": [
+        "address_002414c76445756506b6663706a6b"
+      ],
+      "frm": "address_00404",
+      "method": "lockInGuess",
+      "n": 2,
+      "value": 1000000000000000000
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "settle",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "settle",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 1000000000000000000
+    },
+    {
+      "args": [
+        "address_002414c76445756506b6663706a6b"
+      ],
+      "frm": "address_00404",
+      "method": "lockInGuess",
+      "n": 2,
+      "value": 1000000000000000000
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "settle",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 1000000000000000000
+    },
+    {
+      "args": [
+        "address_002414c76445756506b6663706a6b"
+      ],
+      "frm": "address_00404",
+      "method": "lockInGuess",
+      "n": 2,
+      "value": 1000000000000000000
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "settle",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

@@ -1,0 +1,164 @@
+[
+  [
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        175,
+        1,
+        139
+      ],
+      "frm": "address_00032",
+      "method": "configureSecurityParameters",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        "address_00404",
+        true
+      ],
+      "frm": "address_00410",
+      "method": "assertGovernanceApproved",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        true
+      ],
+      "frm": "address_00404",
+      "method": "setEnforcement",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        "address_00184",
+        "address_00401",
+        0
+      ],
+      "frm": "address_00032",
+      "method": "burnFlashGovernanceAsset",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0,
+        -22893201219420683090977899628236846097255154425958941027414777542083049930118
+      ],
+      "frm": "address_00410",
+      "method": "enforceToleranceInt",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        20,
+        2
+      ],
+      "frm": "address_00021",
+      "method": "enforceTolerance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        36183407787619628833904036288346837939867926582553992908475108550375043689775,
+        200018919602110630939218123795466016060524133351366951193591323134794809088
+      ],
+      "frm": "address_00398",
+      "method": "enforceTolerance",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        11020177205191566504921973588386734378842428022040357283857270481424889221069,
+        1,
+        true
+      ],
+      "frm": "address_00404",
+      "method": "configureFlashGovernance",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

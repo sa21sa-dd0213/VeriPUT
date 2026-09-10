@@ -1,0 +1,87 @@
+{
+  "compile_failed": 0,
+  "compile_ok": 8,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "modifier:only_owner",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "modifier:only_owner",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "modifier:only_owner",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "constructor",
+      "mutant_id": "m000004",
+      "operator": "CCD",
+      "original_expression": "constructor(ENS ensAddr, bytes32 node) public {\n        ens = ensAddr;\n        rootNode = node;\n    }",
+      "replacement_expression": "",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "modifier:only_owner",
+      "mutant_id": "m000005",
+      "operator": "EHD",
+      "original_expression": "require(currentOwner == address(0x0) || currentOwner == msg.sender);",
+      "replacement_expression": "/* require(currentOwner == address(0x0) || currentOwner == msg.sender); */",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 30,
+      "function": "register",
+      "mutant_id": "m000006",
+      "operator": "FCD",
+      "original_expression": "ens.setSubnodeOwner(rootNode, label, owner);",
+      "replacement_expression": "/*ens.setSubnodeOwner(rootNode, label, owner);*/",
+      "start_line": 30
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "modifier:only_owner",
+      "mutant_id": "m000007",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "register",
+      "mutant_id": "m000008",
+      "operator": "MOD",
+      "original_expression": "function register(bytes32 label, address owner) public only_owner(label) ",
+      "replacement_expression": "function register(bytes32 label, address owner) public  ",
+      "start_line": 29
+    }
+  ],
+  "subject_id": "ensdomains__ens-contracts__FIFSRegistrar"
+}

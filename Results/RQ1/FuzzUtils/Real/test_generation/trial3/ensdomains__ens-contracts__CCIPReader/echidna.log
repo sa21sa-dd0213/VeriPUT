@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.868356766s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.566050692s)
+
+echidna: Constructor arguments are required: [("_unsafeCallGas",uint256)]

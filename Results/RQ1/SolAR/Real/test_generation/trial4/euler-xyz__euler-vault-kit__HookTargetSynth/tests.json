@@ -1,0 +1,37 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "isHookTarget",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        96510223787508784031247150715281323649483276441938780460680519373709568602922,
+        "address_00404"
+      ],
+      "frm": "address_00023",
+      "method": "deposit",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

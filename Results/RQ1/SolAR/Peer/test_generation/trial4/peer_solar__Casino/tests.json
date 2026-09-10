@@ -1,0 +1,116 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "checkWinner",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        60971341063445833442386142188066211649488348643721726809299216275262322411457,
+        100
+      ],
+      "frm": "address_00023",
+      "method": "unsafeEntry",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "checkWinner",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "address_00032",
+      "method": "buyTicket",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "claim",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        89476583291790001746326950727105034495384654841177602351701174855952771254936,
+        110227034372527499745288225991167557051435974801947932002925373823301980382456
+      ],
+      "frm": "address_00184",
+      "method": "verifyTicket",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        36752682462991090556711739816969027642640484646686273362018612182399299496267,
+        60639485025917974103008153559845308341104480011582468214814144412023869100592
+      ],
+      "frm": "address_00398",
+      "method": "generateHash",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

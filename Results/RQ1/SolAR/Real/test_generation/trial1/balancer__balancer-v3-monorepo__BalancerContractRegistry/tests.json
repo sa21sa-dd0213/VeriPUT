@@ -1,0 +1,294 @@
+[
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        18,
+        ""
+      ],
+      "frm": "address_00398",
+      "method": "getBalancerContract",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00036",
+      "method": "deprecateBalancerContract",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "hHvUJXQqmVmJcdAqQNHuQlDHXVUImRABNHjassTjrg DfaupiLLkWNrzgwlsIjBsUmgBfybDVEkFEogTBMidKfKQdKLOEPf EdTilwNaGyiyYaNJvNPMNxvrmMuQKZvsxCesvoICpwzdkkvOSgarJDPvCdXdwcVIOlPxqjdjPJaUD spIG jEsnhSyYKGKFOduqmKwlPHbAvaVuhfcHWJIcBczIcyZuofHKoQuc"
+      ],
+      "frm": "address_00032",
+      "method": "deregisterBalancerContract",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "kDOxzqlRlUjrsCqucwXRlmmwjqwiWXS UpVYhhAiiACqXtrhGlnjOTeTgvAPEltulCYbNAlxdRuBKexpqiTfWRacdXJLrwLLAG",
+        "address_00019"
+      ],
+      "frm": "address_00404",
+      "method": "addOrUpdateBalancerContractAlias",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00410",
+      "method": "isTrustedRouter",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "kDOxzqlRlUjrsCqucwXRlmmwjqwiWXS UpVYhhAiiACqXtrhGlnjOTeTgvAPEltulCYbNAlxdRuBKexpqiTfWRacdXJLrwLLAG",
+        "address_00019"
+      ],
+      "frm": "address_00404",
+      "method": "addOrUpdateBalancerContractAlias",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        153,
+        "address_00019"
+      ],
+      "frm": "address_00019",
+      "method": "isActiveBalancerContract",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00410",
+      "method": "getBalancerContractInfo",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        11,
+        "address_00036"
+      ],
+      "frm": "address_00410",
+      "method": "isActiveBalancerContract",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00032",
+      "method": "deprecateBalancerContract",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "",
+        "address_00401"
+      ],
+      "frm": "address_00036",
+      "method": "addOrUpdateBalancerContractAlias",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [
+        21,
+        "dCQtSXN IQNvqqVZfVi mVjiMhtDYwSPbyIzEZBqWHmATTGgpgJqKVihaDVcQFlGYxOrgxtyMSKaYNT"
+      ],
+      "frm": "address_00410",
+      "method": "getBalancerContract",
+      "n": 5,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "hHvUJXQqmVmJcdAqQNHuQlDHXVUImRABNHjassTjrg DfaupiLLkWNrzgwlsIjBsUmgBfybDVEkFEogTBMidKfKQdKLOEPf EdTilwNaGyiyYaNJvNPMNxvrmMuQKZvsxCesvoICpwzdkkvOSgarJDPvCdXdwcVIOlPxqjdjPJaUD spIG jEsnhSyYKGKFOduqmKwlPHbAvaVuhfcHWJIcBczIcyZuofHKoQuc"
+      ],
+      "frm": "address_00032",
+      "method": "deregisterBalancerContract",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0,
+        "GinXTAfMoCCCwYUJusUVCffSLCitdkanmRhNmDGxeDYlUpJxqpDdJQSOelFMktwCRDiajFDYPrZeBBTchTIXbqQ nzWMfFPoSvGXUdRAfzdpbxKSAetkYmzcOUYycwWaYqRZZtUJhScFdWqxoAHRvxJftxUTCnewFKIPFGyZ aCwlInzAgvSbwOJxutUPHdlTuash RNGLrxedaZfFbcpkRwpLEcBDv VtEJrGcPNLBkQV",
+        "address_00410"
+      ],
+      "frm": "address_00401",
+      "method": "registerBalancerContract",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "zwmHgHsHAYqifYQjVps tCOvEOuMARuzNHhvVrSZrtDmRgmgZyUMeoIkdFiDibZCyZVKUsQWTNuZdgTvpIpKl Gdxeud yNdAqiKeCPMdXIQzHycauTeSIhvuZNvxRUrPHBrFceqnkxYC IjKtboPXnuAdipVqkRiEuWKKXhSFm zZLpdNphkrLzMunjZVDBKmMzraAIHIlqujzvwAAIyLmaK MtHF qbgdgU"
+      ],
+      "frm": "address_00032",
+      "method": "deregisterBalancerContract",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        247,
+        "baLhEZOoxvvDMSoXswZZqgAmaNsG XJxqrVPEMeNBUwpGflkdCrcNiKzUqTcJJbHoIAIVLkklzHgyURNEPENuBedPxisLuEOGNAnjPuzSZQuEfyfiBLwkurfjfnLjrAtNEwjCmwTm aZKowT",
+        "address_00184"
+      ],
+      "frm": "address_00019",
+      "method": "registerBalancerContract",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "hHvUJXQqmVmJcdAqQNHuQlDHXVUImRABNHjassTjrg DfaupiLLkWNrzgwlsIjBsUmgBfybDVEkFEogTBMidKfKQdKLOEPf EdTilwNaGyiyYaNJvNPMNxvrmMuQKZvsxCesvoICpwzdkkvOSgarJDPvCdXdwcVIOlPxqjdjPJaUD spIG jEsnhSyYKGKFOduqmKwlPHbAvaVuhfcHWJIcBczIcyZuofHKoQuc"
+      ],
+      "frm": "address_00032",
+      "method": "deregisterBalancerContract",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00398",
+      "method": "getBalancerContractInfo",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "VsbqNgqsjLPWZ ktbyvpldMlCWM vnH NdfHClGZuCoSAgJyICZUtzeYJJmZLFmsHGnWqseMCkujIIgrXPfoLAzsrOFMBkSIvoMDPThQnNAVFgWLDih KNFN amuRZMOiyQkLWIJcMAg "
+      ],
+      "frm": "address_00404",
+      "method": "deregisterBalancerContract",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

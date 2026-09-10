@@ -1,0 +1,1707 @@
+{
+  "dataset": "Patch",
+  "rows": [
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 520.336,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "acfix_002_Templedao",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 520.336
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.584,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "acfix_015_CVE_2018_10666",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 2.584
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.0020000000000002,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "acfix_016_CVE_2018_10705",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 2.002
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.9389999999999998,
+      "raw": 20,
+      "status": "ok",
+      "subject_id": "acfix_021_CVE_2018_19832",
+      "trial": 1,
+      "valid": 14,
+      "valid_tests": {
+        "test_ce_0_NETM": "Success",
+        "test_ce_10_transferFrom": "Success",
+        "test_ce_11_transferFrom": "Failure",
+        "test_ce_12_transferFrom": "Success",
+        "test_ce_13_transferFrom": "Failure",
+        "test_ce_14_approve": "Success",
+        "test_ce_15_approve": "Success",
+        "test_ce_16_approve": "Success",
+        "test_ce_17_approve": "Success",
+        "test_ce_18_burn": "Success",
+        "test_ce_19_burn": "Failure",
+        "test_ce_1_transferOwnership": "Success",
+        "test_ce_2_transferOwnership": "Success",
+        "test_ce_3_finishDistribution": "Success",
+        "test_ce_4_getTokens": "Success",
+        "test_ce_5_transfer": "Success",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_transferFrom": "Success",
+        "test_ce_9_transferFrom": "Failure"
+      },
+      "wall_total_s": 2.63
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.667,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "acfix_022_CVE_2018_19833",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_owned": "Success",
+        "test_ce_1_transfer": "Success",
+        "test_ce_2_transfer": "Failure",
+        "test_ce_3_transfer": "Failure",
+        "test_ce_4_burn": "Success",
+        "test_ce_5_burn": "Failure"
+      },
+      "wall_total_s": 1.141
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.591,
+      "raw": 1,
+      "status": "suite-uncompilable",
+      "subject_id": "acfix_026_CVE_2019_15080",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 1.891
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.635,
+      "raw": 1,
+      "status": "suite-uncompilable",
+      "subject_id": "acfix_030_CVE_2021_34272",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 2.98
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.789,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "acfix_031_CVE_2021_34273",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_owned": "Failure"
+      },
+      "wall_total_s": 1.181
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 30.922,
+      "raw": 6,
+      "status": "suite-uncompilable",
+      "subject_id": "acfix_032_CVE_2021_39167",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 31.309
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 28.692999999999998,
+      "raw": 7,
+      "status": "suite-uncompilable",
+      "subject_id": "acfix_033_CVE_2021_39168",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 29.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.08600000000000001,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "acfix_077_L1Block",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_setL1BlockValues": "Failure"
+      },
+      "wall_total_s": 0.565
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 261.906,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "acfix_088_EmergencyOracleFactory",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 261.906
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.571,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "acfix_3_5_015_CVE_2018_10666",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_setOwner": "Success"
+      },
+      "wall_total_s": 2.985
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.431,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "acfix_3_5_016_CVE_2018_10705",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_setOwner": "Success"
+      },
+      "wall_total_s": 2.918
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.162,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "acfix_3_5_076_RoundFactory",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.162
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.08600000000000001,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "acfix_3_5_077_L1Block",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_setL1BlockValues": "Failure"
+      },
+      "wall_total_s": 0.526
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 281.19,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "acfix_3_5_088_EmergencyOracleFactory",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 281.19
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 131.218,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "acfix_3_5_101_ANCHToken",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 131.218
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.669,
+      "raw": 12,
+      "status": "ok",
+      "subject_id": "acfix_fixlink_DepositLog",
+      "trial": 1,
+      "valid": 11,
+      "valid_tests": {
+        "test_ce_0_setApprovedLogger": "Failure",
+        "test_ce_10_logLiquidated": "Success",
+        "test_ce_11_logExitedCourtesyCall": "Success",
+        "test_ce_1_logCreated": "Success",
+        "test_ce_2_logGotRedemptionSignature": "Success",
+        "test_ce_3_logRegisteredPubkey": "Success",
+        "test_ce_4_logSetupFailed": "Success",
+        "test_ce_5_logFraudDuringSetup": "Success",
+        "test_ce_6_logFunded": "Success",
+        "test_ce_7_logCourtesyCalled": "Success",
+        "test_ce_8_logStartedLiquidation": "Success",
+        "test_ce_9_logRedeemed": "Success"
+      },
+      "wall_total_s": 1.123
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.173,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "acfix_fixlink_DnGmxBatchingManager",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.173
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 55.135,
+      "raw": 1,
+      "status": "score-incomplete",
+      "subject_id": "acfix_fixlink_MStableYieldSource",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 55.561
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.256,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "acfix_fixlink_Product",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.256
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.268,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "acfix_fixlink_Product2",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.268
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 520.399,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "acfix_llama3_002_Templedao",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 520.399
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.96,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "acfix_llama3_017_CVE_2018_11329",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_DrugDealer": "Failure",
+        "test_ce_1_collectDrugs": "Failure",
+        "test_ce_2_getDrugsSinceLastCollect": "Success",
+        "test_ce_3_getDrugsSinceLastCollect": "Success",
+        "test_ce_4_sellDrugs": "Failure",
+        "test_ce_5_buyDrugs": "Failure",
+        "test_ce_6_seedMarket": "Success",
+        "test_ce_7_getFreeKilo": "Failure"
+      },
+      "wall_total_s": 3.374
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.601,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "acfix_llama3_022_CVE_2018_19833",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_owned": "Success",
+        "test_ce_1_transfer": "Success",
+        "test_ce_2_transfer": "Failure",
+        "test_ce_3_transfer": "Failure",
+        "test_ce_4_burn": "Success",
+        "test_ce_5_burn": "Failure"
+      },
+      "wall_total_s": 1.048
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.0549999999999997,
+      "raw": 20,
+      "status": "ok",
+      "subject_id": "acfix_llama3_024_CVE_2019_15078",
+      "trial": 1,
+      "valid": 14,
+      "valid_tests": {
+        "test_ce_0_XBornID": "Success",
+        "test_ce_10_transferFrom": "Success",
+        "test_ce_11_transferFrom": "Failure",
+        "test_ce_12_transferFrom": "Success",
+        "test_ce_13_transferFrom": "Failure",
+        "test_ce_14_approve": "Success",
+        "test_ce_15_approve": "Success",
+        "test_ce_16_approve": "Success",
+        "test_ce_17_approve": "Success",
+        "test_ce_18_burn": "Success",
+        "test_ce_19_burn": "Failure",
+        "test_ce_1_finishDistribution": "Success",
+        "test_ce_2_transferOwnership": "Success",
+        "test_ce_3_transferOwnership": "Success",
+        "test_ce_4_getTokens": "Success",
+        "test_ce_5_transfer": "Success",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_transferFrom": "Success",
+        "test_ce_9_transferFrom": "Failure"
+      },
+      "wall_total_s": 2.479
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.216,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "acfix_real_BaseEscalationManager",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_assertionDisputedCallback": "Success"
+      },
+      "wall_total_s": 0.654
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.319,
+      "raw": 21,
+      "status": "ok",
+      "subject_id": "acfix_real_FlashGovernanceArbiter",
+      "trial": 1,
+      "valid": 12,
+      "valid_tests": {
+        "test_ce_0_burnFlashGovernanceAsset": "Success",
+        "test_ce_10_withdrawGovernanceAsset": "Failure",
+        "test_ce_11_withdrawGovernanceAsset": "Failure",
+        "test_ce_12_withdrawGovernanceAsset": "Failure",
+        "test_ce_13_withdrawGovernanceAsset": "Failure",
+        "test_ce_14_enforceToleranceInt": "Success",
+        "test_ce_15_enforceTolerance": "Success",
+        "test_ce_16_enforceTolerance": "Success",
+        "test_ce_17_enforceTolerance": "Success",
+        "test_ce_18_enforceTolerance": "Success",
+        "test_ce_19_enforceTolerance": "Success",
+        "test_ce_1_setDAO": "Success",
+        "test_ce_20_enforceTolerance": "Success",
+        "test_ce_2_assertGovernanceApproved": "Failure",
+        "test_ce_3_assertGovernanceApproved": "Failure",
+        "test_ce_4_assertGovernanceApproved": "Failure",
+        "test_ce_5_assertGovernanceApproved": "Failure",
+        "test_ce_6_assertGovernanceApproved": "Failure",
+        "test_ce_7_configureSecurityParameters": "Success",
+        "test_ce_8_configureSecurityParameters": "Success",
+        "test_ce_9_burnFlashGovernanceAsset": "Success"
+      },
+      "wall_total_s": 2.726
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.179,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "ct_20_Pool_sol_Synth_sol_Failing_Max_Value_Al",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.179
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 9.222999999999999,
+      "raw": 21,
+      "status": "ok",
+      "subject_id": "ct_5_Proposals_can_be_cancelled",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_init": "Success",
+        "test_ce_10_cancelProposal": "Failure",
+        "test_ce_11_cancelProposal": "Failure",
+        "test_ce_12_cancelProposal": "Failure",
+        "test_ce_13_finaliseProposal": "Failure",
+        "test_ce_14_finaliseProposal": "Failure",
+        "test_ce_15_finaliseProposal": "Failure",
+        "test_ce_16_finaliseProposal": "Failure",
+        "test_ce_17_finaliseProposal": "Failure",
+        "test_ce_18_finaliseProposal": "Failure",
+        "test_ce_19_finaliseProposal": "Failure",
+        "test_ce_1_hasQuorum": "Failure",
+        "test_ce_20_finaliseProposal": "Failure",
+        "test_ce_2_voteProposal": "Failure",
+        "test_ce_3_voteProposal": "Failure",
+        "test_ce_4_voteProposal": "Failure",
+        "test_ce_5_voteProposal": "Failure",
+        "test_ce_6_cancelProposal": "Failure",
+        "test_ce_7_cancelProposal": "Failure",
+        "test_ce_8_cancelProposal": "Failure",
+        "test_ce_9_hasMinority": "Failure"
+      },
+      "wall_total_s": 9.646
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 79.273,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "pop_001_Multicall",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 79.273
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 80.166,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "pop_009_PrivatePool",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 80.166
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 74.405,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "pop_018_PrivatePool",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 74.405
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 601.0400000000001,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "pop_020_GSPFunding",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 601.04
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.109,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "pop_032_PuttyV2",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.109
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 71.01899999999999,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "pop_033_PrivatePool",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 71.019
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 19.38,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "pop_042_VaultAdapter",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_initialize": "Failure",
+        "test_ce_1_setLimits": "Failure",
+        "test_ce_2_proxiableUUID": "Success",
+        "test_ce_3_rate": "Failure",
+        "test_ce_4_rate": "Failure",
+        "test_ce_5_rate": "Failure",
+        "test_ce_6_rate": "Failure"
+      },
+      "wall_total_s": 19.822
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 278.768,
+      "raw": 9,
+      "status": "suite-uncompilable",
+      "subject_id": "pop_046_CVXStaker",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 279.075
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 75.59400000000001,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "pop_048_PrivatePool",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 75.594
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 4.001,
+      "raw": 19,
+      "status": "ok",
+      "subject_id": "pop_049_Cooler",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_rescindRequest": "Failure",
+        "test_ce_10_delegateVoting": "Failure",
+        "test_ce_11_clearRequest": "Failure",
+        "test_ce_12_clearRequest": "Failure",
+        "test_ce_13_clearRequest": "Failure",
+        "test_ce_14_provideNewTermsForRoll": "Failure",
+        "test_ce_15_claimDefaulted": "Failure",
+        "test_ce_16_approveTransfer": "Failure",
+        "test_ce_17_transferOwnership": "Failure",
+        "test_ce_18_setDirectRepay": "Failure",
+        "test_ce_1_rescindRequest": "Failure",
+        "test_ce_2_repayLoan": "Failure",
+        "test_ce_3_repayLoan": "Failure",
+        "test_ce_4_repayLoan": "Failure",
+        "test_ce_5_repayLoan": "Failure",
+        "test_ce_6_repayLoan": "Failure",
+        "test_ce_7_rollLoan": "Failure",
+        "test_ce_8_rollLoan": "Failure",
+        "test_ce_9_rollLoan": "Failure"
+      },
+      "wall_total_s": 4.459
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 5.833,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "pop_051_LiquidityPool",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_rely": "Success",
+        "test_ce_1_file": "Failure",
+        "test_ce_2_deposit": "Failure",
+        "test_ce_3_mint": "Failure"
+      },
+      "wall_total_s": 6.261
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.107,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "pop_058_PuttyV2",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.107
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.074,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "pop_066_LRTDepositPool",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.074
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 101.433,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "pop_070_PhiNFT1155",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 101.433
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.089,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "pop_077_GameItems",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.089
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.14300000000000002,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "pop_077_MergingPool",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.143
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.182,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__SolGPT__mycontract_2round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_sendTo": "Failure",
+        "test_ce_1_sendTo": "Failure",
+        "test_ce_2_sendTo": "Failure"
+      },
+      "wall_total_s": 0.576
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.167,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__SolGPT__mycontract_3round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_sendTo": "Failure",
+        "test_ce_1_sendTo": "Failure",
+        "test_ce_2_sendTo": "Failure"
+      },
+      "wall_total_s": 0.628
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.155,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__sGuard__mycontract",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_sendTo": "Success"
+      },
+      "wall_total_s": 0.571
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.08600000000000001,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_access_control__phishable__SmartFix__phishable",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_withdrawAll": "Success"
+      },
+      "wall_total_s": 0.48
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.092,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_access_control__phishable__TIPS__phishable",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_withdrawAll": "Success"
+      },
+      "wall_total_s": 0.497
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.108,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_access_control__phishable__sGuardPlus__phishable",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_withdrawAll": "Success"
+      },
+      "wall_total_s": 0.504
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.091,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_access_control__phishable__sGuard__phishable",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_withdrawAll": "Success"
+      },
+      "wall_total_s": 0.484
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rc_access_control__proxy__SolGPT__proxy_4round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.153
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.085,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_access_control__simple_suicide__SmartFix__simple_suicide",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_sudicideAnyone": "Success"
+      },
+      "wall_total_s": 0.504
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.088,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_access_control__simple_suicide__sGuardPlus__simple_suicide",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_sudicideAnyone": "Success"
+      },
+      "wall_total_s": 0.487
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.143,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_access_control__wallet_02_refund_nosub__SmartFix__wallet_02_refund_nosub",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_withdraw": "Success",
+        "test_ce_1_withdraw": "Failure",
+        "test_ce_2_migrateTo": "Success"
+      },
+      "wall_total_s": 0.551
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_access_control__wallet_02_refund_nosub__SolGPT__wallet_02_refund_nosub_2round",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_withdraw": "Success",
+        "test_ce_1_withdraw": "Failure",
+        "test_ce_2_migrateTo": "Success"
+      },
+      "wall_total_s": 0.542
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.357,
+      "raw": 2,
+      "status": "score-incomplete",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_1round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.766
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.317,
+      "raw": 2,
+      "status": "score-incomplete",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_2round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.724
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.30100000000000005,
+      "raw": 2,
+      "status": "score-incomplete",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_3round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.69
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.298,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__modifier_reentrancy__SmartFix__modifier_reentrancy",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_airDrop": "Failure"
+      },
+      "wall_total_s": 0.716
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.247,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_bonus__SmartFix__reentrancy_bonus",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_withdrawReward": "Success",
+        "test_ce_1_getFirstWithdrawalBonus": "Failure"
+      },
+      "wall_total_s": 0.649
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.156,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_1round",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_withdrawAll": "Success",
+        "test_ce_1_withdrawAll": "Success"
+      },
+      "wall_total_s": 0.566
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.123,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_4round",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_withdrawAll": "Success",
+        "test_ce_1_withdrawAll": "Success"
+      },
+      "wall_total_s": 0.53
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.171,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__sGuardPlus__reentrancy_dao",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_withdrawAll": "Success",
+        "test_ce_1_withdrawAll": "Success"
+      },
+      "wall_total_s": 0.581
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.099,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_simple__SmartFix__reentrancy_simple",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_addToBalance": "Success"
+      },
+      "wall_total_s": 0.591
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.127,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_simple__sGuard__reentrancy_simple",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_addToBalance": "Success"
+      },
+      "wall_total_s": 0.528
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.157,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_1round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_play": "Failure"
+      },
+      "wall_total_s": 0.564
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.124,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_2round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_play": "Failure"
+      },
+      "wall_total_s": 0.522
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.131,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_3round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_play": "Failure"
+      },
+      "wall_total_s": 0.529
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.17200000000000001,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_1round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.172
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.168,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_2round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.168
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_3round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.154
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.155,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_4round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.155
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.596,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00020__SolGPT__address_00020_3round",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_OpenToThePublic": "Success",
+        "test_ce_1_wager": "Failure",
+        "test_ce_2_play": "Failure"
+      },
+      "wall_total_s": 1.004
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.4459999999999997,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rc_unchecked_low_level_calls__address_00034__SolGPT__address_00034_3round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 2.446
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.7849999999999997,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rc_unchecked_low_level_calls__address_00038__SolGPT__address_00038_2round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 2.785
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.157,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rc_unchecked_low_level_calls__address_00038__SolGPT__address_00038_3round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 3.157
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.843,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_1round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 2.843
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.8209999999999997,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_2round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 2.821
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.0869999999999997,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_3round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 3.087
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.604,
+      "raw": 5,
+      "status": "score-incomplete",
+      "subject_id": "rc_unchecked_low_level_calls__address_00397__TIPS__address_00397U2",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 1.002
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.557,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rc_unchecked_low_level_calls__address_00402__SolGPT__address_00402_1round",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.557
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.123,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00412__sGuardPlus__address_00412",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_withdraw": "Success"
+      },
+      "wall_total_s": 0.512
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.806,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rc_unchecked_low_level_calls__address_00419__TIPS__address_00419U1",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 2.806
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.238,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00031__SmartFix",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_Deposit": "Success",
+        "test_ce_1_CashOut": "Failure",
+        "test_ce_2_CashOut": "Success"
+      },
+      "wall_total_s": 0.637
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.293,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00059__SmartFix",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_SetMinSum": "Success",
+        "test_ce_1_SetLogFile": "Success",
+        "test_ce_2_Deposit": "Failure",
+        "test_ce_3_Collect": "Success",
+        "test_ce_4_Collect": "Success"
+      },
+      "wall_total_s": 0.722
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.357,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00152__SmartFix",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_SetMinSum": "Success",
+        "test_ce_1_SetLogFile": "Success",
+        "test_ce_2_Deposit": "Failure",
+        "test_ce_3_Collect": "Failure",
+        "test_ce_4_Collect": "Success"
+      },
+      "wall_total_s": 0.806
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.309,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00202__SmartFix",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_SetMinSum": "Success",
+        "test_ce_1_SetLogFile": "Success",
+        "test_ce_2_Deposit": "Failure",
+        "test_ce_3_Collect": "Failure",
+        "test_ce_4_Collect": "Success"
+      },
+      "wall_total_s": 0.715
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.24,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00396__SmartFix",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_Put": "Failure",
+        "test_ce_1_Collect": "Success",
+        "test_ce_2_Collect": "Success"
+      },
+      "wall_total_s": 0.638
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.331,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00396__sGuard",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_Put": "Failure",
+        "test_ce_1_Collect": "Success",
+        "test_ce_2_Collect": "Success"
+      },
+      "wall_total_s": 0.742
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.236,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00399__SmartFix",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_Put": "Failure",
+        "test_ce_1_Collect": "Success",
+        "test_ce_2_Collect": "Success"
+      },
+      "wall_total_s": 0.64
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.358,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00399__sGuard",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_Put": "Failure",
+        "test_ce_1_Collect": "Success",
+        "test_ce_2_Collect": "Success"
+      },
+      "wall_total_s": 0.801
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.532,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00400__SmartFix",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_SetMinSum": "Success",
+        "test_ce_1_SetLogFile": "Success",
+        "test_ce_2_Put": "Failure",
+        "test_ce_3_Collect": "Failure",
+        "test_ce_4_Collect": "Success"
+      },
+      "wall_total_s": 0.946
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.5730000000000001,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00400__sGuard",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_Initialized": "Success",
+        "test_ce_1_SetMinSum": "Success",
+        "test_ce_2_SetLogFile": "Success",
+        "test_ce_3_Put": "Failure",
+        "test_ce_4_Put": "Failure",
+        "test_ce_5_Collect": "Failure",
+        "test_ce_6_Collect": "Success"
+      },
+      "wall_total_s": 0.981
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.38,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00407__SmartFix",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_SetMinSum": "Success",
+        "test_ce_1_SetLogFile": "Success",
+        "test_ce_2_Deposit": "Failure",
+        "test_ce_3_Collect": "Failure",
+        "test_ce_4_Collect": "Success"
+      },
+      "wall_total_s": 0.783
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.201,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00411__SmartFix",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_Deposit": "Success",
+        "test_ce_1_CashOut": "Failure",
+        "test_ce_2_CashOut": "Success"
+      },
+      "wall_total_s": 0.639
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.356,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00413__SmartFix",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_SetMinSum": "Success",
+        "test_ce_1_SetLogFile": "Success",
+        "test_ce_2_Put": "Failure",
+        "test_ce_3_Put": "Failure",
+        "test_ce_4_Collect": "Failure",
+        "test_ce_5_Collect": "Success"
+      },
+      "wall_total_s": 0.776
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.574,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00413__sGuard",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_Initialized": "Success",
+        "test_ce_1_SetMinSum": "Success",
+        "test_ce_2_SetLogFile": "Success",
+        "test_ce_3_Put": "Failure",
+        "test_ce_4_Put": "Failure",
+        "test_ce_5_Collect": "Failure",
+        "test_ce_6_Collect": "Success"
+      },
+      "wall_total_s": 0.993
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.234,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00421__SmartFix",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_Put": "Failure",
+        "test_ce_1_Collect": "Success",
+        "test_ce_2_Collect": "Success"
+      },
+      "wall_total_s": 0.68
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.326,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00421__sGuard",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_Put": "Failure",
+        "test_ce_1_Collect": "Success",
+        "test_ce_2_Collect": "Success"
+      },
+      "wall_total_s": 0.727
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.20400000000000001,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00037__SmartFix",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_withdraw": "Success",
+        "test_ce_1_multiplicate": "Success"
+      },
+      "wall_total_s": 0.608
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.157,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.157
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.768,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__TIPS",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 2.768
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 5.872000000000001,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__sGuard",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 5.872
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.203,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00224__SmartFix",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_withdraw": "Success",
+        "test_ce_1_multiplicate": "Success"
+      },
+      "wall_total_s": 0.594
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.228,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__SmartFix",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_withdrawAll": "Success"
+      },
+      "wall_total_s": 0.634
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.256,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__TIPS",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_withdrawAll": "Success"
+      },
+      "wall_total_s": 0.671
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.189,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__sGuard",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_withdrawAll": "Success"
+      },
+      "wall_total_s": 0.64
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.24,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__sGuardPlus",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_withdrawAll": "Success"
+      },
+      "wall_total_s": 0.68
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.428,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00403__TIPS",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 2.428
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.084,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00403__sGuard",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 2.084
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.256,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__SmartFix",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_withdrawAll": "Success"
+      },
+      "wall_total_s": 0.659
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.189,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__TIPS",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_withdrawAll": "Success"
+      },
+      "wall_total_s": 0.645
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.209,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__sGuard",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_withdrawAll": "Success"
+      },
+      "wall_total_s": 0.616
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.277,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__sGuardPlus",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_withdrawAll": "Success",
+        "test_ce_1_sendMoney": "Success"
+      },
+      "wall_total_s": 0.713
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.815,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00415__TIPS",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 2.815
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.159,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00415__sGuard",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 3.159
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.051,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__TIPS",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.051
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.052,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuard",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.052
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.098,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuardPlus",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_go": "Success"
+      },
+      "wall_total_s": 0.614
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 174.188,
+      "raw": 11,
+      "status": "score-incomplete",
+      "subject_id": "reprod_DCFToken",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 174.639
+    }
+  ],
+  "tool": "CC-SolBMC"
+}

@@ -1,0 +1,426 @@
+[
+  [
+    {
+      "args": [
+        "address_00410",
+        "\"19_01\"",
+        "\"f\""
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "getVault",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "totalSupply",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "\"19_01\"",
+        "\"f\""
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "symbol",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        60
+      ],
+      "frm": "address_00398",
+      "method": "transfer",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        58502865215827894875153321198693018603257719267628794360142340635287508794185
+      ],
+      "frm": "address_00023",
+      "method": "approve",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "\"19_01\"",
+        "\"f\""
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        27041290275060991775161664745454338290275522278685197262078904568934733876925
+      ],
+      "frm": "address_00184",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00001",
+        255
+      ],
+      "frm": "address_00023",
+      "method": "approve",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00032",
+        "dezGFZOqPndBRQhecLlAKEALHIipkSMByvU",
+        "\"f\""
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "getRate",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        58502865215827894875153321198693018603257719267628794360142340635287508794185
+      ],
+      "frm": "address_00023",
+      "method": "approve",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "\"19_0W1\"",
+        "\"f\""
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        "address_00019"
+      ],
+      "frm": "address_00021",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "\"19_01\"",
+        "\"f\""
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "incrementNonce",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00184",
+        "\"\\x19Ethereum Signed Message:\\n32\"",
+        "FzLcBxXyWzclxKcSwaUElagtWtTlaipzqKrRf TZdNIkGSgnnrenQxfZIWFGqmUZBbIFsmZUrrRGPwSsxXrdUKxcO qaOEKglupKCxAok edQpSeiRxhkTjkIqluBvgyCtrKXSVt"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "getRate",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "totalSupply",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "\"19_01\"",
+        "\"f\""
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00019",
+      "method": "nonces",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        58502865215827894875153321198693018603257719267628794360142340635287508794185
+      ],
+      "frm": "address_00023",
+      "method": "approve",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00021",
+        "\"r\"",
+        "\"\\x19Ethereum Signed Message:\\n32\""
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        58502865215827894875153321198693018603257719267628794360142340635287508794185
+      ],
+      "frm": "address_00023",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00032",
+        "dezGFZOqPndBRQhecLlAKEALHIipkSMByvU",
+        "\"f\""
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "\"19_01\"",
+        "\"f\""
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00184",
+        "MggBDWQVtXIUnKKNVZbtrOfOyaFdYBpUaP",
+        "xISSaTqvUWLKui yHAUaWpEQVCTGjNKzx aOYZYWdHSqjNSnRNavKnyxiHUviWYTeOIucDRvsBhrzHRunhZglmxMJHqtATqHwpFPfUFkyLqfYtJmLNmyvULdJxcMFPOeeGRkZMhH"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        255
+      ],
+      "frm": "address_00023",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "\"19_01\"",
+        "\"f\""
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        58502865215827894875153321198693018603257719267628794360142340635287508794185
+      ],
+      "frm": "address_00023",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00184",
+        "\"\\x19Ethereum Signed Message:\\n32\"",
+        "FzLcBxXyWzclxKcSwaUElagtWtTlaipzqKrRf TZdNIkGSgnnrenQxfZIWFGqmUZBbIFsmZUrrRGPwSsxXrdUKxcO qaOEKglupKCxAok edQpSeiRxhkTjkIqluBvgyCtrKXSVt"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00184",
+        "jDQLBUepMfdAYjkpsfJeOWfymEmxSiwRKWAdeASMCshjg",
+        "OHEzMxnBIshboBZmkvBHPjEOyTYofvCMqsUFfg iFTemUdTWtnmQUZkrEOQUnOW qqYIAqpDRRngtnPEkDABXXNYslvSycliUcpnFSoYSDRpiMTdzamGrqKBJpIIixIcVvZgYlFVNHmGGdMVKnsKDtxRUZvSldYsHAsgRL"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "decimals",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00019",
+      "method": "balanceOf",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00036",
+        "cQLqfTHNciCferOaDcWTZcEu  ORB",
+        "\"0x\""
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        "address_00021",
+        6
+      ],
+      "frm": "address_00021",
+      "method": "emitTransfer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        58502865215827894875153321198693018603257719267628794360142340635287508794185
+      ],
+      "frm": "address_00023",
+      "method": "approve",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

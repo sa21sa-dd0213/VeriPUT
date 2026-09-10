@@ -1,0 +1,154 @@
+[
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        "address_00184",
+        "address_00036",
+        106292639501407237521190026351657705650360381010268745630785870455144048330969
+      ],
+      "frm": "address_00023",
+      "method": "burnFlashGovernanceAsset",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0,
+        21866572417377159530202473192319991257789630638691596104216277592252656092816
+      ],
+      "frm": "address_00184",
+      "method": "enforceToleranceInt",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        "address_00184",
+        "address_00036",
+        106292639501407237521190026351657705650360381010268745630785870455144048330969
+      ],
+      "frm": "address_00023",
+      "method": "burnFlashGovernanceAsset",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        113235014806198660345006863306282556225566503653477876275520660742143054349400,
+        12704155716624666124963141765633035012653265911545762097016252271673699752175
+      ],
+      "frm": "address_00036",
+      "method": "enforceTolerance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0,
+        20,
+        190
+      ],
+      "frm": "address_00021",
+      "method": "configureSecurityParameters",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        false
+      ],
+      "frm": "address_00036",
+      "method": "setEnforcement",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        "address_00184",
+        false
+      ],
+      "frm": "address_00410",
+      "method": "assertGovernanceApproved",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        210,
+        100,
+        1
+      ],
+      "frm": "address_00036",
+      "method": "configureSecurityParameters",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

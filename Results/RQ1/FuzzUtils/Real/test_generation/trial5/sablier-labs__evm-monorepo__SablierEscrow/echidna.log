@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (1.841127527s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (1.648483611s)
+
+echidna: Constructor arguments are required: [("initialComptroller",address),("initialTradeFee",uint256)]

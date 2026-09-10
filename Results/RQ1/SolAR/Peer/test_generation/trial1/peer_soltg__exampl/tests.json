@@ -1,0 +1,47 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        49498701349950420514502832834362056878436846700849903689572045353985155689254
+      ],
+      "frm": "address_00410",
+      "method": "f",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "address_00410",
+      "method": "set",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "address_00036",
+      "method": "f",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

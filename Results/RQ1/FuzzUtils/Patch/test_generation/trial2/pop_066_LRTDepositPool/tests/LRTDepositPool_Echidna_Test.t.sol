@@ -1,0 +1,7977 @@
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.13;
+
+
+
+
+
+import "forge-std/Test.sol";
+import "forge-std/console2.sol";
+import "../src/flat.sol";
+
+contract LRTDepositPool_Echidna_Test is Test {
+    LRTDepositPool target;
+
+    function setUp() public {
+        target = new LRTDepositPool();
+    }
+    
+    function test_auto_depositAsset_0() public { 
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 258);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        address[] memory dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(5460547795597289994471269265028997669940154966585454025772496959471123972102, 0x0000000000000000000000000000000000000000, 36363067535634178834672246665141033329908331267063618370620702536059982499741);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(10);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322120);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 40709);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(4370000, 0x00000000000000000000000000000000FFFFfFFF, 56304550534122552110254516308120511159984819025080986292138340174395882559075);
+        dynaddressArr_0 = new address[](50);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[34] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[36] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[39] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[40] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[41] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[42] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[43] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[44] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[45] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[46] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[47] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[48] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[49] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(70408001194286907395012761917790002100758809379567716497564296638909267776719);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 252);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 252);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 258);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(71149878237716396445127118798867151894159888229796237483652949390639243002119, 0x00000000000000000000000000000002fFffFffD, 63861234624918415752116594379901851003070445250732853230188772922427188784512);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        dynaddressArr_0 = new address[](3);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000000000;
+
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 575012);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(11);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 186);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 25582);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 349807);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 4771);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 522917);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        dynaddressArr_0 = new address[](45);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[34] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[36] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[39] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[40] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[41] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[42] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[43] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[44] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 457593);
+        vm.roll(block.number + 39708);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 36952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        dynaddressArr_0 = new address[](17);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000020000;
+
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322119);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 17444);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(100818706296004317642863204263520194306140850609859842568735651406614491684252, 0x0000000000000000000000000000000000020000, 7996805147362534495488370280239225530315319745111450215563280545140503756224);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(113170537263863816311592227858271837864748442744185789021682221578851723691540, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 570591);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 188205);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(258, 0x00000000000000000000000000000000FFFFfFFF, 255);
+        dynaddressArr_0 = new address[](27);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[25] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[26] = 0x0000000000000000000000000000000000000000;
+
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 252);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(115792089237316195423570985008687907853269984665640564039457584007913129639927);
+        dynaddressArr_0 = new address[](42);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[33] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[34] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[36] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[39] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[40] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[41] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(55201004350696157554745185288287363057840384748542225437034811468227504978462, 0x0000000000000000000000000000000000030000, 39886425511041772047196171810966977432710759504423506314307717841337461117496);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000001fffffffE, 255);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 12929);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639681, 0x00000000000000000000000000000000FFFFfFFF, 8);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(4370001);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 27232);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000);
+        dynaddressArr_0 = new address[](10);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 23184);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000001fffffffE, 16756535436172743100906463806271501316064470422826603092552903628391336);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 4767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        dynaddressArr_0 = new address[](23);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000001fffffffE, 9979799795884134738569934203523318237307005893389894128959208301072805831970);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(98509909073058408600342753099512251514240604971093732668703068645116942240919);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+    }
+    
+    
+    function test_auto_updateLRTConfig_1() public { 
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 258);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        address[] memory dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(5460547795597289994471269265028997669940154966585454025772496959471123972102, 0x0000000000000000000000000000000000000000, 36363067535634178834672246665141033329908331267063618370620702536059982499741);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(10);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322120);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 40709);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(4370000, 0x00000000000000000000000000000000FFFFfFFF, 56304550534122552110254516308120511159984819025080986292138340174395882559075);
+        dynaddressArr_0 = new address[](50);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[34] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[36] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[39] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[40] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[41] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[42] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[43] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[44] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[45] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[46] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[47] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[48] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[49] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(70408001194286907395012761917790002100758809379567716497564296638909267776719);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 779);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(1524785993);
+        dynaddressArr_0 = new address[](1);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 120);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 31979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 123541);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 4766);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.getAssetDistributionData(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 33058);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        dynaddressArr_0 = new address[](7);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(252);
+        
+        vm.warp(block.timestamp + 601689);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 13);
+        dynaddressArr_0 = new address[](23);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 295167);
+        vm.roll(block.number + 58590);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x0000000000000000000000000000000000010000, 7);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 21336);
+        vm.roll(block.number + 39106);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 4767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 248904);
+        vm.roll(block.number + 253);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(66844809258000414129568903608946090466209818687751004733394346413849981432841, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639682);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(34945204671176661344811081765097789550406458896580636604245627848834123529497, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 4769);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(18851379625571961846245208317735526909704786007451666362798378600552270206235, 0x00000000000000000000000000000001fffffffE, 38533936693250207048983443951174630388509174393757177969397705504485748397103);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 4769);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 109363);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 321);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        dynaddressArr_0 = new address[](27);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[16] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(12035990969818933689202987894350873473466557563408380858632895831458272278910, 0x00000000000000000000000000000002fFffFffD, 12);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(17345666122323083344139587191292981583777932600342194399993606870331998459665);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 4768);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 322120);
+        vm.roll(block.number + 16178);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 355766);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(115484453061705895595084522370455691826632713475988752810530431080362380061339, 0x00000000000000000000000000000001fffffffE, 0);
+        
+        vm.warp(block.timestamp + 258);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x0000000000000000000000000000000000030000, 833);
+        
+        vm.warp(block.timestamp + 377114);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 393161);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+    }
+    
+    
+    function test_auto_getAssetCurrentLimit_2() public { 
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 258);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 257);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        address[] memory dynaddressArr_0 = new address[](43);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[32] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[33] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[34] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[36] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[38] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[39] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[40] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[41] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[42] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 283034);
+        vm.roll(block.number + 4767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 59734);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 19911405763102767410226907899634346603557166643812636167181058516744923203193);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 453853);
+        vm.roll(block.number + 21312);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 322118);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(100423680677383494795276131280718495630323143624666750779434222602880961336926, 0x0000000000000000000000000000000000030000, 375554483739642037151525084479797171818539798915111793);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 41152);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(50501788818644088762997753656825391531487681770473685013874443592379028459362, 0x0000000000000000000000000000000000030000, 105394297413226370118359948813878670265578737124323655922184009287738913567618);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 588577);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(255);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 87156947967417263967923034879547771539659545594105139537426850434271568836553);
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 256);
+        vm.roll(block.number + 253);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        dynaddressArr_0 = new address[](27);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 4369999);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 258);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 387780);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 32441);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(102142746149624495445291330345741380406257770568646126656457172667485318491337);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        dynaddressArr_0 = new address[](25);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000020000;
+
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        dynaddressArr_0 = new address[](23);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322119);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        dynaddressArr_0 = new address[](23);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        dynaddressArr_0 = new address[](3);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 50880);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000000FFFFfFFF, 43996764242442479310451325919804155436008122765049344790677460340508014260762);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 254);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 20225);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 256);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000001fffffffE, 2);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(24060211948823163742058107782492473157164582619456680720525909669969236466134);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 258);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(258850455697084870826962456534602396679095536100649051759596489444134158146, 0x00000000000000000000000000000001fffffffE, 113530363959297977668614292523753545277718082889978268020981570222144149616170);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 376136);
+        vm.roll(block.number + 41302);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        dynaddressArr_0 = new address[](7);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 4768);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 119253);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 257);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 203223);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 454495);
+        vm.roll(block.number + 254);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 23101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(5, 0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(71546204793437996569861893416679869164102671217717676251242090652189856334563, 0x00000000000000000000000000000002fFffFffD, 0);
+        
+        vm.warp(block.timestamp + 322121);
+        vm.roll(block.number + 799);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 481765);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(10);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 404871);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(33415008494279166948208349413731516804542727615759291364195620185989468839782);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 2735062087547252364227671725904282540);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 257);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.getAssetCurrentLimit(0x0000000000000000000000000000000000010000);
+    }
+    
+    
+    function test_auto_initialize_3() public { 
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 258);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        address[] memory dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(5460547795597289994471269265028997669940154966585454025772496959471123972102, 0x0000000000000000000000000000000000000000, 36363067535634178834672246665141033329908331267063618370620702536059982499741);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(10);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322120);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 40709);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(4370000, 0x00000000000000000000000000000000FFFFfFFF, 56304550534122552110254516308120511159984819025080986292138340174395882559075);
+        dynaddressArr_0 = new address[](50);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[34] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[36] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[39] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[40] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[41] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[42] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[43] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[44] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[45] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[46] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[47] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[48] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[49] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(70408001194286907395012761917790002100758809379567716497564296638909267776719);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 779);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(1524785993);
+        dynaddressArr_0 = new address[](1);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 120);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 31979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 4768);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 36349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(151);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(62989681983416376243420620208874679766839843086661478034779908137806970724487, 0x00000000000000000000000000000000FFFFfFFF, 4181270201339345006605675641907208671945566298166783221383478376075864397245);
+        
+        vm.warp(block.timestamp + 465628);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        dynaddressArr_0 = new address[](45);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[30] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[31] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[34] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[36] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[39] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[40] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[41] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[42] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[43] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[44] = 0x0000000000000000000000000000000000020000;
+
+        vm.warp(block.timestamp + 299519);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        dynaddressArr_0 = new address[](45);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[31] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[34] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[36] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[37] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[39] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[40] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[41] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[42] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[43] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[44] = 0x0000000000000000000000000000000000010000;
+
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322120);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        dynaddressArr_0 = new address[](23);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        dynaddressArr_0 = new address[](29);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[27] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[28] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 4768);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(115792089237316195423570985008687907853269984665640564039457584007913129639684);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000001fffffffE, 9);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 479373);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x0000000000000000000000000000000000000000, 101456726568092880261197739591824076994941320381419183849681885693578231951187);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 4771);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        dynaddressArr_0 = new address[](19);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 223406);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 75985963373962750811307615936759817026531789151788957310245031158515745075099);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(48325014763573216953272995731189004489697911508988175025570248779247958600688);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(66491341683640174468594082598194650924931125486180550117720722727276996227837, 0x0000000000000000000000000000000000000000, 72297329886267872723270750991043105206196059005071232425804913328658397544661);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(24583790331584106926961884745335021284300192313169063687473341237323802812520);
+        
+        vm.warp(block.timestamp + 257);
+        vm.roll(block.number + 4769);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 55602);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(3);
+        dynaddressArr_0 = new address[](32);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[24] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[25] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[31] = 0x0000000000000000000000000000000000020000;
+
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 254);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322122);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 527372);
+        vm.roll(block.number + 258);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639680);
+        
+        vm.warp(block.timestamp + 322118);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        dynaddressArr_0 = new address[](46);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[25] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[26] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[27] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[28] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[30] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[31] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[32] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[34] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[35] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[36] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[38] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[39] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[40] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[41] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[42] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[43] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[44] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[45] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 49937);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(88707696947242064266466928988654496374255762953888600450985943686338747172152);
+        
+        vm.warp(block.timestamp + 400237);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(84750646825912915864948726865302754323503801715888406505232815288203169703904, 0x00000000000000000000000000000001fffffffE, 77136203966367005033004551168392159039765532407801002004236966061603245690671);
+        dynaddressArr_0 = new address[](9);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(34221839641203680189369172331, 0x00000000000000000000000000000001fffffffE, 825);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 257);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(53584856182830097881137639539113719196562643938807307800564460941716463309169, 0x0000000000000000000000000000000000020000, 1524785992);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 42237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 0);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(48067449838768832741667434163645440930463017785747014981967309148863414489, 0x00000000000000000000000000000002fFffFffD, 4369999);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 4766);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.paused();
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        dynaddressArr_0 = new address[](25);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        dynaddressArr_0 = new address[](10);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322118);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(10, 0x0000000000000000000000000000000000030000, 84791075180234409796715854804626168046407487170539383245017399419238805732213);
+        
+        vm.warp(block.timestamp + 322123);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        dynaddressArr_0 = new address[](23);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 29730);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(20129139483877495492559799369869880993340193758775282968747622114593526734717);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000001fffffffE);
+    }
+    
+    
+    function test_auto_unpause_4() public { 
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 258);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        address[] memory dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(5460547795597289994471269265028997669940154966585454025772496959471123972102, 0x0000000000000000000000000000000000000000, 36363067535634178834672246665141033329908331267063618370620702536059982499741);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(10);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322120);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 40709);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(4370000, 0x00000000000000000000000000000000FFFFfFFF, 56304550534122552110254516308120511159984819025080986292138340174395882559075);
+        dynaddressArr_0 = new address[](50);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[34] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[36] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[39] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[40] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[41] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[42] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[43] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[44] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[45] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[46] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[47] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[48] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[49] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(70408001194286907395012761917790002100758809379567716497564296638909267776719);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 779);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(1524785993);
+        dynaddressArr_0 = new address[](1);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 120);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 31979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 123541);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 4766);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.getAssetDistributionData(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 33058);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        dynaddressArr_0 = new address[](7);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(252);
+        
+        vm.warp(block.timestamp + 601689);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 13);
+        dynaddressArr_0 = new address[](23);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 295167);
+        vm.roll(block.number + 58590);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x0000000000000000000000000000000000010000, 7);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 21336);
+        vm.roll(block.number + 39106);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 4767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 248904);
+        vm.roll(block.number + 253);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(66844809258000414129568903608946090466209818687751004733394346413849981432841, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639682);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(34945204671176661344811081765097789550406458896580636604245627848834123529497, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        dynaddressArr_0 = new address[](38);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[27] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[28] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[30] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[33] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[34] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[36] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 15188);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 27617);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 4768);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 59344);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.getNodeDelegatorQueue();
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 10350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 16638);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322118);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639929, 0x00000000000000000000000000000000FFFFfFFF, 12);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322119);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 4767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 256);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+    }
+    
+    
+    function test_auto_unpause_5() public { 
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 258);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        address[] memory dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(5460547795597289994471269265028997669940154966585454025772496959471123972102, 0x0000000000000000000000000000000000000000, 36363067535634178834672246665141033329908331267063618370620702536059982499741);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(10);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322120);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 40709);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(4370000, 0x00000000000000000000000000000000FFFFfFFF, 56304550534122552110254516308120511159984819025080986292138340174395882559075);
+        dynaddressArr_0 = new address[](50);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[34] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[36] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[39] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[40] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[41] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[42] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[43] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[44] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[45] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[46] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[47] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[48] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[49] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(70408001194286907395012761917790002100758809379567716497564296638909267776719);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 779);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(1524785993);
+        dynaddressArr_0 = new address[](1);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 120);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 31979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 123541);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 4766);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.getAssetDistributionData(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 33058);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        dynaddressArr_0 = new address[](7);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(252);
+        
+        vm.warp(block.timestamp + 601689);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 13);
+        dynaddressArr_0 = new address[](23);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 295167);
+        vm.roll(block.number + 58590);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x0000000000000000000000000000000000010000, 7);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 21336);
+        vm.roll(block.number + 39106);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 4767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 248904);
+        vm.roll(block.number + 253);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(66844809258000414129568903608946090466209818687751004733394346413849981432841, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639682);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(34945204671176661344811081765097789550406458896580636604245627848834123529497, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 4769);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(18851379625571961846245208317735526909704786007451666362798378600552270206235, 0x00000000000000000000000000000001fffffffE, 38533936693250207048983443951174630388509174393757177969397705504485748397103);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 4769);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 109363);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 321);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 414081);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(3, 0x0000000000000000000000000000000000010000, 2);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 257);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(0);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 217119);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 301006);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 544392);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322118);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 29385);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(61378832028378271827425847570003861134041371323230374911809356217802846997310, 0x0000000000000000000000000000000000000000, 89179141478232701169716625354131742127566005718743357216318947114133691243666);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(89331409729154300630650699915417376632681124379340559841816854476898552652338, 0x00000000000000000000000000000001fffffffE, 4);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 54126);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.getRsETHAmountToMint(0x00000000000000000000000000000000FFFFfFFF, 459);
+        
+        vm.warp(block.timestamp + 254);
+        vm.roll(block.number + 4770);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+    }
+    
+    
+    function test_auto_addNodeDelegatorContractToQueue_6() public { 
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 258);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        address[] memory dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(5460547795597289994471269265028997669940154966585454025772496959471123972102, 0x0000000000000000000000000000000000000000, 36363067535634178834672246665141033329908331267063618370620702536059982499741);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(10);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322120);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 40709);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(4370000, 0x00000000000000000000000000000000FFFFfFFF, 56304550534122552110254516308120511159984819025080986292138340174395882559075);
+        dynaddressArr_0 = new address[](50);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[34] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[36] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[39] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[40] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[41] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[42] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[43] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[44] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[45] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[46] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[47] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[48] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[49] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(70408001194286907395012761917790002100758809379567716497564296638909267776719);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 252);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 252);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 258);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(71149878237716396445127118798867151894159888229796237483652949390639243002119, 0x00000000000000000000000000000002fFffFffD, 63861234624918415752116594379901851003070445250732853230188772922427188784512);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        dynaddressArr_0 = new address[](3);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000000000;
+
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 575012);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(11);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 186);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 25582);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 349807);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 4771);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 522917);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        dynaddressArr_0 = new address[](45);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[34] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[36] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[39] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[40] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[41] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[42] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[43] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[44] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639928, 0x0000000000000000000000000000000000020000, 95445069727952025717348549090750623097902354273730517814018460172075790350842);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(115792089237316195423570985008687907853269984665640564039457584007913129639926);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 38582);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 253);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        dynaddressArr_0 = new address[](23);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 148653);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(81396211014444224219152940329166944574305352903903551712559241193599277768129);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 21760683007276953839794733631025137100060255986860830226527516726977919372515);
+        
+        vm.warp(block.timestamp + 322119);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 253);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(96362127025669975503313860900200577457555018757941130799099474585450004169483, 0x0000000000000000000000000000000000020000, 12273417996951804704302816874338098621918033731313195552361155616904007492292);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000000FFFFfFFF, 79278132426015667811146653131815418133771518695303372577855574729954798399806);
+        dynaddressArr_0 = new address[](25);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 322117);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322118);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x0000000000000000000000000000000000030000, 50692012792190480769440771292866391995383796259038506964808480151610853787273);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 253);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 13128);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(837);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 4772);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        dynaddressArr_0 = new address[](11);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(47522752571956644935577747464390241159546838955337964488622103455329406283410);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(107923364904930755298094437420285621429184281156904145571923914865952988744391, 0x00000000000000000000000000000001fffffffE, 3794664076945881882977572259571152021364235054184473132451945167511624850330);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 14198);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 599464);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+    }
+    
+    
+    function test_auto_updateLRTConfig_7() public { 
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 258);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        address[] memory dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(5460547795597289994471269265028997669940154966585454025772496959471123972102, 0x0000000000000000000000000000000000000000, 36363067535634178834672246665141033329908331267063618370620702536059982499741);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(10);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322120);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 53440);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(583);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 4771);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639926, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 254);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 25237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000);
+        dynaddressArr_0 = new address[](17);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 550514);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 254);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(86302466575085738247775307518631982159224165876747266978691921929108163471134, 0x00000000000000000000000000000002fFffFffD, 7);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 14588);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(81839347455655589476717123486134001529311066360469629501465241876755571639561, 0x0000000000000000000000000000000000030000, 1524785992);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 4770);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        dynaddressArr_0 = new address[](20);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000020000;
+
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639931, 0x0000000000000000000000000000000000020000, 110441836137660477880213952583401883684287425997092095797300820325074964282067);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(31397288975147407516154854232399310221991768386469393641014809092440149854143, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639681);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000001fffffffE, 62357712291546971649673271020020139165405119989836580053878742120163760467235);
+        
+        vm.warp(block.timestamp + 338105);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639679, 0x00000000000000000000000000000002fFffFffD, 5);
+        dynaddressArr_0 = new address[](6);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(30718510926283689693863840874799285135637293686300542870395396909478276550528, 0x00000000000000000000000000000001fffffffE, 5);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 30383367647726473370675844360973649043279609801190757338929638938227513164526);
+        
+        vm.warp(block.timestamp + 399375);
+        vm.roll(block.number + 4771);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        dynaddressArr_0 = new address[](38);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[33] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[34] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[35] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[36] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 6419);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 133278);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(53235187813775154323588030865080360271601622466049874638920100150302412714370, 0x00000000000000000000000000000001fffffffE, 93902110526038779854058859340293235240818315621578594866937966998642001954835);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000000FFFFfFFF, 104730062961803359803759966668818369560849025664314985643863939150254807918046);
+        
+        vm.warp(block.timestamp + 524201);
+        vm.roll(block.number + 253);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(6831849939429245244615468503182624356754299223780200268608140375945811915684);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639923, 0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 9);
+        dynaddressArr_0 = new address[](11);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 19728593683461323858095931495983478813213402617855010826725493494649844471442);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(35993156368779838611954668868800744525505106987889564556399867596525199073441, 0x0000000000000000000000000000000000010000, 80699499223418294580052707354147961468352660521666634246626413100505114584303);
+        dynaddressArr_0 = new address[](38);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[26] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[27] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[29] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[31] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[32] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[33] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[34] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[35] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[36] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        dynaddressArr_0 = new address[](48);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[9] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[10] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[14] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[15] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[16] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[17] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[18] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[19] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[20] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[21] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[22] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[32] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[33] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[34] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[35] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[36] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[38] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[39] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[40] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[41] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[42] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[43] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[44] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[45] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[46] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[47] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        dynaddressArr_0 = new address[](25);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[14] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000000000;
+
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        dynaddressArr_0 = new address[](9);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 254);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        dynaddressArr_0 = new address[](2);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(7668528161392501835776520762326542603118450602336695235929285511029142975275);
+        dynaddressArr_0 = new address[](15);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 404714);
+        vm.roll(block.number + 18219);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(5010973597783714635978132181648828131826752802877466155988643095530842214162);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 14589);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 174054);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(73660116017991316946614467720557372220316230383874863554866754406738153841217, 0x00000000000000000000000000000001fffffffE, 111671505382851717295481631362678330785641964910180964886461896107320255627986);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 9517);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(111771959858595384374565924127584837692158484921272464648431079067495026353915, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 75554196670459628711953204657951365314922231394054503033631858793563154517315);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000000000);
+        dynaddressArr_0 = new address[](41);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[9] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[10] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[14] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[15] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[16] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[17] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[18] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[19] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[20] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[21] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[22] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[23] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[24] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[33] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[34] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[35] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[36] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[39] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[40] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 6903);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 322121);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000000FFFFfFFF, 33474360610511198035446988034259067406257940784280244830853636506580418171173);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639924);
+        dynaddressArr_0 = new address[](16);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[6] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[15] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 567765);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 258);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000000FFFFfFFF, 76797364917013690350794295414434171194170625400284251443318361345681481305331);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(13);
+        dynaddressArr_0 = new address[](11);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 5810);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x0000000000000000000000000000000000000000, 108390001033251316446567110391287581436137499126063145811181225874675588748134);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(1, 0x00000000000000000000000000000001fffffffE, 95545652785367435004206989207443325526630621534357946389394873521537867149555);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 257);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        dynaddressArr_0 = new address[](1);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 322123);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+    }
+    
+    
+    function test_auto_updateLRTConfig_8() public { 
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 258);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 257);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        address[] memory dynaddressArr_0 = new address[](43);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[32] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[33] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[34] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[36] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[38] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[39] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[40] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[41] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[42] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 283034);
+        vm.roll(block.number + 4767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 59734);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 19911405763102767410226907899634346603557166643812636167181058516744923203193);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 453853);
+        vm.roll(block.number + 21312);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 322118);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(100423680677383494795276131280718495630323143624666750779434222602880961336926, 0x0000000000000000000000000000000000030000, 375554483739642037151525084479797171818539798915111793);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 41152);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(50501788818644088762997753656825391531487681770473685013874443592379028459362, 0x0000000000000000000000000000000000030000, 105394297413226370118359948813878670265578737124323655922184009287738913567618);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 588577);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(255);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 87156947967417263967923034879547771539659545594105139537426850434271568836553);
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 256);
+        vm.roll(block.number + 253);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        dynaddressArr_0 = new address[](27);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 4369999);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 258);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 387780);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 32441);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(102142746149624495445291330345741380406257770568646126656457172667485318491337);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        dynaddressArr_0 = new address[](25);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000020000;
+
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        dynaddressArr_0 = new address[](23);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322119);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        dynaddressArr_0 = new address[](23);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        dynaddressArr_0 = new address[](3);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 38126);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 317243);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 61461369201318250118402971070547905642401366400739757924682945495906422703372);
+        dynaddressArr_0 = new address[](26);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[17] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[25] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 384114);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 257);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(101335982635846520759706043976450153935353990686399672366626414606391884202245, 0x00000000000000000000000000000001fffffffE, 8);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322121);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 4766);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(6051012444130620119575626588403649731500650152668447896952441776365490683257, 0x0000000000000000000000000000000000020000, 81708206976992642008971675884794217743492238158734502115487153491311482413875);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 254);
+        vm.roll(block.number + 31677);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 390978);
+        vm.roll(block.number + 253);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(115792089237316195423570985008687907853269984665640564039457584007913129639926);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.getTotalAssetDeposits(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(88226035941445177874086308399725153881429679362179902067424828063716111633828, 0x0000000000000000000000000000000000010000, 5);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639681);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(107493869062037666024942042459421575084318558362458209552203933587728464200057, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639924);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        dynaddressArr_0 = new address[](53);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[30] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[33] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[34] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[36] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[37] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[39] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[40] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[41] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[42] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[43] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[44] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[45] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[46] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[47] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[48] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[49] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[50] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[51] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[52] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322120);
+        vm.roll(block.number + 9653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 7520);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639679, 0x0000000000000000000000000000000000020000, 11);
+        dynaddressArr_0 = new address[](9);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000010000;
+
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 257);
+        vm.roll(block.number + 45559);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 429101);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639932, 0x00000000000000000000000000000002fFffFffD, 10254241379015906836487419048189181065751013314500099591707823514721961208073);
+        
+        vm.warp(block.timestamp + 256);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 4771);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+    }
+    
+    
+    function test_auto_addNodeDelegatorContractToQueue_9() public { 
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 258);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        address[] memory dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(5460547795597289994471269265028997669940154966585454025772496959471123972102, 0x0000000000000000000000000000000000000000, 36363067535634178834672246665141033329908331267063618370620702536059982499741);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(10);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        dynaddressArr_0 = new address[](12);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322120);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 40709);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(4370000, 0x00000000000000000000000000000000FFFFfFFF, 56304550534122552110254516308120511159984819025080986292138340174395882559075);
+        dynaddressArr_0 = new address[](50);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[2] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[11] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[12] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[31] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[34] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[36] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[39] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[40] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[41] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[42] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[43] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[44] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[45] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[46] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[47] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[48] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[49] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(70408001194286907395012761917790002100758809379567716497564296638909267776719);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 779);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(1524785993);
+        dynaddressArr_0 = new address[](1);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 252);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 120);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 31979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 4768);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 36349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(151);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(62989681983416376243420620208874679766839843086661478034779908137806970724487, 0x00000000000000000000000000000000FFFFfFFF, 4181270201339345006605675641907208671945566298166783221383478376075864397245);
+        
+        vm.warp(block.timestamp + 465628);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        dynaddressArr_0 = new address[](45);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[30] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[31] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[34] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[36] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[39] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[40] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[41] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[42] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[43] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[44] = 0x0000000000000000000000000000000000020000;
+
+        vm.warp(block.timestamp + 299519);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        dynaddressArr_0 = new address[](45);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[28] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[29] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[31] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[32] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[34] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[35] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[36] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[37] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[38] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[39] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[40] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[41] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[42] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[43] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[44] = 0x0000000000000000000000000000000000010000;
+
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322120);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        dynaddressArr_0 = new address[](23);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        dynaddressArr_0 = new address[](29);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[27] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[28] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 4768);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(115792089237316195423570985008687907853269984665640564039457584007913129639684);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000001fffffffE, 9);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 479373);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x0000000000000000000000000000000000000000, 101456726568092880261197739591824076994941320381419183849681885693578231951187);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateLRTConfig(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 4771);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        dynaddressArr_0 = new address[](19);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[17] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 223406);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 75985963373962750811307615936759817026531789151788957310245031158515745075099);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(48325014763573216953272995731189004489697911508988175025570248779247958600688);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferAssetToNodeDelegator(66491341683640174468594082598194650924931125486180550117720722727276996227837, 0x0000000000000000000000000000000000000000, 72297329886267872723270750991043105206196059005071232425804913328658397544661);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(24583790331584106926961884745335021284300192313169063687473341237323802812520);
+        
+        vm.warp(block.timestamp + 257);
+        vm.roll(block.number + 4769);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 55602);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(3);
+        dynaddressArr_0 = new address[](32);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[7] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[24] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[25] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[28] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[30] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[31] = 0x0000000000000000000000000000000000020000;
+
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 254);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferAssetToNodeDelegator(115792089237316195423570985008687907853269984665640564039457584007913129639678, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322122);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 527372);
+        vm.roll(block.number + 258);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639680);
+        
+        vm.warp(block.timestamp + 322118);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(3);
+        dynaddressArr_0 = new address[](46);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[21] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[25] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[26] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[27] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[28] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[29] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[30] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[31] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[32] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[33] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[34] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[35] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[36] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[37] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[38] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[39] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[40] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[41] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[42] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[43] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[44] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[45] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 49937);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(88707696947242064266466928988654496374255762953888600450985943686338747172152);
+        
+        vm.warp(block.timestamp + 400237);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(84750646825912915864948726865302754323503801715888406505232815288203169703904, 0x00000000000000000000000000000001fffffffE, 77136203966367005033004551168392159039765532407801002004236966061603245690671);
+        dynaddressArr_0 = new address[](9);
+		dynaddressArr_0[0] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferAssetToNodeDelegator(34221839641203680189369172331, 0x00000000000000000000000000000001fffffffE, 825);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        dynaddressArr_0 = new address[](28);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[4] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[9] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[16] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[18] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[19] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[20] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[23] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[24] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[26] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[27] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateLRTConfig(0x00000000000000000000000000000000FFFFfFFF);
+        dynaddressArr_0 = new address[](26);
+		dynaddressArr_0[0] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[1] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[2] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[4] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[5] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[6] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[8] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[9] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[10] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[12] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[17] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000030000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[24] = 0x0000000000000000000000000000000000000000;
+		dynaddressArr_0[25] = 0x00000000000000000000000000000002fFffFffD;
+
+        vm.warp(block.timestamp + 473595);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(103630293655051142089784171135195302894993870173450904915438952049357936762126);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.updateMaxNodeDelegatorCount(0);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 33541);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.unpause();
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.unpause();
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 398729);
+        vm.roll(block.number + 4768);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(3);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 92890958288884722171674628954273232235151413409646632575147748775853414939700);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 252);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.depositAsset(0x00000000000000000000000000000002fFffFffD, 255);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.pause();
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.depositAsset(0x00000000000000000000000000000001fffffffE, 9);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.updateMaxNodeDelegatorCount(50102466203328167071785957445012605470768421085266375446718085423616495348430);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateMaxNodeDelegatorCount(63544363052593567812455294150280808670283534415759090052767143284394710679663);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 289963);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.updateLRTConfig(0x0000000000000000000000000000000000010000);
+        dynaddressArr_0 = new address[](24);
+		dynaddressArr_0[0] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[1] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[2] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[3] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[4] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[5] = 0x00000000000000000000000000000002fFffFffD;
+		dynaddressArr_0[6] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[7] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[8] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[9] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[10] = 0x0000000000000000000000000000000000020000;
+		dynaddressArr_0[11] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[12] = 0x00a329c0648769A73afAc7F9381E08FB43dBEA72;
+		dynaddressArr_0[13] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[14] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[15] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[16] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[17] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[18] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[19] = 0x0000000000000000000000000000000000010000;
+		dynaddressArr_0[20] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[21] = 0x00000000000000000000000000000001fffffffE;
+		dynaddressArr_0[22] = 0x00000000000000000000000000000000FFFFfFFF;
+		dynaddressArr_0[23] = 0x00000000000000000000000000000000FFFFfFFF;
+
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.addNodeDelegatorContractToQueue(dynaddressArr_0);
+    }
+    
+}
+
+    

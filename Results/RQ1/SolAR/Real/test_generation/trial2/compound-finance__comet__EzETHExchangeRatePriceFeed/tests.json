@@ -1,0 +1,42 @@
+[
+  [
+    {
+      "args": [
+        "address_00401",
+        18,
+        "NRKinOrbeHnLylmEfhCARzQoJesHilJHrImoExNYAXJTyYxnyVZjJIZxnkAkpnnNOuAmpfzMjlcFkGmzsmGSqvRvcGxmUXMlvoVupHCklJnxWiiHuCdgHGkiATljk DNRUHJLwejmIKgsIfDOtcswKNhFPsTSbDhCNbiZpTpe OWz nMZJVswlcqLzueHeOudqgwEpvJovExaJCmssheQPFAkGwWvphWhARdpAAfGvUqJpuEMLoBkPE"
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "latestRoundData",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00401",
+        18,
+        "NRKinOrbeHnLylmEfhCARzQoJesHilJHrImoExNYAXJTyYxnyVZjJIZxnkAkpnnNOuAmpfzMjlcFkGmzsmGSqvRvcGxmUXMlvoVupHCklJnxWiiHuCdgHGkiATljk DNRUHJLwejmIKgsIfDOtcswKNhFPsTSbDhCNbiZpTpe OWz nMZJVswlcqLzueHeOudqgwEpvJovExaJCmssheQPFAkGwWvphWhARdpAAfGvUqJpuEMLoBkPE"
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "version",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

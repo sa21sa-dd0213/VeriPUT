@@ -1,0 +1,10 @@
+{
+  "dataset": "Patch",
+  "kill_statuses": [
+    "killed",
+    "killed-compile",
+    "mutant-setup-failure"
+  ],
+  "tool": "SolAR",
+  "trials": 5
+}

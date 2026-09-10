@@ -1,0 +1,40 @@
+[
+  [
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "Deposit",
+      "n": 2,
+      "value": 1000000000000000000
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        21442956923638699728201502999361830092029075076135810825958863588189960282477
+      ],
+      "frm": "address_00404",
+      "method": "CashOut",
+      "n": 2,
+      "value": 1000000000000000000
+    }
+  ]
+]

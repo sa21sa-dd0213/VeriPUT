@@ -1,0 +1,1457 @@
+{
+  "compile_failed": 2,
+  "compile_ok": 143,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "asadf",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "InitiatingCounterparty",
+      "replacement_expression": "address(this)",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "asadf",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "InitiatingCounterparty",
+      "replacement_expression": "address(0)",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "asadf",
+      "mutant_id": "m000003",
+      "operator": "AVR",
+      "original_expression": "InitiatingCounterparty",
+      "replacement_expression": "address(this)",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "asadf",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "InitiatingCounterparty",
+      "replacement_expression": "address(0)",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "asadf",
+      "mutant_id": "m000005",
+      "operator": "AVR",
+      "original_expression": "device",
+      "replacement_expression": "address(this)",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "asadf",
+      "mutant_id": "m000006",
+      "operator": "AVR",
+      "original_expression": "device",
+      "replacement_expression": "address(0)",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "asadf",
+      "mutant_id": "m000007",
+      "operator": "AVR",
+      "original_expression": "supplyChainOwner",
+      "replacement_expression": "address(this)",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "asadf",
+      "mutant_id": "m000008",
+      "operator": "AVR",
+      "original_expression": "supplyChainOwner",
+      "replacement_expression": "address(0)",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 39,
+      "function": "asadf",
+      "mutant_id": "m000009",
+      "operator": "AVR",
+      "original_expression": "supplyChainObserver",
+      "replacement_expression": "address(this)",
+      "start_line": 39
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 39,
+      "function": "asadf",
+      "mutant_id": "m000010",
+      "operator": "AVR",
+      "original_expression": "supplyChainObserver",
+      "replacement_expression": "address(0)",
+      "start_line": 39
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000011",
+      "operator": "AVR",
+      "original_expression": "Counterparty",
+      "replacement_expression": "address(this)",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000012",
+      "operator": "AVR",
+      "original_expression": "Counterparty",
+      "replacement_expression": "address(0)",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 121,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000013",
+      "operator": "AVR",
+      "original_expression": "newCounterparty",
+      "replacement_expression": "address(this)",
+      "start_line": 121
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 121,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000014",
+      "operator": "AVR",
+      "original_expression": "newCounterparty",
+      "replacement_expression": "address(0)",
+      "start_line": 121
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 144,
+      "function": "Complete",
+      "mutant_id": "m000015",
+      "operator": "AVR",
+      "original_expression": "Counterparty",
+      "replacement_expression": "address(this)",
+      "start_line": 144
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 144,
+      "function": "Complete",
+      "mutant_id": "m000016",
+      "operator": "AVR",
+      "original_expression": "Counterparty",
+      "replacement_expression": "address(0)",
+      "start_line": 144
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 145,
+      "function": "Complete",
+      "mutant_id": "m000017",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(this)",
+      "start_line": 145
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 145,
+      "function": "Complete",
+      "mutant_id": "m000018",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(0)",
+      "start_line": 145
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 77
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 85,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 85
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 85,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000043",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000044",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000045",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000046",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000047",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000048",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 115,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000049",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 115
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 115,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000050",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 115
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 115,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000051",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 115
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "Complete",
+      "mutant_id": "m000052",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "Complete",
+      "mutant_id": "m000053",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "Complete",
+      "mutant_id": "m000054",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Complete",
+      "mutant_id": "m000055",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Complete",
+      "mutant_id": "m000056",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Complete",
+      "mutant_id": "m000057",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Complete",
+      "mutant_id": "m000058",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Complete",
+      "mutant_id": "m000059",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Complete",
+      "mutant_id": "m000060",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 32,
+      "function": "asadf",
+      "mutant_id": "m000061",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 32
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 75,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000062",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 75
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 82,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000063",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 82
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000064",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000065",
+      "operator": "CSC",
+      "original_expression": "State == StateType.Completed",
+      "replacement_expression": "true",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000066",
+      "operator": "CSC",
+      "original_expression": "State == StateType.Completed",
+      "replacement_expression": "false",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000067",
+      "operator": "CSC",
+      "original_expression": "State == StateType.OutOfCompliance",
+      "replacement_expression": "true",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000068",
+      "operator": "CSC",
+      "original_expression": "State == StateType.OutOfCompliance",
+      "replacement_expression": "false",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000069",
+      "operator": "CSC",
+      "original_expression": "Device != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000070",
+      "operator": "CSC",
+      "original_expression": "Device != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000071",
+      "operator": "CSC",
+      "original_expression": "humidity > MaxHumidity || humidity < MinHumidity",
+      "replacement_expression": "true",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000072",
+      "operator": "CSC",
+      "original_expression": "humidity > MaxHumidity || humidity < MinHumidity",
+      "replacement_expression": "false",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000073",
+      "operator": "CSC",
+      "original_expression": "temperature > MaxTemperature || temperature < MinTemperature",
+      "replacement_expression": "true",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000074",
+      "operator": "CSC",
+      "original_expression": "temperature > MaxTemperature || temperature < MinTemperature",
+      "replacement_expression": "false",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000075",
+      "operator": "CSC",
+      "original_expression": "ComplianceStatus == false",
+      "replacement_expression": "true",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000076",
+      "operator": "CSC",
+      "original_expression": "ComplianceStatus == false",
+      "replacement_expression": "false",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000077",
+      "operator": "CSC",
+      "original_expression": "State == StateType.Completed",
+      "replacement_expression": "true",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000078",
+      "operator": "CSC",
+      "original_expression": "State == StateType.Completed",
+      "replacement_expression": "false",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000079",
+      "operator": "CSC",
+      "original_expression": "State == StateType.OutOfCompliance",
+      "replacement_expression": "true",
+      "start_line": 100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000080",
+      "operator": "CSC",
+      "original_expression": "State == StateType.OutOfCompliance",
+      "replacement_expression": "false",
+      "start_line": 100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000081",
+      "operator": "CSC",
+      "original_expression": "InitiatingCounterparty != msg.sender && Counterparty != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000082",
+      "operator": "CSC",
+      "original_expression": "InitiatingCounterparty != msg.sender && Counterparty != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000083",
+      "operator": "CSC",
+      "original_expression": "newCounterparty == Device",
+      "replacement_expression": "true",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000084",
+      "operator": "CSC",
+      "original_expression": "newCounterparty == Device",
+      "replacement_expression": "false",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 115,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000085",
+      "operator": "CSC",
+      "original_expression": "State == StateType.Created",
+      "replacement_expression": "true",
+      "start_line": 115
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 115,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000086",
+      "operator": "CSC",
+      "original_expression": "State == StateType.Created",
+      "replacement_expression": "false",
+      "start_line": 115
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "Complete",
+      "mutant_id": "m000087",
+      "operator": "CSC",
+      "original_expression": "State == StateType.Completed",
+      "replacement_expression": "true",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "Complete",
+      "mutant_id": "m000088",
+      "operator": "CSC",
+      "original_expression": "State == StateType.Completed",
+      "replacement_expression": "false",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Complete",
+      "mutant_id": "m000089",
+      "operator": "CSC",
+      "original_expression": "State == StateType.OutOfCompliance",
+      "replacement_expression": "true",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Complete",
+      "mutant_id": "m000090",
+      "operator": "CSC",
+      "original_expression": "State == StateType.OutOfCompliance",
+      "replacement_expression": "false",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Complete",
+      "mutant_id": "m000091",
+      "operator": "CSC",
+      "original_expression": "Owner != msg.sender && SupplyChainOwner != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Complete",
+      "mutant_id": "m000092",
+      "operator": "CSC",
+      "original_expression": "Owner != msg.sender && SupplyChainOwner != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000093",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000094",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000095",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000096",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 102,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000097",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 107,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000098",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 107
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000099",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 130,
+      "function": "Complete",
+      "mutant_id": "m000100",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 130
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 135,
+      "function": "Complete",
+      "mutant_id": "m000101",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 135
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "Complete",
+      "mutant_id": "m000102",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 44,
+      "function": "asadf",
+      "mutant_id": "m000103",
+      "operator": "ER",
+      "original_expression": "StateType.Created",
+      "replacement_expression": "StateType.InTransit",
+      "start_line": 44
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 44,
+      "function": "asadf",
+      "mutant_id": "m000104",
+      "operator": "ER",
+      "original_expression": "StateType.Created",
+      "replacement_expression": "StateType.Completed",
+      "start_line": 44
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 44,
+      "function": "asadf",
+      "mutant_id": "m000105",
+      "operator": "ER",
+      "original_expression": "StateType.Created",
+      "replacement_expression": "StateType.OutOfCompliance",
+      "start_line": 44
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000106",
+      "operator": "ER",
+      "original_expression": "StateType.Completed",
+      "replacement_expression": "StateType.Created",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000107",
+      "operator": "ER",
+      "original_expression": "StateType.Completed",
+      "replacement_expression": "StateType.InTransit",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000108",
+      "operator": "ER",
+      "original_expression": "StateType.Completed",
+      "replacement_expression": "StateType.OutOfCompliance",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000109",
+      "operator": "ER",
+      "original_expression": "StateType.OutOfCompliance",
+      "replacement_expression": "StateType.Created",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000110",
+      "operator": "ER",
+      "original_expression": "StateType.OutOfCompliance",
+      "replacement_expression": "StateType.InTransit",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000111",
+      "operator": "ER",
+      "original_expression": "StateType.OutOfCompliance",
+      "replacement_expression": "StateType.Completed",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 87,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000112",
+      "operator": "ER",
+      "original_expression": "StateType.OutOfCompliance",
+      "replacement_expression": "StateType.Created",
+      "start_line": 87
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 87,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000113",
+      "operator": "ER",
+      "original_expression": "StateType.OutOfCompliance",
+      "replacement_expression": "StateType.InTransit",
+      "start_line": 87
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 87,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000114",
+      "operator": "ER",
+      "original_expression": "StateType.OutOfCompliance",
+      "replacement_expression": "StateType.Completed",
+      "start_line": 87
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000115",
+      "operator": "ER",
+      "original_expression": "StateType.Completed",
+      "replacement_expression": "StateType.Created",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000116",
+      "operator": "ER",
+      "original_expression": "StateType.Completed",
+      "replacement_expression": "StateType.InTransit",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000117",
+      "operator": "ER",
+      "original_expression": "StateType.Completed",
+      "replacement_expression": "StateType.OutOfCompliance",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000118",
+      "operator": "ER",
+      "original_expression": "StateType.OutOfCompliance",
+      "replacement_expression": "StateType.Created",
+      "start_line": 100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000119",
+      "operator": "ER",
+      "original_expression": "StateType.OutOfCompliance",
+      "replacement_expression": "StateType.InTransit",
+      "start_line": 100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000120",
+      "operator": "ER",
+      "original_expression": "StateType.OutOfCompliance",
+      "replacement_expression": "StateType.Completed",
+      "start_line": 100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 115,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000121",
+      "operator": "ER",
+      "original_expression": "StateType.Created",
+      "replacement_expression": "StateType.InTransit",
+      "start_line": 115
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 115,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000122",
+      "operator": "ER",
+      "original_expression": "StateType.Created",
+      "replacement_expression": "StateType.Completed",
+      "start_line": 115
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 115,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000123",
+      "operator": "ER",
+      "original_expression": "StateType.Created",
+      "replacement_expression": "StateType.OutOfCompliance",
+      "start_line": 115
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000124",
+      "operator": "ER",
+      "original_expression": "StateType.InTransit",
+      "replacement_expression": "StateType.Created",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000125",
+      "operator": "ER",
+      "original_expression": "StateType.InTransit",
+      "replacement_expression": "StateType.Completed",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "TransferResponsibility",
+      "mutant_id": "m000126",
+      "operator": "ER",
+      "original_expression": "StateType.InTransit",
+      "replacement_expression": "StateType.OutOfCompliance",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "Complete",
+      "mutant_id": "m000127",
+      "operator": "ER",
+      "original_expression": "StateType.Completed",
+      "replacement_expression": "StateType.Created",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "Complete",
+      "mutant_id": "m000128",
+      "operator": "ER",
+      "original_expression": "StateType.Completed",
+      "replacement_expression": "StateType.InTransit",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "Complete",
+      "mutant_id": "m000129",
+      "operator": "ER",
+      "original_expression": "StateType.Completed",
+      "replacement_expression": "StateType.OutOfCompliance",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Complete",
+      "mutant_id": "m000130",
+      "operator": "ER",
+      "original_expression": "StateType.OutOfCompliance",
+      "replacement_expression": "StateType.Created",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Complete",
+      "mutant_id": "m000131",
+      "operator": "ER",
+      "original_expression": "StateType.OutOfCompliance",
+      "replacement_expression": "StateType.InTransit",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Complete",
+      "mutant_id": "m000132",
+      "operator": "ER",
+      "original_expression": "StateType.OutOfCompliance",
+      "replacement_expression": "StateType.Completed",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 143,
+      "function": "Complete",
+      "mutant_id": "m000133",
+      "operator": "ER",
+      "original_expression": "StateType.Completed",
+      "replacement_expression": "StateType.Created",
+      "start_line": 143
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 143,
+      "function": "Complete",
+      "mutant_id": "m000134",
+      "operator": "ER",
+      "original_expression": "StateType.Completed",
+      "replacement_expression": "StateType.InTransit",
+      "start_line": 143
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 143,
+      "function": "Complete",
+      "mutant_id": "m000135",
+      "operator": "ER",
+      "original_expression": "StateType.Completed",
+      "replacement_expression": "StateType.OutOfCompliance",
+      "start_line": 143
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000136",
+      "operator": "ER",
+      "original_expression": "SensorType.Humidity",
+      "replacement_expression": "SensorType.None",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000137",
+      "operator": "ER",
+      "original_expression": "SensorType.Humidity",
+      "replacement_expression": "SensorType.Temperature",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 79,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000138",
+      "operator": "ER",
+      "original_expression": "SensorType.Temperature",
+      "replacement_expression": "SensorType.None",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 79,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000139",
+      "operator": "ER",
+      "original_expression": "SensorType.Temperature",
+      "replacement_expression": "SensorType.Humidity",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "asadf",
+      "mutant_id": "m000140",
+      "operator": "ILR",
+      "original_expression": "-1",
+      "replacement_expression": "0",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "asadf",
+      "mutant_id": "m000141",
+      "operator": "ILR",
+      "original_expression": "-1",
+      "replacement_expression": "-2",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 45,
+      "function": "asadf",
+      "mutant_id": "m000142",
+      "operator": "SLR",
+      "original_expression": "\"N/A\"",
+      "replacement_expression": "\"\"",
+      "start_line": 45
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000143",
+      "operator": "SLR",
+      "original_expression": "\"Humidity value out of range.\"",
+      "replacement_expression": "\"\"",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "IngestTelemetry",
+      "mutant_id": "m000144",
+      "operator": "SLR",
+      "original_expression": "\"Temperature value out of range.\"",
+      "replacement_expression": "\"\"",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "asadf",
+      "mutant_id": "m000145",
+      "operator": "UORD",
+      "original_expression": "-1",
+      "replacement_expression": " 1",
+      "start_line": 33
+    }
+  ],
+  "subject_id": "peer_ccsolbmc__RefrigeratedTransportation"
+}

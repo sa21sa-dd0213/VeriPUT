@@ -1,0 +1,769 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        88891602337575681566419440429400238705174736100411330080860694491247740463869
+      ],
+      "frm": "address_00410",
+      "method": "setCharityFeePercent",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        8,
+        true
+      ],
+      "frm": "address_00398",
+      "method": "reflectionFromToken",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00404",
+      "method": "excludeFromReward",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        250
+      ],
+      "frm": "address_00019",
+      "method": "setMaxTxPercent",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        82201509167958671084446107738702916658560881213174425303850956471593657672081
+      ],
+      "frm": "address_00401",
+      "method": "setMaxTxPercent",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "receive",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00184",
+      "method": "balanceOf",
+      "n": 6,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        61148251828925374349212428813611684679189675511473698412629188696141244162915
+      ],
+      "frm": "address_00023",
+      "method": "transfer",
+      "n": 7,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "totalSupply",
+      "n": 8,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        0
+      ],
+      "frm": "address_00021",
+      "method": "decreaseAllowance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00032",
+      "method": "includeInFee",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "receive",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00401",
+      "method": "includeInFee",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        false
+      ],
+      "frm": "address_00023",
+      "method": "setSwapAndLiquifyEnabled",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        103919192922781652183854027881926468376958025794249625046680032579659511837787
+      ],
+      "frm": "address_00019",
+      "method": "deliver",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        29868086728397170628763047164077263848083945935887290370513871099966596926229
+      ],
+      "frm": "address_00032",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        64575741642593720944621940740412437614619018977211726979627206501040395909640
+      ],
+      "frm": "address_00398",
+      "method": "setMaxTxPercent",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "receive",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00036",
+      "method": "excludeFromReward",
+      "n": 5,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        "address_00401"
+      ],
+      "frm": "address_00401",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        8,
+        true
+      ],
+      "frm": "address_00398",
+      "method": "reflectionFromToken",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00019",
+      "method": "isExcludedFromFee",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        8,
+        true
+      ],
+      "frm": "address_00398",
+      "method": "reflectionFromToken",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00184",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        88891602337575681566419440429400238705174736100411330080860694491247740463869
+      ],
+      "frm": "address_00410",
+      "method": "setCharityFeePercent",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        8,
+        true
+      ],
+      "frm": "address_00398",
+      "method": "reflectionFromToken",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "symbol",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "receive",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00401",
+      "method": "includeInFee",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        93269180672789661266661860343136778556976279167844362041167365182376875821934
+      ],
+      "frm": "address_00410",
+      "method": "setLiquidityFeePercent",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        8,
+        true
+      ],
+      "frm": "address_00398",
+      "method": "reflectionFromToken",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00401",
+      "method": "isExcludedFromReward",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        8,
+        true
+      ],
+      "frm": "address_00398",
+      "method": "reflectionFromToken",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        "address_00184",
+        32
+      ],
+      "frm": "address_00184",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "totalSupply",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00401",
+      "method": "isExcludedFromFee",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        "address_00021",
+        22396670545473832768265454461203218092326228256332925879490654367825230269069
+      ],
+      "frm": "address_00032",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        8101754,
+        true
+      ],
+      "frm": "address_00404",
+      "method": "reflectionFromToken",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        75642559229566867363976222455332638402596287450930937386589768702445029489553
+      ],
+      "frm": "address_00184",
+      "method": "tokenFromReflection",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00184",
+      "method": "includeInReward",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00401",
+      "method": "includeInFee",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        8,
+        true
+      ],
+      "frm": "address_00398",
+      "method": "reflectionFromToken",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        "address_00036"
+      ],
+      "frm": "address_00410",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "decimals",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021"
+      ],
+      "frm": "address_00032",
+      "method": "isExcludedFromFee",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00036",
+      "method": "excludeFromReward",
+      "n": 5,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        "address_00021",
+        22396670545473832768265454461203218092326228256332925879490654367825230269069
+      ],
+      "frm": "address_00032",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "name",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        1000000000000
+      ],
+      "frm": "address_00021",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        8,
+        true
+      ],
+      "frm": "address_00398",
+      "method": "reflectionFromToken",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "totalFees",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00401",
+      "method": "includeInFee",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        24378687825061156565557999415186005488971371107704821382722233355966543002446
+      ],
+      "frm": "address_00398",
+      "method": "increaseAllowance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        80484962936821424364503550547951341871914643260098899878449575476392967296256,
+        true
+      ],
+      "frm": "address_00021",
+      "method": "reflectionFromToken",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        78
+      ],
+      "frm": "address_00398",
+      "method": "deliver",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00036",
+      "method": "excludeFromReward",
+      "n": 5,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1
+      ],
+      "frm": "address_00184",
+      "method": "setLiquidityFeePercent",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "receive",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00036",
+      "method": "excludeFromReward",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        8,
+        true
+      ],
+      "frm": "address_00398",
+      "method": "reflectionFromToken",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00019",
+      "method": "excludeFromFee",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

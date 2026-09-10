@@ -1,0 +1,230 @@
+[
+  [
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00410",
+      "method": "recover",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00023",
+      "method": "hasPermission",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00410",
+      "method": "isOwner",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "DLdcw RwkuMzgTX LHUmFDZUvxGiyHveukySztLXSKhXsBFdTroeNaWBKmbeeSDPEqxGWtaVbJRJAPEtoxfQYdNUaxvelDTknJZPoiAOMbP"
+      ],
+      "frm": "address_00036",
+      "method": "getHighestVote",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00401",
+      "method": "addMender",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00021",
+      "method": "addPermission",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "DLdcw RwkuMzgTX LHUmFDZUvxGiyHveukySztLXSKhXsBFdTroeNaWBKmbeeSDPEqxGWtaVbJRJAPEtoxfQYdNUaxvelDTknJZPoiAOMbP"
+      ],
+      "frm": "address_00036",
+      "method": "getHighestVote",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        ""
+      ],
+      "frm": "address_00410",
+      "method": "getValue",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00023",
+      "method": "removePermission",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00036",
+      "method": "removeMender",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "DLdcw RwkuMzgTX LHUmFDZUvxGiyHveukySztLXSKhXsBFdTroeNaWBKmbeeSDPEqxGWtaVbJRJAPEtoxfQYdNUaxvelDTknJZPoiAOMbP"
+      ],
+      "frm": "address_00036",
+      "method": "getHighestVote",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00001"
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "fPEKoDOJnroUHglx SjuZLsjoYaXODYSICfBWUvwKUZtbqAGtRiNRvnsqlaFqsXkNzphGvWKSOlwzPabFXdpsgdLzHtCubmZUbjhJLRRDrQBkqczfmGSYjxmbYHayWXxgizDpfSfZ YCNPPhrYwSXPDA",
+        0
+      ],
+      "frm": "address_00021",
+      "method": "vote",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00023",
+      "method": "hasPermission",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

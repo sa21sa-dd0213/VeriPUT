@@ -1,0 +1,8 @@
+{
+  "contract": "Owned",
+  "dataset": "Patch",
+  "solc": "0.8.35",
+  "solc_bin": "solc",
+  "source_form": "normalized-flat",
+  "subject_id": "acfix_016_CVE_2018_10705"
+}

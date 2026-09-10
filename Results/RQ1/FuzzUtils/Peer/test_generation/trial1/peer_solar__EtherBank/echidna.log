@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.4999402s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.711891917s)
+
+echidna: Deploying the contract address_00018 failed (revert, out-of-gas, sending ether to a non-payable constructor, etc.):

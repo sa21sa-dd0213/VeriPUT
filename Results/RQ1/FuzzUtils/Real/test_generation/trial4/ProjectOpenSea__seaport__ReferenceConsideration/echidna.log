@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (8.729346794s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (13.140536686s)
+
+echidna: Constructor arguments are required: [("conduitController",address)]

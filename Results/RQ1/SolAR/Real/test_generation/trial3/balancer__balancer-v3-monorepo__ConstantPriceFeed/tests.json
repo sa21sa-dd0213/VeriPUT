@@ -1,0 +1,36 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        25000000000000000000
+      ],
+      "frm": "address_00023",
+      "method": "getRoundData",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "latestRoundData",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

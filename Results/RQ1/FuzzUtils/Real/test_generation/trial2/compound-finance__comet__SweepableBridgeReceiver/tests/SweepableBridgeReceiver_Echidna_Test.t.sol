@@ -1,0 +1,3985 @@
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.13;
+
+
+
+
+
+import "forge-std/Test.sol";
+import "forge-std/console2.sol";
+import "../src/flat.sol";
+
+contract SweepableBridgeReceiver_Echidna_Test is Test {
+    SweepableBridgeReceiver target;
+
+    function setUp() public {
+        target = new SweepableBridgeReceiver();
+    }
+    
+    function test_auto_initialize_0() public { 
+        
+        vm.warp(block.timestamp + 305387);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 16081);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(57793566181542534670409353727956232113911836096958765232308831094678083679412);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(103287311909485188359241702839917863321330376126523662623072004697987935401989);
+        
+        vm.warp(block.timestamp + 120627);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 35);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(60496330285009075411656146947407061159076107394345802861261737916408446418877);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 35137);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(4369999);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(72734824785405119961270419802880853878685925888002573995701404288003692752241);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 16605);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 32735);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(88082281717716679328159811581042412042084552935621560146372458501047542326669);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639906);
+        
+        vm.warp(block.timestamp + 443901);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 29);
+        vm.roll(block.number + 7562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 478565);
+        vm.roll(block.number + 13512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 34);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639901);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 43693);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 30);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 35);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 4989);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(30419673266969494808371338310475528231198793453056249135973700727181455640292);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 4989);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 34);
+        vm.roll(block.number + 30);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(32246028550096883381460845157425684805836648299495547513355045909917736755615);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 498407);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(186672000712262184520438969350490199555497065766064927291807174719402067533);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(104458990534141288825918623756907016153416810267580163845466710018740677953750);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(32);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.state(42195451308302668588003455052614168127961823763835005954682008848979194259140);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 4994);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(93627037437724076151564985321732631345448170097756586230441870762948638274751);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(84537012430029279237626349182529120504018580550661312253795243239390411866986);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(16698046649253594163506518510811063434626737355360015587033114742806505331930);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(19113601936401362798970661295302257717344501538747485332313077152477778979075);
+        
+        vm.warp(block.timestamp + 263321);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 12172);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 279908);
+        vm.roll(block.number + 19683);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(97836348626812588996592881121041663758227425204428613886311572896353699607911);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 41420);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 58902);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(65184317316728865856978866);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 4991);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 561041);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(2027972281);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(1839731);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 4994);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 4990);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 33406);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 29);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 4991);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+    }
+    
+    
+    function test_auto_sweepToken_1() public { 
+        
+        vm.warp(block.timestamp + 305387);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 16081);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(57793566181542534670409353727956232113911836096958765232308831094678083679412);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(103287311909485188359241702839917863321330376126523662623072004697987935401989);
+        
+        vm.warp(block.timestamp + 120627);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 35);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(60496330285009075411656146947407061159076107394345802861261737916408446418877);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 35137);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(4369999);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(72734824785405119961270419802880853878685925888002573995701404288003692752241);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 16605);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 32735);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(88082281717716679328159811581042412042084552935621560146372458501047542326669);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639906);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 33);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(95700422203724219075873765765048606647296550392293832552740004209462985145019);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 38358);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322345);
+        vm.roll(block.number + 29);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(3);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 4990);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(4370000);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 446690);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 120185);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(85353458124084207073606556932695375424806867456820345107043945261767289310760);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 520320);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000030000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 4993);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 173584);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 34);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 48253);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 9438);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(87391698729620836647710845006619523053100792454998697326896074757881009772732);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000030000);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 60212);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 402619);
+        vm.roll(block.number + 38814);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322342);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(92666247505313717055905871377332287139923626892683602696994294954691971724633);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 57706);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(50050338497657848443152563530178467656976131241122664374192550242924455117456);
+        
+        vm.warp(block.timestamp + 474383);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 35);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 33);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(1181);
+        
+        vm.warp(block.timestamp + 35);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 4995);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 411350);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 516390);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 560201);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(53);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 522920);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 29874);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 55131);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 34);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000);
+    }
+    
+    
+    function test_auto_sweepToken_2() public { 
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(17);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(1524785992);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 4989);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 442800);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(100726563989815175558036750103057184681848785084584011038175838373693887653144);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 4990);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 102187);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 42886);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(2);
+        
+        vm.warp(block.timestamp + 356757);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(74);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639907);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(58861831381799330859929597172959670633310494854373353337303543412432401898820);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 18030);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639907);
+        
+        vm.warp(block.timestamp + 55112);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(3);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 33);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 578919);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 34);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(3);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 578066);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(29);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 37593);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 16734);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639901);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 56632);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(130);
+        
+        vm.warp(block.timestamp + 33);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 394285);
+        vm.roll(block.number + 4990);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(0);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322340);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 31);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 29);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 35);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 507261);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322341);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 583854);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(87987842405321646422887832176128166490800954045004077087088623857847944487308);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 62554);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 29);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(15478916752404220667215214990627357501698839808132381669110015806516175027463);
+        
+        vm.warp(block.timestamp + 33);
+        vm.roll(block.number + 34783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+    }
+    
+    
+    function test_auto_sweepToken_3() public { 
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(17);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(1524785992);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 4989);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 442800);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(100726563989815175558036750103057184681848785084584011038175838373693887653144);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 4990);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 102187);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 7082);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 82773);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 15778);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 30);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 41466);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 35);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 34);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 4991);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(3152567265085832459598882859141876772);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(75864644103194819723069774274886364764209156943983739165193947151050079158950);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 371);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 177486);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(76475596860816035862555039877107220477006810669458470813731319817732735841932);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(60929101654136157595948600618534147081285068645314333328624883167723923359026);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 229335);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x0000000000000000000000000000000000010000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(98140023001484324645978957026329138344722611549812603131690098277822247726727);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 103090);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 33);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 322342);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 42433);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 233042);
+        vm.roll(block.number + 33);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 34);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 30585);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(29);
+        
+        vm.warp(block.timestamp + 35);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 206238);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 539149);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 450562);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 4993);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+    }
+    
+    
+    function test_auto_sweepToken_4() public { 
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(17);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(1524785992);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 4989);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 442800);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(100726563989815175558036750103057184681848785084584011038175838373693887653144);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 4990);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 102187);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 7082);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 82773);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 15778);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 30);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 41466);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 35);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 34);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 4991);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(3152567265085832459598882859141876772);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(75864644103194819723069774274886364764209156943983739165193947151050079158950);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 371);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 177486);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(76475596860816035862555039877107220477006810669458470813731319817732735841932);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(60929101654136157595948600618534147081285068645314333328624883167723923359026);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 229335);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x0000000000000000000000000000000000010000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(98140023001484324645978957026329138344722611549812603131690098277822247726727);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 103090);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 54643);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 4991);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(26451782128862710636494805316036286144907461378863364834705391210597335811345);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(74460077116972536907253112781338229519695633236252138035146479379635032708795);
+        
+        vm.warp(block.timestamp + 322340);
+        vm.roll(block.number + 4991);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(77611354870082986619255869047837993680482762986697947269983358473963612793159);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 41862);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 556563);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 466051);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 14688);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 314629);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 4994);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 9746);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000030000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(33);
+        
+        vm.warp(block.timestamp + 18760);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 35444);
+        vm.roll(block.number + 21998);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639906);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 4990);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+    }
+    
+    
+    function test_auto_initialize_5() public { 
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(17);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(1524785992);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 4989);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 442800);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(100726563989815175558036750103057184681848785084584011038175838373693887653144);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 285574);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 20906);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(101249318225094776819458123115242366139319270303782905406126512005674556589367);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 24398);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 55454);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639902);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(6987815303214672388652428330791362547318176997812857891175817889412767337135);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(4369999);
+        
+        vm.warp(block.timestamp + 290859);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 35);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 66820);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 276449);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 109475);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 36786);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(2906838114439946236149649789654);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 58942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 67410);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(0);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 37074);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 30);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 122920);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 322341);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(61065901887055028986582810366782148576699847028777145247826339265181587693697);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(519);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 31);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 52205);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 11613);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(4370001);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 11563);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(457);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 4993);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(772);
+        
+        vm.warp(block.timestamp + 155333);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(7655940799719194169537556389179969078424486723598639780453817693499210207130);
+        
+        vm.warp(block.timestamp + 318000);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 34179);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639901);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 4991);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 4990);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE);
+    }
+    
+    
+    function test_auto_sweepNativeToken_6() public { 
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 4992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(17);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(1524785992);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 4989);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 442800);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(100726563989815175558036750103057184681848785084584011038175838373693887653144);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 285574);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 20906);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(101249318225094776819458123115242366139319270303782905406126512005674556589367);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 24398);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 55454);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639902);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 494005);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 345420);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 149555);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 317033);
+        vm.roll(block.number + 15958);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 35);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 517302);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(4370001);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 34);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 4990);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 30);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 347959);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 371271);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322342);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 104198);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(0);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 35);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 29);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(4369999);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(513);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 504157);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 33428);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 32);
+        vm.roll(block.number + 4994);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(9166705398624463246338107778485988811086421643268514953760337525);
+        
+        vm.warp(block.timestamp + 537813);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 349651);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 476547);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 24364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 202270);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 58529);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+    }
+    
+    
+    function test_auto_executeProposal_7() public { 
+        
+        vm.warp(block.timestamp + 305387);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(48);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 16081);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(57793566181542534670409353727956232113911836096958765232308831094678083679412);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(103287311909485188359241702839917863321330376126523662623072004697987935401989);
+        
+        vm.warp(block.timestamp + 120627);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 35);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(60496330285009075411656146947407061159076107394345802861261737916408446418877);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 35137);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(4369999);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(72734824785405119961270419802880853878685925888002573995701404288003692752241);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 16605);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 32735);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(88082281717716679328159811581042412042084552935621560146372458501047542326669);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639906);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 33);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(95700422203724219075873765765048606647296550392293832552740004209462985145019);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 38358);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322345);
+        vm.roll(block.number + 29);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(3);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 4990);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(4370000);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 446690);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 120185);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(85353458124084207073606556932695375424806867456820345107043945261767289310760);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 520320);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000030000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 4993);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 173584);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 34);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 48253);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 9438);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 34);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 342633);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(927);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(20210725416788401023535012509012276754753164830192075670903271936173686286415);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(5966796486657632324697312503126300426451984446196990989999952466953813790063);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(20521262993172067137902769448522953537451846807280592301188524032196325447253);
+        
+        vm.warp(block.timestamp + 241601);
+        vm.roll(block.number + 19804);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x0000000000000000000000000000000000030000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(35);
+        
+        vm.warp(block.timestamp + 322343);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 322340);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 145276);
+        vm.roll(block.number + 30);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(468);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(30111339885328193471157934586478913694478101831962656837092727505576700289000);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 529248);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 35);
+        vm.roll(block.number + 30214);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(108653031771759781177430188229731949291929818596931430344972171068034033860652);
+        
+        vm.warp(block.timestamp + 596821);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(114028547714204458434350148088530225700460118085101317560017956332874818869851);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(0);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepNativeToken(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 58750);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639907);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 4995);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(55389139577806385954263601880995194980951060108119267131780606312293982882842);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 507647);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 322346);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.initialize(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.initialize(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(15178665380860281766724198258013320470042749515601432489737469073911081202216);
+        
+        vm.warp(block.timestamp + 38451);
+        vm.roll(block.number + 35);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.initialize(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(115792089237316195423570985008687907853269984665640564039457584007913129639905);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(73527042940407459104374108571424471233683905054876835314244173909200212011661);
+        
+        vm.warp(block.timestamp + 25979);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.executeProposal(33);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.executeProposal(61639643419055703780558370409187633624731963374343415621324287772941811120637);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepNativeToken(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322344);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(4370000);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.sweepToken(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 31);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.sweepToken(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.executeProposal(65385599445410037033227702252591829712795715234449553229902052776364724871177);
+    }
+    
+}
+
+    

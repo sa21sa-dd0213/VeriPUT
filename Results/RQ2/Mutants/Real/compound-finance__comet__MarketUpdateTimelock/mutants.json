@@ -1,0 +1,1027 @@
+{
+  "compile_failed": 10,
+  "compile_ok": 92,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "setGovernor",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "governor",
+      "replacement_expression": "address(this)",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "setGovernor",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "governor",
+      "replacement_expression": "address(0)",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "setMarketUpdateProposer",
+      "mutant_id": "m000003",
+      "operator": "AVR",
+      "original_expression": "marketUpdateProposer",
+      "replacement_expression": "address(this)",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "setMarketUpdateProposer",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "marketUpdateProposer",
+      "replacement_expression": "address(0)",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "constructor",
+      "mutant_id": "m000005",
+      "operator": "AVR",
+      "original_expression": "governor_",
+      "replacement_expression": "address(this)",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "constructor",
+      "mutant_id": "m000006",
+      "operator": "AVR",
+      "original_expression": "governor_",
+      "replacement_expression": "address(0)",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "setGovernor",
+      "mutant_id": "m000007",
+      "operator": "AVR",
+      "original_expression": "newGovernor",
+      "replacement_expression": "address(this)",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "setGovernor",
+      "mutant_id": "m000008",
+      "operator": "AVR",
+      "original_expression": "newGovernor",
+      "replacement_expression": "address(0)",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 75,
+      "function": "setMarketUpdateProposer",
+      "mutant_id": "m000009",
+      "operator": "AVR",
+      "original_expression": "newMarketUpdateProposer",
+      "replacement_expression": "address(this)",
+      "start_line": 75
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 75,
+      "function": "setMarketUpdateProposer",
+      "mutant_id": "m000010",
+      "operator": "AVR",
+      "original_expression": "newMarketUpdateProposer",
+      "replacement_expression": "address(0)",
+      "start_line": 75
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "constructor",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "constructor",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "constructor",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "constructor",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "constructor",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "constructor",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "setDelay",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "setDelay",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "setDelay",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "setDelay",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 51,
+      "function": "setDelay",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 51
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 51,
+      "function": "setDelay",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 51
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 51,
+      "function": "setDelay",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 51
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 62,
+      "function": "setGovernor",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 62
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 73,
+      "function": "setMarketUpdateProposer",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 89,
+      "function": "queueTransaction",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 89
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 90,
+      "function": "queueTransaction",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 90
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 90,
+      "function": "queueTransaction",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 90
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 90,
+      "function": "queueTransaction",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 90
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 90,
+      "function": "queueTransaction",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 90
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 90,
+      "function": "queueTransaction",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 90
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "cancelTransaction",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 125,
+      "function": "executeTransaction",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 125
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "executeTransaction",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "executeTransaction",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "executeTransaction",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "executeTransaction",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "executeTransaction",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "executeTransaction",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "executeTransaction",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "executeTransaction",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 135,
+      "function": "executeTransaction",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 135
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 93,
+      "function": "queueTransaction",
+      "mutant_id": "m000043",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 93
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "cancelTransaction",
+      "mutant_id": "m000044",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "executeTransaction",
+      "mutant_id": "m000045",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "constructor",
+      "mutant_id": "m000046",
+      "operator": "CCD",
+      "original_expression": "constructor(address governor_, uint delay_) public {\n        require(delay_ >= MINIMUM_DELAY, \"MarketUpdateTimelock::constructor: Delay must exceed minimum delay.\");\n        require(delay_ <= MAXIMUM_DELAY, \"MarketUpdateTimelock::setDelay: Delay must not exceed maximum delay.\");\n\n        governor = governor_;\n        delay = delay_;\n    }",
+      "replacement_expression": "",
+      "start_line": 34
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 135,
+      "function": "executeTransaction",
+      "mutant_id": "m000047",
+      "operator": "CSC",
+      "original_expression": "bytes(signature).length == 0",
+      "replacement_expression": "true",
+      "start_line": 135
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 135,
+      "function": "executeTransaction",
+      "mutant_id": "m000048",
+      "operator": "CSC",
+      "original_expression": "bytes(signature).length == 0",
+      "replacement_expression": "false",
+      "start_line": 135
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 139,
+      "function": "executeTransaction",
+      "mutant_id": "m000049",
+      "operator": "CSC",
+      "original_expression": "else {\n            callData = abi.encodePacked(bytes4(keccak256(bytes(signature))), data);\n        }",
+      "replacement_expression": "",
+      "start_line": 137
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 88,
+      "function": "queueTransaction",
+      "mutant_id": "m000050",
+      "operator": "DLR",
+      "original_expression": "string memory signature",
+      "replacement_expression": "string storage signature",
+      "start_line": 88
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 88,
+      "function": "queueTransaction",
+      "mutant_id": "m000051",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 88
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 107,
+      "function": "cancelTransaction",
+      "mutant_id": "m000052",
+      "operator": "DLR",
+      "original_expression": "string memory signature",
+      "replacement_expression": "string storage signature",
+      "start_line": 107
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 107,
+      "function": "cancelTransaction",
+      "mutant_id": "m000053",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 107
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 124,
+      "function": "executeTransaction",
+      "mutant_id": "m000054",
+      "operator": "DLR",
+      "original_expression": "string memory signature",
+      "replacement_expression": "string storage signature",
+      "start_line": 124
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 124,
+      "function": "executeTransaction",
+      "mutant_id": "m000055",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 124
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 124,
+      "function": "executeTransaction",
+      "mutant_id": "m000056",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 124
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 133,
+      "function": "executeTransaction",
+      "mutant_id": "m000057",
+      "operator": "DLR",
+      "original_expression": "bytes memory callData",
+      "replacement_expression": "bytes storage callData",
+      "start_line": 133
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 142,
+      "function": "executeTransaction",
+      "mutant_id": "m000058",
+      "operator": "DLR",
+      "original_expression": "bytes memory returnData",
+      "replacement_expression": "bytes storage returnData",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 54,
+      "function": "setDelay",
+      "mutant_id": "m000059",
+      "operator": "EED",
+      "original_expression": "emit SetDelay(delay);",
+      "replacement_expression": "/* emit SetDelay(delay); */",
+      "start_line": 54
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "setGovernor",
+      "mutant_id": "m000060",
+      "operator": "EED",
+      "original_expression": "emit SetGovernor(oldGovernor, newGovernor);",
+      "replacement_expression": "/* emit SetGovernor(oldGovernor, newGovernor); */",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "setMarketUpdateProposer",
+      "mutant_id": "m000061",
+      "operator": "EED",
+      "original_expression": "emit SetMarketUpdateProposer(oldMarketUpdateProposer, newMarketUpdateProposer);",
+      "replacement_expression": "/* emit SetMarketUpdateProposer(oldMarketUpdateProposer, newMarketUpdateProposer); */",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "queueTransaction",
+      "mutant_id": "m000062",
+      "operator": "EED",
+      "original_expression": "emit QueueTransaction(txHash, target, value, signature, data, eta);",
+      "replacement_expression": "/* emit QueueTransaction(txHash, target, value, signature, data, eta); */",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "cancelTransaction",
+      "mutant_id": "m000063",
+      "operator": "EED",
+      "original_expression": "emit CancelTransaction(txHash, target, value, signature, data, eta);",
+      "replacement_expression": "/* emit CancelTransaction(txHash, target, value, signature, data, eta); */",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 145,
+      "function": "executeTransaction",
+      "mutant_id": "m000064",
+      "operator": "EED",
+      "original_expression": "emit ExecuteTransaction(txHash, target, value, signature, data, eta);",
+      "replacement_expression": "/* emit ExecuteTransaction(txHash, target, value, signature, data, eta); */",
+      "start_line": 145
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "executeTransaction",
+      "mutant_id": "m000065",
+      "operator": "ECS",
+      "original_expression": "bytes4(keccak256(bytes(signature)))",
+      "replacement_expression": "bytes3(keccak256(bytes(signature)))",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "constructor",
+      "mutant_id": "m000066",
+      "operator": "EHD",
+      "original_expression": "require(delay_ >= MINIMUM_DELAY, \"MarketUpdateTimelock::constructor: Delay must exceed minimum delay.\");",
+      "replacement_expression": "/* require(delay_ >= MINIMUM_DELAY, \"MarketUpdateTimelock::constructor: Delay must exceed minimum delay.\"); */",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "constructor",
+      "mutant_id": "m000067",
+      "operator": "EHD",
+      "original_expression": "require(delay_ <= MAXIMUM_DELAY, \"MarketUpdateTimelock::setDelay: Delay must not exceed maximum delay.\");",
+      "replacement_expression": "/* require(delay_ <= MAXIMUM_DELAY, \"MarketUpdateTimelock::setDelay: Delay must not exceed maximum delay.\"); */",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "setDelay",
+      "mutant_id": "m000068",
+      "operator": "EHD",
+      "original_expression": "require(msg.sender == governor, \"MarketUpdateTimelock::setDelay: Call must come from the Main Governor Timelock.\");",
+      "replacement_expression": "/* require(msg.sender == governor, \"MarketUpdateTimelock::setDelay: Call must come from the Main Governor Timelock.\"); */",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "setDelay",
+      "mutant_id": "m000069",
+      "operator": "EHD",
+      "original_expression": "require(delay_ >= MINIMUM_DELAY, \"MarketUpdateTimelock::setDelay: Delay must exceed minimum delay.\");",
+      "replacement_expression": "/* require(delay_ >= MINIMUM_DELAY, \"MarketUpdateTimelock::setDelay: Delay must exceed minimum delay.\"); */",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 51,
+      "function": "setDelay",
+      "mutant_id": "m000070",
+      "operator": "EHD",
+      "original_expression": "require(delay_ <= MAXIMUM_DELAY, \"MarketUpdateTimelock::setDelay: Delay must not exceed maximum delay.\");",
+      "replacement_expression": "/* require(delay_ <= MAXIMUM_DELAY, \"MarketUpdateTimelock::setDelay: Delay must not exceed maximum delay.\"); */",
+      "start_line": 51
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 62,
+      "function": "setGovernor",
+      "mutant_id": "m000071",
+      "operator": "EHD",
+      "original_expression": "require(msg.sender == governor, \"MarketUpdateTimelock::setGovernor: Call must come from governor.\");",
+      "replacement_expression": "/* require(msg.sender == governor, \"MarketUpdateTimelock::setGovernor: Call must come from governor.\"); */",
+      "start_line": 62
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 73,
+      "function": "setMarketUpdateProposer",
+      "mutant_id": "m000072",
+      "operator": "EHD",
+      "original_expression": "require(msg.sender == governor, \"MarketUpdateTimelock::setMarketUpdateProposer: Call must come from governor.\");",
+      "replacement_expression": "/* require(msg.sender == governor, \"MarketUpdateTimelock::setMarketUpdateProposer: Call must come from governor.\"); */",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 89,
+      "function": "queueTransaction",
+      "mutant_id": "m000073",
+      "operator": "EHD",
+      "original_expression": "require(msg.sender == marketUpdateProposer, \"MarketUpdateTimelock::queueTransaction: Call must come from marketUpdateProposer.\");",
+      "replacement_expression": "/* require(msg.sender == marketUpdateProposer, \"MarketUpdateTimelock::queueTransaction: Call must come from marketUpdateProposer.\"); */",
+      "start_line": 89
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 90,
+      "function": "queueTransaction",
+      "mutant_id": "m000074",
+      "operator": "EHD",
+      "original_expression": "require(eta >= getBlockTimestamp() + delay, \"MarketUpdateTimelock::queueTransaction: Estimated execution block must satisfy delay.\");",
+      "replacement_expression": "/* require(eta >= getBlockTimestamp() + delay, \"MarketUpdateTimelock::queueTransaction: Estimated execution block must satisfy delay.\"); */",
+      "start_line": 90
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "cancelTransaction",
+      "mutant_id": "m000075",
+      "operator": "EHD",
+      "original_expression": "require(msg.sender == marketUpdateProposer, \"MarketUpdateTimelock::cancelTransaction: Call must come from marketUpdateProposer.\");",
+      "replacement_expression": "/* require(msg.sender == marketUpdateProposer, \"MarketUpdateTimelock::cancelTransaction: Call must come from marketUpdateProposer.\"); */",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 125,
+      "function": "executeTransaction",
+      "mutant_id": "m000076",
+      "operator": "EHD",
+      "original_expression": "require(msg.sender == marketUpdateProposer, \"MarketUpdateTimelock::executeTransaction: Call must come from marketUpdateProposer.\");",
+      "replacement_expression": "/* require(msg.sender == marketUpdateProposer, \"MarketUpdateTimelock::executeTransaction: Call must come from marketUpdateProposer.\"); */",
+      "start_line": 125
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "executeTransaction",
+      "mutant_id": "m000077",
+      "operator": "EHD",
+      "original_expression": "require(queuedTransactions[txHash], \"MarketUpdateTimelock::executeTransaction: Transaction hasn't been queued.\");",
+      "replacement_expression": "/* require(queuedTransactions[txHash], \"MarketUpdateTimelock::executeTransaction: Transaction hasn't been queued.\"); */",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "executeTransaction",
+      "mutant_id": "m000078",
+      "operator": "EHD",
+      "original_expression": "require(getBlockTimestamp() >= eta, \"MarketUpdateTimelock::executeTransaction: Transaction hasn't surpassed time lock.\");",
+      "replacement_expression": "/* require(getBlockTimestamp() >= eta, \"MarketUpdateTimelock::executeTransaction: Transaction hasn't surpassed time lock.\"); */",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "executeTransaction",
+      "mutant_id": "m000079",
+      "operator": "EHD",
+      "original_expression": "require(getBlockTimestamp() <= eta + GRACE_PERIOD, \"MarketUpdateTimelock::executeTransaction: Transaction is stale.\");",
+      "replacement_expression": "/* require(getBlockTimestamp() <= eta + GRACE_PERIOD, \"MarketUpdateTimelock::executeTransaction: Transaction is stale.\"); */",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 143,
+      "function": "executeTransaction",
+      "mutant_id": "m000080",
+      "operator": "EHD",
+      "original_expression": "require(success, \"MarketUpdateTimelock::executeTransaction: Transaction execution reverted.\");",
+      "replacement_expression": "/* require(success, \"MarketUpdateTimelock::executeTransaction: Transaction execution reverted.\"); */",
+      "start_line": 143
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "executeTransaction",
+      "mutant_id": "m000081",
+      "operator": "ETR",
+      "original_expression": "target.call{value: value}(callData)",
+      "replacement_expression": "target.delegatecall(callData)",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "executeTransaction",
+      "mutant_id": "m000082",
+      "operator": "ETR",
+      "original_expression": "target.call{value: value}(callData)",
+      "replacement_expression": "target.staticcall(callData)",
+      "start_line": 142
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 152,
+      "function": "getBlockTimestamp",
+      "mutant_id": "m000083",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "stateVariable",
+      "mutant_id": "m000084",
+      "operator": "ILR",
+      "original_expression": "14 days",
+      "replacement_expression": "13 days",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "stateVariable",
+      "mutant_id": "m000085",
+      "operator": "ILR",
+      "original_expression": "14 days",
+      "replacement_expression": "15 days",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "stateVariable",
+      "mutant_id": "m000086",
+      "operator": "ILR",
+      "original_expression": "2 days",
+      "replacement_expression": "1 days",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "stateVariable",
+      "mutant_id": "m000087",
+      "operator": "ILR",
+      "original_expression": "2 days",
+      "replacement_expression": "3 days",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "stateVariable",
+      "mutant_id": "m000088",
+      "operator": "ILR",
+      "original_expression": "30 days",
+      "replacement_expression": "29 days",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "stateVariable",
+      "mutant_id": "m000089",
+      "operator": "ILR",
+      "original_expression": "30 days",
+      "replacement_expression": "31 days",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 135,
+      "function": "executeTransaction",
+      "mutant_id": "m000090",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 135
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "queueTransaction",
+      "mutant_id": "m000091",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 109,
+      "function": "cancelTransaction",
+      "mutant_id": "m000092",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 126,
+      "function": "executeTransaction",
+      "mutant_id": "m000093",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 126
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "executeTransaction",
+      "mutant_id": "m000094",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 42,
+      "function": "",
+      "mutant_id": "m000095",
+      "operator": "PKD",
+      "original_expression": "fallback() external payable ",
+      "replacement_expression": "fallback() external  ",
+      "start_line": 42
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 124,
+      "function": "executeTransaction",
+      "mutant_id": "m000096",
+      "operator": "PKD",
+      "original_expression": "function executeTransaction(address target, uint value, string memory signature, bytes memory data, uint eta) public payable returns (bytes memory) ",
+      "replacement_expression": "function executeTransaction(address target, uint value, string memory signature, bytes memory data, uint eta) public  returns (bytes memory) ",
+      "start_line": 124
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "queueTransaction",
+      "mutant_id": "m000097",
+      "operator": "RSD",
+      "original_expression": "return txHash;",
+      "replacement_expression": "/* return txHash; */",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "executeTransaction",
+      "mutant_id": "m000098",
+      "operator": "RSD",
+      "original_expression": "return returnData;",
+      "replacement_expression": "/* return returnData; */",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "getBlockTimestamp",
+      "mutant_id": "m000099",
+      "operator": "RSD",
+      "original_expression": "return block.timestamp;",
+      "replacement_expression": "/* return block.timestamp; */",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "stateVariable",
+      "mutant_id": "m000100",
+      "operator": "VUR",
+      "original_expression": "14 days",
+      "replacement_expression": "14 hours",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "stateVariable",
+      "mutant_id": "m000101",
+      "operator": "VUR",
+      "original_expression": "2 days",
+      "replacement_expression": "2 hours",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "stateVariable",
+      "mutant_id": "m000102",
+      "operator": "VUR",
+      "original_expression": "30 days",
+      "replacement_expression": "30 hours",
+      "start_line": 19
+    }
+  ],
+  "subject_id": "compound-finance__comet__MarketUpdateTimelock"
+}

@@ -1,0 +1,12306 @@
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.13;
+
+
+
+
+
+import "forge-std/Test.sol";
+import "forge-std/console2.sol";
+import "../src/flat.sol";
+
+contract DAO_Echidna_Test is Test {
+    DAO target;
+
+    function setUp() public {
+        target = new DAO();
+    }
+    
+    function test_auto_newAddressProposal_0() public { 
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00b1\u00e2\u00ef\u0060\u0090\u002d\u00ce\u00ce\u0069\u0057\u00d0\u0027\u0011"));
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933, 35127287437434991694712459035041376986173789321773972029984158779004807925976);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0064\u006e\u0089\u00a8\u0015\u004a\u0010\u00a9\u00af\u00a6\u00ec\u0051\u00b5\u0026\u0031\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u006b\u0047\u0058\u0086"));
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 361192);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00cb\u0019\u0022\u008b\u00ad\u0063\u00ab\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 27021295604519512536273784338316360306587726598387873273620996645889753068994);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000020000, 1524785993);
+        
+        vm.warp(block.timestamp + 106404);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(45, 9);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639930, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 50732840694678994387136590474733107861263046586805275762983929071462701995285);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(76);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u00e1\u00e2\u0096\u00c6\u00fe\u00f3\u0087\u0091\u0058\u00ed\u0085\u000c\u002e\u00de\u00ac\u00bd\u0055\u0002\u00fa\u00ee"));
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00e6\u00d2\u001a\u0062\u0084\u00b6\u0097\u00e6"));
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 10491);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 90685673541129414735475912698140751236096205948713976142532453241231820175764);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 9373924365793793148333982906232668844019029277938457890766730102925357712092);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(39092877244032441718990418013370075870165882781446099744455433281720710193863);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 18570);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 109529013557064957973291513205180308744665977590326745765748011210036007172284);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0088\u0041\u00dd\u00b7\u0027\u00ab\u0026\u0033\u0056\u0067\u00b5\u005b\u00a6\u0059\u004a\u00d0"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00bf\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00fe\u00ea"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u0054\u0061\u0076\u00be\u0089\u00b5\u0048\u00dd\u0063\u007f\u0041\u00f2\u0042\u006c\u00e2\u00bc\u00e9\u00cf\u0057\u0037\u00ba\u0081\u005f\u0032\u00b9\u003d"));
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 2690);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 586295);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(113206796174946781852667258215455724472108614040045824188086502209242331747313);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(16742598040323887086906788895155988173668679940762096443427826410397197159154);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 10979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931, 7);
+        
+        vm.warp(block.timestamp + 285040);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923, 2);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00e6\u0008\u00f2\u00c6\u001c\u00c8\u00b9\u00f9\u0002\u0062\u00ab\u0005\u00e7\u0066\u00a5\u00ad\u0056\u0048\u004e\u006f\u00ec\u0079\u0015\u0068\u0029\u00c2"));
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639924, 683);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(49427635574782867198347407443466395879781026864100095520752386860204887342782);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(1, 75175487383571892581789761392706908682991185198176297664903347069570552383692);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 11);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(35199531062019498825804136631750029603180441087571936);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(0);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 52393);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 85931);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 38616085263210265751091369295007199092920520167634988165125590031223026069628);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.hasQuorum(6124812939787443405969538035308565655150246594603233400274575400776992687403);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000020000, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u0096\u0096\u0096\u0096\u0096\u0096\u0096\u0096\u0096\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(4370000);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(2, 86127599531990497405527321541563757628648617908388573416778792340784929087154);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00ea\u00fd\u004b\u00e2\u00a0\u003e\u001e\u0084\u0029\u0051\u007b\u0015"));
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 9628);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 29808);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0000\u0012\u00be\u00d8\u00d0\u00b4"));
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(37104250933024490763894767936719287647671216558044272457723928523226538392380);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 3447809);
+        
+        vm.warp(block.timestamp + 225915);
+        vm.roll(block.number + 3865);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(7);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(666, 88626384347031218714808610262975226058696153706892166329846185241039364535901);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(40662259739774723365880685603861099265384274260741880357784097257953043524353, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 33909071544585894924490326785632308194375039849752319595245638819949329759642);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(10574768193495189073233542363684343601846020787390340991032703905461222667908, 0);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 80772806682311991905843133854759027961608831534760768314126510728463267628190);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 55704);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(1022);
+        
+        vm.warp(block.timestamp + 49214);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(351819935680482213898190710999449038330646592623201953554);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0020\u0092\u0089\u00db\u0026\u006b\u00a3\u0048\u0047\u0003\u00ec\u0007\u00ba\u0057\u0042\u00a2"));
+    }
+    
+    
+    function test_auto_finaliseProposal_1() public { 
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 51940);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u005f\u0068\u00af\u00a6\u0087\u003b\u0027\u00cb\u0026\u0033"));
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639927);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u00ad\u00ab\u0019\u0022\u008b\u0098\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(12197009266039314237750396792494385335350384794066177343624859876404676450313);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(1524785993);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(19616165833959945254376211930421428925210278094605360302192196796322280687021);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(13, 38832647580478395287083681210638991563851073254960526051552362096239021931136);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(52632098829891055795087548456355965739813577913926423496199188257906281569037);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 460);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 8137);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u000b\u0017\u000f\u004c\u0068\u005b\u00d6\u0026\u0033"));
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(17313606268932853135948666562479774579981280723675007663050654092708484623781);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 588748);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00f4\u009c\u0026\u0039\u0099\u00d9\u00a8\u00f4\u0026\u0037\u0029\u0049\u00c7\u0009\u0099\u0004\u0098\u001d\u0057\u00c7\u000c\u0065\u002d\u005d\u004f\u00ef\u004f\u00bb\u006f"));
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u008b\u00ad\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(8);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u00ab\u0098\u006f\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 94812);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 0);
+        
+        vm.warp(block.timestamp + 150190);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u0030\u0030\u0030\u0030\u0035\u00c2\u0068"));
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u002d\u00d2\u00db\u0004\u0072\u00da\u000e\u004f\u0079\u00fd\u007d\u00fb\u00c9\u005b\u00ed\u00f8\u0048\u0068\u00a5\u0017\u00a3\u00d0\u00da"));
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u008b\u003c\u000a\u0043\u003a\u004f\u007c\u00fe\u00a5\u0026\u0036\u0008\u0030\u0081\u0066\u0046\u003b\u00e3\u0021\u00eb\u00d8\u0097\u00d6\u007c\u0050\u00cc"));
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 4370001);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(100376082052551820739494091993839475006880009343309119487968004454933592757093, 10);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 49989);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639924);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(93627867317398716014762065104639570920668397730670578687205158034482152758364);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 36888);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(4369999);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u0022\u0098\u00ab\u0019\u006f\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(101267006704038541107764775065302171460633249171253960540492645246315578247104, 115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 332604);
+        vm.roll(block.number + 5618);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(1);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932, 106896122990411514833756360706643062194491515505434667922790232757176934428835);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u00cb\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u0057\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u00d8\u00b3\u001f\u0052\u0077\u0040\u0039\u003a\u00e1\u0026\u0034\u00ea\u006c\u00c4\u00f2\u00e5\u00c7\u00d5\u0026\u0039\u00aa\u0077\u00cc\u00bc\u00b3\u008e\u000b\u0057\u005d\u00e4\u003c\u0047"));
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 10463);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0091\u00aa\u00bd"));
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 8437);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(58219754277928768744054127712435398743645024822795520025958034519143628129556, 10);
+        
+        vm.warp(block.timestamp + 392976);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 528536);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00ea\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00b1"));
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, string(unicode"\u00f9\u0074\u00f6\u0082\u00ae\u00b9\u00bc\u00a5\u0016\u009d\u00ce\u0060\u00ac\u00bb\u008a\u009a"));
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 3872);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0022\u006f\u0098\u00ab\u0019\u0096\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0000\u0012\u0036\u00ca\u003a\u00d6"));
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(73822946560613401099586472572516792602573501827136745389415435160938475781433);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00bb\u0045\u00a5\u00b6\u0086\u00a9\u00d3\u001b\u008e\u00c8"));
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u008f\u004b\u00e4\u00de\u00fe\u0065\u005a\u00a6\u009f\u0013\u003b\u00c9\u0070\u0097\u0043\u00f1\u0057\u005e\u00dc\u008c\u0026\u0034\u00bc"));
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(39735873571634447952808863021036608799087069951541767281232493104210376264035, 12);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(34685105258823960272652345979982173109857728040634925762408687793854659457905, 105736676933126785137041123472904198632921928678733779995615481258648583874689);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(71213986628031236422133505192646652382358294991532751624408750110291688876862, 215);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(8924956760574246995263489440586280076038867766294957776541476570806301213400, 94125642462838057744442834389184881298445887739566839944376145469894991667680);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 376054);
+        vm.roll(block.number + 39830);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(104560844331418900485619066784072757232131449975516090655957685901139174114179);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(7, 104653607278060308257112828214304572854325484904316550087468570287179126551067);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 20909);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 102);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 48698);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639924);
+        
+        vm.warp(block.timestamp + 125376);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(73728478581793365392012699815028107533617721491193534343540175385452061310484);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31835315535831230293041180777572847488219846424775236542663369689874346336093);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u00ea\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u0057"));
+        
+        vm.warp(block.timestamp + 121030);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u004f\u001d\u00b9\u00f5\u0069\u002e\u002c\u004f\u00f4\u0053\u0094\u002c\u0031\u00ea\u0065\u0034\u003f\u0024\u0090\u0078\u00d0"));
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000020000, 0);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932, 1524785991);
+        
+        vm.warp(block.timestamp + 168989);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(50025957769730701933415631298019783464505146599432364658591671038469590283891, 3);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 109103373438751158593370292851547330223015956265381483027537447463277876634387);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(81964713682717628990667535206808197547143341012621234572166854683307625714567);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(30270350383977742055849203370742227222856602953775817115331645431581564914634);
+    }
+    
+    
+    function test_auto_finaliseProposal_2() public { 
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(39092877244032441718990418013370075870165882781446099744455433281720710193863);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 18570);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 109529013557064957973291513205180308744665977590326745765748011210036007172284);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0088\u0041\u00dd\u00b7\u0027\u00ab\u0026\u0033\u0056\u0067\u00b5\u005b\u00a6\u0059\u004a\u00d0"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00bf\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00fe\u00ea"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u0054\u0061\u0076\u00be\u0089\u00b5\u0048\u00dd\u0063\u007f\u0041\u00f2\u0042\u006c\u00e2\u00bc\u00e9\u00cf\u0057\u0037\u00ba\u0081\u005f\u0032\u00b9\u003d"));
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 2690);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 586295);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(113206796174946781852667258215455724472108614040045824188086502209242331747313);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(16742598040323887086906788895155988173668679940762096443427826410397197159154);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 10979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931, 7);
+        
+        vm.warp(block.timestamp + 285040);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923, 2);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00e6\u0008\u00f2\u00c6\u001c\u00c8\u00b9\u00f9\u0002\u0062\u00ab\u0005\u00e7\u0066\u00a5\u00ad\u0056\u0048\u004e\u006f\u00ec\u0079\u0015\u0068\u0029\u00c2"));
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639924, 683);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 8805);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 11104);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(12, 18292746048329921191389684583334980538962542076256872920441836509352430226451);
+        
+        vm.warp(block.timestamp + 458977);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(113028671132641337953881730918883123794673217508168827806342909708226472571228);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(35899839333773576039396550147247357602458705502501277541374339703634114037437);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(19052321424413258837891979781139834429978619336675330925713916743580170763702);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0019\u006f\u0098\u00ab\u0096\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 90730486620358151532590819389177134881116500126712149863060900673229939733941);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(16207634055782952232080134810408707880484576099221160858844838268926629162120, 23893448491442023696649764198994107574017366310683842551207565374624546734280);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(86633484612128975044115178202536661085023146993002607558362028180516920833382, 4);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(108160281696016634336205190206575312339143984705891124676891642427424190689740);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(67943610639009168192736250392065182241361147636248196098823334484314271493901);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(340578076290447647067606384739294238, 94964244533951680793941784617353022390362481046381850772031263716048004756931);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(1);
+        
+        vm.warp(block.timestamp + 118495);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639924);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00be\u00b6\u00fc\u0078\u0009\u006e\u00b8\u007d\u0015\u0009\u0065\u00e8"));
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(43082834604303365182690865665431203481749019057038711373405776370252460477786);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(12);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 435413);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(10);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(93319541512333718122883386865271649680172113027061777011177684361286086156103);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(23904671738047214825530022803094572043347101306894922161358222128234278818265);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(79830247028238007097947372242317215397360684860641757056298330256236488615399, 6);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000030000, string(unicode"\u0000\u0036\u00ca\u003a\u00d6"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 480569);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 26527334396845451202232220379770321318215556482700450153441874130078580941982);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(1);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(67316241038514782981477428736552558616849839216346226260008466808312279204336);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 25549);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(2);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(89552788238955466715952877754720159853171080067536512321544345175593552085124, 84682334884257678683759597905726710455132286165115665201454236761028910315275);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 249988);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(45, 33642562542611802133444198207527041448807723047784593765576931893176368086379);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 37324);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000020000, 80870506058301429965934516573966592911422141072846728118634903945695122069072);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 11);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934, 9);
+        
+        vm.warp(block.timestamp + 465991);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(81524455597784311516191342421762612407054366202475162967458200919471042726536);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 360827);
+        vm.roll(block.number + 22782);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639925, 4369999);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 33140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 523413);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0086\u0091\u00d4\u00f6\u00ee\u0009\u0041\u004c\u00cf\u007f\u00a5\u005d\u0019\u000e\u00db\u0014\u00dd\u00d7\u00b6\u00aa\u0079\u006d"));
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 102695741698833328421285589181147743645641056649344938812048892217546239934304);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(11902402893677395846247098860196379240575153322232403937792992053909694392213, 5);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(3448655236130922577475917888835073278606047234830486589355188834768711108698);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(86418049825390817274704076826256182117568233915001412642192824427354335416881);
+    }
+    
+    
+    function test_auto_cancelProposal_3() public { 
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(50025957769730701933415631298019783464505146599432364658591671038469590283891, 3);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 109103373438751158593370292851547330223015956265381483027537447463277876634387);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(81964713682717628990667535206808197547143341012621234572166854683307625714567);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(30270350383977742055849203370742227222856602953775817115331645431581564914634);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0089\u0099\u00d0\u00e0\u0029\u00b1\u0098\u00ad\u00b4\u007d\u0075\u002b\u0029\u00f7\u0048\u00cd\u000f\u00fa"));
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(77408583558076057569485079099954464269670758857297058059550971032011586487804, 42429369381948637516408366577208037711076594625702450879625832759352101068083);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(12, 13);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(4370000, 12);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(56570840367667079740679074279198702875663041515872280434782880731466984763208);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(106235546577399311439071747068940373985102569346171695105732969707071061909432);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(30618427978788493314187093615024741469531937090343354381178526406441014393389);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 45015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00cb\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00a1\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 5246);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(13);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1455953090142251241234319426766833120104745857094440680969948612904138990947);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(72915538243179860555707995231408704341567881809774388375922197);
+        
+        vm.warp(block.timestamp + 207065);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 291996);
+        vm.roll(block.number + 29219);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(110536142606310747690814769084227758773709303234574385266625644912704927784134);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0038\u00d0"));
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(6);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(12461458814410997689965593229334003139209296595958587699305824543338657522233, 48100562388001757776861003706685322176804611889072411527540407240474422737505);
+        
+        vm.warp(block.timestamp + 16719);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(1524785991, 0);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(191);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 473894);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0017\u004e\u004e\u0030"));
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u008b\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u00a1\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 127169);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000020000, string(unicode"\u004e\u006f\u0020\u0061\u0064\u0064\u0072\u0065\u0073\u0073\u0020\u0070\u0072\u006f\u0070\u006f\u006f\u006f\u006f\u006f\u006f\u006f\u006f\u006f\u006f\u006f\u0073\u0065\u0064"));
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u0005\u00bc\u00ae\u0026\u0031\u00ff\u00cc\u000f\u00ba\u00ad\u00f3\u00d9\u0026\u0032\u0034\u0053\u0067\u000f\u00b3\u0090\u0011\u0011\u0011\u00e7\u0026\u0031\u006c\u0012\u004c\u0059\u00fd\u006e\u0057\u00f4\u00ab"));
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(1);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0050\u00d8\u00f7\u0063\u002e\u0093\u006c\u001c\u00e2\u005b\u00c4\u0063\u00f0\u00f1\u001c\u006c\u00e0\u00ef\u009e"));
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.isEqual(hex"21", hex"bf58d0ef00000000000000000000000000000000000000000000000000000002fffffffd00000000000000000000000000000000000000000000000000000002fffffffdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc");
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(23559881677131677542342774186590476827610782592672628653117153427365000692649);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 461963);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(61615719643580012735993140375455065173827340230272941744791752584552595242059);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 45);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 29486987348070850513724502077820447527365559432086600718658585465669237857789);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1070425141506517982173970205131090749656086662618001723316196377909793474619);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 40012);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 0);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 56144);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0035\u0044\u006d\u006d\u006d\u006d\u006d\u006d\u006d\u006d\u00ee\u00a6\u005a\u0068\u001f\u006f\u0030\u001f\u008a\u0001\u00fe\u003b\u006c"));
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 333803);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(13);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 38268);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 12730);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 4);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(105067421668025400084904455762537501540625332030430020071267601350515155991997);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(93338620910328946755117424331996772832482691574557346097163893131526579599411, 4);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 63780888313354870242707023273414557919676023139194625800761994212414103568372);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00ea\u0093\u00b9\u00e9\u00dc\u00d3\u005f\u0051\u00ca\u00e2\u003e\u0076\u00e1\u0051\u0051\u0051\u0051\u0051\u0051\u0051\u0051\u0051\u0051\u0051\u0051\u0051\u0051\u0051\u0051\u003e\u009d\u007f\u00ed\u004b\u002f\u00f8\u0002"));
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(43363028091348370756789014695457717960311602559594892782222990000223557288997, 2);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 1524785992);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00aa\u00ae\u0065\u008e\u006f\u0092\u0043\u00dc\u0041\u008d\u003f\u002c\u0083\u009a\u0020"));
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(23455523163816626750107118724014648393250947593369366294101338570973305530637);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(12);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u00bf\u00ad\u0063\u00cb\u008b\u00ea"));
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 54534);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(6);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(4962125843822901992892763972897491, 1);
+    }
+    
+    
+    function test_auto_finaliseProposal_4() public { 
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 51940);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u005f\u0068\u00af\u00a6\u0087\u003b\u0027\u00cb\u0026\u0033"));
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639927);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u00ad\u00ab\u0019\u0022\u008b\u0098\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(12197009266039314237750396792494385335350384794066177343624859876404676450313);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(1524785993);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(19616165833959945254376211930421428925210278094605360302192196796322280687021);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(13, 38832647580478395287083681210638991563851073254960526051552362096239021931136);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(52632098829891055795087548456355965739813577913926423496199188257906281569037);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 460);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 8137);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u000b\u0017\u000f\u004c\u0068\u005b\u00d6\u0026\u0033"));
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(17313606268932853135948666562479774579981280723675007663050654092708484623781);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 588748);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00f4\u009c\u0026\u0039\u0099\u00d9\u00a8\u00f4\u0026\u0037\u0029\u0049\u00c7\u0009\u0099\u0004\u0098\u001d\u0057\u00c7\u000c\u0065\u002d\u005d\u004f\u00ef\u004f\u00bb\u006f"));
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u008b\u00ad\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(8);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u00ab\u0098\u006f\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 94812);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 0);
+        
+        vm.warp(block.timestamp + 150190);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u0030\u0030\u0030\u0030\u0035\u00c2\u0068"));
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u002d\u00d2\u00db\u0004\u0072\u00da\u000e\u004f\u0079\u00fd\u007d\u00fb\u00c9\u005b\u00ed\u00f8\u0048\u0068\u00a5\u0017\u00a3\u00d0\u00da"));
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u008b\u003c\u000a\u0043\u003a\u004f\u007c\u00fe\u00a5\u0026\u0036\u0008\u0030\u0081\u0066\u0046\u003b\u00e3\u0021\u00eb\u00d8\u0097\u00d6\u007c\u0050\u00cc"));
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 4370001);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(92381612203981481892049838743863358703136639528184776193188731885618835185274);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 403);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(7);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 303466);
+        vm.roll(block.number + 1732);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 556044);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(57368097096009276783643301202981383534005009389354169587281194326429878389146);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 72068148857520564657210220702662945738092);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(45, 5736031286769802436163324497618897414839175418400619644817556967521090608130);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u000e\u00dc\u001a\u00d6\u00c4\u0080\u00a5\u0042\u0042\u0042\u0042\u0042\u0042\u0042\u0042\u0042\u0042\u0042\u0042\u00df\u00fd\u00b2\u00bc\u00ec\u00b0\u00b8\u006c\u00d7"));
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 493675133102865476265823);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(1);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 32496);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 37918);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(41394914154138410020295969394712580407047542482964390693092925382398050759977, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(108963287856496426742508480165385866721837421383497499379731779120119701521758);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(1);
+        
+        vm.warp(block.timestamp + 117338);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, string(unicode"\u0056\u00c5\u009a\u0067\u0067\u0067\u0067\u0067\u0067\u0067\u0067\u00fb\u00d3\u0052\u0050"));
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(23365009431604961791207134589489757239870417374315298050861136640665604466897);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(1524785992, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 2);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000020000, string(unicode"\u004a\u00f7\u0059\u0025\u0058\u0034\u005f\u00cb\u00e4\u009c\u00f7\u00fe\u00a9\u0026\u0036\u0026\u0099\u00bb\u00d0\u0029\u0086\u00f7\u00f4\u0013\u0076\u000d\u00d9\u008e\u00e1\u0057\u0031\u0007"));
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 7);
+        
+        vm.warp(block.timestamp + 266419);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(10, 304);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(3612899189253501129975929393035254371937740558187229111390820471070704348264);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(542503005168904732305382698979955406967743619057424792369158870614123544217);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(0);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 47791);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0097\u00f8\u0073\u00de\u0015\u00f2\u0097\u006f\u00d9\u00ab\u0077\u00f0\u0027\u0008\u009b\u00fc\u0005\u0067\u0009\u00be\u00e5\u00a0\u0027\u0090\u0027\u00af\u00ec"));
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 59101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 58140);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(112804069998252104639266447706879601188346419221317670992768031571384485809713);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(45);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(8, 115792089237316195423570985008687907853269984665640564039457584007913129639927);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u00ed\u00c4\u0064\u007a\u000e\u00a9\u0066\u009f\u00c4\u004d\u0012\u0039\u00b9\u00e9\u0054\u00df\u002d\u0034"));
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(97646484786494093843806384250213637238383686436068352991302270466124944708599);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 546198);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(91244396432814564422373479165457046070310386664740327999050928357362700152556, 0);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+    }
+    
+    
+    function test_auto_cancelProposal_5() public { 
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u009e\u0026\u0034\u0058\u0026\u00e4\u00e4\u00a6"));
+        
+        vm.warp(block.timestamp + 166081);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(11, 13891339896080224700638250811785652926475379207146054731771842232541678643279);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 25357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(4370001);
+        
+        vm.warp(block.timestamp + 279786);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0030\u0035\u00c2\u0068\u0068\u0068"));
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 182950);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 24557);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639927);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 45992);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(4369999);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 213637);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(4370000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
+    }
+    
+    
+    function test_auto_cancelProposal_6() public { 
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(50025957769730701933415631298019783464505146599432364658591671038469590283891, 3);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 109103373438751158593370292851547330223015956265381483027537447463277876634387);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(81964713682717628990667535206808197547143341012621234572166854683307625714567);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(30270350383977742055849203370742227222856602953775817115331645431581564914634);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0089\u0099\u00d0\u00e0\u0029\u00b1\u0098\u00ad\u00b4\u007d\u0075\u002b\u0029\u00f7\u0048\u00cd\u000f\u00fa"));
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(77408583558076057569485079099954464269670758857297058059550971032011586487804, 42429369381948637516408366577208037711076594625702450879625832759352101068083);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(12, 13);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(4370000, 12);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(56570840367667079740679074279198702875663041515872280434782880731466984763208);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(106235546577399311439071747068940373985102569346171695105732969707071061909432);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(30618427978788493314187093615024741469531937090343354381178526406441014393389);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 45015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00cb\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00a1\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 5246);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(13);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1455953090142251241234319426766833120104745857094440680969948612904138990947);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(72915538243179860555707995231408704341567881809774388375922197);
+        
+        vm.warp(block.timestamp + 207065);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 291996);
+        vm.roll(block.number + 29219);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(110536142606310747690814769084227758773709303234574385266625644912704927784134);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0038\u00d0"));
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(6);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(12461458814410997689965593229334003139209296595958587699305824543338657522233, 48100562388001757776861003706685322176804611889072411527540407240474422737505);
+        
+        vm.warp(block.timestamp + 16719);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(1524785991, 0);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(191);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 473894);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0017\u004e\u004e\u0030"));
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u008b\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u00a1\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 127169);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000020000, string(unicode"\u004e\u006f\u0020\u0061\u0064\u0064\u0072\u0065\u0073\u0073\u0020\u0070\u0072\u006f\u0070\u006f\u006f\u006f\u006f\u006f\u006f\u006f\u006f\u006f\u006f\u006f\u0073\u0065\u0064"));
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u0005\u00bc\u00ae\u0026\u0031\u00ff\u00cc\u000f\u00ba\u00ad\u00f3\u00d9\u0026\u0032\u0034\u0053\u0067\u000f\u00b3\u0090\u0011\u0011\u0011\u00e7\u0026\u0031\u006c\u0012\u004c\u0059\u00fd\u006e\u0057\u00f4\u00ab"));
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(91461249832158844367936131298497058572120205475819703369050751966912544594562);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 356458);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(21416692659914157874571992769360963274129896035573174201941840294149891525779);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(33894988793329280530661085183882282743289656888848451400573837643198319369254);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 23780);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 12);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000020000, string(unicode"\u00e8\u00e2\u00f0\u00c8\u003c\u0096\u003b\u00c4\u00ce\u00d9\u00c4"));
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 387002);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000030000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(52335188734734549768604789680430672722643616945989175188727643471520519084632);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(4370000, 106290326064340575604730282590734783512355553901134021157889044441939051466640);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(11459453813661132808059922246758706531375756870195322371532922486248820970367);
+        
+        vm.warp(block.timestamp + 285450);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 24837);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00cb\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00fe\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(8);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 29452);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(6);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u005f\u001f\u00dc\u0045\u00b4\u0083\u004c\u00bd\u00cc"));
+        
+        vm.warp(block.timestamp + 241956);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(912);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(44187901415897952896675766591937300303770975896500399309372091991596315346786, 20985178367531368445634756322955924719158308854381396288995138618524641909189);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933, 4);
+        
+        vm.warp(block.timestamp + 393255);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0072\u0031\u0005\u0012\u00b1\u00c0\u0021\u00bb\u00ea\u007e\u00dd\u003e\u00bd\u00d5\u0026\u0035\u00db"));
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 3506);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(7, 5);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000030000, string(unicode"\u0020\u0031\u00d2\u004a\u00c1\u0026\u0035\u0073\u00fd\u0042\u0044\u000f\u0011\u00b7\u008c\u00f2\u002b\u00b8\u0043\u007c\u0066\u00af\u000b"));
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u009e\u0026\u0034\u0058\u0026\u00e4\u00e4\u00a6"));
+        
+        vm.warp(block.timestamp + 166081);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(11, 13891339896080224700638250811785652926475379207146054731771842232541678643279);
+    }
+    
+    
+    function test_auto_init_7() public { 
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 51940);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u005f\u0068\u00af\u00a6\u0087\u003b\u0027\u00cb\u0026\u0033"));
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639927);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u00ad\u00ab\u0019\u0022\u008b\u0098\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(12197009266039314237750396792494385335350384794066177343624859876404676450313);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(1524785993);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(19616165833959945254376211930421428925210278094605360302192196796322280687021);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(13, 38832647580478395287083681210638991563851073254960526051552362096239021931136);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(52632098829891055795087548456355965739813577913926423496199188257906281569037);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 460);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 46950);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000030000, string(unicode"\u00fe\u00a1\u0013\u0098\u00b1\u0057\u0096\u006f\u006b\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(1);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(341, 115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(114957150649459721270810536035548485141519906738124722663839498712438925475432);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934, 0);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 27892);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 40530);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0032\u0017\u00e5\u00c5\u007b\u00cb\u002b\u00bf\u0026\u0030\u00b6\u003a\u00c2\u0081\u001b\u0016\u00a1\u0026\u0033\u00af\u008c\u008c\u0025\u005e\u0023\u00e2\u00de\u00ab\u00de\u0063"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639925, 28892161950358304196152610934468859629145465766778657052179595910173539835251);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(9714796202543434383064731679583386197606509826758733384991922822849633209291);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 47317968767858193810736426177936281475849518719804338678210527695754492563130);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(99087717279521697045185861086137205685739150270066928805494685214505642972154);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 564668);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 115346657165622532038991735165141428804054396355183007936751352730225069682314);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(22596186369709118198408974482821347896601420353554017066059686611558318893090);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 41091);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 55465);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(60);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 52909);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00cb\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(13546337485177306112101271021266494659748565698126169925398751661015418769210);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(76646993615071983264179206708501698934036173518887425599715298068704259692698);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00d2\u000d\u002c\u0098\u00d6\u00fd\u00fd\u00fd\u00fd\u00fd\u00fd"));
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u002f\u00a8\u003a\u009f\u0013\u0004\u00a5\u008f\u00f4\u0054\u008e\u006e\u0086\u0008\u0079\u0026\u00ba\u0081\u00dc"));
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 54730);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0091\u000a\u0088\u00d0\u00c7\u00d4\u0040"));
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 1524785991);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(3854115919241678734606081417749581012219142157230783076);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000020000, string(unicode"\u005a\u000d\u00ac\u003b\u00a1\u0027\u00b9\u00b2\u0085\u00c0\u00b8\u0074\u0098\u00ae\u007f\u003a\u0031\u00af\u00ea\u00f6\u00a3\u0063\u003c\u00ea\u0004\u005d"));
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(36442180257072631956855347853930707002057478702970712983538325033355152192019);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(77302726429036727682902968302714634740062767401215687513520227647078259570644);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u00ae\u00e7\u002b\u00f8\u0019\u007e\u0035\u007b\u00f5\u0015\u002c\u002b\u005a\u00e6\u0087\u0026\u0034\u00c7\u000f\u0002"));
+        
+        vm.warp(block.timestamp + 213148);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(17868342641410854543899941358428879425914318789951579354684659683696899500566);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(54819999241852857706359293310990617960550077986867144340394345900921066224723);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000000000, 12);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(4829473949019349380221367839231908032907276654328682, 113501942358054280545354546937157261187299616633909016067090326809460056449734);
+        
+        vm.warp(block.timestamp + 457529);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(2233133788020169301296789145836552711176377016856052886602211151319344053014, 58368709200679577246062525800569860363573723218991834670190273278744666603402);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 17791);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 453850);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+    }
+    
+    
+    function test_auto_init_8() public { 
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(39092877244032441718990418013370075870165882781446099744455433281720710193863);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 18570);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 109529013557064957973291513205180308744665977590326745765748011210036007172284);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0088\u0041\u00dd\u00b7\u0027\u00ab\u0026\u0033\u0056\u0067\u00b5\u005b\u00a6\u0059\u004a\u00d0"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00bf\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00fe\u00ea"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u0054\u0061\u0076\u00be\u0089\u00b5\u0048\u00dd\u0063\u007f\u0041\u00f2\u0042\u006c\u00e2\u00bc\u00e9\u00cf\u0057\u0037\u00ba\u0081\u005f\u0032\u00b9\u003d"));
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 2690);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 586295);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(113206796174946781852667258215455724472108614040045824188086502209242331747313);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(16742598040323887086906788895155988173668679940762096443427826410397197159154);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 10979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931, 7);
+        
+        vm.warp(block.timestamp + 285040);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923, 2);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00e6\u0008\u00f2\u00c6\u001c\u00c8\u00b9\u00f9\u0002\u0062\u00ab\u0005\u00e7\u0066\u00a5\u00ad\u0056\u0048\u004e\u006f\u00ec\u0079\u0015\u0068\u0029\u00c2"));
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639924, 683);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(49427635574782867198347407443466395879781026864100095520752386860204887342782);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(1, 75175487383571892581789761392706908682991185198176297664903347069570552383692);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 11);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(35199531062019498825804136631750029603180441087571936);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(0);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 52393);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 85931);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 38616085263210265751091369295007199092920520167634988165125590031223026069628);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.hasQuorum(6124812939787443405969538035308565655150246594603233400274575400776992687403);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000020000, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u0096\u0096\u0096\u0096\u0096\u0096\u0096\u0096\u0096\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(4370000);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(2, 86127599531990497405527321541563757628648617908388573416778792340784929087154);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00ea\u00fd\u004b\u00e2\u00a0\u003e\u001e\u0084\u0029\u0051\u007b\u0015"));
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 9628);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 29808);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0000\u0012\u00be\u00d8\u00d0\u00b4"));
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(37104250933024490763894767936719287647671216558044272457723928523226538392380);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 3447809);
+        
+        vm.warp(block.timestamp + 225915);
+        vm.roll(block.number + 3865);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(7);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(666, 88626384347031218714808610262975226058696153706892166329846185241039364535901);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(40662259739774723365880685603861099265384274260741880357784097257953043524353, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 33909071544585894924490326785632308194375039849752319595245638819949329759642);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(10574768193495189073233542363684343601846020787390340991032703905461222667908, 0);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 80772806682311991905843133854759027961608831534760768314126510728463267628190);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 55704);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(1022);
+        
+        vm.warp(block.timestamp + 49214);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(351819935680482213898190710999449038330646592623201953554);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0020\u0092\u0089\u00db\u0026\u006b\u00a3\u0048\u0047\u0003\u00ec\u0007\u00ba\u0057\u0042\u00a2"));
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00b6\u0051\u005e\u0056\u0014\u00c0\u0099\u00b8\u00c7\u00db\u00e8\u0091\u0086\u0022\u002d\u0084\u00d8\u00ef\u002c\u00c0\u0087\u0006\u0080\u006e\u00b7\u00b5\u0026\u0035\u00c7"));
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(958);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u005f\u009c\u00d9\u0065\u0005\u00b2\u0026\u0031\u0047\u00a3\u0009\u0001\u0082\u0043\u00d8\u0052\u00ce\u0002\u0062\u00ac"));
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 39518);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00d8\u00d6\u0056\u009c\u00b6\u0026\u0034\u002c\u00d2\u0050\u0036\u00c3\u00f1\u00f1\u0076\u00d3\u0081\u00b5\u00f9\u00e8"));
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 48482);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 310120);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(23209409408477588291941615047942327600940589336799521666976545818905079272939);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639928, 1524785991);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 43151);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(1);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u0098\u0057\u0096\u006f\u00b1\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(59271875731929080394822165871668581966987055144984735603762887101904329810086);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(46034211933551565706870784118115028853656138320114236311720650766351849027222);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 489252);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000030000, string(unicode"\u007f\u00e4\u00c1\u000e\u0055\u007c\u00b1"));
+        
+        vm.warp(block.timestamp + 14311);
+        vm.roll(block.number + 45);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 222276);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(5);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(90648573954252605677328402296434207874326627094855678935687391572762122529803);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 474374);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(7037136141850106592630341868343102058219322232181678953068648073947141872372);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+    }
+    
+    
+    function test_auto_voteProposal_9() public { 
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 45992);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(4369999);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 213637);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(4370000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(358);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u00ac\u004d\u0013\u00ed\u002b\u0099"));
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u0000\u0012\u0036\u00ca\u003a\u00d6"));
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0007\u00d9\u0029\u00ba\u00e7\u00a3\u00a0\u00dc\u0003\u00d3\u0003\u00cd\u005a\u0022\u0015\u0002\u00ea\u003c\u006b\u00c3\u0074\u0091\u00d3\u000c\u009c\u005d\u00fb\u0058\u0053"));
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 564225);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(24151152203969816281090177745725526455167000312719769267278691610049548616138, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(6);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 3252);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(1524785993);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2310550819);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(0, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 11084);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(66972950359705630468221561273703754440645000085352930130277659922003166358032, 2);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 17745190528355807592376885269748157974405593062480163678682939288878311187276);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(9);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(114669306671343195636314960861669226000820248678200456149187413633335926903676, 115792089237316195423570985008687907853269984665640564039457584007913129639927);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(0, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 138907);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u0068\u00e6\u00c1\u004c\u00fb\u009a\u00f8\u00d0\u0009\u008f\u0007\u00ac\u00d4"));
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0023\u00cc\u00dc\u00f3\u0084\u00d8\u00dd\u0042\u001d\u00a0\u0053\u00fe\u00fa\u000a\u003b\u0066\u0097\u0006\u009e\u003c\u0098\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u00e4\u00a3\u002d\u0005\u0031\u00b0\u0012\u00a3"));
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea\u00ea"));
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(1524785991);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 18288);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(5597889658689421802099873265443110355527709409528530670819714608852502585535);
+        
+        vm.warp(block.timestamp + 456865);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933, 35514311560323961909351359409518491189961392975522558340434277893908914446410);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(11, 113942504071987082974252736563711809205455210552799516793659992598762861944677);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(18787380023942632163340912365192103620817513716551561157827352314605303695472, 9);
+        
+        vm.warp(block.timestamp + 553157);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 11);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(188);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(9);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00eb\u0026\u0030\u0065\u0099\u0078\u0003\u0050\u00dd\u0080\u0023\u009e\u0092\u00c1\u00f4\u00f0\u0069\u00e9\u00d7\u00a6\u000f\u0011\u0032\u0074\u0080\u008e"));
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(48704195747041673686621129722684117465572118983063276293606408072223217514075, 8);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 42864);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0098\u006f\u0096\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000020000, 13);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(78827021983983238389040219374704090763334348069593127770583559178870501315979, 16091557562076148637816362363922786072010590880091207243853714458889106542092);
+        
+        vm.warp(block.timestamp + 491958);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(92671233889238695547399656412015109673460101401222934904985712644215954072535, 4659292113793180118187099597179386123342691632039991518262671069450582443603);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 48123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000000000, 105678821967050201147013269711898893193609719697271394116127212901960120380246);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(28595435391153868136491499188049940895591201620931721849533907570343937158872);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 27457);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(23240864329048264321508460646737983400483509074768271006874268851087524298830, 115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 15875);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 0);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0063\u00ab\u0019\u0022\u008b\u00ad\u0098\u00cb\u00bf"));
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0062\u0078\u00ce\u004e\u0021\u00fe\u00ac\u00a9\u001f\u0086\u00ae\u00d6\u0055\u0048\u0056\u00ef"));
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 550965);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 604104);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(960);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(47075539756682456682132896407844131018269704635754747525733451851187075867357);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 54997);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00fe\u00a1\u0013\u00ea\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u006b"));
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+    }
+    
+    
+    function test_auto_voteProposal_10() public { 
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 51940);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u005f\u0068\u00af\u00a6\u0087\u003b\u0027\u00cb\u0026\u0033"));
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639927);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u00ad\u00ab\u0019\u0022\u008b\u0098\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(12197009266039314237750396792494385335350384794066177343624859876404676450313);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(1524785993);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(19616165833959945254376211930421428925210278094605360302192196796322280687021);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u006a\u00ba\u00a3\u007d\u00a6\u0005\u009d\u0049\u007c\u0008\u00cc\u00e4\u007d\u00b8\u0010\u00c3\u00c3\u00c3\u00c3\u00c3\u00c3\u00c3\u00c3\u00c3\u00c3\u00c3\u00c3\u00c3\u00c3\u00c3\u00c3\u00c3\u0006\u00f3\u002f\u000a\u00d8\u00d1\u0022\u0001\u0061\u0096"));
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(18270062968973421923066999102893999360072417556381571286489024683654656844198, 9);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 104427021555174799066373482003349422000905577552958104221362876743580010245099);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639927);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf"));
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(11);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(1573342278);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00c3\u0088\u0071\u00ee\u00a4\u00e8\u00a2\u000f\u0036\u00d2\u00a1\u005b\u00fd\u007c\u0008\u00c5\u008a\u00db\u0081\u0016\u00be\u0016\u00fc\u0048\u007e\u000a"));
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u001c\u0094\u00b0\u00da\u0068\u0051\u00a5\u0026\u0033\u00ba\u0017\u0082\u0073\u0049\u0077\u0096\u0086\u0086\u0086\u0086\u0086\u0086\u0086\u0086\u0086\u0086\u0086\u0086\u0086\u0086\u0086\u0086\u0086\u004d\u00f9\u00ab\u00e9\u00f8\u004c\u00c3\u007f\u00c8"));
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(1524785991);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 53950095085704914856660793163278801793525885119611059025502844828133130481691);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 437676);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(13223394505758626064921104042410477925866331886165502092167265598335398857410);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0063\u0034\u00a4\u009d\u00c3\u007e\u00de\u008d\u001b\u0016\u0041\u0049\u0036\u0089\u005a\u00e8\u002e\u001f\u00a0\u0001\u00a9\u00f4\u00f4\u00f4\u00f4\u00f4\u00f4\u00f4\u00f4\u00f4\u00f4\u00f4\u00f4"));
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 25473);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(38140870309498005080616201470538542270281624797829745272967740591678359113485);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea\u00ea\u00ea\u00ea\u00ea\u00ea"));
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 2613);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639926);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 82);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 7721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 407585);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(57211779380426733360890327765632357874379048938175165409911575502143663780447);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 26013555516339297682084092864549681906920277294586274955034236641392999679343);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00dd\u00dd\u00dd\u00b2\u0021\u0047\u000f\u003b\u0076\u0090\u00fc\u00c0\u000b\u00f4\u000d\u00e0\u005e\u00e1\u0062\u0040"));
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(13, 115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(88532637054837862816162094427070941462668375990472810687121801500043690947160);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(4369999, 38745785803986754205390318261245962628074986896696071351321428006824635);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 58511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(97745293544038238913030112463436002046862296210794275666883048959442729576669, 4);
+        
+        vm.warp(block.timestamp + 271425);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000020000, string(unicode"\u0095\u00e0\u0041\u00f0\u00e9"));
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(70468858451706258361833738484515610534456711805113525141502434339236755356541, 10);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(6749866507792533062065515778985999963720077102528242962258109565377913046855);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(65525131107727362159529220366677049093880876579360170542341584904592205265529);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932, 51760167018767761304487734739057838433634809460040967882969054827796082838498);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 334125);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(101256659591566914857625858328862774209240262633784865961985366323067539443235);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(51406686893056141963570166688067024297991992676576062508466764462762409473344);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 19349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u004d\u0038\u0038\u0038\u0038\u006b\u00ed\u0079\u00a7\u00d2\u005e"));
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 4);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(101248239372325242580511179561509933223031142174592095158845992662129833597648, 18938502331060296866085435134307780926955506927931871283459206598874406903574);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 44834);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(7378686);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u004d\u0031\u0086\u00ea\u00bf\u00b7\u0026\u0036\u00c0\u002f\u007a\u00cb\u006f\u008d\u0087\u00f5\u001b\u008d\u0026\u0033\u00bb\u0024\u00b3\u0069\u00d8\u00c3\u0063\u0061\u00d6\u00c1\u005a\u0011"));
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 20501);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 12);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 56250843435330068397876937950446797790078767731301541811065370663990634076510);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 1524785993);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 46181);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923, 1524785991);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(99637617473624816089036641013839995959398669367551554599377953349884685100648, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 12);
+        
+        vm.warp(block.timestamp + 372948);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(6);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(11);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(1524785992);
+        
+        vm.warp(block.timestamp + 417187);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+    }
+    
+    
+    function test_auto_finaliseProposal_11() public { 
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(50025957769730701933415631298019783464505146599432364658591671038469590283891, 3);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 109103373438751158593370292851547330223015956265381483027537447463277876634387);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(81964713682717628990667535206808197547143341012621234572166854683307625714567);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(30270350383977742055849203370742227222856602953775817115331645431581564914634);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0089\u0099\u00d0\u00e0\u0029\u00b1\u0098\u00ad\u00b4\u007d\u0075\u002b\u0029\u00f7\u0048\u00cd\u000f\u00fa"));
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(77408583558076057569485079099954464269670758857297058059550971032011586487804, 42429369381948637516408366577208037711076594625702450879625832759352101068083);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(12, 13);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(4370000, 12);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(56570840367667079740679074279198702875663041515872280434782880731466984763208);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(106235546577399311439071747068940373985102569346171695105732969707071061909432);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(30618427978788493314187093615024741469531937090343354381178526406441014393389);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 45015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00cb\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00a1\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 5246);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(13);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1455953090142251241234319426766833120104745857094440680969948612904138990947);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(72915538243179860555707995231408704341567881809774388375922197);
+        
+        vm.warp(block.timestamp + 207065);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 291996);
+        vm.roll(block.number + 29219);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(110536142606310747690814769084227758773709303234574385266625644912704927784134);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0038\u00d0"));
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(6);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(12461458814410997689965593229334003139209296595958587699305824543338657522233, 48100562388001757776861003706685322176804611889072411527540407240474422737505);
+        
+        vm.warp(block.timestamp + 16719);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(1524785991, 0);
+        
+        vm.warp(block.timestamp + 187183);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.hasMajority(115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u00a1\u00d4\u001f\u00e5\u0080\u0026\u0034\u00cb\u0062\u00ef\u0041\u0040\u003a\u0042\u003c\u0098\u0017\u00eb\u00f2\u000e"));
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u004b\u0087\u00dd\u00fe\u0097\u0077\u006c\u00d9\u0025\u00a8\u00fe"));
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(13);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u00cb\u00ab\u0019\u0022\u008b\u00ad\u0063\u0098\u00bf"));
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 39091);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u0022\u0098\u00ab\u0019\u006f\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 280570);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 336804);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 656);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 539915);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(101920544610376200706440091050667984104970641234336019908989527037290133688725, 82059151600915161540350075516571325160277556427412953727220728077787438544127);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 83977085029797692154122212540838427971);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 60048);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(25515247071481321520276280407714822678769098683787949520645732116992189804632);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(66145010715960986518186936685472091847874314985711323198439842677663230315627);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(35489451237075909979790275539885491981193800687787515878383054488006184436143);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(54528046607086922701423541417254277161626693026930323681731179358924749538952);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 25517593722789865180847550651331087505268569951893297184934439238286032479174);
+        
+        vm.warp(block.timestamp + 310801);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(108667445317983558601264413473002990805693532155521741958202224752910384682352);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 5162659158331656750914627107675094434622087263093569442936734671005169204);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(193);
+        
+        vm.warp(block.timestamp + 247625);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(76444079037543792776664666251475665213438790219575080990399909519198301195995);
+        
+        vm.warp(block.timestamp + 504585);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(745);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 56719);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(72322668438155101820548099957156988542817356562294466220800874228667267380997);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(4369999, 45);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(7136157238764110472802818505263442832891728264);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 95012589917404115309045422527619827399956711920878258300030444678356309817969);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00cb\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00a1\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(94842654531978964101128582764754651875188049341597532375784467219855862670055);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 8);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(404);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(9);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(35842478401896618521333521122, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 70860003548280917443619265291414198050731910085193684907124023850669981329214);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 54719);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(99399427418133182232864448273658209914109665131837585105944901407751875934327);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931, 102629645936438039077492323927686131966134410605181807263662110801201493012381);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+    }
+    
+    
+    function test_auto_cancelProposal_12() public { 
+        
+        vm.warp(block.timestamp + 480728);
+        vm.roll(block.number + 17399);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(81125375901808930003845428518044673284925344239825500768188284431729785270289);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0049\u00fa\u004a\u0061\u0088\u00b9\u009f\u00e9\u00ea\u004b\u006d\u00a4\u00ba\u00bd\u0059"));
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(10);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 486874);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(12315724574064264109526469823053116125816343336790239017353896644505274072855);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(0);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(49913915953542884632792688687306858787384196962193730722252276131004558219843);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u00cb\u0063\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0039\u00e7\u0092\u00fc\u002c\u00d5\u006e\u0036\u0092\u000a\u00de\u0084\u0026\u0032"));
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u002b\u0042\u0058\u0058\u00ae\u0026\u0036\u0047\u0054\u00bf\u0010\u006a\u006b\u0043\u0063\u009c\u0026\u0030\u008b\u0040\u0016\u0052\u006f\u00bd\u0007\u00c2\u00d3\u001d\u000e\u00b6\u00be\u0082\u0014"));
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 28418);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 79869);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(33676895562352552440949893431714117830887335263606739690739544593203981822155);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 37148);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(48361022238455503455027542255625376178327046887784001480965466621697383292546, 115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 189877);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639927, 84276873324352729101013196883712456489230480244628530530591004512951034647580);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(11690604538472549275945635343012937845010085425787726785142744945969844614578);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(109450003489935046713541674114017038260818057347963693261667467387973352809724, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(95892106995060408354295991988961718224561026616220426019199652745243988129549, 48613394616644460198482464854948088335595625005290943136928206432881589603367);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 1165);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 28251);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(4370000, 23931995465580672653140713352199891728343597675003277738956359258912509582332);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(24541873920066731484372857171937355874525743261273826158451222836106044463184, 52155572709123828196295634682282508902428345249985213161336221704193278706762);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 52101953074173171297934725280673436645049889941333956152679537306805553680622);
+        
+        vm.warp(block.timestamp + 207272);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(4);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(52828797805786349483844925511044665245368879177211548911710739708533514158221);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(2909592689976808133619187840366955379649548718647153774934814900784916988215, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(107005688736164461739503854029527145531226490490639111035874557942040312018900);
+        
+        vm.warp(block.timestamp + 101096);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u00bf\u0022\u008b\u00ad\u0063\u00cb\u0019\u00ea"));
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0075\u0037\u00d4\u00d4\u00e4\u00c6\u0058\u0053"));
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(6665272028289431063054740291768645379803490544170207140445802101276692648337);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(15);
+        
+        vm.warp(block.timestamp + 214063);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 68761252943232720534057571737506685233249106714398020114913634688581159681104);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 84868250499034911850261465697715162246240095427940190229639436100687599818494);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 263296);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639928, 115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(41589455042502084846123923547579593200050609019751352447554930600378332824496);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(522);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(1524785991, 15036931809158975697936418465898133094164025558317743090309549792615309650786);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(106485307018230043913100299084604663363571327212523146);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(104587144935524321020004059421585568571230224784581893394499159509299452393568);
+        
+        vm.warp(block.timestamp + 54342);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0033\u00ac\u0008\u00ba\u00dd\u0082\u0076\u00e3\u00e6"));
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 9077896440950966157595293511031672052348832585130383791884436132452415095399);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(101718112659215013119992850409297145514748586923403706891672633835926113214470, 48832989100330114348590058939466471762492828370133772779861968466641335738109);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(115715489442096499789294029782046079008638902915977584138666607088803047503837);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u0097\u0014\u0066\u00ef\u0007\u0005\u00da\u0026\u00e3\u001d\u00f1\u0067\u0015\u0018\u0073\u009c\u00b8\u00e6\u0041\u00e7\u00b8\u007b\u00a8\u009d\u00dc\u009e\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u0084\u00b9"));
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(30581234822749337850025856141935381500598273423411536698646490361600183004941, 140);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(5, 0);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 42612);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(102214857701670902205109168974221673538907929889134549904561078923292987271526, 16894776901405806358858538604139331629655616917736720565074284797462415859788);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639924);
+        
+        vm.warp(block.timestamp + 50195);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 24470050067142310713336310028323333271681877750015152144848853908817958119651);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u006b\u00a1\u0013\u00fe\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 38075);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(885);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(65755005649885285775792006886484140757323667012926185584941245038739092089421, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(52315865425623349042467996594898656556928658160270514042999959427742938522240, 72606087525750511036276499922023633884108649786150508429389578565414593049089);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639924);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 45992);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(4369999);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+    }
+    
+    
+    function test_auto_newAddressProposal_13() public { 
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 45992);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(4369999);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 213637);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(4370000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(358);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u00ac\u004d\u0013\u00ed\u002b\u0099"));
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u0000\u0012\u0036\u00ca\u003a\u00d6"));
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0007\u00d9\u0029\u00ba\u00e7\u00a3\u00a0\u00dc\u0003\u00d3\u0003\u00cd\u005a\u0022\u0015\u0002\u00ea\u003c\u006b\u00c3\u0074\u0091\u00d3\u000c\u009c\u005d\u00fb\u0058\u0053"));
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 564225);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(24151152203969816281090177745725526455167000312719769267278691610049548616138, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(6);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 3252);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(1524785993);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2310550819);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(0, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 11084);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(66972950359705630468221561273703754440645000085352930130277659922003166358032, 2);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 17745190528355807592376885269748157974405593062480163678682939288878311187276);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(9);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(114669306671343195636314960861669226000820248678200456149187413633335926903676, 115792089237316195423570985008687907853269984665640564039457584007913129639927);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(0, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 138907);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u0068\u00e6\u00c1\u004c\u00fb\u009a\u00f8\u00d0\u0009\u008f\u0007\u00ac\u00d4"));
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0023\u00cc\u00dc\u00f3\u0084\u00d8\u00dd\u0042\u001d\u00a0\u0053\u00fe\u00fa\u000a\u003b\u0066\u0097\u0006\u009e\u003c\u0098\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u0087\u00e4\u00a3\u002d\u0005\u0031\u00b0\u0012\u00a3"));
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea\u00ea"));
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(1524785991);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 18288);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(5597889658689421802099873265443110355527709409528530670819714608852502585535);
+        
+        vm.warp(block.timestamp + 456865);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933, 35514311560323961909351359409518491189961392975522558340434277893908914446410);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(11, 113942504071987082974252736563711809205455210552799516793659992598762861944677);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(18787380023942632163340912365192103620817513716551561157827352314605303695472, 9);
+        
+        vm.warp(block.timestamp + 553157);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 11);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(188);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(9);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00eb\u0026\u0030\u0065\u0099\u0078\u0003\u0050\u00dd\u0080\u0023\u009e\u0092\u00c1\u00f4\u00f0\u0069\u00e9\u00d7\u00a6\u000f\u0011\u0032\u0074\u0080\u008e"));
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(48704195747041673686621129722684117465572118983063276293606408072223217514075, 8);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0035\u0002\u0033\u003f\u000e\u003e\u00dc\u0067\u0025\u00af\u00f7\u002e\u0050\u004d\u00d7\u0090\u00de\u008b\u002c\u00bf\u00fe\u0076\u0094\u0064\u0084\u00cf\u005b\u0053\u000c\u002f\u00b8\u00ae"));
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 42007);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 57081);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 816762734373622748842660774348449821499904045977039126965657473256201476082);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(31011006688559600125761467403112193116040553587580181348377294254890501734940, 94858646225878933378711786808281780309213198584108781110561225166904772408332);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(104433769741275592485615797318581119082445199217734250791946558899107509596, 0);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 437585);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(4370001, 52627707395929473021889088689246094531845406669253832992099248095817124717728);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 375666);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(5);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 16949981564839926882163116934064698879404949664665313889993552706539310570494);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(76966752273835711, 115792089237316195423570985008687907853269984665640564039457584007913129639924);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 53778);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 7731512284592379929389273430890166431594822);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u0063\u00ad\u008b\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 8737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u00a1\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 43187);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 15357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(12);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(58016956290798057366943402542372093106722206682002364713748841225869234691237, 63452495296861521556190989886416343173801514246278145686178931064188338181679);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(41081399686701021696336792332972682674759100735223484509484339147687742328750);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(11026767126323315071521066872433087432276350168364780106107229599647535349701, 19010102836663338484384413225782928764589940084912480976171343331543269483742);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u0030\u0035\u00c2\u0068"));
+    }
+    
+    
+    function test_auto_voteProposal_14() public { 
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(50025957769730701933415631298019783464505146599432364658591671038469590283891, 3);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 109103373438751158593370292851547330223015956265381483027537447463277876634387);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(81964713682717628990667535206808197547143341012621234572166854683307625714567);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(30270350383977742055849203370742227222856602953775817115331645431581564914634);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0089\u0099\u00d0\u00e0\u0029\u00b1\u0098\u00ad\u00b4\u007d\u0075\u002b\u0029\u00f7\u0048\u00cd\u000f\u00fa"));
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(77408583558076057569485079099954464269670758857297058059550971032011586487804, 42429369381948637516408366577208037711076594625702450879625832759352101068083);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(12, 13);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(4370000, 12);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(56570840367667079740679074279198702875663041515872280434782880731466984763208);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(106235546577399311439071747068940373985102569346171695105732969707071061909432);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(30618427978788493314187093615024741469531937090343354381178526406441014393389);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 45015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00cb\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00a1\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 5246);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(13);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1455953090142251241234319426766833120104745857094440680969948612904138990947);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(72915538243179860555707995231408704341567881809774388375922197);
+        
+        vm.warp(block.timestamp + 207065);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 291996);
+        vm.roll(block.number + 29219);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(110536142606310747690814769084227758773709303234574385266625644912704927784134);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0038\u00d0"));
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(6);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(12461458814410997689965593229334003139209296595958587699305824543338657522233, 48100562388001757776861003706685322176804611889072411527540407240474422737505);
+        
+        vm.warp(block.timestamp + 16719);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(1524785991, 0);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(191);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 473894);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0017\u004e\u004e\u0030"));
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u008b\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u00a1\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 127169);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000020000, string(unicode"\u004e\u006f\u0020\u0061\u0064\u0064\u0072\u0065\u0073\u0073\u0020\u0070\u0072\u006f\u0070\u006f\u006f\u006f\u006f\u006f\u006f\u006f\u006f\u006f\u006f\u006f\u0073\u0065\u0064"));
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u0005\u00bc\u00ae\u0026\u0031\u00ff\u00cc\u000f\u00ba\u00ad\u00f3\u00d9\u0026\u0032\u0034\u0053\u0067\u000f\u00b3\u0090\u0011\u0011\u0011\u00e7\u0026\u0031\u006c\u0012\u004c\u0059\u00fd\u006e\u0057\u00f4\u00ab"));
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(1);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0050\u00d8\u00f7\u0063\u002e\u0093\u006c\u001c\u00e2\u005b\u00c4\u0063\u00f0\u00f1\u001c\u006c\u00e0\u00ef\u009e"));
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.isEqual(hex"21", hex"bf58d0ef00000000000000000000000000000000000000000000000000000002fffffffd00000000000000000000000000000000000000000000000000000002fffffffdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc");
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(23559881677131677542342774186590476827610782592672628653117153427365000692649);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 461963);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(61615719643580012735993140375455065173827340230272941744791752584552595242059);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 45);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 29486987348070850513724502077820447527365559432086600718658585465669237857789);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1070425141506517982173970205131090749656086662618001723316196377909793474619);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 40012);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 0);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 56144);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0035\u0044\u006d\u006d\u006d\u006d\u006d\u006d\u006d\u006d\u00ee\u00a6\u005a\u0068\u001f\u006f\u0030\u001f\u008a\u0001\u00fe\u003b\u006c"));
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u0099\u007e\u00da\u009b\u0010\u0098\u00a2\u00f8\u0042\u00af\u004b\u00b9\u000d\u002b\u0003\u00e6\u00e1\u00c8\u00fb\u00a8\u00be\u0059\u000c\u00ab"));
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u006b\u0013\u00a1\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639924);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 12210);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 317076);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00fe\u00a1\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u0022\u0022\u0022\u0022\u0022\u0022\u0022\u0022\u0022\u0022\u0022\u0022\u0022\u0022\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0070\u0030\u0039\u0075\u00ae\u00e3\u0026\u0035\u00b2\u00b0\u0084\u00e4\u00a7\u005e\u0086\u00ea\u00c7\u00b3\u00e3\u0088\u00bf\u0028\u0006\u001a\u00f2\u0026\u0033\u00be\u00b7\u0099\u0026\u0039"));
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(34339885844812025777751409872126181829105566848290353531986989219118918586287, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(9);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(1524785993);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(55248708177485787351998786877869726613111934714772405598503635397992060844894);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00c4\u0051\u0009\u0025\u003c\u0042\u00fb\u00ca\u00d0\u00ec\u0029\u00f8\u006c"));
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(73386042241692555037899134490008698246910362214355215504264693152970096635533);
+        
+        vm.warp(block.timestamp + 49660);
+        vm.roll(block.number + 40057);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 3066248);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(1, 115792089237316195423570985008687907853269984665640564039457584007913129639924);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(88636465326137817660787633985249039964157939223786152291603465295762380190400, 1507555558774532452916192245857621018122038616282373322825558572291573116185);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u008d\u00cc\u0077\u0031\u00cd\u0040\u00c0\u0026\u00c5\u00b3\u0094\u0064\u00c3\u0087\u00b1\u00b1\u00ec\u0088\u0099\u0092\u0026\u0037\u00ef\u0071\u0085"));
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(21352654752618133184355713264876590594466659032841684748323683724317657735543, 96444703691052346658225715620496552173235391398185355888457977366426429053483);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(84437906878736173809711106322686451587366162209403285752544556007826016919648);
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(89164613505818715898942403028122179835360240317350394792986084900620682619620);
+    }
+    
+    
+    function test_auto_newGrantProposal_15() public { 
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 23790);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u002d\u008a\u00c4\u006e\u003b\u0017\u0052\u007a\u00f1\u0090\u0082\u004f\u00c0\u0026\u0030\u00d0\u00ef\u000e\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00fb\u00c0\u00c1\u0070\u00cd\u00c0\u000a\u00a9\u00bc\u0026\u0049\u008f"));
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0052\u0045\u0057\u0041\u0052\u0044"));
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 82943014186642094371045604450254592670883708062432688549023407698978700750588);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(2);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 1524785993);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639927);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931, 115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 1524785992);
+        
+        vm.warp(block.timestamp + 522020);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000000000, 3419363931545142424201056360373667996680700384198173342943381897504193816966);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u004e\u006f\u0074\u0020\u006d\u006f\u0072\u0065\u0020\u0074\u0068\u0061\u006e\u0020\u0031\u0030\u0025"));
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(1524785991);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(10, 1524785992);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(4369999);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 29994823717656433432482481663879407931537356396546234724255267854030264278995);
+        
+        vm.warp(block.timestamp + 291442);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0037\u004e\u002b\u0045\u00eb\u00f1\u00ed\u005d\u00b3\u003b"));
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0055\u0054\u0049\u004c"));
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(52650828855628818964857749278083804678196926606213313447978485839499617703101);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933, 21387383300809479919437630798300398231836635967744262094220639354409846680513);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(36930869435203099348356035024012865879095460008183178081835398111810815301612);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 9810);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 18281463712526317376517520846039745744808738309648300946543652234099032100461);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926);
+        
+        vm.warp(block.timestamp + 329445);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000000000, 102);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(236, 2695806970071109292021677104739969707195895172061593579733789308207953881438);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x0000000000000000000000000000000000030000, string(unicode"\u0035\u0035\u0035\u0035\u00c0\u00c5\u00e3\u005b"));
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639927, 70893202820615153618236881412175710175930609167547028109244562830877869314242);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(8004917899401405996441646240185445514243079668629222980641853401677480387784, 47623889033061664323597987247145698933900997619201898684969116424520358406847);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(94305393174336540724744312884557818392844281977439937681544462462456983656388);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(3, 2);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(61680973646216327533812137733941367550706564506170058072122944014865551062365, 1);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(19272465446318680972206368997865278019614995564164405266646131923340005272680, 42943484072440095707363719539702426385968673923011886853642269252630649231473);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u002f\u00ec\u0026\u0034\u0097\u00d3\u00e0\u0076\u00ec\u00ea\u00af\u00f4\u0027\u0045\u0019\u00cd\u00f0\u005a\u00ab\u0049\u0077\u0058\u00ba\u003d\u00d9\u000b\u0082\u0008\u00b6\u0045"));
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(72009563572270301331947687969355872255253524520913465899849606292468169074223);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(74045577778560492160112035638143568790318994003400500422356464460298528924931, 0);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, string(unicode"\u0052\u0092\u00df\u0098\u00a1\u0057\u00fe\u0043\u0089\u0091"));
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(814002199889532698919168734930266074453433384170559863099070548200693400410);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(21324434890869068954391957032394350446793387494252333222634206168467966540549);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(104853953378173295331545422124081738556395235808598081707778352522172674515312);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00c3\u00d7\u0080\u0092\u0029\u00ae\u0051"));
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 35480);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934, 11);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u004d\u0075\u0073\u0074\u0020\u0068\u0061\u0076\u0065\u0020\u006d\u0069\u006e\u006f\u0072\u0069\u0074\u0079"));
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 45303);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 2550881265403083730086381763027217660567551739724690570337016889867928533194);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 12);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639926);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(9860783375760976713238925088575621845223932747336339299110600919808847616493, 40774018582170466131979460214940305562034493858346401156796143773516636283605);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(20845302965847843038437936763778355698151978365859630296080769644222126819325);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(0);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 42414343978918508466240430977843272319783940835789312714531552872856158431038);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00fa\u002b\u000d\u00e3\u00ec\u0099\u00a3\u00d5\u000c\u0026\u00d8\u004a\u007b\u00bd"));
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 40788392857057135845437871186884500736131556247497135618757632223759048903117);
+        
+        vm.warp(block.timestamp + 378823);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00b2\u009f\u00e0\u0026\u0032\u0032\u0032\u0029\u000b\u007f"));
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0055\u0054\u0054\u0054\u0054\u0054\u0049\u004c\u0053"));
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0044\u0041\u004f"));
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(40902735208655197431865744737582695986648754167364203487217994913051064661344);
+        
+        vm.warp(block.timestamp + 442508);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(5);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(4);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u005a\u00d6\u00da\u0054\u0000\u00be\u004f\u00f5\u0054\u0001\u0038\u00df\u00f5\u00ff\u0074"));
+        
+        vm.warp(block.timestamp + 383688);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(51348672002819887483726957939558369120796286839132677531582294175048021154882, 100632070528972709653236920077036125131103725856498563234622672062064697069626);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(1524785992, 115792089237316195423570985008687907853269984665640564039457584007913129639926);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0046\u0011\u0092\u0002\u00a5\u002f\u0041\u00ba\u00f1\u003d\u0067\u0076\u0080\u0003\u0031\u0041\u0020\u0065\u0089"));
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(4);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 26344026045487466584715654059123481772590414815393673716402387674049618861264);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u004d\u0075\u0073\u0074\u0020\u0068\u0061\u0076\u0065\u0020\u006d\u0069\u006e\u006f\u0072\u0069\u0074\u0079"));
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(64481564297939079737966535527718078451174306788266445586389706670973645662348, 38556045187962341201912949810684417414839840684019354442534917770384277228739);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 540);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 54);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u0034\u00cc\u0049\u0058\u0017\u0061\u00ff\u0049\u00f0\u0053\u004c\u0027\u006f\u0098\u005e\u00ed"));
+        
+        vm.warp(block.timestamp + 476526);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(112555593886076493218744266617562753857614932828916991200055849711504489128900, 25559165632137652858984155481890778952834057773270496864340572748592060339638);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000020000, 1184004223430529836312034680311414498278339367114546954527792316473200848484);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u002b\u0042\u0058\u0058\u00ae\u0026\u0036\u0047\u0054\u00bf\u0010\u006a\u006b\u0043\u0063\u009c\u0026\u0030\u008b\u0040\u0016\u0052\u006f\u00bd\u0007\u00c2\u00d3\u001d\u0031\u000e\u00b6\u00be\u0082\u0014"));
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(10746294474563388908765415266173928207474474274935836833295088850669406782241);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(4369999, 87898763818726542267431947992578379258335884869100888837661304191338827193225);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 32217);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 100108955473493806816538374659716799357137491506700142673182416398048017544493);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00b7"));
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 520);
+    }
+    
+    
+    function test_auto_voteProposal_16() public { 
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 87365385742305352593653373047867428468408047069529326396372552646663993640022);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(64760451652426947502047177728858506740258566325376771203210842992045342576786);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931, 1);
+        
+        vm.warp(block.timestamp + 518717);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 26931);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(2013968061495364172213500333749556266635380222004077210322325182220522420731, 25175815907181967101634018790050179326609101401094258534817822811549182345357);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00e8\u001a\u008c\u009c\u002b\u0071\u0021\u00d0\u0025\u0034\u0027\u00cc\u00e3\u000d\u0050\u0006\u00e2\u0096\u0063\u0069\u00aa\u0075\u0000\u0071"));
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 26767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 31508607714884701293606284877602673448859934002191704460570829491187973524932);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(360);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(987);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 1068);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(30903999576887692006988822662715790658687831619092329540659034616782049450474, 2425681781166042414877656939627358973731032763985918101971694489);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(24360522560749452427798218664585395903328125484323518529608303728501607444129);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(13650462679643149057554213429111269517249477450987440377268930166114736856362);
+        
+        vm.warp(block.timestamp + 30);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(65262900845221863898433942755087024273168369443631280287597234356074448606581);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 24964);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u006a\u00b3\u0086\u00a5\u006c\u001e\u00ba\u0053\u0051\u007e\u005a\u009a\u008c\u0006\u00e9\u0028\u00e9"));
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(97712322339685372624118892848241155225888429060931666635367408232481605434278);
+        
+        vm.warp(block.timestamp + 497760);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(45, 112659802413119347991568604859869782645782512572584324465929339485170707392915);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(43071508323176802692220203617609740358587586727585239655670766163475501728920);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(0, 180);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00db\u0047\u00df\u00d9\u00f7\u007b\u008f\u009a\u0025\u0059\u0049\u00cb\u00e6"));
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(631, 45704192783946253310137002326775673228304464959643532822117122689405923713163);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(41594818190175839955575795172882405090580024956386004319783952777429643075769);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(86598901728674854803222321589086211198362863694340032374048085186444388938693);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(13, 16184462938268571664744146037450381189634156431835040138260007385667505962923);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(109108146345952242143314591854060294392936093414309885528087340574878733418218);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(39092877244032441718990418013370075870165882781446099744455433281720710193863);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 18570);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 109529013557064957973291513205180308744665977590326745765748011210036007172284);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0088\u0041\u00dd\u00b7\u0027\u00ab\u0026\u0033\u0056\u0067\u00b5\u005b\u00a6\u0059\u004a\u00d0"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00bf\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00fe\u00ea"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u0054\u0061\u0076\u00be\u0089\u00b5\u0048\u00dd\u0063\u007f\u0041\u00f2\u0042\u006c\u00e2\u00bc\u00e9\u00cf\u0057\u0037\u00ba\u0081\u005f\u0032\u00b9\u003d"));
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 2690);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 586295);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(113206796174946781852667258215455724472108614040045824188086502209242331747313);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(16742598040323887086906788895155988173668679940762096443427826410397197159154);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 10979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931, 7);
+        
+        vm.warp(block.timestamp + 285040);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923, 2);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00e6\u0008\u00f2\u00c6\u001c\u00c8\u00b9\u00f9\u0002\u0062\u00ab\u0005\u00e7\u0066\u00a5\u00ad\u0056\u0048\u004e\u006f\u00ec\u0079\u0015\u0068\u0029\u00c2"));
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639924, 683);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(49427635574782867198347407443466395879781026864100095520752386860204887342782);
+    }
+    
+    
+    function test_auto_cancelProposal_17() public { 
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(50025957769730701933415631298019783464505146599432364658591671038469590283891, 3);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 109103373438751158593370292851547330223015956265381483027537447463277876634387);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(81964713682717628990667535206808197547143341012621234572166854683307625714567);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(30270350383977742055849203370742227222856602953775817115331645431581564914634);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0089\u0099\u00d0\u00e0\u0029\u00b1\u0098\u00ad\u00b4\u007d\u0075\u002b\u0029\u00f7\u0048\u00cd\u000f\u00fa"));
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(77408583558076057569485079099954464269670758857297058059550971032011586487804, 42429369381948637516408366577208037711076594625702450879625832759352101068083);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(12, 13);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(4370000, 12);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(56570840367667079740679074279198702875663041515872280434782880731466984763208);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(106235546577399311439071747068940373985102569346171695105732969707071061909432);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(30618427978788493314187093615024741469531937090343354381178526406441014393389);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000000000, 5);
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 29028);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(91945974902358730132907889829963926825396871774195627031535838478105041582791, 2993222926683120119362583636508776646454653435475676291334182573689538081051);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(87340589919290040183215313767824782941810996474210267886285835161501086377352);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(10262269185531699679517701738769159017875389680847852582765520709989825467059, 75485408742210207057323713854699897897668693529558148313727807304743659526540);
+        
+        vm.warp(block.timestamp + 214798);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 2);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 7);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u004a\u000b\u0071\u007e\u0093\u00ad\u00af\u0026\u0003\u0018\u00e1\u006b\u00af\u009a\u0097\u008f\u0069\u00ba\u0061\u002b\u0006\u00d9"));
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0068\u00b5\u0042\u00b6\u003a\u004b\u00ff\u0026\u0034\u00ca\u000e\u001d\u00e3\u0020\u007a\u002b\u00ec\u0026\u0038\u009f\u00d2"));
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u0013\u0013\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 22010);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00cb\u00cb\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 10431);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 5);
+        
+        vm.warp(block.timestamp + 377703);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(105597719679965614728553825794181845162771025437621284207295410215285519352641, 36673631651315466928898342050930446156253881382276250319630572427451728001170);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(6894758271061724576365536512519982445381209770101078096003893307585476311243);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 468365);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 6);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(20128632477901312226471740267289180532427524682515927386798206997727940374052);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00c1\u006a\u0032\u00b2\u0026\u0034\u00bc\u00d3\u0015\u004a\u0002\u009f\u00a9\u0046\u0066\u0002\u007c\u000f\u009d\u0090\u0061\u00e5\u0015\u0084\u002c\u007b\u0053\u002d"));
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(3118537220089863213865155139100455104914735476675103947952522338195456510490);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 352398);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(4370000);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 52367800537101310420022764684382814328827304064156465398892426152591242633963);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(10522224621650292206782021550449486173364393214482);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0049\u005f\u00e4\u008e\u0048\u006b\u0012\u0088\u0051\u00f8\u00ee\u002b\u0087\u0017\u0096\u0000\u00a1"));
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.hasMinority(100265695281916899170449987315923360103917837044314811239871405626461285415355);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(33252837617327982127515262385050840930168532987403877151824933324319278741354);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 3274874094741861299967085634745775766581845100575209386260930580743894672831);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(4370000);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 47361);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 391312);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(575);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000030000, string(unicode"\u0018\u009d\u0026\u0034\u00dd\u00dc"));
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00eb\u009c\u0085\u003a\u00ef\u00a2\u008b\u00c5\u0026\u0033\u007e\u00e8\u004d\u000c\u00d8\u00e8\u00ad\u009f\u0089\u00e0\u0002\u00cb\u00d8\u0080\u00a3\u0026\u0030"));
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 37293);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(109836895203539104076650196315918583748956000259317259848073765734954139870742);
+        
+        vm.warp(block.timestamp + 162517);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(87930296592748681109029385567807770781640241848528546174412720707653394863111, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, string(unicode"\u0084\u0006\u00a1\u001c\u001f\u00fd\u0083\u0059\u00f3\u0020\u009d\u009e\u000e\u0039\u00c6\u0051\u00ab"));
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 1716380790);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00c3\u00d7\u0080\u0092\u0029\u00ae\u0051"));
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00cb\u00cb\u00cb\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(131094650674110754750103300112280609500184692012246713257310829009190480529, 409);
+    }
+    
+    
+    function test_auto_newGrantProposal_18() public { 
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x0000000000000000000000000000000000030000, string(unicode"\u009c\u008a\u0064\u0010\u0056\u0064\u0071\u00b4\u0059\u00c1\u002d\u00e1"));
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 19996);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 45);
+        
+        vm.warp(block.timestamp + 173268);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 29505540616142972978447623679257884107058546563183674194499061649018676983489);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 44364740320626305760648577869530239496584239350473245316177773291913510993577);
+        
+        vm.warp(block.timestamp + 38777);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 1);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(2);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0089\u009e\u007f\u0055\u006a\u00f4\u0015\u0041\u0040\u0040\u0040\u0040\u0040\u009a"));
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(72471027853465594721234376570944998696694853499589383528318033666037927193798);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 21708713026931567209500285520991542279364035783827891223003363356346141602660);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u006d\u0071\u004c\u0089\u0011\u0063\u000b\u00a9\u0041\u0041\u0041\u0041\u000f\u00e6\u007b"));
+        
+        vm.warp(block.timestamp + 294986);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(55428001213987605262036449120299040190497587385607733599448075151387344384101);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 2033);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(25909672695912828715638457830091006506167649107025104152454266075074114300444);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 1199);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(78237712033625206878961631476696670827013241033264180940014981077305719298866, 798);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(15);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(4370001);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000020000, string(unicode"\u00d6\u00bb\u0053\u00fa\u00ac\u00ac\u00ac\u00ac\u00ac\u00ac\u00ac\u00ac\u00ac\u002b\u0056\u00f6\u00c8\u0026\u0037\u0071\u000a\u008f\u0026\u0037\u009d\u00d0\u00a6\u00a5\u00a7\u0046"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 4);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(78903584180519023891585390388438196560382738643873039594698051408238343979971);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(50173938822726981025423269749591562756324777596371633049581073109184929335611, 3);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 93663546675546166598540213105424663062022819309092790340876726350161890255689);
+        
+        vm.warp(block.timestamp + 564545);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(66);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(8);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 50303);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000020000, 7139733041902074582532063163284054444415279951702812566537375511951777705826);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u00cb\u0063\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(53597596383836901472790767634306412625162242970884587229528008741362824706334);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 1139);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(1015089382616975901775216908707174093808529, 9);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(95);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 12454);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(108268543581619132732020143117620907501689133613426092324503496334214353893002);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 55133);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 472509);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639924, 37846905728057626982188175641875011099422944096790700362953665407964831542232);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 86165);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(102351674188239271495317074865694927554827158384233477729212116302975774745629);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00d9\u00e2\u00cd\u0026\u0039\u0047\u0047\u0047\u0047\u0047\u0047\u0047\u0047\u0047\u0047\u0047\u0047\u0032\u0072\u00c7\u0083\u00bf\u008f\u0049\u0009\u0054\u002b\u0020\u00b2\u00a1\u00d2\u0063\u0034\u00fb\u0010"));
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(13);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 2);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000000000, 73728811951514630169524507381809347237714268974470951633841077678479427585814);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 2267748082162720379724346852875058429872268516259487922314730569511047903575);
+        
+        vm.warp(block.timestamp + 167957);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 481598);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(10537617275247921058042734710719785149595377251732937326639806694596650783506);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 96386267051390060526681589641100179961573071086778218491652974552876752320979);
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0083\u0044\u0089\u0091\u0070"));
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00aa\u00c4\u00e8\u0082\u0003\u0021\u0063\u0045\u0030\u00a5\u00eb\u00b2\u007b\u00d2\u0048\u0066\u0033\u00fe\u009d\u00b9\u00d1\u00fb\u00fb\u0079\u006b\u007f"));
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u006b\u0010"));
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 42954);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0066\u0077\u0086\u00aa\u0058\u00b7\u00a9\u00a9\u00a9\u00a9\u00a9\u00a9\u00a9\u00a9\u00a9\u00a9\u00a9\u00a9\u00a9\u00a9\u00ee\u00bf\u0087\u0018\u00b1\u00da\u00a8\u0044\u0087\u00b6\u0028\u00a6\u00a6\u0074\u006f\u003e\u0009\u004a\u0067\u007e\u0076\u00d0"));
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(50025957769730701933415631298019783464505146599432364658591671038469590283891, 3);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+    }
+    
+    
+    function test_auto_newGrantProposal_19() public { 
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00b1\u00e2\u00ef\u0060\u0090\u002d\u00ce\u00ce\u0069\u0057\u00d0\u0027\u0011"));
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933, 35127287437434991694712459035041376986173789321773972029984158779004807925976);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0064\u006e\u0089\u00a8\u0015\u004a\u0010\u00a9\u00af\u00a6\u00ec\u0051\u00b5\u0026\u0031\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u006b\u0047\u0058\u0086"));
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 361192);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00cb\u0019\u0022\u008b\u00ad\u0063\u00ab\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(86352865842079508452133214135312486581481956080093116975850306272373527515612, 4370000);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0030\u00aa\u00e4\u0051\u003f\u0054\u00e2\u000e\u004e\u0030\u0080\u0001\u003b"));
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(1);
+        
+        vm.warp(block.timestamp + 30);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(75111313144968113206892355868297335667789652570562738385803315329136073633999);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(1524785992, 5);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 21);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(0);
+        
+        vm.warp(block.timestamp + 548034);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 23);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 524317);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(43717868248703744713813424661693296561264477292645226916549873082803025337976);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(9, 5);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(48666450079837802501032457540020854262959659815925847514063824202743332511515, 30);
+        
+        vm.warp(block.timestamp + 517844);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(44258724431017270213026393407935186257920800728530139915925451362600054092775, 24206582324408420997885222057215034201243544758310497579886349922244738392041);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(72499699777538140236763343176352379959917669030415583939522465976341787770322);
+        
+        vm.warp(block.timestamp + 473794);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 28);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00ae\u00f3\u00ae\u0062\u0074\u0064\u00c6\u0013"));
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 2046);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(76708218189902138806502767903615825851271338263318742941069162011395671459286, 85269381532318730099940081838187394156023639338345463234185223363984047175372);
+        
+        vm.warp(block.timestamp + 158319);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932, 58748005976499755144915221436730261356896298330706673185873811631255888897510);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00ea\u00bf"));
+        
+        vm.warp(block.timestamp + 228531);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u0063"));
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 21);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(620, 10);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 63239244337612337782123528720672453064026390567223666019110839610124192912235);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 191727);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(63225554560071345320729874034334593138932406728715285648603044978312551463564, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 266695);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 21945);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(8);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(101605027219099786390443811372282668109202564227437471330850306874517198752695);
+        
+        vm.warp(block.timestamp + 34);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115617539615567400625925891889647123760309752019165365120472992163897712235697, 115792089237316195423570985008687907853269984665640564039457584007913129639924);
+        
+        vm.warp(block.timestamp + 23);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(110576267337220395439615169097796239549231240153006109218272993955310802821933);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0049\u0036\u000b\u009e\u00b8\u0097\u0082\u0056\u00e8\u002e\u00c9\u003c\u0079\u00b7\u0008\u00c0\u00ca\u0065\u0035\u00fc\u00b5"));
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 45);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(111089314161493300546896792242163457279876092816891785757654229541884351929766, 84992567014446085283736194466673751135234295921381109816491838938495592488326);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(109794356961664937588257936523630746921049378568727038900548628024099949566298, 34);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(21);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 40617);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(9);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 33504);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 256092);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.hasMajority(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00ab\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00fe\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0059\u0059\u0059\u0059\u0059\u0059\u0059\u0059\u0067\u00bd\u001b\u0071\u0045\u00ef\u005d\u0045\u00c5"));
+        
+        vm.warp(block.timestamp + 34);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(183063679044563196518885173607337999657931109306883418);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(113823645721026431669461511737124019575146744142184339296845384601310901993565);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(37);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(13188445987008723240070658702379714338389373182117896469111052570063230405561);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0006\u00eb\u0081\u001d"));
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 45);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(79863589831171843387015700826758335153877006456075194201902174717784317886350);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u008b\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u00b1\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 37);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(6267368656530275566159315388779034455224369131987429358297313, 95830943747525856019534488792869067161241803391856933975898443798302541981913);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(56932176529731401597618288702792346602993023719212729437658116517268357234588);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 30);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(267817184367033828464905595788407230249471790326656650122382416776273370910, 102048181734918671047011081631854853154301718692967349730542082456597580347539);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 45);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u000f\u002a\u00c5\u00ee\u0026\u0037\u0037\u0085\u006b\u0053\u0025\u00a1\u006d\u003c\u0064\u000e\u0058\u0029\u00b2\u0014\u00ed\u00e4\u00a6"));
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(13);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(11, 80338463895409494069853962007298614156258064355722838039894135750101840307429);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(38889901836786155263400196720456493818292911727193147154259665004179240899370);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 21);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 7);
+    }
+    
+    
+    function test_auto_cancelProposal_20() public { 
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00b1\u00e2\u00ef\u0060\u0090\u002d\u00ce\u00ce\u0069\u0057\u00d0\u0027\u0011"));
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933, 35127287437434991694712459035041376986173789321773972029984158779004807925976);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0064\u006e\u0089\u00a8\u0015\u004a\u0010\u00a9\u00af\u00a6\u00ec\u0051\u00b5\u0026\u0031\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u00f8\u006b\u0047\u0058\u0086"));
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 361192);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00cb\u0019\u0022\u008b\u00ad\u0063\u00ab\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 27021295604519512536273784338316360306587726598387873273620996645889753068994);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000020000, 1524785993);
+        
+        vm.warp(block.timestamp + 106404);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(45, 9);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639930, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 50732840694678994387136590474733107861263046586805275762983929071462701995285);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(76);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u00e1\u00e2\u0096\u00c6\u00fe\u00f3\u0087\u0091\u0058\u00ed\u0085\u000c\u002e\u00de\u00ac\u00bd\u0055\u0002\u00fa\u00ee"));
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00e6\u00d2\u001a\u0062\u0084\u00b6\u0097\u00e6"));
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 10491);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 90685673541129414735475912698140751236096205948713976142532453241231820175764);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 9373924365793793148333982906232668844019029277938457890766730102925357712092);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(39092877244032441718990418013370075870165882781446099744455433281720710193863);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 18570);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 109529013557064957973291513205180308744665977590326745765748011210036007172284);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 45);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u00b1\u00b1\u00b1\u00b1\u00b1\u00b1\u00b1\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 11166778956924090219593955820199145578392248884305473684321985961877914824599);
+        
+        vm.warp(block.timestamp + 80627);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(83585642221001012705636046203752515223739019762561113514993428468114075456393, 989295799570);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.hasMinority(100265695281916899170449987315923360103917837044314811239871405626461285415355);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u002d\u0073\u00ac\u00e7\u0063\u00bf\u0043\u0071\u0077\u005a\u009c\u0006\u0012\u000f\u00f3\u00e8\u00a6\u00d0\u007e\u00c7\u000e\u0038\u00d6\u0024\u00ce\u006a\u0005\u002f\u00ae\u00ad"));
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(113713593135146765500588226441889315081180566037746037723797687036761855796243);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(6);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(26041942739841226934476391573765477765552985298475826993585330676566601706938);
+        
+        vm.warp(block.timestamp + 284640);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 34526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00fe\u00a1\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 41980);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(10, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 136492);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 7);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(39499900004216468190104297322908823705971172963480132016658065846273382065523);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 5);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(86204123700861202710563659206884824718937417657829588114991642541637948835487);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 98660620504406635761689390999309136445178622549356394287532960835058959393048);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00e6\u00b4\u00b6\u00a9\u0084\u0017\u0054\u00d0\u00d3\u002d\u0098\u0026\u0031\u009f\u0022\u00eb\u0056\u003c\u00f6\u008c\u0008\u00c0\u0006"));
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 53921);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u008c\u00a0\u006a\u0072\u001d\u0003\u00d6\u0010\u00ba\u0016\u002b\u0059\u005a\u0062\u0043\u008f\u00f2\u00a0\u0077\u00bc\u0085\u0017\u00b5\u0078\u001b\u005f\u0054\u00ba\u009d\u001c\u0062"));
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(4);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(20051940872503264510630324261865415431519194282102812795064371927542895238374, 641081);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000020000, 30);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 30);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(102624387528351552139496907482819786758362667163473302710689568995254848016804, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 323848);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(34452010016530378465697159177931026907118571429080363224722406546778170234848);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 37978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933, 89026760930449431130842282299135594957022944765537432483078987966101400405003);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u006b\u006b\u006b\u006b\u006b\u006b\u006b\u006b\u006b\u006b\u006b\u006b\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u00ab\u0098\u006f\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639926);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 23539);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(53955683319459541156411388875862416383794655227670705698059274217285807714670);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 4369999);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u00ef\u0010\u009f\u0046\u005b"));
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+    }
+    
+    
+    function test_auto_newAddressProposal_21() public { 
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(39092877244032441718990418013370075870165882781446099744455433281720710193863);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 18570);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 109529013557064957973291513205180308744665977590326745765748011210036007172284);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0088\u0041\u00dd\u00b7\u0027\u00ab\u0026\u0033\u0056\u0067\u00b5\u005b\u00a6\u0059\u004a\u00d0"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00bf\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00fe\u00ea"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u0054\u0061\u0076\u00be\u0089\u00b5\u0048\u00dd\u0063\u007f\u0041\u00f2\u0042\u006c\u00e2\u00bc\u00e9\u00cf\u0057\u0037\u00ba\u0081\u005f\u0032\u00b9\u003d"));
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 2690);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 586295);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(113206796174946781852667258215455724472108614040045824188086502209242331747313);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(16742598040323887086906788895155988173668679940762096443427826410397197159154);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 10979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931, 7);
+        
+        vm.warp(block.timestamp + 285040);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923, 2);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00e6\u0008\u00f2\u00c6\u001c\u00c8\u00b9\u00f9\u0002\u0062\u00ab\u0005\u00e7\u0066\u00a5\u00ad\u0056\u0048\u004e\u006f\u00ec\u0079\u0015\u0068\u0029\u00c2"));
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639924, 683);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 8805);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 11104);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(12, 18292746048329921191389684583334980538962542076256872920441836509352430226451);
+        
+        vm.warp(block.timestamp + 458977);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(113028671132641337953881730918883123794673217508168827806342909708226472571228);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(35899839333773576039396550147247357602458705502501277541374339703634114037437);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(19052321424413258837891979781139834429978619336675330925713916743580170763702);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0019\u006f\u0098\u00ab\u0096\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 90730486620358151532590819389177134881116500126712149863060900673229939733941);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(16207634055782952232080134810408707880484576099221160858844838268926629162120, 23893448491442023696649764198994107574017366310683842551207565374624546734280);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(86633484612128975044115178202536661085023146993002607558362028180516920833382, 4);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(108160281696016634336205190206575312339143984705891124676891642427424190689740);
+        
+        vm.warp(block.timestamp + 179103);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 1);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(13);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 3903);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 23805);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(0);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u00ea\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u006b"));
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(9, 36936126478320887573269270151763748351527168194341108408538051660075394031129);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(4369999);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(289);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 11514);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(42080608834696795566747012054176775127669021043971154834198994003278232732287);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 11);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(88119891568197172787955416928692507089897969145890860043910292417542511892419);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 0);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 28335);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(7658700711197852898002348010532926428661976561888020114062526537826777545259, 0);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 343107);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(53606614318231167439264804333732328910629504950913296841317006615596743285582, 7);
+        
+        vm.warp(block.timestamp + 514038);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(15925499480084684639954814403551625512093002154940202526825629564044915183093);
+        
+        vm.warp(block.timestamp + 223313);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(954);
+        
+        vm.warp(block.timestamp + 471235);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(272, 97767201627625612314125065960430902872273547705028054863355246453030089813571);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(109852748618754346233351905978915904473883854264096058969142878166664048682107, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 173645);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(79364427301922767514688307565163576797992161172904651310170437895653932804313);
+        
+        vm.warp(block.timestamp + 25071);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(5636229128270991710775793958580778549320248557896417735801789786256787035861);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 12415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00b4\u00e0\u0069\u000b\u0080\u00ad\u00db\u007c\u0042\u00c9\u00e5\u001e\u0014\u00e3\u0041\u00d9"));
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(17);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(78803872263930326969278671585220611716724917239494919573828128944158578174126);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u0058\u009f\u00c6\u0067\u0042\u00a5\u00db\u0068\u0050\u00b3\u00f5\u0041\u00a3\u009d\u00a0\u0021\u00eb"));
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 8108);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(1524785992);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 55340);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0021\u0033\u004f\u00a7"));
+    }
+    
+    
+    function test_auto_cancelProposal_22() public { 
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(50025957769730701933415631298019783464505146599432364658591671038469590283891, 3);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5012);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 109103373438751158593370292851547330223015956265381483027537447463277876634387);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(91016292195072477595686169805859476346417600925008490608838676922710186604711, 2);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00cd\u0020\u00ec\u0085\u00a5\u0068\u00aa\u00b0\u003b\u0047\u0053\u0060\u000e\u0041\u00c5\u00ba\u000f\u00aa\u005d\u00b8\u00e6"));
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 887);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000030000, string(unicode"\u00fc\u00be\u00c7\u0097\u000a\u0070\u005b\u005b\u005b\u005b\u005b\u005b\u005b\u005b\u003e\u003e\u003e\u003e\u003e\u0021\u00ea\u0025\u008c\u00a8\u0085\u00e7\u006f\u0086\u004b\u0041"));
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 47032940860627096667115113755237811646610367141850933628534858863369513743286);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 108112457903058926698087272887442980409654893309198301049935676288892146794216);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 117441);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(29510055042474423525489093435583143827637936627386194019165390752187958295911);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(105559575009195528369235200104609604241302984882150828286257701324496512885605);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 533407);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(671622300155923696437012866325586951810);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(1);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00a6\u00a8\u007b\u0009\u0030\u0016\u0054\u004c\u00ab\u00bc\u0024\u0089\u0029\u006d\u00a0\u003f\u000b\u0047\u003e\u007a\u0032\u00dc"));
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(13, 2651952510);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(34676110943186645106446680722132158455903101296063849737406129123683303089785);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 4198);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(0);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 45);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 2794279);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(88152123675082863151199638697659093179773376509177534681739070782666955486660);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(110143464849116714818649998964545792260276243123661227996223952877881839968535, 4);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 45);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(16204243971237465013722783651903806170121777483813205373102833059068854205907, 4);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 138145);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00c8\u000d\u006d\u00f7\u0019\u007a\u00ed\u00d6\u009f\u00f6\u0055\u00cb\u00c0\u00f4\u00f5\u000e\u0045\u0045\u0045\u0045\u0045\u0045\u0045\u0045\u0045\u0045\u0045\u0045\u0045\u0045\u00f4\u0054\u0009\u0000\u0044\u00b0\u007e\u0084\u0061"));
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 41559);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 35744);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00cd\u00b5\u002b\u00eb\u00bd\u003a\u00d8\u0026\u0036\u004b\u00ef\u0097\u00f7\u0078\u0076\u0076\u007e"));
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 2720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0063\u008b\u00ad\u0022\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 1524785991);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(35482100564505064015965535295286258726236646737338150967853482074707286689761);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0048\u0068\u004e\u00c3\u0089\u0046\u0065\u0076\u00fc\u0013\u00d5\u00ff\u00ac\u00df"));
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4529962);
+        
+        vm.warp(block.timestamp + 574141);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(59606331217011189686311240651487075215863060360923464516980990968115604068381);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(86614153444696091583795200606519001520550692872630748804901228604403515341576, 12);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 573774);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 597358);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(38737770889305108647083558169665698877196753212953911385570884371387010358052, 113509882152898700868841990467515448756147071301195684855855251930543327597542);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u00b1\u00b1\u00b1\u00b1\u00b1\u00b1\u00b1\u00b1\u00b1\u00b1\u00b1\u0057\u0096\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(16363180390070264871452400265714924116995812756560740402121581182699647990462, 7);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u009f\u0045\u003c\u00e0\u009c\u00b5\u002c\u0097\u000e\u009d\u0015\u00af\u00e2\u0002\u00c4\u00d0\u0017\u0008\u00bb\u0050\u0034\u00fd\u00b7\u00a8\u0016\u0058\u00de"));
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 5);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000020000, string(unicode"\u0030\u0094\u0029\u0092\u007e\u00da\u007c\u0062\u0051\u0002\u003e\u0028\u0071\u00bc\u008a\u00da\u0094\u0061\u0007\u0096\u009f\u00c3\u00aa\u00e0\u0016\u00e0\u00ef\u0059\u00d5\u00bb\u00b1"));
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 21087);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(5);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0089\u00b4\u00d0\u00e0\u0029\u00b1\u0098\u00ad\u0099\u007d\u0075\u002b\u0029\u00f7\u0048\u00cd\u000f\u00fa"));
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 19337);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639935, 14782595365945221890395008644827425741694951274244065279982143022990733248408);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 4526325939083089642514614025815452616242335184138468626121855694250112596708);
+        
+        vm.warp(block.timestamp + 437842);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639935, 111372144470506789139803742291928582157585080658224417957839203795240850657629);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(25099549594671162683706123301023479124261836409478242937627165639859406700053);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934, 52465611673356602439959352986860363708877557171605522941850446090692007325723);
+    }
+    
+    
+    function test_auto_newAddressProposal_23() public { 
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 51940);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u005f\u0068\u00af\u00a6\u0087\u003b\u0027\u00cb\u0026\u0033"));
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639927);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u00ad\u00ab\u0019\u0022\u008b\u0098\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(12197009266039314237750396792494385335350384794066177343624859876404676450313);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(1524785993);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(19616165833959945254376211930421428925210278094605360302192196796322280687021);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(13, 38832647580478395287083681210638991563851073254960526051552362096239021931136);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(52632098829891055795087548456355965739813577913926423496199188257906281569037);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 460);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 8137);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u000b\u0017\u000f\u004c\u0068\u005b\u00d6\u0026\u0033"));
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(17313606268932853135948666562479774579981280723675007663050654092708484623781);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 588748);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00f4\u009c\u0026\u0039\u0099\u00d9\u00a8\u00f4\u0026\u0037\u0029\u0049\u00c7\u0009\u0099\u0004\u0098\u001d\u0057\u00c7\u000c\u0065\u002d\u005d\u004f\u00ef\u004f\u00bb\u006f"));
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u008b\u00ad\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(8);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u00ab\u0098\u006f\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 94812);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 0);
+        
+        vm.warp(block.timestamp + 150190);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u0030\u0030\u0030\u0030\u0035\u00c2\u0068"));
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u002d\u00d2\u00db\u0004\u0072\u00da\u000e\u004f\u0079\u00fd\u007d\u00fb\u00c9\u005b\u00ed\u00f8\u0048\u0068\u00a5\u0017\u00a3\u00d0\u00da"));
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u008b\u003c\u000a\u0043\u003a\u004f\u007c\u00fe\u00a5\u0026\u0036\u0008\u0030\u0081\u0066\u0046\u003b\u00e3\u0021\u00eb\u00d8\u0097\u00d6\u007c\u0050\u00cc"));
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 4370001);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(100376082052551820739494091993839475006880009343309119487968004454933592757093, 10);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 49989);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639924);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(93627867317398716014762065104639570920668397730670578687205158034482152758364);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 36888);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(4369999);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u0022\u0098\u00ab\u0019\u006f\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(101267006704038541107764775065302171460633249171253960540492645246315578247104, 115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 332604);
+        vm.roll(block.number + 5618);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(1);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932, 106896122990411514833756360706643062194491515505434667922790232757176934428835);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u00cb\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u0057\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u00d8\u00b3\u001f\u0052\u0077\u0040\u0039\u003a\u00e1\u0026\u0034\u00ea\u006c\u00c4\u00f2\u00e5\u00c7\u00d5\u0026\u0039\u00aa\u0077\u00cc\u00bc\u00b3\u008e\u000b\u0057\u005d\u00e4\u003c\u0047"));
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 10463);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0091\u00aa\u00bd"));
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 8437);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(58219754277928768744054127712435398743645024822795520025958034519143628129556, 10);
+        
+        vm.warp(block.timestamp + 392976);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 528536);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00ea\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00b1"));
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, string(unicode"\u00f9\u0074\u00f6\u0082\u00ae\u00b9\u00bc\u00a5\u0016\u009d\u00ce\u0060\u00ac\u00bb\u008a\u009a"));
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 3872);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0022\u006f\u0098\u00ab\u0019\u0096\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0000\u0012\u0036\u00ca\u003a\u00d6"));
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(73822946560613401099586472572516792602573501827136745389415435160938475781433);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00bb\u0045\u00a5\u00b6\u0086\u00a9\u00d3\u001b\u008e\u00c8"));
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u008f\u004b\u00e4\u00de\u00fe\u0065\u005a\u00a6\u009f\u0013\u003b\u00c9\u0070\u0097\u0043\u00f1\u0057\u005e\u00dc\u008c\u0026\u0034\u00bc"));
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(39735873571634447952808863021036608799087069951541767281232493104210376264035, 12);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 49389511323201495563935369876201379571882365290148453315622944762444178474246);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0017\u0085\u0008\u0007\u003e\u00e4\u009b\u00f3\u007a\u000d\u00a2\u0099\u00f0\u003a\u0065\u0030\u0066\u008e\u008e\u0065\u0065\u0061\u008b\u00a7\u004a\u0052\u003f\u0067\u000f\u0011"));
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(103287919364430021133111953161122520071251178538612196384129337990833428032796);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(27638342071458753952015997294944791438490661947147742386565786395223595832326);
+        
+        vm.warp(block.timestamp + 206793);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000020000, string(unicode"\u004e\u004e\u004e\u004e\u004e\u004e\u004e\u004e\u004e\u004e\u004e\u004e\u004e\u004e\u004e\u004e\u004e\u004e\u004e\u004e\u0060\u0065\u00b0\u0026\u0031\u00f0\u009d\u005f\u0094\u00c7\u00e0\u00f7\u0023\u00a9\u0012\u009b\u00f2\u001f\u0011\u006d\u0078\u0080"));
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 448846);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u0055\u0063\u001e"));
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u0022\u0022\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u009e\u0007\u00c8\u00d5\u008e\u007c\u0056\u00ab\u00b2\u0001\u0097\u00b5\u00bc\u006c\u0072\u0014\u002b"));
+        
+        vm.warp(block.timestamp + 186053);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 82299272238719883244501212683989604502473502478469219510130946451241157017366);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(83801908024951266810632368159061808951683846208752034725393615365059151655730, 766);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 47361594879535649341515653266940766168230818319769289435681365097783904066143);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(73210613971689048753663569104981313501286176432788204139374799976702436372741);
+        
+        vm.warp(block.timestamp + 193272);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(109426913541832885484095231591241776725832541849391123249850190019585975749782);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 100641);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(66017243602593784702729032804558613551630390011758051308087646844273999160431, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 420405);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(110081007362801449024241932235664573537322635257275052681193954622373849484378, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u00fe\u00a1\u0096\u006b\u00b1\u0057\u0013\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+    }
+    
+    
+    function test_auto_voteProposal_24() public { 
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 51940);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u0075\u005f\u0068\u00af\u00a6\u0087\u003b\u0027\u00cb\u0026\u0033"));
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639927);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u00ad\u00ab\u0019\u0022\u008b\u0098\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(12197009266039314237750396792494385335350384794066177343624859876404676450313);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(1524785993);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(19616165833959945254376211930421428925210278094605360302192196796322280687021);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(13, 38832647580478395287083681210638991563851073254960526051552362096239021931136);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(52632098829891055795087548456355965739813577913926423496199188257906281569037);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 460);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 46950);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x0000000000000000000000000000000000030000, string(unicode"\u00fe\u00a1\u0013\u0098\u00b1\u0057\u0096\u006f\u006b\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(1);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(341, 115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(114957150649459721270810536035548485141519906738124722663839498712438925475432);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934, 0);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 27892);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 40530);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0032\u0017\u00e5\u00c5\u007b\u00cb\u002b\u00bf\u0026\u0030\u00b6\u003a\u00c2\u0081\u001b\u0016\u00a1\u0026\u0033\u00af\u008c\u008c\u0025\u005e\u0023\u00e2\u00de\u00ab\u00de\u0063"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639925, 28892161950358304196152610934468859629145465766778657052179595910173539835251);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(9714796202543434383064731679583386197606509826758733384991922822849633209291);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 47317968767858193810736426177936281475849518719804338678210527695754492563130);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(99087717279521697045185861086137205685739150270066928805494685214505642972154);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u000f\u00d1\u002c"));
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 384076);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 4370000);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(61462518789575602513113240165510449993334374021357671845232392897967618036169);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 262640);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0050\u0040\u0037\u00ea\u007e\u00de\u00c8\u0026\u0033\u00b7\u00a1\u0015\u007f\u00cf\u003a\u00c4\u00b0\u00bc\u00bc\u00bc\u0011"));
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00d1\u00ea\u00bc\u0069\u00d9\u0052\u001c\u001c\u001c\u001c\u001c\u001c\u00bb\u0053\u00a0\u0029"));
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(29406198621820142255658287995152916949304107139362300611600874531276417166898);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639930);
+        
+        vm.warp(block.timestamp + 265960);
+        vm.roll(block.number + 5018);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(13184175109049827724303628094754220599316471064507493406198105712160703809249);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(597, 45364541551317138673920900845610784346815914217099003229904177679428900);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 45);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000001fffffffE, 45954950222996309654743733388096960360225573013480167839188321110498360410086);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0054\u00dd\u006c\u009f\u00f4\u0029\u0030\u003a\u00f2\u00fa\u00e7\u00dc\u008f"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(84338212132037222808007841250833472083303305874964108273879419411138078635353, 89964193219151686839871882738529691516639825576661540860116805475090650830151);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 34452);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(58604574066886357167387599557898835677835911441296967236060464786490768204972);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(291037469851024966150359835466069981345677655632487125714688625113431092377);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x0000000000000000000000000000000000010000, string(unicode"\u00c5\u0026\u0035\u0080\u00b9\u001e\u0094\u0096\u0093\u00dc\u0008\u005b\u005b\u005b\u005b\u005b\u005b\u005b\u005b\u005b\u005b\u005b\u005b\u005b\u005b\u005b\u005b\u005b\u005b\u00db\u0060\u000d\u0022\u00a0\u00e5\u00a4\u00da\u0026\u0030"));
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(91547367053231413465524208363016237576002908269172779268647615722413338308094, 115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(10486619960864740205806224107332426601968737353782766940851295741722930051904);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(13);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u005e\u00bf\u00be\u001e\u00f8\u00e3\u0083\u009f\u00fa\u0007\u008d\u00b4\u005e\u0074\u005f\u00e6\u008c\u00e8\u00f1\u0050\u006c\u00a6\u0087\u0054\u0081\u0013"));
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(32937951185881236894689607604165629627265762666574784707752460442093409547945);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(103276787195188554758571152183360660902435865564615375406233263625660205135518, 5);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u005a\u00d8\u0014\u004f\u00da\u008a\u00c8\u005e\u0055\u00da\u00da\u00da\u00da\u00da\u00da\u00da\u00da\u00da\u00da\u00da\u001f\u0065\u0078\u0041\u00fe\u001f\u00ed"));
+        
+        vm.warp(block.timestamp + 161721);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(63665447738077745697715724903329931866411977763066042224079933718318953350261);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(53500051241780870883084264865550819227229873747020078153395678196243252142831);
+        
+        vm.warp(block.timestamp + 323723);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639925, 533);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u005d\u00a3\u00ea\u00dd\u000b\u00d0\u0075\u00df\u0026\u0034\u00f2\u00ce\u001e\u00fe\u0071\u000a\u00e9\u00f0\u009b\u0058\u0057\u0014\u00cd"));
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 7);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000000000, 98384510458593467966152828891225983919995314989803660554257918756310360816786);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933, 24447435893202614594444913351453732180191696336476582820161672252536493173718);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(53488249760557243136561811315089826986854416881072807387330091551636160236966);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639924, 109121557309732506263682539806591324515183038649025977189715216619816784576985);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(13);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(79369456439180036352022917335063548313243656785242397160348273171199376555233);
+        
+        vm.warp(block.timestamp + 351765);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(4370001);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(44041885573308677578307004601879009559860367147241334248612748173677472452235);
+    }
+    
+    
+    function test_auto_finaliseProposal_25() public { 
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(39092877244032441718990418013370075870165882781446099744455433281720710193863);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 18570);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 109529013557064957973291513205180308744665977590326745765748011210036007172284);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u0088\u0041\u00dd\u00b7\u0027\u00ab\u0026\u0033\u0056\u0067\u00b5\u005b\u00a6\u0059\u004a\u00d0"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00bf\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00fe\u00ea"));
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x0000000000000000000000000000000000000000, string(unicode"\u0054\u0061\u0076\u00be\u0089\u00b5\u0048\u00dd\u0063\u007f\u0041\u00f2\u0042\u006c\u00e2\u00bc\u00e9\u00cf\u0057\u0037\u00ba\u0081\u005f\u0032\u00b9\u003d"));
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 2690);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 586295);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(113206796174946781852667258215455724472108614040045824188086502209242331747313);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(16742598040323887086906788895155988173668679940762096443427826410397197159154);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 10979);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931, 7);
+        
+        vm.warp(block.timestamp + 285040);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639923, 2);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 322369);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000001fffffffE, string(unicode"\u00e6\u0008\u00f2\u00c6\u001c\u00c8\u00b9\u00f9\u0002\u0062\u00ab\u0005\u00e7\u0066\u00a5\u00ad\u0056\u0048\u004e\u006f\u00ec\u0079\u0015\u0068\u0029\u00c2"));
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639924, 683);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 8805);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 11104);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(12, 18292746048329921191389684583334980538962542076256872920441836509352430226451);
+        
+        vm.warp(block.timestamp + 458977);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(113028671132641337953881730918883123794673217508168827806342909708226472571228);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(35899839333773576039396550147247357602458705502501277541374339703634114037437);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(19052321424413258837891979781139834429978619336675330925713916743580170763702);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639929);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0019\u006f\u0098\u00ab\u0096\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 6);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.init(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 90730486620358151532590819389177134881116500126712149863060900673229939733941);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639932, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(16207634055782952232080134810408707880484576099221160858844838268926629162120, 23893448491442023696649764198994107574017366310683842551207565374624546734280);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 12);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(86633484612128975044115178202536661085023146993002607558362028180516920833382, 4);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(108160281696016634336205190206575312339143984705891124676891642427424190689740);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(31204255823402127592230603918883140660037557047415373053586898519031796727166);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(67943610639009168192736250392065182241361147636248196098823334484314271493901);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(340578076290447647067606384739294238, 94964244533951680793941784617353022390362481046381850772031263716048004756931);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u0022\u0022\u0022\u0022\u0022\u0022\u0022\u0022\u0022\u0022\u008b\u00ad\u0063\u00cb\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 381028);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000002fFffFffD, string(unicode"\u00fe\u00a1\u0013\u006b\u00b1\u0057\u0096\u006f\u0098\u00ab\u0019\u0022\u008b\u00ad\u0063\u00bf\u00ea"));
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u00b4\u008d\u00ca\u00b6\u0061\u008c\u00fe\u0012\u004e\u00ee\u00b7\u003a\u007e\u0041\u005b\u00a8\u00f4\u00d4\u0055\u0005\u00de\u00b0\u007f\u0029\u00f3"));
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 56559);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u0059\u006a\u004a\u0076\u007a\u00cf\u0043\u0037\u009a\u0026\u0032\u00d5\u002f\u002d\u000e\u00c6\u00a2\u00c4\u00fd\u0062\u00b0\u009d\u00e3\u008f\u0003\u0056\u0073\u0034\u0058\u00ec\u0091"));
+        
+        vm.warp(block.timestamp + 6);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x00000000000000000000000000000000FFFFfFFF, 100283563900578746861206168081506888539645696980399989278635429100686682777586);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00000000000000000000000000000000FFFFfFFF, string(unicode"\u007a\u007a\u007a\u007a\u007a\u007a\u007a\u00a9\u00ab\u007e\u008e\u00e6\u0010\u007f"));
+        
+        vm.warp(block.timestamp + 280489);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(15844964004033723647760121825289407898015621163140462669236348994283480574471, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 43209);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(4);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 53456);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(5855886858560953317277006587900768432182428038579933568708039958636974909779);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 5);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 15548);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.finaliseProposal(2);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(50077245953773988207114981703245745986651786886612934314445857802301688775442);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.voteProposal(11);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 528348);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(80581061573870236143595440378257703713345789386910861106708400169977129553462);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(19392402135563430303062327670055826810383320667585214835721546481849619102070);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 246392);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(43043504566827854165626751925472712753794795940380603804160459151459816494104, 111251535927588177559946191678457112875538645130163662800804712829317967087317);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.voteProposal(11);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.init(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000000000, 54211812851197319944635803371150564546461417028484297475122857594745572864856);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(56144197060194908662960327867458460120544436263870039131858843256716353510291);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.finaliseProposal(4370001);
+        
+        vm.warp(block.timestamp + 101449);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.cancelProposal(115792089237316195423570985008687907853269984665640564039457584007913129639926, 1264820294616287103230684291727161870347318219264043538957721819561769081311);
+        
+        vm.warp(block.timestamp + 305808);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.voteProposal(102563051689075734841366946441960091771198727402068215956319722224587969607782);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(48052721225168451517198267529371935985819239537606681431190017228520421541129);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 538314);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.newAddressProposal(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, string(unicode"\u00e6\u00b9\u00f2\u00c6\u001c\u00c8\u0008\u00f9\u0002\u0062\u00ab\u0005\u00e7\u0066\u00a5\u00ad\u0056\u0048\u004e\u006f\u00ec\u0079\u0015\u0068\u0029\u00c2"));
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.newGrantProposal(0x0000000000000000000000000000000000010000, 4370001);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 58256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.cancelProposal(9241930519987824797920832026871840023330823302894359499028737569082677337971, 73945875995238428128750054788296548674153363742755695352996930940888648994086);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.init(0x0000000000000000000000000000000000010000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 55877);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.finaliseProposal(0);
+    }
+    
+}
+
+    

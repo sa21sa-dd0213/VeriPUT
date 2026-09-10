@@ -1,0 +1,467 @@
+{
+  "compile_failed": 3,
+  "compile_ok": 43,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "add",
+      "mutant_id": "m000001",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "add",
+      "mutant_id": "m000002",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "withdraw",
+      "mutant_id": "m000003",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "constructor",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "constructor",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "add",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "add",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "add",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "add",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "add",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "add",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "withdrawOwner",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "withdrawOwner",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "withdrawOwner",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "withdrawOwner",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 34,
+      "function": "withdraw",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 34
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 34,
+      "function": "withdraw",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 34
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "withdraw",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "withdraw",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "constructor",
+      "mutant_id": "m000020",
+      "operator": "CCD",
+      "original_expression": "constructor(uint _goal, uint _timeLimit)  {\n        owner = msg.sender;\n        goal = _goal;\n        endTime = block.timestamp + _timeLimit;\n    }",
+      "replacement_expression": "",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "add",
+      "mutant_id": "m000021",
+      "operator": "EHD",
+      "original_expression": "require(block.timestamp < endTime, \"Fundraising is closed.\");",
+      "replacement_expression": "/* require(block.timestamp < endTime, \"Fundraising is closed.\"); */",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "add",
+      "mutant_id": "m000022",
+      "operator": "EHD",
+      "original_expression": "require(total < goal, \"We reached a goal.\");",
+      "replacement_expression": "/* require(total < goal, \"We reached a goal.\"); */",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "add",
+      "mutant_id": "m000023",
+      "operator": "EHD",
+      "original_expression": "require(msg.value > 0, \"You need to send some ether\");",
+      "replacement_expression": "/* require(msg.value > 0, \"You need to send some ether\"); */",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "withdrawOwner",
+      "mutant_id": "m000024",
+      "operator": "EHD",
+      "original_expression": "require(msg.sender == owner, \"You must be owner\");",
+      "replacement_expression": "/* require(msg.sender == owner, \"You must be owner\"); */",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "withdrawOwner",
+      "mutant_id": "m000025",
+      "operator": "EHD",
+      "original_expression": "require(total >= goal, \"Fundraising not closed yet\");",
+      "replacement_expression": "/* require(total >= goal, \"Fundraising not closed yet\"); */",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 34,
+      "function": "withdraw",
+      "mutant_id": "m000026",
+      "operator": "EHD",
+      "original_expression": "require(block.timestamp > endTime, \"Fundraising not closed\");",
+      "replacement_expression": "/* require(block.timestamp > endTime, \"Fundraising not closed\"); */",
+      "start_line": 34
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "withdraw",
+      "mutant_id": "m000027",
+      "operator": "EHD",
+      "original_expression": "require(total < goal, \"Can not withdraw when fundraising was successful\");",
+      "replacement_expression": "/* require(total < goal, \"Can not withdraw when fundraising was successful\"); */",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 30,
+      "function": "withdrawOwner",
+      "mutant_id": "m000028",
+      "operator": "ETR",
+      "original_expression": "payable(owner).transfer",
+      "replacement_expression": "payable(owner).send",
+      "start_line": 30
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 30,
+      "function": "withdrawOwner",
+      "mutant_id": "m000029",
+      "operator": "ETR",
+      "original_expression": "payable(owner).transfer",
+      "replacement_expression": "payable(owner).call{value: address(this).balance}(\"\")",
+      "start_line": 30
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 39,
+      "function": "withdraw",
+      "mutant_id": "m000030",
+      "operator": "ETR",
+      "original_expression": "payable(msg.sender).transfer",
+      "replacement_expression": "payable(msg.sender).send",
+      "start_line": 39
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 39,
+      "function": "withdraw",
+      "mutant_id": "m000031",
+      "operator": "ETR",
+      "original_expression": "payable(msg.sender).transfer",
+      "replacement_expression": "payable(msg.sender).call{value: amount}(\"\")",
+      "start_line": 39
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 30,
+      "function": "withdrawOwner",
+      "mutant_id": "m000032",
+      "operator": "FCD",
+      "original_expression": "payable(owner).",
+      "replacement_expression": "/*payable(owner).*/",
+      "start_line": 30
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 39,
+      "function": "withdraw",
+      "mutant_id": "m000033",
+      "operator": "FCD",
+      "original_expression": "payable(msg.sender).",
+      "replacement_expression": "/*payable(msg.sender).*/",
+      "start_line": 39
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "constructor",
+      "mutant_id": "m000034",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "add",
+      "mutant_id": "m000035",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "add",
+      "mutant_id": "m000036",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "add",
+      "mutant_id": "m000037",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "add",
+      "mutant_id": "m000038",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "add",
+      "mutant_id": "m000039",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "add",
+      "mutant_id": "m000040",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "add",
+      "mutant_id": "m000041",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 34,
+      "function": "withdraw",
+      "mutant_id": "m000042",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 34
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "stateVariable",
+      "mutant_id": "m000043",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "add",
+      "mutant_id": "m000044",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "withdraw",
+      "mutant_id": "m000045",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 38
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 19,
+      "function": "add",
+      "mutant_id": "m000046",
+      "operator": "PKD",
+      "original_expression": "function add() payable public ",
+      "replacement_expression": "function add()  public ",
+      "start_line": 19
+    }
+  ],
+  "subject_id": "peer_solar__FundRaising"
+}

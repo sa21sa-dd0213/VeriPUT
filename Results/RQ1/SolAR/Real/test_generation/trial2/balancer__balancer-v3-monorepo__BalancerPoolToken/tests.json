@@ -1,0 +1,649 @@
+[
+  [
+    {
+      "args": [
+        "address_00410",
+        "mCiUBRbwBtjjSuBKWtrFlYFNjRhNCWD",
+        "\"\\x19Ethereum Signed Message:\\n32\""
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        31894102132382503592911806169462250379363034292268199805628480777989678621720
+      ],
+      "frm": "address_00036",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "getVault",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "mCiUBRbwBtjjSuBKWtrFlYFNjRhNCWD",
+        "\"\\x19Ethereum Signed Message:\\n32\""
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "getRate",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "mCiUBRbwBtjjSuBKWtrFlYFNjRhNCWD",
+        "\"\\x19Ethereum Signed Message:\\n32\""
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00001",
+        31894102132382503592911806169462250379363034292268199805628480777989678621720
+      ],
+      "frm": "address_00036",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "getRate",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398",
+        48217773742641917463213081714498222831016546450872183977021937239322338856350
+      ],
+      "frm": "address_00404",
+      "method": "approve",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        "address_00032",
+        27
+      ],
+      "frm": "address_00023",
+      "method": "transferFrom",
+      "n": 5,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "mCiUBRbwBtjjSuBKWtrFlYFNjRhNCWD",
+        "\"\\x19Ethereum Signed Message:\\n32\""
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "name",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "getRate",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "mCiUBRbwBtjjSuBKWtrFlYFNjRhNCWD",
+        "\"\\x19Ethereum Signed Message:\\n32\""
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "DOMAIN_SEPARATOR",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "getVault",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00021",
+        "\"t\"",
+        "\"EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)\""
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        "address_00404",
+        91697139021741176492674740986437629963676462352750869273643381359469630922828,
+        4626,
+        96,
+        "address_000795a726a20714658787651474f",
+        "address_00001000000000000000000000000"
+      ],
+      "frm": "address_00404",
+      "method": "permit",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        "address_00019",
+        51
+      ],
+      "frm": "address_00404",
+      "method": "emitApproval",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        "address_00404"
+      ],
+      "frm": "address_00019",
+      "method": "allowance",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "mCiUBRbwBtjjSuBKWtrFlYFNjRhNCWD",
+        "\"\\x19Ethereum Signed Message:\\n32\""
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "decimals",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "getVault",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00021",
+        "\"19_00\"",
+        "YRR mspOiGGVKnyBqjCCjrLiHjXhhpuni bCFfoEmRkgaSfclpmdtautgfZcBcwCQLjwjVvrKZlEgcwNU"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398",
+        "address_00404",
+        8
+      ],
+      "frm": "address_00410",
+      "method": "emitTransfer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "getVault",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "mCiUBRbwBtjjSuBKWtrFlYFjRhNCWD",
+        "\"\\x19Ethereum Signed Message:\\n32\""
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "incrementNonce",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "mCiUBRbwBtjjSuBKWtrFlYFNjRhNCWD",
+        "\"\\x19Ethereum Signed Message:\\n32\""
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00023",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "mCiUBRbwBtjjSuBKWtrFlYFNjRhNCWD",
+        "\"\\x19Ethereum Signed Message:\\n32\""
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "symbol",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00036",
+      "method": "nonces",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "getRate",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "mCiUBRbwBtjjSuBKWtrFlYFNjRhNCWD",
+        "\"\\x19Ethereum Signed Message:\\n32\""
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "getRate",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00398",
+        "\"\"\"",
+        "lTMCJMSQHGkkVhbPnVmcatNBvwblQKSIBOStZgnLywfoqOrqZrnvfoWodYY nCjToJkTllLiwyhgcfM HtHgq hCabcSAfsjbVqJryBXaewiwXRsahUpkJVlHjukRYpxjBOsOgJzjufDFfuKHejlMryOpLzJCriWzACttkbbamAAQcKsAzyajlfPFGQphIlI OqzaKv"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "getVault",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "mCiUBRbwBtjjSuBKWtrmFlYFNjRhNCWD",
+        "\"\\x19Ethereum Signed Message:\\n32\""
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "name",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019",
+        31894102132382503592911806169462250379363034292268199805628480777989678621720
+      ],
+      "frm": "address_00036",
+      "method": "approve",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        17194988945934496376336124432464818526712149821825958115106975329289684978989
+      ],
+      "frm": "address_00019",
+      "method": "approve",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "getRate",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "totalSupply",
+      "n": 6,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "name",
+      "n": 7,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "DOMAIN_SEPARATOR",
+      "n": 8,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "symbol",
+      "n": 9,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00019",
+      "method": "balanceOf",
+      "n": 10,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        "address_00410",
+        4626
+      ],
+      "frm": "address_00398",
+      "method": "emitApproval",
+      "n": 11,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        "address_00023",
+        87757719095290582417661870283278418276868331351396846894116214683560076600817
+      ],
+      "frm": "address_00184",
+      "method": "transferFrom",
+      "n": 12,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "getRate",
+      "n": 13,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "decimals",
+      "n": 14,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "symbol",
+      "n": 15,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        "address_00404",
+        256
+      ],
+      "frm": "address_00404",
+      "method": "transferFrom",
+      "n": 16,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00021",
+        "\"t\"",
+        "\"EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)\""
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        "address_00410",
+        31
+      ],
+      "frm": "address_00019",
+      "method": "emitTransfer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "symbol",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        "address_00404"
+      ],
+      "frm": "address_00019",
+      "method": "allowance",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00021",
+        "\"t\"",
+        "\"EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)\""
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00021",
+        "address_00404"
+      ],
+      "frm": "address_00019",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00410",
+        "mCiUBRbwBtjjSuBKWtrFlYFNjRhNCWD",
+        "\"\\x19Ethereum Signed Message:\\n32\""
+      ],
+      "frm": "address_00036",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        "address_00404",
+        103,
+        19,
+        1,
+        "address_00164504d447767595146596b4e6a",
+        "address_00276706950477466566b636c6166"
+      ],
+      "frm": "address_00032",
+      "method": "permit",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "getVault",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00398",
+        "rbeKTgSATAEyrBLZWZhJxdmpQKHyXbkkgmPmUDqnuuDyVcXGBjkOTlekgaxuFiKKRR ek ehmYCAacvTetVxbzVHztWjzakjhXeHtROQWuqZpK mTZfHcRQhDyZQrmOfHIDeiUMVkcJHYeKESleXnkfUC c SByKALxieQMjEpSmsQYxTuffLnNGInca UixCYQzgNaKrgUzhypzMPRaRs",
+        "\"n\""
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        20045822357706522259012907201597637722786537682900139854706710143746821586590
+      ],
+      "frm": "address_00032",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

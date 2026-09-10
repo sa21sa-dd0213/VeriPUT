@@ -1,0 +1,162 @@
+[
+  [
+    {
+      "args": [
+        10,
+        "TgAABdgxwCdJCmenVzeHS RLPeQfulfczo DvDlgyGjjAWnFUCFRrMQuAUybKLoNkSigOlppBuwdJbPEruztHFa KvZnhMloMQdbSeTGJjYEqde iyKRRpCTHzs LWWdhwQmZa",
+        "MQtVCdHAWFAtRcnoNBBuKjvARG IhXHqlEfzCFGyDWMvcTocrcRsfYAvboxebcWjyjJnDYomsgkLjJtmuMVtNElzHkcAnv"
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        87421705704836894949138972525021644134566131267978611591732006900741857453477
+      ],
+      "frm": "address_00398",
+      "method": "mintToken",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        10,
+        "hMFE",
+        "fCsCcQHd KgVnBTQeriHvQJkYNVurHJtLOCeyzDpaRXnmS PqYwSSnoJJTAFeIOMHYAYIYacsBgHqR"
+      ],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        88338171847063979986358707814584027007729558085897198078568068391413563480373
+      ],
+      "frm": "address_00184",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "goayKRqWNhCligEkWXTJMgifKAvA GlRA  kuWAsOxzaFGoiUpyMjNnlYGacRAyqtIRfvfCcANLEYaOScUELGzgLIieYtzWkgGTFTMxCdDyBFZYXKgvWOGanfuYUIDYHiJS frOcGOHECBHNWXCOIMcghwHYdMmEuULEhLPFxGoqUxsgkTUNmFNyVURltQqLPP XEc spiIVnmcfvswXSTvqXAIaNBVwkOea",
+        "EXNoQABizuyukLfXxYxbNUheEYKjxtaMNVQOyVhnMTIfRiWRmayNVhcGnSUU"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        57125071120112998397717991303400039958946779238508669378400501239820855448560
+      ],
+      "frm": "address_00398",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        10,
+        "RIdNxVuiPTnFQaljBUANEhp geWpwGSchtxweAfnoaxTOkFwfvVAPivPgSJgMNNYYFxSE mYRPPcixkngfxTKwZtkwKlUMaCzUXuXAKfivAqxbZDJrIKZYQAYBZJKCcwafcnkrRWZRWvSbHXBezCjDVyDuOIIhgIjwEtwsPBaToiusyij",
+        "gCGLSXsYVfaGivWvRUBZ CYiPHqO rEleUSNRnybsxFspMwUcjhfqYpaTduLMVUTmYNLvhPbGSBbzWfmCRFMfkbOWZQowtxWobCQlRIOQfGPooGnVybwwnJyckDhnsQLWASbUAcERaTl mSQRuwbqDPtjZwZBYNlVWVZQnnfsuIGOqOIQKgXymPTYemO"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        false
+      ],
+      "frm": "address_00032",
+      "method": "freezeAccount",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "vBlrJHLNapVHWGMNgDhbotewhebriXafotLGFOcuJRPQPbfMaggMPfOHcOLYRQMAMCyaVquawcXOUEnDX bfwnEggKpnSXmBDndIbYshZLVKdLKAA zpSRcIlOwZhNzIOZXWszaY",
+        "ueJAuQQBmDuWlWghFEFSqlxajVRKxwmdBiKHULcaU rlaGSyEJkpHsOfhOkCOhIleszhwdEYSELTSQQJALnYqYIJJRpejjtInXroGptwes NBMrgHHhLaVOCOQYlxyXCWLrGHxXiSCbSInHqZgyCHFrWej DuDGBzJgkzBIFCKwHRBVWaJXzUvVBRACluxHcWuCWLqyYx FdhFcAwqUWqTlgJvarCp RDvkpMZXCogNfJwh aMaxKBT ex"
+      ],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "owned",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        10
+      ],
+      "frm": "address_00023",
+      "method": "burn",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410",
+        false
+      ],
+      "frm": "address_00032",
+      "method": "freezeAccount",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        10,
+        "qNzvDgYKrZU",
+        "OqIYfeCuogYjyAORh cSJbvGdiCohulNicfagdWblXVwcgmkHfxo"
+      ],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401",
+        86032177232231172023113583737089965313730178021040680832611369833989477167935
+      ],
+      "frm": "address_00023",
+      "method": "mintToken",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "owned",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

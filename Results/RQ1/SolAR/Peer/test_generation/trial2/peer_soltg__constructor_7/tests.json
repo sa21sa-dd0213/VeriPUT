@@ -1,0 +1,118 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        65975226217319914044475154371624576622429208550518752402705589768960984730885
+      ],
+      "frm": "address_00032",
+      "method": "f7",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "g7",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "f7",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "f7",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        81512097783407052941722866571393417793116781171243028975243076268762099379596
+      ],
+      "frm": "address_00036",
+      "method": "f7",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        42
+      ],
+      "frm": "address_00410",
+      "method": "f7",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        60951872425879208783664969085473233251318171692248201817861997496539801045560
+      ],
+      "frm": "address_00032",
+      "method": "f7",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "f7",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "g7",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

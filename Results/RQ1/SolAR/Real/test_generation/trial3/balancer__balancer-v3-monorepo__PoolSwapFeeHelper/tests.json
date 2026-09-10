@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "args": [
+        "address_00404",
+        "address_00019"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404",
+        4626
+      ],
+      "frm": "address_00404",
+      "method": "setStaticSwapFeePercentage",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

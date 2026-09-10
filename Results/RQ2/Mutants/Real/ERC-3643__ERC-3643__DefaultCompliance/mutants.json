@@ -1,0 +1,1527 @@
+{
+  "compile_failed": 41,
+  "compile_ok": 111,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 295,
+      "function": "_transferOwnership",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "_owner",
+      "replacement_expression": "address(this)",
+      "start_line": 295
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 295,
+      "function": "_transferOwnership",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "_owner",
+      "replacement_expression": "address(0)",
+      "start_line": 295
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 296,
+      "function": "_transferOwnership",
+      "mutant_id": "m000003",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(this)",
+      "start_line": 296
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 296,
+      "function": "_transferOwnership",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(0)",
+      "start_line": 296
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 267,
+      "function": "_checkOwner",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 267
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 267,
+      "function": "_checkOwner",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 267
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 267,
+      "function": "_checkOwner",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 267
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 286,
+      "function": "transferOwnership",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 286
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 379,
+      "function": "addAgent",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 379
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 385,
+      "function": "removeAgent",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 385
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 478,
+      "function": "modifier:onlyAdmin",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 478
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 478,
+      "function": "modifier:onlyAdmin",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 478
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 478,
+      "function": "modifier:onlyAdmin",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 478
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 478,
+      "function": "modifier:onlyAdmin",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 478
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 506,
+      "function": "bindToken",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 506
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 506,
+      "function": "bindToken",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 506
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 506,
+      "function": "bindToken",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 506
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 506,
+      "function": "bindToken",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 506
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 506,
+      "function": "bindToken",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 506
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 506,
+      "function": "bindToken",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 506
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 506,
+      "function": "bindToken",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 506
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 516,
+      "function": "unbindToken",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 516
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 516,
+      "function": "unbindToken",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 516
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 516,
+      "function": "unbindToken",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 516
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 516,
+      "function": "unbindToken",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 516
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 516,
+      "function": "unbindToken",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 516
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 517,
+      "function": "unbindToken",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 517
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 526,
+      "function": "isTokenAgent",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 526
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 536,
+      "function": "isTokenBound",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 536
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1375,
+      "function": "has",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 1375
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 489,
+      "function": "addTokenAgent",
+      "mutant_id": "m000031",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 489
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 498,
+      "function": "removeTokenAgent",
+      "mutant_id": "m000032",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 498
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 527,
+      "function": "isTokenAgent",
+      "mutant_id": "m000033",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 527
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 529,
+      "function": "isTokenAgent",
+      "mutant_id": "m000034",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 529
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 537,
+      "function": "isTokenBound",
+      "mutant_id": "m000035",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 537
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 539,
+      "function": "isTokenBound",
+      "mutant_id": "m000036",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 539
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 658,
+      "function": "canTransfer",
+      "mutant_id": "m000037",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 658
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1359,
+      "function": "add",
+      "mutant_id": "m000038",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 1359
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1367,
+      "function": "remove",
+      "mutant_id": "m000039",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 1367
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 246,
+      "function": "constructor",
+      "mutant_id": "m000040",
+      "operator": "CCD",
+      "original_expression": "constructor() {\n        _transferOwnership(_msgSender());\n    }",
+      "replacement_expression": "",
+      "start_line": 244
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 526,
+      "function": "isTokenAgent",
+      "mutant_id": "m000041",
+      "operator": "CSC",
+      "original_expression": "!_tokenAgentsList[_agentAddress] && !(AgentRole(address(tokenBound))).isAgent(_agentAddress)",
+      "replacement_expression": "true",
+      "start_line": 526
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 526,
+      "function": "isTokenAgent",
+      "mutant_id": "m000042",
+      "operator": "CSC",
+      "original_expression": "!_tokenAgentsList[_agentAddress] && !(AgentRole(address(tokenBound))).isAgent(_agentAddress)",
+      "replacement_expression": "false",
+      "start_line": 526
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 536,
+      "function": "isTokenBound",
+      "mutant_id": "m000043",
+      "operator": "CSC",
+      "original_expression": "_token != address(tokenBound)",
+      "replacement_expression": "true",
+      "start_line": 536
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 536,
+      "function": "isTokenBound",
+      "mutant_id": "m000044",
+      "operator": "CSC",
+      "original_expression": "_token != address(tokenBound)",
+      "replacement_expression": "false",
+      "start_line": 536
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 761,
+      "function": "getClaimTopics",
+      "mutant_id": "m000045",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory",
+      "replacement_expression": "uint256[] storage",
+      "start_line": 761
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 935,
+      "function": "getKey",
+      "mutant_id": "m000046",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory purposes",
+      "replacement_expression": "uint256[] storage purposes",
+      "start_line": 935
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 940,
+      "function": "getKeyPurposes",
+      "mutant_id": "m000047",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory _purposes",
+      "replacement_expression": "uint256[] storage _purposes",
+      "start_line": 940
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 945,
+      "function": "getKeysByPurpose",
+      "mutant_id": "m000048",
+      "operator": "DLR",
+      "original_expression": "bytes32[] memory keys",
+      "replacement_expression": "bytes32[] storage keys",
+      "start_line": 945
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1041,
+      "function": "getClaim",
+      "mutant_id": "m000049",
+      "operator": "DLR",
+      "original_expression": "bytes memory signature",
+      "replacement_expression": "bytes storage signature",
+      "start_line": 1041
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1042,
+      "function": "getClaim",
+      "mutant_id": "m000050",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 1042
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1043,
+      "function": "getClaim",
+      "mutant_id": "m000051",
+      "operator": "DLR",
+      "original_expression": "string memory uri",
+      "replacement_expression": "string storage uri",
+      "start_line": 1043
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1048,
+      "function": "getClaimIdsByTopic",
+      "mutant_id": "m000052",
+      "operator": "DLR",
+      "original_expression": "bytes32[] memory claimIds",
+      "replacement_expression": "bytes32[] storage claimIds",
+      "start_line": 1048
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1266,
+      "function": "getModules",
+      "mutant_id": "m000053",
+      "operator": "DLR",
+      "original_expression": "address[] memory",
+      "replacement_expression": "address[] storage",
+      "start_line": 1266
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1357,
+      "function": "add",
+      "mutant_id": "m000054",
+      "operator": "DLR",
+      "original_expression": "Role storage role",
+      "replacement_expression": "Role memory role",
+      "start_line": 1357
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1365,
+      "function": "remove",
+      "mutant_id": "m000055",
+      "operator": "DLR",
+      "original_expression": "Role storage role",
+      "replacement_expression": "Role memory role",
+      "start_line": 1365
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1374,
+      "function": "has",
+      "mutant_id": "m000056",
+      "operator": "DLR",
+      "original_expression": "Role storage role",
+      "replacement_expression": "Role memory role",
+      "start_line": 1374
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1629,
+      "function": "linkedIdentityRegistries",
+      "mutant_id": "m000057",
+      "operator": "DLR",
+      "original_expression": "address[] memory",
+      "replacement_expression": "address[] storage",
+      "start_line": 1629
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1770,
+      "function": "getTrustedIssuers",
+      "mutant_id": "m000058",
+      "operator": "DLR",
+      "original_expression": "IClaimIssuer[] memory",
+      "replacement_expression": "IClaimIssuer[] storage",
+      "start_line": 1770
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1777,
+      "function": "getTrustedIssuersForClaimTopic",
+      "mutant_id": "m000059",
+      "operator": "DLR",
+      "original_expression": "IClaimIssuer[] memory",
+      "replacement_expression": "IClaimIssuer[] storage",
+      "start_line": 1777
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1792,
+      "function": "getTrustedIssuerClaimTopics",
+      "mutant_id": "m000060",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory",
+      "replacement_expression": "uint256[] storage",
+      "start_line": 1792
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2454,
+      "function": "name",
+      "mutant_id": "m000061",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 2454
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2467,
+      "function": "symbol",
+      "mutant_id": "m000062",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 2467
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2473,
+      "function": "version",
+      "mutant_id": "m000063",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 2473
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 518,
+      "function": "unbindToken",
+      "mutant_id": "m000064",
+      "operator": "DOD",
+      "original_expression": "delete tokenBound",
+      "replacement_expression": "tokenBound",
+      "start_line": 518
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 297,
+      "function": "_transferOwnership",
+      "mutant_id": "m000065",
+      "operator": "EED",
+      "original_expression": "emit OwnershipTransferred(oldOwner, newOwner);",
+      "replacement_expression": "/* emit OwnershipTransferred(oldOwner, newOwner); */",
+      "start_line": 297
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 381,
+      "function": "addAgent",
+      "mutant_id": "m000066",
+      "operator": "EED",
+      "original_expression": "emit AgentAdded(_agent);",
+      "replacement_expression": "/* emit AgentAdded(_agent); */",
+      "start_line": 381
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 387,
+      "function": "removeAgent",
+      "mutant_id": "m000067",
+      "operator": "EED",
+      "original_expression": "emit AgentRemoved(_agent);",
+      "replacement_expression": "/* emit AgentRemoved(_agent); */",
+      "start_line": 387
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 490,
+      "function": "addTokenAgent",
+      "mutant_id": "m000068",
+      "operator": "EED",
+      "original_expression": "emit TokenAgentAdded(_agentAddress);",
+      "replacement_expression": "/* emit TokenAgentAdded(_agentAddress); */",
+      "start_line": 490
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 499,
+      "function": "removeTokenAgent",
+      "mutant_id": "m000069",
+      "operator": "EED",
+      "original_expression": "emit TokenAgentRemoved(_agentAddress);",
+      "replacement_expression": "/* emit TokenAgentRemoved(_agentAddress); */",
+      "start_line": 499
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 509,
+      "function": "bindToken",
+      "mutant_id": "m000070",
+      "operator": "EED",
+      "original_expression": "emit TokenBound(_token);",
+      "replacement_expression": "/* emit TokenBound(_token); */",
+      "start_line": 509
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 519,
+      "function": "unbindToken",
+      "mutant_id": "m000071",
+      "operator": "EED",
+      "original_expression": "emit TokenUnbound(_token);",
+      "replacement_expression": "/* emit TokenUnbound(_token); */",
+      "start_line": 519
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 267,
+      "function": "_checkOwner",
+      "mutant_id": "m000072",
+      "operator": "EHD",
+      "original_expression": "require(owner() == _msgSender(), \"Ownable: caller is not the owner\");",
+      "replacement_expression": "/* require(owner() == _msgSender(), \"Ownable: caller is not the owner\"); */",
+      "start_line": 267
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 286,
+      "function": "transferOwnership",
+      "mutant_id": "m000073",
+      "operator": "EHD",
+      "original_expression": "require(newOwner != address(0), \"Ownable: new owner is the zero address\");",
+      "replacement_expression": "/* require(newOwner != address(0), \"Ownable: new owner is the zero address\"); */",
+      "start_line": 286
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 374,
+      "function": "modifier:onlyAgent",
+      "mutant_id": "m000074",
+      "operator": "EHD",
+      "original_expression": "require(isAgent(msg.sender), \"AgentRole: caller does not have the Agent role\");",
+      "replacement_expression": "/* require(isAgent(msg.sender), \"AgentRole: caller does not have the Agent role\"); */",
+      "start_line": 374
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 379,
+      "function": "addAgent",
+      "mutant_id": "m000075",
+      "operator": "EHD",
+      "original_expression": "require(_agent != address(0), \"invalid argument - zero address\");",
+      "replacement_expression": "/* require(_agent != address(0), \"invalid argument - zero address\"); */",
+      "start_line": 379
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 385,
+      "function": "removeAgent",
+      "mutant_id": "m000076",
+      "operator": "EHD",
+      "original_expression": "require(_agent != address(0), \"invalid argument - zero address\");",
+      "replacement_expression": "/* require(_agent != address(0), \"invalid argument - zero address\"); */",
+      "start_line": 385
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 470,
+      "function": "modifier:onlyToken",
+      "mutant_id": "m000077",
+      "operator": "EHD",
+      "original_expression": "require(_isToken(), \"error : this address is not a token bound to the compliance contract\");",
+      "replacement_expression": "/* require(_isToken(), \"error : this address is not a token bound to the compliance contract\"); */",
+      "start_line": 470
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 479,
+      "function": "modifier:onlyAdmin",
+      "mutant_id": "m000078",
+      "operator": "EHD",
+      "original_expression": "require(owner() == msg.sender || (AgentRole(address(tokenBound))).isAgent(msg.sender) ,\n            \"can be called only by Admin address\");",
+      "replacement_expression": "/* require(owner() == msg.sender || (AgentRole(address(tokenBound))).isAgent(msg.sender) ,\n            \"can be called only by Admin address\"); */",
+      "start_line": 478
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 488,
+      "function": "addTokenAgent",
+      "mutant_id": "m000079",
+      "operator": "EHD",
+      "original_expression": "require(!_tokenAgentsList[_agentAddress], \"This Agent is already registered\");",
+      "replacement_expression": "/* require(!_tokenAgentsList[_agentAddress], \"This Agent is already registered\"); */",
+      "start_line": 488
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 497,
+      "function": "removeTokenAgent",
+      "mutant_id": "m000080",
+      "operator": "EHD",
+      "original_expression": "require(_tokenAgentsList[_agentAddress], \"This Agent is not registered yet\");",
+      "replacement_expression": "/* require(_tokenAgentsList[_agentAddress], \"This Agent is not registered yet\"); */",
+      "start_line": 497
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 507,
+      "function": "bindToken",
+      "mutant_id": "m000081",
+      "operator": "EHD",
+      "original_expression": "require(owner() == msg.sender || (address(tokenBound) == address(0) && msg.sender == _token),\n            \"only owner or token can call\");",
+      "replacement_expression": "/* require(owner() == msg.sender || (address(tokenBound) == address(0) && msg.sender == _token),\n            \"only owner or token can call\"); */",
+      "start_line": 506
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 516,
+      "function": "unbindToken",
+      "mutant_id": "m000082",
+      "operator": "EHD",
+      "original_expression": "require(owner() == msg.sender || msg.sender == _token , \"only owner or token can call\");",
+      "replacement_expression": "/* require(owner() == msg.sender || msg.sender == _token , \"only owner or token can call\"); */",
+      "start_line": 516
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 517,
+      "function": "unbindToken",
+      "mutant_id": "m000083",
+      "operator": "EHD",
+      "original_expression": "require(_token == address(tokenBound), \"This token is not bound\");",
+      "replacement_expression": "/* require(_token == address(tokenBound), \"This token is not bound\"); */",
+      "start_line": 517
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1358,
+      "function": "add",
+      "mutant_id": "m000084",
+      "operator": "EHD",
+      "original_expression": "require(!has(role, account), \"Roles: account already has role\");",
+      "replacement_expression": "/* require(!has(role, account), \"Roles: account already has role\"); */",
+      "start_line": 1358
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1366,
+      "function": "remove",
+      "mutant_id": "m000085",
+      "operator": "EHD",
+      "original_expression": "require(has(role, account), \"Roles: account does not have role\");",
+      "replacement_expression": "/* require(has(role, account), \"Roles: account does not have role\"); */",
+      "start_line": 1366
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1375,
+      "function": "has",
+      "mutant_id": "m000086",
+      "operator": "EHD",
+      "original_expression": "require(account != address(0), \"Roles: account is the zero address\");",
+      "replacement_expression": "/* require(account != address(0), \"Roles: account is the zero address\"); */",
+      "start_line": 1375
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 252,
+      "function": "modifier:onlyOwner",
+      "mutant_id": "m000087",
+      "operator": "FCD",
+      "original_expression": "_checkOwner();",
+      "replacement_expression": "/*_checkOwner();*/",
+      "start_line": 252
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 278,
+      "function": "renounceOwnership",
+      "mutant_id": "m000088",
+      "operator": "FCD",
+      "original_expression": "_transferOwnership(address(0));",
+      "replacement_expression": "/*_transferOwnership(address(0));*/",
+      "start_line": 278
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 287,
+      "function": "transferOwnership",
+      "mutant_id": "m000089",
+      "operator": "FCD",
+      "original_expression": "_transferOwnership(newOwner);",
+      "replacement_expression": "/*_transferOwnership(newOwner);*/",
+      "start_line": 287
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 380,
+      "function": "addAgent",
+      "mutant_id": "m000090",
+      "operator": "FCD",
+      "original_expression": "_agents.add(_agent);",
+      "replacement_expression": "/*_agents.add(_agent);*/",
+      "start_line": 380
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 386,
+      "function": "removeAgent",
+      "mutant_id": "m000091",
+      "operator": "FCD",
+      "original_expression": "_agents.remove(_agent);",
+      "replacement_expression": "/*_agents.remove(_agent);*/",
+      "start_line": 386
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "_contextSuffixLength",
+      "mutant_id": "m000092",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 278,
+      "function": "renounceOwnership",
+      "mutant_id": "m000093",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 278
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 286,
+      "function": "transferOwnership",
+      "mutant_id": "m000094",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 286
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 379,
+      "function": "addAgent",
+      "mutant_id": "m000095",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 379
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 385,
+      "function": "removeAgent",
+      "mutant_id": "m000096",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 385
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 506,
+      "function": "bindToken",
+      "mutant_id": "m000097",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 506
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1375,
+      "function": "has",
+      "mutant_id": "m000098",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1375
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 277,
+      "function": "renounceOwnership",
+      "mutant_id": "m000099",
+      "operator": "MOD",
+      "original_expression": "function renounceOwnership() public virtual onlyOwner ",
+      "replacement_expression": "function renounceOwnership() public virtual  ",
+      "start_line": 277
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 285,
+      "function": "transferOwnership",
+      "mutant_id": "m000100",
+      "operator": "MOD",
+      "original_expression": "function transferOwnership(address newOwner) public virtual onlyOwner ",
+      "replacement_expression": "function transferOwnership(address newOwner) public virtual  ",
+      "start_line": 285
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 378,
+      "function": "addAgent",
+      "mutant_id": "m000101",
+      "operator": "MOD",
+      "original_expression": "function addAgent(address _agent) public onlyOwner ",
+      "replacement_expression": "function addAgent(address _agent) public  ",
+      "start_line": 378
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 384,
+      "function": "removeAgent",
+      "mutant_id": "m000102",
+      "operator": "MOD",
+      "original_expression": "function removeAgent(address _agent) public onlyOwner ",
+      "replacement_expression": "function removeAgent(address _agent) public  ",
+      "start_line": 384
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 487,
+      "function": "addTokenAgent",
+      "mutant_id": "m000103",
+      "operator": "MOD",
+      "original_expression": "function addTokenAgent(address _agentAddress) external override onlyOwner ",
+      "replacement_expression": "function addTokenAgent(address _agentAddress) external override  ",
+      "start_line": 487
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 496,
+      "function": "removeTokenAgent",
+      "mutant_id": "m000104",
+      "operator": "MOD",
+      "original_expression": "function removeTokenAgent(address _agentAddress) external override onlyOwner ",
+      "replacement_expression": "function removeTokenAgent(address _agentAddress) external override  ",
+      "start_line": 496
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 129,
+      "function": "addTokenAgent",
+      "mutant_id": "m000105",
+      "operator": "OLFD",
+      "original_expression": "function addTokenAgent(address _agentAddress) external;",
+      "replacement_expression": "",
+      "start_line": 129
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 136,
+      "function": "removeTokenAgent",
+      "mutant_id": "m000106",
+      "operator": "OLFD",
+      "original_expression": "function removeTokenAgent(address _agentAddress) external;",
+      "replacement_expression": "",
+      "start_line": 136
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 143,
+      "function": "bindToken",
+      "mutant_id": "m000107",
+      "operator": "OLFD",
+      "original_expression": "function bindToken(address _token) external;",
+      "replacement_expression": "",
+      "start_line": 143
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 150,
+      "function": "unbindToken",
+      "mutant_id": "m000108",
+      "operator": "OLFD",
+      "original_expression": "function unbindToken(address _token) external;",
+      "replacement_expression": "",
+      "start_line": 150
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 167,
+      "function": "transferred",
+      "mutant_id": "m000109",
+      "operator": "OLFD",
+      "original_expression": "function transferred(\n        address _from,\n        address _to,\n        uint256 _amount\n    ) external;",
+      "replacement_expression": "",
+      "start_line": 163
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 179,
+      "function": "created",
+      "mutant_id": "m000110",
+      "operator": "OLFD",
+      "original_expression": "function created(address _to, uint256 _amount) external;",
+      "replacement_expression": "",
+      "start_line": 179
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 190,
+      "function": "destroyed",
+      "mutant_id": "m000111",
+      "operator": "OLFD",
+      "original_expression": "function destroyed(address _from, uint256 _amount) external;",
+      "replacement_expression": "",
+      "start_line": 190
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 196,
+      "function": "isTokenAgent",
+      "mutant_id": "m000112",
+      "operator": "OLFD",
+      "original_expression": "function isTokenAgent(address _agentAddress) external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 196
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 202,
+      "function": "isTokenBound",
+      "mutant_id": "m000113",
+      "operator": "OLFD",
+      "original_expression": "function isTokenBound(address _token) external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 202
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 217,
+      "function": "canTransfer",
+      "mutant_id": "m000114",
+      "operator": "OLFD",
+      "original_expression": "function canTransfer(\n        address _from,\n        address _to,\n        uint256 _amount\n    ) external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 828,
+      "function": "approve",
+      "mutant_id": "m000115",
+      "operator": "OLFD",
+      "original_expression": "function approve(address spender, uint256 amount) external returns (bool);",
+      "replacement_expression": "",
+      "start_line": 828
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 908,
+      "function": "approve",
+      "mutant_id": "m000116",
+      "operator": "OLFD",
+      "original_expression": "function approve(uint256 _id, bool _approve) external returns (bool success);",
+      "replacement_expression": "",
+      "start_line": 908
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1162,
+      "function": "bindToken",
+      "mutant_id": "m000117",
+      "operator": "OLFD",
+      "original_expression": "function bindToken(address _token) external;",
+      "replacement_expression": "",
+      "start_line": 1162
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1170,
+      "function": "unbindToken",
+      "mutant_id": "m000118",
+      "operator": "OLFD",
+      "original_expression": "function unbindToken(address _token) external;",
+      "replacement_expression": "",
+      "start_line": 1170
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1216,
+      "function": "transferred",
+      "mutant_id": "m000119",
+      "operator": "OLFD",
+      "original_expression": "function transferred(\n        address _from,\n        address _to,\n        uint256 _amount\n    ) external;",
+      "replacement_expression": "",
+      "start_line": 1212
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1229,
+      "function": "created",
+      "mutant_id": "m000120",
+      "operator": "OLFD",
+      "original_expression": "function created(address _to, uint256 _amount) external;",
+      "replacement_expression": "",
+      "start_line": 1229
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1242,
+      "function": "destroyed",
+      "mutant_id": "m000121",
+      "operator": "OLFD",
+      "original_expression": "function destroyed(address _from, uint256 _amount) external;",
+      "replacement_expression": "",
+      "start_line": 1242
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1260,
+      "function": "canTransfer",
+      "mutant_id": "m000122",
+      "operator": "OLFD",
+      "original_expression": "function canTransfer(\n        address _from,\n        address _to,\n        uint256 _amount\n    ) external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 1256
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1397,
+      "function": "isClaimValid",
+      "mutant_id": "m000123",
+      "operator": "OLFD",
+      "original_expression": "function isClaimValid(\n        IIdentity _identity,\n        uint256 claimTopic,\n        bytes calldata sig,\n        bytes calldata data)\n    external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 1392
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1446,
+      "function": "isClaimValid",
+      "mutant_id": "m000124",
+      "operator": "OLFD",
+      "original_expression": "function isClaimValid(\n        IIdentity _identity,\n        uint256 claimTopic,\n        bytes calldata sig,\n        bytes calldata data)\n    external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 1441
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 491,
+      "function": "addTokenAgent",
+      "mutant_id": "m000125",
+      "operator": "ORFD",
+      "original_expression": "function addTokenAgent(address _agentAddress) external override onlyOwner {\n        require(!_tokenAgentsList[_agentAddress], \"This Agent is already registered\");\n        _tokenAgentsList[_agentAddress] = true;\n        emit TokenAgentAdded(_agentAddress);\n    }",
+      "replacement_expression": "",
+      "start_line": 487
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 500,
+      "function": "removeTokenAgent",
+      "mutant_id": "m000126",
+      "operator": "ORFD",
+      "original_expression": "function removeTokenAgent(address _agentAddress) external override onlyOwner {\n        require(_tokenAgentsList[_agentAddress], \"This Agent is not registered yet\");\n        _tokenAgentsList[_agentAddress] = false;\n        emit TokenAgentRemoved(_agentAddress);\n    }",
+      "replacement_expression": "",
+      "start_line": 496
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 510,
+      "function": "bindToken",
+      "mutant_id": "m000127",
+      "operator": "ORFD",
+      "original_expression": "function bindToken(address _token) external override {\n        require(owner() == msg.sender || (address(tokenBound) == address(0) && msg.sender == _token),\n            \"only owner or token can call\");\n        tokenBound = IToken(_token);\n        emit TokenBound(_token);\n    }",
+      "replacement_expression": "",
+      "start_line": 505
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 520,
+      "function": "unbindToken",
+      "mutant_id": "m000128",
+      "operator": "ORFD",
+      "original_expression": "function unbindToken(address _token) external override {\n        require(owner() == msg.sender || msg.sender == _token , \"only owner or token can call\");\n        require(_token == address(tokenBound), \"This token is not bound\");\n        delete tokenBound;\n        emit TokenUnbound(_token);\n    }",
+      "replacement_expression": "",
+      "start_line": 515
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 530,
+      "function": "isTokenAgent",
+      "mutant_id": "m000129",
+      "operator": "ORFD",
+      "original_expression": "function isTokenAgent(address _agentAddress) public override view returns (bool) {\n        if (!_tokenAgentsList[_agentAddress] && !(AgentRole(address(tokenBound))).isAgent(_agentAddress)) {\n            return false;\n        }\n        return true;\n    }",
+      "replacement_expression": "",
+      "start_line": 525
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 540,
+      "function": "isTokenBound",
+      "mutant_id": "m000130",
+      "operator": "ORFD",
+      "original_expression": "function isTokenBound(address _token) public override view returns (bool) {\n        if (_token != address(tokenBound)){\n            return false;\n        }\n        return true;\n    }",
+      "replacement_expression": "",
+      "start_line": 535
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 638,
+      "function": "transferred",
+      "mutant_id": "m000131",
+      "operator": "ORFD",
+      "original_expression": "function transferred(address _from, address _to, uint256 _value) external override {\n    }",
+      "replacement_expression": "",
+      "start_line": 637
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 645,
+      "function": "created",
+      "mutant_id": "m000132",
+      "operator": "ORFD",
+      "original_expression": "function created(address _to, uint256 _value) external override {\n    }",
+      "replacement_expression": "",
+      "start_line": 644
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 652,
+      "function": "destroyed",
+      "mutant_id": "m000133",
+      "operator": "ORFD",
+      "original_expression": "function destroyed(address _from, uint256 _value) external override {\n    }",
+      "replacement_expression": "",
+      "start_line": 651
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 659,
+      "function": "canTransfer",
+      "mutant_id": "m000134",
+      "operator": "ORFD",
+      "original_expression": "function canTransfer(address , address , uint256 ) external view override returns (bool) {\n        return true;\n    }",
+      "replacement_expression": "",
+      "start_line": 657
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 930,
+      "function": "execute",
+      "mutant_id": "m000135",
+      "operator": "PKD",
+      "original_expression": "function execute(address _to, uint256 _value, bytes calldata _data) external payable returns (uint256 executionId)",
+      "replacement_expression": "function execute(address _to, uint256 _value, bytes calldata _data) external  returns (uint256 executionId)",
+      "start_line": 930
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "_msgSender",
+      "mutant_id": "m000136",
+      "operator": "RSD",
+      "original_expression": "return msg.sender;",
+      "replacement_expression": "/* return msg.sender; */",
+      "start_line": 20
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 24,
+      "function": "_msgData",
+      "mutant_id": "m000137",
+      "operator": "RSD",
+      "original_expression": "return msg.data;",
+      "replacement_expression": "/* return msg.data; */",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 260,
+      "function": "owner",
+      "mutant_id": "m000138",
+      "operator": "RSD",
+      "original_expression": "return _owner;",
+      "replacement_expression": "/* return _owner; */",
+      "start_line": 260
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 391,
+      "function": "isAgent",
+      "mutant_id": "m000139",
+      "operator": "RSD",
+      "original_expression": "return _agents.has(_agent);",
+      "replacement_expression": "_agents.has(_agent);",
+      "start_line": 391
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 529,
+      "function": "isTokenAgent",
+      "mutant_id": "m000140",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 529
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 539,
+      "function": "isTokenBound",
+      "mutant_id": "m000141",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 539
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 546,
+      "function": "_isToken",
+      "mutant_id": "m000142",
+      "operator": "RSD",
+      "original_expression": "return isTokenBound(msg.sender);",
+      "replacement_expression": "isTokenBound(msg.sender);",
+      "start_line": 546
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 555,
+      "function": "_getIdentity",
+      "mutant_id": "m000143",
+      "operator": "RSD",
+      "original_expression": "return address(tokenBound.identityRegistry().identity(_userAddress));",
+      "replacement_expression": "address(tokenBound.identityRegistry().identity(_userAddress));",
+      "start_line": 555
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 564,
+      "function": "_getCountry",
+      "mutant_id": "m000144",
+      "operator": "RSD",
+      "original_expression": "return tokenBound.identityRegistry().investorCountry(_userAddress);",
+      "replacement_expression": "tokenBound.identityRegistry().investorCountry(_userAddress);",
+      "start_line": 564
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 658,
+      "function": "canTransfer",
+      "mutant_id": "m000145",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 658
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1376,
+      "function": "has",
+      "mutant_id": "m000146",
+      "operator": "RSD",
+      "original_expression": "return role.bearer[account];",
+      "replacement_expression": "/* return role.bearer[account]; */",
+      "start_line": 1376
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1043,
+      "function": "getClaim",
+      "mutant_id": "m000147",
+      "operator": "RVS",
+      "original_expression": "uint256 topic,\n        uint256 scheme,\n        address issuer,\n        bytes memory signature,\n        bytes memory data,\n        string memory uri",
+      "replacement_expression": "uint256 scheme,\n        uint256 topic,\n        address issuer,\n        bytes memory data,\n        bytes memory signature,\n        string memory uri",
+      "start_line": 1038
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 546,
+      "function": "_isToken",
+      "mutant_id": "m000148",
+      "operator": "SKID",
+      "original_expression": "isTokenBound",
+      "replacement_expression": "super.isTokenBound",
+      "start_line": 546
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 488,
+      "function": "addTokenAgent",
+      "mutant_id": "m000149",
+      "operator": "UORD",
+      "original_expression": "!_tokenAgentsList[_agentAddress]",
+      "replacement_expression": " _tokenAgentsList[_agentAddress]",
+      "start_line": 488
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 526,
+      "function": "isTokenAgent",
+      "mutant_id": "m000150",
+      "operator": "UORD",
+      "original_expression": "!_tokenAgentsList[_agentAddress]",
+      "replacement_expression": " _tokenAgentsList[_agentAddress]",
+      "start_line": 526
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 526,
+      "function": "isTokenAgent",
+      "mutant_id": "m000151",
+      "operator": "UORD",
+      "original_expression": "!(AgentRole(address(tokenBound))).isAgent(_agentAddress)",
+      "replacement_expression": " (AgentRole(address(tokenBound))).isAgent(_agentAddress)",
+      "start_line": 526
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1358,
+      "function": "add",
+      "mutant_id": "m000152",
+      "operator": "UORD",
+      "original_expression": "!has(role, account)",
+      "replacement_expression": " has(role, account)",
+      "start_line": 1358
+    }
+  ],
+  "subject_id": "ERC-3643__ERC-3643__DefaultCompliance"
+}

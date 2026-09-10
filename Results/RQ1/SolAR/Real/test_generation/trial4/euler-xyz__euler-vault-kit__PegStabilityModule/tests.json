@@ -1,0 +1,254 @@
+[
+  [
+    {
+      "args": [
+        "address_00021",
+        "address_00019",
+        "address_00398",
+        2612,
+        65,
+        20
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        109720964244094252648527487716995741959232150662009941793239893541786634327738,
+        "address_00184"
+      ],
+      "frm": "address_00184",
+      "method": "swapToUnderlyingGivenOut",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00401",
+        "address_00036",
+        "address_00021",
+        71,
+        487,
+        14482747140017339459353503676776187772613098758386612684871300698205706189322
+      ],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        112628252262330443342472737317778961983048785598081372091478626939782795749379,
+        "address_00184"
+      ],
+      "frm": "address_00404",
+      "method": "swapToSynthGivenIn",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        29691737613748389459445511379280296657411332459857274323238552991673555991674,
+        "address_00019"
+      ],
+      "frm": "address_00036",
+      "method": "swapToSynthGivenIn",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        10,
+        "address_00019"
+      ],
+      "frm": "address_00410",
+      "method": "swapToUnderlyingGivenIn",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00401",
+        "address_00023",
+        "address_00032",
+        11,
+        18,
+        72513052087129807314871835473915959113600517255529730663580470655340671338503
+      ],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        92
+      ],
+      "frm": "address_00023",
+      "method": "quoteToUnderlyingGivenIn",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        83950463907846467464872036227576276739631595071981728242091031454097758854275
+      ],
+      "frm": "address_00184",
+      "method": "quoteToSynthGivenOut",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        10
+      ],
+      "frm": "address_00032",
+      "method": "quoteToUnderlyingGivenIn",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019",
+        "address_00023",
+        "address_00032",
+        10,
+        2612,
+        18507322876124656594349963167806126053464434969081594175469440547586616992495
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        44097290818617034689513960596298575275235248414545326580104082231906838357533
+      ],
+      "frm": "address_00184",
+      "method": "quoteToUnderlyingGivenIn",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        7
+      ],
+      "frm": "address_00021",
+      "method": "quoteToUnderlyingGivenOut",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        41
+      ],
+      "frm": "address_00410",
+      "method": "quoteToSynthGivenIn",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [
+        1856206890070130659291672154792720286889129848918436585515064991567799528640
+      ],
+      "frm": "address_00184",
+      "method": "quoteToUnderlyingGivenIn",
+      "n": 5,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00021",
+        "address_00019",
+        "address_00398",
+        2612,
+        65,
+        20
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        712
+      ],
+      "frm": "address_00021",
+      "method": "quoteToSynthGivenIn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00021",
+        "address_00019",
+        "address_00398",
+        2612,
+        65,
+        20
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        165,
+        "address_00032"
+      ],
+      "frm": "address_00021",
+      "method": "swapToSynthGivenOut",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00021",
+        "address_00019",
+        "address_00184",
+        2612,
+        71,
+        20
+      ],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        91846156762304566439854903906369545929171108983912959544911173350932667750690
+      ],
+      "frm": "address_00410",
+      "method": "quoteToSynthGivenIn",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        255
+      ],
+      "frm": "address_00184",
+      "method": "quoteToUnderlyingGivenIn",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

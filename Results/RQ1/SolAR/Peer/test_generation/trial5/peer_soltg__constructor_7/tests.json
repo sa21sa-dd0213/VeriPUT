@@ -1,0 +1,118 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        42
+      ],
+      "frm": "address_00184",
+      "method": "f7",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        108761267058119921106054592301467769668557487461836697335090840813249397390373
+      ],
+      "frm": "address_00036",
+      "method": "f7",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "g7",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        10
+      ],
+      "frm": "address_00021",
+      "method": "f7",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "f7",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "f7",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "f7",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "g7",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [
+        1401676250459622596420564709160632431470861392753955461764477715028246613031
+      ],
+      "frm": "address_00019",
+      "method": "f7",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [
+        20600901840527172020417676581346015453358453605420115583654296147277283368722
+      ],
+      "frm": "address_00032",
+      "method": "f7",
+      "n": 6,
+      "value": 0
+    }
+  ]
+]

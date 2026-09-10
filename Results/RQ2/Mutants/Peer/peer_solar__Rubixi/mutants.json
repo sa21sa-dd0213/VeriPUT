@@ -1,0 +1,2037 @@
+{
+  "compile_failed": 9,
+  "compile_ok": 194,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 42,
+      "function": "init",
+      "mutant_id": "m000001",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 42
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "init",
+      "mutant_id": "m000002",
+      "operator": "AOR",
+      "original_expression": " /= ",
+      "replacement_expression": " = ",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "addPayout",
+      "mutant_id": "m000003",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "addPayout",
+      "mutant_id": "m000004",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 71,
+      "function": "addPayout",
+      "mutant_id": "m000005",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 71
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "addPayout",
+      "mutant_id": "m000006",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000007",
+      "operator": "AOR",
+      "original_expression": " *= ",
+      "replacement_expression": " = ",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000008",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000009",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 104,
+      "function": "changeOwner",
+      "mutant_id": "m000010",
+      "operator": "AVR",
+      "original_expression": "_owner",
+      "replacement_expression": "address(this)",
+      "start_line": 104
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 104,
+      "function": "changeOwner",
+      "mutant_id": "m000011",
+      "operator": "AVR",
+      "original_expression": "_owner",
+      "replacement_expression": "address(0)",
+      "start_line": 104
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "modifier:onlyowner",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "init",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "init",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "init",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "init",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "init",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 56,
+      "function": "addPayout",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 56
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 56,
+      "function": "addPayout",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 56
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 56,
+      "function": "addPayout",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 56
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 56,
+      "function": "addPayout",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 56
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "addPayout",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "addPayout",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "addPayout",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "addPayout",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "addPayout",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "addPayout",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "addPayout",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "addPayout",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "addPayout",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "addPayout",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "addPayout",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "addPayout",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "addPayout",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "addPayout",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "addPayout",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "addPayout",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "addPayout",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "addPayout",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 78,
+      "function": "collectAllFees",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 78
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 88,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000043",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 88
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000044",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000045",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000046",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000047",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000048",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000049",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000050",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000051",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "changeMultiplier",
+      "mutant_id": "m000052",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "changeMultiplier",
+      "mutant_id": "m000053",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "changeMultiplier",
+      "mutant_id": "m000054",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "changeMultiplier",
+      "mutant_id": "m000055",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "changeMultiplier",
+      "mutant_id": "m000056",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 114,
+      "function": "changeFeePercentage",
+      "mutant_id": "m000057",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 114
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 114,
+      "function": "changeFeePercentage",
+      "mutant_id": "m000058",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 114
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "currentPyramidBalanceApproximately",
+      "mutant_id": "m000059",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "currentPyramidBalanceApproximately",
+      "mutant_id": "m000060",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 136,
+      "function": "nextPayoutWhenPyramidBalanceTotalsApproximately",
+      "mutant_id": "m000061",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 136
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 136,
+      "function": "nextPayoutWhenPyramidBalanceTotalsApproximately",
+      "mutant_id": "m000062",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 136
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "feesSeperateFromBalanceApproximately",
+      "mutant_id": "m000063",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "feesSeperateFromBalanceApproximately",
+      "mutant_id": "m000064",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 148,
+      "function": "numberOfParticipantsWaitingForPayout",
+      "mutant_id": "m000065",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 148
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 148,
+      "function": "numberOfParticipantsWaitingForPayout",
+      "mutant_id": "m000066",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 148
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "participantDetails",
+      "mutant_id": "m000067",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "participantDetails",
+      "mutant_id": "m000068",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "participantDetails",
+      "mutant_id": "m000069",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 154,
+      "function": "participantDetails",
+      "mutant_id": "m000070",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 154
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 154,
+      "function": "participantDetails",
+      "mutant_id": "m000071",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 154
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "modifier:onlyowner",
+      "mutant_id": "m000072",
+      "operator": "CSC",
+      "original_expression": "msg.sender == creator",
+      "replacement_expression": "true",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "modifier:onlyowner",
+      "mutant_id": "m000073",
+      "operator": "CSC",
+      "original_expression": "msg.sender == creator",
+      "replacement_expression": "false",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "init",
+      "mutant_id": "m000074",
+      "operator": "CSC",
+      "original_expression": "msg.value < 1 ether",
+      "replacement_expression": "true",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "init",
+      "mutant_id": "m000075",
+      "operator": "CSC",
+      "original_expression": "msg.value < 1 ether",
+      "replacement_expression": "false",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "init",
+      "mutant_id": "m000076",
+      "operator": "CSC",
+      "original_expression": "msg.value >= 50 ether",
+      "replacement_expression": "true",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "init",
+      "mutant_id": "m000077",
+      "operator": "CSC",
+      "original_expression": "msg.value >= 50 ether",
+      "replacement_expression": "false",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "addPayout",
+      "mutant_id": "m000078",
+      "operator": "CSC",
+      "original_expression": "participants.length == 10",
+      "replacement_expression": "true",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "addPayout",
+      "mutant_id": "m000079",
+      "operator": "CSC",
+      "original_expression": "participants.length == 10",
+      "replacement_expression": "false",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "addPayout",
+      "mutant_id": "m000080",
+      "operator": "CSC",
+      "original_expression": "participants.length == 25",
+      "replacement_expression": "true",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "addPayout",
+      "mutant_id": "m000081",
+      "operator": "CSC",
+      "original_expression": "participants.length == 25",
+      "replacement_expression": "false",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 78,
+      "function": "collectAllFees",
+      "mutant_id": "m000082",
+      "operator": "CSC",
+      "original_expression": "collectedFees == 0",
+      "replacement_expression": "true",
+      "start_line": 78
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 78,
+      "function": "collectAllFees",
+      "mutant_id": "m000083",
+      "operator": "CSC",
+      "original_expression": "collectedFees == 0",
+      "replacement_expression": "false",
+      "start_line": 78
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000084",
+      "operator": "CSC",
+      "original_expression": "_amt > collectedFees",
+      "replacement_expression": "true",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000085",
+      "operator": "CSC",
+      "original_expression": "_amt > collectedFees",
+      "replacement_expression": "false",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 88,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000086",
+      "operator": "CSC",
+      "original_expression": "collectedFees == 0",
+      "replacement_expression": "true",
+      "start_line": 88
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 88,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000087",
+      "operator": "CSC",
+      "original_expression": "collectedFees == 0",
+      "replacement_expression": "false",
+      "start_line": 88
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000088",
+      "operator": "CSC",
+      "original_expression": "collectedFees == 0 || _pcent > 100",
+      "replacement_expression": "true",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000089",
+      "operator": "CSC",
+      "original_expression": "collectedFees == 0 || _pcent > 100",
+      "replacement_expression": "false",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "changeMultiplier",
+      "mutant_id": "m000090",
+      "operator": "CSC",
+      "original_expression": "_mult > 300 || _mult < 120",
+      "replacement_expression": "true",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "changeMultiplier",
+      "mutant_id": "m000091",
+      "operator": "CSC",
+      "original_expression": "_mult > 300 || _mult < 120",
+      "replacement_expression": "false",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 114,
+      "function": "changeFeePercentage",
+      "mutant_id": "m000092",
+      "operator": "CSC",
+      "original_expression": "_fee > 10",
+      "replacement_expression": "true",
+      "start_line": 114
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 114,
+      "function": "changeFeePercentage",
+      "mutant_id": "m000093",
+      "operator": "CSC",
+      "original_expression": "_fee > 10",
+      "replacement_expression": "false",
+      "start_line": 114
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "participantDetails",
+      "mutant_id": "m000094",
+      "operator": "CSC",
+      "original_expression": "orderInPyramid <= participants.length",
+      "replacement_expression": "true",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "participantDetails",
+      "mutant_id": "m000095",
+      "operator": "CSC",
+      "original_expression": "orderInPyramid <= participants.length",
+      "replacement_expression": "false",
+      "start_line": 152
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 120,
+      "function": "currentMultiplier",
+      "mutant_id": "m000096",
+      "operator": "DLR",
+      "original_expression": "string memory info",
+      "replacement_expression": "string storage info",
+      "start_line": 120
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 125,
+      "function": "currentFeePercentage",
+      "mutant_id": "m000097",
+      "operator": "DLR",
+      "original_expression": "string memory info",
+      "replacement_expression": "string storage info",
+      "start_line": 125
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 130,
+      "function": "currentPyramidBalanceApproximately",
+      "mutant_id": "m000098",
+      "operator": "DLR",
+      "original_expression": "string memory info",
+      "replacement_expression": "string storage info",
+      "start_line": 130
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 78,
+      "function": "collectAllFees",
+      "mutant_id": "m000099",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 78
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 88,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000100",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 88
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 95,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000101",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "changeMultiplier",
+      "mutant_id": "m000102",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 114,
+      "function": "changeFeePercentage",
+      "mutant_id": "m000103",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 114
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 69,
+      "function": "addPayout",
+      "mutant_id": "m000104",
+      "operator": "ETR",
+      "original_expression": "payable(participants[payoutOrder].etherAddress).send",
+      "replacement_expression": "payable(participants[payoutOrder].etherAddress).transfer",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 69,
+      "function": "addPayout",
+      "mutant_id": "m000105",
+      "operator": "ETR",
+      "original_expression": "payable(participants[payoutOrder].etherAddress).send",
+      "replacement_expression": "payable(participants[payoutOrder].etherAddress).call{value: payoutToSend}(\"\")",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 80,
+      "function": "collectAllFees",
+      "mutant_id": "m000106",
+      "operator": "ETR",
+      "original_expression": "payable(creator).send",
+      "replacement_expression": "payable(creator).transfer",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 80,
+      "function": "collectAllFees",
+      "mutant_id": "m000107",
+      "operator": "ETR",
+      "original_expression": "payable(creator).send",
+      "replacement_expression": "payable(creator).call{value: collectedFees}(\"\")",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 90,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000108",
+      "operator": "ETR",
+      "original_expression": "payable(creator).send",
+      "replacement_expression": "payable(creator).transfer",
+      "start_line": 90
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 90,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000109",
+      "operator": "ETR",
+      "original_expression": "payable(creator).send",
+      "replacement_expression": "payable(creator).call{value: _amt}(\"\")",
+      "start_line": 90
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 98,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000110",
+      "operator": "ETR",
+      "original_expression": "payable(creator).send",
+      "replacement_expression": "payable(creator).transfer",
+      "start_line": 98
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 98,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000111",
+      "operator": "ETR",
+      "original_expression": "payable(creator).send",
+      "replacement_expression": "payable(creator).call{value: feesToCollect}(\"\")",
+      "start_line": 98
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "fallback",
+      "mutant_id": "m000112",
+      "operator": "FCD",
+      "original_expression": "init();",
+      "replacement_expression": "/*init();*/",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "init",
+      "mutant_id": "m000113",
+      "operator": "FCD",
+      "original_expression": "addPayout(_fee);",
+      "replacement_expression": "/*addPayout(_fee);*/",
+      "start_line": 50
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 56,
+      "function": "addPayout",
+      "mutant_id": "m000114",
+      "operator": "FCD",
+      "original_expression": "Participant(msg.sender, (msg.value * pyramidMultiplier) / 100))",
+      "replacement_expression": "/*Participant(msg.sender, (msg.value * pyramidMultiplier) / 100))*/",
+      "start_line": 56
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 69,
+      "function": "addPayout",
+      "mutant_id": "m000115",
+      "operator": "FCD",
+      "original_expression": "payable(participants[payoutOrder].etherAddress).",
+      "replacement_expression": "/*payable(participants[payoutOrder].etherAddress).*/",
+      "start_line": 69
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 80,
+      "function": "collectAllFees",
+      "mutant_id": "m000116",
+      "operator": "FCD",
+      "original_expression": "payable(creator).",
+      "replacement_expression": "/*payable(creator).*/",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000117",
+      "operator": "FCD",
+      "original_expression": "collectAllFees();",
+      "replacement_expression": "/*collectAllFees();*/",
+      "start_line": 86
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 90,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000118",
+      "operator": "FCD",
+      "original_expression": "payable(creator).",
+      "replacement_expression": "/*payable(creator).*/",
+      "start_line": 90
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 98,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000119",
+      "operator": "FCD",
+      "original_expression": "payable(creator).",
+      "replacement_expression": "/*payable(creator).*/",
+      "start_line": 98
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "init",
+      "mutant_id": "m000120",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "init",
+      "mutant_id": "m000121",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 42,
+      "function": "init",
+      "mutant_id": "m000122",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 42
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 42,
+      "function": "init",
+      "mutant_id": "m000123",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 42
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "init",
+      "mutant_id": "m000124",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "init",
+      "mutant_id": "m000125",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 56,
+      "function": "addPayout",
+      "mutant_id": "m000126",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 56
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 56,
+      "function": "addPayout",
+      "mutant_id": "m000127",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 56
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "addPayout",
+      "mutant_id": "m000128",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "addPayout",
+      "mutant_id": "m000129",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "addPayout",
+      "mutant_id": "m000130",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "addPayout",
+      "mutant_id": "m000131",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "stateVariable",
+      "mutant_id": "m000132",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "stateVariable",
+      "mutant_id": "m000133",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "stateVariable",
+      "mutant_id": "m000134",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "stateVariable",
+      "mutant_id": "m000135",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "stateVariable",
+      "mutant_id": "m000136",
+      "operator": "ILR",
+      "original_expression": "300",
+      "replacement_expression": "299",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "stateVariable",
+      "mutant_id": "m000137",
+      "operator": "ILR",
+      "original_expression": "300",
+      "replacement_expression": "301",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "stateVariable",
+      "mutant_id": "m000138",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "init",
+      "mutant_id": "m000139",
+      "operator": "ILR",
+      "original_expression": "1 ether",
+      "replacement_expression": "0 ether",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "init",
+      "mutant_id": "m000140",
+      "operator": "ILR",
+      "original_expression": "1 ether",
+      "replacement_expression": "2 ether",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "init",
+      "mutant_id": "m000141",
+      "operator": "ILR",
+      "original_expression": "50 ether",
+      "replacement_expression": "49 ether",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "init",
+      "mutant_id": "m000142",
+      "operator": "ILR",
+      "original_expression": "50 ether",
+      "replacement_expression": "51 ether",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "init",
+      "mutant_id": "m000143",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "init",
+      "mutant_id": "m000144",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 56,
+      "function": "addPayout",
+      "mutant_id": "m000145",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "99",
+      "start_line": 56
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 56,
+      "function": "addPayout",
+      "mutant_id": "m000146",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "101",
+      "start_line": 56
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "addPayout",
+      "mutant_id": "m000147",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "addPayout",
+      "mutant_id": "m000148",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "addPayout",
+      "mutant_id": "m000149",
+      "operator": "ILR",
+      "original_expression": "200",
+      "replacement_expression": "199",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "addPayout",
+      "mutant_id": "m000150",
+      "operator": "ILR",
+      "original_expression": "200",
+      "replacement_expression": "201",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "addPayout",
+      "mutant_id": "m000151",
+      "operator": "ILR",
+      "original_expression": "25",
+      "replacement_expression": "24",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "addPayout",
+      "mutant_id": "m000152",
+      "operator": "ILR",
+      "original_expression": "25",
+      "replacement_expression": "26",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "addPayout",
+      "mutant_id": "m000153",
+      "operator": "ILR",
+      "original_expression": "150",
+      "replacement_expression": "149",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "addPayout",
+      "mutant_id": "m000154",
+      "operator": "ILR",
+      "original_expression": "150",
+      "replacement_expression": "151",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "addPayout",
+      "mutant_id": "m000155",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "99",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "addPayout",
+      "mutant_id": "m000156",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "101",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "addPayout",
+      "mutant_id": "m000157",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "99",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "addPayout",
+      "mutant_id": "m000158",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "101",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "addPayout",
+      "mutant_id": "m000159",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "99",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "addPayout",
+      "mutant_id": "m000160",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "101",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "addPayout",
+      "mutant_id": "m000161",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "addPayout",
+      "mutant_id": "m000162",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 78,
+      "function": "collectAllFees",
+      "mutant_id": "m000163",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 78
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "collectAllFees",
+      "mutant_id": "m000164",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000165",
+      "operator": "ILR",
+      "original_expression": "1 ether",
+      "replacement_expression": "0 ether",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000166",
+      "operator": "ILR",
+      "original_expression": "1 ether",
+      "replacement_expression": "2 ether",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 88,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000167",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 88
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000168",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000169",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "99",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000170",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "101",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000171",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "99",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000172",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "101",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "changeMultiplier",
+      "mutant_id": "m000173",
+      "operator": "ILR",
+      "original_expression": "300",
+      "replacement_expression": "299",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "changeMultiplier",
+      "mutant_id": "m000174",
+      "operator": "ILR",
+      "original_expression": "300",
+      "replacement_expression": "301",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "changeMultiplier",
+      "mutant_id": "m000175",
+      "operator": "ILR",
+      "original_expression": "120",
+      "replacement_expression": "119",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "changeMultiplier",
+      "mutant_id": "m000176",
+      "operator": "ILR",
+      "original_expression": "120",
+      "replacement_expression": "121",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 114,
+      "function": "changeFeePercentage",
+      "mutant_id": "m000177",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 114
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 114,
+      "function": "changeFeePercentage",
+      "mutant_id": "m000178",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 114
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "currentPyramidBalanceApproximately",
+      "mutant_id": "m000179",
+      "operator": "ILR",
+      "original_expression": "1 ether",
+      "replacement_expression": "0 ether",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "currentPyramidBalanceApproximately",
+      "mutant_id": "m000180",
+      "operator": "ILR",
+      "original_expression": "1 ether",
+      "replacement_expression": "2 ether",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 136,
+      "function": "nextPayoutWhenPyramidBalanceTotalsApproximately",
+      "mutant_id": "m000181",
+      "operator": "ILR",
+      "original_expression": "1 ether",
+      "replacement_expression": "0 ether",
+      "start_line": 136
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 136,
+      "function": "nextPayoutWhenPyramidBalanceTotalsApproximately",
+      "mutant_id": "m000182",
+      "operator": "ILR",
+      "original_expression": "1 ether",
+      "replacement_expression": "2 ether",
+      "start_line": 136
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "feesSeperateFromBalanceApproximately",
+      "mutant_id": "m000183",
+      "operator": "ILR",
+      "original_expression": "1 ether",
+      "replacement_expression": "0 ether",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "feesSeperateFromBalanceApproximately",
+      "mutant_id": "m000184",
+      "operator": "ILR",
+      "original_expression": "1 ether",
+      "replacement_expression": "2 ether",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 154,
+      "function": "participantDetails",
+      "mutant_id": "m000185",
+      "operator": "ILR",
+      "original_expression": "1 ether",
+      "replacement_expression": "0 ether",
+      "start_line": 154
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 154,
+      "function": "participantDetails",
+      "mutant_id": "m000186",
+      "operator": "ILR",
+      "original_expression": "1 ether",
+      "replacement_expression": "2 ether",
+      "start_line": 154
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "addPayout",
+      "mutant_id": "m000187",
+      "operator": "LSC",
+      "original_expression": "balance > participants[payoutOrder].payout",
+      "replacement_expression": "false",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "collectAllFees",
+      "mutant_id": "m000188",
+      "operator": "MOD",
+      "original_expression": "function collectAllFees() public onlyowner ",
+      "replacement_expression": "function collectAllFees() public  ",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 84,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000189",
+      "operator": "MOD",
+      "original_expression": "function collectFeesInEther(uint _amt) public onlyowner ",
+      "replacement_expression": "function collectFeesInEther(uint _amt) public  ",
+      "start_line": 84
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "collectPercentOfFees",
+      "mutant_id": "m000190",
+      "operator": "MOD",
+      "original_expression": "function collectPercentOfFees(uint _pcent) public onlyowner ",
+      "replacement_expression": "function collectPercentOfFees(uint _pcent) public  ",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 103,
+      "function": "changeOwner",
+      "mutant_id": "m000191",
+      "operator": "MOD",
+      "original_expression": "function changeOwner(address _owner) public onlyowner ",
+      "replacement_expression": "function changeOwner(address _owner) public  ",
+      "start_line": 103
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 107,
+      "function": "changeMultiplier",
+      "mutant_id": "m000192",
+      "operator": "MOD",
+      "original_expression": "function changeMultiplier(uint _mult) public onlyowner ",
+      "replacement_expression": "function changeMultiplier(uint _mult) public  ",
+      "start_line": 107
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "changeFeePercentage",
+      "mutant_id": "m000193",
+      "operator": "MOD",
+      "original_expression": "function changeFeePercentage(uint _fee) public onlyowner ",
+      "replacement_expression": "function changeFeePercentage(uint _fee) public  ",
+      "start_line": 113
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 122,
+      "function": "currentMultiplier",
+      "mutant_id": "m000194",
+      "operator": "SLR",
+      "original_expression": "'This multiplier applies to you as soon as transaction is received, may be lowered to hasten payouts or increased if payouts are fast enough. Due to no float or decimals, multiplier is x100 for a fractional multiplier e.g. 250 is actually a 2.5x multiplier. Capped at 3x max and 1.2x min.'",
+      "replacement_expression": "\"\"",
+      "start_line": 122
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "currentFeePercentage",
+      "mutant_id": "m000195",
+      "operator": "SLR",
+      "original_expression": "'Shown in % form. Fee is halved(50%) for amounts equal or greater than 50 ethers. (Fee may change, but is capped to a maximum of 10%)'",
+      "replacement_expression": "\"\"",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 132,
+      "function": "currentPyramidBalanceApproximately",
+      "mutant_id": "m000196",
+      "operator": "SLR",
+      "original_expression": "'All balance values are measured in Ethers, note that due to no decimal placing, these values show up as integers only, within the contract itself you will get the exact decimal value you are supposed to'",
+      "replacement_expression": "\"\"",
+      "start_line": 132
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "init",
+      "mutant_id": "m000197",
+      "operator": "VUR",
+      "original_expression": "1 ether",
+      "replacement_expression": "1 gwei",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "init",
+      "mutant_id": "m000198",
+      "operator": "VUR",
+      "original_expression": "50 ether",
+      "replacement_expression": "50 gwei",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "collectFeesInEther",
+      "mutant_id": "m000199",
+      "operator": "VUR",
+      "original_expression": "1 ether",
+      "replacement_expression": "1 gwei",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "currentPyramidBalanceApproximately",
+      "mutant_id": "m000200",
+      "operator": "VUR",
+      "original_expression": "1 ether",
+      "replacement_expression": "1 gwei",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 136,
+      "function": "nextPayoutWhenPyramidBalanceTotalsApproximately",
+      "mutant_id": "m000201",
+      "operator": "VUR",
+      "original_expression": "1 ether",
+      "replacement_expression": "1 gwei",
+      "start_line": 136
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "feesSeperateFromBalanceApproximately",
+      "mutant_id": "m000202",
+      "operator": "VUR",
+      "original_expression": "1 ether",
+      "replacement_expression": "1 gwei",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 154,
+      "function": "participantDetails",
+      "mutant_id": "m000203",
+      "operator": "VUR",
+      "original_expression": "1 ether",
+      "replacement_expression": "1 gwei",
+      "start_line": 154
+    }
+  ],
+  "subject_id": "peer_solar__Rubixi"
+}

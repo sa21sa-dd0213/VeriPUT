@@ -1,0 +1,76 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        174
+      ],
+      "frm": "address_00023",
+      "method": "sayHello",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        223
+      ],
+      "frm": "address_00036",
+      "method": "sayGoodbye",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        224,
+        "\"\uc798\uac00!\""
+      ],
+      "frm": "address_00019",
+      "method": "changeHello",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        110,
+        "\"\uc798\uac00!\""
+      ],
+      "frm": "address_00184",
+      "method": "changeGoodbye",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

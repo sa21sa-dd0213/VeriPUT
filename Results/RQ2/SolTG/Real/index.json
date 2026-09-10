@@ -1,0 +1,10 @@
+{
+  "dataset": "Real",
+  "kill_statuses": [
+    "killed",
+    "killed-compile",
+    "mutant-setup-failure"
+  ],
+  "tool": "SolTG",
+  "trials": 1
+}

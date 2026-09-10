@@ -1,0 +1,757 @@
+{
+  "compile_failed": 25,
+  "compile_ok": 50,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 75,
+      "function": "constructor",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "rateProvider_",
+      "replacement_expression": "address(this)",
+      "start_line": 75
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 75,
+      "function": "constructor",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "rateProvider_",
+      "replacement_expression": "address(0)",
+      "start_line": 75
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "constructor",
+      "mutant_id": "m000003",
+      "operator": "AVR",
+      "original_expression": "underlyingPriceFeed_",
+      "replacement_expression": "address(this)",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "constructor",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "underlyingPriceFeed_",
+      "replacement_expression": "address(0)",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 79,
+      "function": "constructor",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " ** ",
+      "replacement_expression": " * ",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 79,
+      "function": "constructor",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 79,
+      "function": "constructor",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 82,
+      "function": "constructor",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 82
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 82,
+      "function": "constructor",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 82
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 84,
+      "function": "constructor",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " ** ",
+      "replacement_expression": " * ",
+      "start_line": 84
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "latestRoundData",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": "**",
+      "replacement_expression": "*",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "latestRoundData",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "latestRoundData",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "latestRoundData",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "latestRoundData",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "latestRoundData",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "latestRoundData",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "latestRoundData",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "latestRoundData",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "latestRoundData",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "latestRoundData",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 101
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 101,
+      "function": "latestRoundData",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "latestRoundData",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 101
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 101,
+      "function": "latestRoundData",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "signed256",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "signed256",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 106
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 85,
+      "function": "constructor",
+      "mutant_id": "m000027",
+      "operator": "CCD",
+      "original_expression": "constructor(address rateProvider_, address underlyingPriceFeed_, uint8 decimals_, string memory description_) {\n        rateProvider = rateProvider_;\n        underlyingPriceFeed = underlyingPriceFeed_;\n        rateProviderDecimals = IERC4626(rateProvider_).decimals();\n        underlyingDecimals = AggregatorV3Interface(underlyingPriceFeed_).decimals();\n        combinedScale = signed256(10 ** (rateProviderDecimals + underlyingDecimals));\n        description = description_;\n\n        if (decimals_ > 18) revert BadDecimals();\n        decimals = decimals_;\n        priceFeedScale = int256(10 ** decimals);\n    }",
+      "replacement_expression": "",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 82,
+      "function": "constructor",
+      "mutant_id": "m000028",
+      "operator": "CSC",
+      "original_expression": "decimals_ > 18",
+      "replacement_expression": "true",
+      "start_line": 82
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 82,
+      "function": "constructor",
+      "mutant_id": "m000029",
+      "operator": "CSC",
+      "original_expression": "decimals_ > 18",
+      "replacement_expression": "false",
+      "start_line": 82
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "latestRoundData",
+      "mutant_id": "m000030",
+      "operator": "CSC",
+      "original_expression": "rate <= 0 || underlyingPrice <= 0",
+      "replacement_expression": "true",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "latestRoundData",
+      "mutant_id": "m000031",
+      "operator": "CSC",
+      "original_expression": "rate <= 0 || underlyingPrice <= 0",
+      "replacement_expression": "false",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "signed256",
+      "mutant_id": "m000032",
+      "operator": "CSC",
+      "original_expression": "n > uint256(type(int256).max)",
+      "replacement_expression": "true",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "signed256",
+      "mutant_id": "m000033",
+      "operator": "CSC",
+      "original_expression": "n > uint256(type(int256).max)",
+      "replacement_expression": "false",
+      "start_line": 106
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 12,
+      "function": "description",
+      "mutant_id": "m000034",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 12
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 74,
+      "function": "constructor",
+      "mutant_id": "m000035",
+      "operator": "DLR",
+      "original_expression": "string memory description_",
+      "replacement_expression": "string storage description_",
+      "start_line": 74
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 125,
+      "function": "description",
+      "mutant_id": "m000036",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 125
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 245,
+      "function": "name",
+      "mutant_id": "m000037",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 245
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 250,
+      "function": "symbol",
+      "mutant_id": "m000038",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 250
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 84,
+      "function": "constructor",
+      "mutant_id": "m000039",
+      "operator": "ECS",
+      "original_expression": "int256(10 ** decimals)",
+      "replacement_expression": "int248(10 ** decimals)",
+      "start_line": 84
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 106,
+      "function": "signed256",
+      "mutant_id": "m000040",
+      "operator": "ECS",
+      "original_expression": "uint256(type(int256).max)",
+      "replacement_expression": "uint248(type(int256).max)",
+      "start_line": 106
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 107,
+      "function": "signed256",
+      "mutant_id": "m000041",
+      "operator": "ECS",
+      "original_expression": "int256(n)",
+      "replacement_expression": "int248(n)",
+      "start_line": 107
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 82,
+      "function": "constructor",
+      "mutant_id": "m000042",
+      "operator": "EHD",
+      "original_expression": "revert BadDecimals();",
+      "replacement_expression": "/* revert BadDecimals(); */",
+      "start_line": 82
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "signed256",
+      "mutant_id": "m000043",
+      "operator": "EHD",
+      "original_expression": "revert InvalidInt256();",
+      "replacement_expression": "/* revert InvalidInt256(); */",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "stateVariable",
+      "mutant_id": "m000044",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "stateVariable",
+      "mutant_id": "m000045",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 79,
+      "function": "constructor",
+      "mutant_id": "m000046",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 79,
+      "function": "constructor",
+      "mutant_id": "m000047",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 82,
+      "function": "constructor",
+      "mutant_id": "m000048",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "17",
+      "start_line": 82
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 82,
+      "function": "constructor",
+      "mutant_id": "m000049",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "19",
+      "start_line": 82
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 84,
+      "function": "constructor",
+      "mutant_id": "m000050",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 84
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 84,
+      "function": "constructor",
+      "mutant_id": "m000051",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 84
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "latestRoundData",
+      "mutant_id": "m000052",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "latestRoundData",
+      "mutant_id": "m000053",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "latestRoundData",
+      "mutant_id": "m000054",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "latestRoundData",
+      "mutant_id": "m000055",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "latestRoundData",
+      "mutant_id": "m000056",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 99
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 10,
+      "function": "decimals",
+      "mutant_id": "m000057",
+      "operator": "OLFD",
+      "original_expression": "function decimals() external view returns (uint8);",
+      "replacement_expression": "",
+      "start_line": 10
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 12,
+      "function": "description",
+      "mutant_id": "m000058",
+      "operator": "OLFD",
+      "original_expression": "function description() external view returns (string memory);",
+      "replacement_expression": "",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "version",
+      "mutant_id": "m000059",
+      "operator": "OLFD",
+      "original_expression": "function version() external view returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 14
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 25,
+      "function": "latestRoundData",
+      "mutant_id": "m000060",
+      "operator": "OLFD",
+      "original_expression": "function latestRoundData()\n    external\n    view\n    returns (\n      uint80 roundId,\n      int256 answer,\n      uint256 startedAt,\n      uint256 updatedAt,\n      uint80 answeredInRound\n    );",
+      "replacement_expression": "",
+      "start_line": 16
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 116,
+      "function": "version",
+      "mutant_id": "m000061",
+      "operator": "OLFD",
+      "original_expression": "function version() external pure returns (uint256) {\n        return VERSION;\n    }",
+      "replacement_expression": "",
+      "start_line": 114
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 123,
+      "function": "decimals",
+      "mutant_id": "m000062",
+      "operator": "OLFD",
+      "original_expression": "function decimals() external view returns (uint8);",
+      "replacement_expression": "",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 125,
+      "function": "description",
+      "mutant_id": "m000063",
+      "operator": "OLFD",
+      "original_expression": "function description() external view returns (string memory);",
+      "replacement_expression": "",
+      "start_line": 125
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "version",
+      "mutant_id": "m000064",
+      "operator": "OLFD",
+      "original_expression": "function version() external view returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 127
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 152,
+      "function": "latestRoundData",
+      "mutant_id": "m000065",
+      "operator": "OLFD",
+      "original_expression": "function latestRoundData()\n    external\n    view\n    returns (\n      uint80 roundId,\n      int256 answer,\n      uint256 startedAt,\n      uint256 updatedAt,\n      uint80 answeredInRound\n    );",
+      "replacement_expression": "",
+      "start_line": 143
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 255,
+      "function": "decimals",
+      "mutant_id": "m000066",
+      "operator": "OLFD",
+      "original_expression": "function decimals() external view returns (uint8);",
+      "replacement_expression": "",
+      "start_line": 255
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 103,
+      "function": "latestRoundData",
+      "mutant_id": "m000067",
+      "operator": "ORFD",
+      "original_expression": "function latestRoundData() override external view returns (uint80, int256, uint256, uint256, uint80) {\n        uint256 rate = IERC4626(rateProvider).convertToAssets(10**rateProviderDecimals);\n        (uint80 roundId_, int256 underlyingPrice, uint256 startedAt_, uint256 updatedAt_, uint80 answeredInRound_) = AggregatorV3Interface(underlyingPriceFeed).latestRoundData();\n\n        if (rate <= 0 || underlyingPrice <= 0) return (roundId_, 0, startedAt_, updatedAt_, answeredInRound_);\n\n        int256 price = signed256(rate) * underlyingPrice * priceFeedScale / combinedScale;\n        return (roundId_, price, startedAt_, updatedAt_, answeredInRound_);\n    }",
+      "replacement_expression": "",
+      "start_line": 95
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 99,
+      "function": "latestRoundData",
+      "mutant_id": "m000068",
+      "operator": "RSD",
+      "original_expression": "return (roundId_, 0, startedAt_, updatedAt_, answeredInRound_);",
+      "replacement_expression": "/* return (roundId_, 0, startedAt_, updatedAt_, answeredInRound_); */",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 102,
+      "function": "latestRoundData",
+      "mutant_id": "m000069",
+      "operator": "RSD",
+      "original_expression": "return (roundId_, price, startedAt_, updatedAt_, answeredInRound_);",
+      "replacement_expression": "/* return (roundId_, price, startedAt_, updatedAt_, answeredInRound_); */",
+      "start_line": 102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 107,
+      "function": "signed256",
+      "mutant_id": "m000070",
+      "operator": "RSD",
+      "original_expression": "return int256(n);",
+      "replacement_expression": "int256(n);",
+      "start_line": 107
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 115,
+      "function": "version",
+      "mutant_id": "m000071",
+      "operator": "RSD",
+      "original_expression": "return VERSION;",
+      "replacement_expression": "/* return VERSION; */",
+      "start_line": 115
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 24,
+      "function": "latestRoundData",
+      "mutant_id": "m000072",
+      "operator": "RVS",
+      "original_expression": "uint80 roundId,\n      int256 answer,\n      uint256 startedAt,\n      uint256 updatedAt,\n      uint80 answeredInRound",
+      "replacement_expression": "uint80 answeredInRound,\n      int256 answer,\n      uint80 roundId,\n      uint256 startedAt,\n      uint256 updatedAt",
+      "start_line": 20
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 102,
+      "function": "latestRoundData",
+      "mutant_id": "m000073",
+      "operator": "RVS",
+      "original_expression": "roundId_, price, startedAt_, updatedAt_, answeredInRound_",
+      "replacement_expression": "answeredInRound_, price, roundId_, startedAt_, updatedAt_",
+      "start_line": 102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "getRoundData",
+      "mutant_id": "m000074",
+      "operator": "RVS",
+      "original_expression": "uint80 roundId,\n      int256 answer,\n      uint256 startedAt,\n      uint256 updatedAt,\n      uint80 answeredInRound",
+      "replacement_expression": "uint80 answeredInRound,\n      int256 answer,\n      uint80 roundId,\n      uint256 startedAt,\n      uint256 updatedAt",
+      "start_line": 136
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 151,
+      "function": "latestRoundData",
+      "mutant_id": "m000075",
+      "operator": "RVS",
+      "original_expression": "uint80 roundId,\n      int256 answer,\n      uint256 startedAt,\n      uint256 updatedAt,\n      uint80 answeredInRound",
+      "replacement_expression": "uint80 answeredInRound,\n      int256 answer,\n      uint80 roundId,\n      uint256 startedAt,\n      uint256 updatedAt",
+      "start_line": 147
+    }
+  ],
+  "subject_id": "compound-finance__comet__PriceFeedWith4626Support"
+}

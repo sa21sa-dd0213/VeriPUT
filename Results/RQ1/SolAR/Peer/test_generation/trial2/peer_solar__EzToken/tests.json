@@ -1,0 +1,122 @@
+[
+  [
+    {
+      "args": [
+        85243287201242524962005193044650445379142964363581750933229392627681749957229,
+        "LitXPylldaWUDRtMJgjmPBBfXSVIaO",
+        0,
+        "bBjgLhYsQuEsZfgdzMzemAgazBkySUtDazDRPiSMVbPGvLoFWXxUIkJCqrrXnRl"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        2019
+      ],
+      "frm": "address_00032",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        255,
+        "hAnxQmBjvLJjIjJxrIJuEWBqNoEfcUQR",
+        8,
+        "bBjgLhYsQuEsZfgdzMzemAgazBkySUtDazDRPiSMVbPGvLoFWXxUIkJCqrrXnRl"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        "address_00036",
+        0
+      ],
+      "frm": "address_00404",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "JAe tdAQQYfRgrqyUarEWVSOTDyaLPHwfTfpBgbdWcAWaNlhcD",
+        0,
+        "onXMAzhHkHxQduRKvsIzeeGwhwxiXeWhboyNmRZPnGhRQVsICZtpBBgQYoUZBQGkcO"
+      ],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00023",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        85243287201242524962005193044650445379142964363581750933229392627681749957229,
+        "LitXPylldaWUDRtMJgjmPBBfXSVIaO",
+        0,
+        "bBjgLhYsQuEsZfgdzMzemAgazBkySUtDazDRPiSMVbPGvLoFWXxUIkJCqrrXnRl"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023",
+        "address_00404"
+      ],
+      "frm": "address_00404",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        2019,
+        "HNzfqPCHMwanFzLnjUYTNtUmPTFpDAPuCiZovOqb UJubqlQYEcLqNFAfSURvUmkgLejSnILeKFLBWksZxvYKNHFdtomCzgtsUQdvhpkxQRvWqQRzRmehViLVWgbEYpjUWWtWOqtWdLYUJOfish UoMrWcFQOuCcguIsJSmWnHk MdHyHuNWOpGPZvgfyr KAyB ahFGkVxOgmigHpvluUutcDHgENAArFKDbRdP",
+        0,
+        "NSvHWbjbaYKhZVqGCLbwkspUPZNxZhZhsamnJtgFk EplwgiObB bCyHFqrMHOUQVFJsadEpmMfVRQorbdiSKZxvmAykupUrMRTrygrwRQpfFySiqGGtOORhFTJdzVohwCHwwcVatcRLhfYOqeitYgtJnJifZgEWvoLdFveDmUwNKQeGYxgsu tSUkAbbAGGeRWagcOsc"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036",
+        47260918607657618856787059062084147417618649193173958205239494705168289206140
+      ],
+      "frm": "address_00404",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

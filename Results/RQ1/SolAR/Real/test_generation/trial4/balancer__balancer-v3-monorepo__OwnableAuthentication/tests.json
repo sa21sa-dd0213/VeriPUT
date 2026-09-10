@@ -1,0 +1,42 @@
+[
+  [
+    {
+      "args": [
+        "address_00036",
+        "address_00036"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184"
+      ],
+      "frm": "address_00410",
+      "method": "forceTransferOwnership",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00404",
+        "address_00404"
+      ],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "getAuthorizer",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

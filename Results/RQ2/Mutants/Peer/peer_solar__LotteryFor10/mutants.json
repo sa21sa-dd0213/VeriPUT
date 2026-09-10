@@ -1,0 +1,1467 @@
+{
+  "compile_failed": 7,
+  "compile_ok": 139,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "fallback",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": "<=",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "fallback",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": ">=",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "fallback",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": "!=",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 39,
+      "function": "fallback",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": "<=",
+      "start_line": 39
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 39,
+      "function": "fallback",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": ">=",
+      "start_line": 39
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 39,
+      "function": "fallback",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": "!=",
+      "start_line": 39
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "fallback",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 45,
+      "function": "fallback",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": "<=",
+      "start_line": 45
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 45,
+      "function": "fallback",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": ">=",
+      "start_line": 45
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 45,
+      "function": "fallback",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": "!=",
+      "start_line": 45
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 46,
+      "function": "fallback",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 46
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 51,
+      "function": "fallback",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": "<=",
+      "start_line": 51
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 51,
+      "function": "fallback",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": ">=",
+      "start_line": 51
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 51,
+      "function": "fallback",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": "!=",
+      "start_line": 51
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 52,
+      "function": "fallback",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 52
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "getStage",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": "<",
+      "replacement_expression": ">",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "getStage",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": "<",
+      "replacement_expression": "<=",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "getStage",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " //start waiting block has been never set\n                || ",
+      "replacement_expression": " //start waiting block has been never set\n                && ",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 69,
+      "function": "getStage",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": "!=",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "getStage",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": ">=",
+      "replacement_expression": " >",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "getStage",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": ">=",
+      "replacement_expression": "<=",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "getStage",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": ">=",
+      "replacement_expression": "==",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "getStage",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": "-",
+      "replacement_expression": "+",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "getStage",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": "-",
+      "replacement_expression": "/",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "getStage",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": "<",
+      "replacement_expression": ">",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "getStage",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": "<",
+      "replacement_expression": "<=",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "getStage",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": "-",
+      "replacement_expression": "+",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "getStage",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": "-",
+      "replacement_expression": "/",
+      "start_line": 76
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 80,
+      "function": "getStage",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 80
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 80,
+      "function": "getStage",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 80,
+      "function": "getStage",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "processAddingUser",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": "<=",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "processAddingUser",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": ">=",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "processAddingUser",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": "!=",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "processAddingUser",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "processAddingUser",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 92
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 93,
+      "function": "processAddingUser",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": "<=",
+      "start_line": 93
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 93,
+      "function": "processAddingUser",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": ">=",
+      "start_line": 93
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 93,
+      "function": "processAddingUser",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": "==",
+      "replacement_expression": "!=",
+      "start_line": 93
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "processAddingUser",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": "<",
+      "replacement_expression": ">",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "processAddingUser",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": "<",
+      "replacement_expression": "<=",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "processAddingUser",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": "+",
+      "replacement_expression": "-",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "processAddingUser",
+      "mutant_id": "m000043",
+      "operator": "BOR",
+      "original_expression": "+",
+      "replacement_expression": "*",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 102,
+      "function": "processSolvingLottery",
+      "mutant_id": "m000044",
+      "operator": "BOR",
+      "original_expression": "+",
+      "replacement_expression": "-",
+      "start_line": 102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 102,
+      "function": "processSolvingLottery",
+      "mutant_id": "m000045",
+      "operator": "BOR",
+      "original_expression": "+",
+      "replacement_expression": "*",
+      "start_line": 102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 103,
+      "function": "processSolvingLottery",
+      "mutant_id": "m000046",
+      "operator": "BOR",
+      "original_expression": " % ",
+      "replacement_expression": " / ",
+      "start_line": 103
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 80,
+      "function": "getStage",
+      "mutant_id": "m000047",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 93,
+      "function": "processAddingUser",
+      "mutant_id": "m000048",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 93
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "processAddingUser",
+      "mutant_id": "m000049",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "processSolvingLottery",
+      "mutant_id": "m000050",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "constructor",
+      "mutant_id": "m000051",
+      "operator": "CCD",
+      "original_expression": "constructor(uint256 _limit) {\n        waitingStartBlockNumber = 0;\n        registeredCount = 0;//good habit not to rely on defaults if You do not have to\n        _registeredLimit = _limit;\n    }",
+      "replacement_expression": "",
+      "start_line": 25
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "fallback",
+      "mutant_id": "m000052",
+      "operator": "CSC",
+      "original_expression": "getStage(block.number)==REGISTERING_PARTICIPANTS",
+      "replacement_expression": "true",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "fallback",
+      "mutant_id": "m000053",
+      "operator": "CSC",
+      "original_expression": "getStage(block.number)==REGISTERING_PARTICIPANTS",
+      "replacement_expression": "false",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "fallback",
+      "mutant_id": "m000054",
+      "operator": "CSC",
+      "original_expression": "        else{ // this else is crutial so we never enter two stages in same call\n            if(getStage(block.number)==REGISTERING_FINISHED){\n                require(msg.value == 0,\"no additional stake allowed\");\n                waitingStartBlockNumber = block.number;\n                emit ClosingList(waitingStartBlockNumber);\n            }\n            else{\n                if(getStage(block.number)==WAITING_FOR_RANDOMNESS){\n                        require(msg.value == 0,\"no additional stake allowed\");\n\n                        revert(\"To little time passed, wait at least WAIT_BLOCKS_LIMIT \");\n                }\n                else{\n                    if(getStage(block.number)==SOLVING_LOTERRY){\n                        require(msg.value == 0,\"no additional stake allowed\");\n                        processSolvingLottery(block.number);\n                    }\n                    else{\n                        revert(\"Lottery Closed \");\n                    }\n                }\n            }\n        }",
+      "replacement_expression": "",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 39,
+      "function": "fallback",
+      "mutant_id": "m000055",
+      "operator": "CSC",
+      "original_expression": "getStage(block.number)==REGISTERING_FINISHED",
+      "replacement_expression": "true",
+      "start_line": 39
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 39,
+      "function": "fallback",
+      "mutant_id": "m000056",
+      "operator": "CSC",
+      "original_expression": "getStage(block.number)==REGISTERING_FINISHED",
+      "replacement_expression": "false",
+      "start_line": 39
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "fallback",
+      "mutant_id": "m000057",
+      "operator": "CSC",
+      "original_expression": "            else{\n                if(getStage(block.number)==WAITING_FOR_RANDOMNESS){\n                        require(msg.value == 0,\"no additional stake allowed\");\n\n                        revert(\"To little time passed, wait at least WAIT_BLOCKS_LIMIT \");\n                }\n                else{\n                    if(getStage(block.number)==SOLVING_LOTERRY){\n                        require(msg.value == 0,\"no additional stake allowed\");\n                        processSolvingLottery(block.number);\n                    }\n                    else{\n                        revert(\"Lottery Closed \");\n                    }\n                }\n            }",
+      "replacement_expression": "",
+      "start_line": 43
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 45,
+      "function": "fallback",
+      "mutant_id": "m000058",
+      "operator": "CSC",
+      "original_expression": "getStage(block.number)==WAITING_FOR_RANDOMNESS",
+      "replacement_expression": "true",
+      "start_line": 45
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 45,
+      "function": "fallback",
+      "mutant_id": "m000059",
+      "operator": "CSC",
+      "original_expression": "getStage(block.number)==WAITING_FOR_RANDOMNESS",
+      "replacement_expression": "false",
+      "start_line": 45
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "fallback",
+      "mutant_id": "m000060",
+      "operator": "CSC",
+      "original_expression": "                else{\n                    if(getStage(block.number)==SOLVING_LOTERRY){\n                        require(msg.value == 0,\"no additional stake allowed\");\n                        processSolvingLottery(block.number);\n                    }\n                    else{\n                        revert(\"Lottery Closed \");\n                    }\n                }",
+      "replacement_expression": "",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 51,
+      "function": "fallback",
+      "mutant_id": "m000061",
+      "operator": "CSC",
+      "original_expression": "getStage(block.number)==SOLVING_LOTERRY",
+      "replacement_expression": "true",
+      "start_line": 51
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 51,
+      "function": "fallback",
+      "mutant_id": "m000062",
+      "operator": "CSC",
+      "original_expression": "getStage(block.number)==SOLVING_LOTERRY",
+      "replacement_expression": "false",
+      "start_line": 51
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 57,
+      "function": "fallback",
+      "mutant_id": "m000063",
+      "operator": "CSC",
+      "original_expression": "                    else{\n                        revert(\"Lottery Closed \");\n                    }",
+      "replacement_expression": "",
+      "start_line": 54
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "getStage",
+      "mutant_id": "m000064",
+      "operator": "CSC",
+      "original_expression": "registeredCount<_registeredLimit",
+      "replacement_expression": "true",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "getStage",
+      "mutant_id": "m000065",
+      "operator": "CSC",
+      "original_expression": "registeredCount<_registeredLimit",
+      "replacement_expression": "false",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 88,
+      "function": "getStage",
+      "mutant_id": "m000066",
+      "operator": "CSC",
+      "original_expression": "        else{\n            if(waitingStartBlockNumber==0 //start waiting block has been never set\n                || blockNum-waitingStartBlockNumber>=256 //start waiting block has been set long time ago\n                ){\n                return REGISTERING_FINISHED;\n            }\n            else\n            {\n                if(blockNum-waitingStartBlockNumber<WAIT_BLOCKS_LIMIT){\n                    return WAITING_FOR_RANDOMNESS;\n                }\n                else{\n                    if(lotterySolved == true){\n                        return LOTTERY_SOLVED;\n                    }\n                    else{\n                        return SOLVING_LOTERRY;\n                    }\n                }\n            }\n        }",
+      "replacement_expression": "",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "getStage",
+      "mutant_id": "m000067",
+      "operator": "CSC",
+      "original_expression": "waitingStartBlockNumber==0 //start waiting block has been never set\n                || blockNum-waitingStartBlockNumber>=256",
+      "replacement_expression": "true",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "getStage",
+      "mutant_id": "m000068",
+      "operator": "CSC",
+      "original_expression": "waitingStartBlockNumber==0 //start waiting block has been never set\n                || blockNum-waitingStartBlockNumber>=256",
+      "replacement_expression": "false",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 87,
+      "function": "getStage",
+      "mutant_id": "m000069",
+      "operator": "CSC",
+      "original_expression": "            else\n            {\n                if(blockNum-waitingStartBlockNumber<WAIT_BLOCKS_LIMIT){\n                    return WAITING_FOR_RANDOMNESS;\n                }\n                else{\n                    if(lotterySolved == true){\n                        return LOTTERY_SOLVED;\n                    }\n                    else{\n                        return SOLVING_LOTERRY;\n                    }\n                }\n            }",
+      "replacement_expression": "",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "getStage",
+      "mutant_id": "m000070",
+      "operator": "CSC",
+      "original_expression": "blockNum-waitingStartBlockNumber<WAIT_BLOCKS_LIMIT",
+      "replacement_expression": "true",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "getStage",
+      "mutant_id": "m000071",
+      "operator": "CSC",
+      "original_expression": "blockNum-waitingStartBlockNumber<WAIT_BLOCKS_LIMIT",
+      "replacement_expression": "false",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "getStage",
+      "mutant_id": "m000072",
+      "operator": "CSC",
+      "original_expression": "                else{\n                    if(lotterySolved == true){\n                        return LOTTERY_SOLVED;\n                    }\n                    else{\n                        return SOLVING_LOTERRY;\n                    }\n                }",
+      "replacement_expression": "",
+      "start_line": 78
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 80,
+      "function": "getStage",
+      "mutant_id": "m000073",
+      "operator": "CSC",
+      "original_expression": "lotterySolved == true",
+      "replacement_expression": "true",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 80,
+      "function": "getStage",
+      "mutant_id": "m000074",
+      "operator": "CSC",
+      "original_expression": "lotterySolved == true",
+      "replacement_expression": "false",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "getStage",
+      "mutant_id": "m000075",
+      "operator": "CSC",
+      "original_expression": "                    else{\n                        return SOLVING_LOTERRY;\n                    }",
+      "replacement_expression": "",
+      "start_line": 82
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 42,
+      "function": "fallback",
+      "mutant_id": "m000076",
+      "operator": "EED",
+      "original_expression": "emit ClosingList(waitingStartBlockNumber);",
+      "replacement_expression": "/* emit ClosingList(waitingStartBlockNumber); */",
+      "start_line": 42
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 98,
+      "function": "processAddingUser",
+      "mutant_id": "m000077",
+      "operator": "EED",
+      "original_expression": "emit UserRegistered(sender);",
+      "replacement_expression": "/* emit UserRegistered(sender); */",
+      "start_line": 98
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "processSolvingLottery",
+      "mutant_id": "m000078",
+      "operator": "EED",
+      "original_expression": "emit UseRewarded(users[luckyNumber],blockNum);",
+      "replacement_expression": "/* emit UseRewarded(users[luckyNumber],blockNum); */",
+      "start_line": 105
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 102,
+      "function": "processSolvingLottery",
+      "mutant_id": "m000079",
+      "operator": "ECS",
+      "original_expression": "uint256(blockhash(waitingStartBlockNumber+WAIT_BLOCKS_LIMIT))",
+      "replacement_expression": "uint248(blockhash(waitingStartBlockNumber+WAIT_BLOCKS_LIMIT))",
+      "start_line": 102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "fallback",
+      "mutant_id": "m000080",
+      "operator": "EHD",
+      "original_expression": "require(msg.value == 0,\"no additional stake allowed\");",
+      "replacement_expression": "/* require(msg.value == 0,\"no additional stake allowed\"); */",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 46,
+      "function": "fallback",
+      "mutant_id": "m000081",
+      "operator": "EHD",
+      "original_expression": "require(msg.value == 0,\"no additional stake allowed\");",
+      "replacement_expression": "/* require(msg.value == 0,\"no additional stake allowed\"); */",
+      "start_line": 46
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "fallback",
+      "mutant_id": "m000082",
+      "operator": "EHD",
+      "original_expression": "revert(\"To little time passed, wait at least WAIT_BLOCKS_LIMIT \");",
+      "replacement_expression": "/* revert(\"To little time passed, wait at least WAIT_BLOCKS_LIMIT \"); */",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 52,
+      "function": "fallback",
+      "mutant_id": "m000083",
+      "operator": "EHD",
+      "original_expression": "require(msg.value == 0,\"no additional stake allowed\");",
+      "replacement_expression": "/* require(msg.value == 0,\"no additional stake allowed\"); */",
+      "start_line": 52
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 56,
+      "function": "fallback",
+      "mutant_id": "m000084",
+      "operator": "EHD",
+      "original_expression": "revert(\"Lottery Closed \");",
+      "replacement_expression": "/* revert(\"Lottery Closed \"); */",
+      "start_line": 56
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "processAddingUser",
+      "mutant_id": "m000085",
+      "operator": "EHD",
+      "original_expression": "require(msg.value==(1 * 1e15),\"Must send 0.001 ether\");",
+      "replacement_expression": "/* require(msg.value==(1 * 1e15),\"Must send 0.001 ether\"); */",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 93,
+      "function": "processAddingUser",
+      "mutant_id": "m000086",
+      "operator": "EHD",
+      "original_expression": "require(participated[sender]==false,\"One address can pericipate only once\");",
+      "replacement_expression": "/* require(participated[sender]==false,\"One address can pericipate only once\"); */",
+      "start_line": 93
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "processAddingUser",
+      "mutant_id": "m000087",
+      "operator": "EHD",
+      "original_expression": "require(registeredCount<_registeredLimit,\"ups getStage() do not work\");",
+      "replacement_expression": "/* require(registeredCount<_registeredLimit,\"ups getStage() do not work\"); */",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 104,
+      "function": "processSolvingLottery",
+      "mutant_id": "m000088",
+      "operator": "ETR",
+      "original_expression": "payable(users[luckyNumber]).transfer",
+      "replacement_expression": "payable(users[luckyNumber]).send",
+      "start_line": 104
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 104,
+      "function": "processSolvingLottery",
+      "mutant_id": "m000089",
+      "operator": "ETR",
+      "original_expression": "payable(users[luckyNumber]).transfer",
+      "replacement_expression": "payable(users[luckyNumber]).call{value: address(this).balance}(\"\")",
+      "start_line": 104
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "fallback",
+      "mutant_id": "m000090",
+      "operator": "FCD",
+      "original_expression": "processAddingUser(msg.sender);",
+      "replacement_expression": "/*processAddingUser(msg.sender);*/",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "fallback",
+      "mutant_id": "m000091",
+      "operator": "FCD",
+      "original_expression": "processSolvingLottery(block.number);",
+      "replacement_expression": "/*processSolvingLottery(block.number);*/",
+      "start_line": 53
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 104,
+      "function": "processSolvingLottery",
+      "mutant_id": "m000092",
+      "operator": "FCD",
+      "original_expression": "payable(users[luckyNumber]).",
+      "replacement_expression": "/*payable(users[luckyNumber]).*/",
+      "start_line": 104
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "fallback",
+      "mutant_id": "m000093",
+      "operator": "GVR",
+      "original_expression": "block.number",
+      "replacement_expression": "block.number+1",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 35,
+      "function": "fallback",
+      "mutant_id": "m000094",
+      "operator": "GVR",
+      "original_expression": "block.number",
+      "replacement_expression": "block.number-1",
+      "start_line": 35
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 39,
+      "function": "fallback",
+      "mutant_id": "m000095",
+      "operator": "GVR",
+      "original_expression": "block.number",
+      "replacement_expression": "block.number+1",
+      "start_line": 39
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 39,
+      "function": "fallback",
+      "mutant_id": "m000096",
+      "operator": "GVR",
+      "original_expression": "block.number",
+      "replacement_expression": "block.number-1",
+      "start_line": 39
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "fallback",
+      "mutant_id": "m000097",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "fallback",
+      "mutant_id": "m000098",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "fallback",
+      "mutant_id": "m000099",
+      "operator": "GVR",
+      "original_expression": "block.number",
+      "replacement_expression": "block.number+1",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "fallback",
+      "mutant_id": "m000100",
+      "operator": "GVR",
+      "original_expression": "block.number",
+      "replacement_expression": "block.number-1",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 45,
+      "function": "fallback",
+      "mutant_id": "m000101",
+      "operator": "GVR",
+      "original_expression": "block.number",
+      "replacement_expression": "block.number+1",
+      "start_line": 45
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 45,
+      "function": "fallback",
+      "mutant_id": "m000102",
+      "operator": "GVR",
+      "original_expression": "block.number",
+      "replacement_expression": "block.number-1",
+      "start_line": 45
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 46,
+      "function": "fallback",
+      "mutant_id": "m000103",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 46
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 46,
+      "function": "fallback",
+      "mutant_id": "m000104",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 46
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 51,
+      "function": "fallback",
+      "mutant_id": "m000105",
+      "operator": "GVR",
+      "original_expression": "block.number",
+      "replacement_expression": "block.number+1",
+      "start_line": 51
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 51,
+      "function": "fallback",
+      "mutant_id": "m000106",
+      "operator": "GVR",
+      "original_expression": "block.number",
+      "replacement_expression": "block.number-1",
+      "start_line": 51
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 52,
+      "function": "fallback",
+      "mutant_id": "m000107",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 52
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 52,
+      "function": "fallback",
+      "mutant_id": "m000108",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 52
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "fallback",
+      "mutant_id": "m000109",
+      "operator": "GVR",
+      "original_expression": "block.number",
+      "replacement_expression": "block.number+1",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "fallback",
+      "mutant_id": "m000110",
+      "operator": "GVR",
+      "original_expression": "block.number",
+      "replacement_expression": "block.number-1",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "processAddingUser",
+      "mutant_id": "m000111",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "processAddingUser",
+      "mutant_id": "m000112",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 102,
+      "function": "processSolvingLottery",
+      "mutant_id": "m000113",
+      "operator": "GVR",
+      "original_expression": "blockhash(waitingStartBlockNumber+WAIT_BLOCKS_LIMIT)",
+      "replacement_expression": "0",
+      "start_line": 102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 102,
+      "function": "processSolvingLottery",
+      "mutant_id": "m000114",
+      "operator": "GVR",
+      "original_expression": "blockhash(waitingStartBlockNumber+WAIT_BLOCKS_LIMIT)",
+      "replacement_expression": "blockhash(block.prevrandao)",
+      "start_line": 102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "stateVariable",
+      "mutant_id": "m000115",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "2",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "stateVariable",
+      "mutant_id": "m000116",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "4",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "stateVariable",
+      "mutant_id": "m000117",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "stateVariable",
+      "mutant_id": "m000118",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "stateVariable",
+      "mutant_id": "m000119",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "stateVariable",
+      "mutant_id": "m000120",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "stateVariable",
+      "mutant_id": "m000121",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "2",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "stateVariable",
+      "mutant_id": "m000122",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "4",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "stateVariable",
+      "mutant_id": "m000123",
+      "operator": "ILR",
+      "original_expression": "4",
+      "replacement_expression": "3",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "stateVariable",
+      "mutant_id": "m000124",
+      "operator": "ILR",
+      "original_expression": "4",
+      "replacement_expression": "5",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "stateVariable",
+      "mutant_id": "m000125",
+      "operator": "ILR",
+      "original_expression": "5",
+      "replacement_expression": "4",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "stateVariable",
+      "mutant_id": "m000126",
+      "operator": "ILR",
+      "original_expression": "5",
+      "replacement_expression": "6",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "constructor",
+      "mutant_id": "m000127",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 27,
+      "function": "constructor",
+      "mutant_id": "m000128",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "fallback",
+      "mutant_id": "m000129",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 46,
+      "function": "fallback",
+      "mutant_id": "m000130",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 46
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 52,
+      "function": "fallback",
+      "mutant_id": "m000131",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 52
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 69,
+      "function": "getStage",
+      "mutant_id": "m000132",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "getStage",
+      "mutant_id": "m000133",
+      "operator": "ILR",
+      "original_expression": "256",
+      "replacement_expression": "255",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "getStage",
+      "mutant_id": "m000134",
+      "operator": "ILR",
+      "original_expression": "256",
+      "replacement_expression": "257",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "processAddingUser",
+      "mutant_id": "m000135",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "processAddingUser",
+      "mutant_id": "m000136",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "processAddingUser",
+      "mutant_id": "m000137",
+      "operator": "ILR",
+      "original_expression": "1e15",
+      "replacement_expression": "999999999999999",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "processAddingUser",
+      "mutant_id": "m000138",
+      "operator": "ILR",
+      "original_expression": "1e15",
+      "replacement_expression": "1000000000000001",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "processAddingUser",
+      "mutant_id": "m000139",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "processAddingUser",
+      "mutant_id": "m000140",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 97
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 33,
+      "function": "",
+      "mutant_id": "m000141",
+      "operator": "PKD",
+      "original_expression": "fallback() external payable ",
+      "replacement_expression": "fallback() external  ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 66,
+      "function": "getStage",
+      "mutant_id": "m000142",
+      "operator": "RSD",
+      "original_expression": "return REGISTERING_PARTICIPANTS;",
+      "replacement_expression": "/* return REGISTERING_PARTICIPANTS; */",
+      "start_line": 66
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "getStage",
+      "mutant_id": "m000143",
+      "operator": "RSD",
+      "original_expression": "return REGISTERING_FINISHED;",
+      "replacement_expression": "/* return REGISTERING_FINISHED; */",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "getStage",
+      "mutant_id": "m000144",
+      "operator": "RSD",
+      "original_expression": "return WAITING_FOR_RANDOMNESS;",
+      "replacement_expression": "/* return WAITING_FOR_RANDOMNESS; */",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "getStage",
+      "mutant_id": "m000145",
+      "operator": "RSD",
+      "original_expression": "return LOTTERY_SOLVED;",
+      "replacement_expression": "/* return LOTTERY_SOLVED; */",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 84,
+      "function": "getStage",
+      "mutant_id": "m000146",
+      "operator": "RSD",
+      "original_expression": "return SOLVING_LOTERRY;",
+      "replacement_expression": "/* return SOLVING_LOTERRY; */",
+      "start_line": 84
+    }
+  ],
+  "subject_id": "peer_solar__LotteryFor10"
+}

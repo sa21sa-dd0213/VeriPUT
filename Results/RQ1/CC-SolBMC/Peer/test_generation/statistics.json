@@ -1,0 +1,3200 @@
+{
+  "dataset": "Peer",
+  "rows": [
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 308.296,
+      "raw": 17,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__AIRBets",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_initialize": "Success",
+        "test_ce_10_transfer": "Failure",
+        "test_ce_11_transfer": "Failure",
+        "test_ce_12_transfer": "Failure",
+        "test_ce_13_setMaxTxPercent": "Failure",
+        "test_ce_14_setMaxTxPercent": "Failure",
+        "test_ce_15_manualswap": "Failure",
+        "test_ce_16_manualsend": "Failure",
+        "test_ce_1_renounceOwnership": "Failure",
+        "test_ce_2_initialize2": "Success",
+        "test_ce_3_balanceOf": "Failure",
+        "test_ce_4_balanceOf": "Failure",
+        "test_ce_5_transfer": "Failure",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_openTrading": "Failure",
+        "test_ce_9_transfer": "Failure"
+      },
+      "wall_total_s": 308.722
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 51.453,
+      "raw": 21,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__Address",
+      "trial": 1,
+      "valid": 6,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Success",
+        "test_ce_10_transfer": "Failure",
+        "test_ce_11_approve": "Failure",
+        "test_ce_12_approve": "Success",
+        "test_ce_13_reflectionFromToken": "Failure",
+        "test_ce_14_reflectionFromToken": "Failure",
+        "test_ce_15_reflectionFromToken": "Failure",
+        "test_ce_16_excludeAccount": "Success",
+        "test_ce_17_includeAccount": "Failure",
+        "test_ce_18__burn": "Failure",
+        "test_ce_19_setCharityAddress": "Success",
+        "test_ce_1_transferOwnership": "Success",
+        "test_ce_20_setCharityAddress": "Success",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_balanceOf": "Failure",
+        "test_ce_4_tokenFromReflection": "Failure",
+        "test_ce_5_tokenFromReflection": "Failure",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_transfer": "Failure",
+        "test_ce_9_transfer": "Failure"
+      },
+      "wall_total_s": 51.947
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 600.825,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "peer_ccsolbmc__Animalia",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 600.825
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 7.148,
+      "raw": 26,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__AnyswapV5ERC20",
+      "trial": 1,
+      "valid": 11,
+      "valid_tests": {
+        "test_ce_0_mpc": "Success",
+        "test_ce_10_burn": "Failure",
+        "test_ce_11_burn": "Failure",
+        "test_ce_12_withdraw": "Success",
+        "test_ce_13_Swapout": "Failure",
+        "test_ce_14_Swapout": "Success",
+        "test_ce_15_permit": "Failure",
+        "test_ce_16_permit": "Success",
+        "test_ce_17_transferWithPermit": "Failure",
+        "test_ce_18_transferWithPermit": "Success",
+        "test_ce_19_transferWithPermit": "Failure",
+        "test_ce_1_applyVault": "Failure",
+        "test_ce_20_transfer": "Success",
+        "test_ce_21_transfer": "Success",
+        "test_ce_22_transferFrom": "Success",
+        "test_ce_23_transferFrom": "Success",
+        "test_ce_24_transferFrom": "Success",
+        "test_ce_25_transferFrom": "Success",
+        "test_ce_2_initVault": "Failure",
+        "test_ce_3_applyMinter": "Failure",
+        "test_ce_4_changeVault": "Failure",
+        "test_ce_5_changeVault": "Failure",
+        "test_ce_6_changeMPCOwner": "Failure",
+        "test_ce_7_changeMPCOwner": "Failure",
+        "test_ce_8_mint": "Failure",
+        "test_ce_9_deposit": "Failure"
+      },
+      "wall_total_s": 7.574
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.2,
+      "raw": 14,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__AssetTransfer",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_Terminate": "Failure",
+        "test_ce_10_ModifyOffer": "Failure",
+        "test_ce_11_RescindOffer": "Failure",
+        "test_ce_12_MarkAppraised": "Failure",
+        "test_ce_13_MarkInspected": "Failure",
+        "test_ce_1_MakeOffer": "Failure",
+        "test_ce_2_MakeOffer": "Failure",
+        "test_ce_3_MakeOffer": "Failure",
+        "test_ce_4_MakeOffer": "Failure",
+        "test_ce_5_MakeOffer": "Success",
+        "test_ce_6_AcceptOffer": "Failure",
+        "test_ce_7_Reject": "Failure",
+        "test_ce_8_Accept": "Failure",
+        "test_ce_9_ModifyOffer": "Failure"
+      },
+      "wall_total_s": 2.611
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 128.69799999999998,
+      "raw": 22,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__BERNIE",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Failure",
+        "test_ce_10_transfer": "Failure",
+        "test_ce_11_transfer": "Failure",
+        "test_ce_12_transfer": "Failure",
+        "test_ce_13_approve": "Failure",
+        "test_ce_14_approve": "Success",
+        "test_ce_15_reflect": "Success",
+        "test_ce_16_reflectionFromToken": "Success",
+        "test_ce_17_reflectionFromToken": "Success",
+        "test_ce_18_excludeAccount": "Failure",
+        "test_ce_19_excludeAccount": "Failure",
+        "test_ce_1_transferOwnership": "Failure",
+        "test_ce_20_includeAccount": "Failure",
+        "test_ce_21_uniswapPair": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_balanceOf": "Failure",
+        "test_ce_4_tokenFromReflection": "Failure",
+        "test_ce_5_tokenFromReflection": "Failure",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_transfer": "Failure",
+        "test_ce_9_transfer": "Failure"
+      },
+      "wall_total_s": 129.126
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.823,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__Ballot",
+      "trial": 1,
+      "valid": 6,
+      "valid_tests": {
+        "test_ce_0_giveRightToVote": "Failure",
+        "test_ce_1_giveRightToVote": "Failure",
+        "test_ce_2_giveRightToVote": "Failure",
+        "test_ce_3_delegate": "Success",
+        "test_ce_4_delegate": "Success",
+        "test_ce_5_delegate": "Success",
+        "test_ce_6_delegate": "Success",
+        "test_ce_7_delegate": "Success",
+        "test_ce_8_vote": "Failure",
+        "test_ce_9_winningProposal": "Success"
+      },
+      "wall_total_s": 1.226
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.3,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__BasicProvenance",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_TransferResponsibility": "Failure",
+        "test_ce_1_Complete": "Failure"
+      },
+      "wall_total_s": 0.697
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.79,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__Benu",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Failure",
+        "test_ce_1_transferOwnership": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_transfer": "Failure",
+        "test_ce_4_transfer": "Success",
+        "test_ce_5_approve": "Failure",
+        "test_ce_6_approve": "Success",
+        "test_ce_7_transferFrom": "Failure",
+        "test_ce_8_decreaseAllowance": "Failure",
+        "test_ce_9_decreaseAllowance": "Failure"
+      },
+      "wall_total_s": 4.204
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 4.353,
+      "raw": 11,
+      "status": "score-incomplete",
+      "subject_id": "peer_ccsolbmc__BurnableERC20",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 4.77
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 9.423,
+      "raw": 17,
+      "status": "suite-uncompilable",
+      "subject_id": "peer_ccsolbmc__COINNetwork",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 9.72
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 270.446,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "peer_ccsolbmc__ChinaCoin",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 270.446
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.425,
+      "raw": 13,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__ClockBoxContract",
+      "trial": 1,
+      "valid": 6,
+      "valid_tests": {
+        "test_ce_0_transfer": "Failure",
+        "test_ce_10_decreaseAllowance": "Failure",
+        "test_ce_11_calculateFee": "Success",
+        "test_ce_12_calculateFee": "Failure",
+        "test_ce_1_transfer": "Success",
+        "test_ce_2_approve": "Failure",
+        "test_ce_3_approve": "Success",
+        "test_ce_4_transferFrom": "Failure",
+        "test_ce_5_transferFrom": "Failure",
+        "test_ce_6_balanceOfFeeAddress": "Success",
+        "test_ce_7_mint": "Success",
+        "test_ce_8_burn": "Success",
+        "test_ce_9_decreaseAllowance": "Failure"
+      },
+      "wall_total_s": 2.839
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.0269999999999997,
+      "raw": 14,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__CyberFox",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_transfer": "Failure",
+        "test_ce_10_addSniperToBlacklist": "Failure",
+        "test_ce_11_addBotToBlackList": "Failure",
+        "test_ce_12_addBotToBlackList": "Failure",
+        "test_ce_13_addBotToBlackList": "Failure",
+        "test_ce_1_renounceOwnership": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_transferOwnership": "Failure",
+        "test_ce_4_approve": "Failure",
+        "test_ce_5_approve": "Success",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_transfer": "Failure",
+        "test_ce_9_transfer": "Failure"
+      },
+      "wall_total_s": 3.443
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.542,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__DigitalLocker",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_BeginReviewProcess": "Success",
+        "test_ce_1_AcceptSharingRequest": "Failure",
+        "test_ce_2_RejectSharingRequest": "Failure",
+        "test_ce_3_ReleaseLockerAccess": "Failure",
+        "test_ce_4_RevokeAccessFromThirdParty": "Failure",
+        "test_ce_5_Terminate": "Failure"
+      },
+      "wall_total_s": 0.953
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.23500000000000001,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__DogeMojo",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_transfer": "Success",
+        "test_ce_1_transfer": "Failure",
+        "test_ce_2_transferFrom": "Success",
+        "test_ce_3_transferFrom": "Failure",
+        "test_ce_4_transferFrom": "Success",
+        "test_ce_5_transferFrom": "Failure"
+      },
+      "wall_total_s": 0.644
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 304.175,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "peer_ccsolbmc__DogeRocket",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 304.175
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.589,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__ERC20",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_ascf": "Success",
+        "test_ce_1_transfer": "Failure",
+        "test_ce_2_transfer": "Success",
+        "test_ce_3_approve": "Failure",
+        "test_ce_4_approve": "Success",
+        "test_ce_5_transferFrom": "Success",
+        "test_ce_6_decreaseAllowance": "Failure",
+        "test_ce_7_decreaseAllowance": "Failure"
+      },
+      "wall_total_s": 2.991
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 274.448,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "peer_ccsolbmc__EStack",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 274.448
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.46,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__FrontRunner",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_kill": "Success",
+        "test_ce_1_approve": "Failure"
+      },
+      "wall_total_s": 0.871
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.107,
+      "raw": 12,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__GOLIATH",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Failure",
+        "test_ce_10_decreaseAllowance": "Failure",
+        "test_ce_11_decreaseAllowance": "Failure",
+        "test_ce_1_transferOwnership": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_transfer": "Failure",
+        "test_ce_4_transfer": "Success",
+        "test_ce_5_burn": "Failure",
+        "test_ce_6_burn": "Failure",
+        "test_ce_7_approve": "Failure",
+        "test_ce_8_approve": "Success",
+        "test_ce_9_transferFrom": "Failure"
+      },
+      "wall_total_s": 2.519
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.25,
+      "raw": 19,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__Galaxium",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Failure",
+        "test_ce_10_transferFrom": "Failure",
+        "test_ce_11_transferFrom": "Failure",
+        "test_ce_12_decreaseAllowance": "Failure",
+        "test_ce_13_decreaseAllowance": "Failure",
+        "test_ce_14_mint": "Failure",
+        "test_ce_15_mint": "Failure",
+        "test_ce_16_burn": "Failure",
+        "test_ce_17_burn": "Failure",
+        "test_ce_18_burn": "Failure",
+        "test_ce_1_transferOwnership": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_pause": "Failure",
+        "test_ce_4_unpause": "Failure",
+        "test_ce_5_transfer": "Failure",
+        "test_ce_6_transfer": "Success",
+        "test_ce_7_transfer": "Success",
+        "test_ce_8_approve": "Failure",
+        "test_ce_9_approve": "Success"
+      },
+      "wall_total_s": 3.66
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 133.37800000000001,
+      "raw": 21,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__HOTDOGE",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Failure",
+        "test_ce_10_transfer": "Failure",
+        "test_ce_11_transfer": "Failure",
+        "test_ce_12_approve": "Failure",
+        "test_ce_13_approve": "Success",
+        "test_ce_14_reflect": "Failure",
+        "test_ce_15_reflectionFromToken": "Success",
+        "test_ce_16_reflectionFromToken": "Success",
+        "test_ce_17_excludeAccount": "Failure",
+        "test_ce_18_excludeAccount": "Failure",
+        "test_ce_19_includeAccount": "Failure",
+        "test_ce_1_transferOwnership": "Failure",
+        "test_ce_20_uniswapPair": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_balanceOf": "Failure",
+        "test_ce_4_tokenFromReflection": "Failure",
+        "test_ce_5_tokenFromReflection": "Failure",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_transfer": "Failure",
+        "test_ce_9_transfer": "Failure"
+      },
+      "wall_total_s": 133.798
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 600.835,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_ccsolbmc__HotinuFinance",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 600.835
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 32.155,
+      "raw": 18,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__KOALA",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Failure",
+        "test_ce_10_approve": "Failure",
+        "test_ce_11_approve": "Success",
+        "test_ce_12_reflect": "Failure",
+        "test_ce_13_reflectionFromToken": "Success",
+        "test_ce_14_reflectionFromToken": "Success",
+        "test_ce_15_excludeAccount": "Failure",
+        "test_ce_16_excludeAccount": "Failure",
+        "test_ce_17_includeAccount": "Failure",
+        "test_ce_1_transferOwnership": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_balanceOf": "Failure",
+        "test_ce_4_tokenFromReflection": "Failure",
+        "test_ce_5_tokenFromReflection": "Failure",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_transfer": "Failure",
+        "test_ce_9_transfer": "Failure"
+      },
+      "wall_total_s": 32.573
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 298.555,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "peer_ccsolbmc__KizunaInu",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 298.555
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.253,
+      "raw": 13,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__Kyuseishu",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Failure",
+        "test_ce_10_decreaseAllowance": "Failure",
+        "test_ce_11_burnTarget": "Failure",
+        "test_ce_12_burnTarget": "Failure",
+        "test_ce_1_transferOwnership": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_transfer": "Failure",
+        "test_ce_4_transfer": "Success",
+        "test_ce_5_transfer": "Failure",
+        "test_ce_6_approve": "Failure",
+        "test_ce_7_approve": "Success",
+        "test_ce_8_transferFrom": "Failure",
+        "test_ce_9_decreaseAllowance": "Failure"
+      },
+      "wall_total_s": 2.657
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 34.815000000000005,
+      "raw": 15,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__LILY",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Failure",
+        "test_ce_10_approve": "Failure",
+        "test_ce_11_approve": "Success",
+        "test_ce_12_excludeAccount": "Failure",
+        "test_ce_13_excludeAccount": "Failure",
+        "test_ce_14_includeAccount": "Failure",
+        "test_ce_1_transferOwnership": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_balanceOf": "Failure",
+        "test_ce_4_tokenFromReflection": "Failure",
+        "test_ce_5_tokenFromReflection": "Failure",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_transfer": "Failure",
+        "test_ce_9_transfer": "Failure"
+      },
+      "wall_total_s": 35.232
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 4.984,
+      "raw": 19,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__Lunar",
+      "trial": 1,
+      "valid": 5,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Failure",
+        "test_ce_10_approve": "Failure",
+        "test_ce_11_approve": "Success",
+        "test_ce_12_reflect": "Failure",
+        "test_ce_13_reflectionFromToken": "Success",
+        "test_ce_14_reflectionFromToken": "Failure",
+        "test_ce_15_reflectionFromToken": "Success",
+        "test_ce_16_excludeAccount": "Failure",
+        "test_ce_17_excludeAccount": "Failure",
+        "test_ce_18_includeAccount": "Failure",
+        "test_ce_1_transferOwnership": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_balanceOf": "Failure",
+        "test_ce_4_tokenFromReflection": "Failure",
+        "test_ce_5_tokenFromReflection": "Failure",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_transfer": "Success",
+        "test_ce_9_transfer": "Success"
+      },
+      "wall_total_s": 5.392
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.881,
+      "raw": 14,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__MJCoin_Token",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_setTokenPrice": "Failure",
+        "test_ce_10_transferFrom": "Failure",
+        "test_ce_11_transferFrom": "Failure",
+        "test_ce_12_decreaseAllowance": "Failure",
+        "test_ce_13_decreaseAllowance": "Failure",
+        "test_ce_1_buyToken": "Success",
+        "test_ce_2_buyToken": "Failure",
+        "test_ce_3_buyToken": "Failure",
+        "test_ce_4_transfer": "Failure",
+        "test_ce_5_transfer": "Success",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_approve": "Failure",
+        "test_ce_9_approve": "Success"
+      },
+      "wall_total_s": 3.296
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.104,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__MayoOcho",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_transfer": "Failure",
+        "test_ce_1_transfer": "Success",
+        "test_ce_2_approve": "Failure",
+        "test_ce_3_approve": "Success",
+        "test_ce_4_transferFrom": "Success",
+        "test_ce_5_decreaseAllowance": "Failure",
+        "test_ce_6_decreaseAllowance": "Failure"
+      },
+      "wall_total_s": 2.516
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 154.02599999999998,
+      "raw": 25,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__MiraNft",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_tokenURI": "Failure",
+        "test_ce_10_setApprovalForAll": "Success",
+        "test_ce_11_transferFrom": "Failure",
+        "test_ce_12_transferFrom": "Failure",
+        "test_ce_13_transferFrom": "Failure",
+        "test_ce_14_safeTransferFrom": "Failure",
+        "test_ce_15_safeTransferFrom": "Failure",
+        "test_ce_16_safeTransferFrom": "Failure",
+        "test_ce_17_safeTransferFrom": "Failure",
+        "test_ce_18_renounceOwnership": "Success",
+        "test_ce_19_transferOwnership": "Success",
+        "test_ce_1_balanceOf": "Success",
+        "test_ce_20_transferOwnership": "Failure",
+        "test_ce_21_burn": "Failure",
+        "test_ce_22_burn": "Failure",
+        "test_ce_23_burn": "Failure",
+        "test_ce_24_approveTransfer": "Failure",
+        "test_ce_2_balanceOf": "Failure",
+        "test_ce_3_ownerOf": "Failure",
+        "test_ce_4_tokenURI": "Failure",
+        "test_ce_5_tokenURI": "Failure",
+        "test_ce_6_approve": "Failure",
+        "test_ce_7_approve": "Failure",
+        "test_ce_8_approve": "Failure",
+        "test_ce_9_getApproved": "Failure"
+      },
+      "wall_total_s": 154.468
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 30.543,
+      "raw": 18,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__PONY",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Failure",
+        "test_ce_10_approve": "Failure",
+        "test_ce_11_approve": "Success",
+        "test_ce_12_reflect": "Failure",
+        "test_ce_13_reflectionFromToken": "Success",
+        "test_ce_14_reflectionFromToken": "Success",
+        "test_ce_15_excludeAccount": "Failure",
+        "test_ce_16_excludeAccount": "Failure",
+        "test_ce_17_includeAccount": "Failure",
+        "test_ce_1_transferOwnership": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_balanceOf": "Failure",
+        "test_ce_4_tokenFromReflection": "Failure",
+        "test_ce_5_tokenFromReflection": "Failure",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_transfer": "Failure",
+        "test_ce_9_transfer": "Failure"
+      },
+      "wall_total_s": 30.958
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 31.413,
+      "raw": 18,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__PORCUPINE",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Failure",
+        "test_ce_10_approve": "Failure",
+        "test_ce_11_approve": "Success",
+        "test_ce_12_reflect": "Failure",
+        "test_ce_13_reflectionFromToken": "Success",
+        "test_ce_14_reflectionFromToken": "Success",
+        "test_ce_15_excludeAccount": "Failure",
+        "test_ce_16_excludeAccount": "Failure",
+        "test_ce_17_includeAccount": "Failure",
+        "test_ce_1_transferOwnership": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_balanceOf": "Failure",
+        "test_ce_4_tokenFromReflection": "Failure",
+        "test_ce_5_tokenFromReflection": "Failure",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_transfer": "Failure",
+        "test_ce_9_transfer": "Failure"
+      },
+      "wall_total_s": 31.828
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 211.972,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "peer_ccsolbmc__PROGEV2",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 211.972
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.228,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__PipiCoin",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_transfer": "Failure",
+        "test_ce_1_transfer": "Success",
+        "test_ce_2_approve": "Failure",
+        "test_ce_3_approve": "Success",
+        "test_ce_4_transferFrom": "Failure",
+        "test_ce_5_transferFrom": "Failure",
+        "test_ce_6_decreaseAllowance": "Failure",
+        "test_ce_7_decreaseAllowance": "Failure"
+      },
+      "wall_total_s": 2.643
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.4290000000000003,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__RBC",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_transfer": "Failure",
+        "test_ce_1_transfer": "Success",
+        "test_ce_2_approve": "Failure",
+        "test_ce_3_approve": "Success",
+        "test_ce_4_transferFrom": "Failure",
+        "test_ce_5_transferFrom": "Failure",
+        "test_ce_6_decreaseAllowance": "Failure",
+        "test_ce_7_decreaseAllowance": "Failure",
+        "test_ce_8_asd": "Success"
+      },
+      "wall_total_s": 2.843
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.223,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__RIAS",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_setFeeTotal": "Failure",
+        "test_ce_1_transfer": "Failure",
+        "test_ce_2_renounceOwnership": "Failure",
+        "test_ce_3_transferOwnership": "Failure",
+        "test_ce_4_transferOwnership": "Failure",
+        "test_ce_5_approve": "Failure",
+        "test_ce_6_approve": "Success",
+        "test_ce_7_transfer": "Failure"
+      },
+      "wall_total_s": 3.636
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.852,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__RefrigeratedTransportation",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_IngestTelemetry": "Failure",
+        "test_ce_1_IngestTelemetry": "Failure",
+        "test_ce_2_TransferResponsibility": "Failure",
+        "test_ce_3_TransferResponsibility": "Failure",
+        "test_ce_4_Complete": "Failure"
+      },
+      "wall_total_s": 1.271
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.294,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__RoomThermostat",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_StartThermostat": "Failure",
+        "test_ce_1_SetTargetTemperature": "Failure",
+        "test_ce_2_SetMode": "Failure"
+      },
+      "wall_total_s": 0.692
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 199.113,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "peer_ccsolbmc__Ryujin",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 199.113
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 266.443,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "peer_ccsolbmc__SATURNITE",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 266.443
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 19.621000000000002,
+      "raw": 20,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__SOTH",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_manualsend": "Failure",
+        "test_ce_10_transfer": "Failure",
+        "test_ce_11_transfer": "Failure",
+        "test_ce_12_openTrading": "Failure",
+        "test_ce_13_transfer": "Failure",
+        "test_ce_14_transfer": "Failure",
+        "test_ce_15_transfer": "Failure",
+        "test_ce_16_transfer": "Failure",
+        "test_ce_17_manualswap": "Failure",
+        "test_ce_18_setMaxTxPercent": "Failure",
+        "test_ce_19_setMaxTxPercent": "Failure",
+        "test_ce_1_renounceOwnership": "Failure",
+        "test_ce_2_balanceOf": "Failure",
+        "test_ce_3_balanceOf": "Failure",
+        "test_ce_4_transfer": "Failure",
+        "test_ce_5_transfer": "Failure",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_transfer": "Failure",
+        "test_ce_9_transfer": "Failure"
+      },
+      "wall_total_s": 20.034
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.195,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__ShibaAstronaut",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_transfer": "Success",
+        "test_ce_1_transfer": "Failure",
+        "test_ce_2_transferFrom": "Success",
+        "test_ce_3_transferFrom": "Failure",
+        "test_ce_4_transferFrom": "Success",
+        "test_ce_5_transferFrom": "Failure"
+      },
+      "wall_total_s": 0.595
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 296.987,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "peer_ccsolbmc__ShibaJail",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 296.987
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 600.806,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_ccsolbmc__ShibaKiyo",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 600.806
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 37.945,
+      "raw": 18,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__ShibaSamurai",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Failure",
+        "test_ce_10_approve": "Failure",
+        "test_ce_11_approve": "Success",
+        "test_ce_12_reflect": "Failure",
+        "test_ce_13_reflectionFromToken": "Success",
+        "test_ce_14_reflectionFromToken": "Success",
+        "test_ce_15_excludeAccount": "Failure",
+        "test_ce_16_excludeAccount": "Failure",
+        "test_ce_17_includeAccount": "Failure",
+        "test_ce_1_transferOwnership": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_balanceOf": "Failure",
+        "test_ce_4_tokenFromReflection": "Failure",
+        "test_ce_5_tokenFromReflection": "Failure",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_transfer": "Failure",
+        "test_ce_9_transfer": "Failure"
+      },
+      "wall_total_s": 38.361
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.331,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__SimpleECR20",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_transfer": "Failure",
+        "test_ce_1_transfer": "Success",
+        "test_ce_2_approve": "Failure",
+        "test_ce_3_approve": "Success",
+        "test_ce_4_transferFrom": "Failure",
+        "test_ce_5_decreaseAllowance": "Failure",
+        "test_ce_6_decreaseAllowance": "Failure",
+        "test_ce_7_abc": "Success"
+      },
+      "wall_total_s": 2.747
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.368,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__SimpleMarketplace",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_MakeOffer": "Failure",
+        "test_ce_1_MakeOffer": "Success",
+        "test_ce_2_Reject": "Failure",
+        "test_ce_3_AcceptOffer": "Failure"
+      },
+      "wall_total_s": 0.787
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 11.313,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__StarNFTProxy",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_upgradeTo": "Failure",
+        "test_ce_1_admin": "Success",
+        "test_ce_2_changeAdmin": "Success",
+        "test_ce_3_changeAdmin": "Failure"
+      },
+      "wall_total_s": 11.736
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 253.356,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "peer_ccsolbmc__TESTDONTBUY",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 253.356
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 18.883,
+      "raw": 17,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__TOAD",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Failure",
+        "test_ce_10_approve": "Failure",
+        "test_ce_11_approve": "Success",
+        "test_ce_12_reflectionFromToken": "Success",
+        "test_ce_13_reflectionFromToken": "Success",
+        "test_ce_14_excludeAccount": "Failure",
+        "test_ce_15_excludeAccount": "Failure",
+        "test_ce_16_includeAccount": "Failure",
+        "test_ce_1_transferOwnership": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_balanceOf": "Failure",
+        "test_ce_4_tokenFromReflection": "Failure",
+        "test_ce_5_tokenFromReflection": "Failure",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_transfer": "Failure",
+        "test_ce_9_transfer": "Failure"
+      },
+      "wall_total_s": 19.303
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 5.398,
+      "raw": 17,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__Thicc",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_fgh4": "Success",
+        "test_ce_10_transfer": "Success",
+        "test_ce_11_transferFrom": "Failure",
+        "test_ce_12_transferFrom": "Failure",
+        "test_ce_13_transferFrom": "Failure",
+        "test_ce_14_transferFrom": "Failure",
+        "test_ce_15_transferFrom": "Failure",
+        "test_ce_16_transferFrom": "Failure",
+        "test_ce_1_transfer": "Failure",
+        "test_ce_2_transfer": "Success",
+        "test_ce_3_approve": "Failure",
+        "test_ce_4_approve": "Success",
+        "test_ce_5_transferFrom": "Failure",
+        "test_ce_6_decreaseAllowance": "Failure",
+        "test_ce_7_decreaseAllowance": "Failure",
+        "test_ce_8_setHolderFeePercent": "Failure",
+        "test_ce_9_transfer": "Failure"
+      },
+      "wall_total_s": 5.823
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.194,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__Token",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_transfer": "Success",
+        "test_ce_1_transfer": "Failure",
+        "test_ce_2_transferFrom": "Success",
+        "test_ce_3_transferFrom": "Failure",
+        "test_ce_4_transferFrom": "Success",
+        "test_ce_5_transferFrom": "Failure"
+      },
+      "wall_total_s": 0.594
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.387,
+      "raw": 32,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__TokenVesting",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_create_tranche": "Failure",
+        "test_ce_10_move_into_tranche": "Failure",
+        "test_ce_11_move_into_tranche": "Failure",
+        "test_ce_12_move_into_tranche": "Failure",
+        "test_ce_13_move_into_tranche": "Failure",
+        "test_ce_14_get_tranche_balance": "Failure",
+        "test_ce_15_get_tranche_balance": "Success",
+        "test_ce_16_get_vested_for_tranche": "Success",
+        "test_ce_17_get_vested_for_tranche": "Success",
+        "test_ce_18_user_total_all_tranches": "Failure",
+        "test_ce_19_withdraw_from_tranche": "Success",
+        "test_ce_1_issue_into_tranche": "Failure",
+        "test_ce_20_withdraw_from_tranche": "Failure",
+        "test_ce_21_stake_tokens": "Failure",
+        "test_ce_22_stake_tokens": "Failure",
+        "test_ce_23_stake_tokens": "Failure",
+        "test_ce_24_permit_issuer": "Failure",
+        "test_ce_25_permit_issuer": "Failure",
+        "test_ce_26_permit_issuer": "Failure",
+        "test_ce_27_permit_issuer": "Failure",
+        "test_ce_28_revoke_issuer": "Failure",
+        "test_ce_29_revoke_issuer": "Failure",
+        "test_ce_2_issue_into_tranche": "Failure",
+        "test_ce_30_set_controller": "Failure",
+        "test_ce_31_set_controller": "Failure",
+        "test_ce_3_issue_into_tranche": "Failure",
+        "test_ce_4_issue_into_tranche": "Failure",
+        "test_ce_5_issue_into_tranche": "Failure",
+        "test_ce_6_issue_into_tranche": "Failure",
+        "test_ce_7_issue_into_tranche": "Failure",
+        "test_ce_8_user_total_all_tranches": "Failure",
+        "test_ce_9_user_total_all_tranches": "Failure"
+      },
+      "wall_total_s": 2.803
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.103,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__UniswapV3MigratorProxy",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_transferUniswapV3MigratorProxy": "Failure"
+      },
+      "wall_total_s": 0.495
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.197,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__VamprireDoge",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_transfer": "Success",
+        "test_ce_1_transfer": "Failure",
+        "test_ce_2_transferFrom": "Success",
+        "test_ce_3_transferFrom": "Failure",
+        "test_ce_4_transferFrom": "Success",
+        "test_ce_5_transferFrom": "Failure"
+      },
+      "wall_total_s": 0.607
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 600.253,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_ccsolbmc__WickedCraniums",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 600.253
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 13.812000000000001,
+      "raw": 22,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__WrappedToken",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_transfer": "Failure",
+        "test_ce_10_revokeRole": "Success",
+        "test_ce_11_abca2": "Success",
+        "test_ce_12_renounceRole": "Failure",
+        "test_ce_13_renounceRole": "Failure",
+        "test_ce_14_setPaused": "Failure",
+        "test_ce_15_setPaused": "Failure",
+        "test_ce_16_transferOwnership": "Failure",
+        "test_ce_17_setHeldAmtReq": "Failure",
+        "test_ce_18_transferBackingTokenFrom": "Failure",
+        "test_ce_19_transferBackingTokenTo": "Failure",
+        "test_ce_1_transfer": "Success",
+        "test_ce_20_mintTo": "Failure",
+        "test_ce_21_burnFrom": "Failure",
+        "test_ce_2_approve": "Failure",
+        "test_ce_3_approve": "Success",
+        "test_ce_4_transferFrom": "Failure",
+        "test_ce_5_decreaseAllowance": "Failure",
+        "test_ce_6_decreaseAllowance": "Failure",
+        "test_ce_7_wrap": "Failure",
+        "test_ce_8_unwrap": "Failure",
+        "test_ce_9_unwrap": "Failure"
+      },
+      "wall_total_s": 14.245
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 293.928,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "peer_ccsolbmc__eMastiff",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 293.928
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 4.646,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__eMuppy",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_asdf": "Success",
+        "test_ce_1_transfer": "Failure",
+        "test_ce_2_transfer": "Success",
+        "test_ce_3_approve": "Failure",
+        "test_ce_4_approve": "Success"
+      },
+      "wall_total_s": 5.055
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 20.750999999999998,
+      "raw": 18,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__eNew",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Failure",
+        "test_ce_10_approve": "Failure",
+        "test_ce_11_approve": "Success",
+        "test_ce_12_reflect": "Failure",
+        "test_ce_13_reflectionFromToken": "Success",
+        "test_ce_14_reflectionFromToken": "Success",
+        "test_ce_15_excludeAccount": "Failure",
+        "test_ce_16_excludeAccount": "Failure",
+        "test_ce_17_includeAccount": "Failure",
+        "test_ce_1_transferOwnership": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_balanceOf": "Failure",
+        "test_ce_4_tokenFromReflection": "Failure",
+        "test_ce_5_tokenFromReflection": "Failure",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_transfer": "Failure",
+        "test_ce_8_transfer": "Failure",
+        "test_ce_9_transfer": "Failure"
+      },
+      "wall_total_s": 21.164
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.325,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__escrow",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_confirm_payment": "Failure",
+        "test_ce_1_ReturnPayment": "Failure"
+      },
+      "wall_total_s": 0.714
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 256.397,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "peer_ccsolbmc__goldinu",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 256.397
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.267,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_ccsolbmc__kia_quiz",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.267
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.184,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__payments",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_withdraw": "Failure",
+        "test_ce_1_paymentOfAt": "Failure",
+        "test_ce_2_paymentOfAt": "Failure"
+      },
+      "wall_total_s": 0.579
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.218,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__ptest",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_verifyPrime": "Failure"
+      },
+      "wall_total_s": 0.61
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.184,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__salvador",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_transfer": "Success",
+        "test_ce_1_transfer": "Failure",
+        "test_ce_2_transferFrom": "Success",
+        "test_ce_3_transferFrom": "Failure",
+        "test_ce_4_transferFrom": "Success",
+        "test_ce_5_transferFrom": "Failure"
+      },
+      "wall_total_s": 0.585
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 252.795,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "peer_ccsolbmc__shibabread",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 252.795
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.518,
+      "raw": 15,
+      "status": "ok",
+      "subject_id": "peer_ccsolbmc__wLitiSale",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Failure",
+        "test_ce_10_addReferrer": "Failure",
+        "test_ce_11_removeReferrer": "Failure",
+        "test_ce_12_createSale": "Failure",
+        "test_ce_13_createSale": "Failure",
+        "test_ce_14_createSale": "Failure",
+        "test_ce_1_transferOwnership": "Failure",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_purchaseTokens": "Failure",
+        "test_ce_4_purchaseTokens": "Failure",
+        "test_ce_5_purchaseTokens": "Failure",
+        "test_ce_6_purchaseTokens": "Failure",
+        "test_ce_7_purchaseTokens": "Failure",
+        "test_ce_8_purchaseTokens": "Failure",
+        "test_ce_9_addReferrer": "Failure"
+      },
+      "wall_total_s": 3.921
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_solar__BadAuction",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_bid": "Success"
+      },
+      "wall_total_s": 0.811
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.254,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "peer_solar__BasicToken",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_transfer": "Failure",
+        "test_ce_1_transfer": "Failure",
+        "test_ce_2_transfer": "Failure",
+        "test_ce_3_transfer": "Failure",
+        "test_ce_4_transfer": "Failure",
+        "test_ce_5_transfer": "Failure"
+      },
+      "wall_total_s": 0.674
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.657,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "peer_solar__Casino",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_buyTicket": "Failure",
+        "test_ce_1_verifyTicket": "Failure",
+        "test_ce_2_verifyTicket": "Failure",
+        "test_ce_3_checkWinner": "Failure",
+        "test_ce_4_claim": "Failure"
+      },
+      "wall_total_s": 1.072
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.157,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_solar__DateTime",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.157
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.255,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_solar__DosAuction",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_bid": "Failure"
+      },
+      "wall_total_s": 0.67
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.256,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "peer_solar__EIP20StandardToken",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_transfer": "Success",
+        "test_ce_1_transfer": "Failure",
+        "test_ce_2_transferFrom": "Success",
+        "test_ce_3_transferFrom": "Failure",
+        "test_ce_4_transferFrom": "Success",
+        "test_ce_5_transferFrom": "Failure",
+        "test_ce_6_transferFrom": "Failure",
+        "test_ce_7_transferFrom": "Failure"
+      },
+      "wall_total_s": 0.671
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_solar__EasyPayAndWithDraw",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_withdraw": "Failure",
+        "test_ce_1_withdraw": "Failure"
+      },
+      "wall_total_s": 0.568
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.254,
+      "raw": 3,
+      "status": "score-incomplete",
+      "subject_id": "peer_solar__EtherBank",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.681
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.253,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "peer_solar__EzToken",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_transfer": "Success",
+        "test_ce_1_transfer": "Failure",
+        "test_ce_2_transferFrom": "Success",
+        "test_ce_3_transferFrom": "Failure",
+        "test_ce_4_transferFrom": "Success",
+        "test_ce_5_transferFrom": "Failure"
+      },
+      "wall_total_s": 0.67
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.355,
+      "raw": 12,
+      "status": "ok",
+      "subject_id": "peer_solar__FixedSupplyToken",
+      "trial": 1,
+      "valid": 12,
+      "valid_tests": {
+        "test_ce_0_transfer": "Success",
+        "test_ce_10_transferFrom": "Success",
+        "test_ce_11_transferFrom": "Success",
+        "test_ce_1_transfer": "Success",
+        "test_ce_2_transfer": "Success",
+        "test_ce_3_transfer": "Success",
+        "test_ce_4_transfer": "Success",
+        "test_ce_5_transferFrom": "Success",
+        "test_ce_6_transferFrom": "Success",
+        "test_ce_7_transferFrom": "Success",
+        "test_ce_8_transferFrom": "Success",
+        "test_ce_9_transferFrom": "Success"
+      },
+      "wall_total_s": 0.777
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.355,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "peer_solar__FundRaising",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_add": "Failure",
+        "test_ce_1_withdrawOwner": "Success",
+        "test_ce_2_withdraw": "Failure"
+      },
+      "wall_total_s": 0.774
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.255,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "peer_solar__Gift_1_ETH",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_SetPass": "Success",
+        "test_ce_1_PassHasBeenSet": "Success",
+        "test_ce_2_PassHasBeenSet": "Success"
+      },
+      "wall_total_s": 0.703
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.255,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "peer_solar__Greeter",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_sayHello": "Success",
+        "test_ce_1_sayHello": "Success",
+        "test_ce_2_sayGoodbye": "Success",
+        "test_ce_3_sayGoodbye": "Success"
+      },
+      "wall_total_s": 0.669
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_solar__Greeter2",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_sayGoodbye": "Success",
+        "test_ce_1_sayGoodbye": "Success"
+      },
+      "wall_total_s": 0.588
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.253,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "peer_solar__Greeter3",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_sayHello": "Success",
+        "test_ce_1_sayHello": "Success",
+        "test_ce_2_sayGoodbye": "Success",
+        "test_ce_3_sayGoodbye": "Success"
+      },
+      "wall_total_s": 0.671
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "peer_solar__GuardCheck",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_donate": "Failure",
+        "test_ce_1_donate": "Failure",
+        "test_ce_2_donate": "Failure",
+        "test_ce_3_donate": "Failure"
+      },
+      "wall_total_s": 0.557
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.152,
+      "raw": 2,
+      "status": "score-incomplete",
+      "subject_id": "peer_solar__GuessTheNumberChallenge",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.557
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.76,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "peer_solar__Identity",
+      "trial": 1,
+      "valid": 7,
+      "valid_tests": {
+        "test_ce_0_addMender": "Success",
+        "test_ce_1_addMender": "Success",
+        "test_ce_2_addMender": "Success",
+        "test_ce_3_addPermission": "Success",
+        "test_ce_4_addPermission": "Success",
+        "test_ce_5_addPermission": "Success",
+        "test_ce_6_recover": "Success",
+        "test_ce_7_removeMender": "Failure"
+      },
+      "wall_total_s": 2.21
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.559,
+      "raw": 13,
+      "status": "ok",
+      "subject_id": "peer_solar__IdentityManager",
+      "trial": 1,
+      "valid": 6,
+      "valid_tests": {
+        "test_ce_0_addValidator": "Failure",
+        "test_ce_10_stopValidatingFor": "Failure",
+        "test_ce_11_stopValidatingFor": "Failure",
+        "test_ce_12_removeValidator": "Failure",
+        "test_ce_1_addValidator": "Failure",
+        "test_ce_2_addValidator": "Failure",
+        "test_ce_3_convertAddress": "Success",
+        "test_ce_4_convertAddress": "Success",
+        "test_ce_5_equals": "Success",
+        "test_ce_6_equals": "Success",
+        "test_ce_7_equals": "Success",
+        "test_ce_8_equals": "Success",
+        "test_ce_9_stopValidatingFor": "Failure"
+      },
+      "wall_total_s": 1.982
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 25.482,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_solar__LotteryFor10",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 25.482
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.657,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "peer_solar__LotteryMultipleWinners",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_join": "Failure",
+        "test_ce_1_join": "Failure",
+        "test_ce_2_join": "Failure",
+        "test_ce_3_selectWinners": "Failure",
+        "test_ce_4_isWinner": "Success",
+        "test_ce_5_withdrawReward": "Failure"
+      },
+      "wall_total_s": 1.089
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2559999999999998,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "peer_solar__MultiSigWallet (1)",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_getActiveTransactions": "Success",
+        "test_ce_1_transferTo": "Success",
+        "test_ce_2_transferTo": "Failure",
+        "test_ce_3_signTransaction": "Failure",
+        "test_ce_4_signTransaction": "Failure",
+        "test_ce_5_signTransaction": "Failure",
+        "test_ce_6_deleteTransaction": "Failure"
+      },
+      "wall_total_s": 1.665
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.257,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "peer_solar__MultiSigWallet (2)",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_getActiveTransactions": "Success",
+        "test_ce_1_transferTo": "Success",
+        "test_ce_2_transferTo": "Failure",
+        "test_ce_3_signTransaction": "Failure",
+        "test_ce_4_signTransaction": "Failure",
+        "test_ce_5_signTransaction": "Failure",
+        "test_ce_6_deleteTransaction": "Failure"
+      },
+      "wall_total_s": 1.694
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.557,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "peer_solar__MyAdvancedToken",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_migrate_and_destroy": "Success",
+        "test_ce_1_buy": "Success",
+        "test_ce_2_transferFrom": "Failure",
+        "test_ce_3_transferFrom": "Failure"
+      },
+      "wall_total_s": 1.983
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 34.79,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "peer_solar__OpenAddressLottery",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_participate": "Success",
+        "test_ce_1_kill": "Success",
+        "test_ce_2_forceReseed": "Success"
+      },
+      "wall_total_s": 35.209
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.759,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "peer_solar__PermissionGroups",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_transferAdmin": "Failure",
+        "test_ce_1_transferAdmin": "Success",
+        "test_ce_2_transferAdminQuickly": "Success",
+        "test_ce_3_transferAdminQuickly": "Failure",
+        "test_ce_4_claimAdmin": "Failure",
+        "test_ce_5_addAlerter": "Success",
+        "test_ce_6_removeAlerter": "Failure",
+        "test_ce_7_addOperator": "Success",
+        "test_ce_8_removeOperator": "Failure"
+      },
+      "wall_total_s": 1.172
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1609999999999998,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "peer_solar__Prover",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_deleteEntry": "Failure",
+        "test_ce_1_deleteEntry": "Failure",
+        "test_ce_2_deleteEntry": "Failure",
+        "test_ce_3_deleteEntry": "Failure",
+        "test_ce_4_selfDestruct": "Success"
+      },
+      "wall_total_s": 1.573
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.355,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "peer_solar__Randomness",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_setSealedSeed": "Success",
+        "test_ce_1_bet": "Success",
+        "test_ce_2_reveal": "Failure"
+      },
+      "wall_total_s": 0.76
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.657,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_solar__Reentrance",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_withdraw": "Success",
+        "test_ce_1_withdraw": "Success"
+      },
+      "wall_total_s": 1.066
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.26,
+      "raw": 13,
+      "status": "ok",
+      "subject_id": "peer_solar__Rubixi",
+      "trial": 1,
+      "valid": 12,
+      "valid_tests": {
+        "test_ce_0_collectAllFees": "Success",
+        "test_ce_10_changeFeePercentage": "Success",
+        "test_ce_11_participantDetails": "Failure",
+        "test_ce_12_participantDetails": "Success",
+        "test_ce_1_collectFeesInEther": "Success",
+        "test_ce_2_collectFeesInEther": "Success",
+        "test_ce_3_collectFeesInEther": "Success",
+        "test_ce_4_collectPercentOfFees": "Success",
+        "test_ce_5_collectPercentOfFees": "Success",
+        "test_ce_6_changeMultiplier": "Success",
+        "test_ce_7_changeMultiplier": "Success",
+        "test_ce_8_changeMultiplier": "Success",
+        "test_ce_9_changeFeePercentage": "Success"
+      },
+      "wall_total_s": 1.672
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.255,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_solar__SecureAuction",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_bid": "Failure"
+      },
+      "wall_total_s": 0.661
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 186.355,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_solar__TestDateTime",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_test": "Success"
+      },
+      "wall_total_s": 186.818
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_solar__VulnerableTwoStep",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_claimOwnership": "Failure",
+        "test_ce_1_retrieve": "Failure"
+      },
+      "wall_total_s": 0.563
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 66.32799999999999,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_solar__array-utils",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 66.328
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 5.9639999999999995,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "peer_solar__theRun",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_CollectAllFees": "Failure",
+        "test_ce_1_GetAndReduceFeesByFraction": "Success",
+        "test_ce_2_PlayerInfo": "Failure",
+        "test_ce_3_PlayerInfo": "Success"
+      },
+      "wall_total_s": 6.378
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "peer_soltg__Math",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_max": "Success",
+        "test_ce_1_max": "Success",
+        "test_ce_2_min": "Success",
+        "test_ce_3_min": "Failure"
+      },
+      "wall_total_s": 0.573
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_soltg__branches_assert_condition_2",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_f": "Success",
+        "test_ce_1_f": "Success"
+      },
+      "wall_total_s": 0.563
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__branches_in_modifiers",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_f": "Failure"
+      },
+      "wall_total_s": 0.562
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.453,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__branches_in_modifiers_2",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_f": "Failure"
+      },
+      "wall_total_s": 0.86
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.353,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_soltg__branches_inside_modifiers_2",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.353
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.253,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_soltg__branches_inside_modifiers_3",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.253
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_soltg__branches_merge_variables_3",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_f": "Success",
+        "test_ce_1_f": "Success"
+      },
+      "wall_total_s": 0.56
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.152,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_soltg__branches_merge_variables_5",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_f": "Success",
+        "test_ce_1_f": "Success"
+      },
+      "wall_total_s": 0.561
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.152,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_soltg__branches_merge_variables_6",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_f": "Success",
+        "test_ce_1_f": "Success"
+      },
+      "wall_total_s": 0.569
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "peer_soltg__constructor_1",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_f1": "Success",
+        "test_ce_1_set_max1": "Success",
+        "test_ce_2_set_max1": "Success"
+      },
+      "wall_total_s": 0.582
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.254,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "peer_soltg__constructor_2_fun_overloading",
+      "trial": 1,
+      "valid": 5,
+      "valid_tests": {
+        "test_ce_0_f2": "Success",
+        "test_ce_1_f2": "Success",
+        "test_ce_2_f2": "Success",
+        "test_ce_3_f2": "Success",
+        "test_ce_4_f2": "Success"
+      },
+      "wall_total_s": 0.678
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__constructor_3",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_f3": "Success"
+      },
+      "wall_total_s": 0.556
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__constructor_3_m",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_f3": "Success"
+      },
+      "wall_total_s": 0.589
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.259,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "peer_soltg__constructor_5",
+      "trial": 1,
+      "valid": 5,
+      "valid_tests": {
+        "test_ce_0_f5": "Success",
+        "test_ce_1_g5": "Success",
+        "test_ce_2_g5": "Success",
+        "test_ce_3_g5": "Success",
+        "test_ce_4_g5": "Success"
+      },
+      "wall_total_s": 0.696
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__constructor_6",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_f6": "Success"
+      },
+      "wall_total_s": 0.593
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.253,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_soltg__constructor_7",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_f7": "Success",
+        "test_ce_1_f7": "Success"
+      },
+      "wall_total_s": 0.673
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__constructor_8",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_f8": "Success"
+      },
+      "wall_total_s": 0.585
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_soltg__constructor_9",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.154
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.253,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_soltg__constructor_state_variable_init",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.253
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.152,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_soltg__constructor_state_variable_init_chain_alternate",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.152
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.454,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_soltg__constructor_state_variable_init_diamond",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.454
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_soltg__constructors",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.154
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_soltg__do_while_1_fail",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_f": "Success",
+        "test_ce_1_f": "Failure"
+      },
+      "wall_total_s": 0.561
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.152,
+      "raw": 2,
+      "status": "suite-uncompilable",
+      "subject_id": "peer_soltg__exampl",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.451
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__few_calls",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_f": "Success"
+      },
+      "wall_total_s": 0.564
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.152,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "peer_soltg__for_1_break",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_f": "Success",
+        "test_ce_1_f": "Failure",
+        "test_ce_2_f": "Success"
+      },
+      "wall_total_s": 0.553
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_soltg__for_1_break_fail",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_f": "Failure",
+        "test_ce_1_f": "Success"
+      },
+      "wall_total_s": 0.609
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "peer_soltg__for_1_continue",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_f": "Success",
+        "test_ce_1_f": "Failure",
+        "test_ce_2_f": "Success"
+      },
+      "wall_total_s": 0.558
+    },
+    {
+      "budget_excluded": true,
+      "generation_wall_s": 660.103,
+      "raw": 0,
+      "status": "budget-excluded",
+      "subject_id": "peer_soltg__loop_basic",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 660.103
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.256,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "peer_soltg__loop_if",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_loop_if": "Success",
+        "test_ce_1_loop_if": "Success",
+        "test_ce_2_loop_if": "Success"
+      },
+      "wall_total_s": 0.678
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.253,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "peer_soltg__many_fun",
+      "trial": 1,
+      "valid": 10,
+      "valid_tests": {
+        "test_ce_0_f1": "Success",
+        "test_ce_1_f1": "Success",
+        "test_ce_2_f2": "Success",
+        "test_ce_3_f2": "Success",
+        "test_ce_4_f3": "Success",
+        "test_ce_5_f3": "Success",
+        "test_ce_6_f4": "Success",
+        "test_ce_7_f4": "Success",
+        "test_ce_8_f5": "Success",
+        "test_ce_9_f5": "Success"
+      },
+      "wall_total_s": 0.662
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_soltg__microWeth",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_withdraw": "Success",
+        "test_ce_1_withdraw": "Failure"
+      },
+      "wall_total_s": 0.564
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "peer_soltg__overloading",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_f": "Success",
+        "test_ce_1_f": "Success",
+        "test_ce_2_f": "Success",
+        "test_ce_3_f": "Success"
+      },
+      "wall_total_s": 0.562
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.854,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "peer_soltg__return_1",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_add": "Success",
+        "test_ce_1_add": "Success",
+        "test_ce_2_add": "Success",
+        "test_ce_3_add": "Success"
+      },
+      "wall_total_s": 1.257
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.152,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "peer_soltg__revert_complex_flow",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_f": "Failure",
+        "test_ce_1_f": "Failure",
+        "test_ce_2_f": "Failure"
+      },
+      "wall_total_s": 0.592
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_soltg__seq_calls",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_call_1": "Success",
+        "test_ce_1_call_2": "Success"
+      },
+      "wall_total_s": 0.56
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_soltg__short_circuit_and",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.154
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_soltg__short_circuit_and_inside_branch",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.153
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_soltg__short_circuit_or_inside_branch",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_g": "Success",
+        "test_ce_1_g": "Failure"
+      },
+      "wall_total_s": 0.552
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.151,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "peer_soltg__simple_if",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_simple_if": "Success",
+        "test_ce_1_simple_if": "Success"
+      },
+      "wall_total_s": 0.556
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.152,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "peer_soltg__simple_if_2",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_simple_if_2": "Success",
+        "test_ce_1_simple_if_2": "Success",
+        "test_ce_2_simple_if_2": "Success",
+        "test_ce_3_simple_if_2": "Success"
+      },
+      "wall_total_s": 0.579
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.254,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__simple_if_array",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_check": "Failure"
+      },
+      "wall_total_s": 0.66
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__simple_if_state_var",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_check": "Failure"
+      },
+      "wall_total_s": 0.562
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__simple_if_struct",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_check": "Failure"
+      },
+      "wall_total_s": 0.554
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.155,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__simple_if_struct_2",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_check": "Failure"
+      },
+      "wall_total_s": 0.557
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.252,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__simple_if_tuple",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_check": "Failure"
+      },
+      "wall_total_s": 0.657
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.254,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "peer_soltg__state_machine_1",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_f": "Success",
+        "test_ce_1_g": "Success",
+        "test_ce_2_h": "Success",
+        "test_ce_3_j": "Success"
+      },
+      "wall_total_s": 0.662
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.254,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "peer_soltg__state_machine_1_fail",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_f": "Success",
+        "test_ce_1_g": "Success",
+        "test_ce_2_h": "Success",
+        "test_ce_3_j": "Success"
+      },
+      "wall_total_s": 0.657
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.152,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__store",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_balanceCheck": "Success"
+      },
+      "wall_total_s": 0.558
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__store_state",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_balanceCheck": "Success"
+      },
+      "wall_total_s": 0.561
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__triple_nested_if",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_f": "Success"
+      },
+      "wall_total_s": 0.568
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "peer_soltg__while_1",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_f": "Failure",
+        "test_ce_1_f": "Failure",
+        "test_ce_2_f": "Success"
+      },
+      "wall_total_s": 2.369
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.153,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "peer_soltg__while_1_continue",
+      "trial": 1,
+      "valid": 2,
+      "valid_tests": {
+        "test_ce_0_f": "Success",
+        "test_ce_1_f": "Failure",
+        "test_ce_2_f": "Success"
+      },
+      "wall_total_s": 0.559
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.156,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "peer_soltg__while_1_continue_fail",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_f": "Success",
+        "test_ce_1_f": "Failure",
+        "test_ce_2_f": "Failure"
+      },
+      "wall_total_s": 0.562
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.154,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "peer_soltg__while_2",
+      "trial": 1,
+      "valid": 1,
+      "valid_tests": {
+        "test_ce_0_f": "Success"
+      },
+      "wall_total_s": 0.562
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.355,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "peer_soltg__while_nested_break",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_f": "Success",
+        "test_ce_1_f": "Failure",
+        "test_ce_2_f": "Success",
+        "test_ce_3_f": "Failure",
+        "test_ce_4_f": "Success",
+        "test_ce_5_f": "Failure",
+        "test_ce_6_f": "Success"
+      },
+      "wall_total_s": 0.773
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.253,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "peer_soltg__while_nested_continue",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_f": "Success",
+        "test_ce_1_f": "Failure",
+        "test_ce_2_f": "Success",
+        "test_ce_3_f": "Failure",
+        "test_ce_4_f": "Success"
+      },
+      "wall_total_s": 0.663
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 198.96,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "peer_syntest__AavePoolReward",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 198.96
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.255,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "peer_syntest__Baz",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_baz": "Success",
+        "test_ce_1_baz": "Success",
+        "test_ce_2_baz": "Success",
+        "test_ce_3_baz": "Success"
+      },
+      "wall_total_s": 0.666
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.96,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "peer_syntest__BirdOracle",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {
+        "test_ce_0_updatedChainRequest": "Failure",
+        "test_ce_1_updatedChainRequest": "Failure",
+        "test_ce_2_updatedChainRequest": "Failure",
+        "test_ce_3_updatedChainRequest": "Failure"
+      },
+      "wall_total_s": 2.382
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.255,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "peer_syntest__Core_Fi_V3",
+      "trial": 1,
+      "valid": 8,
+      "valid_tests": {
+        "test_ce_0_transfer": "Success",
+        "test_ce_1_transfer": "Success",
+        "test_ce_2_transfer": "Success",
+        "test_ce_3_transferFrom": "Success",
+        "test_ce_4_transferFrom": "Success",
+        "test_ce_5_transferFrom": "Success",
+        "test_ce_6_transferFrom": "Success",
+        "test_ce_7_transferFrom": "Success"
+      },
+      "wall_total_s": 0.67
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.209,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_syntest__CryptoGhost",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.209
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.159,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_syntest__CryptoSecureBankToken",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.159
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 5.77,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "peer_syntest__DJCoin",
+      "trial": 1,
+      "valid": 6,
+      "valid_tests": {
+        "test_ce_0_renounceOwnership": "Success",
+        "test_ce_1_transferOwnership": "Success",
+        "test_ce_2_transferOwnership": "Failure",
+        "test_ce_3_burn": "Success",
+        "test_ce_4_burn": "Failure",
+        "test_ce_5_transfer": "Success",
+        "test_ce_6_transfer": "Failure",
+        "test_ce_7_decreaseAllowance": "Success",
+        "test_ce_8_decreaseAllowance": "Success"
+      },
+      "wall_total_s": 6.194
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.559,
+      "raw": 12,
+      "status": "ok",
+      "subject_id": "peer_syntest__EdenCoin",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_transfer": "Success",
+        "test_ce_10_decreaseApproval": "Success",
+        "test_ce_11_decreaseApproval": "Success",
+        "test_ce_1_transfer": "Failure",
+        "test_ce_2_transfer": "Success",
+        "test_ce_3_transferFrom": "Failure",
+        "test_ce_4_transferFrom": "Failure",
+        "test_ce_5_transferFrom": "Failure",
+        "test_ce_6_transferFrom": "Failure",
+        "test_ce_7_transferFrom": "Failure",
+        "test_ce_8_transferFrom": "Failure",
+        "test_ce_9_transferFrom": "Failure"
+      },
+      "wall_total_s": 0.983
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 12.073,
+      "raw": 14,
+      "status": "ok",
+      "subject_id": "peer_syntest__FreakCoin",
+      "trial": 1,
+      "valid": 12,
+      "valid_tests": {
+        "test_ce_0_setUniswapAddress": "Success",
+        "test_ce_10_transfer": "Success",
+        "test_ce_11_transfer": "Success",
+        "test_ce_12_transfer": "Failure",
+        "test_ce_13_transferFrom": "Failure",
+        "test_ce_1_transfer": "Success",
+        "test_ce_2_transfer": "Success",
+        "test_ce_3_transfer": "Success",
+        "test_ce_4_transfer": "Success",
+        "test_ce_5_transfer": "Success",
+        "test_ce_6_transfer": "Success",
+        "test_ce_7_transfer": "Success",
+        "test_ce_8_transfer": "Success",
+        "test_ce_9_transfer": "Success"
+      },
+      "wall_total_s": 12.49
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.256,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "peer_syntest__GAZ_ERC20",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_transferFrom": "Success",
+        "test_ce_1_transferFrom": "Success",
+        "test_ce_2_transferFrom": "Failure",
+        "test_ce_3_transferFrom": "Success",
+        "test_ce_4_transferFrom": "Success",
+        "test_ce_5_transferFrom": "Failure"
+      },
+      "wall_total_s": 1.666
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.557,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "peer_syntest__INS",
+      "trial": 1,
+      "valid": 4,
+      "valid_tests": {
+        "test_ce_0_transfer": "Success",
+        "test_ce_10_burnFrom": "Failure",
+        "test_ce_1_transfer": "Failure",
+        "test_ce_2_transfer": "Failure",
+        "test_ce_3_transferFrom": "Failure",
+        "test_ce_4_transferFrom": "Failure",
+        "test_ce_5_burn": "Success",
+        "test_ce_6_burn": "Failure",
+        "test_ce_7_burnFrom": "Success",
+        "test_ce_8_burnFrom": "Failure",
+        "test_ce_9_burnFrom": "Success"
+      },
+      "wall_total_s": 0.977
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.255,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "peer_syntest__MetaCoin",
+      "trial": 1,
+      "valid": 3,
+      "valid_tests": {
+        "test_ce_0_sendCoin": "Success",
+        "test_ce_1_sendCoin": "Success",
+        "test_ce_2_sendCoin": "Success"
+      },
+      "wall_total_s": 0.704
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 7.872,
+      "raw": 30,
+      "status": "ok",
+      "subject_id": "peer_syntest__Revive",
+      "trial": 1,
+      "valid": 21,
+      "valid_tests": {
+        "test_ce_0_transfer": "Failure",
+        "test_ce_10_lock": "Success",
+        "test_ce_11_lock": "Success",
+        "test_ce_12_transferWithLock": "Failure",
+        "test_ce_13_transferWithLock": "Failure",
+        "test_ce_14_transferWithLock": "Success",
+        "test_ce_15_transferWithLock": "Success",
+        "test_ce_16_tokensLockedAtTime": "Success",
+        "test_ce_17_tokensLockedAtTime": "Success",
+        "test_ce_18_totalBalanceOf": "Success",
+        "test_ce_19_extendLock": "Failure",
+        "test_ce_1_transfer": "Success",
+        "test_ce_20_increaseLockAmount": "Failure",
+        "test_ce_21_tokensUnlockable": "Success",
+        "test_ce_22_tokensUnlockable": "Success",
+        "test_ce_23_tokensUnlockable": "Success",
+        "test_ce_24_unlock": "Success",
+        "test_ce_25_unlock": "Success",
+        "test_ce_26_unlock": "Success",
+        "test_ce_27_unlock": "Success",
+        "test_ce_28_unlock": "Success",
+        "test_ce_29_getUnlockableTokens": "Success",
+        "test_ce_2_approve": "Success",
+        "test_ce_3_approve": "Failure",
+        "test_ce_4_renounceOwnership": "Success",
+        "test_ce_5_transferOwnership": "Success",
+        "test_ce_6_transferOwnership": "Failure",
+        "test_ce_7_tokensLocked": "Success",
+        "test_ce_8_lock": "Failure",
+        "test_ce_9_lock": "Failure"
+      },
+      "wall_total_s": 8.32
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.256,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "peer_syntest__Rootkit_finance",
+      "trial": 1,
+      "valid": 8,
+      "valid_tests": {
+        "test_ce_0_transfer": "Success",
+        "test_ce_1_transfer": "Success",
+        "test_ce_2_transfer": "Success",
+        "test_ce_3_transferFrom": "Success",
+        "test_ce_4_transferFrom": "Success",
+        "test_ce_5_transferFrom": "Success",
+        "test_ce_6_transferFrom": "Success",
+        "test_ce_7_transferFrom": "Success"
+      },
+      "wall_total_s": 0.681
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 185.497,
+      "raw": 0,
+      "status": "no-probe-artifacts",
+      "subject_id": "peer_syntest__SLTDETHlpReward",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 185.497
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.256,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "peer_syntest__Straight_Fire_Finance",
+      "trial": 1,
+      "valid": 8,
+      "valid_tests": {
+        "test_ce_0_transfer": "Success",
+        "test_ce_1_transfer": "Success",
+        "test_ce_2_transfer": "Success",
+        "test_ce_3_transferFrom": "Success",
+        "test_ce_4_transferFrom": "Success",
+        "test_ce_5_transferFrom": "Success",
+        "test_ce_6_transferFrom": "Success",
+        "test_ce_7_transferFrom": "Success"
+      },
+      "wall_total_s": 0.685
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.161,
+      "raw": 0,
+      "status": "no-tests-derivable",
+      "subject_id": "peer_syntest__TetherToken",
+      "trial": 1,
+      "valid": 0,
+      "valid_tests": {},
+      "wall_total_s": 0.161
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.059,
+      "raw": 31,
+      "status": "ok",
+      "subject_id": "peer_syntest__ThriftToken",
+      "trial": 1,
+      "valid": 21,
+      "valid_tests": {
+        "test_ce_0_approve": "Success",
+        "test_ce_10_increaseApproval": "Success",
+        "test_ce_11_transfer": "Success",
+        "test_ce_12_transfer": "Success",
+        "test_ce_13_transfer": "Success",
+        "test_ce_14_transfer": "Failure",
+        "test_ce_15_transfer": "Failure",
+        "test_ce_16_transfer": "Success",
+        "test_ce_17_transferFrom": "Failure",
+        "test_ce_18_transferFrom": "Failure",
+        "test_ce_19_transferFrom": "Success",
+        "test_ce_1_approve": "Failure",
+        "test_ce_20_transferFrom": "Failure",
+        "test_ce_21_transferFrom": "Success",
+        "test_ce_22_transferFrom": "Success",
+        "test_ce_23_transferFrom": "Success",
+        "test_ce_24_transferFrom": "Failure",
+        "test_ce_25_transferFrom": "Success",
+        "test_ce_26_transferFrom": "Success",
+        "test_ce_27_transferFrom": "Success",
+        "test_ce_28_transferOwnership": "Failure",
+        "test_ce_29_transferOwnership": "Success",
+        "test_ce_2_approve": "Success",
+        "test_ce_30_transferOwnership": "Success",
+        "test_ce_3_decreaseApproval": "Success",
+        "test_ce_4_decreaseApproval": "Failure",
+        "test_ce_5_decreaseApproval": "Success",
+        "test_ce_6_decreaseApproval": "Success",
+        "test_ce_7_increaseApproval": "Success",
+        "test_ce_8_increaseApproval": "Failure",
+        "test_ce_9_increaseApproval": "Success"
+      },
+      "wall_total_s": 1.484
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.4650000000000003,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "peer_syntest__TimeMiner",
+      "trial": 1,
+      "valid": 5,
+      "valid_tests": {
+        "test_ce_0_preSale": "Failure",
+        "test_ce_1_preSaleFinished": "Success",
+        "test_ce_2_changePreSalePriceIfToHigh": "Success",
+        "test_ce_3_whitelist": "Success",
+        "test_ce_4_setPrizeFromNewAddress": "Success",
+        "test_ce_5_setStableCoinSystem": "Success",
+        "test_ce_6_transferFrom": "Failure"
+      },
+      "wall_total_s": 2.886
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 381.557,
+      "raw": 14,
+      "status": "ok",
+      "subject_id": "peer_syntest__WOLF",
+      "trial": 1,
+      "valid": 5,
+      "valid_tests": {
+        "test_ce_0_transferFrom": "Success",
+        "test_ce_10_transferFrom": "Success",
+        "test_ce_11_approveAndCall": "Success",
+        "test_ce_12_approveAndCall": "Success",
+        "test_ce_13_transferownership": "Success",
+        "test_ce_1_transferFrom": "Failure",
+        "test_ce_2_transferFrom": "Failure",
+        "test_ce_3_transferFrom": "Failure",
+        "test_ce_4_transferFrom": "Failure",
+        "test_ce_5_transferFrom": "Failure",
+        "test_ce_6_transferFrom": "Failure",
+        "test_ce_7_transferFrom": "Failure",
+        "test_ce_8_transferFrom": "Failure",
+        "test_ce_9_transferFrom": "Failure"
+      },
+      "wall_total_s": 381.98
+    }
+  ],
+  "tool": "CC-SolBMC"
+}

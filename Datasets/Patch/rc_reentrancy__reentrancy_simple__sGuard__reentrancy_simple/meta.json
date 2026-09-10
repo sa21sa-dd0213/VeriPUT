@@ -1,0 +1,8 @@
+{
+  "contract": "Reentrance",
+  "dataset": "Patch",
+  "solc": "0.8.35",
+  "solc_bin": "solc",
+  "source_form": "normalized-flat",
+  "subject_id": "rc_reentrancy__reentrancy_simple__sGuard__reentrancy_simple"
+}

@@ -1,0 +1,5025 @@
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.13;
+
+
+
+
+
+import "forge-std/Test.sol";
+import "forge-std/console2.sol";
+import "../src/flat.sol";
+
+contract VamprireDoge_Echidna_Test is Test {
+    VamprireDoge target;
+
+    function setUp() public {
+        target = new VamprireDoge();
+    }
+    
+    function test_auto_transfer_0() public { 
+        
+        vm.warp(block.timestamp + 158470);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 56264);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 109997190730198930850520572396776631725258708379883360232896061806512084839089);
+        
+        vm.warp(block.timestamp + 118439);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 31939);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 807);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 1841);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 46155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 876);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 508);
+        
+        vm.warp(block.timestamp + 177582);
+        vm.roll(block.number + 31938);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457583997913129639936);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 612);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 80091578349141829254387151027344231499878631779306543270291551792993224067848);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 1000000000000000001);
+        
+        vm.warp(block.timestamp + 253761);
+        vm.roll(block.number + 31941);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 19743938217685563597573365318249768654831063366547588957109828305958354959519);
+        
+        vm.warp(block.timestamp + 322361);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 602231);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 46154);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 9239);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639918);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 4793611195219579685861366394134968924425107086532208951943473320873768);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 9999999999998);
+        
+        vm.warp(block.timestamp + 322358);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 92265178352755845459316501272849959308858706632280693093347281406945572385584);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 19351);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 999999999999999997);
+        
+        vm.warp(block.timestamp + 16);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 57738118555462928736739673462413544633423779079949567327306380451229027876077);
+        
+        vm.warp(block.timestamp + 386820);
+        vm.roll(block.number + 5005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 20);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 56260);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 11306902148118772712208325881976567853430720233533909155549122416970212319996);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 142605);
+        vm.roll(block.number + 19353);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 41636890197352813886882726352025301668344968851100616054454822650104896161705);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 15985);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039456584007913129639935);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 5004);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 62642);
+        vm.roll(block.number + 58927);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 243);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 44170076812204582178325308667271818766325138239972848548183459906501878872515);
+        
+        vm.warp(block.timestamp + 68610);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639918);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 25935925262229831674808899295732729525278989434367842210756398388389233190556);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 4370001);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000010000, 51580288659909819266716484921443309942143074418535996519016586935659938375210);
+        
+        vm.warp(block.timestamp + 122985);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 45239270678792104353210688318838425820638544390737551228292434102463881236447);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 56260);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 18785770413416931962780615227856895492548405461048741857168357873046658155728);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 203941);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 21);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 75434093115182540399655136107893361122256543816173452600673025152820323788525);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 60376);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 15);
+        vm.roll(block.number + 9240);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 114175603257594001256832325171263280675463430137941726543038566648086311051927);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 11705596552513877422861936818441846733765076806518906550514881942501065514388);
+        
+        vm.warp(block.timestamp + 540357);
+        vm.roll(block.number + 33568);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 118436);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 2928183236906759251883590284940);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 9245);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 70672423763651706495429436997952685822051106377522534307301415783903309704391);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 19350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 386821);
+        vm.roll(block.number + 19);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 14);
+        
+        vm.warp(block.timestamp + 118437);
+        vm.roll(block.number + 33566);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 311599);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039456584007913129639936);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 19355);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 540361);
+        vm.roll(block.number + 9240);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 118434);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 386821);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 29317);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 17692);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 256854);
+        vm.roll(block.number + 31942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 10000000000001);
+        
+        vm.warp(block.timestamp + 118436);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 14);
+        vm.roll(block.number + 9243);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 386820);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 9239);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 895);
+        
+        vm.warp(block.timestamp + 118433);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 61058540844125754560150725890906341132997675330410168427093985919409999907560);
+        
+        vm.warp(block.timestamp + 118439);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 82354023404895194730737000846604071806850333168261332463475022470598142258643);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639918);
+        
+        vm.warp(block.timestamp + 386817);
+        vm.roll(block.number + 22855);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 141);
+        
+        vm.warp(block.timestamp + 68612);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 68612);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 203937);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 29227);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 549979);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 103986228670269412187512209738364541721874208196855904396889459031264158917948);
+        
+        vm.warp(block.timestamp + 540355);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 100862781105978921124864475080261721354817578804302597271556854593645483269993);
+        
+        vm.warp(block.timestamp + 19);
+        vm.roll(block.number + 46156);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 203940);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039456584007913129639937);
+        
+        vm.warp(block.timestamp + 21);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 33564);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 5009);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 1000000000000000003);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 15639);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 21);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 31942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 68611);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 135);
+    }
+    
+    
+    function test_auto_transferFrom_1() public { 
+        
+        vm.warp(block.timestamp + 158470);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 193960);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 386819);
+        vm.roll(block.number + 27606);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 1872519719462517125);
+        
+        vm.warp(block.timestamp + 588298);
+        vm.roll(block.number + 317);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 110107611707192489523509444175318156954049035716557261386195710535647183974824);
+        
+        vm.warp(block.timestamp + 93163);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 946);
+        vm.roll(block.number + 729);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 72195027273640894485237039367512421463684210204997148809096319926022987325371);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 103);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, 15);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 806);
+        vm.roll(block.number + 45189);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584006913129639934);
+        
+        vm.warp(block.timestamp + 739);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 423917);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 386817);
+        vm.roll(block.number + 5149);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 99334310146928972799429007544679723148118623975222143122268931059330189976232);
+        
+        vm.warp(block.timestamp + 540361);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 16);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 257);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 713);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 19482);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 359644);
+        vm.roll(block.number + 41974);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584006913129639938);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 388);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 217);
+        
+        vm.warp(block.timestamp + 991);
+        vm.roll(block.number + 212);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 103);
+        vm.roll(block.number + 15);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 451742);
+        vm.roll(block.number + 20771);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.balanceOf(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 267);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 322355);
+        vm.roll(block.number + 366);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 38242745960270842157554098509900172400832351959530704799013139742130636738462);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000010000, 56204382800942423446534354508234977367230277443585038184897326785655616251122);
+        
+        vm.warp(block.timestamp + 386818);
+        vm.roll(block.number + 152);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 386821);
+        vm.roll(block.number + 58691);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 54724);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 68610);
+        vm.roll(block.number + 56263);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 946);
+        vm.roll(block.number + 18);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000030000, 105951843487946531650834822832316100628820512865130936184432385816024896742953);
+        
+        vm.warp(block.timestamp + 868);
+        vm.roll(block.number + 7643);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 466115);
+        vm.roll(block.number + 51889);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 257);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 227);
+        vm.roll(block.number + 1860);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 47);
+        vm.roll(block.number + 20);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 381);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 0);
+        
+        vm.warp(block.timestamp + 325);
+        vm.roll(block.number + 28189);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 994);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 152);
+        vm.roll(block.number + 4233);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 122);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 2374352686396663557913786310);
+        
+        vm.warp(block.timestamp + 67205);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 74204813303037985835586727164921673381371155342113962504521344766772710254384);
+        
+        vm.warp(block.timestamp + 606);
+        vm.roll(block.number + 31940);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000020000, 10580752924094763463881843930);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 1343);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 31228509081765357916501786827161387048861506368377802430301147832806654482945);
+        
+        vm.warp(block.timestamp + 600207);
+        vm.roll(block.number + 739);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 360);
+        vm.roll(block.number + 257);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 107582030391552941928995058129599108349595782482406733478504321669363290893173);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 56266);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 762);
+        vm.roll(block.number + 700);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 762);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 1021);
+        vm.roll(block.number + 227);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 53280654918760751031245001884307551318187089486874562492602724488243708812285);
+        
+        vm.warp(block.timestamp + 20);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 807);
+        
+        vm.warp(block.timestamp + 322356);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 415194);
+        vm.roll(block.number + 138);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 68611);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 42174);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 78265);
+        vm.roll(block.number + 36374);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 267);
+        
+        vm.warp(block.timestamp + 1061);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 865);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 381);
+        vm.roll(block.number + 849);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 68608);
+        vm.roll(block.number + 28189);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 892388576298678958);
+        
+        vm.warp(block.timestamp + 99663);
+        vm.roll(block.number + 285);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 675);
+        vm.roll(block.number + 931);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 73964099090020416652326952429376811575819453198278505039711208276440246854176);
+        
+        vm.warp(block.timestamp + 493912);
+        vm.roll(block.number + 33569);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000000000, 212);
+        
+        vm.warp(block.timestamp + 571);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 47892310313374574339387659532028900392448490015014618888606557477548789301944);
+        
+        vm.warp(block.timestamp + 257644);
+        vm.roll(block.number + 313);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 1830488306401707862);
+        
+        vm.warp(block.timestamp + 322354);
+        vm.roll(block.number + 5008);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 135);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 819993033407593778);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 381);
+        vm.roll(block.number + 5010);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 11830495042781564625106087625162645874617733075104713135374120583342001420003);
+        
+        vm.warp(block.timestamp + 553811);
+        vm.roll(block.number + 53);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 20259982862776817693362127632851139592134853553319965842259043924743830950910);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 946);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 39879132725367779480771913051797501579093928022054346596098191441187454349533);
+        
+        vm.warp(block.timestamp + 29066);
+        vm.roll(block.number + 56266);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 892);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 157);
+        
+        vm.warp(block.timestamp + 381);
+        vm.roll(block.number + 910);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 545263);
+        vm.roll(block.number + 9240);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 42424955827955998531476770837014403799398581125991463544730166766949444305129);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 37901854255455797159612531857088323256148913903974709607528963414750580737836);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 39928);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 421788);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 18);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 30407);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 441);
+        vm.roll(block.number + 871);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 253764);
+        vm.roll(block.number + 19349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 17);
+        vm.roll(block.number + 39858);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 118437);
+        vm.roll(block.number + 151);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 421);
+        
+        vm.warp(block.timestamp + 322356);
+        vm.roll(block.number + 267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 21811652355193249014211092325238324000981265343397085306496212417150941791786);
+        
+        vm.warp(block.timestamp + 90);
+        vm.roll(block.number + 90);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 6987557614621276604306301543168626298729346549398086955334521127801482827460);
+        
+        vm.warp(block.timestamp + 669);
+        vm.roll(block.number + 51648);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 359711);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 248236);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 9240);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 21);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 1021);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 72746709729502452092416187934012279915659124636109874076328327576388091339566);
+        
+        vm.warp(block.timestamp + 212);
+        vm.roll(block.number + 27606);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+    }
+    
+    
+    function test_auto_fun_2() public { 
+        
+        vm.warp(block.timestamp + 158470);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 56264);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 109997190730198930850520572396776631725258708379883360232896061806512084839089);
+        
+        vm.warp(block.timestamp + 118439);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 31939);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 807);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 1841);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 46155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 876);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 508);
+        
+        vm.warp(block.timestamp + 177582);
+        vm.roll(block.number + 31938);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457583997913129639936);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 612);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 80091578349141829254387151027344231499878631779306543270291551792993224067848);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 1000000000000000001);
+        
+        vm.warp(block.timestamp + 253761);
+        vm.roll(block.number + 31941);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 19743938217685563597573365318249768654831063366547588957109828305958354959519);
+        
+        vm.warp(block.timestamp + 322361);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 602231);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 46154);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 9239);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639918);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 4793611195219579685861366394134968924425107086532208951943473320873768);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 9999999999998);
+        
+        vm.warp(block.timestamp + 322358);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 92265178352755845459316501272849959308858706632280693093347281406945572385584);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 19351);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 999999999999999997);
+        
+        vm.warp(block.timestamp + 16);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 57738118555462928736739673462413544633423779079949567327306380451229027876077);
+        
+        vm.warp(block.timestamp + 386820);
+        vm.roll(block.number + 5005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 20);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 56260);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 11306902148118772712208325881976567853430720233533909155549122416970212319996);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 142605);
+        vm.roll(block.number + 19353);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 41636890197352813886882726352025301668344968851100616054454822650104896161705);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 15985);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039456584007913129639935);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 5004);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 62642);
+        vm.roll(block.number + 58927);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 243);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 44170076812204582178325308667271818766325138239972848548183459906501878872515);
+        
+        vm.warp(block.timestamp + 68610);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639918);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 25935925262229831674808899295732729525278989434367842210756398388389233190556);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 56261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 325);
+        vm.roll(block.number + 713);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 762);
+        vm.roll(block.number + 366);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 98382100713867030496749748736728576664841467190925021891394140319554168890622);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 52777456726541469660576501054886999187675312065757356499263903909004389084916);
+        
+        vm.warp(block.timestamp + 186754);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000020000, 19229032);
+        
+        vm.warp(block.timestamp + 194556);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 830);
+        vm.roll(block.number + 6525);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 296);
+        vm.roll(block.number + 571);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 16);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 28189);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 540360);
+        vm.roll(block.number + 103);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 68608);
+        vm.roll(block.number + 32431);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 2533368064);
+        
+        vm.warp(block.timestamp + 289859);
+        vm.roll(block.number + 57866);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 558);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 584);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 14);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 5006);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 325);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 21);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 170043);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 11);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 29041714008007964763043840418190380523536020974842287897258810405252265407036);
+        
+        vm.warp(block.timestamp + 203328);
+        vm.roll(block.number + 9245);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000, 1843);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 458241);
+        vm.roll(block.number + 31244);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 77131112791525783752374391011895447715514559692531695152393088366302494135092);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 613);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 14527708030829149915895450727928672039559381174623320329567674251870515612898);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 729);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639915);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 27500);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 109778163064043166702630307463061358646458376745648217818641510977682361598851);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 67395359805993049560275037041249092797352695099047099723217108312135696282670);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 48562484822937078089570196496862451296301623615103586250963756304893278992993);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 206814);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 79018477444688727089501345252495322537956590332771910243811859826329442204421);
+        
+        vm.warp(block.timestamp + 157743);
+        vm.roll(block.number + 33567);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000000000, 5570779285643348469926);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 90);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 87);
+        vm.roll(block.number + 10);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 98550821974990362155567650413569274074562096116534237871736706807491230140583);
+        
+        vm.warp(block.timestamp + 519589);
+        vm.roll(block.number + 55770);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 11);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 20);
+        
+        vm.warp(block.timestamp + 382419);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 56);
+        
+        vm.warp(block.timestamp + 599510);
+        vm.roll(block.number + 517);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 68);
+        vm.roll(block.number + 191);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 49127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 18);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 325);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 994);
+        
+        vm.warp(block.timestamp + 303620);
+        vm.roll(block.number + 8960);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 806);
+        vm.roll(block.number + 52348);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 322357);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 171);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 322357);
+        vm.roll(block.number + 51648);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 1493547559124485350);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, 64269359578974987632125858570255657412453358826339139463698271211300757301158);
+        
+        vm.warp(block.timestamp + 312761);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 106197674799629899343843442492615438755111920247773461164449854309967080864875);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 10000000000002);
+        
+        vm.warp(block.timestamp + 360000);
+        vm.roll(block.number + 849);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 91707883948756118272540784990206815022070047159130881478116388763635154635736);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 910);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 253761);
+        vm.roll(block.number + 29317);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584006913129639939);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 68);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 30200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 86059415405314041645784866983502304034017428969865496770822035491626754997581);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 35848);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000030000, 1120);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 31940);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 108715);
+        vm.roll(block.number + 10646);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+    }
+    
+    
+    function test_auto_transferFrom_3() public { 
+        
+        vm.warp(block.timestamp + 158470);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 56264);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 109997190730198930850520572396776631725258708379883360232896061806512084839089);
+        
+        vm.warp(block.timestamp + 118439);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 31939);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 807);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 1841);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 46155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 876);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 508);
+        
+        vm.warp(block.timestamp + 177582);
+        vm.roll(block.number + 31938);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457583997913129639936);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 612);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 80091578349141829254387151027344231499878631779306543270291551792993224067848);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 1000000000000000001);
+        
+        vm.warp(block.timestamp + 253761);
+        vm.roll(block.number + 31941);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 19743938217685563597573365318249768654831063366547588957109828305958354959519);
+        
+        vm.warp(block.timestamp + 322361);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 602231);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 46154);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 9239);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639918);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 4793611195219579685861366394134968924425107086532208951943473320873768);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 9999999999998);
+        
+        vm.warp(block.timestamp + 322358);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 92265178352755845459316501272849959308858706632280693093347281406945572385584);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 19351);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 999999999999999997);
+        
+        vm.warp(block.timestamp + 16);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 57738118555462928736739673462413544633423779079949567327306380451229027876077);
+        
+        vm.warp(block.timestamp + 386820);
+        vm.roll(block.number + 5005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 20);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 56260);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 11306902148118772712208325881976567853430720233533909155549122416970212319996);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 142605);
+        vm.roll(block.number + 19353);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 41636890197352813886882726352025301668344968851100616054454822650104896161705);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 15985);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039456584007913129639935);
+        
+        vm.warp(block.timestamp + 322355);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 31941);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785991);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 33563);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 18);
+        
+        vm.warp(block.timestamp + 253763);
+        vm.roll(block.number + 19350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 203940);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 50591808630828373873778438990427330302548042632808405521111587155163863562131);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639918);
+        
+        vm.warp(block.timestamp + 322367);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000010000, 48069928243536378588794702824265268119025627943931590075138864880091547866654);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1000000000000000001);
+        
+        vm.warp(block.timestamp + 322357);
+        vm.roll(block.number + 56261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000000000, 35969148284265193334467369);
+        
+        vm.warp(block.timestamp + 540355);
+        vm.roll(block.number + 10222);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 9999999999998);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 33565);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039456584007913129639937);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 33566);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 11);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 5005);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 98388837835094244142169451441709064763462910145859364334256050208359727034411);
+        
+        vm.warp(block.timestamp + 118433);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 33566);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 322368);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584006913129639936);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 43391127466767316331689548876034059637213334848337003444707762573532844061482);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 102040079974489749204172287180448955146011553044819432556284794779918690761064);
+        
+        vm.warp(block.timestamp + 118439);
+        vm.roll(block.number + 19355);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 253766);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 5007);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 21119248640796479842557622986488336340005142853403837740518687010551001481646);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 30428368617296964130582903345645288005961771913210112594241823218287658420735);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 56545);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 42701);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 687);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 10000000000000);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 1000000000002);
+        
+        vm.warp(block.timestamp + 253763);
+        vm.roll(block.number + 12646);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 13);
+        
+        vm.warp(block.timestamp + 386817);
+        vm.roll(block.number + 45257);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 34812920832160639209879440424089857212071190457504632161839181031613020374209);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 61801866521846519103844114327425809105636216014046789131022218206888220662677);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 33564);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 31364769346829967989243647145956277699682991010949417931776451985664310110382);
+        
+        vm.warp(block.timestamp + 203940);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 9999999999997);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039456584007913129639935);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 14);
+        
+        vm.warp(block.timestamp + 322361);
+        vm.roll(block.number + 2468);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 14);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584006913129639933);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 999999999999999999);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 9999999999999);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, 15);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 35982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 593571);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039456584007913129639933);
+        
+        vm.warp(block.timestamp + 118437);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 999999999999);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 9245);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 19);
+        
+        vm.warp(block.timestamp + 322358);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000000000, 60088992306680831037837962581837401314713743189567846720505118106857008193462);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039456584007913129639938);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 56262);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 63013243532293523299499049013771116143766915292754139569196231411953429008972);
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 45449756590633555622955146215937494548592852965489815839170022738168482744671);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 56260);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 1524785993);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 47409);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 33567);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 51278646244576570035461573630036262440853183531068070664410713290839353385864);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 606);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 31942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 69379972683805328569722714357973855910776564417444977601571538891340466108549);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457583997913129639935);
+        
+        vm.warp(block.timestamp + 488381);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 101495219928443635943630633809146511048492717616008693863968103978298075310782);
+        
+        vm.warp(block.timestamp + 68610);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 29103088928589026368513419754787164129443561366823297455880555346400506437745);
+        
+        vm.warp(block.timestamp + 322354);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 75131814130727431880631701725402473995839436768729834613614700059597028421529);
+    }
+    
+    
+    function test_auto_approve_4() public { 
+        
+        vm.warp(block.timestamp + 158470);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 56264);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 109997190730198930850520572396776631725258708379883360232896061806512084839089);
+        
+        vm.warp(block.timestamp + 118439);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 31939);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 807);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 1841);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 46155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 876);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 508);
+        
+        vm.warp(block.timestamp + 177582);
+        vm.roll(block.number + 31938);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457583997913129639936);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 612);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 80091578349141829254387151027344231499878631779306543270291551792993224067848);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 1000000000000000001);
+        
+        vm.warp(block.timestamp + 253761);
+        vm.roll(block.number + 31941);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 19743938217685563597573365318249768654831063366547588957109828305958354959519);
+        
+        vm.warp(block.timestamp + 322361);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 602231);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 46154);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 9239);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639918);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 4793611195219579685861366394134968924425107086532208951943473320873768);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 9999999999998);
+        
+        vm.warp(block.timestamp + 322358);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 92265178352755845459316501272849959308858706632280693093347281406945572385584);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 19351);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 999999999999999997);
+        
+        vm.warp(block.timestamp + 16);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 57738118555462928736739673462413544633423779079949567327306380451229027876077);
+        
+        vm.warp(block.timestamp + 386820);
+        vm.roll(block.number + 5005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 20);
+        
+        vm.warp(block.timestamp + 13);
+        vm.roll(block.number + 56260);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 11306902148118772712208325881976567853430720233533909155549122416970212319996);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 142605);
+        vm.roll(block.number + 19353);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 41636890197352813886882726352025301668344968851100616054454822650104896161705);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 15985);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039456584007913129639935);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 5004);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 62642);
+        vm.roll(block.number + 58927);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 243);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 44170076812204582178325308667271818766325138239972848548183459906501878872515);
+        
+        vm.warp(block.timestamp + 68610);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639918);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 25935925262229831674808899295732729525278989434367842210756398388389233190556);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 5016);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 4370001);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000010000, 51580288659909819266716484921443309942143074418535996519016586935659938375210);
+        
+        vm.warp(block.timestamp + 122985);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 45239270678792104353210688318838425820638544390737551228292434102463881236447);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 56260);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 18785770413416931962780615227856895492548405461048741857168357873046658155728);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 203941);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 21);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 75434093115182540399655136107893361122256543816173452600673025152820323788525);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 60376);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639923);
+        
+        vm.warp(block.timestamp + 16);
+        vm.roll(block.number + 9244);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000030000, 9999999999999);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 23136);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039456584007913129639936);
+        
+        vm.warp(block.timestamp + 19);
+        vm.roll(block.number + 167);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 85473849177410215595146460871343419399075915404428332616442271796175451350570);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 5007);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 5009);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 47);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 90464);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 118435);
+        vm.roll(block.number + 9241);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 56263);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 6042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639915);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 16095);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 386821);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 4369999);
+        
+        vm.warp(block.timestamp + 203937);
+        vm.roll(block.number + 46153);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 105999567488489808409342331379957577183954962925869670025360164433738612561483);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 577);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 105504645197680588740988390769033291915636355386625115065299890533299302458279);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 577);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 46156);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 118433);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 366);
+        vm.roll(block.number + 5003);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 516);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000, 341);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 94556);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 31940);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 313);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 9240);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 47);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 32606698321651457963832247504054188315449678958803407680379899648524197025882);
+        
+        vm.warp(block.timestamp + 322362);
+        vm.roll(block.number + 850);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 33569);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000, 77663100435616613392223061126443278115939538772392810683727598781330598784889);
+        
+        vm.warp(block.timestamp + 47);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 5009);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 999999999999999997);
+        
+        vm.warp(block.timestamp + 143);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 26384);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 143);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 44321644486216203203837047257759966074091949693991282208182580595397674929977);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 366);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 46153);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 57978985101729861968096654031651581741412657175760337191463948681548475038153);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 15);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 68823300361553678166042570883338657611247569351730901957637253586499142414790);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 313);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039456584007913129639937);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 36952);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 386819);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 118436);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 14);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 10);
+        vm.roll(block.number + 366);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 143);
+        
+        vm.warp(block.timestamp + 161326);
+        vm.roll(block.number + 58180);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 0);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 37036);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 203937);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 577);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 22150439876600040853603705995172640926499432691341063622589741082492108491520);
+    }
+    
+    
+    function test_auto_transfer_5() public { 
+        
+        vm.warp(block.timestamp + 158470);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 56264);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 109997190730198930850520572396776631725258708379883360232896061806512084839089);
+        
+        vm.warp(block.timestamp + 118439);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 31939);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 807);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 1841);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 46155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 876);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 508);
+        
+        vm.warp(block.timestamp + 177582);
+        vm.roll(block.number + 31938);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457583997913129639936);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 612);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 80091578349141829254387151027344231499878631779306543270291551792993224067848);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 1000000000000000001);
+        
+        vm.warp(block.timestamp + 253761);
+        vm.roll(block.number + 31941);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 19743938217685563597573365318249768654831063366547588957109828305958354959519);
+        
+        vm.warp(block.timestamp + 322361);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 602231);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 46154);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 9239);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639918);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 4793611195219579685861366394134968924425107086532208951943473320873768);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 9999999999998);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 17);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 16);
+        
+        vm.warp(block.timestamp + 386821);
+        vm.roll(block.number + 9244);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 61917957644956920799628535881026222555247394383246477720905573409830534074672);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 1489906043960205397813425550762771655586000478908537089923024799460410371063);
+        
+        vm.warp(block.timestamp + 322360);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 44136);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 46468);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 58590305533042750091375639026909191707265732619223450794258208461493812034787);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 5009);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000, 931799426867510826);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 32130768034837197709560952321015953878256192162021247688604132339376895967655);
+        
+        vm.warp(block.timestamp + 540356);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 68610);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 248236);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 485166);
+        vm.roll(block.number + 10133);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 47198740762744529539282687391231155956845432038793868473502034545073744353631);
+        
+        vm.warp(block.timestamp + 540357);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 999999999999999998);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 56266);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 68608);
+        vm.roll(block.number + 18629);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 9);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 203937);
+        vm.roll(block.number + 47);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 386820);
+        vm.roll(block.number + 1860);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 322354);
+        vm.roll(block.number + 807);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 7210026726138574489461292271458801173382373091976605924884586676528222065558);
+        
+        vm.warp(block.timestamp + 386817);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 322363);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 82569515847728369959508687300210264204528996271437800889567353278641879015588);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 47761);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 7643);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 322356);
+        vm.roll(block.number + 31938);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 396159);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 19282244006325016103716908340460785005500593074139151105067682171047542072375);
+        
+        vm.warp(block.timestamp + 75405);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 1524785992);
+        
+        vm.warp(block.timestamp + 203939);
+        vm.roll(block.number + 5017);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 135);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000030000, 69741262793029310198053560256910988215196338597803376402068160179339090305239);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 118435);
+        vm.roll(block.number + 892);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 0);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 1860);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 253761);
+        vm.roll(block.number + 56262);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 11849437435540816506197223125348743578212430755750675589710771844605031896355);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 21);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 613);
+        vm.roll(block.number + 18);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 22116279268388784749826515275285535377140711009085366749841365142069633131781);
+        
+        vm.warp(block.timestamp + 440034);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 47);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 1000000000000);
+        
+        vm.warp(block.timestamp + 253762);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 20);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 56261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 9244);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 47037);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 322359);
+        vm.roll(block.number + 19);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 55167141298109933241220094298673435901173708349565408785562317969126783706376);
+        
+        vm.warp(block.timestamp + 206814);
+        vm.roll(block.number + 15);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 612);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 17);
+        vm.roll(block.number + 143);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 366);
+        vm.roll(block.number + 516);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 203940);
+        vm.roll(block.number + 7581);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 31939);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 572811);
+        vm.roll(block.number + 19353);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 999999999997);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 18629);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 322358);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 47);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 29386693239948413654861813070387874266960071809886885578600377355751832409888);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 713);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 540357);
+        vm.roll(block.number + 35617);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 545810);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 102761803563293357507448006602025805346408661933539296165995308917247845434037);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 54445);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 19613409967072300771126605645094183945236399405645841362125965182166941740326);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 30688326347088170886666075047637646123852451231797495438279399880760372175030);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 33569);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 0);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 516);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 497018);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000020000, 10583549492603);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 143);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 892);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 47618716086247628120505544839673506790500657920528046171133544675253734885542);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+    }
+    
+    
+    function test_auto_fun_6() public { 
+        
+        vm.warp(block.timestamp + 158470);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 193960);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 386819);
+        vm.roll(block.number + 27606);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 1872519719462517125);
+        
+        vm.warp(block.timestamp + 588298);
+        vm.roll(block.number + 317);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 110107611707192489523509444175318156954049035716557261386195710535647183974824);
+        
+        vm.warp(block.timestamp + 93163);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 946);
+        vm.roll(block.number + 729);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 72195027273640894485237039367512421463684210204997148809096319926022987325371);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 103);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639925);
+        
+        vm.warp(block.timestamp + 77938);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 421);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, 669);
+        
+        vm.warp(block.timestamp + 290356);
+        vm.roll(block.number + 507);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 84695753783059003931840904653446375275243988613072243856229199090399458339522);
+        
+        vm.warp(block.timestamp + 558);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 84);
+        
+        vm.warp(block.timestamp + 191);
+        vm.roll(block.number + 412);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 18714488608032797528170652205541548766960727439363356080072473388761256196142);
+        
+        vm.warp(block.timestamp + 151);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 122);
+        vm.roll(block.number + 19350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 966);
+        
+        vm.warp(block.timestamp + 203940);
+        vm.roll(block.number + 105);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 141);
+        vm.roll(block.number + 18226);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 113826222766217674781196821444805432298976577837661423793770512014058163708490);
+        
+        vm.warp(block.timestamp + 613);
+        vm.roll(block.number + 56266);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 81612596718792276356481775284049171056048640032505724548917533502079237186857);
+        
+        vm.warp(block.timestamp + 806);
+        vm.roll(block.number + 729);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 84);
+        vm.roll(block.number + 4233);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF, 201043034206315604264327057763108949382576301849932);
+        
+        vm.warp(block.timestamp + 312761);
+        vm.roll(block.number + 48274);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 386816);
+        vm.roll(block.number + 56261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 43640729332939804488549231290538223880115651242777378222812342013309820219908);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 19);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 8);
+        
+        vm.warp(block.timestamp + 105699);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 540359);
+        vm.roll(block.number + 138);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 81860184133387971847228890724090326018662898864633412764766654571652864917719);
+        
+        vm.warp(block.timestamp + 797);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 9242);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 118437);
+        vm.roll(block.number + 29317);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 286620);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 373242);
+        vm.roll(block.number + 50132);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 253767);
+        vm.roll(block.number + 849);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 94958061415213140956497640671806387020073634113664664216006781847011035581944);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 517);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639924);
+        
+        vm.warp(block.timestamp + 298318);
+        vm.roll(block.number + 544);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 849);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 107444);
+        vm.roll(block.number + 45189);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 53797670596726132893020865033173089266865888793515412108622636858302553970301);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 103);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 323);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 729);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 272);
+        vm.roll(block.number + 46045);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 68612);
+        vm.roll(block.number + 224);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 2915461587919340402922791691097454442875474265689885549605313871377798965942);
+        
+        vm.warp(block.timestamp + 119309);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 388);
+        vm.roll(block.number + 22772);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 1571560626355175539);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 541);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 700);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 991);
+        vm.roll(block.number + 84);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584006913129639935);
+        
+        vm.warp(block.timestamp + 19);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 450757);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 3046188465841888297469038691732513663113410795076173705010787774791864622288);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 225);
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 19208);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
+        
+        vm.warp(block.timestamp + 118439);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 253562);
+        vm.roll(block.number + 56262);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 1558389167758985836474889722);
+        
+        vm.warp(block.timestamp + 111207);
+        vm.roll(block.number + 16);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 7485192983112863514708700094759558242292119835636571407650646284539196889001);
+        
+        vm.warp(block.timestamp + 135377);
+        vm.roll(block.number + 7187);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 519589);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 854279863411060506);
+        
+        vm.warp(block.timestamp + 131884);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 738);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 7057);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000000000, 743);
+        
+        vm.warp(block.timestamp + 390630);
+        vm.roll(block.number + 5005);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 45556853940437542203026837369678309162021124966360331202065518957554401083329);
+        
+        vm.warp(block.timestamp + 558);
+        vm.roll(block.number + 73);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 425054);
+        vm.roll(block.number + 31937);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 99230696368931777539984867580283844766756895585417196136818585176947068625007);
+        
+        vm.warp(block.timestamp + 584);
+        vm.roll(block.number + 412);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 613);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 70570897930385849857695211170773232795746590646889032515760686606436449992756);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 47037);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 0);
+        
+        vm.warp(block.timestamp + 915);
+        vm.roll(block.number + 59391);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 104420);
+        vm.roll(block.number + 3155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 360000);
+        vm.roll(block.number + 441);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639919);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 217);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 272528);
+        vm.roll(block.number + 558);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 171062216360801035626628755189406460017751840);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 83);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 253764);
+        vm.roll(block.number + 21958);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000030000, 54201773605627308742921851965270061557457486144273948137864291401548453620346);
+        
+        vm.warp(block.timestamp + 597452);
+        vm.roll(block.number + 46151);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 21);
+        
+        vm.warp(block.timestamp + 47);
+        vm.roll(block.number + 15);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 203939);
+        vm.roll(block.number + 27041);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 167);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000000000, 4370001);
+        
+        vm.warp(block.timestamp + 289859);
+        vm.roll(block.number + 4233);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 88772082418921633569238789985838905028294763128394523079550966517967447633518);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 31938);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 36327299742865882245196556839691180679061363506921697616848636914353086072931);
+        
+        vm.warp(block.timestamp + 522904);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 33569);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 5335);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 33563);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 950);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 44696);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 71137047234042464979690751332404668519796832820801542566364165007403891848915);
+        
+        vm.warp(block.timestamp + 143);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 44491);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 8);
+        
+        vm.warp(block.timestamp + 220655);
+        vm.roll(block.number + 700);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000010000, 843);
+        
+        vm.warp(block.timestamp + 467047);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 743);
+        vm.roll(block.number + 43072);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 95399593829650618642384665065289150897004455466428382331919016832606442794023);
+        
+        vm.warp(block.timestamp + 606);
+        vm.roll(block.number + 225);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 386815);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 50230);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 453);
+        
+        vm.warp(block.timestamp + 60951);
+        vm.roll(block.number + 48865);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1767742609012399742);
+        
+        vm.warp(block.timestamp + 700);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000, 949);
+        
+        vm.warp(block.timestamp + 577);
+        vm.roll(block.number + 836);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 0);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000030000, 35595531704717933194);
+        
+        vm.warp(block.timestamp + 322356);
+        vm.roll(block.number + 713);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 62580434851117465312271280788440689735828594830157425693887983979623121994401);
+        
+        vm.warp(block.timestamp + 421);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 17778593437739372550981855832396008629445880252711055821773133607706473741840);
+        
+        vm.warp(block.timestamp + 87);
+        vm.roll(block.number + 103);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+    }
+    
+    
+    function test_auto_approve_7() public { 
+        
+        vm.warp(block.timestamp + 158470);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 56264);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 109997190730198930850520572396776631725258708379883360232896061806512084839089);
+        
+        vm.warp(block.timestamp + 118439);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 31939);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 807);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 1841);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 46155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 876);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 508);
+        
+        vm.warp(block.timestamp + 177582);
+        vm.roll(block.number + 31938);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457583997913129639936);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 612);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 80091578349141829254387151027344231499878631779306543270291551792993224067848);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 1000000000000000001);
+        
+        vm.warp(block.timestamp + 253761);
+        vm.roll(block.number + 31941);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 19743938217685563597573365318249768654831063366547588957109828305958354959519);
+        
+        vm.warp(block.timestamp + 322361);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 602231);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 46154);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 9239);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639918);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 4793611195219579685861366394134968924425107086532208951943473320873768);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 9999999999998);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 17);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 16);
+        
+        vm.warp(block.timestamp + 386821);
+        vm.roll(block.number + 9244);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 61917957644956920799628535881026222555247394383246477720905573409830534074672);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 1489906043960205397813425550762771655586000478908537089923024799460410371063);
+        
+        vm.warp(block.timestamp + 322360);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 44136);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 46468);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 58590305533042750091375639026909191707265732619223450794258208461493812034787);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 5009);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000, 931799426867510826);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 32130768034837197709560952321015953878256192162021247688604132339376895967655);
+        
+        vm.warp(block.timestamp + 107444);
+        vm.roll(block.number + 7643);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 286620);
+        vm.roll(block.number + 90);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 141);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 858);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 82648471680490888134216274981976452839077021789314769189780731903212309165223);
+        
+        vm.warp(block.timestamp + 47);
+        vm.roll(block.number + 313);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 33563);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 141);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 946);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 335817);
+        vm.roll(block.number + 56266);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 270);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 1249535300842333670);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 5003);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 18);
+        vm.roll(block.number + 613);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000030000, 94323585858513439101499195492218001019531524924262160037383984819817349616428);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 101811299279735875676420189970332688560702862409523995367284538285596499589640);
+        
+        vm.warp(block.timestamp + 33612);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 313);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5625);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 141);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 796);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 858);
+        vm.roll(block.number + 44553);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 2817925232953125211598152303657483468834784996812645921941707572007460284787);
+        
+        vm.warp(block.timestamp + 348762);
+        vm.roll(block.number + 56261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 257);
+        
+        vm.warp(block.timestamp + 498414);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 849);
+        
+        vm.warp(block.timestamp + 186754);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 52255458866762938784723019321007442413821853472204358347117019734583315892802);
+        
+        vm.warp(block.timestamp + 54557);
+        vm.roll(block.number + 858);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 305);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 33040214564635799575675118206483458951221807977907685534659475554536819766303);
+        
+        vm.warp(block.timestamp + 381);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 1830488306401707862);
+        
+        vm.warp(block.timestamp + 454940);
+        vm.roll(block.number + 267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 43649);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 534766);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 739);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 20771);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 386819);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 392957568389055876);
+        
+        vm.warp(block.timestamp + 29066);
+        vm.roll(block.number + 33566);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 93543374791264670119351418496189390217340033777156009769396376372890735760589);
+        
+        vm.warp(block.timestamp + 250);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 390);
+        vm.roll(block.number + 10646);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 675);
+        
+        vm.warp(block.timestamp + 830);
+        vm.roll(block.number + 272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 109349);
+        vm.roll(block.number + 13333);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 257);
+        
+        vm.warp(block.timestamp + 47);
+        vm.roll(block.number + 1822);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 46719302371474177153583608639693961105618048774306925492495480952689421718105);
+        
+        vm.warp(block.timestamp + 583260);
+        vm.roll(block.number + 317);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 2502085697);
+        
+        vm.warp(block.timestamp + 147183);
+        vm.roll(block.number + 940);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 102787603062537957646076386083937567178039958628227571228312939383026181337215);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 517);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 166);
+        
+        vm.warp(block.timestamp + 457222);
+        vm.roll(block.number + 785);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 186754);
+        vm.roll(block.number + 1843);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 78265);
+        vm.roll(block.number + 59179);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 85763026424836274184099946731420270176705862201876066308287095760058530886456);
+        
+        vm.warp(block.timestamp + 206814);
+        vm.roll(block.number + 555);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 986);
+        vm.roll(block.number + 27981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 706);
+        
+        vm.warp(block.timestamp + 572182);
+        vm.roll(block.number + 577);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 179618);
+        vm.roll(block.number + 20165);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000020000, 641);
+        
+        vm.warp(block.timestamp + 895);
+        vm.roll(block.number + 500);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 232369);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 16105345372701462635338432125323980682994818217350472300077381758227061210066);
+        
+        vm.warp(block.timestamp + 411558);
+        vm.roll(block.number + 16046);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000020000, 435);
+        
+        vm.warp(block.timestamp + 262864);
+        vm.roll(block.number + 11189);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 451742);
+        vm.roll(block.number + 19355);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 316203);
+        vm.roll(block.number + 613);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 195639);
+        vm.roll(block.number + 7);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 203940);
+        vm.roll(block.number + 32035);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 133);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 14171);
+        vm.roll(block.number + 8);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 819);
+        vm.roll(block.number + 43649);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 145);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 118439);
+        vm.roll(block.number + 950);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 121618);
+        vm.roll(block.number + 1028);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 187);
+        
+        vm.warp(block.timestamp + 335817);
+        vm.roll(block.number + 7455);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 133);
+        vm.roll(block.number + 349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 600207);
+        vm.roll(block.number + 9244);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 624);
+        
+        vm.warp(block.timestamp + 130108);
+        vm.roll(block.number + 678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 94800787931572465633666875395475802834607487148683272999404647176237853172282);
+        
+        vm.warp(block.timestamp + 251570);
+        vm.roll(block.number + 270);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 560858);
+        vm.roll(block.number + 9239);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+    }
+    
+    
+    function test_auto_transfer_8() public { 
+        
+        vm.warp(block.timestamp + 158470);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 56264);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 109997190730198930850520572396776631725258708379883360232896061806512084839089);
+        
+        vm.warp(block.timestamp + 118439);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 31939);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 807);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 1841);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 46155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 876);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 508);
+        
+        vm.warp(block.timestamp + 177582);
+        vm.roll(block.number + 31938);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457583997913129639936);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 612);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 80091578349141829254387151027344231499878631779306543270291551792993224067848);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 1000000000000000001);
+        
+        vm.warp(block.timestamp + 253761);
+        vm.roll(block.number + 31941);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 19743938217685563597573365318249768654831063366547588957109828305958354959519);
+        
+        vm.warp(block.timestamp + 322361);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 602231);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 46154);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 9239);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639918);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 4793611195219579685861366394134968924425107086532208951943473320873768);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 9999999999998);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 17);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 16);
+        
+        vm.warp(block.timestamp + 386821);
+        vm.roll(block.number + 9244);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 61917957644956920799628535881026222555247394383246477720905573409830534074672);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 1489906043960205397813425550762771655586000478908537089923024799460410371063);
+        
+        vm.warp(block.timestamp + 322360);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 44136);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 46468);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 58590305533042750091375639026909191707265732619223450794258208461493812034787);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 5009);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000, 931799426867510826);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 32130768034837197709560952321015953878256192162021247688604132339376895967655);
+        
+        vm.warp(block.timestamp + 107444);
+        vm.roll(block.number + 7643);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 286620);
+        vm.roll(block.number + 90);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 141);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 858);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 82648471680490888134216274981976452839077021789314769189780731903212309165223);
+        
+        vm.warp(block.timestamp + 47);
+        vm.roll(block.number + 313);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 33563);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 141);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 946);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 335817);
+        vm.roll(block.number + 56266);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 270);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 1249535300842333670);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 5003);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 18);
+        vm.roll(block.number + 613);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000030000, 94323585858513439101499195492218001019531524924262160037383984819817349616428);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 101811299279735875676420189970332688560702862409523995367284538285596499589640);
+        
+        vm.warp(block.timestamp + 33612);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 313);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5625);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 141);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 796);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 858);
+        vm.roll(block.number + 44553);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 2817925232953125211598152303657483468834784996812645921941707572007460284787);
+        
+        vm.warp(block.timestamp + 348762);
+        vm.roll(block.number + 56261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 257);
+        
+        vm.warp(block.timestamp + 498414);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 849);
+        
+        vm.warp(block.timestamp + 186754);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 52255458866762938784723019321007442413821853472204358347117019734583315892802);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 89885580676997303586931167098333114727643381955878889006893727891449490442396);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 122);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 540355);
+        vm.roll(block.number + 5014);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 425054);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 1000000000000);
+        
+        vm.warp(block.timestamp + 143);
+        vm.roll(block.number + 5008);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 386817);
+        vm.roll(block.number + 5008);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 18);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000030000, 999999999999);
+        
+        vm.warp(block.timestamp + 18);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 122);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 16507762546471995916182302317576604312679967995227892580617893366117940116369);
+        
+        vm.warp(block.timestamp + 203937);
+        vm.roll(block.number + 40014);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 366);
+        vm.roll(block.number + 5015);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 87991305103815937738276428454540843161856199548954574721796844561539358916906);
+        
+        vm.warp(block.timestamp + 322366);
+        vm.roll(block.number + 1843);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 80229194824314990245477096890434099034012846846301120273733151503126476176190);
+        
+        vm.warp(block.timestamp + 143);
+        vm.roll(block.number + 171);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 386819);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 84033336610520088906925624793430755707540127230829289725366623626434481277196);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 360);
+        
+        vm.warp(block.timestamp + 540360);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 40922438334117715538408504610966549673641148330030262525962824996760683368132);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 16154);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039456584007913129639936);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639921);
+        
+        vm.warp(block.timestamp + 68608);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4649550);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 313);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD, 39289020429297170927753422239231424049870518560550348638171035371099204514611);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.balanceOf(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 804871192398828850);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 892);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 865);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 349);
+        vm.roll(block.number + 56261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000020000, 100990780641027651039006365880877277575286067113086386233322621829441077403077);
+        
+        vm.warp(block.timestamp + 136392);
+        vm.roll(block.number + 895);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 421788);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1249535300842333670);
+        
+        vm.warp(block.timestamp + 107444);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 47);
+        vm.roll(block.number + 9);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 1000000000000000003);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 56265);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 46153);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 1021);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 77155097874269516728412738203528489509231599514620931496036363001468609787715);
+        
+        vm.warp(block.timestamp + 421788);
+        vm.roll(block.number + 56262);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 4677051766222409006184356523303279740025722403040714763496920943044936119567);
+        
+        vm.warp(block.timestamp + 322355);
+        vm.roll(block.number + 31940);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 540359);
+        vm.roll(block.number + 612);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 234659);
+        vm.roll(block.number + 45189);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000030000, 2374352686396663557913786310);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 540361);
+        vm.roll(block.number + 612);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 105541684278989059619159069734503809691521005961322311991554220990957634720006);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 20);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 13);
+    }
+    
+    
+    function test_auto_approve_9() public { 
+        
+        vm.warp(block.timestamp + 158470);
+        vm.roll(block.number + 19354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 17);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 56264);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 109997190730198930850520572396776631725258708379883360232896061806512084839089);
+        
+        vm.warp(block.timestamp + 118439);
+        vm.roll(block.number + 46422);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 31939);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 807);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 1841);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 46155);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 876);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 508);
+        
+        vm.warp(block.timestamp + 177582);
+        vm.roll(block.number + 31938);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457583997913129639936);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 612);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 80091578349141829254387151027344231499878631779306543270291551792993224067848);
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 1000000000000000001);
+        
+        vm.warp(block.timestamp + 253761);
+        vm.roll(block.number + 31941);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 19743938217685563597573365318249768654831063366547588957109828305958354959519);
+        
+        vm.warp(block.timestamp + 322361);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 602231);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 46154);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 9239);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639918);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 4793611195219579685861366394134968924425107086532208951943473320873768);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, 9999999999998);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 17);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 16);
+        
+        vm.warp(block.timestamp + 386821);
+        vm.roll(block.number + 9244);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 61917957644956920799628535881026222555247394383246477720905573409830534074672);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 1489906043960205397813425550762771655586000478908537089923024799460410371063);
+        
+        vm.warp(block.timestamp + 322360);
+        vm.roll(block.number + 5013);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 44136);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 46468);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 58590305533042750091375639026909191707265732619223450794258208461493812034787);
+        
+        vm.warp(block.timestamp + 11);
+        vm.roll(block.number + 5009);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000, 931799426867510826);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 32130768034837197709560952321015953878256192162021247688604132339376895967655);
+        
+        vm.warp(block.timestamp + 107444);
+        vm.roll(block.number + 7643);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 286620);
+        vm.roll(block.number + 90);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 12);
+        vm.roll(block.number + 141);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 858);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 82648471680490888134216274981976452839077021789314769189780731903212309165223);
+        
+        vm.warp(block.timestamp + 47);
+        vm.roll(block.number + 313);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 68614);
+        vm.roll(block.number + 33563);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 141);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 946);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 4369999);
+        
+        vm.warp(block.timestamp + 335817);
+        vm.roll(block.number + 56266);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 270);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 1249535300842333670);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 5003);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 18);
+        vm.roll(block.number + 613);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000030000, 94323585858513439101499195492218001019531524924262160037383984819817349616428);
+        
+        vm.warp(block.timestamp + 8);
+        vm.roll(block.number + 46152);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 101811299279735875676420189970332688560702862409523995367284538285596499589640);
+        
+        vm.warp(block.timestamp + 33612);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 313);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 5625);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 141);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 796);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 858);
+        vm.roll(block.number + 44553);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 2817925232953125211598152303657483468834784996812645921941707572007460284787);
+        
+        vm.warp(block.timestamp + 348762);
+        vm.roll(block.number + 56261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 257);
+        
+        vm.warp(block.timestamp + 498414);
+        vm.roll(block.number + 5011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 849);
+        
+        vm.warp(block.timestamp + 186754);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 52255458866762938784723019321007442413821853472204358347117019734583315892802);
+        
+        vm.warp(block.timestamp + 54557);
+        vm.roll(block.number + 858);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 305);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 33040214564635799575675118206483458951221807977907685534659475554536819766303);
+        
+        vm.warp(block.timestamp + 381);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 1830488306401707862);
+        
+        vm.warp(block.timestamp + 454940);
+        vm.roll(block.number + 267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 43649);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 534766);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 739);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 20771);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 386819);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 392957568389055876);
+        
+        vm.warp(block.timestamp + 29066);
+        vm.roll(block.number + 33566);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 93543374791264670119351418496189390217340033777156009769396376372890735760589);
+        
+        vm.warp(block.timestamp + 250);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 390);
+        vm.roll(block.number + 10646);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 675);
+        
+        vm.warp(block.timestamp + 360);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 45475731016481942003166594917057901003636392799576944177581948108094136816213);
+        
+        vm.warp(block.timestamp + 115683);
+        vm.roll(block.number + 19349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000010000, 999999999998);
+        
+        vm.warp(block.timestamp + 322364);
+        vm.roll(block.number + 15230);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 253764);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 53);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 267);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 28189);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 45933307493649668254557239575265547958908909197089366324451838236832332011125);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 51883);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 796);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 56263);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 313);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000000000, 612);
+        
+        vm.warp(block.timestamp + 519589);
+        vm.roll(block.number + 516);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000000000, 366);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 53045);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 111880483265204448536722004099167745739905174102823699568571344751420459695792);
+        
+        vm.warp(block.timestamp + 540358);
+        vm.roll(block.number + 16557);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 242175);
+        vm.roll(block.number + 19353);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 118437);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 3694621655514302778488972068433350159754448616435554687141160990673900116917);
+        
+        vm.warp(block.timestamp + 441238);
+        vm.roll(block.number + 151);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 48322);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 388);
+        vm.roll(block.number + 51796);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 41969098941338857067343910723314195915094587881260379660712244599637153661092);
+        
+        vm.warp(block.timestamp + 227);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000030000, 628);
+        
+        vm.warp(block.timestamp + 322365);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 582);
+        
+        vm.warp(block.timestamp + 253767);
+        vm.roll(block.number + 56263);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039456584007913129639939);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 91306427000075751709927371656704062784149265349079606130548980691676752846788);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 31937);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 0);
+        
+        vm.warp(block.timestamp + 1021);
+        vm.roll(block.number + 3120);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 152);
+        vm.roll(block.number + 47037);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 113687024176134072136006625995394127083063653544031877404478439522696581580838);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 77938);
+        vm.roll(block.number + 871);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 561287);
+        vm.roll(block.number + 19353);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 173);
+        vm.roll(block.number + 46155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun();
+        
+        vm.warp(block.timestamp + 516);
+        vm.roll(block.number + 18261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, 1524785993);
+        
+        vm.warp(block.timestamp + 81162);
+        vm.roll(block.number + 13);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 516);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 999999999999999998);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 100044831111475975908579801139789847059256637042006196972563781291685923741504);
+    }
+    
+}
+
+    

@@ -1,0 +1,437 @@
+{
+  "compile_failed": 9,
+  "compile_ok": 34,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 212,
+      "function": "constructor",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "_singleton",
+      "replacement_expression": "address(this)",
+      "start_line": 212
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 212,
+      "function": "constructor",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "_singleton",
+      "replacement_expression": "address(0)",
+      "start_line": 212
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "deployProxy",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "deployProxy",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "deployProxy",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 158,
+      "function": "isContract",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 158
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 158,
+      "function": "isContract",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 158
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "constructor",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "constructor",
+      "mutant_id": "m000009",
+      "operator": "CCD",
+      "original_expression": "constructor(address _singleton) {\n        require(_singleton != address(0), \"Invalid singleton address provided\");\n        singleton = _singleton;\n    }",
+      "replacement_expression": "",
+      "start_line": 210
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "deployProxy",
+      "mutant_id": "m000010",
+      "operator": "CSC",
+      "original_expression": "initializer.length > 0",
+      "replacement_expression": "true",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "deployProxy",
+      "mutant_id": "m000011",
+      "operator": "CSC",
+      "original_expression": "initializer.length > 0",
+      "replacement_expression": "false",
+      "start_line": 65
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 33,
+      "function": "proxyCreationCode",
+      "mutant_id": "m000012",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 33
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 53,
+      "function": "deployProxy",
+      "mutant_id": "m000013",
+      "operator": "DLR",
+      "original_expression": "bytes memory initializer",
+      "replacement_expression": "bytes storage initializer",
+      "start_line": 53
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 56,
+      "function": "deployProxy",
+      "mutant_id": "m000014",
+      "operator": "DLR",
+      "original_expression": "bytes memory deploymentData",
+      "replacement_expression": "bytes storage deploymentData",
+      "start_line": 56
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 85,
+      "function": "createProxyWithNonce",
+      "mutant_id": "m000015",
+      "operator": "DLR",
+      "original_expression": "bytes memory initializer",
+      "replacement_expression": "bytes storage initializer",
+      "start_line": 85
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 99,
+      "function": "createProxyWithNonceL2",
+      "mutant_id": "m000016",
+      "operator": "DLR",
+      "original_expression": "bytes memory initializer",
+      "replacement_expression": "bytes storage initializer",
+      "start_line": 99
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 114,
+      "function": "createChainSpecificProxyWithNonce",
+      "mutant_id": "m000017",
+      "operator": "DLR",
+      "original_expression": "bytes memory initializer",
+      "replacement_expression": "bytes storage initializer",
+      "start_line": 114
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 134,
+      "function": "createChainSpecificProxyWithNonceL2",
+      "mutant_id": "m000018",
+      "operator": "DLR",
+      "original_expression": "bytes memory initializer",
+      "replacement_expression": "bytes storage initializer",
+      "start_line": 134
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 89,
+      "function": "createProxyWithNonce",
+      "mutant_id": "m000019",
+      "operator": "EED",
+      "original_expression": "emit ProxyCreation(proxy, _singleton);",
+      "replacement_expression": "/* emit ProxyCreation(proxy, _singleton); */",
+      "start_line": 89
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "createProxyWithNonceL2",
+      "mutant_id": "m000020",
+      "operator": "EED",
+      "original_expression": "emit ProxyCreationL2(proxy, _singleton, initializer, saltNonce);",
+      "replacement_expression": "/* emit ProxyCreationL2(proxy, _singleton, initializer, saltNonce); */",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "createChainSpecificProxyWithNonce",
+      "mutant_id": "m000021",
+      "operator": "EED",
+      "original_expression": "emit ProxyCreation(proxy, _singleton);",
+      "replacement_expression": "/* emit ProxyCreation(proxy, _singleton); */",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "createChainSpecificProxyWithNonceL2",
+      "mutant_id": "m000022",
+      "operator": "EED",
+      "original_expression": "emit ChainSpecificProxyCreationL2(proxy, _singleton, initializer, saltNonce, getChainId());",
+      "replacement_expression": "/* emit ChainSpecificProxyCreationL2(proxy, _singleton, initializer, saltNonce, getChainId()); */",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 43,
+      "function": "proxyCreationCodehash",
+      "mutant_id": "m000023",
+      "operator": "ECS",
+      "original_expression": "uint256(uint160(singleton))",
+      "replacement_expression": "uint248(uint160(singleton))",
+      "start_line": 43
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 43,
+      "function": "proxyCreationCodehash",
+      "mutant_id": "m000024",
+      "operator": "ECS",
+      "original_expression": "uint160(singleton)",
+      "replacement_expression": "uint152(singleton)",
+      "start_line": 43
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 56,
+      "function": "deployProxy",
+      "mutant_id": "m000025",
+      "operator": "ECS",
+      "original_expression": "uint256(uint160(_singleton))",
+      "replacement_expression": "uint248(uint160(_singleton))",
+      "start_line": 56
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 56,
+      "function": "deployProxy",
+      "mutant_id": "m000026",
+      "operator": "ECS",
+      "original_expression": "uint160(_singleton)",
+      "replacement_expression": "uint152(_singleton)",
+      "start_line": 56
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 54,
+      "function": "deployProxy",
+      "mutant_id": "m000027",
+      "operator": "EHD",
+      "original_expression": "require(isContract(_singleton), \"Singleton contract not deployed\");",
+      "replacement_expression": "/* require(isContract(_singleton), \"Singleton contract not deployed\"); */",
+      "start_line": 54
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "deployProxy",
+      "mutant_id": "m000028",
+      "operator": "EHD",
+      "original_expression": "require(address(proxy) != address(0), \"Create2 call failed\");",
+      "replacement_expression": "/* require(address(proxy) != address(0), \"Create2 call failed\"); */",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "constructor",
+      "mutant_id": "m000029",
+      "operator": "EHD",
+      "original_expression": "require(_singleton != address(0), \"Invalid singleton address provided\");",
+      "replacement_expression": "/* require(_singleton != address(0), \"Invalid singleton address provided\"); */",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "deployProxy",
+      "mutant_id": "m000030",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "deployProxy",
+      "mutant_id": "m000031",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 158,
+      "function": "isContract",
+      "mutant_id": "m000032",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 158
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "constructor",
+      "mutant_id": "m000033",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 43,
+      "function": "proxyCreationCodehash",
+      "mutant_id": "m000034",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 43
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 87,
+      "function": "createProxyWithNonce",
+      "mutant_id": "m000035",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 87
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 87,
+      "function": "createProxyWithNonce",
+      "mutant_id": "m000036",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 87
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 118,
+      "function": "createChainSpecificProxyWithNonce",
+      "mutant_id": "m000037",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 118
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 118,
+      "function": "createChainSpecificProxyWithNonce",
+      "mutant_id": "m000038",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 118
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 218,
+      "function": "",
+      "mutant_id": "m000039",
+      "operator": "PKD",
+      "original_expression": "fallback() external payable ",
+      "replacement_expression": "fallback() external  ",
+      "start_line": 218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 34,
+      "function": "proxyCreationCode",
+      "mutant_id": "m000040",
+      "operator": "RSD",
+      "original_expression": "return type(SafeProxy).creationCode;",
+      "replacement_expression": "/* return type(SafeProxy).creationCode; */",
+      "start_line": 34
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 43,
+      "function": "proxyCreationCodehash",
+      "mutant_id": "m000041",
+      "operator": "RSD",
+      "original_expression": "return keccak256(abi.encodePacked(type(SafeProxy).creationCode, uint256(uint160(singleton))));",
+      "replacement_expression": "keccak256(abi.encodePacked(type(SafeProxy).creationCode, uint256(uint160(singleton))));",
+      "start_line": 43
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 158,
+      "function": "isContract",
+      "mutant_id": "m000042",
+      "operator": "RSD",
+      "original_expression": "return size > 0;",
+      "replacement_expression": "/* return size > 0; */",
+      "start_line": 158
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 173,
+      "function": "getChainId",
+      "mutant_id": "m000043",
+      "operator": "RSD",
+      "original_expression": "return id;",
+      "replacement_expression": "/* return id; */",
+      "start_line": 173
+    }
+  ],
+  "subject_id": "safe-fndn__safe-smart-account__SafeProxyFactory"
+}

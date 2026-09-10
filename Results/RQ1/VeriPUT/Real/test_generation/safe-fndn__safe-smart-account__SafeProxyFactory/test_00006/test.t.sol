@@ -1,0 +1,120 @@
+// SPDX-License-Identifier: MIT
+
+
+
+
+
+
+pragma solidity >=0.8.0;
+
+import {Test} from "forge-std/Test.sol";
+import {SafeProxyFactory} from "../src/flat.sol";
+
+contract SafeProxyFactoryCovTest_SafeProxyFactory_proxyCreationCodehash_put3p1 is Test {
+  SafeProxyFactory c0;
+  function setUp() public {
+    c0 = new SafeProxyFactory();
+  }
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  function _veriput_parameterized(address p_msg_sender, address singleton) internal {
+    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
+    singleton = address(uint160(bound(uint256(uint160(singleton)), 0, 1461501637330902918203684832716283019655932542975)));
+    
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
+    vm.prank(p_msg_sender);
+    bytes32 _put_ret = c0.proxyCreationCodehash(singleton);
+    
+    if (p_msg_sender == address(uint160(0)) && singleton == address(uint160(0))) {
+      assertEq(_put_ret, bytes32(uint256(65439062458888980179649533576101256628919559742321842097442031165862763649459)), "fixed witness return");
+    }
+    
+    
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "return: return in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]");
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  }
+
+
+  
+  function test_put_SafeProxyFactory_proxyCreationCodehash_path3p1(address p_msg_sender, address singleton) public {
+    _veriput_parameterized(p_msg_sender, singleton);
+  }
+}

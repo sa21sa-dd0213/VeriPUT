@@ -1,0 +1,627 @@
+{
+  "compile_failed": 4,
+  "compile_ok": 58,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "sayHello",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "sayHello",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "sayHello",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 25,
+      "function": "sayHello",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 25
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 25,
+      "function": "sayHello",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 25
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 25,
+      "function": "sayHello",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 25
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "changeHello",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "changeHello",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "changeHello",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "changeHello",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "changeHello",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "changeHello",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "sayGoodbye",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "sayGoodbye",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "sayGoodbye",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "sayGoodbye",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "sayGoodbye",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "sayGoodbye",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 61,
+      "function": "changeGoodbye",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 61
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 61,
+      "function": "changeGoodbye",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 61
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 61,
+      "function": "changeGoodbye",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 61
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "changeGoodbye",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "changeGoodbye",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "changeGoodbye",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "sayHello",
+      "mutant_id": "m000025",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.Korean)",
+      "replacement_expression": "true",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "sayHello",
+      "mutant_id": "m000026",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.Korean)",
+      "replacement_expression": "false",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 25,
+      "function": "sayHello",
+      "mutant_id": "m000027",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.English)",
+      "replacement_expression": "true",
+      "start_line": 25
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 25,
+      "function": "sayHello",
+      "mutant_id": "m000028",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.English)",
+      "replacement_expression": "false",
+      "start_line": 25
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "sayHello",
+      "mutant_id": "m000029",
+      "operator": "CSC",
+      "original_expression": "else {\n            return \"\";\n        }",
+      "replacement_expression": "",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "changeHello",
+      "mutant_id": "m000030",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.Korean)",
+      "replacement_expression": "true",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "changeHello",
+      "mutant_id": "m000031",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.Korean)",
+      "replacement_expression": "false",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "changeHello",
+      "mutant_id": "m000032",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.English)",
+      "replacement_expression": "true",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "changeHello",
+      "mutant_id": "m000033",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.English)",
+      "replacement_expression": "false",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "sayGoodbye",
+      "mutant_id": "m000034",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.Korean)",
+      "replacement_expression": "true",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "sayGoodbye",
+      "mutant_id": "m000035",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.Korean)",
+      "replacement_expression": "false",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "sayGoodbye",
+      "mutant_id": "m000036",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.English)",
+      "replacement_expression": "true",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "sayGoodbye",
+      "mutant_id": "m000037",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.English)",
+      "replacement_expression": "false",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 54,
+      "function": "sayGoodbye",
+      "mutant_id": "m000038",
+      "operator": "CSC",
+      "original_expression": "else {\n            return \"\";\n        }",
+      "replacement_expression": "",
+      "start_line": 52
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 61,
+      "function": "changeGoodbye",
+      "mutant_id": "m000039",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.Korean)",
+      "replacement_expression": "true",
+      "start_line": 61
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 61,
+      "function": "changeGoodbye",
+      "mutant_id": "m000040",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.Korean)",
+      "replacement_expression": "false",
+      "start_line": 61
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "changeGoodbye",
+      "mutant_id": "m000041",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.English)",
+      "replacement_expression": "true",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "changeGoodbye",
+      "mutant_id": "m000042",
+      "operator": "CSC",
+      "original_expression": "lang == uint8(Lang.English)",
+      "replacement_expression": "false",
+      "start_line": 63
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 22,
+      "function": "sayHello",
+      "mutant_id": "m000043",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 22
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 35,
+      "function": "changeHello",
+      "mutant_id": "m000044",
+      "operator": "DLR",
+      "original_expression": "string memory _hello",
+      "replacement_expression": "string storage _hello",
+      "start_line": 35
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 47,
+      "function": "sayGoodbye",
+      "mutant_id": "m000045",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 47
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 60,
+      "function": "changeGoodbye",
+      "mutant_id": "m000046",
+      "operator": "DLR",
+      "original_expression": "string memory _goodbye",
+      "replacement_expression": "string storage _goodbye",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "sayHello",
+      "mutant_id": "m000047",
+      "operator": "ER",
+      "original_expression": "Lang.Korean",
+      "replacement_expression": "Lang.English",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 25,
+      "function": "sayHello",
+      "mutant_id": "m000048",
+      "operator": "ER",
+      "original_expression": "Lang.English",
+      "replacement_expression": "Lang.Korean",
+      "start_line": 25
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "changeHello",
+      "mutant_id": "m000049",
+      "operator": "ER",
+      "original_expression": "Lang.Korean",
+      "replacement_expression": "Lang.English",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "changeHello",
+      "mutant_id": "m000050",
+      "operator": "ER",
+      "original_expression": "Lang.English",
+      "replacement_expression": "Lang.Korean",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "sayGoodbye",
+      "mutant_id": "m000051",
+      "operator": "ER",
+      "original_expression": "Lang.Korean",
+      "replacement_expression": "Lang.English",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "sayGoodbye",
+      "mutant_id": "m000052",
+      "operator": "ER",
+      "original_expression": "Lang.English",
+      "replacement_expression": "Lang.Korean",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 61,
+      "function": "changeGoodbye",
+      "mutant_id": "m000053",
+      "operator": "ER",
+      "original_expression": "Lang.Korean",
+      "replacement_expression": "Lang.English",
+      "start_line": 61
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "changeGoodbye",
+      "mutant_id": "m000054",
+      "operator": "ER",
+      "original_expression": "Lang.English",
+      "replacement_expression": "Lang.Korean",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "sayHello",
+      "mutant_id": "m000055",
+      "operator": "RSD",
+      "original_expression": "return helloKorean;",
+      "replacement_expression": "/* return helloKorean; */",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "sayHello",
+      "mutant_id": "m000056",
+      "operator": "RSD",
+      "original_expression": "return helloEnglish;",
+      "replacement_expression": "/* return helloEnglish; */",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "sayGoodbye",
+      "mutant_id": "m000057",
+      "operator": "RSD",
+      "original_expression": "return goodbyeKorean;",
+      "replacement_expression": "/* return goodbyeKorean; */",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 51,
+      "function": "sayGoodbye",
+      "mutant_id": "m000058",
+      "operator": "RSD",
+      "original_expression": "return goodbyeEnglish;",
+      "replacement_expression": "/* return goodbyeEnglish; */",
+      "start_line": 51
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "stateVariable",
+      "mutant_id": "m000059",
+      "operator": "SLR",
+      "original_expression": "unicode\"\uc548\ub155?\"",
+      "replacement_expression": "\"\"",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "stateVariable",
+      "mutant_id": "m000060",
+      "operator": "SLR",
+      "original_expression": "unicode\"\uc798\uac00!\"",
+      "replacement_expression": "\"\"",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "stateVariable",
+      "mutant_id": "m000061",
+      "operator": "SLR",
+      "original_expression": "\"Hello\"",
+      "replacement_expression": "\"\"",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "stateVariable",
+      "mutant_id": "m000062",
+      "operator": "SLR",
+      "original_expression": "\"Goodbye!\"",
+      "replacement_expression": "\"\"",
+      "start_line": 14
+    }
+  ],
+  "subject_id": "peer_solar__Greeter"
+}

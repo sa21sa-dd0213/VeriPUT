@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.539555568s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.527002873s)
+
+echidna: Constructor arguments are required: [("WBTCToBTCPriceFeed_",address),("BTCToUSDPriceFeed_",address),("decimals_",uint8)]

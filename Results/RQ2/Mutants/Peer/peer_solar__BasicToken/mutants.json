@@ -1,0 +1,157 @@
+{
+  "compile_failed": 0,
+  "compile_ok": 15,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "transfer",
+      "mutant_id": "m000001",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "transfer",
+      "mutant_id": "m000002",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "transfer",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "transfer",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "transfer",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "transfer",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "transfer",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "transfer",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "transfer",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "transfer",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "constructor",
+      "mutant_id": "m000011",
+      "operator": "CCD",
+      "original_expression": "constructor(uint _initialSupply)  {\n        initialSupply = _initialSupply;\n        balances[msg.sender] = _initialSupply;\n    }",
+      "replacement_expression": "",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "transfer",
+      "mutant_id": "m000012",
+      "operator": "EHD",
+      "original_expression": "require(balances[msg.sender] >= _amount, \"Not enough funds\");",
+      "replacement_expression": "/* require(balances[msg.sender] >= _amount, \"Not enough funds\"); */",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "transfer",
+      "mutant_id": "m000013",
+      "operator": "EHD",
+      "original_expression": "require(_recipient != msg.sender, \"No need to send tokens to yourself\");",
+      "replacement_expression": "/* require(_recipient != msg.sender, \"No need to send tokens to yourself\"); */",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "transfer",
+      "mutant_id": "m000014",
+      "operator": "EHD",
+      "original_expression": "require(balances[_recipient] + _amount > balances[_recipient]);",
+      "replacement_expression": "/* require(balances[_recipient] + _amount > balances[_recipient]); */",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "balanceOf",
+      "mutant_id": "m000015",
+      "operator": "RSD",
+      "original_expression": "return balances[_owner];",
+      "replacement_expression": "/* return balances[_owner]; */",
+      "start_line": 24
+    }
+  ],
+  "subject_id": "peer_solar__BasicToken"
+}

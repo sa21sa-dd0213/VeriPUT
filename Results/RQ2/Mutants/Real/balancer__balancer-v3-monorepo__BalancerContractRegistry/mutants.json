@@ -1,0 +1,3187 @@
+{
+  "compile_failed": 114,
+  "compile_ok": 204,
+  "mutants": [
+    {
+      "compile_status": "failed",
+      "end_line": 269,
+      "function": "_authenticateCaller",
+      "mutant_id": "m000001",
+      "operator": "ACM",
+      "original_expression": "_canPerform(actionId, msg.sender)",
+      "replacement_expression": "_canPerform(getActionId(msg.sig), msg.sender, where)",
+      "start_line": 269
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 332,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000002",
+      "operator": "ACM",
+      "original_expression": "_canPerform(getActionId(msg.sig), msg.sender, where)",
+      "replacement_expression": "_canPerform(actionId, msg.sender)",
+      "start_line": 332
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 344,
+      "function": "_ensureAuthenticatedByRole",
+      "mutant_id": "m000003",
+      "operator": "ACM",
+      "original_expression": "_canPerform(getActionId(msg.sig), msg.sender, where)",
+      "replacement_expression": "_canPerform(actionId, msg.sender)",
+      "start_line": 344
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 664,
+      "function": "getBalancerContract",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "registeredAddress",
+      "replacement_expression": "address(this)",
+      "start_line": 664
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 664,
+      "function": "getBalancerContract",
+      "mutant_id": "m000005",
+      "operator": "AVR",
+      "original_expression": "registeredAddress",
+      "replacement_expression": "address(0)",
+      "start_line": 664
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 308,
+      "function": "constructor",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 308
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 330,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 330
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 332,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 332
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 332,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 332
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 332,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 332
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 335,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 335
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 343,
+      "function": "_ensureAuthenticatedByRole",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 343
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 344,
+      "function": "_ensureAuthenticatedByRole",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 344
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 344,
+      "function": "_ensureAuthenticatedByRole",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 344
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 344,
+      "function": "_ensureAuthenticatedByRole",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 344
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 497,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 497
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 501,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 501
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 514,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 514
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 522,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 522
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 542,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 542
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 550,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 550
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 556,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 556
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 556,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 556
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 556,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 556
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 568,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 568
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 575,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 575
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 575,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 575
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 575,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 575
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 580,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 580
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 580,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 580
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 580,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 580
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 599,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 599
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 603,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 603
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 609,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 609
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 609,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 609
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 609,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 609
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 619,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 619
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 643,
+      "function": "_isActiveBalancerContract",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 643
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 643,
+      "function": "_isActiveBalancerContract",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 643
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 643,
+      "function": "_isActiveBalancerContract",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 643
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 643,
+      "function": "_isActiveBalancerContract",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 643
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 655,
+      "function": "getBalancerContract",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 655
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 663,
+      "function": "getBalancerContract",
+      "mutant_id": "m000043",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 663
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 663,
+      "function": "getBalancerContract",
+      "mutant_id": "m000044",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 663
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 663,
+      "function": "getBalancerContract",
+      "mutant_id": "m000045",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 663
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 663,
+      "function": "getBalancerContract",
+      "mutant_id": "m000046",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 663
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 332,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000047",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 332
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 344,
+      "function": "_ensureAuthenticatedByRole",
+      "mutant_id": "m000048",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 344
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 533,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000049",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 533
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 534,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000050",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 534
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 556,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000051",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 556
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 575,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000052",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 575
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 580,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000053",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 580
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 587,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000054",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 587
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 609,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000055",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 609
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 257,
+      "function": "constructor",
+      "mutant_id": "m000056",
+      "operator": "CCD",
+      "original_expression": "constructor(bytes32 actionIdDisambiguator) {\n        _actionIdDisambiguator = actionIdDisambiguator;\n    }",
+      "replacement_expression": "",
+      "start_line": 255
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 313,
+      "function": "constructor",
+      "mutant_id": "m000057",
+      "operator": "CCD",
+      "original_expression": "constructor(IVault vault, bytes32 actionIdDisambiguator) Authentication(actionIdDisambiguator) {\n        if (address(vault) == address(0)) {\n            revert VaultNotSet();\n        }\n\n        _vault = vault;\n    }",
+      "replacement_expression": "",
+      "start_line": 307
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 364,
+      "function": "constructor",
+      "mutant_id": "m000058",
+      "operator": "CCD",
+      "original_expression": "constructor(IVault vault) CommonAuthentication(vault, bytes32(uint256(uint160(address(this))))) {\n        \n    }",
+      "replacement_expression": "",
+      "start_line": 362
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 446,
+      "function": "constructor",
+      "mutant_id": "m000059",
+      "operator": "CCD",
+      "original_expression": "constructor(IVault vault) SingletonAuthentication(vault) {\n        \n    }",
+      "replacement_expression": "",
+      "start_line": 444
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 269,
+      "function": "_authenticateCaller",
+      "mutant_id": "m000060",
+      "operator": "CSC",
+      "original_expression": "!_canPerform(actionId, msg.sender)",
+      "replacement_expression": "true",
+      "start_line": 269
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 269,
+      "function": "_authenticateCaller",
+      "mutant_id": "m000061",
+      "operator": "CSC",
+      "original_expression": "!_canPerform(actionId, msg.sender)",
+      "replacement_expression": "false",
+      "start_line": 269
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 308,
+      "function": "constructor",
+      "mutant_id": "m000062",
+      "operator": "CSC",
+      "original_expression": "address(vault) == address(0)",
+      "replacement_expression": "true",
+      "start_line": 308
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 308,
+      "function": "constructor",
+      "mutant_id": "m000063",
+      "operator": "CSC",
+      "original_expression": "address(vault) == address(0)",
+      "replacement_expression": "false",
+      "start_line": 308
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 330,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000064",
+      "operator": "CSC",
+      "original_expression": "roleAccount == address(0)",
+      "replacement_expression": "true",
+      "start_line": 330
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 330,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000065",
+      "operator": "CSC",
+      "original_expression": "roleAccount == address(0)",
+      "replacement_expression": "false",
+      "start_line": 330
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 332,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000066",
+      "operator": "CSC",
+      "original_expression": "_canPerform(getActionId(msg.sig), msg.sender, where) == false",
+      "replacement_expression": "true",
+      "start_line": 332
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 332,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000067",
+      "operator": "CSC",
+      "original_expression": "_canPerform(getActionId(msg.sig), msg.sender, where) == false",
+      "replacement_expression": "false",
+      "start_line": 332
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 335,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000068",
+      "operator": "CSC",
+      "original_expression": "msg.sender != roleAccount",
+      "replacement_expression": "true",
+      "start_line": 335
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 335,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000069",
+      "operator": "CSC",
+      "original_expression": "msg.sender != roleAccount",
+      "replacement_expression": "false",
+      "start_line": 335
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 343,
+      "function": "_ensureAuthenticatedByRole",
+      "mutant_id": "m000070",
+      "operator": "CSC",
+      "original_expression": "msg.sender != roleAccount",
+      "replacement_expression": "true",
+      "start_line": 343
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 343,
+      "function": "_ensureAuthenticatedByRole",
+      "mutant_id": "m000071",
+      "operator": "CSC",
+      "original_expression": "msg.sender != roleAccount",
+      "replacement_expression": "false",
+      "start_line": 343
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 344,
+      "function": "_ensureAuthenticatedByRole",
+      "mutant_id": "m000072",
+      "operator": "CSC",
+      "original_expression": "_canPerform(getActionId(msg.sig), msg.sender, where) == false",
+      "replacement_expression": "true",
+      "start_line": 344
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 344,
+      "function": "_ensureAuthenticatedByRole",
+      "mutant_id": "m000073",
+      "operator": "CSC",
+      "original_expression": "_canPerform(getActionId(msg.sig), msg.sender, where) == false",
+      "replacement_expression": "false",
+      "start_line": 344
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 497,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000074",
+      "operator": "CSC",
+      "original_expression": "contractAddress == address(0)",
+      "replacement_expression": "true",
+      "start_line": 497
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 497,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000075",
+      "operator": "CSC",
+      "original_expression": "contractAddress == address(0)",
+      "replacement_expression": "false",
+      "start_line": 497
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 501,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000076",
+      "operator": "CSC",
+      "original_expression": "bytes(contractName).length == 0",
+      "replacement_expression": "true",
+      "start_line": 501
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 501,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000077",
+      "operator": "CSC",
+      "original_expression": "bytes(contractName).length == 0",
+      "replacement_expression": "false",
+      "start_line": 501
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 507,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000078",
+      "operator": "CSC",
+      "original_expression": "info.isRegistered",
+      "replacement_expression": "true",
+      "start_line": 507
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 507,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000079",
+      "operator": "CSC",
+      "original_expression": "info.isRegistered",
+      "replacement_expression": "false",
+      "start_line": 507
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 514,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000080",
+      "operator": "CSC",
+      "original_expression": "existingRegistryAddress != address(0)",
+      "replacement_expression": "true",
+      "start_line": 514
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 514,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000081",
+      "operator": "CSC",
+      "original_expression": "existingRegistryAddress != address(0)",
+      "replacement_expression": "false",
+      "start_line": 514
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 522,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000082",
+      "operator": "CSC",
+      "original_expression": "existingAliasAddress != address(0)",
+      "replacement_expression": "true",
+      "start_line": 522
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 522,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000083",
+      "operator": "CSC",
+      "original_expression": "existingAliasAddress != address(0)",
+      "replacement_expression": "false",
+      "start_line": 522
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 542,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000084",
+      "operator": "CSC",
+      "original_expression": "bytes(contractName).length == 0",
+      "replacement_expression": "true",
+      "start_line": 542
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 542,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000085",
+      "operator": "CSC",
+      "original_expression": "bytes(contractName).length == 0",
+      "replacement_expression": "false",
+      "start_line": 542
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 550,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000086",
+      "operator": "CSC",
+      "original_expression": "contractAddress == address(0)",
+      "replacement_expression": "true",
+      "start_line": 550
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 550,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000087",
+      "operator": "CSC",
+      "original_expression": "contractAddress == address(0)",
+      "replacement_expression": "false",
+      "start_line": 550
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 556,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000088",
+      "operator": "CSC",
+      "original_expression": "info.isRegistered == false",
+      "replacement_expression": "true",
+      "start_line": 556
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 556,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000089",
+      "operator": "CSC",
+      "original_expression": "info.isRegistered == false",
+      "replacement_expression": "false",
+      "start_line": 556
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 568,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000090",
+      "operator": "CSC",
+      "original_expression": "contractAddress == address(0)",
+      "replacement_expression": "true",
+      "start_line": 568
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 568,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000091",
+      "operator": "CSC",
+      "original_expression": "contractAddress == address(0)",
+      "replacement_expression": "false",
+      "start_line": 568
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 575,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000092",
+      "operator": "CSC",
+      "original_expression": "info.isRegistered == false",
+      "replacement_expression": "true",
+      "start_line": 575
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 575,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000093",
+      "operator": "CSC",
+      "original_expression": "info.isRegistered == false",
+      "replacement_expression": "false",
+      "start_line": 575
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 580,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000094",
+      "operator": "CSC",
+      "original_expression": "info.isActive == false",
+      "replacement_expression": "true",
+      "start_line": 580
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 580,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000095",
+      "operator": "CSC",
+      "original_expression": "info.isActive == false",
+      "replacement_expression": "false",
+      "start_line": 580
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 599,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000096",
+      "operator": "CSC",
+      "original_expression": "bytes(contractAlias).length == 0",
+      "replacement_expression": "true",
+      "start_line": 599
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 599,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000097",
+      "operator": "CSC",
+      "original_expression": "bytes(contractAlias).length == 0",
+      "replacement_expression": "false",
+      "start_line": 599
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 603,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000098",
+      "operator": "CSC",
+      "original_expression": "contractAddress == address(0)",
+      "replacement_expression": "true",
+      "start_line": 603
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 603,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000099",
+      "operator": "CSC",
+      "original_expression": "contractAddress == address(0)",
+      "replacement_expression": "false",
+      "start_line": 603
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 609,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000100",
+      "operator": "CSC",
+      "original_expression": "info.isRegistered == false",
+      "replacement_expression": "true",
+      "start_line": 609
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 609,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000101",
+      "operator": "CSC",
+      "original_expression": "info.isRegistered == false",
+      "replacement_expression": "false",
+      "start_line": 609
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 619,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000102",
+      "operator": "CSC",
+      "original_expression": "existingRegistryAddress != address(0)",
+      "replacement_expression": "true",
+      "start_line": 619
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 619,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000103",
+      "operator": "CSC",
+      "original_expression": "existingRegistryAddress != address(0)",
+      "replacement_expression": "false",
+      "start_line": 619
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 655,
+      "function": "getBalancerContract",
+      "mutant_id": "m000104",
+      "operator": "CSC",
+      "original_expression": "registeredAddress == address(0)",
+      "replacement_expression": "true",
+      "start_line": 655
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 655,
+      "function": "getBalancerContract",
+      "mutant_id": "m000105",
+      "operator": "CSC",
+      "original_expression": "registeredAddress == address(0)",
+      "replacement_expression": "false",
+      "start_line": 655
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 663,
+      "function": "getBalancerContract",
+      "mutant_id": "m000106",
+      "operator": "CSC",
+      "original_expression": "info.isRegistered && info.contractType == contractType",
+      "replacement_expression": "true",
+      "start_line": 663
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 663,
+      "function": "getBalancerContract",
+      "mutant_id": "m000107",
+      "operator": "CSC",
+      "original_expression": "info.isRegistered && info.contractType == contractType",
+      "replacement_expression": "false",
+      "start_line": 663
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 155,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000108",
+      "operator": "DLR",
+      "original_expression": "string memory contractName",
+      "replacement_expression": "string storage contractName",
+      "start_line": 155
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 172,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000109",
+      "operator": "DLR",
+      "original_expression": "string memory contractName",
+      "replacement_expression": "string storage contractName",
+      "start_line": 172
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 194,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000110",
+      "operator": "DLR",
+      "original_expression": "string memory contractAlias",
+      "replacement_expression": "string storage contractAlias",
+      "start_line": 194
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 219,
+      "function": "getBalancerContract",
+      "mutant_id": "m000111",
+      "operator": "DLR",
+      "original_expression": "string memory contractName",
+      "replacement_expression": "string storage contractName",
+      "start_line": 219
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 227,
+      "function": "getBalancerContractInfo",
+      "mutant_id": "m000112",
+      "operator": "DLR",
+      "original_expression": "ContractInfo memory info",
+      "replacement_expression": "ContractInfo storage info",
+      "start_line": 227
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 493,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000113",
+      "operator": "DLR",
+      "original_expression": "string memory contractName",
+      "replacement_expression": "string storage contractName",
+      "start_line": 493
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 506,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000114",
+      "operator": "DLR",
+      "original_expression": "ContractInfo memory info",
+      "replacement_expression": "ContractInfo storage info",
+      "start_line": 506
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 541,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000115",
+      "operator": "DLR",
+      "original_expression": "string memory contractName",
+      "replacement_expression": "string storage contractName",
+      "start_line": 541
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 554,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000116",
+      "operator": "DLR",
+      "original_expression": "ContractInfo memory info",
+      "replacement_expression": "ContractInfo storage info",
+      "start_line": 554
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000117",
+      "operator": "DLR",
+      "original_expression": "ContractInfo memory info",
+      "replacement_expression": "ContractInfo storage info",
+      "start_line": 572
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 595,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000118",
+      "operator": "DLR",
+      "original_expression": "string memory contractAlias",
+      "replacement_expression": "string storage contractAlias",
+      "start_line": 595
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 608,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000119",
+      "operator": "DLR",
+      "original_expression": "ContractInfo memory info",
+      "replacement_expression": "ContractInfo storage info",
+      "start_line": 608
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 640,
+      "function": "_isActiveBalancerContract",
+      "mutant_id": "m000120",
+      "operator": "DLR",
+      "original_expression": "ContractInfo memory info",
+      "replacement_expression": "ContractInfo storage info",
+      "start_line": 640
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 649,
+      "function": "getBalancerContract",
+      "mutant_id": "m000121",
+      "operator": "DLR",
+      "original_expression": "string memory contractName",
+      "replacement_expression": "string storage contractName",
+      "start_line": 649
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 659,
+      "function": "getBalancerContract",
+      "mutant_id": "m000122",
+      "operator": "DLR",
+      "original_expression": "ContractInfo memory info",
+      "replacement_expression": "ContractInfo storage info",
+      "start_line": 659
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 670,
+      "function": "getBalancerContractInfo",
+      "mutant_id": "m000123",
+      "operator": "DLR",
+      "original_expression": "ContractInfo memory info",
+      "replacement_expression": "ContractInfo storage info",
+      "start_line": 670
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 679,
+      "function": "_getContractId",
+      "mutant_id": "m000124",
+      "operator": "DLR",
+      "original_expression": "string memory contractName",
+      "replacement_expression": "string storage contractName",
+      "start_line": 679
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 831,
+      "function": "name",
+      "mutant_id": "m000125",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 831
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 836,
+      "function": "symbol",
+      "mutant_id": "m000126",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 836
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1965,
+      "function": "onRegister",
+      "mutant_id": "m000127",
+      "operator": "DLR",
+      "original_expression": "TokenConfig[] memory tokenConfig",
+      "replacement_expression": "TokenConfig[] storage tokenConfig",
+      "start_line": 1965
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1977,
+      "function": "getHookFlags",
+      "mutant_id": "m000128",
+      "operator": "DLR",
+      "original_expression": "HookFlags memory hookFlags",
+      "replacement_expression": "HookFlags storage hookFlags",
+      "start_line": 1977
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1992,
+      "function": "onBeforeInitialize",
+      "mutant_id": "m000129",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory exactAmountsIn",
+      "replacement_expression": "uint256[] storage exactAmountsIn",
+      "start_line": 1992
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1992,
+      "function": "onBeforeInitialize",
+      "mutant_id": "m000130",
+      "operator": "DLR",
+      "original_expression": "bytes memory userData",
+      "replacement_expression": "bytes storage userData",
+      "start_line": 1992
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2005,
+      "function": "onAfterInitialize",
+      "mutant_id": "m000131",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory exactAmountsIn",
+      "replacement_expression": "uint256[] storage exactAmountsIn",
+      "start_line": 2005
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2007,
+      "function": "onAfterInitialize",
+      "mutant_id": "m000132",
+      "operator": "DLR",
+      "original_expression": "bytes memory userData",
+      "replacement_expression": "bytes storage userData",
+      "start_line": 2007
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2032,
+      "function": "onBeforeAddLiquidity",
+      "mutant_id": "m000133",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory maxAmountsInScaled18",
+      "replacement_expression": "uint256[] storage maxAmountsInScaled18",
+      "start_line": 2032
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2034,
+      "function": "onBeforeAddLiquidity",
+      "mutant_id": "m000134",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory balancesScaled18",
+      "replacement_expression": "uint256[] storage balancesScaled18",
+      "start_line": 2034
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2035,
+      "function": "onBeforeAddLiquidity",
+      "mutant_id": "m000135",
+      "operator": "DLR",
+      "original_expression": "bytes memory userData",
+      "replacement_expression": "bytes storage userData",
+      "start_line": 2035
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2059,
+      "function": "onAfterAddLiquidity",
+      "mutant_id": "m000136",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory amountsInScaled18",
+      "replacement_expression": "uint256[] storage amountsInScaled18",
+      "start_line": 2059
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2060,
+      "function": "onAfterAddLiquidity",
+      "mutant_id": "m000137",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory amountsInRaw",
+      "replacement_expression": "uint256[] storage amountsInRaw",
+      "start_line": 2060
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2062,
+      "function": "onAfterAddLiquidity",
+      "mutant_id": "m000138",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory balancesScaled18",
+      "replacement_expression": "uint256[] storage balancesScaled18",
+      "start_line": 2062
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2063,
+      "function": "onAfterAddLiquidity",
+      "mutant_id": "m000139",
+      "operator": "DLR",
+      "original_expression": "bytes memory userData",
+      "replacement_expression": "bytes storage userData",
+      "start_line": 2063
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2064,
+      "function": "onAfterAddLiquidity",
+      "mutant_id": "m000140",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory hookAdjustedAmountsInRaw",
+      "replacement_expression": "uint256[] storage hookAdjustedAmountsInRaw",
+      "start_line": 2064
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2089,
+      "function": "onBeforeRemoveLiquidity",
+      "mutant_id": "m000141",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory minAmountsOutScaled18",
+      "replacement_expression": "uint256[] storage minAmountsOutScaled18",
+      "start_line": 2089
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2090,
+      "function": "onBeforeRemoveLiquidity",
+      "mutant_id": "m000142",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory balancesScaled18",
+      "replacement_expression": "uint256[] storage balancesScaled18",
+      "start_line": 2090
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2091,
+      "function": "onBeforeRemoveLiquidity",
+      "mutant_id": "m000143",
+      "operator": "DLR",
+      "original_expression": "bytes memory userData",
+      "replacement_expression": "bytes storage userData",
+      "start_line": 2091
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2116,
+      "function": "onAfterRemoveLiquidity",
+      "mutant_id": "m000144",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory amountsOutScaled18",
+      "replacement_expression": "uint256[] storage amountsOutScaled18",
+      "start_line": 2116
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2117,
+      "function": "onAfterRemoveLiquidity",
+      "mutant_id": "m000145",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory amountsOutRaw",
+      "replacement_expression": "uint256[] storage amountsOutRaw",
+      "start_line": 2117
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2118,
+      "function": "onAfterRemoveLiquidity",
+      "mutant_id": "m000146",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory balancesScaled18",
+      "replacement_expression": "uint256[] storage balancesScaled18",
+      "start_line": 2118
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2119,
+      "function": "onAfterRemoveLiquidity",
+      "mutant_id": "m000147",
+      "operator": "DLR",
+      "original_expression": "bytes memory userData",
+      "replacement_expression": "bytes storage userData",
+      "start_line": 2119
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2120,
+      "function": "onAfterRemoveLiquidity",
+      "mutant_id": "m000148",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory hookAdjustedAmountsOutRaw",
+      "replacement_expression": "uint256[] storage hookAdjustedAmountsOutRaw",
+      "start_line": 2120
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2194,
+      "function": "unlock",
+      "mutant_id": "m000149",
+      "operator": "DLR",
+      "original_expression": "bytes memory result",
+      "replacement_expression": "bytes storage result",
+      "start_line": 2194
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2242,
+      "function": "swap",
+      "mutant_id": "m000150",
+      "operator": "DLR",
+      "original_expression": "VaultSwapParams memory vaultSwapParams",
+      "replacement_expression": "VaultSwapParams storage vaultSwapParams",
+      "start_line": 2242
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2260,
+      "function": "addLiquidity",
+      "mutant_id": "m000151",
+      "operator": "DLR",
+      "original_expression": "AddLiquidityParams memory params",
+      "replacement_expression": "AddLiquidityParams storage params",
+      "start_line": 2260
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2261,
+      "function": "addLiquidity",
+      "mutant_id": "m000152",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory amountsIn",
+      "replacement_expression": "uint256[] storage amountsIn",
+      "start_line": 2261
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2261,
+      "function": "addLiquidity",
+      "mutant_id": "m000153",
+      "operator": "DLR",
+      "original_expression": "bytes memory returnData",
+      "replacement_expression": "bytes storage returnData",
+      "start_line": 2261
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2279,
+      "function": "removeLiquidity",
+      "mutant_id": "m000154",
+      "operator": "DLR",
+      "original_expression": "RemoveLiquidityParams memory params",
+      "replacement_expression": "RemoveLiquidityParams storage params",
+      "start_line": 2279
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2280,
+      "function": "removeLiquidity",
+      "mutant_id": "m000155",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory amountsOut",
+      "replacement_expression": "uint256[] storage amountsOut",
+      "start_line": 2280
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2280,
+      "function": "removeLiquidity",
+      "mutant_id": "m000156",
+      "operator": "DLR",
+      "original_expression": "bytes memory returnData",
+      "replacement_expression": "bytes storage returnData",
+      "start_line": 2280
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2343,
+      "function": "erc4626BufferWrapOrUnwrap",
+      "mutant_id": "m000157",
+      "operator": "DLR",
+      "original_expression": "BufferWrapOrUnwrapParams memory params",
+      "replacement_expression": "BufferWrapOrUnwrapParams storage params",
+      "start_line": 2343
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2592,
+      "function": "getProtocolFeeAmounts",
+      "mutant_id": "m000158",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory feeAmounts",
+      "replacement_expression": "uint256[] storage feeAmounts",
+      "start_line": 2592
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2600,
+      "function": "getPoolCreatorFeeAmounts",
+      "mutant_id": "m000159",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory feeAmounts",
+      "replacement_expression": "uint256[] storage feeAmounts",
+      "start_line": 2600
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2855,
+      "function": "registerPool",
+      "mutant_id": "m000160",
+      "operator": "DLR",
+      "original_expression": "TokenConfig[] memory tokenConfig",
+      "replacement_expression": "TokenConfig[] storage tokenConfig",
+      "start_line": 2855
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2884,
+      "function": "initialize",
+      "mutant_id": "m000161",
+      "operator": "DLR",
+      "original_expression": "IERC20[] memory tokens",
+      "replacement_expression": "IERC20[] storage tokens",
+      "start_line": 2884
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2885,
+      "function": "initialize",
+      "mutant_id": "m000162",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory exactAmountsIn",
+      "replacement_expression": "uint256[] storage exactAmountsIn",
+      "start_line": 2885
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2887,
+      "function": "initialize",
+      "mutant_id": "m000163",
+      "operator": "DLR",
+      "original_expression": "bytes memory userData",
+      "replacement_expression": "bytes storage userData",
+      "start_line": 2887
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2907,
+      "function": "getPoolTokens",
+      "mutant_id": "m000164",
+      "operator": "DLR",
+      "original_expression": "IERC20[] memory tokens",
+      "replacement_expression": "IERC20[] storage tokens",
+      "start_line": 2907
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2921,
+      "function": "getPoolTokenRates",
+      "mutant_id": "m000165",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory decimalScalingFactors",
+      "replacement_expression": "uint256[] storage decimalScalingFactors",
+      "start_line": 2921
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2921,
+      "function": "getPoolTokenRates",
+      "mutant_id": "m000166",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory tokenRates",
+      "replacement_expression": "uint256[] storage tokenRates",
+      "start_line": 2921
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2929,
+      "function": "getPoolData",
+      "mutant_id": "m000167",
+      "operator": "DLR",
+      "original_expression": "PoolData memory poolData",
+      "replacement_expression": "PoolData storage poolData",
+      "start_line": 2929
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2945,
+      "function": "getPoolTokenInfo",
+      "mutant_id": "m000168",
+      "operator": "DLR",
+      "original_expression": "IERC20[] memory tokens",
+      "replacement_expression": "IERC20[] storage tokens",
+      "start_line": 2945
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2946,
+      "function": "getPoolTokenInfo",
+      "mutant_id": "m000169",
+      "operator": "DLR",
+      "original_expression": "TokenInfo[] memory tokenInfo",
+      "replacement_expression": "TokenInfo[] storage tokenInfo",
+      "start_line": 2946
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2947,
+      "function": "getPoolTokenInfo",
+      "mutant_id": "m000170",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory balancesRaw",
+      "replacement_expression": "uint256[] storage balancesRaw",
+      "start_line": 2947
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2948,
+      "function": "getPoolTokenInfo",
+      "mutant_id": "m000171",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory lastBalancesLiveScaled18",
+      "replacement_expression": "uint256[] storage lastBalancesLiveScaled18",
+      "start_line": 2948
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2958,
+      "function": "getCurrentLiveBalances",
+      "mutant_id": "m000172",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory balancesLiveScaled18",
+      "replacement_expression": "uint256[] storage balancesLiveScaled18",
+      "start_line": 2958
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2966,
+      "function": "getPoolConfig",
+      "mutant_id": "m000173",
+      "operator": "DLR",
+      "original_expression": "PoolConfig memory poolConfig",
+      "replacement_expression": "PoolConfig storage poolConfig",
+      "start_line": 2966
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2974,
+      "function": "getHooksConfig",
+      "mutant_id": "m000174",
+      "operator": "DLR",
+      "original_expression": "HooksConfig memory hooksConfig",
+      "replacement_expression": "HooksConfig storage hooksConfig",
+      "start_line": 2974
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3108,
+      "function": "getPoolRoleAccounts",
+      "mutant_id": "m000175",
+      "operator": "DLR",
+      "original_expression": "PoolRoleAccounts memory roleAccounts",
+      "replacement_expression": "PoolRoleAccounts storage roleAccounts",
+      "start_line": 3108
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3119,
+      "function": "computeDynamicSwapFeePercentage",
+      "mutant_id": "m000176",
+      "operator": "DLR",
+      "original_expression": "PoolSwapParams memory swapParams",
+      "replacement_expression": "PoolSwapParams storage swapParams",
+      "start_line": 3119
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3155,
+      "function": "removeLiquidityRecovery",
+      "mutant_id": "m000177",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory minAmountsOut",
+      "replacement_expression": "uint256[] storage minAmountsOut",
+      "start_line": 3155
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3156,
+      "function": "removeLiquidityRecovery",
+      "mutant_id": "m000178",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory amountsOut",
+      "replacement_expression": "uint256[] storage amountsOut",
+      "start_line": 3156
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3176,
+      "function": "quote",
+      "mutant_id": "m000179",
+      "operator": "DLR",
+      "original_expression": "bytes memory result",
+      "replacement_expression": "bytes storage result",
+      "start_line": 3176
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3414,
+      "function": "collectAggregateFees",
+      "mutant_id": "m000180",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory swapFeeAmounts",
+      "replacement_expression": "uint256[] storage swapFeeAmounts",
+      "start_line": 3414
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3414,
+      "function": "collectAggregateFees",
+      "mutant_id": "m000181",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory yieldFeeAmounts",
+      "replacement_expression": "uint256[] storage yieldFeeAmounts",
+      "start_line": 3414
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 560,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000182",
+      "operator": "DOD",
+      "original_expression": "delete _contractRegistry[contractId]",
+      "replacement_expression": "_contractRegistry[contractId]",
+      "start_line": 560
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 561,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000183",
+      "operator": "DOD",
+      "original_expression": "delete _contractInfo[contractAddress]",
+      "replacement_expression": "_contractInfo[contractAddress]",
+      "start_line": 561
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 537,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000184",
+      "operator": "EED",
+      "original_expression": "emit BalancerContractRegistered(contractType, contractName, contractAddress);",
+      "replacement_expression": "/* emit BalancerContractRegistered(contractType, contractName, contractAddress); */",
+      "start_line": 537
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 563,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000185",
+      "operator": "EED",
+      "original_expression": "emit BalancerContractDeregistered(info.contractType, contractName, contractAddress);",
+      "replacement_expression": "/* emit BalancerContractDeregistered(info.contractType, contractName, contractAddress); */",
+      "start_line": 563
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 590,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000186",
+      "operator": "EED",
+      "original_expression": "emit BalancerContractDeprecated(contractAddress);",
+      "replacement_expression": "/* emit BalancerContractDeprecated(contractAddress); */",
+      "start_line": 590
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 628,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000187",
+      "operator": "EED",
+      "original_expression": "emit ContractAliasUpdated(contractAlias, contractAddress);",
+      "replacement_expression": "/* emit ContractAliasUpdated(contractAlias, contractAddress); */",
+      "start_line": 628
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 362,
+      "function": "constructor",
+      "mutant_id": "m000188",
+      "operator": "ECS",
+      "original_expression": "bytes32(uint256(uint160(address(this))))",
+      "replacement_expression": "bytes31(uint256(uint160(address(this))))",
+      "start_line": 362
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 362,
+      "function": "constructor",
+      "mutant_id": "m000189",
+      "operator": "ECS",
+      "original_expression": "uint256(uint160(address(this)))",
+      "replacement_expression": "uint248(uint160(address(this)))",
+      "start_line": 362
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 362,
+      "function": "constructor",
+      "mutant_id": "m000190",
+      "operator": "ECS",
+      "original_expression": "uint160(address(this))",
+      "replacement_expression": "uint152(address(this))",
+      "start_line": 362
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 270,
+      "function": "_authenticateCaller",
+      "mutant_id": "m000191",
+      "operator": "EHD",
+      "original_expression": "revert SenderNotAllowed();",
+      "replacement_expression": "/* revert SenderNotAllowed(); */",
+      "start_line": 270
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 309,
+      "function": "constructor",
+      "mutant_id": "m000192",
+      "operator": "EHD",
+      "original_expression": "revert VaultNotSet();",
+      "replacement_expression": "/* revert VaultNotSet(); */",
+      "start_line": 309
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 333,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000193",
+      "operator": "EHD",
+      "original_expression": "revert SenderNotAllowed();",
+      "replacement_expression": "/* revert SenderNotAllowed(); */",
+      "start_line": 333
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 336,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000194",
+      "operator": "EHD",
+      "original_expression": "revert SenderNotAllowed();",
+      "replacement_expression": "/* revert SenderNotAllowed(); */",
+      "start_line": 336
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 345,
+      "function": "_ensureAuthenticatedByRole",
+      "mutant_id": "m000195",
+      "operator": "EHD",
+      "original_expression": "revert SenderNotAllowed();",
+      "replacement_expression": "/* revert SenderNotAllowed(); */",
+      "start_line": 345
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 498,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000196",
+      "operator": "EHD",
+      "original_expression": "revert ZeroContractAddress();",
+      "replacement_expression": "/* revert ZeroContractAddress(); */",
+      "start_line": 498
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 502,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000197",
+      "operator": "EHD",
+      "original_expression": "revert InvalidContractName();",
+      "replacement_expression": "/* revert InvalidContractName(); */",
+      "start_line": 502
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 508,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000198",
+      "operator": "EHD",
+      "original_expression": "revert ContractAddressAlreadyRegistered(info.contractType, contractAddress);",
+      "replacement_expression": "/* revert ContractAddressAlreadyRegistered(info.contractType, contractAddress); */",
+      "start_line": 508
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 517,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000199",
+      "operator": "EHD",
+      "original_expression": "revert ContractNameAlreadyRegistered(info.contractType, contractName);",
+      "replacement_expression": "/* revert ContractNameAlreadyRegistered(info.contractType, contractName); */",
+      "start_line": 517
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 523,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000200",
+      "operator": "EHD",
+      "original_expression": "revert ContractNameInUseAsAlias(contractName, existingAliasAddress);",
+      "replacement_expression": "/* revert ContractNameInUseAsAlias(contractName, existingAliasAddress); */",
+      "start_line": 523
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 543,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000201",
+      "operator": "EHD",
+      "original_expression": "revert InvalidContractName();",
+      "replacement_expression": "/* revert InvalidContractName(); */",
+      "start_line": 543
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 551,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000202",
+      "operator": "EHD",
+      "original_expression": "revert ContractNameNotRegistered(contractName);",
+      "replacement_expression": "/* revert ContractNameNotRegistered(contractName); */",
+      "start_line": 551
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 557,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000203",
+      "operator": "EHD",
+      "original_expression": "revert InconsistentState(contractName, contractAddress);",
+      "replacement_expression": "/* revert InconsistentState(contractName, contractAddress); */",
+      "start_line": 557
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 569,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000204",
+      "operator": "EHD",
+      "original_expression": "revert ZeroContractAddress();",
+      "replacement_expression": "/* revert ZeroContractAddress(); */",
+      "start_line": 569
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 576,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000205",
+      "operator": "EHD",
+      "original_expression": "revert ContractAddressNotRegistered(contractAddress);",
+      "replacement_expression": "/* revert ContractAddressNotRegistered(contractAddress); */",
+      "start_line": 576
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 581,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000206",
+      "operator": "EHD",
+      "original_expression": "revert ContractAlreadyDeprecated(contractAddress);",
+      "replacement_expression": "/* revert ContractAlreadyDeprecated(contractAddress); */",
+      "start_line": 581
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 600,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000207",
+      "operator": "EHD",
+      "original_expression": "revert InvalidContractAlias();",
+      "replacement_expression": "/* revert InvalidContractAlias(); */",
+      "start_line": 600
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 604,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000208",
+      "operator": "EHD",
+      "original_expression": "revert ZeroContractAddress();",
+      "replacement_expression": "/* revert ZeroContractAddress(); */",
+      "start_line": 604
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 610,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000209",
+      "operator": "EHD",
+      "original_expression": "revert ContractAddressNotRegistered(contractAddress);",
+      "replacement_expression": "/* revert ContractAddressNotRegistered(contractAddress); */",
+      "start_line": 610
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 622,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000210",
+      "operator": "EHD",
+      "original_expression": "revert ContractAliasInUseAsName(info.contractType, contractAlias);",
+      "replacement_expression": "/* revert ContractAliasInUseAsName(info.contractType, contractAlias); */",
+      "start_line": 622
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 676,
+      "function": "isTrustedRouter",
+      "mutant_id": "m000211",
+      "operator": "ER",
+      "original_expression": "ContractType.ROUTER",
+      "replacement_expression": "ContractType.OTHER",
+      "start_line": 676
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 676,
+      "function": "isTrustedRouter",
+      "mutant_id": "m000212",
+      "operator": "ER",
+      "original_expression": "ContractType.ROUTER",
+      "replacement_expression": "ContractType.POOL_FACTORY",
+      "start_line": 676
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 676,
+      "function": "isTrustedRouter",
+      "mutant_id": "m000213",
+      "operator": "ER",
+      "original_expression": "ContractType.ROUTER",
+      "replacement_expression": "ContractType.HOOK",
+      "start_line": 676
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 676,
+      "function": "isTrustedRouter",
+      "mutant_id": "m000214",
+      "operator": "ER",
+      "original_expression": "ContractType.ROUTER",
+      "replacement_expression": "ContractType.ERC4626",
+      "start_line": 676
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 261,
+      "function": "modifier:authenticate",
+      "mutant_id": "m000215",
+      "operator": "FCD",
+      "original_expression": "_authenticateCaller();",
+      "replacement_expression": "/*_authenticateCaller();*/",
+      "start_line": 261
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 303,
+      "function": "modifier:onlySwapFeeManagerOrGovernance",
+      "mutant_id": "m000216",
+      "operator": "FCD",
+      "original_expression": "_ensureAuthenticatedByExclusiveRole(pool, roleAddress);",
+      "replacement_expression": "/*_ensureAuthenticatedByExclusiveRole(pool, roleAddress);*/",
+      "start_line": 303
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 308,
+      "function": "constructor",
+      "mutant_id": "m000217",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 308
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 330,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000218",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 330
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 497,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000219",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 497
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 501,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000220",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 501
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 514,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000221",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 514
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 522,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000222",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 522
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 542,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000223",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 542
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 550,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000224",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 550
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 568,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000225",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 568
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 599,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000226",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 599
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 603,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000227",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 603
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 619,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000228",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 619
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 655,
+      "function": "getBalancerContract",
+      "mutant_id": "m000229",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 655
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1927,
+      "function": "stateVariable",
+      "mutant_id": "m000230",
+      "operator": "ILR",
+      "original_expression": "24",
+      "replacement_expression": "23",
+      "start_line": 1927
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1927,
+      "function": "stateVariable",
+      "mutant_id": "m000231",
+      "operator": "ILR",
+      "original_expression": "24",
+      "replacement_expression": "25",
+      "start_line": 1927
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1928,
+      "function": "stateVariable",
+      "mutant_id": "m000232",
+      "operator": "ILR",
+      "original_expression": "1e11",
+      "replacement_expression": "99999999999",
+      "start_line": 1928
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1928,
+      "function": "stateVariable",
+      "mutant_id": "m000233",
+      "operator": "ILR",
+      "original_expression": "1e11",
+      "replacement_expression": "100000000001",
+      "start_line": 1928
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1931,
+      "function": "stateVariable",
+      "mutant_id": "m000234",
+      "operator": "ILR",
+      "original_expression": "99.9999e16",
+      "replacement_expression": "undefined",
+      "start_line": 1931
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 279,
+      "function": "getActionId",
+      "mutant_id": "m000235",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 279
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 680,
+      "function": "_getContractId",
+      "mutant_id": "m000236",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 680
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 307,
+      "function": "constructor",
+      "mutant_id": "m000237",
+      "operator": "MOD",
+      "original_expression": "constructor(IVault vault, bytes32 actionIdDisambiguator) Authentication(actionIdDisambiguator) ",
+      "replacement_expression": "constructor(IVault vault, bytes32 actionIdDisambiguator)  ",
+      "start_line": 307
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 362,
+      "function": "constructor",
+      "mutant_id": "m000238",
+      "operator": "MOD",
+      "original_expression": "constructor(IVault vault) CommonAuthentication(vault, bytes32(uint256(uint160(address(this))))) ",
+      "replacement_expression": "constructor(IVault vault)  ",
+      "start_line": 362
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 444,
+      "function": "constructor",
+      "mutant_id": "m000239",
+      "operator": "MOD",
+      "original_expression": "constructor(IVault vault) SingletonAuthentication(vault) ",
+      "replacement_expression": "constructor(IVault vault)  ",
+      "start_line": 444
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 495,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000240",
+      "operator": "MOD",
+      "original_expression": "function registerBalancerContract(\n        ContractType contractType,\n        string memory contractName,\n        address contractAddress\n    ) external authenticate ",
+      "replacement_expression": "function registerBalancerContract(\n        ContractType contractType,\n        string memory contractName,\n        address contractAddress\n    ) external  ",
+      "start_line": 491
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 541,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000241",
+      "operator": "MOD",
+      "original_expression": "function deregisterBalancerContract(string memory contractName) external authenticate ",
+      "replacement_expression": "function deregisterBalancerContract(string memory contractName) external  ",
+      "start_line": 541
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 567,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000242",
+      "operator": "MOD",
+      "original_expression": "function deprecateBalancerContract(address contractAddress) external authenticate ",
+      "replacement_expression": "function deprecateBalancerContract(address contractAddress) external  ",
+      "start_line": 567
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 597,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000243",
+      "operator": "MOD",
+      "original_expression": "function addOrUpdateBalancerContractAlias(\n        string memory contractAlias,\n        address contractAddress\n    ) external authenticate ",
+      "replacement_expression": "function addOrUpdateBalancerContractAlias(\n        string memory contractAlias,\n        address contractAddress\n    ) external  ",
+      "start_line": 594
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 15,
+      "function": "getActionId",
+      "mutant_id": "m000244",
+      "operator": "OLFD",
+      "original_expression": "function getActionId(bytes4 selector) external view returns (bytes32 actionId);",
+      "replacement_expression": "",
+      "start_line": 15
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 157,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000245",
+      "operator": "OLFD",
+      "original_expression": "function registerBalancerContract(\n        ContractType contractType,\n        string memory contractName,\n        address contractAddress\n    ) external;",
+      "replacement_expression": "",
+      "start_line": 153
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 172,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000246",
+      "operator": "OLFD",
+      "original_expression": "function deregisterBalancerContract(string memory contractName) external;",
+      "replacement_expression": "",
+      "start_line": 172
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 182,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000247",
+      "operator": "OLFD",
+      "original_expression": "function deprecateBalancerContract(address contractAddress) external;",
+      "replacement_expression": "",
+      "start_line": 182
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 194,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000248",
+      "operator": "OLFD",
+      "original_expression": "function addOrUpdateBalancerContractAlias(string memory contractAlias, address existingContract) external;",
+      "replacement_expression": "",
+      "start_line": 194
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 205,
+      "function": "isActiveBalancerContract",
+      "mutant_id": "m000249",
+      "operator": "OLFD",
+      "original_expression": "function isActiveBalancerContract(\n        ContractType contractType,\n        address contractAddress\n    ) external view returns (bool isActive);",
+      "replacement_expression": "",
+      "start_line": 202
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 220,
+      "function": "getBalancerContract",
+      "mutant_id": "m000250",
+      "operator": "OLFD",
+      "original_expression": "function getBalancerContract(\n        ContractType contractType,\n        string memory contractName\n    ) external view returns (address contractAddress, bool isActive);",
+      "replacement_expression": "",
+      "start_line": 217
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 227,
+      "function": "getBalancerContractInfo",
+      "mutant_id": "m000251",
+      "operator": "OLFD",
+      "original_expression": "function getBalancerContractInfo(address contractAddress) external view returns (ContractInfo memory info);",
+      "replacement_expression": "",
+      "start_line": 227
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 230,
+      "function": "isTrustedRouter",
+      "mutant_id": "m000252",
+      "operator": "OLFD",
+      "original_expression": "function isTrustedRouter(address router) external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 230
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 288,
+      "function": "_canPerform",
+      "mutant_id": "m000253",
+      "operator": "OLFD",
+      "original_expression": "function _canPerform(bytes32 actionId, address user) internal view virtual returns (bool);",
+      "replacement_expression": "",
+      "start_line": 288
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 326,
+      "function": "_canPerform",
+      "mutant_id": "m000254",
+      "operator": "OLFD",
+      "original_expression": "function _canPerform(bytes32 actionId, address account, address where) internal view returns (bool) {\n        return _vault.getAuthorizer().canPerform(actionId, account, where);\n    }",
+      "replacement_expression": "",
+      "start_line": 324
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 382,
+      "function": "getAuthorizer",
+      "mutant_id": "m000255",
+      "operator": "OLFD",
+      "original_expression": "function getAuthorizer() public view returns (IAuthorizer) {\n        return getVault().getAuthorizer();\n    }",
+      "replacement_expression": "",
+      "start_line": 380
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 538,
+      "function": "registerBalancerContract",
+      "mutant_id": "m000256",
+      "operator": "OLFD",
+      "original_expression": "function registerBalancerContract(\n        ContractType contractType,\n        string memory contractName,\n        address contractAddress\n    ) external authenticate {\n        \n        if (contractAddress == address(0)) {\n            revert ZeroContractAddress();\n        }\n\n        if (bytes(contractName).length == 0) {\n            revert InvalidContractName();\n        }\n\n        \n        ContractInfo memory info = _contractInfo[contractAddress];\n        if (info.isRegistered) {\n            revert ContractAddressAlreadyRegistered(info.contractType, contractAddress);\n        }\n\n        \n        bytes32 contractId = _getContractId(contractName);\n        address existingRegistryAddress = _contractRegistry[contractId];\n        if (existingRegistryAddress != address(0)) {\n            info = _contractInfo[existingRegistryAddress];\n\n            revert ContractNameAlreadyRegistered(info.contractType, contractName);\n        }\n\n        \n        address existingAliasAddress = _contractAliases[contractId];\n        if (existingAliasAddress != address(0)) {\n            revert ContractNameInUseAsAlias(contractName, existingAliasAddress);\n        }\n\n        \n        _contractRegistry[contractId] = contractAddress;\n\n        \n        \n        _contractInfo[contractAddress] = ContractInfo({\n            contractType: contractType,\n            isRegistered: true,\n            isActive: true\n        });\n\n        emit BalancerContractRegistered(contractType, contractName, contractAddress);\n    }",
+      "replacement_expression": "",
+      "start_line": 491
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 564,
+      "function": "deregisterBalancerContract",
+      "mutant_id": "m000257",
+      "operator": "OLFD",
+      "original_expression": "function deregisterBalancerContract(string memory contractName) external authenticate {\n        if (bytes(contractName).length == 0) {\n            revert InvalidContractName();\n        }\n\n        \n        bytes32 contractId = _getContractId(contractName);\n        address contractAddress = _contractRegistry[contractId];\n\n        if (contractAddress == address(0)) {\n            revert ContractNameNotRegistered(contractName);\n        }\n\n        ContractInfo memory info = _contractInfo[contractAddress];\n        \n        if (info.isRegistered == false) {\n            revert InconsistentState(contractName, contractAddress);\n        }\n\n        delete _contractRegistry[contractId];\n        delete _contractInfo[contractAddress];\n\n        emit BalancerContractDeregistered(info.contractType, contractName, contractAddress);\n    }",
+      "replacement_expression": "",
+      "start_line": 541
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 591,
+      "function": "deprecateBalancerContract",
+      "mutant_id": "m000258",
+      "operator": "OLFD",
+      "original_expression": "function deprecateBalancerContract(address contractAddress) external authenticate {\n        if (contractAddress == address(0)) {\n            revert ZeroContractAddress();\n        }\n\n        ContractInfo memory info = _contractInfo[contractAddress];\n\n        \n        if (info.isRegistered == false) {\n            revert ContractAddressNotRegistered(contractAddress);\n        }\n\n        \n        if (info.isActive == false) {\n            revert ContractAlreadyDeprecated(contractAddress);\n        }\n\n        \n        \n        \n        info.isActive = false;\n        _contractInfo[contractAddress] = info;\n\n        emit BalancerContractDeprecated(contractAddress);\n    }",
+      "replacement_expression": "",
+      "start_line": 567
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 629,
+      "function": "addOrUpdateBalancerContractAlias",
+      "mutant_id": "m000259",
+      "operator": "OLFD",
+      "original_expression": "function addOrUpdateBalancerContractAlias(\n        string memory contractAlias,\n        address contractAddress\n    ) external authenticate {\n        \n        if (bytes(contractAlias).length == 0) {\n            revert InvalidContractAlias();\n        }\n\n        if (contractAddress == address(0)) {\n            revert ZeroContractAddress();\n        }\n\n        \n        ContractInfo memory info = _contractInfo[contractAddress];\n        if (info.isRegistered == false) {\n            revert ContractAddressNotRegistered(contractAddress);\n        }\n\n        \n        \n        \n        \n        bytes32 contractId = _getContractId(contractAlias);\n        address existingRegistryAddress = _contractRegistry[contractId];\n        if (existingRegistryAddress != address(0)) {\n            info = _contractInfo[existingRegistryAddress];\n\n            revert ContractAliasInUseAsName(info.contractType, contractAlias);\n        }\n\n        \n        _contractAliases[contractId] = contractAddress;\n\n        emit ContractAliasUpdated(contractAlias, contractAddress);\n    }",
+      "replacement_expression": "",
+      "start_line": 594
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 634,
+      "function": "isActiveBalancerContract",
+      "mutant_id": "m000260",
+      "operator": "OLFD",
+      "original_expression": "function isActiveBalancerContract(ContractType contractType, address contractAddress) external view returns (bool) {\n        return _isActiveBalancerContract(contractType, contractAddress);\n    }",
+      "replacement_expression": "",
+      "start_line": 632
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 667,
+      "function": "getBalancerContract",
+      "mutant_id": "m000261",
+      "operator": "OLFD",
+      "original_expression": "function getBalancerContract(\n        ContractType contractType,\n        string memory contractName\n    ) external view returns (address contractAddress, bool isActive) {\n        bytes32 contractId = _getContractId(contractName);\n        address registeredAddress = _contractRegistry[contractId];\n\n        \n        if (registeredAddress == address(0)) {\n            registeredAddress = _contractAliases[contractId];\n        }\n\n        ContractInfo memory info = _contractInfo[registeredAddress];\n        \n        \n        \n        if (info.isRegistered && info.contractType == contractType) {\n            contractAddress = registeredAddress;\n            isActive = info.isActive;\n        }\n    }",
+      "replacement_expression": "",
+      "start_line": 647
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 672,
+      "function": "getBalancerContractInfo",
+      "mutant_id": "m000262",
+      "operator": "OLFD",
+      "original_expression": "function getBalancerContractInfo(address contractAddress) external view returns (ContractInfo memory info) {\n        return _contractInfo[contractAddress];\n    }",
+      "replacement_expression": "",
+      "start_line": 670
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 677,
+      "function": "isTrustedRouter",
+      "mutant_id": "m000263",
+      "operator": "OLFD",
+      "original_expression": "function isTrustedRouter(address router) external view returns (bool) {\n        return _isActiveBalancerContract(ContractType.ROUTER, router);\n    }",
+      "replacement_expression": "",
+      "start_line": 675
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 697,
+      "function": "getActionId",
+      "mutant_id": "m000264",
+      "operator": "OLFD",
+      "original_expression": "function getActionId(bytes4 selector) external view returns (bytes32 actionId);",
+      "replacement_expression": "",
+      "start_line": 697
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 750,
+      "function": "totalSupply",
+      "mutant_id": "m000265",
+      "operator": "OLFD",
+      "original_expression": "function totalSupply() external view returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 750
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 755,
+      "function": "balanceOf",
+      "mutant_id": "m000266",
+      "operator": "OLFD",
+      "original_expression": "function balanceOf(address account) external view returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 755
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 764,
+      "function": "transfer",
+      "mutant_id": "m000267",
+      "operator": "OLFD",
+      "original_expression": "function transfer(address to, uint256 value) external returns (bool);",
+      "replacement_expression": "",
+      "start_line": 764
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 773,
+      "function": "allowance",
+      "mutant_id": "m000268",
+      "operator": "OLFD",
+      "original_expression": "function allowance(address owner, address spender) external view returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 773
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 790,
+      "function": "approve",
+      "mutant_id": "m000269",
+      "operator": "OLFD",
+      "original_expression": "function approve(address spender, uint256 value) external returns (bool);",
+      "replacement_expression": "",
+      "start_line": 790
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 801,
+      "function": "transferFrom",
+      "mutant_id": "m000270",
+      "operator": "OLFD",
+      "original_expression": "function transferFrom(address from, address to, uint256 value) external returns (bool);",
+      "replacement_expression": "",
+      "start_line": 801
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2313,
+      "function": "transfer",
+      "mutant_id": "m000271",
+      "operator": "OLFD",
+      "original_expression": "function transfer(address owner, address to, uint256 amount) external returns (bool);",
+      "replacement_expression": "",
+      "start_line": 2313
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2326,
+      "function": "transferFrom",
+      "mutant_id": "m000272",
+      "operator": "OLFD",
+      "original_expression": "function transferFrom(address spender, address from, address to, uint256 amount) external returns (bool success);",
+      "replacement_expression": "",
+      "start_line": 2326
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2525,
+      "function": "vault",
+      "mutant_id": "m000273",
+      "operator": "OLFD",
+      "original_expression": "function vault() external view returns (IVault);",
+      "replacement_expression": "",
+      "start_line": 2525
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2531,
+      "function": "collectAggregateFees",
+      "mutant_id": "m000274",
+      "operator": "OLFD",
+      "original_expression": "function collectAggregateFees(address pool) external;",
+      "replacement_expression": "",
+      "start_line": 2531
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2550,
+      "function": "isPoolRegistered",
+      "mutant_id": "m000275",
+      "operator": "OLFD",
+      "original_expression": "function isPoolRegistered(address pool) external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 2550
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2666,
+      "function": "registerPool",
+      "mutant_id": "m000276",
+      "operator": "OLFD",
+      "original_expression": "function registerPool(\n        address pool,\n        address poolCreator,\n        bool protocolFeeExempt\n    ) external returns (uint256 aggregateSwapFeePercentage, uint256 aggregateYieldFeePercentage);",
+      "replacement_expression": "",
+      "start_line": 2662
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2739,
+      "function": "withdrawPoolCreatorFees",
+      "mutant_id": "m000277",
+      "operator": "OLFD",
+      "original_expression": "function withdrawPoolCreatorFees(address pool, address recipient) external;",
+      "replacement_expression": "",
+      "start_line": 2739
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2748,
+      "function": "withdrawPoolCreatorFees",
+      "mutant_id": "m000278",
+      "operator": "OLFD",
+      "original_expression": "function withdrawPoolCreatorFees(address pool) external;",
+      "replacement_expression": "",
+      "start_line": 2748
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2769,
+      "function": "vault",
+      "mutant_id": "m000279",
+      "operator": "OLFD",
+      "original_expression": "function vault() external view returns (IVault);",
+      "replacement_expression": "",
+      "start_line": 2769
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2862,
+      "function": "registerPool",
+      "mutant_id": "m000280",
+      "operator": "OLFD",
+      "original_expression": "function registerPool(\n        address pool,\n        TokenConfig[] memory tokenConfig,\n        uint256 swapFeePercentage,\n        uint32 pauseWindowEndTime,\n        bool protocolFeeExempt,\n        PoolRoleAccounts calldata roleAccounts,\n        address poolHooksContract,\n        LiquidityManagement calldata liquidityManagement\n    ) external;",
+      "replacement_expression": "",
+      "start_line": 2853
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2869,
+      "function": "isPoolRegistered",
+      "mutant_id": "m000281",
+      "operator": "OLFD",
+      "original_expression": "function isPoolRegistered(address pool) external view returns (bool registered);",
+      "replacement_expression": "",
+      "start_line": 2869
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2992,
+      "function": "totalSupply",
+      "mutant_id": "m000282",
+      "operator": "OLFD",
+      "original_expression": "function totalSupply(address token) external view returns (uint256 tokenTotalSupply);",
+      "replacement_expression": "",
+      "start_line": 2992
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3000,
+      "function": "balanceOf",
+      "mutant_id": "m000283",
+      "operator": "OLFD",
+      "original_expression": "function balanceOf(address token, address account) external view returns (uint256 tokenBalance);",
+      "replacement_expression": "",
+      "start_line": 3000
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3009,
+      "function": "allowance",
+      "mutant_id": "m000284",
+      "operator": "OLFD",
+      "original_expression": "function allowance(address token, address owner, address spender) external view returns (uint256 tokenAllowance);",
+      "replacement_expression": "",
+      "start_line": 3009
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3021,
+      "function": "approve",
+      "mutant_id": "m000285",
+      "operator": "OLFD",
+      "original_expression": "function approve(address owner, address spender, uint256 amount) external returns (bool success);",
+      "replacement_expression": "",
+      "start_line": 3021
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3227,
+      "function": "getAuthorizer",
+      "mutant_id": "m000286",
+      "operator": "OLFD",
+      "original_expression": "function getAuthorizer() external view returns (IAuthorizer authorizer);",
+      "replacement_expression": "",
+      "start_line": 3227
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3247,
+      "function": "vault",
+      "mutant_id": "m000287",
+      "operator": "OLFD",
+      "original_expression": "function vault() external view returns (IVault);",
+      "replacement_expression": "",
+      "start_line": 3247
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3414,
+      "function": "collectAggregateFees",
+      "mutant_id": "m000288",
+      "operator": "OLFD",
+      "original_expression": "function collectAggregateFees(\n        address pool\n    ) external returns (uint256[] memory swapFeeAmounts, uint256[] memory yieldFeeAmounts);",
+      "replacement_expression": "",
+      "start_line": 3412
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 280,
+      "function": "getActionId",
+      "mutant_id": "m000289",
+      "operator": "ORFD",
+      "original_expression": "function getActionId(bytes4 selector) public view override returns (bytes32) {\n        \n        \n        \n        return keccak256(abi.encodePacked(_actionIdDisambiguator, selector));\n    }",
+      "replacement_expression": "",
+      "start_line": 275
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 322,
+      "function": "_canPerform",
+      "mutant_id": "m000290",
+      "operator": "ORFD",
+      "original_expression": "function _canPerform(bytes32 actionId, address user) internal view override returns (bool) {\n        return _vault.getAuthorizer().canPerform(actionId, user, address(this));\n    }",
+      "replacement_expression": "",
+      "start_line": 320
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3915,
+      "function": "vault",
+      "mutant_id": "m000291",
+      "operator": "ORFD",
+      "original_expression": "function vault() external view override(IVaultAdmin, IVaultExtension) returns (IVault);",
+      "replacement_expression": "",
+      "start_line": 3915
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 279,
+      "function": "getActionId",
+      "mutant_id": "m000292",
+      "operator": "RSD",
+      "original_expression": "return keccak256(abi.encodePacked(_actionIdDisambiguator, selector));",
+      "replacement_expression": "keccak256(abi.encodePacked(_actionIdDisambiguator, selector));",
+      "start_line": 279
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 316,
+      "function": "_getVault",
+      "mutant_id": "m000293",
+      "operator": "RSD",
+      "original_expression": "return _vault;",
+      "replacement_expression": "/* return _vault; */",
+      "start_line": 316
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 321,
+      "function": "_canPerform",
+      "mutant_id": "m000294",
+      "operator": "RSD",
+      "original_expression": "return _vault.getAuthorizer().canPerform(actionId, user, address(this));",
+      "replacement_expression": "_vault.getAuthorizer().canPerform(actionId, user, address(this));",
+      "start_line": 321
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 325,
+      "function": "_canPerform",
+      "mutant_id": "m000295",
+      "operator": "RSD",
+      "original_expression": "return _vault.getAuthorizer().canPerform(actionId, account, where);",
+      "replacement_expression": "_vault.getAuthorizer().canPerform(actionId, account, where);",
+      "start_line": 325
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 373,
+      "function": "getVault",
+      "mutant_id": "m000296",
+      "operator": "RSD",
+      "original_expression": "return _getVault();",
+      "replacement_expression": "_getVault();",
+      "start_line": 373
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 381,
+      "function": "getAuthorizer",
+      "mutant_id": "m000297",
+      "operator": "RSD",
+      "original_expression": "return getVault().getAuthorizer();",
+      "replacement_expression": "getVault().getAuthorizer();",
+      "start_line": 381
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 633,
+      "function": "isActiveBalancerContract",
+      "mutant_id": "m000298",
+      "operator": "RSD",
+      "original_expression": "return _isActiveBalancerContract(contractType, contractAddress);",
+      "replacement_expression": "_isActiveBalancerContract(contractType, contractAddress);",
+      "start_line": 633
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 643,
+      "function": "_isActiveBalancerContract",
+      "mutant_id": "m000299",
+      "operator": "RSD",
+      "original_expression": "return info.isActive && info.contractType == contractType;",
+      "replacement_expression": "/* return info.isActive && info.contractType == contractType; */",
+      "start_line": 643
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 671,
+      "function": "getBalancerContractInfo",
+      "mutant_id": "m000300",
+      "operator": "RSD",
+      "original_expression": "return _contractInfo[contractAddress];",
+      "replacement_expression": "/* return _contractInfo[contractAddress]; */",
+      "start_line": 671
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 676,
+      "function": "isTrustedRouter",
+      "mutant_id": "m000301",
+      "operator": "RSD",
+      "original_expression": "return _isActiveBalancerContract(ContractType.ROUTER, router);",
+      "replacement_expression": "_isActiveBalancerContract(ContractType.ROUTER, router);",
+      "start_line": 676
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 680,
+      "function": "_getContractId",
+      "mutant_id": "m000302",
+      "operator": "RSD",
+      "original_expression": "return keccak256(abi.encodePacked(contractName));",
+      "replacement_expression": "keccak256(abi.encodePacked(contractName));",
+      "start_line": 680
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2243,
+      "function": "swap",
+      "mutant_id": "m000303",
+      "operator": "RVS",
+      "original_expression": "uint256 amountCalculatedRaw, uint256 amountInRaw, uint256 amountOutRaw",
+      "replacement_expression": "uint256 amountOutRaw, uint256 amountCalculatedRaw, uint256 amountInRaw",
+      "start_line": 2243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2297,
+      "function": "getPoolTokenCountAndIndexOfToken",
+      "mutant_id": "m000304",
+      "operator": "RVS",
+      "original_expression": "uint256 tokenCount, uint256 index",
+      "replacement_expression": "uint256 index, uint256 tokenCount",
+      "start_line": 2297
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2344,
+      "function": "erc4626BufferWrapOrUnwrap",
+      "mutant_id": "m000305",
+      "operator": "RVS",
+      "original_expression": "uint256 amountCalculatedRaw, uint256 amountInRaw, uint256 amountOutRaw",
+      "replacement_expression": "uint256 amountOutRaw, uint256 amountCalculatedRaw, uint256 amountInRaw",
+      "start_line": 2344
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2666,
+      "function": "registerPool",
+      "mutant_id": "m000306",
+      "operator": "RVS",
+      "original_expression": "uint256 aggregateSwapFeePercentage, uint256 aggregateYieldFeePercentage",
+      "replacement_expression": "uint256 aggregateYieldFeePercentage, uint256 aggregateSwapFeePercentage",
+      "start_line": 2666
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2921,
+      "function": "getPoolTokenRates",
+      "mutant_id": "m000307",
+      "operator": "RVS",
+      "original_expression": "uint256[] memory decimalScalingFactors, uint256[] memory tokenRates",
+      "replacement_expression": "uint256[] memory tokenRates, uint256[] memory decimalScalingFactors",
+      "start_line": 2921
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 2948,
+      "function": "getPoolTokenInfo",
+      "mutant_id": "m000308",
+      "operator": "RVS",
+      "original_expression": "IERC20[] memory tokens,\n            TokenInfo[] memory tokenInfo,\n            uint256[] memory balancesRaw,\n            uint256[] memory lastBalancesLiveScaled18",
+      "replacement_expression": "TokenInfo[] memory tokenInfo,\n            IERC20[] memory tokens,\n            uint256[] memory balancesRaw,\n            uint256[] memory lastBalancesLiveScaled18",
+      "start_line": 2945
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3051,
+      "function": "getPoolPausedState",
+      "mutant_id": "m000309",
+      "operator": "RVS",
+      "original_expression": "bool poolPaused, uint32 poolPauseWindowEndTime, uint32 poolBufferPeriodEndTime, address pauseManager",
+      "replacement_expression": "bool poolPaused, uint32 poolBufferPeriodEndTime, uint32 poolPauseWindowEndTime, address pauseManager",
+      "start_line": 3051
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3348,
+      "function": "getVaultPausedState",
+      "mutant_id": "m000310",
+      "operator": "RVS",
+      "original_expression": "bool vaultPaused, uint32 vaultPauseWindowEndTime, uint32 vaultBufferPeriodEndTime",
+      "replacement_expression": "bool vaultPaused, uint32 vaultBufferPeriodEndTime, uint32 vaultPauseWindowEndTime",
+      "start_line": 3348
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3414,
+      "function": "collectAggregateFees",
+      "mutant_id": "m000311",
+      "operator": "RVS",
+      "original_expression": "uint256[] memory swapFeeAmounts, uint256[] memory yieldFeeAmounts",
+      "replacement_expression": "uint256[] memory yieldFeeAmounts, uint256[] memory swapFeeAmounts",
+      "start_line": 3414
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3579,
+      "function": "addLiquidityToBuffer",
+      "mutant_id": "m000312",
+      "operator": "RVS",
+      "original_expression": "uint256 amountUnderlyingRaw, uint256 amountWrappedRaw",
+      "replacement_expression": "uint256 amountWrappedRaw, uint256 amountUnderlyingRaw",
+      "start_line": 3579
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3607,
+      "function": "removeLiquidityFromBuffer",
+      "mutant_id": "m000313",
+      "operator": "RVS",
+      "original_expression": "uint256 removedUnderlyingBalanceRaw, uint256 removedWrappedBalanceRaw",
+      "replacement_expression": "uint256 removedWrappedBalanceRaw, uint256 removedUnderlyingBalanceRaw",
+      "start_line": 3607
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3647,
+      "function": "getBufferBalance",
+      "mutant_id": "m000314",
+      "operator": "RVS",
+      "original_expression": "uint256 underlyingBalanceRaw, uint256 wrappedBalanceRaw",
+      "replacement_expression": "uint256 wrappedBalanceRaw, uint256 underlyingBalanceRaw",
+      "start_line": 3647
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 267,
+      "function": "_authenticateCaller",
+      "mutant_id": "m000315",
+      "operator": "SKID",
+      "original_expression": "getActionId",
+      "replacement_expression": "super.getActionId",
+      "start_line": 267
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 332,
+      "function": "_ensureAuthenticatedByExclusiveRole",
+      "mutant_id": "m000316",
+      "operator": "SKID",
+      "original_expression": "_canPerform",
+      "replacement_expression": "super._canPerform",
+      "start_line": 332
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 344,
+      "function": "_ensureAuthenticatedByRole",
+      "mutant_id": "m000317",
+      "operator": "SKID",
+      "original_expression": "_canPerform",
+      "replacement_expression": "super._canPerform",
+      "start_line": 344
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 269,
+      "function": "_authenticateCaller",
+      "mutant_id": "m000318",
+      "operator": "UORD",
+      "original_expression": "!_canPerform(actionId, msg.sender)",
+      "replacement_expression": " _canPerform(actionId, msg.sender)",
+      "start_line": 269
+    }
+  ],
+  "subject_id": "balancer__balancer-v3-monorepo__BalancerContractRegistry"
+}

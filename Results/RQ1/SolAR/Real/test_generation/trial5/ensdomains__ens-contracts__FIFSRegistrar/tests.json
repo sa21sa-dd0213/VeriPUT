@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "args": [
+        "address_00398",
+        "address_002474374424779584152574e507a"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00348476a48754a6c676447787368",
+        "address_00398"
+      ],
+      "frm": "address_00398",
+      "method": "register",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

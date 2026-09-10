@@ -1,0 +1,8 @@
+{
+  "contract": "ExtendedResolver",
+  "dataset": "Real",
+  "solc": "0.8.35",
+  "solc_bin": "solc",
+  "source_form": "normalized-flat",
+  "subject_id": "ensdomains__ens-contracts__ExtendedResolver"
+}

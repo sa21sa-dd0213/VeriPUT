@@ -1,0 +1,42 @@
+[
+  [
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1
+      ],
+      "frm": "address_00398",
+      "method": "Put",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        6750685056851220812787308419768083618906651511527475724515056641408641451183
+      ],
+      "frm": "address_00404",
+      "method": "Collect",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

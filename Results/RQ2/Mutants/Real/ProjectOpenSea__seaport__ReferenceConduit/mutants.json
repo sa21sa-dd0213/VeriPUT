@@ -1,0 +1,1527 @@
+{
+  "compile_failed": 18,
+  "compile_ok": 134,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 231,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 231,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 231,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 231,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 231,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 260,
+      "function": "_performERC721Transfer",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 260
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 288,
+      "function": "_performERC1155Transfer",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 288
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 322,
+      "function": "_performERC1155BatchTransfer",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 322
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 408,
+      "function": "executeBatch1155",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 408
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 408,
+      "function": "executeBatch1155",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 408
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 449,
+      "function": "executeWithBatch1155",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 449
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 449,
+      "function": "executeWithBatch1155",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 449
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 468,
+      "function": "updateChannel",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 468
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 473,
+      "function": "updateChannel",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 473
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 473,
+      "function": "updateChannel",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 473
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 473,
+      "function": "updateChannel",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 473
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 495,
+      "function": "_performTransfers",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 495
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 495,
+      "function": "_performTransfers",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 495
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 514,
+      "function": "_transfer",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 514
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 514,
+      "function": "_transfer",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 514
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 514,
+      "function": "_transfer",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 514
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 520,
+      "function": "_transfer",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 520
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 520,
+      "function": "_transfer",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 520
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 520,
+      "function": "_transfer",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 520
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 522,
+      "function": "_transfer",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 522
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 522,
+      "function": "_transfer",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 522
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 522,
+      "function": "_transfer",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 522
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 533,
+      "function": "_transfer",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 533
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 533,
+      "function": "_transfer",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 533
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 533,
+      "function": "_transfer",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 533
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 353,
+      "function": "constructor",
+      "mutant_id": "m000032",
+      "operator": "CCD",
+      "original_expression": "constructor() {\n        _controller = msg.sender;\n    }",
+      "replacement_expression": "",
+      "start_line": 351
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000033",
+      "operator": "CSC",
+      "original_expression": "token.code.length == 0",
+      "replacement_expression": "true",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000034",
+      "operator": "CSC",
+      "original_expression": "token.code.length == 0",
+      "replacement_expression": "false",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 226,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000035",
+      "operator": "CSC",
+      "original_expression": "!ok",
+      "replacement_expression": "true",
+      "start_line": 226
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 226,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000036",
+      "operator": "CSC",
+      "original_expression": "!ok",
+      "replacement_expression": "false",
+      "start_line": 226
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 231,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000037",
+      "operator": "CSC",
+      "original_expression": "data.length != 0 && data.length >= 32",
+      "replacement_expression": "true",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 231,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000038",
+      "operator": "CSC",
+      "original_expression": "data.length != 0 && data.length >= 32",
+      "replacement_expression": "false",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 232,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000039",
+      "operator": "CSC",
+      "original_expression": "!abi.decode(data, (bool))",
+      "replacement_expression": "true",
+      "start_line": 232
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 232,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000040",
+      "operator": "CSC",
+      "original_expression": "!abi.decode(data, (bool))",
+      "replacement_expression": "false",
+      "start_line": 232
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 260,
+      "function": "_performERC721Transfer",
+      "mutant_id": "m000041",
+      "operator": "CSC",
+      "original_expression": "token.code.length == 0",
+      "replacement_expression": "true",
+      "start_line": 260
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 260,
+      "function": "_performERC721Transfer",
+      "mutant_id": "m000042",
+      "operator": "CSC",
+      "original_expression": "token.code.length == 0",
+      "replacement_expression": "false",
+      "start_line": 260
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 288,
+      "function": "_performERC1155Transfer",
+      "mutant_id": "m000043",
+      "operator": "CSC",
+      "original_expression": "token.code.length == 0",
+      "replacement_expression": "true",
+      "start_line": 288
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 288,
+      "function": "_performERC1155Transfer",
+      "mutant_id": "m000044",
+      "operator": "CSC",
+      "original_expression": "token.code.length == 0",
+      "replacement_expression": "false",
+      "start_line": 288
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 322,
+      "function": "_performERC1155BatchTransfer",
+      "mutant_id": "m000045",
+      "operator": "CSC",
+      "original_expression": "token.code.length == 0",
+      "replacement_expression": "true",
+      "start_line": 322
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 322,
+      "function": "_performERC1155BatchTransfer",
+      "mutant_id": "m000046",
+      "operator": "CSC",
+      "original_expression": "token.code.length == 0",
+      "replacement_expression": "false",
+      "start_line": 322
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 373,
+      "function": "execute",
+      "mutant_id": "m000047",
+      "operator": "CSC",
+      "original_expression": "!_channels[msg.sender]",
+      "replacement_expression": "true",
+      "start_line": 373
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 373,
+      "function": "execute",
+      "mutant_id": "m000048",
+      "operator": "CSC",
+      "original_expression": "!_channels[msg.sender]",
+      "replacement_expression": "false",
+      "start_line": 373
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 401,
+      "function": "executeBatch1155",
+      "mutant_id": "m000049",
+      "operator": "CSC",
+      "original_expression": "!_channels[msg.sender]",
+      "replacement_expression": "true",
+      "start_line": 401
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 401,
+      "function": "executeBatch1155",
+      "mutant_id": "m000050",
+      "operator": "CSC",
+      "original_expression": "!_channels[msg.sender]",
+      "replacement_expression": "false",
+      "start_line": 401
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 439,
+      "function": "executeWithBatch1155",
+      "mutant_id": "m000051",
+      "operator": "CSC",
+      "original_expression": "!_channels[msg.sender]",
+      "replacement_expression": "true",
+      "start_line": 439
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 439,
+      "function": "executeWithBatch1155",
+      "mutant_id": "m000052",
+      "operator": "CSC",
+      "original_expression": "!_channels[msg.sender]",
+      "replacement_expression": "false",
+      "start_line": 439
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 468,
+      "function": "updateChannel",
+      "mutant_id": "m000053",
+      "operator": "CSC",
+      "original_expression": "msg.sender != _controller",
+      "replacement_expression": "true",
+      "start_line": 468
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 468,
+      "function": "updateChannel",
+      "mutant_id": "m000054",
+      "operator": "CSC",
+      "original_expression": "msg.sender != _controller",
+      "replacement_expression": "false",
+      "start_line": 468
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 473,
+      "function": "updateChannel",
+      "mutant_id": "m000055",
+      "operator": "CSC",
+      "original_expression": "_channels[channel] == isOpen",
+      "replacement_expression": "true",
+      "start_line": 473
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 473,
+      "function": "updateChannel",
+      "mutant_id": "m000056",
+      "operator": "CSC",
+      "original_expression": "_channels[channel] == isOpen",
+      "replacement_expression": "false",
+      "start_line": 473
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 514,
+      "function": "_transfer",
+      "mutant_id": "m000057",
+      "operator": "CSC",
+      "original_expression": "item.itemType == ConduitItemType.ERC20",
+      "replacement_expression": "true",
+      "start_line": 514
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 514,
+      "function": "_transfer",
+      "mutant_id": "m000058",
+      "operator": "CSC",
+      "original_expression": "item.itemType == ConduitItemType.ERC20",
+      "replacement_expression": "false",
+      "start_line": 514
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 520,
+      "function": "_transfer",
+      "mutant_id": "m000059",
+      "operator": "CSC",
+      "original_expression": "item.itemType == ConduitItemType.ERC721",
+      "replacement_expression": "true",
+      "start_line": 520
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 520,
+      "function": "_transfer",
+      "mutant_id": "m000060",
+      "operator": "CSC",
+      "original_expression": "item.itemType == ConduitItemType.ERC721",
+      "replacement_expression": "false",
+      "start_line": 520
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 522,
+      "function": "_transfer",
+      "mutant_id": "m000061",
+      "operator": "CSC",
+      "original_expression": "item.amount != 1",
+      "replacement_expression": "true",
+      "start_line": 522
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 522,
+      "function": "_transfer",
+      "mutant_id": "m000062",
+      "operator": "CSC",
+      "original_expression": "item.amount != 1",
+      "replacement_expression": "false",
+      "start_line": 522
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 533,
+      "function": "_transfer",
+      "mutant_id": "m000063",
+      "operator": "CSC",
+      "original_expression": "item.itemType == ConduitItemType.ERC1155",
+      "replacement_expression": "true",
+      "start_line": 533
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 533,
+      "function": "_transfer",
+      "mutant_id": "m000064",
+      "operator": "CSC",
+      "original_expression": "item.itemType == ConduitItemType.ERC1155",
+      "replacement_expression": "false",
+      "start_line": 533
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 545,
+      "function": "_transfer",
+      "mutant_id": "m000065",
+      "operator": "CSC",
+      "original_expression": "else {\n            \n            revert InvalidItemType();\n        }",
+      "replacement_expression": "",
+      "start_line": 542
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 216,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000066",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 216
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 318,
+      "function": "_performERC1155BatchTransfer",
+      "mutant_id": "m000067",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory identifiers",
+      "replacement_expression": "uint256[] storage identifiers",
+      "start_line": 318
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 319,
+      "function": "_performERC1155BatchTransfer",
+      "mutant_id": "m000068",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory amounts",
+      "replacement_expression": "uint256[] storage amounts",
+      "start_line": 319
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 481,
+      "function": "updateChannel",
+      "mutant_id": "m000069",
+      "operator": "EED",
+      "original_expression": "emit ChannelUpdated(channel, isOpen);",
+      "replacement_expression": "/* emit ChannelUpdated(channel, isOpen); */",
+      "start_line": 481
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 212,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000070",
+      "operator": "EHD",
+      "original_expression": "revert NoContract(token);",
+      "replacement_expression": "/* revert NoContract(token); */",
+      "start_line": 212
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 227,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000071",
+      "operator": "EHD",
+      "original_expression": "revert TokenTransferGenericFailure(token, from, to, 0, amount);",
+      "replacement_expression": "/* revert TokenTransferGenericFailure(token, from, to, 0, amount); */",
+      "start_line": 227
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 238,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000072",
+      "operator": "EHD",
+      "original_expression": "revert BadReturnValueFromERC20OnTransfer(\n                    token,\n                    from,\n                    to,\n                    amount\n                );",
+      "replacement_expression": "/* revert BadReturnValueFromERC20OnTransfer(\n                    token,\n                    from,\n                    to,\n                    amount\n                ); */",
+      "start_line": 233
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 261,
+      "function": "_performERC721Transfer",
+      "mutant_id": "m000073",
+      "operator": "EHD",
+      "original_expression": "revert NoContract(token);",
+      "replacement_expression": "/* revert NoContract(token); */",
+      "start_line": 261
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 289,
+      "function": "_performERC1155Transfer",
+      "mutant_id": "m000074",
+      "operator": "EHD",
+      "original_expression": "revert NoContract(token);",
+      "replacement_expression": "/* revert NoContract(token); */",
+      "start_line": 289
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 323,
+      "function": "_performERC1155BatchTransfer",
+      "mutant_id": "m000075",
+      "operator": "EHD",
+      "original_expression": "revert NoContract(token);",
+      "replacement_expression": "/* revert NoContract(token); */",
+      "start_line": 323
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 374,
+      "function": "execute",
+      "mutant_id": "m000076",
+      "operator": "EHD",
+      "original_expression": "revert ChannelClosed(msg.sender);",
+      "replacement_expression": "/* revert ChannelClosed(msg.sender); */",
+      "start_line": 374
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 402,
+      "function": "executeBatch1155",
+      "mutant_id": "m000077",
+      "operator": "EHD",
+      "original_expression": "revert ChannelClosed(msg.sender);",
+      "replacement_expression": "/* revert ChannelClosed(msg.sender); */",
+      "start_line": 402
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 440,
+      "function": "executeWithBatch1155",
+      "mutant_id": "m000078",
+      "operator": "EHD",
+      "original_expression": "revert ChannelClosed(msg.sender);",
+      "replacement_expression": "/* revert ChannelClosed(msg.sender); */",
+      "start_line": 440
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 469,
+      "function": "updateChannel",
+      "mutant_id": "m000079",
+      "operator": "EHD",
+      "original_expression": "revert InvalidController();",
+      "replacement_expression": "/* revert InvalidController(); */",
+      "start_line": 469
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 474,
+      "function": "updateChannel",
+      "mutant_id": "m000080",
+      "operator": "EHD",
+      "original_expression": "revert ChannelStatusAlreadySet(channel, isOpen);",
+      "replacement_expression": "/* revert ChannelStatusAlreadySet(channel, isOpen); */",
+      "start_line": 474
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 523,
+      "function": "_transfer",
+      "mutant_id": "m000081",
+      "operator": "EHD",
+      "original_expression": "revert InvalidERC721TransferAmount(item.amount);",
+      "replacement_expression": "/* revert InvalidERC721TransferAmount(item.amount); */",
+      "start_line": 523
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 544,
+      "function": "_transfer",
+      "mutant_id": "m000082",
+      "operator": "EHD",
+      "original_expression": "revert InvalidItemType();",
+      "replacement_expression": "/* revert InvalidItemType(); */",
+      "start_line": 544
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 514,
+      "function": "_transfer",
+      "mutant_id": "m000083",
+      "operator": "ER",
+      "original_expression": "ConduitItemType.ERC20",
+      "replacement_expression": "ConduitItemType.NATIVE",
+      "start_line": 514
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 514,
+      "function": "_transfer",
+      "mutant_id": "m000084",
+      "operator": "ER",
+      "original_expression": "ConduitItemType.ERC20",
+      "replacement_expression": "ConduitItemType.ERC721",
+      "start_line": 514
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 514,
+      "function": "_transfer",
+      "mutant_id": "m000085",
+      "operator": "ER",
+      "original_expression": "ConduitItemType.ERC20",
+      "replacement_expression": "ConduitItemType.ERC1155",
+      "start_line": 514
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 520,
+      "function": "_transfer",
+      "mutant_id": "m000086",
+      "operator": "ER",
+      "original_expression": "ConduitItemType.ERC721",
+      "replacement_expression": "ConduitItemType.NATIVE",
+      "start_line": 520
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 520,
+      "function": "_transfer",
+      "mutant_id": "m000087",
+      "operator": "ER",
+      "original_expression": "ConduitItemType.ERC721",
+      "replacement_expression": "ConduitItemType.ERC20",
+      "start_line": 520
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 520,
+      "function": "_transfer",
+      "mutant_id": "m000088",
+      "operator": "ER",
+      "original_expression": "ConduitItemType.ERC721",
+      "replacement_expression": "ConduitItemType.ERC1155",
+      "start_line": 520
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 533,
+      "function": "_transfer",
+      "mutant_id": "m000089",
+      "operator": "ER",
+      "original_expression": "ConduitItemType.ERC1155",
+      "replacement_expression": "ConduitItemType.NATIVE",
+      "start_line": 533
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 533,
+      "function": "_transfer",
+      "mutant_id": "m000090",
+      "operator": "ER",
+      "original_expression": "ConduitItemType.ERC1155",
+      "replacement_expression": "ConduitItemType.ERC20",
+      "start_line": 533
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 533,
+      "function": "_transfer",
+      "mutant_id": "m000091",
+      "operator": "ER",
+      "original_expression": "ConduitItemType.ERC1155",
+      "replacement_expression": "ConduitItemType.ERC721",
+      "start_line": 533
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 216,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000092",
+      "operator": "ETR",
+      "original_expression": "token.call",
+      "replacement_expression": "token.delegatecall",
+      "start_line": 216
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 216,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000093",
+      "operator": "ETR",
+      "original_expression": "token.call",
+      "replacement_expression": "token.staticcall",
+      "start_line": 216
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 264,
+      "function": "_performERC721Transfer",
+      "mutant_id": "m000094",
+      "operator": "FCD",
+      "original_expression": "ERC721Interface(token).",
+      "replacement_expression": "/*ERC721Interface(token).*/",
+      "start_line": 264
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 292,
+      "function": "_performERC1155Transfer",
+      "mutant_id": "m000095",
+      "operator": "FCD",
+      "original_expression": "ERC1155Interface(token).",
+      "replacement_expression": "/*ERC1155Interface(token).*/",
+      "start_line": 292
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 332,
+      "function": "_performERC1155BatchTransfer",
+      "mutant_id": "m000096",
+      "operator": "FCD",
+      "original_expression": "ERC1155Interface(token).safeBatchTransferFrom(\n            from,\n            to,\n            identifiers,\n            amounts,\n            \"\"\n        );",
+      "replacement_expression": "/*ERC1155Interface(token).safeBatchTransferFrom(\n            from,\n            to,\n            identifiers,\n            amounts,\n            \"\"\n        );*/",
+      "start_line": 326
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 326,
+      "function": "_performERC1155BatchTransfer",
+      "mutant_id": "m000097",
+      "operator": "FCD",
+      "original_expression": "ERC1155Interface(token).",
+      "replacement_expression": "/*ERC1155Interface(token).*/",
+      "start_line": 326
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 378,
+      "function": "execute",
+      "mutant_id": "m000098",
+      "operator": "FCD",
+      "original_expression": "_performTransfers(transfers);",
+      "replacement_expression": "/*_performTransfers(transfers);*/",
+      "start_line": 378
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 413,
+      "function": "executeBatch1155",
+      "mutant_id": "m000099",
+      "operator": "FCD",
+      "original_expression": "_batchTransferERC1155(batchTransfer);",
+      "replacement_expression": "/*_batchTransferERC1155(batchTransfer);*/",
+      "start_line": 413
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 444,
+      "function": "executeWithBatch1155",
+      "mutant_id": "m000100",
+      "operator": "FCD",
+      "original_expression": "_performTransfers(standardTransfers);",
+      "replacement_expression": "/*_performTransfers(standardTransfers);*/",
+      "start_line": 444
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 454,
+      "function": "executeWithBatch1155",
+      "mutant_id": "m000101",
+      "operator": "FCD",
+      "original_expression": "_batchTransferERC1155(batchTransfer);",
+      "replacement_expression": "/*_batchTransferERC1155(batchTransfer);*/",
+      "start_line": 454
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 500,
+      "function": "_performTransfers",
+      "mutant_id": "m000102",
+      "operator": "FCD",
+      "original_expression": "_transfer(standardTransfer);",
+      "replacement_expression": "/*_transfer(standardTransfer);*/",
+      "start_line": 500
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 519,
+      "function": "_transfer",
+      "mutant_id": "m000103",
+      "operator": "FCD",
+      "original_expression": "_performERC20Transfer(item.token, item.from, item.to, item.amount);",
+      "replacement_expression": "/*_performERC20Transfer(item.token, item.from, item.to, item.amount);*/",
+      "start_line": 519
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 532,
+      "function": "_transfer",
+      "mutant_id": "m000104",
+      "operator": "FCD",
+      "original_expression": "_performERC721Transfer(\n                item.token,\n                item.from,\n                item.to,\n                item.identifier\n            );",
+      "replacement_expression": "/*_performERC721Transfer(\n                item.token,\n                item.from,\n                item.to,\n                item.identifier\n            );*/",
+      "start_line": 527
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 541,
+      "function": "_transfer",
+      "mutant_id": "m000105",
+      "operator": "FCD",
+      "original_expression": "_performERC1155Transfer(\n                item.token,\n                item.from,\n                item.to,\n                item.identifier,\n                item.amount\n            );",
+      "replacement_expression": "/*_performERC1155Transfer(\n                item.token,\n                item.from,\n                item.to,\n                item.identifier,\n                item.amount\n            );*/",
+      "start_line": 535
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 568,
+      "function": "_batchTransferERC1155",
+      "mutant_id": "m000106",
+      "operator": "FCD",
+      "original_expression": "_performERC1155BatchTransfer(token, from, to, ids, amounts);",
+      "replacement_expression": "/*_performERC1155BatchTransfer(token, from, to, ids, amounts);*/",
+      "start_line": 568
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000107",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 227,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000108",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 227
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 231,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000109",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 231,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000110",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "31",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 231,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000111",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "33",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 260,
+      "function": "_performERC721Transfer",
+      "mutant_id": "m000112",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 260
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 288,
+      "function": "_performERC1155Transfer",
+      "mutant_id": "m000113",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 288
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 322,
+      "function": "_performERC1155BatchTransfer",
+      "mutant_id": "m000114",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 322
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 408,
+      "function": "executeBatch1155",
+      "mutant_id": "m000115",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 408
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 449,
+      "function": "executeWithBatch1155",
+      "mutant_id": "m000116",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 449
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 495,
+      "function": "_performTransfers",
+      "mutant_id": "m000117",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 495
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 522,
+      "function": "_transfer",
+      "mutant_id": "m000118",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 522
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 522,
+      "function": "_transfer",
+      "mutant_id": "m000119",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 522
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 408,
+      "function": "executeBatch1155",
+      "mutant_id": "m000120",
+      "operator": "LSC",
+      "original_expression": "i < totalBatchTransfers",
+      "replacement_expression": "false",
+      "start_line": 408
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 449,
+      "function": "executeWithBatch1155",
+      "mutant_id": "m000121",
+      "operator": "LSC",
+      "original_expression": "i < totalBatchTransfers",
+      "replacement_expression": "false",
+      "start_line": 449
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 495,
+      "function": "_performTransfers",
+      "mutant_id": "m000122",
+      "operator": "LSC",
+      "original_expression": "i < totalStandardTransfers",
+      "replacement_expression": "false",
+      "start_line": 495
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 152,
+      "function": "execute",
+      "mutant_id": "m000123",
+      "operator": "OLFD",
+      "original_expression": "function execute(\n        ConduitTransfer[] calldata transfers\n    ) external returns (bytes4 magicValue);",
+      "replacement_expression": "",
+      "start_line": 150
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 165,
+      "function": "executeBatch1155",
+      "mutant_id": "m000124",
+      "operator": "OLFD",
+      "original_expression": "function executeBatch1155(\n        ConduitBatch1155Transfer[] calldata batch1155Transfers\n    ) external returns (bytes4 magicValue);",
+      "replacement_expression": "",
+      "start_line": 163
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 180,
+      "function": "executeWithBatch1155",
+      "mutant_id": "m000125",
+      "operator": "OLFD",
+      "original_expression": "function executeWithBatch1155(\n        ConduitTransfer[] calldata standardTransfers,\n        ConduitBatch1155Transfer[] calldata batch1155Transfers\n    ) external returns (bytes4 magicValue);",
+      "replacement_expression": "",
+      "start_line": 177
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 188,
+      "function": "updateChannel",
+      "mutant_id": "m000126",
+      "operator": "OLFD",
+      "original_expression": "function updateChannel(address channel, bool isOpen) external;",
+      "replacement_expression": "",
+      "start_line": 188
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 593,
+      "function": "transferFrom",
+      "mutant_id": "m000127",
+      "operator": "OLFD",
+      "original_expression": "function transferFrom(\n        address from,\n        address to,\n        uint256 value\n    ) external returns (bool success);",
+      "replacement_expression": "",
+      "start_line": 589
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 616,
+      "function": "balanceOf",
+      "mutant_id": "m000128",
+      "operator": "OLFD",
+      "original_expression": "function balanceOf(address account) external view returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 616
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 646,
+      "function": "transferFrom",
+      "mutant_id": "m000129",
+      "operator": "OLFD",
+      "original_expression": "function transferFrom(address from, address to, uint256 tokenId) external;",
+      "replacement_expression": "",
+      "start_line": 646
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 655,
+      "function": "setApprovalForAll",
+      "mutant_id": "m000130",
+      "operator": "OLFD",
+      "original_expression": "function setApprovalForAll(address to, bool approved) external;",
+      "replacement_expression": "",
+      "start_line": 655
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 680,
+      "function": "isApprovedForAll",
+      "mutant_id": "m000131",
+      "operator": "OLFD",
+      "original_expression": "function isApprovedForAll(\n        address owner,\n        address operator\n    ) external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 677
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 738,
+      "function": "setApprovalForAll",
+      "mutant_id": "m000132",
+      "operator": "OLFD",
+      "original_expression": "function setApprovalForAll(address to, bool approved) external;",
+      "replacement_expression": "",
+      "start_line": 738
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 751,
+      "function": "balanceOf",
+      "mutant_id": "m000133",
+      "operator": "OLFD",
+      "original_expression": "function balanceOf(\n        address account,\n        uint256 id\n    ) external view returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 748
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 765,
+      "function": "isApprovedForAll",
+      "mutant_id": "m000134",
+      "operator": "OLFD",
+      "original_expression": "function isApprovedForAll(\n        address account,\n        address operator\n    ) external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 762
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 381,
+      "function": "execute",
+      "mutant_id": "m000135",
+      "operator": "ORFD",
+      "original_expression": "function execute(\n        ConduitTransfer[] calldata transfers\n    ) external override returns (bytes4 magicValue) {\n        \n        if (!_channels[msg.sender]) {\n            revert ChannelClosed(msg.sender);\n        }\n\n        \n        _performTransfers(transfers);\n\n        return this.execute.selector;\n    }",
+      "replacement_expression": "",
+      "start_line": 369
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 417,
+      "function": "executeBatch1155",
+      "mutant_id": "m000136",
+      "operator": "ORFD",
+      "original_expression": "function executeBatch1155(\n        ConduitBatch1155Transfer[] calldata batchTransfers\n    ) external override returns (bytes4 magicValue) {\n        \n        if (!_channels[msg.sender]) {\n            revert ChannelClosed(msg.sender);\n        }\n\n        uint256 totalBatchTransfers = batchTransfers.length;\n\n        \n        for (uint256 i = 0; i < totalBatchTransfers; ++i) {\n            \n            ConduitBatch1155Transfer calldata batchTransfer = batchTransfers[i];\n\n            \n            _batchTransferERC1155(batchTransfer);\n        }\n\n        return this.executeBatch1155.selector;\n    }",
+      "replacement_expression": "",
+      "start_line": 397
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 458,
+      "function": "executeWithBatch1155",
+      "mutant_id": "m000137",
+      "operator": "ORFD",
+      "original_expression": "function executeWithBatch1155(\n        ConduitTransfer[] calldata standardTransfers,\n        ConduitBatch1155Transfer[] calldata batchTransfers\n    ) external override returns (bytes4 magicValue) {\n        \n        if (!_channels[msg.sender]) {\n            revert ChannelClosed(msg.sender);\n        }\n\n        \n        _performTransfers(standardTransfers);\n\n        uint256 totalBatchTransfers = batchTransfers.length;\n\n        \n        for (uint256 i = 0; i < totalBatchTransfers; ++i) {\n            \n            ConduitBatch1155Transfer calldata batchTransfer = batchTransfers[i];\n\n            \n            _batchTransferERC1155(batchTransfer);\n        }\n\n        return this.executeWithBatch1155.selector;\n    }",
+      "replacement_expression": "",
+      "start_line": 434
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 482,
+      "function": "updateChannel",
+      "mutant_id": "m000138",
+      "operator": "ORFD",
+      "original_expression": "function updateChannel(address channel, bool isOpen) external override {\n        \n        if (msg.sender != _controller) {\n            revert InvalidController();\n        }\n\n        \n        if (_channels[channel] == isOpen) {\n            revert ChannelStatusAlreadySet(channel, isOpen);\n        }\n\n        \n        _channels[channel] = isOpen;\n\n        \n        emit ChannelUpdated(channel, isOpen);\n    }",
+      "replacement_expression": "",
+      "start_line": 466
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 380,
+      "function": "execute",
+      "mutant_id": "m000139",
+      "operator": "RSD",
+      "original_expression": "return this.execute.selector;",
+      "replacement_expression": "/* return this.execute.selector; */",
+      "start_line": 380
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 416,
+      "function": "executeBatch1155",
+      "mutant_id": "m000140",
+      "operator": "RSD",
+      "original_expression": "return this.executeBatch1155.selector;",
+      "replacement_expression": "/* return this.executeBatch1155.selector; */",
+      "start_line": 416
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 457,
+      "function": "executeWithBatch1155",
+      "mutant_id": "m000141",
+      "operator": "RSD",
+      "original_expression": "return this.executeWithBatch1155.selector;",
+      "replacement_expression": "/* return this.executeWithBatch1155.selector; */",
+      "start_line": 457
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 226,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000142",
+      "operator": "UORD",
+      "original_expression": "!ok",
+      "replacement_expression": " ok",
+      "start_line": 226
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 232,
+      "function": "_performERC20Transfer",
+      "mutant_id": "m000143",
+      "operator": "UORD",
+      "original_expression": "!abi.decode(data, (bool))",
+      "replacement_expression": " abi.decode(data, (bool))",
+      "start_line": 232
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 373,
+      "function": "execute",
+      "mutant_id": "m000144",
+      "operator": "UORD",
+      "original_expression": "!_channels[msg.sender]",
+      "replacement_expression": " _channels[msg.sender]",
+      "start_line": 373
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 401,
+      "function": "executeBatch1155",
+      "mutant_id": "m000145",
+      "operator": "UORD",
+      "original_expression": "!_channels[msg.sender]",
+      "replacement_expression": " _channels[msg.sender]",
+      "start_line": 401
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 408,
+      "function": "executeBatch1155",
+      "mutant_id": "m000146",
+      "operator": "UORD",
+      "original_expression": "++i",
+      "replacement_expression": "--i",
+      "start_line": 408
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 408,
+      "function": "executeBatch1155",
+      "mutant_id": "m000147",
+      "operator": "UORD",
+      "original_expression": "++i",
+      "replacement_expression": " i",
+      "start_line": 408
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 439,
+      "function": "executeWithBatch1155",
+      "mutant_id": "m000148",
+      "operator": "UORD",
+      "original_expression": "!_channels[msg.sender]",
+      "replacement_expression": " _channels[msg.sender]",
+      "start_line": 439
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 449,
+      "function": "executeWithBatch1155",
+      "mutant_id": "m000149",
+      "operator": "UORD",
+      "original_expression": "++i",
+      "replacement_expression": "--i",
+      "start_line": 449
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 449,
+      "function": "executeWithBatch1155",
+      "mutant_id": "m000150",
+      "operator": "UORD",
+      "original_expression": "++i",
+      "replacement_expression": " i",
+      "start_line": 449
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 495,
+      "function": "_performTransfers",
+      "mutant_id": "m000151",
+      "operator": "UORD",
+      "original_expression": "++i",
+      "replacement_expression": "--i",
+      "start_line": 495
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 495,
+      "function": "_performTransfers",
+      "mutant_id": "m000152",
+      "operator": "UORD",
+      "original_expression": "++i",
+      "replacement_expression": " i",
+      "start_line": 495
+    }
+  ],
+  "subject_id": "ProjectOpenSea__seaport__ReferenceConduit"
+}

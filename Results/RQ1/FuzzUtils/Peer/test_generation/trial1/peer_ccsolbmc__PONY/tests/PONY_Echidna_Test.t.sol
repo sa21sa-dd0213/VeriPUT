@@ -1,0 +1,11043 @@
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.13;
+
+
+
+
+
+import "forge-std/Test.sol";
+import "forge-std/console2.sol";
+import "../src/flat.sol";
+
+contract PONY_Echidna_Test is Test {
+    PONY target;
+
+    function setUp() public {
+        target = new PONY();
+    }
+    
+    function test_auto_approve_0() public { 
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 455761);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 6485828857899764898672230957026090827070292804311904140466580613931306518662);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 1885656664690682);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 34973877055207240917182677537171357737510058427637142168447378814278702170624);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 309959);
+        vm.roll(block.number + 34184);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 76354071258000199593288137743445185765345618003528433321492632520153091941994);
+        
+        vm.warp(block.timestamp + 211809);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 39094326192099516525006559045653539857168513105178460905593425348111783323695);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 50602);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 574795);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000000000, 13553112813201893338154239472488022118617745464430459489911098416651548818653);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 352383);
+        vm.roll(block.number + 37285);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 32841);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 280278);
+        vm.roll(block.number + 20842);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 7155);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 380);
+        vm.roll(block.number + 47292);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 33441);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 195580);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(115792089237316195423570985008687907853269984665640564039457583007913129639933);
+        
+        vm.warp(block.timestamp + 127894);
+        vm.roll(block.number + 16619);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 96660);
+        vm.roll(block.number + 4445);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 564515);
+        vm.roll(block.number + 52976);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 20293);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000030000, 17834807986923161314315317905264343468940463035041083096893297074748958512421);
+        
+        vm.warp(block.timestamp + 113276);
+        vm.roll(block.number + 55125);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 221);
+        vm.roll(block.number + 47855);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 174851);
+        vm.roll(block.number + 20207);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 1108);
+        vm.roll(block.number + 131);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 61738);
+        vm.roll(block.number + 27103);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 111402500089452442669838786216536190360959055504347677693739580928181683774054);
+        
+        vm.warp(block.timestamp + 1021);
+        vm.roll(block.number + 44664);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 417147);
+        vm.roll(block.number + 54392);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 85656031065311071844682746001832304947299718869151764723538649370213035969942);
+        
+        vm.warp(block.timestamp + 334260);
+        vm.roll(block.number + 49342);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 312224);
+        vm.roll(block.number + 37140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 217963);
+        vm.roll(block.number + 2348);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000020000, 9340767097279066230533146532503606888);
+        
+        vm.warp(block.timestamp + 212467);
+        vm.roll(block.number + 57849);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(28428136105111307230902880534253144162161651461643463231669895990257942880523);
+        
+        vm.warp(block.timestamp + 384758);
+        vm.roll(block.number + 45729);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 557428);
+        vm.roll(block.number + 27438);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 197);
+        vm.roll(block.number + 17736);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 2572);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(26955035772821994199262895450792861013005160162309615118769555575524968894973);
+        
+        vm.warp(block.timestamp + 244695);
+        vm.roll(block.number + 26556);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 601510);
+        vm.roll(block.number + 30589);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 416506);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 191108);
+        vm.roll(block.number + 55069);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 420797);
+        vm.roll(block.number + 36510);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 263527);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 197);
+        vm.roll(block.number + 34505);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 113406);
+        vm.roll(block.number + 16226);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 376981);
+        vm.roll(block.number + 271);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 103372820071932112849861189365195016122467724223113611279574704201125873458098);
+        
+        vm.warp(block.timestamp + 394426);
+        vm.roll(block.number + 47260);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 70335996447283693380573308834114613328593062066171404312013082777164790924868);
+        
+        vm.warp(block.timestamp + 190298);
+        vm.roll(block.number + 30804);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 395106);
+        vm.roll(block.number + 14);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 254779);
+        vm.roll(block.number + 10890);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 591963);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 105800219515724129016863413348862164579879503467887620199744036266976122402962);
+        
+        vm.warp(block.timestamp + 299073);
+        vm.roll(block.number + 9825);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 372062);
+        vm.roll(block.number + 34439);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(747813622420072233266823430769435194224977898905159948983080963878990100923);
+        
+        vm.warp(block.timestamp + 478243);
+        vm.roll(block.number + 11577);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 104893);
+        vm.roll(block.number + 1854);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 329764);
+        vm.roll(block.number + 37480);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(84473245561261607504682241021539136387129461928806718905576660575910300625190);
+        
+        vm.warp(block.timestamp + 535);
+        vm.roll(block.number + 37971);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 229187);
+        vm.roll(block.number + 24099);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84420679284631148680352866921906827748960265534102404599726073072026568728910);
+        
+        vm.warp(block.timestamp + 288669);
+        vm.roll(block.number + 27613);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 390149);
+        vm.roll(block.number + 48889);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 74806365355075512983261790116707166681353574176595762229093766122393440978018);
+        
+        vm.warp(block.timestamp + 393314);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 181623);
+        vm.roll(block.number + 15448);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 392099);
+        vm.roll(block.number + 19539);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 5370108908680259620652718588198615961109200945826815347543246106264043263620);
+        
+        vm.warp(block.timestamp + 254217);
+        vm.roll(block.number + 5924);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(71223781401982263497722519421922856520317607210355895394326783863516226929661);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 17968);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 469917);
+        vm.roll(block.number + 31283);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000020000, 18068848741252936578764709710518959973324668051638860417987997486407787307229);
+        
+        vm.warp(block.timestamp + 898);
+        vm.roll(block.number + 13766);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 4937637309808363840689991486775975389701583376033200774417491437953990147517);
+        
+        vm.warp(block.timestamp + 391788);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 409836);
+        vm.roll(block.number + 33227);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x0000000000000000000000000000000000020000, 106499368668246839882589968096486386488124874628404504710054431185182158261206);
+        
+        vm.warp(block.timestamp + 83184);
+        vm.roll(block.number + 3550);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 478415);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000020000, 45663038304000633375703705795543686246704576144430745360282532611497891493526);
+        
+        vm.warp(block.timestamp + 166952);
+        vm.roll(block.number + 52371);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 389);
+        vm.roll(block.number + 45748);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 60146);
+        vm.roll(block.number + 21529);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 316691);
+        vm.roll(block.number + 25524);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 103268320129420376133252559982534509504672937364342438547994569142420222160659);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 1905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(37898349657331318342206011830931787690673723169983989924352164894801596524992);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 45273);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 301321);
+        vm.roll(block.number + 26139);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.totalSupply();
+        
+        vm.warp(block.timestamp + 275686);
+        vm.roll(block.number + 11794);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 183399);
+        vm.roll(block.number + 8911);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 28769);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x0000000000000000000000000000000000020000, 105062789335336376378734895995342573903405657649205299118556620688321298168127);
+        
+        vm.warp(block.timestamp + 239837);
+        vm.roll(block.number + 705);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 101366);
+        vm.roll(block.number + 19756);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 870);
+        vm.roll(block.number + 36147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 314011);
+        vm.roll(block.number + 39983);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 47856);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(698926300667856);
+        
+        vm.warp(block.timestamp + 80098);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 591158);
+        vm.roll(block.number + 39401);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 115224275605346797347949869335050199698225343509901012783924043868866154344033);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 19511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 177368);
+        vm.roll(block.number + 15129);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 130288);
+        vm.roll(block.number + 26483);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 103095001463363923974563364366341153577778335195797549401035741293190931282404);
+    }
+    
+    
+    function test_auto_transferFrom_1() public { 
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 40973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 103385321919623746330297312737757037390411114435520409754369519107477570826270);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 77667592125178983395345493427701070172686997299765023);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 470575);
+        vm.roll(block.number + 1843);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 113406);
+        vm.roll(block.number + 26060);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 42535033894814254720565550405868961258695544340769511329711289003086642598930);
+        
+        vm.warp(block.timestamp + 136074);
+        vm.roll(block.number + 42800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 4281707170392903505132045674135543839137949595569111706336134068569161794977);
+        
+        vm.warp(block.timestamp + 512635);
+        vm.roll(block.number + 42534);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 44755274693474149497036679186762714955613990559641366560301230907159667312591);
+        
+        vm.warp(block.timestamp + 347410);
+        vm.roll(block.number + 19957);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 40739361250705061800412214171466710595825747251055142484203488053610698127159);
+        
+        vm.warp(block.timestamp + 252065);
+        vm.roll(block.number + 2004);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 439831);
+        vm.roll(block.number + 21216);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(728);
+        
+        vm.warp(block.timestamp + 71479);
+        vm.roll(block.number + 72);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 169859);
+        vm.roll(block.number + 56596);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 83589);
+        vm.roll(block.number + 49048);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 365622);
+        vm.roll(block.number + 15577);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 214850);
+        vm.roll(block.number + 33459);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 101658809574678398831364333162383029464570130761950622112748765955342526245371);
+        
+        vm.warp(block.timestamp + 440999);
+        vm.roll(block.number + 9871);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 173993);
+        vm.roll(block.number + 5709);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 490436);
+        vm.roll(block.number + 21341);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 54235271655987349014838753728461261863547754137983412314562952585010440434168);
+        
+        vm.warp(block.timestamp + 87047);
+        vm.roll(block.number + 34430);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 570169);
+        vm.roll(block.number + 49830);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 97890540066711280889558043261757473688544733926828091769600384871611745149069);
+        
+        vm.warp(block.timestamp + 14563);
+        vm.roll(block.number + 29294);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 527227);
+        vm.roll(block.number + 1627);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 95039660551421226881959295199209046893142785433455452353389494601215988278915);
+        
+        vm.warp(block.timestamp + 8921);
+        vm.roll(block.number + 23612);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 394984);
+        vm.roll(block.number + 40565);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 73501149339724761506868458299467892988774127439168260644873516907980014031570);
+        
+        vm.warp(block.timestamp + 59714);
+        vm.roll(block.number + 20715);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 835);
+        vm.roll(block.number + 48994);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 25);
+        vm.roll(block.number + 36211);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 249661);
+        vm.roll(block.number + 1705);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 66714);
+        vm.roll(block.number + 98);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 194754);
+        vm.roll(block.number + 24034);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 312163);
+        vm.roll(block.number + 59743);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 397422);
+        vm.roll(block.number + 43150);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(79164153512375146022485032033675139992757499668463496138666111984647175691039);
+        
+        vm.warp(block.timestamp + 328495);
+        vm.roll(block.number + 1919);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 14410628275169406911596474774142);
+        
+        vm.warp(block.timestamp + 38);
+        vm.roll(block.number + 8856);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 127800);
+        vm.roll(block.number + 37729);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 251301);
+        vm.roll(block.number + 30230);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 39318);
+        vm.roll(block.number + 17683);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 562600);
+        vm.roll(block.number + 57144);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 237915);
+        vm.roll(block.number + 48107);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 275385);
+        vm.roll(block.number + 360);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 922);
+        vm.roll(block.number + 57452);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 580502);
+        vm.roll(block.number + 49803);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000020000, 105249457558074480313327268857665342573561022076358786468470481708926899027244);
+        
+        vm.warp(block.timestamp + 53120);
+        vm.roll(block.number + 705);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 35085);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 407995);
+        vm.roll(block.number + 4563);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 88892279258696855306618468340418864584044693744679322558980147635433382724909);
+        
+        vm.warp(block.timestamp + 369130);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.isExcluded(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 578654);
+        vm.roll(block.number + 186);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 519500);
+        vm.roll(block.number + 48466);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 113955287714572596443150817470301414686779546432105863729143519272480979366773);
+        
+        vm.warp(block.timestamp + 508109);
+        vm.roll(block.number + 4019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 447054);
+        vm.roll(block.number + 19287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 485843);
+        vm.roll(block.number + 23921);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 460764);
+        vm.roll(block.number + 874);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 98374421325327134288413342193876587311151368941138124555930216928527265421181);
+        
+        vm.warp(block.timestamp + 494970);
+        vm.roll(block.number + 4425);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 149671);
+        vm.roll(block.number + 22679);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 15081934371848560553228352614086994403011329430166676370408886262236469833833);
+        
+        vm.warp(block.timestamp + 82938);
+        vm.roll(block.number + 41525);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 526184);
+        vm.roll(block.number + 31875);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 464793);
+        vm.roll(block.number + 30056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 90497526202482816974218239573808892121656662522133684255088183088277293524525);
+        
+        vm.warp(block.timestamp + 299311);
+        vm.roll(block.number + 9789);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 3543197369908497841500300);
+        
+        vm.warp(block.timestamp + 229755);
+        vm.roll(block.number + 51974);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 337028);
+        vm.roll(block.number + 58134);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 498134);
+        vm.roll(block.number + 9116);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, 3006338089100630876662468440589389624875711924011269644872994255464162520872);
+        
+        vm.warp(block.timestamp + 404906);
+        vm.roll(block.number + 59875);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 379730);
+        vm.roll(block.number + 43440);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 423468);
+        vm.roll(block.number + 2410);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 251187);
+        vm.roll(block.number + 4354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 522981);
+        vm.roll(block.number + 54354);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 604101);
+        vm.roll(block.number + 53045);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 6890);
+        vm.roll(block.number + 972);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 310013);
+        vm.roll(block.number + 41279);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 389890);
+        vm.roll(block.number + 2306);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 84453681936156060186503396803514818543312304950044320161261909604775715513822);
+        
+        vm.warp(block.timestamp + 526331);
+        vm.roll(block.number + 54271);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 469383);
+        vm.roll(block.number + 50414);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000010000, 77130249956960271091721600909073934681846618490452230181955342260331603190243);
+        
+        vm.warp(block.timestamp + 243590);
+        vm.roll(block.number + 35008);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 98325);
+        vm.roll(block.number + 4505);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 4031);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 512965);
+        vm.roll(block.number + 36804);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(8296826954526868797112703679259062902349546635653);
+        
+        vm.warp(block.timestamp + 755);
+        vm.roll(block.number + 20019);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 397352);
+        vm.roll(block.number + 17665);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 189514);
+        vm.roll(block.number + 20156);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 177483);
+        vm.roll(block.number + 40611);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 538287);
+        vm.roll(block.number + 2752);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 349622);
+        vm.roll(block.number + 47090);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 102498);
+        vm.roll(block.number + 33505);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 69993419315827434839342429348791302951905265317727941555657548012303558964109);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 21216);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 79585);
+        vm.roll(block.number + 55995);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 183407);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 481793);
+        vm.roll(block.number + 29705);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 71716);
+        vm.roll(block.number + 59558);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 442054);
+        vm.roll(block.number + 4666);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 494088);
+        vm.roll(block.number + 58609);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.balanceOf(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 538897);
+        vm.roll(block.number + 37288);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+    }
+    
+    
+    function test_auto_approve_2() public { 
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 455761);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 6485828857899764898672230957026090827070292804311904140466580613931306518662);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 1885656664690682);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 34973877055207240917182677537171357737510058427637142168447378814278702170624);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 309959);
+        vm.roll(block.number + 34184);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 76354071258000199593288137743445185765345618003528433321492632520153091941994);
+        
+        vm.warp(block.timestamp + 211809);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 39094326192099516525006559045653539857168513105178460905593425348111783323695);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 50602);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 574795);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000000000, 13553112813201893338154239472488022118617745464430459489911098416651548818653);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 352383);
+        vm.roll(block.number + 37285);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 70321322533896666939640896077763824093359026861479789807875323946173184877099);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 22967459654781060587105708485973908211517618439965881406430715214377605625702);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 14840);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x0000000000000000000000000000000000000000, 22967459654781060587105708485973908211517618439965881406430715214377605625702);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84186447044772569799749261781557683850016779098505329882684737218077609307618);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 16617);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 453216);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 41848);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 76179152884798208105264951907555884021229568457669670978082882094317973148483);
+        
+        vm.warp(block.timestamp + 574794);
+        vm.roll(block.number + 5611);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 137237);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 352382);
+        vm.roll(block.number + 14136);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 36685462666986032160798823196070214491657382133049047485777032937329220145742);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 16619);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000030000, 115345015098576293858235084667108845276602359041933480058604402332900779461067);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 56416);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 574793);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 17968);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 352383);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 352384);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 108097);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 27458841845275262412981110863357339866299521231675469574440591110217149276561);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 107249934725384859009032686185206297347415885227493690362210428940849039389703);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 14136);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 400377);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 416506);
+        vm.roll(block.number + 5959);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 43994);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 72859404287546636601448897941898228114849579364642435470476971987915669394390);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 18591);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x0000000000000000000000000000000000000000, 81016305639428936185569834163801753417690129574744975151253254035319179127288);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 48891);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 11537);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 259575);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457583007913129639936);
+        
+        vm.warp(block.timestamp + 34698);
+        vm.roll(block.number + 40881);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 557872);
+        vm.roll(block.number + 9132);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 21516516701190147644110381799991323726358896186523870969586062216729507186898);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 93847555657203844693783724804773898862736137031282633650695118783218607889660);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 16620);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 1524785992);
+        
+        vm.warp(block.timestamp + 574798);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 93847555657203844693783724804773898862736137031282633650695118783218607889660);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457583007913129639939);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 203228);
+        vm.roll(block.number + 16989);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 48885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 352383);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 104853304753598394294164138136328713070873837097275933009485715101799300342847);
+        
+        vm.warp(block.timestamp + 426030);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 12818);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 46695);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000030000, 94515007003571845995954066677182198570732110916258980036109178603115380685264);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 16616);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 440591);
+        vm.roll(block.number + 48887);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 42262);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 160);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 17380);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 352381);
+        vm.roll(block.number + 2695);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 574797);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD, 10754928100853987058408940905446136878355478387976046341468323794872503967538);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 9522109699583056952664936357476552262310026305071040681275191326522370525689);
+        
+        vm.warp(block.timestamp + 434340);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 16618);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000020000, 29185982163095928934326997266960319233952887930639279854448650033200901640444);
+        
+        vm.warp(block.timestamp + 380582);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 5952);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 321565);
+        vm.roll(block.number + 48886);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000000000, 6560900659487206209278865902225762041075708974000352159719950022314588497327);
+    }
+    
+    
+    function test_auto_increaseAllowance_3() public { 
+        
+        vm.warp(block.timestamp + 369006);
+        vm.roll(block.number + 41025);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 48266);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 430397);
+        vm.roll(block.number + 36054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 81162238283513668146880887078315673700674363062635020477507207714751055082376);
+        
+        vm.warp(block.timestamp + 57261);
+        vm.roll(block.number + 29373);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 893);
+        vm.roll(block.number + 59422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 369601);
+        vm.roll(block.number + 38719);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 506732);
+        vm.roll(block.number + 16445);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 500881);
+        vm.roll(block.number + 42173);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 583854);
+        vm.roll(block.number + 31001);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 537915);
+        vm.roll(block.number + 430);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 417529);
+        vm.roll(block.number + 19707);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 70513130053744605098385475701827980919590742860668593647078034891243338269027);
+        
+        vm.warp(block.timestamp + 33646);
+        vm.roll(block.number + 31354);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 885);
+        
+        vm.warp(block.timestamp + 21945);
+        vm.roll(block.number + 57076);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 519855);
+        vm.roll(block.number + 19008);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 55897);
+        vm.roll(block.number + 43458);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 13594);
+        vm.roll(block.number + 5724);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 23445);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 575158);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 25372);
+        vm.roll(block.number + 19356);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 99484);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 535);
+        vm.roll(block.number + 53450);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 356358);
+        vm.roll(block.number + 57476);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 294835);
+        vm.roll(block.number + 29522);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 229642);
+        vm.roll(block.number + 16150);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 379423);
+        vm.roll(block.number + 49529);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 18704);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 203561);
+        vm.roll(block.number + 20134);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 10581753416983912444257167361132923402602626951624457075676241438391401835258);
+        
+        vm.warp(block.timestamp + 67058);
+        vm.roll(block.number + 14119);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(114);
+        
+        vm.warp(block.timestamp + 561791);
+        vm.roll(block.number + 34011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 333056);
+        vm.roll(block.number + 2138);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 90177572332202609368918116816458474679230622731612421758298006611141990786124);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 130);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 82245652575577002419897569233813964546570235328397608568603283906646271593942);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 36491);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 383298);
+        vm.roll(block.number + 38777);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 113387323847953948289010954836660061880501525936942338205479712877950372847043);
+        
+        vm.warp(block.timestamp + 447313);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 301952);
+        vm.roll(block.number + 520);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 327533);
+        vm.roll(block.number + 14961);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 34952740733023359684687718594163424348990318647694857232835795607347565813807);
+        
+        vm.warp(block.timestamp + 330831);
+        vm.roll(block.number + 44086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 962);
+        
+        vm.warp(block.timestamp + 376937);
+        vm.roll(block.number + 16967);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 508082);
+        vm.roll(block.number + 47686);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 134412);
+        vm.roll(block.number + 42769);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 324655);
+        vm.roll(block.number + 28766);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 492053);
+        vm.roll(block.number + 31181);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 266455);
+        vm.roll(block.number + 37345);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 40660580244974310307627541243200465612485745736359347564510021390089611578697);
+        
+        vm.warp(block.timestamp + 201254);
+        vm.roll(block.number + 679);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 151701);
+        vm.roll(block.number + 55749);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 930698518089404517349179184237183018515090843754044966431934702627746217178);
+        
+        vm.warp(block.timestamp + 574797);
+        vm.roll(block.number + 31283);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 191);
+        
+        vm.warp(block.timestamp + 1892);
+        vm.roll(block.number + 39054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x0000000000000000000000000000000000010000, 1038447224690412728714720158550447603667861884348640350525396604992527913911);
+        
+        vm.warp(block.timestamp + 91873);
+        vm.roll(block.number + 37894);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 181107);
+        vm.roll(block.number + 29323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 95968759139773790824973558022913163703032571025861379439651772067926151542575);
+        
+        vm.warp(block.timestamp + 205815);
+        vm.roll(block.number + 49327);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 36312);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 97443921191458900534105966657564582463245134713887806544210802722392696454113);
+        
+        vm.warp(block.timestamp + 585);
+        vm.roll(block.number + 25932);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 356358);
+        vm.roll(block.number + 22686);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 66338806248257978690057034774331119568570794938288986180685507238974908032108);
+        
+        vm.warp(block.timestamp + 282002);
+        vm.roll(block.number + 11846);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000000000, 65926965851465122225528744713800067954797085491563257101011426393848951771577);
+        
+        vm.warp(block.timestamp + 942);
+        vm.roll(block.number + 17110);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 90372);
+        vm.roll(block.number + 47016);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x0000000000000000000000000000000000000000, 24509890073460213270838625492264595901275026491796901034501068535690824580908);
+        
+        vm.warp(block.timestamp + 322936);
+        vm.roll(block.number + 55775);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(53766218709823);
+        
+        vm.warp(block.timestamp + 601969);
+        vm.roll(block.number + 44155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 473780);
+        vm.roll(block.number + 18453);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.balanceOf(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 83014);
+        vm.roll(block.number + 15009);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 397356);
+        vm.roll(block.number + 7807);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 63928290464809069559373168404315963999017487390069368918631638066466916251993);
+        
+        vm.warp(block.timestamp + 101773);
+        vm.roll(block.number + 8743);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 377104);
+        vm.roll(block.number + 18447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 592462);
+        vm.roll(block.number + 20112);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 73051351798585283007725821470881285199146806374502467827829286705300464868219);
+        
+        vm.warp(block.timestamp + 241071);
+        vm.roll(block.number + 15290);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(35048045579136986985576574659846268839919712012099525741567366996686680219373);
+        
+        vm.warp(block.timestamp + 121855);
+        vm.roll(block.number + 45011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decimals();
+        
+        vm.warp(block.timestamp + 460607);
+        vm.roll(block.number + 19436);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 96859);
+        vm.roll(block.number + 30742);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 188546);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 37403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 48162964512516990130424218726208168269196135849038652096872124554702594953245);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 5433);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 75308578536501765903585346224440208010639639700471264559924946655575896690348);
+        
+        vm.warp(block.timestamp + 223);
+        vm.roll(block.number + 51292);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 94324840725953345773270206615738598267394980928005775102284539835478117969493);
+        
+        vm.warp(block.timestamp + 298687);
+        vm.roll(block.number + 34958);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 325199);
+        vm.roll(block.number + 11959);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 127894);
+        vm.roll(block.number + 16498);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 84085608497346780055536755975304659874167907585148349589115569197353909026959);
+        
+        vm.warp(block.timestamp + 549595);
+        vm.roll(block.number + 35792);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 562349);
+        vm.roll(block.number + 9249);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 55009);
+        vm.roll(block.number + 24251);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 576385);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 379412);
+        vm.roll(block.number + 29522);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 398420);
+        vm.roll(block.number + 41047);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 52669625240726021133221684255558406668538339755689010228657359708169072405205);
+        
+        vm.warp(block.timestamp + 174851);
+        vm.roll(block.number + 11503);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 380);
+        vm.roll(block.number + 26700);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 445535);
+        vm.roll(block.number + 14432);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 422576);
+        vm.roll(block.number + 45729);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 113622476338386874461797815374022987550376390798104256282148200928170738502146);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 455761);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 6485828857899764898672230957026090827070292804311904140466580613931306518662);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 1885656664690682);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 34973877055207240917182677537171357737510058427637142168447378814278702170624);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 309959);
+        vm.roll(block.number + 34184);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 76354071258000199593288137743445185765345618003528433321492632520153091941994);
+        
+        vm.warp(block.timestamp + 211809);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 39094326192099516525006559045653539857168513105178460905593425348111783323695);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+    }
+    
+    
+    function test_auto_increaseAllowance_4() public { 
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 455761);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 6485828857899764898672230957026090827070292804311904140466580613931306518662);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 1885656664690682);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 34973877055207240917182677537171357737510058427637142168447378814278702170624);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 309959);
+        vm.roll(block.number + 34184);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 76354071258000199593288137743445185765345618003528433321492632520153091941994);
+        
+        vm.warp(block.timestamp + 211809);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 39094326192099516525006559045653539857168513105178460905593425348111783323695);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 50602);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 574795);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000000000, 13553112813201893338154239472488022118617745464430459489911098416651548818653);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 352383);
+        vm.roll(block.number + 37285);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 32841);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 280278);
+        vm.roll(block.number + 20842);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 7155);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 380);
+        vm.roll(block.number + 47292);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 33441);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 195580);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(115792089237316195423570985008687907853269984665640564039457583007913129639933);
+        
+        vm.warp(block.timestamp + 127894);
+        vm.roll(block.number + 16619);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 96660);
+        vm.roll(block.number + 4445);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 342788);
+        vm.roll(block.number + 43757);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 417047);
+        vm.roll(block.number + 43003);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 162642);
+        vm.roll(block.number + 316);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 67058);
+        vm.roll(block.number + 16619);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 545140);
+        vm.roll(block.number + 16618);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 469139);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 247494);
+        vm.roll(block.number + 40600);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 141207);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x0000000000000000000000000000000000010000, 8777226533624135679281825625596224514630320192065361336068220006857550862133);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 29267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 0);
+        
+        vm.warp(block.timestamp + 283959);
+        vm.roll(block.number + 34960);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 469139);
+        vm.roll(block.number + 43003);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 520941);
+        vm.roll(block.number + 51494);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 448433);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 376937);
+        vm.roll(block.number + 17380);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 572);
+        vm.roll(block.number + 54354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 41463);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 380);
+        vm.roll(block.number + 39516);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 33441);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 520941);
+        vm.roll(block.number + 18591);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 258125);
+        vm.roll(block.number + 34958);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 30948);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 295901);
+        vm.roll(block.number + 51204);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(2);
+        
+        vm.warp(block.timestamp + 367990);
+        vm.roll(block.number + 19527);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(34128995657402730577433252919910568804181373066390183371405015027717079826037);
+        
+        vm.warp(block.timestamp + 137166);
+        vm.roll(block.number + 43505);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 21225);
+        vm.roll(block.number + 29971);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000000000, 88324476470054693752390491714309297460152178619226840641671820135474146017972);
+        
+        vm.warp(block.timestamp + 541);
+        vm.roll(block.number + 34098);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 43710);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 244818);
+        vm.roll(block.number + 20842);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 453216);
+        vm.roll(block.number + 15452);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 117107);
+        vm.roll(block.number + 18992);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x0000000000000000000000000000000000000000, 8370045321724140895458360268651154384586266491500902840900208451893659925680);
+        
+        vm.warp(block.timestamp + 212467);
+        vm.roll(block.number + 43244);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 16618);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 209443);
+        vm.roll(block.number + 56055);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 484840);
+        vm.roll(block.number + 43710);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 103540899443316170503283128488496794179619010785336800364319869337621419251279);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 11537);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 149223);
+        vm.roll(block.number + 22485);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(39094326192099516525006559045653539857168513105178460905593425348111783323695);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 39409);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 4373494058450509077633542651568988381398368834691736529590504502440604360618);
+        
+        vm.warp(block.timestamp + 224);
+        vm.roll(block.number + 19602);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 492);
+        
+        vm.warp(block.timestamp + 137834);
+        vm.roll(block.number + 46937);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 137834);
+        vm.roll(block.number + 38594);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 233834);
+        vm.roll(block.number + 47899);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 542810);
+        vm.roll(block.number + 689);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 114791);
+        vm.roll(block.number + 19331);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 365553);
+        vm.roll(block.number + 54583);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 90077);
+        vm.roll(block.number + 45729);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(27627487051697227970324582547100939782568724879373682323180505281316074831732);
+        
+        vm.warp(block.timestamp + 36374);
+        vm.roll(block.number + 59422);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 62643147414222380129467588032666439723923471807240993200346459707189316278651);
+        
+        vm.warp(block.timestamp + 236687);
+        vm.roll(block.number + 48891);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 801);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 134833);
+        vm.roll(block.number + 26809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 338622);
+        vm.roll(block.number + 57496);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 96108061026085184182522333524379096277026125505809648610616181203336127102246);
+        
+        vm.warp(block.timestamp + 186579);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(32078669432803243761581969002924112744227416747003256620446935792905478665124);
+        
+        vm.warp(block.timestamp + 428128);
+        vm.roll(block.number + 37792);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 283222);
+        vm.roll(block.number + 49203);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 234676);
+        vm.roll(block.number + 54741);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 8861464730921063317739362749183151978338761128);
+        
+        vm.warp(block.timestamp + 298687);
+        vm.roll(block.number + 58815);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 45840);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 574213);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 65423);
+        vm.roll(block.number + 51358);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.owner();
+        
+        vm.warp(block.timestamp + 10862);
+        vm.roll(block.number + 5942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 47526263366482694449969719946582251079517472551809487939194052174011221469648);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 43916);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(28454942729831206493108429856219846909445446580112271222605472890252198276509);
+        
+        vm.warp(block.timestamp + 71506);
+        vm.roll(block.number + 45954);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 230765);
+        vm.roll(block.number + 43505);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x0000000000000000000000000000000000010000, 24047999729035960412046117084278539263557144462868452014710693950021563343925);
+        
+        vm.warp(block.timestamp + 352384);
+        vm.roll(block.number + 48592);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000030000, 66767150280034797216020144971764669129767044378474710636907560173310328470651);
+        
+        vm.warp(block.timestamp + 114918);
+        vm.roll(block.number + 45030);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x0000000000000000000000000000000000020000, 111014662639264935737554294482433727335171172977384338049675812415610558691918);
+        
+        vm.warp(block.timestamp + 549166);
+        vm.roll(block.number + 39516);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 354591);
+        vm.roll(block.number + 14921);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 527745);
+        vm.roll(block.number + 585);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 79350891683491156196494933105083863195882821060011134474174268538608104143475);
+        
+        vm.warp(block.timestamp + 229187);
+        vm.roll(block.number + 37425);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 582246);
+        vm.roll(block.number + 14666);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000020000, 61885942388559965604579964049664720968213276336198298141107580300534412894530);
+        
+        vm.warp(block.timestamp + 79904);
+        vm.roll(block.number + 38719);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 21555260606217010947374746223613703514478042564100091188196166243262734870009);
+    }
+    
+    
+    function test_auto_decreaseAllowance_5() public { 
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 40973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 103385321919623746330297312737757037390411114435520409754369519107477570826270);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 77667592125178983395345493427701070172686997299765023);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 399911);
+        vm.roll(block.number + 1209);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332797);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 16617);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(61881311997183354197561618358956991789862761355595455676258670747463257356639);
+        
+        vm.warp(block.timestamp + 520941);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 11575);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 352383);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 56193);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 16007938557482821851337167314502643089380319109382944821741771940453677044511);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 114653130087610922015701128335321933684644417958474780381796833192943055283419);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000000000, 0);
+        
+        vm.warp(block.timestamp + 34698);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 455761);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 381);
+        
+        vm.warp(block.timestamp + 434340);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 4);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 20141);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 324655);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 23682);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 76386724521193458406554392411110544077623708620739786442860065296123197953209);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 78589294683282423650138867033058505937624303635969377023028373269089392070708);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 14136);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 34439);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 574796);
+        vm.roll(block.number + 46695);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 3720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 11575);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 7746);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 1524785991);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000000000, 18068848741252936578764709710518959973324668051638860417987997486407787307194);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 16616);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000030000, 84754306981770455530120819907256372032110745723567421787058929075599735438236);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 48889);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 1000000000000002);
+        
+        vm.warp(block.timestamp + 159267);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 154);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 5959);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 2366096731501868866949026146646579852623643597621046759315716163303607139626);
+        
+        vm.warp(block.timestamp + 30909);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 77405253248424879790104498701587648561541173242343443666819827095011681309078);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 469965);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 520941);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 53658);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 801);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 439556);
+        vm.roll(block.number + 48889);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(1524785992);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 574794);
+        vm.roll(block.number + 4636);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 1022);
+        
+        vm.warp(block.timestamp + 446420);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 45222);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000010000, 100800362821463249744164922576684523415441777401240055871616055220242016014844);
+        
+        vm.warp(block.timestamp + 403473);
+        vm.roll(block.number + 2301);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 47185);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 64488441311711777328629259346438411123418939432019833956942252356189955069344);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 30304);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 9692125254413241215835238822128526045644882363734796458157987448753389570090);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 64431645310448143950810637727509349584110652267710668549668371162919170851078);
+        
+        vm.warp(block.timestamp + 30909);
+        vm.roll(block.number + 40995);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 16619);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 574793);
+        vm.roll(block.number + 36510);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 30909);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000030000, 54227490123691067083809667900771626776073355235879033714362665855629371637795);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 34698);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 145397);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 114435);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457583007913129639936);
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 426030);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 455761);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 6485828857899764898672230957026090827070292804311904140466580613931306518662);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 1885656664690682);
+    }
+    
+    
+    function test_auto_fun2_6() public { 
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 455761);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 6485828857899764898672230957026090827070292804311904140466580613931306518662);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 1885656664690682);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 34973877055207240917182677537171357737510058427637142168447378814278702170624);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 309959);
+        vm.roll(block.number + 34184);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 76354071258000199593288137743445185765345618003528433321492632520153091941994);
+        
+        vm.warp(block.timestamp + 211809);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 39094326192099516525006559045653539857168513105178460905593425348111783323695);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 50602);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 574795);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000000000, 13553112813201893338154239472488022118617745464430459489911098416651548818653);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 352383);
+        vm.roll(block.number + 37285);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 32841);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 280278);
+        vm.roll(block.number + 20842);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 7155);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 380);
+        vm.roll(block.number + 47292);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 33441);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 195580);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(115792089237316195423570985008687907853269984665640564039457583007913129639933);
+        
+        vm.warp(block.timestamp + 127894);
+        vm.roll(block.number + 16619);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 96660);
+        vm.roll(block.number + 4445);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 342788);
+        vm.roll(block.number + 43757);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 417047);
+        vm.roll(block.number + 43003);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 162642);
+        vm.roll(block.number + 316);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 67058);
+        vm.roll(block.number + 16619);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 545140);
+        vm.roll(block.number + 16618);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 469139);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 247494);
+        vm.roll(block.number + 40600);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 141207);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x0000000000000000000000000000000000010000, 8777226533624135679281825625596224514630320192065361336068220006857550862133);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 29267);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 0);
+        
+        vm.warp(block.timestamp + 283959);
+        vm.roll(block.number + 34960);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 469139);
+        vm.roll(block.number + 43003);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 520941);
+        vm.roll(block.number + 51494);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 448433);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 376937);
+        vm.roll(block.number + 17380);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 572);
+        vm.roll(block.number + 54354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 41463);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 380);
+        vm.roll(block.number + 39516);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 33441);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 520941);
+        vm.roll(block.number + 18591);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 258125);
+        vm.roll(block.number + 34958);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 30948);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 295901);
+        vm.roll(block.number + 51204);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(2);
+        
+        vm.warp(block.timestamp + 367990);
+        vm.roll(block.number + 19527);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(34128995657402730577433252919910568804181373066390183371405015027717079826037);
+        
+        vm.warp(block.timestamp + 137166);
+        vm.roll(block.number + 43505);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 21225);
+        vm.roll(block.number + 29971);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000000000, 88324476470054693752390491714309297460152178619226840641671820135474146017972);
+        
+        vm.warp(block.timestamp + 541);
+        vm.roll(block.number + 34098);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 43710);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 244818);
+        vm.roll(block.number + 20842);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 453216);
+        vm.roll(block.number + 15452);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 117107);
+        vm.roll(block.number + 18992);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x0000000000000000000000000000000000000000, 8370045321724140895458360268651154384586266491500902840900208451893659925680);
+        
+        vm.warp(block.timestamp + 212467);
+        vm.roll(block.number + 43244);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 16618);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 209443);
+        vm.roll(block.number + 56055);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 484840);
+        vm.roll(block.number + 43710);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 103540899443316170503283128488496794179619010785336800364319869337621419251279);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 11537);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 149223);
+        vm.roll(block.number + 22485);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(39094326192099516525006559045653539857168513105178460905593425348111783323695);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 39409);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 4373494058450509077633542651568988381398368834691736529590504502440604360618);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 294835);
+        vm.roll(block.number + 48890);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 374994);
+        vm.roll(block.number + 34279);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 469917);
+        vm.roll(block.number + 29705);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 58764689395423202906257016271112027248198087686798792082379934543417998695444);
+        
+        vm.warp(block.timestamp + 73538);
+        vm.roll(block.number + 51494);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 52232);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 128137);
+        vm.roll(block.number + 40313);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.symbol();
+        
+        vm.warp(block.timestamp + 33373);
+        vm.roll(block.number + 20842);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 578912);
+        vm.roll(block.number + 37292);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 466849);
+        vm.roll(block.number + 29705);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000030000, 10430189759652460289540725339538739099960110142772469786743826918730630031025);
+        
+        vm.warp(block.timestamp + 393368);
+        vm.roll(block.number + 48058);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 117107);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 39876);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 478482);
+        vm.roll(block.number + 535);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 5795413830576956975736384165875246149);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 18992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(873880352252465);
+        
+        vm.warp(block.timestamp + 416508);
+        vm.roll(block.number + 16618);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 107053359556857619224444164047151645725129399556144577884435362182258077785867);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 428594);
+        vm.roll(block.number + 41047);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 844);
+        
+        vm.warp(block.timestamp + 302768);
+        vm.roll(block.number + 42862);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 43244);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 31930);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 14028);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 96660);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 29941490526569285378249331190556121563352666066158783643116782722475826575741);
+        
+        vm.warp(block.timestamp + 209443);
+        vm.roll(block.number + 56416);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 52790);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 44888);
+        vm.roll(block.number + 36697);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 23065);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 198924);
+        vm.roll(block.number + 20842);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 41465);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 256);
+        vm.roll(block.number + 48058);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 80395504822868393444825075178436233561125471954892888825425514126706095720277);
+        
+        vm.warp(block.timestamp + 280227);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 40904069281588086602891181662942660510709503877302981443210909319139653437857);
+        
+        vm.warp(block.timestamp + 21225);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 13356660339477006046669273116429591029578343654609);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+    }
+    
+    
+    function test_auto_reflect_7() public { 
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 40973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 103385321919623746330297312737757037390411114435520409754369519107477570826270);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 77667592125178983395345493427701070172686997299765023);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 399911);
+        vm.roll(block.number + 1209);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 274472);
+        vm.roll(block.number + 48890);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 11182203263189993410030416436724776086359185229674309658816812825077412874485);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 77864349973417895018648209706682070705718209515337196443446235682829255030344);
+        
+        vm.warp(block.timestamp + 801);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 94794171253943738127881527465926490611929558543931068563680048741944637037298);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 134667);
+        vm.roll(block.number + 29373);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 358412);
+        vm.roll(block.number + 17390);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 580123);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 323311);
+        vm.roll(block.number + 3720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(108601013020396634989531964845047538704506246144101536384873071879291390199736);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 34960);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 64029703768955442199701618739493644221044773082812960474760489266827429031664);
+        
+        vm.warp(block.timestamp + 470115);
+        vm.roll(block.number + 31410);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 100919406718090464059956397165572637509733102605749800731889535719060982173939);
+        
+        vm.warp(block.timestamp + 352384);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 137166);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 6266);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 71007);
+        vm.roll(block.number + 45592);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 484840);
+        vm.roll(block.number + 20306);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 49159);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 1022);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 37891);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(79316869436397458934847172699311101955849151482331250275595523878188400286726);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(47434057093264542038796847449846500091623881359282391095698455206840265039163);
+        
+        vm.warp(block.timestamp + 416660);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x0000000000000000000000000000000000010000, 109728258829987988557465483201528115145932928527379168769582987062917189972153);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 36020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 931);
+        vm.roll(block.number + 20134);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 230051336550);
+        
+        vm.warp(block.timestamp + 391962);
+        vm.roll(block.number + 48886);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 538434);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 29971);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 24283080763692813086109584999461847521112911777105934443612899467682361369794);
+        
+        vm.warp(block.timestamp + 416506);
+        vm.roll(block.number + 19331);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decimals();
+        
+        vm.warp(block.timestamp + 352383);
+        vm.roll(block.number + 39409);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 433439);
+        vm.roll(block.number + 28455);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 538434);
+        vm.roll(block.number + 18716);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 100098604524247323212388127269256986953128943085037537190599070992324089064754);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 8367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 19046981593218892003261398390027698542006486617467620072891437447620471727629);
+        
+        vm.warp(block.timestamp + 391886);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 195580);
+        vm.roll(block.number + 44868);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 1589603449794535817189221134);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 34310);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 244818);
+        vm.roll(block.number + 4274);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 46695);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(99410975284667263352670551800068167785784209639162449107822180937128815921482);
+        
+        vm.warp(block.timestamp + 520941);
+        vm.roll(block.number + 41463);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457583007913129639933);
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 51400);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 151);
+        vm.roll(block.number + 31897);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 82662);
+        vm.roll(block.number + 51123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 490506);
+        vm.roll(block.number + 585);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 37282);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 1904);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 316467);
+        vm.roll(block.number + 29571);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 222570);
+        vm.roll(block.number + 46838);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 345370);
+        vm.roll(block.number + 29571);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 265);
+        
+        vm.warp(block.timestamp + 217268);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 195580);
+        vm.roll(block.number + 12133);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 31644911234466030508270444030338498166278016496270000681370202416546304141310);
+        
+        vm.warp(block.timestamp + 183772);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 124054);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 22909883563770348148356187723789379566520970500748284991110593277278302598492);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 44581);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 169490);
+        vm.roll(block.number + 5416);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 6266);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 366249);
+        vm.roll(block.number + 15009);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 33432854818191551367939808982806809250546121616065326005294880288426468738978);
+        
+        vm.warp(block.timestamp + 679);
+        vm.roll(block.number + 33106);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 52820384249964831343732201523903189894208496181828913526268640514375832068548);
+        
+        vm.warp(block.timestamp + 532459);
+        vm.roll(block.number + 2777);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x0000000000000000000000000000000000030000, 17834807986923161314315317905264343468940463035041083096893297074748958512156);
+        
+        vm.warp(block.timestamp + 431161);
+        vm.roll(block.number + 22686);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 108969197743705386422318499596190402889482494855200637955325813956580871863889);
+        
+        vm.warp(block.timestamp + 251593);
+        vm.roll(block.number + 21088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 245);
+        vm.roll(block.number + 535);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 222570);
+        vm.roll(block.number + 17486);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 204355);
+        vm.roll(block.number + 23237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 311217);
+        vm.roll(block.number + 52448);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 45640942974679241348979718750610485513118277426929455317340296567377534703579);
+        
+        vm.warp(block.timestamp + 186063);
+        vm.roll(block.number + 224);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 292673);
+        vm.roll(block.number + 16617);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.tokenFromReflection(96822947706750849338796307266029141993660708783711702109474483586346392694570);
+        
+        vm.warp(block.timestamp + 417047);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 63630248623289712925478457728814769766782382662161821130532425985368523035931);
+        
+        vm.warp(block.timestamp + 179672);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 21684);
+        vm.roll(block.number + 48891);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 209443);
+        vm.roll(block.number + 28766);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 247911);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 227057);
+        vm.roll(block.number + 49186);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 64452721929647765839822353638057206694601033002302019984100804994327119662069);
+        
+        vm.warp(block.timestamp + 79904);
+        vm.roll(block.number + 58815);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 35820);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 43801415559180592035130411861781811374330763310797066432002558399461479149068);
+        
+        vm.warp(block.timestamp + 643);
+        vm.roll(block.number + 39163);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 549166);
+        vm.roll(block.number + 11732);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 87);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 41465);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 96859);
+        vm.roll(block.number + 16251);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 35830086716552444330990921195135604574959894788545502382447905387462038042132);
+        
+        vm.warp(block.timestamp + 125783);
+        vm.roll(block.number + 58234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 35);
+        vm.roll(block.number + 46933);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(35444716023356114336167002851423634770041239449828184339661489376306206806883);
+    }
+    
+    
+    function test_auto_increaseAllowance_8() public { 
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 40973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 103385321919623746330297312737757037390411114435520409754369519107477570826270);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 77667592125178983395345493427701070172686997299765023);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 451472);
+        vm.roll(block.number + 33255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 594615);
+        vm.roll(block.number + 58533);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 74453400614126578082405470951295096141691975874349201300674249210462488942316);
+        
+        vm.warp(block.timestamp + 439307);
+        vm.roll(block.number + 21985);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(85412439514675335112319686425024689707394184547838625077803611887702336615188);
+        
+        vm.warp(block.timestamp + 132692);
+        vm.roll(block.number + 45341);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 24946);
+        vm.roll(block.number + 29286);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 408252);
+        vm.roll(block.number + 31120);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 399020);
+        vm.roll(block.number + 33424);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 442933);
+        vm.roll(block.number + 15435);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 95368);
+        vm.roll(block.number + 18356);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 24761254330998203072854174900389377686362822317577192788783625131882312853876);
+        
+        vm.warp(block.timestamp + 474741);
+        vm.roll(block.number + 60329);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 134451);
+        vm.roll(block.number + 24773);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 542875);
+        vm.roll(block.number + 30039);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 894);
+        vm.roll(block.number + 22921);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 447059);
+        vm.roll(block.number + 42262);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.tokenFromReflection(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 524052);
+        vm.roll(block.number + 12508);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 26);
+        vm.roll(block.number + 57213);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 776);
+        vm.roll(block.number + 20851);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 186048);
+        vm.roll(block.number + 31970);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 147781);
+        vm.roll(block.number + 58770);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 463173);
+        vm.roll(block.number + 845);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 6485828857899764898672230957026090827070292804311904140466580613931306519169);
+        
+        vm.warp(block.timestamp + 284758);
+        vm.roll(block.number + 10635);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 108839);
+        vm.roll(block.number + 34524);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 212462);
+        vm.roll(block.number + 56689);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 117101);
+        vm.roll(block.number + 19982);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 981);
+        
+        vm.warp(block.timestamp + 262739);
+        vm.roll(block.number + 32717);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 4903);
+        vm.roll(block.number + 7544);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 1406232907156433334126803040102143616292254055177252575594355679378696703032);
+        
+        vm.warp(block.timestamp + 414827);
+        vm.roll(block.number + 12002);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 92212);
+        vm.roll(block.number + 34076);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 69596654993003766834778547572365650162378656964801398346419155414496201759081);
+        
+        vm.warp(block.timestamp + 263830);
+        vm.roll(block.number + 43693);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 275686);
+        vm.roll(block.number + 45438);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 218757);
+        vm.roll(block.number + 24686);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 14793);
+        vm.roll(block.number + 29139);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 156933);
+        vm.roll(block.number + 851);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 297082);
+        vm.roll(block.number + 34186);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 358881);
+        vm.roll(block.number + 34346);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 14808004799289039778320353283499400093628685391563155425218802252723522077431);
+        
+        vm.warp(block.timestamp + 172938);
+        vm.roll(block.number + 36004);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 434702);
+        vm.roll(block.number + 43646);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070222419);
+        
+        vm.warp(block.timestamp + 166110);
+        vm.roll(block.number + 8104);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 327372);
+        vm.roll(block.number + 16152);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 61066);
+        vm.roll(block.number + 36798);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 120703);
+        vm.roll(block.number + 4162);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 5370108908680259620652718592390614414702005112640748919342853144735340011195);
+        
+        vm.warp(block.timestamp + 520522);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 70388);
+        vm.roll(block.number + 15799);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 464154);
+        vm.roll(block.number + 60076);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 17094897394480579143616003763121464424916832473844440027232652869287017252056);
+        
+        vm.warp(block.timestamp + 234721);
+        vm.roll(block.number + 45978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 423263);
+        vm.roll(block.number + 42193);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 277263);
+        vm.roll(block.number + 33354);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 380796);
+        vm.roll(block.number + 56552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(25314241624460038843863364678575046825649096010077720626869301877758127997287);
+        
+        vm.warp(block.timestamp + 443456);
+        vm.roll(block.number + 23216);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 116528);
+        vm.roll(block.number + 27721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 88892279258696855306618468340418864584044693744695397630451820098041668475485);
+        
+        vm.warp(block.timestamp + 563076);
+        vm.roll(block.number + 26917);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 258054);
+        vm.roll(block.number + 28202);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 24629570840738954493322333645210279644042535877424445704037083370243137893734);
+        
+        vm.warp(block.timestamp + 355143);
+        vm.roll(block.number + 21347);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 403282);
+        vm.roll(block.number + 284);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 233840);
+        vm.roll(block.number + 44977);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 560389);
+        vm.roll(block.number + 55163);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 267088);
+        vm.roll(block.number + 53324);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 205335);
+        vm.roll(block.number + 8522);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 137134);
+        vm.roll(block.number + 45000);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 102154215205121930745470513033125360825830920277202240808643437878388677633929);
+        
+        vm.warp(block.timestamp + 143471);
+        vm.roll(block.number + 397);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 332632);
+        vm.roll(block.number + 26427);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 243368);
+        vm.roll(block.number + 39149);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 335287);
+        vm.roll(block.number + 20369);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 32841);
+        vm.roll(block.number + 24355);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 318814);
+        vm.roll(block.number + 11872);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 534340);
+        vm.roll(block.number + 15311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 346699);
+        vm.roll(block.number + 14480);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 98952);
+        vm.roll(block.number + 8856);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 303523);
+        vm.roll(block.number + 36911);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 7232);
+        vm.roll(block.number + 19286);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 24431);
+        vm.roll(block.number + 37748);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 202826);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x0000000000000000000000000000000000010000, 70440884560154566468145627331444633901695380813209121274614403169669083077952);
+        
+        vm.warp(block.timestamp + 851);
+        vm.roll(block.number + 53481);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 103741);
+        vm.roll(block.number + 524);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 89418);
+        vm.roll(block.number + 49973);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 329806);
+        vm.roll(block.number + 37807);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 403781);
+        vm.roll(block.number + 55165);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 125179);
+        vm.roll(block.number + 630);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 19407977228009452498101727989074168107126010915530941577330633863350360485779);
+        
+        vm.warp(block.timestamp + 191505);
+        vm.roll(block.number + 35751);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 56336002886908622861997200636060654483204216847475022373665106194276010549749);
+        
+        vm.warp(block.timestamp + 90197);
+        vm.roll(block.number + 52850);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 53079);
+        vm.roll(block.number + 51499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 192689);
+        vm.roll(block.number + 51698);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 85093603226001578997609443278622895445061243550036064188566389961502926148300);
+        
+        vm.warp(block.timestamp + 495637);
+        vm.roll(block.number + 27296);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 397006);
+        vm.roll(block.number + 30312);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 86178103312290776129475865835375442555251419059626841832691497595340185964839);
+        
+        vm.warp(block.timestamp + 136164);
+        vm.roll(block.number + 40043);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 404802);
+        vm.roll(block.number + 42186);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 10754604847506617503263361792534126880644992028733081086862009106746495854357);
+        
+        vm.warp(block.timestamp + 72612);
+        vm.roll(block.number + 12930);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 448804);
+        vm.roll(block.number + 14958);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, 38441862791512080701476889526197030860802711762512595468008666417928363186907);
+        
+        vm.warp(block.timestamp + 98952);
+        vm.roll(block.number + 4558);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 14886736599316458036257420947044351793228933349724112335396334608793473962830);
+        
+        vm.warp(block.timestamp + 4903);
+        vm.roll(block.number + 9490);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 243720);
+        vm.roll(block.number + 21549);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 378280);
+        vm.roll(block.number + 39530);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 60470475662680792659105737844717480053011261344088586069674967139709101524200);
+    }
+    
+    
+    function test_auto_includeAccount_9() public { 
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 40973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 103385321919623746330297312737757037390411114435520409754369519107477570826270);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 77667592125178983395345493427701070172686997299765023);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 399911);
+        vm.roll(block.number + 1209);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332797);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 16617);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(61881311997183354197561618358956991789862761355595455676258670747463257356639);
+        
+        vm.warp(block.timestamp + 49884);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 48887);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 154);
+        vm.roll(block.number + 7807);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 520941);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 47396814276184521727718112476349317586630310198990113971228017815512379366239);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 574793);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 84513169154287391897506563348618586920840321206007003099209091454091370101695);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15600);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 56416);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 56193);
+        vm.roll(block.number + 35820);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 453216);
+        vm.roll(block.number + 365);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 11182203263189993410030416436724776086359185229674309658816812825077412874485);
+        
+        vm.warp(block.timestamp + 7155);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 260254);
+        vm.roll(block.number + 154);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000020000, 48615452123172826924763284714276455326204029489535403071824771909061660175084);
+        
+        vm.warp(block.timestamp + 294074);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 66473);
+        vm.roll(block.number + 37873);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 570511);
+        vm.roll(block.number + 59033);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 391962);
+        vm.roll(block.number + 52545);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 0);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 27972);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 218011);
+        vm.roll(block.number + 2572);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 1671);
+        vm.roll(block.number + 37891);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 189821);
+        vm.roll(block.number + 20221);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 242448);
+        vm.roll(block.number + 54544);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 417529);
+        vm.roll(block.number + 8687);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(112158189015041819535929503838871650067195173308170403855780545838560360002114);
+        
+        vm.warp(block.timestamp + 322328);
+        vm.roll(block.number + 43310);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 30628);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(63630248623289712925478457728814769766782382662161821130532425985368523035931);
+        
+        vm.warp(block.timestamp + 467244);
+        vm.roll(block.number + 15654);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 80746126129583954970292928593373212819741870535886837142047555534248659893314);
+        
+        vm.warp(block.timestamp + 186579);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 90077);
+        vm.roll(block.number + 49186);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 44888);
+        vm.roll(block.number + 24845);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 517898767394022255921687481272081482449991892287673554352694750860193314569);
+        
+        vm.warp(block.timestamp + 3652);
+        vm.roll(block.number + 36453);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 801);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 11445);
+        vm.roll(block.number + 985);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 324418);
+        vm.roll(block.number + 35751);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 414);
+        vm.roll(block.number + 36995);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 931);
+        vm.roll(block.number + 5618);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 134667);
+        vm.roll(block.number + 40485);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 469917);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 13246);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 266162);
+        vm.roll(block.number + 643);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(1631146847439793192246063064205654356470358688032587537533347760834958967538);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 209624);
+        vm.roll(block.number + 30554);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 234695);
+        vm.roll(block.number + 11537);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflectionFromToken(638, false);
+        
+        vm.warp(block.timestamp + 218);
+        vm.roll(block.number + 5416);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(65600083348554031228391297548849354948861066054214404423997807035370740900989);
+        
+        vm.warp(block.timestamp + 262355);
+        vm.roll(block.number + 36911);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 76355);
+        vm.roll(block.number + 8367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 585);
+        vm.roll(block.number + 22621);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 84543);
+        vm.roll(block.number + 46659);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 395391);
+        vm.roll(block.number + 3550);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 405909);
+        vm.roll(block.number + 30536);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(77961253305211426040310284419785910395914311070375518732995225608822592943495);
+        
+        vm.warp(block.timestamp + 574792);
+        vm.roll(block.number + 557);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 7155);
+        vm.roll(block.number + 58288);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(114971800378546861093076642537897900669964752850134074911938513741955839336840);
+        
+        vm.warp(block.timestamp + 229187);
+        vm.roll(block.number + 1795);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 96859);
+        vm.roll(block.number + 36808);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 292673);
+        vm.roll(block.number + 52783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 77850);
+        vm.roll(block.number + 59124);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 274458);
+        vm.roll(block.number + 13659);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 1454259211342311123068227072547854073887934227);
+        
+        vm.warp(block.timestamp + 274265);
+        vm.roll(block.number + 58815);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 439172);
+        vm.roll(block.number + 54465);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 444432);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(15805971332958408098423633154561856670958677429408506631850238481462839177494);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 5444);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 518157);
+        vm.roll(block.number + 34789);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 93591);
+        vm.roll(block.number + 5416);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 853);
+        
+        vm.warp(block.timestamp + 150296);
+        vm.roll(block.number + 20190);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 352380);
+        vm.roll(block.number + 59608);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 416660);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 279366);
+        vm.roll(block.number + 51400);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 574795);
+        vm.roll(block.number + 1014);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 461595);
+        vm.roll(block.number + 55641);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 243562);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x0000000000000000000000000000000000030000, 0);
+        
+        vm.warp(block.timestamp + 50080);
+        vm.roll(block.number + 39535);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 230420);
+        vm.roll(block.number + 2039);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(15403305692144762759560342572059154820961087371512375093711246426804005102277);
+        
+        vm.warp(block.timestamp + 356088);
+        vm.roll(block.number + 24814);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 40565);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 195005);
+        vm.roll(block.number + 34960);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 378280);
+        vm.roll(block.number + 2217);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 56541169863605569810204701252741178728013314402449964650921848152529676926045);
+        
+        vm.warp(block.timestamp + 204228);
+        vm.roll(block.number + 36453);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 240308);
+        vm.roll(block.number + 4786);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+    }
+    
+    
+    function test_auto_excludeAccount_10() public { 
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 40973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 103385321919623746330297312737757037390411114435520409754369519107477570826270);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 77667592125178983395345493427701070172686997299765023);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 470575);
+        vm.roll(block.number + 1843);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 113406);
+        vm.roll(block.number + 26060);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 42535033894814254720565550405868961258695544340769511329711289003086642598930);
+        
+        vm.warp(block.timestamp + 136074);
+        vm.roll(block.number + 42800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 4281707170392903505132045674135543839137949595569111706336134068569161794977);
+        
+        vm.warp(block.timestamp + 512635);
+        vm.roll(block.number + 42534);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 44755274693474149497036679186762714955613990559641366560301230907159667312591);
+        
+        vm.warp(block.timestamp + 347410);
+        vm.roll(block.number + 19957);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 40739361250705061800412214171466710595825747251055142484203488053610698127159);
+        
+        vm.warp(block.timestamp + 252065);
+        vm.roll(block.number + 2004);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 439831);
+        vm.roll(block.number + 21216);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(728);
+        
+        vm.warp(block.timestamp + 71479);
+        vm.roll(block.number + 72);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 169859);
+        vm.roll(block.number + 56596);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 83589);
+        vm.roll(block.number + 49048);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 365622);
+        vm.roll(block.number + 15577);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 214850);
+        vm.roll(block.number + 33459);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 101658809574678398831364333162383029464570130761950622112748765955342526245371);
+        
+        vm.warp(block.timestamp + 440999);
+        vm.roll(block.number + 9871);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 173993);
+        vm.roll(block.number + 5709);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 490436);
+        vm.roll(block.number + 21341);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 54235271655987349014838753728461261863547754137983412314562952585010440434168);
+        
+        vm.warp(block.timestamp + 87047);
+        vm.roll(block.number + 34430);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 570169);
+        vm.roll(block.number + 49830);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 97890540066711280889558043261757473688544733926828091769600384871611745149069);
+        
+        vm.warp(block.timestamp + 14563);
+        vm.roll(block.number + 29294);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 527227);
+        vm.roll(block.number + 1627);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 95039660551421226881959295199209046893142785433455452353389494601215988278915);
+        
+        vm.warp(block.timestamp + 8921);
+        vm.roll(block.number + 23612);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 394984);
+        vm.roll(block.number + 40565);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 73501149339724761506868458299467892988774127439168260644873516907980014031570);
+        
+        vm.warp(block.timestamp + 59714);
+        vm.roll(block.number + 20715);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 835);
+        vm.roll(block.number + 48994);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 25);
+        vm.roll(block.number + 36211);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 249661);
+        vm.roll(block.number + 1705);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 66714);
+        vm.roll(block.number + 98);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 194754);
+        vm.roll(block.number + 24034);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 312163);
+        vm.roll(block.number + 59743);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 397422);
+        vm.roll(block.number + 43150);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(79164153512375146022485032033675139992757499668463496138666111984647175691039);
+        
+        vm.warp(block.timestamp + 328495);
+        vm.roll(block.number + 1919);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 14410628275169406911596474774142);
+        
+        vm.warp(block.timestamp + 38);
+        vm.roll(block.number + 8856);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 127800);
+        vm.roll(block.number + 37729);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 251301);
+        vm.roll(block.number + 30230);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 39318);
+        vm.roll(block.number + 17683);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 562600);
+        vm.roll(block.number + 57144);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 237915);
+        vm.roll(block.number + 48107);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 275385);
+        vm.roll(block.number + 360);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 922);
+        vm.roll(block.number + 57452);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 580502);
+        vm.roll(block.number + 49803);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000020000, 105249457558074480313327268857665342573561022076358786468470481708926899027244);
+        
+        vm.warp(block.timestamp + 53120);
+        vm.roll(block.number + 705);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 35085);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 407995);
+        vm.roll(block.number + 4563);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 88892279258696855306618468340418864584044693744679322558980147635433382724909);
+        
+        vm.warp(block.timestamp + 369130);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.isExcluded(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 578654);
+        vm.roll(block.number + 186);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 519500);
+        vm.roll(block.number + 48466);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 113955287714572596443150817470301414686779546432105863729143519272480979366773);
+        
+        vm.warp(block.timestamp + 508109);
+        vm.roll(block.number + 4019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 447054);
+        vm.roll(block.number + 19287);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 485843);
+        vm.roll(block.number + 23921);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 460764);
+        vm.roll(block.number + 874);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 98374421325327134288413342193876587311151368941138124555930216928527265421181);
+        
+        vm.warp(block.timestamp + 494970);
+        vm.roll(block.number + 4425);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 149671);
+        vm.roll(block.number + 22679);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 15081934371848560553228352614086994403011329430166676370408886262236469833833);
+        
+        vm.warp(block.timestamp + 82938);
+        vm.roll(block.number + 41525);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 526184);
+        vm.roll(block.number + 31875);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 464793);
+        vm.roll(block.number + 30056);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000020000, 90497526202482816974218239573808892121656662522133684255088183088277293524525);
+        
+        vm.warp(block.timestamp + 299311);
+        vm.roll(block.number + 9789);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 3543197369908497841500300);
+        
+        vm.warp(block.timestamp + 105052);
+        vm.roll(block.number + 27590);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 7610);
+        vm.roll(block.number + 55615);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 433926);
+        vm.roll(block.number + 53088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 477302);
+        vm.roll(block.number + 218);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 874);
+        vm.roll(block.number + 43091);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 44115);
+        vm.roll(block.number + 20190);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 15839);
+        vm.roll(block.number + 19870);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 67764);
+        vm.roll(block.number + 20772);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 10862);
+        vm.roll(block.number + 26258);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 200687);
+        vm.roll(block.number + 43595);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 433373);
+        vm.roll(block.number + 927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 40559);
+        vm.roll(block.number + 30643);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 573624);
+        vm.roll(block.number + 43446);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 548544);
+        vm.roll(block.number + 48339);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 424807);
+        vm.roll(block.number + 54323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 446666);
+        vm.roll(block.number + 325);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 87125455902029310941910218664914316916252150610360702347128289122432533476588);
+        
+        vm.warp(block.timestamp + 8151);
+        vm.roll(block.number + 724);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000000000, 4978590605763396345601926144371007561895448552888870340602137649314964370782);
+        
+        vm.warp(block.timestamp + 171394);
+        vm.roll(block.number + 16069);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 544665);
+        vm.roll(block.number + 8878);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 31415);
+        vm.roll(block.number + 32883);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 437766);
+        vm.roll(block.number + 14119);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 2366096731501868866949026146646579852623643597621046759315716163303607139626);
+        
+        vm.warp(block.timestamp + 190460);
+        vm.roll(block.number + 37605);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 0);
+        
+        vm.warp(block.timestamp + 441099);
+        vm.roll(block.number + 11878);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 557504);
+        vm.roll(block.number + 33688);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 134768);
+        vm.roll(block.number + 27087);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 335573);
+        vm.roll(block.number + 29971);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 71087295095738270293111974406868583806590292565549108551016628463740926685077);
+        
+        vm.warp(block.timestamp + 574875);
+        vm.roll(block.number + 6695);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 148220);
+        vm.roll(block.number + 20347);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 19616);
+        vm.roll(block.number + 998);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 288988);
+        vm.roll(block.number + 14051);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 26051);
+        vm.roll(block.number + 15653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 382553);
+        vm.roll(block.number + 52114);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 59608);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+    }
+    
+    
+    function test_auto_includeAccount_11() public { 
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 455761);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 6485828857899764898672230957026090827070292804311904140466580613931306518662);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 1885656664690682);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 34973877055207240917182677537171357737510058427637142168447378814278702170624);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 309959);
+        vm.roll(block.number + 34184);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 76354071258000199593288137743445185765345618003528433321492632520153091941994);
+        
+        vm.warp(block.timestamp + 211809);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 39094326192099516525006559045653539857168513105178460905593425348111783323695);
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 403473);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD, 18605688494125638530203586747864702050411882819272352558520028528069358358210);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 446420);
+        vm.roll(block.number + 23798);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 34698);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 46845837495165765025363418660350276190113143285454134197113680406198130150800);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 13130);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(50166194956866001502940854778921646535282828882815965936560936035407031454719);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 56745);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 48890);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 77405253248424879790104498701587648561541173242343443666819827095011681309078);
+        
+        vm.warp(block.timestamp + 352380);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 16615);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 109912128183907197374272025306774277735455641990980955056554186863240619592941);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 4);
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 14783);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 225730);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(1162458220125451);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 0);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 15511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 6560900659487206209278865902225762041075708974000352159719950022314588497327);
+        
+        vm.warp(block.timestamp + 218021);
+        vm.roll(block.number + 3720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 504180);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 46695);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x0000000000000000000000000000000000000000, 89997774989921352380460730333022915531236965573486101820221600924748403347010);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 27458841845275262412981110863357339866299521231675469574440591110217149276561);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 50351);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 155664);
+        vm.roll(block.number + 4246);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 574793);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 22967459654781060587105708485973908211517618439965881406430715214377605625702);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 1363);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 116188);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 55476);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 56193);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 318197);
+        vm.roll(block.number + 15005);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 477803);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 487963);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 5959);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 461);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 24201);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 153836);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 57261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 574797);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 46695);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 446420);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 1363);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 5959);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 69897493240745837194742444303867258643688887981355632659441598196679907728411);
+        
+        vm.warp(block.timestamp + 574796);
+        vm.roll(block.number + 39286);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 4370001);
+        
+        vm.warp(block.timestamp + 150273);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(41162024480574470825200347230158449503530651655127131577281712387349846143623);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 15050);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 574793);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 40291604363245226958994317529904359724619470133213277343817843375880702026340);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 3975);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 455761);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 33110121878267681065204015965220809840499989954759636859425042515122099633076);
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 56416);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 74052787371842597961086457576760039276203117102518805933946109290199906315526);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 5769);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 16782);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x0000000000000000000000000000000000010000, 75074570774141924672079297370499946555030490349425748370844136671557162366996);
+        
+        vm.warp(block.timestamp + 574798);
+        vm.roll(block.number + 17298);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 2804296671759414544176969549911133077791384504);
+        
+        vm.warp(block.timestamp + 260377);
+        vm.roll(block.number + 2257);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 291674);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+    }
+    
+    
+    function test_auto_includeAccount_12() public { 
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 455761);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 6485828857899764898672230957026090827070292804311904140466580613931306518662);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 1885656664690682);
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 34973877055207240917182677537171357737510058427637142168447378814278702170624);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 309959);
+        vm.roll(block.number + 34184);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 76354071258000199593288137743445185765345618003528433321492632520153091941994);
+        
+        vm.warp(block.timestamp + 211809);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 39094326192099516525006559045653539857168513105178460905593425348111783323695);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 50602);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 574795);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000000000, 13553112813201893338154239472488022118617745464430459489911098416651548818653);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 352383);
+        vm.roll(block.number + 37285);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 70321322533896666939640896077763824093359026861479789807875323946173184877099);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 22967459654781060587105708485973908211517618439965881406430715214377605625702);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 14840);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x0000000000000000000000000000000000000000, 22967459654781060587105708485973908211517618439965881406430715214377605625702);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84186447044772569799749261781557683850016779098505329882684737218077609307618);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 16617);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 453216);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 463588);
+        vm.roll(block.number + 41848);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000020000, 76179152884798208105264951907555884021229568457669670978082882094317973148483);
+        
+        vm.warp(block.timestamp + 574794);
+        vm.roll(block.number + 5611);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 137237);
+        vm.roll(block.number + 4223);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 352382);
+        vm.roll(block.number + 14136);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 36685462666986032160798823196070214491657382133049047485777032937329220145742);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 16619);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000030000, 115345015098576293858235084667108845276602359041933480058604402332900779461067);
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 56416);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 574793);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 17968);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 67960);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 45142);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322374);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 352383);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 352384);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 520941);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD, 30128397813667249172512000116865451188775807628092589157378438905647188964826);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000000000, 2366096731501868866949026146646579852623643597621046759315716163303607139626);
+        
+        vm.warp(block.timestamp + 352379);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 16007938557482821851337167314502643089380319109382944821741771940453677044511);
+        
+        vm.warp(block.timestamp + 352384);
+        vm.roll(block.number + 16619);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 352381);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 116417);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 294074);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 85390);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 434340);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 410365);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(2366096731501868866949026146646579852623643597621046759315716163303607139626);
+        
+        vm.warp(block.timestamp + 554203);
+        vm.roll(block.number + 31410);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(11521014529450722825612949937549566889856780972069452660444425102900275316172);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 5959);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 417663);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 352380);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(28494561938044538801231926138580058379215777385282041598654618361974224574397);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(62767016316959725740705253140191090568020749938100270031548751696465982555093);
+        
+        vm.warp(block.timestamp + 125783);
+        vm.roll(block.number + 60267);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 34701);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 105652678140664428966110155991340931592643451182050111601652339311841194354368);
+        
+        vm.warp(block.timestamp + 47185);
+        vm.roll(block.number + 46695);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 47185);
+        vm.roll(block.number + 51973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 57181);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 12550);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 59824);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 1363);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 48887);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 2526);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 18693);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 430153);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 7467);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 40973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 352380);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 17380);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 348272660283588983223851);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 42262);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 75074570774141924672079297370499946555030490349425748370844136671557162366996);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 12154);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 352380);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 149223);
+        vm.roll(block.number + 51973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 77825187267164629756575430639264159115172771754097775631791752120712711261203);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 16616);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+    }
+    
+    
+    function test_auto_includeAccount_13() public { 
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 554465);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 23653);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 33425);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 558938);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 271957);
+        vm.roll(block.number + 48886);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 59999);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 289607);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000030000, 85006537605301255568531699702314846793275151309483477004958454258547069850933);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 275394);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(90263043152620078532006931690588073295228048431010777054751673493505069963755);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 59983);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 11358962239335461699118306909357144594642317978975319150796625086713906823506);
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 16620);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x0000000000000000000000000000000000020000, 4370000);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 24995);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 574792);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 999999999999999);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 60364);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 48888);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 512439);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 1236357159857091082811967810129075985399623589138417653650580633);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 11317);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000, 84492061378493175512162719216778249800419791623411515218733885124076574119166);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 352378);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 117536);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 1000000000000000);
+        
+        vm.warp(block.timestamp + 525476);
+        vm.roll(block.number + 48888);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 2);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 81096505650490366672589866804212453190649734232261408621800327942739688235839);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 88994301598218871230221320159298299822088044161602044513454191357267197734060);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000000000, 104761194855342548956772415179140874511395044810094763107546817663135584872434);
+        
+        vm.warp(block.timestamp + 586536);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 1493441032118442097728746875422217504108378638583276682888888828854199311454);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 48043);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 1524785991);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 48885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000000000, 37113150481315576514998916245450710315669764596381472743002153867892048895660);
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 350242);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 1000000000000003);
+        
+        vm.warp(block.timestamp + 547623);
+        vm.roll(block.number + 561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 18068848741252936578764709710518959973324668051638860417987997486407787307194);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 35200);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 1000000000000000);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 22699);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 53451);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 50922);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 18195428106555544496299594758855036734384267224786683458934971573642126821984);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000000000, 44895822552919136295933164008665340118787031576008772090378721602787181206341);
+        
+        vm.warp(block.timestamp + 127251);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(4369999);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 48889);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000030000, 60999347882636371059763684727933420026149211389921641278932527523452795821594);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 22659);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 4027554574666216840802375557040155933435575504801525939807491413312905645494);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 5023);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 2);
+        
+        vm.warp(block.timestamp + 526663);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000, 98574304310472715553385912096483707277596985308013472681674830298360376079029);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(3097552127433161883883776684758749090561534428576740680);
+        
+        vm.warp(block.timestamp + 273622);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 574796);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000000000, 102520729252280712300877379463652053072968466165297637719029136222840003433362);
+        
+        vm.warp(block.timestamp + 574796);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 65535);
+        vm.roll(block.number + 37069);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 93847555657203844693783724804773898862736137031282633650695118783218607889660);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 999999999999997);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.allowance(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 412373);
+        vm.roll(block.number + 16798);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 16620);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, 53484648252793584102157204397492785123155075069116529728089467572801304713581);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 574796);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 1000000000000003);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 10080664642827794615341879292837734393765877971094679314671397485282732203793);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 5140);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x0000000000000000000000000000000000010000, 70335996447283693380573308834114613328593062066171404312013082777164790924868);
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(0);
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457583007913129639938);
+        
+        vm.warp(block.timestamp + 397422);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 48891);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 21018569737915711709900269276455980007972318537747786583259812422959942993593);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 345879);
+        vm.roll(block.number + 42229);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457583007913129639934);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x0000000000000000000000000000000000030000, 1524785993);
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457583007913129639934);
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 448552);
+        vm.roll(block.number + 12053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 535149);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 48887);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457583007913129639936);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 46104623291545417181753);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 333836);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+    }
+    
+    
+    function test_auto_approve_14() public { 
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 40973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 103385321919623746330297312737757037390411114435520409754369519107477570826270);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 77667592125178983395345493427701070172686997299765023);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 399911);
+        vm.roll(block.number + 1209);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 274472);
+        vm.roll(block.number + 48890);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 11182203263189993410030416436724776086359185229674309658816812825077412874485);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 77864349973417895018648209706682070705718209515337196443446235682829255030344);
+        
+        vm.warp(block.timestamp + 801);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 94794171253943738127881527465926490611929558543931068563680048741944637037298);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 134667);
+        vm.roll(block.number + 29373);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 358412);
+        vm.roll(block.number + 17390);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 580123);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 323311);
+        vm.roll(block.number + 3720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(108601013020396634989531964845047538704506246144101536384873071879291390199736);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 34960);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 64029703768955442199701618739493644221044773082812960474760489266827429031664);
+        
+        vm.warp(block.timestamp + 470115);
+        vm.roll(block.number + 31410);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 100919406718090464059956397165572637509733102605749800731889535719060982173939);
+        
+        vm.warp(block.timestamp + 352384);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 45944);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 104853304753598394294164138136328713070873837097275933009485715101799300342847);
+        
+        vm.warp(block.timestamp + 194149);
+        vm.roll(block.number + 20134);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 17968);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 453216);
+        vm.roll(block.number + 50602);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 329502);
+        vm.roll(block.number + 553);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 174316);
+        vm.roll(block.number + 53736);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 22234665559250536800793130596231997393623983874189539584877155235259733267406);
+        
+        vm.warp(block.timestamp + 579216);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 679);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 44575);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 26746896973925549464453231561356967028361530734061542191718632589989);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 25744);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 117107);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 574795);
+        vm.roll(block.number + 46139);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 2355795814114158183197722164532429043652576520054694262434935506950358580636);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 75875);
+        vm.roll(block.number + 3720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 434340);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 416506);
+        vm.roll(block.number + 35315);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 166184);
+        vm.roll(block.number + 33357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 58326620968403879027221352065184101177404559382585073380334913280785464440162);
+        
+        vm.warp(block.timestamp + 112444);
+        vm.roll(block.number + 1362);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 305572);
+        vm.roll(block.number + 36510);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 295043);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 48891);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 493605);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 324655);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 468093);
+        vm.roll(block.number + 5906);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000000000, 9692125254413241215835238822128526045644882363734796458157987448753389571112);
+        
+        vm.warp(block.timestamp + 356088);
+        vm.roll(block.number + 28449);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(0);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 207289);
+        vm.roll(block.number + 19356);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 32767);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 541);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 28455);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 323311);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 322370);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 134667);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 190216);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000000000, 88006646491694621152980431263875844694833312668791967882902644586631201687672);
+        
+        vm.warp(block.timestamp + 576385);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 400981);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 29454189410721779662334589827335900382673260437339736039014105990507485249821);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 36510);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 541);
+        vm.roll(block.number + 11826);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 173917);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 274472);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 190216);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 1365);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x0000000000000000000000000000000000000000, 34952740733023359684687718594163424348990318647694857232835795607347565813807);
+        
+        vm.warp(block.timestamp + 361136);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(108688203057394110788439332366643531496002543315852643259012188903218318576629);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 57261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 84513169154287391897506563348618586920840321206007003099209091454091370101695);
+        
+        vm.warp(block.timestamp + 482712);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 154);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 404997);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 3);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(45761458498409614562799990413678527615771225073318851971220728254248405808477);
+        
+        vm.warp(block.timestamp + 283959);
+        vm.roll(block.number + 41465);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 125783);
+        vm.roll(block.number + 49415);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 566039);
+        vm.roll(block.number + 3661);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 29185982163095928934326997266960319233952887930639279854448650033200901640444);
+        
+        vm.warp(block.timestamp + 135921);
+        vm.roll(block.number + 17968);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 459608);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 52559);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 70);
+        vm.roll(block.number + 53736);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 41690605992049430656856218486298287825541314724927671673298788599013708076889);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 33330);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 580123);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 497);
+        
+        vm.warp(block.timestamp + 801);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 15861);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 520941);
+        vm.roll(block.number + 1452);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(56170050119269729400363562511418274130836934645750621673542504049413931842672);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 16618);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x0000000000000000000000000000000000030000, 3);
+        
+        vm.warp(block.timestamp + 7155);
+        vm.roll(block.number + 52499);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 434340);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+    }
+    
+    
+    function test_auto_transferFrom_15() public { 
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 40973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 103385321919623746330297312737757037390411114435520409754369519107477570826270);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 77667592125178983395345493427701070172686997299765023);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 399911);
+        vm.roll(block.number + 1209);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332797);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 16617);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(61881311997183354197561618358956991789862761355595455676258670747463257356639);
+        
+        vm.warp(block.timestamp + 49884);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 48887);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 154);
+        vm.roll(block.number + 7807);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 520941);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 47396814276184521727718112476349317586630310198990113971228017815512379366239);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 574793);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 84513169154287391897506563348618586920840321206007003099209091454091370101695);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15600);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 56416);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 56193);
+        vm.roll(block.number + 35820);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 453216);
+        vm.roll(block.number + 365);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 11182203263189993410030416436724776086359185229674309658816812825077412874485);
+        
+        vm.warp(block.timestamp + 7155);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 260254);
+        vm.roll(block.number + 154);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000020000, 48615452123172826924763284714276455326204029489535403071824771909061660175084);
+        
+        vm.warp(block.timestamp + 294074);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 434340);
+        vm.roll(block.number + 19356);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 580123);
+        vm.roll(block.number + 35315);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 487963);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 60896694048007915532495777166296592316836887463318224507261169406953310117898);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 5022);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 274982);
+        vm.roll(block.number + 19527);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 59051);
+        vm.roll(block.number + 23350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 48891);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 253459);
+        vm.roll(block.number + 45819);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, 190);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 59981);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 49884);
+        vm.roll(block.number + 52499);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000020000, 1000000000000000);
+        
+        vm.warp(block.timestamp + 416506);
+        vm.roll(block.number + 48891);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 84513169154287391897506563348618586920840321206007003099209091454091370101695);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 541);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 34958);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 58361);
+        vm.roll(block.number + 52499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 82670);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 1365);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 999999999999997);
+        
+        vm.warp(block.timestamp + 7155);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 50417);
+        vm.roll(block.number + 679);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 83);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 48890);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 30909);
+        vm.roll(block.number + 14992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x0000000000000000000000000000000000000000, 41174911552950117099134731614073710459443028726190431250848574986324796636801);
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 130886);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000010000, 73191039884010642891690628382481068586998528183862447866929419233850102642321);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 324655);
+        vm.roll(block.number + 36426);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 365);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 48888);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000010000, 57477811377576781373531264785612519858210931816817831213112990342120390729137);
+        
+        vm.warp(block.timestamp + 569114);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 4177);
+        vm.roll(block.number + 53011);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(1000000000000002);
+        
+        vm.warp(block.timestamp + 195580);
+        vm.roll(block.number + 23065);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 45085089026600306514686663417047010649238716169138600751031951448798269769336);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 53349);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(114527520703495508748153130146190823165257481492275601247110962672481878071151);
+        
+        vm.warp(block.timestamp + 446423);
+        vm.roll(block.number + 17380);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 574793);
+        vm.roll(block.number + 31320);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 352380);
+        vm.roll(block.number + 21567);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 352380);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 29234);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 69763261790335197947705471649563468317721407414381106951971292292778825589052);
+        
+        vm.warp(block.timestamp + 156297);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 195123);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 107559);
+        vm.roll(block.number + 47075);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 574796);
+        vm.roll(block.number + 53736);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 588255);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000010000, 87353165730119576543754703735514832743540688535879071582071811424096056252004);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 127);
+        vm.roll(block.number + 16620);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 11575);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 154);
+        vm.roll(block.number + 54155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 560036);
+        vm.roll(block.number + 59982);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 1524785992);
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 16617);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 391962);
+        vm.roll(block.number + 1365);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 119829);
+        vm.roll(block.number + 18960);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 0);
+        
+        vm.warp(block.timestamp + 448433);
+        vm.roll(block.number + 53736);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 57663520027540765470909798446082053761069065713724071281597990514423138845446);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 83463);
+        vm.roll(block.number + 54465);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 574792);
+        vm.roll(block.number + 12493);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 358061);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 19527);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000020000, 105);
+        
+        vm.warp(block.timestamp + 217429);
+        vm.roll(block.number + 54809);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 437838);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x0000000000000000000000000000000000000000, 13384765955494714259896311187485300259148909483474442129340049224879064669394);
+        
+        vm.warp(block.timestamp + 453336);
+        vm.roll(block.number + 38392);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(33921420171441559779233073928171795956562267177926611605261101990232913856079);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+    }
+    
+    
+    function test_auto_reflect_16() public { 
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 40973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 103385321919623746330297312737757037390411114435520409754369519107477570826270);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 77667592125178983395345493427701070172686997299765023);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 399911);
+        vm.roll(block.number + 1209);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332797);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 16617);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(61881311997183354197561618358956991789862761355595455676258670747463257356639);
+        
+        vm.warp(block.timestamp + 49884);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 587256);
+        vm.roll(block.number + 338);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 43821286072212341261480497701035134737893053766258995311345418639641959585344);
+        
+        vm.warp(block.timestamp + 358412);
+        vm.roll(block.number + 26859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 491157);
+        vm.roll(block.number + 57261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 114842311619338004526335744553672515939401641658408572368921150145523550937213);
+        
+        vm.warp(block.timestamp + 322018);
+        vm.roll(block.number + 5185);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 82698);
+        vm.roll(block.number + 339);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 387704);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 33523119201941641128433684296974181090379711673068091559035999089892631204761);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 18960);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 9536026111520157783383697218051502899802404588257156292092233193655702391170);
+        
+        vm.warp(block.timestamp + 31804);
+        vm.roll(block.number + 19602);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 96071);
+        vm.roll(block.number + 33362);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 86669242055127166566526698923877545102378696054131742010718477531542332536760);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 22250);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 205370);
+        vm.roll(block.number + 37891);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 305128);
+        vm.roll(block.number + 2572);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 40862025545822193610364640688791391954985656123678257904883973498009653457538);
+        
+        vm.warp(block.timestamp + 117107);
+        vm.roll(block.number + 38721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 455761);
+        vm.roll(block.number + 34757);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, 9287672595304659390937095887500548444550663310046714494263829531767464159500);
+        
+        vm.warp(block.timestamp + 264650);
+        vm.roll(block.number + 2874);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 402620);
+        vm.roll(block.number + 1386);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 376937);
+        vm.roll(block.number + 8067);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 9463630853385670645829239095705440094549041753324802300723513266018668780946);
+        
+        vm.warp(block.timestamp + 135052);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 13766);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 398780);
+        vm.roll(block.number + 51292);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 44579910766233962326353066397469372022712135608841898541635224261229865947201);
+        
+        vm.warp(block.timestamp + 166);
+        vm.roll(block.number + 19436);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 103224986291081956628395245854598184855018060921617915695197540680261210399287);
+        
+        vm.warp(block.timestamp + 477302);
+        vm.roll(block.number + 23347);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 259575);
+        vm.roll(block.number + 15181);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 227057);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 69099);
+        vm.roll(block.number + 679);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 433439);
+        vm.roll(block.number + 13356);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 319181);
+        vm.roll(block.number + 46695);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 25372);
+        vm.roll(block.number + 52811);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 254414);
+        vm.roll(block.number + 6736);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 223);
+        vm.roll(block.number + 46714);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 14158736754017206586793653738054827394798255089975583715174659929838718807062);
+        
+        vm.warp(block.timestamp + 51805);
+        vm.roll(block.number + 16620);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 33462);
+        vm.roll(block.number + 7467);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 566093);
+        vm.roll(block.number + 9274);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 55000038400765811531381983693835394031509848884365225909604113465186000521332);
+        
+        vm.warp(block.timestamp + 919);
+        vm.roll(block.number + 131);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 310415);
+        vm.roll(block.number + 39835);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322328);
+        vm.roll(block.number + 2010);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 405856);
+        vm.roll(block.number + 9741);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 1022);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 568080);
+        vm.roll(block.number + 985);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 71595);
+        vm.roll(block.number + 60235);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 492053);
+        vm.roll(block.number + 18716);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 270213);
+        vm.roll(block.number + 36697);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 81645);
+        vm.roll(block.number + 34310);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 418170);
+        vm.roll(block.number + 296);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 410042);
+        vm.roll(block.number + 26);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 60284090017972794089369867121744255934002688283042745010428661828943722198293);
+        
+        vm.warp(block.timestamp + 429592);
+        vm.roll(block.number + 23984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 326173);
+        vm.roll(block.number + 48885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 11537);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 478623);
+        vm.roll(block.number + 15129);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 99816910370403895125633439387639679737906635304860857952861445315628854227641);
+        
+        vm.warp(block.timestamp + 356651);
+        vm.roll(block.number + 16282);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 231622);
+        vm.roll(block.number + 50404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 561791);
+        vm.roll(block.number + 60041);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(79356685093051419543460267715652508691141214548067263040437710661309422615170);
+        
+        vm.warp(block.timestamp + 228516);
+        vm.roll(block.number + 2386);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x0000000000000000000000000000000000000000, 907);
+        
+        vm.warp(block.timestamp + 475365);
+        vm.roll(block.number + 56490);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, 89140433749725471027680528761443750167905116621945949784675490555726936865446);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 339);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 242123);
+        vm.roll(block.number + 31354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 338920);
+        vm.roll(block.number + 1950);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.totalFees();
+        
+        vm.warp(block.timestamp + 601510);
+        vm.roll(block.number + 54354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 769);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 40741);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 528829);
+        vm.roll(block.number + 55517);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 150451);
+        vm.roll(block.number + 53454);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 87809908320457202728586409750582694514367505682218037082259436938507002455969);
+        
+        vm.warp(block.timestamp + 368098);
+        vm.roll(block.number + 51292);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 26757796096518991534987931410949614395417508924130491489544545180432987184786);
+        
+        vm.warp(block.timestamp + 528608);
+        vm.roll(block.number + 55583);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 363021);
+        vm.roll(block.number + 9566);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 151701);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 23062730036077405580852129355522109649083136763508914263912116506375356861817);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 14956);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 92284);
+        vm.roll(block.number + 2010);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 51757601728994982380692604571311618459680591463817158102995844230576039772168);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 34279);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 12017448064423332317232581513227148730601185640729937970862188369942375126101);
+        
+        vm.warp(block.timestamp + 129686);
+        vm.roll(block.number + 1556);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 22290970594181347772758847331049200299360003827394609903664538944767248772114);
+        
+        vm.warp(block.timestamp + 389890);
+        vm.roll(block.number + 3397);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 79948);
+        vm.roll(block.number + 3878);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 549149);
+        vm.roll(block.number + 35565);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 25596);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 486708);
+        vm.roll(block.number + 29669);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 134833);
+        vm.roll(block.number + 26359);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 8158784956180172433990508565108205450583722053444847250080934742194655345451);
+        
+        vm.warp(block.timestamp + 251052);
+        vm.roll(block.number + 43124);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 217963);
+        vm.roll(block.number + 19845);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 90372);
+        vm.roll(block.number + 23984);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 322936);
+        vm.roll(block.number + 4786);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 366060);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(338);
+    }
+    
+    
+    function test_auto_transfer_17() public { 
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 40973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 103385321919623746330297312737757037390411114435520409754369519107477570826270);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 77667592125178983395345493427701070172686997299765023);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 399911);
+        vm.roll(block.number + 1209);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332797);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 16617);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(61881311997183354197561618358956991789862761355595455676258670747463257356639);
+        
+        vm.warp(block.timestamp + 49884);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 89089);
+        vm.roll(block.number + 17747);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 37448070298203);
+        
+        vm.warp(block.timestamp + 91983);
+        vm.roll(block.number + 353);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 154);
+        vm.roll(block.number + 256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 362762);
+        vm.roll(block.number + 48889);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 28273859644856294986630965098252194524085987758220963728859606632644758322346);
+        
+        vm.warp(block.timestamp + 65066);
+        vm.roll(block.number + 44868);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 450113);
+        vm.roll(block.number + 35835);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 344493);
+        vm.roll(block.number + 27701);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 98785);
+        vm.roll(block.number + 52326);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 599998);
+        vm.roll(block.number + 27944);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 399646);
+        vm.roll(block.number + 34608);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 154743);
+        vm.roll(block.number + 10921);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 84543);
+        vm.roll(block.number + 33186);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 185881);
+        vm.roll(block.number + 43977);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 227629);
+        vm.roll(block.number + 20134);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 477803);
+        vm.roll(block.number + 29522);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 135052);
+        vm.roll(block.number + 45855);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 484150);
+        vm.roll(block.number + 53078);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 277232);
+        vm.roll(block.number + 26258);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 0);
+        
+        vm.warp(block.timestamp + 182136);
+        vm.roll(block.number + 54354);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 554763);
+        vm.roll(block.number + 29571);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 416970);
+        vm.roll(block.number + 1479);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 218170);
+        vm.roll(block.number + 42455);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 66473);
+        vm.roll(block.number + 7474);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 93948446228887948167960980367555828728164224902876308469403364476130480415270);
+        
+        vm.warp(block.timestamp + 115494);
+        vm.roll(block.number + 47496);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 537896);
+        vm.roll(block.number + 87);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 134667);
+        vm.roll(block.number + 39794);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 14724);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 97793687151686444930321362104879256265284445770761907215908689856082307331330);
+        
+        vm.warp(block.timestamp + 424045);
+        vm.roll(block.number + 23403);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 186579);
+        vm.roll(block.number + 57261);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 218);
+        vm.roll(block.number + 54504);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000, 24064159716181146680179748197951968665854238607842338907859809875761024573620);
+        
+        vm.warp(block.timestamp + 416367);
+        vm.roll(block.number + 47649);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 209624);
+        vm.roll(block.number + 437);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 379552);
+        vm.roll(block.number + 36995);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 355557);
+        vm.roll(block.number + 42769);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 37023877732462983185507406332693631219745539753999216707083684848699810593395);
+        
+        vm.warp(block.timestamp + 229187);
+        vm.roll(block.number + 46838);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 8580979846125541775520459048915551869277001354870300897207365968080170555375);
+        
+        vm.warp(block.timestamp + 166781);
+        vm.roll(block.number + 31181);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 93797);
+        vm.roll(block.number + 50958);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 76940396478507973208670844066270431912682114482440026623662008569563644328873);
+        
+        vm.warp(block.timestamp + 412678);
+        vm.roll(block.number + 52693);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 16587);
+        vm.roll(block.number + 57748);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 106744652530337407959262244134564018842672308777438930064926448548605318993640);
+        
+        vm.warp(block.timestamp + 436);
+        vm.roll(block.number + 48575);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 895);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 33227);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 47757420771695491629470623433158094621530645348223280564080030406045273635950);
+        
+        vm.warp(block.timestamp + 282002);
+        vm.roll(block.number + 48889);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 70953);
+        vm.roll(block.number + 34433);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 118411);
+        vm.roll(block.number + 761);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 39318);
+        vm.roll(block.number + 45673);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 27211591621993634889648126505163684337445779297714955049427689517525134906402);
+        
+        vm.warp(block.timestamp + 179672);
+        vm.roll(block.number + 23445);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 62814898288334910469611028536027144488719188646846502306120015490433133119908);
+        
+        vm.warp(block.timestamp + 572445);
+        vm.roll(block.number + 59608);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 49735);
+        vm.roll(block.number + 49027);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 291311);
+        vm.roll(block.number + 42126);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 486708);
+        vm.roll(block.number + 57748);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflectionFromToken(102200120957625660463092186040149801475715196320259277301910542226007816049770, true);
+        
+        vm.warp(block.timestamp + 551369);
+        vm.roll(block.number + 19742);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 79913);
+        vm.roll(block.number + 54741);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 391788);
+        vm.roll(block.number + 52836);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 316453);
+        vm.roll(block.number + 12774);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 104030);
+        vm.roll(block.number + 33988);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 359730);
+        vm.roll(block.number + 48575);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 6532);
+        vm.roll(block.number + 51665);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 115687729253233364136593161342415318671913461598394059814854539655078160801480);
+        
+        vm.warp(block.timestamp + 131156);
+        vm.roll(block.number + 56029);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 19054);
+        vm.roll(block.number + 36054);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 690);
+        
+        vm.warp(block.timestamp + 488810);
+        vm.roll(block.number + 12158);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(41776203499972798001605438506625392299160210371570050830178946148695208389511);
+        
+        vm.warp(block.timestamp + 349030);
+        vm.roll(block.number + 59310);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 15664);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 266480);
+        vm.roll(block.number + 36480);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 488282);
+        vm.roll(block.number + 27972);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 20635256070905335736852764696597072461947328058488385147827192899624735540742);
+        
+        vm.warp(block.timestamp + 303806);
+        vm.roll(block.number + 48143);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 50908);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 10397);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 43114456319950871405401226295075576091974452736066857936080297586965117486252);
+        
+        vm.warp(block.timestamp + 359730);
+        vm.roll(block.number + 16282);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 360624);
+        vm.roll(block.number + 31992);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 19135378328964029475242346777229698709663771741808776606112711471556773055655);
+        
+        vm.warp(block.timestamp + 144355);
+        vm.roll(block.number + 37789);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 10635);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 137579);
+        vm.roll(block.number + 56096);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 218170);
+        vm.roll(block.number + 32415);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 551369);
+        vm.roll(block.number + 40276);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 12922);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 147654);
+        vm.roll(block.number + 29268);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 203113);
+        vm.roll(block.number + 32451);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 356922);
+        vm.roll(block.number + 2887);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 223184);
+        vm.roll(block.number + 1033);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 208354);
+        vm.roll(block.number + 38060);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 50721062760575856945685428022303007725826763281762811620149677857305705305801);
+        
+        vm.warp(block.timestamp + 265821);
+        vm.roll(block.number + 31871);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 339739);
+        vm.roll(block.number + 42826);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+    }
+    
+    
+    function test_auto_transfer_18() public { 
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 40973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 103385321919623746330297312737757037390411114435520409754369519107477570826270);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 77667592125178983395345493427701070172686997299765023);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 399911);
+        vm.roll(block.number + 1209);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332797);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 16617);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(61881311997183354197561618358956991789862761355595455676258670747463257356639);
+        
+        vm.warp(block.timestamp + 49884);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 48887);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 154);
+        vm.roll(block.number + 7807);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 520941);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 47396814276184521727718112476349317586630310198990113971228017815512379366239);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 574793);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 84513169154287391897506563348618586920840321206007003099209091454091370101695);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15600);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 56416);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 56193);
+        vm.roll(block.number + 35820);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 453216);
+        vm.roll(block.number + 365);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 11182203263189993410030416436724776086359185229674309658816812825077412874485);
+        
+        vm.warp(block.timestamp + 7155);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 260254);
+        vm.roll(block.number + 154);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000020000, 48615452123172826924763284714276455326204029489535403071824771909061660175084);
+        
+        vm.warp(block.timestamp + 294074);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 66473);
+        vm.roll(block.number + 37873);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 570511);
+        vm.roll(block.number + 59033);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 391962);
+        vm.roll(block.number + 52545);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 0);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 27972);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 218011);
+        vm.roll(block.number + 2572);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 1671);
+        vm.roll(block.number + 37891);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 189821);
+        vm.roll(block.number + 20221);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 289926);
+        vm.roll(block.number + 36995);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000, 96480624855516971999940232037589888339710107387824006492034184145416522163447);
+        
+        vm.warp(block.timestamp + 23989);
+        vm.roll(block.number + 42506);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 284494);
+        vm.roll(block.number + 19051);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457583007913129639937);
+        
+        vm.warp(block.timestamp + 1023);
+        vm.roll(block.number + 1363);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 56193);
+        vm.roll(block.number + 45852);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 96660);
+        vm.roll(block.number + 30491);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 283222);
+        vm.roll(block.number + 40307);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 234695);
+        vm.roll(block.number + 23275);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 135455);
+        vm.roll(block.number + 45030);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000030000, 25590538368900342305517017759281442806306554350944927514909515543815386705501);
+        
+        vm.warp(block.timestamp + 270283);
+        vm.roll(block.number + 42397);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 186443);
+        vm.roll(block.number + 51494);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 10068853870049343913827429928676485360501242071494911227735687156365385819727);
+        
+        vm.warp(block.timestamp + 189821);
+        vm.roll(block.number + 12357);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 382553);
+        vm.roll(block.number + 19230);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 643);
+        vm.roll(block.number + 55);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 84116388107773647695196242244129301817063679791908283309159529860634455353685);
+        
+        vm.warp(block.timestamp + 595446);
+        vm.roll(block.number + 34272);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x0000000000000000000000000000000000030000, 50918099380166417618747295352646381028009272670294312336837558724381093763169);
+        
+        vm.warp(block.timestamp + 294074);
+        vm.roll(block.number + 12438);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 5418771252620228949536055732255653316112381477551281524449612946015302006356);
+        
+        vm.warp(block.timestamp + 302768);
+        vm.roll(block.number + 37674);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 41953786779431582530076013105537731790953977374827785389561098364852797615819);
+        
+        vm.warp(block.timestamp + 416508);
+        vm.roll(block.number + 42595);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.name();
+        
+        vm.warp(block.timestamp + 267004);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 301922);
+        vm.roll(block.number + 51123);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000020000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 35671811020995693832999228223986410061023180734951183994915230647132208159106);
+        
+        vm.warp(block.timestamp + 134053);
+        vm.roll(block.number + 1671);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 483869);
+        vm.roll(block.number + 35068);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 352378);
+        vm.roll(block.number + 9871);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 344125);
+        vm.roll(block.number + 13869);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 224);
+        
+        vm.warp(block.timestamp + 91983);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 398780);
+        vm.roll(block.number + 31954);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 425356);
+        vm.roll(block.number + 2);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000, 11846513985070536008709018431464292322324522335174410759275944335648983762089);
+        
+        vm.warp(block.timestamp + 79243);
+        vm.roll(block.number + 43003);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 507380);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 220760);
+        vm.roll(block.number + 33684);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 37925);
+        vm.roll(block.number + 5711);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 253459);
+        vm.roll(block.number + 6721);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 435812);
+        vm.roll(block.number + 23332);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 376096);
+        vm.roll(block.number + 14724);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 21945);
+        vm.roll(block.number + 32);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 22048262305493138084436429818438605158135148834566139549274635480628493382042);
+        
+        vm.warp(block.timestamp + 416506);
+        vm.roll(block.number + 53932);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 78886470963853149158913133787900033447444430098170657647899768235647966462154);
+        
+        vm.warp(block.timestamp + 588997);
+        vm.roll(block.number + 52783);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 54761);
+        vm.roll(block.number + 31087);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 537896);
+        vm.roll(block.number + 50499);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 59574776382911420045199354537392004133972624190041432653573425049837967170833);
+        
+        vm.warp(block.timestamp + 315);
+        vm.roll(block.number + 60049);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 643);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 433439);
+        vm.roll(block.number + 41279);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 194754);
+        vm.roll(block.number + 58232);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 391962);
+        vm.roll(block.number + 28766);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 110446706187031502231675992087982403683836319040160596191209911954442780169321);
+        
+        vm.warp(block.timestamp + 818);
+        vm.roll(block.number + 52448);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000001fffffffE, 818);
+        
+        vm.warp(block.timestamp + 292673);
+        vm.roll(block.number + 22485);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000000000, 32354174169186014857989312575784420282631284712151239070926900263287364688074);
+        
+        vm.warp(block.timestamp + 342373);
+        vm.roll(block.number + 127);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 56096);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 469139);
+        vm.roll(block.number + 15115);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 407995);
+        vm.roll(block.number + 19933);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 444432);
+        vm.roll(block.number + 59033);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 238841);
+        vm.roll(block.number + 72);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 209624);
+        vm.roll(block.number + 15621);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 801);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 3012805312900316784776269121906757031467035936822710232775986455062624938695);
+        
+        vm.warp(block.timestamp + 19029);
+        vm.roll(block.number + 1510);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 66473);
+        vm.roll(block.number + 55);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 94088722957651179229690481355206014551257773249924453898611462848785763893057);
+    }
+    
+    
+    function test_auto_transfer_19() public { 
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 40973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 103385321919623746330297312737757037390411114435520409754369519107477570826270);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 77667592125178983395345493427701070172686997299765023);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 399911);
+        vm.roll(block.number + 1209);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 274472);
+        vm.roll(block.number + 48890);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 11182203263189993410030416436724776086359185229674309658816812825077412874485);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 77864349973417895018648209706682070705718209515337196443446235682829255030344);
+        
+        vm.warp(block.timestamp + 801);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 94794171253943738127881527465926490611929558543931068563680048741944637037298);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 134667);
+        vm.roll(block.number + 29373);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 358412);
+        vm.roll(block.number + 17390);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 580123);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 323311);
+        vm.roll(block.number + 3720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(108601013020396634989531964845047538704506246144101536384873071879291390199736);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 34960);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 64029703768955442199701618739493644221044773082812960474760489266827429031664);
+        
+        vm.warp(block.timestamp + 470115);
+        vm.roll(block.number + 31410);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 100919406718090464059956397165572637509733102605749800731889535719060982173939);
+        
+        vm.warp(block.timestamp + 352384);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 137166);
+        vm.roll(block.number + 11942);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 30042);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 33271);
+        vm.roll(block.number + 6266);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 71007);
+        vm.roll(block.number + 45592);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 484840);
+        vm.roll(block.number + 20306);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 49159);
+        vm.roll(block.number + 11905);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 1022);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 37891);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(79316869436397458934847172699311101955849151482331250275595523878188400286726);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(47434057093264542038796847449846500091623881359282391095698455206840265039163);
+        
+        vm.warp(block.timestamp + 416660);
+        vm.roll(block.number + 15367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x0000000000000000000000000000000000010000, 109728258829987988557465483201528115145932928527379168769582987062917189972153);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 36020);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 931);
+        vm.roll(block.number + 20134);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 230051336550);
+        
+        vm.warp(block.timestamp + 391962);
+        vm.roll(block.number + 48886);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 538434);
+        vm.roll(block.number + 53166);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 29971);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 24283080763692813086109584999461847521112911777105934443612899467682361369794);
+        
+        vm.warp(block.timestamp + 416506);
+        vm.roll(block.number + 19331);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decimals();
+        
+        vm.warp(block.timestamp + 352383);
+        vm.roll(block.number + 39409);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 433439);
+        vm.roll(block.number + 28455);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 538434);
+        vm.roll(block.number + 18716);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 100098604524247323212388127269256986953128943085037537190599070992324089064754);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 8367);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 19046981593218892003261398390027698542006486617467620072891437447620471727629);
+        
+        vm.warp(block.timestamp + 391886);
+        vm.roll(block.number + 9920);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 195580);
+        vm.roll(block.number + 44868);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 1589603449794535817189221134);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 53562);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 156190);
+        vm.roll(block.number + 34310);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 244818);
+        vm.roll(block.number + 4274);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+        
+        vm.warp(block.timestamp + 419861);
+        vm.roll(block.number + 46695);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(99410975284667263352670551800068167785784209639162449107822180937128815921482);
+        
+        vm.warp(block.timestamp + 520941);
+        vm.roll(block.number + 41463);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457583007913129639933);
+        
+        vm.warp(block.timestamp + 274982);
+        vm.roll(block.number + 4896);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 574793);
+        vm.roll(block.number + 46695);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 48891);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 286370);
+        vm.roll(block.number + 42424);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 2);
+        vm.roll(block.number + 16617);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 468093);
+        vm.roll(block.number + 23350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 258125);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 444463);
+        vm.roll(block.number + 365);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 1022);
+        vm.roll(block.number + 52792);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
+        
+        vm.warp(block.timestamp + 446420);
+        vm.roll(block.number + 20842);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 538434);
+        vm.roll(block.number + 48885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 186579);
+        vm.roll(block.number + 44803);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(29962044098809346489496917770114781091140936156552162901404928887236030697844);
+        
+        vm.warp(block.timestamp + 352382);
+        vm.roll(block.number + 16616);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 1023);
+        
+        vm.warp(block.timestamp + 280278);
+        vm.roll(block.number + 42262);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000020000, 46815275372131131682751460967634665102532432213519203172667069342574638510698);
+        
+        vm.warp(block.timestamp + 430648);
+        vm.roll(block.number + 30561);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 484840);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 31594);
+        vm.roll(block.number + 48885);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 490446);
+        vm.roll(block.number + 1363);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 323311);
+        vm.roll(block.number + 34439);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 440097);
+        vm.roll(block.number + 19527);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000000FFFFfFFF, 59915831939357037762231334089310659755339562411161606539176137597313172735817);
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 436727);
+        vm.roll(block.number + 11575);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 1984);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(103196675361858060244807687487121397221739897725622673674455016466647165199689);
+        
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 541);
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 60054);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 376937);
+        vm.roll(block.number + 32767);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 415353);
+        vm.roll(block.number + 48058);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 162642);
+        vm.roll(block.number + 52325);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 365754);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 572);
+        
+        vm.warp(block.timestamp + 111322);
+        vm.roll(block.number + 51973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 448433);
+        vm.roll(block.number + 4);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 401699);
+        vm.roll(block.number + 11349);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000010000, 59574776382911420045199354537392004133972624190041432653573425049837967170833);
+        
+        vm.warp(block.timestamp + 487520);
+        vm.roll(block.number + 36259);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(36641809242147770616854786306663684869892906938759673539530551687801914478811);
+        
+        vm.warp(block.timestamp + 63205);
+        vm.roll(block.number + 28455);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 67058);
+        vm.roll(block.number + 56435);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 117107);
+        vm.roll(block.number + 47774);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 20134);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 87353165730119576543754703735514832743540688535879071582071811424096056252004);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 45990);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 289103);
+        vm.roll(block.number + 30011);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(44945489382079685124211949821358853280250492283754765219315941583978621207686);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 48889);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 487078);
+        vm.roll(block.number + 27404);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+    }
+    
+    
+    function test_auto_reflect_20() public { 
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 40973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 103385321919623746330297312737757037390411114435520409754369519107477570826270);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 77667592125178983395345493427701070172686997299765023);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 399911);
+        vm.roll(block.number + 1209);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 274472);
+        vm.roll(block.number + 48890);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 11182203263189993410030416436724776086359185229674309658816812825077412874485);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 77864349973417895018648209706682070705718209515337196443446235682829255030344);
+        
+        vm.warp(block.timestamp + 801);
+        vm.roll(block.number + 18429);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 94794171253943738127881527465926490611929558543931068563680048741944637037298);
+        
+        vm.warp(block.timestamp + 198598);
+        vm.roll(block.number + 32737);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
+        
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 5054);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 134667);
+        vm.roll(block.number + 29373);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 358412);
+        vm.roll(block.number + 17390);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 580123);
+        vm.roll(block.number + 1123);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 323311);
+        vm.roll(block.number + 3720);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(108601013020396634989531964845047538704506246144101536384873071879291390199736);
+        
+        vm.warp(block.timestamp + 414736);
+        vm.roll(block.number + 34960);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 64029703768955442199701618739493644221044773082812960474760489266827429031664);
+        
+        vm.warp(block.timestamp + 470115);
+        vm.roll(block.number + 31410);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 100919406718090464059956397165572637509733102605749800731889535719060982173939);
+        
+        vm.warp(block.timestamp + 352384);
+        vm.roll(block.number + 23722);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 45944);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 104853304753598394294164138136328713070873837097275933009485715101799300342847);
+        
+        vm.warp(block.timestamp + 194149);
+        vm.roll(block.number + 20134);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 73040);
+        vm.roll(block.number + 17968);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 453216);
+        vm.roll(block.number + 50602);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 329502);
+        vm.roll(block.number + 553);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 174316);
+        vm.roll(block.number + 53736);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 22234665559250536800793130596231997393623983874189539584877155235259733267406);
+        
+        vm.warp(block.timestamp + 579216);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 23978);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 679);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 44575);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 26746896973925549464453231561356967028361530734061542191718632589989);
+        
+        vm.warp(block.timestamp + 519847);
+        vm.roll(block.number + 25744);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 16802);
+        vm.roll(block.number + 5237);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 117107);
+        vm.roll(block.number + 22909);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 574795);
+        vm.roll(block.number + 46139);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 2355795814114158183197722164532429043652576520054694262434935506950358580636);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 1088);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 75875);
+        vm.roll(block.number + 3720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 574796);
+        vm.roll(block.number + 5053);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 90809183261526435136815440267991561111439797328757632843927440367721938004918);
+        
+        vm.warp(block.timestamp + 125783);
+        vm.roll(block.number + 2512);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 1363);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 484840);
+        vm.roll(block.number + 5382);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 84513169154287391897506563348618586920840321206007003099209091454091370101695);
+        
+        vm.warp(block.timestamp + 63205);
+        vm.roll(block.number + 154);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 447588);
+        vm.roll(block.number + 36859);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(342014592924514);
+        
+        vm.warp(block.timestamp + 33605);
+        vm.roll(block.number + 42262);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 297507);
+        vm.roll(block.number + 638);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 580123);
+        vm.roll(block.number + 39149);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 417663);
+        vm.roll(block.number + 34279);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 154);
+        vm.roll(block.number + 60248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 29734912321471110732596942101230728755312941904611802017553640384629724804706);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 53678);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x0000000000000000000000000000000000000000, 113972645235128484304347102259915176262142256378014467604887673964501388520359);
+        
+        vm.warp(block.timestamp + 638);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 324655);
+        vm.roll(block.number + 37891);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 195580);
+        vm.roll(block.number + 31232);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 82671);
+        vm.roll(block.number + 21491);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x00000000000000000000000000000002fFffFffD, 57075392961738803830931030793692397154175270381567684675469020350665924021753);
+        
+        vm.warp(block.timestamp + 274818);
+        vm.roll(block.number + 26244);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 303345);
+        vm.roll(block.number + 3720);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 574793);
+        vm.roll(block.number + 19331);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 571763);
+        vm.roll(block.number + 30256);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 576385);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 574795);
+        vm.roll(block.number + 54465);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 66543);
+        vm.roll(block.number + 12338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.isExcluded(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 70);
+        vm.roll(block.number + 52325);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 52528720046564653315364939274656905362046394309746319491939466875793339031343);
+        
+        vm.warp(block.timestamp + 255);
+        vm.roll(block.number + 40556);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 46937);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000010000, 30033558256103776999291750674890422048976370209397514860635596896436628486662);
+        
+        vm.warp(block.timestamp + 294074);
+        vm.roll(block.number + 22686);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 87353165730119576543754703735514832743540688535879071582071811424096056252004);
+        
+        vm.warp(block.timestamp + 801);
+        vm.roll(block.number + 638);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 446423);
+        vm.roll(block.number + 9966);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 94794171253943738127881527465926490611929558543931068563680048741944637037298);
+        
+        vm.warp(block.timestamp + 274982);
+        vm.roll(block.number + 15369);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000030000, 98789710583353796457896869706659978580294442981962388947093938071869074351239);
+        
+        vm.warp(block.timestamp + 574797);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 136394);
+        vm.roll(block.number + 38350);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, 45823402789949764270680518258001540605149799047215635139058575419849275150007);
+        
+        vm.warp(block.timestamp + 414579);
+        vm.roll(block.number + 43239);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 448433);
+        vm.roll(block.number + 31410);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 29071662168373870377441396899978678242021340440624251478019983522787708415034);
+        
+        vm.warp(block.timestamp + 206186);
+        vm.roll(block.number + 32147);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 446423);
+        vm.roll(block.number + 35315);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x0000000000000000000000000000000000020000);
+        
+        vm.warp(block.timestamp + 518351);
+        vm.roll(block.number + 36911);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 332369);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 10848263245915928396582298359595245296125557208292771402399055228509616604567);
+        
+        vm.warp(block.timestamp + 274982);
+        vm.roll(block.number + 24311);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 2248020512719603813049);
+        
+        vm.warp(block.timestamp + 358469);
+        vm.roll(block.number + 51996);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 24867);
+        vm.roll(block.number + 15368);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 379411);
+        vm.roll(block.number + 255);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 420078);
+        vm.roll(block.number + 42262);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 484803);
+        vm.roll(block.number + 5382);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 328866);
+        vm.roll(block.number + 34960);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 21708910663123760465018884081257745957290222594500477032489996762685057356872);
+        
+        vm.warp(block.timestamp + 274472);
+        vm.roll(block.number + 42101);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 38059);
+        vm.roll(block.number + 5959);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 1);
+        vm.roll(block.number + 800);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 4524766941010197830147570492591656240136881970222600766909060715856873158772);
+        
+        vm.warp(block.timestamp + 574795);
+        vm.roll(block.number + 247);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(1822792163073531280679538076435795612631);
+        
+        vm.warp(block.timestamp + 351050);
+        vm.roll(block.number + 35248);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x0000000000000000000000000000000000030000, 93847555657203844693783724804773898862736137031282633650695118783218607889660);
+        
+        vm.warp(block.timestamp + 576619);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 62250070739979975618141953949699512483798201372935487114918896440918912563790);
+        
+        vm.warp(block.timestamp + 217429);
+        vm.roll(block.number + 19511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000000FFFFfFFF, 587);
+        
+        vm.warp(block.timestamp + 225906);
+        vm.roll(block.number + 38392);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 172101);
+        vm.roll(block.number + 45944);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 280278);
+        vm.roll(block.number + 53658);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 101092145497104408284279303860315236291333062836227163015402683767819440304513);
+        
+        vm.warp(block.timestamp + 283959);
+        vm.roll(block.number + 47774);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(42214235572809108269509315524498666963086646380503418377889258148830891327399);
+    }
+    
+    
+    function test_auto_includeAccount_21() public { 
+        
+        vm.warp(block.timestamp + 141452);
+        vm.roll(block.number + 2497);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 511822);
+        vm.roll(block.number + 16614);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 82672);
+        vm.roll(block.number + 43175);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15927);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 322247);
+        vm.roll(block.number + 8447);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136393);
+        vm.roll(block.number + 40973);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 103385321919623746330297312737757037390411114435520409754369519107477570826270);
+        
+        vm.warp(block.timestamp + 382757);
+        vm.roll(block.number + 3);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000002fFffFffD, 77667592125178983395345493427701070172686997299765023);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 19973);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 322372);
+        vm.roll(block.number + 24987);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 463587);
+        vm.roll(block.number + 23885);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 490448);
+        vm.roll(block.number + 20243);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 399911);
+        vm.roll(block.number + 1209);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 209930);
+        vm.roll(block.number + 30784);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 117472);
+        vm.roll(block.number + 6234);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 332797);
+        vm.roll(block.number + 2511);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 292304);
+        vm.roll(block.number + 16617);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 7323);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(61881311997183354197561618358956991789862761355595455676258670747463257356639);
+        
+        vm.warp(block.timestamp + 49884);
+        vm.roll(block.number + 45261);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 526194);
+        vm.roll(block.number + 5021);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 390247);
+        vm.roll(block.number + 48887);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 322373);
+        vm.roll(block.number + 4462);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 154);
+        vm.roll(block.number + 7807);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 407328);
+        vm.roll(block.number + 16089);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 4);
+        vm.roll(block.number + 5020);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 520941);
+        vm.roll(block.number + 5019);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 47396814276184521727718112476349317586630310198990113971228017815512379366239);
+        
+        vm.warp(block.timestamp + 115085);
+        vm.roll(block.number + 58783);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.excludeAccount(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 344203);
+        vm.roll(block.number + 38100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 574793);
+        vm.roll(block.number + 12155);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 521319);
+        vm.roll(block.number + 34720);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 84513169154287391897506563348618586920840321206007003099209091454091370101695);
+        
+        vm.warp(block.timestamp + 322371);
+        vm.roll(block.number + 15600);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 434894);
+        vm.roll(block.number + 56416);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 56193);
+        vm.roll(block.number + 35820);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 453216);
+        vm.roll(block.number + 365);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 11182203263189993410030416436724776086359185229674309658816812825077412874485);
+        
+        vm.warp(block.timestamp + 7155);
+        vm.roll(block.number + 55538);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 100835);
+        vm.roll(block.number + 1);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 260254);
+        vm.roll(block.number + 154);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000020000, 48615452123172826924763284714276455326204029489535403071824771909061660175084);
+        
+        vm.warp(block.timestamp + 294074);
+        vm.roll(block.number + 59552);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 66473);
+        vm.roll(block.number + 37873);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457583007913129639935);
+        
+        vm.warp(block.timestamp + 570511);
+        vm.roll(block.number + 59033);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 391962);
+        vm.roll(block.number + 52545);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 0);
+        
+        vm.warp(block.timestamp + 522178);
+        vm.roll(block.number + 27972);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 218011);
+        vm.roll(block.number + 2572);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 1671);
+        vm.roll(block.number + 37891);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 189821);
+        vm.roll(block.number + 20221);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 38701);
+        vm.roll(block.number + 23260);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 241121);
+        vm.roll(block.number + 14845);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 527271);
+        vm.roll(block.number + 8821);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000002fFffFffD, 113846743703149703328877702390196085887312040488202066890979023142436022813695);
+        
+        vm.warp(block.timestamp + 585250);
+        vm.roll(block.number + 13397);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 507448);
+        vm.roll(block.number + 45340);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 423112);
+        vm.roll(block.number + 57004);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 61457);
+        vm.roll(block.number + 17356);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x0000000000000000000000000000000000030000);
+        
+        vm.warp(block.timestamp + 583590);
+        vm.roll(block.number + 42100);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x0000000000000000000000000000000000030000, 48572849448630547122933179931223935704178692549987205610040492804774128609121);
+        
+        vm.warp(block.timestamp + 472978);
+        vm.roll(block.number + 52671);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 245081);
+        vm.roll(block.number + 26035);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 333416);
+        vm.roll(block.number + 981);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflectionFromToken(638, true);
+        
+        vm.warp(block.timestamp + 347376);
+        vm.roll(block.number + 14203);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 68158277538860982010705461722145112025494863844636410614840273434110347205298);
+        
+        vm.warp(block.timestamp + 317465);
+        vm.roll(block.number + 19903);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 225649);
+        vm.roll(block.number + 31101);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 385379);
+        vm.roll(block.number + 49537);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 417810);
+        vm.roll(block.number + 6386);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 349390);
+        vm.roll(block.number + 54937);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 5156450175822527849301399272643786383626588450637013198256170690700660004315);
+        
+        vm.warp(block.timestamp + 370914);
+        vm.roll(block.number + 32219);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000002fFffFffD, 55114020371609305109600166200181608235895209562964170316429058664931472000396);
+        
+        vm.warp(block.timestamp + 322262);
+        vm.roll(block.number + 5);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transfer(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
+        
+        vm.warp(block.timestamp + 346);
+        vm.roll(block.number + 33617);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 629);
+        vm.roll(block.number + 54583);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(103314428514337020722461744825102304189286080195432876777077876629523799526319);
+        
+        vm.warp(block.timestamp + 581451);
+        vm.roll(block.number + 55082);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 136257);
+        vm.roll(block.number + 689);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.approve(0x0000000000000000000000000000000000030000, 5370108908680259620652718588198615961109200945826815347543246106264043262861);
+        
+        vm.warp(block.timestamp + 3507);
+        vm.roll(block.number + 49389);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.excludeAccount(0x0000000000000000000000000000000000010000);
+        
+        vm.warp(block.timestamp + 468449);
+        vm.roll(block.number + 18677);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x0000000000000000000000000000000000000000);
+        
+        vm.warp(block.timestamp + 382608);
+        vm.roll(block.number + 53338);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 209913);
+        vm.roll(block.number + 685);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 102133);
+        vm.roll(block.number + 48431);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 111902);
+        vm.roll(block.number + 57086);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 395646962211784705038766151414647479142410404420691422059405168900106746567);
+        
+        vm.warp(block.timestamp + 111899);
+        vm.roll(block.number + 35565);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 503575);
+        vm.roll(block.number + 38456);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 211872);
+        vm.roll(block.number + 48097);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(414);
+        
+        vm.warp(block.timestamp + 32064);
+        vm.roll(block.number + 5525);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.reflect(5528109851511302217129434333805157515475000858499700695);
+        
+        vm.warp(block.timestamp + 378280);
+        vm.roll(block.number + 35702);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(91306326442857908398601289118867070996691763407881722761986356460928885198176);
+        
+        vm.warp(block.timestamp + 97647);
+        vm.roll(block.number + 52209);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 354164);
+        vm.roll(block.number + 3884);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 338794);
+        vm.roll(block.number + 48462);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transfer(0x00000000000000000000000000000001fffffffE, 64345825369337013537433204731252107358797671992310106298345560618903525513628);
+        
+        vm.warp(block.timestamp + 597920);
+        vm.roll(block.number + 35657);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.fun2();
+        
+        vm.warp(block.timestamp + 562541);
+        vm.roll(block.number + 825);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.decreaseAllowance(0x00000000000000000000000000000000FFFFfFFF, 22440521345201036345174722478634366718281947526814237345290834461747603134020);
+        
+        vm.warp(block.timestamp + 189524);
+        vm.roll(block.number + 49027);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, 5472333964409726155956286328302729278763867092416262317308903769649492572207);
+        
+        vm.warp(block.timestamp + 251186);
+        vm.roll(block.number + 22510);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 303577);
+        vm.roll(block.number + 43693);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.reflect(95794790942562751001127676632831025487363444418579932376857740556353989072882);
+        
+        vm.warp(block.timestamp + 369601);
+        vm.roll(block.number + 16136);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.includeAccount(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 182942);
+        vm.roll(block.number + 23350);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 381666);
+        vm.roll(block.number + 47689);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.decreaseAllowance(0x00000000000000000000000000000001fffffffE, 56194105740032945617349882103750140358817220666550913840644610661249980827060);
+        
+        vm.warp(block.timestamp + 284141);
+        vm.roll(block.number + 20120);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(999999999999997);
+        
+        vm.warp(block.timestamp + 174389);
+        vm.roll(block.number + 13662);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.increaseAllowance(0x00000000000000000000000000000001fffffffE, 84453681936156060186503396803514818543312304950044320161261909603838070221526);
+        
+        vm.warp(block.timestamp + 547672);
+        vm.roll(block.number + 44581);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
+        
+        vm.warp(block.timestamp + 272978);
+        vm.roll(block.number + 22387);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+        
+        vm.warp(block.timestamp + 373496);
+        vm.roll(block.number + 3308);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 589727);
+        vm.roll(block.number + 1055);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.reflect(104919657372694796722045361234353549712834249133908551069885672707675981088687);
+        
+        vm.warp(block.timestamp + 349390);
+        vm.roll(block.number + 19194);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
+        
+        vm.warp(block.timestamp + 363024);
+        vm.roll(block.number + 27077);
+        vm.prank(0x0000000000000000000000000000000000030000);
+        target.fun1();
+        
+        vm.warp(block.timestamp + 452601);
+        vm.roll(block.number + 35957);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, 81102443055591014624658941224021680217754282272015454936425180162899156696625);
+        
+        vm.warp(block.timestamp + 44077);
+        vm.roll(block.number + 16226);
+        vm.prank(0x0000000000000000000000000000000000020000);
+        target.renounceOwnership();
+        
+        vm.warp(block.timestamp + 579450);
+        vm.roll(block.number + 23676);
+        vm.prank(0x0000000000000000000000000000000000010000);
+        target.includeAccount(0x00000000000000000000000000000001fffffffE);
+    }
+    
+}
+
+    

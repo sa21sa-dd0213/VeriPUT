@@ -1,0 +1,6206 @@
+{
+  "dataset": "Patch",
+  "rows": [
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_022_CVE_2018_19833",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_002_Templedao",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 2.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.4,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_021_CVE_2018_19832",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_032_CVE_2021_39167",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 2.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.5,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "acfix_016_CVE_2018_10705",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_033_CVE_2021_39168",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 2.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.9,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_026_CVE_2019_15080",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.5,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_015_CVE_2018_10666",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 639.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.1999999999999,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_030_CVE_2021_34272",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 639.1999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.3,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_031_CVE_2021_34273",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 639.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.6,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_077_L1Block",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.0999999999999,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "acfix_088_EmergencyOracleFactory",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.0999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.1999999999999,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "acfix_3_5_016_CVE_2018_10705",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 639.1999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.6999999999999,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_3_5_015_CVE_2018_10666",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 639.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 642.6,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_3_5_076_RoundFactory",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 642.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 641.6,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_3_5_077_L1Block",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 641.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.7,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_3_5_101_ANCHToken",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.6,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_fixlink_MStableYieldSource",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_llama3_002_Templedao",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 2.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.8,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_fixlink_DnGmxBatchingManager",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.6999999999999,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "acfix_3_5_088_EmergencyOracleFactory",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.6999999999999,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_fixlink_DepositLog",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 639.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_llama3_022_CVE_2018_19833",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_real_BaseEscalationManager",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_real_FlashGovernanceArbiter",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.6,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "ct_20_Pool_sol_Synth_sol_Failing_Max_Value_Al",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 2.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 658.8000000000001,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_fixlink_Product",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 658.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 658.9000000000001,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_fixlink_Product2",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 658.9000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 14.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_001_Multicall",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 14.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_009_PrivatePool",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.6,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_018_PrivatePool",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_032_PuttyV2",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_033_PrivatePool",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 3.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_046_CVXStaker",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_048_PrivatePool",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 2.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 649.0,
+      "raw": 40,
+      "status": "ok",
+      "subject_id": "acfix_llama3_017_CVE_2018_11329",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 649.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_051_LiquidityPool",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 2.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_058_PuttyV2",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 641.5,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_llama3_024_CVE_2019_15078",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 641.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 648.4,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "pop_020_GSPFunding",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 648.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_077_GameItems",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 3.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.7,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_077_MergingPool",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 644.0,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "pop_042_VaultAdapter",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 644.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 647.2,
+      "raw": 29,
+      "status": "ok",
+      "subject_id": "ct_5_Proposals_can_be_cancelled",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 647.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 644.9,
+      "raw": 19,
+      "status": "ok",
+      "subject_id": "pop_049_Cooler",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 644.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__SmartFix__phishable",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__TIPS__phishable",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__sGuardPlus__phishable",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__sGuard__phishable",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 645.3,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "pop_066_LRTDepositPool",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 645.3
+    },
+    {
+      "budget_excluded": true,
+      "generation_wall_s": 666.1999999999999,
+      "raw": 0,
+      "status": "budget-excluded",
+      "subject_id": "pop_070_PhiNFT1155",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 666.1999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.9,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__SolGPT__mycontract_2round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.9000000000001,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__SolGPT__mycontract_3round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.9000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 641.5,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__sGuard__mycontract",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 641.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_1round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_2round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_3round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.8000000000001,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__proxy__SolGPT__proxy_4round",
+      "trial": 1,
+      "valid": 2,
+      "wall_total_s": 640.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.6,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__simple_suicide__SmartFix__simple_suicide",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 641.7,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__simple_suicide__sGuardPlus__simple_suicide",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 641.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 642.0,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_access_control__wallet_02_refund_nosub__SmartFix__wallet_02_refund_nosub",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 642.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.9,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "rc_access_control__wallet_02_refund_nosub__SolGPT__wallet_02_refund_nosub_2round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 639.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 642.0,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__modifier_reentrancy__SmartFix__modifier_reentrancy",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 642.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.8000000000001,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_bonus__SmartFix__reentrancy_bonus",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 639.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 641.6999999999999,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_1round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 641.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.8000000000001,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_4round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.9,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__sGuardPlus__reentrancy_dao",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.0,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_simple__SmartFix__reentrancy_simple",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 639.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 641.6,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_simple__sGuard__reentrancy_simple",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 641.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.3000000000001,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_1round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 639.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.8000000000001,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_2round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_unchecked_low_level_calls__address_00020__SolGPT__address_00020_3round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 637.2,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_3round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 637.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.4,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_1round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 637.1,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_2round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 637.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.3000000000001,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_3round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 639.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 637.4000000000001,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_4round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 637.4000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 637.8,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00034__SolGPT__address_00034_3round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 637.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.7,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_unchecked_low_level_calls__address_00397__TIPS__address_00397U2",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.1,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00038__SolGPT__address_00038_2round",
+      "trial": 1,
+      "valid": 2,
+      "wall_total_s": 638.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.8,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00038__SolGPT__address_00038_3round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.8,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_1round",
+      "trial": 1,
+      "valid": 1,
+      "wall_total_s": 638.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.6,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00031__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.0,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_2round",
+      "trial": 1,
+      "valid": 2,
+      "wall_total_s": 639.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 637.0,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_3round",
+      "trial": 1,
+      "valid": 2,
+      "wall_total_s": 637.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.0,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00402__SolGPT__address_00402_1round",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 639.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00396__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00396__sGuard",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00399__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00399__sGuard",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.8000000000001,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00412__sGuardPlus__address_00412",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.4,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00419__TIPS__address_00419U1",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.1,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00059__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00411__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.0,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00152__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.5,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00202__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00421__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00421__sGuard",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 1.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.4,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00400__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.4,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00400__sGuard",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.0,
+      "raw": 13,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00407__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.5,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00413__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.0,
+      "raw": 13,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00413__sGuard",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 639.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.6,
+      "raw": 12,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00037__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 637.4,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 637.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.3,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__TIPS",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.3000000000001,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__sGuard",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.0999999999999,
+      "raw": 12,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00224__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.0999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.8,
+      "raw": 15,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.6,
+      "raw": 16,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__TIPS",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.9000000000001,
+      "raw": 16,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__sGuard",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.9000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 636.1,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00403__TIPS",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 636.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 640.7,
+      "raw": 15,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__sGuardPlus",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 640.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 637.5,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00403__sGuard",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 637.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.2,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__SmartFix",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 639.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 639.1,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__TIPS",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 639.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 638.2,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__sGuard",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 638.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 634.9,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__sGuardPlus",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 634.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.6,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "reprod_DCFToken",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 2.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 635.1,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00415__sGuard",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 635.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 634.9000000000001,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00415__TIPS",
+      "trial": 1,
+      "valid": 2,
+      "wall_total_s": 634.9000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 634.7,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__TIPS",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 634.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 635.0,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuard",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 635.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 634.9,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuardPlus",
+      "trial": 1,
+      "valid": 0,
+      "wall_total_s": 634.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_022_CVE_2018_19833",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.6,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_032_CVE_2021_39167",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.7,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_033_CVE_2021_39168",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_002_Templedao",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_llama3_002_Templedao",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_fixlink_MStableYieldSource",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_3_5_101_ANCHToken",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_llama3_022_CVE_2018_19833",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_real_BaseEscalationManager",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.7,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_real_FlashGovernanceArbiter",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "ct_20_Pool_sol_Synth_sol_Failing_Max_Value_Al",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 3.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_009_PrivatePool",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 3.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.7,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_018_PrivatePool",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 2.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_032_PuttyV2",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_033_PrivatePool",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 2.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_046_CVXStaker",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 2.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_048_PrivatePool",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 2.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 19.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_001_Multicall",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 19.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_051_LiquidityPool",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 2.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_058_PuttyV2",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.9,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_fixlink_DnGmxBatchingManager",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 594.0,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_021_CVE_2018_19832",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 594.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 592.5999999999999,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_077_L1Block",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 592.5999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.3000000000001,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_fixlink_DepositLog",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.5,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_llama3_024_CVE_2019_15078",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.7,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_077_MergingPool",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 594.1999999999999,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_3_5_077_L1Block",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 594.1999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 594.5,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_3_5_076_RoundFactory",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 594.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_077_GameItems",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 2.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__SmartFix__phishable",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 0.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__TIPS__phishable",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.0999999999999,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "acfix_030_CVE_2021_34272",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.0999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.3,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "acfix_031_CVE_2021_34273",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.2,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_026_CVE_2019_15080",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__sGuardPlus__phishable",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.2,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_016_CVE_2018_10705",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.5999999999999,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "acfix_088_EmergencyOracleFactory",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.5999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.2,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_3_5_016_CVE_2018_10705",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__sGuard__phishable",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.4,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_015_CVE_2018_10666",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.6,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_3_5_015_CVE_2018_10666",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.7,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "acfix_3_5_088_EmergencyOracleFactory",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_1round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_3round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_2round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 601.7,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "pop_020_GSPFunding",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 601.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 615.8,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_fixlink_Product2",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 615.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 616.4,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_fixlink_Product",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 616.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 597.7,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "pop_042_VaultAdapter",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 597.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 595.8,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "pop_066_LRTDepositPool",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 595.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 597.5,
+      "raw": 18,
+      "status": "ok",
+      "subject_id": "pop_049_Cooler",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 597.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 597.3000000000001,
+      "raw": 31,
+      "status": "ok",
+      "subject_id": "ct_5_Proposals_can_be_cancelled",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 597.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 597.3000000000001,
+      "raw": 35,
+      "status": "ok",
+      "subject_id": "acfix_llama3_017_CVE_2018_11329",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 597.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_unchecked_low_level_calls__address_00020__SolGPT__address_00020_3round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.1,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__SolGPT__mycontract_2round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.3,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__SolGPT__mycontract_3round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.0,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_access_control__simple_suicide__sGuardPlus__simple_suicide",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.5,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__sGuard__mycontract",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.3000000000001,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__proxy__SolGPT__proxy_4round",
+      "trial": 2,
+      "valid": 2,
+      "wall_total_s": 593.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.4,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_access_control__simple_suicide__SmartFix__simple_suicide",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.1,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_1round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.1,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_4round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.5,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_bonus__SmartFix__reentrancy_bonus",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.3000000000001,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__sGuardPlus__reentrancy_dao",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_unchecked_low_level_calls__address_00397__TIPS__address_00397U2",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.3,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__modifier_reentrancy__SmartFix__modifier_reentrancy",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.4,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_simple__SmartFix__reentrancy_simple",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00031__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.9,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_access_control__wallet_02_refund_nosub__SmartFix__wallet_02_refund_nosub",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.6,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "rc_access_control__wallet_02_refund_nosub__SolGPT__wallet_02_refund_nosub_2round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.9,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_simple__sGuard__reentrancy_simple",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00396__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00396__sGuard",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00399__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.7,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00399__sGuard",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00411__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 594.9,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_1round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 594.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 617.6999999999999,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "pop_070_PhiNFT1155",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 617.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00421__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00421__sGuard",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 594.5,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_1round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 594.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 594.8000000000001,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_2round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 594.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 594.7,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_3round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 594.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 594.8,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_2round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 594.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 595.0,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_3round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 595.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 595.7,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_4round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 595.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 596.6,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00034__SolGPT__address_00034_3round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 596.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 599.5999999999999,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00412__sGuardPlus__address_00412",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 599.5999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 599.5,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_2round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 599.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 599.6,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_1round",
+      "trial": 2,
+      "valid": 1,
+      "wall_total_s": 599.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 600.0,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00038__SolGPT__address_00038_2round",
+      "trial": 2,
+      "valid": 2,
+      "wall_total_s": 600.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 599.6999999999999,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00038__SolGPT__address_00038_3round",
+      "trial": 2,
+      "valid": 2,
+      "wall_total_s": 599.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 599.3000000000001,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_3round",
+      "trial": 2,
+      "valid": 2,
+      "wall_total_s": 599.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 600.3000000000001,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00059__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 600.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 600.8000000000001,
+      "raw": 12,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00152__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 600.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 600.6,
+      "raw": 12,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00202__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 600.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 601.0,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00400__sGuard",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 601.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 600.8000000000001,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00407__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 600.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 599.9,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00402__SolGPT__address_00402_1round",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 599.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 601.1999999999999,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00400__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 601.1999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 600.8000000000001,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00413__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 600.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "reprod_DCFToken",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 3.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 599.8,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00419__TIPS__address_00419U1",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 599.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 601.1,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00037__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 601.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 601.1999999999999,
+      "raw": 13,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00413__sGuard",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 601.1999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 600.5,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 600.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 600.1999999999999,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__TIPS",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 600.1999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 600.3,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__sGuard",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 600.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 599.6999999999999,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00224__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 599.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 599.9000000000001,
+      "raw": 13,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 599.9000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 599.7,
+      "raw": 15,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__TIPS",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 599.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 598.0,
+      "raw": 14,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__sGuard",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 598.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.4,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00403__sGuard",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.8,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__SmartFix",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 594.0,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__TIPS",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 594.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.3,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00403__TIPS",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.4,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__TIPS",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 594.8,
+      "raw": 14,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__sGuardPlus",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 594.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.5,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00415__TIPS",
+      "trial": 2,
+      "valid": 1,
+      "wall_total_s": 593.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 594.5,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__sGuard",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 594.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.6999999999999,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuard",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 594.2,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__sGuardPlus",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 594.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.5,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00415__sGuard",
+      "trial": 2,
+      "valid": 2,
+      "wall_total_s": 593.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 593.5999999999999,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuardPlus",
+      "trial": 2,
+      "valid": 0,
+      "wall_total_s": 593.5999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_022_CVE_2018_19833",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_3_5_101_ANCHToken",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_002_Templedao",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_llama3_002_Templedao",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.6,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_033_CVE_2021_39168",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.6,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_fixlink_MStableYieldSource",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_032_CVE_2021_39167",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_real_BaseEscalationManager",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.7,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_llama3_022_CVE_2018_19833",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_real_FlashGovernanceArbiter",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 2.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "ct_20_Pool_sol_Synth_sol_Failing_Max_Value_Al",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 3.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_009_PrivatePool",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 2.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_018_PrivatePool",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 2.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_032_PuttyV2",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_033_PrivatePool",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 2.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_046_CVXStaker",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.7,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_048_PrivatePool",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 17.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_001_Multicall",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 17.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.7,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_051_LiquidityPool",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_058_PuttyV2",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 112.0,
+      "raw": 16,
+      "status": "ok",
+      "subject_id": "pop_049_Cooler",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 112.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 586.7,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_fixlink_DnGmxBatchingManager",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 586.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.5,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_077_L1Block",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.9,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_fixlink_DepositLog",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.6,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_077_MergingPool",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 588.6,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_021_CVE_2018_19832",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 588.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 586.9,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_3_5_076_RoundFactory",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 586.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 587.0,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_3_5_077_L1Block",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 587.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_077_GameItems",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 2.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.6999999999999,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "acfix_030_CVE_2021_34272",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__SmartFix__phishable",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 0.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__TIPS__phishable",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 0.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__sGuardPlus__phishable",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 0.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 589.0,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_llama3_024_CVE_2019_15078",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 589.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.9,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_015_CVE_2018_10666",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.8,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_031_CVE_2021_34273",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__sGuard__phishable",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.6999999999999,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_016_CVE_2018_10705",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.9,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_3_5_016_CVE_2018_10705",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 586.1,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "acfix_088_EmergencyOracleFactory",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 586.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 586.0,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "acfix_3_5_088_EmergencyOracleFactory",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 586.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 586.2,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_026_CVE_2019_15080",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 586.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 586.4,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_3_5_015_CVE_2018_10666",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 586.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_1round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 0.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_2round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 0.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_3round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 0.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.5,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "pop_020_GSPFunding",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 591.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 606.0999999999999,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_fixlink_Product2",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 606.0999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 606.7,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_fixlink_Product",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 606.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 588.2,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "pop_042_VaultAdapter",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 588.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 588.5999999999999,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "pop_066_LRTDepositPool",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 588.5999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 588.8,
+      "raw": 26,
+      "status": "ok",
+      "subject_id": "ct_5_Proposals_can_be_cancelled",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 588.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 606.4000000000001,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "pop_070_PhiNFT1155",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 606.4000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_unchecked_low_level_calls__address_00020__SolGPT__address_00020_3round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 589.8000000000001,
+      "raw": 36,
+      "status": "ok",
+      "subject_id": "acfix_llama3_017_CVE_2018_11329",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 589.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.6,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__SolGPT__mycontract_2round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.4,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__SolGPT__mycontract_3round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.3000000000001,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__simple_suicide__SmartFix__simple_suicide",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.3,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__simple_suicide__sGuardPlus__simple_suicide",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.3,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_bonus__SmartFix__reentrancy_bonus",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.4,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__proxy__SolGPT__proxy_4round",
+      "trial": 3,
+      "valid": 2,
+      "wall_total_s": 584.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.7,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__sGuard__mycontract",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.2,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__sGuardPlus__reentrancy_dao",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.1,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_1round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.5,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_4round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.1999999999999,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__modifier_reentrancy__SmartFix__modifier_reentrancy",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.1999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_unchecked_low_level_calls__address_00397__TIPS__address_00397U2",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.6,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_access_control__wallet_02_refund_nosub__SolGPT__wallet_02_refund_nosub_2round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00031__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.6,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "rc_access_control__wallet_02_refund_nosub__SmartFix__wallet_02_refund_nosub",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.6999999999999,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_1round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.5,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_simple__SmartFix__reentrancy_simple",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00396__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00396__sGuard",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.7,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_simple__sGuard__reentrancy_simple",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00399__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.6,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00399__sGuard",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00411__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00421__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 0.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00421__sGuard",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 1.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 586.8000000000001,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_2round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 586.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.6,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_1round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.9,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_2round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.2,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_3round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.9,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_3round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.5,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_4round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.5,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00034__SolGPT__address_00034_3round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.5,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00038__SolGPT__address_00038_2round",
+      "trial": 3,
+      "valid": 2,
+      "wall_total_s": 584.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 583.8,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00412__sGuardPlus__address_00412",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 583.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 583.9,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_2round",
+      "trial": 3,
+      "valid": 1,
+      "wall_total_s": 583.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.2,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00038__SolGPT__address_00038_3round",
+      "trial": 3,
+      "valid": 2,
+      "wall_total_s": 584.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 583.6,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_1round",
+      "trial": 3,
+      "valid": 2,
+      "wall_total_s": 583.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.0,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_3round",
+      "trial": 3,
+      "valid": 2,
+      "wall_total_s": 584.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 583.9,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00402__SolGPT__address_00402_1round",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 583.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.5,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00152__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.1,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00400__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.9,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00413__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.9,
+      "raw": 13,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00059__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.3,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00413__sGuard",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.8,
+      "raw": 14,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00202__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.3,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00407__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.1,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00400__sGuard",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "reprod_DCFToken",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 2.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.9,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00037__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.0,
+      "raw": 12,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00224__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 583.8,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00419__TIPS__address_00419U1",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 583.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.9,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.7,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__TIPS",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 584.7,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__sGuard",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 584.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 586.1,
+      "raw": 14,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 586.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.8,
+      "raw": 15,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__TIPS",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.0,
+      "raw": 16,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__sGuard",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 585.0,
+      "raw": 17,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__sGuardPlus",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 585.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 583.3000000000001,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00403__sGuard",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 583.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 583.4,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00403__TIPS",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 583.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 583.8,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__TIPS",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 583.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 583.8,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__sGuard",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 583.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 583.8,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__SmartFix",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 583.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 583.1,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuard",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 583.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 583.3000000000001,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__TIPS",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 583.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 582.8000000000001,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuardPlus",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 582.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 583.6999999999999,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__sGuardPlus",
+      "trial": 3,
+      "valid": 0,
+      "wall_total_s": 583.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 583.7,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00415__TIPS",
+      "trial": 3,
+      "valid": 2,
+      "wall_total_s": 583.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 583.5,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00415__sGuard",
+      "trial": 3,
+      "valid": 2,
+      "wall_total_s": 583.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_022_CVE_2018_19833",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_032_CVE_2021_39167",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_llama3_002_Templedao",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_fixlink_MStableYieldSource",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.6,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_033_CVE_2021_39168",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.7,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_002_Templedao",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.7,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_3_5_101_ANCHToken",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_llama3_022_CVE_2018_19833",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_real_BaseEscalationManager",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_real_FlashGovernanceArbiter",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 2.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "ct_20_Pool_sol_Synth_sol_Failing_Max_Value_Al",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 3.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_009_PrivatePool",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 3.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_018_PrivatePool",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 2.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_032_PuttyV2",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_033_PrivatePool",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 2.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_046_CVXStaker",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 2.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_048_PrivatePool",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 2.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 18.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_001_Multicall",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 18.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_051_LiquidityPool",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 2.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_058_PuttyV2",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.8,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_021_CVE_2018_19832",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 592.1,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_fixlink_DnGmxBatchingManager",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 592.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.9000000000001,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_077_L1Block",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.9000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.2,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_llama3_024_CVE_2019_15078",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.6,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_fixlink_DepositLog",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_077_MergingPool",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 592.3,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_3_5_077_L1Block",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 592.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 592.6999999999999,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_3_5_076_RoundFactory",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 592.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.7,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_077_GameItems",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 2.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__SmartFix__phishable",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__TIPS__phishable",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__sGuardPlus__phishable",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.4,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_015_CVE_2018_10666",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.4,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_030_CVE_2021_34272",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.6,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "acfix_3_5_015_CVE_2018_10666",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.3,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_3_5_016_CVE_2018_10705",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.4,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_016_CVE_2018_10705",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.6,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_031_CVE_2021_34273",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.6,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_026_CVE_2019_15080",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__sGuard__phishable",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.8000000000001,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "acfix_088_EmergencyOracleFactory",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.9,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "acfix_3_5_088_EmergencyOracleFactory",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_1round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_2round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_3round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 599.0,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "pop_020_GSPFunding",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 599.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 612.7,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_fixlink_Product2",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 612.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 613.0,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_fixlink_Product",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 613.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 595.7,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "pop_042_VaultAdapter",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 595.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 595.4,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "pop_066_LRTDepositPool",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 595.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 596.2,
+      "raw": 18,
+      "status": "ok",
+      "subject_id": "pop_049_Cooler",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 596.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 596.4000000000001,
+      "raw": 28,
+      "status": "ok",
+      "subject_id": "ct_5_Proposals_can_be_cancelled",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 596.4000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 596.5,
+      "raw": 37,
+      "status": "ok",
+      "subject_id": "acfix_llama3_017_CVE_2018_11329",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 596.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_unchecked_low_level_calls__address_00020__SolGPT__address_00020_3round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.5,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__SolGPT__mycontract_2round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.7,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__SolGPT__mycontract_3round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.8,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__sGuard__mycontract",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.1999999999999,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__simple_suicide__sGuardPlus__simple_suicide",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.1999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.5,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_access_control__simple_suicide__SmartFix__simple_suicide",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.6999999999999,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__proxy__SolGPT__proxy_4round",
+      "trial": 4,
+      "valid": 2,
+      "wall_total_s": 590.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.3,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_bonus__SmartFix__reentrancy_bonus",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.5,
+      "raw": 1,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_4round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.4,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_1round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_unchecked_low_level_calls__address_00397__TIPS__address_00397U2",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.6,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_simple__SmartFix__reentrancy_simple",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.5,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__sGuardPlus__reentrancy_dao",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.8000000000001,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__modifier_reentrancy__SmartFix__modifier_reentrancy",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.8000000000001,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_access_control__wallet_02_refund_nosub__SolGPT__wallet_02_refund_nosub_2round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.6,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00031__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.0,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_simple__sGuard__reentrancy_simple",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.7,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00396__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.0,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "rc_access_control__wallet_02_refund_nosub__SmartFix__wallet_02_refund_nosub",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00399__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00396__sGuard",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 2.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00399__sGuard",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 2.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00411__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.7,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_1round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 614.3,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "pop_070_PhiNFT1155",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 614.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.6,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00421__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00421__sGuard",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 1.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.3000000000001,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_2round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.4,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_3round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.1999999999999,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_1round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.1999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.3,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_2round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.2,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_3round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.3,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_4round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.6999999999999,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00034__SolGPT__address_00034_3round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 588.9,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00038__SolGPT__address_00038_2round",
+      "trial": 4,
+      "valid": 1,
+      "wall_total_s": 588.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 589.0,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00038__SolGPT__address_00038_3round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 589.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 589.7,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00412__sGuardPlus__address_00412",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 589.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 589.0,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_1round",
+      "trial": 4,
+      "valid": 1,
+      "wall_total_s": 589.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 589.6,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_3round",
+      "trial": 4,
+      "valid": 1,
+      "wall_total_s": 589.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.5,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00059__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 589.6,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_2round",
+      "trial": 4,
+      "valid": 2,
+      "wall_total_s": 589.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 589.8000000000001,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00402__SolGPT__address_00402_1round",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 589.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.8,
+      "raw": 12,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00202__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.9,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00407__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.6999999999999,
+      "raw": 13,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00152__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.3,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00400__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.3,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00413__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 591.4000000000001,
+      "raw": 13,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00400__sGuard",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 591.4000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 3.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "reprod_DCFToken",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 3.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.2,
+      "raw": 12,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00037__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.4,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00413__sGuard",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 589.9000000000001,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00419__TIPS__address_00419U1",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 589.9000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 589.6,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 589.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.0,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__TIPS",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 589.8,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__sGuard",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 589.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 589.4,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00224__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 589.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 589.5,
+      "raw": 12,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 589.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.2,
+      "raw": 18,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__TIPS",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 590.1,
+      "raw": 13,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__sGuard",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 590.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 587.5,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00403__TIPS",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 587.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 587.4,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00403__sGuard",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 587.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 588.1,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__SmartFix",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 588.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 588.3000000000001,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__TIPS",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 588.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 588.1999999999999,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00415__TIPS",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 588.1999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 588.4,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__TIPS",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 588.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 589.1,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__sGuard",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 589.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 588.3,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuard",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 588.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 588.5,
+      "raw": 15,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__sGuardPlus",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 588.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 589.1,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__sGuardPlus",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 589.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 588.3,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuardPlus",
+      "trial": 4,
+      "valid": 0,
+      "wall_total_s": 588.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 588.6,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00415__sGuard",
+      "trial": 4,
+      "valid": 2,
+      "wall_total_s": 588.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_022_CVE_2018_19833",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_002_Templedao",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_032_CVE_2021_39167",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_033_CVE_2021_39168",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 605.5,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_021_CVE_2018_19832",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 605.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.3000000000001,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_077_L1Block",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.7,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "acfix_026_CVE_2019_15080",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.8000000000001,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_016_CVE_2018_10705",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.9,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_031_CVE_2021_34273",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.9,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_030_CVE_2021_34272",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.9,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_015_CVE_2018_10666",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_3_5_101_ANCHToken",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.1,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "acfix_088_EmergencyOracleFactory",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.4,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_fixlink_MStableYieldSource",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.5,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_fixlink_DepositLog",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.3,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_3_5_076_RoundFactory",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.1,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_fixlink_DnGmxBatchingManager",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.4,
+      "raw": 0,
+      "status": "ok",
+      "subject_id": "acfix_3_5_077_L1Block",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.6,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_3_5_016_CVE_2018_10705",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.7,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "acfix_3_5_015_CVE_2018_10666",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_llama3_022_CVE_2018_19833",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 0.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_llama3_002_Templedao",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_real_BaseEscalationManager",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 0.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.8,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "acfix_3_5_088_EmergencyOracleFactory",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "acfix_real_FlashGovernanceArbiter",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.5,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "ct_20_Pool_sol_Synth_sol_Failing_Max_Value_Al",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_009_PrivatePool",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_018_PrivatePool",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_032_PuttyV2",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 0.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_033_PrivatePool",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 8.3,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_001_Multicall",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 8.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_046_CVXStaker",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_048_PrivatePool",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 612.7,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_fixlink_Product",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 612.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_051_LiquidityPool",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_058_PuttyV2",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 0.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.7,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_llama3_024_CVE_2019_15078",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 604.6999999999999,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "pop_020_GSPFunding",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 604.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 610.3,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "acfix_fixlink_Product2",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 610.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_077_GameItems",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "pop_077_MergingPool",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.8000000000001,
+      "raw": 8,
+      "status": "ok",
+      "subject_id": "pop_042_VaultAdapter",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 604.5,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "pop_066_LRTDepositPool",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 604.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__SmartFix__phishable",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__TIPS__phishable",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__sGuardPlus__phishable",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_access_control__phishable__sGuard__phishable",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 605.5,
+      "raw": 30,
+      "status": "ok",
+      "subject_id": "ct_5_Proposals_can_be_cancelled",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 605.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 605.4,
+      "raw": 19,
+      "status": "ok",
+      "subject_id": "pop_049_Cooler",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 605.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 606.2,
+      "raw": 39,
+      "status": "ok",
+      "subject_id": "acfix_llama3_017_CVE_2018_11329",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 606.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.4,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__SolGPT__mycontract_2round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.2,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__SolGPT__mycontract_3round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_1round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 0.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_2round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_3round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 0.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 615.5,
+      "raw": 0,
+      "status": "error",
+      "subject_id": "pop_070_PhiNFT1155",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 615.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.6999999999999,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_access_control__mycontract__sGuard__mycontract",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.6999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.4,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__proxy__SolGPT__proxy_4round",
+      "trial": 5,
+      "valid": 2,
+      "wall_total_s": 602.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.8000000000001,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_access_control__simple_suicide__SmartFix__simple_suicide",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.6,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_access_control__simple_suicide__sGuardPlus__simple_suicide",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.9,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "rc_access_control__wallet_02_refund_nosub__SmartFix__wallet_02_refund_nosub",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.7,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_access_control__wallet_02_refund_nosub__SolGPT__wallet_02_refund_nosub_2round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.4,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__modifier_reentrancy__SmartFix__modifier_reentrancy",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.4,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_bonus__SmartFix__reentrancy_bonus",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.4,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_1round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.5999999999999,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_4round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.5999999999999
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.4,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_dao__sGuardPlus__reentrancy_dao",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.7,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_simple__SmartFix__reentrancy_simple",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.9,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_reentrancy__reentrancy_simple__sGuard__reentrancy_simple",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.2,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_unchecked_low_level_calls__address_00020__SolGPT__address_00020_3round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.8,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_1round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.5,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_2round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.7,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_3round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.7
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.4,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_1round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 604.6,
+      "raw": 6,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_2round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 604.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.4,
+      "raw": 5,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_3round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 2.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rc_unchecked_low_level_calls__address_00397__TIPS__address_00397U2",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 2.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.8000000000001,
+      "raw": 7,
+      "status": "ok",
+      "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_4round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.5,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00034__SolGPT__address_00034_3round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.5,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00038__SolGPT__address_00038_2round",
+      "trial": 5,
+      "valid": 2,
+      "wall_total_s": 602.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00031__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.3,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_1round",
+      "trial": 5,
+      "valid": 1,
+      "wall_total_s": 602.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.4,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00038__SolGPT__address_00038_3round",
+      "trial": 5,
+      "valid": 2,
+      "wall_total_s": 602.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.5,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_2round",
+      "trial": 5,
+      "valid": 2,
+      "wall_total_s": 602.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00396__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00396__sGuard",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.0,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00399__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00399__sGuard",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.6,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00123__SolGPT__address_00123_3round",
+      "trial": 5,
+      "valid": 2,
+      "wall_total_s": 603.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.6,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00412__sGuardPlus__address_00412",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.6,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00402__SolGPT__address_00402_1round",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00411__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.4,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rc_unchecked_low_level_calls__address_00419__TIPS__address_00419U1",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.8000000000001,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00152__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.8000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 0.8,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00421__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 0.8
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.1,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "rcx_reentrancy__address_00421__sGuard",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.0,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00202__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.0
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.2,
+      "raw": 12,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00059__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.2,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00400__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.2,
+      "raw": 12,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00400__sGuard",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.2,
+      "raw": 9,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00407__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.3000000000001,
+      "raw": 13,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00413__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.6,
+      "raw": 13,
+      "status": "ok",
+      "subject_id": "rcx_reentrancy__address_00413__sGuard",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.2,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00037__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.3,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.3,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__TIPS",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.6,
+      "raw": 4,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00105__sGuard",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.1,
+      "raw": 12,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00224__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.1
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.3,
+      "raw": 14,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.4,
+      "raw": 14,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__TIPS",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.4
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.6,
+      "raw": 16,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__sGuard",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.5,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00403__TIPS",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.5,
+      "raw": 14,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00226__sGuardPlus",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.5
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.6,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00403__sGuard",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.2,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__SmartFix",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.3000000000001,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__TIPS",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 1.9,
+      "raw": 0,
+      "status": "no-corpus",
+      "subject_id": "reprod_DCFToken",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 1.9
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.2,
+      "raw": 10,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__sGuard",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.2
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 603.3,
+      "raw": 11,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00408__sGuardPlus",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 603.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.3,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00415__TIPS",
+      "trial": 5,
+      "valid": 2,
+      "wall_total_s": 602.3
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.3000000000001,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__TIPS",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.3000000000001,
+      "raw": 2,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuard",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.3000000000001
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.6,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00415__sGuard",
+      "trial": 5,
+      "valid": 2,
+      "wall_total_s": 602.6
+    },
+    {
+      "budget_excluded": false,
+      "generation_wall_s": 602.3000000000001,
+      "raw": 3,
+      "status": "ok",
+      "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuardPlus",
+      "trial": 5,
+      "valid": 0,
+      "wall_total_s": 602.3000000000001
+    }
+  ],
+  "tool": "FuzzUtils"
+}

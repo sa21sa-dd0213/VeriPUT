@@ -1,0 +1,877 @@
+{
+  "compile_failed": 31,
+  "compile_ok": 56,
+  "mutants": [
+    {
+      "compile_status": "failed",
+      "end_line": 212,
+      "function": "claim",
+      "mutant_id": "m000001",
+      "operator": "ACM",
+      "original_expression": "claimForAddr(msg.sender, owner, address(defaultResolver))",
+      "replacement_expression": "claimForAddr(msg.sender, owner, resolver)",
+      "start_line": 212
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 244,
+      "function": "claimWithResolver",
+      "mutant_id": "m000002",
+      "operator": "ACM",
+      "original_expression": "claimForAddr(msg.sender, owner, resolver)",
+      "replacement_expression": "claimForAddr(msg.sender, owner, address(defaultResolver))",
+      "start_line": 244
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 276,
+      "function": "setNameForAddr",
+      "mutant_id": "m000003",
+      "operator": "ACM",
+      "original_expression": "claimForAddr(addr, owner, resolver)",
+      "replacement_expression": "claimForAddr(msg.sender, owner, address(defaultResolver))",
+      "start_line": 276
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "_transferOwnership",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "_owner",
+      "replacement_expression": "address(this)",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "_transferOwnership",
+      "mutant_id": "m000005",
+      "operator": "AVR",
+      "original_expression": "_owner",
+      "replacement_expression": "address(0)",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 134,
+      "function": "_transferOwnership",
+      "mutant_id": "m000006",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(this)",
+      "start_line": 134
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 134,
+      "function": "_transferOwnership",
+      "mutant_id": "m000007",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(0)",
+      "start_line": 134
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "_checkOwner",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "_checkOwner",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "_checkOwner",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 124,
+      "function": "transferOwnership",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 124
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 182,
+      "function": "constructor",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 182
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 192,
+      "function": "modifier:authorised",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " ||\n                ",
+      "replacement_expression": " &&\n                ",
+      "start_line": 191
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 191,
+      "function": "modifier:authorised",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " ||\n                ",
+      "replacement_expression": " &&\n                ",
+      "start_line": 190
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 190,
+      "function": "modifier:authorised",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " ||\n                ",
+      "replacement_expression": " &&\n                ",
+      "start_line": 189
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 189,
+      "function": "modifier:authorised",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 189
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 200,
+      "function": "setDefaultResolver",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 200
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 315,
+      "function": "ownsContract",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 315
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 317,
+      "function": "ownsContract",
+      "mutant_id": "m000019",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 317
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 84,
+      "function": "constructor",
+      "mutant_id": "m000020",
+      "operator": "CCD",
+      "original_expression": "constructor() {\n        _transferOwnership(_msgSender());\n    }",
+      "replacement_expression": "",
+      "start_line": 82
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 185,
+      "function": "constructor",
+      "mutant_id": "m000021",
+      "operator": "CCD",
+      "original_expression": "constructor(ENS ensAddr) {\n        ens = ensAddr;\n\n        \n        ReverseRegistrar oldRegistrar = ReverseRegistrar(\n            ensAddr.owner(ADDR_REVERSE_NODE)\n        );\n        if (address(oldRegistrar) != address(0x0)) {\n            oldRegistrar.claim(msg.sender);\n        }\n    }",
+      "replacement_expression": "",
+      "start_line": 175
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 182,
+      "function": "constructor",
+      "mutant_id": "m000022",
+      "operator": "CSC",
+      "original_expression": "address(oldRegistrar) != address(0x0)",
+      "replacement_expression": "true",
+      "start_line": 182
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 182,
+      "function": "constructor",
+      "mutant_id": "m000023",
+      "operator": "CSC",
+      "original_expression": "address(oldRegistrar) != address(0x0)",
+      "replacement_expression": "false",
+      "start_line": 182
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 46,
+      "function": "setName",
+      "mutant_id": "m000024",
+      "operator": "DLR",
+      "original_expression": "string memory name",
+      "replacement_expression": "string storage name",
+      "start_line": 46
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 52,
+      "function": "setNameForAddr",
+      "mutant_id": "m000025",
+      "operator": "DLR",
+      "original_expression": "string memory name",
+      "replacement_expression": "string storage name",
+      "start_line": 52
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 252,
+      "function": "setName",
+      "mutant_id": "m000026",
+      "operator": "DLR",
+      "original_expression": "string memory name",
+      "replacement_expression": "string storage name",
+      "start_line": 252
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 274,
+      "function": "setNameForAddr",
+      "mutant_id": "m000027",
+      "operator": "DLR",
+      "original_expression": "string memory name",
+      "replacement_expression": "string storage name",
+      "start_line": 274
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 390,
+      "function": "setName",
+      "mutant_id": "m000028",
+      "operator": "DLR",
+      "original_expression": "string memory name",
+      "replacement_expression": "string storage name",
+      "start_line": 390
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 135,
+      "function": "_transferOwnership",
+      "mutant_id": "m000029",
+      "operator": "EED",
+      "original_expression": "emit OwnershipTransferred(oldOwner, newOwner);",
+      "replacement_expression": "/* emit OwnershipTransferred(oldOwner, newOwner); */",
+      "start_line": 135
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 156,
+      "function": "setController",
+      "mutant_id": "m000030",
+      "operator": "EED",
+      "original_expression": "emit ControllerChanged(controller, enabled);",
+      "replacement_expression": "/* emit ControllerChanged(controller, enabled); */",
+      "start_line": 156
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 204,
+      "function": "setDefaultResolver",
+      "mutant_id": "m000031",
+      "operator": "EED",
+      "original_expression": "emit DefaultResolverChanged(NameResolver(resolver));",
+      "replacement_expression": "/* emit DefaultResolverChanged(NameResolver(resolver)); */",
+      "start_line": 204
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 230,
+      "function": "claimForAddr",
+      "mutant_id": "m000032",
+      "operator": "EED",
+      "original_expression": "emit ReverseClaimed(addr, reverseNode);",
+      "replacement_expression": "/* emit ReverseClaimed(addr, reverseNode); */",
+      "start_line": 230
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "_checkOwner",
+      "mutant_id": "m000033",
+      "operator": "EHD",
+      "original_expression": "require(owner() == _msgSender(), \"Ownable: caller is not the owner\");",
+      "replacement_expression": "/* require(owner() == _msgSender(), \"Ownable: caller is not the owner\"); */",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 124,
+      "function": "transferOwnership",
+      "mutant_id": "m000034",
+      "operator": "EHD",
+      "original_expression": "require(newOwner != address(0), \"Ownable: new owner is the zero address\");",
+      "replacement_expression": "/* require(newOwner != address(0), \"Ownable: new owner is the zero address\"); */",
+      "start_line": 124
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 150,
+      "function": "modifier:onlyController",
+      "mutant_id": "m000035",
+      "operator": "EHD",
+      "original_expression": "require(\n            controllers[msg.sender],\n            \"Controllable: Caller is not a controller\"\n        );",
+      "replacement_expression": "/* require(\n            controllers[msg.sender],\n            \"Controllable: Caller is not a controller\"\n        ); */",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 194,
+      "function": "modifier:authorised",
+      "mutant_id": "m000036",
+      "operator": "EHD",
+      "original_expression": "require(\n            addr == msg.sender ||\n                controllers[msg.sender] ||\n                ens.isApprovedForAll(addr, msg.sender) ||\n                ownsContract(addr),\n            \"ReverseRegistrar: Caller is not a controller or authorised by address or the address itself\"\n        );",
+      "replacement_expression": "/* require(\n            addr == msg.sender ||\n                controllers[msg.sender] ||\n                ens.isApprovedForAll(addr, msg.sender) ||\n                ownsContract(addr),\n            \"ReverseRegistrar: Caller is not a controller or authorised by address or the address itself\"\n        ); */",
+      "start_line": 188
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 202,
+      "function": "setDefaultResolver",
+      "mutant_id": "m000037",
+      "operator": "EHD",
+      "original_expression": "require(\n            address(resolver) != address(0),\n            \"ReverseRegistrar: Resolver address must not be 0\"\n        );",
+      "replacement_expression": "/* require(\n            address(resolver) != address(0),\n            \"ReverseRegistrar: Resolver address must not be 0\"\n        ); */",
+      "start_line": 199
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 90,
+      "function": "modifier:onlyOwner",
+      "mutant_id": "m000038",
+      "operator": "FCD",
+      "original_expression": "_checkOwner();",
+      "replacement_expression": "/*_checkOwner();*/",
+      "start_line": 90
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 116,
+      "function": "renounceOwnership",
+      "mutant_id": "m000039",
+      "operator": "FCD",
+      "original_expression": "_transferOwnership(address(0));",
+      "replacement_expression": "/*_transferOwnership(address(0));*/",
+      "start_line": 116
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 125,
+      "function": "transferOwnership",
+      "mutant_id": "m000040",
+      "operator": "FCD",
+      "original_expression": "_transferOwnership(newOwner);",
+      "replacement_expression": "/*_transferOwnership(newOwner);*/",
+      "start_line": 125
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 231,
+      "function": "claimForAddr",
+      "mutant_id": "m000041",
+      "operator": "FCD",
+      "original_expression": "ens.setSubnodeRecord(ADDR_REVERSE_NODE, labelHash, owner, resolver, 0);",
+      "replacement_expression": "/*ens.setSubnodeRecord(ADDR_REVERSE_NODE, labelHash, owner, resolver, 0);*/",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 277,
+      "function": "setNameForAddr",
+      "mutant_id": "m000042",
+      "operator": "FCD",
+      "original_expression": "NameResolver(resolver).setName(node, name);",
+      "replacement_expression": "/*NameResolver(resolver).setName(node, name);*/",
+      "start_line": 277
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 277,
+      "function": "setNameForAddr",
+      "mutant_id": "m000043",
+      "operator": "FCD",
+      "original_expression": "NameResolver(resolver).",
+      "replacement_expression": "/*NameResolver(resolver).*/",
+      "start_line": 277
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 314,
+      "function": "ownsContract",
+      "mutant_id": "m000044",
+      "operator": "FCD",
+      "original_expression": "Ownable(addr).owner() ",
+      "replacement_expression": "/*Ownable(addr).owner() */",
+      "start_line": 314
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 314,
+      "function": "ownsContract",
+      "mutant_id": "m000045",
+      "operator": "FCD",
+      "original_expression": "Ownable(addr).",
+      "replacement_expression": "/*Ownable(addr).*/",
+      "start_line": 314
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 116,
+      "function": "renounceOwnership",
+      "mutant_id": "m000046",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 116
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 124,
+      "function": "transferOwnership",
+      "mutant_id": "m000047",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 124
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 200,
+      "function": "setDefaultResolver",
+      "mutant_id": "m000048",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 200
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 231,
+      "function": "claimForAddr",
+      "mutant_id": "m000049",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 227,
+      "function": "claimForAddr",
+      "mutant_id": "m000050",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 227
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 286,
+      "function": "node",
+      "mutant_id": "m000051",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 286
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 115,
+      "function": "renounceOwnership",
+      "mutant_id": "m000052",
+      "operator": "MOD",
+      "original_expression": "function renounceOwnership() public virtual onlyOwner ",
+      "replacement_expression": "function renounceOwnership() public virtual  ",
+      "start_line": 115
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "transferOwnership",
+      "mutant_id": "m000053",
+      "operator": "MOD",
+      "original_expression": "function transferOwnership(address newOwner) public virtual onlyOwner ",
+      "replacement_expression": "function transferOwnership(address newOwner) public virtual  ",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 154,
+      "function": "setController",
+      "mutant_id": "m000054",
+      "operator": "MOD",
+      "original_expression": "function setController(address controller, bool enabled) public onlyOwner ",
+      "replacement_expression": "function setController(address controller, bool enabled) public  ",
+      "start_line": 154
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 198,
+      "function": "setDefaultResolver",
+      "mutant_id": "m000055",
+      "operator": "MOD",
+      "original_expression": "function setDefaultResolver(address resolver) public override onlyOwner ",
+      "replacement_expression": "function setDefaultResolver(address resolver) public override  ",
+      "start_line": 198
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 225,
+      "function": "claimForAddr",
+      "mutant_id": "m000056",
+      "operator": "MOD",
+      "original_expression": "function claimForAddr(\n        address addr,\n        address owner,\n        address resolver\n    ) public override authorised(addr) returns (bytes32) ",
+      "replacement_expression": "function claimForAddr(\n        address addr,\n        address owner,\n        address resolver\n    ) public override  returns (bytes32) ",
+      "start_line": 221
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 31,
+      "function": "setDefaultResolver",
+      "mutant_id": "m000057",
+      "operator": "OLFD",
+      "original_expression": "function setDefaultResolver(address resolver) external;",
+      "replacement_expression": "",
+      "start_line": 31
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 33,
+      "function": "claim",
+      "mutant_id": "m000058",
+      "operator": "OLFD",
+      "original_expression": "function claim(address owner) external returns (bytes32);",
+      "replacement_expression": "",
+      "start_line": 33
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 39,
+      "function": "claimForAddr",
+      "mutant_id": "m000059",
+      "operator": "OLFD",
+      "original_expression": "function claimForAddr(\n        address addr,\n        address owner,\n        address resolver\n    ) external returns (bytes32);",
+      "replacement_expression": "",
+      "start_line": 35
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 44,
+      "function": "claimWithResolver",
+      "mutant_id": "m000060",
+      "operator": "OLFD",
+      "original_expression": "function claimWithResolver(\n        address owner,\n        address resolver\n    ) external returns (bytes32);",
+      "replacement_expression": "",
+      "start_line": 41
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 46,
+      "function": "setName",
+      "mutant_id": "m000061",
+      "operator": "OLFD",
+      "original_expression": "function setName(string memory name) external returns (bytes32);",
+      "replacement_expression": "",
+      "start_line": 46
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 53,
+      "function": "setNameForAddr",
+      "mutant_id": "m000062",
+      "operator": "OLFD",
+      "original_expression": "function setNameForAddr(\n        address addr,\n        address owner,\n        address resolver,\n        string memory name\n    ) external returns (bytes32);",
+      "replacement_expression": "",
+      "start_line": 48
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 55,
+      "function": "node",
+      "mutant_id": "m000063",
+      "operator": "OLFD",
+      "original_expression": "function node(address addr) external pure returns (bytes32);",
+      "replacement_expression": "",
+      "start_line": 55
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 99,
+      "function": "owner",
+      "mutant_id": "m000064",
+      "operator": "OLFD",
+      "original_expression": "function owner() public view virtual returns (address) {\n        return _owner;\n    }",
+      "replacement_expression": "",
+      "start_line": 97
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 373,
+      "function": "owner",
+      "mutant_id": "m000065",
+      "operator": "OLFD",
+      "original_expression": "function owner(bytes32 node) external view returns (address);",
+      "replacement_expression": "",
+      "start_line": 373
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 390,
+      "function": "setName",
+      "mutant_id": "m000066",
+      "operator": "OLFD",
+      "original_expression": "function setName(bytes32 node, string memory name) public virtual;",
+      "replacement_expression": "",
+      "start_line": 390
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 205,
+      "function": "setDefaultResolver",
+      "mutant_id": "m000067",
+      "operator": "ORFD",
+      "original_expression": "function setDefaultResolver(address resolver) public override onlyOwner {\n        require(\n            address(resolver) != address(0),\n            \"ReverseRegistrar: Resolver address must not be 0\"\n        );\n        defaultResolver = NameResolver(resolver);\n        emit DefaultResolverChanged(NameResolver(resolver));\n    }",
+      "replacement_expression": "",
+      "start_line": 198
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 213,
+      "function": "claim",
+      "mutant_id": "m000068",
+      "operator": "ORFD",
+      "original_expression": "function claim(address owner) public override returns (bytes32) {\n        return claimForAddr(msg.sender, owner, address(defaultResolver));\n    }",
+      "replacement_expression": "",
+      "start_line": 211
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 233,
+      "function": "claimForAddr",
+      "mutant_id": "m000069",
+      "operator": "ORFD",
+      "original_expression": "function claimForAddr(\n        address addr,\n        address owner,\n        address resolver\n    ) public override authorised(addr) returns (bytes32) {\n        bytes32 labelHash = sha3HexAddress(addr);\n        bytes32 reverseNode = keccak256(\n            abi.encodePacked(ADDR_REVERSE_NODE, labelHash)\n        );\n        emit ReverseClaimed(addr, reverseNode);\n        ens.setSubnodeRecord(ADDR_REVERSE_NODE, labelHash, owner, resolver, 0);\n        return reverseNode;\n    }",
+      "replacement_expression": "",
+      "start_line": 221
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 245,
+      "function": "claimWithResolver",
+      "mutant_id": "m000070",
+      "operator": "ORFD",
+      "original_expression": "function claimWithResolver(\n        address owner,\n        address resolver\n    ) public override returns (bytes32) {\n        return claimForAddr(msg.sender, owner, resolver);\n    }",
+      "replacement_expression": "",
+      "start_line": 240
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 260,
+      "function": "setName",
+      "mutant_id": "m000071",
+      "operator": "ORFD",
+      "original_expression": "function setName(string memory name) public override returns (bytes32) {\n        return\n            setNameForAddr(\n                msg.sender,\n                msg.sender,\n                address(defaultResolver),\n                name\n            );\n    }",
+      "replacement_expression": "",
+      "start_line": 252
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 279,
+      "function": "setNameForAddr",
+      "mutant_id": "m000072",
+      "operator": "ORFD",
+      "original_expression": "function setNameForAddr(\n        address addr,\n        address owner,\n        address resolver,\n        string memory name\n    ) public override returns (bytes32) {\n        bytes32 node = claimForAddr(addr, owner, resolver);\n        NameResolver(resolver).setName(node, name);\n        return node;\n    }",
+      "replacement_expression": "",
+      "start_line": 270
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 289,
+      "function": "node",
+      "mutant_id": "m000073",
+      "operator": "ORFD",
+      "original_expression": "function node(address addr) public pure override returns (bytes32) {\n        return\n            keccak256(\n                abi.encodePacked(ADDR_REVERSE_NODE, sha3HexAddress(addr))\n            );\n    }",
+      "replacement_expression": "",
+      "start_line": 284
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "_msgSender",
+      "mutant_id": "m000074",
+      "operator": "RSD",
+      "original_expression": "return msg.sender;",
+      "replacement_expression": "/* return msg.sender; */",
+      "start_line": 20
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 24,
+      "function": "_msgData",
+      "mutant_id": "m000075",
+      "operator": "RSD",
+      "original_expression": "return msg.data;",
+      "replacement_expression": "/* return msg.data; */",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 98,
+      "function": "owner",
+      "mutant_id": "m000076",
+      "operator": "RSD",
+      "original_expression": "return _owner;",
+      "replacement_expression": "/* return _owner; */",
+      "start_line": 98
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 212,
+      "function": "claim",
+      "mutant_id": "m000077",
+      "operator": "RSD",
+      "original_expression": "return claimForAddr(msg.sender, owner, address(defaultResolver));",
+      "replacement_expression": "claimForAddr(msg.sender, owner, address(defaultResolver));",
+      "start_line": 212
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 232,
+      "function": "claimForAddr",
+      "mutant_id": "m000078",
+      "operator": "RSD",
+      "original_expression": "return reverseNode;",
+      "replacement_expression": "/* return reverseNode; */",
+      "start_line": 232
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 244,
+      "function": "claimWithResolver",
+      "mutant_id": "m000079",
+      "operator": "RSD",
+      "original_expression": "return claimForAddr(msg.sender, owner, resolver);",
+      "replacement_expression": "claimForAddr(msg.sender, owner, resolver);",
+      "start_line": 244
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 259,
+      "function": "setName",
+      "mutant_id": "m000080",
+      "operator": "RSD",
+      "original_expression": "return\n            setNameForAddr(\n                msg.sender,\n                msg.sender,\n                address(defaultResolver),\n                name\n            );",
+      "replacement_expression": "setNameForAddr(\n                msg.sender,\n                msg.sender,\n                address(defaultResolver),\n                name\n            );",
+      "start_line": 253
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 278,
+      "function": "setNameForAddr",
+      "mutant_id": "m000081",
+      "operator": "RSD",
+      "original_expression": "return node;",
+      "replacement_expression": "/* return node; */",
+      "start_line": 278
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 288,
+      "function": "node",
+      "mutant_id": "m000082",
+      "operator": "RSD",
+      "original_expression": "return\n            keccak256(\n                abi.encodePacked(ADDR_REVERSE_NODE, sha3HexAddress(addr))\n            );",
+      "replacement_expression": "keccak256(\n                abi.encodePacked(ADDR_REVERSE_NODE, sha3HexAddress(addr))\n            );",
+      "start_line": 285
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 315,
+      "function": "ownsContract",
+      "mutant_id": "m000083",
+      "operator": "RSD",
+      "original_expression": "return owner == msg.sender;",
+      "replacement_expression": "/* return owner == msg.sender; */",
+      "start_line": 315
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 212,
+      "function": "claim",
+      "mutant_id": "m000084",
+      "operator": "SKID",
+      "original_expression": "claimForAddr",
+      "replacement_expression": "super.claimForAddr",
+      "start_line": 212
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 244,
+      "function": "claimWithResolver",
+      "mutant_id": "m000085",
+      "operator": "SKID",
+      "original_expression": "claimForAddr",
+      "replacement_expression": "super.claimForAddr",
+      "start_line": 244
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 254,
+      "function": "setName",
+      "mutant_id": "m000086",
+      "operator": "SKID",
+      "original_expression": "setNameForAddr",
+      "replacement_expression": "super.setNameForAddr",
+      "start_line": 254
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 276,
+      "function": "setNameForAddr",
+      "mutant_id": "m000087",
+      "operator": "SKID",
+      "original_expression": "claimForAddr",
+      "replacement_expression": "super.claimForAddr",
+      "start_line": 276
+    }
+  ],
+  "subject_id": "ensdomains__ens-contracts__ReverseRegistrar"
+}

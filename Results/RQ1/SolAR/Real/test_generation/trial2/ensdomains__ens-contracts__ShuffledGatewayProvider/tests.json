@@ -1,0 +1,54 @@
+[
+  [
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "gateways",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        39952227219862868011725029996631550458248961458980354016245203990855609224553
+      ],
+      "frm": "address_00036",
+      "method": "shuffledGateways",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "gateways",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [
+        40569171876770117641391608719720355580995475782273362199247515508923623706822
+      ],
+      "frm": "address_00401",
+      "method": "shuffledGateways",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [
+        1
+      ],
+      "frm": "address_00410",
+      "method": "shuffledGateways",
+      "n": 6,
+      "value": 0
+    }
+  ]
+]

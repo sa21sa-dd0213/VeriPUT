@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (11.342557781s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (5.563723454s)
+
+echidna: Constructor arguments are required: [("mainVault",address),("pauseWindowDuration",uint32),("bufferPeriodDuration",uint32),("minTradeAmount",uint256),("minWrapAmount",uint256)]

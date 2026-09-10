@@ -1,0 +1,57 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00184",
+        "address_00036"
+      ],
+      "frm": "address_00401",
+      "method": "initialize",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        8
+      ],
+      "frm": "address_00023",
+      "method": "state",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        8
+      ],
+      "frm": "address_00401",
+      "method": "executeProposal",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

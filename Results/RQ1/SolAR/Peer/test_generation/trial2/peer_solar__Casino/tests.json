@@ -1,0 +1,90 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        256,
+        0
+      ],
+      "frm": "address_00032",
+      "method": "unsafeEntry",
+      "n": 2,
+      "value": 60160612689814166
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "checkWinner",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1000
+      ],
+      "frm": "address_00023",
+      "method": "buyTicket",
+      "n": 2,
+      "value": 187282456743509505
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "claim",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        99570558935407959379469149434613532505376557767384907482823839365777004811083,
+        58377973918345964706505976733563517498644815032657447541992297036275645571162
+      ],
+      "frm": "address_00398",
+      "method": "generateHash",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

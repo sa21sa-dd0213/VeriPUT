@@ -1,0 +1,627 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1
+      ],
+      "frm": "address_00032",
+      "method": "calculateDrugSell",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "DrugDealer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        10
+      ],
+      "frm": "address_00398",
+      "method": "devFee",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "DrugDealer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        108184420040931543697847292864663821494280640574264524890942729454227801412339
+      ],
+      "frm": "address_00023",
+      "method": "seedMarket",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        41060711533628969598390089407159066232190743454506165021477519294193745885657
+      ],
+      "frm": "address_00398",
+      "method": "calculateDrugBuySimple",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "getBalance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "DrugDealer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        5,
+        52796380155815530696069264972769744277819109385991654744788272553344045937550,
+        5000
+      ],
+      "frm": "address_00401",
+      "method": "calculateTrade",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        94407144891106254658204460147784967017167998487053648282079559499457911712609
+      ],
+      "frm": "address_00032",
+      "method": "seedMarket",
+      "n": 2,
+      "value": 8656734449380250
+    },
+    {
+      "args": [
+        55131126963488832367389861833397402756713627309283724114587002048983457152090,
+        65
+      ],
+      "frm": "address_00404",
+      "method": "calculateDrugBuy",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00036"
+      ],
+      "frm": "address_00023",
+      "method": "getDrugsSinceLastCollect",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "getFreeKilo",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [
+        1
+      ],
+      "frm": "address_00019",
+      "method": "seedMarket",
+      "n": 6,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        8,
+        5000,
+        30012457634389685362095158606930453613214290376419898398682903096553574893633
+      ],
+      "frm": "address_00184",
+      "method": "calculateTrade",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "getFreeKilo",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "DrugDealer",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        212,
+        32335861469545301989958701716269559559046925342190684799539437852299768208537
+      ],
+      "frm": "address_00401",
+      "method": "calculateDrugBuy",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "DrugDealer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "getMyDrugs",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00001"
+      ],
+      "frm": "address_00023",
+      "method": "getDrugsSinceLastCollect",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        26
+      ],
+      "frm": "address_00019",
+      "method": "seedMarket",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00401",
+      "method": "sellDrugs",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "sellDrugs",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        49726433803211430531579751405488643134140211408925623797429262942097678435013
+      ],
+      "frm": "address_00184",
+      "method": "calculateDrugBuySimple",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00023",
+      "method": "getDrugsSinceLastCollect",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "getMyKilo",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        92963454601073532801614956298878675613446731639815752035193271722381191613226
+      ],
+      "frm": "address_00036",
+      "method": "seedMarket",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "getMyDrugs",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "address_00404",
+      "method": "calculateDrugSell",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [
+        1
+      ],
+      "frm": "address_00401",
+      "method": "calculateDrugBuySimple",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00019"
+      ],
+      "frm": "address_00398",
+      "method": "getDrugsSinceLastCollect",
+      "n": 6,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "getMyKilo",
+      "n": 7,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00410",
+      "method": "getBalance",
+      "n": 8,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00404"
+      ],
+      "frm": "address_00410",
+      "method": "collectDrugs",
+      "n": 9,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "getMyKilo",
+      "n": 10,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00401"
+      ],
+      "frm": "address_00404",
+      "method": "collectDrugs",
+      "n": 11,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "DrugDealer",
+      "n": 12,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00021",
+      "method": "DrugDealer",
+      "n": 13,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "getBalance",
+      "n": 14,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "getBalance",
+      "n": 15,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00023"
+      ],
+      "frm": "address_00023",
+      "method": "getDrugsSinceLastCollect",
+      "n": 16,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "buyDrugs",
+      "n": 17,
+      "value": 156186137517163695
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00019",
+      "method": "DrugDealer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "getBalance",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        67794010192750702970062636730957634207405374205636478818802903476845102205762
+      ],
+      "frm": "address_00023",
+      "method": "calculateDrugSell",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [
+        58295910668755916348076988354955750442872249837121354755319917670227388166838
+      ],
+      "frm": "address_00021",
+      "method": "seedMarket",
+      "n": 5,
+      "value": 104783735198709916
+    },
+    {
+      "args": [
+        78582680448090881849637321035288134339514891410504544642795258782240045396613
+      ],
+      "frm": "address_00184",
+      "method": "calculateDrugBuySimple",
+      "n": 6,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00036",
+      "method": "getBalance",
+      "n": 7,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "buyDrugs",
+      "n": 8,
+      "value": 0
+    },
+    {
+      "args": [
+        1
+      ],
+      "frm": "address_00019",
+      "method": "seedMarket",
+      "n": 9,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00023",
+      "method": "buyDrugs",
+      "n": 2,
+      "value": 47198214499516437
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "DrugDealer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "DrugDealer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00410"
+      ],
+      "frm": "address_00021",
+      "method": "collectDrugs",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032"
+      ],
+      "frm": "address_00023",
+      "method": "getDrugsSinceLastCollect",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

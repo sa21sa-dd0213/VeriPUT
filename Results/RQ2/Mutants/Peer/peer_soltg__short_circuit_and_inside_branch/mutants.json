@@ -1,0 +1,197 @@
+{
+  "compile_failed": 0,
+  "compile_ok": 19,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "f",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "f",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "g",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "g",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "g",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "g",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "g",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "g",
+      "mutant_id": "m000008",
+      "operator": "EHD",
+      "original_expression": "assert(x == 102);",
+      "replacement_expression": "/* assert(x == 102); */",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 15,
+      "function": "g",
+      "mutant_id": "m000009",
+      "operator": "EHD",
+      "original_expression": "assert(!b);",
+      "replacement_expression": "/* assert(!b); */",
+      "start_line": 15
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "f",
+      "mutant_id": "m000010",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "f",
+      "mutant_id": "m000011",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "g",
+      "mutant_id": "m000012",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "99",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "g",
+      "mutant_id": "m000013",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "101",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "g",
+      "mutant_id": "m000014",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "g",
+      "mutant_id": "m000015",
+      "operator": "ILR",
+      "original_expression": "102",
+      "replacement_expression": "101",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "g",
+      "mutant_id": "m000016",
+      "operator": "ILR",
+      "original_expression": "102",
+      "replacement_expression": "103",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 7,
+      "function": "f",
+      "mutant_id": "m000017",
+      "operator": "RSD",
+      "original_expression": "return x;",
+      "replacement_expression": "/* return x; */",
+      "start_line": 7
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "g",
+      "mutant_id": "m000018",
+      "operator": "RSD",
+      "original_expression": "return b;",
+      "replacement_expression": "/* return b; */",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 15,
+      "function": "g",
+      "mutant_id": "m000019",
+      "operator": "UORD",
+      "original_expression": "!b",
+      "replacement_expression": " b",
+      "start_line": 15
+    }
+  ],
+  "subject_id": "peer_soltg__short_circuit_and_inside_branch"
+}

@@ -1,0 +1,136 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "address_00404",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        "address_00187554e4e41694e485853694343"
+      ],
+      "frm": "address_00023",
+      "method": "entryInformation",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00398"
+      ],
+      "frm": "address_00032",
+      "method": "userEntries",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00001000000000000000000000000"
+      ],
+      "frm": "address_00398",
+      "method": "deleteEntry",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "registeredUsers",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00398",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00208726145694a69656e6a515470"
+      ],
+      "frm": "address_00021",
+      "method": "addEntry",
+      "n": 2,
+      "value": 133691213262504867
+    },
+    {
+      "args": [],
+      "frm": "address_00032",
+      "method": "registeredUsers",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_00032",
+        "address_00187554e4e41694e485853694343"
+      ],
+      "frm": "address_00023",
+      "method": "entryInformation",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "address_00184",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "address_003565746634355735a4d6f4d6971"
+      ],
+      "frm": "address_00404",
+      "method": "addEntry",
+      "n": 2,
+      "value": 98787343485645464
+    },
+    {
+      "args": [
+        "address_00032",
+        "address_00187554e4e41694e485853694343"
+      ],
+      "frm": "address_00023",
+      "method": "entryInformation",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]
