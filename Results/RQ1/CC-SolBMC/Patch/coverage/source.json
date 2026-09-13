@@ -5,16 +5,16 @@
     {
       "pooled": {
         "branch": {
-          "covered": 97,
-          "total": 1284
+          "covered": 86,
+          "total": 1288
         },
         "function": {
-          "covered": 174,
-          "total": 996
+          "covered": 162,
+          "total": 1016
         },
         "line": {
-          "covered": 551,
-          "total": 4517
+          "covered": 521,
+          "total": 4585
         }
       },
       "subjects": [
@@ -103,7 +103,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 7,
+              "covered": 6,
               "total": 14
             },
             "function": {
@@ -387,11 +387,11 @@
               "total": 14
             },
             "function": {
-              "covered": 12,
+              "covered": 11,
               "total": 15
             },
             "line": {
-              "covered": 24,
+              "covered": 23,
               "total": 54
             }
           },
@@ -523,7 +523,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 8,
+              "covered": 7,
               "total": 16
             },
             "function": {
@@ -547,11 +547,11 @@
               "total": 28
             },
             "function": {
-              "covered": 13,
+              "covered": 12,
               "total": 19
             },
             "line": {
-              "covered": 63,
+              "covered": 61,
               "total": 84
             }
           },
@@ -563,15 +563,15 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 0,
               "total": 2
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 8
             },
             "line": {
-              "covered": 5,
+              "covered": 3,
               "total": 13
             }
           },
@@ -584,14 +584,14 @@
           "metrics": {
             "branch": {
               "covered": 3,
-              "total": 27
+              "total": 29
             },
             "function": {
               "covered": 4,
               "total": 10
             },
             "line": {
-              "covered": 11,
+              "covered": 10,
               "total": 47
             }
           },
@@ -644,15 +644,15 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
-              "total": 1
+              "total": 21
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 79
             }
           },
           "subject_id": "pop_001_Multicall",
@@ -1543,15 +1543,15 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 0,
               "total": 20
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 20
             },
             "line": {
-              "covered": 10,
+              "covered": 8,
               "total": 64
             }
           },
@@ -1791,7 +1791,7 @@
               "total": 6
             },
             "line": {
-              "covered": 8,
+              "covered": 6,
               "total": 23
             }
           },
@@ -1831,7 +1831,7 @@
               "total": 6
             },
             "line": {
-              "covered": 8,
+              "covered": 6,
               "total": 23
             }
           },
@@ -1931,7 +1931,7 @@
               "total": 6
             },
             "line": {
-              "covered": 9,
+              "covered": 7,
               "total": 25
             }
           },
@@ -1951,7 +1951,7 @@
               "total": 6
             },
             "line": {
-              "covered": 11,
+              "covered": 9,
               "total": 22
             }
           },
@@ -1971,7 +1971,7 @@
               "total": 6
             },
             "line": {
-              "covered": 8,
+              "covered": 6,
               "total": 23
             }
           },
@@ -2011,7 +2011,7 @@
               "total": 6
             },
             "line": {
-              "covered": 9,
+              "covered": 7,
               "total": 24
             }
           },
@@ -2031,7 +2031,7 @@
               "total": 6
             },
             "line": {
-              "covered": 11,
+              "covered": 9,
               "total": 22
             }
           },
@@ -2183,15 +2183,15 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 0,
               "total": 4
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 11
             }
           },
@@ -2203,15 +2203,15 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 0,
               "total": 3
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 11
             }
           },
@@ -2223,15 +2223,15 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 0,
               "total": 2
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 10
             }
           },
@@ -2243,15 +2243,15 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 0,
               "total": 4
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 11
             }
           },
@@ -2303,15 +2303,15 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 0,
               "total": 4
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 11
             }
           },
@@ -2323,15 +2323,15 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 0,
               "total": 3
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 11
             }
           },
@@ -2343,15 +2343,15 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 0,
               "total": 2
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 10
             }
           },
@@ -2367,11 +2367,11 @@
               "total": 4
             },
             "function": {
-              "covered": 4,
+              "covered": 3,
               "total": 5
             },
             "line": {
-              "covered": 9,
+              "covered": 8,
               "total": 11
             }
           },

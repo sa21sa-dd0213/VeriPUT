@@ -5,15 +5,15 @@
     {
       "pooled": {
         "branch": {
-          "covered": 376,
+          "covered": 363,
           "total": 2476
         },
         "function": {
-          "covered": 314,
+          "covered": 307,
           "total": 1905
         },
         "line": {
-          "covered": 1569,
+          "covered": 1548,
           "total": 9117
         }
       },
@@ -91,7 +91,7 @@
               "total": 44
             },
             "line": {
-              "covered": 46,
+              "covered": 45,
               "total": 170
             }
           },
@@ -143,7 +143,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 3,
+              "covered": 2,
               "total": 19
             },
             "function": {
@@ -151,7 +151,7 @@
               "total": 6
             },
             "line": {
-              "covered": 13,
+              "covered": 12,
               "total": 38
             }
           },
@@ -263,7 +263,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 10,
+              "covered": 9,
               "total": 24
             },
             "function": {
@@ -327,11 +327,11 @@
               "total": 6
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
-              "covered": 15,
+              "covered": 14,
               "total": 21
             }
           },
@@ -403,7 +403,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 0,
               "total": 4
             },
             "function": {
@@ -583,7 +583,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 10,
+              "covered": 8,
               "total": 33
             },
             "function": {
@@ -887,11 +887,11 @@
               "total": 6
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
-              "covered": 15,
+              "covered": 14,
               "total": 21
             }
           },
@@ -1087,11 +1087,11 @@
               "total": 6
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
-              "covered": 15,
+              "covered": 14,
               "total": 21
             }
           },
@@ -1103,7 +1103,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 5,
+              "covered": 4,
               "total": 48
             },
             "function": {
@@ -1147,11 +1147,11 @@
               "total": 6
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
-              "covered": 15,
+              "covered": 14,
               "total": 21
             }
           },
@@ -1611,7 +1611,7 @@
               "total": 8
             },
             "line": {
-              "covered": 18,
+              "covered": 17,
               "total": 36
             }
           },
@@ -1663,7 +1663,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 6,
+              "covered": 4,
               "total": 14
             },
             "function": {
@@ -1683,7 +1683,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 3,
+              "covered": 2,
               "total": 7
             },
             "function": {
@@ -1703,7 +1703,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 6,
+              "covered": 4,
               "total": 14
             },
             "function": {
@@ -1763,15 +1763,15 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 4,
+              "covered": 3,
               "total": 14
             },
             "function": {
-              "covered": 8,
+              "covered": 7,
               "total": 16
             },
             "line": {
-              "covered": 22,
+              "covered": 21,
               "total": 59
             }
           },
@@ -1787,11 +1787,11 @@
               "total": 19
             },
             "function": {
-              "covered": 4,
+              "covered": 3,
               "total": 15
             },
             "line": {
-              "covered": 14,
+              "covered": 13,
               "total": 56
             }
           },
@@ -1847,11 +1847,11 @@
               "total": 18
             },
             "function": {
-              "covered": 4,
+              "covered": 3,
               "total": 13
             },
             "line": {
-              "covered": 16,
+              "covered": 14,
               "total": 52
             }
           },
@@ -1867,11 +1867,11 @@
               "total": 18
             },
             "function": {
-              "covered": 4,
+              "covered": 3,
               "total": 13
             },
             "line": {
-              "covered": 16,
+              "covered": 14,
               "total": 52
             }
           },
@@ -1923,15 +1923,15 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 7,
+              "covered": 6,
               "total": 26
             },
             "function": {
-              "covered": 6,
+              "covered": 5,
               "total": 13
             },
             "line": {
-              "covered": 25,
+              "covered": 23,
               "total": 56
             }
           },
@@ -2007,11 +2007,11 @@
               "total": 13
             },
             "function": {
-              "covered": 2,
+              "covered": 7,
               "total": 19
             },
             "line": {
-              "covered": 4,
+              "covered": 9,
               "total": 68
             }
           },
@@ -2103,15 +2103,15 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 1,
               "total": 10
             },
             "function": {
-              "covered": 4,
+              "covered": 3,
               "total": 18
             },
             "line": {
-              "covered": 9,
+              "covered": 8,
               "total": 73
             }
           },
@@ -2307,7 +2307,7 @@
               "total": 5
             },
             "function": {
-              "covered": 2,
+              "covered": 3,
               "total": 3
             },
             "line": {
@@ -2327,7 +2327,7 @@
               "total": 6
             },
             "function": {
-              "covered": 2,
+              "covered": 3,
               "total": 3
             },
             "line": {
@@ -2387,7 +2387,7 @@
               "total": 6
             },
             "function": {
-              "covered": 2,
+              "covered": 3,
               "total": 3
             },
             "line": {
@@ -2603,7 +2603,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 3,
+              "covered": 5,
               "total": 5
             },
             "function": {
@@ -2611,7 +2611,7 @@
               "total": 1
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 9
             }
           },
@@ -3083,7 +3083,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 0,
               "total": 2
             },
             "function": {
@@ -3103,7 +3103,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 0,
               "total": 2
             },
             "function": {
@@ -3191,7 +3191,7 @@
               "total": 1
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 9
             }
           },
@@ -3251,7 +3251,7 @@
               "total": 1
             },
             "line": {
-              "covered": 16,
+              "covered": 15,
               "total": 16
             }
           },
@@ -3387,11 +3387,11 @@
               "total": 7
             },
             "function": {
-              "covered": 5,
+              "covered": 4,
               "total": 12
             },
             "line": {
-              "covered": 38,
+              "covered": 35,
               "total": 70
             }
           },
@@ -3427,11 +3427,11 @@
               "total": 16
             },
             "function": {
-              "covered": 5,
+              "covered": 4,
               "total": 13
             },
             "line": {
-              "covered": 49,
+              "covered": 48,
               "total": 88
             }
           },
@@ -3607,11 +3607,11 @@
               "total": 54
             },
             "function": {
-              "covered": 9,
+              "covered": 7,
               "total": 11
             },
             "line": {
-              "covered": 64,
+              "covered": 62,
               "total": 69
             }
           },
@@ -3623,15 +3623,15 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 7,
+              "covered": 8,
               "total": 22
             },
             "function": {
-              "covered": 8,
+              "covered": 7,
               "total": 19
             },
             "line": {
-              "covered": 60,
+              "covered": 59,
               "total": 110
             }
           },

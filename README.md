@@ -73,12 +73,15 @@ synthetic placeholder log.
 
 ## Coverage
 
-Source coverage is measured by inserting one trap at a time and replaying only
-tests that pass on the unmodified subject.  A trap is covered when the replay
-reaches the instrumented location.  Bytecode path coverage uses a patched
-Foundry build that records executed bytecode-path identifiers.  Each tool's
-observed paths are intersected with the same frozen per-subject denominator;
-the reported comparison is restricted to the common subject set.
+Source coverage uses the frozen per-subject function, line, and branch targets
+derived from Foundry LCOV.  Only tests that pass on the unmodified subject are
+credited.  Foundry-native suites use target-specific trap evidence; native
+transaction traces from the other generators are projected onto the same
+target manifests.  Reported source percentages are macro means over subjects.
+Bytecode path coverage uses a patched Foundry build that records executed
+bytecode-path identifiers.  Each tool's observed paths are intersected with the
+same frozen per-subject denominator; the reported comparison is restricted to
+the common subject set.
 
 ## Reproducing the released tables
 

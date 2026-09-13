@@ -5,16 +5,16 @@
     {
       "pooled": {
         "branch": {
-          "covered": 123,
-          "total": 2434
+          "covered": 141,
+          "total": 2476
         },
         "function": {
-          "covered": 322,
-          "total": 1902
+          "covered": 312,
+          "total": 1905
         },
         "line": {
-          "covered": 958,
-          "total": 8988
+          "covered": 996,
+          "total": 9117
         }
       },
       "subjects": [
@@ -267,11 +267,11 @@
               "total": 24
             },
             "function": {
-              "covered": 21,
+              "covered": 19,
               "total": 30
             },
             "line": {
-              "covered": 66,
+              "covered": 65,
               "total": 112
             }
           },
@@ -1663,7 +1663,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 3,
+              "covered": 5,
               "total": 14
             },
             "function": {
@@ -1683,7 +1683,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 4,
               "total": 7
             },
             "function": {
@@ -1703,7 +1703,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 6,
               "total": 14
             },
             "function": {
@@ -1851,7 +1851,7 @@
               "total": 13
             },
             "line": {
-              "covered": 10,
+              "covered": 11,
               "total": 52
             }
           },
@@ -1903,7 +1903,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 3,
+              "covered": 2,
               "total": 11
             },
             "function": {
@@ -1911,7 +1911,7 @@
               "total": 7
             },
             "line": {
-              "covered": 22,
+              "covered": 21,
               "total": 34
             }
           },
@@ -2007,11 +2007,11 @@
               "total": 13
             },
             "function": {
-              "covered": 14,
+              "covered": 9,
               "total": 19
             },
             "line": {
-              "covered": 26,
+              "covered": 21,
               "total": 68
             }
           },
@@ -2107,11 +2107,11 @@
               "total": 10
             },
             "function": {
-              "covered": 12,
+              "covered": 9,
               "total": 18
             },
             "line": {
-              "covered": 20,
+              "covered": 17,
               "total": 73
             }
           },
@@ -2132,7 +2132,7 @@
             },
             "line": {
               "covered": 2,
-              "total": 12
+              "total": 17
             }
           },
           "subject_id": "peer_soltg__Math",
@@ -2151,8 +2151,8 @@
               "total": 1
             },
             "line": {
-              "covered": 3,
-              "total": 7
+              "covered": 4,
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__branches_assert_condition_2",
@@ -2164,7 +2164,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -2172,7 +2172,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__branches_in_modifiers",
@@ -2192,7 +2192,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 19
+              "total": 25
             }
           },
           "subject_id": "peer_soltg__branches_in_modifiers_2",
@@ -2212,7 +2212,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 13
             }
           },
           "subject_id": "peer_soltg__branches_inside_modifiers_2",
@@ -2232,7 +2232,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 13
             }
           },
           "subject_id": "peer_soltg__branches_inside_modifiers_3",
@@ -2251,8 +2251,8 @@
               "total": 1
             },
             "line": {
-              "covered": 4,
-              "total": 4
+              "covered": 5,
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__branches_merge_variables_3",
@@ -2271,8 +2271,8 @@
               "total": 1
             },
             "line": {
-              "covered": 4,
-              "total": 5
+              "covered": 5,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__branches_merge_variables_5",
@@ -2291,8 +2291,8 @@
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 5
+              "covered": 6,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__branches_merge_variables_6",
@@ -2311,8 +2311,8 @@
               "total": 3
             },
             "line": {
-              "covered": 13,
-              "total": 16
+              "covered": 14,
+              "total": 17
             }
           },
           "subject_id": "peer_soltg__constructor_1",
@@ -2331,8 +2331,8 @@
               "total": 3
             },
             "line": {
-              "covered": 12,
-              "total": 17
+              "covered": 14,
+              "total": 18
             }
           },
           "subject_id": "peer_soltg__constructor_2_fun_overloading",
@@ -2351,8 +2351,8 @@
               "total": 2
             },
             "line": {
-              "covered": 10,
-              "total": 10
+              "covered": 11,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_3",
@@ -2371,8 +2371,8 @@
               "total": 2
             },
             "line": {
-              "covered": 8,
-              "total": 8
+              "covered": 9,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__constructor_3_m",
@@ -2391,8 +2391,8 @@
               "total": 3
             },
             "line": {
-              "covered": 8,
-              "total": 17
+              "covered": 10,
+              "total": 18
             }
           },
           "subject_id": "peer_soltg__constructor_5",
@@ -2411,8 +2411,8 @@
               "total": 2
             },
             "line": {
-              "covered": 10,
-              "total": 10
+              "covered": 11,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_6",
@@ -2431,8 +2431,8 @@
               "total": 2
             },
             "line": {
-              "covered": 10,
-              "total": 10
+              "covered": 11,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_7",
@@ -2452,7 +2452,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 9
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__constructor_8",
@@ -2471,8 +2471,8 @@
               "total": 2
             },
             "line": {
-              "covered": 4,
-              "total": 4
+              "covered": 5,
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__constructor_9",
@@ -2492,7 +2492,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 4
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_state_variable_init",
@@ -2508,11 +2508,11 @@
             },
             "function": {
               "covered": 0,
-              "total": 0
+              "total": 1
             },
             "line": {
               "covered": 0,
-              "total": 0
+              "total": 4
             }
           },
           "subject_id": "peer_soltg__constructor_state_variable_init_chain_alternate",
@@ -2528,11 +2528,11 @@
             },
             "function": {
               "covered": 0,
-              "total": 0
+              "total": 1
             },
             "line": {
               "covered": 0,
-              "total": 0
+              "total": 4
             }
           },
           "subject_id": "peer_soltg__constructor_state_variable_init_diamond",
@@ -2548,11 +2548,11 @@
             },
             "function": {
               "covered": 0,
-              "total": 0
+              "total": 1
             },
             "line": {
               "covered": 0,
-              "total": 0
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__constructors",
@@ -2563,16 +2563,16 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
-              "total": 0
+              "covered": 1,
+              "total": 2
             },
             "function": {
               "covered": 1,
               "total": 1
             },
             "line": {
-              "covered": 3,
-              "total": 3
+              "covered": 5,
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__do_while_1_fail",
@@ -2591,8 +2591,8 @@
               "total": 2
             },
             "line": {
-              "covered": 5,
-              "total": 5
+              "covered": 6,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__exampl",
@@ -2603,7 +2603,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 5,
+              "covered": 3,
               "total": 5
             },
             "function": {
@@ -2611,8 +2611,8 @@
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 8
+              "covered": 6,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__few_calls",
@@ -2623,16 +2623,16 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
-              "total": 2
+              "covered": 2,
+              "total": 4
             },
             "function": {
               "covered": 1,
               "total": 1
             },
             "line": {
-              "covered": 4,
-              "total": 6
+              "covered": 6,
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__for_1_break",
@@ -2651,8 +2651,8 @@
               "total": 1
             },
             "line": {
-              "covered": 2,
-              "total": 5
+              "covered": 3,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__for_1_break_fail",
@@ -2664,7 +2664,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -2672,7 +2672,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 5
+              "total": 7
             }
           },
           "subject_id": "peer_soltg__for_1_continue",
@@ -2684,7 +2684,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
@@ -2692,7 +2692,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 4
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__loop_basic",
@@ -2711,8 +2711,8 @@
               "total": 1
             },
             "line": {
-              "covered": 8,
-              "total": 10
+              "covered": 9,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__loop_if",
@@ -2731,8 +2731,8 @@
               "total": 5
             },
             "line": {
-              "covered": 17,
-              "total": 21
+              "covered": 18,
+              "total": 23
             }
           },
           "subject_id": "peer_soltg__many_fun",
@@ -2744,7 +2744,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
@@ -2752,7 +2752,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 3
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__microWeth",
@@ -2771,8 +2771,8 @@
               "total": 2
             },
             "line": {
-              "covered": 7,
-              "total": 8
+              "covered": 9,
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__overloading",
@@ -2783,7 +2783,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 3,
               "total": 3
             },
             "function": {
@@ -2791,8 +2791,8 @@
               "total": 2
             },
             "line": {
-              "covered": 7,
-              "total": 10
+              "covered": 14,
+              "total": 14
             }
           },
           "subject_id": "peer_soltg__return_1",
@@ -2804,7 +2804,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 3
+              "total": 5
             },
             "function": {
               "covered": 0,
@@ -2812,7 +2812,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__revert_complex_flow",
@@ -2832,7 +2832,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 9
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__seq_calls",
@@ -2851,8 +2851,8 @@
               "total": 2
             },
             "line": {
-              "covered": 7,
-              "total": 7
+              "covered": 9,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__short_circuit_and",
@@ -2872,7 +2872,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 8
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__short_circuit_and_inside_branch",
@@ -2891,8 +2891,8 @@
               "total": 2
             },
             "line": {
-              "covered": 9,
-              "total": 11
+              "covered": 11,
+              "total": 15
             }
           },
           "subject_id": "peer_soltg__short_circuit_or_inside_branch",
@@ -2911,8 +2911,8 @@
               "total": 1
             },
             "line": {
-              "covered": 3,
-              "total": 5
+              "covered": 4,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__simple_if",
@@ -2923,7 +2923,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 4
             },
             "function": {
@@ -2931,8 +2931,8 @@
               "total": 1
             },
             "line": {
-              "covered": 3,
-              "total": 7
+              "covered": 4,
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__simple_if_2",
@@ -2944,7 +2944,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 5
             },
             "function": {
               "covered": 0,
@@ -2952,7 +2952,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 9
+              "total": 13
             }
           },
           "subject_id": "peer_soltg__simple_if_array",
@@ -2964,7 +2964,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -2972,7 +2972,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__simple_if_state_var",
@@ -2984,7 +2984,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -2992,7 +2992,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__simple_if_struct",
@@ -3004,7 +3004,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -3012,7 +3012,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__simple_if_struct_2",
@@ -3024,7 +3024,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 5
             },
             "function": {
               "covered": 0,
@@ -3032,7 +3032,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 7
+              "total": 12
             }
           },
           "subject_id": "peer_soltg__simple_if_tuple",
@@ -3051,8 +3051,8 @@
               "total": 5
             },
             "line": {
-              "covered": 12,
-              "total": 13
+              "covered": 13,
+              "total": 14
             }
           },
           "subject_id": "peer_soltg__state_machine_1",
@@ -3071,8 +3071,8 @@
               "total": 5
             },
             "line": {
-              "covered": 13,
-              "total": 13
+              "covered": 14,
+              "total": 14
             }
           },
           "subject_id": "peer_soltg__state_machine_1_fail",
@@ -3091,8 +3091,8 @@
               "total": 2
             },
             "line": {
-              "covered": 6,
-              "total": 6
+              "covered": 8,
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__store",
@@ -3112,7 +3112,7 @@
             },
             "line": {
               "covered": 6,
-              "total": 7
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__store_state",
@@ -3132,7 +3132,7 @@
             },
             "line": {
               "covered": 5,
-              "total": 5
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__triple_nested_if",
@@ -3144,7 +3144,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 2
+              "total": 4
             },
             "function": {
               "covered": 0,
@@ -3152,7 +3152,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 5
+              "total": 7
             }
           },
           "subject_id": "peer_soltg__while_1",
@@ -3163,16 +3163,16 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
-              "total": 1
+              "covered": 1,
+              "total": 3
             },
             "function": {
               "covered": 1,
               "total": 1
             },
             "line": {
-              "covered": 4,
-              "total": 6
+              "covered": 6,
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__while_1_continue",
@@ -3183,16 +3183,16 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
-              "total": 1
+              "covered": 1,
+              "total": 3
             },
             "function": {
               "covered": 1,
               "total": 1
             },
             "line": {
-              "covered": 4,
-              "total": 7
+              "covered": 6,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__while_1_continue_fail",
@@ -3211,8 +3211,8 @@
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 6
+              "covered": 6,
+              "total": 7
             }
           },
           "subject_id": "peer_soltg__while_2",
@@ -3224,7 +3224,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 5
+              "total": 9
             },
             "function": {
               "covered": 0,
@@ -3232,7 +3232,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 13
+              "total": 17
             }
           },
           "subject_id": "peer_soltg__while_nested_break",
@@ -3244,7 +3244,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 3
+              "total": 7
             },
             "function": {
               "covered": 0,
@@ -3252,7 +3252,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 12
+              "total": 16
             }
           },
           "subject_id": "peer_soltg__while_nested_continue",
@@ -3283,7 +3283,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 2,
               "total": 5
             },
             "function": {
@@ -3363,7 +3363,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 6,
               "total": 24
             },
             "function": {
@@ -3664,16 +3664,16 @@
     {
       "pooled": {
         "branch": {
-          "covered": 142,
-          "total": 2434
+          "covered": 155,
+          "total": 2476
         },
         "function": {
-          "covered": 335,
-          "total": 1902
+          "covered": 321,
+          "total": 1905
         },
         "line": {
-          "covered": 1008,
-          "total": 8988
+          "covered": 1033,
+          "total": 9117
         }
       },
       "subjects": [
@@ -3830,7 +3830,7 @@
               "total": 3
             },
             "line": {
-              "covered": 12,
+              "covered": 11,
               "total": 22
             }
           },
@@ -3926,7 +3926,7 @@
               "total": 24
             },
             "function": {
-              "covered": 18,
+              "covered": 16,
               "total": 30
             },
             "line": {
@@ -4762,7 +4762,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 4,
+              "covered": 5,
               "total": 48
             },
             "function": {
@@ -5322,7 +5322,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 3,
+              "covered": 7,
               "total": 14
             },
             "function": {
@@ -5342,7 +5342,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 3,
+              "covered": 4,
               "total": 7
             },
             "function": {
@@ -5362,7 +5362,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 6,
               "total": 14
             },
             "function": {
@@ -5510,7 +5510,7 @@
               "total": 13
             },
             "line": {
-              "covered": 8,
+              "covered": 9,
               "total": 52
             }
           },
@@ -5530,7 +5530,7 @@
               "total": 13
             },
             "line": {
-              "covered": 9,
+              "covered": 10,
               "total": 52
             }
           },
@@ -5558,19 +5558,19 @@
           "valid_unit_count": 0
         },
         {
-          "coverage_lower_bound": false,
+          "coverage_lower_bound": true,
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 4,
+              "covered": 2,
               "total": 11
             },
             "function": {
-              "covered": 6,
+              "covered": 5,
               "total": 7
             },
             "line": {
-              "covered": 25,
+              "covered": 21,
               "total": 34
             }
           },
@@ -5582,7 +5582,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 3,
+              "covered": 4,
               "total": 26
             },
             "function": {
@@ -5590,7 +5590,7 @@
               "total": 13
             },
             "line": {
-              "covered": 17,
+              "covered": 18,
               "total": 56
             }
           },
@@ -5658,19 +5658,19 @@
           "valid_unit_count": 3
         },
         {
-          "coverage_lower_bound": false,
+          "coverage_lower_bound": true,
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 0,
               "total": 13
             },
             "function": {
-              "covered": 17,
+              "covered": 8,
               "total": 19
             },
             "line": {
-              "covered": 33,
+              "covered": 18,
               "total": 68
             }
           },
@@ -5762,15 +5762,15 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 2,
               "total": 10
             },
             "function": {
-              "covered": 13,
+              "covered": 11,
               "total": 18
             },
             "line": {
-              "covered": 25,
+              "covered": 23,
               "total": 73
             }
           },
@@ -5790,8 +5790,8 @@
               "total": 4
             },
             "line": {
-              "covered": 5,
-              "total": 12
+              "covered": 6,
+              "total": 17
             }
           },
           "subject_id": "peer_soltg__Math",
@@ -5802,7 +5802,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 3,
               "total": 4
             },
             "function": {
@@ -5810,8 +5810,8 @@
               "total": 1
             },
             "line": {
-              "covered": 6,
-              "total": 7
+              "covered": 8,
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__branches_assert_condition_2",
@@ -5823,7 +5823,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -5831,7 +5831,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__branches_in_modifiers",
@@ -5851,7 +5851,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 19
+              "total": 25
             }
           },
           "subject_id": "peer_soltg__branches_in_modifiers_2",
@@ -5871,7 +5871,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 13
             }
           },
           "subject_id": "peer_soltg__branches_inside_modifiers_2",
@@ -5891,7 +5891,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 13
             }
           },
           "subject_id": "peer_soltg__branches_inside_modifiers_3",
@@ -5910,8 +5910,8 @@
               "total": 1
             },
             "line": {
-              "covered": 4,
-              "total": 4
+              "covered": 5,
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__branches_merge_variables_3",
@@ -5930,8 +5930,8 @@
               "total": 1
             },
             "line": {
-              "covered": 4,
-              "total": 5
+              "covered": 5,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__branches_merge_variables_5",
@@ -5950,8 +5950,8 @@
               "total": 1
             },
             "line": {
-              "covered": 4,
-              "total": 5
+              "covered": 5,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__branches_merge_variables_6",
@@ -5970,8 +5970,8 @@
               "total": 3
             },
             "line": {
-              "covered": 12,
-              "total": 16
+              "covered": 14,
+              "total": 17
             }
           },
           "subject_id": "peer_soltg__constructor_1",
@@ -5990,8 +5990,8 @@
               "total": 3
             },
             "line": {
-              "covered": 13,
-              "total": 17
+              "covered": 15,
+              "total": 18
             }
           },
           "subject_id": "peer_soltg__constructor_2_fun_overloading",
@@ -6010,8 +6010,8 @@
               "total": 2
             },
             "line": {
-              "covered": 10,
-              "total": 10
+              "covered": 11,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_3",
@@ -6030,8 +6030,8 @@
               "total": 2
             },
             "line": {
-              "covered": 8,
-              "total": 8
+              "covered": 9,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__constructor_3_m",
@@ -6050,8 +6050,8 @@
               "total": 3
             },
             "line": {
-              "covered": 8,
-              "total": 17
+              "covered": 10,
+              "total": 18
             }
           },
           "subject_id": "peer_soltg__constructor_5",
@@ -6070,8 +6070,8 @@
               "total": 2
             },
             "line": {
-              "covered": 10,
-              "total": 10
+              "covered": 11,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_6",
@@ -6090,8 +6090,8 @@
               "total": 2
             },
             "line": {
-              "covered": 8,
-              "total": 10
+              "covered": 9,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_7",
@@ -6110,8 +6110,8 @@
               "total": 2
             },
             "line": {
-              "covered": 8,
-              "total": 9
+              "covered": 9,
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__constructor_8",
@@ -6130,8 +6130,8 @@
               "total": 2
             },
             "line": {
-              "covered": 4,
-              "total": 4
+              "covered": 5,
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__constructor_9",
@@ -6151,70 +6151,10 @@
             },
             "line": {
               "covered": 0,
-              "total": 4
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_state_variable_init",
-          "valid_unit_count": 0
-        },
-        {
-          "coverage_lower_bound": false,
-          "incomplete": false,
-          "metrics": {
-            "branch": {
-              "covered": 0,
-              "total": 0
-            },
-            "function": {
-              "covered": 0,
-              "total": 0
-            },
-            "line": {
-              "covered": 0,
-              "total": 0
-            }
-          },
-          "subject_id": "peer_soltg__constructor_state_variable_init_chain_alternate",
-          "valid_unit_count": 0
-        },
-        {
-          "coverage_lower_bound": false,
-          "incomplete": false,
-          "metrics": {
-            "branch": {
-              "covered": 0,
-              "total": 0
-            },
-            "function": {
-              "covered": 0,
-              "total": 0
-            },
-            "line": {
-              "covered": 0,
-              "total": 0
-            }
-          },
-          "subject_id": "peer_soltg__constructor_state_variable_init_diamond",
-          "valid_unit_count": 0
-        },
-        {
-          "coverage_lower_bound": false,
-          "incomplete": false,
-          "metrics": {
-            "branch": {
-              "covered": 0,
-              "total": 0
-            },
-            "function": {
-              "covered": 0,
-              "total": 0
-            },
-            "line": {
-              "covered": 0,
-              "total": 0
-            }
-          },
-          "subject_id": "peer_soltg__constructors",
           "valid_unit_count": 0
         },
         {
@@ -6231,7 +6171,67 @@
             },
             "line": {
               "covered": 0,
-              "total": 3
+              "total": 4
+            }
+          },
+          "subject_id": "peer_soltg__constructor_state_variable_init_chain_alternate",
+          "valid_unit_count": 0
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 0
+            },
+            "function": {
+              "covered": 0,
+              "total": 1
+            },
+            "line": {
+              "covered": 0,
+              "total": 4
+            }
+          },
+          "subject_id": "peer_soltg__constructor_state_variable_init_diamond",
+          "valid_unit_count": 0
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 0
+            },
+            "function": {
+              "covered": 0,
+              "total": 1
+            },
+            "line": {
+              "covered": 0,
+              "total": 6
+            }
+          },
+          "subject_id": "peer_soltg__constructors",
+          "valid_unit_count": 0
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 2
+            },
+            "function": {
+              "covered": 0,
+              "total": 1
+            },
+            "line": {
+              "covered": 0,
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__do_while_1_fail",
@@ -6250,8 +6250,8 @@
               "total": 2
             },
             "line": {
-              "covered": 4,
-              "total": 5
+              "covered": 5,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__exampl",
@@ -6262,7 +6262,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 5,
+              "covered": 3,
               "total": 5
             },
             "function": {
@@ -6270,8 +6270,8 @@
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 8
+              "covered": 6,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__few_calls",
@@ -6282,16 +6282,16 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
-              "total": 2
+              "covered": 2,
+              "total": 4
             },
             "function": {
               "covered": 1,
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 6
+              "covered": 7,
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__for_1_break",
@@ -6310,8 +6310,8 @@
               "total": 1
             },
             "line": {
-              "covered": 2,
-              "total": 5
+              "covered": 3,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__for_1_break_fail",
@@ -6323,7 +6323,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -6331,7 +6331,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 5
+              "total": 7
             }
           },
           "subject_id": "peer_soltg__for_1_continue",
@@ -6343,7 +6343,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
@@ -6351,7 +6351,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 4
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__loop_basic",
@@ -6370,8 +6370,8 @@
               "total": 1
             },
             "line": {
-              "covered": 8,
-              "total": 10
+              "covered": 9,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__loop_if",
@@ -6390,8 +6390,8 @@
               "total": 5
             },
             "line": {
-              "covered": 17,
-              "total": 21
+              "covered": 19,
+              "total": 23
             }
           },
           "subject_id": "peer_soltg__many_fun",
@@ -6403,7 +6403,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
@@ -6411,7 +6411,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 3
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__microWeth",
@@ -6430,8 +6430,8 @@
               "total": 2
             },
             "line": {
-              "covered": 7,
-              "total": 8
+              "covered": 9,
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__overloading",
@@ -6442,7 +6442,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 3,
               "total": 3
             },
             "function": {
@@ -6450,8 +6450,8 @@
               "total": 2
             },
             "line": {
-              "covered": 7,
-              "total": 10
+              "covered": 14,
+              "total": 14
             }
           },
           "subject_id": "peer_soltg__return_1",
@@ -6463,7 +6463,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 3
+              "total": 5
             },
             "function": {
               "covered": 0,
@@ -6471,7 +6471,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__revert_complex_flow",
@@ -6490,8 +6490,8 @@
               "total": 2
             },
             "line": {
-              "covered": 9,
-              "total": 9
+              "covered": 11,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__seq_calls",
@@ -6510,8 +6510,8 @@
               "total": 2
             },
             "line": {
-              "covered": 7,
-              "total": 7
+              "covered": 9,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__short_circuit_and",
@@ -6531,7 +6531,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 8
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__short_circuit_and_inside_branch",
@@ -6551,7 +6551,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 15
             }
           },
           "subject_id": "peer_soltg__short_circuit_or_inside_branch",
@@ -6570,8 +6570,8 @@
               "total": 1
             },
             "line": {
-              "covered": 3,
-              "total": 5
+              "covered": 4,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__simple_if",
@@ -6591,7 +6591,7 @@
             },
             "line": {
               "covered": 5,
-              "total": 7
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__simple_if_2",
@@ -6603,7 +6603,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 5
             },
             "function": {
               "covered": 0,
@@ -6611,7 +6611,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 9
+              "total": 13
             }
           },
           "subject_id": "peer_soltg__simple_if_array",
@@ -6623,7 +6623,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -6631,7 +6631,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__simple_if_state_var",
@@ -6643,7 +6643,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -6651,7 +6651,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__simple_if_struct",
@@ -6663,7 +6663,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -6671,7 +6671,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__simple_if_struct_2",
@@ -6683,7 +6683,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 5
             },
             "function": {
               "covered": 0,
@@ -6691,7 +6691,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 7
+              "total": 12
             }
           },
           "subject_id": "peer_soltg__simple_if_tuple",
@@ -6710,8 +6710,8 @@
               "total": 5
             },
             "line": {
-              "covered": 12,
-              "total": 13
+              "covered": 13,
+              "total": 14
             }
           },
           "subject_id": "peer_soltg__state_machine_1",
@@ -6731,7 +6731,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 13
+              "total": 14
             }
           },
           "subject_id": "peer_soltg__state_machine_1_fail",
@@ -6750,8 +6750,8 @@
               "total": 2
             },
             "line": {
-              "covered": 6,
-              "total": 6
+              "covered": 8,
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__store",
@@ -6771,7 +6771,7 @@
             },
             "line": {
               "covered": 6,
-              "total": 7
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__store_state",
@@ -6791,7 +6791,7 @@
             },
             "line": {
               "covered": 5,
-              "total": 5
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__triple_nested_if",
@@ -6803,7 +6803,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 2
+              "total": 4
             },
             "function": {
               "covered": 0,
@@ -6811,7 +6811,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 5
+              "total": 7
             }
           },
           "subject_id": "peer_soltg__while_1",
@@ -6823,7 +6823,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -6831,7 +6831,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__while_1_continue",
@@ -6843,7 +6843,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -6851,7 +6851,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 7
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__while_1_continue_fail",
@@ -6870,8 +6870,8 @@
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 6
+              "covered": 6,
+              "total": 7
             }
           },
           "subject_id": "peer_soltg__while_2",
@@ -6883,7 +6883,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 5
+              "total": 9
             },
             "function": {
               "covered": 0,
@@ -6891,7 +6891,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 13
+              "total": 17
             }
           },
           "subject_id": "peer_soltg__while_nested_break",
@@ -6903,7 +6903,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 3
+              "total": 7
             },
             "function": {
               "covered": 0,
@@ -6911,7 +6911,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 12
+              "total": 16
             }
           },
           "subject_id": "peer_soltg__while_nested_continue",
@@ -6942,7 +6942,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 2,
               "total": 5
             },
             "function": {
@@ -7323,16 +7323,16 @@
     {
       "pooled": {
         "branch": {
-          "covered": 109,
-          "total": 2434
+          "covered": 119,
+          "total": 2476
         },
         "function": {
-          "covered": 311,
-          "total": 1902
+          "covered": 299,
+          "total": 1905
         },
         "line": {
-          "covered": 889,
-          "total": 8988
+          "covered": 907,
+          "total": 9117
         }
       },
       "subjects": [
@@ -8421,7 +8421,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 4,
+              "covered": 5,
               "total": 48
             },
             "function": {
@@ -8981,7 +8981,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 3,
+              "covered": 7,
               "total": 14
             },
             "function": {
@@ -9001,7 +9001,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 3,
+              "covered": 4,
               "total": 7
             },
             "function": {
@@ -9021,7 +9021,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 6,
               "total": 14
             },
             "function": {
@@ -9169,7 +9169,7 @@
               "total": 13
             },
             "line": {
-              "covered": 10,
+              "covered": 11,
               "total": 52
             }
           },
@@ -9217,19 +9217,19 @@
           "valid_unit_count": 0
         },
         {
-          "coverage_lower_bound": false,
+          "coverage_lower_bound": true,
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 4,
+              "covered": 2,
               "total": 11
             },
             "function": {
-              "covered": 6,
+              "covered": 5,
               "total": 7
             },
             "line": {
-              "covered": 25,
+              "covered": 19,
               "total": 34
             }
           },
@@ -9297,7 +9297,7 @@
           "valid_unit_count": 1
         },
         {
-          "coverage_lower_bound": false,
+          "coverage_lower_bound": true,
           "incomplete": false,
           "metrics": {
             "branch": {
@@ -9305,11 +9305,11 @@
               "total": 3
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 3
             },
             "line": {
-              "covered": 6,
+              "covered": 4,
               "total": 9
             }
           },
@@ -9325,11 +9325,11 @@
               "total": 13
             },
             "function": {
-              "covered": 15,
+              "covered": 9,
               "total": 19
             },
             "line": {
-              "covered": 27,
+              "covered": 21,
               "total": 68
             }
           },
@@ -9425,11 +9425,11 @@
               "total": 10
             },
             "function": {
-              "covered": 13,
+              "covered": 10,
               "total": 18
             },
             "line": {
-              "covered": 22,
+              "covered": 19,
               "total": 73
             }
           },
@@ -9450,7 +9450,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 12
+              "total": 17
             }
           },
           "subject_id": "peer_soltg__Math",
@@ -9461,7 +9461,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 2,
               "total": 4
             },
             "function": {
@@ -9469,8 +9469,8 @@
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 7
+              "covered": 6,
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__branches_assert_condition_2",
@@ -9482,7 +9482,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -9490,7 +9490,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__branches_in_modifiers",
@@ -9510,7 +9510,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 19
+              "total": 25
             }
           },
           "subject_id": "peer_soltg__branches_in_modifiers_2",
@@ -9530,7 +9530,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 13
             }
           },
           "subject_id": "peer_soltg__branches_inside_modifiers_2",
@@ -9550,7 +9550,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 13
             }
           },
           "subject_id": "peer_soltg__branches_inside_modifiers_3",
@@ -9561,7 +9561,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 0,
               "total": 2
             },
             "function": {
@@ -9569,8 +9569,8 @@
               "total": 1
             },
             "line": {
-              "covered": 3,
-              "total": 4
+              "covered": 4,
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__branches_merge_variables_3",
@@ -9589,8 +9589,8 @@
               "total": 1
             },
             "line": {
-              "covered": 4,
-              "total": 5
+              "covered": 5,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__branches_merge_variables_5",
@@ -9609,8 +9609,8 @@
               "total": 1
             },
             "line": {
-              "covered": 4,
-              "total": 5
+              "covered": 5,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__branches_merge_variables_6",
@@ -9629,8 +9629,8 @@
               "total": 3
             },
             "line": {
-              "covered": 14,
-              "total": 16
+              "covered": 16,
+              "total": 17
             }
           },
           "subject_id": "peer_soltg__constructor_1",
@@ -9649,8 +9649,8 @@
               "total": 3
             },
             "line": {
-              "covered": 12,
-              "total": 17
+              "covered": 14,
+              "total": 18
             }
           },
           "subject_id": "peer_soltg__constructor_2_fun_overloading",
@@ -9670,7 +9670,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 10
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_3",
@@ -9689,8 +9689,8 @@
               "total": 2
             },
             "line": {
-              "covered": 8,
-              "total": 8
+              "covered": 9,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__constructor_3_m",
@@ -9709,8 +9709,8 @@
               "total": 3
             },
             "line": {
-              "covered": 8,
-              "total": 17
+              "covered": 10,
+              "total": 18
             }
           },
           "subject_id": "peer_soltg__constructor_5",
@@ -9729,8 +9729,8 @@
               "total": 2
             },
             "line": {
-              "covered": 10,
-              "total": 10
+              "covered": 11,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_6",
@@ -9749,8 +9749,8 @@
               "total": 2
             },
             "line": {
-              "covered": 8,
-              "total": 10
+              "covered": 9,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_7",
@@ -9770,7 +9770,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 9
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__constructor_8",
@@ -9789,8 +9789,8 @@
               "total": 2
             },
             "line": {
-              "covered": 4,
-              "total": 4
+              "covered": 5,
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__constructor_9",
@@ -9810,70 +9810,10 @@
             },
             "line": {
               "covered": 0,
-              "total": 4
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_state_variable_init",
-          "valid_unit_count": 0
-        },
-        {
-          "coverage_lower_bound": false,
-          "incomplete": false,
-          "metrics": {
-            "branch": {
-              "covered": 0,
-              "total": 0
-            },
-            "function": {
-              "covered": 0,
-              "total": 0
-            },
-            "line": {
-              "covered": 0,
-              "total": 0
-            }
-          },
-          "subject_id": "peer_soltg__constructor_state_variable_init_chain_alternate",
-          "valid_unit_count": 0
-        },
-        {
-          "coverage_lower_bound": false,
-          "incomplete": false,
-          "metrics": {
-            "branch": {
-              "covered": 0,
-              "total": 0
-            },
-            "function": {
-              "covered": 0,
-              "total": 0
-            },
-            "line": {
-              "covered": 0,
-              "total": 0
-            }
-          },
-          "subject_id": "peer_soltg__constructor_state_variable_init_diamond",
-          "valid_unit_count": 0
-        },
-        {
-          "coverage_lower_bound": false,
-          "incomplete": false,
-          "metrics": {
-            "branch": {
-              "covered": 0,
-              "total": 0
-            },
-            "function": {
-              "covered": 0,
-              "total": 0
-            },
-            "line": {
-              "covered": 0,
-              "total": 0
-            }
-          },
-          "subject_id": "peer_soltg__constructors",
           "valid_unit_count": 0
         },
         {
@@ -9890,7 +9830,67 @@
             },
             "line": {
               "covered": 0,
-              "total": 3
+              "total": 4
+            }
+          },
+          "subject_id": "peer_soltg__constructor_state_variable_init_chain_alternate",
+          "valid_unit_count": 0
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 0
+            },
+            "function": {
+              "covered": 0,
+              "total": 1
+            },
+            "line": {
+              "covered": 0,
+              "total": 4
+            }
+          },
+          "subject_id": "peer_soltg__constructor_state_variable_init_diamond",
+          "valid_unit_count": 0
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 0
+            },
+            "function": {
+              "covered": 0,
+              "total": 1
+            },
+            "line": {
+              "covered": 0,
+              "total": 6
+            }
+          },
+          "subject_id": "peer_soltg__constructors",
+          "valid_unit_count": 0
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 2
+            },
+            "function": {
+              "covered": 0,
+              "total": 1
+            },
+            "line": {
+              "covered": 0,
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__do_while_1_fail",
@@ -9910,7 +9910,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 5
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__exampl",
@@ -9921,7 +9921,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 5,
+              "covered": 3,
               "total": 5
             },
             "function": {
@@ -9929,8 +9929,8 @@
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 8
+              "covered": 6,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__few_calls",
@@ -9942,7 +9942,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 2
+              "total": 4
             },
             "function": {
               "covered": 0,
@@ -9950,7 +9950,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__for_1_break",
@@ -9969,8 +9969,8 @@
               "total": 1
             },
             "line": {
-              "covered": 2,
-              "total": 5
+              "covered": 3,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__for_1_break_fail",
@@ -9982,7 +9982,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -9990,7 +9990,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 5
+              "total": 7
             }
           },
           "subject_id": "peer_soltg__for_1_continue",
@@ -10002,7 +10002,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
@@ -10010,7 +10010,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 4
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__loop_basic",
@@ -10029,8 +10029,8 @@
               "total": 1
             },
             "line": {
-              "covered": 6,
-              "total": 10
+              "covered": 7,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__loop_if",
@@ -10049,8 +10049,8 @@
               "total": 5
             },
             "line": {
-              "covered": 16,
-              "total": 21
+              "covered": 18,
+              "total": 23
             }
           },
           "subject_id": "peer_soltg__many_fun",
@@ -10062,7 +10062,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
@@ -10070,7 +10070,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 3
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__microWeth",
@@ -10089,8 +10089,8 @@
               "total": 2
             },
             "line": {
-              "covered": 6,
-              "total": 8
+              "covered": 8,
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__overloading",
@@ -10101,7 +10101,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 3,
               "total": 3
             },
             "function": {
@@ -10109,8 +10109,8 @@
               "total": 2
             },
             "line": {
-              "covered": 7,
-              "total": 10
+              "covered": 14,
+              "total": 14
             }
           },
           "subject_id": "peer_soltg__return_1",
@@ -10122,7 +10122,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 3
+              "total": 5
             },
             "function": {
               "covered": 0,
@@ -10130,7 +10130,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__revert_complex_flow",
@@ -10150,7 +10150,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 9
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__seq_calls",
@@ -10169,8 +10169,8 @@
               "total": 2
             },
             "line": {
-              "covered": 7,
-              "total": 7
+              "covered": 9,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__short_circuit_and",
@@ -10190,7 +10190,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 8
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__short_circuit_and_inside_branch",
@@ -10210,7 +10210,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 15
             }
           },
           "subject_id": "peer_soltg__short_circuit_or_inside_branch",
@@ -10230,7 +10230,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 5
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__simple_if",
@@ -10241,7 +10241,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 4
             },
             "function": {
@@ -10249,8 +10249,8 @@
               "total": 1
             },
             "line": {
-              "covered": 3,
-              "total": 7
+              "covered": 4,
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__simple_if_2",
@@ -10262,7 +10262,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 5
             },
             "function": {
               "covered": 0,
@@ -10270,7 +10270,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 9
+              "total": 13
             }
           },
           "subject_id": "peer_soltg__simple_if_array",
@@ -10282,7 +10282,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -10290,7 +10290,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__simple_if_state_var",
@@ -10302,7 +10302,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -10310,7 +10310,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__simple_if_struct",
@@ -10322,7 +10322,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -10330,7 +10330,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__simple_if_struct_2",
@@ -10342,7 +10342,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 5
             },
             "function": {
               "covered": 0,
@@ -10350,7 +10350,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 7
+              "total": 12
             }
           },
           "subject_id": "peer_soltg__simple_if_tuple",
@@ -10369,8 +10369,8 @@
               "total": 5
             },
             "line": {
-              "covered": 12,
-              "total": 13
+              "covered": 13,
+              "total": 14
             }
           },
           "subject_id": "peer_soltg__state_machine_1",
@@ -10390,7 +10390,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 13
+              "total": 14
             }
           },
           "subject_id": "peer_soltg__state_machine_1_fail",
@@ -10409,8 +10409,8 @@
               "total": 2
             },
             "line": {
-              "covered": 6,
-              "total": 6
+              "covered": 8,
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__store",
@@ -10429,8 +10429,8 @@
               "total": 2
             },
             "line": {
-              "covered": 7,
-              "total": 7
+              "covered": 8,
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__store_state",
@@ -10450,7 +10450,7 @@
             },
             "line": {
               "covered": 5,
-              "total": 5
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__triple_nested_if",
@@ -10462,7 +10462,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 2
+              "total": 4
             },
             "function": {
               "covered": 0,
@@ -10470,7 +10470,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 5
+              "total": 7
             }
           },
           "subject_id": "peer_soltg__while_1",
@@ -10482,7 +10482,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -10490,7 +10490,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__while_1_continue",
@@ -10502,7 +10502,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -10510,7 +10510,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 7
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__while_1_continue_fail",
@@ -10529,8 +10529,8 @@
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 6
+              "covered": 6,
+              "total": 7
             }
           },
           "subject_id": "peer_soltg__while_2",
@@ -10542,7 +10542,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 5
+              "total": 9
             },
             "function": {
               "covered": 0,
@@ -10550,7 +10550,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 13
+              "total": 17
             }
           },
           "subject_id": "peer_soltg__while_nested_break",
@@ -10562,7 +10562,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 3
+              "total": 7
             },
             "function": {
               "covered": 0,
@@ -10570,7 +10570,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 12
+              "total": 16
             }
           },
           "subject_id": "peer_soltg__while_nested_continue",
@@ -10837,7 +10837,7 @@
           "valid_unit_count": 5
         },
         {
-          "coverage_lower_bound": false,
+          "coverage_lower_bound": true,
           "incomplete": false,
           "metrics": {
             "branch": {
@@ -10845,11 +10845,11 @@
               "total": 4
             },
             "function": {
-              "covered": 8,
+              "covered": 7,
               "total": 8
             },
             "line": {
-              "covered": 21,
+              "covered": 19,
               "total": 30
             }
           },
@@ -10982,16 +10982,16 @@
     {
       "pooled": {
         "branch": {
-          "covered": 136,
-          "total": 2434
+          "covered": 147,
+          "total": 2476
         },
         "function": {
-          "covered": 329,
-          "total": 1902
+          "covered": 318,
+          "total": 1905
         },
         "line": {
-          "covered": 994,
-          "total": 8988
+          "covered": 1027,
+          "total": 9117
         }
       },
       "subjects": [
@@ -12080,7 +12080,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 4,
+              "covered": 5,
               "total": 48
             },
             "function": {
@@ -12640,7 +12640,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 6,
               "total": 14
             },
             "function": {
@@ -12660,7 +12660,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 4,
               "total": 7
             },
             "function": {
@@ -12680,7 +12680,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 6,
               "total": 14
             },
             "function": {
@@ -12828,7 +12828,7 @@
               "total": 13
             },
             "line": {
-              "covered": 11,
+              "covered": 12,
               "total": 52
             }
           },
@@ -12848,7 +12848,7 @@
               "total": 13
             },
             "line": {
-              "covered": 8,
+              "covered": 9,
               "total": 52
             }
           },
@@ -12876,19 +12876,19 @@
           "valid_unit_count": 0
         },
         {
-          "coverage_lower_bound": false,
+          "coverage_lower_bound": true,
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 4,
+              "covered": 2,
               "total": 11
             },
             "function": {
-              "covered": 6,
+              "covered": 5,
               "total": 7
             },
             "line": {
-              "covered": 25,
+              "covered": 19,
               "total": 34
             }
           },
@@ -12900,7 +12900,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 3,
+              "covered": 4,
               "total": 26
             },
             "function": {
@@ -12908,7 +12908,7 @@
               "total": 13
             },
             "line": {
-              "covered": 18,
+              "covered": 19,
               "total": 56
             }
           },
@@ -12984,11 +12984,11 @@
               "total": 13
             },
             "function": {
-              "covered": 15,
+              "covered": 9,
               "total": 19
             },
             "line": {
-              "covered": 27,
+              "covered": 21,
               "total": 68
             }
           },
@@ -13084,11 +13084,11 @@
               "total": 10
             },
             "function": {
-              "covered": 12,
+              "covered": 9,
               "total": 18
             },
             "line": {
-              "covered": 20,
+              "covered": 17,
               "total": 73
             }
           },
@@ -13108,8 +13108,8 @@
               "total": 4
             },
             "line": {
-              "covered": 6,
-              "total": 12
+              "covered": 8,
+              "total": 17
             }
           },
           "subject_id": "peer_soltg__Math",
@@ -13120,7 +13120,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 2,
               "total": 4
             },
             "function": {
@@ -13128,8 +13128,8 @@
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 7
+              "covered": 6,
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__branches_assert_condition_2",
@@ -13141,7 +13141,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -13149,7 +13149,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__branches_in_modifiers",
@@ -13169,7 +13169,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 19
+              "total": 25
             }
           },
           "subject_id": "peer_soltg__branches_in_modifiers_2",
@@ -13189,7 +13189,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 13
             }
           },
           "subject_id": "peer_soltg__branches_inside_modifiers_2",
@@ -13209,7 +13209,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 13
             }
           },
           "subject_id": "peer_soltg__branches_inside_modifiers_3",
@@ -13220,7 +13220,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 0,
               "total": 2
             },
             "function": {
@@ -13228,8 +13228,8 @@
               "total": 1
             },
             "line": {
-              "covered": 3,
-              "total": 4
+              "covered": 4,
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__branches_merge_variables_3",
@@ -13248,8 +13248,8 @@
               "total": 1
             },
             "line": {
-              "covered": 4,
-              "total": 5
+              "covered": 5,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__branches_merge_variables_5",
@@ -13268,8 +13268,8 @@
               "total": 1
             },
             "line": {
-              "covered": 4,
-              "total": 5
+              "covered": 5,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__branches_merge_variables_6",
@@ -13288,8 +13288,8 @@
               "total": 3
             },
             "line": {
-              "covered": 11,
-              "total": 16
+              "covered": 12,
+              "total": 17
             }
           },
           "subject_id": "peer_soltg__constructor_1",
@@ -13308,8 +13308,8 @@
               "total": 3
             },
             "line": {
-              "covered": 16,
-              "total": 17
+              "covered": 18,
+              "total": 18
             }
           },
           "subject_id": "peer_soltg__constructor_2_fun_overloading",
@@ -13328,8 +13328,8 @@
               "total": 2
             },
             "line": {
-              "covered": 10,
-              "total": 10
+              "covered": 11,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_3",
@@ -13348,8 +13348,8 @@
               "total": 2
             },
             "line": {
-              "covered": 8,
-              "total": 8
+              "covered": 9,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__constructor_3_m",
@@ -13368,8 +13368,8 @@
               "total": 3
             },
             "line": {
-              "covered": 8,
-              "total": 17
+              "covered": 10,
+              "total": 18
             }
           },
           "subject_id": "peer_soltg__constructor_5",
@@ -13388,8 +13388,8 @@
               "total": 2
             },
             "line": {
-              "covered": 10,
-              "total": 10
+              "covered": 11,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_6",
@@ -13408,8 +13408,8 @@
               "total": 2
             },
             "line": {
-              "covered": 10,
-              "total": 10
+              "covered": 11,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_7",
@@ -13428,8 +13428,8 @@
               "total": 2
             },
             "line": {
-              "covered": 8,
-              "total": 9
+              "covered": 9,
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__constructor_8",
@@ -13448,8 +13448,8 @@
               "total": 2
             },
             "line": {
-              "covered": 4,
-              "total": 4
+              "covered": 5,
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__constructor_9",
@@ -13469,70 +13469,10 @@
             },
             "line": {
               "covered": 0,
-              "total": 4
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_state_variable_init",
-          "valid_unit_count": 0
-        },
-        {
-          "coverage_lower_bound": false,
-          "incomplete": false,
-          "metrics": {
-            "branch": {
-              "covered": 0,
-              "total": 0
-            },
-            "function": {
-              "covered": 0,
-              "total": 0
-            },
-            "line": {
-              "covered": 0,
-              "total": 0
-            }
-          },
-          "subject_id": "peer_soltg__constructor_state_variable_init_chain_alternate",
-          "valid_unit_count": 0
-        },
-        {
-          "coverage_lower_bound": false,
-          "incomplete": false,
-          "metrics": {
-            "branch": {
-              "covered": 0,
-              "total": 0
-            },
-            "function": {
-              "covered": 0,
-              "total": 0
-            },
-            "line": {
-              "covered": 0,
-              "total": 0
-            }
-          },
-          "subject_id": "peer_soltg__constructor_state_variable_init_diamond",
-          "valid_unit_count": 0
-        },
-        {
-          "coverage_lower_bound": false,
-          "incomplete": false,
-          "metrics": {
-            "branch": {
-              "covered": 0,
-              "total": 0
-            },
-            "function": {
-              "covered": 0,
-              "total": 0
-            },
-            "line": {
-              "covered": 0,
-              "total": 0
-            }
-          },
-          "subject_id": "peer_soltg__constructors",
           "valid_unit_count": 0
         },
         {
@@ -13549,7 +13489,67 @@
             },
             "line": {
               "covered": 0,
-              "total": 3
+              "total": 4
+            }
+          },
+          "subject_id": "peer_soltg__constructor_state_variable_init_chain_alternate",
+          "valid_unit_count": 0
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 0
+            },
+            "function": {
+              "covered": 0,
+              "total": 1
+            },
+            "line": {
+              "covered": 0,
+              "total": 4
+            }
+          },
+          "subject_id": "peer_soltg__constructor_state_variable_init_diamond",
+          "valid_unit_count": 0
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 0
+            },
+            "function": {
+              "covered": 0,
+              "total": 1
+            },
+            "line": {
+              "covered": 0,
+              "total": 6
+            }
+          },
+          "subject_id": "peer_soltg__constructors",
+          "valid_unit_count": 0
+        },
+        {
+          "coverage_lower_bound": false,
+          "incomplete": false,
+          "metrics": {
+            "branch": {
+              "covered": 0,
+              "total": 2
+            },
+            "function": {
+              "covered": 0,
+              "total": 1
+            },
+            "line": {
+              "covered": 0,
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__do_while_1_fail",
@@ -13568,8 +13568,8 @@
               "total": 2
             },
             "line": {
-              "covered": 5,
-              "total": 5
+              "covered": 6,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__exampl",
@@ -13580,7 +13580,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 5,
+              "covered": 3,
               "total": 5
             },
             "function": {
@@ -13588,8 +13588,8 @@
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 8
+              "covered": 6,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__few_calls",
@@ -13601,7 +13601,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 2
+              "total": 4
             },
             "function": {
               "covered": 0,
@@ -13609,7 +13609,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__for_1_break",
@@ -13628,8 +13628,8 @@
               "total": 1
             },
             "line": {
-              "covered": 2,
-              "total": 5
+              "covered": 3,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__for_1_break_fail",
@@ -13641,7 +13641,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -13649,7 +13649,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 5
+              "total": 7
             }
           },
           "subject_id": "peer_soltg__for_1_continue",
@@ -13661,7 +13661,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
@@ -13669,7 +13669,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 4
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__loop_basic",
@@ -13688,8 +13688,8 @@
               "total": 1
             },
             "line": {
-              "covered": 7,
-              "total": 10
+              "covered": 8,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__loop_if",
@@ -13708,8 +13708,8 @@
               "total": 5
             },
             "line": {
-              "covered": 16,
-              "total": 21
+              "covered": 18,
+              "total": 23
             }
           },
           "subject_id": "peer_soltg__many_fun",
@@ -13721,7 +13721,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
@@ -13729,7 +13729,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 3
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__microWeth",
@@ -13748,8 +13748,8 @@
               "total": 2
             },
             "line": {
-              "covered": 6,
-              "total": 8
+              "covered": 8,
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__overloading",
@@ -13760,7 +13760,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
+              "covered": 3,
               "total": 3
             },
             "function": {
@@ -13768,8 +13768,8 @@
               "total": 2
             },
             "line": {
-              "covered": 8,
-              "total": 10
+              "covered": 14,
+              "total": 14
             }
           },
           "subject_id": "peer_soltg__return_1",
@@ -13781,7 +13781,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 3
+              "total": 5
             },
             "function": {
               "covered": 0,
@@ -13789,7 +13789,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__revert_complex_flow",
@@ -13808,8 +13808,8 @@
               "total": 2
             },
             "line": {
-              "covered": 9,
-              "total": 9
+              "covered": 11,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__seq_calls",
@@ -13828,8 +13828,8 @@
               "total": 2
             },
             "line": {
-              "covered": 7,
-              "total": 7
+              "covered": 9,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__short_circuit_and",
@@ -13849,7 +13849,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 8
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__short_circuit_and_inside_branch",
@@ -13868,8 +13868,8 @@
               "total": 2
             },
             "line": {
-              "covered": 9,
-              "total": 11
+              "covered": 11,
+              "total": 15
             }
           },
           "subject_id": "peer_soltg__short_circuit_or_inside_branch",
@@ -13888,8 +13888,8 @@
               "total": 1
             },
             "line": {
-              "covered": 3,
-              "total": 5
+              "covered": 4,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__simple_if",
@@ -13900,7 +13900,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 4
             },
             "function": {
@@ -13908,8 +13908,8 @@
               "total": 1
             },
             "line": {
-              "covered": 3,
-              "total": 7
+              "covered": 4,
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__simple_if_2",
@@ -13921,7 +13921,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 5
             },
             "function": {
               "covered": 0,
@@ -13929,7 +13929,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 9
+              "total": 13
             }
           },
           "subject_id": "peer_soltg__simple_if_array",
@@ -13941,7 +13941,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -13949,7 +13949,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__simple_if_state_var",
@@ -13961,7 +13961,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -13969,7 +13969,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__simple_if_struct",
@@ -13981,7 +13981,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -13989,7 +13989,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__simple_if_struct_2",
@@ -14001,7 +14001,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 5
             },
             "function": {
               "covered": 0,
@@ -14009,7 +14009,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 7
+              "total": 12
             }
           },
           "subject_id": "peer_soltg__simple_if_tuple",
@@ -14028,8 +14028,8 @@
               "total": 5
             },
             "line": {
-              "covered": 12,
-              "total": 13
+              "covered": 13,
+              "total": 14
             }
           },
           "subject_id": "peer_soltg__state_machine_1",
@@ -14048,8 +14048,8 @@
               "total": 5
             },
             "line": {
-              "covered": 13,
-              "total": 13
+              "covered": 14,
+              "total": 14
             }
           },
           "subject_id": "peer_soltg__state_machine_1_fail",
@@ -14068,8 +14068,8 @@
               "total": 2
             },
             "line": {
-              "covered": 6,
-              "total": 6
+              "covered": 8,
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__store",
@@ -14088,8 +14088,8 @@
               "total": 2
             },
             "line": {
-              "covered": 7,
-              "total": 7
+              "covered": 8,
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__store_state",
@@ -14109,7 +14109,7 @@
             },
             "line": {
               "covered": 5,
-              "total": 5
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__triple_nested_if",
@@ -14121,7 +14121,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 2
+              "total": 4
             },
             "function": {
               "covered": 0,
@@ -14129,7 +14129,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 5
+              "total": 7
             }
           },
           "subject_id": "peer_soltg__while_1",
@@ -14141,7 +14141,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -14149,7 +14149,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__while_1_continue",
@@ -14161,7 +14161,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -14169,7 +14169,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 7
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__while_1_continue_fail",
@@ -14188,8 +14188,8 @@
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 6
+              "covered": 6,
+              "total": 7
             }
           },
           "subject_id": "peer_soltg__while_2",
@@ -14201,7 +14201,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 5
+              "total": 9
             },
             "function": {
               "covered": 0,
@@ -14209,7 +14209,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 13
+              "total": 17
             }
           },
           "subject_id": "peer_soltg__while_nested_break",
@@ -14221,7 +14221,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 3
+              "total": 7
             },
             "function": {
               "covered": 0,
@@ -14229,7 +14229,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 12
+              "total": 16
             }
           },
           "subject_id": "peer_soltg__while_nested_continue",
@@ -14424,7 +14424,7 @@
               "total": 23
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 11
             },
             "line": {
@@ -14641,16 +14641,16 @@
     {
       "pooled": {
         "branch": {
-          "covered": 126,
-          "total": 2434
+          "covered": 139,
+          "total": 2476
         },
         "function": {
-          "covered": 315,
-          "total": 1902
+          "covered": 304,
+          "total": 1905
         },
         "line": {
-          "covered": 953,
-          "total": 8988
+          "covered": 990,
+          "total": 9117
         }
       },
       "subjects": [
@@ -15739,11 +15739,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 3,
+              "covered": 4,
               "total": 48
             },
             "function": {
-              "covered": 2,
+              "covered": 1,
               "total": 16
             },
             "line": {
@@ -16299,7 +16299,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 6,
               "total": 14
             },
             "function": {
@@ -16319,7 +16319,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 3,
               "total": 7
             },
             "function": {
@@ -16339,7 +16339,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 3,
+              "covered": 6,
               "total": 14
             },
             "function": {
@@ -16535,19 +16535,19 @@
           "valid_unit_count": 0
         },
         {
-          "coverage_lower_bound": false,
+          "coverage_lower_bound": true,
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 4,
+              "covered": 2,
               "total": 11
             },
             "function": {
-              "covered": 6,
+              "covered": 5,
               "total": 7
             },
             "line": {
-              "covered": 25,
+              "covered": 19,
               "total": 34
             }
           },
@@ -16559,7 +16559,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 3,
+              "covered": 4,
               "total": 26
             },
             "function": {
@@ -16567,7 +16567,7 @@
               "total": 13
             },
             "line": {
-              "covered": 17,
+              "covered": 18,
               "total": 56
             }
           },
@@ -16643,11 +16643,11 @@
               "total": 13
             },
             "function": {
-              "covered": 15,
+              "covered": 9,
               "total": 19
             },
             "line": {
-              "covered": 27,
+              "covered": 21,
               "total": 68
             }
           },
@@ -16743,11 +16743,11 @@
               "total": 10
             },
             "function": {
-              "covered": 12,
+              "covered": 9,
               "total": 18
             },
             "line": {
-              "covered": 20,
+              "covered": 17,
               "total": 73
             }
           },
@@ -16767,8 +16767,8 @@
               "total": 4
             },
             "line": {
-              "covered": 10,
-              "total": 12
+              "covered": 13,
+              "total": 17
             }
           },
           "subject_id": "peer_soltg__Math",
@@ -16787,8 +16787,8 @@
               "total": 1
             },
             "line": {
-              "covered": 3,
-              "total": 7
+              "covered": 4,
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__branches_assert_condition_2",
@@ -16800,7 +16800,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -16808,7 +16808,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__branches_in_modifiers",
@@ -16828,7 +16828,7 @@
             },
             "line": {
               "covered": 2,
-              "total": 19
+              "total": 25
             }
           },
           "subject_id": "peer_soltg__branches_in_modifiers_2",
@@ -16848,7 +16848,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 13
             }
           },
           "subject_id": "peer_soltg__branches_inside_modifiers_2",
@@ -16868,7 +16868,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 13
             }
           },
           "subject_id": "peer_soltg__branches_inside_modifiers_3",
@@ -16887,8 +16887,8 @@
               "total": 1
             },
             "line": {
-              "covered": 4,
-              "total": 4
+              "covered": 5,
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__branches_merge_variables_3",
@@ -16907,8 +16907,8 @@
               "total": 1
             },
             "line": {
-              "covered": 4,
-              "total": 5
+              "covered": 5,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__branches_merge_variables_5",
@@ -16927,8 +16927,8 @@
               "total": 1
             },
             "line": {
-              "covered": 4,
-              "total": 5
+              "covered": 5,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__branches_merge_variables_6",
@@ -16947,8 +16947,8 @@
               "total": 3
             },
             "line": {
-              "covered": 13,
-              "total": 16
+              "covered": 15,
+              "total": 17
             }
           },
           "subject_id": "peer_soltg__constructor_1",
@@ -16967,8 +16967,8 @@
               "total": 3
             },
             "line": {
-              "covered": 12,
-              "total": 17
+              "covered": 14,
+              "total": 18
             }
           },
           "subject_id": "peer_soltg__constructor_2_fun_overloading",
@@ -16987,8 +16987,8 @@
               "total": 2
             },
             "line": {
-              "covered": 10,
-              "total": 10
+              "covered": 11,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_3",
@@ -17007,8 +17007,8 @@
               "total": 2
             },
             "line": {
-              "covered": 8,
-              "total": 8
+              "covered": 9,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__constructor_3_m",
@@ -17027,8 +17027,8 @@
               "total": 3
             },
             "line": {
-              "covered": 13,
-              "total": 17
+              "covered": 14,
+              "total": 18
             }
           },
           "subject_id": "peer_soltg__constructor_5",
@@ -17047,8 +17047,8 @@
               "total": 2
             },
             "line": {
-              "covered": 10,
-              "total": 10
+              "covered": 11,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_6",
@@ -17067,8 +17067,8 @@
               "total": 2
             },
             "line": {
-              "covered": 10,
-              "total": 10
+              "covered": 11,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_7",
@@ -17087,8 +17087,8 @@
               "total": 2
             },
             "line": {
-              "covered": 8,
-              "total": 9
+              "covered": 9,
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__constructor_8",
@@ -17107,8 +17107,8 @@
               "total": 2
             },
             "line": {
-              "covered": 4,
-              "total": 4
+              "covered": 5,
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__constructor_9",
@@ -17128,7 +17128,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 4
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__constructor_state_variable_init",
@@ -17144,11 +17144,11 @@
             },
             "function": {
               "covered": 0,
-              "total": 0
+              "total": 1
             },
             "line": {
               "covered": 0,
-              "total": 0
+              "total": 4
             }
           },
           "subject_id": "peer_soltg__constructor_state_variable_init_chain_alternate",
@@ -17164,11 +17164,11 @@
             },
             "function": {
               "covered": 0,
-              "total": 0
+              "total": 1
             },
             "line": {
               "covered": 0,
-              "total": 0
+              "total": 4
             }
           },
           "subject_id": "peer_soltg__constructor_state_variable_init_diamond",
@@ -17184,11 +17184,11 @@
             },
             "function": {
               "covered": 0,
-              "total": 0
+              "total": 1
             },
             "line": {
               "covered": 0,
-              "total": 0
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__constructors",
@@ -17199,16 +17199,16 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
-              "total": 0
+              "covered": 1,
+              "total": 2
             },
             "function": {
               "covered": 1,
               "total": 1
             },
             "line": {
-              "covered": 3,
-              "total": 3
+              "covered": 5,
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__do_while_1_fail",
@@ -17227,8 +17227,8 @@
               "total": 2
             },
             "line": {
-              "covered": 4,
-              "total": 5
+              "covered": 5,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__exampl",
@@ -17239,7 +17239,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 5,
+              "covered": 3,
               "total": 5
             },
             "function": {
@@ -17247,8 +17247,8 @@
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 8
+              "covered": 6,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__few_calls",
@@ -17260,7 +17260,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 2
+              "total": 4
             },
             "function": {
               "covered": 0,
@@ -17268,7 +17268,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__for_1_break",
@@ -17287,8 +17287,8 @@
               "total": 1
             },
             "line": {
-              "covered": 2,
-              "total": 5
+              "covered": 3,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__for_1_break_fail",
@@ -17299,16 +17299,16 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
-              "total": 1
+              "covered": 2,
+              "total": 3
             },
             "function": {
               "covered": 1,
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 5
+              "covered": 7,
+              "total": 7
             }
           },
           "subject_id": "peer_soltg__for_1_continue",
@@ -17320,7 +17320,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
@@ -17328,7 +17328,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 4
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__loop_basic",
@@ -17347,8 +17347,8 @@
               "total": 1
             },
             "line": {
-              "covered": 6,
-              "total": 10
+              "covered": 7,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__loop_if",
@@ -17367,8 +17367,8 @@
               "total": 5
             },
             "line": {
-              "covered": 17,
-              "total": 21
+              "covered": 19,
+              "total": 23
             }
           },
           "subject_id": "peer_soltg__many_fun",
@@ -17380,7 +17380,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
@@ -17388,7 +17388,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 3
+              "total": 5
             }
           },
           "subject_id": "peer_soltg__microWeth",
@@ -17407,8 +17407,8 @@
               "total": 2
             },
             "line": {
-              "covered": 6,
-              "total": 8
+              "covered": 8,
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__overloading",
@@ -17419,7 +17419,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 3,
               "total": 3
             },
             "function": {
@@ -17427,8 +17427,8 @@
               "total": 2
             },
             "line": {
-              "covered": 7,
-              "total": 10
+              "covered": 14,
+              "total": 14
             }
           },
           "subject_id": "peer_soltg__return_1",
@@ -17440,7 +17440,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 3
+              "total": 5
             },
             "function": {
               "covered": 0,
@@ -17448,7 +17448,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__revert_complex_flow",
@@ -17467,8 +17467,8 @@
               "total": 2
             },
             "line": {
-              "covered": 9,
-              "total": 9
+              "covered": 11,
+              "total": 11
             }
           },
           "subject_id": "peer_soltg__seq_calls",
@@ -17487,8 +17487,8 @@
               "total": 2
             },
             "line": {
-              "covered": 7,
-              "total": 7
+              "covered": 9,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__short_circuit_and",
@@ -17508,7 +17508,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 8
+              "total": 10
             }
           },
           "subject_id": "peer_soltg__short_circuit_and_inside_branch",
@@ -17528,7 +17528,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 15
             }
           },
           "subject_id": "peer_soltg__short_circuit_or_inside_branch",
@@ -17547,8 +17547,8 @@
               "total": 1
             },
             "line": {
-              "covered": 3,
-              "total": 5
+              "covered": 4,
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__simple_if",
@@ -17568,7 +17568,7 @@
             },
             "line": {
               "covered": 5,
-              "total": 7
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__simple_if_2",
@@ -17580,7 +17580,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 5
             },
             "function": {
               "covered": 0,
@@ -17588,7 +17588,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 9
+              "total": 13
             }
           },
           "subject_id": "peer_soltg__simple_if_array",
@@ -17600,7 +17600,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -17608,7 +17608,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__simple_if_state_var",
@@ -17620,7 +17620,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -17628,7 +17628,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__simple_if_struct",
@@ -17640,7 +17640,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 3
             },
             "function": {
               "covered": 0,
@@ -17648,7 +17648,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 6
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__simple_if_struct_2",
@@ -17660,7 +17660,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 1
+              "total": 5
             },
             "function": {
               "covered": 0,
@@ -17668,7 +17668,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 7
+              "total": 12
             }
           },
           "subject_id": "peer_soltg__simple_if_tuple",
@@ -17687,8 +17687,8 @@
               "total": 5
             },
             "line": {
-              "covered": 12,
-              "total": 13
+              "covered": 13,
+              "total": 14
             }
           },
           "subject_id": "peer_soltg__state_machine_1",
@@ -17707,8 +17707,8 @@
               "total": 5
             },
             "line": {
-              "covered": 12,
-              "total": 13
+              "covered": 13,
+              "total": 14
             }
           },
           "subject_id": "peer_soltg__state_machine_1_fail",
@@ -17727,8 +17727,8 @@
               "total": 2
             },
             "line": {
-              "covered": 6,
-              "total": 6
+              "covered": 8,
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__store",
@@ -17748,7 +17748,7 @@
             },
             "line": {
               "covered": 6,
-              "total": 7
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__store_state",
@@ -17768,7 +17768,7 @@
             },
             "line": {
               "covered": 5,
-              "total": 5
+              "total": 6
             }
           },
           "subject_id": "peer_soltg__triple_nested_if",
@@ -17780,7 +17780,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 2
+              "total": 4
             },
             "function": {
               "covered": 0,
@@ -17788,7 +17788,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 5
+              "total": 7
             }
           },
           "subject_id": "peer_soltg__while_1",
@@ -17799,16 +17799,16 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 1,
-              "total": 1
+              "covered": 2,
+              "total": 3
             },
             "function": {
               "covered": 1,
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 6
+              "covered": 7,
+              "total": 8
             }
           },
           "subject_id": "peer_soltg__while_1_continue",
@@ -17819,16 +17819,16 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
-              "total": 1
+              "covered": 1,
+              "total": 3
             },
             "function": {
               "covered": 1,
               "total": 1
             },
             "line": {
-              "covered": 2,
-              "total": 7
+              "covered": 4,
+              "total": 9
             }
           },
           "subject_id": "peer_soltg__while_1_continue_fail",
@@ -17847,8 +17847,8 @@
               "total": 1
             },
             "line": {
-              "covered": 5,
-              "total": 6
+              "covered": 6,
+              "total": 7
             }
           },
           "subject_id": "peer_soltg__while_2",
@@ -17860,7 +17860,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 5
+              "total": 9
             },
             "function": {
               "covered": 0,
@@ -17868,7 +17868,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 13
+              "total": 17
             }
           },
           "subject_id": "peer_soltg__while_nested_break",
@@ -17880,7 +17880,7 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 3
+              "total": 7
             },
             "function": {
               "covered": 0,
@@ -17888,7 +17888,7 @@
             },
             "line": {
               "covered": 0,
-              "total": 12
+              "total": 16
             }
           },
           "subject_id": "peer_soltg__while_nested_continue",

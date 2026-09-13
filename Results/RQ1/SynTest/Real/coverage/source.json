@@ -4052,7 +4052,7 @@
           "total": 1726
         },
         "line": {
-          "covered": 11,
+          "covered": 12,
           "total": 9122
         }
       },
@@ -6570,7 +6570,7 @@
               "total": 16
             },
             "line": {
-              "covered": 11,
+              "covered": 12,
               "total": 50
             }
           },
@@ -8091,7 +8091,7 @@
           "total": 1726
         },
         "line": {
-          "covered": 12,
+          "covered": 13,
           "total": 9122
         }
       },
@@ -10609,7 +10609,7 @@
               "total": 16
             },
             "line": {
-              "covered": 10,
+              "covered": 11,
               "total": 50
             }
           },

@@ -9,11 +9,11 @@
           "total": 1937
         },
         "function": {
-          "covered": 44,
+          "covered": 43,
           "total": 1726
         },
         "line": {
-          "covered": 149,
+          "covered": 144,
           "total": 9122
         }
       },
@@ -2847,11 +2847,11 @@
               "total": 2
             },
             "function": {
-              "covered": 4,
+              "covered": 3,
               "total": 4
             },
             "line": {
-              "covered": 9,
+              "covered": 8,
               "total": 9
             }
           },
@@ -3411,7 +3411,7 @@
               "total": 10
             },
             "line": {
-              "covered": 14,
+              "covered": 13,
               "total": 46
             }
           },
@@ -3571,7 +3571,7 @@
               "total": 11
             },
             "line": {
-              "covered": 50,
+              "covered": 47,
               "total": 53
             }
           },

@@ -10,6 +10,7 @@ import io
 import json
 import os
 import re
+import runpy
 import shutil
 import subprocess
 import sys
@@ -357,6 +358,45 @@ def check_rq4(root: Path, failures: list[str]) -> None:
         failures.append("RQ4 summary does not contain the exact 3 x 3 ablation grid")
 
 
+def check_exported_tables(root: Path, failures: list[str]) -> None:
+    script = root / "Scripts" / "export_tables.py"
+    generated: dict[Path, str] = {}
+
+    def capture(path: Path, fields: list[str], rows: Iterable[dict[str, object]]) -> None:
+        stream = io.StringIO(newline="")
+        writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(rows)
+        generated[path.resolve()] = stream.getvalue()
+
+    try:
+        module = runpy.run_path(str(script), run_name="publication_export_tables")
+        exporters = (module["rq1"], module["rq2"], module["rq4"])
+        for exporter in exporters:
+            exporter.__globals__["write_csv"] = capture
+            exporter(root)
+    except Exception as exc:
+        failures.append(f"cannot regenerate publication CSVs: {exc}")
+        return
+    expected = {
+        (root / "Results" / "RQ1" / "summary.csv").resolve(),
+        (root / "Results" / "RQ2" / "population.csv").resolve(),
+        (root / "Results" / "RQ2" / "summary.csv").resolve(),
+        (root / "Results" / "RQ4" / "summary.csv").resolve(),
+    }
+    if set(generated) != expected:
+        failures.append("publication CSV exporter did not produce the exact table set")
+        return
+    for path in sorted(expected):
+        try:
+            current = path.read_text()
+        except OSError as exc:
+            failures.append(f"cannot read exported table {path}: {exc}")
+            continue
+        if current != generated[path]:
+            failures.append(f"stale or non-reproducible publication CSV: {path}")
+
+
 def check_frozen_rq2(root: Path, failures: list[str]) -> None:
     path = root / "Results" / "RQ2" / "summary.csv"
     try:
@@ -580,6 +620,7 @@ def audit(root: Path) -> list[str]:
     check_budget_runner(root, failures)
     check_tool_protocol(root, failures)
     check_rq4(root, failures)
+    check_exported_tables(root, failures)
     for path in files(root):
         rel = path.relative_to(root)
         folded_parts = {part.lower() for part in rel.parts}

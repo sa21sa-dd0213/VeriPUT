@@ -5,16 +5,16 @@
     {
       "pooled": {
         "branch": {
-          "covered": 22,
-          "total": 1284
+          "covered": 27,
+          "total": 1288
         },
         "function": {
-          "covered": 138,
-          "total": 996
+          "covered": 132,
+          "total": 1016
         },
         "line": {
-          "covered": 369,
-          "total": 4517
+          "covered": 363,
+          "total": 4585
         }
       },
       "subjects": [
@@ -27,7 +27,7 @@
               "total": 23
             },
             "function": {
-              "covered": 12,
+              "covered": 11,
               "total": 29
             },
             "line": {
@@ -491,7 +491,7 @@
               "total": 29
             },
             "line": {
-              "covered": 23,
+              "covered": 24,
               "total": 106
             }
           },
@@ -507,7 +507,7 @@
               "total": 15
             },
             "function": {
-              "covered": 9,
+              "covered": 8,
               "total": 16
             },
             "line": {
@@ -584,7 +584,7 @@
           "metrics": {
             "branch": {
               "covered": 3,
-              "total": 27
+              "total": 29
             },
             "function": {
               "covered": 5,
@@ -644,15 +644,15 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
-              "total": 1
+              "total": 21
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 79
             }
           },
           "subject_id": "pop_001_Multicall",
@@ -1543,7 +1543,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 3,
               "total": 20
             },
             "function": {
@@ -1551,7 +1551,7 @@
               "total": 20
             },
             "line": {
-              "covered": 24,
+              "covered": 26,
               "total": 64
             }
           },
@@ -1683,7 +1683,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 3,
               "total": 16
             },
             "function": {
@@ -1691,7 +1691,7 @@
               "total": 20
             },
             "line": {
-              "covered": 18,
+              "covered": 19,
               "total": 65
             }
           },
@@ -1791,7 +1791,7 @@
               "total": 6
             },
             "line": {
-              "covered": 11,
+              "covered": 10,
               "total": 23
             }
           },
@@ -1811,7 +1811,7 @@
               "total": 6
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 23
             }
           },
@@ -1831,7 +1831,7 @@
               "total": 6
             },
             "line": {
-              "covered": 11,
+              "covered": 10,
               "total": 23
             }
           },
@@ -1911,7 +1911,7 @@
               "total": 4
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 16
             }
           },
@@ -1951,7 +1951,7 @@
               "total": 6
             },
             "line": {
-              "covered": 12,
+              "covered": 11,
               "total": 22
             }
           },
@@ -1971,7 +1971,7 @@
               "total": 6
             },
             "line": {
-              "covered": 11,
+              "covered": 10,
               "total": 23
             }
           },
@@ -2011,7 +2011,7 @@
               "total": 6
             },
             "line": {
-              "covered": 12,
+              "covered": 11,
               "total": 24
             }
           },
@@ -2031,7 +2031,7 @@
               "total": 6
             },
             "line": {
-              "covered": 12,
+              "covered": 11,
               "total": 22
             }
           },
@@ -2307,7 +2307,7 @@
               "total": 4
             },
             "function": {
-              "covered": 4,
+              "covered": 3,
               "total": 5
             },
             "line": {
@@ -2323,11 +2323,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 3
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
@@ -2339,19 +2339,19 @@
           "valid_unit_count": 1
         },
         {
-          "coverage_lower_bound": false,
+          "coverage_lower_bound": true,
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 2
             },
             "function": {
-              "covered": 4,
+              "covered": 3,
               "total": 5
             },
             "line": {
-              "covered": 8,
+              "covered": 6,
               "total": 10
             }
           },
@@ -2363,11 +2363,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 4
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
@@ -2504,16 +2504,16 @@
     {
       "pooled": {
         "branch": {
-          "covered": 32,
-          "total": 1284
+          "covered": 37,
+          "total": 1288
         },
         "function": {
-          "covered": 152,
-          "total": 996
+          "covered": 148,
+          "total": 1016
         },
         "line": {
-          "covered": 426,
-          "total": 4517
+          "covered": 422,
+          "total": 4585
         }
       },
       "subjects": [
@@ -2602,7 +2602,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 5,
+              "covered": 6,
               "total": 14
             },
             "function": {
@@ -2610,7 +2610,7 @@
               "total": 8
             },
             "line": {
-              "covered": 22,
+              "covered": 23,
               "total": 34
             }
           },
@@ -3083,7 +3083,7 @@
           "metrics": {
             "branch": {
               "covered": 3,
-              "total": 27
+              "total": 29
             },
             "function": {
               "covered": 6,
@@ -3143,15 +3143,15 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
-              "total": 1
+              "total": 21
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 79
             }
           },
           "subject_id": "pop_001_Multicall",
@@ -4042,7 +4042,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 3,
               "total": 20
             },
             "function": {
@@ -4050,7 +4050,7 @@
               "total": 20
             },
             "line": {
-              "covered": 26,
+              "covered": 28,
               "total": 64
             }
           },
@@ -4290,7 +4290,7 @@
               "total": 6
             },
             "line": {
-              "covered": 9,
+              "covered": 8,
               "total": 23
             }
           },
@@ -4310,7 +4310,7 @@
               "total": 6
             },
             "line": {
-              "covered": 11,
+              "covered": 10,
               "total": 23
             }
           },
@@ -4370,7 +4370,7 @@
               "total": 4
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 16
             }
           },
@@ -4410,7 +4410,7 @@
               "total": 4
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 16
             }
           },
@@ -4470,7 +4470,7 @@
               "total": 6
             },
             "line": {
-              "covered": 11,
+              "covered": 10,
               "total": 23
             }
           },
@@ -4550,7 +4550,7 @@
               "total": 4
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 18
             }
           },
@@ -4570,7 +4570,7 @@
               "total": 4
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 16
             }
           },
@@ -4806,7 +4806,7 @@
               "total": 4
             },
             "function": {
-              "covered": 4,
+              "covered": 3,
               "total": 5
             },
             "line": {
@@ -4822,11 +4822,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 3
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
@@ -4842,11 +4842,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 2
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
@@ -4862,11 +4862,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 4
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
@@ -5003,16 +5003,16 @@
     {
       "pooled": {
         "branch": {
-          "covered": 25,
-          "total": 1284
+          "covered": 32,
+          "total": 1288
         },
         "function": {
-          "covered": 148,
-          "total": 996
+          "covered": 142,
+          "total": 1016
         },
         "line": {
-          "covered": 410,
-          "total": 4517
+          "covered": 401,
+          "total": 4585
         }
       },
       "subjects": [
@@ -5081,7 +5081,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 4,
+              "covered": 5,
               "total": 26
             },
             "function": {
@@ -5101,7 +5101,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 5,
+              "covered": 6,
               "total": 14
             },
             "function": {
@@ -5109,7 +5109,7 @@
               "total": 8
             },
             "line": {
-              "covered": 21,
+              "covered": 22,
               "total": 34
             }
           },
@@ -5485,7 +5485,7 @@
               "total": 23
             },
             "function": {
-              "covered": 6,
+              "covered": 5,
               "total": 29
             },
             "line": {
@@ -5505,7 +5505,7 @@
               "total": 15
             },
             "function": {
-              "covered": 7,
+              "covered": 6,
               "total": 16
             },
             "line": {
@@ -5582,7 +5582,7 @@
           "metrics": {
             "branch": {
               "covered": 2,
-              "total": 27
+              "total": 29
             },
             "function": {
               "covered": 4,
@@ -5642,15 +5642,15 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
-              "total": 1
+              "total": 21
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 79
             }
           },
           "subject_id": "pop_001_Multicall",
@@ -6677,11 +6677,11 @@
           "valid_unit_count": 0
         },
         {
-          "coverage_lower_bound": false,
+          "coverage_lower_bound": true,
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 3,
               "total": 16
             },
             "function": {
@@ -6689,7 +6689,7 @@
               "total": 20
             },
             "line": {
-              "covered": 20,
+              "covered": 21,
               "total": 65
             }
           },
@@ -6789,7 +6789,7 @@
               "total": 6
             },
             "line": {
-              "covered": 11,
+              "covered": 10,
               "total": 23
             }
           },
@@ -6809,7 +6809,7 @@
               "total": 6
             },
             "line": {
-              "covered": 11,
+              "covered": 10,
               "total": 23
             }
           },
@@ -6889,7 +6889,7 @@
               "total": 4
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 18
             }
           },
@@ -6909,7 +6909,7 @@
               "total": 4
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 16
             }
           },
@@ -6929,7 +6929,7 @@
               "total": 6
             },
             "line": {
-              "covered": 12,
+              "covered": 11,
               "total": 25
             }
           },
@@ -6949,7 +6949,7 @@
               "total": 6
             },
             "line": {
-              "covered": 12,
+              "covered": 11,
               "total": 22
             }
           },
@@ -6969,7 +6969,7 @@
               "total": 6
             },
             "line": {
-              "covered": 11,
+              "covered": 10,
               "total": 23
             }
           },
@@ -7009,7 +7009,7 @@
               "total": 6
             },
             "line": {
-              "covered": 12,
+              "covered": 11,
               "total": 24
             }
           },
@@ -7029,7 +7029,7 @@
               "total": 6
             },
             "line": {
-              "covered": 12,
+              "covered": 11,
               "total": 22
             }
           },
@@ -7049,7 +7049,7 @@
               "total": 4
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 18
             }
           },
@@ -7069,7 +7069,7 @@
               "total": 4
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 16
             }
           },
@@ -7301,11 +7301,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 4
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
@@ -7321,11 +7321,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 3
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
@@ -7341,11 +7341,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 2
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
@@ -7361,11 +7361,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 4
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
@@ -7502,16 +7502,16 @@
     {
       "pooled": {
         "branch": {
-          "covered": 33,
-          "total": 1284
+          "covered": 42,
+          "total": 1288
         },
         "function": {
-          "covered": 128,
-          "total": 996
+          "covered": 122,
+          "total": 1016
         },
         "line": {
-          "covered": 363,
-          "total": 4517
+          "covered": 364,
+          "total": 4585
         }
       },
       "subjects": [
@@ -7580,7 +7580,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 4,
+              "covered": 5,
               "total": 26
             },
             "function": {
@@ -7588,7 +7588,7 @@
               "total": 19
             },
             "line": {
-              "covered": 27,
+              "covered": 28,
               "total": 84
             }
           },
@@ -7600,7 +7600,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 5,
+              "covered": 6,
               "total": 14
             },
             "function": {
@@ -7608,7 +7608,7 @@
               "total": 8
             },
             "line": {
-              "covered": 24,
+              "covered": 25,
               "total": 34
             }
           },
@@ -7984,7 +7984,7 @@
               "total": 23
             },
             "function": {
-              "covered": 12,
+              "covered": 11,
               "total": 29
             },
             "line": {
@@ -8004,7 +8004,7 @@
               "total": 15
             },
             "function": {
-              "covered": 9,
+              "covered": 8,
               "total": 16
             },
             "line": {
@@ -8040,7 +8040,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 2,
               "total": 28
             },
             "function": {
@@ -8048,7 +8048,7 @@
               "total": 19
             },
             "line": {
-              "covered": 6,
+              "covered": 8,
               "total": 84
             }
           },
@@ -8081,7 +8081,7 @@
           "metrics": {
             "branch": {
               "covered": 2,
-              "total": 27
+              "total": 29
             },
             "function": {
               "covered": 3,
@@ -8141,15 +8141,15 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
-              "total": 1
+              "total": 21
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 79
             }
           },
           "subject_id": "pop_001_Multicall",
@@ -9180,7 +9180,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 3,
               "total": 16
             },
             "function": {
@@ -9188,7 +9188,7 @@
               "total": 20
             },
             "line": {
-              "covered": 14,
+              "covered": 15,
               "total": 65
             }
           },
@@ -9288,7 +9288,7 @@
               "total": 6
             },
             "line": {
-              "covered": 11,
+              "covered": 10,
               "total": 23
             }
           },
@@ -9408,7 +9408,7 @@
               "total": 4
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 16
             }
           },
@@ -9448,7 +9448,7 @@
               "total": 6
             },
             "line": {
-              "covered": 12,
+              "covered": 11,
               "total": 22
             }
           },
@@ -9468,7 +9468,7 @@
               "total": 6
             },
             "line": {
-              "covered": 11,
+              "covered": 10,
               "total": 23
             }
           },
@@ -9800,11 +9800,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 4
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
@@ -9820,11 +9820,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 3
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
@@ -9840,11 +9840,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 2
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
@@ -9860,11 +9860,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 4
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
@@ -10001,16 +10001,16 @@
     {
       "pooled": {
         "branch": {
-          "covered": 27,
-          "total": 1284
+          "covered": 31,
+          "total": 1288
         },
         "function": {
-          "covered": 123,
-          "total": 996
+          "covered": 118,
+          "total": 1016
         },
         "line": {
-          "covered": 363,
-          "total": 4517
+          "covered": 354,
+          "total": 4585
         }
       },
       "subjects": [
@@ -10487,7 +10487,7 @@
               "total": 29
             },
             "line": {
-              "covered": 10,
+              "covered": 11,
               "total": 106
             }
           },
@@ -10580,7 +10580,7 @@
           "metrics": {
             "branch": {
               "covered": 1,
-              "total": 27
+              "total": 29
             },
             "function": {
               "covered": 3,
@@ -10640,15 +10640,15 @@
           "metrics": {
             "branch": {
               "covered": 0,
-              "total": 0
+              "total": 2
             },
             "function": {
               "covered": 0,
-              "total": 1
+              "total": 21
             },
             "line": {
               "covered": 0,
-              "total": 11
+              "total": 79
             }
           },
           "subject_id": "pop_001_Multicall",
@@ -11535,7 +11535,7 @@
           "valid_unit_count": 0
         },
         {
-          "coverage_lower_bound": false,
+          "coverage_lower_bound": true,
           "incomplete": false,
           "metrics": {
             "branch": {
@@ -11543,11 +11543,11 @@
               "total": 20
             },
             "function": {
-              "covered": 7,
+              "covered": 5,
               "total": 20
             },
             "line": {
-              "covered": 17,
+              "covered": 14,
               "total": 64
             }
           },
@@ -11679,7 +11679,7 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 2,
+              "covered": 3,
               "total": 16
             },
             "function": {
@@ -11787,7 +11787,7 @@
               "total": 6
             },
             "line": {
-              "covered": 11,
+              "covered": 10,
               "total": 23
             }
           },
@@ -11827,7 +11827,7 @@
               "total": 6
             },
             "line": {
-              "covered": 11,
+              "covered": 10,
               "total": 23
             }
           },
@@ -11867,7 +11867,7 @@
               "total": 4
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 16
             }
           },
@@ -11887,7 +11887,7 @@
               "total": 4
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 18
             }
           },
@@ -11907,7 +11907,7 @@
               "total": 4
             },
             "line": {
-              "covered": 6,
+              "covered": 5,
               "total": 16
             }
           },
@@ -11947,7 +11947,7 @@
               "total": 6
             },
             "line": {
-              "covered": 12,
+              "covered": 11,
               "total": 22
             }
           },
@@ -12007,7 +12007,7 @@
               "total": 6
             },
             "line": {
-              "covered": 12,
+              "covered": 11,
               "total": 24
             }
           },
@@ -12299,11 +12299,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 4
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
@@ -12339,11 +12339,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 2
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
@@ -12359,11 +12359,11 @@
           "incomplete": false,
           "metrics": {
             "branch": {
-              "covered": 0,
+              "covered": 1,
               "total": 4
             },
             "function": {
-              "covered": 3,
+              "covered": 2,
               "total": 5
             },
             "line": {
