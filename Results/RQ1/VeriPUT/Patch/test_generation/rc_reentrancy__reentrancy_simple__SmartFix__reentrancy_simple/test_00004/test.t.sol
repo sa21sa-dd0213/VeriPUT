@@ -15,7 +15,7 @@ contract ReentranceCovTest_Reentrance_withdrawBalance_put7p1 is Test {
   function setUp() public {
     c0 = new Reentrance();
     
-
+    vm.deal(address(c0), uint256(1) << 128);
   }
   
   
@@ -103,7 +103,7 @@ contract ReentranceCovTest_Reentrance_withdrawBalance_put7p1 is Test {
     c0.withdrawBalance();
     
     if (p_msg_sender == address(uint160(0))) {
-
+      assertEq(uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(0)), uint256(0))))), uint256(0), "fixed witness state");
     }
     
     uint256 _post_userBalance_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0)))));
@@ -133,7 +133,7 @@ contract ReentranceCovTest_Reentrance_withdrawBalance_concrete7p1__basis_root__W
   function setUp() public {
     c0 = new Reentrance();
     
-
+    vm.deal(address(c0), uint256(1) << 128);
   }
   
   
@@ -150,7 +150,7 @@ contract ReentranceCovTest_Reentrance_withdrawBalance_concrete7p1__basis_root__W
     vm.prank(address(uint160(0)), address(uint160(0)));
     c0.withdrawBalance();
     uint256 _veriput_fixed_state_userBalance_0_0 = uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(0)), uint256(0)))));
-
+    assertEq(_veriput_fixed_state_userBalance_0_0, uint256(0), "fixed witness state");
   }
   
   

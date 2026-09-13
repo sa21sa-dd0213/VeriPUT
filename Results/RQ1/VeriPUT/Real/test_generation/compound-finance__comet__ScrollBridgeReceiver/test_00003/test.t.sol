@@ -1,15 +1,25 @@
 // SPDX-License-Identifier: MIT
 
+
+
+
+
+
 pragma solidity >=0.8.0;
 
-import {Test} from "forge-std/Test.sol";
+import {Test, Vm} from "forge-std/Test.sol";
 import {ScrollBridgeReceiver} from "../src/flat.sol";
 
-contract ScrollBridgeReceiverCovTest_ScrollBridgeReceiver_state_put2p1 is Test {
+contract ScrollBridgeReceiverCovTest_ScrollBridgeReceiver_changeL2Messenger_put7p1_p1_part_part0_w_w is Test {
   ScrollBridgeReceiver c0;
   function setUp() public {
-    c0 = new ScrollBridgeReceiver(address(uint160(1000)));
+    c0 = new ScrollBridgeReceiver(address(uint160(0)));
   }
+  
+  
+  
+  
+  
   
 
   
@@ -52,60 +62,94 @@ contract ScrollBridgeReceiverCovTest_ScrollBridgeReceiver_state_put2p1 is Test {
   
   
   
-  uint256 _pre_localTimelock; 
-  uint256 _pre_proposalCount; 
-  uint256 _pre_proposals_proposalId__eta; 
-  uint256 _pre_proposals_proposalId__executed; 
-  uint256 _pre_proposals_proposalId__id; 
-  uint256 _post_localTimelock; 
-  uint256 _post_proposalCount; 
-  uint256 _post_proposals_proposalId__eta; 
-  uint256 _post_proposals_proposalId__executed; 
-  uint256 _post_proposals_proposalId__id; 
-  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value, uint256 proposalId) internal {
-    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
-    p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-    proposalId = bound(proposalId, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  function _veriput_parameterized(address p_msg_sender, address newL2Messenger) internal {
+    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 0, 1461501637330902918203684832716283019655932542975)));
+    vm.assume(uint256(uint160(p_msg_sender)) != 0);
+    newL2Messenger = address(uint160(bound(uint256(uint160(newL2Messenger)), 0, 730750818665451459101842416358141509827966271486)));
     
-    _pre_localTimelock = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
-    _pre_proposalCount = uint256(vm.load(address(c0), bytes32(uint256(2))));
-    _pre_proposals_proposalId__eta = uint256(vm.load(address(c0), bytes32(uint256(keccak256(abi.encode(proposalId, uint256(3)))) + 5)));
-    _pre_proposals_proposalId__executed = (uint256(vm.load(address(c0), bytes32(uint256(keccak256(abi.encode(proposalId, uint256(3)))) + 6))) & 255);
-    _pre_proposals_proposalId__id = uint256(vm.load(address(c0), keccak256(abi.encode(proposalId, uint256(3)))));
     
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(uint256(uint160(p_msg_sender))) & 1461501637330902918203684832716283019655932542975) << 0);
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
+    }
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(uint256(uint160(p_msg_sender))), "entry pin state.localTimelock$48 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
-    vm.deal(p_msg_sender, p_msg_value);
+    uint256 _pre_localTimelock = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
+    uint256 _pre_l2Messenger = (uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975);
+    uint256 _pre_localTimelock_48 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
+    
+    vm.assume(uint256(uint160(p_msg_sender)) == _pre_localTimelock_48);
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
     vm.prank(p_msg_sender);
-    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("state(uint256)", proposalId));
     
-    _post_localTimelock = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
-    _post_proposalCount = uint256(vm.load(address(c0), bytes32(uint256(2))));
-    _post_proposals_proposalId__eta = uint256(vm.load(address(c0), bytes32(uint256(keccak256(abi.encode(proposalId, uint256(3)))) + 5)));
-    _post_proposals_proposalId__executed = (uint256(vm.load(address(c0), bytes32(uint256(keccak256(abi.encode(proposalId, uint256(3)))) + 6))) & 255);
-    _post_proposals_proposalId__id = uint256(vm.load(address(c0), keccak256(abi.encode(proposalId, uint256(3)))));
+    vm.recordLogs();
+    c0.changeL2Messenger(newL2Messenger);
+    Vm.Log[] memory _veriputFixedLogs = vm.getRecordedLogs();
+    
+    if (p_msg_sender == address(uint160(0)) && newL2Messenger == address(uint160(0))) {
+      assertEq(_veriputFixedLogs.length, 1);
+      assertEq(_veriputFixedLogs[0].emitter, address(c0));
+      assertEq(_veriputFixedLogs[0].topics.length, 3);
+      assertEq(_veriputFixedLogs[0].topics[0], keccak256("NewL2Messenger(address,address)"));
+      assertEq(_veriputFixedLogs[0].topics[1], bytes32(uint256(uint160(address(uint160(0))))));
+      assertEq(_veriputFixedLogs[0].topics[2], bytes32(uint256(uint160(address(uint160(0))))));
+      assertEq(_veriputFixedLogs[0].data, abi.encode());
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 160) & 255), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(0), "fixed witness state");
+    }
+    
+    uint256 _post_localTimelock = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
+    uint256 _post_l2Messenger = (uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_localTimelock, _pre_localTimelock, "localTimelock: post == pre");
-    assertEq(_post_proposalCount, _pre_proposalCount, "proposalCount: post == pre");
-    assertEq(_post_proposals_proposalId__eta, _pre_proposals_proposalId__eta, "proposals[proposalId].eta: post == pre");
-    assertEq(_post_proposals_proposalId__executed, _pre_proposals_proposalId__executed, "proposals[proposalId].executed: post == pre");
-    assertEq(_post_proposals_proposalId__id, _pre_proposals_proposalId__id, "proposals[proposalId].id: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
-
-    
+    assertEq(_post_l2Messenger, uint256(uint160(newL2Messenger)), "l2Messenger: post == newL2Messenger");
+    assertEq(_post_localTimelock, uint256(uint160(p_msg_sender)), "localTimelock: post == msg.sender");
+    assertGe(_post_localTimelock, 0, "localTimelock: post in [0, pre]");
+    assertLe(_post_localTimelock, _pre_localTimelock, "localTimelock: post in [0, pre]");
+    assertGe(_post_localTimelock, 0, "localTimelock: post in [0, (pre + pre)]");
+    unchecked { assertLe(_post_localTimelock, (uint256(_pre_localTimelock) + uint256(_pre_localTimelock)), "localTimelock: post in [0, (pre + pre)]"); }
+    assertGe(_post_localTimelock, 0, "localTimelock: post in [0, (pre * pre)]");
+    unchecked { assertLe(_post_localTimelock, (uint256(_pre_localTimelock) * uint256(_pre_localTimelock)), "localTimelock: post in [0, (pre * pre)]"); }
+    assertGe(_post_localTimelock, 0, "localTimelock: post in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]");
+    unchecked { assertLe(_post_localTimelock, (uint256(0) + uint256(1461501637330902918203684832716283019655932542975)), "localTimelock: post in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]"); }
     
   }
 
 
   
-  function test_put_ScrollBridgeReceiver_state_path2p1(address p_msg_sender, uint256 p_msg_value, uint256 proposalId) public {
-    _veriput_parameterized(p_msg_sender, p_msg_value, proposalId);
+  function test_put_ScrollBridgeReceiver_changeL2Messenger_path7p1_part_part0_w_w(address p_msg_sender, address newL2Messenger) public {
+    _veriput_parameterized(p_msg_sender, newL2Messenger);
   }
 }

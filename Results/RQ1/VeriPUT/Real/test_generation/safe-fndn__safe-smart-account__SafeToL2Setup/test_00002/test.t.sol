@@ -101,20 +101,20 @@ contract SafeToL2SetupCovTest_SafeToL2Setup_setupToL2_put6p1 is Test {
     try c0.setupToL2(l2Singleton) {} catch { _put_ok = false; }
     
     if (p_msg_sender == address(uint160(0)) && l2Singleton == address(uint160(0))) {
-
-
-
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(5)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(0), "fixed witness state");
     }
     
     uint256 _post_singleton = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     uint256 _post_nonce = uint256(vm.load(address(c0), bytes32(uint256(5))));
     assertEq(_post_singleton, _pre_singleton, "singleton: post == pre");
     assertEq(_post_nonce, _pre_nonce, "nonce: post == pre");
-    
-    
-    
-    
+    assertGe(_post_singleton, _pre_singleton, "singleton: post >= pre");
+    assertLe(_post_singleton, _pre_singleton, "singleton: post <= pre");
+    assertGe(_post_nonce, _pre_nonce, "nonce: post >= pre");
+    assertLe(_post_nonce, _pre_nonce, "nonce: post <= pre");
     
     assertFalse(_put_ok, "path enc=6p1 exits through a REVERT: the call must fail on the unmodified contract");
   }
@@ -146,33 +146,33 @@ contract SafeToL2SetupCovTest_SafeToL2Setup_setupToL2_concrete6p1__basis_root__W
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(6))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(6)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(6)))), uint256(0), "entry pin state._deprecatedDomainSeparator$19 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(5))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(5)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(5)))), uint256(0), "entry pin state.nonce$17 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(3))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(3)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(0), "entry pin state.ownerCount$13 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.singleton$3 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(4)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(0), "entry pin state.threshold$15 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -190,13 +190,13 @@ contract SafeToL2SetupCovTest_SafeToL2Setup_setupToL2_concrete6p1__basis_root__W
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_nonce_17_2 = uint256(vm.load(address(c0), bytes32(uint256(5))));
-
+    assertEq(_veriput_fixed_state_nonce_17_2, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_ownerCount_13_3 = uint256(vm.load(address(c0), bytes32(uint256(3))));
-
+    assertEq(_veriput_fixed_state_ownerCount_13_3, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_singleton_3_4 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_singleton_3_4, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_threshold_15_5 = uint256(vm.load(address(c0), bytes32(uint256(4))));
-
+    assertEq(_veriput_fixed_state_threshold_15_5, uint256(0), "fixed witness state");
   }
   
   

@@ -28,7 +28,7 @@ contract SimpleERC20CovTest_SimpleERC20_abc_concrete14p1_fb is Test {
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_totalSupply_53_0 = uint256(vm.load(address(c0), bytes32(uint256(2))));
-
+    assertEq(_veriput_fixed_state_totalSupply_53_0, uint256(0), "fixed witness state");
   }
   
   

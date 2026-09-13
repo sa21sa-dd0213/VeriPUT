@@ -69,10 +69,10 @@ contract AssetTransferCovTest_AssetTransfer_Accept_put2p1 is Test {
     assertEq(_post_InstanceOwner, _pre_InstanceOwner, "InstanceOwner: post == pre");
     assertEq(_post_State, _pre_State, "State: post == pre");
     assertEq(_post_InstanceBuyer, _pre_InstanceBuyer, "InstanceBuyer: post == pre");
-    
-    
-    
-    
+    assertGe(_post_InstanceOwner, _pre_InstanceOwner, "InstanceOwner: post >= pre");
+    assertLe(_post_InstanceOwner, _pre_InstanceOwner, "InstanceOwner: post <= pre");
+    assertGe(_post_InstanceBuyer, _pre_InstanceBuyer, "InstanceBuyer: post >= pre");
+    assertLe(_post_InstanceBuyer, _pre_InstanceBuyer, "InstanceBuyer: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

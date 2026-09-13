@@ -1,100 +1,73 @@
 // SPDX-License-Identifier: MIT
 
+
+
+
+
+
 pragma solidity >=0.8.0;
 
 import {Test} from "forge-std/Test.sol";
 import {FreakCoin} from "../src/flat.sol";
 
-contract FreakCoinCovTest_FreakCoin_uniswapAddress_put2p1 is Test {
+import {Vm} from "forge-std/Vm.sol";
+contract FreakCoinCovTest_0 is Test {
   FreakCoin c0;
   function setUp() public {
+    vm.startPrank(address(uint160(1)), address(uint160(1)));
     c0 = new FreakCoin();
+    vm.stopPrank();
   }
   
+  
+  
+  
+}
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value) internal {
-    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
-    p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-    
-    uint256 _pre_info_admin = (uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975);
-    uint256 _pre_info_final_supply = uint256(vm.load(address(c0), bytes32(uint256(4))));
-    uint256 _pre_info_initialSetup = ((uint256(vm.load(address(c0), bytes32(uint256(3)))) >> 160) & 255);
-    uint256 _pre_info_totalSupply = uint256(vm.load(address(c0), bytes32(uint256(0))));
-    uint256 _pre_info_uniswapV2PairAddress = (uint256(vm.load(address(c0), bytes32(uint256(3)))) & 1461501637330902918203684832716283019655932542975);
-    
-    
-    vm.deal(p_msg_sender, p_msg_value);
-    vm.prank(p_msg_sender);
-    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("uniswapAddress()"));
-    
-    uint256 _post_info_admin = (uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975);
-    uint256 _post_info_final_supply = uint256(vm.load(address(c0), bytes32(uint256(4))));
-    uint256 _post_info_initialSetup = ((uint256(vm.load(address(c0), bytes32(uint256(3)))) >> 160) & 255);
-    uint256 _post_info_totalSupply = uint256(vm.load(address(c0), bytes32(uint256(0))));
-    uint256 _post_info_uniswapV2PairAddress = (uint256(vm.load(address(c0), bytes32(uint256(3)))) & 1461501637330902918203684832716283019655932542975);
-    assertEq(_post_info_admin, _pre_info_admin, "info.admin: post == pre");
-    assertEq(_post_info_final_supply, _pre_info_final_supply, "info.final_supply: post == pre");
-    assertEq(_post_info_initialSetup, _pre_info_initialSetup, "info.initialSetup: post == pre");
-    assertEq(_post_info_totalSupply, _pre_info_totalSupply, "info.totalSupply: post == pre");
-    assertEq(_post_info_uniswapV2PairAddress, _pre_info_uniswapV2PairAddress, "info.uniswapV2PairAddress: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
-
-    
-    
+contract FreakCoinCovTest_1 is Test {
+  FreakCoin c0;
+  function setUp() public {
+    vm.startPrank(address(uint160(1073758204)), address(uint160(1073758204)));
+    c0 = new FreakCoin();
+    vm.stopPrank();
   }
-
-
   
-  function test_put_FreakCoin_uniswapAddress_path2p1(address p_msg_sender, uint256 p_msg_value) public {
-    _veriput_parameterized(p_msg_sender, p_msg_value);
+  
+}
+
+contract FreakCoinCovTest_2_FreakCoin_transferFrom_concrete999_fb is Test {
+  FreakCoin c0;
+  function setUp() public {
+    vm.startPrank(address(uint160(2281701374)), address(uint160(2281701374)));
+    c0 = new FreakCoin();
+    vm.stopPrank();
   }
+  
+  
+  function test_cov_3() public {
+    vm.recordLogs();
+    vm.prank(address(uint160(0)));
+    
+    bool _veriput_concrete_return = c0.transferFrom(address(uint160(2281701374)), address(uint160(730750818665451459101842416358141509830180863997)), 0);
+    Vm.Log[] memory _veriputLogs = vm.getRecordedLogs();
+    assertEq(_veriputLogs.length, 1);
+    assertEq(_veriputLogs[0].emitter, address(c0));
+    assertEq(_veriputLogs[0].topics.length, 3);
+    assertEq(_veriputLogs[0].topics[0], keccak256("Transfer(address,address,uint256)"));
+    assertEq(_veriputLogs[0].topics[1], bytes32(uint256(uint160(address(uint160(2281701374))))));
+    assertEq(_veriputLogs[0].topics[2], bytes32(uint256(uint160(address(uint160(730750818665451459101842416358141509830180863997))))));
+    assertEq(_veriputLogs[0].data, abi.encode(uint256(0)));
+    assertEq(_veriput_concrete_return, true, "fixed witness return must match");
+  }
+}
+
+contract FreakCoinCovTest_3 is Test {
+  FreakCoin c0;
+  function setUp() public {
+    vm.startPrank(address(uint160(2147483655)), address(uint160(2147483655)));
+    c0 = new FreakCoin();
+    vm.stopPrank();
+  }
+  
+  
 }

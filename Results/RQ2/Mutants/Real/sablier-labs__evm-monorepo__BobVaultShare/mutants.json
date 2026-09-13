@@ -314,123 +314,123 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3130,
+      "end_line": 3129,
       "function": "ceil_0",
       "mutant_id": "m000032",
       "operator": "AOR",
       "original_expression": " += ",
       "replacement_expression": " = ",
-      "start_line": 3130
+      "start_line": 3129
     },
     {
       "compile_status": "ok",
-      "end_line": 3295,
+      "end_line": 3294,
       "function": "floor_0",
       "mutant_id": "m000033",
       "operator": "AOR",
       "original_expression": " -= ",
       "replacement_expression": " = ",
-      "start_line": 3295
+      "start_line": 3294
     },
     {
       "compile_status": "ok",
-      "end_line": 3559,
+      "end_line": 3558,
       "function": "log2_0",
       "mutant_id": "m000034",
       "operator": "AOR",
       "original_expression": " >>= ",
       "replacement_expression": " = ",
-      "start_line": 3559
+      "start_line": 3558
     },
     {
       "compile_status": "ok",
-      "end_line": 3568,
+      "end_line": 3567,
       "function": "log2_0",
       "mutant_id": "m000035",
       "operator": "AOR",
       "original_expression": " >>= ",
       "replacement_expression": " = ",
-      "start_line": 3568
+      "start_line": 3567
     },
     {
       "compile_status": "ok",
-      "end_line": 3571,
+      "end_line": 3570,
       "function": "log2_0",
       "mutant_id": "m000036",
       "operator": "AOR",
       "original_expression": " *= ",
       "replacement_expression": " = ",
-      "start_line": 3571
+      "start_line": 3570
     },
     {
       "compile_status": "ok",
-      "end_line": 3689,
+      "end_line": 3688,
       "function": "powu_0",
       "mutant_id": "m000037",
       "operator": "AOR",
       "original_expression": " >>= ",
       "replacement_expression": " = ",
-      "start_line": 3689
+      "start_line": 3688
     },
     {
       "compile_status": "ok",
-      "end_line": 3689,
+      "end_line": 3688,
       "function": "powu_0",
       "mutant_id": "m000038",
       "operator": "AOR",
       "original_expression": " >>= ",
       "replacement_expression": " = ",
-      "start_line": 3689
+      "start_line": 3688
     },
     {
       "compile_status": "ok",
-      "end_line": 4144,
+      "end_line": 4143,
       "function": "log2_1",
       "mutant_id": "m000039",
       "operator": "AOR",
       "original_expression": " >>= ",
       "replacement_expression": " = ",
-      "start_line": 4144
+      "start_line": 4143
     },
     {
       "compile_status": "ok",
-      "end_line": 4150,
+      "end_line": 4149,
       "function": "log2_1",
       "mutant_id": "m000040",
       "operator": "AOR",
       "original_expression": " += ",
       "replacement_expression": " = ",
-      "start_line": 4150
+      "start_line": 4149
     },
     {
       "compile_status": "ok",
-      "end_line": 4153,
+      "end_line": 4152,
       "function": "log2_1",
       "mutant_id": "m000041",
       "operator": "AOR",
       "original_expression": " >>= ",
       "replacement_expression": " = ",
-      "start_line": 4153
+      "start_line": 4152
     },
     {
       "compile_status": "ok",
-      "end_line": 4263,
+      "end_line": 4262,
       "function": "powu_1",
       "mutant_id": "m000042",
       "operator": "AOR",
       "original_expression": " >>= ",
       "replacement_expression": " = ",
-      "start_line": 4263
+      "start_line": 4262
     },
     {
       "compile_status": "ok",
-      "end_line": 4263,
+      "end_line": 4262,
       "function": "powu_1",
       "mutant_id": "m000043",
       "operator": "AOR",
       "original_expression": " >>= ",
       "replacement_expression": " = ",
-      "start_line": 4263
+      "start_line": 4262
     },
     {
       "compile_status": "ok",
@@ -8344,279 +8344,299 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3069,
+      "end_line": 3068,
       "function": "abs",
       "mutant_id": "m000835",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3069
+      "start_line": 3068
     },
     {
       "compile_status": "ok",
-      "end_line": 3072,
+      "end_line": 3071,
       "function": "abs",
       "mutant_id": "m000836",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3072
+      "start_line": 3071
     },
     {
       "compile_status": "ok",
-      "end_line": 3072,
+      "end_line": 3071,
       "function": "abs",
       "mutant_id": "m000837",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3072
+      "start_line": 3071
     },
     {
       "compile_status": "ok",
-      "end_line": 3090,
+      "end_line": 3089,
       "function": "avg_0",
       "mutant_id": "m000838",
       "operator": "BOR",
       "original_expression": " + ",
       "replacement_expression": " - ",
-      "start_line": 3090
+      "start_line": 3089
     },
     {
       "compile_status": "ok",
-      "end_line": 3090,
+      "end_line": 3089,
       "function": "avg_0",
       "mutant_id": "m000839",
       "operator": "BOR",
       "original_expression": " + ",
       "replacement_expression": " * ",
-      "start_line": 3090
+      "start_line": 3089
     },
     {
       "compile_status": "ok",
-      "end_line": 3090,
+      "end_line": 3089,
       "function": "avg_0",
       "mutant_id": "m000840",
       "operator": "BOR",
       "original_expression": " >> ",
       "replacement_expression": " << ",
-      "start_line": 3090
+      "start_line": 3089
     },
     {
       "compile_status": "ok",
-      "end_line": 3090,
+      "end_line": 3089,
       "function": "avg_0",
       "mutant_id": "m000841",
       "operator": "BOR",
       "original_expression": " >> ",
       "replacement_expression": " << ",
-      "start_line": 3090
+      "start_line": 3089
     },
     {
       "compile_status": "ok",
-      "end_line": 3092,
+      "end_line": 3091,
       "function": "avg_0",
       "mutant_id": "m000842",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3092
+      "start_line": 3091
     },
     {
       "compile_status": "ok",
-      "end_line": 3092,
+      "end_line": 3091,
       "function": "avg_0",
       "mutant_id": "m000843",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3092
+      "start_line": 3091
     },
     {
       "compile_status": "ok",
-      "end_line": 3100,
+      "end_line": 3099,
       "function": "avg_0",
       "mutant_id": "m000844",
       "operator": "BOR",
       "original_expression": " + ",
       "replacement_expression": " - ",
-      "start_line": 3100
+      "start_line": 3099
     },
     {
       "compile_status": "ok",
-      "end_line": 3100,
+      "end_line": 3099,
       "function": "avg_0",
       "mutant_id": "m000845",
       "operator": "BOR",
       "original_expression": " + ",
       "replacement_expression": " * ",
-      "start_line": 3100
+      "start_line": 3099
     },
     {
       "compile_status": "ok",
-      "end_line": 3100,
+      "end_line": 3099,
       "function": "avg_0",
       "mutant_id": "m000846",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " | ",
-      "start_line": 3100
+      "start_line": 3099
     },
     {
       "compile_status": "ok",
-      "end_line": 3100,
+      "end_line": 3099,
       "function": "avg_0",
       "mutant_id": "m000847",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " ^ ",
-      "start_line": 3100
+      "start_line": 3099
     },
     {
       "compile_status": "ok",
-      "end_line": 3100,
+      "end_line": 3099,
       "function": "avg_0",
       "mutant_id": "m000848",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " | ",
-      "start_line": 3100
+      "start_line": 3099
     },
     {
       "compile_status": "ok",
-      "end_line": 3100,
+      "end_line": 3099,
       "function": "avg_0",
       "mutant_id": "m000849",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " ^ ",
-      "start_line": 3100
+      "start_line": 3099
     },
     {
       "compile_status": "ok",
-      "end_line": 3118,
+      "end_line": 3117,
       "function": "ceil_0",
       "mutant_id": "m000850",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3118
+      "start_line": 3117
     },
     {
       "compile_status": "ok",
-      "end_line": 3118,
+      "end_line": 3117,
       "function": "ceil_0",
       "mutant_id": "m000851",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3118
+      "start_line": 3117
     },
     {
       "compile_status": "ok",
-      "end_line": 3122,
+      "end_line": 3121,
       "function": "ceil_0",
       "mutant_id": "m000852",
       "operator": "BOR",
       "original_expression": " % ",
       "replacement_expression": " / ",
-      "start_line": 3122
+      "start_line": 3121
     },
     {
       "compile_status": "ok",
-      "end_line": 3123,
+      "end_line": 3122,
       "function": "ceil_0",
       "mutant_id": "m000853",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3123
+      "start_line": 3122
     },
     {
       "compile_status": "ok",
-      "end_line": 3128,
+      "end_line": 3127,
       "function": "ceil_0",
       "mutant_id": "m000854",
       "operator": "BOR",
       "original_expression": " - ",
       "replacement_expression": " + ",
+      "start_line": 3127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3127,
+      "function": "ceil_0",
+      "mutant_id": "m000855",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 3127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3128,
+      "function": "ceil_0",
+      "mutant_id": "m000856",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
       "start_line": 3128
     },
     {
       "compile_status": "ok",
       "end_line": 3128,
       "function": "ceil_0",
-      "mutant_id": "m000855",
-      "operator": "BOR",
-      "original_expression": " - ",
-      "replacement_expression": " / ",
-      "start_line": 3128
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3129,
-      "function": "ceil_0",
-      "mutant_id": "m000856",
-      "operator": "BOR",
-      "original_expression": " > ",
-      "replacement_expression": " < ",
-      "start_line": 3129
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3129,
-      "function": "ceil_0",
       "mutant_id": "m000857",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3129
+      "start_line": 3128
     },
     {
       "compile_status": "ok",
-      "end_line": 3159,
+      "end_line": 3158,
       "function": "div_0",
       "mutant_id": "m000858",
       "operator": "BOR",
       "original_expression": " || ",
       "replacement_expression": " && ",
-      "start_line": 3159
+      "start_line": 3158
     },
     {
       "compile_status": "ok",
-      "end_line": 3159,
+      "end_line": 3158,
       "function": "div_0",
       "mutant_id": "m000859",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3159
+      "start_line": 3158
     },
     {
       "compile_status": "ok",
-      "end_line": 3159,
+      "end_line": 3158,
       "function": "div_0",
       "mutant_id": "m000860",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3159
+      "start_line": 3158
     },
     {
       "compile_status": "ok",
-      "end_line": 3167,
+      "end_line": 3166,
       "function": "div_0",
       "mutant_id": "m000861",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
+      "start_line": 3166
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3166,
+      "function": "div_0",
+      "mutant_id": "m000862",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 3166
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3167,
+      "function": "div_0",
+      "mutant_id": "m000863",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
       "start_line": 3167
     },
     {
       "compile_status": "ok",
       "end_line": 3167,
       "function": "div_0",
-      "mutant_id": "m000862",
+      "mutant_id": "m000864",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
@@ -8624,949 +8644,949 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3168,
-      "function": "div_0",
-      "mutant_id": "m000863",
-      "operator": "BOR",
-      "original_expression": " < ",
-      "replacement_expression": " > ",
-      "start_line": 3168
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3168,
-      "function": "div_0",
-      "mutant_id": "m000864",
-      "operator": "BOR",
-      "original_expression": " < ",
-      "replacement_expression": " <= ",
-      "start_line": 3168
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3173,
+      "end_line": 3172,
       "function": "div_0",
       "mutant_id": "m000865",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3173
+      "start_line": 3172
     },
     {
       "compile_status": "ok",
-      "end_line": 3173,
+      "end_line": 3172,
       "function": "div_0",
       "mutant_id": "m000866",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3173
+      "start_line": 3172
     },
     {
       "compile_status": "ok",
-      "end_line": 3179,
+      "end_line": 3178,
       "function": "div_0",
       "mutant_id": "m000867",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3179
+      "start_line": 3178
     },
     {
       "compile_status": "ok",
-      "end_line": 3179,
+      "end_line": 3178,
       "function": "div_0",
       "mutant_id": "m000868",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3179
+      "start_line": 3178
     },
     {
       "compile_status": "ok",
-      "end_line": 3179,
+      "end_line": 3178,
       "function": "div_0",
       "mutant_id": "m000869",
       "operator": "BOR",
       "original_expression": " ^ ",
       "replacement_expression": " & ",
-      "start_line": 3179
+      "start_line": 3178
     },
     {
       "compile_status": "ok",
-      "end_line": 3179,
+      "end_line": 3178,
       "function": "div_0",
       "mutant_id": "m000870",
       "operator": "BOR",
       "original_expression": " ^ ",
       "replacement_expression": " | ",
-      "start_line": 3179
+      "start_line": 3178
     },
     {
       "compile_status": "ok",
-      "end_line": 3208,
+      "end_line": 3207,
       "function": "exp_0",
       "mutant_id": "m000871",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3208
+      "start_line": 3207
     },
     {
       "compile_status": "ok",
-      "end_line": 3208,
+      "end_line": 3207,
       "function": "exp_0",
       "mutant_id": "m000872",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3208
+      "start_line": 3207
     },
     {
       "compile_status": "ok",
-      "end_line": 3213,
+      "end_line": 3212,
       "function": "exp_0",
       "mutant_id": "m000873",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3213
+      "start_line": 3212
     },
     {
       "compile_status": "ok",
-      "end_line": 3213,
+      "end_line": 3212,
       "function": "exp_0",
       "mutant_id": "m000874",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3213
+      "start_line": 3212
     },
     {
       "compile_status": "ok",
-      "end_line": 3219,
+      "end_line": 3218,
       "function": "exp_0",
       "mutant_id": "m000875",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
-      "start_line": 3219
+      "start_line": 3218
     },
     {
       "compile_status": "failed",
-      "end_line": 3219,
+      "end_line": 3218,
       "function": "exp_0",
       "mutant_id": "m000876",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " ** ",
-      "start_line": 3219
+      "start_line": 3218
     },
     {
       "compile_status": "ok",
-      "end_line": 3220,
+      "end_line": 3219,
       "function": "exp_0",
       "mutant_id": "m000877",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 3220
+      "start_line": 3219
     },
     {
       "compile_status": "ok",
-      "end_line": 3220,
+      "end_line": 3219,
       "function": "exp_0",
       "mutant_id": "m000878",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3220
+      "start_line": 3219
     },
     {
       "compile_status": "ok",
-      "end_line": 3244,
+      "end_line": 3243,
       "function": "exp2_1",
       "mutant_id": "m000879",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3244
+      "start_line": 3243
     },
     {
       "compile_status": "ok",
-      "end_line": 3244,
+      "end_line": 3243,
       "function": "exp2_1",
       "mutant_id": "m000880",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3244
+      "start_line": 3243
     },
     {
       "compile_status": "ok",
-      "end_line": 3246,
+      "end_line": 3245,
       "function": "exp2_1",
       "mutant_id": "m000881",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3246
+      "start_line": 3245
     },
     {
       "compile_status": "ok",
-      "end_line": 3246,
+      "end_line": 3245,
       "function": "exp2_1",
       "mutant_id": "m000882",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3246
+      "start_line": 3245
     },
     {
       "compile_status": "ok",
-      "end_line": 3252,
+      "end_line": 3251,
       "function": "exp2_1",
       "mutant_id": "m000883",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 3252
+      "start_line": 3251
     },
     {
       "compile_status": "ok",
-      "end_line": 3252,
+      "end_line": 3251,
       "function": "exp2_1",
       "mutant_id": "m000884",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3252
+      "start_line": 3251
     },
     {
       "compile_status": "ok",
-      "end_line": 3256,
+      "end_line": 3255,
       "function": "exp2_1",
       "mutant_id": "m000885",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3256
+      "start_line": 3255
     },
     {
       "compile_status": "ok",
-      "end_line": 3256,
+      "end_line": 3255,
       "function": "exp2_1",
       "mutant_id": "m000886",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3256
+      "start_line": 3255
     },
     {
       "compile_status": "ok",
-      "end_line": 3262,
+      "end_line": 3261,
       "function": "exp2_1",
       "mutant_id": "m000887",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 3262
+      "start_line": 3261
     },
     {
       "compile_status": "ok",
-      "end_line": 3262,
+      "end_line": 3261,
       "function": "exp2_1",
       "mutant_id": "m000888",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3262
+      "start_line": 3261
     },
     {
       "compile_status": "ok",
-      "end_line": 3262,
+      "end_line": 3261,
       "function": "exp2_1",
       "mutant_id": "m000889",
       "operator": "BOR",
       "original_expression": " << ",
       "replacement_expression": " >> ",
-      "start_line": 3262
+      "start_line": 3261
     },
     {
       "compile_status": "ok",
-      "end_line": 3283,
+      "end_line": 3282,
       "function": "floor_0",
       "mutant_id": "m000890",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3283
+      "start_line": 3282
     },
     {
       "compile_status": "ok",
-      "end_line": 3283,
+      "end_line": 3282,
       "function": "floor_0",
       "mutant_id": "m000891",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3283
+      "start_line": 3282
     },
     {
       "compile_status": "ok",
-      "end_line": 3287,
+      "end_line": 3286,
       "function": "floor_0",
       "mutant_id": "m000892",
       "operator": "BOR",
       "original_expression": " % ",
       "replacement_expression": " / ",
-      "start_line": 3287
+      "start_line": 3286
     },
     {
       "compile_status": "ok",
-      "end_line": 3288,
+      "end_line": 3287,
       "function": "floor_0",
       "mutant_id": "m000893",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3288
+      "start_line": 3287
     },
     {
       "compile_status": "ok",
-      "end_line": 3293,
+      "end_line": 3292,
       "function": "floor_0",
       "mutant_id": "m000894",
       "operator": "BOR",
       "original_expression": " - ",
       "replacement_expression": " + ",
+      "start_line": 3292
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3292,
+      "function": "floor_0",
+      "mutant_id": "m000895",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 3292
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3293,
+      "function": "floor_0",
+      "mutant_id": "m000896",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
       "start_line": 3293
     },
     {
       "compile_status": "ok",
       "end_line": 3293,
       "function": "floor_0",
-      "mutant_id": "m000895",
-      "operator": "BOR",
-      "original_expression": " - ",
-      "replacement_expression": " / ",
-      "start_line": 3293
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3294,
-      "function": "floor_0",
-      "mutant_id": "m000896",
-      "operator": "BOR",
-      "original_expression": " < ",
-      "replacement_expression": " > ",
-      "start_line": 3294
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3294,
-      "function": "floor_0",
       "mutant_id": "m000897",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3294
+      "start_line": 3293
     },
     {
       "compile_status": "ok",
-      "end_line": 3308,
+      "end_line": 3307,
       "function": "frac_0",
       "mutant_id": "m000898",
       "operator": "BOR",
       "original_expression": " % ",
       "replacement_expression": " / ",
-      "start_line": 3308
+      "start_line": 3307
     },
     {
       "compile_status": "ok",
-      "end_line": 3327,
+      "end_line": 3326,
       "function": "gm_0",
       "mutant_id": "m000899",
       "operator": "BOR",
       "original_expression": " || ",
       "replacement_expression": " && ",
-      "start_line": 3327
+      "start_line": 3326
     },
     {
       "compile_status": "ok",
-      "end_line": 3327,
+      "end_line": 3326,
       "function": "gm_0",
       "mutant_id": "m000900",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3327
+      "start_line": 3326
     },
     {
       "compile_status": "ok",
-      "end_line": 3327,
+      "end_line": 3326,
       "function": "gm_0",
       "mutant_id": "m000901",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3327
+      "start_line": 3326
     },
     {
       "compile_status": "ok",
-      "end_line": 3333,
+      "end_line": 3332,
       "function": "gm_0",
       "mutant_id": "m000902",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
-      "start_line": 3333
+      "start_line": 3332
     },
     {
       "compile_status": "failed",
-      "end_line": 3333,
+      "end_line": 3332,
       "function": "gm_0",
       "mutant_id": "m000903",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " ** ",
-      "start_line": 3333
+      "start_line": 3332
     },
     {
       "compile_status": "ok",
-      "end_line": 3334,
+      "end_line": 3333,
       "function": "gm_0",
       "mutant_id": "m000904",
       "operator": "BOR",
       "original_expression": " != ",
       "replacement_expression": " <= ",
-      "start_line": 3334
+      "start_line": 3333
     },
     {
       "compile_status": "ok",
-      "end_line": 3334,
+      "end_line": 3333,
       "function": "gm_0",
       "mutant_id": "m000905",
       "operator": "BOR",
       "original_expression": " != ",
       "replacement_expression": " >= ",
-      "start_line": 3334
+      "start_line": 3333
     },
     {
       "compile_status": "ok",
-      "end_line": 3334,
+      "end_line": 3333,
       "function": "gm_0",
       "mutant_id": "m000906",
       "operator": "BOR",
       "original_expression": " != ",
       "replacement_expression": " == ",
-      "start_line": 3334
+      "start_line": 3333
     },
     {
       "compile_status": "ok",
-      "end_line": 3334,
+      "end_line": 3333,
       "function": "gm_0",
       "mutant_id": "m000907",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 3334
+      "start_line": 3333
     },
     {
       "compile_status": "ok",
-      "end_line": 3334,
+      "end_line": 3333,
       "function": "gm_0",
       "mutant_id": "m000908",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3334
+      "start_line": 3333
     },
     {
       "compile_status": "ok",
-      "end_line": 3339,
+      "end_line": 3338,
       "function": "gm_0",
       "mutant_id": "m000909",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3339
+      "start_line": 3338
     },
     {
       "compile_status": "ok",
-      "end_line": 3339,
+      "end_line": 3338,
       "function": "gm_0",
       "mutant_id": "m000910",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3339
+      "start_line": 3338
     },
     {
       "compile_status": "ok",
-      "end_line": 3362,
+      "end_line": 3361,
       "function": "inv_0",
       "mutant_id": "m000911",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 3362
+      "start_line": 3361
     },
     {
       "compile_status": "ok",
-      "end_line": 3362,
+      "end_line": 3361,
       "function": "inv_0",
       "mutant_id": "m000912",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3362
+      "start_line": 3361
     },
     {
       "compile_status": "ok",
-      "end_line": 3384,
+      "end_line": 3383,
       "function": "ln_0",
       "mutant_id": "m000913",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 3384
+      "start_line": 3383
     },
     {
       "compile_status": "ok",
-      "end_line": 3384,
+      "end_line": 3383,
       "function": "ln_0",
       "mutant_id": "m000914",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3384
+      "start_line": 3383
     },
     {
       "compile_status": "ok",
-      "end_line": 3384,
+      "end_line": 3383,
       "function": "ln_0",
       "mutant_id": "m000915",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
-      "start_line": 3384
+      "start_line": 3383
     },
     {
       "compile_status": "failed",
-      "end_line": 3384,
+      "end_line": 3383,
       "function": "ln_0",
       "mutant_id": "m000916",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " ** ",
-      "start_line": 3384
+      "start_line": 3383
     },
     {
       "compile_status": "ok",
-      "end_line": 3406,
+      "end_line": 3405,
       "function": "log10_0",
       "mutant_id": "m000917",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3406
+      "start_line": 3405
     },
     {
       "compile_status": "ok",
-      "end_line": 3406,
+      "end_line": 3405,
       "function": "log10_0",
       "mutant_id": "m000918",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3406
+      "start_line": 3405
     },
     {
       "compile_status": "ok",
-      "end_line": 3494,
+      "end_line": 3493,
       "function": "log10_0",
       "mutant_id": "m000919",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " <= ",
-      "start_line": 3494
+      "start_line": 3493
     },
     {
       "compile_status": "ok",
-      "end_line": 3494,
+      "end_line": 3493,
       "function": "log10_0",
       "mutant_id": "m000920",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " >= ",
-      "start_line": 3494
+      "start_line": 3493
     },
     {
       "compile_status": "ok",
-      "end_line": 3494,
+      "end_line": 3493,
       "function": "log10_0",
       "mutant_id": "m000921",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3494
+      "start_line": 3493
     },
     {
       "compile_status": "ok",
-      "end_line": 3497,
+      "end_line": 3496,
       "function": "log10_0",
       "mutant_id": "m000922",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 3497
+      "start_line": 3496
     },
     {
       "compile_status": "ok",
-      "end_line": 3497,
+      "end_line": 3496,
       "function": "log10_0",
       "mutant_id": "m000923",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3497
+      "start_line": 3496
     },
     {
       "compile_status": "ok",
-      "end_line": 3497,
+      "end_line": 3496,
       "function": "log10_0",
       "mutant_id": "m000924",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
-      "start_line": 3497
+      "start_line": 3496
     },
     {
       "compile_status": "failed",
-      "end_line": 3497,
+      "end_line": 3496,
       "function": "log10_0",
       "mutant_id": "m000925",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " ** ",
-      "start_line": 3497
+      "start_line": 3496
     },
     {
       "compile_status": "ok",
-      "end_line": 3527,
+      "end_line": 3526,
       "function": "log2_0",
       "mutant_id": "m000926",
       "operator": "BOR",
       "original_expression": " <= ",
       "replacement_expression": "  < ",
-      "start_line": 3527
+      "start_line": 3526
     },
     {
       "compile_status": "ok",
-      "end_line": 3527,
+      "end_line": 3526,
       "function": "log2_0",
       "mutant_id": "m000927",
       "operator": "BOR",
       "original_expression": " <= ",
       "replacement_expression": " >= ",
-      "start_line": 3527
+      "start_line": 3526
     },
     {
       "compile_status": "ok",
-      "end_line": 3527,
+      "end_line": 3526,
       "function": "log2_0",
       "mutant_id": "m000928",
       "operator": "BOR",
       "original_expression": " <= ",
       "replacement_expression": " == ",
-      "start_line": 3527
+      "start_line": 3526
     },
     {
       "compile_status": "ok",
-      "end_line": 3533,
+      "end_line": 3532,
       "function": "log2_0",
       "mutant_id": "m000929",
       "operator": "BOR",
       "original_expression": " >= ",
       "replacement_expression": "  > ",
-      "start_line": 3533
+      "start_line": 3532
     },
     {
       "compile_status": "ok",
-      "end_line": 3533,
+      "end_line": 3532,
       "function": "log2_0",
       "mutant_id": "m000930",
       "operator": "BOR",
       "original_expression": " >= ",
       "replacement_expression": " <= ",
-      "start_line": 3533
+      "start_line": 3532
     },
     {
       "compile_status": "ok",
-      "end_line": 3533,
+      "end_line": 3532,
       "function": "log2_0",
       "mutant_id": "m000931",
       "operator": "BOR",
       "original_expression": " >= ",
       "replacement_expression": " == ",
-      "start_line": 3533
+      "start_line": 3532
     },
     {
       "compile_status": "ok",
-      "end_line": 3538,
+      "end_line": 3537,
       "function": "log2_0",
       "mutant_id": "m000932",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 3538
+      "start_line": 3537
     },
     {
       "compile_status": "ok",
-      "end_line": 3538,
+      "end_line": 3537,
       "function": "log2_0",
       "mutant_id": "m000933",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3538
+      "start_line": 3537
     },
     {
       "compile_status": "ok",
-      "end_line": 3542,
+      "end_line": 3541,
       "function": "log2_0",
       "mutant_id": "m000934",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 3542
+      "start_line": 3541
     },
     {
       "compile_status": "ok",
-      "end_line": 3542,
+      "end_line": 3541,
       "function": "log2_0",
       "mutant_id": "m000935",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3542
+      "start_line": 3541
     },
     {
       "compile_status": "ok",
-      "end_line": 3546,
+      "end_line": 3545,
       "function": "log2_0",
       "mutant_id": "m000936",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
-      "start_line": 3546
+      "start_line": 3545
     },
     {
       "compile_status": "failed",
-      "end_line": 3546,
+      "end_line": 3545,
       "function": "log2_0",
       "mutant_id": "m000937",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " ** ",
-      "start_line": 3546
+      "start_line": 3545
     },
     {
       "compile_status": "ok",
-      "end_line": 3549,
+      "end_line": 3548,
       "function": "log2_0",
       "mutant_id": "m000938",
       "operator": "BOR",
       "original_expression": " >> ",
       "replacement_expression": " << ",
-      "start_line": 3549
+      "start_line": 3548
     },
     {
       "compile_status": "ok",
-      "end_line": 3552,
+      "end_line": 3551,
       "function": "log2_0",
       "mutant_id": "m000939",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3552
+      "start_line": 3551
     },
     {
       "compile_status": "ok",
-      "end_line": 3553,
+      "end_line": 3552,
       "function": "log2_0",
       "mutant_id": "m000940",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
-      "start_line": 3553
+      "start_line": 3552
     },
     {
       "compile_status": "failed",
-      "end_line": 3553,
+      "end_line": 3552,
       "function": "log2_0",
       "mutant_id": "m000941",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " ** ",
-      "start_line": 3553
+      "start_line": 3552
     },
     {
       "compile_status": "ok",
-      "end_line": 3559,
+      "end_line": 3558,
       "function": "log2_0",
       "mutant_id": "m000942",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
+      "start_line": 3558
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3558,
+      "function": "log2_0",
+      "mutant_id": "m000943",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 3558
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3559,
+      "function": "log2_0",
+      "mutant_id": "m000944",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
       "start_line": 3559
     },
     {
       "compile_status": "ok",
       "end_line": 3559,
       "function": "log2_0",
-      "mutant_id": "m000943",
-      "operator": "BOR",
-      "original_expression": " > ",
-      "replacement_expression": " >=  ",
-      "start_line": 3559
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3560,
-      "function": "log2_0",
-      "mutant_id": "m000944",
-      "operator": "BOR",
-      "original_expression": " / ",
-      "replacement_expression": " + ",
-      "start_line": 3560
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3560,
-      "function": "log2_0",
       "mutant_id": "m000945",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3560
+      "start_line": 3559
     },
     {
       "compile_status": "ok",
-      "end_line": 3560,
+      "end_line": 3559,
       "function": "log2_0",
       "mutant_id": "m000946",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
-      "start_line": 3560
+      "start_line": 3559
     },
     {
       "compile_status": "failed",
-      "end_line": 3560,
+      "end_line": 3559,
       "function": "log2_0",
       "mutant_id": "m000947",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " ** ",
-      "start_line": 3560
+      "start_line": 3559
     },
     {
       "compile_status": "ok",
-      "end_line": 3563,
+      "end_line": 3562,
       "function": "log2_0",
       "mutant_id": "m000948",
       "operator": "BOR",
       "original_expression": " >= ",
       "replacement_expression": "  > ",
-      "start_line": 3563
+      "start_line": 3562
     },
     {
       "compile_status": "ok",
-      "end_line": 3563,
+      "end_line": 3562,
       "function": "log2_0",
       "mutant_id": "m000949",
       "operator": "BOR",
       "original_expression": " >= ",
       "replacement_expression": " <= ",
-      "start_line": 3563
+      "start_line": 3562
     },
     {
       "compile_status": "ok",
-      "end_line": 3563,
+      "end_line": 3562,
       "function": "log2_0",
       "mutant_id": "m000950",
       "operator": "BOR",
       "original_expression": " >= ",
       "replacement_expression": " == ",
-      "start_line": 3563
+      "start_line": 3562
     },
     {
       "compile_status": "ok",
-      "end_line": 3565,
+      "end_line": 3564,
       "function": "log2_0",
       "mutant_id": "m000951",
       "operator": "BOR",
       "original_expression": " + ",
       "replacement_expression": " - ",
-      "start_line": 3565
+      "start_line": 3564
     },
     {
       "compile_status": "ok",
-      "end_line": 3565,
+      "end_line": 3564,
       "function": "log2_0",
       "mutant_id": "m000952",
       "operator": "BOR",
       "original_expression": " + ",
       "replacement_expression": " * ",
-      "start_line": 3565
+      "start_line": 3564
     },
     {
       "compile_status": "ok",
-      "end_line": 3593,
+      "end_line": 3592,
       "function": "mul_0",
       "mutant_id": "m000953",
       "operator": "BOR",
       "original_expression": " || ",
       "replacement_expression": " && ",
-      "start_line": 3593
+      "start_line": 3592
     },
     {
       "compile_status": "ok",
-      "end_line": 3593,
+      "end_line": 3592,
       "function": "mul_0",
       "mutant_id": "m000954",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3593
+      "start_line": 3592
     },
     {
       "compile_status": "ok",
-      "end_line": 3593,
+      "end_line": 3592,
       "function": "mul_0",
       "mutant_id": "m000955",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3593
+      "start_line": 3592
     },
     {
       "compile_status": "ok",
-      "end_line": 3601,
+      "end_line": 3600,
       "function": "mul_0",
       "mutant_id": "m000956",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
+      "start_line": 3600
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3600,
+      "function": "mul_0",
+      "mutant_id": "m000957",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 3600
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3601,
+      "function": "mul_0",
+      "mutant_id": "m000958",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
       "start_line": 3601
     },
     {
       "compile_status": "ok",
       "end_line": 3601,
       "function": "mul_0",
-      "mutant_id": "m000957",
+      "mutant_id": "m000959",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
@@ -9574,89 +9594,79 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3602,
-      "function": "mul_0",
-      "mutant_id": "m000958",
-      "operator": "BOR",
-      "original_expression": " < ",
-      "replacement_expression": " > ",
-      "start_line": 3602
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3602,
-      "function": "mul_0",
-      "mutant_id": "m000959",
-      "operator": "BOR",
-      "original_expression": " < ",
-      "replacement_expression": " <= ",
-      "start_line": 3602
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3607,
+      "end_line": 3606,
       "function": "mul_0",
       "mutant_id": "m000960",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3607
+      "start_line": 3606
     },
     {
       "compile_status": "ok",
-      "end_line": 3607,
+      "end_line": 3606,
       "function": "mul_0",
       "mutant_id": "m000961",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3607
+      "start_line": 3606
     },
     {
       "compile_status": "ok",
-      "end_line": 3613,
+      "end_line": 3612,
       "function": "mul_0",
       "mutant_id": "m000962",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3613
+      "start_line": 3612
     },
     {
       "compile_status": "ok",
-      "end_line": 3613,
+      "end_line": 3612,
       "function": "mul_0",
       "mutant_id": "m000963",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3613
+      "start_line": 3612
     },
     {
       "compile_status": "ok",
-      "end_line": 3613,
+      "end_line": 3612,
       "function": "mul_0",
       "mutant_id": "m000964",
       "operator": "BOR",
       "original_expression": " ^ ",
       "replacement_expression": " & ",
-      "start_line": 3613
+      "start_line": 3612
     },
     {
       "compile_status": "ok",
-      "end_line": 3613,
+      "end_line": 3612,
       "function": "mul_0",
       "mutant_id": "m000965",
       "operator": "BOR",
       "original_expression": " ^ ",
       "replacement_expression": " | ",
-      "start_line": 3613
+      "start_line": 3612
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3642,
+      "function": "pow_0",
+      "mutant_id": "m000966",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 3642
     },
     {
       "compile_status": "ok",
       "end_line": 3643,
       "function": "pow_0",
-      "mutant_id": "m000966",
+      "mutant_id": "m000967",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
@@ -9664,949 +9674,949 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3644,
-      "function": "pow_0",
-      "mutant_id": "m000967",
-      "operator": "BOR",
-      "original_expression": " == ",
-      "replacement_expression": " != ",
-      "start_line": 3644
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3647,
+      "end_line": 3646,
       "function": "pow_0",
       "mutant_id": "m000968",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3647
+      "start_line": 3646
     },
     {
       "compile_status": "ok",
-      "end_line": 3652,
+      "end_line": 3651,
       "function": "pow_0",
       "mutant_id": "m000969",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3652
+      "start_line": 3651
     },
     {
       "compile_status": "ok",
-      "end_line": 3656,
+      "end_line": 3655,
       "function": "pow_0",
       "mutant_id": "m000970",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3656
+      "start_line": 3655
     },
     {
       "compile_status": "ok",
-      "end_line": 3685,
+      "end_line": 3684,
       "function": "powu_0",
       "mutant_id": "m000971",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3685
+      "start_line": 3684
     },
     {
       "compile_status": "ok",
-      "end_line": 3685,
+      "end_line": 3684,
       "function": "powu_0",
       "mutant_id": "m000972",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3685
+      "start_line": 3684
     },
     {
       "compile_status": "ok",
-      "end_line": 3685,
+      "end_line": 3684,
       "function": "powu_0",
       "mutant_id": "m000973",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " | ",
-      "start_line": 3685
+      "start_line": 3684
     },
     {
       "compile_status": "ok",
-      "end_line": 3685,
+      "end_line": 3684,
       "function": "powu_0",
       "mutant_id": "m000974",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " ^ ",
-      "start_line": 3685
+      "start_line": 3684
     },
     {
       "compile_status": "ok",
-      "end_line": 3689,
+      "end_line": 3688,
       "function": "powu_0",
       "mutant_id": "m000975",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3689
+      "start_line": 3688
     },
     {
       "compile_status": "ok",
-      "end_line": 3689,
+      "end_line": 3688,
       "function": "powu_0",
       "mutant_id": "m000976",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3689
+      "start_line": 3688
     },
     {
       "compile_status": "ok",
-      "end_line": 3693,
+      "end_line": 3692,
       "function": "powu_0",
       "mutant_id": "m000977",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3693
+      "start_line": 3692
     },
     {
       "compile_status": "ok",
-      "end_line": 3693,
+      "end_line": 3692,
       "function": "powu_0",
       "mutant_id": "m000978",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3693
+      "start_line": 3692
     },
     {
       "compile_status": "ok",
-      "end_line": 3693,
+      "end_line": 3692,
       "function": "powu_0",
       "mutant_id": "m000979",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " | ",
-      "start_line": 3693
+      "start_line": 3692
     },
     {
       "compile_status": "ok",
-      "end_line": 3693,
+      "end_line": 3692,
       "function": "powu_0",
       "mutant_id": "m000980",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " ^ ",
-      "start_line": 3693
+      "start_line": 3692
     },
     {
       "compile_status": "ok",
-      "end_line": 3699,
+      "end_line": 3698,
       "function": "powu_0",
       "mutant_id": "m000981",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3699
+      "start_line": 3698
     },
     {
       "compile_status": "ok",
-      "end_line": 3699,
+      "end_line": 3698,
       "function": "powu_0",
       "mutant_id": "m000982",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3699
+      "start_line": 3698
     },
     {
       "compile_status": "ok",
-      "end_line": 3706,
+      "end_line": 3705,
       "function": "powu_0",
       "mutant_id": "m000983",
       "operator": "BOR",
       "original_expression": " && ",
       "replacement_expression": " || ",
-      "start_line": 3706
+      "start_line": 3705
     },
     {
       "compile_status": "ok",
-      "end_line": 3706,
+      "end_line": 3705,
       "function": "powu_0",
       "mutant_id": "m000984",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3706
+      "start_line": 3705
     },
     {
       "compile_status": "ok",
-      "end_line": 3706,
+      "end_line": 3705,
       "function": "powu_0",
       "mutant_id": "m000985",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3706
+      "start_line": 3705
     },
     {
       "compile_status": "ok",
-      "end_line": 3706,
+      "end_line": 3705,
       "function": "powu_0",
       "mutant_id": "m000986",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " <= ",
-      "start_line": 3706
+      "start_line": 3705
     },
     {
       "compile_status": "ok",
-      "end_line": 3706,
+      "end_line": 3705,
       "function": "powu_0",
       "mutant_id": "m000987",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " >= ",
-      "start_line": 3706
+      "start_line": 3705
     },
     {
       "compile_status": "ok",
-      "end_line": 3706,
+      "end_line": 3705,
       "function": "powu_0",
       "mutant_id": "m000988",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3706
+      "start_line": 3705
     },
     {
       "compile_status": "ok",
-      "end_line": 3706,
+      "end_line": 3705,
       "function": "powu_0",
       "mutant_id": "m000989",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " | ",
-      "start_line": 3706
+      "start_line": 3705
     },
     {
       "compile_status": "ok",
-      "end_line": 3706,
+      "end_line": 3705,
       "function": "powu_0",
       "mutant_id": "m000990",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " ^ ",
-      "start_line": 3706
+      "start_line": 3705
     },
     {
       "compile_status": "ok",
-      "end_line": 3731,
+      "end_line": 3730,
       "function": "sqrt_1",
       "mutant_id": "m000991",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3731
+      "start_line": 3730
     },
     {
       "compile_status": "ok",
-      "end_line": 3731,
+      "end_line": 3730,
       "function": "sqrt_1",
       "mutant_id": "m000992",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3731
+      "start_line": 3730
     },
     {
       "compile_status": "ok",
-      "end_line": 3734,
+      "end_line": 3733,
       "function": "sqrt_1",
       "mutant_id": "m000993",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3734
+      "start_line": 3733
     },
     {
       "compile_status": "ok",
-      "end_line": 3734,
+      "end_line": 3733,
       "function": "sqrt_1",
       "mutant_id": "m000994",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3734
+      "start_line": 3733
     },
     {
       "compile_status": "ok",
-      "end_line": 3734,
+      "end_line": 3733,
       "function": "sqrt_1",
       "mutant_id": "m000995",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 3734
+      "start_line": 3733
     },
     {
       "compile_status": "ok",
-      "end_line": 3734,
+      "end_line": 3733,
       "function": "sqrt_1",
       "mutant_id": "m000996",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3734
+      "start_line": 3733
     },
     {
       "compile_status": "ok",
-      "end_line": 3741,
+      "end_line": 3740,
       "function": "sqrt_1",
       "mutant_id": "m000997",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
-      "start_line": 3741
+      "start_line": 3740
     },
     {
       "compile_status": "failed",
-      "end_line": 3741,
+      "end_line": 3740,
       "function": "sqrt_1",
       "mutant_id": "m000998",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " ** ",
-      "start_line": 3741
+      "start_line": 3740
     },
     {
       "compile_status": "ok",
-      "end_line": 3778,
+      "end_line": 3777,
       "function": "avg_1",
       "mutant_id": "m000999",
       "operator": "BOR",
       "original_expression": " + ",
       "replacement_expression": " - ",
-      "start_line": 3778
+      "start_line": 3777
     },
     {
       "compile_status": "ok",
-      "end_line": 3778,
+      "end_line": 3777,
       "function": "avg_1",
       "mutant_id": "m001000",
       "operator": "BOR",
       "original_expression": " + ",
       "replacement_expression": " * ",
-      "start_line": 3778
+      "start_line": 3777
     },
     {
       "compile_status": "ok",
-      "end_line": 3778,
+      "end_line": 3777,
       "function": "avg_1",
       "mutant_id": "m001001",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " | ",
-      "start_line": 3778
+      "start_line": 3777
     },
     {
       "compile_status": "ok",
-      "end_line": 3778,
+      "end_line": 3777,
       "function": "avg_1",
       "mutant_id": "m001002",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " ^ ",
-      "start_line": 3778
+      "start_line": 3777
     },
     {
       "compile_status": "ok",
-      "end_line": 3778,
+      "end_line": 3777,
       "function": "avg_1",
       "mutant_id": "m001003",
       "operator": "BOR",
       "original_expression": " >> ",
       "replacement_expression": " << ",
-      "start_line": 3778
+      "start_line": 3777
     },
     {
       "compile_status": "ok",
-      "end_line": 3778,
+      "end_line": 3777,
       "function": "avg_1",
       "mutant_id": "m001004",
       "operator": "BOR",
       "original_expression": " ^ ",
       "replacement_expression": " & ",
-      "start_line": 3778
+      "start_line": 3777
     },
     {
       "compile_status": "ok",
-      "end_line": 3778,
+      "end_line": 3777,
       "function": "avg_1",
       "mutant_id": "m001005",
       "operator": "BOR",
       "original_expression": " ^ ",
       "replacement_expression": " | ",
-      "start_line": 3778
+      "start_line": 3777
     },
     {
       "compile_status": "ok",
-      "end_line": 3795,
+      "end_line": 3794,
       "function": "ceil_1",
       "mutant_id": "m001006",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3795
+      "start_line": 3794
     },
     {
       "compile_status": "ok",
-      "end_line": 3795,
+      "end_line": 3794,
       "function": "ceil_1",
       "mutant_id": "m001007",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3795
+      "start_line": 3794
     },
     {
       "compile_status": "ok",
-      "end_line": 3845,
+      "end_line": 3844,
       "function": "exp_1",
       "mutant_id": "m001008",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3845
+      "start_line": 3844
     },
     {
       "compile_status": "ok",
-      "end_line": 3845,
+      "end_line": 3844,
       "function": "exp_1",
       "mutant_id": "m001009",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3845
+      "start_line": 3844
     },
     {
       "compile_status": "ok",
-      "end_line": 3851,
+      "end_line": 3850,
       "function": "exp_1",
       "mutant_id": "m001010",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
+      "start_line": 3850
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3850,
+      "function": "exp_1",
+      "mutant_id": "m001011",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 3850
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3851,
+      "function": "exp_1",
+      "mutant_id": "m001012",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
       "start_line": 3851
     },
     {
       "compile_status": "ok",
       "end_line": 3851,
       "function": "exp_1",
-      "mutant_id": "m001011",
-      "operator": "BOR",
-      "original_expression": " * ",
-      "replacement_expression": " ** ",
-      "start_line": 3851
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3852,
-      "function": "exp_1",
-      "mutant_id": "m001012",
-      "operator": "BOR",
-      "original_expression": " / ",
-      "replacement_expression": " + ",
-      "start_line": 3852
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3852,
-      "function": "exp_1",
       "mutant_id": "m001013",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3852
+      "start_line": 3851
     },
     {
       "compile_status": "ok",
-      "end_line": 3871,
+      "end_line": 3870,
       "function": "exp2_2",
       "mutant_id": "m001014",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3871
+      "start_line": 3870
     },
     {
       "compile_status": "ok",
-      "end_line": 3871,
+      "end_line": 3870,
       "function": "exp2_2",
       "mutant_id": "m001015",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3871
+      "start_line": 3870
     },
     {
       "compile_status": "ok",
-      "end_line": 3876,
+      "end_line": 3875,
       "function": "exp2_2",
       "mutant_id": "m001016",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 3876
+      "start_line": 3875
     },
     {
       "compile_status": "ok",
-      "end_line": 3876,
+      "end_line": 3875,
       "function": "exp2_2",
       "mutant_id": "m001017",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3876
+      "start_line": 3875
     },
     {
       "compile_status": "ok",
-      "end_line": 3876,
+      "end_line": 3875,
       "function": "exp2_2",
       "mutant_id": "m001018",
       "operator": "BOR",
       "original_expression": " << ",
       "replacement_expression": " >> ",
-      "start_line": 3876
+      "start_line": 3875
     },
     {
       "compile_status": "ok",
-      "end_line": 3921,
+      "end_line": 3920,
       "function": "gm_1",
       "mutant_id": "m001019",
       "operator": "BOR",
       "original_expression": " || ",
       "replacement_expression": " && ",
-      "start_line": 3921
+      "start_line": 3920
     },
     {
       "compile_status": "ok",
-      "end_line": 3921,
+      "end_line": 3920,
       "function": "gm_1",
       "mutant_id": "m001020",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3921
+      "start_line": 3920
     },
     {
       "compile_status": "ok",
-      "end_line": 3921,
+      "end_line": 3920,
       "function": "gm_1",
       "mutant_id": "m001021",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3921
+      "start_line": 3920
     },
     {
       "compile_status": "ok",
-      "end_line": 3927,
+      "end_line": 3926,
       "function": "gm_1",
       "mutant_id": "m001022",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
+      "start_line": 3926
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3926,
+      "function": "gm_1",
+      "mutant_id": "m001023",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 3926
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3927,
+      "function": "gm_1",
+      "mutant_id": "m001024",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
       "start_line": 3927
     },
     {
       "compile_status": "ok",
       "end_line": 3927,
       "function": "gm_1",
-      "mutant_id": "m001023",
-      "operator": "BOR",
-      "original_expression": " * ",
-      "replacement_expression": " ** ",
-      "start_line": 3927
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3928,
-      "function": "gm_1",
-      "mutant_id": "m001024",
-      "operator": "BOR",
-      "original_expression": " != ",
-      "replacement_expression": " <= ",
-      "start_line": 3928
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3928,
-      "function": "gm_1",
       "mutant_id": "m001025",
       "operator": "BOR",
       "original_expression": " != ",
       "replacement_expression": " >= ",
-      "start_line": 3928
+      "start_line": 3927
     },
     {
       "compile_status": "ok",
-      "end_line": 3928,
+      "end_line": 3927,
       "function": "gm_1",
       "mutant_id": "m001026",
       "operator": "BOR",
       "original_expression": " != ",
       "replacement_expression": " == ",
-      "start_line": 3928
+      "start_line": 3927
     },
     {
       "compile_status": "ok",
-      "end_line": 3928,
+      "end_line": 3927,
       "function": "gm_1",
       "mutant_id": "m001027",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 3928
+      "start_line": 3927
     },
     {
       "compile_status": "ok",
-      "end_line": 3928,
+      "end_line": 3927,
       "function": "gm_1",
       "mutant_id": "m001028",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3928
+      "start_line": 3927
     },
     {
       "compile_status": "ok",
-      "end_line": 3951,
+      "end_line": 3950,
       "function": "inv_1",
       "mutant_id": "m001029",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 3951
+      "start_line": 3950
     },
     {
       "compile_status": "ok",
-      "end_line": 3951,
+      "end_line": 3950,
       "function": "inv_1",
       "mutant_id": "m001030",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3951
+      "start_line": 3950
     },
     {
       "compile_status": "ok",
-      "end_line": 3975,
+      "end_line": 3974,
       "function": "ln_1",
       "mutant_id": "m001031",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 3975
+      "start_line": 3974
     },
     {
       "compile_status": "ok",
-      "end_line": 3975,
+      "end_line": 3974,
       "function": "ln_1",
       "mutant_id": "m001032",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 3975
+      "start_line": 3974
     },
     {
       "compile_status": "ok",
-      "end_line": 3975,
+      "end_line": 3974,
       "function": "ln_1",
       "mutant_id": "m001033",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
-      "start_line": 3975
+      "start_line": 3974
     },
     {
       "compile_status": "ok",
-      "end_line": 3975,
+      "end_line": 3974,
       "function": "ln_1",
       "mutant_id": "m001034",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " ** ",
-      "start_line": 3975
+      "start_line": 3974
     },
     {
       "compile_status": "ok",
-      "end_line": 3998,
+      "end_line": 3997,
       "function": "log10_1",
       "mutant_id": "m001035",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3998
+      "start_line": 3997
     },
     {
       "compile_status": "ok",
-      "end_line": 3998,
+      "end_line": 3997,
       "function": "log10_1",
       "mutant_id": "m001036",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3998
+      "start_line": 3997
     },
     {
       "compile_status": "ok",
-      "end_line": 4087,
+      "end_line": 4086,
       "function": "log10_1",
       "mutant_id": "m001037",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " <= ",
-      "start_line": 4087
+      "start_line": 4086
     },
     {
       "compile_status": "ok",
-      "end_line": 4087,
+      "end_line": 4086,
       "function": "log10_1",
       "mutant_id": "m001038",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " >= ",
-      "start_line": 4087
+      "start_line": 4086
     },
     {
       "compile_status": "ok",
-      "end_line": 4087,
+      "end_line": 4086,
       "function": "log10_1",
       "mutant_id": "m001039",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 4087
+      "start_line": 4086
     },
     {
       "compile_status": "ok",
-      "end_line": 4090,
+      "end_line": 4089,
       "function": "log10_1",
       "mutant_id": "m001040",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 4090
+      "start_line": 4089
     },
     {
       "compile_status": "ok",
-      "end_line": 4090,
+      "end_line": 4089,
       "function": "log10_1",
       "mutant_id": "m001041",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 4090
+      "start_line": 4089
     },
     {
       "compile_status": "ok",
-      "end_line": 4090,
+      "end_line": 4089,
       "function": "log10_1",
       "mutant_id": "m001042",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
-      "start_line": 4090
+      "start_line": 4089
     },
     {
       "compile_status": "ok",
-      "end_line": 4090,
+      "end_line": 4089,
       "function": "log10_1",
       "mutant_id": "m001043",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " ** ",
-      "start_line": 4090
+      "start_line": 4089
     },
     {
       "compile_status": "ok",
-      "end_line": 4121,
+      "end_line": 4120,
       "function": "log2_1",
       "mutant_id": "m001044",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 4121
+      "start_line": 4120
     },
     {
       "compile_status": "ok",
-      "end_line": 4121,
+      "end_line": 4120,
       "function": "log2_1",
       "mutant_id": "m001045",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 4121
+      "start_line": 4120
     },
     {
       "compile_status": "ok",
-      "end_line": 4127,
+      "end_line": 4126,
       "function": "log2_1",
       "mutant_id": "m001046",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 4127
+      "start_line": 4126
     },
     {
       "compile_status": "ok",
-      "end_line": 4127,
+      "end_line": 4126,
       "function": "log2_1",
       "mutant_id": "m001047",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 4127
+      "start_line": 4126
     },
     {
       "compile_status": "ok",
-      "end_line": 4131,
+      "end_line": 4130,
       "function": "log2_1",
       "mutant_id": "m001048",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
-      "start_line": 4131
+      "start_line": 4130
     },
     {
       "compile_status": "ok",
-      "end_line": 4131,
+      "end_line": 4130,
       "function": "log2_1",
       "mutant_id": "m001049",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " ** ",
-      "start_line": 4131
+      "start_line": 4130
     },
     {
       "compile_status": "ok",
-      "end_line": 4134,
+      "end_line": 4133,
       "function": "log2_1",
       "mutant_id": "m001050",
       "operator": "BOR",
       "original_expression": " >> ",
       "replacement_expression": " << ",
-      "start_line": 4134
+      "start_line": 4133
     },
     {
       "compile_status": "ok",
-      "end_line": 4137,
+      "end_line": 4136,
       "function": "log2_1",
       "mutant_id": "m001051",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 4137
+      "start_line": 4136
     },
     {
       "compile_status": "ok",
-      "end_line": 4144,
+      "end_line": 4143,
       "function": "log2_1",
       "mutant_id": "m001052",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
+      "start_line": 4143
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 4143,
+      "function": "log2_1",
+      "mutant_id": "m001053",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 4143
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 4144,
+      "function": "log2_1",
+      "mutant_id": "m001054",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
       "start_line": 4144
     },
     {
       "compile_status": "ok",
       "end_line": 4144,
       "function": "log2_1",
-      "mutant_id": "m001053",
-      "operator": "BOR",
-      "original_expression": " > ",
-      "replacement_expression": " >=  ",
-      "start_line": 4144
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 4145,
-      "function": "log2_1",
-      "mutant_id": "m001054",
-      "operator": "BOR",
-      "original_expression": " / ",
-      "replacement_expression": " + ",
-      "start_line": 4145
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 4145,
-      "function": "log2_1",
       "mutant_id": "m001055",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 4145
+      "start_line": 4144
     },
     {
       "compile_status": "ok",
-      "end_line": 4145,
+      "end_line": 4144,
       "function": "log2_1",
       "mutant_id": "m001056",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
-      "start_line": 4145
+      "start_line": 4144
     },
     {
       "compile_status": "ok",
-      "end_line": 4145,
+      "end_line": 4144,
       "function": "log2_1",
       "mutant_id": "m001057",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " ** ",
-      "start_line": 4145
+      "start_line": 4144
     },
     {
       "compile_status": "ok",
-      "end_line": 4148,
+      "end_line": 4147,
       "function": "log2_1",
       "mutant_id": "m001058",
       "operator": "BOR",
       "original_expression": " >= ",
       "replacement_expression": "  > ",
-      "start_line": 4148
+      "start_line": 4147
     },
     {
       "compile_status": "ok",
-      "end_line": 4148,
+      "end_line": 4147,
       "function": "log2_1",
       "mutant_id": "m001059",
       "operator": "BOR",
       "original_expression": " >= ",
       "replacement_expression": " <= ",
-      "start_line": 4148
+      "start_line": 4147
     },
     {
       "compile_status": "ok",
-      "end_line": 4148,
+      "end_line": 4147,
       "function": "log2_1",
       "mutant_id": "m001060",
       "operator": "BOR",
       "original_expression": " >= ",
       "replacement_expression": " == ",
-      "start_line": 4148
+      "start_line": 4147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 4211,
+      "function": "pow_1",
+      "mutant_id": "m001061",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 4211
     },
     {
       "compile_status": "ok",
       "end_line": 4212,
       "function": "pow_1",
-      "mutant_id": "m001061",
+      "mutant_id": "m001062",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
@@ -10614,343 +10624,333 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 4213,
-      "function": "pow_1",
-      "mutant_id": "m001062",
-      "operator": "BOR",
-      "original_expression": " == ",
-      "replacement_expression": " != ",
-      "start_line": 4213
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 4216,
+      "end_line": 4215,
       "function": "pow_1",
       "mutant_id": "m001063",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 4216
+      "start_line": 4215
     },
     {
       "compile_status": "ok",
-      "end_line": 4221,
+      "end_line": 4220,
       "function": "pow_1",
       "mutant_id": "m001064",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 4221
+      "start_line": 4220
     },
     {
       "compile_status": "ok",
-      "end_line": 4225,
+      "end_line": 4224,
       "function": "pow_1",
       "mutant_id": "m001065",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 4225
+      "start_line": 4224
     },
     {
       "compile_status": "ok",
-      "end_line": 4230,
+      "end_line": 4229,
       "function": "pow_1",
       "mutant_id": "m001066",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 4230
+      "start_line": 4229
     },
     {
       "compile_status": "ok",
-      "end_line": 4230,
+      "end_line": 4229,
       "function": "pow_1",
       "mutant_id": "m001067",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 4230
+      "start_line": 4229
     },
     {
       "compile_status": "ok",
-      "end_line": 4235,
+      "end_line": 4234,
       "function": "pow_1",
       "mutant_id": "m001068",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 4235
+      "start_line": 4234
     },
     {
       "compile_status": "ok",
-      "end_line": 4235,
+      "end_line": 4234,
       "function": "pow_1",
       "mutant_id": "m001069",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 4235
+      "start_line": 4234
     },
     {
       "compile_status": "ok",
-      "end_line": 4237,
+      "end_line": 4236,
       "function": "pow_1",
       "mutant_id": "m001070",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 4237
+      "start_line": 4236
     },
     {
       "compile_status": "ok",
-      "end_line": 4237,
+      "end_line": 4236,
       "function": "pow_1",
       "mutant_id": "m001071",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 4237
+      "start_line": 4236
     },
     {
       "compile_status": "ok",
-      "end_line": 4260,
+      "end_line": 4259,
       "function": "powu_1",
       "mutant_id": "m001072",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 4260
+      "start_line": 4259
     },
     {
       "compile_status": "ok",
-      "end_line": 4260,
+      "end_line": 4259,
       "function": "powu_1",
       "mutant_id": "m001073",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 4260
+      "start_line": 4259
     },
     {
       "compile_status": "ok",
-      "end_line": 4260,
+      "end_line": 4259,
       "function": "powu_1",
       "mutant_id": "m001074",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " | ",
-      "start_line": 4260
+      "start_line": 4259
     },
     {
       "compile_status": "ok",
-      "end_line": 4260,
+      "end_line": 4259,
       "function": "powu_1",
       "mutant_id": "m001075",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " ^ ",
-      "start_line": 4260
+      "start_line": 4259
     },
     {
       "compile_status": "ok",
-      "end_line": 4263,
+      "end_line": 4262,
       "function": "powu_1",
       "mutant_id": "m001076",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 4263
+      "start_line": 4262
     },
     {
       "compile_status": "ok",
-      "end_line": 4263,
+      "end_line": 4262,
       "function": "powu_1",
       "mutant_id": "m001077",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 4263
+      "start_line": 4262
     },
     {
       "compile_status": "ok",
-      "end_line": 4267,
+      "end_line": 4266,
       "function": "powu_1",
       "mutant_id": "m001078",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 4267
+      "start_line": 4266
     },
     {
       "compile_status": "ok",
-      "end_line": 4267,
+      "end_line": 4266,
       "function": "powu_1",
       "mutant_id": "m001079",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 4267
+      "start_line": 4266
     },
     {
       "compile_status": "ok",
-      "end_line": 4267,
+      "end_line": 4266,
       "function": "powu_1",
       "mutant_id": "m001080",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " | ",
-      "start_line": 4267
+      "start_line": 4266
     },
     {
       "compile_status": "ok",
-      "end_line": 4267,
+      "end_line": 4266,
       "function": "powu_1",
       "mutant_id": "m001081",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " ^ ",
-      "start_line": 4267
+      "start_line": 4266
     },
     {
       "compile_status": "ok",
-      "end_line": 4291,
+      "end_line": 4290,
       "function": "sqrt_2",
       "mutant_id": "m001082",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 4291
+      "start_line": 4290
     },
     {
       "compile_status": "ok",
-      "end_line": 4291,
+      "end_line": 4290,
       "function": "sqrt_2",
       "mutant_id": "m001083",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 4291
+      "start_line": 4290
     },
     {
       "compile_status": "ok",
-      "end_line": 4291,
+      "end_line": 4290,
       "function": "sqrt_2",
       "mutant_id": "m001084",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 4291
+      "start_line": 4290
     },
     {
       "compile_status": "ok",
-      "end_line": 4291,
+      "end_line": 4290,
       "function": "sqrt_2",
       "mutant_id": "m001085",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 4291
+      "start_line": 4290
     },
     {
       "compile_status": "ok",
-      "end_line": 4296,
+      "end_line": 4295,
       "function": "sqrt_2",
       "mutant_id": "m001086",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
-      "start_line": 4296
+      "start_line": 4295
     },
     {
       "compile_status": "ok",
-      "end_line": 4296,
+      "end_line": 4295,
       "function": "sqrt_2",
       "mutant_id": "m001087",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " ** ",
-      "start_line": 4296
+      "start_line": 4295
     },
     {
       "compile_status": "ok",
-      "end_line": 4585,
+      "end_line": 4584,
       "function": "convert_0",
       "mutant_id": "m001088",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 4585
+      "start_line": 4584
     },
     {
       "compile_status": "ok",
-      "end_line": 4585,
+      "end_line": 4584,
       "function": "convert_0",
       "mutant_id": "m001089",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 4585
+      "start_line": 4584
     },
     {
       "compile_status": "ok",
-      "end_line": 4596,
+      "end_line": 4595,
       "function": "convert_1",
       "mutant_id": "m001090",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 4596
+      "start_line": 4595
     },
     {
       "compile_status": "ok",
-      "end_line": 4596,
+      "end_line": 4595,
       "function": "convert_1",
       "mutant_id": "m001091",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 4596
+      "start_line": 4595
     },
     {
       "compile_status": "ok",
-      "end_line": 4596,
+      "end_line": 4595,
       "function": "convert_1",
       "mutant_id": "m001092",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " + ",
-      "start_line": 4596
+      "start_line": 4595
     },
     {
       "compile_status": "ok",
-      "end_line": 4596,
+      "end_line": 4595,
       "function": "convert_1",
       "mutant_id": "m001093",
       "operator": "BOR",
       "original_expression": " / ",
       "replacement_expression": " - ",
-      "start_line": 4596
+      "start_line": 4595
     },
     {
       "compile_status": "ok",
-      "end_line": 4600,
+      "end_line": 4599,
       "function": "convert_1",
       "mutant_id": "m001094",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " + ",
-      "start_line": 4600
+      "start_line": 4599
     },
     {
       "compile_status": "ok",
-      "end_line": 4600,
+      "end_line": 4599,
       "function": "convert_1",
       "mutant_id": "m001095",
       "operator": "BOR",
       "original_expression": " * ",
       "replacement_expression": " ** ",
-      "start_line": 4600
+      "start_line": 4599
     },
     {
       "compile_status": "ok",
@@ -13744,1123 +13744,1123 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3069,
+      "end_line": 3068,
       "function": "abs",
       "mutant_id": "m001375",
       "operator": "CSC",
       "original_expression": "xInt == uMIN_SD59x18",
       "replacement_expression": "true",
-      "start_line": 3069
+      "start_line": 3068
     },
     {
       "compile_status": "ok",
-      "end_line": 3069,
+      "end_line": 3068,
       "function": "abs",
       "mutant_id": "m001376",
       "operator": "CSC",
       "original_expression": "xInt == uMIN_SD59x18",
       "replacement_expression": "false",
-      "start_line": 3069
+      "start_line": 3068
     },
     {
       "compile_status": "ok",
-      "end_line": 3092,
+      "end_line": 3091,
       "function": "avg_0",
       "mutant_id": "m001377",
       "operator": "CSC",
       "original_expression": "sum < 0",
       "replacement_expression": "true",
-      "start_line": 3092
+      "start_line": 3091
     },
     {
       "compile_status": "ok",
-      "end_line": 3092,
+      "end_line": 3091,
       "function": "avg_0",
       "mutant_id": "m001378",
       "operator": "CSC",
       "original_expression": "sum < 0",
       "replacement_expression": "false",
-      "start_line": 3092
+      "start_line": 3091
     },
     {
       "compile_status": "ok",
-      "end_line": 3101,
+      "end_line": 3100,
       "function": "avg_0",
       "mutant_id": "m001379",
       "operator": "CSC",
       "original_expression": "else {\n            \n            result = wrap_2(sum + (xInt & yInt & 1));\n        }",
       "replacement_expression": "",
-      "start_line": 3098
+      "start_line": 3097
     },
     {
       "compile_status": "ok",
-      "end_line": 3118,
+      "end_line": 3117,
       "function": "ceil_0",
       "mutant_id": "m001380",
       "operator": "CSC",
       "original_expression": "xInt > uMAX_WHOLE_SD59x18",
       "replacement_expression": "true",
-      "start_line": 3118
+      "start_line": 3117
     },
     {
       "compile_status": "ok",
-      "end_line": 3118,
+      "end_line": 3117,
       "function": "ceil_0",
       "mutant_id": "m001381",
       "operator": "CSC",
       "original_expression": "xInt > uMAX_WHOLE_SD59x18",
       "replacement_expression": "false",
-      "start_line": 3118
+      "start_line": 3117
     },
     {
       "compile_status": "ok",
-      "end_line": 3123,
+      "end_line": 3122,
       "function": "ceil_0",
       "mutant_id": "m001382",
       "operator": "CSC",
       "original_expression": "remainder == 0",
       "replacement_expression": "true",
-      "start_line": 3123
+      "start_line": 3122
     },
     {
       "compile_status": "ok",
-      "end_line": 3123,
+      "end_line": 3122,
       "function": "ceil_0",
       "mutant_id": "m001383",
       "operator": "CSC",
       "original_expression": "remainder == 0",
       "replacement_expression": "false",
-      "start_line": 3123
+      "start_line": 3122
     },
     {
       "compile_status": "ok",
-      "end_line": 3134,
+      "end_line": 3133,
       "function": "ceil_0",
       "mutant_id": "m001384",
       "operator": "CSC",
       "original_expression": "else {\n        unchecked {\n            \n            int256 resultInt = xInt - remainder;\n            if (xInt > 0) {\n                resultInt += uUNIT_2;\n            }\n            result = wrap_2(resultInt);\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3125
+      "start_line": 3124
     },
     {
       "compile_status": "ok",
-      "end_line": 3129,
+      "end_line": 3128,
       "function": "ceil_0",
       "mutant_id": "m001385",
       "operator": "CSC",
       "original_expression": "xInt > 0",
       "replacement_expression": "true",
-      "start_line": 3129
+      "start_line": 3128
     },
     {
       "compile_status": "ok",
-      "end_line": 3129,
+      "end_line": 3128,
       "function": "ceil_0",
       "mutant_id": "m001386",
       "operator": "CSC",
       "original_expression": "xInt > 0",
       "replacement_expression": "false",
-      "start_line": 3129
+      "start_line": 3128
     },
     {
       "compile_status": "ok",
-      "end_line": 3159,
+      "end_line": 3158,
       "function": "div_0",
       "mutant_id": "m001387",
       "operator": "CSC",
       "original_expression": "xInt == uMIN_SD59x18 || yInt == uMIN_SD59x18",
       "replacement_expression": "true",
-      "start_line": 3159
+      "start_line": 3158
     },
     {
       "compile_status": "ok",
-      "end_line": 3159,
+      "end_line": 3158,
       "function": "div_0",
       "mutant_id": "m001388",
       "operator": "CSC",
       "original_expression": "xInt == uMIN_SD59x18 || yInt == uMIN_SD59x18",
       "replacement_expression": "false",
-      "start_line": 3159
+      "start_line": 3158
     },
     {
       "compile_status": "ok",
-      "end_line": 3173,
+      "end_line": 3172,
       "function": "div_0",
       "mutant_id": "m001389",
       "operator": "CSC",
       "original_expression": "resultAbs > uint256(uMAX_SD59x18)",
       "replacement_expression": "true",
-      "start_line": 3173
+      "start_line": 3172
     },
     {
       "compile_status": "ok",
-      "end_line": 3173,
+      "end_line": 3172,
       "function": "div_0",
       "mutant_id": "m001390",
       "operator": "CSC",
       "original_expression": "resultAbs > uint256(uMAX_SD59x18)",
       "replacement_expression": "false",
-      "start_line": 3173
+      "start_line": 3172
     },
     {
       "compile_status": "ok",
-      "end_line": 3208,
+      "end_line": 3207,
       "function": "exp_0",
       "mutant_id": "m001391",
       "operator": "CSC",
       "original_expression": "xInt < uEXP_MIN_THRESHOLD",
       "replacement_expression": "true",
-      "start_line": 3208
+      "start_line": 3207
     },
     {
       "compile_status": "ok",
-      "end_line": 3208,
+      "end_line": 3207,
       "function": "exp_0",
       "mutant_id": "m001392",
       "operator": "CSC",
       "original_expression": "xInt < uEXP_MIN_THRESHOLD",
       "replacement_expression": "false",
-      "start_line": 3208
+      "start_line": 3207
     },
     {
       "compile_status": "ok",
-      "end_line": 3213,
+      "end_line": 3212,
       "function": "exp_0",
       "mutant_id": "m001393",
       "operator": "CSC",
       "original_expression": "xInt > uEXP_MAX_INPUT_0",
       "replacement_expression": "true",
-      "start_line": 3213
+      "start_line": 3212
     },
     {
       "compile_status": "ok",
-      "end_line": 3213,
+      "end_line": 3212,
       "function": "exp_0",
       "mutant_id": "m001394",
       "operator": "CSC",
       "original_expression": "xInt > uEXP_MAX_INPUT_0",
       "replacement_expression": "false",
-      "start_line": 3213
+      "start_line": 3212
     },
     {
       "compile_status": "ok",
-      "end_line": 3244,
+      "end_line": 3243,
       "function": "exp2_1",
       "mutant_id": "m001395",
       "operator": "CSC",
       "original_expression": "xInt < 0",
       "replacement_expression": "true",
-      "start_line": 3244
+      "start_line": 3243
     },
     {
       "compile_status": "ok",
-      "end_line": 3244,
+      "end_line": 3243,
       "function": "exp2_1",
       "mutant_id": "m001396",
       "operator": "CSC",
       "original_expression": "xInt < 0",
       "replacement_expression": "false",
-      "start_line": 3244
+      "start_line": 3243
     },
     {
       "compile_status": "ok",
-      "end_line": 3267,
+      "end_line": 3266,
       "function": "exp2_1",
       "mutant_id": "m001397",
       "operator": "CSC",
       "original_expression": "else {\n        \n        if (xInt > uEXP2_MAX_INPUT_0) {\n            revert PRBMath_SD59x18_Exp2_InputTooBig(x);\n        }\n\n        unchecked {\n            \n            uint256 x_192x64 = uint256((xInt << 64) / uUNIT_2);\n\n            \n            result = wrap_2(int256(exp2_0(x_192x64)));\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3254
+      "start_line": 3253
     },
     {
       "compile_status": "ok",
-      "end_line": 3246,
+      "end_line": 3245,
       "function": "exp2_1",
       "mutant_id": "m001398",
       "operator": "CSC",
       "original_expression": "xInt < uEXP2_MIN_THRESHOLD",
       "replacement_expression": "true",
-      "start_line": 3246
+      "start_line": 3245
     },
     {
       "compile_status": "ok",
-      "end_line": 3246,
+      "end_line": 3245,
       "function": "exp2_1",
       "mutant_id": "m001399",
       "operator": "CSC",
       "original_expression": "xInt < uEXP2_MIN_THRESHOLD",
       "replacement_expression": "false",
-      "start_line": 3246
+      "start_line": 3245
     },
     {
       "compile_status": "ok",
-      "end_line": 3256,
+      "end_line": 3255,
       "function": "exp2_1",
       "mutant_id": "m001400",
       "operator": "CSC",
       "original_expression": "xInt > uEXP2_MAX_INPUT_0",
       "replacement_expression": "true",
-      "start_line": 3256
+      "start_line": 3255
     },
     {
       "compile_status": "ok",
-      "end_line": 3256,
+      "end_line": 3255,
       "function": "exp2_1",
       "mutant_id": "m001401",
       "operator": "CSC",
       "original_expression": "xInt > uEXP2_MAX_INPUT_0",
       "replacement_expression": "false",
-      "start_line": 3256
+      "start_line": 3255
     },
     {
       "compile_status": "ok",
-      "end_line": 3283,
+      "end_line": 3282,
       "function": "floor_0",
       "mutant_id": "m001402",
       "operator": "CSC",
       "original_expression": "xInt < uMIN_WHOLE_SD59x18",
       "replacement_expression": "true",
-      "start_line": 3283
+      "start_line": 3282
     },
     {
       "compile_status": "ok",
-      "end_line": 3283,
+      "end_line": 3282,
       "function": "floor_0",
       "mutant_id": "m001403",
       "operator": "CSC",
       "original_expression": "xInt < uMIN_WHOLE_SD59x18",
       "replacement_expression": "false",
-      "start_line": 3283
+      "start_line": 3282
     },
     {
       "compile_status": "ok",
-      "end_line": 3288,
+      "end_line": 3287,
       "function": "floor_0",
       "mutant_id": "m001404",
       "operator": "CSC",
       "original_expression": "remainder == 0",
       "replacement_expression": "true",
-      "start_line": 3288
+      "start_line": 3287
     },
     {
       "compile_status": "ok",
-      "end_line": 3288,
+      "end_line": 3287,
       "function": "floor_0",
       "mutant_id": "m001405",
       "operator": "CSC",
       "original_expression": "remainder == 0",
       "replacement_expression": "false",
-      "start_line": 3288
+      "start_line": 3287
     },
     {
       "compile_status": "ok",
-      "end_line": 3299,
+      "end_line": 3298,
       "function": "floor_0",
       "mutant_id": "m001406",
       "operator": "CSC",
       "original_expression": "else {\n        unchecked {\n            \n            int256 resultInt = xInt - remainder;\n            if (xInt < 0) {\n                resultInt -= uUNIT_2;\n            }\n            result = wrap_2(resultInt);\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3290
+      "start_line": 3289
     },
     {
       "compile_status": "ok",
-      "end_line": 3294,
+      "end_line": 3293,
       "function": "floor_0",
       "mutant_id": "m001407",
       "operator": "CSC",
       "original_expression": "xInt < 0",
       "replacement_expression": "true",
-      "start_line": 3294
+      "start_line": 3293
     },
     {
       "compile_status": "ok",
-      "end_line": 3294,
+      "end_line": 3293,
       "function": "floor_0",
       "mutant_id": "m001408",
       "operator": "CSC",
       "original_expression": "xInt < 0",
       "replacement_expression": "false",
-      "start_line": 3294
+      "start_line": 3293
     },
     {
       "compile_status": "ok",
-      "end_line": 3327,
+      "end_line": 3326,
       "function": "gm_0",
       "mutant_id": "m001409",
       "operator": "CSC",
       "original_expression": "xInt == 0 || yInt == 0",
       "replacement_expression": "true",
-      "start_line": 3327
+      "start_line": 3326
     },
     {
       "compile_status": "ok",
-      "end_line": 3327,
+      "end_line": 3326,
       "function": "gm_0",
       "mutant_id": "m001410",
       "operator": "CSC",
       "original_expression": "xInt == 0 || yInt == 0",
       "replacement_expression": "false",
-      "start_line": 3327
+      "start_line": 3326
     },
     {
       "compile_status": "ok",
-      "end_line": 3334,
+      "end_line": 3333,
       "function": "gm_0",
       "mutant_id": "m001411",
       "operator": "CSC",
       "original_expression": "xyInt / xInt != yInt",
       "replacement_expression": "true",
-      "start_line": 3334
+      "start_line": 3333
     },
     {
       "compile_status": "ok",
-      "end_line": 3334,
+      "end_line": 3333,
       "function": "gm_0",
       "mutant_id": "m001412",
       "operator": "CSC",
       "original_expression": "xyInt / xInt != yInt",
       "replacement_expression": "false",
-      "start_line": 3334
+      "start_line": 3333
     },
     {
       "compile_status": "ok",
-      "end_line": 3339,
+      "end_line": 3338,
       "function": "gm_0",
       "mutant_id": "m001413",
       "operator": "CSC",
       "original_expression": "xyInt < 0",
       "replacement_expression": "true",
-      "start_line": 3339
+      "start_line": 3338
     },
     {
       "compile_status": "ok",
-      "end_line": 3339,
+      "end_line": 3338,
       "function": "gm_0",
       "mutant_id": "m001414",
       "operator": "CSC",
       "original_expression": "xyInt < 0",
       "replacement_expression": "false",
-      "start_line": 3339
+      "start_line": 3338
     },
     {
       "compile_status": "ok",
-      "end_line": 3406,
+      "end_line": 3405,
       "function": "log10_0",
       "mutant_id": "m001415",
       "operator": "CSC",
       "original_expression": "xInt < 0",
       "replacement_expression": "true",
-      "start_line": 3406
+      "start_line": 3405
     },
     {
       "compile_status": "ok",
-      "end_line": 3406,
+      "end_line": 3405,
       "function": "log10_0",
       "mutant_id": "m001416",
       "operator": "CSC",
       "original_expression": "xInt < 0",
       "replacement_expression": "false",
-      "start_line": 3406
+      "start_line": 3405
     },
     {
       "compile_status": "ok",
-      "end_line": 3494,
+      "end_line": 3493,
       "function": "log10_0",
       "mutant_id": "m001417",
       "operator": "CSC",
       "original_expression": "result.unwrap_2() == uMAX_SD59x18",
       "replacement_expression": "true",
-      "start_line": 3494
+      "start_line": 3493
     },
     {
       "compile_status": "ok",
-      "end_line": 3494,
+      "end_line": 3493,
       "function": "log10_0",
       "mutant_id": "m001418",
       "operator": "CSC",
       "original_expression": "result.unwrap_2() == uMAX_SD59x18",
       "replacement_expression": "false",
-      "start_line": 3494
+      "start_line": 3493
     },
     {
       "compile_status": "ok",
-      "end_line": 3527,
+      "end_line": 3526,
       "function": "log2_0",
       "mutant_id": "m001419",
       "operator": "CSC",
       "original_expression": "xInt <= 0",
       "replacement_expression": "true",
-      "start_line": 3527
+      "start_line": 3526
     },
     {
       "compile_status": "ok",
-      "end_line": 3527,
+      "end_line": 3526,
       "function": "log2_0",
       "mutant_id": "m001420",
       "operator": "CSC",
       "original_expression": "xInt <= 0",
       "replacement_expression": "false",
-      "start_line": 3527
+      "start_line": 3526
     },
     {
       "compile_status": "ok",
-      "end_line": 3533,
+      "end_line": 3532,
       "function": "log2_0",
       "mutant_id": "m001421",
       "operator": "CSC",
       "original_expression": "xInt >= uUNIT_2",
       "replacement_expression": "true",
-      "start_line": 3533
+      "start_line": 3532
     },
     {
       "compile_status": "ok",
-      "end_line": 3533,
+      "end_line": 3532,
       "function": "log2_0",
       "mutant_id": "m001422",
       "operator": "CSC",
       "original_expression": "xInt >= uUNIT_2",
       "replacement_expression": "false",
-      "start_line": 3533
+      "start_line": 3532
     },
     {
       "compile_status": "ok",
-      "end_line": 3539,
+      "end_line": 3538,
       "function": "log2_0",
       "mutant_id": "m001423",
       "operator": "CSC",
       "original_expression": "else {\n            sign = -1;\n            \n            xInt = uUNIT_SQUARED_0 / xInt;\n        }",
       "replacement_expression": "",
-      "start_line": 3535
+      "start_line": 3534
     },
     {
       "compile_status": "ok",
-      "end_line": 3552,
+      "end_line": 3551,
       "function": "log2_0",
       "mutant_id": "m001424",
       "operator": "CSC",
       "original_expression": "y == uUNIT_2",
       "replacement_expression": "true",
-      "start_line": 3552
+      "start_line": 3551
     },
     {
       "compile_status": "ok",
-      "end_line": 3552,
+      "end_line": 3551,
       "function": "log2_0",
       "mutant_id": "m001425",
       "operator": "CSC",
       "original_expression": "y == uUNIT_2",
       "replacement_expression": "false",
-      "start_line": 3552
+      "start_line": 3551
     },
     {
       "compile_status": "ok",
-      "end_line": 3563,
+      "end_line": 3562,
       "function": "log2_0",
       "mutant_id": "m001426",
       "operator": "CSC",
       "original_expression": "y >= DOUBLE_UNIT",
       "replacement_expression": "true",
-      "start_line": 3563
+      "start_line": 3562
     },
     {
       "compile_status": "ok",
-      "end_line": 3563,
+      "end_line": 3562,
       "function": "log2_0",
       "mutant_id": "m001427",
       "operator": "CSC",
       "original_expression": "y >= DOUBLE_UNIT",
       "replacement_expression": "false",
-      "start_line": 3563
+      "start_line": 3562
     },
     {
       "compile_status": "ok",
-      "end_line": 3593,
+      "end_line": 3592,
       "function": "mul_0",
       "mutant_id": "m001428",
       "operator": "CSC",
       "original_expression": "xInt == uMIN_SD59x18 || yInt == uMIN_SD59x18",
       "replacement_expression": "true",
-      "start_line": 3593
+      "start_line": 3592
     },
     {
       "compile_status": "ok",
-      "end_line": 3593,
+      "end_line": 3592,
       "function": "mul_0",
       "mutant_id": "m001429",
       "operator": "CSC",
       "original_expression": "xInt == uMIN_SD59x18 || yInt == uMIN_SD59x18",
       "replacement_expression": "false",
-      "start_line": 3593
+      "start_line": 3592
     },
     {
       "compile_status": "ok",
-      "end_line": 3607,
+      "end_line": 3606,
       "function": "mul_0",
       "mutant_id": "m001430",
       "operator": "CSC",
       "original_expression": "resultAbs > uint256(uMAX_SD59x18)",
       "replacement_expression": "true",
-      "start_line": 3607
+      "start_line": 3606
     },
     {
       "compile_status": "ok",
-      "end_line": 3607,
+      "end_line": 3606,
       "function": "mul_0",
       "mutant_id": "m001431",
       "operator": "CSC",
       "original_expression": "resultAbs > uint256(uMAX_SD59x18)",
       "replacement_expression": "false",
-      "start_line": 3607
+      "start_line": 3606
     },
     {
       "compile_status": "ok",
-      "end_line": 3643,
+      "end_line": 3642,
       "function": "pow_0",
       "mutant_id": "m001432",
       "operator": "CSC",
       "original_expression": "xInt == 0",
       "replacement_expression": "true",
-      "start_line": 3643
+      "start_line": 3642
     },
     {
       "compile_status": "ok",
-      "end_line": 3643,
+      "end_line": 3642,
       "function": "pow_0",
       "mutant_id": "m001433",
       "operator": "CSC",
       "original_expression": "xInt == 0",
       "replacement_expression": "false",
-      "start_line": 3643
+      "start_line": 3642
     },
     {
       "compile_status": "ok",
-      "end_line": 3647,
+      "end_line": 3646,
       "function": "pow_0",
       "mutant_id": "m001434",
       "operator": "CSC",
       "original_expression": "xInt == uUNIT_2",
       "replacement_expression": "true",
-      "start_line": 3647
+      "start_line": 3646
     },
     {
       "compile_status": "ok",
-      "end_line": 3647,
+      "end_line": 3646,
       "function": "pow_0",
       "mutant_id": "m001435",
       "operator": "CSC",
       "original_expression": "xInt == uUNIT_2",
       "replacement_expression": "false",
-      "start_line": 3647
+      "start_line": 3646
     },
     {
       "compile_status": "ok",
-      "end_line": 3652,
+      "end_line": 3651,
       "function": "pow_0",
       "mutant_id": "m001436",
       "operator": "CSC",
       "original_expression": "yInt == 0",
       "replacement_expression": "true",
-      "start_line": 3652
+      "start_line": 3651
     },
     {
       "compile_status": "ok",
-      "end_line": 3652,
+      "end_line": 3651,
       "function": "pow_0",
       "mutant_id": "m001437",
       "operator": "CSC",
       "original_expression": "yInt == 0",
       "replacement_expression": "false",
-      "start_line": 3652
+      "start_line": 3651
     },
     {
       "compile_status": "ok",
-      "end_line": 3656,
+      "end_line": 3655,
       "function": "pow_0",
       "mutant_id": "m001438",
       "operator": "CSC",
       "original_expression": "yInt == uUNIT_2",
       "replacement_expression": "true",
-      "start_line": 3656
+      "start_line": 3655
     },
     {
       "compile_status": "ok",
-      "end_line": 3656,
+      "end_line": 3655,
       "function": "pow_0",
       "mutant_id": "m001439",
       "operator": "CSC",
       "original_expression": "yInt == uUNIT_2",
       "replacement_expression": "false",
-      "start_line": 3656
+      "start_line": 3655
     },
     {
       "compile_status": "ok",
-      "end_line": 3693,
+      "end_line": 3692,
       "function": "powu_0",
       "mutant_id": "m001440",
       "operator": "CSC",
       "original_expression": "yAux & 1 > 0",
       "replacement_expression": "true",
-      "start_line": 3693
+      "start_line": 3692
     },
     {
       "compile_status": "ok",
-      "end_line": 3693,
+      "end_line": 3692,
       "function": "powu_0",
       "mutant_id": "m001441",
       "operator": "CSC",
       "original_expression": "yAux & 1 > 0",
       "replacement_expression": "false",
-      "start_line": 3693
+      "start_line": 3692
     },
     {
       "compile_status": "ok",
-      "end_line": 3699,
+      "end_line": 3698,
       "function": "powu_0",
       "mutant_id": "m001442",
       "operator": "CSC",
       "original_expression": "resultAbs > uint256(uMAX_SD59x18)",
       "replacement_expression": "true",
-      "start_line": 3699
+      "start_line": 3698
     },
     {
       "compile_status": "ok",
-      "end_line": 3699,
+      "end_line": 3698,
       "function": "powu_0",
       "mutant_id": "m001443",
       "operator": "CSC",
       "original_expression": "resultAbs > uint256(uMAX_SD59x18)",
       "replacement_expression": "false",
-      "start_line": 3699
+      "start_line": 3698
     },
     {
       "compile_status": "ok",
-      "end_line": 3707,
+      "end_line": 3706,
       "function": "powu_0",
       "mutant_id": "m001444",
       "operator": "CSC",
       "original_expression": "isNegative",
       "replacement_expression": "true",
-      "start_line": 3707
+      "start_line": 3706
     },
     {
       "compile_status": "ok",
-      "end_line": 3707,
+      "end_line": 3706,
       "function": "powu_0",
       "mutant_id": "m001445",
       "operator": "CSC",
       "original_expression": "isNegative",
       "replacement_expression": "false",
-      "start_line": 3707
+      "start_line": 3706
     },
     {
       "compile_status": "ok",
-      "end_line": 3731,
+      "end_line": 3730,
       "function": "sqrt_1",
       "mutant_id": "m001446",
       "operator": "CSC",
       "original_expression": "xInt < 0",
       "replacement_expression": "true",
-      "start_line": 3731
+      "start_line": 3730
     },
     {
       "compile_status": "ok",
-      "end_line": 3731,
+      "end_line": 3730,
       "function": "sqrt_1",
       "mutant_id": "m001447",
       "operator": "CSC",
       "original_expression": "xInt < 0",
       "replacement_expression": "false",
-      "start_line": 3731
+      "start_line": 3730
     },
     {
       "compile_status": "ok",
-      "end_line": 3734,
+      "end_line": 3733,
       "function": "sqrt_1",
       "mutant_id": "m001448",
       "operator": "CSC",
       "original_expression": "xInt > uMAX_SD59x18 / uUNIT_2",
       "replacement_expression": "true",
-      "start_line": 3734
+      "start_line": 3733
     },
     {
       "compile_status": "ok",
-      "end_line": 3734,
+      "end_line": 3733,
       "function": "sqrt_1",
       "mutant_id": "m001449",
       "operator": "CSC",
       "original_expression": "xInt > uMAX_SD59x18 / uUNIT_2",
       "replacement_expression": "false",
-      "start_line": 3734
+      "start_line": 3733
     },
     {
       "compile_status": "ok",
-      "end_line": 3795,
+      "end_line": 3794,
       "function": "ceil_1",
       "mutant_id": "m001450",
       "operator": "CSC",
       "original_expression": "xUint > uMAX_WHOLE_UD60x18",
       "replacement_expression": "true",
-      "start_line": 3795
+      "start_line": 3794
     },
     {
       "compile_status": "ok",
-      "end_line": 3795,
+      "end_line": 3794,
       "function": "ceil_1",
       "mutant_id": "m001451",
       "operator": "CSC",
       "original_expression": "xUint > uMAX_WHOLE_UD60x18",
       "replacement_expression": "false",
-      "start_line": 3795
+      "start_line": 3794
     },
     {
       "compile_status": "ok",
-      "end_line": 3845,
+      "end_line": 3844,
       "function": "exp_1",
       "mutant_id": "m001452",
       "operator": "CSC",
       "original_expression": "xUint > uEXP_MAX_INPUT_1",
       "replacement_expression": "true",
-      "start_line": 3845
+      "start_line": 3844
     },
     {
       "compile_status": "ok",
-      "end_line": 3845,
+      "end_line": 3844,
       "function": "exp_1",
       "mutant_id": "m001453",
       "operator": "CSC",
       "original_expression": "xUint > uEXP_MAX_INPUT_1",
       "replacement_expression": "false",
-      "start_line": 3845
+      "start_line": 3844
     },
     {
       "compile_status": "ok",
-      "end_line": 3871,
+      "end_line": 3870,
       "function": "exp2_2",
       "mutant_id": "m001454",
       "operator": "CSC",
       "original_expression": "xUint > uEXP2_MAX_INPUT_1",
       "replacement_expression": "true",
-      "start_line": 3871
+      "start_line": 3870
     },
     {
       "compile_status": "ok",
-      "end_line": 3871,
+      "end_line": 3870,
       "function": "exp2_2",
       "mutant_id": "m001455",
       "operator": "CSC",
       "original_expression": "xUint > uEXP2_MAX_INPUT_1",
       "replacement_expression": "false",
-      "start_line": 3871
+      "start_line": 3870
     },
     {
       "compile_status": "ok",
-      "end_line": 3921,
+      "end_line": 3920,
       "function": "gm_1",
       "mutant_id": "m001456",
       "operator": "CSC",
       "original_expression": "xUint == 0 || yUint == 0",
       "replacement_expression": "true",
-      "start_line": 3921
+      "start_line": 3920
     },
     {
       "compile_status": "ok",
-      "end_line": 3921,
+      "end_line": 3920,
       "function": "gm_1",
       "mutant_id": "m001457",
       "operator": "CSC",
       "original_expression": "xUint == 0 || yUint == 0",
       "replacement_expression": "false",
-      "start_line": 3921
+      "start_line": 3920
     },
     {
       "compile_status": "ok",
-      "end_line": 3928,
+      "end_line": 3927,
       "function": "gm_1",
       "mutant_id": "m001458",
       "operator": "CSC",
       "original_expression": "xyUint / xUint != yUint",
       "replacement_expression": "true",
-      "start_line": 3928
+      "start_line": 3927
     },
     {
       "compile_status": "ok",
-      "end_line": 3928,
+      "end_line": 3927,
       "function": "gm_1",
       "mutant_id": "m001459",
       "operator": "CSC",
       "original_expression": "xyUint / xUint != yUint",
       "replacement_expression": "false",
-      "start_line": 3928
+      "start_line": 3927
     },
     {
       "compile_status": "ok",
-      "end_line": 3998,
+      "end_line": 3997,
       "function": "log10_1",
       "mutant_id": "m001460",
       "operator": "CSC",
       "original_expression": "xUint < uUNIT_5",
       "replacement_expression": "true",
-      "start_line": 3998
+      "start_line": 3997
     },
     {
       "compile_status": "ok",
-      "end_line": 3998,
+      "end_line": 3997,
       "function": "log10_1",
       "mutant_id": "m001461",
       "operator": "CSC",
       "original_expression": "xUint < uUNIT_5",
       "replacement_expression": "false",
-      "start_line": 3998
+      "start_line": 3997
     },
     {
       "compile_status": "ok",
-      "end_line": 4087,
+      "end_line": 4086,
       "function": "log10_1",
       "mutant_id": "m001462",
       "operator": "CSC",
       "original_expression": "result.unwrap_5() == uMAX_UD60x18",
       "replacement_expression": "true",
-      "start_line": 4087
+      "start_line": 4086
     },
     {
       "compile_status": "ok",
-      "end_line": 4087,
+      "end_line": 4086,
       "function": "log10_1",
       "mutant_id": "m001463",
       "operator": "CSC",
       "original_expression": "result.unwrap_5() == uMAX_UD60x18",
       "replacement_expression": "false",
-      "start_line": 4087
+      "start_line": 4086
     },
     {
       "compile_status": "ok",
-      "end_line": 4121,
+      "end_line": 4120,
       "function": "log2_1",
       "mutant_id": "m001464",
       "operator": "CSC",
       "original_expression": "xUint < uUNIT_5",
       "replacement_expression": "true",
-      "start_line": 4121
+      "start_line": 4120
     },
     {
       "compile_status": "ok",
-      "end_line": 4121,
+      "end_line": 4120,
       "function": "log2_1",
       "mutant_id": "m001465",
       "operator": "CSC",
       "original_expression": "xUint < uUNIT_5",
       "replacement_expression": "false",
-      "start_line": 4121
+      "start_line": 4120
     },
     {
       "compile_status": "ok",
-      "end_line": 4137,
+      "end_line": 4136,
       "function": "log2_1",
       "mutant_id": "m001466",
       "operator": "CSC",
       "original_expression": "y == uUNIT_5",
       "replacement_expression": "true",
-      "start_line": 4137
+      "start_line": 4136
     },
     {
       "compile_status": "ok",
-      "end_line": 4137,
+      "end_line": 4136,
       "function": "log2_1",
       "mutant_id": "m001467",
       "operator": "CSC",
       "original_expression": "y == uUNIT_5",
       "replacement_expression": "false",
-      "start_line": 4137
+      "start_line": 4136
     },
     {
       "compile_status": "ok",
-      "end_line": 4148,
+      "end_line": 4147,
       "function": "log2_1",
       "mutant_id": "m001468",
       "operator": "CSC",
       "original_expression": "y >= DOUBLE_UNIT",
       "replacement_expression": "true",
-      "start_line": 4148
+      "start_line": 4147
     },
     {
       "compile_status": "ok",
-      "end_line": 4148,
+      "end_line": 4147,
       "function": "log2_1",
       "mutant_id": "m001469",
       "operator": "CSC",
       "original_expression": "y >= DOUBLE_UNIT",
       "replacement_expression": "false",
-      "start_line": 4148
+      "start_line": 4147
     },
     {
       "compile_status": "ok",
-      "end_line": 4212,
+      "end_line": 4211,
       "function": "pow_1",
       "mutant_id": "m001470",
       "operator": "CSC",
       "original_expression": "xUint == 0",
       "replacement_expression": "true",
-      "start_line": 4212
+      "start_line": 4211
     },
     {
       "compile_status": "ok",
-      "end_line": 4212,
+      "end_line": 4211,
       "function": "pow_1",
       "mutant_id": "m001471",
       "operator": "CSC",
       "original_expression": "xUint == 0",
       "replacement_expression": "false",
-      "start_line": 4212
+      "start_line": 4211
     },
     {
       "compile_status": "ok",
-      "end_line": 4216,
+      "end_line": 4215,
       "function": "pow_1",
       "mutant_id": "m001472",
       "operator": "CSC",
       "original_expression": "xUint == uUNIT_5",
       "replacement_expression": "true",
-      "start_line": 4216
+      "start_line": 4215
     },
     {
       "compile_status": "ok",
-      "end_line": 4216,
+      "end_line": 4215,
       "function": "pow_1",
       "mutant_id": "m001473",
       "operator": "CSC",
       "original_expression": "xUint == uUNIT_5",
       "replacement_expression": "false",
-      "start_line": 4216
+      "start_line": 4215
     },
     {
       "compile_status": "ok",
-      "end_line": 4221,
+      "end_line": 4220,
       "function": "pow_1",
       "mutant_id": "m001474",
       "operator": "CSC",
       "original_expression": "yUint == 0",
       "replacement_expression": "true",
-      "start_line": 4221
+      "start_line": 4220
     },
     {
       "compile_status": "ok",
-      "end_line": 4221,
+      "end_line": 4220,
       "function": "pow_1",
       "mutant_id": "m001475",
       "operator": "CSC",
       "original_expression": "yUint == 0",
       "replacement_expression": "false",
-      "start_line": 4221
+      "start_line": 4220
     },
     {
       "compile_status": "ok",
-      "end_line": 4225,
+      "end_line": 4224,
       "function": "pow_1",
       "mutant_id": "m001476",
       "operator": "CSC",
       "original_expression": "yUint == uUNIT_5",
       "replacement_expression": "true",
-      "start_line": 4225
+      "start_line": 4224
     },
     {
       "compile_status": "ok",
-      "end_line": 4225,
+      "end_line": 4224,
       "function": "pow_1",
       "mutant_id": "m001477",
       "operator": "CSC",
       "original_expression": "yUint == uUNIT_5",
       "replacement_expression": "false",
-      "start_line": 4225
+      "start_line": 4224
     },
     {
       "compile_status": "ok",
-      "end_line": 4230,
+      "end_line": 4229,
       "function": "pow_1",
       "mutant_id": "m001478",
       "operator": "CSC",
       "original_expression": "xUint > uUNIT_5",
       "replacement_expression": "true",
-      "start_line": 4230
+      "start_line": 4229
     },
     {
       "compile_status": "ok",
-      "end_line": 4230,
+      "end_line": 4229,
       "function": "pow_1",
       "mutant_id": "m001479",
       "operator": "CSC",
       "original_expression": "xUint > uUNIT_5",
       "replacement_expression": "false",
-      "start_line": 4230
+      "start_line": 4229
     },
     {
       "compile_status": "ok",
-      "end_line": 4238,
+      "end_line": 4237,
       "function": "pow_1",
       "mutant_id": "m001480",
       "operator": "CSC",
       "original_expression": "    \n    else {\n        UD60x18 i = wrap_5(uUNIT_SQUARED_1 / xUint);\n        UD60x18 w = exp2_2(mul_1(log2_1(i), y));\n        result = wrap_5(uUNIT_SQUARED_1 / w.unwrap_5());\n    }",
       "replacement_expression": "",
-      "start_line": 4232
+      "start_line": 4231
     },
     {
       "compile_status": "ok",
-      "end_line": 4267,
+      "end_line": 4266,
       "function": "powu_1",
       "mutant_id": "m001481",
       "operator": "CSC",
       "original_expression": "y & 1 > 0",
       "replacement_expression": "true",
-      "start_line": 4267
+      "start_line": 4266
     },
     {
       "compile_status": "ok",
-      "end_line": 4267,
+      "end_line": 4266,
       "function": "powu_1",
       "mutant_id": "m001482",
       "operator": "CSC",
       "original_expression": "y & 1 > 0",
       "replacement_expression": "false",
-      "start_line": 4267
+      "start_line": 4266
     },
     {
       "compile_status": "ok",
-      "end_line": 4291,
+      "end_line": 4290,
       "function": "sqrt_2",
       "mutant_id": "m001483",
       "operator": "CSC",
       "original_expression": "xUint > uMAX_UD60x18 / uUNIT_5",
       "replacement_expression": "true",
-      "start_line": 4291
+      "start_line": 4290
     },
     {
       "compile_status": "ok",
-      "end_line": 4291,
+      "end_line": 4290,
       "function": "sqrt_2",
       "mutant_id": "m001484",
       "operator": "CSC",
       "original_expression": "xUint > uMAX_UD60x18 / uUNIT_5",
       "replacement_expression": "false",
-      "start_line": 4291
+      "start_line": 4290
     },
     {
       "compile_status": "ok",
-      "end_line": 4596,
+      "end_line": 4595,
       "function": "convert_1",
       "mutant_id": "m001485",
       "operator": "CSC",
       "original_expression": "x > uMAX_UD60x18 / uUNIT_5",
       "replacement_expression": "true",
-      "start_line": 4596
+      "start_line": 4595
     },
     {
       "compile_status": "ok",
-      "end_line": 4596,
+      "end_line": 4595,
       "function": "convert_1",
       "mutant_id": "m001486",
       "operator": "CSC",
       "original_expression": "x > uMAX_UD60x18 / uUNIT_5",
       "replacement_expression": "false",
-      "start_line": 4596
+      "start_line": 4595
     },
     {
       "compile_status": "failed",
@@ -15734,273 +15734,273 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3167,
+      "end_line": 3166,
       "function": "div_0",
       "mutant_id": "m001574",
       "operator": "ECS",
       "original_expression": "uint256(-xInt)",
       "replacement_expression": "uint248(-xInt)",
+      "start_line": 3166
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3166,
+      "function": "div_0",
+      "mutant_id": "m001575",
+      "operator": "ECS",
+      "original_expression": "uint256(xInt)",
+      "replacement_expression": "uint248(xInt)",
+      "start_line": 3166
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3167,
+      "function": "div_0",
+      "mutant_id": "m001576",
+      "operator": "ECS",
+      "original_expression": "uint256(-yInt)",
+      "replacement_expression": "uint248(-yInt)",
       "start_line": 3167
     },
     {
       "compile_status": "failed",
       "end_line": 3167,
       "function": "div_0",
-      "mutant_id": "m001575",
-      "operator": "ECS",
-      "original_expression": "uint256(xInt)",
-      "replacement_expression": "uint248(xInt)",
-      "start_line": 3167
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3168,
-      "function": "div_0",
-      "mutant_id": "m001576",
-      "operator": "ECS",
-      "original_expression": "uint256(-yInt)",
-      "replacement_expression": "uint248(-yInt)",
-      "start_line": 3168
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3168,
-      "function": "div_0",
       "mutant_id": "m001577",
       "operator": "ECS",
       "original_expression": "uint256(yInt)",
       "replacement_expression": "uint248(yInt)",
-      "start_line": 3168
+      "start_line": 3167
     },
     {
       "compile_status": "failed",
-      "end_line": 3172,
+      "end_line": 3171,
       "function": "div_0",
       "mutant_id": "m001578",
       "operator": "ECS",
       "original_expression": "uint256(uUNIT_2)",
       "replacement_expression": "uint248(uUNIT_2)",
-      "start_line": 3172
+      "start_line": 3171
     },
     {
       "compile_status": "failed",
-      "end_line": 3173,
+      "end_line": 3172,
       "function": "div_0",
       "mutant_id": "m001579",
       "operator": "ECS",
       "original_expression": "uint256(uMAX_SD59x18)",
       "replacement_expression": "uint248(uMAX_SD59x18)",
-      "start_line": 3173
+      "start_line": 3172
     },
     {
       "compile_status": "failed",
-      "end_line": 3183,
+      "end_line": 3182,
       "function": "div_0",
       "mutant_id": "m001580",
       "operator": "ECS",
       "original_expression": "int256(resultAbs)",
       "replacement_expression": "int248(resultAbs)",
-      "start_line": 3183
+      "start_line": 3182
     },
     {
       "compile_status": "failed",
-      "end_line": 3183,
+      "end_line": 3182,
       "function": "div_0",
       "mutant_id": "m001581",
       "operator": "ECS",
       "original_expression": "int256(resultAbs)",
       "replacement_expression": "int248(resultAbs)",
-      "start_line": 3183
+      "start_line": 3182
     },
     {
       "compile_status": "failed",
-      "end_line": 3262,
+      "end_line": 3261,
       "function": "exp2_1",
       "mutant_id": "m001582",
       "operator": "ECS",
       "original_expression": "uint256((xInt << 64) / uUNIT_2)",
       "replacement_expression": "uint248((xInt << 64) / uUNIT_2)",
-      "start_line": 3262
+      "start_line": 3261
     },
     {
       "compile_status": "failed",
-      "end_line": 3265,
+      "end_line": 3264,
       "function": "exp2_1",
       "mutant_id": "m001583",
       "operator": "ECS",
       "original_expression": "int256(exp2_0(x_192x64))",
       "replacement_expression": "int248(exp2_0(x_192x64))",
-      "start_line": 3265
+      "start_line": 3264
     },
     {
       "compile_status": "failed",
-      "end_line": 3345,
+      "end_line": 3344,
       "function": "gm_0",
       "mutant_id": "m001584",
       "operator": "ECS",
       "original_expression": "uint256(xyInt)",
       "replacement_expression": "uint248(xyInt)",
-      "start_line": 3345
+      "start_line": 3344
     },
     {
       "compile_status": "failed",
-      "end_line": 3346,
+      "end_line": 3345,
       "function": "gm_0",
       "mutant_id": "m001585",
       "operator": "ECS",
       "original_expression": "int256(resultUint)",
       "replacement_expression": "int248(resultUint)",
-      "start_line": 3346
+      "start_line": 3345
     },
     {
       "compile_status": "failed",
-      "end_line": 3542,
+      "end_line": 3541,
       "function": "log2_0",
       "mutant_id": "m001586",
       "operator": "ECS",
       "original_expression": "uint256(xInt / uUNIT_2)",
       "replacement_expression": "uint248(xInt / uUNIT_2)",
-      "start_line": 3542
+      "start_line": 3541
     },
     {
       "compile_status": "failed",
-      "end_line": 3546,
+      "end_line": 3545,
       "function": "log2_0",
       "mutant_id": "m001587",
       "operator": "ECS",
       "original_expression": "int256(n)",
       "replacement_expression": "int248(n)",
-      "start_line": 3546
+      "start_line": 3545
     },
     {
       "compile_status": "failed",
-      "end_line": 3601,
+      "end_line": 3600,
       "function": "mul_0",
       "mutant_id": "m001588",
       "operator": "ECS",
       "original_expression": "uint256(-xInt)",
       "replacement_expression": "uint248(-xInt)",
+      "start_line": 3600
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3600,
+      "function": "mul_0",
+      "mutant_id": "m001589",
+      "operator": "ECS",
+      "original_expression": "uint256(xInt)",
+      "replacement_expression": "uint248(xInt)",
+      "start_line": 3600
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3601,
+      "function": "mul_0",
+      "mutant_id": "m001590",
+      "operator": "ECS",
+      "original_expression": "uint256(-yInt)",
+      "replacement_expression": "uint248(-yInt)",
       "start_line": 3601
     },
     {
       "compile_status": "failed",
       "end_line": 3601,
       "function": "mul_0",
-      "mutant_id": "m001589",
-      "operator": "ECS",
-      "original_expression": "uint256(xInt)",
-      "replacement_expression": "uint248(xInt)",
-      "start_line": 3601
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3602,
-      "function": "mul_0",
-      "mutant_id": "m001590",
-      "operator": "ECS",
-      "original_expression": "uint256(-yInt)",
-      "replacement_expression": "uint248(-yInt)",
-      "start_line": 3602
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3602,
-      "function": "mul_0",
       "mutant_id": "m001591",
       "operator": "ECS",
       "original_expression": "uint256(yInt)",
       "replacement_expression": "uint248(yInt)",
-      "start_line": 3602
+      "start_line": 3601
     },
     {
       "compile_status": "failed",
-      "end_line": 3607,
+      "end_line": 3606,
       "function": "mul_0",
       "mutant_id": "m001592",
       "operator": "ECS",
       "original_expression": "uint256(uMAX_SD59x18)",
       "replacement_expression": "uint248(uMAX_SD59x18)",
-      "start_line": 3607
+      "start_line": 3606
     },
     {
       "compile_status": "failed",
-      "end_line": 3617,
+      "end_line": 3616,
       "function": "mul_0",
       "mutant_id": "m001593",
       "operator": "ECS",
       "original_expression": "int256(resultAbs)",
       "replacement_expression": "int248(resultAbs)",
-      "start_line": 3617
+      "start_line": 3616
     },
     {
       "compile_status": "failed",
-      "end_line": 3617,
+      "end_line": 3616,
       "function": "mul_0",
       "mutant_id": "m001594",
       "operator": "ECS",
       "original_expression": "int256(resultAbs)",
       "replacement_expression": "int248(resultAbs)",
-      "start_line": 3617
+      "start_line": 3616
     },
     {
       "compile_status": "failed",
-      "end_line": 3682,
+      "end_line": 3681,
       "function": "powu_0",
       "mutant_id": "m001595",
       "operator": "ECS",
       "original_expression": "uint256(abs(x).unwrap_2())",
       "replacement_expression": "uint248(abs(x).unwrap_2())",
-      "start_line": 3682
+      "start_line": 3681
     },
     {
       "compile_status": "failed",
-      "end_line": 3685,
+      "end_line": 3684,
       "function": "powu_0",
       "mutant_id": "m001596",
       "operator": "ECS",
       "original_expression": "uint256(uUNIT_2)",
       "replacement_expression": "uint248(uUNIT_2)",
-      "start_line": 3685
+      "start_line": 3684
     },
     {
       "compile_status": "failed",
-      "end_line": 3699,
+      "end_line": 3698,
       "function": "powu_0",
       "mutant_id": "m001597",
       "operator": "ECS",
       "original_expression": "uint256(uMAX_SD59x18)",
       "replacement_expression": "uint248(uMAX_SD59x18)",
-      "start_line": 3699
+      "start_line": 3698
     },
     {
       "compile_status": "failed",
-      "end_line": 3705,
+      "end_line": 3704,
       "function": "powu_0",
       "mutant_id": "m001598",
       "operator": "ECS",
       "original_expression": "int256(resultAbs)",
       "replacement_expression": "int248(resultAbs)",
-      "start_line": 3705
+      "start_line": 3704
     },
     {
       "compile_status": "failed",
-      "end_line": 3741,
+      "end_line": 3740,
       "function": "sqrt_1",
       "mutant_id": "m001599",
       "operator": "ECS",
       "original_expression": "uint256(xInt * uUNIT_2)",
       "replacement_expression": "uint248(xInt * uUNIT_2)",
-      "start_line": 3741
+      "start_line": 3740
     },
     {
       "compile_status": "failed",
-      "end_line": 3742,
+      "end_line": 3741,
       "function": "sqrt_1",
       "mutant_id": "m001600",
       "operator": "ECS",
       "original_expression": "int256(resultUint)",
       "replacement_expression": "int248(resultUint)",
-      "start_line": 3742
+      "start_line": 3741
     },
     {
       "compile_status": "ok",
@@ -16474,243 +16474,243 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3070,
+      "end_line": 3069,
       "function": "abs",
       "mutant_id": "m001648",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Abs_MinSD59x18();",
       "replacement_expression": "/* revert PRBMath_SD59x18_Abs_MinSD59x18(); */",
-      "start_line": 3070
+      "start_line": 3069
     },
     {
       "compile_status": "ok",
-      "end_line": 3119,
+      "end_line": 3118,
       "function": "ceil_0",
       "mutant_id": "m001649",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Ceil_Overflow(x);",
       "replacement_expression": "/* revert PRBMath_SD59x18_Ceil_Overflow(x); */",
-      "start_line": 3119
+      "start_line": 3118
     },
     {
       "compile_status": "ok",
-      "end_line": 3160,
+      "end_line": 3159,
       "function": "div_0",
       "mutant_id": "m001650",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Div_InputTooSmall();",
       "replacement_expression": "/* revert PRBMath_SD59x18_Div_InputTooSmall(); */",
-      "start_line": 3160
+      "start_line": 3159
     },
     {
       "compile_status": "ok",
-      "end_line": 3174,
+      "end_line": 3173,
       "function": "div_0",
       "mutant_id": "m001651",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Div_Overflow(x, y);",
       "replacement_expression": "/* revert PRBMath_SD59x18_Div_Overflow(x, y); */",
-      "start_line": 3174
+      "start_line": 3173
     },
     {
       "compile_status": "ok",
-      "end_line": 3214,
+      "end_line": 3213,
       "function": "exp_0",
       "mutant_id": "m001652",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Exp_InputTooBig(x);",
       "replacement_expression": "/* revert PRBMath_SD59x18_Exp_InputTooBig(x); */",
-      "start_line": 3214
+      "start_line": 3213
     },
     {
       "compile_status": "ok",
-      "end_line": 3257,
+      "end_line": 3256,
       "function": "exp2_1",
       "mutant_id": "m001653",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Exp2_InputTooBig(x);",
       "replacement_expression": "/* revert PRBMath_SD59x18_Exp2_InputTooBig(x); */",
-      "start_line": 3257
+      "start_line": 3256
     },
     {
       "compile_status": "ok",
-      "end_line": 3284,
+      "end_line": 3283,
       "function": "floor_0",
       "mutant_id": "m001654",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Floor_Underflow(x);",
       "replacement_expression": "/* revert PRBMath_SD59x18_Floor_Underflow(x); */",
-      "start_line": 3284
+      "start_line": 3283
     },
     {
       "compile_status": "ok",
-      "end_line": 3335,
+      "end_line": 3334,
       "function": "gm_0",
       "mutant_id": "m001655",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Gm_Overflow(x, y);",
       "replacement_expression": "/* revert PRBMath_SD59x18_Gm_Overflow(x, y); */",
-      "start_line": 3335
+      "start_line": 3334
     },
     {
       "compile_status": "ok",
-      "end_line": 3340,
+      "end_line": 3339,
       "function": "gm_0",
       "mutant_id": "m001656",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Gm_NegativeProduct(x, y);",
       "replacement_expression": "/* revert PRBMath_SD59x18_Gm_NegativeProduct(x, y); */",
-      "start_line": 3340
+      "start_line": 3339
     },
     {
       "compile_status": "ok",
-      "end_line": 3407,
+      "end_line": 3406,
       "function": "log10_0",
       "mutant_id": "m001657",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Log_InputTooSmall(x);",
       "replacement_expression": "/* revert PRBMath_SD59x18_Log_InputTooSmall(x); */",
-      "start_line": 3407
+      "start_line": 3406
     },
     {
       "compile_status": "ok",
-      "end_line": 3528,
+      "end_line": 3527,
       "function": "log2_0",
       "mutant_id": "m001658",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Log_InputTooSmall(x);",
       "replacement_expression": "/* revert PRBMath_SD59x18_Log_InputTooSmall(x); */",
-      "start_line": 3528
+      "start_line": 3527
     },
     {
       "compile_status": "ok",
-      "end_line": 3594,
+      "end_line": 3593,
       "function": "mul_0",
       "mutant_id": "m001659",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Mul_InputTooSmall();",
       "replacement_expression": "/* revert PRBMath_SD59x18_Mul_InputTooSmall(); */",
-      "start_line": 3594
+      "start_line": 3593
     },
     {
       "compile_status": "ok",
-      "end_line": 3608,
+      "end_line": 3607,
       "function": "mul_0",
       "mutant_id": "m001660",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Mul_Overflow(x, y);",
       "replacement_expression": "/* revert PRBMath_SD59x18_Mul_Overflow(x, y); */",
-      "start_line": 3608
+      "start_line": 3607
     },
     {
       "compile_status": "ok",
-      "end_line": 3700,
+      "end_line": 3699,
       "function": "powu_0",
       "mutant_id": "m001661",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Powu_Overflow(x, y);",
       "replacement_expression": "/* revert PRBMath_SD59x18_Powu_Overflow(x, y); */",
-      "start_line": 3700
+      "start_line": 3699
     },
     {
       "compile_status": "ok",
-      "end_line": 3732,
+      "end_line": 3731,
       "function": "sqrt_1",
       "mutant_id": "m001662",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Sqrt_NegativeInput(x);",
       "replacement_expression": "/* revert PRBMath_SD59x18_Sqrt_NegativeInput(x); */",
-      "start_line": 3732
+      "start_line": 3731
     },
     {
       "compile_status": "ok",
-      "end_line": 3735,
+      "end_line": 3734,
       "function": "sqrt_1",
       "mutant_id": "m001663",
       "operator": "EHD",
       "original_expression": "revert PRBMath_SD59x18_Sqrt_Overflow(x);",
       "replacement_expression": "/* revert PRBMath_SD59x18_Sqrt_Overflow(x); */",
-      "start_line": 3735
+      "start_line": 3734
     },
     {
       "compile_status": "ok",
-      "end_line": 3796,
+      "end_line": 3795,
       "function": "ceil_1",
       "mutant_id": "m001664",
       "operator": "EHD",
       "original_expression": "revert PRBMath_UD60x18_Ceil_Overflow(x);",
       "replacement_expression": "/* revert PRBMath_UD60x18_Ceil_Overflow(x); */",
-      "start_line": 3796
+      "start_line": 3795
     },
     {
       "compile_status": "ok",
-      "end_line": 3846,
+      "end_line": 3845,
       "function": "exp_1",
       "mutant_id": "m001665",
       "operator": "EHD",
       "original_expression": "revert PRBMath_UD60x18_Exp_InputTooBig(x);",
       "replacement_expression": "/* revert PRBMath_UD60x18_Exp_InputTooBig(x); */",
-      "start_line": 3846
+      "start_line": 3845
     },
     {
       "compile_status": "ok",
-      "end_line": 3872,
+      "end_line": 3871,
       "function": "exp2_2",
       "mutant_id": "m001666",
       "operator": "EHD",
       "original_expression": "revert PRBMath_UD60x18_Exp2_InputTooBig(x);",
       "replacement_expression": "/* revert PRBMath_UD60x18_Exp2_InputTooBig(x); */",
-      "start_line": 3872
+      "start_line": 3871
     },
     {
       "compile_status": "ok",
-      "end_line": 3929,
+      "end_line": 3928,
       "function": "gm_1",
       "mutant_id": "m001667",
       "operator": "EHD",
       "original_expression": "revert PRBMath_UD60x18_Gm_Overflow(x, y);",
       "replacement_expression": "/* revert PRBMath_UD60x18_Gm_Overflow(x, y); */",
-      "start_line": 3929
+      "start_line": 3928
     },
     {
       "compile_status": "ok",
-      "end_line": 3999,
+      "end_line": 3998,
       "function": "log10_1",
       "mutant_id": "m001668",
       "operator": "EHD",
       "original_expression": "revert PRBMath_UD60x18_Log_InputTooSmall(x);",
       "replacement_expression": "/* revert PRBMath_UD60x18_Log_InputTooSmall(x); */",
-      "start_line": 3999
+      "start_line": 3998
     },
     {
       "compile_status": "ok",
-      "end_line": 4122,
+      "end_line": 4121,
       "function": "log2_1",
       "mutant_id": "m001669",
       "operator": "EHD",
       "original_expression": "revert PRBMath_UD60x18_Log_InputTooSmall(x);",
       "replacement_expression": "/* revert PRBMath_UD60x18_Log_InputTooSmall(x); */",
-      "start_line": 4122
+      "start_line": 4121
     },
     {
       "compile_status": "ok",
-      "end_line": 4292,
+      "end_line": 4291,
       "function": "sqrt_2",
       "mutant_id": "m001670",
       "operator": "EHD",
       "original_expression": "revert PRBMath_UD60x18_Sqrt_Overflow(x);",
       "replacement_expression": "/* revert PRBMath_UD60x18_Sqrt_Overflow(x); */",
-      "start_line": 4292
+      "start_line": 4291
     },
     {
       "compile_status": "ok",
-      "end_line": 4597,
+      "end_line": 4596,
       "function": "convert_1",
       "mutant_id": "m001671",
       "operator": "EHD",
       "original_expression": "revert PRBMath_UD60x18_Convert_Overflow(x);",
       "replacement_expression": "/* revert PRBMath_UD60x18_Convert_Overflow(x); */",
-      "start_line": 4597
+      "start_line": 4596
     },
     {
       "compile_status": "failed",
@@ -20974,109 +20974,119 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3072,
+      "end_line": 3071,
       "function": "abs",
       "mutant_id": "m002098",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3072
+      "start_line": 3071
     },
     {
       "compile_status": "ok",
-      "end_line": 3090,
+      "end_line": 3089,
       "function": "avg_0",
       "mutant_id": "m002099",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3090
+      "start_line": 3089
     },
     {
       "compile_status": "ok",
-      "end_line": 3090,
+      "end_line": 3089,
       "function": "avg_0",
       "mutant_id": "m002100",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3090
+      "start_line": 3089
     },
     {
       "compile_status": "ok",
-      "end_line": 3090,
+      "end_line": 3089,
       "function": "avg_0",
       "mutant_id": "m002101",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3090
+      "start_line": 3089
     },
     {
       "compile_status": "ok",
-      "end_line": 3090,
+      "end_line": 3089,
       "function": "avg_0",
       "mutant_id": "m002102",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3090
+      "start_line": 3089
     },
     {
       "compile_status": "ok",
-      "end_line": 3092,
+      "end_line": 3091,
       "function": "avg_0",
       "mutant_id": "m002103",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3092
+      "start_line": 3091
     },
     {
       "compile_status": "ok",
-      "end_line": 3100,
+      "end_line": 3099,
       "function": "avg_0",
       "mutant_id": "m002104",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3100
+      "start_line": 3099
     },
     {
       "compile_status": "ok",
-      "end_line": 3100,
+      "end_line": 3099,
       "function": "avg_0",
       "mutant_id": "m002105",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3100
+      "start_line": 3099
     },
     {
       "compile_status": "ok",
-      "end_line": 3123,
+      "end_line": 3122,
       "function": "ceil_0",
       "mutant_id": "m002106",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3123
+      "start_line": 3122
     },
     {
       "compile_status": "ok",
-      "end_line": 3129,
+      "end_line": 3128,
       "function": "ceil_0",
       "mutant_id": "m002107",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3129
+      "start_line": 3128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3166,
+      "function": "div_0",
+      "mutant_id": "m002108",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 3166
     },
     {
       "compile_status": "ok",
       "end_line": 3167,
       "function": "div_0",
-      "mutant_id": "m002108",
+      "mutant_id": "m002109",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
@@ -21084,239 +21094,239 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3168,
-      "function": "div_0",
-      "mutant_id": "m002109",
-      "operator": "ILR",
-      "original_expression": "0",
-      "replacement_expression": "1",
-      "start_line": 3168
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3179,
+      "end_line": 3178,
       "function": "div_0",
       "mutant_id": "m002110",
       "operator": "ILR",
       "original_expression": "-1",
       "replacement_expression": "0",
-      "start_line": 3179
+      "start_line": 3178
     },
     {
       "compile_status": "ok",
-      "end_line": 3179,
+      "end_line": 3178,
       "function": "div_0",
       "mutant_id": "m002111",
       "operator": "ILR",
       "original_expression": "-1",
       "replacement_expression": "-2",
-      "start_line": 3179
+      "start_line": 3178
     },
     {
       "compile_status": "ok",
-      "end_line": 3244,
+      "end_line": 3243,
       "function": "exp2_1",
       "mutant_id": "m002112",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3244
+      "start_line": 3243
     },
     {
       "compile_status": "ok",
-      "end_line": 3262,
+      "end_line": 3261,
       "function": "exp2_1",
       "mutant_id": "m002113",
       "operator": "ILR",
       "original_expression": "64",
       "replacement_expression": "63",
-      "start_line": 3262
+      "start_line": 3261
     },
     {
       "compile_status": "ok",
-      "end_line": 3262,
+      "end_line": 3261,
       "function": "exp2_1",
       "mutant_id": "m002114",
       "operator": "ILR",
       "original_expression": "64",
       "replacement_expression": "65",
-      "start_line": 3262
+      "start_line": 3261
     },
     {
       "compile_status": "ok",
-      "end_line": 3288,
+      "end_line": 3287,
       "function": "floor_0",
       "mutant_id": "m002115",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3288
+      "start_line": 3287
     },
     {
       "compile_status": "ok",
-      "end_line": 3294,
+      "end_line": 3293,
       "function": "floor_0",
       "mutant_id": "m002116",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3294
+      "start_line": 3293
     },
     {
       "compile_status": "ok",
-      "end_line": 3327,
+      "end_line": 3326,
       "function": "gm_0",
       "mutant_id": "m002117",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3327
+      "start_line": 3326
     },
     {
       "compile_status": "ok",
-      "end_line": 3327,
+      "end_line": 3326,
       "function": "gm_0",
       "mutant_id": "m002118",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3327
+      "start_line": 3326
     },
     {
       "compile_status": "ok",
-      "end_line": 3339,
+      "end_line": 3338,
       "function": "gm_0",
       "mutant_id": "m002119",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3339
+      "start_line": 3338
     },
     {
       "compile_status": "ok",
-      "end_line": 3406,
+      "end_line": 3405,
       "function": "log10_0",
       "mutant_id": "m002120",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3406
+      "start_line": 3405
     },
     {
       "compile_status": "ok",
-      "end_line": 3527,
+      "end_line": 3526,
       "function": "log2_0",
       "mutant_id": "m002121",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3527
+      "start_line": 3526
     },
     {
       "compile_status": "ok",
-      "end_line": 3534,
+      "end_line": 3533,
       "function": "log2_0",
       "mutant_id": "m002122",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3534
+      "start_line": 3533
     },
     {
       "compile_status": "ok",
-      "end_line": 3534,
+      "end_line": 3533,
       "function": "log2_0",
       "mutant_id": "m002123",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3534
+      "start_line": 3533
     },
     {
       "compile_status": "ok",
-      "end_line": 3536,
+      "end_line": 3535,
       "function": "log2_0",
       "mutant_id": "m002124",
       "operator": "ILR",
       "original_expression": "-1",
       "replacement_expression": "0",
-      "start_line": 3536
+      "start_line": 3535
     },
     {
       "compile_status": "ok",
-      "end_line": 3536,
+      "end_line": 3535,
       "function": "log2_0",
       "mutant_id": "m002125",
       "operator": "ILR",
       "original_expression": "-1",
       "replacement_expression": "-2",
-      "start_line": 3536
+      "start_line": 3535
     },
     {
       "compile_status": "failed",
-      "end_line": 3558,
+      "end_line": 3557,
       "function": "log2_0",
       "mutant_id": "m002126",
       "operator": "ILR",
       "original_expression": "2e18",
       "replacement_expression": "undefined",
-      "start_line": 3558
+      "start_line": 3557
     },
     {
       "compile_status": "ok",
-      "end_line": 3559,
+      "end_line": 3558,
       "function": "log2_0",
       "mutant_id": "m002127",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3559
+      "start_line": 3558
     },
     {
       "compile_status": "ok",
-      "end_line": 3559,
+      "end_line": 3558,
       "function": "log2_0",
       "mutant_id": "m002128",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3559
+      "start_line": 3558
     },
     {
       "compile_status": "ok",
-      "end_line": 3559,
+      "end_line": 3558,
       "function": "log2_0",
       "mutant_id": "m002129",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3559
+      "start_line": 3558
     },
     {
       "compile_status": "ok",
-      "end_line": 3568,
+      "end_line": 3567,
       "function": "log2_0",
       "mutant_id": "m002130",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3568
+      "start_line": 3567
     },
     {
       "compile_status": "ok",
-      "end_line": 3568,
+      "end_line": 3567,
       "function": "log2_0",
       "mutant_id": "m002131",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3568
+      "start_line": 3567
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3600,
+      "function": "mul_0",
+      "mutant_id": "m002132",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 3600
     },
     {
       "compile_status": "ok",
       "end_line": 3601,
       "function": "mul_0",
-      "mutant_id": "m002132",
+      "mutant_id": "m002133",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
@@ -21324,39 +21334,39 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3602,
-      "function": "mul_0",
-      "mutant_id": "m002133",
-      "operator": "ILR",
-      "original_expression": "0",
-      "replacement_expression": "1",
-      "start_line": 3602
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3613,
+      "end_line": 3612,
       "function": "mul_0",
       "mutant_id": "m002134",
       "operator": "ILR",
       "original_expression": "-1",
       "replacement_expression": "0",
-      "start_line": 3613
+      "start_line": 3612
     },
     {
       "compile_status": "ok",
-      "end_line": 3613,
+      "end_line": 3612,
       "function": "mul_0",
       "mutant_id": "m002135",
       "operator": "ILR",
       "original_expression": "-1",
       "replacement_expression": "-2",
-      "start_line": 3613
+      "start_line": 3612
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 3642,
+      "function": "pow_0",
+      "mutant_id": "m002136",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 3642
     },
     {
       "compile_status": "ok",
       "end_line": 3643,
       "function": "pow_0",
-      "mutant_id": "m002136",
+      "mutant_id": "m002137",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
@@ -21364,319 +21374,319 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3644,
-      "function": "pow_0",
-      "mutant_id": "m002137",
-      "operator": "ILR",
-      "original_expression": "0",
-      "replacement_expression": "1",
-      "start_line": 3644
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 3652,
+      "end_line": 3651,
       "function": "pow_0",
       "mutant_id": "m002138",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3652
+      "start_line": 3651
     },
     {
       "compile_status": "ok",
-      "end_line": 3685,
+      "end_line": 3684,
       "function": "powu_0",
       "mutant_id": "m002139",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3685
+      "start_line": 3684
     },
     {
       "compile_status": "ok",
-      "end_line": 3685,
+      "end_line": 3684,
       "function": "powu_0",
       "mutant_id": "m002140",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3685
+      "start_line": 3684
     },
     {
       "compile_status": "ok",
-      "end_line": 3685,
+      "end_line": 3684,
       "function": "powu_0",
       "mutant_id": "m002141",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3685
+      "start_line": 3684
     },
     {
       "compile_status": "ok",
-      "end_line": 3689,
+      "end_line": 3688,
       "function": "powu_0",
       "mutant_id": "m002142",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3689
+      "start_line": 3688
     },
     {
       "compile_status": "ok",
-      "end_line": 3689,
+      "end_line": 3688,
       "function": "powu_0",
       "mutant_id": "m002143",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3689
+      "start_line": 3688
     },
     {
       "compile_status": "ok",
-      "end_line": 3689,
+      "end_line": 3688,
       "function": "powu_0",
       "mutant_id": "m002144",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3689
+      "start_line": 3688
     },
     {
       "compile_status": "ok",
-      "end_line": 3689,
+      "end_line": 3688,
       "function": "powu_0",
       "mutant_id": "m002145",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3689
+      "start_line": 3688
     },
     {
       "compile_status": "ok",
-      "end_line": 3689,
+      "end_line": 3688,
       "function": "powu_0",
       "mutant_id": "m002146",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3689
+      "start_line": 3688
     },
     {
       "compile_status": "ok",
-      "end_line": 3693,
+      "end_line": 3692,
       "function": "powu_0",
       "mutant_id": "m002147",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3693
+      "start_line": 3692
     },
     {
       "compile_status": "ok",
-      "end_line": 3693,
+      "end_line": 3692,
       "function": "powu_0",
       "mutant_id": "m002148",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3693
+      "start_line": 3692
     },
     {
       "compile_status": "ok",
-      "end_line": 3693,
+      "end_line": 3692,
       "function": "powu_0",
       "mutant_id": "m002149",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3693
+      "start_line": 3692
     },
     {
       "compile_status": "ok",
-      "end_line": 3706,
+      "end_line": 3705,
       "function": "powu_0",
       "mutant_id": "m002150",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3706
+      "start_line": 3705
     },
     {
       "compile_status": "ok",
-      "end_line": 3706,
+      "end_line": 3705,
       "function": "powu_0",
       "mutant_id": "m002151",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3706
+      "start_line": 3705
     },
     {
       "compile_status": "ok",
-      "end_line": 3706,
+      "end_line": 3705,
       "function": "powu_0",
       "mutant_id": "m002152",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3706
+      "start_line": 3705
     },
     {
       "compile_status": "ok",
-      "end_line": 3706,
+      "end_line": 3705,
       "function": "powu_0",
       "mutant_id": "m002153",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3706
+      "start_line": 3705
     },
     {
       "compile_status": "ok",
-      "end_line": 3706,
+      "end_line": 3705,
       "function": "powu_0",
       "mutant_id": "m002154",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3706
+      "start_line": 3705
     },
     {
       "compile_status": "ok",
-      "end_line": 3731,
+      "end_line": 3730,
       "function": "sqrt_1",
       "mutant_id": "m002155",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3731
+      "start_line": 3730
     },
     {
       "compile_status": "ok",
-      "end_line": 3778,
+      "end_line": 3777,
       "function": "avg_1",
       "mutant_id": "m002156",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3778
+      "start_line": 3777
     },
     {
       "compile_status": "ok",
-      "end_line": 3778,
+      "end_line": 3777,
       "function": "avg_1",
       "mutant_id": "m002157",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3778
+      "start_line": 3777
     },
     {
       "compile_status": "ok",
-      "end_line": 3876,
+      "end_line": 3875,
       "function": "exp2_2",
       "mutant_id": "m002158",
       "operator": "ILR",
       "original_expression": "64",
       "replacement_expression": "63",
-      "start_line": 3876
+      "start_line": 3875
     },
     {
       "compile_status": "ok",
-      "end_line": 3876,
+      "end_line": 3875,
       "function": "exp2_2",
       "mutant_id": "m002159",
       "operator": "ILR",
       "original_expression": "64",
       "replacement_expression": "65",
-      "start_line": 3876
+      "start_line": 3875
     },
     {
       "compile_status": "ok",
-      "end_line": 3921,
+      "end_line": 3920,
       "function": "gm_1",
       "mutant_id": "m002160",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3921
+      "start_line": 3920
     },
     {
       "compile_status": "ok",
-      "end_line": 3921,
+      "end_line": 3920,
       "function": "gm_1",
       "mutant_id": "m002161",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3921
+      "start_line": 3920
     },
     {
       "compile_status": "failed",
-      "end_line": 4143,
+      "end_line": 4142,
       "function": "log2_1",
       "mutant_id": "m002162",
       "operator": "ILR",
       "original_expression": "2e18",
       "replacement_expression": "undefined",
-      "start_line": 4143
+      "start_line": 4142
     },
     {
       "compile_status": "ok",
-      "end_line": 4144,
+      "end_line": 4143,
       "function": "log2_1",
       "mutant_id": "m002163",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 4144
+      "start_line": 4143
     },
     {
       "compile_status": "ok",
-      "end_line": 4144,
+      "end_line": 4143,
       "function": "log2_1",
       "mutant_id": "m002164",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 4144
+      "start_line": 4143
     },
     {
       "compile_status": "ok",
-      "end_line": 4144,
+      "end_line": 4143,
       "function": "log2_1",
       "mutant_id": "m002165",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 4144
+      "start_line": 4143
     },
     {
       "compile_status": "ok",
-      "end_line": 4153,
+      "end_line": 4152,
       "function": "log2_1",
       "mutant_id": "m002166",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 4153
+      "start_line": 4152
     },
     {
       "compile_status": "ok",
-      "end_line": 4153,
+      "end_line": 4152,
       "function": "log2_1",
       "mutant_id": "m002167",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 4153
+      "start_line": 4152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 4211,
+      "function": "pow_1",
+      "mutant_id": "m002168",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 4211
     },
     {
       "compile_status": "ok",
       "end_line": 4212,
       "function": "pow_1",
-      "mutant_id": "m002168",
+      "mutant_id": "m002169",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
@@ -21684,173 +21694,163 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 4213,
-      "function": "pow_1",
-      "mutant_id": "m002169",
-      "operator": "ILR",
-      "original_expression": "0",
-      "replacement_expression": "1",
-      "start_line": 4213
-    },
-    {
-      "compile_status": "ok",
-      "end_line": 4221,
+      "end_line": 4220,
       "function": "pow_1",
       "mutant_id": "m002170",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 4221
+      "start_line": 4220
     },
     {
       "compile_status": "ok",
-      "end_line": 4260,
+      "end_line": 4259,
       "function": "powu_1",
       "mutant_id": "m002171",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 4260
+      "start_line": 4259
     },
     {
       "compile_status": "ok",
-      "end_line": 4260,
+      "end_line": 4259,
       "function": "powu_1",
       "mutant_id": "m002172",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 4260
+      "start_line": 4259
     },
     {
       "compile_status": "ok",
-      "end_line": 4260,
+      "end_line": 4259,
       "function": "powu_1",
       "mutant_id": "m002173",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 4260
+      "start_line": 4259
     },
     {
       "compile_status": "ok",
-      "end_line": 4263,
+      "end_line": 4262,
       "function": "powu_1",
       "mutant_id": "m002174",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 4263
+      "start_line": 4262
     },
     {
       "compile_status": "ok",
-      "end_line": 4263,
+      "end_line": 4262,
       "function": "powu_1",
       "mutant_id": "m002175",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 4263
+      "start_line": 4262
     },
     {
       "compile_status": "ok",
-      "end_line": 4263,
+      "end_line": 4262,
       "function": "powu_1",
       "mutant_id": "m002176",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 4263
+      "start_line": 4262
     },
     {
       "compile_status": "ok",
-      "end_line": 4263,
+      "end_line": 4262,
       "function": "powu_1",
       "mutant_id": "m002177",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 4263
+      "start_line": 4262
     },
     {
       "compile_status": "ok",
-      "end_line": 4263,
+      "end_line": 4262,
       "function": "powu_1",
       "mutant_id": "m002178",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 4263
+      "start_line": 4262
     },
     {
       "compile_status": "ok",
-      "end_line": 4267,
+      "end_line": 4266,
       "function": "powu_1",
       "mutant_id": "m002179",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 4267
+      "start_line": 4266
     },
     {
       "compile_status": "ok",
-      "end_line": 4267,
+      "end_line": 4266,
       "function": "powu_1",
       "mutant_id": "m002180",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 4267
+      "start_line": 4266
     },
     {
       "compile_status": "ok",
-      "end_line": 4267,
+      "end_line": 4266,
       "function": "powu_1",
       "mutant_id": "m002181",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 4267
+      "start_line": 4266
     },
     {
       "compile_status": "ok",
-      "end_line": 3559,
+      "end_line": 3558,
       "function": "log2_0",
       "mutant_id": "m002182",
       "operator": "LSC",
       "original_expression": "delta > 0",
       "replacement_expression": "false",
-      "start_line": 3559
+      "start_line": 3558
     },
     {
       "compile_status": "ok",
-      "end_line": 3689,
+      "end_line": 3688,
       "function": "powu_0",
       "mutant_id": "m002183",
       "operator": "LSC",
       "original_expression": "yAux > 0",
       "replacement_expression": "false",
-      "start_line": 3689
+      "start_line": 3688
     },
     {
       "compile_status": "ok",
-      "end_line": 4144,
+      "end_line": 4143,
       "function": "log2_1",
       "mutant_id": "m002184",
       "operator": "LSC",
       "original_expression": "delta > 0",
       "replacement_expression": "false",
-      "start_line": 4144
+      "start_line": 4143
     },
     {
       "compile_status": "ok",
-      "end_line": 4263,
+      "end_line": 4262,
       "function": "powu_1",
       "mutant_id": "m002185",
       "operator": "LSC",
       "original_expression": "y > 0",
       "replacement_expression": "false",
-      "start_line": 4263
+      "start_line": 4262
     },
     {
       "compile_status": "failed",
@@ -22164,23 +22164,23 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 4840,
+      "end_line": 4839,
       "function": "SABLIER_BOB",
       "mutant_id": "m002217",
       "operator": "OLFD",
       "original_expression": "function SABLIER_BOB() external view returns (address);",
       "replacement_expression": "",
-      "start_line": 4840
+      "start_line": 4839
     },
     {
       "compile_status": "ok",
-      "end_line": 5137,
+      "end_line": 5136,
       "function": "calculateMinFeeWei",
       "mutant_id": "m002218",
       "operator": "OLFD",
       "original_expression": "function calculateMinFeeWei(uint256 vaultId) external view returns (uint256 minFeeWei);",
       "replacement_expression": "",
-      "start_line": 5137
+      "start_line": 5136
     },
     {
       "compile_status": "ok",
@@ -22224,23 +22224,23 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 5210,
+      "end_line": 5209,
       "function": "enterWithNativeToken",
       "mutant_id": "m002223",
       "operator": "PKD",
       "original_expression": "function enterWithNativeToken(uint256 vaultId) external payable",
       "replacement_expression": "function enterWithNativeToken(uint256 vaultId) external ",
-      "start_line": 5210
+      "start_line": 5209
     },
     {
       "compile_status": "ok",
-      "end_line": 5259,
+      "end_line": 5258,
       "function": "redeem",
       "mutant_id": "m002224",
       "operator": "PKD",
       "original_expression": "function redeem(uint256 vaultId)\n        external\n        payable\n        returns (uint128 transferAmount, uint128 feeAmountDeductedFromYield)",
       "replacement_expression": "function redeem(uint256 vaultId)\n        external\n        \n        returns (uint128 transferAmount, uint128 feeAmountDeductedFromYield)",
-      "start_line": 5256
+      "start_line": 5255
     },
     {
       "compile_status": "ok",
@@ -22414,143 +22414,143 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3209,
+      "end_line": 3208,
       "function": "exp_0",
       "mutant_id": "m002242",
       "operator": "RSD",
       "original_expression": "return ZERO_0;",
       "replacement_expression": "/* return ZERO_0; */",
-      "start_line": 3209
+      "start_line": 3208
     },
     {
       "compile_status": "ok",
-      "end_line": 3247,
+      "end_line": 3246,
       "function": "exp2_1",
       "mutant_id": "m002243",
       "operator": "RSD",
       "original_expression": "return ZERO_0;",
       "replacement_expression": "/* return ZERO_0; */",
-      "start_line": 3247
+      "start_line": 3246
     },
     {
       "compile_status": "ok",
-      "end_line": 3328,
+      "end_line": 3327,
       "function": "gm_0",
       "mutant_id": "m002244",
       "operator": "RSD",
       "original_expression": "return ZERO_0;",
       "replacement_expression": "/* return ZERO_0; */",
-      "start_line": 3328
+      "start_line": 3327
     },
     {
       "compile_status": "ok",
-      "end_line": 3553,
+      "end_line": 3552,
       "function": "log2_0",
       "mutant_id": "m002245",
       "operator": "RSD",
       "original_expression": "return wrap_2(resultInt * sign);",
       "replacement_expression": "wrap_2(resultInt * sign);",
-      "start_line": 3553
+      "start_line": 3552
     },
     {
       "compile_status": "ok",
-      "end_line": 3644,
+      "end_line": 3643,
       "function": "pow_0",
       "mutant_id": "m002246",
       "operator": "RSD",
       "original_expression": "return yInt == 0 ? UNIT_3 : ZERO_0;",
       "replacement_expression": "/* return yInt == 0 ? UNIT_3 : ZERO_0; */",
-      "start_line": 3644
+      "start_line": 3643
     },
     {
       "compile_status": "ok",
-      "end_line": 3648,
+      "end_line": 3647,
       "function": "pow_0",
       "mutant_id": "m002247",
       "operator": "RSD",
       "original_expression": "return UNIT_3;",
       "replacement_expression": "/* return UNIT_3; */",
-      "start_line": 3648
+      "start_line": 3647
     },
     {
       "compile_status": "ok",
-      "end_line": 3653,
+      "end_line": 3652,
       "function": "pow_0",
       "mutant_id": "m002248",
       "operator": "RSD",
       "original_expression": "return UNIT_3;",
       "replacement_expression": "/* return UNIT_3; */",
-      "start_line": 3653
+      "start_line": 3652
     },
     {
       "compile_status": "ok",
-      "end_line": 3657,
+      "end_line": 3656,
       "function": "pow_0",
       "mutant_id": "m002249",
       "operator": "RSD",
       "original_expression": "return x;",
       "replacement_expression": "/* return x; */",
-      "start_line": 3657
+      "start_line": 3656
     },
     {
       "compile_status": "ok",
-      "end_line": 3922,
+      "end_line": 3921,
       "function": "gm_1",
       "mutant_id": "m002250",
       "operator": "RSD",
       "original_expression": "return ZERO_1;",
       "replacement_expression": "/* return ZERO_1; */",
-      "start_line": 3922
+      "start_line": 3921
     },
     {
       "compile_status": "ok",
-      "end_line": 4138,
+      "end_line": 4137,
       "function": "log2_1",
       "mutant_id": "m002251",
       "operator": "RSD",
       "original_expression": "return wrap_5(resultUint);",
       "replacement_expression": "wrap_5(resultUint);",
-      "start_line": 4138
+      "start_line": 4137
     },
     {
       "compile_status": "ok",
-      "end_line": 4213,
+      "end_line": 4212,
       "function": "pow_1",
       "mutant_id": "m002252",
       "operator": "RSD",
       "original_expression": "return yUint == 0 ? UNIT_6 : ZERO_1;",
       "replacement_expression": "/* return yUint == 0 ? UNIT_6 : ZERO_1; */",
-      "start_line": 4213
+      "start_line": 4212
     },
     {
       "compile_status": "ok",
-      "end_line": 4217,
+      "end_line": 4216,
       "function": "pow_1",
       "mutant_id": "m002253",
       "operator": "RSD",
       "original_expression": "return UNIT_6;",
       "replacement_expression": "/* return UNIT_6; */",
-      "start_line": 4217
+      "start_line": 4216
     },
     {
       "compile_status": "ok",
-      "end_line": 4222,
+      "end_line": 4221,
       "function": "pow_1",
       "mutant_id": "m002254",
       "operator": "RSD",
       "original_expression": "return UNIT_6;",
       "replacement_expression": "/* return UNIT_6; */",
-      "start_line": 4222
+      "start_line": 4221
     },
     {
       "compile_status": "ok",
-      "end_line": 4226,
+      "end_line": 4225,
       "function": "pow_1",
       "mutant_id": "m002255",
       "operator": "RSD",
       "original_expression": "return x;",
       "replacement_expression": "/* return x; */",
-      "start_line": 4226
+      "start_line": 4225
     },
     {
       "compile_status": "ok",
@@ -22574,33 +22574,33 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 4886,
+      "end_line": 4885,
       "function": "processRedemption",
       "mutant_id": "m002258",
       "operator": "RVS",
       "original_expression": "uint128 transferAmount, uint128 feeAmountDeductedFromYield",
       "replacement_expression": "uint128 feeAmountDeductedFromYield, uint128 transferAmount",
-      "start_line": 4886
+      "start_line": 4885
     },
     {
       "compile_status": "ok",
-      "end_line": 4938,
+      "end_line": 4937,
       "function": "unstakeFullAmount",
       "mutant_id": "m002259",
       "operator": "RVS",
       "original_expression": "uint128 wrappedTokenBalance, uint128 amountReceivedFromUnstaking",
       "replacement_expression": "uint128 amountReceivedFromUnstaking, uint128 wrappedTokenBalance",
-      "start_line": 4938
+      "start_line": 4937
     },
     {
       "compile_status": "ok",
-      "end_line": 5259,
+      "end_line": 5258,
       "function": "redeem",
       "mutant_id": "m002260",
       "operator": "RVS",
       "original_expression": "uint128 transferAmount, uint128 feeAmountDeductedFromYield",
       "replacement_expression": "uint128 feeAmountDeductedFromYield, uint128 transferAmount",
-      "start_line": 5259
+      "start_line": 5258
     },
     {
       "compile_status": "ok",
@@ -22764,123 +22764,123 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3072,
+      "end_line": 3071,
       "function": "abs",
       "mutant_id": "m002277",
       "operator": "UORD",
       "original_expression": "-xInt",
       "replacement_expression": " xInt",
-      "start_line": 3072
+      "start_line": 3071
     },
     {
       "compile_status": "ok",
-      "end_line": 3167,
+      "end_line": 3166,
       "function": "div_0",
       "mutant_id": "m002278",
       "operator": "UORD",
       "original_expression": "-xInt",
       "replacement_expression": " xInt",
-      "start_line": 3167
+      "start_line": 3166
     },
     {
       "compile_status": "ok",
-      "end_line": 3168,
+      "end_line": 3167,
       "function": "div_0",
       "mutant_id": "m002279",
       "operator": "UORD",
       "original_expression": "-yInt",
       "replacement_expression": " yInt",
-      "start_line": 3168
+      "start_line": 3167
     },
     {
       "compile_status": "ok",
-      "end_line": 3179,
+      "end_line": 3178,
       "function": "div_0",
       "mutant_id": "m002280",
       "operator": "UORD",
       "original_expression": "-1",
       "replacement_expression": " 1",
-      "start_line": 3179
+      "start_line": 3178
     },
     {
       "compile_status": "ok",
-      "end_line": 3183,
+      "end_line": 3182,
       "function": "div_0",
       "mutant_id": "m002281",
       "operator": "UORD",
       "original_expression": "-int256(resultAbs)",
       "replacement_expression": " int256(resultAbs)",
-      "start_line": 3183
+      "start_line": 3182
     },
     {
       "compile_status": "ok",
-      "end_line": 3252,
+      "end_line": 3251,
       "function": "exp2_1",
       "mutant_id": "m002282",
       "operator": "UORD",
       "original_expression": "-xInt",
       "replacement_expression": " xInt",
-      "start_line": 3252
+      "start_line": 3251
     },
     {
       "compile_status": "ok",
-      "end_line": 3536,
+      "end_line": 3535,
       "function": "log2_0",
       "mutant_id": "m002283",
       "operator": "UORD",
       "original_expression": "-1",
       "replacement_expression": " 1",
-      "start_line": 3536
+      "start_line": 3535
     },
     {
       "compile_status": "ok",
-      "end_line": 3601,
+      "end_line": 3600,
       "function": "mul_0",
       "mutant_id": "m002284",
       "operator": "UORD",
       "original_expression": "-xInt",
       "replacement_expression": " xInt",
-      "start_line": 3601
+      "start_line": 3600
     },
     {
       "compile_status": "ok",
-      "end_line": 3602,
+      "end_line": 3601,
       "function": "mul_0",
       "mutant_id": "m002285",
       "operator": "UORD",
       "original_expression": "-yInt",
       "replacement_expression": " yInt",
-      "start_line": 3602
+      "start_line": 3601
     },
     {
       "compile_status": "ok",
-      "end_line": 3613,
+      "end_line": 3612,
       "function": "mul_0",
       "mutant_id": "m002286",
       "operator": "UORD",
       "original_expression": "-1",
       "replacement_expression": " 1",
-      "start_line": 3613
+      "start_line": 3612
     },
     {
       "compile_status": "ok",
-      "end_line": 3617,
+      "end_line": 3616,
       "function": "mul_0",
       "mutant_id": "m002287",
       "operator": "UORD",
       "original_expression": "-int256(resultAbs)",
       "replacement_expression": " int256(resultAbs)",
-      "start_line": 3617
+      "start_line": 3616
     },
     {
       "compile_status": "ok",
-      "end_line": 3708,
+      "end_line": 3707,
       "function": "powu_0",
       "mutant_id": "m002288",
       "operator": "UORD",
       "original_expression": "-resultInt",
       "replacement_expression": " resultInt",
-      "start_line": 3708
+      "start_line": 3707
     }
   ],
   "subject_id": "sablier-labs__evm-monorepo__BobVaultShare"

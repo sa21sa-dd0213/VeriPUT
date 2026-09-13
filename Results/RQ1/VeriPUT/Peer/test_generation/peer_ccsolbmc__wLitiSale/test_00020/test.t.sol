@@ -65,8 +65,8 @@ contract wLitiSaleCovTest_wLitiSale_getSaleStartTime_put2p1 is Test {
     
     uint256 _post_saleStartTime = uint256(vm.load(address(c0), bytes32(uint256(10))));
     assertEq(_post_saleStartTime, _pre_saleStartTime, "_saleStartTime: post == pre");
-    
-    
+    assertGe(_post_saleStartTime, _pre_saleStartTime, "_saleStartTime: post >= pre");
+    assertLe(_post_saleStartTime, _pre_saleStartTime, "_saleStartTime: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

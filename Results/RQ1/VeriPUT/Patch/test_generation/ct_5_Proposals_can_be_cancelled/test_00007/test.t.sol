@@ -89,14 +89,14 @@ contract DAOCovTest_DAO_init_put2p1 is Test {
     assertEq(_post_USDV, _pre_USDV, "USDV: post == pre");
     assertEq(_post_VAULT, _pre_VAULT, "VAULT: post == pre");
     assertEq(_post_coolOffPeriod, _pre_coolOffPeriod, "coolOffPeriod: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_VADER, _pre_VADER, "VADER: post >= pre");
+    assertLe(_post_VADER, _pre_VADER, "VADER: post <= pre");
+    assertGe(_post_USDV, _pre_USDV, "USDV: post >= pre");
+    assertLe(_post_USDV, _pre_USDV, "USDV: post <= pre");
+    assertGe(_post_VAULT, _pre_VAULT, "VAULT: post >= pre");
+    assertLe(_post_VAULT, _pre_VAULT, "VAULT: post <= pre");
+    assertGe(_post_coolOffPeriod, _pre_coolOffPeriod, "coolOffPeriod: post >= pre");
+    assertLe(_post_coolOffPeriod, _pre_coolOffPeriod, "coolOffPeriod: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

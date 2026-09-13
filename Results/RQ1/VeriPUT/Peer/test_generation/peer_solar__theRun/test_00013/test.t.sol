@@ -65,8 +65,8 @@ contract theRunCovTest_theRun_WatchLastPayout_put2p1 is Test {
     
     uint256 _post_Last_Payout = uint256(vm.load(address(c0), bytes32(uint256(2))));
     assertEq(_post_Last_Payout, _pre_Last_Payout, "Last_Payout: post == pre");
-    
-    
+    assertGe(_post_Last_Payout, _pre_Last_Payout, "Last_Payout: post >= pre");
+    assertLe(_post_Last_Payout, _pre_Last_Payout, "Last_Payout: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

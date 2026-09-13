@@ -1,0 +1,187 @@
+// SPDX-License-Identifier: MIT
+
+
+
+
+
+
+pragma solidity >=0.8.0;
+
+import {Test} from "forge-std/Test.sol";
+import {X_WALLET} from "../src/flat.sol";
+
+contract X_WALLETCovTest_X_WALLET_Put_put14p1 is Test {
+  X_WALLET c0;
+  function setUp() public {
+    c0 = new X_WALLET(address(uint160(0)));
+    
+    address _esbmc_ctor_state_mock_0_0 = address(uint160(0));
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("AddMessage(address,uint256,string)"), bytes(""));
+  }
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  function _veriput_parameterized(address p_msg_sender, uint256 p_block_timestamp, uint256 _unlockTime) internal {
+    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
+    p_block_timestamp = bound(p_block_timestamp, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    _unlockTime = bound(_unlockTime, 0, 0);
+    
+    uint256 _pre_Acc_148_msg_sender__balance = uint256(vm.load(address(c0), bytes32(uint256(keccak256(abi.encode(p_msg_sender, uint256(0)))) + 1)));
+    uint256 _pre_Acc_msg_sender__balance = uint256(vm.load(address(c0), bytes32(uint256(keccak256(abi.encode(p_msg_sender, uint256(0)))) + 1)));
+    uint256 _pre_Acc_msg_sender__unlockTime = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0)))));
+    
+    vm.assume(0 <= p_block_timestamp);
+    vm.warp(1);
+    vm.deal(p_msg_sender, 0);
+    vm.warp(p_block_timestamp);
+    vm.roll(1);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
+    vm.prank(p_msg_sender);
+    
+    c0.Put{value: 0}(_unlockTime);
+    
+    
+    uint256 _post_Acc_148_msg_sender__balance = uint256(vm.load(address(c0), bytes32(uint256(keccak256(abi.encode(p_msg_sender, uint256(0)))) + 1)));
+    uint256 _post_Acc_msg_sender__balance = uint256(vm.load(address(c0), bytes32(uint256(keccak256(abi.encode(p_msg_sender, uint256(0)))) + 1)));
+    uint256 _post_Acc_msg_sender__unlockTime = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0)))));
+    assertEq(_post_Acc_148_msg_sender__balance, _pre_Acc_148_msg_sender__balance, "Acc$148[msg.sender].balance: post == pre");
+    assertEq(_post_Acc_msg_sender__balance, _pre_Acc_msg_sender__balance, "Acc[msg.sender].balance: post == pre");
+    assertGe(_post_Acc_msg_sender__unlockTime, _pre_Acc_msg_sender__unlockTime, "Acc[msg.sender].unlockTime: post >= pre");
+    assertGe(_post_Acc_msg_sender__balance, _pre_Acc_msg_sender__balance, "Acc[msg.sender].balance: post - pre in [msg.value, msg.value] with post >= pre");
+    unchecked { assertGe(_post_Acc_msg_sender__balance - _pre_Acc_msg_sender__balance, 0, "Acc[msg.sender].balance: post - pre in [msg.value, msg.value] with post >= pre"); }
+    unchecked { assertLe(_post_Acc_msg_sender__balance - _pre_Acc_msg_sender__balance, 0, "Acc[msg.sender].balance: post - pre in [msg.value, msg.value] with post >= pre"); }
+    unchecked { assertEq(_post_Acc_148_msg_sender__balance, (uint256(_pre_Acc_148_msg_sender__balance) / uint256(1)), "Acc$148[msg.sender].balance: post == (pre / 1)"); }
+    assertGe(_post_Acc_148_msg_sender__balance, 0, "Acc$148[msg.sender].balance: post in [0, pre]");
+    assertLe(_post_Acc_148_msg_sender__balance, _pre_Acc_148_msg_sender__balance, "Acc$148[msg.sender].balance: post in [0, pre]");
+    assertGe(_post_Acc_148_msg_sender__balance, 0, "Acc$148[msg.sender].balance: post in [0, (_unlockTime + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]");
+    unchecked { assertLe(_post_Acc_148_msg_sender__balance, (uint256(_unlockTime) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "Acc$148[msg.sender].balance: post in [0, (_unlockTime + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]"); }
+    assertGe(_post_Acc_148_msg_sender__balance, 0, "Acc$148[msg.sender].balance: post in [0, (pre / 1)]");
+    unchecked { assertLe(_post_Acc_148_msg_sender__balance, (uint256(_pre_Acc_148_msg_sender__balance) / uint256(1)), "Acc$148[msg.sender].balance: post in [0, (pre / 1)]"); }
+    assertGe(_post_Acc_148_msg_sender__balance, 0, "Acc$148[msg.sender].balance: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 / 1)]");
+    unchecked { assertLe(_post_Acc_148_msg_sender__balance, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) / uint256(1)), "Acc$148[msg.sender].balance: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 / 1)]"); }
+    
+  }
+
+
+  
+  function test_put_X_WALLET_Put_path14p1(address p_msg_sender, uint256 p_block_timestamp, uint256 _unlockTime) public {
+    _veriput_parameterized(p_msg_sender, p_block_timestamp, _unlockTime);
+    
+    { X_WALLETCovTest_X_WALLET_Put_concrete14p1__basis_root__W _veriput_w = new X_WALLETCovTest_X_WALLET_Put_concrete14p1__basis_root__W(); _veriput_w.setUp(); _veriput_w._w_test_cov_0(); }
+}
+}
+
+
+
+
+
+
+
+
+contract X_WALLETCovTest_X_WALLET_Put_concrete14p1__basis_root__W is Test {
+  X_WALLET c0;
+  function setUp() public {
+    c0 = new X_WALLET(address(uint160(0)));
+    
+    address _esbmc_ctor_state_mock_0_0 = address(uint160(0));
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("AddMessage(address,uint256,string)"), bytes(""));
+  }
+  
+  
+  function _w_test_cov_0() public {
+    
+    vm.warp(1);
+    vm.roll(1);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
+    vm.prank(address(uint160(0)), address(uint160(0)));
+    bool _veriput_concrete_completed = false;
+    c0.Put(uint256(0));
+    _veriput_concrete_completed = true;
+    assertTrue(_veriput_concrete_completed, "fixed witness call must complete");
+  }
+  
+  
+}

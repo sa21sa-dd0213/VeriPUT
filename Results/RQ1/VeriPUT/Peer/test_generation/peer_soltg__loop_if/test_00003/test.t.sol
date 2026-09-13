@@ -111,14 +111,14 @@ contract Cfc2CovTest_Cfc2_loop_if_put58p1 is Test {
       assertEq(_put_ret, uint256(2), "fixed witness return");
     }
     
-    
+    assertTrue(uint256(_put_ret) != 0, "return: return != 0");
     assertEq(uint256(_put_ret), 2, "return: return == 2");
-    
-    
-    
-    
-    
-    
+    assertGe(uint256(_put_ret), 2, "return: return in [2, 2]");
+    assertLe(uint256(_put_ret), 2, "return: return in [2, 2]");
+    assertGe(uint256(_put_ret), 2, "return: return in [2, 115792089237316195423570985008687907853269984665640564039457584007913129639935]");
+    assertLe(uint256(_put_ret), 115792089237316195423570985008687907853269984665640564039457584007913129639935, "return: return in [2, 115792089237316195423570985008687907853269984665640564039457584007913129639935]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, 2]");
+    assertLe(uint256(_put_ret), 2, "return: return in [0, 2]");
     
   }
 

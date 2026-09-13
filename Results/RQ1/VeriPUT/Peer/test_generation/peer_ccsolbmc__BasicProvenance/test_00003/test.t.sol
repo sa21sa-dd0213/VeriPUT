@@ -88,14 +88,14 @@ contract BasicProvenanceCovTest_BasicProvenance_initialize_put2p1 is Test {
     assertEq(_post_Counterparty, _pre_Counterparty, "Counterparty: post == pre");
     assertEq(_post_SupplyChainOwner, _pre_SupplyChainOwner, "SupplyChainOwner: post == pre");
     assertEq(_post_SupplyChainObserver, _pre_SupplyChainObserver, "SupplyChainObserver: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_InitiatingCounterparty, _pre_InitiatingCounterparty, "InitiatingCounterparty: post >= pre");
+    assertLe(_post_InitiatingCounterparty, _pre_InitiatingCounterparty, "InitiatingCounterparty: post <= pre");
+    assertGe(_post_Counterparty, _pre_Counterparty, "Counterparty: post >= pre");
+    assertLe(_post_Counterparty, _pre_Counterparty, "Counterparty: post <= pre");
+    assertGe(_post_SupplyChainOwner, _pre_SupplyChainOwner, "SupplyChainOwner: post >= pre");
+    assertLe(_post_SupplyChainOwner, _pre_SupplyChainOwner, "SupplyChainOwner: post <= pre");
+    assertGe(_post_SupplyChainObserver, _pre_SupplyChainObserver, "SupplyChainObserver: post >= pre");
+    assertLe(_post_SupplyChainObserver, _pre_SupplyChainObserver, "SupplyChainObserver: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

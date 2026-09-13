@@ -98,10 +98,10 @@ contract wLitiSaleCovTest_wLitiSale_setReferrerBonusPercent_put2p1 is Test {
     assertEq(_post_referrers_state__ETHWallet__isReferrer, _pre_referrers_state__ETHWallet__isReferrer, "_referrers[state._ETHWallet].isReferrer: post == pre");
     assertEq(_post_referrers_state__masterReferrerWallet__isReferrer, _pre_referrers_state__masterReferrerWallet__isReferrer, "_referrers[state._masterReferrerWallet].isReferrer: post == pre");
     assertEq(_post_referrers_state__owner__isReferrer, _pre_referrers_state__owner__isReferrer, "_referrers[state._owner].isReferrer: post == pre");
-    
-    
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
+    assertGe(_post_referrers_referrer__bonusPercent, _pre_referrers_referrer__bonusPercent, "_referrers[referrer].bonusPercent: post >= pre");
+    assertLe(_post_referrers_referrer__bonusPercent, _pre_referrers_referrer__bonusPercent, "_referrers[referrer].bonusPercent: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

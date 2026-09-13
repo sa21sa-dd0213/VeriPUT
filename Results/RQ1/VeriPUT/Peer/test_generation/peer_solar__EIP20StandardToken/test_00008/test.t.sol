@@ -121,23 +121,23 @@ contract EIP20StandardTokenCovTest_EIP20StandardToken_transfer_put7p1 is Test {
       assertEq(_veriputFixedLogs[0].topics[1], bytes32(uint256(uint160(address(uint160(4294967295))))));
       assertEq(_veriputFixedLogs[0].topics[2], bytes32(uint256(uint160(address(uint160(4294967295))))));
       assertEq(_veriputFixedLogs[0].data, abi.encode(uint256(0)));
-
-
+      assertEq(uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(4294967295)), uint256(1))))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(0), "fixed witness state");
     }
     
     uint256 _post_balances_253_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(1)))));
     uint256 _post_balances_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(1)))));
     uint256 _post_balances__to = uint256(vm.load(address(c0), keccak256(abi.encode(_to, uint256(1)))));
     assertEq(_post_balances_253_msg_sender, _pre_balances_253_msg_sender, "balances$253[msg.sender]: post == pre");
-    
-    
+    assertGe(_pre_balances_msg_sender, _post_balances_msg_sender, "balances[msg.sender]: pre - post in [_value, _value] with pre >= post");
+    unchecked { assertGe(_pre_balances_msg_sender - _post_balances_msg_sender, _value, "balances[msg.sender]: pre - post in [_value, _value] with pre >= post"); }
     unchecked { assertLe(_pre_balances_msg_sender - _post_balances_msg_sender, _value, "balances[msg.sender]: pre - post in [_value, _value] with pre >= post"); }
     assertGe(_post_balances__to, _pre_balances__to, "balances[_to]: post - pre in [_value, _value] with post >= pre");
-    
+    unchecked { assertGe(_post_balances__to - _pre_balances__to, _value, "balances[_to]: post - pre in [_value, _value] with post >= pre"); }
     unchecked { assertLe(_post_balances__to - _pre_balances__to, _value, "balances[_to]: post - pre in [_value, _value] with post >= pre"); }
-    
-    
-    
+    assertGe(_post_balances_253_msg_sender, 0, "balances$253[msg.sender]: post in [0, pre]");
+    assertLe(_post_balances_253_msg_sender, _pre_balances_253_msg_sender, "balances$253[msg.sender]: post in [0, pre]");
+    assertGe(_post_balances_253_msg_sender, 0, "balances$253[msg.sender]: post in [0, (_value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]");
     unchecked { assertLe(_post_balances_253_msg_sender, (uint256(_value) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "balances$253[msg.sender]: post in [0, (_value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]"); }
     assertTrue(_put_ret, "return: return == true");
     

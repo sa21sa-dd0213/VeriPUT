@@ -104,11 +104,11 @@ contract salvadorCovTest_salvador_sdfd_put3p1_p1_part_part0_w_r is Test {
     c0.sdfd();
     
     if (p_msg_sender == address(uint160(2147483649))) {
-
-
-
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975), uint256(2147483649), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(2147483649)), uint256(6))))), uint256(10000000000000000000000000000), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(18), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(10000000000000000000000000000), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(10000000000000000000000000000), "fixed witness state");
     }
     
     uint256 _post_initialsupply = uint256(vm.load(address(c0), bytes32(uint256(0))));
@@ -118,53 +118,53 @@ contract salvadorCovTest_salvador_sdfd_put3p1_p1_part_part0_w_r is Test {
     assertGt(_post_balances_msg_sender, _pre_balances_msg_sender, "balances[msg.sender]: post > pre");
     assertEq(_post_admin, uint256(uint160(p_msg_sender)), "admin: post == msg.sender");
     assertEq(_post_balances_msg_sender, _pre_initialsupply, "balances[msg.sender]: post == state.initialsupply");
-    
-    
-    
-    
-    
-    
+    assertEq(_post_initialsupply, _pre_initialsupply, "initialsupply: post == state.initialsupply");
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, pre]");
+    assertLe(_post_initialsupply, _pre_initialsupply, "initialsupply: post in [0, pre]");
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, state.initialsupply]");
+    assertLe(_post_initialsupply, _pre_initialsupply, "initialsupply: post in [0, state.initialsupply]");
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, 1461501637330902918203684832716283019655932542975]");
     assertLe(_post_initialsupply, 1461501637330902918203684832716283019655932542975, "initialsupply: post in [0, 1461501637330902918203684832716283019655932542975]");
-    
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (pre + pre)]");
     unchecked { assertLe(_post_initialsupply, (uint256(_pre_initialsupply) + uint256(_pre_initialsupply)), "initialsupply: post in [0, (pre + pre)]"); }
-    
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (pre * pre)]");
     unchecked { assertLe(_post_initialsupply, (uint256(_pre_initialsupply) * uint256(_pre_initialsupply)), "initialsupply: post in [0, (pre * pre)]"); }
-    
-    
-    
-    
-    
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (pre + state.initialsupply)]");
+    unchecked { assertLe(_post_initialsupply, (uint256(_pre_initialsupply) + uint256(_pre_initialsupply)), "initialsupply: post in [0, (pre + state.initialsupply)]"); }
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (pre * state.initialsupply)]");
+    unchecked { assertLe(_post_initialsupply, (uint256(_pre_initialsupply) * uint256(_pre_initialsupply)), "initialsupply: post in [0, (pre * state.initialsupply)]"); }
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (pre + 1461501637330902918203684832716283019655932542975)]");
     unchecked { assertLe(_post_initialsupply, (uint256(_pre_initialsupply) + uint256(1461501637330902918203684832716283019655932542975)), "initialsupply: post in [0, (pre + 1461501637330902918203684832716283019655932542975)]"); }
-    
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (pre * 1461501637330902918203684832716283019655932542975)]");
     unchecked { assertLe(_post_initialsupply, (uint256(_pre_initialsupply) * uint256(1461501637330902918203684832716283019655932542975)), "initialsupply: post in [0, (pre * 1461501637330902918203684832716283019655932542975)]"); }
-    
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (pre + 1)]");
     unchecked { assertLe(_post_initialsupply, (uint256(_pre_initialsupply) + uint256(1)), "initialsupply: post in [0, (pre + 1)]"); }
-    
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]");
     unchecked { assertLe(_post_initialsupply, (uint256(0) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "initialsupply: post in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]"); }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (state.initialsupply + state.initialsupply)]");
+    unchecked { assertLe(_post_initialsupply, (uint256(_pre_initialsupply) + uint256(_pre_initialsupply)), "initialsupply: post in [0, (state.initialsupply + state.initialsupply)]"); }
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (state.initialsupply * state.initialsupply)]");
+    unchecked { assertLe(_post_initialsupply, (uint256(_pre_initialsupply) * uint256(_pre_initialsupply)), "initialsupply: post in [0, (state.initialsupply * state.initialsupply)]"); }
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (state.initialsupply + 1461501637330902918203684832716283019655932542975)]");
+    unchecked { assertLe(_post_initialsupply, (uint256(_pre_initialsupply) + uint256(1461501637330902918203684832716283019655932542975)), "initialsupply: post in [0, (state.initialsupply + 1461501637330902918203684832716283019655932542975)]"); }
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (state.initialsupply * 1461501637330902918203684832716283019655932542975)]");
+    unchecked { assertLe(_post_initialsupply, (uint256(_pre_initialsupply) * uint256(1461501637330902918203684832716283019655932542975)), "initialsupply: post in [0, (state.initialsupply * 1461501637330902918203684832716283019655932542975)]"); }
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (state.initialsupply + 1)]");
+    unchecked { assertLe(_post_initialsupply, (uint256(_pre_initialsupply) + uint256(1)), "initialsupply: post in [0, (state.initialsupply + 1)]"); }
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (1461501637330902918203684832716283019655932542975 - pre)]");
     unchecked { assertLe(_post_initialsupply, (uint256(1461501637330902918203684832716283019655932542975) - uint256(_pre_initialsupply)), "initialsupply: post in [0, (1461501637330902918203684832716283019655932542975 - pre)]"); }
-    
-    
-    
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (1461501637330902918203684832716283019655932542975 - state.initialsupply)]");
+    unchecked { assertLe(_post_initialsupply, (uint256(1461501637330902918203684832716283019655932542975) - uint256(_pre_initialsupply)), "initialsupply: post in [0, (1461501637330902918203684832716283019655932542975 - state.initialsupply)]"); }
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (1461501637330902918203684832716283019655932542975 + 1461501637330902918203684832716283019655932542975)]");
     unchecked { assertLe(_post_initialsupply, (uint256(1461501637330902918203684832716283019655932542975) + uint256(1461501637330902918203684832716283019655932542975)), "initialsupply: post in [0, (1461501637330902918203684832716283019655932542975 + 1461501637330902918203684832716283019655932542975)]"); }
-    
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (1461501637330902918203684832716283019655932542975 + 1)]");
     unchecked { assertLe(_post_initialsupply, (uint256(1461501637330902918203684832716283019655932542975) + uint256(1)), "initialsupply: post in [0, (1461501637330902918203684832716283019655932542975 + 1)]"); }
-    
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (1461501637330902918203684832716283019655932542975 - 1)]");
     unchecked { assertLe(_post_initialsupply, (uint256(1461501637330902918203684832716283019655932542975) - uint256(1)), "initialsupply: post in [0, (1461501637330902918203684832716283019655932542975 - 1)]"); }
-    
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - pre)]");
     unchecked { assertLe(_post_initialsupply, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) - uint256(_pre_initialsupply)), "initialsupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - pre)]"); }
-    
-    
+    assertGe(_post_initialsupply, 0, "initialsupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - state.initialsupply)]");
+    unchecked { assertLe(_post_initialsupply, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) - uint256(_pre_initialsupply)), "initialsupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - state.initialsupply)]"); }
     assertGt(_post_admin, _pre_admin, "admin: post > pre");
     
   }
@@ -196,27 +196,27 @@ contract salvadorCovTest_salvador_sdfd_concrete3p1__basis_part0_w_r__W is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(5))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(5)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.admin did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(3))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(18) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(3)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(18), "entry pin state.decimals did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(10000000000000000000000000000) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(10000000000000000000000000000), "entry pin state.initialsupply did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(10000000000000000000000000000) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(4)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(10000000000000000000000000000), "entry pin state.totalSupply did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(1);
     vm.roll(1);
@@ -229,15 +229,15 @@ contract salvadorCovTest_salvador_sdfd_concrete3p1__basis_part0_w_r__W is Test {
     vm.prank(address(uint160(2147483649)), address(uint160(0)));
     c0.sdfd();
     uint256 _veriput_fixed_state_admin_0 = (uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_admin_0, uint256(2147483649), "fixed witness state");
     uint256 _veriput_fixed_state_balances_2147483649_1 = uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(2147483649)), uint256(6)))));
-
+    assertEq(_veriput_fixed_state_balances_2147483649_1, uint256(10000000000000000000000000000), "fixed witness state");
     uint256 _veriput_fixed_state_decimals_2 = uint256(vm.load(address(c0), bytes32(uint256(3))));
-
+    assertEq(_veriput_fixed_state_decimals_2, uint256(18), "fixed witness state");
     uint256 _veriput_fixed_state_initialsupply_3 = uint256(vm.load(address(c0), bytes32(uint256(0))));
-
+    assertEq(_veriput_fixed_state_initialsupply_3, uint256(10000000000000000000000000000), "fixed witness state");
     uint256 _veriput_fixed_state_totalSupply_4 = uint256(vm.load(address(c0), bytes32(uint256(4))));
-
+    assertEq(_veriput_fixed_state_totalSupply_4, uint256(10000000000000000000000000000), "fixed witness state");
   }
   
   

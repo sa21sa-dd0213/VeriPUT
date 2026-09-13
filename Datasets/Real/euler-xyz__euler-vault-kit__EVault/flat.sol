@@ -3065,7 +3065,6 @@ abstract contract BorrowingModule is IBorrowing, AssetTransfers, BalanceUtils, L
     function pullDebt(uint256 amount, address from) public virtual nonReentrant {
         (VaultCache memory vaultCache, address account) = initOperation(OP_PULL_DEBT, CHECKACCOUNT_CALLER);
 
-
         if (from == account) revert E_SelfTransfer();
 
         Assets assets = amount == type(uint256).max ? getCurrentOwed(vaultCache, from).toAssetsUp() : amount.toAssets();

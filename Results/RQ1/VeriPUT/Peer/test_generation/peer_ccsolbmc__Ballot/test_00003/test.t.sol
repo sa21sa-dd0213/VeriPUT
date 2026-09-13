@@ -102,18 +102,18 @@ contract BallotCovTest_Ballot_delegate_put2p1 is Test {
     assertEq(_post_voters_to__vote, _pre_voters_to__vote, "voters[to].vote: post == pre");
     assertEq(_post_voters_to__voted, _pre_voters_to__voted, "voters[to].voted: post == pre");
     assertEq(_post_voters_to__weight, _pre_voters_to__weight, "voters[to].weight: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_voters_msg_sender__delegate, _pre_voters_msg_sender__delegate, "voters[msg.sender].delegate: post >= pre");
+    assertLe(_post_voters_msg_sender__delegate, _pre_voters_msg_sender__delegate, "voters[msg.sender].delegate: post <= pre");
+    assertGe(_post_voters_msg_sender__vote, _pre_voters_msg_sender__vote, "voters[msg.sender].vote: post >= pre");
+    assertLe(_post_voters_msg_sender__vote, _pre_voters_msg_sender__vote, "voters[msg.sender].vote: post <= pre");
+    assertGe(_post_voters_msg_sender__weight, _pre_voters_msg_sender__weight, "voters[msg.sender].weight: post >= pre");
+    assertLe(_post_voters_msg_sender__weight, _pre_voters_msg_sender__weight, "voters[msg.sender].weight: post <= pre");
+    assertGe(_post_voters_to__delegate, _pre_voters_to__delegate, "voters[to].delegate: post >= pre");
+    assertLe(_post_voters_to__delegate, _pre_voters_to__delegate, "voters[to].delegate: post <= pre");
+    assertGe(_post_voters_to__vote, _pre_voters_to__vote, "voters[to].vote: post >= pre");
+    assertLe(_post_voters_to__vote, _pre_voters_to__vote, "voters[to].vote: post <= pre");
+    assertGe(_post_voters_to__weight, _pre_voters_to__weight, "voters[to].weight: post >= pre");
+    assertLe(_post_voters_to__weight, _pre_voters_to__weight, "voters[to].weight: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

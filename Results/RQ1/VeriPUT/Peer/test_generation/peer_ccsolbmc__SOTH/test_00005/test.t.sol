@@ -11,9 +11,9 @@ contract SOTHCovTest_SOTH_openTrading_put2p1 is Test {
     c0 = new SOTH();
     
     address _esbmc_ext_mock_0 = address(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-
-
-
+    vm.etch(_esbmc_ext_mock_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("WETH()"), abi.encode(address(0)));
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("factory()"), abi.encode(address(0)));
   }
   
 
@@ -202,54 +202,54 @@ contract SOTHCovTest_SOTH_openTrading_put2p1 is Test {
     assertEq(_post_allowances_state__owner__msg_sender, _pre_allowances_state__owner__msg_sender, "_allowances[state._owner][msg.sender]: post == pre");
     assertEq(_post_allowances_state__owner__state__FeeAddress, _pre_allowances_state__owner__state__FeeAddress, "_allowances[state._owner][state._FeeAddress]: post == pre");
     assertEq(_post_allowances_state__owner__state__marketingWalletAddress, _pre_allowances_state__owner__state__marketingWalletAddress, "_allowances[state._owner][state._marketingWalletAddress]: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_uniswapV2Pair, _pre_uniswapV2Pair, "uniswapV2Pair: post >= pre");
+    assertLe(_post_uniswapV2Pair, _pre_uniswapV2Pair, "uniswapV2Pair: post <= pre");
+    assertGe(_post_maxTxAmount, _pre_maxTxAmount, "_maxTxAmount: post >= pre");
+    assertLe(_post_maxTxAmount, _pre_maxTxAmount, "_maxTxAmount: post <= pre");
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
+    assertGe(_post_allowances_msg_sender__msg_sender, _pre_allowances_msg_sender__msg_sender, "_allowances[msg.sender][msg.sender]: post >= pre");
+    assertLe(_post_allowances_msg_sender__msg_sender, _pre_allowances_msg_sender__msg_sender, "_allowances[msg.sender][msg.sender]: post <= pre");
+    assertGe(_post_allowances_msg_sender__state__FeeAddress, _pre_allowances_msg_sender__state__FeeAddress, "_allowances[msg.sender][state._FeeAddress]: post >= pre");
+    assertLe(_post_allowances_msg_sender__state__FeeAddress, _pre_allowances_msg_sender__state__FeeAddress, "_allowances[msg.sender][state._FeeAddress]: post <= pre");
+    assertGe(_post_allowances_msg_sender__state__marketingWalletAddress, _pre_allowances_msg_sender__state__marketingWalletAddress, "_allowances[msg.sender][state._marketingWalletAddress]: post >= pre");
+    assertLe(_post_allowances_msg_sender__state__marketingWalletAddress, _pre_allowances_msg_sender__state__marketingWalletAddress, "_allowances[msg.sender][state._marketingWalletAddress]: post <= pre");
+    assertGe(_post_allowances_msg_sender__state__owner, _pre_allowances_msg_sender__state__owner, "_allowances[msg.sender][state._owner]: post >= pre");
+    assertLe(_post_allowances_msg_sender__state__owner, _pre_allowances_msg_sender__state__owner, "_allowances[msg.sender][state._owner]: post <= pre");
+    assertGe(_post_allowances_msg_sender__state__previousOwner, _pre_allowances_msg_sender__state__previousOwner, "_allowances[msg.sender][state._previousOwner]: post >= pre");
+    assertLe(_post_allowances_msg_sender__state__previousOwner, _pre_allowances_msg_sender__state__previousOwner, "_allowances[msg.sender][state._previousOwner]: post <= pre");
+    assertGe(_post_allowances_msg_sender__state_uniswapV2Pair, _pre_allowances_msg_sender__state_uniswapV2Pair, "_allowances[msg.sender][state.uniswapV2Pair]: post >= pre");
+    assertLe(_post_allowances_msg_sender__state_uniswapV2Pair, _pre_allowances_msg_sender__state_uniswapV2Pair, "_allowances[msg.sender][state.uniswapV2Pair]: post <= pre");
+    assertGe(_post_allowances_state__FeeAddress__msg_sender, _pre_allowances_state__FeeAddress__msg_sender, "_allowances[state._FeeAddress][msg.sender]: post >= pre");
+    assertLe(_post_allowances_state__FeeAddress__msg_sender, _pre_allowances_state__FeeAddress__msg_sender, "_allowances[state._FeeAddress][msg.sender]: post <= pre");
+    assertGe(_post_allowances_state__FeeAddress__state__FeeAddress, _pre_allowances_state__FeeAddress__state__FeeAddress, "_allowances[state._FeeAddress][state._FeeAddress]: post >= pre");
+    assertLe(_post_allowances_state__FeeAddress__state__FeeAddress, _pre_allowances_state__FeeAddress__state__FeeAddress, "_allowances[state._FeeAddress][state._FeeAddress]: post <= pre");
+    assertGe(_post_allowances_state__FeeAddress__state__marketingWalletAddress, _pre_allowances_state__FeeAddress__state__marketingWalletAddress, "_allowances[state._FeeAddress][state._marketingWalletAddress]: post >= pre");
+    assertLe(_post_allowances_state__FeeAddress__state__marketingWalletAddress, _pre_allowances_state__FeeAddress__state__marketingWalletAddress, "_allowances[state._FeeAddress][state._marketingWalletAddress]: post <= pre");
+    assertGe(_post_allowances_state__FeeAddress__state__owner, _pre_allowances_state__FeeAddress__state__owner, "_allowances[state._FeeAddress][state._owner]: post >= pre");
+    assertLe(_post_allowances_state__FeeAddress__state__owner, _pre_allowances_state__FeeAddress__state__owner, "_allowances[state._FeeAddress][state._owner]: post <= pre");
+    assertGe(_post_allowances_state__FeeAddress__state__previousOwner, _pre_allowances_state__FeeAddress__state__previousOwner, "_allowances[state._FeeAddress][state._previousOwner]: post >= pre");
+    assertLe(_post_allowances_state__FeeAddress__state__previousOwner, _pre_allowances_state__FeeAddress__state__previousOwner, "_allowances[state._FeeAddress][state._previousOwner]: post <= pre");
+    assertGe(_post_allowances_state__FeeAddress__state_uniswapV2Pair, _pre_allowances_state__FeeAddress__state_uniswapV2Pair, "_allowances[state._FeeAddress][state.uniswapV2Pair]: post >= pre");
+    assertLe(_post_allowances_state__FeeAddress__state_uniswapV2Pair, _pre_allowances_state__FeeAddress__state_uniswapV2Pair, "_allowances[state._FeeAddress][state.uniswapV2Pair]: post <= pre");
+    assertGe(_post_allowances_state__marketingWalletAddress__msg_sender, _pre_allowances_state__marketingWalletAddress__msg_sender, "_allowances[state._marketingWalletAddress][msg.sender]: post >= pre");
+    assertLe(_post_allowances_state__marketingWalletAddress__msg_sender, _pre_allowances_state__marketingWalletAddress__msg_sender, "_allowances[state._marketingWalletAddress][msg.sender]: post <= pre");
+    assertGe(_post_allowances_state__marketingWalletAddress__state__FeeAddress, _pre_allowances_state__marketingWalletAddress__state__FeeAddress, "_allowances[state._marketingWalletAddress][state._FeeAddress]: post >= pre");
+    assertLe(_post_allowances_state__marketingWalletAddress__state__FeeAddress, _pre_allowances_state__marketingWalletAddress__state__FeeAddress, "_allowances[state._marketingWalletAddress][state._FeeAddress]: post <= pre");
+    assertGe(_post_allowances_state__marketingWalletAddress__state__marketingWalletAddress, _pre_allowances_state__marketingWalletAddress__state__marketingWalletAddress, "_allowances[state._marketingWalletAddress][state._marketingWalletAddress]: post >= pre");
+    assertLe(_post_allowances_state__marketingWalletAddress__state__marketingWalletAddress, _pre_allowances_state__marketingWalletAddress__state__marketingWalletAddress, "_allowances[state._marketingWalletAddress][state._marketingWalletAddress]: post <= pre");
+    assertGe(_post_allowances_state__marketingWalletAddress__state__owner, _pre_allowances_state__marketingWalletAddress__state__owner, "_allowances[state._marketingWalletAddress][state._owner]: post >= pre");
+    assertLe(_post_allowances_state__marketingWalletAddress__state__owner, _pre_allowances_state__marketingWalletAddress__state__owner, "_allowances[state._marketingWalletAddress][state._owner]: post <= pre");
+    assertGe(_post_allowances_state__marketingWalletAddress__state__previousOwner, _pre_allowances_state__marketingWalletAddress__state__previousOwner, "_allowances[state._marketingWalletAddress][state._previousOwner]: post >= pre");
+    assertLe(_post_allowances_state__marketingWalletAddress__state__previousOwner, _pre_allowances_state__marketingWalletAddress__state__previousOwner, "_allowances[state._marketingWalletAddress][state._previousOwner]: post <= pre");
+    assertGe(_post_allowances_state__marketingWalletAddress__state_uniswapV2Pair, _pre_allowances_state__marketingWalletAddress__state_uniswapV2Pair, "_allowances[state._marketingWalletAddress][state.uniswapV2Pair]: post >= pre");
+    assertLe(_post_allowances_state__marketingWalletAddress__state_uniswapV2Pair, _pre_allowances_state__marketingWalletAddress__state_uniswapV2Pair, "_allowances[state._marketingWalletAddress][state.uniswapV2Pair]: post <= pre");
+    assertGe(_post_allowances_state__owner__msg_sender, _pre_allowances_state__owner__msg_sender, "_allowances[state._owner][msg.sender]: post >= pre");
+    assertLe(_post_allowances_state__owner__msg_sender, _pre_allowances_state__owner__msg_sender, "_allowances[state._owner][msg.sender]: post <= pre");
+    assertGe(_post_allowances_state__owner__state__FeeAddress, _pre_allowances_state__owner__state__FeeAddress, "_allowances[state._owner][state._FeeAddress]: post >= pre");
+    assertLe(_post_allowances_state__owner__state__FeeAddress, _pre_allowances_state__owner__state__FeeAddress, "_allowances[state._owner][state._FeeAddress]: post <= pre");
+    assertGe(_post_allowances_state__owner__state__marketingWalletAddress, _pre_allowances_state__owner__state__marketingWalletAddress, "_allowances[state._owner][state._marketingWalletAddress]: post >= pre");
+    assertLe(_post_allowances_state__owner__state__marketingWalletAddress, _pre_allowances_state__owner__state__marketingWalletAddress, "_allowances[state._owner][state._marketingWalletAddress]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

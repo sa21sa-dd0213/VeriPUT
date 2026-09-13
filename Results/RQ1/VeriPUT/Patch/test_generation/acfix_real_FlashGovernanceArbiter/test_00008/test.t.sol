@@ -15,8 +15,8 @@ contract FlashGovernanceArbiterCovTest_FlashGovernanceArbiter_enforceTolerance_c
   function setUp() public {
     c0 = new FlashGovernanceArbiter(address(uint160(0)));
     
-
-
+    vm.etch(address(0), hex"60006000f3");
+    vm.mockCall(address(0), abi.encodeWithSignature("configured()"), abi.encode(false));
   }
   
   

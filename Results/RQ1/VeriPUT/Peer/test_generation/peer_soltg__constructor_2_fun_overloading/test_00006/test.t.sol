@@ -113,15 +113,15 @@ contract C2CovTest_0_C2_f2_put15_pf89p1 is Test {
     c0.f2(_x, _y);
     
     if (p_msg_sender == address(uint160(0)) && _x == uint256(100) && _y == uint256(100)) {
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(100), "fixed witness state");
     }
     
     uint256 _post_x = uint256(vm.load(address(c0), bytes32(uint256(0))));
     assertEq(_post_x, _y, "x: post == _y");
-    
-    
-    
-    
+    assertGe(_post_x, 100, "x: post in [100, 115792089237316195423570985008687907853269984665640564039457584007913129639935]");
+    assertLe(_post_x, 115792089237316195423570985008687907853269984665640564039457584007913129639935, "x: post in [100, 115792089237316195423570985008687907853269984665640564039457584007913129639935]");
+    assertGe(_post_x, 0, "x: post in [0, 100]");
+    assertLe(_post_x, 100, "x: post in [0, 100]");
     
   }
 
@@ -163,9 +163,9 @@ contract C2CovTest_0_C2_f2_concrete15_pf89p1__basis_root__W is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(0), "entry pin state.x did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
@@ -178,7 +178,7 @@ contract C2CovTest_0_C2_f2_concrete15_pf89p1__basis_root__W is Test {
     vm.prank(address(uint160(0)), address(uint160(0)));
     c0.f2(uint256(100), uint256(100));
     uint256 _veriput_fixed_state_x_0 = uint256(vm.load(address(c0), bytes32(uint256(0))));
-
+    assertEq(_veriput_fixed_state_x_0, uint256(100), "fixed witness state");
   }
   
   

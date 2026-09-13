@@ -18,8 +18,8 @@ contract PausableZoneCovTest_PausableZone_executeMatchOrders_concrete2_fb is Tes
     vm.expectRevert();
     c0.executeMatchOrders(SeaportInterface(address(uint160(2000))), new Order[](0), new Fulfillment[](0));
     uint256 _veriput_fixed_state_isPaused_1 = ((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 160) & 255);
-
+    assertEq(_veriput_fixed_state_isPaused_1, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_operator_2 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_operator_2, uint256(0), "fixed witness state");
   }
 }

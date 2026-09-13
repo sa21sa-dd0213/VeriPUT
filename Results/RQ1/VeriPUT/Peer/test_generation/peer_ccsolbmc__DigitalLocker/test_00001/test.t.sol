@@ -72,12 +72,12 @@ contract DigitalLockerCovTest_DigitalLocker_AcceptSharingRequest_put2p1 is Test 
     assertEq(_post_CurrentAuthorizedUser, _pre_CurrentAuthorizedUser, "CurrentAuthorizedUser: post == pre");
     assertEq(_post_ThirdPartyRequestor, _pre_ThirdPartyRequestor, "ThirdPartyRequestor: post == pre");
     assertEq(_post_State, _pre_State, "State: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_Owner, _pre_Owner, "Owner: post >= pre");
+    assertLe(_post_Owner, _pre_Owner, "Owner: post <= pre");
+    assertGe(_post_CurrentAuthorizedUser, _pre_CurrentAuthorizedUser, "CurrentAuthorizedUser: post >= pre");
+    assertLe(_post_CurrentAuthorizedUser, _pre_CurrentAuthorizedUser, "CurrentAuthorizedUser: post <= pre");
+    assertGe(_post_ThirdPartyRequestor, _pre_ThirdPartyRequestor, "ThirdPartyRequestor: post >= pre");
+    assertLe(_post_ThirdPartyRequestor, _pre_ThirdPartyRequestor, "ThirdPartyRequestor: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

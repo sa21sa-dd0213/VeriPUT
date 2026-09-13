@@ -104,8 +104,8 @@ contract CoolerCovTest_Cooler_approveTransfer_put6p1 is Test {
     
     uint256 _post_approvals_loanID = (uint256(vm.load(address(c0), keccak256(abi.encode(loanID_, uint256(2))))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_approvals_loanID, _pre_approvals_loanID, "approvals[loanID_]: post == pre");
-    
-    
+    assertGe(_post_approvals_loanID, _pre_approvals_loanID, "approvals[loanID_]: post >= pre");
+    assertLe(_post_approvals_loanID, _pre_approvals_loanID, "approvals[loanID_]: post <= pre");
     
     assertFalse(_put_ok, "path enc=6p1 exits through a REVERT: the call must fail on the unmodified contract");
   }

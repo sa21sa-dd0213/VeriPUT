@@ -3065,7 +3065,6 @@ library ECDSA {
 
 
     function _throwError(RecoverError error, bytes32 errorArg) private pure {
-
         if (error == RecoverError.NoError) {
             return; 
         } else if (error == RecoverError.InvalidSignature) {

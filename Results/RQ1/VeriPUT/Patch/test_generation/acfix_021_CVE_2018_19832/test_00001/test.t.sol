@@ -69,12 +69,12 @@ contract NewIntelTechMediaCovTest_NewIntelTechMedia_NETM_put2p1 is Test {
     assertEq(_post_owner, _pre_owner, "owner: post == pre");
     assertEq(_post_totalDistributed, _pre_totalDistributed, "totalDistributed: post == pre");
     assertEq(_post_balances_msg_sender, _pre_balances_msg_sender, "balances[msg.sender]: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_owner, _pre_owner, "owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "owner: post <= pre");
+    assertGe(_post_totalDistributed, _pre_totalDistributed, "totalDistributed: post >= pre");
+    assertLe(_post_totalDistributed, _pre_totalDistributed, "totalDistributed: post <= pre");
+    assertGe(_post_balances_msg_sender, _pre_balances_msg_sender, "balances[msg.sender]: post >= pre");
+    assertLe(_post_balances_msg_sender, _pre_balances_msg_sender, "balances[msg.sender]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

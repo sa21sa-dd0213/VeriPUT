@@ -3065,7 +3065,6 @@ library MemoryReaders {
     }
 
     
-
     function readBytes10(
         MemoryPointer mPtr
     ) internal pure returns (bytes10 value) {

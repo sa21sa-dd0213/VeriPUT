@@ -50,7 +50,6 @@ contract Arcadia_TokenCovTest_Arcadia_Token_allowance_put2p1 is Test {
   
   
   
-  
   function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value, address owner, address spender) internal {
     p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
     p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
@@ -66,8 +65,8 @@ contract Arcadia_TokenCovTest_Arcadia_Token_allowance_put2p1 is Test {
     
     uint256 _post_allowances_owner__spender = uint256(vm.load(address(c0), keccak256(abi.encode(spender, keccak256(abi.encode(owner, uint256(6)))))));
     assertEq(_post_allowances_owner__spender, _pre_allowances_owner__spender, "_allowances[owner][spender]: post == pre");
-    
-    
+    assertGe(_post_allowances_owner__spender, _pre_allowances_owner__spender, "_allowances[owner][spender]: post >= pre");
+    assertLe(_post_allowances_owner__spender, _pre_allowances_owner__spender, "_allowances[owner][spender]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

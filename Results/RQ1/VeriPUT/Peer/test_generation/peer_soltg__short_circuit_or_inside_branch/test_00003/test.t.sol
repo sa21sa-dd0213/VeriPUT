@@ -106,7 +106,7 @@ contract cs6CovTest_cs6_g_put51p1 is Test {
     
     if (p_msg_sender == address(uint160(0)) && a == true) {
       assertEq(_put_ret, true, "fixed witness return");
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(1), "fixed witness state");
     }
     
     uint256 _post_x = uint256(vm.load(address(c0), bytes32(uint256(0))));
@@ -116,64 +116,64 @@ contract cs6CovTest_cs6_g_put51p1 is Test {
     unchecked { assertEq(_post_x, (uint256(102) / uint256(100)), "x: post == (102 / 100)"); }
     unchecked { assertEq(_post_x, (uint256(102) / uint256(102)), "x: post == (102 / 102)"); }
     unchecked { assertEq(_post_x, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) / uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "x: post == (115792089237316195423570985008687907853269984665640564039457584007913129639935 / 115792089237316195423570985008687907853269984665640564039457584007913129639935)"); }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_x, 0, "x: post in [0, 1]");
+    assertLe(_post_x, 1, "x: post in [0, 1]");
+    assertGe(_post_x, 0, "x: post in [0, 100]");
+    assertLe(_post_x, 100, "x: post in [0, 100]");
+    assertGe(_post_x, 0, "x: post in [0, 102]");
+    assertLe(_post_x, 102, "x: post in [0, 102]");
+    assertGe(_post_x, 0, "x: post in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]");
+    unchecked { assertLe(_post_x, (uint256(0) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "x: post in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (1 + 1)]");
+    unchecked { assertLe(_post_x, (uint256(1) + uint256(1)), "x: post in [0, (1 + 1)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (1 + 100)]");
+    unchecked { assertLe(_post_x, (uint256(1) + uint256(100)), "x: post in [0, (1 + 100)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (1 + 102)]");
+    unchecked { assertLe(_post_x, (uint256(1) + uint256(102)), "x: post in [0, (1 + 102)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (100 - 1)]");
+    unchecked { assertLe(_post_x, (uint256(100) - uint256(1)), "x: post in [0, (100 - 1)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (100 + 100)]");
+    unchecked { assertLe(_post_x, (uint256(100) + uint256(100)), "x: post in [0, (100 + 100)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (100 * 100)]");
+    unchecked { assertLe(_post_x, (uint256(100) * uint256(100)), "x: post in [0, (100 * 100)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (100 + 102)]");
+    unchecked { assertLe(_post_x, (uint256(100) + uint256(102)), "x: post in [0, (100 + 102)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (100 * 102)]");
+    unchecked { assertLe(_post_x, (uint256(100) * uint256(102)), "x: post in [0, (100 * 102)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (102 - 1)]");
+    unchecked { assertLe(_post_x, (uint256(102) - uint256(1)), "x: post in [0, (102 - 1)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (102 - 100)]");
+    unchecked { assertLe(_post_x, (uint256(102) - uint256(100)), "x: post in [0, (102 - 100)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (102 + 102)]");
+    unchecked { assertLe(_post_x, (uint256(102) + uint256(102)), "x: post in [0, (102 + 102)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (102 * 102)]");
+    unchecked { assertLe(_post_x, (uint256(102) * uint256(102)), "x: post in [0, (102 * 102)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - 1)]");
+    unchecked { assertLe(_post_x, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) - uint256(1)), "x: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - 1)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - 100)]");
+    unchecked { assertLe(_post_x, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) - uint256(100)), "x: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - 100)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - 102)]");
+    unchecked { assertLe(_post_x, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) - uint256(102)), "x: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - 102)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (1 / 1)]");
+    unchecked { assertLe(_post_x, (uint256(1) / uint256(1)), "x: post in [0, (1 / 1)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (100 / 1)]");
     unchecked { assertLe(_post_x, (uint256(100) / uint256(1)), "x: post in [0, (100 / 1)]"); }
-    
-    
-    
+    assertGe(_post_x, 0, "x: post in [0, (100 / 100)]");
+    unchecked { assertLe(_post_x, (uint256(100) / uint256(100)), "x: post in [0, (100 / 100)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (102 / 1)]");
     unchecked { assertLe(_post_x, (uint256(102) / uint256(1)), "x: post in [0, (102 / 1)]"); }
-    
-    
-    
-    
-    
+    assertGe(_post_x, 0, "x: post in [0, (102 / 100)]");
+    unchecked { assertLe(_post_x, (uint256(102) / uint256(100)), "x: post in [0, (102 / 100)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (102 / 102)]");
+    unchecked { assertLe(_post_x, (uint256(102) / uint256(102)), "x: post in [0, (102 / 102)]"); }
+    assertGe(_post_x, 0, "x: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 / 1)]");
     unchecked { assertLe(_post_x, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) / uint256(1)), "x: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 / 1)]"); }
-    
+    assertGe(_post_x, 0, "x: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 / 100)]");
     unchecked { assertLe(_post_x, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) / uint256(100)), "x: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 / 100)]"); }
-    
+    assertGe(_post_x, 0, "x: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 / 102)]");
     unchecked { assertLe(_post_x, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) / uint256(102)), "x: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 / 102)]"); }
-    
-    
+    assertGe(_post_x, 0, "x: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 / 115792089237316195423570985008687907853269984665640564039457584007913129639935)]");
+    unchecked { assertLe(_post_x, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) / uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "x: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 / 115792089237316195423570985008687907853269984665640564039457584007913129639935)]"); }
     assertTrue(_put_ret, "return: return == true");
     assertEq(_put_ret, a, "return: return == a");
     
@@ -208,9 +208,9 @@ contract cs6CovTest_cs6_g_concrete51p1__basis_root__W is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(0), "entry pin state.x did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
@@ -224,7 +224,7 @@ contract cs6CovTest_cs6_g_concrete51p1__basis_root__W is Test {
     bool _veriput_concrete_return = c0.g(true);
     assertEq(_veriput_concrete_return, true, "fixed witness return must match");
     uint256 _veriput_fixed_state_x_0 = uint256(vm.load(address(c0), bytes32(uint256(0))));
-
+    assertEq(_veriput_fixed_state_x_0, uint256(1), "fixed witness state");
   }
   
   

@@ -95,7 +95,7 @@ contract DefaultComplianceCovTest_DefaultCompliance_destroyed_put3p1 is Test {
     c0.destroyed(_from, _value);
     
     if (p_msg_sender == address(uint160(0)) && _from == address(uint160(0)) && _value == uint256(0)) {
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
   }
 
@@ -128,9 +128,9 @@ contract DefaultComplianceCovTest_DefaultCompliance_destroyed_concrete3p1__basis
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state._owner$117 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -143,7 +143,7 @@ contract DefaultComplianceCovTest_DefaultCompliance_destroyed_concrete3p1__basis
     vm.prank(address(uint160(0)), address(uint160(0)));
     c0.destroyed(address(uint160(0)), uint256(0));
     uint256 _veriput_fixed_state_owner_117_0 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_owner_117_0, uint256(0), "fixed witness state");
   }
   
   

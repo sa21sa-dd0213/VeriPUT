@@ -70,12 +70,12 @@ contract PrimalityCovTest_Primality_verifyPrime_put2p1 is Test {
     assertEq(_post_largePrime, _pre_largePrime, "largePrime: post == pre");
     assertEq(_post_x, _pre_x, "x: post == pre");
     assertEq(_post_y, _pre_y, "y: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_largePrime, _pre_largePrime, "largePrime: post >= pre");
+    assertLe(_post_largePrime, _pre_largePrime, "largePrime: post <= pre");
+    assertGe(_post_x, _pre_x, "x: post >= pre");
+    assertLe(_post_x, _pre_x, "x: post <= pre");
+    assertGe(_post_y, _pre_y, "y: post >= pre");
+    assertLe(_post_y, _pre_y, "y: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -27,7 +27,7 @@ contract TimelockControllerCovTest_TimelockController_supportsInterface_concrete
     bool _veriput_concrete_return = c0.supportsInterface(bytes4(0x01ffc9a7));
     assertEq(_veriput_concrete_return, true, "fixed witness return must match");
     uint256 _veriput_fixed_state_minDelay_7 = uint256(vm.load(address(c0), bytes32(uint256(2))));
-
+    assertEq(_veriput_fixed_state_minDelay_7, uint256(0), "fixed witness state");
   }
   
   

@@ -3065,7 +3065,6 @@ library SafeCast {
 
 
     function toInt48(int256 value) internal pure returns (int48 downcasted) {
-
         downcasted = int48(value);
         if (downcasted != value) {
             revert SafeCastOverflowedIntDowncast(48, value);

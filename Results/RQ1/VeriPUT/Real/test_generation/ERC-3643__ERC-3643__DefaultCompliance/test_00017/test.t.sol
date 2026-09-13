@@ -1,25 +1,15 @@
 // SPDX-License-Identifier: MIT
 
-
-
-
-
-
 pragma solidity >=0.8.0;
 
-import {Test, Vm} from "forge-std/Test.sol";
+import {Test} from "forge-std/Test.sol";
 import {DefaultCompliance} from "../src/flat.sol";
 
-contract DefaultComplianceCovTest_0_DefaultCompliance_transferOwnership_put15p1_p1_part_part0_w_w is Test {
+contract DefaultComplianceCovTest_DefaultCompliance_removeTokenAgent_put2p1 is Test {
   DefaultCompliance c0;
   function setUp() public {
-    vm.startPrank(address(uint160(4294967295)), address(uint160(4294967295)));
     c0 = new DefaultCompliance();
-    vm.stopPrank();
   }
-  
-  
-  
   
 
   
@@ -60,99 +50,35 @@ contract DefaultComplianceCovTest_0_DefaultCompliance_transferOwnership_put15p1_
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  function _veriput_parameterized(address newOwner) internal {
-    newOwner = address(uint160(bound(uint256(uint160(newOwner)), 1, 4294967291)));
+  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value, address _agentAddress) internal {
+    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
+    p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    _agentAddress = address(uint160(bound(uint256(uint160(_agentAddress)), 0, 1461501637330902918203684832716283019655932542975)));
     
     uint256 _pre_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
+    uint256 _pre_tokenAgentsList__agentAddress = (uint256(vm.load(address(c0), keccak256(abi.encode(_agentAddress, uint256(2))))) & 255);
     
-    vm.assume(_pre_owner == uint256(uint160(address(uint160(4294967295)))));
-    vm.assume(uint256(uint160(newOwner)) != 0);
-    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-    vm.chainId(0);
-    vm.fee(0);
-    vm.blobBaseFee(0);
-    vm.prevrandao(uint256(0));
-    vm.txGasPrice(0);
-    vm.coinbase(address(uint160(0)));
-    vm.prank(address(uint160(4294967295)));
     
-    vm.recordLogs();
-    c0.transferOwnership(newOwner);
-    Vm.Log[] memory _veriputFixedLogs = vm.getRecordedLogs();
-    
-    if (newOwner == address(uint160(1))) {
-      assertEq(_veriputFixedLogs.length, 1);
-      assertEq(_veriputFixedLogs[0].emitter, address(c0));
-      assertEq(_veriputFixedLogs[0].topics.length, 3);
-      assertEq(_veriputFixedLogs[0].topics[0], keccak256("OwnershipTransferred(address,address)"));
-      assertEq(_veriputFixedLogs[0].topics[1], bytes32(uint256(uint160(address(uint160(4294967295))))));
-      assertEq(_veriputFixedLogs[0].topics[2], bytes32(uint256(uint160(address(uint160(1))))));
-      assertEq(_veriputFixedLogs[0].data, abi.encode());
-
-    }
+    vm.deal(p_msg_sender, p_msg_value);
+    vm.prank(p_msg_sender);
+    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("removeTokenAgent(address)", _agentAddress));
     
     uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-    assertEq(_post_owner, uint256(uint160(newOwner)), "_owner: post == newOwner");
+    uint256 _post_tokenAgentsList__agentAddress = (uint256(vm.load(address(c0), keccak256(abi.encode(_agentAddress, uint256(2))))) & 255);
+    assertEq(_post_owner, _pre_owner, "_owner: post == pre");
+    assertEq(_post_tokenAgentsList__agentAddress, _pre_tokenAgentsList__agentAddress, "_tokenAgentsList[_agentAddress]: post == pre");
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
     
-    unchecked { assertLe(_post_owner, (uint256(0) + uint256(1461501637330902918203684832716283019655932542975)), "_owner: post in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]"); }
+    assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
+
     
-    unchecked { assertLe(_post_owner, (uint256(1461501637330902918203684832716283019655932542975) / uint256(1)), "_owner: post in [0, (1461501637330902918203684832716283019655932542975 / 1)]"); }
-    assertLt(_post_owner, _pre_owner, "_owner: post < pre");
     
   }
 
 
   
-  function test_put_DefaultCompliance_transferOwnership_path15p1_part_part0_w_w(address newOwner) public {
-    _veriput_parameterized(newOwner);
+  function test_put_DefaultCompliance_removeTokenAgent_path2p1(address p_msg_sender, uint256 p_msg_value, address _agentAddress) public {
+    _veriput_parameterized(p_msg_sender, p_msg_value, _agentAddress);
   }
-}
-
-contract DefaultComplianceCovTest_1 is Test {
-  DefaultCompliance c0;
-  function setUp() public {
-    vm.startPrank(address(uint160(2147483647)), address(uint160(2147483647)));
-    c0 = new DefaultCompliance();
-    vm.stopPrank();
-  }
-  
-  
-  
-  
-}
-
-contract DefaultComplianceCovTest_2 is Test {
-  DefaultCompliance c0;
-  function setUp() public {
-    vm.startPrank(address(uint160(1)), address(uint160(1)));
-    c0 = new DefaultCompliance();
-    vm.stopPrank();
-  }
-  
-  
 }

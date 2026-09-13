@@ -65,8 +65,8 @@ contract TokenCovTest_Token_decimals_put2p1 is Test {
     
     uint256 _post_tokenDecimals = (uint256(vm.load(address(c0), bytes32(uint256(107)))) & 255);
     assertEq(_post_tokenDecimals, _pre_tokenDecimals, "_tokenDecimals: post == pre");
-    
-    
+    assertGe(_post_tokenDecimals, _pre_tokenDecimals, "_tokenDecimals: post >= pre");
+    assertLe(_post_tokenDecimals, _pre_tokenDecimals, "_tokenDecimals: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

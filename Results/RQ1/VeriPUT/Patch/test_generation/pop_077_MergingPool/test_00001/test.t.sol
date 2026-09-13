@@ -71,12 +71,12 @@ contract MergingPoolCovTest_MergingPool_addPoints_put2p1 is Test {
     assertEq(_post_totalPoints, _pre_totalPoints, "totalPoints: post == pre");
     assertEq(_post_rankedBattleAddress, _pre_rankedBattleAddress, "_rankedBattleAddress: post == pre");
     assertEq(_post_fighterPoints_tokenId, _pre_fighterPoints_tokenId, "fighterPoints[tokenId]: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_totalPoints, _pre_totalPoints, "totalPoints: post >= pre");
+    assertLe(_post_totalPoints, _pre_totalPoints, "totalPoints: post <= pre");
+    assertGe(_post_rankedBattleAddress, _pre_rankedBattleAddress, "_rankedBattleAddress: post >= pre");
+    assertLe(_post_rankedBattleAddress, _pre_rankedBattleAddress, "_rankedBattleAddress: post <= pre");
+    assertGe(_post_fighterPoints_tokenId, _pre_fighterPoints_tokenId, "fighterPoints[tokenId]: post >= pre");
+    assertLe(_post_fighterPoints_tokenId, _pre_fighterPoints_tokenId, "fighterPoints[tokenId]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

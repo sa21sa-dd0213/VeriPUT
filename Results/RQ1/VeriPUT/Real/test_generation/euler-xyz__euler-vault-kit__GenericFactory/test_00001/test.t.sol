@@ -113,18 +113,18 @@ contract GenericFactoryCovTest_GenericFactory_createProxy_put2p1 is Test {
     assertEq(_post_proxyLookup_desiredImplementation__upgradeable, _pre_proxyLookup_desiredImplementation__upgradeable, "proxyLookup[desiredImplementation].upgradeable: post == pre");
     assertEq(_post_proxyLookup_state_implementation__upgradeable, _pre_proxyLookup_state_implementation__upgradeable, "proxyLookup[state.implementation].upgradeable: post == pre");
     assertEq(_post_proxyLookup_state_upgradeAdmin__upgradeable, _pre_proxyLookup_state_upgradeAdmin__upgradeable, "proxyLookup[state.upgradeAdmin].upgradeable: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_reentrancyLock, _pre_reentrancyLock, "reentrancyLock: post >= pre");
+    assertLe(_post_reentrancyLock, _pre_reentrancyLock, "reentrancyLock: post <= pre");
+    assertGe(_post_implementation, _pre_implementation, "implementation: post >= pre");
+    assertLe(_post_implementation, _pre_implementation, "implementation: post <= pre");
+    assertGe(_post_proxyLookup_msg_sender__implementation, _pre_proxyLookup_msg_sender__implementation, "proxyLookup[msg.sender].implementation: post >= pre");
+    assertLe(_post_proxyLookup_msg_sender__implementation, _pre_proxyLookup_msg_sender__implementation, "proxyLookup[msg.sender].implementation: post <= pre");
+    assertGe(_post_proxyLookup_desiredImplementation__implementation, _pre_proxyLookup_desiredImplementation__implementation, "proxyLookup[desiredImplementation].implementation: post >= pre");
+    assertLe(_post_proxyLookup_desiredImplementation__implementation, _pre_proxyLookup_desiredImplementation__implementation, "proxyLookup[desiredImplementation].implementation: post <= pre");
+    assertGe(_post_proxyLookup_state_implementation__implementation, _pre_proxyLookup_state_implementation__implementation, "proxyLookup[state.implementation].implementation: post >= pre");
+    assertLe(_post_proxyLookup_state_implementation__implementation, _pre_proxyLookup_state_implementation__implementation, "proxyLookup[state.implementation].implementation: post <= pre");
+    assertGe(_post_proxyLookup_state_upgradeAdmin__implementation, _pre_proxyLookup_state_upgradeAdmin__implementation, "proxyLookup[state.upgradeAdmin].implementation: post >= pre");
+    assertLe(_post_proxyLookup_state_upgradeAdmin__implementation, _pre_proxyLookup_state_upgradeAdmin__implementation, "proxyLookup[state.upgradeAdmin].implementation: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

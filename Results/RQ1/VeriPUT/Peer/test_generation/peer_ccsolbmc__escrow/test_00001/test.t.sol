@@ -70,10 +70,10 @@ contract escrowCovTest_escrow_ReturnPayment_put2p1 is Test {
     assertEq(_post_buyer, _pre_buyer, "buyer: post == pre");
     assertEq(_post_seller, _pre_seller, "seller: post == pre");
     assertEq(_post_state, _pre_state, "state: post == pre");
-    
-    
-    
-    
+    assertGe(_post_buyer, _pre_buyer, "buyer: post >= pre");
+    assertLe(_post_buyer, _pre_buyer, "buyer: post <= pre");
+    assertGe(_post_seller, _pre_seller, "seller: post >= pre");
+    assertLe(_post_seller, _pre_seller, "seller: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

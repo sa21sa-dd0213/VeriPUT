@@ -67,8 +67,8 @@ contract Gift_1_ETHCovTest_Gift_1_ETH_PassHasBeenSet_put2p1 is Test {
     uint256 _post_hashPass = uint256(vm.load(address(c0), bytes32(uint256(1))));
     assertEq(_post_passHasBeenSet, _pre_passHasBeenSet, "passHasBeenSet: post == pre");
     assertEq(_post_hashPass, _pre_hashPass, "hashPass: post == pre");
-    
-    
+    assertGe(_post_hashPass, _pre_hashPass, "hashPass: post >= pre");
+    assertLe(_post_hashPass, _pre_hashPass, "hashPass: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

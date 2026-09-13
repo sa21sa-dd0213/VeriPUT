@@ -65,8 +65,8 @@ contract IdentityManagerCovTest_IdentityManager_getIdentity_put2p1 is Test {
     
     uint256 _post_index_account = uint256(vm.load(address(c0), keccak256(abi.encode(account, uint256(1)))));
     assertEq(_post_index_account, _pre_index_account, "_index[account]: post == pre");
-    
-    
+    assertGe(_post_index_account, _pre_index_account, "_index[account]: post >= pre");
+    assertLe(_post_index_account, _pre_index_account, "_index[account]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

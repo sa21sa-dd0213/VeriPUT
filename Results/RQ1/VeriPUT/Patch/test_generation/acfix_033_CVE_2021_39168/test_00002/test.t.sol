@@ -65,8 +65,8 @@ contract TimelockControllerCovTest_TimelockController_getTimestamp_put2p1 is Tes
     
     uint256 _post_timestamps_id = uint256(vm.load(address(c0), keccak256(abi.encode(bytes32(id), uint256(1)))));
     assertEq(_post_timestamps_id, _pre_timestamps_id, "_timestamps[id]: post == pre");
-    
-    
+    assertGe(_post_timestamps_id, _pre_timestamps_id, "_timestamps[id]: post >= pre");
+    assertLe(_post_timestamps_id, _pre_timestamps_id, "_timestamps[id]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

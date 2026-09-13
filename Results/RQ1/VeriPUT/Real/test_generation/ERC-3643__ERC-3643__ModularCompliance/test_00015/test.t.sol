@@ -55,7 +55,7 @@ contract ModularComplianceCovTest_ModularCompliance_removeModule_put2p1 is Test 
     p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     _module = address(uint160(bound(uint256(uint160(_module)), 0, 1461501637330902918203684832716283019655932542975)));
 
-
+vm.mockCall(_module, abi.encodeWithSignature("unbindCompliance(address)"), bytes(""));
     
     uint256 _pre_owner = (uint256(vm.load(address(c0), bytes32(uint256(51)))) & 1461501637330902918203684832716283019655932542975);
     uint256 _pre_moduleBound__module = (uint256(vm.load(address(c0), keccak256(abi.encode(_module, uint256(103))))) & 255);
@@ -69,8 +69,8 @@ contract ModularComplianceCovTest_ModularCompliance_removeModule_put2p1 is Test 
     uint256 _post_moduleBound__module = (uint256(vm.load(address(c0), keccak256(abi.encode(_module, uint256(103))))) & 255);
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
     assertEq(_post_moduleBound__module, _pre_moduleBound__module, "_moduleBound[_module]: post == pre");
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

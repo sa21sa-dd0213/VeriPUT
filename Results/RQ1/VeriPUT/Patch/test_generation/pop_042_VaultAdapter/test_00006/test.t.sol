@@ -5,7 +5,7 @@ pragma solidity >=0.8.0;
 import {Test} from "forge-std/Test.sol";
 import {VaultAdapter, IVaultAdapter} from "../src/flat.sol";
 
-contract VaultAdapterCovTest_VaultAdapter_setSlopes_concrete14_fb is Test {
+contract VaultAdapterCovTest_VaultAdapter_setSlopes_concrete13_fb is Test {
   VaultAdapter c0;
   function setUp() public {
     c0 = new VaultAdapter();

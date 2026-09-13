@@ -89,9 +89,9 @@ contract IdentityCovTest_0_Identity_hasPermission_put6p1 is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(1461501637330902918203684832716283019655932542974) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(1461501637330902918203684832716283019655932542974), "entry pin state._owner did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     uint256 _pre_owner = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
     uint256 _pre_approvedCallers_caller = (uint256(vm.load(address(c0), keccak256(abi.encode(caller, uint256(0))))) & 255);
@@ -109,19 +109,19 @@ contract IdentityCovTest_0_Identity_hasPermission_put6p1 is Test {
     
     if (p_msg_sender == address(uint160(0)) && caller == address(uint160(1461501637330902918203684832716283019655932542975))) {
       assertEq(_put_ret, false, "fixed witness return");
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(1461501637330902918203684832716283019655932542974), "fixed witness state");
     }
     
     uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
     uint256 _post_approvedCallers_caller = (uint256(vm.load(address(c0), keccak256(abi.encode(caller, uint256(0))))) & 255);
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
     assertEq(_post_approvedCallers_caller, _pre_approvedCallers_caller, "_approvedCallers[caller]: post == pre");
-    
-    
-    
-    
+    assertEq(_post_owner, _pre_owner, "_owner: post == state._owner");
+    assertGe(_post_owner, 0, "_owner: post in [0, pre]");
+    assertLe(_post_owner, _pre_owner, "_owner: post in [0, pre]");
+    assertGe(_post_owner, 0, "_owner: post in [0, 1461501637330902918203684832716283019655932542974]");
     assertLe(_post_owner, 1461501637330902918203684832716283019655932542974, "_owner: post in [0, 1461501637330902918203684832716283019655932542974]");
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]");
     unchecked { assertLe(_post_owner, (uint256(0) + uint256(1461501637330902918203684832716283019655932542975)), "_owner: post in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]"); }
     assertFalse(_put_ret, "return: return == false");
     
@@ -165,9 +165,9 @@ contract IdentityCovTest_0_Identity_hasPermission_concrete6p1__basis_root__W is 
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(1461501637330902918203684832716283019655932542974) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(1461501637330902918203684832716283019655932542974), "entry pin state._owner did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
@@ -181,7 +181,7 @@ contract IdentityCovTest_0_Identity_hasPermission_concrete6p1__basis_root__W is 
     bool _veriput_concrete_return = c0.hasPermission(address(uint160(1461501637330902918203684832716283019655932542975)));
     assertEq(_veriput_concrete_return, false, "fixed witness return must match");
     uint256 _veriput_fixed_state_owner_0 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_owner_0, uint256(1461501637330902918203684832716283019655932542974), "fixed witness state");
   }
 }
 

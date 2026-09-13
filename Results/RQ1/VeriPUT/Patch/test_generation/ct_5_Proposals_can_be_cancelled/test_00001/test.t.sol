@@ -74,12 +74,12 @@ contract DAOCovTest_DAO_cancelProposal_put2p1 is Test {
     assertEq(_post_mapPID_finalising_oldProposalID, _pre_mapPID_finalising_oldProposalID, "mapPID_finalising[oldProposalID]: post == pre");
     assertEq(_post_mapPID_votes_newProposalID, _pre_mapPID_votes_newProposalID, "mapPID_votes[newProposalID]: post == pre");
     assertEq(_post_mapPID_votes_oldProposalID, _pre_mapPID_votes_oldProposalID, "mapPID_votes[oldProposalID]: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_VAULT, _pre_VAULT, "VAULT: post >= pre");
+    assertLe(_post_VAULT, _pre_VAULT, "VAULT: post <= pre");
+    assertGe(_post_mapPID_votes_newProposalID, _pre_mapPID_votes_newProposalID, "mapPID_votes[newProposalID]: post >= pre");
+    assertLe(_post_mapPID_votes_newProposalID, _pre_mapPID_votes_newProposalID, "mapPID_votes[newProposalID]: post <= pre");
+    assertGe(_post_mapPID_votes_oldProposalID, _pre_mapPID_votes_oldProposalID, "mapPID_votes[oldProposalID]: post >= pre");
+    assertLe(_post_mapPID_votes_oldProposalID, _pre_mapPID_votes_oldProposalID, "mapPID_votes[oldProposalID]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

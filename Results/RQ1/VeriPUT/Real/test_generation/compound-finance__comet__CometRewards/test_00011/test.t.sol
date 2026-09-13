@@ -98,13 +98,13 @@ contract CometRewardsCovTest_0_CometRewards_transferGovernor_put6p1_p1_part_part
     try c0.transferGovernor(newGovernor) {} catch { _put_ok = false; }
     
     if (p_msg_sender == address(uint160(2147483647)) && newGovernor == address(uint160(0))) {
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
     
     uint256 _post_governor = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_governor, _pre_governor, "governor: post == pre");
-    
-    
+    assertGe(_post_governor, _pre_governor, "governor: post >= pre");
+    assertLe(_post_governor, _pre_governor, "governor: post <= pre");
     
     assertFalse(_put_ok, "path enc=6p1_part_part0_r exits through a REVERT: the call must fail on the unmodified contract");
   }
@@ -147,9 +147,9 @@ contract CometRewardsCovTest_0_CometRewards_transferGovernor_concrete6p1__basis_
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.governor did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(57896044618658097711785492504343953926634992332820282019728792003956564819969);
@@ -167,7 +167,7 @@ contract CometRewardsCovTest_0_CometRewards_transferGovernor_concrete6p1__basis_
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_governor_1 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_governor_1, uint256(0), "fixed witness state");
   }
 }
 

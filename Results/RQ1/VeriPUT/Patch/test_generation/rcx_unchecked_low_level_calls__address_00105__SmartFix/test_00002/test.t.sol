@@ -99,18 +99,18 @@ contract EBUCovTest_EBU_transfer_put6p1 is Test {
     try c0.transfer(_tos, v) {} catch { _put_ok = false; }
     
     if (true) {
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(179928555708628871708415600994074077805973412131), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(865425485585769974049089044510914178452745414345), "fixed witness state");
     }
     
     uint256 _post_from = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     uint256 _post_caddress = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_from, _pre_from, "from: post == pre");
     assertEq(_post_caddress, _pre_caddress, "caddress: post == pre");
-    
-    
-    
-    
+    assertGe(_post_from, _pre_from, "from: post >= pre");
+    assertLe(_post_from, _pre_from, "from: post <= pre");
+    assertGe(_post_caddress, _pre_caddress, "caddress: post >= pre");
+    assertLe(_post_caddress, _pre_caddress, "caddress: post <= pre");
     
     assertFalse(_put_ok, "path enc=6p1 exits through a REVERT: the call must fail on the unmodified contract");
   }
@@ -144,15 +144,15 @@ contract EBUCovTest_EBU_transfer_concrete6p1__basis_root__W is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(179928555708628871708415600994074077805973412131) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(179928555708628871708415600994074077805973412131), "entry pin state.caddress did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(865425485585769974049089044510914178452745414345) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(865425485585769974049089044510914178452745414345), "entry pin state.from did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -169,8 +169,8 @@ contract EBUCovTest_EBU_transfer_concrete6p1__basis_root__W is Test {
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_caddress_0 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_caddress_0, uint256(179928555708628871708415600994074077805973412131), "fixed witness state");
     uint256 _veriput_fixed_state_from_1 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_from_1, uint256(865425485585769974049089044510914178452745414345), "fixed witness state");
   }
 }

@@ -70,10 +70,10 @@ contract GenericFactoryCovTest_GenericFactory_getProxyConfig_put2p1 is Test {
     assertEq(_post_implementation, _pre_implementation, "implementation: post == pre");
     assertEq(_post_proxyLookup_proxy__implementation, _pre_proxyLookup_proxy__implementation, "proxyLookup[proxy].implementation: post == pre");
     assertEq(_post_proxyLookup_proxy__upgradeable, _pre_proxyLookup_proxy__upgradeable, "proxyLookup[proxy].upgradeable: post == pre");
-    
-    
-    
-    
+    assertGe(_post_implementation, _pre_implementation, "implementation: post >= pre");
+    assertLe(_post_implementation, _pre_implementation, "implementation: post <= pre");
+    assertGe(_post_proxyLookup_proxy__implementation, _pre_proxyLookup_proxy__implementation, "proxyLookup[proxy].implementation: post >= pre");
+    assertLe(_post_proxyLookup_proxy__implementation, _pre_proxyLookup_proxy__implementation, "proxyLookup[proxy].implementation: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

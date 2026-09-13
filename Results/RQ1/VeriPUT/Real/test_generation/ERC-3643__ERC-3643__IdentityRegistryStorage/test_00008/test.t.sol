@@ -71,12 +71,12 @@ contract IdentityRegistryStorageCovTest_IdentityRegistryStorage_modifyStoredIden
     assertEq(_post_identities_msg_sender__investorCountry, _pre_identities_msg_sender__investorCountry, "_identities[msg.sender].investorCountry: post == pre");
     assertEq(_post_identities__userAddress__investorCountry, _pre_identities__userAddress__investorCountry, "_identities[_userAddress].investorCountry: post == pre");
     assertEq(_post_identities_state__owner__investorCountry, _pre_identities_state__owner__investorCountry, "_identities[state._owner].investorCountry: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_identities_msg_sender__investorCountry, _pre_identities_msg_sender__investorCountry, "_identities[msg.sender].investorCountry: post >= pre");
+    assertLe(_post_identities_msg_sender__investorCountry, _pre_identities_msg_sender__investorCountry, "_identities[msg.sender].investorCountry: post <= pre");
+    assertGe(_post_identities__userAddress__investorCountry, _pre_identities__userAddress__investorCountry, "_identities[_userAddress].investorCountry: post >= pre");
+    assertLe(_post_identities__userAddress__investorCountry, _pre_identities__userAddress__investorCountry, "_identities[_userAddress].investorCountry: post <= pre");
+    assertGe(_post_identities_state__owner__investorCountry, _pre_identities_state__owner__investorCountry, "_identities[state._owner].investorCountry: post >= pre");
+    assertLe(_post_identities_state__owner__investorCountry, _pre_identities_state__owner__investorCountry, "_identities[state._owner].investorCountry: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -75,8 +75,8 @@ contract FlashGovernanceArbiterCovTest_FlashGovernanceArbiter_setGoverned_put2p1
     assertEq(_post_governed_msg_sender, _pre_governed_msg_sender, "governed[msg.sender]: post == pre");
     assertEq(_post_governed_state_DAO, _pre_governed_state_DAO, "governed[state.DAO]: post == pre");
     assertEq(_post_governed_state_flashGovernanceConfig_asset, _pre_governed_state_flashGovernanceConfig_asset, "governed[state.flashGovernanceConfig.asset]: post == pre");
-    
-    
+    assertGe(_post_DAO, _pre_DAO, "DAO: post >= pre");
+    assertLe(_post_DAO, _pre_DAO, "DAO: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

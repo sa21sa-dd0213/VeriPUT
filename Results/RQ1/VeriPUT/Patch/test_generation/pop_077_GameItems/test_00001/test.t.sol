@@ -66,8 +66,8 @@ contract GameItemsCovTest_GameItems_balanceOf_put2p1 is Test {
     
     uint256 _post_balances_id__account = uint256(vm.load(address(c0), keccak256(abi.encode(account, keccak256(abi.encode(id, uint256(0)))))));
     assertEq(_post_balances_id__account, _pre_balances_id__account, "_balances[id][account]: post == pre");
-    
-    
+    assertGe(_post_balances_id__account, _pre_balances_id__account, "_balances[id][account]: post >= pre");
+    assertLe(_post_balances_id__account, _pre_balances_id__account, "_balances[id][account]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

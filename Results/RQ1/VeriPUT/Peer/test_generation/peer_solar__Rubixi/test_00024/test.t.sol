@@ -5,7 +5,7 @@ pragma solidity >=0.8.0;
 import {Test} from "forge-std/Test.sol";
 import {Rubixi} from "../src/flat.sol";
 
-contract RubixiCovTest_Rubixi_participantDetails_put2p1 is Test {
+contract RubixiCovTest_Rubixi_numberOfParticipantsWaitingForPayout_put2p1 is Test {
   Rubixi c0;
   function setUp() public {
     c0 = new Rubixi();
@@ -52,18 +52,22 @@ contract RubixiCovTest_Rubixi_participantDetails_put2p1 is Test {
   
   
   
-  
-  
-  
-  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value, uint256 orderInPyramid) internal {
+  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value) internal {
     p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
     p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-    orderInPyramid = bound(orderInPyramid, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    
+    uint256 _pre_payoutOrder = uint256(vm.load(address(c0), bytes32(uint256(4))));
     
     
     vm.deal(p_msg_sender, p_msg_value);
     vm.prank(p_msg_sender);
-    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("participantDetails(uint256)", orderInPyramid));
+    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("numberOfParticipantsWaitingForPayout()"));
+    
+    uint256 _post_payoutOrder = uint256(vm.load(address(c0), bytes32(uint256(4))));
+    assertEq(_post_payoutOrder, _pre_payoutOrder, "payoutOrder: post == pre");
+    assertGe(_post_payoutOrder, _pre_payoutOrder, "payoutOrder: post >= pre");
+    assertLe(_post_payoutOrder, _pre_payoutOrder, "payoutOrder: post <= pre");
+    
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 
     
@@ -72,7 +76,7 @@ contract RubixiCovTest_Rubixi_participantDetails_put2p1 is Test {
 
 
   
-  function test_put_Rubixi_participantDetails_path2p1(address p_msg_sender, uint256 p_msg_value, uint256 orderInPyramid) public {
-    _veriput_parameterized(p_msg_sender, p_msg_value, orderInPyramid);
+  function test_put_Rubixi_numberOfParticipantsWaitingForPayout_path2p1(address p_msg_sender, uint256 p_msg_value) public {
+    _veriput_parameterized(p_msg_sender, p_msg_value);
   }
 }

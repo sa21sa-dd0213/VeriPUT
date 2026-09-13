@@ -87,9 +87,9 @@ contract EtherCartelCovTest_EtherCartel_DrugDealer_put6p1 is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
       _w = (_w & ~uint256(374144419156711147060143317175368453031918731001600)) | ((uint256(763129487496590480389819414309948220491527772710) & 1461501637330902918203684832716283019655932542975) << 8);
-
+      vm.store(address(c0), bytes32(uint256(4)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(4)))) >> 8) & 1461501637330902918203684832716283019655932542975), uint256(763129487496590480389819414309948220491527772710), "entry pin state.ceoAddress did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     uint256 _pre_ceoAddress = ((uint256(vm.load(address(c0), bytes32(uint256(4)))) >> 8) & 1461501637330902918203684832716283019655932542975);
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
@@ -106,19 +106,19 @@ contract EtherCartelCovTest_EtherCartel_DrugDealer_put6p1 is Test {
     try c0.DrugDealer() {} catch { _put_ok = false; }
     
     if (p_msg_sender == address(uint160(4294967295))) {
-
-
-
-
-
-
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(86400), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(10000), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(5000), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(300), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(4)))) >> 8) & 1461501637330902918203684832716283019655932542975), uint256(763129487496590480389819414309948220491527772710), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(4)))) & 255), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(9)))), uint256(0), "fixed witness state");
     }
     
     uint256 _post_ceoAddress = ((uint256(vm.load(address(c0), bytes32(uint256(4)))) >> 8) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_ceoAddress, _pre_ceoAddress, "ceoAddress: post == pre");
-    
-    
+    assertGe(_post_ceoAddress, _pre_ceoAddress, "ceoAddress: post >= pre");
+    assertLe(_post_ceoAddress, _pre_ceoAddress, "ceoAddress: post <= pre");
     
     assertFalse(_put_ok, "path enc=6p1 exits through a REVERT: the call must fail on the unmodified contract");
   }
@@ -150,45 +150,45 @@ contract EtherCartelCovTest_EtherCartel_DrugDealer_concrete6p1__basis_root__W is
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(86400) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(86400), "entry pin state.DRUGS_TO_PRODUCE_1KILO did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(10000) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(10000), "entry pin state.PSN did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(3))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(5000) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(3)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(5000), "entry pin state.PSNH did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(300) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(300), "entry pin state.STARTING_KILOS did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
       _w = (_w & ~uint256(374144419156711147060143317175368453031918731001600)) | ((uint256(763129487496590480389819414309948220491527772710) & 1461501637330902918203684832716283019655932542975) << 8);
-
+      vm.store(address(c0), bytes32(uint256(4)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(4)))) >> 8) & 1461501637330902918203684832716283019655932542975), uint256(763129487496590480389819414309948220491527772710), "entry pin state.ceoAddress did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(4)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(4)))) & 255), uint256(0), "entry pin state.initialized did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(9))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(9)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(9)))), uint256(0), "entry pin state.marketDrugs did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
@@ -205,19 +205,19 @@ contract EtherCartelCovTest_EtherCartel_DrugDealer_concrete6p1__basis_root__W is
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_DRUGS_TO_PRODUCE_1KILO_0 = uint256(vm.load(address(c0), bytes32(uint256(0))));
-
+    assertEq(_veriput_fixed_state_DRUGS_TO_PRODUCE_1KILO_0, uint256(86400), "fixed witness state");
     uint256 _veriput_fixed_state_PSN_1 = uint256(vm.load(address(c0), bytes32(uint256(2))));
-
+    assertEq(_veriput_fixed_state_PSN_1, uint256(10000), "fixed witness state");
     uint256 _veriput_fixed_state_PSNH_2 = uint256(vm.load(address(c0), bytes32(uint256(3))));
-
+    assertEq(_veriput_fixed_state_PSNH_2, uint256(5000), "fixed witness state");
     uint256 _veriput_fixed_state_STARTING_KILOS_3 = uint256(vm.load(address(c0), bytes32(uint256(1))));
-
+    assertEq(_veriput_fixed_state_STARTING_KILOS_3, uint256(300), "fixed witness state");
     uint256 _veriput_fixed_state_ceoAddress_4 = ((uint256(vm.load(address(c0), bytes32(uint256(4)))) >> 8) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_ceoAddress_4, uint256(763129487496590480389819414309948220491527772710), "fixed witness state");
     uint256 _veriput_fixed_state_initialized_5 = (uint256(vm.load(address(c0), bytes32(uint256(4)))) & 255);
-
+    assertEq(_veriput_fixed_state_initialized_5, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_marketDrugs_6 = uint256(vm.load(address(c0), bytes32(uint256(9))));
-
+    assertEq(_veriput_fixed_state_marketDrugs_6, uint256(0), "fixed witness state");
   }
   
   

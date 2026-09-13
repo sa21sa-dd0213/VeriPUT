@@ -70,8 +70,8 @@ contract MONEY_BOXCovTest_MONEY_BOX_SetMinSum_put2p1 is Test {
     assertEq(_post_MinSum, _pre_MinSum, "MinSum: post == pre");
     assertEq(_post_intitalized, _pre_intitalized, "intitalized: post == pre");
     assertEq(_post_locked, _pre_locked, "locked_: post == pre");
-    
-    
+    assertGe(_post_MinSum, _pre_MinSum, "MinSum: post >= pre");
+    assertLe(_post_MinSum, _pre_MinSum, "MinSum: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

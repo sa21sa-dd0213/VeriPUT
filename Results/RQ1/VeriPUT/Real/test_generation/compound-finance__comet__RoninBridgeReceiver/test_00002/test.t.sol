@@ -88,14 +88,14 @@ contract RoninBridgeReceiverCovTest_RoninBridgeReceiver_state_put2p1 is Test {
     assertEq(_post_proposals_proposalId__eta, _pre_proposals_proposalId__eta, "proposals[proposalId].eta: post == pre");
     assertEq(_post_proposals_proposalId__executed, _pre_proposals_proposalId__executed, "proposals[proposalId].executed: post == pre");
     assertEq(_post_proposals_proposalId__id, _pre_proposals_proposalId__id, "proposals[proposalId].id: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_localTimelock, _pre_localTimelock, "localTimelock: post >= pre");
+    assertLe(_post_localTimelock, _pre_localTimelock, "localTimelock: post <= pre");
+    assertGe(_post_proposalCount, _pre_proposalCount, "proposalCount: post >= pre");
+    assertLe(_post_proposalCount, _pre_proposalCount, "proposalCount: post <= pre");
+    assertGe(_post_proposals_proposalId__eta, _pre_proposals_proposalId__eta, "proposals[proposalId].eta: post >= pre");
+    assertLe(_post_proposals_proposalId__eta, _pre_proposals_proposalId__eta, "proposals[proposalId].eta: post <= pre");
+    assertGe(_post_proposals_proposalId__id, _pre_proposals_proposalId__id, "proposals[proposalId].id: post >= pre");
+    assertLe(_post_proposals_proposalId__id, _pre_proposals_proposalId__id, "proposals[proposalId].id: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

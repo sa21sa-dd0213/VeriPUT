@@ -105,13 +105,13 @@ contract GuessTheNumberChallengeCovTest_GuessTheNumberChallenge_guess_put2p1 is 
     try c0.guess{value: p_msg_value}(n) {} catch { _put_ok = false; }
     
     if (p_msg_sender == address(uint160(0)) && p_msg_value == uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) && n == uint8(0)) {
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255), uint256(42), "fixed witness state");
     }
     
     uint256 _post_answer = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255);
     assertEq(_post_answer, _pre_answer, "answer: post == pre");
-    
-    
+    assertGe(_post_answer, _pre_answer, "answer: post >= pre");
+    assertLe(_post_answer, _pre_answer, "answer: post <= pre");
     
     assertFalse(_put_ok, "path enc=2p1 exits through a REVERT: the call must fail on the unmodified contract");
   }

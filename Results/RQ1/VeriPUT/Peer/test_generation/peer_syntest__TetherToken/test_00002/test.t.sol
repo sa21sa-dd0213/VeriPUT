@@ -32,7 +32,7 @@ contract TetherTokenCovTest_1 is Test {
   
 }
 
-contract TetherTokenCovTest_2_TetherToken_setParams_concrete30_fb is Test {
+contract TetherTokenCovTest_2 is Test {
   TetherToken c0;
   function setUp() public {
     vm.startPrank(address(uint160(4294967295)), address(uint160(4294967295)));
@@ -41,34 +41,9 @@ contract TetherTokenCovTest_2_TetherToken_setParams_concrete30_fb is Test {
   }
   
   
-  function test_cov_2() public {
-    vm.prank(address(uint160(4294967295)));
-    
-    bool _veriput_concrete_completed = false;
-    try c0.setParams(16, 220855883097298041197912187592864814478435487109452369765200775161577470) {
-      _veriput_concrete_completed = true;
-    } catch {}
-    assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
-    uint256 _veriput_fixed_state_totalSupply_148_1 = uint256(vm.load(address(c0), bytes32(uint256(1))));
-
-    uint256 _veriput_fixed_state_basisPointsRate_228_3 = uint256(vm.load(address(c0), bytes32(uint256(3))));
-
-    uint256 _veriput_fixed_state_decimals_4 = uint256(vm.load(address(c0), bytes32(uint256(9))));
-
-    uint256 _veriput_fixed_state_deprecated_5 = ((uint256(vm.load(address(c0), bytes32(uint256(10)))) >> 160) & 255);
-
-    uint256 _veriput_fixed_state_maximumFee_231_6 = uint256(vm.load(address(c0), bytes32(uint256(4))));
-
-    uint256 _veriput_fixed_state_owner_101_7 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
-    uint256 _veriput_fixed_state_paused_608_8 = ((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 160) & 255);
-
-    uint256 _veriput_fixed_state_upgradedAddress_9 = (uint256(vm.load(address(c0), bytes32(uint256(10)))) & 1461501637330902918203684832716283019655932542975);
-
-  }
 }
 
-contract TetherTokenCovTest_3 is Test {
+contract TetherTokenCovTest_3_TetherToken_setParams_concrete14_fb is Test {
   TetherToken c0;
   function setUp() public {
     vm.startPrank(address(uint160(4294967295)), address(uint160(4294967295)));
@@ -77,6 +52,31 @@ contract TetherTokenCovTest_3 is Test {
   }
   
   
+  function test_cov_3() public {
+    vm.prank(address(uint160(4294967295)));
+    
+    bool _veriput_concrete_completed = false;
+    try c0.setParams(57896044618658097711785492504343953926634992332820282019728792003956564819984, 1) {
+      _veriput_concrete_completed = true;
+    } catch {}
+    assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
+    uint256 _veriput_fixed_state_totalSupply_148_1 = uint256(vm.load(address(c0), bytes32(uint256(1))));
+    assertEq(_veriput_fixed_state_totalSupply_148_1, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_basisPointsRate_228_3 = uint256(vm.load(address(c0), bytes32(uint256(3))));
+    assertEq(_veriput_fixed_state_basisPointsRate_228_3, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_decimals_4 = uint256(vm.load(address(c0), bytes32(uint256(9))));
+    assertEq(_veriput_fixed_state_decimals_4, uint256(7), "fixed witness state");
+    uint256 _veriput_fixed_state_deprecated_5 = ((uint256(vm.load(address(c0), bytes32(uint256(10)))) >> 160) & 255);
+    assertEq(_veriput_fixed_state_deprecated_5, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_maximumFee_231_6 = uint256(vm.load(address(c0), bytes32(uint256(4))));
+    assertEq(_veriput_fixed_state_maximumFee_231_6, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_owner_101_7 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_veriput_fixed_state_owner_101_7, uint256(4294967295), "fixed witness state");
+    uint256 _veriput_fixed_state_paused_608_8 = ((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 160) & 255);
+    assertEq(_veriput_fixed_state_paused_608_8, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_upgradedAddress_9 = (uint256(vm.load(address(c0), bytes32(uint256(10)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_veriput_fixed_state_upgradedAddress_9, uint256(0), "fixed witness state");
+  }
   
   
 }

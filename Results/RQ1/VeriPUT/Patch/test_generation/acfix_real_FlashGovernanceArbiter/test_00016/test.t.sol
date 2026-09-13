@@ -74,12 +74,12 @@ contract FlashGovernanceArbiterCovTest_FlashGovernanceArbiter_withdrawGovernance
     assertEq(_post_pendingFlashDecision_targetContract__msg_sender__asset, _pre_pendingFlashDecision_targetContract__msg_sender__asset, "pendingFlashDecision[targetContract][msg.sender].asset: post == pre");
     assertEq(_post_pendingFlashDecision_targetContract__msg_sender__assetBurnable, _pre_pendingFlashDecision_targetContract__msg_sender__assetBurnable, "pendingFlashDecision[targetContract][msg.sender].assetBurnable: post == pre");
     assertEq(_post_pendingFlashDecision_targetContract__msg_sender__unlockTime, _pre_pendingFlashDecision_targetContract__msg_sender__unlockTime, "pendingFlashDecision[targetContract][msg.sender].unlockTime: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_pendingFlashDecision_targetContract__msg_sender__amount, _pre_pendingFlashDecision_targetContract__msg_sender__amount, "pendingFlashDecision[targetContract][msg.sender].amount: post >= pre");
+    assertLe(_post_pendingFlashDecision_targetContract__msg_sender__amount, _pre_pendingFlashDecision_targetContract__msg_sender__amount, "pendingFlashDecision[targetContract][msg.sender].amount: post <= pre");
+    assertGe(_post_pendingFlashDecision_targetContract__msg_sender__asset, _pre_pendingFlashDecision_targetContract__msg_sender__asset, "pendingFlashDecision[targetContract][msg.sender].asset: post >= pre");
+    assertLe(_post_pendingFlashDecision_targetContract__msg_sender__asset, _pre_pendingFlashDecision_targetContract__msg_sender__asset, "pendingFlashDecision[targetContract][msg.sender].asset: post <= pre");
+    assertGe(_post_pendingFlashDecision_targetContract__msg_sender__unlockTime, _pre_pendingFlashDecision_targetContract__msg_sender__unlockTime, "pendingFlashDecision[targetContract][msg.sender].unlockTime: post >= pre");
+    assertLe(_post_pendingFlashDecision_targetContract__msg_sender__unlockTime, _pre_pendingFlashDecision_targetContract__msg_sender__unlockTime, "pendingFlashDecision[targetContract][msg.sender].unlockTime: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

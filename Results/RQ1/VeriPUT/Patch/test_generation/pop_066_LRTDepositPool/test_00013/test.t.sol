@@ -64,8 +64,8 @@ contract LRTDepositPoolCovTest_LRTDepositPool_updateMaxNodeDelegatorCount_put2p1
     
     uint256 _post_maxNodeDelegatorCount = uint256(vm.load(address(c0), bytes32(uint256(151))));
     assertEq(_post_maxNodeDelegatorCount, _pre_maxNodeDelegatorCount, "maxNodeDelegatorCount: post == pre");
-    
-    
+    assertGe(_post_maxNodeDelegatorCount, _pre_maxNodeDelegatorCount, "maxNodeDelegatorCount: post >= pre");
+    assertLe(_post_maxNodeDelegatorCount, _pre_maxNodeDelegatorCount, "maxNodeDelegatorCount: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

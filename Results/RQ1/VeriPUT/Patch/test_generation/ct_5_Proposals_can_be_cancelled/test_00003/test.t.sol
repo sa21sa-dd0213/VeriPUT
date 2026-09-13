@@ -117,24 +117,24 @@ contract DAOCovTest_DAO_finaliseProposal_put2p1 is Test {
     assertEq(_post_mapPID_grant_proposalID__recipient, _pre_mapPID_grant_proposalID__recipient, "mapPID_grant[proposalID].recipient: post == pre");
     assertEq(_post_mapPID_votes_proposalID, _pre_mapPID_votes_proposalID, "mapPID_votes[proposalID]: post == pre");
     assertEq(_post_mapPID_finalised_proposalID, _pre_mapPID_finalised_proposalID, "mapPID_finalised[proposalID]: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_VADER, _pre_VADER, "VADER: post >= pre");
+    assertLe(_post_VADER, _pre_VADER, "VADER: post <= pre");
+    assertGe(_post_USDV, _pre_USDV, "USDV: post >= pre");
+    assertLe(_post_USDV, _pre_USDV, "USDV: post <= pre");
+    assertGe(_post_VAULT, _pre_VAULT, "VAULT: post >= pre");
+    assertLe(_post_VAULT, _pre_VAULT, "VAULT: post <= pre");
+    assertGe(_post_coolOffPeriod, _pre_coolOffPeriod, "coolOffPeriod: post >= pre");
+    assertLe(_post_coolOffPeriod, _pre_coolOffPeriod, "coolOffPeriod: post <= pre");
+    assertGe(_post_mapPID_timeStart_proposalID, _pre_mapPID_timeStart_proposalID, "mapPID_timeStart[proposalID]: post >= pre");
+    assertLe(_post_mapPID_timeStart_proposalID, _pre_mapPID_timeStart_proposalID, "mapPID_timeStart[proposalID]: post <= pre");
+    assertGe(_post_mapPID_address_proposalID, _pre_mapPID_address_proposalID, "mapPID_address[proposalID]: post >= pre");
+    assertLe(_post_mapPID_address_proposalID, _pre_mapPID_address_proposalID, "mapPID_address[proposalID]: post <= pre");
+    assertGe(_post_mapPID_grant_proposalID__amount, _pre_mapPID_grant_proposalID__amount, "mapPID_grant[proposalID].amount: post >= pre");
+    assertLe(_post_mapPID_grant_proposalID__amount, _pre_mapPID_grant_proposalID__amount, "mapPID_grant[proposalID].amount: post <= pre");
+    assertGe(_post_mapPID_grant_proposalID__recipient, _pre_mapPID_grant_proposalID__recipient, "mapPID_grant[proposalID].recipient: post >= pre");
+    assertLe(_post_mapPID_grant_proposalID__recipient, _pre_mapPID_grant_proposalID__recipient, "mapPID_grant[proposalID].recipient: post <= pre");
+    assertGe(_post_mapPID_votes_proposalID, _pre_mapPID_votes_proposalID, "mapPID_votes[proposalID]: post >= pre");
+    assertLe(_post_mapPID_votes_proposalID, _pre_mapPID_votes_proposalID, "mapPID_votes[proposalID]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

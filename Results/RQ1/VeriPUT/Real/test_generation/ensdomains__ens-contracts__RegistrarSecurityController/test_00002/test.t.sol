@@ -11,8 +11,8 @@ contract RegistrarSecurityControllerCovTest_RegistrarSecurityController_disableR
     c0 = new RegistrarSecurityController(BaseRegistrarImplementation(address(uint160(1000))));
     
     address _esbmc_ctor_state_mock_0_0 = address(BaseRegistrarImplementation(address(uint160(1000))));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("removeController(address)"), bytes(""));
   }
   
 
@@ -71,8 +71,8 @@ contract RegistrarSecurityControllerCovTest_RegistrarSecurityController_disableR
     uint256 _post_controllers_msg_sender = (uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(1))))) & 255);
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
     assertEq(_post_controllers_msg_sender, _pre_controllers_msg_sender, "controllers[msg.sender]: post == pre");
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

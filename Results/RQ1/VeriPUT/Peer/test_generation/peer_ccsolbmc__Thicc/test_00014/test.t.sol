@@ -101,22 +101,22 @@ contract ThiccCovTest_Thicc_fgh4_put2p1 is Test {
     assertEq(_post_totalSupply, _pre_totalSupply, "_totalSupply: post == pre");
     assertEq(_post_balances_state_communityMarketingAddress, _pre_balances_state_communityMarketingAddress, "_balances[state.communityMarketingAddress]: post == pre");
     assertEq(_post_balances_state_owner, _pre_balances_state_owner, "_balances[state.owner]: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_TokenHolderCount, _pre_TokenHolderCount, "TokenHolderCount: post >= pre");
+    assertLe(_post_TokenHolderCount, _pre_TokenHolderCount, "TokenHolderCount: post <= pre");
+    assertGe(_post_owner, _pre_owner, "owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "owner: post <= pre");
+    assertGe(_post_communityMarketingAddress, _pre_communityMarketingAddress, "communityMarketingAddress: post >= pre");
+    assertLe(_post_communityMarketingAddress, _pre_communityMarketingAddress, "communityMarketingAddress: post <= pre");
+    assertGe(_post_communityMarketing, _pre_communityMarketing, "communityMarketing: post >= pre");
+    assertLe(_post_communityMarketing, _pre_communityMarketing, "communityMarketing: post <= pre");
+    assertGe(_post_initialSupply, _pre_initialSupply, "initialSupply: post >= pre");
+    assertLe(_post_initialSupply, _pre_initialSupply, "initialSupply: post <= pre");
+    assertGe(_post_totalSupply, _pre_totalSupply, "_totalSupply: post >= pre");
+    assertLe(_post_totalSupply, _pre_totalSupply, "_totalSupply: post <= pre");
+    assertGe(_post_balances_state_communityMarketingAddress, _pre_balances_state_communityMarketingAddress, "_balances[state.communityMarketingAddress]: post >= pre");
+    assertLe(_post_balances_state_communityMarketingAddress, _pre_balances_state_communityMarketingAddress, "_balances[state.communityMarketingAddress]: post <= pre");
+    assertGe(_post_balances_state_owner, _pre_balances_state_owner, "_balances[state.owner]: post >= pre");
+    assertLe(_post_balances_state_owner, _pre_balances_state_owner, "_balances[state.owner]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

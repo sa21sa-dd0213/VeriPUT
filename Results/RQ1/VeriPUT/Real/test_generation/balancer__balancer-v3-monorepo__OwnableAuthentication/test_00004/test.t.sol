@@ -11,8 +11,8 @@ contract OwnableAuthenticationCovTest_OwnableAuthentication_getActionId_put3p1 i
     c0 = new OwnableAuthentication(IVault(address(uint160(1000))), address(uint160(1001)));
     
     address _esbmc_ctor_state_mock_0_0 = address(IVault(address(uint160(1000))));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("getAuthorizer()"), abi.encode(IAuthorizer(address(0))));
   }
   
 
@@ -93,8 +93,8 @@ contract OwnableAuthenticationCovTest_OwnableAuthentication_getActionId_put3p1 i
     
     if (p_msg_sender == address(uint160(0)) && selector == uint32(0)) {
       assertEq(_veriput_fixed_return_0, bytes32(uint256(24201403002378526000330214769598046255889419072459741877473969213245858009646)), "fixed witness return");
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
   }
 

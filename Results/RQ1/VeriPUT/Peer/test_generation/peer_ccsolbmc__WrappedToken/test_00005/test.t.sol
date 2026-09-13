@@ -65,8 +65,8 @@ contract WrappedTokenCovTest_WrappedToken_decimals_put2p1 is Test {
     
     uint256 _post_decimals = ((uint256(vm.load(address(c0), bytes32(uint256(9)))) >> 160) & 255);
     assertEq(_post_decimals, _pre_decimals, "decimals_: post == pre");
-    
-    
+    assertGe(_post_decimals, _pre_decimals, "decimals_: post >= pre");
+    assertLe(_post_decimals, _pre_decimals, "decimals_: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

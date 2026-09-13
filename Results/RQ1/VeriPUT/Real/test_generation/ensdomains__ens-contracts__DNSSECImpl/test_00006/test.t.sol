@@ -114,13 +114,13 @@ contract DNSSECImplCovTest_1_DNSSECImpl_setOwner_put6p1_p1_part_part0_w is Test 
     try c0.setOwner(newOwner) {} catch { _put_ok = false; }
     
     if (p_msg_sender == address(uint160(4294967295)) && newOwner == address(uint160(0))) {
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(2147483647), "fixed witness state");
     }
     
     uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_owner, _pre_owner, "owner: post == pre");
-    
-    
+    assertGe(_post_owner, _pre_owner, "owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "owner: post <= pre");
     
     assertFalse(_put_ok, "path enc=6p1_part_part0_w exits through a REVERT: the call must fail on the unmodified contract");
   }
@@ -167,9 +167,9 @@ contract DNSSECImplCovTest_1_DNSSECImpl_setOwner_concrete6p1__basis_part0_w__W i
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(2147483647) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(2147483647), "entry pin state.owner$46 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -187,6 +187,6 @@ contract DNSSECImplCovTest_1_DNSSECImpl_setOwner_concrete6p1__basis_part0_w__W i
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_owner_46_6 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_owner_46_6, uint256(2147483647), "fixed witness state");
   }
 }

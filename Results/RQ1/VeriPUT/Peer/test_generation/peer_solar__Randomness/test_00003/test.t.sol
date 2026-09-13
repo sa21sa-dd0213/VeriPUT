@@ -73,10 +73,10 @@ contract RandomnessCovTest_Randomness_reveal_put2p1 is Test {
     assertEq(_post_seedSet, _pre_seedSet, "seedSet: post == pre");
     assertEq(_post_betsClosed, _pre_betsClosed, "betsClosed: post == pre");
     assertEq(_post_storedBlockNumber, _pre_storedBlockNumber, "storedBlockNumber: post == pre");
-    
-    
-    
-    
+    assertGe(_post_sealedSeed, _pre_sealedSeed, "sealedSeed: post >= pre");
+    assertLe(_post_sealedSeed, _pre_sealedSeed, "sealedSeed: post <= pre");
+    assertGe(_post_storedBlockNumber, _pre_storedBlockNumber, "storedBlockNumber: post >= pre");
+    assertLe(_post_storedBlockNumber, _pre_storedBlockNumber, "storedBlockNumber: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

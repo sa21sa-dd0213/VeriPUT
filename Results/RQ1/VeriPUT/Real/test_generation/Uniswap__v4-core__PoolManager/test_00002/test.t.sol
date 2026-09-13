@@ -99,8 +99,8 @@ contract PoolManagerCovTest_PoolManager_supportsInterface_put3p1 is Test {
     
     if (p_msg_sender == address(uint160(0)) && interfaceId == uint32(33540519)) {
       assertEq(_put_ret, true, "fixed witness return");
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
     
     assertTrue(_put_ret, "return: return == true");
@@ -138,15 +138,15 @@ contract PoolManagerCovTest_PoolManager_supportsInterface_concrete3p1__basis_roo
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.owner$156 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.protocolFeeController$972 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(57896044618658097711785492504343953926634992332820282019728792003956564819969);
@@ -161,9 +161,9 @@ contract PoolManagerCovTest_PoolManager_supportsInterface_concrete3p1__basis_roo
     bool _veriput_concrete_return = c0.supportsInterface(bytes4(uint32(33540519)));
     assertEq(_veriput_concrete_return, true, "fixed witness return must match");
     uint256 _veriput_fixed_state_owner_156_3 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_owner_156_3, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_protocolFeeController_972_4 = (uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_protocolFeeController_972_4, uint256(0), "fixed witness state");
   }
   
   

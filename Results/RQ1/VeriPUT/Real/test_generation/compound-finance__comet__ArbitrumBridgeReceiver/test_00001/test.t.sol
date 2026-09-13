@@ -71,10 +71,10 @@ contract ArbitrumBridgeReceiverCovTest_ArbitrumBridgeReceiver_initialize_put2p1 
     assertEq(_post_govTimelock, _pre_govTimelock, "govTimelock: post == pre");
     assertEq(_post_localTimelock, _pre_localTimelock, "localTimelock: post == pre");
     assertEq(_post_initialized, _pre_initialized, "initialized: post == pre");
-    
-    
-    
-    
+    assertGe(_post_govTimelock, _pre_govTimelock, "govTimelock: post >= pre");
+    assertLe(_post_govTimelock, _pre_govTimelock, "govTimelock: post <= pre");
+    assertGe(_post_localTimelock, _pre_localTimelock, "localTimelock: post >= pre");
+    assertLe(_post_localTimelock, _pre_localTimelock, "localTimelock: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

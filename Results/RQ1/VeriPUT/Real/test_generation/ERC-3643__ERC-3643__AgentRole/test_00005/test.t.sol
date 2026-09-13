@@ -96,9 +96,9 @@ contract AgentRoleCovTest_0_AgentRole_addAgent_put63p1 is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(4294967295) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(4294967295), "entry pin state._owner$32 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     uint256 _pre_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     
@@ -125,7 +125,7 @@ contract AgentRoleCovTest_0_AgentRole_addAgent_put63p1 is Test {
       assertEq(_veriputFixedLogs[0].topics[0], keccak256("AgentAdded(address)"));
       assertEq(_veriputFixedLogs[0].topics[1], bytes32(uint256(uint160(address(uint160(1))))));
       assertEq(_veriputFixedLogs[0].data, abi.encode());
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(4294967295), "fixed witness state");
     }
     
     uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
@@ -133,42 +133,42 @@ contract AgentRoleCovTest_0_AgentRole_addAgent_put63p1 is Test {
     assertEq(_post_owner, uint256(uint160(address(uint160(4294967295)))), "_owner: post == msg.sender");
     unchecked { assertEq(_post_owner, (uint256(_pre_owner) / uint256(1)), "_owner: post == (pre / 1)"); }
     unchecked { assertEq(_post_owner, (uint256(4294967295) / uint256(1)), "_owner: post == (4294967295 / 1)"); }
-    
-    
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, pre]");
+    assertLe(_post_owner, _pre_owner, "_owner: post in [0, pre]");
+    assertGe(_post_owner, 0, "_owner: post in [0, 4294967295]");
     assertLe(_post_owner, 4294967295, "_owner: post in [0, 4294967295]");
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (pre + pre)]");
     unchecked { assertLe(_post_owner, (uint256(_pre_owner) + uint256(_pre_owner)), "_owner: post in [0, (pre + pre)]"); }
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (pre * pre)]");
     unchecked { assertLe(_post_owner, (uint256(_pre_owner) * uint256(_pre_owner)), "_owner: post in [0, (pre * pre)]"); }
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (pre + 1)]");
     unchecked { assertLe(_post_owner, (uint256(_pre_owner) + uint256(1)), "_owner: post in [0, (pre + 1)]"); }
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (pre + 4294967295)]");
     unchecked { assertLe(_post_owner, (uint256(_pre_owner) + uint256(4294967295)), "_owner: post in [0, (pre + 4294967295)]"); }
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (pre * 4294967295)]");
     unchecked { assertLe(_post_owner, (uint256(_pre_owner) * uint256(4294967295)), "_owner: post in [0, (pre * 4294967295)]"); }
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]");
     unchecked { assertLe(_post_owner, (uint256(0) + uint256(1461501637330902918203684832716283019655932542975)), "_owner: post in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]"); }
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (1 + 4294967295)]");
     unchecked { assertLe(_post_owner, (uint256(1) + uint256(4294967295)), "_owner: post in [0, (1 + 4294967295)]"); }
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (1461501637330902918203684832716283019655932542975 - pre)]");
     unchecked { assertLe(_post_owner, (uint256(1461501637330902918203684832716283019655932542975) - uint256(_pre_owner)), "_owner: post in [0, (1461501637330902918203684832716283019655932542975 - pre)]"); }
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (1461501637330902918203684832716283019655932542975 - 1)]");
     unchecked { assertLe(_post_owner, (uint256(1461501637330902918203684832716283019655932542975) - uint256(1)), "_owner: post in [0, (1461501637330902918203684832716283019655932542975 - 1)]"); }
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (1461501637330902918203684832716283019655932542975 - 4294967295)]");
     unchecked { assertLe(_post_owner, (uint256(1461501637330902918203684832716283019655932542975) - uint256(4294967295)), "_owner: post in [0, (1461501637330902918203684832716283019655932542975 - 4294967295)]"); }
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (4294967295 + 4294967295)]");
     unchecked { assertLe(_post_owner, (uint256(4294967295) + uint256(4294967295)), "_owner: post in [0, (4294967295 + 4294967295)]"); }
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (4294967295 * 4294967295)]");
     unchecked { assertLe(_post_owner, (uint256(4294967295) * uint256(4294967295)), "_owner: post in [0, (4294967295 * 4294967295)]"); }
-    
-    
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (pre / 1)]");
+    unchecked { assertLe(_post_owner, (uint256(_pre_owner) / uint256(1)), "_owner: post in [0, (pre / 1)]"); }
+    assertGe(_post_owner, 0, "_owner: post in [0, (1461501637330902918203684832716283019655932542975 / 1)]");
     unchecked { assertLe(_post_owner, (uint256(1461501637330902918203684832716283019655932542975) / uint256(1)), "_owner: post in [0, (1461501637330902918203684832716283019655932542975 / 1)]"); }
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (1461501637330902918203684832716283019655932542975 / 4294967295)]");
     unchecked { assertLe(_post_owner, (uint256(1461501637330902918203684832716283019655932542975) / uint256(4294967295)), "_owner: post in [0, (1461501637330902918203684832716283019655932542975 / 4294967295)]"); }
-    
-    
+    assertGe(_post_owner, 0, "_owner: post in [0, (4294967295 / 1)]");
+    unchecked { assertLe(_post_owner, (uint256(4294967295) / uint256(1)), "_owner: post in [0, (4294967295 / 1)]"); }
     
   }
 

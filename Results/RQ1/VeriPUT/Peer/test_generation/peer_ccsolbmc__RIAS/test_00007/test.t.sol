@@ -75,16 +75,16 @@ contract RIASCovTest_RIAS_ewge_put2p1 is Test {
     assertEq(_post_balances_state__owner, _pre_balances_state__owner, "_balances[state._owner]: post == pre");
     assertEq(_post_balances_state__tBlackAddress, _pre_balances_state__tBlackAddress, "_balances[state._tBlackAddress]: post == pre");
     assertEq(_post_balances_state__tBotAddress, _pre_balances_state__tBotAddress, "_balances[state._tBotAddress]: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_tTotal, _pre_tTotal, "_tTotal: post >= pre");
+    assertLe(_post_tTotal, _pre_tTotal, "_tTotal: post <= pre");
+    assertGe(_post_balances_msg_sender, _pre_balances_msg_sender, "_balances[msg.sender]: post >= pre");
+    assertLe(_post_balances_msg_sender, _pre_balances_msg_sender, "_balances[msg.sender]: post <= pre");
+    assertGe(_post_balances_state__owner, _pre_balances_state__owner, "_balances[state._owner]: post >= pre");
+    assertLe(_post_balances_state__owner, _pre_balances_state__owner, "_balances[state._owner]: post <= pre");
+    assertGe(_post_balances_state__tBlackAddress, _pre_balances_state__tBlackAddress, "_balances[state._tBlackAddress]: post >= pre");
+    assertLe(_post_balances_state__tBlackAddress, _pre_balances_state__tBlackAddress, "_balances[state._tBlackAddress]: post <= pre");
+    assertGe(_post_balances_state__tBotAddress, _pre_balances_state__tBotAddress, "_balances[state._tBotAddress]: post >= pre");
+    assertLe(_post_balances_state__tBotAddress, _pre_balances_state__tBotAddress, "_balances[state._tBotAddress]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

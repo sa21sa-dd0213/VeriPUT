@@ -16,16 +16,16 @@ contract BaseBulkerCovTest_BaseBulker_receive_put1p1 is Test {
     c0 = new BaseBulker(address(uint160(0)), payable(address(uint160(0))));
     
     address _esbmc_ctor_state_mock_0_0 = address(uint160(0));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("deposit()"), bytes(""));
     
     address _esbmc_ctor_state_mock_0_4 = address(uint160(0));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_4, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_4, abi.encodeWithSignature("approve(address,uint256)"), abi.encode(false));
     
     address _esbmc_ctor_state_mock_0_8 = address(uint160(0));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_8, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_8, abi.encodeWithSignature("withdraw(uint256)"), bytes(""));
   }
   
   
@@ -103,7 +103,7 @@ contract BaseBulkerCovTest_BaseBulker_receive_put1p1 is Test {
     (bool ok1, ) = address(c0).call(hex"");
     
     if (p_msg_sender == address(uint160(0))) {
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
     assertTrue(ok1, "covered receive/fallback path must return normally");
   }
@@ -130,16 +130,16 @@ contract BaseBulkerCovTest_BaseBulker_receive_concrete1p1__basis_root__W is Test
     c0 = new BaseBulker(address(uint160(0)), payable(address(uint160(0))));
     
     address _esbmc_ctor_state_mock_0_0 = address(uint160(0));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("deposit()"), bytes(""));
     
     address _esbmc_ctor_state_mock_0_4 = address(uint160(0));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_4, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_4, abi.encodeWithSignature("approve(address,uint256)"), abi.encode(false));
     
     address _esbmc_ctor_state_mock_0_8 = address(uint160(0));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_8, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_8, abi.encodeWithSignature("withdraw(uint256)"), bytes(""));
   }
   
   
@@ -147,9 +147,9 @@ contract BaseBulkerCovTest_BaseBulker_receive_concrete1p1__basis_root__W is Test
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.admin did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(57896044618658097711785492504343953926634992332820282019728792003956564819969);
     vm.roll(57896044618658097711785492504343953926634992332820282019728792003956564819969);
@@ -161,8 +161,8 @@ contract BaseBulkerCovTest_BaseBulker_receive_concrete1p1__basis_root__W is Test
     vm.coinbase(address(uint160(0)));
     vm.prank(address(uint160(0)), address(uint160(0)));
     (bool ok1, ) = address(c0).call(hex"");
-    
+    assertTrue(ok1, "covered receive/fallback path must return normally");
     uint256 _veriput_fixed_state_admin_6 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_admin_6, uint256(0), "fixed witness state");
   }
 }

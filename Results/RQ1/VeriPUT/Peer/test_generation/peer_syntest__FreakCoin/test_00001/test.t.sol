@@ -89,14 +89,14 @@ contract FreakCoinCovTest_FreakCoin_allowance_put2p1 is Test {
     assertEq(_post_info_initialSetup, _pre_info_initialSetup, "info.initialSetup: post == pre");
     assertEq(_post_info_totalSupply, _pre_info_totalSupply, "info.totalSupply: post == pre");
     assertEq(_post_info_uniswapV2PairAddress, _pre_info_uniswapV2PairAddress, "info.uniswapV2PairAddress: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_info_admin, _pre_info_admin, "info.admin: post >= pre");
+    assertLe(_post_info_admin, _pre_info_admin, "info.admin: post <= pre");
+    assertGe(_post_info_final_supply, _pre_info_final_supply, "info.final_supply: post >= pre");
+    assertLe(_post_info_final_supply, _pre_info_final_supply, "info.final_supply: post <= pre");
+    assertGe(_post_info_totalSupply, _pre_info_totalSupply, "info.totalSupply: post >= pre");
+    assertLe(_post_info_totalSupply, _pre_info_totalSupply, "info.totalSupply: post <= pre");
+    assertGe(_post_info_uniswapV2PairAddress, _pre_info_uniswapV2PairAddress, "info.uniswapV2PairAddress: post >= pre");
+    assertLe(_post_info_uniswapV2PairAddress, _pre_info_uniswapV2PairAddress, "info.uniswapV2PairAddress: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

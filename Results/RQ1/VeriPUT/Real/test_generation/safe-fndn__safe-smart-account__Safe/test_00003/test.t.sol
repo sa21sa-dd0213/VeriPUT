@@ -65,8 +65,8 @@ contract SafeCovTest_Safe_isModuleEnabled_put2p1 is Test {
     
     uint256 _post_modules_module = (uint256(vm.load(address(c0), keccak256(abi.encode(module, uint256(1))))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_modules_module, _pre_modules_module, "modules[module]: post == pre");
-    
-    
+    assertGe(_post_modules_module, _pre_modules_module, "modules[module]: post >= pre");
+    assertLe(_post_modules_module, _pre_modules_module, "modules[module]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -100,8 +100,8 @@ contract keepMyEtherCovTest_keepMyEther_fallback_put1p1 is Test {
     (bool ok1, ) = address(c0).call{value: 115792089237316195423570985008687907853269984665640564039457584007913129639934}(hex"deadbeef");
     
     if (p_msg_sender == address(uint160(0))) {
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(0)), uint256(1))))), uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934), "fixed witness state");
     }
     
     uint256 _post_balances_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(1)))));
@@ -140,9 +140,9 @@ contract keepMyEtherCovTest_keepMyEther_fallback_concrete1p1__basis_root__W is T
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255), uint256(0), "entry pin state.__lock_modifier0_lock$11 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     vm.deal(address(uint160(0)), 115792089237316195423570985008687907853269984665640564039457584007913129639934);
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -156,8 +156,8 @@ contract keepMyEtherCovTest_keepMyEther_fallback_concrete1p1__basis_root__W is T
     (bool ok1, ) = address(c0).call{value: 115792089237316195423570985008687907853269984665640564039457584007913129639934}(hex"deadbeef");
     assertTrue(ok1, "covered receive/fallback path must return normally");
     uint256 _veriput_fixed_state_lock_modifier0_lock_11_0 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255);
-
+    assertEq(_veriput_fixed_state_lock_modifier0_lock_11_0, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_balances_0_1 = uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(0)), uint256(1)))));
-
+    assertEq(_veriput_fixed_state_balances_0_1, uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934), "fixed witness state");
   }
 }

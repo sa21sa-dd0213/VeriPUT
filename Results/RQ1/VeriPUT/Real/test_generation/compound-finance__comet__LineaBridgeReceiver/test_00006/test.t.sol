@@ -11,8 +11,8 @@ contract LineaBridgeReceiverCovTest_LineaBridgeReceiver_sweepNativeToken_put2p1 
     c0 = new LineaBridgeReceiver(address(uint160(1000)));
     
     address _esbmc_ctor_state_mock_0_0 = address(uint160(1000));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("sender()"), abi.encode(address(0)));
   }
   
 
@@ -68,8 +68,8 @@ contract LineaBridgeReceiverCovTest_LineaBridgeReceiver_sweepNativeToken_put2p1 
     
     uint256 _post_localTimelock = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_localTimelock, _pre_localTimelock, "localTimelock: post == pre");
-    
-    
+    assertGe(_post_localTimelock, _pre_localTimelock, "localTimelock: post >= pre");
+    assertLe(_post_localTimelock, _pre_localTimelock, "localTimelock: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

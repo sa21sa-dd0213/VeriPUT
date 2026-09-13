@@ -15,7 +15,7 @@ contract BCovTest_B_go_put2p1_p1_part_part0_w_w is Test {
   function setUp() public {
     vm.startPrank(address(uint160(1)), address(uint160(1)));
     c0 = new B();
-
+    vm.mockCallRevert(address(0xC8A60C51967F4022BF9424C337e9c6F0bD220E1C), bytes(""), bytes(""));
     vm.stopPrank();
   }
   
@@ -99,13 +99,13 @@ contract BCovTest_B_go_put2p1_p1_part_part0_w_w is Test {
     c0.go{value: 0}();
     
     if (p_msg_sender == address(uint160(0))) {
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
     
     uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_owner, _pre_owner, "owner: post == pre");
-    
-    
+    assertGe(_post_owner, _pre_owner, "owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "owner: post <= pre");
     
   }
 
@@ -130,7 +130,7 @@ contract BCovTest_B_go_concrete2p1__basis_part0_w_w__W is Test {
   function setUp() public {
     vm.startPrank(address(uint160(1)), address(uint160(1)));
     c0 = new B();
-
+    vm.mockCallRevert(address(0xC8A60C51967F4022BF9424C337e9c6F0bD220E1C), bytes(""), bytes(""));
     vm.stopPrank();
   }
   
@@ -139,9 +139,9 @@ contract BCovTest_B_go_concrete2p1__basis_part0_w_w__W is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.owner did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
@@ -155,6 +155,6 @@ contract BCovTest_B_go_concrete2p1__basis_part0_w_w__W is Test {
     vm.expectRevert();
     c0.go();
     uint256 _veriput_fixed_state_owner_0 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_owner_0, uint256(0), "fixed witness state");
   }
 }

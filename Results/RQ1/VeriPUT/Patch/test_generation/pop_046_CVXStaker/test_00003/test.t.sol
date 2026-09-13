@@ -10,8 +10,8 @@ contract CVXStakerCovTest_CVXStaker_earned_put2p1 is Test {
   function setUp() public {
     c0 = new CVXStaker(address(uint160(1000)), IERC20(address(uint160(1001))), ICVXBooster(address(uint160(1002))), new address[](0));
     
-
-
+    vm.etch(address(0), hex"60006000f3");
+    vm.mockCall(address(0), abi.encodeWithSignature("earned(address)"), abi.encode(uint256(1)));
   }
   
 
@@ -74,12 +74,12 @@ contract CVXStakerCovTest_CVXStaker_earned_put2p1 is Test {
     assertEq(_post_cvxPoolInfo_pId, _pre_cvxPoolInfo_pId, "cvxPoolInfo.pId: post == pre");
     assertEq(_post_cvxPoolInfo_rewards, _pre_cvxPoolInfo_rewards, "cvxPoolInfo.rewards: post == pre");
     assertEq(_post_cvxPoolInfo_token, _pre_cvxPoolInfo_token, "cvxPoolInfo.token: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_cvxPoolInfo_pId, _pre_cvxPoolInfo_pId, "cvxPoolInfo.pId: post >= pre");
+    assertLe(_post_cvxPoolInfo_pId, _pre_cvxPoolInfo_pId, "cvxPoolInfo.pId: post <= pre");
+    assertGe(_post_cvxPoolInfo_rewards, _pre_cvxPoolInfo_rewards, "cvxPoolInfo.rewards: post >= pre");
+    assertLe(_post_cvxPoolInfo_rewards, _pre_cvxPoolInfo_rewards, "cvxPoolInfo.rewards: post <= pre");
+    assertGe(_post_cvxPoolInfo_token, _pre_cvxPoolInfo_token, "cvxPoolInfo.token: post >= pre");
+    assertLe(_post_cvxPoolInfo_token, _pre_cvxPoolInfo_token, "cvxPoolInfo.token: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

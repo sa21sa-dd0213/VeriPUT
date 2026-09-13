@@ -106,13 +106,13 @@ contract PipiCoinCovTest_PipiCoin_approve_put14p1_p1_part_part0_w_w is Test {
     try c0.approve(spender, amount) {} catch { _put_ok = false; }
     
     if (p_msg_sender == address(uint160(1)) && spender == address(uint160(0)) && amount == uint256(0)) {
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(0), "fixed witness state");
     }
     
     uint256 _post_allowances_msg_sender__spender = uint256(vm.load(address(c0), keccak256(abi.encode(spender, keccak256(abi.encode(p_msg_sender, uint256(1)))))));
     assertEq(_post_allowances_msg_sender__spender, _pre_allowances_msg_sender__spender, "_allowances[msg.sender][spender]: post == pre");
-    
-    
+    assertGe(_post_allowances_msg_sender__spender, _pre_allowances_msg_sender__spender, "_allowances[msg.sender][spender]: post >= pre");
+    assertLe(_post_allowances_msg_sender__spender, _pre_allowances_msg_sender__spender, "_allowances[msg.sender][spender]: post <= pre");
     
     assertFalse(_put_ok, "path enc=14p1_part_part0_w_w exits through a REVERT: the call must fail on the unmodified contract");
   }
@@ -146,9 +146,9 @@ contract PipiCoinCovTest_PipiCoin_approve_concrete14p1__basis_part0_w_w__W is Te
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(0), "entry pin state._totalSupply$63 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -166,7 +166,7 @@ contract PipiCoinCovTest_PipiCoin_approve_concrete14p1__basis_part0_w_w__W is Te
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_totalSupply_63_1 = uint256(vm.load(address(c0), bytes32(uint256(2))));
-
+    assertEq(_veriput_fixed_state_totalSupply_63_1, uint256(0), "fixed witness state");
   }
   
   

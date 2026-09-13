@@ -11,9 +11,9 @@ contract HOTDOGECovTest_HOTDOGE_includeAccount_put2p1 is Test {
     c0 = new HOTDOGE();
     
     address _esbmc_ext_mock_0 = address(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-
-
-
+    vm.etch(_esbmc_ext_mock_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("WETH()"), abi.encode(address(0)));
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("factory()"), abi.encode(address(0)));
   }
   
 
@@ -75,10 +75,10 @@ contract HOTDOGECovTest_HOTDOGE_includeAccount_put2p1 is Test {
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
     assertEq(_post_isExcluded_account, _pre_isExcluded_account, "_isExcluded[account]: post == pre");
     assertEq(_post_tOwned_account, _pre_tOwned_account, "_tOwned[account]: post == pre");
-    
-    
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
+    assertGe(_post_tOwned_account, _pre_tOwned_account, "_tOwned[account]: post >= pre");
+    assertLe(_post_tOwned_account, _pre_tOwned_account, "_tOwned[account]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

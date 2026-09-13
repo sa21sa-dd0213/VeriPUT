@@ -1,23 +1,15 @@
 // SPDX-License-Identifier: MIT
 
-
-
-
-
-
 pragma solidity >=0.8.0;
 
 import {Test} from "forge-std/Test.sol";
 import {Rubixi} from "../src/flat.sol";
 
-contract RubixiCovTest_Rubixi_fallback_put6p1_p1_part_part0_r_r is Test {
+contract RubixiCovTest_Rubixi_currentPyramidBalanceApproximately_put2p1 is Test {
   Rubixi c0;
   function setUp() public {
     c0 = new Rubixi();
   }
-  
-  
-  
   
 
   
@@ -60,204 +52,31 @@ contract RubixiCovTest_Rubixi_fallback_put6p1_p1_part_part0_r_r is Test {
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  uint256 _pre_balance; 
-  uint256 _pre_collectedFees; 
-  uint256 _pre_feePercent; 
-  uint256 _pre_pyramidMultiplier; 
-  uint256 _pre_payoutOrder; 
-  uint256 _post_balance; 
-  uint256 _post_collectedFees; 
-  uint256 _post_feePercent; 
-  uint256 _post_pyramidMultiplier; 
-  uint256 _post_payoutOrder; 
-  function _veriput_parameterized(address p_msg_sender, uint256 p_block_timestamp, uint256 p_block_number) internal {
-    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 4294967295, 11348359941645608)));
-    p_block_timestamp = bound(p_block_timestamp, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-    p_block_number = bound(p_block_number, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
+  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value) internal {
+    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
+    p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     
-    _pre_balance = uint256(vm.load(address(c0), bytes32(uint256(0))));
-    _pre_collectedFees = uint256(vm.load(address(c0), bytes32(uint256(1))));
-    _pre_feePercent = uint256(vm.load(address(c0), bytes32(uint256(2))));
-    _pre_pyramidMultiplier = uint256(vm.load(address(c0), bytes32(uint256(3))));
-    _pre_payoutOrder = uint256(vm.load(address(c0), bytes32(uint256(4))));
-    vm.warp(p_block_timestamp);
-    vm.roll(p_block_number);
-    vm.chainId(0);
-    vm.fee(0);
-    vm.blobBaseFee(0);
-    vm.prevrandao(uint256(0));
-    vm.txGasPrice(0);
-    vm.coinbase(address(uint160(0)));
+    uint256 _pre_balance = uint256(vm.load(address(c0), bytes32(uint256(0))));
+    
+    
+    vm.deal(p_msg_sender, p_msg_value);
     vm.prank(p_msg_sender);
-    (bool ok1, ) = address(c0).call(hex"deadbeef");
+    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("currentPyramidBalanceApproximately()"));
     
-    if (p_msg_sender == address(uint160(4294967295)) && p_block_timestamp == uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) && p_block_number == uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)) {
-
-
-
-
-
-
-    }
-    
-    _post_balance = uint256(vm.load(address(c0), bytes32(uint256(0))));
-    _post_collectedFees = uint256(vm.load(address(c0), bytes32(uint256(1))));
-    _post_feePercent = uint256(vm.load(address(c0), bytes32(uint256(2))));
-    _post_pyramidMultiplier = uint256(vm.load(address(c0), bytes32(uint256(3))));
-    _post_payoutOrder = uint256(vm.load(address(c0), bytes32(uint256(4))));
+    uint256 _post_balance = uint256(vm.load(address(c0), bytes32(uint256(0))));
     assertEq(_post_balance, _pre_balance, "balance: post == pre");
-    assertEq(_post_collectedFees, _pre_collectedFees, "collectedFees: post == pre");
-    assertEq(_post_feePercent, _pre_feePercent, "feePercent: post == pre");
-    assertEq(_post_pyramidMultiplier, _pre_pyramidMultiplier, "pyramidMultiplier: post == pre");
-    assertEq(_post_payoutOrder, _pre_payoutOrder, "payoutOrder: post == pre");
+    assertGe(_post_balance, _pre_balance, "balance: post >= pre");
+    assertLe(_post_balance, _pre_balance, "balance: post <= pre");
+    
+    assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
+
     
     
-    unchecked { assertLe(_post_collectedFees - _pre_collectedFees, 0, "collectedFees: post - pre in [msg.value, msg.value] with post >= pre"); }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    assertTrue(ok1, "covered receive/fallback path must return normally");
   }
 
 
   
-  function test_put_Rubixi_fallback_path6p1_part_part0_r_r(address p_msg_sender, uint256 p_block_timestamp, uint256 p_block_number) public {
-    _veriput_parameterized(p_msg_sender, p_block_timestamp, p_block_number);
-    
-    { RubixiCovTest_Rubixi_fallback_concrete6p1__basis_part0_r_r__W _veriput_w = new RubixiCovTest_Rubixi_fallback_concrete6p1__basis_part0_r_r__W(); _veriput_w.setUp(); _veriput_w._w_test_cov_0(); }
-}
-}
-
-
-
-
-
-
-
-
-contract RubixiCovTest_Rubixi_fallback_concrete6p1__basis_part0_r_r__W is Test {
-  Rubixi c0;
-  function setUp() public {
-    c0 = new Rubixi();
+  function test_put_Rubixi_currentPyramidBalanceApproximately_path2p1(address p_msg_sender, uint256 p_msg_value) public {
+    _veriput_parameterized(p_msg_sender, p_msg_value);
   }
-  
-  
-  function _w_test_cov_0() public {
-    {
-      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
-      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
-    }
-
-    {
-      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
-      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
-    }
-
-    {
-      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(5))));
-      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
-    }
-
-    {
-      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
-      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(10) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
-    }
-
-    {
-      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
-      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
-    }
-
-    {
-      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(3))));
-      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(300) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
-    }
-
-    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-    vm.chainId(0);
-    vm.fee(0);
-    vm.blobBaseFee(0);
-    vm.prevrandao(uint256(0));
-    vm.txGasPrice(0);
-    vm.coinbase(address(uint160(0)));
-    vm.prank(address(uint160(4294967295)), address(uint160(0)));
-    (bool ok1, ) = address(c0).call(hex"deadbeef");
-    assertTrue(ok1, "covered receive/fallback path must return normally");
-    uint256 _veriput_fixed_state_balance_0 = uint256(vm.load(address(c0), bytes32(uint256(0))));
-
-    uint256 _veriput_fixed_state_collectedFees_1 = uint256(vm.load(address(c0), bytes32(uint256(1))));
-
-    uint256 _veriput_fixed_state_creator_2 = (uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975);
-
-    uint256 _veriput_fixed_state_feePercent_3 = uint256(vm.load(address(c0), bytes32(uint256(2))));
-
-    uint256 _veriput_fixed_state_payoutOrder_4 = uint256(vm.load(address(c0), bytes32(uint256(4))));
-
-    uint256 _veriput_fixed_state_pyramidMultiplier_5 = uint256(vm.load(address(c0), bytes32(uint256(3))));
-
-  }
-  
-  
 }

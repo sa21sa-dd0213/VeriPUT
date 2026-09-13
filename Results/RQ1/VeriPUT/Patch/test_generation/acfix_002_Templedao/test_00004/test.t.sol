@@ -87,22 +87,22 @@ contract StaxLPStakingCovTest_StaxLPStaking_earned_put2p1 is Test {
     assertEq(_post_rewardData__rewardsToken__periodFinish, _pre_rewardData__rewardsToken__periodFinish, "rewardData[_rewardsToken].periodFinish: post == pre");
     assertEq(_post_rewardData__rewardsToken__rewardPerTokenStored, _pre_rewardData__rewardsToken__rewardPerTokenStored, "rewardData[_rewardsToken].rewardPerTokenStored: post == pre");
     assertEq(_post_rewardData__rewardsToken__rewardRate, _pre_rewardData__rewardsToken__rewardRate, "rewardData[_rewardsToken].rewardRate: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_totalSupply, _pre_totalSupply, "_totalSupply: post >= pre");
+    assertLe(_post_totalSupply, _pre_totalSupply, "_totalSupply: post <= pre");
+    assertGe(_post_balances__account, _pre_balances__account, "_balances[_account]: post >= pre");
+    assertLe(_post_balances__account, _pre_balances__account, "_balances[_account]: post <= pre");
+    assertGe(_post_claimableRewards__account___rewardsToken, _pre_claimableRewards__account___rewardsToken, "claimableRewards[_account][_rewardsToken]: post >= pre");
+    assertLe(_post_claimableRewards__account___rewardsToken, _pre_claimableRewards__account___rewardsToken, "claimableRewards[_account][_rewardsToken]: post <= pre");
+    assertGe(_post_userRewardPerTokenPaid__account___rewardsToken, _pre_userRewardPerTokenPaid__account___rewardsToken, "userRewardPerTokenPaid[_account][_rewardsToken]: post >= pre");
+    assertLe(_post_userRewardPerTokenPaid__account___rewardsToken, _pre_userRewardPerTokenPaid__account___rewardsToken, "userRewardPerTokenPaid[_account][_rewardsToken]: post <= pre");
+    assertGe(_post_rewardData__rewardsToken__lastUpdateTime, _pre_rewardData__rewardsToken__lastUpdateTime, "rewardData[_rewardsToken].lastUpdateTime: post >= pre");
+    assertLe(_post_rewardData__rewardsToken__lastUpdateTime, _pre_rewardData__rewardsToken__lastUpdateTime, "rewardData[_rewardsToken].lastUpdateTime: post <= pre");
+    assertGe(_post_rewardData__rewardsToken__periodFinish, _pre_rewardData__rewardsToken__periodFinish, "rewardData[_rewardsToken].periodFinish: post >= pre");
+    assertLe(_post_rewardData__rewardsToken__periodFinish, _pre_rewardData__rewardsToken__periodFinish, "rewardData[_rewardsToken].periodFinish: post <= pre");
+    assertGe(_post_rewardData__rewardsToken__rewardPerTokenStored, _pre_rewardData__rewardsToken__rewardPerTokenStored, "rewardData[_rewardsToken].rewardPerTokenStored: post >= pre");
+    assertLe(_post_rewardData__rewardsToken__rewardPerTokenStored, _pre_rewardData__rewardsToken__rewardPerTokenStored, "rewardData[_rewardsToken].rewardPerTokenStored: post <= pre");
+    assertGe(_post_rewardData__rewardsToken__rewardRate, _pre_rewardData__rewardsToken__rewardRate, "rewardData[_rewardsToken].rewardRate: post >= pre");
+    assertLe(_post_rewardData__rewardsToken__rewardRate, _pre_rewardData__rewardsToken__rewardRate, "rewardData[_rewardsToken].rewardRate: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

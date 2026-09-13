@@ -125,10 +125,10 @@ contract LocalConduitControllerCovTest_LocalConduitController_transferOwnership_
     assertGe(_post_conduits_conduit__potentialOwner, _pre_conduits_conduit__potentialOwner, "_conduits[conduit].potentialOwner: post >= pre");
     assertEq(_post_conduits_conduit__owner, _pre_conduits_conduit__owner, "_conduits[conduit].owner: post == pre");
     assertEq(_post_conduits_conduit__key, _pre_conduits_conduit__key, "_conduits[conduit].key: post == pre");
-    
-    
-    
-    
+    assertGe(_post_conduits_conduit__owner, _pre_conduits_conduit__owner, "_conduits[conduit].owner: post >= pre");
+    assertLe(_post_conduits_conduit__owner, _pre_conduits_conduit__owner, "_conduits[conduit].owner: post <= pre");
+    assertGe(_post_conduits_conduit__key, _pre_conduits_conduit__key, "_conduits[conduit].key: post >= pre");
+    assertLe(_post_conduits_conduit__key, _pre_conduits_conduit__key, "_conduits[conduit].key: post <= pre");
     
     assertFalse(_put_ok, "path enc=59p1 exits through a REVERT: the call must fail on the unmodified contract");
   }

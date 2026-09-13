@@ -28,13 +28,13 @@ contract ModularComplianceCovTest_ModularCompliance_destroyed_concrete30_fb is T
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_initialized_118_0 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255);
-
+    assertEq(_veriput_fixed_state_initialized_118_0, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_initializing_120_1 = ((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 8) & 255);
-
+    assertEq(_veriput_fixed_state_initializing_120_1, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_owner_323_2 = (uint256(vm.load(address(c0), bytes32(uint256(51)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_owner_323_2, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_tokenBound_104_3 = (uint256(vm.load(address(c0), bytes32(uint256(101)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_tokenBound_104_3, uint256(0), "fixed witness state");
   }
   
   

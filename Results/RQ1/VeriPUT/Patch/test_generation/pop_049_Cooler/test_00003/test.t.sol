@@ -15,8 +15,8 @@ contract CoolerCovTest_Cooler_clearRequest_put14p1 is Test {
   function setUp() public {
     c0 = new Cooler();
     
-
-
+    vm.etch(address(0), hex"60006000f3");
+    vm.mockCall(address(0), abi.encodeWithSignature("isCoolerCallback()"), abi.encode(false));
   }
   
   
@@ -134,8 +134,8 @@ contract CoolerCovTest_Cooler_clearRequest_concrete14p1__basis_root__W is Test {
   function setUp() public {
     c0 = new Cooler();
     
-
-
+    vm.etch(address(0), hex"60006000f3");
+    vm.mockCall(address(0), abi.encodeWithSignature("isCoolerCallback()"), abi.encode(false));
   }
   
   

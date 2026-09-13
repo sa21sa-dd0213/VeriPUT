@@ -69,8 +69,8 @@ contract RoomThermostatCovTest_RoomThermostat_SetMode_put2p1 is Test {
     assertEq(_post_State, _pre_State, "State: post == pre");
     assertEq(_post_User, _pre_User, "User: post == pre");
     assertEq(_post_Mode, _pre_Mode, "Mode: post == pre");
-    
-    
+    assertGe(_post_User, _pre_User, "User: post >= pre");
+    assertLe(_post_User, _pre_User, "User: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -82,7 +82,7 @@ contract DnGmxBatchingManagerCovTest_DnGmxBatchingManager_paused_put3p1 is Test 
     p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
     
     
-
+    assertLe((uint256(vm.load(address(c0), bytes32(uint256(101)))) & 255), uint256(1), "the entry state is OUTSIDE the certified region: state._paused$909 was assumed in [0, 1] when the path was certified, so a value outside it means the assumption was vacuous and the rungs below were proved about no execution this test can reach");
     
     uint256 _pre_paused = (uint256(vm.load(address(c0), bytes32(uint256(101)))) & 255);
     
@@ -99,14 +99,14 @@ contract DnGmxBatchingManagerCovTest_DnGmxBatchingManager_paused_put3p1 is Test 
     
     if (p_msg_sender == address(uint160(0))) {
       assertEq(_put_ret, false, "fixed witness return");
-
-
-
-
-
-
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255), uint256(0), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 8) & 255), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(51)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(101)))) & 255), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(254)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(251)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(315)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(253)))), uint256(0), "fixed witness state");
     }
     
     uint256 _post_paused = (uint256(vm.load(address(c0), bytes32(uint256(101)))) & 255);
@@ -142,57 +142,57 @@ contract DnGmxBatchingManagerCovTest_DnGmxBatchingManager_paused_concrete3p1__ba
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255), uint256(0), "entry pin state._initialized$585 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(65280)) | ((uint256(0) & 255) << 8);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 8) & 255), uint256(0), "entry pin state._initializing$587 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(51))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(51)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(51)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state._owner$782 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(101))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(101)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(101)))) & 255), uint256(0), "entry pin state._paused$909 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(254))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(254)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(254)))), uint256(0), "entry pin state.dnGmxJuniorVaultGlpBalance did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(251))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(251)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(251)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.keeper did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(315))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(315)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(315)))), uint256(0), "entry pin state.lastUnpauseTimestamp did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(253))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(253)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(253)))), uint256(0), "entry pin state.slippageThresholdGmxBps did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(260))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(260)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(260)))), uint256(0), "entry pin state.vaultBatchingState.currentRound did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -207,21 +207,21 @@ contract DnGmxBatchingManagerCovTest_DnGmxBatchingManager_paused_concrete3p1__ba
     bool _veriput_concrete_return = c0.paused();
     assertEq(_veriput_concrete_return, false, "fixed witness return must match");
     uint256 _veriput_fixed_state_initialized_585_1 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255);
-
+    assertEq(_veriput_fixed_state_initialized_585_1, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_initializing_587_2 = ((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 8) & 255);
-
+    assertEq(_veriput_fixed_state_initializing_587_2, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_owner_782_3 = (uint256(vm.load(address(c0), bytes32(uint256(51)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_owner_782_3, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_paused_909_4 = (uint256(vm.load(address(c0), bytes32(uint256(101)))) & 255);
-
+    assertEq(_veriput_fixed_state_paused_909_4, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_dnGmxJuniorVaultGlpBalance_5 = uint256(vm.load(address(c0), bytes32(uint256(254))));
-
+    assertEq(_veriput_fixed_state_dnGmxJuniorVaultGlpBalance_5, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_keeper_6 = (uint256(vm.load(address(c0), bytes32(uint256(251)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_keeper_6, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_lastUnpauseTimestamp_7 = uint256(vm.load(address(c0), bytes32(uint256(315))));
-
+    assertEq(_veriput_fixed_state_lastUnpauseTimestamp_7, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_slippageThresholdGmxBps_8 = uint256(vm.load(address(c0), bytes32(uint256(253))));
-
+    assertEq(_veriput_fixed_state_slippageThresholdGmxBps_8, uint256(0), "fixed witness state");
   }
   
   

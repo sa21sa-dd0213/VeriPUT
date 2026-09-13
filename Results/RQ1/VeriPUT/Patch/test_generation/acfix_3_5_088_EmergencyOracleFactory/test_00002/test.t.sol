@@ -85,9 +85,9 @@ contract EmergencyOracleFactoryCovTest_EmergencyOracleFactory_newEmergencyOracle
     {
       uint256 _w = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0)))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0))), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0))))) & 255), uint256(0), "entry pin state.isAdmin$1729[msg.sender] did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     uint256 _pre_isAdmin_1729_msg_sender = (uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0))))) & 255);
     uint256 _pre_isAdmin_msg_sender = (uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0))))) & 255);

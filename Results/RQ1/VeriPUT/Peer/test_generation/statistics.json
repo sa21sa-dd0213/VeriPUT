@@ -280,6 +280,17 @@
           "entry_id": "test_00008",
           "oracle_classes": [
             "R0",
+            "R1"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Arcadia_Token_owner_path3p1",
+          "unit": "owner"
+        },
+        {
+          "entry_id": "test_00009",
+          "oracle_classes": [
+            "R0",
             "R1",
             "R2"
           ],
@@ -294,7 +305,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__Address",
       "trial": 1,
-      "valid": 8,
+      "valid": 9,
       "wall_total_s": 574.398
     },
     {
@@ -840,7 +851,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_AssetTransfer_MarkAppraised_path6p1",
+          "test_name": "test_put_AssetTransfer_MarkAppraised_path31p1",
           "unit": "MarkAppraised"
         },
         {
@@ -852,8 +863,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_AssetTransfer_MarkInspected_path2p1",
-          "unit": "MarkInspected"
+          "test_name": "test_put_AssetTransfer_MarkAppraised_path6p1",
+          "unit": "MarkAppraised"
         },
         {
           "entry_id": "test_00011",
@@ -864,7 +875,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_AssetTransfer_MarkInspected_path6p1",
+          "test_name": "test_put_AssetTransfer_MarkInspected_path2p1",
           "unit": "MarkInspected"
         },
         {
@@ -876,11 +887,71 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_AssetTransfer_MarkInspected_path31p1",
+          "unit": "MarkInspected"
+        },
+        {
+          "entry_id": "test_00013",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_AssetTransfer_MarkInspected_path6p1",
+          "unit": "MarkInspected"
+        },
+        {
+          "entry_id": "test_00014",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_AssetTransfer_Modify_path14p1",
           "unit": "Modify"
         },
         {
-          "entry_id": "test_00013",
+          "entry_id": "test_00015",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_AssetTransfer_Modify_path15p1_part_part0_r",
+          "unit": "Modify"
+        },
+        {
+          "entry_id": "test_00016",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_AssetTransfer_Modify_path15p1_part_part0_w_r",
+          "unit": "Modify"
+        },
+        {
+          "entry_id": "test_00017",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_AssetTransfer_Modify_path15p1_part_part0_w_w",
+          "unit": "Modify"
+        },
+        {
+          "entry_id": "test_00018",
           "oracle_classes": [
             "R0",
             "R1",
@@ -892,7 +963,7 @@
           "unit": "Modify"
         },
         {
-          "entry_id": "test_00014",
+          "entry_id": "test_00019",
           "oracle_classes": [
             "R0",
             "R1",
@@ -904,7 +975,7 @@
           "unit": "ModifyOffer"
         },
         {
-          "entry_id": "test_00015",
+          "entry_id": "test_00020",
           "oracle_classes": [
             "R0",
             "R1",
@@ -916,7 +987,7 @@
           "unit": "ModifyOffer"
         },
         {
-          "entry_id": "test_00016",
+          "entry_id": "test_00021",
           "oracle_classes": [
             "R0",
             "R1",
@@ -928,7 +999,7 @@
           "unit": "Reject"
         },
         {
-          "entry_id": "test_00017",
+          "entry_id": "test_00022",
           "oracle_classes": [
             "R0",
             "R1",
@@ -940,7 +1011,7 @@
           "unit": "Reject"
         },
         {
-          "entry_id": "test_00018",
+          "entry_id": "test_00023",
           "oracle_classes": [
             "R0",
             "R1",
@@ -952,7 +1023,7 @@
           "unit": "Reject"
         },
         {
-          "entry_id": "test_00019",
+          "entry_id": "test_00024",
           "oracle_classes": [
             "R0",
             "R1",
@@ -964,7 +1035,7 @@
           "unit": "Reject"
         },
         {
-          "entry_id": "test_00020",
+          "entry_id": "test_00025",
           "oracle_classes": [
             "R0",
             "R1",
@@ -976,7 +1047,7 @@
           "unit": "RescindOffer"
         },
         {
-          "entry_id": "test_00021",
+          "entry_id": "test_00026",
           "oracle_classes": [
             "R0",
             "R1",
@@ -988,7 +1059,7 @@
           "unit": "RescindOffer"
         },
         {
-          "entry_id": "test_00022",
+          "entry_id": "test_00027",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1000,7 +1071,7 @@
           "unit": "RescindOffer"
         },
         {
-          "entry_id": "test_00023",
+          "entry_id": "test_00028",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1012,7 +1083,7 @@
           "unit": "RescindOffer"
         },
         {
-          "entry_id": "test_00024",
+          "entry_id": "test_00029",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1024,7 +1095,7 @@
           "unit": "Terminate"
         },
         {
-          "entry_id": "test_00025",
+          "entry_id": "test_00030",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1036,7 +1107,19 @@
           "unit": "Terminate"
         },
         {
-          "entry_id": "test_00026",
+          "entry_id": "test_00031",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_AssetTransfer_Terminate_path7p1_part_part0_w",
+          "unit": "Terminate"
+        },
+        {
+          "entry_id": "test_00032",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1048,7 +1131,7 @@
           "unit": "initialize"
         },
         {
-          "entry_id": "test_00027",
+          "entry_id": "test_00033",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1060,7 +1143,7 @@
           "unit": "initialize"
         },
         {
-          "entry_id": "test_00028",
+          "entry_id": "test_00034",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1077,7 +1160,7 @@
       "status": "persistence-error",
       "subject_id": "peer_ccsolbmc__AssetTransfer",
       "trial": 1,
-      "valid": 28,
+      "valid": 34,
       "wall_total_s": 416.241
     },
     {
@@ -1099,7 +1182,6 @@
           "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
-            "R1",
             "R2"
           ],
           "parameterized_width": true,
@@ -1133,14 +1215,6 @@
         },
         {
           "entry_id": "test_00005",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "includeAccount"
-        },
-        {
-          "entry_id": "test_00006",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1152,7 +1226,7 @@
           "unit": "includeAccount"
         },
         {
-          "entry_id": "test_00007",
+          "entry_id": "test_00006",
           "oracle_classes": [
             "R0",
             "R1"
@@ -1163,7 +1237,7 @@
           "unit": "isExcluded"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00007",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1175,7 +1249,7 @@
           "unit": "isExcluded"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00008",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1187,7 +1261,7 @@
           "unit": "owner"
         },
         {
-          "entry_id": "test_00010",
+          "entry_id": "test_00009",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1199,23 +1273,19 @@
           "unit": "owner"
         },
         {
+          "entry_id": "test_00010",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_BERNIE_reflect_path2p1",
+          "unit": "reflect"
+        },
+        {
           "entry_id": "test_00011",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_1",
-          "unit": "reflectionFromToken"
-        },
-        {
-          "entry_id": "test_00012",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_2",
-          "unit": "reflectionFromToken"
-        },
-        {
-          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1227,7 +1297,7 @@
           "unit": "reflectionFromToken"
         },
         {
-          "entry_id": "test_00014",
+          "entry_id": "test_00012",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1239,7 +1309,7 @@
           "unit": "totalFees"
         },
         {
-          "entry_id": "test_00015",
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1251,7 +1321,7 @@
           "unit": "totalFees"
         },
         {
-          "entry_id": "test_00016",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1263,7 +1333,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00017",
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1275,7 +1345,43 @@
           "unit": "totalSupply"
         },
         {
+          "entry_id": "test_00016",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_BERNIE_transferOwnership_path14p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00017",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_BERNIE_transferOwnership_path2p1",
+          "unit": "transferOwnership"
+        },
+        {
           "entry_id": "test_00018",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_BERNIE_transferOwnership_path6p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00019",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1292,7 +1398,7 @@
       "status": "timeout",
       "subject_id": "peer_ccsolbmc__BERNIE",
       "trial": 1,
-      "valid": 18,
+      "valid": 19,
       "wall_total_s": 587.474
     },
     {
@@ -1336,14 +1442,6 @@
         },
         {
           "entry_id": "test_00004",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "delegate"
-        },
-        {
-          "entry_id": "test_00005",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1355,15 +1453,7 @@
           "unit": "giveRightToVote"
         },
         {
-          "entry_id": "test_00006",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "giveRightToVote"
-        },
-        {
-          "entry_id": "test_00007",
+          "entry_id": "test_00005",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1375,7 +1465,7 @@
           "unit": "vote"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00006",
           "oracle_classes": [
             "R0",
             "R1",
@@ -1387,7 +1477,7 @@
           "unit": "vote"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00007",
           "oracle_classes": [
             "R0"
           ],
@@ -1397,21 +1487,13 @@
           "unit": "winnerName"
         },
         {
-          "entry_id": "test_00010",
+          "entry_id": "test_00008",
           "oracle_classes": [
             "R0"
           ],
           "parameterized_width": true,
           "report_class": "put",
           "test_name": "test_put_Ballot_winningProposal_path2p1",
-          "unit": "winningProposal"
-        },
-        {
-          "entry_id": "test_00011",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
           "unit": "winningProposal"
         }
       ],
@@ -1420,7 +1502,7 @@
       "status": "persistence-error",
       "subject_id": "peer_ccsolbmc__Ballot",
       "trial": 1,
-      "valid": 11,
+      "valid": 8,
       "wall_total_s": 131.379
     },
     {
@@ -1865,17 +1947,6 @@
     },
     {
       "budget_excluded": false,
-      "entries": [],
-      "generation_wall_s": 546.966,
-      "raw": 6,
-      "status": "budget-exhausted",
-      "subject_id": "peer_ccsolbmc__BurnableERC20",
-      "trial": 1,
-      "valid": 0,
-      "wall_total_s": 567.332
-    },
-    {
-      "budget_excluded": false,
       "entries": [
         {
           "entry_id": "test_00001",
@@ -1886,20 +1957,18 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_COINNetwork_balanceOf_path3p1",
-          "unit": "balanceOf"
+          "test_name": "test_put_BurnableERC20_allowance_path2p1",
+          "unit": "allowance"
         },
         {
           "entry_id": "test_00002",
           "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
+            "R0"
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_COINNetwork_getRoleAdmin_path3p1",
-          "unit": "getRoleAdmin"
+          "test_name": "test_put_BurnableERC20_allowance_path3p1",
+          "unit": "allowance"
         },
         {
           "entry_id": "test_00003",
@@ -1909,61 +1978,61 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_COINNetwork_paused_path2p1",
-          "unit": "paused"
+          "test_name": "test_put_BurnableERC20_balanceOf_path3p1_part_part0_r",
+          "unit": "balanceOf"
         },
         {
           "entry_id": "test_00004",
           "oracle_classes": [
             "R0",
+            "R1"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_BurnableERC20_balanceOf_path3p1_part_part0_w",
+          "unit": "balanceOf"
+        },
+        {
+          "entry_id": "test_00005",
+          "oracle_classes": [
+            "R0",
             "R1",
             "R2"
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_COINNetwork_paused_path3p1",
-          "unit": "paused"
-        },
-        {
-          "entry_id": "test_00005",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_COINNetwork_supportsInterface_path2p1",
-          "unit": "supportsInterface"
+          "test_name": "test_put_BurnableERC20_increaseAllowance_path2p1",
+          "unit": "increaseAllowance"
         },
         {
           "entry_id": "test_00006",
           "oracle_classes": [
             "R0",
-            "R2"
+            "R1"
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_COINNetwork_supportsInterface_path3p1",
-          "unit": "supportsInterface"
-        },
-        {
-          "entry_id": "test_00007",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_COINNetwork_totalSupply_path3p1",
+          "test_name": "test_put_BurnableERC20_totalSupply_path3p1",
           "unit": "totalSupply"
         }
       ],
+      "generation_wall_s": 546.966,
+      "raw": 6,
+      "status": "budget-exhausted",
+      "subject_id": "peer_ccsolbmc__BurnableERC20",
+      "trial": 1,
+      "valid": 6,
+      "wall_total_s": 567.332
+    },
+    {
+      "budget_excluded": false,
+      "entries": [],
       "generation_wall_s": 550.454,
       "raw": 2,
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__COINNetwork",
       "trial": 1,
-      "valid": 7,
+      "valid": 0,
       "wall_total_s": 577.717
     },
     {
@@ -2073,118 +2142,18 @@
           "report_class": "put",
           "test_name": "test_put_ChinaCoin_setBots_path2p1",
           "unit": "setBots"
-        }
-      ],
-      "generation_wall_s": 505.669,
-      "raw": 11,
-      "status": "budget-exhausted",
-      "subject_id": "peer_ccsolbmc__ChinaCoin",
-      "trial": 1,
-      "valid": 9,
-      "wall_total_s": 575.484
-    },
-    {
-      "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_ClockBoxContract_balanceOfFeeAddress_path2p1",
-          "unit": "balanceOfFeeAddress"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_ClockBoxContract_calculateFee_path2p1",
-          "unit": "calculateFee"
-        },
-        {
-          "entry_id": "test_00003",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "calculateFee"
-        },
-        {
-          "entry_id": "test_00004",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_ClockBoxContract_decreaseAllowance_path2p1",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00005",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00006",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_ClockBoxContract_deductFeeFromValue_path2p1",
-          "unit": "deductFeeFromValue"
-        },
-        {
-          "entry_id": "test_00007",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "deductFeeFromValue"
-        },
-        {
-          "entry_id": "test_00008",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "increaseAllowance"
-        },
-        {
-          "entry_id": "test_00009",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_ClockBoxContract_increaseAllowance_path2p1",
-          "unit": "increaseAllowance"
         },
         {
           "entry_id": "test_00010",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transfer"
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_ChinaCoin_setCooldownEnabled_path7p1_part_part0_r_w",
+          "unit": "setCooldownEnabled"
         },
         {
           "entry_id": "test_00011",
@@ -2195,16 +2164,27 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_ClockBoxContract_transfer_path2p1",
-          "unit": "transfer"
+          "test_name": "test_put_ChinaCoin_setCooldownEnabled_path7p1_part_part0_w_w",
+          "unit": "setCooldownEnabled"
         }
       ],
+      "generation_wall_s": 505.669,
+      "raw": 11,
+      "status": "budget-exhausted",
+      "subject_id": "peer_ccsolbmc__ChinaCoin",
+      "trial": 1,
+      "valid": 11,
+      "wall_total_s": 575.484
+    },
+    {
+      "budget_excluded": false,
+      "entries": [],
       "generation_wall_s": 555.251,
       "raw": 7,
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__ClockBoxContract",
       "trial": 1,
-      "valid": 11,
+      "valid": 0,
       "wall_total_s": 568.8
     },
     {
@@ -2416,11 +2396,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_CyberFox_renounceOwnership_path7p1_part_part0_w_w",
+          "unit": "renounceOwnership"
+        },
+        {
+          "entry_id": "test_00019",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_CyberFox_totalSupply_path2p1",
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00019",
+          "entry_id": "test_00020",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2432,7 +2424,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00020",
+          "entry_id": "test_00021",
           "oracle_classes": [
             "R0"
           ],
@@ -2442,7 +2434,19 @@
           "unit": "transferFrom"
         },
         {
-          "entry_id": "test_00021",
+          "entry_id": "test_00022",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_CyberFox_transferOwnership_path14p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00023",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2454,7 +2458,7 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00022",
+          "entry_id": "test_00024",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2471,7 +2475,7 @@
       "status": "persistence-error",
       "subject_id": "peer_ccsolbmc__CyberFox",
       "trial": 1,
-      "valid": 22,
+      "valid": 24,
       "wall_total_s": 475.486
     },
     {
@@ -2510,8 +2514,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_DigitalLocker_BeginReviewProcess_path2p1",
-          "unit": "BeginReviewProcess"
+          "test_name": "test_put_DigitalLocker_AcceptSharingRequest_path7p1_part_part0_w",
+          "unit": "AcceptSharingRequest"
         },
         {
           "entry_id": "test_00004",
@@ -2522,7 +2526,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_DigitalLocker_BeginReviewProcess_path7p1_part_part0_r",
+          "test_name": "test_put_DigitalLocker_BeginReviewProcess_path2p1",
           "unit": "BeginReviewProcess"
         },
         {
@@ -2534,7 +2538,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_DigitalLocker_BeginReviewProcess_path7p1_part_part0_w_r",
+          "test_name": "test_put_DigitalLocker_BeginReviewProcess_path6p1",
           "unit": "BeginReviewProcess"
         },
         {
@@ -2546,7 +2550,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_DigitalLocker_BeginReviewProcess_path7p1_part_part0_w_w",
+          "test_name": "test_put_DigitalLocker_BeginReviewProcess_path7p1_part_part0_r",
           "unit": "BeginReviewProcess"
         },
         {
@@ -2558,11 +2562,35 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_DigitalLocker_BeginReviewProcess_path7p1_part_part0_w_r",
+          "unit": "BeginReviewProcess"
+        },
+        {
+          "entry_id": "test_00008",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DigitalLocker_BeginReviewProcess_path7p1_part_part0_w_w",
+          "unit": "BeginReviewProcess"
+        },
+        {
+          "entry_id": "test_00009",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_DigitalLocker_RejectApplication_path2p1",
           "unit": "RejectApplication"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00010",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2574,7 +2602,19 @@
           "unit": "RejectApplication"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00011",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DigitalLocker_RejectApplication_path7p1_part_part0_w",
+          "unit": "RejectApplication"
+        },
+        {
+          "entry_id": "test_00012",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2586,7 +2626,7 @@
           "unit": "RejectSharingRequest"
         },
         {
-          "entry_id": "test_00010",
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2598,7 +2638,19 @@
           "unit": "RejectSharingRequest"
         },
         {
-          "entry_id": "test_00011",
+          "entry_id": "test_00014",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DigitalLocker_RejectSharingRequest_path7p1_part_part0_w",
+          "unit": "RejectSharingRequest"
+        },
+        {
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2610,7 +2662,7 @@
           "unit": "ReleaseLockerAccess"
         },
         {
-          "entry_id": "test_00012",
+          "entry_id": "test_00016",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2622,7 +2674,7 @@
           "unit": "ReleaseLockerAccess"
         },
         {
-          "entry_id": "test_00013",
+          "entry_id": "test_00017",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2634,7 +2686,19 @@
           "unit": "RequestLockerAccess"
         },
         {
-          "entry_id": "test_00014",
+          "entry_id": "test_00018",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DigitalLocker_RequestLockerAccess_path6p1",
+          "unit": "RequestLockerAccess"
+        },
+        {
+          "entry_id": "test_00019",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2646,7 +2710,7 @@
           "unit": "RequestLockerAccess"
         },
         {
-          "entry_id": "test_00015",
+          "entry_id": "test_00020",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2658,7 +2722,7 @@
           "unit": "RequestLockerAccess"
         },
         {
-          "entry_id": "test_00016",
+          "entry_id": "test_00021",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2670,7 +2734,7 @@
           "unit": "RequestLockerAccess"
         },
         {
-          "entry_id": "test_00017",
+          "entry_id": "test_00022",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2682,7 +2746,7 @@
           "unit": "RevokeAccessFromThirdParty"
         },
         {
-          "entry_id": "test_00018",
+          "entry_id": "test_00023",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2694,7 +2758,19 @@
           "unit": "RevokeAccessFromThirdParty"
         },
         {
-          "entry_id": "test_00019",
+          "entry_id": "test_00024",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DigitalLocker_RevokeAccessFromThirdParty_path7p1_part_part0_w",
+          "unit": "RevokeAccessFromThirdParty"
+        },
+        {
+          "entry_id": "test_00025",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2706,7 +2782,7 @@
           "unit": "ShareWithThirdParty"
         },
         {
-          "entry_id": "test_00020",
+          "entry_id": "test_00026",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2718,7 +2794,7 @@
           "unit": "ShareWithThirdParty"
         },
         {
-          "entry_id": "test_00021",
+          "entry_id": "test_00027",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2730,7 +2806,7 @@
           "unit": "Terminate"
         },
         {
-          "entry_id": "test_00022",
+          "entry_id": "test_00028",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2742,7 +2818,19 @@
           "unit": "Terminate"
         },
         {
-          "entry_id": "test_00023",
+          "entry_id": "test_00029",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DigitalLocker_Terminate_path7p1_part_part0_w",
+          "unit": "Terminate"
+        },
+        {
+          "entry_id": "test_00030",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2754,7 +2842,7 @@
           "unit": "UploadDocuments"
         },
         {
-          "entry_id": "test_00024",
+          "entry_id": "test_00031",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2764,6 +2852,18 @@
           "report_class": "put",
           "test_name": "test_put_DigitalLocker_UploadDocuments_path6p1",
           "unit": "UploadDocuments"
+        },
+        {
+          "entry_id": "test_00032",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DigitalLocker_UploadDocuments_path7p1_part_part0_w",
+          "unit": "UploadDocuments"
         }
       ],
       "generation_wall_s": 458.531,
@@ -2771,7 +2871,7 @@
       "status": "ok",
       "subject_id": "peer_ccsolbmc__DigitalLocker",
       "trial": 1,
-      "valid": 24,
+      "valid": 32,
       "wall_total_s": 607.16
     },
     {
@@ -3061,6 +3161,30 @@
           "report_class": "put",
           "test_name": "test_put_DogeRocket_setBots_path2p1",
           "unit": "setBots"
+        },
+        {
+          "entry_id": "test_00014",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DogeRocket_setCooldownEnabled_path7p1_part_part0_r_w",
+          "unit": "setCooldownEnabled"
+        },
+        {
+          "entry_id": "test_00015",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DogeRocket_setCooldownEnabled_path7p1_part_part0_w_w",
+          "unit": "setCooldownEnabled"
         }
       ],
       "generation_wall_s": 512.666,
@@ -3068,7 +3192,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__DogeRocket",
       "trial": 1,
-      "valid": 13,
+      "valid": 15,
       "wall_total_s": 593.278
     },
     {
@@ -3407,6 +3531,30 @@
           "report_class": "put",
           "test_name": "test_put_EStack_setBots_path2p1",
           "unit": "setBots"
+        },
+        {
+          "entry_id": "test_00012",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_EStack_setCooldownEnabled_path7p1_part_part0_r_w",
+          "unit": "setCooldownEnabled"
+        },
+        {
+          "entry_id": "test_00013",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_EStack_setCooldownEnabled_path7p1_part_part0_w_w",
+          "unit": "setCooldownEnabled"
         }
       ],
       "generation_wall_s": 502.784,
@@ -3414,7 +3562,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__EStack",
       "trial": 1,
-      "valid": 11,
+      "valid": 13,
       "wall_total_s": 579.174
     },
     {
@@ -3527,6 +3675,18 @@
           "report_class": "put",
           "test_name": "test_put_FrontRunner_kill_path6p1_part_part0_w",
           "unit": "kill"
+        },
+        {
+          "entry_id": "test_00010",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_FrontRunner_kill_path7p1_part_part0_w_w",
+          "unit": "kill"
         }
       ],
       "generation_wall_s": 340.49,
@@ -3534,7 +3694,7 @@
       "status": "ok",
       "subject_id": "peer_ccsolbmc__FrontRunner",
       "trial": 1,
-      "valid": 9,
+      "valid": 10,
       "wall_total_s": 405.666
     },
     {
@@ -4211,7 +4371,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_HOTDOGE_transferOwnership_path2p1",
+          "test_name": "test_put_HOTDOGE_transferOwnership_path14p1",
           "unit": "transferOwnership"
         },
         {
@@ -4223,11 +4383,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_HOTDOGE_transferOwnership_path6p1",
+          "test_name": "test_put_HOTDOGE_transferOwnership_path2p1",
           "unit": "transferOwnership"
         },
         {
           "entry_id": "test_00018",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_HOTDOGE_transferOwnership_path6p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00019",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4244,7 +4416,7 @@
       "status": "timeout",
       "subject_id": "peer_ccsolbmc__HOTDOGE",
       "trial": 1,
-      "valid": 18,
+      "valid": 19,
       "wall_total_s": 600.834
     },
     {
@@ -4266,7 +4438,6 @@
           "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
-            "R1",
             "R2"
           ],
           "parameterized_width": true,
@@ -4370,22 +4541,6 @@
         },
         {
           "entry_id": "test_00011",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_1",
-          "unit": "reflectionFromToken"
-        },
-        {
-          "entry_id": "test_00012",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_2",
-          "unit": "reflectionFromToken"
-        },
-        {
-          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4397,7 +4552,19 @@
           "unit": "reflectionFromToken"
         },
         {
-          "entry_id": "test_00014",
+          "entry_id": "test_00012",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_HotinuFinance_setCharityFeePercent_path2p1",
+          "unit": "setCharityFeePercent"
+        },
+        {
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4409,15 +4576,7 @@
           "unit": "setLiquidityFeePercent"
         },
         {
-          "entry_id": "test_00015",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "setLiquidityFeePercent"
-        },
-        {
-          "entry_id": "test_00016",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4429,15 +4588,7 @@
           "unit": "setTaxFeePercent"
         },
         {
-          "entry_id": "test_00017",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "setTaxFeePercent"
-        },
-        {
-          "entry_id": "test_00018",
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4449,7 +4600,7 @@
           "unit": "tokenFromReflection"
         },
         {
-          "entry_id": "test_00019",
+          "entry_id": "test_00016",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4461,7 +4612,7 @@
           "unit": "totalFees"
         },
         {
-          "entry_id": "test_00020",
+          "entry_id": "test_00017",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4473,7 +4624,7 @@
           "unit": "totalFees"
         },
         {
-          "entry_id": "test_00021",
+          "entry_id": "test_00018",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4485,7 +4636,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00022",
+          "entry_id": "test_00019",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4497,15 +4648,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00023",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_1",
-          "unit": "transferOwnership"
-        },
-        {
-          "entry_id": "test_00024",
+          "entry_id": "test_00020",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4522,7 +4665,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__HotinuFinance",
       "trial": 1,
-      "valid": 24,
+      "valid": 20,
       "wall_total_s": 580.229
     },
     {
@@ -4745,11 +4888,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_KOALA_transferOwnership_path2p1",
+          "test_name": "test_put_KOALA_transferOwnership_path14p1",
           "unit": "transferOwnership"
         },
         {
           "entry_id": "test_00020",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_KOALA_transferOwnership_path2p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00021",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4766,7 +4921,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__KOALA",
       "trial": 1,
-      "valid": 20,
+      "valid": 21,
       "wall_total_s": 597.18
     },
     {
@@ -4888,11 +5043,35 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_KizunaInu_setCooldownEnabled_path7p1_part_part0_r_w",
+          "unit": "setCooldownEnabled"
+        },
+        {
+          "entry_id": "test_00011",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_KizunaInu_setCooldownEnabled_path7p1_part_part0_w_w",
+          "unit": "setCooldownEnabled"
+        },
+        {
+          "entry_id": "test_00012",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_KizunaInu_startTrading_path2p1",
           "unit": "startTrading"
         },
         {
-          "entry_id": "test_00011",
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0"
           ],
@@ -4902,7 +5081,7 @@
           "unit": "startTrading"
         },
         {
-          "entry_id": "test_00012",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4914,7 +5093,7 @@
           "unit": "unblockBot"
         },
         {
-          "entry_id": "test_00013",
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4931,7 +5110,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__KizunaInu",
       "trial": 1,
-      "valid": 13,
+      "valid": 15,
       "wall_total_s": 593.206
     },
     {
@@ -4953,7 +5132,6 @@
           "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
-            "R1",
             "R2"
           ],
           "parameterized_width": true,
@@ -5001,26 +5179,16 @@
           "entry_id": "test_00006",
           "oracle_classes": [
             "R0",
+            "R1",
             "R2"
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_Kyuseishu_approve_path15p1_part_part0_r",
+          "test_name": "test_put_Kyuseishu_approve_path2p1",
           "unit": "approve"
         },
         {
           "entry_id": "test_00007",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Kyuseishu_approve_path15p1_part_part0_w_r",
-          "unit": "approve"
-        },
-        {
-          "entry_id": "test_00008",
           "oracle_classes": [
             "R0",
             "R1",
@@ -5032,7 +5200,7 @@
           "unit": "balanceOf"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00008",
           "oracle_classes": [
             "R0",
             "R1",
@@ -5044,7 +5212,7 @@
           "unit": "balanceOf"
         },
         {
-          "entry_id": "test_00010",
+          "entry_id": "test_00009",
           "oracle_classes": [
             "R0",
             "R1",
@@ -5056,151 +5224,7 @@
           "unit": "burnTarget"
         },
         {
-          "entry_id": "test_00011",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Kyuseishu_decreaseAllowance_path2p1",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00012",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Kyuseishu_decreaseAllowance_path30p1_part_part0_r",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00013",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Kyuseishu_decreaseAllowance_path30p1_part_part0_w_r",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00014",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Kyuseishu_decreaseAllowance_path30p1_part_part0_w_w",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00015",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Kyuseishu_decreaseAllowance_path31p1_part_part0_r",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00016",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Kyuseishu_decreaseAllowance_path31p1_part_part0_w_r",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00017",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Kyuseishu_decreaseAllowance_path6p1_part_part0_r",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00018",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Kyuseishu_decreaseAllowance_path6p1_part_part0_w_r",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00019",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Kyuseishu_decreaseAllowance_path6p1_part_part0_w_w",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00020",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Kyuseishu_increaseAllowance_path14p1_part_part0_r",
-          "unit": "increaseAllowance"
-        },
-        {
-          "entry_id": "test_00021",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Kyuseishu_increaseAllowance_path14p1_part_part0_w_r",
-          "unit": "increaseAllowance"
-        },
-        {
-          "entry_id": "test_00022",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Kyuseishu_increaseAllowance_path14p1_part_part0_w_w",
-          "unit": "increaseAllowance"
-        },
-        {
-          "entry_id": "test_00023",
+          "entry_id": "test_00010",
           "oracle_classes": [
             "R0",
             "R1",
@@ -5212,7 +5236,7 @@
           "unit": "increaseAllowance"
         },
         {
-          "entry_id": "test_00024",
+          "entry_id": "test_00011",
           "oracle_classes": [
             "R0",
             "R1",
@@ -5224,7 +5248,7 @@
           "unit": "owner"
         },
         {
-          "entry_id": "test_00025",
+          "entry_id": "test_00012",
           "oracle_classes": [
             "R0",
             "R1",
@@ -5236,7 +5260,19 @@
           "unit": "owner"
         },
         {
-          "entry_id": "test_00026",
+          "entry_id": "test_00013",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Kyuseishu_renounceOwnership_path2p1",
+          "unit": "renounceOwnership"
+        },
+        {
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R1",
@@ -5248,23 +5284,7 @@
           "unit": "setMaxTxPercent"
         },
         {
-          "entry_id": "test_00027",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_1",
-          "unit": "setMaxTxPercent"
-        },
-        {
-          "entry_id": "test_00028",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "setMaxTxPercent"
-        },
-        {
-          "entry_id": "test_00029",
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R1",
@@ -5276,7 +5296,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00030",
+          "entry_id": "test_00016",
           "oracle_classes": [
             "R0",
             "R1",
@@ -5288,15 +5308,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00031",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_1",
-          "unit": "transferOwnership"
-        },
-        {
-          "entry_id": "test_00032",
+          "entry_id": "test_00017",
           "oracle_classes": [
             "R0",
             "R1",
@@ -5306,14 +5318,6 @@
           "report_class": "put",
           "test_name": "test_put_Kyuseishu_transferOwnership_path2p1",
           "unit": "transferOwnership"
-        },
-        {
-          "entry_id": "test_00033",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_2",
-          "unit": "transferOwnership"
         }
       ],
       "generation_wall_s": 437.723,
@@ -5321,7 +5325,7 @@
       "status": "ok",
       "subject_id": "peer_ccsolbmc__Kyuseishu",
       "trial": 1,
-      "valid": 33,
+      "valid": 17,
       "wall_total_s": 480.018
     },
     {
@@ -5538,11 +5542,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_LILY_transferOwnership_path2p1",
+          "test_name": "test_put_LILY_transferOwnership_path14p1",
           "unit": "transferOwnership"
         },
         {
           "entry_id": "test_00019",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LILY_transferOwnership_path2p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00020",
           "oracle_classes": [
             "R0",
             "R1",
@@ -5559,7 +5575,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__LILY",
       "trial": 1,
-      "valid": 19,
+      "valid": 20,
       "wall_total_s": 576.659
     },
     {
@@ -5803,11 +5819,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_Lunar_transferOwnership_path2p1",
+          "test_name": "test_put_Lunar_transferOwnership_path14p1",
           "unit": "transferOwnership"
         },
         {
           "entry_id": "test_00022",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Lunar_transferOwnership_path2p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00023",
           "oracle_classes": [
             "R0",
             "R1",
@@ -5824,7 +5852,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__Lunar",
       "trial": 1,
-      "valid": 22,
+      "valid": 23,
       "wall_total_s": 583.193
     },
     {
@@ -6017,11 +6045,47 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_MJCoin_Token_setTokenPrice_path7p1_part_part0_r_w",
+          "unit": "setTokenPrice"
+        },
+        {
+          "entry_id": "test_00017",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MJCoin_Token_setTokenPrice_path7p1_part_part0_w_r",
+          "unit": "setTokenPrice"
+        },
+        {
+          "entry_id": "test_00018",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MJCoin_Token_setTokenPrice_path7p1_part_part0_w_w",
+          "unit": "setTokenPrice"
+        },
+        {
+          "entry_id": "test_00019",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_MJCoin_Token_totalSupply_path2p1",
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00017",
+          "entry_id": "test_00020",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6033,7 +6097,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00018",
+          "entry_id": "test_00021",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6045,7 +6109,7 @@
           "unit": "transfer"
         },
         {
-          "entry_id": "test_00019",
+          "entry_id": "test_00022",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6057,7 +6121,7 @@
           "unit": "transfer"
         },
         {
-          "entry_id": "test_00020",
+          "entry_id": "test_00023",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6069,7 +6133,7 @@
           "unit": "transfer"
         },
         {
-          "entry_id": "test_00021",
+          "entry_id": "test_00024",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6081,7 +6145,7 @@
           "unit": "transfer"
         },
         {
-          "entry_id": "test_00022",
+          "entry_id": "test_00025",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6093,7 +6157,7 @@
           "unit": "transfer"
         },
         {
-          "entry_id": "test_00023",
+          "entry_id": "test_00026",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6105,7 +6169,7 @@
           "unit": "transfer"
         },
         {
-          "entry_id": "test_00024",
+          "entry_id": "test_00027",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6122,7 +6186,7 @@
       "status": "timeout",
       "subject_id": "peer_ccsolbmc__MJCoin_Token",
       "trial": 1,
-      "valid": 24,
+      "valid": 27,
       "wall_total_s": 618.425
     },
     {
@@ -6144,7 +6208,6 @@
           "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
-            "R1",
             "R2"
           ],
           "parameterized_width": true,
@@ -6192,28 +6255,6 @@
           "entry_id": "test_00006",
           "oracle_classes": [
             "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_MayoOcho_approve_path15p1_part_part0_r",
-          "unit": "approve"
-        },
-        {
-          "entry_id": "test_00007",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_MayoOcho_approve_path15p1_part_part0_w_r",
-          "unit": "approve"
-        },
-        {
-          "entry_id": "test_00008",
-          "oracle_classes": [
-            "R0",
             "R1",
             "R2"
           ],
@@ -6223,7 +6264,7 @@
           "unit": "approve"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00007",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6235,7 +6276,7 @@
           "unit": "balanceOf"
         },
         {
-          "entry_id": "test_00010",
+          "entry_id": "test_00008",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6247,151 +6288,7 @@
           "unit": "balanceOf"
         },
         {
-          "entry_id": "test_00011",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_MayoOcho_decreaseAllowance_path2p1",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00012",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_MayoOcho_decreaseAllowance_path30p1_part_part0_r",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00013",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_MayoOcho_decreaseAllowance_path30p1_part_part0_w_r",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00014",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_MayoOcho_decreaseAllowance_path30p1_part_part0_w_w",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00015",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_MayoOcho_decreaseAllowance_path31p1_part_part0_r",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00016",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_MayoOcho_decreaseAllowance_path31p1_part_part0_w_r",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00017",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_MayoOcho_decreaseAllowance_path6p1_part_part0_r",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00018",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_MayoOcho_decreaseAllowance_path6p1_part_part0_w_r",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00019",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_MayoOcho_decreaseAllowance_path6p1_part_part0_w_w",
-          "unit": "decreaseAllowance"
-        },
-        {
-          "entry_id": "test_00020",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_MayoOcho_increaseAllowance_path14p1_part_part0_r",
-          "unit": "increaseAllowance"
-        },
-        {
-          "entry_id": "test_00021",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_MayoOcho_increaseAllowance_path14p1_part_part0_w_r",
-          "unit": "increaseAllowance"
-        },
-        {
-          "entry_id": "test_00022",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_MayoOcho_increaseAllowance_path14p1_part_part0_w_w",
-          "unit": "increaseAllowance"
-        },
-        {
-          "entry_id": "test_00023",
+          "entry_id": "test_00009",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6403,7 +6300,7 @@
           "unit": "increaseAllowance"
         },
         {
-          "entry_id": "test_00024",
+          "entry_id": "test_00010",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6415,7 +6312,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00025",
+          "entry_id": "test_00011",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6427,7 +6324,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00026",
+          "entry_id": "test_00012",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6439,7 +6336,7 @@
           "unit": "transfer"
         },
         {
-          "entry_id": "test_00027",
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6451,7 +6348,7 @@
           "unit": "transfer"
         },
         {
-          "entry_id": "test_00028",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6463,7 +6360,7 @@
           "unit": "transfer"
         },
         {
-          "entry_id": "test_00029",
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6480,7 +6377,7 @@
       "status": "ok",
       "subject_id": "peer_ccsolbmc__MayoOcho",
       "trial": 1,
-      "valid": 29,
+      "valid": 15,
       "wall_total_s": 239.456
     },
     {
@@ -6547,6 +6444,17 @@
           "entry_id": "test_00006",
           "oracle_classes": [
             "R0",
+            "R1"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MiraNft_owner_path3p1",
+          "unit": "owner"
+        },
+        {
+          "entry_id": "test_00007",
+          "oracle_classes": [
+            "R0",
             "R1",
             "R2"
           ],
@@ -6556,7 +6464,7 @@
           "unit": "ownerOf"
         },
         {
-          "entry_id": "test_00007",
+          "entry_id": "test_00008",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6568,7 +6476,7 @@
           "unit": "ownerOf"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00009",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6585,7 +6493,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__MiraNft",
       "trial": 1,
-      "valid": 8,
+      "valid": 9,
       "wall_total_s": 578.04
     },
     {
@@ -6774,6 +6682,18 @@
           "report_class": "put",
           "test_name": "test_put_PONY_totalFees_path3p1",
           "unit": "totalFees"
+        },
+        {
+          "entry_id": "test_00017",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PONY_transferOwnership_path14p1",
+          "unit": "transferOwnership"
         }
       ],
       "generation_wall_s": 518.836,
@@ -6781,7 +6701,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__PONY",
       "trial": 1,
-      "valid": 16,
+      "valid": 17,
       "wall_total_s": 612.662
     },
     {
@@ -7016,6 +6936,18 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_PORCUPINE_transferOwnership_path14p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00021",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_PORCUPINE_transferOwnership_path6p1",
           "unit": "transferOwnership"
         }
@@ -7025,7 +6957,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__PORCUPINE",
       "trial": 1,
-      "valid": 20,
+      "valid": 21,
       "wall_total_s": 615.145
     },
     {
@@ -8045,11 +7977,47 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_RIAS_setBlackAddress_path7p1_part_part0_r_w",
+          "unit": "setBlackAddress"
+        },
+        {
+          "entry_id": "test_00011",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_RIAS_setBlackAddress_path7p1_part_part0_w_r",
+          "unit": "setBlackAddress"
+        },
+        {
+          "entry_id": "test_00012",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_RIAS_setBlackAddress_path7p1_part_part0_w_w",
+          "unit": "setBlackAddress"
+        },
+        {
+          "entry_id": "test_00013",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_RIAS_setBlackListBot_path2p1",
           "unit": "setBlackListBot"
         },
         {
-          "entry_id": "test_00011",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R1",
@@ -8061,7 +8029,43 @@
           "unit": "setBlackListBot"
         },
         {
-          "entry_id": "test_00012",
+          "entry_id": "test_00015",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_RIAS_setBlackListBot_path7p1_part_part0_r_w",
+          "unit": "setBlackListBot"
+        },
+        {
+          "entry_id": "test_00016",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_RIAS_setBlackListBot_path7p1_part_part0_w_r",
+          "unit": "setBlackListBot"
+        },
+        {
+          "entry_id": "test_00017",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_RIAS_setBlackListBot_path7p1_part_part0_w_w",
+          "unit": "setBlackListBot"
+        },
+        {
+          "entry_id": "test_00018",
           "oracle_classes": [],
           "parameterized_width": false,
           "report_class": "no_put_concrete_replay",
@@ -8069,7 +8073,7 @@
           "unit": "setFeeTotal"
         },
         {
-          "entry_id": "test_00013",
+          "entry_id": "test_00019",
           "oracle_classes": [
             "R0",
             "R1",
@@ -8081,7 +8085,7 @@
           "unit": "setFeeTotal"
         },
         {
-          "entry_id": "test_00014",
+          "entry_id": "test_00020",
           "oracle_classes": [
             "R0",
             "R1",
@@ -8093,7 +8097,43 @@
           "unit": "setFeeTotal"
         },
         {
-          "entry_id": "test_00015",
+          "entry_id": "test_00021",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_RIAS_setMaxTxBlack_path7p1_part_part0_r",
+          "unit": "setMaxTxBlack"
+        },
+        {
+          "entry_id": "test_00022",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_RIAS_setMaxTxBlack_path7p1_part_part0_w_r",
+          "unit": "setMaxTxBlack"
+        },
+        {
+          "entry_id": "test_00023",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_RIAS_setMaxTxBlack_path7p1_part_part0_w_w",
+          "unit": "setMaxTxBlack"
+        },
+        {
+          "entry_id": "test_00024",
           "oracle_classes": [
             "R0",
             "R1",
@@ -8105,7 +8145,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00016",
+          "entry_id": "test_00025",
           "oracle_classes": [
             "R0",
             "R1",
@@ -8117,7 +8157,19 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00017",
+          "entry_id": "test_00026",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_RIAS_transferOwnership_path14p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00027",
           "oracle_classes": [
             "R0",
             "R1",
@@ -8129,7 +8181,7 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00018",
+          "entry_id": "test_00028",
           "oracle_classes": [
             "R0",
             "R1",
@@ -8146,7 +8198,7 @@
       "status": "persistence-error",
       "subject_id": "peer_ccsolbmc__RIAS",
       "trial": 1,
-      "valid": 18,
+      "valid": 28,
       "wall_total_s": 593.107
     },
     {
@@ -8617,6 +8669,30 @@
           "report_class": "put",
           "test_name": "test_put_SATURNITE_setBots_path2p1",
           "unit": "setBots"
+        },
+        {
+          "entry_id": "test_00011",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_SATURNITE_setCooldownEnabled_path7p1_part_part0_r_w",
+          "unit": "setCooldownEnabled"
+        },
+        {
+          "entry_id": "test_00012",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_SATURNITE_setCooldownEnabled_path7p1_part_part0_w_w",
+          "unit": "setCooldownEnabled"
         }
       ],
       "generation_wall_s": 440.243,
@@ -8624,7 +8700,7 @@
       "status": "timeout",
       "subject_id": "peer_ccsolbmc__SATURNITE",
       "trial": 1,
-      "valid": 10,
+      "valid": 12,
       "wall_total_s": 595.817
     },
     {
@@ -8746,6 +8822,30 @@
           "report_class": "put",
           "test_name": "test_put_SOTH_setBots_path2p1",
           "unit": "setBots"
+        },
+        {
+          "entry_id": "test_00011",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_SOTH_setCooldownEnabled_path7p1_part_part0_r_w",
+          "unit": "setCooldownEnabled"
+        },
+        {
+          "entry_id": "test_00012",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_SOTH_setCooldownEnabled_path7p1_part_part0_w_w",
+          "unit": "setCooldownEnabled"
         }
       ],
       "generation_wall_s": 513.826,
@@ -8753,7 +8853,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__SOTH",
       "trial": 1,
-      "valid": 10,
+      "valid": 12,
       "wall_total_s": 593.952
     },
     {
@@ -8970,11 +9070,35 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_ShibaJail_setCooldownEnabled_path7p1_part_part0_r_w",
+          "unit": "setCooldownEnabled"
+        },
+        {
+          "entry_id": "test_00008",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_ShibaJail_setCooldownEnabled_path7p1_part_part0_w_w",
+          "unit": "setCooldownEnabled"
+        },
+        {
+          "entry_id": "test_00009",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_ShibaJail_startTrading_path2p1",
           "unit": "startTrading"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00010",
           "oracle_classes": [
             "R0",
             "R1",
@@ -8986,7 +9110,7 @@
           "unit": "unblockBot"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00011",
           "oracle_classes": [
             "R0",
             "R1",
@@ -9003,7 +9127,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__ShibaJail",
       "trial": 1,
-      "valid": 9,
+      "valid": 11,
       "wall_total_s": 579.877
     },
     {
@@ -9451,11 +9575,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_ShibaSamurai_transferOwnership_path2p1",
+          "test_name": "test_put_ShibaSamurai_transferOwnership_path14p1",
           "unit": "transferOwnership"
         },
         {
           "entry_id": "test_00019",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_ShibaSamurai_transferOwnership_path2p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00020",
           "oracle_classes": [
             "R0",
             "R1",
@@ -9472,7 +9608,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__ShibaSamurai",
       "trial": 1,
-      "valid": 19,
+      "valid": 20,
       "wall_total_s": 573.298
     },
     {
@@ -9858,8 +9994,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_SimpleMarketplace_MakeOffer_path2p1",
-          "unit": "MakeOffer"
+          "test_name": "test_put_SimpleMarketplace_AcceptOffer_path7p1_part_part0_w",
+          "unit": "AcceptOffer"
         },
         {
           "entry_id": "test_00004",
@@ -9870,7 +10006,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_SimpleMarketplace_MakeOffer_path6p1",
+          "test_name": "test_put_SimpleMarketplace_MakeOffer_path2p1",
           "unit": "MakeOffer"
         },
         {
@@ -9882,8 +10018,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_SimpleMarketplace_Reject_path2p1",
-          "unit": "Reject"
+          "test_name": "test_put_SimpleMarketplace_MakeOffer_path6p1",
+          "unit": "MakeOffer"
         },
         {
           "entry_id": "test_00006",
@@ -9894,7 +10030,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_SimpleMarketplace_Reject_path6p1",
+          "test_name": "test_put_SimpleMarketplace_Reject_path2p1",
           "unit": "Reject"
         },
         {
@@ -9906,11 +10042,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_SimpleMarketplace_Reject_path6p1",
+          "unit": "Reject"
+        },
+        {
+          "entry_id": "test_00008",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_SimpleMarketplace_acbd_path2p1",
           "unit": "acbd"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00009",
           "oracle_classes": [
             "R0"
           ],
@@ -9925,7 +10073,7 @@
       "status": "ok",
       "subject_id": "peer_ccsolbmc__SimpleMarketplace",
       "trial": 1,
-      "valid": 8,
+      "valid": 9,
       "wall_total_s": 81.436
     },
     {
@@ -10046,6 +10194,30 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_TESTDONTBUY_setCooldownEnabled_path7p1_part_part0_r_w",
+          "unit": "setCooldownEnabled"
+        },
+        {
+          "entry_id": "test_00010",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_TESTDONTBUY_setCooldownEnabled_path7p1_part_part0_w_w",
+          "unit": "setCooldownEnabled"
+        },
+        {
+          "entry_id": "test_00011",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_TESTDONTBUY_xsd_path2p1",
           "unit": "xsd"
         }
@@ -10055,7 +10227,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__TESTDONTBUY",
       "trial": 1,
-      "valid": 9,
+      "valid": 11,
       "wall_total_s": 586.232
     },
     {
@@ -10290,11 +10462,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TOAD_transferOwnership_path2p1",
+          "test_name": "test_put_TOAD_transferOwnership_path14p1",
           "unit": "transferOwnership"
         },
         {
           "entry_id": "test_00021",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_TOAD_transferOwnership_path2p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00022",
           "oracle_classes": [
             "R0",
             "R1",
@@ -10311,7 +10495,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__TOAD",
       "trial": 1,
-      "valid": 21,
+      "valid": 22,
       "wall_total_s": 580.982
     },
     {
@@ -10805,7 +10989,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TokenVesting_permit_issuer_path2p1",
+          "test_name": "test_put_TokenVesting_permit_issuer_path14p1",
           "unit": "permit_issuer"
         },
         {
@@ -10817,7 +11001,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TokenVesting_permit_issuer_path6p1",
+          "test_name": "test_put_TokenVesting_permit_issuer_path2p1",
           "unit": "permit_issuer"
         },
         {
@@ -10829,8 +11013,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TokenVesting_remove_stake_path2p1",
-          "unit": "remove_stake"
+          "test_name": "test_put_TokenVesting_permit_issuer_path6p1",
+          "unit": "permit_issuer"
         },
         {
           "entry_id": "test_00012",
@@ -10841,7 +11025,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TokenVesting_remove_stake_path3p1",
+          "test_name": "test_put_TokenVesting_remove_stake_path2p1",
           "unit": "remove_stake"
         },
         {
@@ -10853,8 +11037,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TokenVesting_revoke_issuer_path2p1",
-          "unit": "revoke_issuer"
+          "test_name": "test_put_TokenVesting_remove_stake_path3p1",
+          "unit": "remove_stake"
         },
         {
           "entry_id": "test_00014",
@@ -10865,7 +11049,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TokenVesting_revoke_issuer_path6p1",
+          "test_name": "test_put_TokenVesting_revoke_issuer_path2p1",
           "unit": "revoke_issuer"
         },
         {
@@ -10877,8 +11061,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TokenVesting_set_controller_path2p1",
-          "unit": "set_controller"
+          "test_name": "test_put_TokenVesting_revoke_issuer_path6p1",
+          "unit": "revoke_issuer"
         },
         {
           "entry_id": "test_00016",
@@ -10889,7 +11073,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TokenVesting_set_controller_path6p1",
+          "test_name": "test_put_TokenVesting_set_controller_path2p1",
           "unit": "set_controller"
         },
         {
@@ -10901,8 +11085,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TokenVesting_stake_tokens_path14p1",
-          "unit": "stake_tokens"
+          "test_name": "test_put_TokenVesting_set_controller_path6p1",
+          "unit": "set_controller"
         },
         {
           "entry_id": "test_00018",
@@ -10913,7 +11097,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TokenVesting_stake_tokens_path2p1",
+          "test_name": "test_put_TokenVesting_stake_tokens_path14p1",
           "unit": "stake_tokens"
         },
         {
@@ -10925,11 +11109,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_TokenVesting_stake_tokens_path2p1",
+          "unit": "stake_tokens"
+        },
+        {
+          "entry_id": "test_00020",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_TokenVesting_user_total_all_tranches_path2p1",
           "unit": "user_total_all_tranches"
         },
         {
-          "entry_id": "test_00020",
+          "entry_id": "test_00021",
           "oracle_classes": [],
           "parameterized_width": false,
           "report_class": "no_put_concrete_replay",
@@ -10942,7 +11138,7 @@
       "status": "persistence-error",
       "subject_id": "peer_ccsolbmc__TokenVesting",
       "trial": 1,
-      "valid": 20,
+      "valid": 21,
       "wall_total_s": 580.337
     },
     {
@@ -11574,6 +11770,30 @@
           "report_class": "put",
           "test_name": "test_put_eMastiff_owner_path3p1",
           "unit": "owner"
+        },
+        {
+          "entry_id": "test_00010",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_eMastiff_setCooldownEnabled_path7p1_part_part0_r_w",
+          "unit": "setCooldownEnabled"
+        },
+        {
+          "entry_id": "test_00011",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_eMastiff_setCooldownEnabled_path7p1_part_part0_w_w",
+          "unit": "setCooldownEnabled"
         }
       ],
       "generation_wall_s": 505.688,
@@ -11581,7 +11801,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__eMastiff",
       "trial": 1,
-      "valid": 9,
+      "valid": 11,
       "wall_total_s": 572.398
     },
     {
@@ -12106,11 +12326,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_eNew_transferOwnership_path2p1",
+          "test_name": "test_put_eNew_transferOwnership_path14p1",
           "unit": "transferOwnership"
         },
         {
           "entry_id": "test_00022",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_eNew_transferOwnership_path2p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00023",
           "oracle_classes": [
             "R0",
             "R1",
@@ -12127,7 +12359,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__eNew",
       "trial": 1,
-      "valid": 22,
+      "valid": 23,
       "wall_total_s": 589.9
     },
     {
@@ -12909,8 +13141,44 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_SHIBABREAD_owner_path3p1",
+          "unit": "owner"
+        },
+        {
+          "entry_id": "test_00008",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_SHIBABREAD_setBots_path2p1",
           "unit": "setBots"
+        },
+        {
+          "entry_id": "test_00009",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_SHIBABREAD_setCooldownEnabled_path7p1_part_part0_r_w",
+          "unit": "setCooldownEnabled"
+        },
+        {
+          "entry_id": "test_00010",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_SHIBABREAD_setCooldownEnabled_path7p1_part_part0_w_w",
+          "unit": "setCooldownEnabled"
         }
       ],
       "generation_wall_s": 507.658,
@@ -12918,7 +13186,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_ccsolbmc__shibabread",
       "trial": 1,
-      "valid": 7,
+      "valid": 10,
       "wall_total_s": 564.701
     },
     {
@@ -13578,136 +13846,13 @@
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_2",
-          "unit": "buyTicket"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_3",
-          "unit": "buyTicket"
-        },
-        {
-          "entry_id": "test_00003",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_2",
-          "unit": "checkWinner"
-        },
-        {
-          "entry_id": "test_00004",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_4",
-          "unit": "checkWinner"
-        },
-        {
-          "entry_id": "test_00005",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_3",
-          "unit": "checkWinner"
-        },
-        {
-          "entry_id": "test_00006",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_5",
-          "unit": "checkWinner"
-        },
-        {
-          "entry_id": "test_00007",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "checkWinner"
-        },
-        {
-          "entry_id": "test_00008",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Casino_claim_path2p1",
-          "unit": "claim"
-        },
-        {
-          "entry_id": "test_00009",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "claim"
-        },
-        {
-          "entry_id": "test_00010",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Casino_generateHash_path2p1",
-          "unit": "generateHash"
-        },
-        {
-          "entry_id": "test_00011",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_3",
-          "unit": "unsafeEntry"
-        },
-        {
-          "entry_id": "test_00012",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_2",
-          "unit": "verifyTicket"
-        },
-        {
-          "entry_id": "test_00013",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Casino_verifyTicket_path2p1",
-          "unit": "verifyTicket"
-        },
-        {
-          "entry_id": "test_00014",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_5",
-          "unit": "verifyTicket"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 265.215,
       "raw": 9,
       "status": "ok",
       "subject_id": "peer_solar__Casino",
       "trial": 1,
-      "valid": 14,
+      "valid": 0,
       "wall_total_s": 291.741
     },
     {
@@ -13798,55 +13943,11 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_DateTime_getHour_path3p1_part_part0_r_r",
-          "unit": "getHour"
-        },
-        {
-          "entry_id": "test_00009",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_DateTime_getHour_path3p1_part_part0_r_w",
-          "unit": "getHour"
-        },
-        {
-          "entry_id": "test_00010",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_DateTime_getHour_path3p1_part_part0_w_r",
-          "unit": "getHour"
-        },
-        {
-          "entry_id": "test_00011",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_DateTime_getHour_path3p1_part_part0_w_w",
-          "unit": "getHour"
-        },
-        {
-          "entry_id": "test_00012",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
           "test_name": "test_put_DateTime_isLeapYear_path14p1",
           "unit": "isLeapYear"
         },
         {
-          "entry_id": "test_00013",
+          "entry_id": "test_00009",
           "oracle_classes": [
             "R0"
           ],
@@ -13856,7 +13957,7 @@
           "unit": "isLeapYear"
         },
         {
-          "entry_id": "test_00014",
+          "entry_id": "test_00010",
           "oracle_classes": [
             "R0",
             "R2"
@@ -13867,7 +13968,7 @@
           "unit": "isLeapYear"
         },
         {
-          "entry_id": "test_00015",
+          "entry_id": "test_00011",
           "oracle_classes": [
             "R0",
             "R2"
@@ -13878,7 +13979,7 @@
           "unit": "isLeapYear"
         },
         {
-          "entry_id": "test_00016",
+          "entry_id": "test_00012",
           "oracle_classes": [
             "R0",
             "R2"
@@ -13889,7 +13990,7 @@
           "unit": "isLeapYear"
         },
         {
-          "entry_id": "test_00017",
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R2"
@@ -13900,7 +14001,7 @@
           "unit": "isLeapYear"
         },
         {
-          "entry_id": "test_00018",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R2"
@@ -13911,7 +14012,7 @@
           "unit": "isLeapYear"
         },
         {
-          "entry_id": "test_00019",
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R2"
@@ -13922,7 +14023,7 @@
           "unit": "isLeapYear"
         },
         {
-          "entry_id": "test_00020",
+          "entry_id": "test_00016",
           "oracle_classes": [
             "R0",
             "R2"
@@ -13933,17 +14034,7 @@
           "unit": "isLeapYear"
         },
         {
-          "entry_id": "test_00021",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_DateTime_leapYearsBefore_path2p1",
-          "unit": "leapYearsBefore"
-        },
-        {
-          "entry_id": "test_00022",
+          "entry_id": "test_00017",
           "oracle_classes": [
             "R0",
             "R2"
@@ -13954,7 +14045,7 @@
           "unit": "leapYearsBefore"
         },
         {
-          "entry_id": "test_00023",
+          "entry_id": "test_00018",
           "oracle_classes": [
             "R0",
             "R2"
@@ -13965,7 +14056,7 @@
           "unit": "leapYearsBefore"
         },
         {
-          "entry_id": "test_00024",
+          "entry_id": "test_00019",
           "oracle_classes": [
             "R0",
             "R2"
@@ -13981,7 +14072,7 @@
       "status": "persistence-error",
       "subject_id": "peer_solar__DateTime",
       "trial": 1,
-      "valid": 24,
+      "valid": 19,
       "wall_total_s": 579.093
     },
     {
@@ -14063,7 +14154,6 @@
           "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
-            "R1",
             "R2"
           ],
           "parameterized_width": true,
@@ -14141,30 +14231,6 @@
           "report_class": "put",
           "test_name": "test_put_EIP20StandardToken_transfer_path7p1",
           "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00009",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_EIP20StandardToken_transferFrom_path2p1",
-          "unit": "transferFrom"
-        },
-        {
-          "entry_id": "test_00010",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_EIP20StandardToken_transferFrom_path6p1",
-          "unit": "transferFrom"
         }
       ],
       "generation_wall_s": 60.282,
@@ -14172,7 +14238,7 @@
       "status": "persistence-error",
       "subject_id": "peer_solar__EIP20StandardToken",
       "trial": 1,
-      "valid": 10,
+      "valid": 8,
       "wall_total_s": 76.82
     },
     {
@@ -14277,7 +14343,6 @@
           "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
-            "R1",
             "R2"
           ],
           "parameterized_width": true,
@@ -14343,42 +14408,6 @@
           "report_class": "put",
           "test_name": "test_put_EzToken_transfer_path2p1",
           "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00008",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_EzToken_transfer_path6p1",
-          "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00009",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_EzToken_transferFrom_path2p1",
-          "unit": "transferFrom"
-        },
-        {
-          "entry_id": "test_00010",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_EzToken_transferFrom_path6p1",
-          "unit": "transferFrom"
         }
       ],
       "generation_wall_s": 128.856,
@@ -14386,7 +14415,7 @@
       "status": "persistence-error",
       "subject_id": "peer_solar__EzToken",
       "trial": 1,
-      "valid": 10,
+      "valid": 7,
       "wall_total_s": 144.98
     },
     {
@@ -14408,7 +14437,6 @@
           "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
-            "R1",
             "R2"
           ],
           "parameterized_width": true,
@@ -14472,7 +14500,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_FixedSupplyToken_balanceOf_path3p1_part_part0_w_w",
+          "test_name": "test_put_FixedSupplyToken_balanceOf_path3p1_part_part0_r_w",
           "unit": "balanceOf"
         },
         {
@@ -14484,8 +14512,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_FixedSupplyToken_totalSupply_path2p1",
-          "unit": "totalSupply"
+          "test_name": "test_put_FixedSupplyToken_balanceOf_path3p1_part_part0_w_r",
+          "unit": "balanceOf"
         },
         {
           "entry_id": "test_00009",
@@ -14496,24 +14524,32 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_FixedSupplyToken_totalSupply_path3p1",
-          "unit": "totalSupply"
+          "test_name": "test_put_FixedSupplyToken_balanceOf_path3p1_part_part0_w_w",
+          "unit": "balanceOf"
         },
         {
           "entry_id": "test_00010",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transfer"
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_FixedSupplyToken_totalSupply_path2p1",
+          "unit": "totalSupply"
         },
         {
           "entry_id": "test_00011",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_1",
-          "unit": "transfer"
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_FixedSupplyToken_totalSupply_path3p1",
+          "unit": "totalSupply"
         },
         {
           "entry_id": "test_00012",
@@ -14526,26 +14562,6 @@
           "report_class": "put",
           "test_name": "test_put_FixedSupplyToken_transfer_path2p1",
           "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00013",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transferFrom"
-        },
-        {
-          "entry_id": "test_00014",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_FixedSupplyToken_transferFrom_path2p1",
-          "unit": "transferFrom"
         }
       ],
       "generation_wall_s": 119.865,
@@ -14553,55 +14569,18 @@
       "status": "persistence-error",
       "subject_id": "peer_solar__FixedSupplyToken",
       "trial": 1,
-      "valid": 14,
+      "valid": 12,
       "wall_total_s": 144.997
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_FundRaising_withdraw_path2p1",
-          "unit": "withdraw"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_FundRaising_withdrawOwner_path2p1",
-          "unit": "withdrawOwner"
-        },
-        {
-          "entry_id": "test_00003",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_FundRaising_withdrawOwner_path6p1",
-          "unit": "withdrawOwner"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 139.563,
       "raw": 6,
       "status": "ok",
       "subject_id": "peer_solar__FundRaising",
       "trial": 1,
-      "valid": 3,
+      "valid": 0,
       "wall_total_s": 146.984
     },
     {
@@ -15591,114 +15570,13 @@
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_LotteryFor10_WAIT_BLOCKS_LIMIT_path0",
-          "unit": "WAIT_BLOCKS_LIMIT"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_LotteryFor10_WAIT_BLOCKS_LIMIT_path1p1",
-          "unit": "WAIT_BLOCKS_LIMIT"
-        },
-        {
-          "entry_id": "test_00003",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_LotteryFor10__registeredLimit_path0",
-          "unit": "_registeredLimit"
-        },
-        {
-          "entry_id": "test_00004",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_LotteryFor10__registeredLimit_path1p1",
-          "unit": "_registeredLimit"
-        },
-        {
-          "entry_id": "test_00005",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_LotteryFor10_lotterySolved_path0",
-          "unit": "lotterySolved"
-        },
-        {
-          "entry_id": "test_00006",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_LotteryFor10_lotterySolved_path1p1",
-          "unit": "lotterySolved"
-        },
-        {
-          "entry_id": "test_00007",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_LotteryFor10_registeredCount_path0",
-          "unit": "registeredCount"
-        },
-        {
-          "entry_id": "test_00008",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_LotteryFor10_registeredCount_path1p1",
-          "unit": "registeredCount"
-        },
-        {
-          "entry_id": "test_00009",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_LotteryFor10_waitingStartBlockNumber_path0",
-          "unit": "waitingStartBlockNumber"
-        },
-        {
-          "entry_id": "test_00010",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_LotteryFor10_waitingStartBlockNumber_path1p1",
-          "unit": "waitingStartBlockNumber"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 126.304,
       "raw": 10,
       "status": "ok",
       "subject_id": "peer_solar__LotteryFor10",
       "trial": 1,
-      "valid": 10,
+      "valid": 0,
       "wall_total_s": 136.772
     },
     {
@@ -15876,22 +15754,6 @@
         },
         {
           "entry_id": "test_00002",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_1",
-          "unit": "addOwner"
-        },
-        {
-          "entry_id": "test_00003",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "addOwner"
-        },
-        {
-          "entry_id": "test_00004",
           "oracle_classes": [
             "R0",
             "R1",
@@ -15903,15 +15765,7 @@
           "unit": "deleteTransaction"
         },
         {
-          "entry_id": "test_00005",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_1",
-          "unit": "deleteTransaction"
-        },
-        {
-          "entry_id": "test_00006",
+          "entry_id": "test_00003",
           "oracle_classes": [
             "R0",
             "R1",
@@ -15923,23 +15777,7 @@
           "unit": "getActiveTransactions"
         },
         {
-          "entry_id": "test_00007",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_1",
-          "unit": "getActiveTransactions"
-        },
-        {
-          "entry_id": "test_00008",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "getActiveTransactions"
-        },
-        {
-          "entry_id": "test_00009",
+          "entry_id": "test_00004",
           "oracle_classes": [
             "R0",
             "R1",
@@ -15951,23 +15789,7 @@
           "unit": "removeOwner"
         },
         {
-          "entry_id": "test_00010",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_1",
-          "unit": "removeOwner"
-        },
-        {
-          "entry_id": "test_00011",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "removeOwner"
-        },
-        {
-          "entry_id": "test_00012",
+          "entry_id": "test_00005",
           "oracle_classes": [
             "R0"
           ],
@@ -15977,15 +15799,7 @@
           "unit": "send"
         },
         {
-          "entry_id": "test_00013",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "signTransaction"
-        },
-        {
-          "entry_id": "test_00014",
+          "entry_id": "test_00006",
           "oracle_classes": [
             "R0",
             "R1",
@@ -15997,23 +15811,7 @@
           "unit": "signTransaction"
         },
         {
-          "entry_id": "test_00015",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_1",
-          "unit": "signTransaction"
-        },
-        {
-          "entry_id": "test_00016",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_1",
-          "unit": "transferTo"
-        },
-        {
-          "entry_id": "test_00017",
+          "entry_id": "test_00007",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16025,15 +15823,7 @@
           "unit": "transferTo"
         },
         {
-          "entry_id": "test_00018",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_2",
-          "unit": "transferTo"
-        },
-        {
-          "entry_id": "test_00019",
+          "entry_id": "test_00008",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16043,22 +15833,6 @@
           "report_class": "put",
           "test_name": "test_put_MultiSigWallet_withdraw_path2p1",
           "unit": "withdraw"
-        },
-        {
-          "entry_id": "test_00020",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_1",
-          "unit": "withdraw"
-        },
-        {
-          "entry_id": "test_00021",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_2",
-          "unit": "withdraw"
         }
       ],
       "generation_wall_s": 186.857,
@@ -16066,7 +15840,7 @@
       "status": "ok",
       "subject_id": "peer_solar__MultiSigWallet (2)",
       "trial": 1,
-      "valid": 21,
+      "valid": 8,
       "wall_total_s": 205.852
     },
     {
@@ -16165,6 +15939,17 @@
           "report_class": "put",
           "test_name": "test_put_MyAdvancedToken_transferOwnership_path6p1_part_part0_w",
           "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00009",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MyAdvancedToken_transferOwnership_path7p1_part_part0_w_w",
+          "unit": "transferOwnership"
         }
       ],
       "generation_wall_s": 378.279,
@@ -16172,31 +15957,18 @@
       "status": "persistence-error",
       "subject_id": "peer_solar__MyAdvancedToken",
       "trial": 1,
-      "valid": 8,
+      "valid": 9,
       "wall_total_s": 406.798
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_OpenAddressLottery_kill_path2p1",
-          "unit": "kill"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 525.865,
       "raw": 7,
       "status": "ok",
       "subject_id": "peer_solar__OpenAddressLottery",
       "trial": 1,
-      "valid": 1,
+      "valid": 0,
       "wall_total_s": 542.488
     },
     {
@@ -16463,6 +16235,18 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_Randomness_setSealedSeed_path15p1",
+          "unit": "setSealedSeed"
+        },
+        {
+          "entry_id": "test_00007",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_Randomness_setSealedSeed_path2p1",
           "unit": "setSealedSeed"
         }
@@ -16472,7 +16256,7 @@
       "status": "ok",
       "subject_id": "peer_solar__Randomness",
       "trial": 1,
-      "valid": 6,
+      "valid": 7,
       "wall_total_s": 96.797
     },
     {
@@ -16625,11 +16409,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_Rubixi_collectAllFees_path2p1",
+          "test_name": "test_put_Rubixi_collectAllFees_path12p1",
           "unit": "collectAllFees"
         },
         {
           "entry_id": "test_00008",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Rubixi_collectAllFees_path2p1",
+          "unit": "collectAllFees"
+        },
+        {
+          "entry_id": "test_00009",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16641,7 +16437,7 @@
           "unit": "collectAllFees"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00010",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16653,7 +16449,7 @@
           "unit": "collectAllFees"
         },
         {
-          "entry_id": "test_00010",
+          "entry_id": "test_00011",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16665,7 +16461,7 @@
           "unit": "collectAllFees"
         },
         {
-          "entry_id": "test_00011",
+          "entry_id": "test_00012",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16677,7 +16473,7 @@
           "unit": "collectFeesInEther"
         },
         {
-          "entry_id": "test_00012",
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16689,7 +16485,7 @@
           "unit": "collectPercentOfFees"
         },
         {
-          "entry_id": "test_00013",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16701,7 +16497,7 @@
           "unit": "currentFeePercentage"
         },
         {
-          "entry_id": "test_00014",
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16713,7 +16509,7 @@
           "unit": "currentMultiplier"
         },
         {
-          "entry_id": "test_00015",
+          "entry_id": "test_00016",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16725,7 +16521,7 @@
           "unit": "currentPyramidBalanceApproximately"
         },
         {
-          "entry_id": "test_00016",
+          "entry_id": "test_00017",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16737,7 +16533,7 @@
           "unit": "fallback"
         },
         {
-          "entry_id": "test_00017",
+          "entry_id": "test_00018",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16749,7 +16545,7 @@
           "unit": "fallback"
         },
         {
-          "entry_id": "test_00018",
+          "entry_id": "test_00019",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16761,7 +16557,7 @@
           "unit": "fallback"
         },
         {
-          "entry_id": "test_00019",
+          "entry_id": "test_00020",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16773,7 +16569,7 @@
           "unit": "fallback"
         },
         {
-          "entry_id": "test_00020",
+          "entry_id": "test_00021",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16785,7 +16581,7 @@
           "unit": "feesSeperateFromBalanceApproximately"
         },
         {
-          "entry_id": "test_00021",
+          "entry_id": "test_00022",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16797,7 +16593,7 @@
           "unit": "feesSeperateFromBalanceApproximately"
         },
         {
-          "entry_id": "test_00022",
+          "entry_id": "test_00023",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16809,7 +16605,7 @@
           "unit": "nextPayoutWhenPyramidBalanceTotalsApproximately"
         },
         {
-          "entry_id": "test_00023",
+          "entry_id": "test_00024",
           "oracle_classes": [
             "R0",
             "R1",
@@ -16821,7 +16617,7 @@
           "unit": "numberOfParticipantsWaitingForPayout"
         },
         {
-          "entry_id": "test_00024",
+          "entry_id": "test_00025",
           "oracle_classes": [
             "R0"
           ],
@@ -16836,7 +16632,7 @@
       "status": "persistence-error",
       "subject_id": "peer_solar__Rubixi",
       "trial": 1,
-      "valid": 24,
+      "valid": 25,
       "wall_total_s": 589.241
     },
     {
@@ -16922,7 +16718,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TestDateTime__isLeapYear_path12p1_part_part0_r",
+          "test_name": "test_put_TestDateTime__isLeapYear_path12p1_part_part0_w_w",
           "unit": "_isLeapYear"
         },
         {
@@ -16933,7 +16729,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TestDateTime__isLeapYear_path12p1_part_part0_w_r",
+          "test_name": "test_put_TestDateTime__isLeapYear_path13p1",
           "unit": "_isLeapYear"
         },
         {
@@ -16944,55 +16740,11 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TestDateTime__isLeapYear_path12p1_part_part0_w_w",
-          "unit": "_isLeapYear"
-        },
-        {
-          "entry_id": "test_00004",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime__isLeapYear_path13p1",
-          "unit": "_isLeapYear"
-        },
-        {
-          "entry_id": "test_00005",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime__isLeapYear_path15p1_part_part0_r",
-          "unit": "_isLeapYear"
-        },
-        {
-          "entry_id": "test_00006",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime__isLeapYear_path15p1_part_part0_w_r",
-          "unit": "_isLeapYear"
-        },
-        {
-          "entry_id": "test_00007",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
           "test_name": "test_put_TestDateTime__isLeapYear_path15p1_part_part0_w_w",
           "unit": "_isLeapYear"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00004",
           "oracle_classes": [
             "R0"
           ],
@@ -17002,135 +16754,7 @@
           "unit": "_isLeapYear"
         },
         {
-          "entry_id": "test_00009",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_addDays_path2p1",
-          "unit": "addDays"
-        },
-        {
-          "entry_id": "test_00010",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_addDays_path7p1_part_part0_r",
-          "unit": "addDays"
-        },
-        {
-          "entry_id": "test_00011",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_addDays_path7p1_part_part0_w",
-          "unit": "addDays"
-        },
-        {
-          "entry_id": "test_00012",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_addHours_path2p1",
-          "unit": "addHours"
-        },
-        {
-          "entry_id": "test_00013",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_addHours_path7p1_part_part0_r",
-          "unit": "addHours"
-        },
-        {
-          "entry_id": "test_00014",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_addHours_path7p1_part_part0_w",
-          "unit": "addHours"
-        },
-        {
-          "entry_id": "test_00015",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_addMinutes_path2p1",
-          "unit": "addMinutes"
-        },
-        {
-          "entry_id": "test_00016",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_addMinutes_path7p1_part_part0_r",
-          "unit": "addMinutes"
-        },
-        {
-          "entry_id": "test_00017",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_addMinutes_path7p1_part_part0_w",
-          "unit": "addMinutes"
-        },
-        {
-          "entry_id": "test_00018",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_addSeconds_path2p1",
-          "unit": "addSeconds"
-        },
-        {
-          "entry_id": "test_00019",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_addSeconds_path7p1_part_part0_r",
-          "unit": "addSeconds"
-        },
-        {
-          "entry_id": "test_00020",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_addSeconds_path7p1_part_part0_w",
-          "unit": "addSeconds"
-        },
-        {
-          "entry_id": "test_00021",
+          "entry_id": "test_00005",
           "oracle_classes": [
             "R0"
           ],
@@ -17140,7 +16764,7 @@
           "unit": "getDayOfWeek"
         },
         {
-          "entry_id": "test_00022",
+          "entry_id": "test_00006",
           "oracle_classes": [
             "R0",
             "R2"
@@ -17151,7 +16775,7 @@
           "unit": "getDayOfWeek"
         },
         {
-          "entry_id": "test_00023",
+          "entry_id": "test_00007",
           "oracle_classes": [
             "R0"
           ],
@@ -17161,7 +16785,7 @@
           "unit": "getHour"
         },
         {
-          "entry_id": "test_00024",
+          "entry_id": "test_00008",
           "oracle_classes": [
             "R0",
             "R2"
@@ -17172,7 +16796,7 @@
           "unit": "getHour"
         },
         {
-          "entry_id": "test_00025",
+          "entry_id": "test_00009",
           "oracle_classes": [
             "R0",
             "R2"
@@ -17183,7 +16807,7 @@
           "unit": "getHour"
         },
         {
-          "entry_id": "test_00026",
+          "entry_id": "test_00010",
           "oracle_classes": [
             "R0",
             "R2"
@@ -17194,7 +16818,7 @@
           "unit": "getHour"
         },
         {
-          "entry_id": "test_00027",
+          "entry_id": "test_00011",
           "oracle_classes": [
             "R0",
             "R2"
@@ -17205,7 +16829,7 @@
           "unit": "getHour"
         },
         {
-          "entry_id": "test_00028",
+          "entry_id": "test_00012",
           "oracle_classes": [
             "R0"
           ],
@@ -17215,7 +16839,7 @@
           "unit": "getMinute"
         },
         {
-          "entry_id": "test_00029",
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R2"
@@ -17226,7 +16850,7 @@
           "unit": "getMinute"
         },
         {
-          "entry_id": "test_00030",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R2"
@@ -17237,7 +16861,7 @@
           "unit": "getMinute"
         },
         {
-          "entry_id": "test_00031",
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R2"
@@ -17248,7 +16872,7 @@
           "unit": "getMinute"
         },
         {
-          "entry_id": "test_00032",
+          "entry_id": "test_00016",
           "oracle_classes": [
             "R0",
             "R2"
@@ -17259,17 +16883,7 @@
           "unit": "getMinute"
         },
         {
-          "entry_id": "test_00033",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_getSecond_path2p1",
-          "unit": "getSecond"
-        },
-        {
-          "entry_id": "test_00034",
+          "entry_id": "test_00017",
           "oracle_classes": [
             "R0",
             "R2"
@@ -17280,7 +16894,7 @@
           "unit": "getSecond"
         },
         {
-          "entry_id": "test_00035",
+          "entry_id": "test_00018",
           "oracle_classes": [
             "R0",
             "R2"
@@ -17291,7 +16905,7 @@
           "unit": "getSecond"
         },
         {
-          "entry_id": "test_00036",
+          "entry_id": "test_00019",
           "oracle_classes": [
             "R0",
             "R2"
@@ -17302,133 +16916,96 @@
           "unit": "getSecond"
         },
         {
-          "entry_id": "test_00037",
+          "entry_id": "test_00020",
           "oracle_classes": [
             "R0"
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TestDateTime_subDays_path2p1",
-          "unit": "subDays"
+          "test_name": "test_put_TestDateTime_isWeekDay_path2p1",
+          "unit": "isWeekDay"
         },
         {
-          "entry_id": "test_00038",
+          "entry_id": "test_00021",
           "oracle_classes": [
             "R0",
             "R2"
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TestDateTime_subDays_path7p1_part_part0_r",
-          "unit": "subDays"
+          "test_name": "test_put_TestDateTime_isWeekDay_path3p1_part_part0_r",
+          "unit": "isWeekDay"
         },
         {
-          "entry_id": "test_00039",
+          "entry_id": "test_00022",
           "oracle_classes": [
             "R0",
             "R2"
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TestDateTime_subDays_path7p1_part_part0_w_r",
-          "unit": "subDays"
+          "test_name": "test_put_TestDateTime_isWeekDay_path3p1_part_part0_w_r",
+          "unit": "isWeekDay"
         },
         {
-          "entry_id": "test_00040",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_subDays_path7p1_part_part0_w_w",
-          "unit": "subDays"
-        },
-        {
-          "entry_id": "test_00041",
+          "entry_id": "test_00023",
           "oracle_classes": [
             "R0"
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TestDateTime_subHours_path2p1",
-          "unit": "subHours"
+          "test_name": "test_put_TestDateTime_isWeekDay_path3p1_part_part0_w_w",
+          "unit": "isWeekDay"
         },
         {
-          "entry_id": "test_00042",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_subHours_path7p1_part_part0_r",
-          "unit": "subHours"
-        },
-        {
-          "entry_id": "test_00043",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_subHours_path7p1_part_part0_w_r",
-          "unit": "subHours"
-        },
-        {
-          "entry_id": "test_00044",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_TestDateTime_subHours_path7p1_part_part0_w_w",
-          "unit": "subHours"
-        },
-        {
-          "entry_id": "test_00045",
+          "entry_id": "test_00024",
           "oracle_classes": [
             "R0"
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TestDateTime_subMinutes_path2p1",
-          "unit": "subMinutes"
+          "test_name": "test_put_TestDateTime_isWeekEnd_path2p1",
+          "unit": "isWeekEnd"
         },
         {
-          "entry_id": "test_00046",
+          "entry_id": "test_00025",
           "oracle_classes": [
-            "R0",
-            "R2"
+            "R0"
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TestDateTime_subMinutes_path7p1_part_part0_r",
-          "unit": "subMinutes"
+          "test_name": "test_put_TestDateTime_isWeekEnd_path3p1_part_part0_r_r",
+          "unit": "isWeekEnd"
         },
         {
-          "entry_id": "test_00047",
+          "entry_id": "test_00026",
           "oracle_classes": [
-            "R0",
-            "R2"
+            "R0"
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TestDateTime_subMinutes_path7p1_part_part0_w_r",
-          "unit": "subMinutes"
+          "test_name": "test_put_TestDateTime_isWeekEnd_path3p1_part_part0_r_w",
+          "unit": "isWeekEnd"
         },
         {
-          "entry_id": "test_00048",
+          "entry_id": "test_00027",
           "oracle_classes": [
-            "R0",
-            "R2"
+            "R0"
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_TestDateTime_subMinutes_path7p1_part_part0_w_w",
-          "unit": "subMinutes"
+          "test_name": "test_put_TestDateTime_isWeekEnd_path3p1_part_part0_w_r",
+          "unit": "isWeekEnd"
+        },
+        {
+          "entry_id": "test_00028",
+          "oracle_classes": [
+            "R0"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_TestDateTime_isWeekEnd_path3p1_part_part0_w_w",
+          "unit": "isWeekEnd"
         }
       ],
       "generation_wall_s": 517.146,
@@ -17436,7 +17013,7 @@
       "status": "persistence-error",
       "subject_id": "peer_solar__TestDateTime",
       "trial": 1,
-      "valid": 48,
+      "valid": 28,
       "wall_total_s": 596.378
     },
     {
@@ -18248,26 +17825,13 @@
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Cb3_g_path2p1",
-          "unit": "g"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 1.848,
       "raw": 1,
       "status": "ok",
       "subject_id": "peer_soltg__branches_inside_modifiers_2",
       "trial": 1,
-      "valid": 1,
+      "valid": 0,
       "wall_total_s": 3.964
     },
     {
@@ -18673,50 +18237,6 @@
           "report_class": "put",
           "test_name": "test_put_B3_g3_path2p1",
           "unit": "g3"
-        },
-        {
-          "entry_id": "test_00004",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_B3_g3_path7p1_part_part0_r_r",
-          "unit": "g3"
-        },
-        {
-          "entry_id": "test_00005",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_B3_g3_path7p1_part_part0_r_w",
-          "unit": "g3"
-        },
-        {
-          "entry_id": "test_00006",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_B3_g3_path7p1_part_part0_w_r",
-          "unit": "g3"
-        },
-        {
-          "entry_id": "test_00007",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_B3_g3_path7p1_part_part0_w_w",
-          "unit": "g3"
         }
       ],
       "generation_wall_s": 424.633,
@@ -18724,7 +18244,7 @@
       "status": "ok",
       "subject_id": "peer_soltg__constructor_3",
       "trial": 1,
-      "valid": 7,
+      "valid": 3,
       "wall_total_s": 466.264
     },
     {
@@ -18744,22 +18264,6 @@
         },
         {
           "entry_id": "test_00002",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_2",
-          "unit": "f3"
-        },
-        {
-          "entry_id": "test_00003",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_1",
-          "unit": "f3"
-        },
-        {
-          "entry_id": "test_00004",
           "oracle_classes": [
             "R0",
             "R2"
@@ -18775,7 +18279,7 @@
       "status": "ok",
       "subject_id": "peer_soltg__constructor_3_m",
       "trial": 1,
-      "valid": 4,
+      "valid": 2,
       "wall_total_s": 224.571
     },
     {
@@ -18918,14 +18422,6 @@
       "entries": [
         {
           "entry_id": "test_00001",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "f6"
-        },
-        {
-          "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
             "R1",
@@ -18937,7 +18433,7 @@
           "unit": "f6"
         },
         {
-          "entry_id": "test_00003",
+          "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
             "R1",
@@ -18949,7 +18445,7 @@
           "unit": "g6"
         },
         {
-          "entry_id": "test_00004",
+          "entry_id": "test_00003",
           "oracle_classes": [
             "R0",
             "R2"
@@ -18960,7 +18456,7 @@
           "unit": "g6"
         },
         {
-          "entry_id": "test_00005",
+          "entry_id": "test_00004",
           "oracle_classes": [
             "R0",
             "R2"
@@ -18971,7 +18467,7 @@
           "unit": "g6"
         },
         {
-          "entry_id": "test_00006",
+          "entry_id": "test_00005",
           "oracle_classes": [
             "R0",
             "R2"
@@ -18982,7 +18478,7 @@
           "unit": "g6"
         },
         {
-          "entry_id": "test_00007",
+          "entry_id": "test_00006",
           "oracle_classes": [
             "R0",
             "R2"
@@ -18998,95 +18494,18 @@
       "status": "ok",
       "subject_id": "peer_soltg__constructor_6",
       "trial": 1,
-      "valid": 7,
+      "valid": 6,
       "wall_total_s": 136.178
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "f7"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_B7_f7_path2p1",
-          "unit": "f7"
-        },
-        {
-          "entry_id": "test_00003",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_B7_g7_path2p1",
-          "unit": "g7"
-        },
-        {
-          "entry_id": "test_00004",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_B7_g7_path7p1_part_part0_r_r",
-          "unit": "g7"
-        },
-        {
-          "entry_id": "test_00005",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_B7_g7_path7p1_part_part0_r_w",
-          "unit": "g7"
-        },
-        {
-          "entry_id": "test_00006",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_B7_g7_path7p1_part_part0_w_r",
-          "unit": "g7"
-        },
-        {
-          "entry_id": "test_00007",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_B7_g7_path7p1_part_part0_w_w",
-          "unit": "g7"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 152.658,
       "raw": 6,
       "status": "ok",
       "subject_id": "peer_soltg__constructor_7",
       "trial": 1,
-      "valid": 7,
+      "valid": 0,
       "wall_total_s": 169.813
     },
     {
@@ -19191,82 +18610,46 @@
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_Cv1_constructor_revert",
-          "unit": "__deploy__"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 0.0,
       "raw": 1,
       "status": "no-units",
       "subject_id": "peer_soltg__constructor_state_variable_init",
       "trial": 1,
-      "valid": 1,
+      "valid": 0,
       "wall_total_s": 12.475
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_Dv2_constructor_revert",
-          "unit": "__deploy__"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 0.0,
       "raw": 1,
       "status": "no-units",
       "subject_id": "peer_soltg__constructor_state_variable_init_chain_alternate",
       "trial": 1,
-      "valid": 1,
+      "valid": 0,
       "wall_total_s": 12.114
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_D4v3_constructor_revert",
-          "unit": "__deploy__"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 0.0,
       "raw": 1,
       "status": "no-units",
       "subject_id": "peer_soltg__constructor_state_variable_init_diamond",
       "trial": 1,
-      "valid": 1,
+      "valid": 0,
       "wall_total_s": 5.753
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_Ccs_constructor_revert",
-          "unit": "__deploy__"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 0.0,
       "raw": 1,
       "status": "no-units",
       "subject_id": "peer_soltg__constructors",
       "trial": 1,
-      "valid": 1,
+      "valid": 0,
       "wall_total_s": 12.079
     },
     {
@@ -19326,14 +18709,6 @@
       "entries": [
         {
           "entry_id": "test_00001",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "f"
-        },
-        {
-          "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
             "R1",
@@ -19345,7 +18720,7 @@
           "unit": "f"
         },
         {
-          "entry_id": "test_00003",
+          "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
             "R1",
@@ -19357,7 +18732,7 @@
           "unit": "f"
         },
         {
-          "entry_id": "test_00004",
+          "entry_id": "test_00003",
           "oracle_classes": [
             "R0",
             "R1",
@@ -19369,7 +18744,7 @@
           "unit": "set"
         },
         {
-          "entry_id": "test_00005",
+          "entry_id": "test_00004",
           "oracle_classes": [
             "R0",
             "R2"
@@ -19380,7 +18755,7 @@
           "unit": "set"
         },
         {
-          "entry_id": "test_00006",
+          "entry_id": "test_00005",
           "oracle_classes": [
             "R0",
             "R2"
@@ -19391,7 +18766,7 @@
           "unit": "set"
         },
         {
-          "entry_id": "test_00007",
+          "entry_id": "test_00006",
           "oracle_classes": [
             "R0",
             "R2"
@@ -19407,7 +18782,7 @@
       "status": "ok",
       "subject_id": "peer_soltg__exampl",
       "trial": 1,
-      "valid": 7,
+      "valid": 6,
       "wall_total_s": 65.102
     },
     {
@@ -19624,64 +18999,13 @@
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Simplelb_f_path115p1",
-          "unit": "f"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Simplelb_f_path2p1",
-          "unit": "f"
-        },
-        {
-          "entry_id": "test_00003",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Simplelb_f_path227p1",
-          "unit": "f"
-        },
-        {
-          "entry_id": "test_00004",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Simplelb_f_path59p1",
-          "unit": "f"
-        },
-        {
-          "entry_id": "test_00005",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Simplelb_f_path6p1",
-          "unit": "f"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 119.985,
       "raw": 1,
       "status": "ok",
       "subject_id": "peer_soltg__loop_basic",
       "trial": 1,
-      "valid": 5,
+      "valid": 0,
       "wall_total_s": 121.982
     },
     {
@@ -19913,38 +19237,13 @@
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_put_WETH9_withdraw_path15p1",
-          "unit": "withdraw"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_WETH9_withdraw_path2p1",
-          "unit": "withdraw"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 23.253,
       "raw": 2,
       "status": "persistence-error",
       "subject_id": "peer_soltg__microWeth",
       "trial": 1,
-      "valid": 2,
+      "valid": 0,
       "wall_total_s": 30.175
     },
     {
@@ -20248,14 +19547,6 @@
         },
         {
           "entry_id": "test_00005",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "call_2"
-        },
-        {
-          "entry_id": "test_00006",
           "oracle_classes": [
             "R0",
             "R1",
@@ -20272,7 +19563,7 @@
       "status": "ok",
       "subject_id": "peer_soltg__seq_calls",
       "trial": 1,
-      "valid": 6,
+      "valid": 5,
       "wall_total_s": 49.145
     },
     {
@@ -20540,24 +19831,13 @@
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Csi2_check_path2p1",
-          "unit": "check"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 13.13,
       "raw": 1,
       "status": "ok",
       "subject_id": "peer_soltg__simple_if_array",
       "trial": 1,
-      "valid": 1,
+      "valid": 0,
       "wall_total_s": 15.884
     },
     {
@@ -20670,26 +19950,13 @@
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Csi6_check_path2p1",
-          "unit": "check"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 10.813,
       "raw": 4,
       "status": "ok",
       "subject_id": "peer_soltg__simple_if_tuple",
       "trial": 1,
-      "valid": 1,
+      "valid": 0,
       "wall_total_s": 22.425
     },
     {
@@ -20968,14 +20235,6 @@
         },
         {
           "entry_id": "test_00002",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "balanceCheck"
-        },
-        {
-          "entry_id": "test_00003",
           "oracle_classes": [
             "R0",
             "R1",
@@ -20987,7 +20246,7 @@
           "unit": "deposit"
         },
         {
-          "entry_id": "test_00004",
+          "entry_id": "test_00003",
           "oracle_classes": [
             "R0",
             "R1",
@@ -20999,7 +20258,7 @@
           "unit": "deposit"
         },
         {
-          "entry_id": "test_00005",
+          "entry_id": "test_00004",
           "oracle_classes": [
             "R0",
             "R1",
@@ -21016,7 +20275,7 @@
       "status": "ok",
       "subject_id": "peer_soltg__store",
       "trial": 1,
-      "valid": 5,
+      "valid": 4,
       "wall_total_s": 36.165
     },
     {
@@ -21036,14 +20295,6 @@
         },
         {
           "entry_id": "test_00002",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "balanceCheck"
-        },
-        {
-          "entry_id": "test_00003",
           "oracle_classes": [
             "R0",
             "R1",
@@ -21060,39 +20311,18 @@
       "status": "ok",
       "subject_id": "peer_soltg__store_state",
       "trial": 1,
-      "valid": 3,
+      "valid": 2,
       "wall_total_s": 26.31
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Csi7_f_path2p1",
-          "unit": "f"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "f"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 4.807,
       "raw": 2,
       "status": "ok",
       "subject_id": "peer_soltg__triple_nested_if",
       "trial": 1,
-      "valid": 2,
+      "valid": 0,
       "wall_total_s": 8.808
     },
     {
@@ -21507,7 +20737,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_AavePoolReward_earned_path107p1",
+          "test_name": "test_put_AavePoolReward_earned_path2p1",
           "unit": "earned"
         },
         {
@@ -21531,15 +20761,19 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_AavePoolReward_lastTimeRewardApplicable_path2p1",
-          "unit": "lastTimeRewardApplicable"
+          "test_name": "test_put_AavePoolReward_isOwner_path3p1",
+          "unit": "isOwner"
         },
         {
           "entry_id": "test_00008",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_AavePoolReward_lastTimeRewardApplicable_path2p1",
           "unit": "lastTimeRewardApplicable"
         },
         {
@@ -21575,7 +20809,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_AavePoolReward_rewardPerToken_path2p1",
+          "test_name": "test_put_AavePoolReward_rewardPerToken_path6p1",
           "unit": "rewardPerToken"
         },
         {
@@ -21587,23 +20821,11 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_AavePoolReward_rewardPerToken_path6p1",
-          "unit": "rewardPerToken"
-        },
-        {
-          "entry_id": "test_00013",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
           "test_name": "test_put_AavePoolReward_setRewardDistribution_path2p1",
           "unit": "setRewardDistribution"
         },
         {
-          "entry_id": "test_00014",
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -21615,7 +20837,7 @@
           "unit": "setRewardDistribution"
         },
         {
-          "entry_id": "test_00015",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R1",
@@ -21627,7 +20849,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00016",
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R1",
@@ -21639,7 +20861,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00017",
+          "entry_id": "test_00016",
           "oracle_classes": [
             "R0",
             "R1",
@@ -21651,7 +20873,7 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00018",
+          "entry_id": "test_00017",
           "oracle_classes": [
             "R0",
             "R1",
@@ -21663,7 +20885,7 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00019",
+          "entry_id": "test_00018",
           "oracle_classes": [
             "R0",
             "R1",
@@ -21680,7 +20902,7 @@
       "status": "persistence-error",
       "subject_id": "peer_syntest__AavePoolReward",
       "trial": 1,
-      "valid": 19,
+      "valid": 18,
       "wall_total_s": 582.137
     },
     {
@@ -21688,30 +20910,6 @@
       "entries": [
         {
           "entry_id": "test_00001",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "baz"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_3",
-          "unit": "baz"
-        },
-        {
-          "entry_id": "test_00003",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_4",
-          "unit": "baz"
-        },
-        {
-          "entry_id": "test_00004",
           "oracle_classes": [
             "R0",
             "R1"
@@ -21722,23 +20920,7 @@
           "unit": "baz"
         },
         {
-          "entry_id": "test_00005",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_1",
-          "unit": "baz"
-        },
-        {
-          "entry_id": "test_00006",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_2",
-          "unit": "baz"
-        },
-        {
-          "entry_id": "test_00007",
+          "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
             "R1"
@@ -21749,7 +20931,7 @@
           "unit": "echidna_all_states"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00003",
           "oracle_classes": [
             "R0",
             "R1",
@@ -21761,7 +20943,7 @@
           "unit": "echidna_all_states"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00004",
           "oracle_classes": [
             "R0",
             "R1",
@@ -21773,7 +20955,7 @@
           "unit": "echidna_all_states"
         },
         {
-          "entry_id": "test_00010",
+          "entry_id": "test_00005",
           "oracle_classes": [
             "R0",
             "R1",
@@ -21790,7 +20972,7 @@
       "status": "ok",
       "subject_id": "peer_syntest__Baz",
       "trial": 1,
-      "valid": 10,
+      "valid": 5,
       "wall_total_s": 97.268
     },
     {
@@ -21890,7 +21072,6 @@
           "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
-            "R1",
             "R2"
           ],
           "parameterized_width": true,
@@ -21913,9 +21094,7 @@
         {
           "entry_id": "test_00004",
           "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
+            "R0"
           ],
           "parameterized_width": true,
           "report_class": "put",
@@ -21943,8 +21122,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_Core_Fi_V3_totalSupply_path2p1",
-          "unit": "totalSupply"
+          "test_name": "test_put_Core_Fi_V3_balanceOf_path3p1",
+          "unit": "balanceOf"
         },
         {
           "entry_id": "test_00007",
@@ -21955,7 +21134,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_Core_Fi_V3_totalSupply_path3p1",
+          "test_name": "test_put_Core_Fi_V3_totalSupply_path2p1",
           "unit": "totalSupply"
         },
         {
@@ -21967,19 +21146,11 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_Core_Fi_V3_transfer_path2p1",
-          "unit": "transfer"
+          "test_name": "test_put_Core_Fi_V3_totalSupply_path3p1",
+          "unit": "totalSupply"
         },
         {
           "entry_id": "test_00009",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00010",
           "oracle_classes": [
             "R0",
             "R1",
@@ -21987,16 +21158,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_Core_Fi_V3_transferFrom_path2p1",
-          "unit": "transferFrom"
-        },
-        {
-          "entry_id": "test_00011",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transferFrom"
+          "test_name": "test_put_Core_Fi_V3_transfer_path2p1",
+          "unit": "transfer"
         }
       ],
       "generation_wall_s": 144.865,
@@ -22004,7 +21167,7 @@
       "status": "persistence-error",
       "subject_id": "peer_syntest__Core_Fi_V3",
       "trial": 1,
-      "valid": 11,
+      "valid": 9,
       "wall_total_s": 163.177
     },
     {
@@ -22019,6 +21182,28 @@
           "report_class": "put",
           "test_name": "test_put_CryptoGhost_getGhostName_path2p1",
           "unit": "getGhostName"
+        },
+        {
+          "entry_id": "test_00002",
+          "oracle_classes": [
+            "R0",
+            "R1"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_CryptoGhost_isOwner_path3p1",
+          "unit": "isOwner"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R1"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_CryptoGhost_owner_path3p1",
+          "unit": "owner"
         }
       ],
       "generation_wall_s": 543.429,
@@ -22026,7 +21211,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_syntest__CryptoGhost",
       "trial": 1,
-      "valid": 1,
+      "valid": 3,
       "wall_total_s": 575.629
     },
     {
@@ -22041,43 +21226,13 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_CryptoSecureBankToken_addBlackList_path2p1",
-          "unit": "addBlackList"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_2",
-          "unit": "addBlackList"
-        },
-        {
-          "entry_id": "test_00003",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "addBlackList"
-        },
-        {
-          "entry_id": "test_00004",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
           "test_name": "test_put_CryptoSecureBankToken_allowance_path2p1",
           "unit": "allowance"
         },
         {
-          "entry_id": "test_00005",
+          "entry_id": "test_00002",
           "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
+            "R0"
           ],
           "parameterized_width": true,
           "report_class": "put",
@@ -22085,7 +21240,7 @@
           "unit": "allowance"
         },
         {
-          "entry_id": "test_00006",
+          "entry_id": "test_00003",
           "oracle_classes": [
             "R0",
             "R1",
@@ -22097,7 +21252,7 @@
           "unit": "balanceOf"
         },
         {
-          "entry_id": "test_00007",
+          "entry_id": "test_00004",
           "oracle_classes": [
             "R0",
             "R1"
@@ -22108,7 +21263,7 @@
           "unit": "getBlackListStatus"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00005",
           "oracle_classes": [
             "R0",
             "R1",
@@ -22120,7 +21275,7 @@
           "unit": "getBlackListStatus"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00006",
           "oracle_classes": [
             "R0",
             "R1"
@@ -22131,7 +21286,19 @@
           "unit": "getOwner"
         },
         {
-          "entry_id": "test_00010",
+          "entry_id": "test_00007",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_CryptoSecureBankToken_removeBlackList_path2p1",
+          "unit": "removeBlackList"
+        },
+        {
+          "entry_id": "test_00008",
           "oracle_classes": [
             "R0",
             "R1",
@@ -22143,23 +21310,19 @@
           "unit": "setOwner2"
         },
         {
-          "entry_id": "test_00011",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_2",
-          "unit": "setOwner2"
+          "entry_id": "test_00009",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_CryptoSecureBankToken_setParams_path2p1",
+          "unit": "setParams"
         },
         {
-          "entry_id": "test_00012",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "setOwner2"
-        },
-        {
-          "entry_id": "test_00013",
+          "entry_id": "test_00010",
           "oracle_classes": [
             "R0",
             "R1",
@@ -22171,7 +21334,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00014",
+          "entry_id": "test_00011",
           "oracle_classes": [
             "R0",
             "R1"
@@ -22187,7 +21350,7 @@
       "status": "budget-exhausted",
       "subject_id": "peer_syntest__CryptoSecureBankToken",
       "trial": 1,
-      "valid": 14,
+      "valid": 11,
       "wall_total_s": 571.338
     },
     {
@@ -22209,7 +21372,6 @@
           "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
-            "R1",
             "R2"
           ],
           "parameterized_width": true,
@@ -22232,9 +21394,7 @@
         {
           "entry_id": "test_00004",
           "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
+            "R0"
           ],
           "parameterized_width": true,
           "report_class": "put",
@@ -22250,23 +21410,11 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_DJCoin_decreaseAllowance_path2p1",
-          "unit": "decreaseAllowance"
+          "test_name": "test_put_DJCoin_balanceOf_path2p1",
+          "unit": "balanceOf"
         },
         {
           "entry_id": "test_00006",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_DJCoin_increaseAllowance_path2p1",
-          "unit": "increaseAllowance"
-        },
-        {
-          "entry_id": "test_00007",
           "oracle_classes": [
             "R0",
             "R1",
@@ -22278,7 +21426,7 @@
           "unit": "owner"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00007",
           "oracle_classes": [
             "R0",
             "R1",
@@ -22288,6 +21436,18 @@
           "report_class": "put",
           "test_name": "test_put_DJCoin_owner_path3p1",
           "unit": "owner"
+        },
+        {
+          "entry_id": "test_00008",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DJCoin_renounceOwnership_path2p1",
+          "unit": "renounceOwnership"
         },
         {
           "entry_id": "test_00009",
@@ -22351,10 +21511,13 @@
         },
         {
           "entry_id": "test_00002",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_EdenCoin_allowance_path3p1",
           "unit": "allowance"
         },
         {
@@ -22372,8 +21535,7 @@
         {
           "entry_id": "test_00004",
           "oracle_classes": [
-            "R0",
-            "R2"
+            "R0"
           ],
           "parameterized_width": true,
           "report_class": "put",
@@ -22394,10 +21556,14 @@
         },
         {
           "entry_id": "test_00006",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_EdenCoin_balanceOf_path3p1",
           "unit": "balanceOf"
         },
         {
@@ -22409,59 +21575,11 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_EdenCoin_decreaseApproval_path2p1",
-          "unit": "decreaseApproval"
-        },
-        {
-          "entry_id": "test_00008",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_EdenCoin_increaseApproval_path2p1",
-          "unit": "increaseApproval"
-        },
-        {
-          "entry_id": "test_00009",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "increaseApproval"
-        },
-        {
-          "entry_id": "test_00010",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00011",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
           "test_name": "test_put_EdenCoin_transfer_path2p1",
           "unit": "transfer"
         },
         {
-          "entry_id": "test_00012",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00013",
+          "entry_id": "test_00008",
           "oracle_classes": [
             "R0",
             "R1",
@@ -22473,35 +21591,15 @@
           "unit": "transfer"
         },
         {
-          "entry_id": "test_00014",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transferFrom"
-        },
-        {
-          "entry_id": "test_00015",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transferFrom"
-        },
-        {
-          "entry_id": "test_00016",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transferFrom"
-        },
-        {
-          "entry_id": "test_00017",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
+          "entry_id": "test_00009",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_EdenCoin_transferFrom_path6p1",
           "unit": "transferFrom"
         }
       ],
@@ -22510,7 +21608,7 @@
       "status": "persistence-error",
       "subject_id": "peer_syntest__EdenCoin",
       "trial": 1,
-      "valid": 17,
+      "valid": 9,
       "wall_total_s": 224.77
     },
     {
@@ -22624,6 +21722,18 @@
         },
         {
           "entry_id": "test_00010",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_FreakCoin_totalSupply_path3p1",
+          "unit": "totalSupply"
+        },
+        {
+          "entry_id": "test_00011",
           "oracle_classes": [],
           "parameterized_width": false,
           "report_class": "no_put_concrete_replay",
@@ -22631,7 +21741,7 @@
           "unit": "transferFrom"
         },
         {
-          "entry_id": "test_00011",
+          "entry_id": "test_00012",
           "oracle_classes": [],
           "parameterized_width": false,
           "report_class": "no_put_concrete_replay",
@@ -22639,7 +21749,7 @@
           "unit": "transferFrom"
         },
         {
-          "entry_id": "test_00012",
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -22651,7 +21761,7 @@
           "unit": "uniswapAddress"
         },
         {
-          "entry_id": "test_00013",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R1",
@@ -22668,194 +21778,29 @@
       "status": "persistence-error",
       "subject_id": "peer_syntest__FreakCoin",
       "trial": 1,
-      "valid": 13,
+      "valid": 14,
       "wall_total_s": 410.683
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_GAZ_ERC20_approve_path2_pf246p1",
-          "unit": "approve"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_GAZ_ERC20_approve_path2_pf274p1",
-          "unit": "approve"
-        },
-        {
-          "entry_id": "test_00003",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_GAZ_ERC20_transfer_path14p1",
-          "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00004",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_GAZ_ERC20_transfer_path2p1",
-          "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00005",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_2",
-          "unit": "transferFrom"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 15.958,
       "raw": 2,
       "status": "ok",
       "subject_id": "peer_syntest__GAZ_ERC20",
       "trial": 1,
-      "valid": 5,
+      "valid": 0,
       "wall_total_s": 20.167
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_INS_approve_path2p1",
-          "unit": "approve"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [
-            "R0",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_INS_approve_path3p1",
-          "unit": "approve"
-        },
-        {
-          "entry_id": "test_00003",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_INS_burn_path2p1",
-          "unit": "burn"
-        },
-        {
-          "entry_id": "test_00004",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "burnFrom"
-        },
-        {
-          "entry_id": "test_00005",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "burnFrom"
-        },
-        {
-          "entry_id": "test_00006",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00007",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00008",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00009",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00010",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transferFrom"
-        },
-        {
-          "entry_id": "test_00011",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transferFrom"
-        },
-        {
-          "entry_id": "test_00012",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transferFrom"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 219.179,
       "raw": 7,
       "status": "ok",
       "subject_id": "peer_syntest__INS",
       "trial": 1,
-      "valid": 12,
+      "valid": 0,
       "wall_total_s": 234.414
     },
     {
@@ -22872,6 +21817,18 @@
           "report_class": "put",
           "test_name": "test_put_MetaCoin_sendCoin_path2p1",
           "unit": "sendCoin"
+        },
+        {
+          "entry_id": "test_00002",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MetaCoin_sendCoin_path6p1",
+          "unit": "sendCoin"
         }
       ],
       "generation_wall_s": 39.998,
@@ -22879,7 +21836,7 @@
       "status": "ok",
       "subject_id": "peer_syntest__MetaCoin",
       "trial": 1,
-      "valid": 1,
+      "valid": 2,
       "wall_total_s": 45.222
     },
     {
@@ -22893,8 +21850,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_Revive_balanceOf_path3p1",
-          "unit": "balanceOf"
+          "test_name": "test_put_Revive_isOwner_path3p1",
+          "unit": "isOwner"
         },
         {
           "entry_id": "test_00002",
@@ -22904,19 +21861,27 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_Revive_isOwner_path3p1",
-          "unit": "isOwner"
+          "test_name": "test_put_Revive_owner_path3p1",
+          "unit": "owner"
         },
         {
           "entry_id": "test_00003",
+          "oracle_classes": [],
+          "parameterized_width": false,
+          "report_class": "no_put_concrete_replay",
+          "test_name": "test_cov_0",
+          "unit": "totalBalanceOf"
+        },
+        {
+          "entry_id": "test_00004",
           "oracle_classes": [
             "R0",
             "R1"
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_Revive_owner_path3p1",
-          "unit": "owner"
+          "test_name": "test_put_Revive_totalSupply_path3p1",
+          "unit": "totalSupply"
         }
       ],
       "generation_wall_s": 476.581,
@@ -22924,7 +21889,7 @@
       "status": "timeout",
       "subject_id": "peer_syntest__Revive",
       "trial": 1,
-      "valid": 3,
+      "valid": 4,
       "wall_total_s": 574.838
     },
     {
@@ -22996,8 +21961,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_Rootkit_finance_totalSupply_path2p1",
-          "unit": "totalSupply"
+          "test_name": "test_put_Rootkit_finance_balanceOf_path3p1",
+          "unit": "balanceOf"
         },
         {
           "entry_id": "test_00007",
@@ -23008,7 +21973,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_Rootkit_finance_totalSupply_path3p1",
+          "test_name": "test_put_Rootkit_finance_totalSupply_path2p1",
           "unit": "totalSupply"
         },
         {
@@ -23020,11 +21985,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_Rootkit_finance_totalSupply_path3p1",
+          "unit": "totalSupply"
+        },
+        {
+          "entry_id": "test_00009",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_Rootkit_finance_transfer_path2p1",
           "unit": "transfer"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00010",
           "oracle_classes": [
             "R0",
             "R1",
@@ -23041,7 +22018,7 @@
       "status": "persistence-error",
       "subject_id": "peer_syntest__Rootkit_finance",
       "trial": 1,
-      "valid": 9,
+      "valid": 10,
       "wall_total_s": 226.821
     },
     {
@@ -23128,11 +22105,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_SLTDETHlpReward_isOwner_path3p1",
+          "unit": "isOwner"
+        },
+        {
+          "entry_id": "test_00008",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_SLTDETHlpReward_lastTimeRewardApplicable_path2p1",
           "unit": "lastTimeRewardApplicable"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00009",
           "oracle_classes": [
             "R0",
             "R1",
@@ -23144,7 +22133,19 @@
           "unit": "owner"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00010",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_SLTDETHlpReward_owner_path3p1",
+          "unit": "owner"
+        },
+        {
+          "entry_id": "test_00011",
           "oracle_classes": [
             "R0",
             "R1",
@@ -23156,7 +22157,7 @@
           "unit": "rewardPerToken"
         },
         {
-          "entry_id": "test_00010",
+          "entry_id": "test_00012",
           "oracle_classes": [
             "R0",
             "R1",
@@ -23168,7 +22169,7 @@
           "unit": "rewardPerToken"
         },
         {
-          "entry_id": "test_00011",
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -23180,7 +22181,7 @@
           "unit": "setRewardDistribution"
         },
         {
-          "entry_id": "test_00012",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R1",
@@ -23192,7 +22193,7 @@
           "unit": "setRewardDistribution"
         },
         {
-          "entry_id": "test_00013",
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R1",
@@ -23204,7 +22205,7 @@
           "unit": "setStakeAddress"
         },
         {
-          "entry_id": "test_00014",
+          "entry_id": "test_00016",
           "oracle_classes": [
             "R0",
             "R1",
@@ -23216,7 +22217,7 @@
           "unit": "setStartTime"
         },
         {
-          "entry_id": "test_00015",
+          "entry_id": "test_00017",
           "oracle_classes": [
             "R0",
             "R1",
@@ -23228,7 +22229,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00016",
+          "entry_id": "test_00018",
           "oracle_classes": [
             "R0",
             "R1",
@@ -23240,7 +22241,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00017",
+          "entry_id": "test_00019",
           "oracle_classes": [
             "R0",
             "R1",
@@ -23252,7 +22253,7 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00018",
+          "entry_id": "test_00020",
           "oracle_classes": [
             "R0",
             "R1",
@@ -23264,7 +22265,7 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00019",
+          "entry_id": "test_00021",
           "oracle_classes": [
             "R0",
             "R1",
@@ -23281,7 +22282,7 @@
       "status": "persistence-error",
       "subject_id": "peer_syntest__SLTDETHlpReward",
       "trial": 1,
-      "valid": 19,
+      "valid": 21,
       "wall_total_s": 600.764
     },
     {
@@ -23303,7 +22304,6 @@
           "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
-            "R1",
             "R2"
           ],
           "parameterized_width": true,
@@ -23326,8 +22326,7 @@
         {
           "entry_id": "test_00004",
           "oracle_classes": [
-            "R0",
-            "R2"
+            "R0"
           ],
           "parameterized_width": true,
           "report_class": "put",
@@ -23393,46 +22392,6 @@
           "report_class": "put",
           "test_name": "test_put_Straight_Fire_Finance_transfer_path2p1",
           "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00010",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00011",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Straight_Fire_Finance_transfer_path7p1",
-          "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00012",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Straight_Fire_Finance_transferFrom_path2p1",
-          "unit": "transferFrom"
-        },
-        {
-          "entry_id": "test_00013",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transferFrom"
         }
       ],
       "generation_wall_s": 157.945,
@@ -23440,7 +22399,7 @@
       "status": "persistence-error",
       "subject_id": "peer_syntest__Straight_Fire_Finance",
       "trial": 1,
-      "valid": 13,
+      "valid": 9,
       "wall_total_s": 178.905
     },
     {
@@ -23448,6 +22407,17 @@
       "entries": [
         {
           "entry_id": "test_00001",
+          "oracle_classes": [
+            "R0",
+            "R1"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_TetherToken_getOwner_path3p1_part_part0_w",
+          "unit": "getOwner"
+        },
+        {
+          "entry_id": "test_00002",
           "oracle_classes": [],
           "parameterized_width": false,
           "report_class": "no_put_concrete_replay",
@@ -23455,7 +22425,7 @@
           "unit": "setParams"
         },
         {
-          "entry_id": "test_00002",
+          "entry_id": "test_00003",
           "oracle_classes": [],
           "parameterized_width": false,
           "report_class": "no_put_concrete_replay",
@@ -23463,7 +22433,7 @@
           "unit": "setParams"
         },
         {
-          "entry_id": "test_00003",
+          "entry_id": "test_00004",
           "oracle_classes": [],
           "parameterized_width": false,
           "report_class": "no_put_concrete_replay",
@@ -23471,7 +22441,7 @@
           "unit": "setParams"
         },
         {
-          "entry_id": "test_00004",
+          "entry_id": "test_00005",
           "oracle_classes": [
             "R0",
             "R1",
@@ -23483,7 +22453,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00005",
+          "entry_id": "test_00006",
           "oracle_classes": [
             "R0",
             "R1"
@@ -23499,7 +22469,7 @@
       "status": "timeout",
       "subject_id": "peer_syntest__TetherToken",
       "trial": 1,
-      "valid": 5,
+      "valid": 6,
       "wall_total_s": 592.183
     },
     {
@@ -23972,62 +22942,13 @@
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transferFrom"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transferFrom"
-        },
-        {
-          "entry_id": "test_00003",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transferFrom"
-        },
-        {
-          "entry_id": "test_00004",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transferFrom"
-        },
-        {
-          "entry_id": "test_00005",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transferFrom"
-        },
-        {
-          "entry_id": "test_00006",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "transferFrom"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 234.112,
       "raw": 6,
       "status": "ok",
       "subject_id": "peer_syntest__WOLF",
       "trial": 1,
-      "valid": 6,
+      "valid": 0,
       "wall_total_s": 248.794
     }
   ],

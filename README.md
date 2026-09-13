@@ -15,7 +15,7 @@ Scripts/                              artifact validation and table export
 Datasets/targets.json                 frozen 507-subject evaluation inventory
 Datasets/{Peer,Real,Patch}/            normalized flattened subject sources
 Results/RQ1/<tool>/<dataset>/         tests and coverage records
-Results/RQ2/Mutants/<dataset>/        mutation inputs
+Results/RQ2/Mutants/{Peer,Real}/      mutation inputs
 Results/RQ2/<tool>/<dataset>/         mutation and real-bug verdicts
 Results/RQ4/                          paper-facing ablation CSV files
 ```
@@ -23,6 +23,8 @@ Results/RQ4/                          paper-facing ablation CSV files
 The canonical tool names are `VeriPUT`, `CC-SolBMC`, `SolTG`, `SolAR`,
 `SynTest`, and `FuzzUtils`.  The canonical dataset names are `Peer` (182
 subjects), `Real` (201), and `Patch` (124).
+Peer and Real use generated mutant manifests; each Patch subject uses its one
+released vulnerable `bug.sol` as the real fault.
 
 The compressed ESBMC executable can be unpacked and checked as described in
 `Tools/ESBMC/README.md`.
@@ -63,8 +65,9 @@ argument array, and an optional `finalize` argument array.  For example:
 python3 Scripts/run_with_budget.py plan.json --output-dir run-output
 ```
 
-The final strict VeriPUT corpus contains 3,477 reference-valid test units over
-450 subjects (3,193 parameterized PUTs and 284 concrete replay tests).
+The paper-facing RQ1 VeriPUT corpus contains 3,157 reference-valid test units:
+1,804 on Peer, 579 on Real, and 774 on Patch. Subjects that emit no valid unit
+remain in the frozen population with a zero in the RQ1 summary.
 
 Only logs actually emitted by a tool are retained.  Fuzz-utils therefore keeps
 its scrubbed `echidna.log` and `fuzzutils.log` files.  A tool that recorded its
@@ -94,7 +97,9 @@ python3 Scripts/export_tables.py
 
 The first command checks the frozen subject counts, directory allowlist,
 metadata minimization, file-size limits, and result completeness.  The second
-rebuilds only the CSV tables used by the paper from the released records.
+rebuilds only the CSV tables used by the paper from the released records:
+`Results/RQ1/summary.csv`, `Results/RQ1/paired_bootstrap.csv`,
+`Results/RQ2/{population,summary}.csv`, and `Results/RQ4/summary.csv`.
 
 The repository does not include `node_modules`, Foundry `out/`, `cache/` or
 `lib/`, Echidna corpora, temporary projects, transfer archives, or machine-local

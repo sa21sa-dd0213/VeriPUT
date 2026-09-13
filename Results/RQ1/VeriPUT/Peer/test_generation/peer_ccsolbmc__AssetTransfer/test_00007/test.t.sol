@@ -94,16 +94,16 @@ contract AssetTransferCovTest_AssetTransfer_MakeOffer_put2p1 is Test {
     assertEq(_post_OfferPrice, _pre_OfferPrice, "OfferPrice: post == pre");
     assertEq(_post_InstanceInspector, _pre_InstanceInspector, "InstanceInspector: post == pre");
     assertEq(_post_InstanceAppraiser, _pre_InstanceAppraiser, "InstanceAppraiser: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_InstanceOwner, _pre_InstanceOwner, "InstanceOwner: post >= pre");
+    assertLe(_post_InstanceOwner, _pre_InstanceOwner, "InstanceOwner: post <= pre");
+    assertGe(_post_InstanceBuyer, _pre_InstanceBuyer, "InstanceBuyer: post >= pre");
+    assertLe(_post_InstanceBuyer, _pre_InstanceBuyer, "InstanceBuyer: post <= pre");
+    assertGe(_post_OfferPrice, _pre_OfferPrice, "OfferPrice: post >= pre");
+    assertLe(_post_OfferPrice, _pre_OfferPrice, "OfferPrice: post <= pre");
+    assertGe(_post_InstanceInspector, _pre_InstanceInspector, "InstanceInspector: post >= pre");
+    assertLe(_post_InstanceInspector, _pre_InstanceInspector, "InstanceInspector: post <= pre");
+    assertGe(_post_InstanceAppraiser, _pre_InstanceAppraiser, "InstanceAppraiser: post >= pre");
+    assertLe(_post_InstanceAppraiser, _pre_InstanceAppraiser, "InstanceAppraiser: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

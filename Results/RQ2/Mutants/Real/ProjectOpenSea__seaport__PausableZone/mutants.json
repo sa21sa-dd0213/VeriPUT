@@ -464,243 +464,243 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 4166,
+      "end_line": 4165,
       "function": "toMemoryPointer",
       "mutant_id": "m000047",
       "operator": "DLR",
       "original_expression": "OrderComponents memory obj",
       "replacement_expression": "OrderComponents storage obj",
-      "start_line": 4166
+      "start_line": 4165
     },
     {
       "compile_status": "failed",
-      "end_line": 4196,
+      "end_line": 4195,
       "function": "toMemoryPointer",
       "mutant_id": "m000048",
       "operator": "DLR",
       "original_expression": "OfferItem memory obj",
       "replacement_expression": "OfferItem storage obj",
-      "start_line": 4196
+      "start_line": 4195
     },
     {
       "compile_status": "failed",
-      "end_line": 4226,
+      "end_line": 4225,
       "function": "toMemoryPointer",
       "mutant_id": "m000049",
       "operator": "DLR",
       "original_expression": "ConsiderationItem memory obj",
       "replacement_expression": "ConsiderationItem storage obj",
-      "start_line": 4226
+      "start_line": 4225
     },
     {
       "compile_status": "failed",
-      "end_line": 4256,
+      "end_line": 4255,
       "function": "toMemoryPointer",
       "mutant_id": "m000050",
       "operator": "DLR",
       "original_expression": "SpentItem memory obj",
       "replacement_expression": "SpentItem storage obj",
-      "start_line": 4256
+      "start_line": 4255
     },
     {
       "compile_status": "failed",
-      "end_line": 4286,
+      "end_line": 4285,
       "function": "toMemoryPointer",
       "mutant_id": "m000051",
       "operator": "DLR",
       "original_expression": "ReceivedItem memory obj",
       "replacement_expression": "ReceivedItem storage obj",
-      "start_line": 4286
+      "start_line": 4285
     },
     {
       "compile_status": "failed",
-      "end_line": 4316,
+      "end_line": 4315,
       "function": "toMemoryPointer",
       "mutant_id": "m000052",
       "operator": "DLR",
       "original_expression": "BasicOrderParameters memory obj",
       "replacement_expression": "BasicOrderParameters storage obj",
-      "start_line": 4316
+      "start_line": 4315
     },
     {
       "compile_status": "failed",
-      "end_line": 4346,
+      "end_line": 4345,
       "function": "toMemoryPointer",
       "mutant_id": "m000053",
       "operator": "DLR",
       "original_expression": "AdditionalRecipient memory obj",
       "replacement_expression": "AdditionalRecipient storage obj",
-      "start_line": 4346
+      "start_line": 4345
     },
     {
       "compile_status": "failed",
-      "end_line": 4376,
+      "end_line": 4375,
       "function": "toMemoryPointer",
       "mutant_id": "m000054",
       "operator": "DLR",
       "original_expression": "OrderParameters memory obj",
       "replacement_expression": "OrderParameters storage obj",
-      "start_line": 4376
+      "start_line": 4375
     },
     {
       "compile_status": "failed",
-      "end_line": 4406,
+      "end_line": 4405,
       "function": "toMemoryPointer",
       "mutant_id": "m000055",
       "operator": "DLR",
       "original_expression": "Order memory obj",
       "replacement_expression": "Order storage obj",
-      "start_line": 4406
+      "start_line": 4405
     },
     {
       "compile_status": "failed",
-      "end_line": 4436,
+      "end_line": 4435,
       "function": "toMemoryPointer",
       "mutant_id": "m000056",
       "operator": "DLR",
       "original_expression": "AdvancedOrder memory obj",
       "replacement_expression": "AdvancedOrder storage obj",
-      "start_line": 4436
+      "start_line": 4435
     },
     {
       "compile_status": "failed",
-      "end_line": 4466,
+      "end_line": 4465,
       "function": "toMemoryPointer",
       "mutant_id": "m000057",
       "operator": "DLR",
       "original_expression": "OrderStatus memory obj",
       "replacement_expression": "OrderStatus storage obj",
-      "start_line": 4466
+      "start_line": 4465
     },
     {
       "compile_status": "failed",
-      "end_line": 4496,
+      "end_line": 4495,
       "function": "toMemoryPointer",
       "mutant_id": "m000058",
       "operator": "DLR",
       "original_expression": "CriteriaResolver memory obj",
       "replacement_expression": "CriteriaResolver storage obj",
-      "start_line": 4496
+      "start_line": 4495
     },
     {
       "compile_status": "failed",
-      "end_line": 4526,
+      "end_line": 4525,
       "function": "toMemoryPointer",
       "mutant_id": "m000059",
       "operator": "DLR",
       "original_expression": "Fulfillment memory obj",
       "replacement_expression": "Fulfillment storage obj",
-      "start_line": 4526
+      "start_line": 4525
     },
     {
       "compile_status": "failed",
-      "end_line": 4556,
+      "end_line": 4555,
       "function": "toMemoryPointer",
       "mutant_id": "m000060",
       "operator": "DLR",
       "original_expression": "FulfillmentComponent memory obj",
       "replacement_expression": "FulfillmentComponent storage obj",
-      "start_line": 4556
+      "start_line": 4555
     },
     {
       "compile_status": "failed",
-      "end_line": 4586,
+      "end_line": 4585,
       "function": "toMemoryPointer",
       "mutant_id": "m000061",
       "operator": "DLR",
       "original_expression": "Execution memory obj",
       "replacement_expression": "Execution storage obj",
-      "start_line": 4586
+      "start_line": 4585
     },
     {
       "compile_status": "failed",
-      "end_line": 4616,
+      "end_line": 4615,
       "function": "toMemoryPointer",
       "mutant_id": "m000062",
       "operator": "DLR",
       "original_expression": "ZoneParameters memory obj",
       "replacement_expression": "ZoneParameters storage obj",
-      "start_line": 4616
+      "start_line": 4615
     },
     {
       "compile_status": "failed",
-      "end_line": 4800,
+      "end_line": 4799,
       "function": "fulfillAvailableOrders",
       "mutant_id": "m000063",
       "operator": "DLR",
       "original_expression": "bool[] memory availableOrders",
       "replacement_expression": "bool[] storage availableOrders",
-      "start_line": 4800
+      "start_line": 4799
     },
     {
       "compile_status": "failed",
-      "end_line": 4800,
+      "end_line": 4799,
       "function": "fulfillAvailableOrders",
       "mutant_id": "m000064",
       "operator": "DLR",
       "original_expression": "Execution[] memory executions",
       "replacement_expression": "Execution[] storage executions",
-      "start_line": 4800
+      "start_line": 4799
     },
     {
       "compile_status": "failed",
-      "end_line": 4879,
+      "end_line": 4878,
       "function": "fulfillAvailableAdvancedOrders",
       "mutant_id": "m000065",
       "operator": "DLR",
       "original_expression": "bool[] memory availableOrders",
       "replacement_expression": "bool[] storage availableOrders",
-      "start_line": 4879
+      "start_line": 4878
     },
     {
       "compile_status": "failed",
-      "end_line": 4879,
+      "end_line": 4878,
       "function": "fulfillAvailableAdvancedOrders",
       "mutant_id": "m000066",
       "operator": "DLR",
       "original_expression": "Execution[] memory executions",
       "replacement_expression": "Execution[] storage executions",
-      "start_line": 4879
+      "start_line": 4878
     },
     {
       "compile_status": "failed",
-      "end_line": 4911,
+      "end_line": 4910,
       "function": "matchOrders",
       "mutant_id": "m000067",
       "operator": "DLR",
       "original_expression": "Execution[] memory executions",
       "replacement_expression": "Execution[] storage executions",
-      "start_line": 4911
+      "start_line": 4910
     },
     {
       "compile_status": "failed",
-      "end_line": 4961,
+      "end_line": 4960,
       "function": "matchAdvancedOrders",
       "mutant_id": "m000068",
       "operator": "DLR",
       "original_expression": "Execution[] memory executions",
       "replacement_expression": "Execution[] storage executions",
-      "start_line": 4961
+      "start_line": 4960
     },
     {
       "compile_status": "failed",
-      "end_line": 5090,
+      "end_line": 5089,
       "function": "information",
       "mutant_id": "m000069",
       "operator": "DLR",
       "original_expression": "string memory version",
       "replacement_expression": "string storage version",
-      "start_line": 5090
+      "start_line": 5089
     },
     {
       "compile_status": "failed",
-      "end_line": 5104,
+      "end_line": 5103,
       "function": "name",
       "mutant_id": "m000070",
       "operator": "DLR",
       "original_expression": "string memory contractName",
       "replacement_expression": "string storage contractName",
-      "start_line": 5104
+      "start_line": 5103
     },
     {
       "compile_status": "ok",
@@ -3504,1233 +3504,1233 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3075,
+      "end_line": 3074,
       "function": "readBytes10",
       "mutant_id": "m000351",
       "operator": "OLFD",
       "original_expression": "function readBytes10(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes10 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3069
+      "start_line": 3068
     },
     {
       "compile_status": "ok",
-      "end_line": 3084,
+      "end_line": 3083,
       "function": "readBytes11",
       "mutant_id": "m000352",
       "operator": "OLFD",
       "original_expression": "function readBytes11(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes11 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3078
+      "start_line": 3077
     },
     {
       "compile_status": "ok",
-      "end_line": 3093,
+      "end_line": 3092,
       "function": "readBytes12",
       "mutant_id": "m000353",
       "operator": "OLFD",
       "original_expression": "function readBytes12(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes12 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3087
+      "start_line": 3086
     },
     {
       "compile_status": "ok",
-      "end_line": 3102,
+      "end_line": 3101,
       "function": "readBytes13",
       "mutant_id": "m000354",
       "operator": "OLFD",
       "original_expression": "function readBytes13(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes13 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3096
+      "start_line": 3095
     },
     {
       "compile_status": "ok",
-      "end_line": 3111,
+      "end_line": 3110,
       "function": "readBytes14",
       "mutant_id": "m000355",
       "operator": "OLFD",
       "original_expression": "function readBytes14(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes14 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3105
+      "start_line": 3104
     },
     {
       "compile_status": "ok",
-      "end_line": 3120,
+      "end_line": 3119,
       "function": "readBytes15",
       "mutant_id": "m000356",
       "operator": "OLFD",
       "original_expression": "function readBytes15(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes15 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3114
+      "start_line": 3113
     },
     {
       "compile_status": "ok",
-      "end_line": 3129,
+      "end_line": 3128,
       "function": "readBytes16",
       "mutant_id": "m000357",
       "operator": "OLFD",
       "original_expression": "function readBytes16(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes16 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3123
+      "start_line": 3122
     },
     {
       "compile_status": "ok",
-      "end_line": 3138,
+      "end_line": 3137,
       "function": "readBytes17",
       "mutant_id": "m000358",
       "operator": "OLFD",
       "original_expression": "function readBytes17(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes17 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3132
+      "start_line": 3131
     },
     {
       "compile_status": "ok",
-      "end_line": 3147,
+      "end_line": 3146,
       "function": "readBytes18",
       "mutant_id": "m000359",
       "operator": "OLFD",
       "original_expression": "function readBytes18(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes18 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3141
+      "start_line": 3140
     },
     {
       "compile_status": "ok",
-      "end_line": 3156,
+      "end_line": 3155,
       "function": "readBytes19",
       "mutant_id": "m000360",
       "operator": "OLFD",
       "original_expression": "function readBytes19(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes19 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3150
+      "start_line": 3149
     },
     {
       "compile_status": "ok",
-      "end_line": 3165,
+      "end_line": 3164,
       "function": "readBytes20",
       "mutant_id": "m000361",
       "operator": "OLFD",
       "original_expression": "function readBytes20(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes20 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3159
+      "start_line": 3158
     },
     {
       "compile_status": "ok",
-      "end_line": 3174,
+      "end_line": 3173,
       "function": "readBytes21",
       "mutant_id": "m000362",
       "operator": "OLFD",
       "original_expression": "function readBytes21(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes21 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3168
+      "start_line": 3167
     },
     {
       "compile_status": "ok",
-      "end_line": 3183,
+      "end_line": 3182,
       "function": "readBytes22",
       "mutant_id": "m000363",
       "operator": "OLFD",
       "original_expression": "function readBytes22(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes22 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3177
+      "start_line": 3176
     },
     {
       "compile_status": "ok",
-      "end_line": 3192,
+      "end_line": 3191,
       "function": "readBytes23",
       "mutant_id": "m000364",
       "operator": "OLFD",
       "original_expression": "function readBytes23(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes23 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3186
+      "start_line": 3185
     },
     {
       "compile_status": "ok",
-      "end_line": 3201,
+      "end_line": 3200,
       "function": "readBytes24",
       "mutant_id": "m000365",
       "operator": "OLFD",
       "original_expression": "function readBytes24(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes24 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3195
+      "start_line": 3194
     },
     {
       "compile_status": "ok",
-      "end_line": 3210,
+      "end_line": 3209,
       "function": "readBytes25",
       "mutant_id": "m000366",
       "operator": "OLFD",
       "original_expression": "function readBytes25(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes25 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3204
+      "start_line": 3203
     },
     {
       "compile_status": "ok",
-      "end_line": 3219,
+      "end_line": 3218,
       "function": "readBytes26",
       "mutant_id": "m000367",
       "operator": "OLFD",
       "original_expression": "function readBytes26(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes26 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3213
+      "start_line": 3212
     },
     {
       "compile_status": "ok",
-      "end_line": 3228,
+      "end_line": 3227,
       "function": "readBytes27",
       "mutant_id": "m000368",
       "operator": "OLFD",
       "original_expression": "function readBytes27(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes27 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3222
+      "start_line": 3221
     },
     {
       "compile_status": "ok",
-      "end_line": 3237,
+      "end_line": 3236,
       "function": "readBytes28",
       "mutant_id": "m000369",
       "operator": "OLFD",
       "original_expression": "function readBytes28(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes28 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3231
+      "start_line": 3230
     },
     {
       "compile_status": "ok",
-      "end_line": 3246,
+      "end_line": 3245,
       "function": "readBytes29",
       "mutant_id": "m000370",
       "operator": "OLFD",
       "original_expression": "function readBytes29(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes29 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3240
+      "start_line": 3239
     },
     {
       "compile_status": "ok",
-      "end_line": 3255,
+      "end_line": 3254,
       "function": "readBytes30",
       "mutant_id": "m000371",
       "operator": "OLFD",
       "original_expression": "function readBytes30(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes30 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3249
+      "start_line": 3248
     },
     {
       "compile_status": "ok",
-      "end_line": 3264,
+      "end_line": 3263,
       "function": "readBytes31",
       "mutant_id": "m000372",
       "operator": "OLFD",
       "original_expression": "function readBytes31(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes31 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3258
+      "start_line": 3257
     },
     {
       "compile_status": "ok",
-      "end_line": 3273,
+      "end_line": 3272,
       "function": "readBytes32",
       "mutant_id": "m000373",
       "operator": "OLFD",
       "original_expression": "function readBytes32(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes32 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3267
+      "start_line": 3266
     },
     {
       "compile_status": "ok",
-      "end_line": 3280,
+      "end_line": 3279,
       "function": "readUint8",
       "mutant_id": "m000374",
       "operator": "OLFD",
       "original_expression": "function readUint8(MemoryPointer mPtr) internal pure returns (uint8 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3276
+      "start_line": 3275
     },
     {
       "compile_status": "ok",
-      "end_line": 3289,
+      "end_line": 3288,
       "function": "readUint16",
       "mutant_id": "m000375",
       "operator": "OLFD",
       "original_expression": "function readUint16(\n        MemoryPointer mPtr\n    ) internal pure returns (uint16 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3283
+      "start_line": 3282
     },
     {
       "compile_status": "ok",
-      "end_line": 3298,
+      "end_line": 3297,
       "function": "readUint24",
       "mutant_id": "m000376",
       "operator": "OLFD",
       "original_expression": "function readUint24(\n        MemoryPointer mPtr\n    ) internal pure returns (uint24 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3292
+      "start_line": 3291
     },
     {
       "compile_status": "ok",
-      "end_line": 3307,
+      "end_line": 3306,
       "function": "readUint32",
       "mutant_id": "m000377",
       "operator": "OLFD",
       "original_expression": "function readUint32(\n        MemoryPointer mPtr\n    ) internal pure returns (uint32 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3301
+      "start_line": 3300
     },
     {
       "compile_status": "ok",
-      "end_line": 3316,
+      "end_line": 3315,
       "function": "readUint40",
       "mutant_id": "m000378",
       "operator": "OLFD",
       "original_expression": "function readUint40(\n        MemoryPointer mPtr\n    ) internal pure returns (uint40 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3310
+      "start_line": 3309
     },
     {
       "compile_status": "ok",
-      "end_line": 3325,
+      "end_line": 3324,
       "function": "readUint48",
       "mutant_id": "m000379",
       "operator": "OLFD",
       "original_expression": "function readUint48(\n        MemoryPointer mPtr\n    ) internal pure returns (uint48 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3319
+      "start_line": 3318
     },
     {
       "compile_status": "ok",
-      "end_line": 3334,
+      "end_line": 3333,
       "function": "readUint56",
       "mutant_id": "m000380",
       "operator": "OLFD",
       "original_expression": "function readUint56(\n        MemoryPointer mPtr\n    ) internal pure returns (uint56 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3328
+      "start_line": 3327
     },
     {
       "compile_status": "ok",
-      "end_line": 3343,
+      "end_line": 3342,
       "function": "readUint64",
       "mutant_id": "m000381",
       "operator": "OLFD",
       "original_expression": "function readUint64(\n        MemoryPointer mPtr\n    ) internal pure returns (uint64 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3337
+      "start_line": 3336
     },
     {
       "compile_status": "ok",
-      "end_line": 3352,
+      "end_line": 3351,
       "function": "readUint72",
       "mutant_id": "m000382",
       "operator": "OLFD",
       "original_expression": "function readUint72(\n        MemoryPointer mPtr\n    ) internal pure returns (uint72 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3346
+      "start_line": 3345
     },
     {
       "compile_status": "ok",
-      "end_line": 3361,
+      "end_line": 3360,
       "function": "readUint80",
       "mutant_id": "m000383",
       "operator": "OLFD",
       "original_expression": "function readUint80(\n        MemoryPointer mPtr\n    ) internal pure returns (uint80 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3355
+      "start_line": 3354
     },
     {
       "compile_status": "ok",
-      "end_line": 3370,
+      "end_line": 3369,
       "function": "readUint88",
       "mutant_id": "m000384",
       "operator": "OLFD",
       "original_expression": "function readUint88(\n        MemoryPointer mPtr\n    ) internal pure returns (uint88 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3364
+      "start_line": 3363
     },
     {
       "compile_status": "ok",
-      "end_line": 3379,
+      "end_line": 3378,
       "function": "readUint96",
       "mutant_id": "m000385",
       "operator": "OLFD",
       "original_expression": "function readUint96(\n        MemoryPointer mPtr\n    ) internal pure returns (uint96 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3373
+      "start_line": 3372
     },
     {
       "compile_status": "ok",
-      "end_line": 3388,
+      "end_line": 3387,
       "function": "readUint104",
       "mutant_id": "m000386",
       "operator": "OLFD",
       "original_expression": "function readUint104(\n        MemoryPointer mPtr\n    ) internal pure returns (uint104 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3382
+      "start_line": 3381
     },
     {
       "compile_status": "ok",
-      "end_line": 3397,
+      "end_line": 3396,
       "function": "readUint112",
       "mutant_id": "m000387",
       "operator": "OLFD",
       "original_expression": "function readUint112(\n        MemoryPointer mPtr\n    ) internal pure returns (uint112 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3391
+      "start_line": 3390
     },
     {
       "compile_status": "ok",
-      "end_line": 3406,
+      "end_line": 3405,
       "function": "readUint120",
       "mutant_id": "m000388",
       "operator": "OLFD",
       "original_expression": "function readUint120(\n        MemoryPointer mPtr\n    ) internal pure returns (uint120 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3400
+      "start_line": 3399
     },
     {
       "compile_status": "ok",
-      "end_line": 3415,
+      "end_line": 3414,
       "function": "readUint128",
       "mutant_id": "m000389",
       "operator": "OLFD",
       "original_expression": "function readUint128(\n        MemoryPointer mPtr\n    ) internal pure returns (uint128 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3409
+      "start_line": 3408
     },
     {
       "compile_status": "ok",
-      "end_line": 3424,
+      "end_line": 3423,
       "function": "readUint136",
       "mutant_id": "m000390",
       "operator": "OLFD",
       "original_expression": "function readUint136(\n        MemoryPointer mPtr\n    ) internal pure returns (uint136 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3418
+      "start_line": 3417
     },
     {
       "compile_status": "ok",
-      "end_line": 3433,
+      "end_line": 3432,
       "function": "readUint144",
       "mutant_id": "m000391",
       "operator": "OLFD",
       "original_expression": "function readUint144(\n        MemoryPointer mPtr\n    ) internal pure returns (uint144 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3427
+      "start_line": 3426
     },
     {
       "compile_status": "ok",
-      "end_line": 3442,
+      "end_line": 3441,
       "function": "readUint152",
       "mutant_id": "m000392",
       "operator": "OLFD",
       "original_expression": "function readUint152(\n        MemoryPointer mPtr\n    ) internal pure returns (uint152 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3436
+      "start_line": 3435
     },
     {
       "compile_status": "ok",
-      "end_line": 3451,
+      "end_line": 3450,
       "function": "readUint160",
       "mutant_id": "m000393",
       "operator": "OLFD",
       "original_expression": "function readUint160(\n        MemoryPointer mPtr\n    ) internal pure returns (uint160 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3445
+      "start_line": 3444
     },
     {
       "compile_status": "ok",
-      "end_line": 3460,
+      "end_line": 3459,
       "function": "readUint168",
       "mutant_id": "m000394",
       "operator": "OLFD",
       "original_expression": "function readUint168(\n        MemoryPointer mPtr\n    ) internal pure returns (uint168 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3454
+      "start_line": 3453
     },
     {
       "compile_status": "ok",
-      "end_line": 3469,
+      "end_line": 3468,
       "function": "readUint176",
       "mutant_id": "m000395",
       "operator": "OLFD",
       "original_expression": "function readUint176(\n        MemoryPointer mPtr\n    ) internal pure returns (uint176 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3463
+      "start_line": 3462
     },
     {
       "compile_status": "ok",
-      "end_line": 3478,
+      "end_line": 3477,
       "function": "readUint184",
       "mutant_id": "m000396",
       "operator": "OLFD",
       "original_expression": "function readUint184(\n        MemoryPointer mPtr\n    ) internal pure returns (uint184 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3472
+      "start_line": 3471
     },
     {
       "compile_status": "ok",
-      "end_line": 3487,
+      "end_line": 3486,
       "function": "readUint192",
       "mutant_id": "m000397",
       "operator": "OLFD",
       "original_expression": "function readUint192(\n        MemoryPointer mPtr\n    ) internal pure returns (uint192 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3481
+      "start_line": 3480
     },
     {
       "compile_status": "ok",
-      "end_line": 3496,
+      "end_line": 3495,
       "function": "readUint200",
       "mutant_id": "m000398",
       "operator": "OLFD",
       "original_expression": "function readUint200(\n        MemoryPointer mPtr\n    ) internal pure returns (uint200 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3490
+      "start_line": 3489
     },
     {
       "compile_status": "ok",
-      "end_line": 3505,
+      "end_line": 3504,
       "function": "readUint208",
       "mutant_id": "m000399",
       "operator": "OLFD",
       "original_expression": "function readUint208(\n        MemoryPointer mPtr\n    ) internal pure returns (uint208 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3499
+      "start_line": 3498
     },
     {
       "compile_status": "ok",
-      "end_line": 3514,
+      "end_line": 3513,
       "function": "readUint216",
       "mutant_id": "m000400",
       "operator": "OLFD",
       "original_expression": "function readUint216(\n        MemoryPointer mPtr\n    ) internal pure returns (uint216 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3508
+      "start_line": 3507
     },
     {
       "compile_status": "ok",
-      "end_line": 3523,
+      "end_line": 3522,
       "function": "readUint224",
       "mutant_id": "m000401",
       "operator": "OLFD",
       "original_expression": "function readUint224(\n        MemoryPointer mPtr\n    ) internal pure returns (uint224 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3517
+      "start_line": 3516
     },
     {
       "compile_status": "ok",
-      "end_line": 3532,
+      "end_line": 3531,
       "function": "readUint232",
       "mutant_id": "m000402",
       "operator": "OLFD",
       "original_expression": "function readUint232(\n        MemoryPointer mPtr\n    ) internal pure returns (uint232 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3526
+      "start_line": 3525
     },
     {
       "compile_status": "ok",
-      "end_line": 3541,
+      "end_line": 3540,
       "function": "readUint240",
       "mutant_id": "m000403",
       "operator": "OLFD",
       "original_expression": "function readUint240(\n        MemoryPointer mPtr\n    ) internal pure returns (uint240 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3535
+      "start_line": 3534
     },
     {
       "compile_status": "ok",
-      "end_line": 3550,
+      "end_line": 3549,
       "function": "readUint248",
       "mutant_id": "m000404",
       "operator": "OLFD",
       "original_expression": "function readUint248(\n        MemoryPointer mPtr\n    ) internal pure returns (uint248 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3544
+      "start_line": 3543
     },
     {
       "compile_status": "failed",
-      "end_line": 3559,
+      "end_line": 3558,
       "function": "readUint256",
       "mutant_id": "m000405",
       "operator": "OLFD",
       "original_expression": "function readUint256(\n        MemoryPointer mPtr\n    ) internal pure returns (uint256 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3553
+      "start_line": 3552
     },
     {
       "compile_status": "ok",
-      "end_line": 3566,
+      "end_line": 3565,
       "function": "readInt8",
       "mutant_id": "m000406",
       "operator": "OLFD",
       "original_expression": "function readInt8(MemoryPointer mPtr) internal pure returns (int8 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3562
+      "start_line": 3561
     },
     {
       "compile_status": "ok",
-      "end_line": 3573,
+      "end_line": 3572,
       "function": "readInt16",
       "mutant_id": "m000407",
       "operator": "OLFD",
       "original_expression": "function readInt16(MemoryPointer mPtr) internal pure returns (int16 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3569
+      "start_line": 3568
     },
     {
       "compile_status": "ok",
-      "end_line": 3580,
+      "end_line": 3579,
       "function": "readInt24",
       "mutant_id": "m000408",
       "operator": "OLFD",
       "original_expression": "function readInt24(MemoryPointer mPtr) internal pure returns (int24 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3576
+      "start_line": 3575
     },
     {
       "compile_status": "ok",
-      "end_line": 3587,
+      "end_line": 3586,
       "function": "readInt32",
       "mutant_id": "m000409",
       "operator": "OLFD",
       "original_expression": "function readInt32(MemoryPointer mPtr) internal pure returns (int32 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3583
+      "start_line": 3582
     },
     {
       "compile_status": "ok",
-      "end_line": 3594,
+      "end_line": 3593,
       "function": "readInt40",
       "mutant_id": "m000410",
       "operator": "OLFD",
       "original_expression": "function readInt40(MemoryPointer mPtr) internal pure returns (int40 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3590
+      "start_line": 3589
     },
     {
       "compile_status": "ok",
-      "end_line": 3601,
+      "end_line": 3600,
       "function": "readInt48",
       "mutant_id": "m000411",
       "operator": "OLFD",
       "original_expression": "function readInt48(MemoryPointer mPtr) internal pure returns (int48 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3597
+      "start_line": 3596
     },
     {
       "compile_status": "ok",
-      "end_line": 3608,
+      "end_line": 3607,
       "function": "readInt56",
       "mutant_id": "m000412",
       "operator": "OLFD",
       "original_expression": "function readInt56(MemoryPointer mPtr) internal pure returns (int56 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3604
+      "start_line": 3603
     },
     {
       "compile_status": "ok",
-      "end_line": 3615,
+      "end_line": 3614,
       "function": "readInt64",
       "mutant_id": "m000413",
       "operator": "OLFD",
       "original_expression": "function readInt64(MemoryPointer mPtr) internal pure returns (int64 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3611
+      "start_line": 3610
     },
     {
       "compile_status": "ok",
-      "end_line": 3622,
+      "end_line": 3621,
       "function": "readInt72",
       "mutant_id": "m000414",
       "operator": "OLFD",
       "original_expression": "function readInt72(MemoryPointer mPtr) internal pure returns (int72 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3618
+      "start_line": 3617
     },
     {
       "compile_status": "ok",
-      "end_line": 3629,
+      "end_line": 3628,
       "function": "readInt80",
       "mutant_id": "m000415",
       "operator": "OLFD",
       "original_expression": "function readInt80(MemoryPointer mPtr) internal pure returns (int80 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3625
+      "start_line": 3624
     },
     {
       "compile_status": "ok",
-      "end_line": 3636,
+      "end_line": 3635,
       "function": "readInt88",
       "mutant_id": "m000416",
       "operator": "OLFD",
       "original_expression": "function readInt88(MemoryPointer mPtr) internal pure returns (int88 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3632
+      "start_line": 3631
     },
     {
       "compile_status": "ok",
-      "end_line": 3643,
+      "end_line": 3642,
       "function": "readInt96",
       "mutant_id": "m000417",
       "operator": "OLFD",
       "original_expression": "function readInt96(MemoryPointer mPtr) internal pure returns (int96 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3639
+      "start_line": 3638
     },
     {
       "compile_status": "ok",
-      "end_line": 3652,
+      "end_line": 3651,
       "function": "readInt104",
       "mutant_id": "m000418",
       "operator": "OLFD",
       "original_expression": "function readInt104(\n        MemoryPointer mPtr\n    ) internal pure returns (int104 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3646
+      "start_line": 3645
     },
     {
       "compile_status": "ok",
-      "end_line": 3661,
+      "end_line": 3660,
       "function": "readInt112",
       "mutant_id": "m000419",
       "operator": "OLFD",
       "original_expression": "function readInt112(\n        MemoryPointer mPtr\n    ) internal pure returns (int112 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3655
+      "start_line": 3654
     },
     {
       "compile_status": "ok",
-      "end_line": 3670,
+      "end_line": 3669,
       "function": "readInt120",
       "mutant_id": "m000420",
       "operator": "OLFD",
       "original_expression": "function readInt120(\n        MemoryPointer mPtr\n    ) internal pure returns (int120 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3664
+      "start_line": 3663
     },
     {
       "compile_status": "ok",
-      "end_line": 3679,
+      "end_line": 3678,
       "function": "readInt128",
       "mutant_id": "m000421",
       "operator": "OLFD",
       "original_expression": "function readInt128(\n        MemoryPointer mPtr\n    ) internal pure returns (int128 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3673
+      "start_line": 3672
     },
     {
       "compile_status": "ok",
-      "end_line": 3688,
+      "end_line": 3687,
       "function": "readInt136",
       "mutant_id": "m000422",
       "operator": "OLFD",
       "original_expression": "function readInt136(\n        MemoryPointer mPtr\n    ) internal pure returns (int136 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3682
+      "start_line": 3681
     },
     {
       "compile_status": "ok",
-      "end_line": 3697,
+      "end_line": 3696,
       "function": "readInt144",
       "mutant_id": "m000423",
       "operator": "OLFD",
       "original_expression": "function readInt144(\n        MemoryPointer mPtr\n    ) internal pure returns (int144 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3691
+      "start_line": 3690
     },
     {
       "compile_status": "ok",
-      "end_line": 3706,
+      "end_line": 3705,
       "function": "readInt152",
       "mutant_id": "m000424",
       "operator": "OLFD",
       "original_expression": "function readInt152(\n        MemoryPointer mPtr\n    ) internal pure returns (int152 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3700
+      "start_line": 3699
     },
     {
       "compile_status": "ok",
-      "end_line": 3715,
+      "end_line": 3714,
       "function": "readInt160",
       "mutant_id": "m000425",
       "operator": "OLFD",
       "original_expression": "function readInt160(\n        MemoryPointer mPtr\n    ) internal pure returns (int160 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3709
+      "start_line": 3708
     },
     {
       "compile_status": "ok",
-      "end_line": 3724,
+      "end_line": 3723,
       "function": "readInt168",
       "mutant_id": "m000426",
       "operator": "OLFD",
       "original_expression": "function readInt168(\n        MemoryPointer mPtr\n    ) internal pure returns (int168 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3718
+      "start_line": 3717
     },
     {
       "compile_status": "ok",
-      "end_line": 3733,
+      "end_line": 3732,
       "function": "readInt176",
       "mutant_id": "m000427",
       "operator": "OLFD",
       "original_expression": "function readInt176(\n        MemoryPointer mPtr\n    ) internal pure returns (int176 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3727
+      "start_line": 3726
     },
     {
       "compile_status": "ok",
-      "end_line": 3742,
+      "end_line": 3741,
       "function": "readInt184",
       "mutant_id": "m000428",
       "operator": "OLFD",
       "original_expression": "function readInt184(\n        MemoryPointer mPtr\n    ) internal pure returns (int184 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3736
+      "start_line": 3735
     },
     {
       "compile_status": "ok",
-      "end_line": 3751,
+      "end_line": 3750,
       "function": "readInt192",
       "mutant_id": "m000429",
       "operator": "OLFD",
       "original_expression": "function readInt192(\n        MemoryPointer mPtr\n    ) internal pure returns (int192 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3745
+      "start_line": 3744
     },
     {
       "compile_status": "ok",
-      "end_line": 3760,
+      "end_line": 3759,
       "function": "readInt200",
       "mutant_id": "m000430",
       "operator": "OLFD",
       "original_expression": "function readInt200(\n        MemoryPointer mPtr\n    ) internal pure returns (int200 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3754
+      "start_line": 3753
     },
     {
       "compile_status": "ok",
-      "end_line": 3769,
+      "end_line": 3768,
       "function": "readInt208",
       "mutant_id": "m000431",
       "operator": "OLFD",
       "original_expression": "function readInt208(\n        MemoryPointer mPtr\n    ) internal pure returns (int208 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3763
+      "start_line": 3762
     },
     {
       "compile_status": "ok",
-      "end_line": 3778,
+      "end_line": 3777,
       "function": "readInt216",
       "mutant_id": "m000432",
       "operator": "OLFD",
       "original_expression": "function readInt216(\n        MemoryPointer mPtr\n    ) internal pure returns (int216 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3772
+      "start_line": 3771
     },
     {
       "compile_status": "ok",
-      "end_line": 3787,
+      "end_line": 3786,
       "function": "readInt224",
       "mutant_id": "m000433",
       "operator": "OLFD",
       "original_expression": "function readInt224(\n        MemoryPointer mPtr\n    ) internal pure returns (int224 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3781
+      "start_line": 3780
     },
     {
       "compile_status": "ok",
-      "end_line": 3796,
+      "end_line": 3795,
       "function": "readInt232",
       "mutant_id": "m000434",
       "operator": "OLFD",
       "original_expression": "function readInt232(\n        MemoryPointer mPtr\n    ) internal pure returns (int232 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3790
+      "start_line": 3789
     },
     {
       "compile_status": "ok",
-      "end_line": 3805,
+      "end_line": 3804,
       "function": "readInt240",
       "mutant_id": "m000435",
       "operator": "OLFD",
       "original_expression": "function readInt240(\n        MemoryPointer mPtr\n    ) internal pure returns (int240 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3799
+      "start_line": 3798
     },
     {
       "compile_status": "ok",
-      "end_line": 3814,
+      "end_line": 3813,
       "function": "readInt248",
       "mutant_id": "m000436",
       "operator": "OLFD",
       "original_expression": "function readInt248(\n        MemoryPointer mPtr\n    ) internal pure returns (int248 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3808
+      "start_line": 3807
     },
     {
       "compile_status": "ok",
-      "end_line": 3823,
+      "end_line": 3822,
       "function": "readInt256",
       "mutant_id": "m000437",
       "operator": "OLFD",
       "original_expression": "function readInt256(\n        MemoryPointer mPtr\n    ) internal pure returns (int256 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3817
+      "start_line": 3816
     },
     {
       "compile_status": "failed",
-      "end_line": 3832,
+      "end_line": 3831,
       "function": "write",
       "mutant_id": "m000438",
       "operator": "OLFD",
       "original_expression": "function write(MemoryPointer mPtr, MemoryPointer valuePtr) internal pure {\n        assembly {\n            mstore(mPtr, valuePtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3828
+      "start_line": 3827
     },
     {
       "compile_status": "ok",
-      "end_line": 3839,
+      "end_line": 3838,
       "function": "write",
       "mutant_id": "m000439",
       "operator": "OLFD",
       "original_expression": "function write(MemoryPointer mPtr, bool value) internal pure {\n        assembly {\n            mstore(mPtr, value)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3835
+      "start_line": 3834
     },
     {
       "compile_status": "ok",
-      "end_line": 3846,
+      "end_line": 3845,
       "function": "write",
       "mutant_id": "m000440",
       "operator": "OLFD",
       "original_expression": "function write(MemoryPointer mPtr, address value) internal pure {\n        assembly {\n            mstore(mPtr, value)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3842
+      "start_line": 3841
     },
     {
       "compile_status": "ok",
-      "end_line": 3861,
+      "end_line": 3860,
       "function": "write",
       "mutant_id": "m000441",
       "operator": "OLFD",
       "original_expression": "function write(MemoryPointer mPtr, uint256 value) internal pure {\n        assembly {\n            mstore(mPtr, value)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3857
+      "start_line": 3856
     },
     {
       "compile_status": "ok",
-      "end_line": 4171,
+      "end_line": 4170,
       "function": "toMemoryPointer",
       "mutant_id": "m000442",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        OrderComponents memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4165
+      "start_line": 4164
     },
     {
       "compile_status": "ok",
-      "end_line": 4186,
+      "end_line": 4185,
       "function": "toCalldataPointer",
       "mutant_id": "m000443",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        OrderComponents calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4180
+      "start_line": 4179
     },
     {
       "compile_status": "ok",
-      "end_line": 4201,
+      "end_line": 4200,
       "function": "toMemoryPointer",
       "mutant_id": "m000444",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        OfferItem memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4195
+      "start_line": 4194
     },
     {
       "compile_status": "ok",
-      "end_line": 4216,
+      "end_line": 4215,
       "function": "toCalldataPointer",
       "mutant_id": "m000445",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        OfferItem calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4210
+      "start_line": 4209
     },
     {
       "compile_status": "ok",
-      "end_line": 4231,
+      "end_line": 4230,
       "function": "toMemoryPointer",
       "mutant_id": "m000446",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        ConsiderationItem memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4225
+      "start_line": 4224
     },
     {
       "compile_status": "ok",
-      "end_line": 4246,
+      "end_line": 4245,
       "function": "toCalldataPointer",
       "mutant_id": "m000447",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        ConsiderationItem calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4240
+      "start_line": 4239
     },
     {
       "compile_status": "ok",
-      "end_line": 4261,
+      "end_line": 4260,
       "function": "toMemoryPointer",
       "mutant_id": "m000448",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        SpentItem memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4255
+      "start_line": 4254
     },
     {
       "compile_status": "ok",
-      "end_line": 4276,
+      "end_line": 4275,
       "function": "toCalldataPointer",
       "mutant_id": "m000449",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        SpentItem calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4270
+      "start_line": 4269
     },
     {
       "compile_status": "ok",
-      "end_line": 4291,
+      "end_line": 4290,
       "function": "toMemoryPointer",
       "mutant_id": "m000450",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        ReceivedItem memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4285
+      "start_line": 4284
     },
     {
       "compile_status": "ok",
-      "end_line": 4306,
+      "end_line": 4305,
       "function": "toCalldataPointer",
       "mutant_id": "m000451",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        ReceivedItem calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4300
+      "start_line": 4299
     },
     {
       "compile_status": "ok",
-      "end_line": 4321,
+      "end_line": 4320,
       "function": "toMemoryPointer",
       "mutant_id": "m000452",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        BasicOrderParameters memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4315
+      "start_line": 4314
     },
     {
       "compile_status": "ok",
-      "end_line": 4336,
+      "end_line": 4335,
       "function": "toCalldataPointer",
       "mutant_id": "m000453",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        BasicOrderParameters calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4330
+      "start_line": 4329
     },
     {
       "compile_status": "ok",
-      "end_line": 4351,
+      "end_line": 4350,
       "function": "toMemoryPointer",
       "mutant_id": "m000454",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        AdditionalRecipient memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4345
+      "start_line": 4344
     },
     {
       "compile_status": "ok",
-      "end_line": 4366,
+      "end_line": 4365,
       "function": "toCalldataPointer",
       "mutant_id": "m000455",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        AdditionalRecipient calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4360
+      "start_line": 4359
     },
     {
       "compile_status": "ok",
-      "end_line": 4381,
+      "end_line": 4380,
       "function": "toMemoryPointer",
       "mutant_id": "m000456",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        OrderParameters memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4375
+      "start_line": 4374
     },
     {
       "compile_status": "ok",
-      "end_line": 4396,
+      "end_line": 4395,
       "function": "toCalldataPointer",
       "mutant_id": "m000457",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        OrderParameters calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4390
+      "start_line": 4389
     },
     {
       "compile_status": "ok",
-      "end_line": 4411,
+      "end_line": 4410,
       "function": "toMemoryPointer",
       "mutant_id": "m000458",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        Order memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4405
+      "start_line": 4404
     },
     {
       "compile_status": "ok",
-      "end_line": 4426,
+      "end_line": 4425,
       "function": "toCalldataPointer",
       "mutant_id": "m000459",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        Order calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4420
+      "start_line": 4419
     },
     {
       "compile_status": "ok",
-      "end_line": 4441,
+      "end_line": 4440,
       "function": "toMemoryPointer",
       "mutant_id": "m000460",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        AdvancedOrder memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4435
+      "start_line": 4434
     },
     {
       "compile_status": "ok",
-      "end_line": 4456,
+      "end_line": 4455,
       "function": "toCalldataPointer",
       "mutant_id": "m000461",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        AdvancedOrder calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4450
+      "start_line": 4449
     },
     {
       "compile_status": "ok",
-      "end_line": 4471,
+      "end_line": 4470,
       "function": "toMemoryPointer",
       "mutant_id": "m000462",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        OrderStatus memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4465
+      "start_line": 4464
     },
     {
       "compile_status": "ok",
-      "end_line": 4486,
+      "end_line": 4485,
       "function": "toCalldataPointer",
       "mutant_id": "m000463",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        OrderStatus calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4480
+      "start_line": 4479
     },
     {
       "compile_status": "ok",
-      "end_line": 4501,
+      "end_line": 4500,
       "function": "toMemoryPointer",
       "mutant_id": "m000464",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        CriteriaResolver memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4495
+      "start_line": 4494
     },
     {
       "compile_status": "ok",
-      "end_line": 4516,
+      "end_line": 4515,
       "function": "toCalldataPointer",
       "mutant_id": "m000465",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        CriteriaResolver calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4510
+      "start_line": 4509
     },
     {
       "compile_status": "ok",
-      "end_line": 4531,
+      "end_line": 4530,
       "function": "toMemoryPointer",
       "mutant_id": "m000466",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        Fulfillment memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4525
+      "start_line": 4524
     },
     {
       "compile_status": "ok",
-      "end_line": 4546,
+      "end_line": 4545,
       "function": "toCalldataPointer",
       "mutant_id": "m000467",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        Fulfillment calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4540
+      "start_line": 4539
     },
     {
       "compile_status": "ok",
-      "end_line": 4561,
+      "end_line": 4560,
       "function": "toMemoryPointer",
       "mutant_id": "m000468",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        FulfillmentComponent memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4555
+      "start_line": 4554
     },
     {
       "compile_status": "ok",
-      "end_line": 4576,
+      "end_line": 4575,
       "function": "toCalldataPointer",
       "mutant_id": "m000469",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        FulfillmentComponent calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4570
+      "start_line": 4569
     },
     {
       "compile_status": "ok",
-      "end_line": 4591,
+      "end_line": 4590,
       "function": "toMemoryPointer",
       "mutant_id": "m000470",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        Execution memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4585
+      "start_line": 4584
     },
     {
       "compile_status": "ok",
-      "end_line": 4606,
+      "end_line": 4605,
       "function": "toCalldataPointer",
       "mutant_id": "m000471",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        Execution calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4600
+      "start_line": 4599
     },
     {
       "compile_status": "ok",
-      "end_line": 4621,
+      "end_line": 4620,
       "function": "toMemoryPointer",
       "mutant_id": "m000472",
       "operator": "OLFD",
       "original_expression": "function toMemoryPointer(\n        ZoneParameters memory obj\n    ) internal pure returns (MemoryPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4615
+      "start_line": 4614
     },
     {
       "compile_status": "ok",
-      "end_line": 4636,
+      "end_line": 4635,
       "function": "toCalldataPointer",
       "mutant_id": "m000473",
       "operator": "OLFD",
       "original_expression": "function toCalldataPointer(\n        ZoneParameters calldata obj\n    ) internal pure returns (CalldataPointer ptr) {\n        assembly {\n            ptr := obj\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 4630
+      "start_line": 4629
     },
     {
       "compile_status": "failed",
@@ -4854,83 +4854,83 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 4670,
+      "end_line": 4669,
       "function": "fulfillBasicOrder",
       "mutant_id": "m000486",
       "operator": "PKD",
       "original_expression": "function fulfillBasicOrder(\n        BasicOrderParameters calldata parameters\n    ) external payable returns (bool fulfilled)",
       "replacement_expression": "function fulfillBasicOrder(\n        BasicOrderParameters calldata parameters\n    ) external  returns (bool fulfilled)",
-      "start_line": 4668
+      "start_line": 4667
     },
     {
       "compile_status": "ok",
-      "end_line": 4697,
+      "end_line": 4696,
       "function": "fulfillOrder",
       "mutant_id": "m000487",
       "operator": "PKD",
       "original_expression": "function fulfillOrder(\n        Order calldata order,\n        bytes32 fulfillerConduitKey\n    ) external payable returns (bool fulfilled)",
       "replacement_expression": "function fulfillOrder(\n        Order calldata order,\n        bytes32 fulfillerConduitKey\n    ) external  returns (bool fulfilled)",
-      "start_line": 4694
+      "start_line": 4693
     },
     {
       "compile_status": "ok",
-      "end_line": 4744,
+      "end_line": 4743,
       "function": "fulfillAdvancedOrder",
       "mutant_id": "m000488",
       "operator": "PKD",
       "original_expression": "function fulfillAdvancedOrder(\n        AdvancedOrder calldata advancedOrder,\n        CriteriaResolver[] calldata criteriaResolvers,\n        bytes32 fulfillerConduitKey,\n        address recipient\n    ) external payable returns (bool fulfilled)",
       "replacement_expression": "function fulfillAdvancedOrder(\n        AdvancedOrder calldata advancedOrder,\n        CriteriaResolver[] calldata criteriaResolvers,\n        bytes32 fulfillerConduitKey,\n        address recipient\n    ) external  returns (bool fulfilled)",
-      "start_line": 4739
+      "start_line": 4738
     },
     {
       "compile_status": "ok",
-      "end_line": 4800,
+      "end_line": 4799,
       "function": "fulfillAvailableOrders",
       "mutant_id": "m000489",
       "operator": "PKD",
       "original_expression": "function fulfillAvailableOrders(\n        Order[] calldata orders,\n        FulfillmentComponent[][] calldata offerFulfillments,\n        FulfillmentComponent[][] calldata considerationFulfillments,\n        bytes32 fulfillerConduitKey,\n        uint256 maximumFulfilled\n    )\n        external\n        payable\n        returns (bool[] memory availableOrders, Execution[] memory executions)",
       "replacement_expression": "function fulfillAvailableOrders(\n        Order[] calldata orders,\n        FulfillmentComponent[][] calldata offerFulfillments,\n        FulfillmentComponent[][] calldata considerationFulfillments,\n        bytes32 fulfillerConduitKey,\n        uint256 maximumFulfilled\n    )\n        external\n        \n        returns (bool[] memory availableOrders, Execution[] memory executions)",
-      "start_line": 4791
+      "start_line": 4790
     },
     {
       "compile_status": "ok",
-      "end_line": 4879,
+      "end_line": 4878,
       "function": "fulfillAvailableAdvancedOrders",
       "mutant_id": "m000490",
       "operator": "PKD",
       "original_expression": "function fulfillAvailableAdvancedOrders(\n        AdvancedOrder[] calldata advancedOrders,\n        CriteriaResolver[] calldata criteriaResolvers,\n        FulfillmentComponent[][] calldata offerFulfillments,\n        FulfillmentComponent[][] calldata considerationFulfillments,\n        bytes32 fulfillerConduitKey,\n        address recipient,\n        uint256 maximumFulfilled\n    )\n        external\n        payable\n        returns (bool[] memory availableOrders, Execution[] memory executions)",
       "replacement_expression": "function fulfillAvailableAdvancedOrders(\n        AdvancedOrder[] calldata advancedOrders,\n        CriteriaResolver[] calldata criteriaResolvers,\n        FulfillmentComponent[][] calldata offerFulfillments,\n        FulfillmentComponent[][] calldata considerationFulfillments,\n        bytes32 fulfillerConduitKey,\n        address recipient,\n        uint256 maximumFulfilled\n    )\n        external\n        \n        returns (bool[] memory availableOrders, Execution[] memory executions)",
-      "start_line": 4868
+      "start_line": 4867
     },
     {
       "compile_status": "failed",
-      "end_line": 4911,
+      "end_line": 4910,
       "function": "matchOrders",
       "mutant_id": "m000491",
       "operator": "PKD",
       "original_expression": "function matchOrders(\n        Order[] calldata orders,\n        Fulfillment[] calldata fulfillments\n    ) external payable returns (Execution[] memory executions)",
       "replacement_expression": "function matchOrders(\n        Order[] calldata orders,\n        Fulfillment[] calldata fulfillments\n    ) external  returns (Execution[] memory executions)",
-      "start_line": 4908
+      "start_line": 4907
     },
     {
       "compile_status": "failed",
-      "end_line": 4961,
+      "end_line": 4960,
       "function": "matchAdvancedOrders",
       "mutant_id": "m000492",
       "operator": "PKD",
       "original_expression": "function matchAdvancedOrders(\n        AdvancedOrder[] calldata orders,\n        CriteriaResolver[] calldata criteriaResolvers,\n        Fulfillment[] calldata fulfillments,\n        address recipient\n    ) external payable returns (Execution[] memory executions)",
       "replacement_expression": "function matchAdvancedOrders(\n        AdvancedOrder[] calldata orders,\n        CriteriaResolver[] calldata criteriaResolvers,\n        Fulfillment[] calldata fulfillments,\n        address recipient\n    ) external  returns (Execution[] memory executions)",
-      "start_line": 4956
+      "start_line": 4955
     },
     {
       "compile_status": "ok",
-      "end_line": 5026,
+      "end_line": 5025,
       "function": "fulfillBasicOrder_efficient_6GL6yc",
       "mutant_id": "m000493",
       "operator": "PKD",
       "original_expression": "function fulfillBasicOrder_efficient_6GL6yc(\n        BasicOrderParameters calldata parameters\n    ) external payable returns (bool fulfilled)",
       "replacement_expression": "function fulfillBasicOrder_efficient_6GL6yc(\n        BasicOrderParameters calldata parameters\n    ) external  returns (bool fulfilled)",
-      "start_line": 5024
+      "start_line": 5023
     },
     {
       "compile_status": "ok",
@@ -4974,13 +4974,13 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 5065,
+      "end_line": 5064,
       "function": "getOrderStatus",
       "mutant_id": "m000498",
       "operator": "RVS",
       "original_expression": "bool isValidated,\n            bool isCancelled,\n            uint256 totalFilled,\n            uint256 totalSize",
       "replacement_expression": "bool isCancelled,\n            bool isValidated,\n            uint256 totalSize,\n            uint256 totalFilled",
-      "start_line": 5062
+      "start_line": 5061
     },
     {
       "compile_status": "ok",

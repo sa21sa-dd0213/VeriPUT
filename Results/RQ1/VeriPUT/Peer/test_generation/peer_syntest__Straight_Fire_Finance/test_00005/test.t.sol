@@ -65,8 +65,8 @@ contract Straight_Fire_FinanceCovTest_Straight_Fire_Finance_balanceOf_put2p1 is 
     
     uint256 _post_balances_owner = uint256(vm.load(address(c0), keccak256(abi.encode(owner, uint256(2)))));
     assertEq(_post_balances_owner, _pre_balances_owner, "balances[owner]: post == pre");
-    
-    
+    assertGe(_post_balances_owner, _pre_balances_owner, "balances[owner]: post >= pre");
+    assertLe(_post_balances_owner, _pre_balances_owner, "balances[owner]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -5,7 +5,7 @@ pragma solidity >=0.8.0;
 import {Test} from "forge-std/Test.sol";
 import {TestDateTime} from "../src/flat.sol";
 
-contract TestDateTimeCovTest_TestDateTime__isLeapYear_put12p1_p1_part_part0_w_w is Test {
+contract TestDateTimeCovTest_TestDateTime__isLeapYear_put15p1_p1_part_part0_w_w is Test {
   TestDateTime c0;
   function setUp() public {
     c0 = new TestDateTime();
@@ -72,11 +72,12 @@ contract TestDateTimeCovTest_TestDateTime__isLeapYear_put12p1_p1_part_part0_w_w 
   
   
   
+  
   function _veriput_parameterized(address p_msg_sender, uint256 p_block_timestamp, uint256 p_block_number, uint256 year) internal {
     p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
     p_block_timestamp = bound(p_block_timestamp, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
     p_block_number = bound(p_block_number, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-    year = bound(year, 115792089237316195423570985008687907853269984665640564039457584007913129639935, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    year = bound(year, 96, 96);
     
     
     vm.warp(p_block_timestamp);
@@ -90,18 +91,54 @@ contract TestDateTimeCovTest_TestDateTime__isLeapYear_put12p1_p1_part_part0_w_w 
     vm.prank(p_msg_sender);
     bool _put_ret = c0._isLeapYear(year);
     
-    if (p_msg_sender == address(uint160(0)) && p_block_timestamp == uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) && p_block_number == uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) && year == uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) {
-      assertEq(_put_ret, false, "fixed witness return");
-
+    if (p_msg_sender == address(uint160(0)) && p_block_timestamp == uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) && p_block_number == uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) && year == uint256(96)) {
+      assertEq(_put_ret, true, "fixed witness return");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(0), "fixed witness state");
     }
     
-    assertFalse(_put_ret, "return: return == false");
+    assertTrue(_put_ret, "return: return == true");
     
   }
 
 
   
-  function test_put_TestDateTime__isLeapYear_path12p1_part_part0_w_w(address p_msg_sender, uint256 p_block_timestamp, uint256 p_block_number, uint256 year) public {
+  function test_put_TestDateTime__isLeapYear_path15p1_part_part0_w_w(address p_msg_sender, uint256 p_block_timestamp, uint256 p_block_number, uint256 year) public {
     _veriput_parameterized(p_msg_sender, p_block_timestamp, p_block_number, year);
+    
+    { TestDateTimeCovTest_TestDateTime__isLeapYear_concrete15p1__basis_part0_w_w__W _veriput_w = new TestDateTimeCovTest_TestDateTime__isLeapYear_concrete15p1__basis_part0_w_w__W(); _veriput_w.setUp(); _veriput_w._w_test_cov_0(); }
+}
+}
+
+
+
+contract TestDateTimeCovTest_TestDateTime__isLeapYear_concrete15p1__basis_part0_w_w__W is Test {
+  TestDateTime c0;
+  function setUp() public {
+    c0 = new TestDateTime();
+  }
+  
+  
+  function _w_test_cov_0() public {
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
+    }
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(0), "entry pin state.nextYear did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    
+    
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
+    vm.prank(address(uint160(0)), address(uint160(0)));
+    bool _veriput_concrete_return = c0._isLeapYear(uint256(96));
+    assertEq(_veriput_concrete_return, true, "fixed witness return must match");
+    uint256 _veriput_fixed_state_nextYear_0 = uint256(vm.load(address(c0), bytes32(uint256(0))));
+    assertEq(_veriput_fixed_state_nextYear_0, uint256(0), "fixed witness state");
   }
 }

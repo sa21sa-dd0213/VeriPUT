@@ -68,10 +68,10 @@ contract GSPFundingCovTest_GSPFunding_getBaseInput_put2p1 is Test {
     uint256 _post_MT_FEE_BASE = uint256(vm.load(address(c0), bytes32(uint256(20))));
     assertEq(_post_BASE_RESERVE, _pre_BASE_RESERVE, "_BASE_RESERVE_: post == pre");
     assertEq(_post_MT_FEE_BASE, _pre_MT_FEE_BASE, "_MT_FEE_BASE_: post == pre");
-    
-    
-    
-    
+    assertGe(_post_BASE_RESERVE, _pre_BASE_RESERVE, "_BASE_RESERVE_: post >= pre");
+    assertLe(_post_BASE_RESERVE, _pre_BASE_RESERVE, "_BASE_RESERVE_: post <= pre");
+    assertGe(_post_MT_FEE_BASE, _pre_MT_FEE_BASE, "_MT_FEE_BASE_: post >= pre");
+    assertLe(_post_MT_FEE_BASE, _pre_MT_FEE_BASE, "_MT_FEE_BASE_: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

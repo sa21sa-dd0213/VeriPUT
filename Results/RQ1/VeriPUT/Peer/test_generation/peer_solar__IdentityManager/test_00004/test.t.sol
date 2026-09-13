@@ -71,12 +71,12 @@ contract IdentityManagerCovTest_IdentityManager_convertAddress_put2p1 is Test {
     assertEq(_post_currentIndex, _pre_currentIndex, "_currentIndex: post == pre");
     assertEq(_post_index_account, _pre_index_account, "_index[account]: post == pre");
     assertEq(_post_identities_state__currentIndex__pointer, _pre_identities_state__currentIndex__pointer, "_identities[state._currentIndex].pointer: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_currentIndex, _pre_currentIndex, "_currentIndex: post >= pre");
+    assertLe(_post_currentIndex, _pre_currentIndex, "_currentIndex: post <= pre");
+    assertGe(_post_index_account, _pre_index_account, "_index[account]: post >= pre");
+    assertLe(_post_index_account, _pre_index_account, "_index[account]: post <= pre");
+    assertGe(_post_identities_state__currentIndex__pointer, _pre_identities_state__currentIndex__pointer, "_identities[state._currentIndex].pointer: post >= pre");
+    assertLe(_post_identities_state__currentIndex__pointer, _pre_identities_state__currentIndex__pointer, "_identities[state._currentIndex].pointer: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

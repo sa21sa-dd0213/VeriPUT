@@ -65,8 +65,8 @@ contract PrivatePoolCovTest_PrivatePool_flashFeeToken_put2p1 is Test {
     
     uint256 _post_baseToken = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_baseToken, _pre_baseToken, "baseToken: post == pre");
-    
-    
+    assertGe(_post_baseToken, _pre_baseToken, "baseToken: post >= pre");
+    assertLe(_post_baseToken, _pre_baseToken, "baseToken: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

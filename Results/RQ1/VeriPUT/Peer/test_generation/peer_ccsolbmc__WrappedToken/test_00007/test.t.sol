@@ -65,8 +65,8 @@ contract WrappedTokenCovTest_WrappedToken_getRoleAdmin_put2p1 is Test {
     
     uint256 _post_roles_role__adminRole = uint256(vm.load(address(c0), bytes32(uint256(keccak256(abi.encode(bytes32(role), uint256(0)))) + 1)));
     assertEq(_post_roles_role__adminRole, _pre_roles_role__adminRole, "_roles[role].adminRole: post == pre");
-    
-    
+    assertGe(_post_roles_role__adminRole, _pre_roles_role__adminRole, "_roles[role].adminRole: post >= pre");
+    assertLe(_post_roles_role__adminRole, _pre_roles_role__adminRole, "_roles[role].adminRole: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

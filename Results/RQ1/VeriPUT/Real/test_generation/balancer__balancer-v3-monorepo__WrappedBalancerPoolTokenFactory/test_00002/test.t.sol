@@ -65,8 +65,8 @@ contract WrappedBalancerPoolTokenFactoryCovTest_WrappedBalancerPoolTokenFactory_
     
     uint256 _post_wrappedTokens_balancerPoolToken = (uint256(vm.load(address(c0), keccak256(abi.encode(balancerPoolToken, uint256(0))))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_wrappedTokens_balancerPoolToken, _pre_wrappedTokens_balancerPoolToken, "_wrappedTokens[balancerPoolToken]: post == pre");
-    
-    
+    assertGe(_post_wrappedTokens_balancerPoolToken, _pre_wrappedTokens_balancerPoolToken, "_wrappedTokens[balancerPoolToken]: post >= pre");
+    assertLe(_post_wrappedTokens_balancerPoolToken, _pre_wrappedTokens_balancerPoolToken, "_wrappedTokens[balancerPoolToken]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

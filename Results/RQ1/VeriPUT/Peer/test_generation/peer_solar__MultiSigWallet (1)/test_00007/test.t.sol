@@ -118,28 +118,28 @@ contract MultiSigWalletCovTest_MultiSigWallet_transferTo_put2p1 is Test {
     assertEq(_post_transactions_state__transactionIdx__signatureCount, _pre_transactions_state__transactionIdx__signatureCount, "_transactions[state._transactionIdx].signatureCount: post == pre");
     assertEq(_post_transactions_amount__to, _pre_transactions_amount__to, "_transactions[amount].to: post == pre");
     assertEq(_post_transactions_state__transactionIdx__to, _pre_transactions_state__transactionIdx__to, "_transactions[state._transactionIdx].to: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
+    assertGe(_post_transactionIdx, _pre_transactionIdx, "_transactionIdx: post >= pre");
+    assertLe(_post_transactionIdx, _pre_transactionIdx, "_transactionIdx: post <= pre");
+    assertGe(_post_owners_msg_sender, _pre_owners_msg_sender, "_owners[msg.sender]: post >= pre");
+    assertLe(_post_owners_msg_sender, _pre_owners_msg_sender, "_owners[msg.sender]: post <= pre");
+    assertGe(_post_transactions_amount__amount, _pre_transactions_amount__amount, "_transactions[amount].amount: post >= pre");
+    assertLe(_post_transactions_amount__amount, _pre_transactions_amount__amount, "_transactions[amount].amount: post <= pre");
+    assertGe(_post_transactions_state__transactionIdx__amount, _pre_transactions_state__transactionIdx__amount, "_transactions[state._transactionIdx].amount: post >= pre");
+    assertLe(_post_transactions_state__transactionIdx__amount, _pre_transactions_state__transactionIdx__amount, "_transactions[state._transactionIdx].amount: post <= pre");
+    assertGe(_post_transactions_amount__from, _pre_transactions_amount__from, "_transactions[amount].from: post >= pre");
+    assertLe(_post_transactions_amount__from, _pre_transactions_amount__from, "_transactions[amount].from: post <= pre");
+    assertGe(_post_transactions_state__transactionIdx__from, _pre_transactions_state__transactionIdx__from, "_transactions[state._transactionIdx].from: post >= pre");
+    assertLe(_post_transactions_state__transactionIdx__from, _pre_transactions_state__transactionIdx__from, "_transactions[state._transactionIdx].from: post <= pre");
+    assertGe(_post_transactions_amount__signatureCount, _pre_transactions_amount__signatureCount, "_transactions[amount].signatureCount: post >= pre");
+    assertLe(_post_transactions_amount__signatureCount, _pre_transactions_amount__signatureCount, "_transactions[amount].signatureCount: post <= pre");
+    assertGe(_post_transactions_state__transactionIdx__signatureCount, _pre_transactions_state__transactionIdx__signatureCount, "_transactions[state._transactionIdx].signatureCount: post >= pre");
+    assertLe(_post_transactions_state__transactionIdx__signatureCount, _pre_transactions_state__transactionIdx__signatureCount, "_transactions[state._transactionIdx].signatureCount: post <= pre");
+    assertGe(_post_transactions_amount__to, _pre_transactions_amount__to, "_transactions[amount].to: post >= pre");
+    assertLe(_post_transactions_amount__to, _pre_transactions_amount__to, "_transactions[amount].to: post <= pre");
+    assertGe(_post_transactions_state__transactionIdx__to, _pre_transactions_state__transactionIdx__to, "_transactions[state._transactionIdx].to: post >= pre");
+    assertLe(_post_transactions_state__transactionIdx__to, _pre_transactions_state__transactionIdx__to, "_transactions[state._transactionIdx].to: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

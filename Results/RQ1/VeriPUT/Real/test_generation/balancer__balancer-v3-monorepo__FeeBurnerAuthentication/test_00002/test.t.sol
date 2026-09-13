@@ -11,8 +11,8 @@ contract FeeBurnerAuthenticationCovTest_FeeBurnerAuthentication_owner_put2p1 is 
     c0 = new FeeBurnerAuthentication(IProtocolFeeSweeper(address(uint160(1000))), address(uint160(1001)));
     
     address _esbmc_ctor_state_mock_0_0 = address(IProtocolFeeSweeper(address(uint160(1000))));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("getFeeRecipient()"), abi.encode(address(0)));
   }
   
 
@@ -69,8 +69,8 @@ contract FeeBurnerAuthenticationCovTest_FeeBurnerAuthentication_owner_put2p1 is 
     
     uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

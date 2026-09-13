@@ -63,8 +63,8 @@ contract EtherCartelCovTest_EtherCartel_DrugDealer_put2p1 is Test {
     
     uint256 _post_ceoAddress = ((uint256(vm.load(address(c0), bytes32(uint256(4)))) >> 8) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_ceoAddress, _pre_ceoAddress, "ceoAddress: post == pre");
-    
-    
+    assertGe(_post_ceoAddress, _pre_ceoAddress, "ceoAddress: post >= pre");
+    assertLe(_post_ceoAddress, _pre_ceoAddress, "ceoAddress: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

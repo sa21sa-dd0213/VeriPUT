@@ -147,21 +147,21 @@ contract Cfc1CovTest_Cfc1_f_put24p1 is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(0), "entry pin state.a did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "entry pin state.b did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(0), "entry pin state.c did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     uint256 _pre_a = uint256(vm.load(address(c0), bytes32(uint256(0))));
     uint256 _pre_b = uint256(vm.load(address(c0), bytes32(uint256(1))));
@@ -179,9 +179,9 @@ contract Cfc1CovTest_Cfc1_f_put24p1 is Test {
     c0.f();
     
     if (p_msg_sender == address(uint160(0))) {
-
-
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(0), "fixed witness state");
     }
     
     uint256 _post_a = uint256(vm.load(address(c0), bytes32(uint256(0))));
@@ -189,7 +189,7 @@ contract Cfc1CovTest_Cfc1_f_put24p1 is Test {
     uint256 _post_c = uint256(vm.load(address(c0), bytes32(uint256(2))));
     assertEq(_post_a, _pre_a, "a: post == pre");
     assertEq(_post_b, _pre_b, "b: post == pre");
-    
+    assertEq(_post_c, _pre_c, "c: post == pre");
     assertEq(_post_a, 0, "a: post == msg.value");
     unchecked { assertEq(_post_a, (uint256(_pre_a) + uint256(_pre_a)), "a: post == (pre + pre)"); }
     unchecked { assertEq(_post_a, (uint256(_pre_a) * uint256(_pre_a)), "a: post == (pre * pre)"); }
@@ -204,13 +204,13 @@ contract Cfc1CovTest_Cfc1_f_put24p1 is Test {
     unchecked { assertEq(_post_b, (uint256(_pre_b) * uint256(1461501637330902918203684832716283019655932542975)), "b: post == (pre * 1461501637330902918203684832716283019655932542975)"); }
     unchecked { assertEq(_post_b, (uint256(_pre_b) * uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "b: post == (pre * 115792089237316195423570985008687907853269984665640564039457584007913129639935)"); }
     unchecked { assertEq(_post_b, (uint256(0) - uint256(_pre_b)), "b: post == (msg.value - pre)"); }
-    
-    
-    
-    
-    
-    
-    
+    assertEq(_post_c, 0, "c: post == msg.value");
+    unchecked { assertEq(_post_c, (uint256(_pre_c) + uint256(_pre_c)), "c: post == (pre + pre)"); }
+    unchecked { assertEq(_post_c, (uint256(_pre_c) * uint256(_pre_c)), "c: post == (pre * pre)"); }
+    unchecked { assertEq(_post_c, (uint256(_pre_c) * uint256(2)), "c: post == (pre * 2)"); }
+    unchecked { assertEq(_post_c, (uint256(_pre_c) * uint256(1461501637330902918203684832716283019655932542975)), "c: post == (pre * 1461501637330902918203684832716283019655932542975)"); }
+    unchecked { assertEq(_post_c, (uint256(_pre_c) * uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "c: post == (pre * 115792089237316195423570985008687907853269984665640564039457584007913129639935)"); }
+    unchecked { assertEq(_post_c, (uint256(0) - uint256(_pre_c)), "c: post == (msg.value - pre)"); }
     
   }
 
@@ -241,21 +241,21 @@ contract Cfc1CovTest_Cfc1_f_concrete24p1__basis_root__W is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(0), "entry pin state.a did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "entry pin state.b did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(0), "entry pin state.c did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
@@ -268,11 +268,11 @@ contract Cfc1CovTest_Cfc1_f_concrete24p1__basis_root__W is Test {
     vm.prank(address(uint160(0)), address(uint160(0)));
     c0.f();
     uint256 _veriput_fixed_state_a_0 = uint256(vm.load(address(c0), bytes32(uint256(0))));
-
+    assertEq(_veriput_fixed_state_a_0, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_b_1 = uint256(vm.load(address(c0), bytes32(uint256(1))));
-
+    assertEq(_veriput_fixed_state_b_1, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_c_2 = uint256(vm.load(address(c0), bytes32(uint256(2))));
-
+    assertEq(_veriput_fixed_state_c_2, uint256(0), "fixed witness state");
   }
   
   

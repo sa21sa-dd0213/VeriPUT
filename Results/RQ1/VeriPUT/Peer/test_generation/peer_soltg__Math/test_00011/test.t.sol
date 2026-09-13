@@ -101,8 +101,8 @@ contract MathCovTest_Math_min_put13p1_p1_part_part0_r is Test {
       assertEq(_put_ret, uint256(0), "fixed witness return");
     }
     
-    
-    
+    assertGe(uint256(_put_ret), 0, "return: return in [0, 115792089237316195423570985008687907853269984665640564039457584007913129639934]");
+    assertLe(uint256(_put_ret), 115792089237316195423570985008687907853269984665640564039457584007913129639934, "return: return in [0, 115792089237316195423570985008687907853269984665640564039457584007913129639934]");
     assertEq(uint256(_put_ret), a, "return: return == a");
     
   }

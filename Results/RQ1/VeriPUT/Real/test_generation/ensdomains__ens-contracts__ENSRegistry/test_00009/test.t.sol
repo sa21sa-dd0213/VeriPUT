@@ -71,12 +71,12 @@ contract ENSRegistryCovTest_ENSRegistry_ttl_put2p1 is Test {
     assertEq(_post_records_node__ttl, _pre_records_node__ttl, "records[node].ttl: post == pre");
     assertEq(_post_records_node__owner, _pre_records_node__owner, "records[node].owner: post == pre");
     assertEq(_post_records_node__resolver, _pre_records_node__resolver, "records[node].resolver: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_records_node__ttl, _pre_records_node__ttl, "records[node].ttl: post >= pre");
+    assertLe(_post_records_node__ttl, _pre_records_node__ttl, "records[node].ttl: post <= pre");
+    assertGe(_post_records_node__owner, _pre_records_node__owner, "records[node].owner: post >= pre");
+    assertLe(_post_records_node__owner, _pre_records_node__owner, "records[node].owner: post <= pre");
+    assertGe(_post_records_node__resolver, _pre_records_node__resolver, "records[node].resolver: post >= pre");
+    assertLe(_post_records_node__resolver, _pre_records_node__resolver, "records[node].resolver: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

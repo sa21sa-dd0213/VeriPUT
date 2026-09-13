@@ -27,7 +27,7 @@ contract CometRewardsCovTest_0_CometRewards_setRewardsClaimed_concrete14_fb is T
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_governor_3 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_governor_3, uint256(4294967295), "fixed witness state");
   }
   
   

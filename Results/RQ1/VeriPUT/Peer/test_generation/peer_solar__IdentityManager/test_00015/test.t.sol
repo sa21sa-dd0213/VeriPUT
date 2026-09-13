@@ -70,12 +70,12 @@ contract IdentityManagerCovTest_IdentityManager_removeValidator_put2p1 is Test {
     assertEq(_post_index_msg_sender, _pre_index_msg_sender, "_index[msg.sender]: post == pre");
     assertEq(_post_identities_validator__pointer, _pre_identities_validator__pointer, "_identities[validator].pointer: post == pre");
     assertEq(_post_identities_state__currentIndex__pointer, _pre_identities_state__currentIndex__pointer, "_identities[state._currentIndex].pointer: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_index_msg_sender, _pre_index_msg_sender, "_index[msg.sender]: post >= pre");
+    assertLe(_post_index_msg_sender, _pre_index_msg_sender, "_index[msg.sender]: post <= pre");
+    assertGe(_post_identities_validator__pointer, _pre_identities_validator__pointer, "_identities[validator].pointer: post >= pre");
+    assertLe(_post_identities_validator__pointer, _pre_identities_validator__pointer, "_identities[validator].pointer: post <= pre");
+    assertGe(_post_identities_state__currentIndex__pointer, _pre_identities_state__currentIndex__pointer, "_identities[state._currentIndex].pointer: post >= pre");
+    assertLe(_post_identities_state__currentIndex__pointer, _pre_identities_state__currentIndex__pointer, "_identities[state._currentIndex].pointer: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

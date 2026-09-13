@@ -71,12 +71,12 @@ contract PrivatePoolCovTest_PrivatePool_sellQuote_put2p1 is Test {
     assertEq(_post_feeRate, _pre_feeRate, "feeRate: post == pre");
     assertEq(_post_virtualBaseTokenReserves, _pre_virtualBaseTokenReserves, "virtualBaseTokenReserves: post == pre");
     assertEq(_post_virtualNftReserves, _pre_virtualNftReserves, "virtualNftReserves: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_feeRate, _pre_feeRate, "feeRate: post >= pre");
+    assertLe(_post_feeRate, _pre_feeRate, "feeRate: post <= pre");
+    assertGe(_post_virtualBaseTokenReserves, _pre_virtualBaseTokenReserves, "virtualBaseTokenReserves: post >= pre");
+    assertLe(_post_virtualBaseTokenReserves, _pre_virtualBaseTokenReserves, "virtualBaseTokenReserves: post <= pre");
+    assertGe(_post_virtualNftReserves, _pre_virtualNftReserves, "virtualNftReserves: post >= pre");
+    assertLe(_post_virtualNftReserves, _pre_virtualNftReserves, "virtualNftReserves: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

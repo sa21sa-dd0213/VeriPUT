@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 from __future__ import annotations
 
 import csv
@@ -18,6 +17,10 @@ RQ4_ARMS = ("no_RR", "no_RC", "no_OS")
 RQ4_DATASETS = ("Peer", "Real", "Patch")
 RQ4_BOOTSTRAP_DRAWS = 10000
 RQ4_BOOTSTRAP_SEED = 20260831
+PAIRED_BOOTSTRAP_DRAWS = 10000
+PAIRED_BOOTSTRAP_SEED = 20260830
+PAIRED_BASELINES = ("CC-SolBMC", "SolAR", "SolTG", "SynTest", "FuzzUtils")
+PAIRED_MEASURES = ("function", "line", "branch")
 KILL_STATUSES = {
     "killed",
     "killed-compile",
@@ -207,6 +210,145 @@ def rq2(root: Path) -> None:
     write_csv(root / "Results" / "RQ2" / "summary.csv", fields, output)
 
 
+def bootstrap_interval(values: list[float], rng: random.Random) -> tuple[float, float]:
+    size = len(values)
+    if not size:
+        return math.nan, math.nan
+    draws = sorted(
+        mean([values[rng.randrange(size)] for _ in range(size)])
+        for _ in range(PAIRED_BOOTSTRAP_DRAWS)
+    )
+    return (
+        draws[int(0.025 * PAIRED_BOOTSTRAP_DRAWS)],
+        draws[int(0.975 * PAIRED_BOOTSTRAP_DRAWS) - 1],
+    )
+
+
+def source_trial_maps(root: Path, tool: str, dataset: str) -> list[dict[str, dict]]:
+    blob = read_json(
+        root / "Results" / "RQ1" / tool / dataset / "coverage" / "source.json"
+    )
+    return [
+        {
+            str(row["subject_id"]): row
+            for row in trial.get("subjects") or []
+        }
+        for trial in blob.get("trials") or []
+    ]
+
+
+def journal_map(path: Path) -> dict[str, dict[str, str]]:
+    result: dict[str, dict[str, str]] = defaultdict(dict)
+    for row in read_jsonl(path):
+        status = str(row.get("status") or "")
+        if status not in SCORED_STATUSES:
+            continue
+        result[str(row["subject_id"])][str(row["mutant_id"])] = status
+    return dict(result)
+
+
+def paired_bootstrap(root: Path) -> None:
+    rng = random.Random(PAIRED_BOOTSTRAP_SEED)
+    output: list[dict[str, object]] = []
+    for dataset in DATASETS:
+        veriput = source_trial_maps(root, "VeriPUT", dataset)[0]
+        for baseline in PAIRED_BASELINES:
+            trials = source_trial_maps(root, baseline, dataset)
+            for measure in PAIRED_MEASURES:
+                differences = []
+                for subject_id in sorted(veriput):
+                    metric = (veriput[subject_id].get("metrics") or {}).get(measure) or {}
+                    total = int(metric.get("total") or 0)
+                    if not total:
+                        continue
+                    baseline_covered = mean([
+                        float(((trial[subject_id].get("metrics") or {})
+                               .get(measure) or {}).get("covered") or 0)
+                        for trial in trials
+                    ])
+                    differences.append(
+                        100.0 * (float(metric.get("covered") or 0) - baseline_covered)
+                        / total
+                    )
+                low, high = bootstrap_interval(differences, rng)
+                output.append({
+                    "dataset": dataset,
+                    "measure": measure,
+                    "baseline": baseline,
+                    "difference_pp": number(mean(differences)),
+                    "ci_low_pp": number(low),
+                    "ci_high_pp": number(high),
+                    "subjects": len(differences),
+                    "scored_pairs": "",
+                    "baseline_trials": len(trials),
+                    "bootstrap_draws": PAIRED_BOOTSTRAP_DRAWS,
+                    "bootstrap_seed": PAIRED_BOOTSTRAP_SEED,
+                })
+    for dataset in DATASETS:
+        veriput = journal_map(
+            root / "Results" / "RQ2" / "VeriPUT" / dataset / "trial1.jsonl"
+        )
+        for baseline in PAIRED_BASELINES:
+            trials = [
+                journal_map(path)
+                for path in sorted(
+                    (root / "Results" / "RQ2" / baseline / dataset).glob("trial*.jsonl")
+                )
+            ]
+            differences = []
+            scored_pairs = 0
+            for subject_id in sorted(veriput):
+                mutants = veriput[subject_id]
+                if not mutants:
+                    continue
+                veriput_kills = sum(
+                    status in KILL_STATUSES for status in mutants.values()
+                )
+                baseline_kills = mean([
+                    sum(
+                        trial.get(subject_id, {}).get(mutant_id) in KILL_STATUSES
+                        for mutant_id in mutants
+                    )
+                    for trial in trials
+                ])
+                differences.append(
+                    100.0 * (veriput_kills - baseline_kills) / len(mutants)
+                )
+                scored_pairs += len(mutants)
+            low, high = bootstrap_interval(differences, rng)
+            output.append({
+                "dataset": dataset,
+                "measure": "kills",
+                "baseline": baseline,
+                "difference_pp": number(mean(differences)),
+                "ci_low_pp": number(low),
+                "ci_high_pp": number(high),
+                "subjects": len(differences),
+                "scored_pairs": scored_pairs,
+                "baseline_trials": len(trials),
+                "bootstrap_draws": PAIRED_BOOTSTRAP_DRAWS,
+                "bootstrap_seed": PAIRED_BOOTSTRAP_SEED,
+            })
+    dataset_order = {value: index for index, value in enumerate(DATASETS)}
+    measure_order = {
+        value: index for index, value in enumerate((*PAIRED_MEASURES, "kills"))
+    }
+    baseline_order = {
+        value: index for index, value in enumerate(PAIRED_BASELINES)
+    }
+    output.sort(key=lambda row: (
+        dataset_order[str(row["dataset"])],
+        measure_order[str(row["measure"])],
+        baseline_order[str(row["baseline"])],
+    ))
+    fields = [
+        "dataset", "measure", "baseline", "difference_pp", "ci_low_pp",
+        "ci_high_pp", "subjects", "scored_pairs", "baseline_trials",
+        "bootstrap_draws", "bootstrap_seed",
+    ]
+    write_csv(root / "Results" / "RQ1" / "paired_bootstrap.csv", fields, output)
+
+
 def rq4(root: Path) -> None:
     source = root / "Results" / "RQ4" / "subject_pairs.csv"
     groups: dict[tuple[str, str], list[dict[str, str]]] = defaultdict(list)
@@ -218,8 +360,8 @@ def rq4(root: Path) -> None:
         "ci_low_pp", "ci_high_pp",
     ]
     output = []
-    rng = random.Random(RQ4_BOOTSTRAP_SEED)
     for arm in RQ4_ARMS:
+        rng = random.Random(RQ4_BOOTSTRAP_SEED)
         for dataset in RQ4_DATASETS:
             rows = groups[(arm, dataset)]
             units = [
@@ -227,13 +369,13 @@ def rq4(root: Path) -> None:
                  int(row["shared_pairs"]))
                 for row in sorted(rows, key=lambda row: row["subject_id"])
             ]
-            def pooled(sample: list[tuple[int, int, int]]) -> float:
-                denominator = sum(item[2] for item in sample)
-                return rate(
-                    sum(item[0] - item[1] for item in sample), denominator
-                )
+            def macro(sample: list[tuple[int, int, int]]) -> float:
+                observed = [item for item in sample if item[2]]
+                return mean([
+                    rate(item[0] - item[1], item[2]) for item in observed
+                ])
             draws = sorted(
-                pooled([units[rng.randrange(len(units))] for _ in range(len(units))])
+                macro([units[rng.randrange(len(units))] for _ in range(len(units))])
                 for _ in range(RQ4_BOOTSTRAP_DRAWS)
             )
             low = draws[int(0.025 * RQ4_BOOTSTRAP_DRAWS)]
@@ -243,7 +385,7 @@ def rq4(root: Path) -> None:
                 "dataset": dataset,
                 "subjects": len(rows),
                 "shared_pairs": sum(item[2] for item in units),
-                "difference_pp": number(pooled(units)),
+                "difference_pp": number(macro(units)),
                 "ci_low_pp": number(low),
                 "ci_high_pp": number(high),
             })
@@ -254,8 +396,9 @@ def main() -> int:
     root = Path(__file__).resolve().parents[1]
     rq1(root)
     rq2(root)
+    paired_bootstrap(root)
     rq4(root)
-    print("wrote Results/RQ1/summary.csv, Results/RQ2/{population,summary}.csv, and Results/RQ4/summary.csv")
+    print("wrote paper-facing RQ1, RQ2, and RQ4 CSV tables")
     return 0
 
 

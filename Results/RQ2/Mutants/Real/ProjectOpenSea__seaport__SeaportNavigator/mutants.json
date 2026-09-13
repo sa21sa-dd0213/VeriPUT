@@ -65534,23 +65534,23 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 17081,
+      "end_line": 17082,
       "function": "bundleByMatchable",
       "mutant_id": "m006554",
       "operator": "UORD",
       "original_expression": "atchableGroup\n                            .considerationAssigned++",
       "replacement_expression": "atchableGroup\n                            .considerationAssigned--",
-      "start_line": 17082
+      "start_line": 17081
     },
     {
       "compile_status": "ok",
-      "end_line": 17081,
+      "end_line": 17082,
       "function": "bundleByMatchable",
       "mutant_id": "m006555",
       "operator": "UORD",
       "original_expression": "atchableGroup\n                            .considerationAssigned++",
       "replacement_expression": "atchableGroup\n                            .considerationAssigned ",
-      "start_line": 17082
+      "start_line": 17081
     },
     {
       "compile_status": "ok",
@@ -66024,13 +66024,13 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 18879,
+      "end_line": 18885,
       "function": "validateConsiderationItemParameters",
       "mutant_id": "m006603",
       "operator": "UORD",
       "original_expression": "!considerationItem.token.safeStaticCallUint256(\n                    abi.encodeWithSelector(\n                        ERC721Interface.ownerOf.selector,\n                        considerationItem.identifierOrCriteria\n                    ),\n                    1\n                )",
       "replacement_expression": " considerationItem.token.safeStaticCallUint256(\n                    abi.encodeWithSelector(\n                        ERC721Interface.ownerOf.selector,\n                        considerationItem.identifierOrCriteria\n                    ),\n                    1\n                )",
-      "start_line": 18885
+      "start_line": 18879
     },
     {
       "compile_status": "ok",
@@ -66054,13 +66054,13 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 18923,
+      "end_line": 18930,
       "function": "validateConsiderationItemParameters",
       "mutant_id": "m006606",
       "operator": "UORD",
       "original_expression": "!considerationItem.token.safeStaticCallUint256(\n                    abi.encodeWithSelector(\n                        ERC20Interface.allowance.selector,\n                        seaportAddress,\n                        seaportAddress\n                    ),\n                    0\n                )",
       "replacement_expression": " considerationItem.token.safeStaticCallUint256(\n                    abi.encodeWithSelector(\n                        ERC20Interface.allowance.selector,\n                        seaportAddress,\n                        seaportAddress\n                    ),\n                    0\n                )",
-      "start_line": 18930
+      "start_line": 18923
     },
     {
       "compile_status": "ok",
@@ -66194,113 +66194,113 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 20121,
+      "end_line": 20128,
       "function": "validateOfferItemParameters",
       "mutant_id": "m006620",
       "operator": "UORD",
       "original_expression": "!offerItem.token.safeStaticCallUint256(\n                    abi.encodeWithSelector(\n                        ERC20Interface.allowance.selector,\n                        seaportAddress,\n                        seaportAddress\n                    ),\n                    0\n                )",
       "replacement_expression": " offerItem.token.safeStaticCallUint256(\n                    abi.encodeWithSelector(\n                        ERC20Interface.allowance.selector,\n                        seaportAddress,\n                        seaportAddress\n                    ),\n                    0\n                )",
-      "start_line": 20128
+      "start_line": 20121
     },
     {
       "compile_status": "ok",
-      "end_line": 20183,
+      "end_line": 20189,
       "function": "validateOfferItemApprovalAndBalance",
       "mutant_id": "m006621",
       "operator": "UORD",
       "original_expression": "!address(token).safeStaticCallAddress(\n                    abi.encodeWithSelector(\n                        ERC721Interface.ownerOf.selector,\n                        offerItem.identifierOrCriteria\n                    ),\n                    orderParameters.offerer\n                )",
       "replacement_expression": " address(token).safeStaticCallAddress(\n                    abi.encodeWithSelector(\n                        ERC721Interface.ownerOf.selector,\n                        offerItem.identifierOrCriteria\n                    ),\n                    orderParameters.offerer\n                )",
-      "start_line": 20189
+      "start_line": 20183
     },
     {
       "compile_status": "ok",
-      "end_line": 20196,
+      "end_line": 20202,
       "function": "validateOfferItemApprovalAndBalance",
       "mutant_id": "m006622",
       "operator": "UORD",
       "original_expression": "!address(token).safeStaticCallAddress(\n                    abi.encodeWithSelector(\n                        ERC721Interface.getApproved.selector,\n                        offerItem.identifierOrCriteria\n                    ),\n                    approvalAddress\n                )",
       "replacement_expression": " address(token).safeStaticCallAddress(\n                    abi.encodeWithSelector(\n                        ERC721Interface.getApproved.selector,\n                        offerItem.identifierOrCriteria\n                    ),\n                    approvalAddress\n                )",
-      "start_line": 20202
+      "start_line": 20196
     },
     {
       "compile_status": "ok",
-      "end_line": 20206,
+      "end_line": 20213,
       "function": "validateOfferItemApprovalAndBalance",
       "mutant_id": "m006623",
       "operator": "UORD",
       "original_expression": "!address(token).safeStaticCallBool(\n                        abi.encodeWithSelector(\n                            ERC721Interface.isApprovedForAll.selector,\n                            orderParameters.offerer,\n                            approvalAddress\n                        ),\n                        true\n                    )",
       "replacement_expression": " address(token).safeStaticCallBool(\n                        abi.encodeWithSelector(\n                            ERC721Interface.isApprovedForAll.selector,\n                            orderParameters.offerer,\n                            approvalAddress\n                        ),\n                        true\n                    )",
-      "start_line": 20213
+      "start_line": 20206
     },
     {
       "compile_status": "ok",
-      "end_line": 20226,
+      "end_line": 20233,
       "function": "validateOfferItemApprovalAndBalance",
       "mutant_id": "m006624",
       "operator": "UORD",
       "original_expression": "!address(token).safeStaticCallBool(\n                    abi.encodeWithSelector(\n                        ERC721Interface.isApprovedForAll.selector,\n                        orderParameters.offerer,\n                        approvalAddress\n                    ),\n                    true\n                )",
       "replacement_expression": " address(token).safeStaticCallBool(\n                    abi.encodeWithSelector(\n                        ERC721Interface.isApprovedForAll.selector,\n                        orderParameters.offerer,\n                        approvalAddress\n                    ),\n                    true\n                )",
-      "start_line": 20233
+      "start_line": 20226
     },
     {
       "compile_status": "ok",
-      "end_line": 20243,
+      "end_line": 20250,
       "function": "validateOfferItemApprovalAndBalance",
       "mutant_id": "m006625",
       "operator": "UORD",
       "original_expression": "!address(token).safeStaticCallBool(\n                    abi.encodeWithSelector(\n                        ERC1155Interface.isApprovedForAll.selector,\n                        orderParameters.offerer,\n                        approvalAddress\n                    ),\n                    true\n                )",
       "replacement_expression": " address(token).safeStaticCallBool(\n                    abi.encodeWithSelector(\n                        ERC1155Interface.isApprovedForAll.selector,\n                        orderParameters.offerer,\n                        approvalAddress\n                    ),\n                    true\n                )",
-      "start_line": 20250
+      "start_line": 20243
     },
     {
       "compile_status": "ok",
-      "end_line": 20262,
+      "end_line": 20269,
       "function": "validateOfferItemApprovalAndBalance",
       "mutant_id": "m006626",
       "operator": "UORD",
       "original_expression": "!address(token).safeStaticCallUint256(\n                    abi.encodeWithSelector(\n                        ERC1155Interface.balanceOf.selector,\n                        orderParameters.offerer,\n                        offerItem.identifierOrCriteria\n                    ),\n                    minBalance\n                )",
       "replacement_expression": " address(token).safeStaticCallUint256(\n                    abi.encodeWithSelector(\n                        ERC1155Interface.balanceOf.selector,\n                        orderParameters.offerer,\n                        offerItem.identifierOrCriteria\n                    ),\n                    minBalance\n                )",
-      "start_line": 20269
+      "start_line": 20262
     },
     {
       "compile_status": "ok",
-      "end_line": 20281,
+      "end_line": 20288,
       "function": "validateOfferItemApprovalAndBalance",
       "mutant_id": "m006627",
       "operator": "UORD",
       "original_expression": "!address(token).safeStaticCallBool(\n                    abi.encodeWithSelector(\n                        ERC1155Interface.isApprovedForAll.selector,\n                        orderParameters.offerer,\n                        approvalAddress\n                    ),\n                    true\n                )",
       "replacement_expression": " address(token).safeStaticCallBool(\n                    abi.encodeWithSelector(\n                        ERC1155Interface.isApprovedForAll.selector,\n                        orderParameters.offerer,\n                        approvalAddress\n                    ),\n                    true\n                )",
-      "start_line": 20288
+      "start_line": 20281
     },
     {
       "compile_status": "ok",
-      "end_line": 20303,
+      "end_line": 20310,
       "function": "validateOfferItemApprovalAndBalance",
       "mutant_id": "m006628",
       "operator": "UORD",
       "original_expression": "!address(token).safeStaticCallUint256(\n                    abi.encodeWithSelector(\n                        ERC20Interface.allowance.selector,\n                        orderParameters.offerer,\n                        approvalAddress\n                    ),\n                    minBalanceAndAllowance\n                )",
       "replacement_expression": " address(token).safeStaticCallUint256(\n                    abi.encodeWithSelector(\n                        ERC20Interface.allowance.selector,\n                        orderParameters.offerer,\n                        approvalAddress\n                    ),\n                    minBalanceAndAllowance\n                )",
-      "start_line": 20310
+      "start_line": 20303
     },
     {
       "compile_status": "ok",
-      "end_line": 20319,
+      "end_line": 20325,
       "function": "validateOfferItemApprovalAndBalance",
       "mutant_id": "m006629",
       "operator": "UORD",
       "original_expression": "!address(token).safeStaticCallUint256(\n                    abi.encodeWithSelector(\n                        ERC20Interface.balanceOf.selector,\n                        orderParameters.offerer\n                    ),\n                    minBalanceAndAllowance\n                )",
       "replacement_expression": " address(token).safeStaticCallUint256(\n                    abi.encodeWithSelector(\n                        ERC20Interface.balanceOf.selector,\n                        orderParameters.offerer\n                    ),\n                    minBalanceAndAllowance\n                )",
-      "start_line": 20325
+      "start_line": 20319
     },
     {
       "compile_status": "ok",
-      "end_line": 20418,
+      "end_line": 20424,
       "function": "validateOrderWithZone",
       "mutant_id": "m006630",
       "operator": "UORD",
       "original_expression": "!orderParameters.zone.safeStaticCallBytes4(\n                abi.encodeWithSelector(\n                    ZoneInterface.validateOrder.selector,\n                    zoneParameters\n                ),\n                ZoneInterface.validateOrder.selector\n            )",
       "replacement_expression": " orderParameters.zone.safeStaticCallBytes4(\n                abi.encodeWithSelector(\n                    ZoneInterface.validateOrder.selector,\n                    zoneParameters\n                ),\n                ZoneInterface.validateOrder.selector\n            )",
-      "start_line": 20424
+      "start_line": 20418
     },
     {
       "compile_status": "ok",

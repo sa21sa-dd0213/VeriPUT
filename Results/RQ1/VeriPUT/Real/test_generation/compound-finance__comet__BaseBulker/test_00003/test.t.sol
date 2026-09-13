@@ -97,9 +97,9 @@ contract BaseBulkerCovTest_1_BaseBulker_sweepNativeToken_put6p1 is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(1461501637330902918203684832716283019655932542975) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(1461501637330902918203684832716283019655932542975), "entry pin state.admin did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     uint256 _pre_admin = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     
@@ -118,13 +118,13 @@ contract BaseBulkerCovTest_1_BaseBulker_sweepNativeToken_put6p1 is Test {
     try c0.sweepNativeToken(recipient) {} catch { _put_ok = false; }
     
     if (p_msg_sender == address(uint160(4294967295)) && recipient == address(uint160(0))) {
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(1461501637330902918203684832716283019655932542975), "fixed witness state");
     }
     
     uint256 _post_admin = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_admin, _pre_admin, "admin: post == pre");
-    
-    
+    assertGe(_post_admin, _pre_admin, "admin: post >= pre");
+    assertLe(_post_admin, _pre_admin, "admin: post <= pre");
     
     assertFalse(_put_ok, "path enc=6p1 exits through a REVERT: the call must fail on the unmodified contract");
   }
@@ -167,9 +167,9 @@ contract BaseBulkerCovTest_1_BaseBulker_sweepNativeToken_concrete6p1__basis_root
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(1461501637330902918203684832716283019655932542975) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(1461501637330902918203684832716283019655932542975), "entry pin state.admin did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(57896044618658097711785492504343953926634992332820282019728792003956564819969);
@@ -187,6 +187,6 @@ contract BaseBulkerCovTest_1_BaseBulker_sweepNativeToken_concrete6p1__basis_root
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_admin_6 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_admin_6, uint256(1461501637330902918203684832716283019655932542975), "fixed witness state");
   }
 }

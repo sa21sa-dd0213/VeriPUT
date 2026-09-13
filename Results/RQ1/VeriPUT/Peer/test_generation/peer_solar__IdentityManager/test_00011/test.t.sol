@@ -65,8 +65,8 @@ contract IdentityManagerCovTest_IdentityManager_isSender_put2p1 is Test {
     
     uint256 _post_identities_identity__pointer = (uint256(vm.load(address(c0), keccak256(abi.encode(identity, uint256(0))))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_identities_identity__pointer, _pre_identities_identity__pointer, "_identities[identity].pointer: post == pre");
-    
-    
+    assertGe(_post_identities_identity__pointer, _pre_identities_identity__pointer, "_identities[identity].pointer: post >= pre");
+    assertLe(_post_identities_identity__pointer, _pre_identities_identity__pointer, "_identities[identity].pointer: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

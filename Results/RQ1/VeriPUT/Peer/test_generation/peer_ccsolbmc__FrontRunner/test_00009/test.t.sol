@@ -30,10 +30,10 @@ contract FrontRunnerCovTest_1_FrontRunner_kill_put6p1_p1_part_part0_w is Test {
     c0 = new FrontRunner();
     
     address _esbmc_ext_mock_0 = address(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-
-
-
-
+    vm.etch(_esbmc_ext_mock_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("WETH()"), abi.encode(address(0)));
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("swapETHForExactTokens(uint256,address[],address,uint256)"), abi.encode(new uint256[](0)));
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("swapExactTokensForETH(uint256,uint256,address[],address,uint256)"), abi.encode(new uint256[](0)));
     vm.stopPrank();
   }
   
@@ -118,19 +118,19 @@ contract FrontRunnerCovTest_1_FrontRunner_kill_put6p1_p1_part_part0_w is Test {
     try c0.kill() {} catch { _put_ok = false; }
     
     if (p_msg_sender == address(uint160(4294967295))) {
-
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975), uint256(344069158476845065304731585372659152227292608404), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(3)))) & 1461501637330902918203684832716283019655932542975), uint256(1241825841301566910798618315133333510876706684831), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(2147483647), "fixed witness state");
     }
     
     uint256 _post_manager = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
     uint256 _post_EOA1 = (uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_manager, _pre_manager, "manager: post == pre");
     assertEq(_post_EOA1, _pre_EOA1, "EOA1: post == pre");
-    
-    
-    
-    
+    assertGe(_post_manager, _pre_manager, "manager: post >= pre");
+    assertLe(_post_manager, _pre_manager, "manager: post <= pre");
+    assertGe(_post_EOA1, _pre_EOA1, "EOA1: post >= pre");
+    assertLe(_post_EOA1, _pre_EOA1, "EOA1: post <= pre");
     
     assertFalse(_put_ok, "path enc=6p1_part_part0_w exits through a REVERT: the call must fail on the unmodified contract");
   }
@@ -171,10 +171,10 @@ contract FrontRunnerCovTest_1_FrontRunner_kill_concrete6p1__basis_part0_w__W is 
     c0 = new FrontRunner();
     
     address _esbmc_ext_mock_0 = address(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-
-
-
-
+    vm.etch(_esbmc_ext_mock_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("WETH()"), abi.encode(address(0)));
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("swapETHForExactTokens(uint256,address[],address,uint256)"), abi.encode(new uint256[](0)));
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("swapExactTokensForETH(uint256,uint256,address[],address,uint256)"), abi.encode(new uint256[](0)));
     vm.stopPrank();
   }
   
@@ -183,21 +183,21 @@ contract FrontRunnerCovTest_1_FrontRunner_kill_concrete6p1__basis_part0_w__W is 
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(344069158476845065304731585372659152227292608404) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975), uint256(344069158476845065304731585372659152227292608404), "entry pin state.EOA1 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(3))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(1241825841301566910798618315133333510876706684831) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(3)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(3)))) & 1461501637330902918203684832716283019655932542975), uint256(1241825841301566910798618315133333510876706684831), "entry pin state.EOA2 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(2147483647) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(2147483647), "entry pin state.manager did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -214,10 +214,10 @@ contract FrontRunnerCovTest_1_FrontRunner_kill_concrete6p1__basis_part0_w__W is 
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_EOA1_0 = (uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_EOA1_0, uint256(344069158476845065304731585372659152227292608404), "fixed witness state");
     uint256 _veriput_fixed_state_EOA2_1 = (uint256(vm.load(address(c0), bytes32(uint256(3)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_EOA2_1, uint256(1241825841301566910798618315133333510876706684831), "fixed witness state");
     uint256 _veriput_fixed_state_manager_2 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_manager_2, uint256(2147483647), "fixed witness state");
   }
 }

@@ -71,10 +71,10 @@ contract RoomThermostatCovTest_RoomThermostat_initialize_put2p1 is Test {
     assertEq(_post_Installer, _pre_Installer, "Installer: post == pre");
     assertEq(_post_User, _pre_User, "User: post == pre");
     assertEq(_post_TargetTemperature, _pre_TargetTemperature, "TargetTemperature: post == pre");
-    
-    
-    
-    
+    assertGe(_post_Installer, _pre_Installer, "Installer: post >= pre");
+    assertLe(_post_Installer, _pre_Installer, "Installer: post <= pre");
+    assertGe(_post_User, _pre_User, "User: post >= pre");
+    assertLe(_post_User, _pre_User, "User: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

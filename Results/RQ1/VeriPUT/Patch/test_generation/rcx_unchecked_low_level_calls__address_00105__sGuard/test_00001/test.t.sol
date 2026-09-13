@@ -67,10 +67,10 @@ contract EBUCovTest_EBU_transfer_put2p1 is Test {
     uint256 _post_caddress = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_from, _pre_from, "from: post == pre");
     assertEq(_post_caddress, _pre_caddress, "caddress: post == pre");
-    
-    
-    
-    
+    assertGe(_post_from, _pre_from, "from: post >= pre");
+    assertLe(_post_from, _pre_from, "from: post <= pre");
+    assertGe(_post_caddress, _pre_caddress, "caddress: post >= pre");
+    assertLe(_post_caddress, _pre_caddress, "caddress: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

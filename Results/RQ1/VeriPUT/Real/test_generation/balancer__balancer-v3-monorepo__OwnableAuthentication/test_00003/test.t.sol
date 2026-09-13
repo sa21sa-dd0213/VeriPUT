@@ -11,8 +11,8 @@ contract OwnableAuthenticationCovTest_OwnableAuthentication_getActionId_put2p1 i
     c0 = new OwnableAuthentication(IVault(address(uint160(1000))), address(uint160(1001)));
     
     address _esbmc_ctor_state_mock_0_0 = address(IVault(address(uint160(1000))));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("getAuthorizer()"), abi.encode(IAuthorizer(address(0))));
   }
   
 

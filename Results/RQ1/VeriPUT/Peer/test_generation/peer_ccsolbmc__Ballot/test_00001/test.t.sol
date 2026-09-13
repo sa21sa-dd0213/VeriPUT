@@ -101,18 +101,18 @@ contract BallotCovTest_Ballot_con1F_put2p1 is Test {
     assertEq(_post_voters_state_chairperson__vote, _pre_voters_state_chairperson__vote, "voters[state.chairperson].vote: post == pre");
     assertEq(_post_voters_msg_sender__voted, _pre_voters_msg_sender__voted, "voters[msg.sender].voted: post == pre");
     assertEq(_post_voters_state_chairperson__voted, _pre_voters_state_chairperson__voted, "voters[state.chairperson].voted: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_chairperson, _pre_chairperson, "chairperson: post >= pre");
+    assertLe(_post_chairperson, _pre_chairperson, "chairperson: post <= pre");
+    assertGe(_post_voters_msg_sender__weight, _pre_voters_msg_sender__weight, "voters[msg.sender].weight: post >= pre");
+    assertLe(_post_voters_msg_sender__weight, _pre_voters_msg_sender__weight, "voters[msg.sender].weight: post <= pre");
+    assertGe(_post_voters_msg_sender__delegate, _pre_voters_msg_sender__delegate, "voters[msg.sender].delegate: post >= pre");
+    assertLe(_post_voters_msg_sender__delegate, _pre_voters_msg_sender__delegate, "voters[msg.sender].delegate: post <= pre");
+    assertGe(_post_voters_state_chairperson__delegate, _pre_voters_state_chairperson__delegate, "voters[state.chairperson].delegate: post >= pre");
+    assertLe(_post_voters_state_chairperson__delegate, _pre_voters_state_chairperson__delegate, "voters[state.chairperson].delegate: post <= pre");
+    assertGe(_post_voters_msg_sender__vote, _pre_voters_msg_sender__vote, "voters[msg.sender].vote: post >= pre");
+    assertLe(_post_voters_msg_sender__vote, _pre_voters_msg_sender__vote, "voters[msg.sender].vote: post <= pre");
+    assertGe(_post_voters_state_chairperson__vote, _pre_voters_state_chairperson__vote, "voters[state.chairperson].vote: post >= pre");
+    assertLe(_post_voters_state_chairperson__vote, _pre_voters_state_chairperson__vote, "voters[state.chairperson].vote: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

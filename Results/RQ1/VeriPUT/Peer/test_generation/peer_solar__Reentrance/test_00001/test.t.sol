@@ -65,8 +65,8 @@ contract ReentranceCovTest_Reentrance_balanceOf_put2p1 is Test {
     
     uint256 _post_balances__who = uint256(vm.load(address(c0), keccak256(abi.encode(_who, uint256(0)))));
     assertEq(_post_balances__who, _pre_balances__who, "balances[_who]: post == pre");
-    
-    
+    assertGe(_post_balances__who, _pre_balances__who, "balances[_who]: post >= pre");
+    assertLe(_post_balances__who, _pre_balances__who, "balances[_who]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

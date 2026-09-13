@@ -67,10 +67,10 @@ contract IdentityManagerCovTest_IdentityManager_stopValidatingFor_put2p1 is Test
     uint256 _post_identities_identity__pointer = (uint256(vm.load(address(c0), keccak256(abi.encode(identity, uint256(0))))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_index_msg_sender, _pre_index_msg_sender, "_index[msg.sender]: post == pre");
     assertEq(_post_identities_identity__pointer, _pre_identities_identity__pointer, "_identities[identity].pointer: post == pre");
-    
-    
-    
-    
+    assertGe(_post_index_msg_sender, _pre_index_msg_sender, "_index[msg.sender]: post >= pre");
+    assertLe(_post_index_msg_sender, _pre_index_msg_sender, "_index[msg.sender]: post <= pre");
+    assertGe(_post_identities_identity__pointer, _pre_identities_identity__pointer, "_identities[identity].pointer: post >= pre");
+    assertLe(_post_identities_identity__pointer, _pre_identities_identity__pointer, "_identities[identity].pointer: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

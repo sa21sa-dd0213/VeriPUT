@@ -5,7 +5,7 @@ pragma solidity >=0.8.0;
 import {Test} from "forge-std/Test.sol";
 import {B6} from "../src/flat.sol";
 
-contract B6CovTest_B6_f6_put2p1 is Test {
+contract B6CovTest_B6_g6_put2p1 is Test {
   B6 c0;
   function setUp() public {
     c0 = new B6();
@@ -61,12 +61,12 @@ contract B6CovTest_B6_f6_put2p1 is Test {
     
     vm.deal(p_msg_sender, p_msg_value);
     vm.prank(p_msg_sender);
-    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("f6()"));
+    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("g6()"));
     
     uint256 _post_x = uint256(vm.load(address(c0), bytes32(uint256(0))));
     assertEq(_post_x, _pre_x, "x: post == pre");
-    
-    
+    assertGe(_post_x, _pre_x, "x: post >= pre");
+    assertLe(_post_x, _pre_x, "x: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 
@@ -76,7 +76,7 @@ contract B6CovTest_B6_f6_put2p1 is Test {
 
 
   
-  function test_put_B6_f6_path2p1(address p_msg_sender, uint256 p_msg_value) public {
+  function test_put_B6_g6_path2p1(address p_msg_sender, uint256 p_msg_value) public {
     _veriput_parameterized(p_msg_sender, p_msg_value);
   }
 }

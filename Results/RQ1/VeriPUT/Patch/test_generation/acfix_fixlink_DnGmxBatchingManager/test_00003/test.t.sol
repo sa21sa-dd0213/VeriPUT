@@ -81,18 +81,18 @@ contract DnGmxBatchingManagerCovTest_DnGmxBatchingManager_executeBatchDeposit_pu
     assertEq(_post_vaultBatchingState_roundUsdcBalance, _pre_vaultBatchingState_roundUsdcBalance, "vaultBatchingState.roundUsdcBalance: post == pre");
     assertEq(_post_lastUnpauseTimestamp, _pre_lastUnpauseTimestamp, "lastUnpauseTimestamp: post == pre");
     assertEq(_post_paused, _pre_paused, "_paused: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_keeper, _pre_keeper, "keeper: post >= pre");
+    assertLe(_post_keeper, _pre_keeper, "keeper: post <= pre");
+    assertGe(_post_dnGmxJuniorVaultGlpBalance, _pre_dnGmxJuniorVaultGlpBalance, "dnGmxJuniorVaultGlpBalance: post >= pre");
+    assertLe(_post_dnGmxJuniorVaultGlpBalance, _pre_dnGmxJuniorVaultGlpBalance, "dnGmxJuniorVaultGlpBalance: post <= pre");
+    assertGe(_post_vaultBatchingState_currentRound, _pre_vaultBatchingState_currentRound, "vaultBatchingState.currentRound: post >= pre");
+    assertLe(_post_vaultBatchingState_currentRound, _pre_vaultBatchingState_currentRound, "vaultBatchingState.currentRound: post <= pre");
+    assertGe(_post_vaultBatchingState_roundGlpStaked, _pre_vaultBatchingState_roundGlpStaked, "vaultBatchingState.roundGlpStaked: post >= pre");
+    assertLe(_post_vaultBatchingState_roundGlpStaked, _pre_vaultBatchingState_roundGlpStaked, "vaultBatchingState.roundGlpStaked: post <= pre");
+    assertGe(_post_vaultBatchingState_roundUsdcBalance, _pre_vaultBatchingState_roundUsdcBalance, "vaultBatchingState.roundUsdcBalance: post >= pre");
+    assertLe(_post_vaultBatchingState_roundUsdcBalance, _pre_vaultBatchingState_roundUsdcBalance, "vaultBatchingState.roundUsdcBalance: post <= pre");
+    assertGe(_post_lastUnpauseTimestamp, _pre_lastUnpauseTimestamp, "lastUnpauseTimestamp: post >= pre");
+    assertLe(_post_lastUnpauseTimestamp, _pre_lastUnpauseTimestamp, "lastUnpauseTimestamp: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

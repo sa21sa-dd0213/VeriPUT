@@ -10,7 +10,7 @@ contract SignMessageLibCovTest_SignMessageLib_getMessageHash_put2p1 is Test {
   function setUp() public {
     c0 = new SignMessageLib();
     
-
+    vm.mockCall(address(c0), abi.encodeWithSignature("domainSeparator()"), abi.encode(bytes32(0)));
   }
   
 

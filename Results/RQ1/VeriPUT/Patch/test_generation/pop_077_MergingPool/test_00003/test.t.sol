@@ -67,8 +67,8 @@ contract MergingPoolCovTest_MergingPool_adjustAdminAccess_put2p1 is Test {
     uint256 _post_isAdmin_adminAddress = (uint256(vm.load(address(c0), keccak256(abi.encode(adminAddress, uint256(11))))) & 255);
     assertEq(_post_ownerAddress, _pre_ownerAddress, "_ownerAddress: post == pre");
     assertEq(_post_isAdmin_adminAddress, _pre_isAdmin_adminAddress, "isAdmin[adminAddress]: post == pre");
-    
-    
+    assertGe(_post_ownerAddress, _pre_ownerAddress, "_ownerAddress: post >= pre");
+    assertLe(_post_ownerAddress, _pre_ownerAddress, "_ownerAddress: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

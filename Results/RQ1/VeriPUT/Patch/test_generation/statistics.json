@@ -73,8 +73,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_StaxLPStaking_rewardPerToken_path2p1",
-          "unit": "rewardPerToken"
+          "test_name": "test_put_StaxLPStaking_owner_path3p1",
+          "unit": "owner"
         },
         {
           "entry_id": "test_00007",
@@ -85,7 +85,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_StaxLPStaking_rewardPerToken_path6p1",
+          "test_name": "test_put_StaxLPStaking_rewardPerToken_path2p1",
           "unit": "rewardPerToken"
         },
         {
@@ -97,8 +97,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_StaxLPStaking_rewardPeriodFinish_path2p1",
-          "unit": "rewardPeriodFinish"
+          "test_name": "test_put_StaxLPStaking_rewardPerToken_path6p1",
+          "unit": "rewardPerToken"
         },
         {
           "entry_id": "test_00009",
@@ -109,7 +109,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_StaxLPStaking_rewardPeriodFinish_path3p1",
+          "test_name": "test_put_StaxLPStaking_rewardPeriodFinish_path2p1",
           "unit": "rewardPeriodFinish"
         },
         {
@@ -121,11 +121,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_StaxLPStaking_rewardPeriodFinish_path3p1",
+          "unit": "rewardPeriodFinish"
+        },
+        {
+          "entry_id": "test_00011",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_StaxLPStaking_setMigrator_path2p1",
           "unit": "setMigrator"
         },
         {
-          "entry_id": "test_00011",
+          "entry_id": "test_00012",
           "oracle_classes": [
             "R0",
             "R1",
@@ -137,7 +149,7 @@
           "unit": "setRewardDistributor"
         },
         {
-          "entry_id": "test_00012",
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -149,7 +161,7 @@
           "unit": "stake"
         },
         {
-          "entry_id": "test_00013",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R1",
@@ -161,7 +173,7 @@
           "unit": "stakeAll"
         },
         {
-          "entry_id": "test_00014",
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R1",
@@ -173,7 +185,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00015",
+          "entry_id": "test_00016",
           "oracle_classes": [
             "R0",
             "R1",
@@ -185,7 +197,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00016",
+          "entry_id": "test_00017",
           "oracle_classes": [
             "R0",
             "R1",
@@ -197,7 +209,7 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00017",
+          "entry_id": "test_00018",
           "oracle_classes": [
             "R0",
             "R1",
@@ -209,7 +221,7 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00018",
+          "entry_id": "test_00019",
           "oracle_classes": [
             "R0",
             "R2"
@@ -225,7 +237,7 @@
       "status": "persistence-error",
       "subject_id": "acfix_002_Templedao",
       "trial": 1,
-      "valid": 18,
+      "valid": 19,
       "wall_total_s": 591.148
     },
     {
@@ -384,11 +396,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_NewIntelTechMedia_NETM_path7p1",
+          "unit": "NETM"
+        },
+        {
+          "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_NewIntelTechMedia_allowance_path2p1",
           "unit": "allowance"
         },
         {
-          "entry_id": "test_00004",
+          "entry_id": "test_00005",
           "oracle_classes": [
             "R0",
             "R2"
@@ -399,7 +423,7 @@
           "unit": "allowance"
         },
         {
-          "entry_id": "test_00005",
+          "entry_id": "test_00006",
           "oracle_classes": [
             "R0",
             "R1",
@@ -411,7 +435,7 @@
           "unit": "balanceOf"
         },
         {
-          "entry_id": "test_00006",
+          "entry_id": "test_00007",
           "oracle_classes": [
             "R0",
             "R1",
@@ -423,7 +447,7 @@
           "unit": "balanceOf"
         },
         {
-          "entry_id": "test_00007",
+          "entry_id": "test_00008",
           "oracle_classes": [
             "R0",
             "R1",
@@ -435,7 +459,7 @@
           "unit": "burn"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00009",
           "oracle_classes": [
             "R0",
             "R1",
@@ -447,7 +471,7 @@
           "unit": "finishDistribution"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00010",
           "oracle_classes": [
             "R0",
             "R1",
@@ -459,7 +483,7 @@
           "unit": "finishDistribution"
         },
         {
-          "entry_id": "test_00010",
+          "entry_id": "test_00011",
           "oracle_classes": [
             "R0",
             "R1",
@@ -471,7 +495,7 @@
           "unit": "transfer"
         },
         {
-          "entry_id": "test_00011",
+          "entry_id": "test_00012",
           "oracle_classes": [
             "R0",
             "R1",
@@ -483,7 +507,7 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00012",
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -495,7 +519,7 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00013",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R1",
@@ -507,7 +531,7 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00014",
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R1",
@@ -519,7 +543,7 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00015",
+          "entry_id": "test_00016",
           "oracle_classes": [
             "R0",
             "R1",
@@ -531,7 +555,7 @@
           "unit": "withdraw"
         },
         {
-          "entry_id": "test_00016",
+          "entry_id": "test_00017",
           "oracle_classes": [
             "R0",
             "R1",
@@ -543,7 +567,7 @@
           "unit": "withdraw"
         },
         {
-          "entry_id": "test_00017",
+          "entry_id": "test_00018",
           "oracle_classes": [
             "R0",
             "R1",
@@ -555,7 +579,7 @@
           "unit": "withdrawForeignTokens"
         },
         {
-          "entry_id": "test_00018",
+          "entry_id": "test_00019",
           "oracle_classes": [
             "R0",
             "R1",
@@ -567,7 +591,7 @@
           "unit": "withdrawForeignTokens"
         },
         {
-          "entry_id": "test_00019",
+          "entry_id": "test_00020",
           "oracle_classes": [
             "R0",
             "R1",
@@ -584,7 +608,7 @@
       "status": "ok",
       "subject_id": "acfix_021_CVE_2018_19832",
       "trial": 1,
-      "valid": 19,
+      "valid": 20,
       "wall_total_s": 585.193
     },
     {
@@ -659,8 +683,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_ERCDDAToken_mintToken_path2p1",
-          "unit": "mintToken"
+          "test_name": "test_put_ERCDDAToken_freezeAccount_path7p1_part_part0_w_w",
+          "unit": "freezeAccount"
         },
         {
           "entry_id": "test_00007",
@@ -671,7 +695,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_ERCDDAToken_mintToken_path6p1",
+          "test_name": "test_put_ERCDDAToken_mintToken_path2p1",
           "unit": "mintToken"
         },
         {
@@ -683,11 +707,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_ERCDDAToken_mintToken_path6p1",
+          "unit": "mintToken"
+        },
+        {
+          "entry_id": "test_00009",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_ERCDDAToken_owned_path2p1",
           "unit": "owned"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00010",
           "oracle_classes": [
             "R0",
             "R1",
@@ -699,7 +735,7 @@
           "unit": "owned"
         },
         {
-          "entry_id": "test_00010",
+          "entry_id": "test_00011",
           "oracle_classes": [
             "R0",
             "R1",
@@ -716,7 +752,7 @@
       "status": "persistence-error",
       "subject_id": "acfix_022_CVE_2018_19833",
       "trial": 1,
-      "valid": 10,
+      "valid": 11,
       "wall_total_s": 397.969
     },
     {
@@ -755,8 +791,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_Owned_transferOwnership_path2p1",
-          "unit": "transferOwnership"
+          "test_name": "test_put_Owned_owned_path7p1_part_part0_w_w",
+          "unit": "owned"
         },
         {
           "entry_id": "test_00004",
@@ -767,7 +803,30 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_Owned_transferOwnership_path2p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00005",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_Owned_transferOwnership_path6p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00006",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Owned_transferOwnership_path7p1_part_part0_w_w",
           "unit": "transferOwnership"
         }
       ],
@@ -776,7 +835,7 @@
       "status": "ok",
       "subject_id": "acfix_026_CVE_2019_15080",
       "trial": 1,
-      "valid": 4,
+      "valid": 6,
       "wall_total_s": 90.463
     },
     {
@@ -815,8 +874,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_Owned_transferOwnership_path2p1",
-          "unit": "transferOwnership"
+          "test_name": "test_put_Owned_owned_path7p1_part_part0_w_w",
+          "unit": "owned"
         },
         {
           "entry_id": "test_00004",
@@ -827,7 +886,30 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_Owned_transferOwnership_path2p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00005",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_Owned_transferOwnership_path6p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00006",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Owned_transferOwnership_path7p1_part_part0_w_w",
           "unit": "transferOwnership"
         }
       ],
@@ -836,7 +918,7 @@
       "status": "ok",
       "subject_id": "acfix_030_CVE_2021_34272",
       "trial": 1,
-      "valid": 4,
+      "valid": 6,
       "wall_total_s": 90.875
     },
     {
@@ -875,8 +957,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_Owned_transferOwnership_path2p1",
-          "unit": "transferOwnership"
+          "test_name": "test_put_Owned_owned_path7p1_part_part0_w_w",
+          "unit": "owned"
         },
         {
           "entry_id": "test_00004",
@@ -887,7 +969,30 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_Owned_transferOwnership_path2p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00005",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_Owned_transferOwnership_path6p1",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00006",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Owned_transferOwnership_path7p1_part_part0_w_w",
           "unit": "transferOwnership"
         }
       ],
@@ -896,7 +1001,7 @@
       "status": "ok",
       "subject_id": "acfix_031_CVE_2021_34273",
       "trial": 1,
-      "valid": 4,
+      "valid": 6,
       "wall_total_s": 100.645
     },
     {
@@ -1619,13 +1724,144 @@
     },
     {
       "budget_excluded": false,
-      "entries": [],
+      "entries": [
+        {
+          "entry_id": "test_00001",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_ANCHToken_allowance_path2p1",
+          "unit": "allowance"
+        },
+        {
+          "entry_id": "test_00002",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_ANCHToken_approve_path14p1",
+          "unit": "approve"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_ANCHToken_approve_path15p1",
+          "unit": "approve"
+        },
+        {
+          "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_ANCHToken_owner_path2p1",
+          "unit": "owner"
+        },
+        {
+          "entry_id": "test_00005",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_ANCHToken_setMinTxnAmount_path2p1",
+          "unit": "setMinTxnAmount"
+        },
+        {
+          "entry_id": "test_00006",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_ANCHToken_setMinTxnAmount_path6p1",
+          "unit": "setMinTxnAmount"
+        },
+        {
+          "entry_id": "test_00007",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_ANCHToken_setRewardRate_path2p1",
+          "unit": "setRewardRate"
+        },
+        {
+          "entry_id": "test_00008",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_ANCHToken_setRewardRate_path6p1",
+          "unit": "setRewardRate"
+        },
+        {
+          "entry_id": "test_00009",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_ANCHToken_tokenFromReflection_path2p1",
+          "unit": "tokenFromReflection"
+        },
+        {
+          "entry_id": "test_00010",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_ANCHToken_totalFees_path2p1",
+          "unit": "totalFees"
+        },
+        {
+          "entry_id": "test_00011",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_ANCHToken_totalSupply_path2p1",
+          "unit": "totalSupply"
+        }
+      ],
       "generation_wall_s": 506.287,
       "raw": 11,
       "status": "persistence-error",
       "subject_id": "acfix_3_5_101_ANCHToken",
       "trial": 1,
-      "valid": 0,
+      "valid": 11,
       "wall_total_s": 561.293
     },
     {
@@ -2085,6 +2321,18 @@
           "report_class": "put",
           "test_name": "test_put_DepositLog_setApprovedLogger_path6p1",
           "unit": "setApprovedLogger"
+        },
+        {
+          "entry_id": "test_00040",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DepositLog_setApprovedLogger_path7p1_part_part0_w_w",
+          "unit": "setApprovedLogger"
         }
       ],
       "generation_wall_s": 191.263,
@@ -2092,7 +2340,7 @@
       "status": "ok",
       "subject_id": "acfix_fixlink_DepositLog",
       "trial": 1,
-      "valid": 39,
+      "valid": 40,
       "wall_total_s": 296.642
     },
     {
@@ -2276,13 +2524,74 @@
     },
     {
       "budget_excluded": false,
-      "entries": [],
+      "entries": [
+        {
+          "entry_id": "test_00001",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MStableYieldSource_approveMax_path2p1",
+          "unit": "approveMax"
+        },
+        {
+          "entry_id": "test_00002",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MStableYieldSource_approveMax_path6p1",
+          "unit": "approveMax"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MStableYieldSource_balanceOfToken_path2p1",
+          "unit": "balanceOfToken"
+        },
+        {
+          "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MStableYieldSource_redeemToken_path2p1",
+          "unit": "redeemToken"
+        },
+        {
+          "entry_id": "test_00005",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MStableYieldSource_supplyTokenTo_path2p1",
+          "unit": "supplyTokenTo"
+        }
+      ],
       "generation_wall_s": 31.31,
       "raw": 5,
       "status": "ok",
       "subject_id": "acfix_fixlink_MStableYieldSource",
       "trial": 1,
-      "valid": 0,
+      "valid": 5,
       "wall_total_s": 47.089
     },
     {
@@ -2473,8 +2782,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_StaxLPStaking_rewardPerToken_path2p1",
-          "unit": "rewardPerToken"
+          "test_name": "test_put_StaxLPStaking_owner_path3p1",
+          "unit": "owner"
         },
         {
           "entry_id": "test_00007",
@@ -2485,7 +2794,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_StaxLPStaking_rewardPerToken_path6p1",
+          "test_name": "test_put_StaxLPStaking_rewardPerToken_path2p1",
           "unit": "rewardPerToken"
         },
         {
@@ -2497,8 +2806,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_StaxLPStaking_rewardPeriodFinish_path2p1",
-          "unit": "rewardPeriodFinish"
+          "test_name": "test_put_StaxLPStaking_rewardPerToken_path6p1",
+          "unit": "rewardPerToken"
         },
         {
           "entry_id": "test_00009",
@@ -2509,7 +2818,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_StaxLPStaking_rewardPeriodFinish_path3p1",
+          "test_name": "test_put_StaxLPStaking_rewardPeriodFinish_path2p1",
           "unit": "rewardPeriodFinish"
         },
         {
@@ -2521,11 +2830,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_StaxLPStaking_rewardPeriodFinish_path3p1",
+          "unit": "rewardPeriodFinish"
+        },
+        {
+          "entry_id": "test_00011",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_StaxLPStaking_setMigrator_path2p1",
           "unit": "setMigrator"
         },
         {
-          "entry_id": "test_00011",
+          "entry_id": "test_00012",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2537,7 +2858,7 @@
           "unit": "setRewardDistributor"
         },
         {
-          "entry_id": "test_00012",
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2549,7 +2870,7 @@
           "unit": "stakeAll"
         },
         {
-          "entry_id": "test_00013",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2561,7 +2882,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00014",
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2573,7 +2894,7 @@
           "unit": "totalSupply"
         },
         {
-          "entry_id": "test_00015",
+          "entry_id": "test_00016",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2585,7 +2906,7 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00016",
+          "entry_id": "test_00017",
           "oracle_classes": [
             "R0",
             "R2"
@@ -2601,7 +2922,7 @@
       "status": "persistence-error",
       "subject_id": "acfix_llama3_002_Templedao",
       "trial": 1,
-      "valid": 16,
+      "valid": 17,
       "wall_total_s": 593.101
     },
     {
@@ -2716,8 +3037,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_ERCDDAToken_mintToken_path2p1",
-          "unit": "mintToken"
+          "test_name": "test_put_ERCDDAToken_freezeAccount_path7p1_part_part0_w_w",
+          "unit": "freezeAccount"
         },
         {
           "entry_id": "test_00006",
@@ -2728,7 +3049,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_ERCDDAToken_mintToken_path6p1",
+          "test_name": "test_put_ERCDDAToken_mintToken_path2p1",
           "unit": "mintToken"
         },
         {
@@ -2740,11 +3061,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_ERCDDAToken_mintToken_path6p1",
+          "unit": "mintToken"
+        },
+        {
+          "entry_id": "test_00008",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_ERCDDAToken_owned_path2p1",
           "unit": "owned"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00009",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2756,7 +3089,19 @@
           "unit": "owned"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00010",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_ERCDDAToken_owned_path7p1_part_part0_w_w",
+          "unit": "owned"
+        },
+        {
+          "entry_id": "test_00011",
           "oracle_classes": [
             "R0",
             "R1",
@@ -2773,7 +3118,7 @@
       "status": "persistence-error",
       "subject_id": "acfix_llama3_022_CVE_2018_19833",
       "trial": 1,
-      "valid": 9,
+      "valid": 11,
       "wall_total_s": 479.068
     },
     {
@@ -3188,13 +3533,225 @@
     },
     {
       "budget_excluded": false,
-      "entries": [],
+      "entries": [
+        {
+          "entry_id": "test_00001",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_allowance_path2p1",
+          "unit": "allowance"
+        },
+        {
+          "entry_id": "test_00002",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_allowance_path3p1",
+          "unit": "allowance"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_approveAndCall_path2p1",
+          "unit": "approveAndCall"
+        },
+        {
+          "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_balanceOf_path2p1",
+          "unit": "balanceOf"
+        },
+        {
+          "entry_id": "test_00005",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_balanceOf_path3p1",
+          "unit": "balanceOf"
+        },
+        {
+          "entry_id": "test_00006",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_getmapAddress_LPBalance_path2p1",
+          "unit": "getmapAddress_LPBalance"
+        },
+        {
+          "entry_id": "test_00007",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_getmapAddress_LPBalance_path3p1",
+          "unit": "getmapAddress_LPBalance"
+        },
+        {
+          "entry_id": "test_00008",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_getmapAddress_LPDebt_path2p1",
+          "unit": "getmapAddress_LPDebt"
+        },
+        {
+          "entry_id": "test_00009",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_getmapAddress_LPDebt_path3p1",
+          "unit": "getmapAddress_LPDebt"
+        },
+        {
+          "entry_id": "test_00010",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_increaseAllowance_path2p1",
+          "unit": "increaseAllowance"
+        },
+        {
+          "entry_id": "test_00011",
+          "oracle_classes": [],
+          "parameterized_width": false,
+          "report_class": "no_put_concrete_replay",
+          "test_name": "test_cov_0",
+          "unit": "mintSynth"
+        },
+        {
+          "entry_id": "test_00012",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_realise_path2p1",
+          "unit": "realise"
+        },
+        {
+          "entry_id": "test_00013",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_transfer_path14p1_part_part0_r",
+          "unit": "transfer"
+        },
+        {
+          "entry_id": "test_00014",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_transfer_path14p1_part_part0_w_r",
+          "unit": "transfer"
+        },
+        {
+          "entry_id": "test_00015",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_transfer_path14p1_part_part0_w_w",
+          "unit": "transfer"
+        },
+        {
+          "entry_id": "test_00016",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_transfer_path15p1_part_part0_w_r",
+          "unit": "transfer"
+        },
+        {
+          "entry_id": "test_00017",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_transfer_path15p1_part_part0_w_w",
+          "unit": "transfer"
+        },
+        {
+          "entry_id": "test_00018",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_Synth_transfer_path2p1",
+          "unit": "transfer"
+        }
+      ],
       "generation_wall_s": 520.843,
       "raw": 19,
       "status": "persistence-error",
       "subject_id": "ct_20_Pool_sol_Synth_sol_Failing_Max_Value_Al",
       "trial": 1,
-      "valid": 0,
+      "valid": 18,
       "wall_total_s": 599.38
     },
     {
@@ -3367,74 +3924,13 @@
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Size_getBorrowOfferAPR_path1p1",
-          "unit": "getBorrowOfferAPR"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Size_getDebtPositionAssignedCollateral_path1p1",
-          "unit": "getDebtPositionAssignedCollateral"
-        },
-        {
-          "entry_id": "test_00003",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Size_getPositionsCount_path1p1",
-          "unit": "getPositionsCount"
-        },
-        {
-          "entry_id": "test_00004",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Size_paused_path1p1",
-          "unit": "paused"
-        },
-        {
-          "entry_id": "test_00005",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Size_proxiableUUID_path1p1",
-          "unit": "proxiableUUID"
-        },
-        {
-          "entry_id": "test_00006",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Size_supportsInterface_path1p1",
-          "unit": "supportsInterface"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 0.0,
       "raw": 1,
       "status": "no-units",
       "subject_id": "pop_001_Multicall",
       "trial": 1,
-      "valid": 6,
+      "valid": 0,
       "wall_total_s": 5.043
     },
     {
@@ -3782,6 +4278,17 @@
           "entry_id": "test_00003",
           "oracle_classes": [
             "R0",
+            "R1"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PuttyV2_owner_path3p1",
+          "unit": "owner"
+        },
+        {
+          "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0",
             "R1",
             "R2"
           ],
@@ -3796,7 +4303,7 @@
       "status": "timeout",
       "subject_id": "pop_032_PuttyV2",
       "trial": 1,
-      "valid": 3,
+      "valid": 4,
       "wall_total_s": 576.406
     },
     {
@@ -3924,6 +4431,16 @@
         },
         {
           "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_VaultAdapter_setLimits_path7p1",
+          "unit": "setLimits"
+        },
+        {
+          "entry_id": "test_00005",
           "oracle_classes": [],
           "parameterized_width": false,
           "report_class": "no_put_concrete_replay",
@@ -3931,7 +4448,7 @@
           "unit": "setSlopes"
         },
         {
-          "entry_id": "test_00005",
+          "entry_id": "test_00006",
           "oracle_classes": [],
           "parameterized_width": false,
           "report_class": "no_put_concrete_replay",
@@ -3939,7 +4456,7 @@
           "unit": "setSlopes"
         },
         {
-          "entry_id": "test_00006",
+          "entry_id": "test_00007",
           "oracle_classes": [],
           "parameterized_width": false,
           "report_class": "no_put_concrete_replay",
@@ -3952,7 +4469,7 @@
       "status": "persistence-error",
       "subject_id": "pop_042_VaultAdapter",
       "trial": 1,
-      "valid": 6,
+      "valid": 7,
       "wall_total_s": 499.593
     },
     {
@@ -4003,11 +4520,35 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_CVXStaker_earned_path3p1",
+          "unit": "earned"
+        },
+        {
+          "entry_id": "test_00005",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_CVXStaker_getReward_path2p1",
           "unit": "getReward"
         },
         {
-          "entry_id": "test_00005",
+          "entry_id": "test_00006",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_CVXStaker_getReward_path7p1",
+          "unit": "getReward"
+        },
+        {
+          "entry_id": "test_00007",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4019,7 +4560,7 @@
           "unit": "isCvxShutdown"
         },
         {
-          "entry_id": "test_00006",
+          "entry_id": "test_00008",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4031,7 +4572,19 @@
           "unit": "owner"
         },
         {
-          "entry_id": "test_00007",
+          "entry_id": "test_00009",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_CVXStaker_owner_path3p1",
+          "unit": "owner"
+        },
+        {
+          "entry_id": "test_00010",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4043,7 +4596,7 @@
           "unit": "recoverToken"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00011",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4055,7 +4608,7 @@
           "unit": "renounceOwnership"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00012",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4067,7 +4620,7 @@
           "unit": "setCvxPoolInfo"
         },
         {
-          "entry_id": "test_00010",
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4079,7 +4632,7 @@
           "unit": "setOperator"
         },
         {
-          "entry_id": "test_00011",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4091,7 +4644,7 @@
           "unit": "setRewardsRecipient"
         },
         {
-          "entry_id": "test_00012",
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4103,7 +4656,7 @@
           "unit": "showPositions"
         },
         {
-          "entry_id": "test_00013",
+          "entry_id": "test_00016",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4115,7 +4668,19 @@
           "unit": "stakedBalance"
         },
         {
-          "entry_id": "test_00014",
+          "entry_id": "test_00017",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_CVXStaker_stakedBalance_path3p1",
+          "unit": "stakedBalance"
+        },
+        {
+          "entry_id": "test_00018",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4127,7 +4692,7 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00015",
+          "entry_id": "test_00019",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4139,7 +4704,7 @@
           "unit": "withdrawAllAndUnwrap"
         },
         {
-          "entry_id": "test_00016",
+          "entry_id": "test_00020",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4156,7 +4721,7 @@
       "status": "persistence-error",
       "subject_id": "pop_046_CVXStaker",
       "trial": 1,
-      "valid": 16,
+      "valid": 20,
       "wall_total_s": 547.969
     },
     {
@@ -4421,12 +4986,174 @@
         {
           "entry_id": "test_00001",
           "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LiquidityPool_convertToAssets_path3p1_part_part0_r",
+          "unit": "convertToAssets"
+        },
+        {
+          "entry_id": "test_00002",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LiquidityPool_convertToAssets_path3p1_part_part0_w_r",
+          "unit": "convertToAssets"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LiquidityPool_convertToAssets_path3p1_part_part0_w_w",
+          "unit": "convertToAssets"
+        },
+        {
+          "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LiquidityPool_convertToShares_path3p1_part_part0_r",
+          "unit": "convertToShares"
+        },
+        {
+          "entry_id": "test_00005",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LiquidityPool_convertToShares_path3p1_part_part0_w_r",
+          "unit": "convertToShares"
+        },
+        {
+          "entry_id": "test_00006",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LiquidityPool_convertToShares_path3p1_part_part0_w_w",
+          "unit": "convertToShares"
+        },
+        {
+          "entry_id": "test_00007",
+          "oracle_classes": [
             "R0"
           ],
           "parameterized_width": true,
           "report_class": "put",
           "test_name": "test_put_LiquidityPool_maxMint_path2p1",
           "unit": "maxMint"
+        },
+        {
+          "entry_id": "test_00008",
+          "oracle_classes": [
+            "R0"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LiquidityPool_maxMint_path3p1_part_part0_r",
+          "unit": "maxMint"
+        },
+        {
+          "entry_id": "test_00009",
+          "oracle_classes": [
+            "R0"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LiquidityPool_maxMint_path3p1_part_part0_w_r",
+          "unit": "maxMint"
+        },
+        {
+          "entry_id": "test_00010",
+          "oracle_classes": [
+            "R0"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LiquidityPool_maxMint_path3p1_part_part0_w_w",
+          "unit": "maxMint"
+        },
+        {
+          "entry_id": "test_00011",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LiquidityPool_previewDeposit_path3p1_part_part0_r",
+          "unit": "previewDeposit"
+        },
+        {
+          "entry_id": "test_00012",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LiquidityPool_previewDeposit_path3p1_part_part0_w_r",
+          "unit": "previewDeposit"
+        },
+        {
+          "entry_id": "test_00013",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LiquidityPool_previewDeposit_path3p1_part_part0_w_w",
+          "unit": "previewDeposit"
+        },
+        {
+          "entry_id": "test_00014",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LiquidityPool_previewMint_path3p1_part_part0_r",
+          "unit": "previewMint"
+        },
+        {
+          "entry_id": "test_00015",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LiquidityPool_previewMint_path3p1_part_part0_w_r",
+          "unit": "previewMint"
+        },
+        {
+          "entry_id": "test_00016",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_LiquidityPool_previewMint_path3p1_part_part0_w_w",
+          "unit": "previewMint"
         }
       ],
       "generation_wall_s": 512.691,
@@ -4434,7 +5161,7 @@
       "status": "budget-exhausted",
       "subject_id": "pop_051_LiquidityPool",
       "trial": 1,
-      "valid": 1,
+      "valid": 16,
       "wall_total_s": 584.822
     },
     {
@@ -4452,6 +5179,17 @@
           "entry_id": "test_00002",
           "oracle_classes": [
             "R0",
+            "R1"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PuttyV2_owner_path3p1",
+          "unit": "owner"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
             "R1",
             "R2"
           ],
@@ -4466,7 +5204,7 @@
       "status": "timeout",
       "subject_id": "pop_058_PuttyV2",
       "trial": 1,
-      "valid": 2,
+      "valid": 3,
       "wall_total_s": 574.445
     },
     {
@@ -4794,6 +5532,17 @@
         {
           "entry_id": "test_00013",
           "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_GameItems_transferOwnership_path7p1_part_part0_w_w",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00014",
+          "oracle_classes": [
             "R0"
           ],
           "parameterized_width": true,
@@ -4807,7 +5556,7 @@
       "status": "budget-exhausted",
       "subject_id": "pop_077_GameItems",
       "trial": 1,
-      "valid": 13,
+      "valid": 14,
       "wall_total_s": 573.476
     },
     {
@@ -4864,6 +5613,18 @@
         {
           "entry_id": "test_00005",
           "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MergingPool_adjustAdminAccess_path7p1_part_part0_w_w",
+          "unit": "adjustAdminAccess"
+        },
+        {
+          "entry_id": "test_00006",
+          "oracle_classes": [
             "R0"
           ],
           "parameterized_width": true,
@@ -4872,7 +5633,7 @@
           "unit": "claimRewards"
         },
         {
-          "entry_id": "test_00006",
+          "entry_id": "test_00007",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4884,7 +5645,7 @@
           "unit": "getFighterPoints"
         },
         {
-          "entry_id": "test_00007",
+          "entry_id": "test_00008",
           "oracle_classes": [
             "R0"
           ],
@@ -4894,7 +5655,7 @@
           "unit": "getUnclaimedRewards"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00009",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4906,7 +5667,7 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00010",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4918,7 +5679,18 @@
           "unit": "transferOwnership"
         },
         {
-          "entry_id": "test_00010",
+          "entry_id": "test_00011",
+          "oracle_classes": [
+            "R0",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MergingPool_transferOwnership_path7p1_part_part0_w_w",
+          "unit": "transferOwnership"
+        },
+        {
+          "entry_id": "test_00012",
           "oracle_classes": [
             "R0",
             "R1",
@@ -4935,7 +5707,7 @@
       "status": "ok",
       "subject_id": "pop_077_MergingPool",
       "trial": 1,
-      "valid": 10,
+      "valid": 12,
       "wall_total_s": 452.017
     },
     {
@@ -5256,24 +6028,13 @@
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Proxy_forward_path2p1",
-          "unit": "forward"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 10.98,
       "raw": 1,
       "status": "ok",
       "subject_id": "rc_access_control__proxy__SolGPT__proxy_4round",
       "trial": 1,
-      "valid": 1,
+      "valid": 0,
       "wall_total_s": 14.178
     },
     {
@@ -5338,6 +6099,18 @@
           "report_class": "put",
           "test_name": "test_put_SimpleSuicide_sudicideAnyone_path6p1_part_part0_w",
           "unit": "sudicideAnyone"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_SimpleSuicide_sudicideAnyone_path7p1_part_part0_w_w",
+          "unit": "sudicideAnyone"
         }
       ],
       "generation_wall_s": 35.356,
@@ -5345,7 +6118,7 @@
       "status": "ok",
       "subject_id": "rc_access_control__simple_suicide__sGuardPlus__simple_suicide",
       "trial": 1,
-      "valid": 2,
+      "valid": 3,
       "wall_total_s": 54.201
     },
     {
@@ -5635,62 +6408,24 @@
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_ModifierEntrancy_airDrop_path2p1",
-          "unit": "airDrop"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 15.761,
       "raw": 1,
       "status": "ok",
       "subject_id": "rc_reentrancy__modifier_reentrancy__SmartFix__modifier_reentrancy",
       "trial": 1,
-      "valid": 1,
+      "valid": 0,
       "wall_total_s": 18.114
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Reentrancy_bonus_getFirstWithdrawalBonus_path2p1",
-          "unit": "getFirstWithdrawalBonus"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Reentrancy_bonus_withdrawReward_path2p1",
-          "unit": "withdrawReward"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 8.528,
       "raw": 2,
       "status": "ok",
       "subject_id": "rc_reentrancy__reentrancy_bonus__SmartFix__reentrancy_bonus",
       "trial": 1,
-      "valid": 2,
+      "valid": 0,
       "wall_total_s": 12.376
     },
     {
@@ -6067,98 +6802,35 @@
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "play"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_EtherLotto_play_path2p1_part_part0_w",
-          "unit": "play"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 54.358,
       "raw": 4,
       "status": "ok",
       "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_1round",
       "trial": 1,
-      "valid": 2,
+      "valid": 0,
       "wall_total_s": 59.582
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "play"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_EtherLotto_play_path2p1_part_part0_w",
-          "unit": "play"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 54.346,
       "raw": 4,
       "status": "ok",
       "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_2round",
       "trial": 1,
-      "valid": 2,
+      "valid": 0,
       "wall_total_s": 59.566
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [],
-          "parameterized_width": false,
-          "report_class": "no_put_concrete_replay",
-          "test_name": "test_cov_0",
-          "unit": "play"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [
-            "R0",
-            "R1",
-            "R2"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_EtherLotto_play_path2p1_part_part0_w",
-          "unit": "play"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 55.107,
       "raw": 4,
       "status": "ok",
       "subject_id": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_3round",
       "trial": 1,
-      "valid": 2,
+      "valid": 0,
       "wall_total_s": 61.152
     },
     {
@@ -6209,34 +6881,13 @@
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Roulette_pastBlockTime_path0",
-          "unit": "pastBlockTime"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_Roulette_pastBlockTime_path1p1",
-          "unit": "pastBlockTime"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 348.113,
       "raw": 2,
       "status": "ok",
       "subject_id": "rc_time_manipulation__roulette__SolGPT__roulette_3round",
       "trial": 1,
-      "valid": 2,
+      "valid": 0,
       "wall_total_s": 352.212
     },
     {
@@ -6298,11 +6949,59 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustBetAmounts_path7p1_part_part0_r_r",
+          "unit": "AdjustBetAmounts"
+        },
+        {
+          "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustBetAmounts_path7p1_part_part0_r_w",
+          "unit": "AdjustBetAmounts"
+        },
+        {
+          "entry_id": "test_00005",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustBetAmounts_path7p1_part_part0_w_r",
+          "unit": "AdjustBetAmounts"
+        },
+        {
+          "entry_id": "test_00006",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustBetAmounts_path7p1_part_part0_w_w",
+          "unit": "AdjustBetAmounts"
+        },
+        {
+          "entry_id": "test_00007",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_PoCGame_AdjustDifficulty_path2p1",
           "unit": "AdjustDifficulty"
         },
         {
-          "entry_id": "test_00004",
+          "entry_id": "test_00008",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6314,7 +7013,55 @@
           "unit": "AdjustDifficulty"
         },
         {
-          "entry_id": "test_00005",
+          "entry_id": "test_00009",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustDifficulty_path7p1_part_part0_r_r",
+          "unit": "AdjustDifficulty"
+        },
+        {
+          "entry_id": "test_00010",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustDifficulty_path7p1_part_part0_r_w",
+          "unit": "AdjustDifficulty"
+        },
+        {
+          "entry_id": "test_00011",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustDifficulty_path7p1_part_part0_w_r",
+          "unit": "AdjustDifficulty"
+        },
+        {
+          "entry_id": "test_00012",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustDifficulty_path7p1_part_part0_w_w",
+          "unit": "AdjustDifficulty"
+        },
+        {
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6326,7 +7073,19 @@
           "unit": "OpenToThePublic"
         },
         {
-          "entry_id": "test_00006",
+          "entry_id": "test_00014",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_OpenToThePublic_path7p1_part_part0_w",
+          "unit": "OpenToThePublic"
+        },
+        {
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6338,7 +7097,7 @@
           "unit": "currentBetLimit"
         },
         {
-          "entry_id": "test_00007",
+          "entry_id": "test_00016",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6350,7 +7109,7 @@
           "unit": "currentBetLimit"
         },
         {
-          "entry_id": "test_00008",
+          "entry_id": "test_00017",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6362,7 +7121,7 @@
           "unit": "currentDifficulty"
         },
         {
-          "entry_id": "test_00009",
+          "entry_id": "test_00018",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6374,7 +7133,7 @@
           "unit": "currentDifficulty"
         },
         {
-          "entry_id": "test_00010",
+          "entry_id": "test_00019",
           "oracle_classes": [
             "R0"
           ],
@@ -6384,7 +7143,7 @@
           "unit": "fallback"
         },
         {
-          "entry_id": "test_00011",
+          "entry_id": "test_00020",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6396,7 +7155,7 @@
           "unit": "hasPlayerWagered"
         },
         {
-          "entry_id": "test_00012",
+          "entry_id": "test_00021",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6408,7 +7167,7 @@
           "unit": "hasPlayerWagered"
         },
         {
-          "entry_id": "test_00013",
+          "entry_id": "test_00022",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6420,7 +7179,7 @@
           "unit": "play"
         },
         {
-          "entry_id": "test_00014",
+          "entry_id": "test_00023",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6432,7 +7191,7 @@
           "unit": "play"
         },
         {
-          "entry_id": "test_00015",
+          "entry_id": "test_00024",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6444,7 +7203,7 @@
           "unit": "transferAnyERC20Token"
         },
         {
-          "entry_id": "test_00016",
+          "entry_id": "test_00025",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6461,7 +7220,7 @@
       "status": "persistence-error",
       "subject_id": "rc_unchecked_low_level_calls__address_00020__SolGPT__address_00020_3round",
       "trial": 1,
-      "valid": 16,
+      "valid": 25,
       "wall_total_s": 385.651
     },
     {
@@ -6680,11 +7439,119 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustBetAmounts_path7p1_part_part0_r_r",
+          "unit": "AdjustBetAmounts"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustBetAmounts_path7p1_part_part0_r_w",
+          "unit": "AdjustBetAmounts"
+        },
+        {
+          "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustBetAmounts_path7p1_part_part0_w_r",
+          "unit": "AdjustBetAmounts"
+        },
+        {
+          "entry_id": "test_00005",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustBetAmounts_path7p1_part_part0_w_w",
+          "unit": "AdjustBetAmounts"
+        },
+        {
+          "entry_id": "test_00006",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_PoCGame_AdjustDifficulty_path6p1",
           "unit": "AdjustDifficulty"
         },
         {
-          "entry_id": "test_00003",
+          "entry_id": "test_00007",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustDifficulty_path7p1_part_part0_r_r",
+          "unit": "AdjustDifficulty"
+        },
+        {
+          "entry_id": "test_00008",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustDifficulty_path7p1_part_part0_r_w",
+          "unit": "AdjustDifficulty"
+        },
+        {
+          "entry_id": "test_00009",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustDifficulty_path7p1_part_part0_w_r",
+          "unit": "AdjustDifficulty"
+        },
+        {
+          "entry_id": "test_00010",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_AdjustDifficulty_path7p1_part_part0_w_w",
+          "unit": "AdjustDifficulty"
+        },
+        {
+          "entry_id": "test_00011",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_PoCGame_OpenToThePublic_path7p1_part_part0_w",
+          "unit": "OpenToThePublic"
+        },
+        {
+          "entry_id": "test_00012",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6696,7 +7563,7 @@
           "unit": "currentBetLimit"
         },
         {
-          "entry_id": "test_00004",
+          "entry_id": "test_00013",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6708,7 +7575,7 @@
           "unit": "currentDifficulty"
         },
         {
-          "entry_id": "test_00005",
+          "entry_id": "test_00014",
           "oracle_classes": [
             "R0"
           ],
@@ -6718,7 +7585,7 @@
           "unit": "fallback"
         },
         {
-          "entry_id": "test_00006",
+          "entry_id": "test_00015",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6730,7 +7597,7 @@
           "unit": "play"
         },
         {
-          "entry_id": "test_00007",
+          "entry_id": "test_00016",
           "oracle_classes": [
             "R0",
             "R1",
@@ -6747,7 +7614,7 @@
       "status": "persistence-error",
       "subject_id": "rc_unchecked_low_level_calls__address_00397__TIPS__address_00397U2",
       "trial": 1,
-      "valid": 7,
+      "valid": 16,
       "wall_total_s": 293.865
     },
     {
@@ -6845,54 +7712,13 @@
     },
     {
       "budget_excluded": false,
-      "entries": [
-        {
-          "entry_id": "test_00001",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_airDrop_transfer_path2p1",
-          "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00002",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_airDrop_transfer_path6p1_part_part0_r",
-          "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00003",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_airDrop_transfer_path6p1_part_part0_w_r",
-          "unit": "transfer"
-        },
-        {
-          "entry_id": "test_00004",
-          "oracle_classes": [
-            "R0"
-          ],
-          "parameterized_width": true,
-          "report_class": "put",
-          "test_name": "test_put_airDrop_transfer_path6p1_part_part0_w_w",
-          "unit": "transfer"
-        }
-      ],
+      "entries": [],
       "generation_wall_s": 61.325,
       "raw": 1,
       "status": "ok",
       "subject_id": "rc_unchecked_low_level_calls__address_00419__TIPS__address_00419U1",
       "trial": 1,
-      "valid": 4,
+      "valid": 0,
       "wall_total_s": 63.585
     },
     {
@@ -6907,7 +7733,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_PrivateBank_CashOut_path2p1",
+          "test_name": "test_put_PrivateBank_CashOut_path12p1",
           "unit": "CashOut"
         },
         {
@@ -6919,11 +7745,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_PrivateBank_CashOut_path2p1",
+          "unit": "CashOut"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_PrivateBank_Deposit_path3p1",
           "unit": "Deposit"
         },
         {
-          "entry_id": "test_00003",
+          "entry_id": "test_00004",
           "oracle_classes": [
             "R0"
           ],
@@ -6938,7 +7776,7 @@
       "status": "persistence-error",
       "subject_id": "rcx_reentrancy__address_00031__SmartFix",
       "trial": 1,
-      "valid": 3,
+      "valid": 4,
       "wall_total_s": 93.608
     },
     {
@@ -7286,6 +8124,42 @@
           "report_class": "no_put_concrete_replay",
           "test_name": "test_cov_0",
           "unit": "Collect"
+        },
+        {
+          "entry_id": "test_00002",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_W_WALLET_Put_path14p1",
+          "unit": "Put"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_W_WALLET_Put_path15p1",
+          "unit": "Put"
+        },
+        {
+          "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_W_WALLET_fallback_path14p1",
+          "unit": "fallback"
         }
       ],
       "generation_wall_s": 63.897,
@@ -7293,7 +8167,7 @@
       "status": "ok",
       "subject_id": "rcx_reentrancy__address_00396__SmartFix",
       "trial": 1,
-      "valid": 1,
+      "valid": 4,
       "wall_total_s": 79.826
     },
     {
@@ -7306,6 +8180,42 @@
           "report_class": "no_put_concrete_replay",
           "test_name": "test_cov_0",
           "unit": "Collect"
+        },
+        {
+          "entry_id": "test_00002",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_W_WALLET_fallback_path14p1_part_part0_r",
+          "unit": "fallback"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_W_WALLET_fallback_path14p1_part_part0_w_r",
+          "unit": "fallback"
+        },
+        {
+          "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_W_WALLET_fallback_path14p1_part_part0_w_w",
+          "unit": "fallback"
         }
       ],
       "generation_wall_s": 77.209,
@@ -7313,7 +8223,7 @@
       "status": "ok",
       "subject_id": "rcx_reentrancy__address_00396__sGuard",
       "trial": 1,
-      "valid": 1,
+      "valid": 4,
       "wall_total_s": 102.463
     },
     {
@@ -7326,6 +8236,42 @@
           "report_class": "no_put_concrete_replay",
           "test_name": "test_cov_0",
           "unit": "Collect"
+        },
+        {
+          "entry_id": "test_00002",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_X_WALLET_Put_path14p1",
+          "unit": "Put"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_X_WALLET_Put_path15p1",
+          "unit": "Put"
+        },
+        {
+          "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_X_WALLET_fallback_path14p1",
+          "unit": "fallback"
         }
       ],
       "generation_wall_s": 64.539,
@@ -7333,7 +8279,7 @@
       "status": "ok",
       "subject_id": "rcx_reentrancy__address_00399__SmartFix",
       "trial": 1,
-      "valid": 1,
+      "valid": 4,
       "wall_total_s": 80.563
     },
     {
@@ -7346,6 +8292,42 @@
           "report_class": "no_put_concrete_replay",
           "test_name": "test_cov_0",
           "unit": "Collect"
+        },
+        {
+          "entry_id": "test_00002",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_X_WALLET_fallback_path14p1_part_part0_r",
+          "unit": "fallback"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_X_WALLET_fallback_path14p1_part_part0_w_r",
+          "unit": "fallback"
+        },
+        {
+          "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_X_WALLET_fallback_path14p1_part_part0_w_w",
+          "unit": "fallback"
         }
       ],
       "generation_wall_s": 77.929,
@@ -7353,7 +8335,7 @@
       "status": "ok",
       "subject_id": "rcx_reentrancy__address_00399__sGuard",
       "trial": 1,
-      "valid": 1,
+      "valid": 4,
       "wall_total_s": 105.756
     },
     {
@@ -7967,6 +8949,42 @@
           "report_class": "no_put_concrete_replay",
           "test_name": "test_cov_0",
           "unit": "Collect"
+        },
+        {
+          "entry_id": "test_00002",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MY_BANK_Put_path14p1",
+          "unit": "Put"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MY_BANK_Put_path15p1",
+          "unit": "Put"
+        },
+        {
+          "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MY_BANK_fallback_path14p1",
+          "unit": "fallback"
         }
       ],
       "generation_wall_s": 64.775,
@@ -7974,7 +8992,7 @@
       "status": "ok",
       "subject_id": "rcx_reentrancy__address_00421__SmartFix",
       "trial": 1,
-      "valid": 1,
+      "valid": 4,
       "wall_total_s": 80.545
     },
     {
@@ -7987,6 +9005,42 @@
           "report_class": "no_put_concrete_replay",
           "test_name": "test_cov_0",
           "unit": "Collect"
+        },
+        {
+          "entry_id": "test_00002",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MY_BANK_fallback_path14p1_part_part0_r",
+          "unit": "fallback"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MY_BANK_fallback_path14p1_part_part0_w_r",
+          "unit": "fallback"
+        },
+        {
+          "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_MY_BANK_fallback_path14p1_part_part0_w_w",
+          "unit": "fallback"
         }
       ],
       "generation_wall_s": 78.343,
@@ -7994,7 +9048,7 @@
       "status": "ok",
       "subject_id": "rcx_reentrancy__address_00421__sGuard",
       "trial": 1,
-      "valid": 1,
+      "valid": 4,
       "wall_total_s": 104.671
     },
     {
@@ -8633,8 +9687,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_SimpleWallet_withdraw_path2p1",
-          "unit": "withdraw"
+          "test_name": "test_put_SimpleWallet_sendMoney_path7p1_part_part0_w_w",
+          "unit": "sendMoney"
         },
         {
           "entry_id": "test_00004",
@@ -8645,7 +9699,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_SimpleWallet_withdraw_path6p1",
+          "test_name": "test_put_SimpleWallet_withdraw_path2p1",
           "unit": "withdraw"
         },
         {
@@ -8657,11 +9711,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_SimpleWallet_withdraw_path6p1",
+          "unit": "withdraw"
+        },
+        {
+          "entry_id": "test_00006",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_SimpleWallet_withdrawAll_path2p1",
           "unit": "withdrawAll"
         },
         {
-          "entry_id": "test_00006",
+          "entry_id": "test_00007",
           "oracle_classes": [
             "R0",
             "R1",
@@ -8678,7 +9744,7 @@
       "status": "ok",
       "subject_id": "rcx_unchecked_low_level_calls__address_00408__SmartFix",
       "trial": 1,
-      "valid": 6,
+      "valid": 7,
       "wall_total_s": 113.118
     },
     {
@@ -8801,8 +9867,8 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_SimpleWallet_withdraw_path2p1",
-          "unit": "withdraw"
+          "test_name": "test_put_SimpleWallet_sendMoney_path7p1_part_part0_w_w",
+          "unit": "sendMoney"
         },
         {
           "entry_id": "test_00004",
@@ -8813,7 +9879,7 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
-          "test_name": "test_put_SimpleWallet_withdraw_path6p1",
+          "test_name": "test_put_SimpleWallet_withdraw_path2p1",
           "unit": "withdraw"
         },
         {
@@ -8825,11 +9891,23 @@
           ],
           "parameterized_width": true,
           "report_class": "put",
+          "test_name": "test_put_SimpleWallet_withdraw_path6p1",
+          "unit": "withdraw"
+        },
+        {
+          "entry_id": "test_00006",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
           "test_name": "test_put_SimpleWallet_withdrawAll_path2p1",
           "unit": "withdrawAll"
         },
         {
-          "entry_id": "test_00006",
+          "entry_id": "test_00007",
           "oracle_classes": [
             "R0",
             "R1",
@@ -8846,7 +9924,7 @@
       "status": "ok",
       "subject_id": "rcx_unchecked_low_level_calls__address_00408__sGuard",
       "trial": 1,
-      "valid": 6,
+      "valid": 7,
       "wall_total_s": 111.848
     },
     {
@@ -9054,6 +10132,18 @@
           "report_class": "put",
           "test_name": "test_put_B_go_path2p1_part_part0_w_w",
           "unit": "go"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_B_go_path3p1_part_part0_w_w",
+          "unit": "go"
         }
       ],
       "generation_wall_s": 39.666,
@@ -9061,7 +10151,7 @@
       "status": "ok",
       "subject_id": "rcx_unchecked_low_level_calls__address_00422__TIPS",
       "trial": 1,
-      "valid": 2,
+      "valid": 3,
       "wall_total_s": 62.427
     },
     {
@@ -9076,6 +10166,18 @@
           "report_class": "put",
           "test_name": "test_put_B_fallback_path1p1",
           "unit": "fallback"
+        },
+        {
+          "entry_id": "test_00002",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_B_go_path1p1_part_part0_w_w",
+          "unit": "go"
         }
       ],
       "generation_wall_s": 31.488,
@@ -9083,7 +10185,7 @@
       "status": "ok",
       "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuard",
       "trial": 1,
-      "valid": 1,
+      "valid": 2,
       "wall_total_s": 45.823
     },
     {
@@ -9110,6 +10212,18 @@
           "report_class": "put",
           "test_name": "test_put_B_go_path2p1_part_part0_w_w",
           "unit": "go"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_B_go_path3p1_part_part0_w_w",
+          "unit": "go"
         }
       ],
       "generation_wall_s": 40.27,
@@ -9117,18 +10231,99 @@
       "status": "ok",
       "subject_id": "rcx_unchecked_low_level_calls__address_00422__sGuardPlus",
       "trial": 1,
-      "valid": 2,
+      "valid": 3,
       "wall_total_s": 63.032
     },
     {
       "budget_excluded": false,
-      "entries": [],
+      "entries": [
+        {
+          "entry_id": "test_00001",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DCF_allowance_path2p1",
+          "unit": "allowance"
+        },
+        {
+          "entry_id": "test_00002",
+          "oracle_classes": [
+            "R0"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DCF_allowance_path3p1",
+          "unit": "allowance"
+        },
+        {
+          "entry_id": "test_00003",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DCF_balanceOf_path3p1_part_part0_r",
+          "unit": "balanceOf"
+        },
+        {
+          "entry_id": "test_00004",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DCF_balanceOf_path3p1_part_part0_w",
+          "unit": "balanceOf"
+        },
+        {
+          "entry_id": "test_00005",
+          "oracle_classes": [
+            "R0",
+            "R1"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DCF_owner_path3p1",
+          "unit": "owner"
+        },
+        {
+          "entry_id": "test_00006",
+          "oracle_classes": [
+            "R0",
+            "R1"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DCF_totalSupply_path3p1",
+          "unit": "totalSupply"
+        },
+        {
+          "entry_id": "test_00007",
+          "oracle_classes": [
+            "R0",
+            "R1",
+            "R2"
+          ],
+          "parameterized_width": true,
+          "report_class": "put",
+          "test_name": "test_put_DCF_transferOwnership_path2p1",
+          "unit": "transferOwnership"
+        }
+      ],
       "generation_wall_s": 496.951,
       "raw": 9,
       "status": "timeout",
       "subject_id": "reprod_DCFToken",
       "trial": 1,
-      "valid": 0,
+      "valid": 7,
       "wall_total_s": 585.357
     }
   ],

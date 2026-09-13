@@ -94,15 +94,15 @@ contract MyAdvancedTokenCovTest_MyAdvancedToken_transferOwnership_put6p1_p1_part
     c0.transferOwnership(newOwner);
     
     if (p_msg_sender == address(uint160(4294967295)) && newOwner == address(uint160(0))) {
-
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(3)))) & 255), uint256(18), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(2147483647), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(0), "fixed witness state");
     }
     
     uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_owner, _pre_owner, "owner: post == pre");
-    
-    
+    assertGe(_post_owner, _pre_owner, "owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "owner: post <= pre");
     
   }
 
@@ -128,21 +128,21 @@ contract MyAdvancedTokenCovTest_MyAdvancedToken_transferOwnership_concrete6p1__b
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(3))));
       _w = (_w & ~uint256(255)) | ((uint256(18) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(3)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(3)))) & 255), uint256(18), "entry pin state.decimals$55 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(2147483647) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(2147483647), "entry pin state.owner$3 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(4)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(0), "entry pin state.totalSupply$57 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -157,10 +157,10 @@ contract MyAdvancedTokenCovTest_MyAdvancedToken_transferOwnership_concrete6p1__b
     vm.expectRevert();
     c0.transferOwnership(address(uint160(0)));
     uint256 _veriput_fixed_state_decimals_55_0 = (uint256(vm.load(address(c0), bytes32(uint256(3)))) & 255);
-
+    assertEq(_veriput_fixed_state_decimals_55_0, uint256(18), "fixed witness state");
     uint256 _veriput_fixed_state_owner_3_1 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_owner_3_1, uint256(2147483647), "fixed witness state");
     uint256 _veriput_fixed_state_totalSupply_57_2 = uint256(vm.load(address(c0), bytes32(uint256(4))));
-
+    assertEq(_veriput_fixed_state_totalSupply_57_2, uint256(0), "fixed witness state");
   }
 }

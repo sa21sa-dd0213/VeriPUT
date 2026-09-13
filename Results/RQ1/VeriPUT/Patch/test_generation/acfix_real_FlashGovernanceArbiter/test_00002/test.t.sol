@@ -57,7 +57,7 @@ contract FlashGovernanceArbiterCovTest_FlashGovernanceArbiter_burnFlashGovernanc
     user = address(uint160(bound(uint256(uint160(user)), 0, 1461501637330902918203684832716283019655932542975)));
     asset = address(uint160(bound(uint256(uint160(asset)), 0, 1461501637330902918203684832716283019655932542975)));
 
-
+vm.mockCall(asset, abi.encodeWithSignature("burn(uint256)"), bytes(""));
     amount = bound(amount, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     
     uint256 _pre_configured = ((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 160) & 255);
@@ -84,14 +84,14 @@ contract FlashGovernanceArbiterCovTest_FlashGovernanceArbiter_burnFlashGovernanc
     assertEq(_post_pendingFlashDecision_targetContract__user__asset, _pre_pendingFlashDecision_targetContract__user__asset, "pendingFlashDecision[targetContract][user].asset: post == pre");
     assertEq(_post_pendingFlashDecision_targetContract__user__assetBurnable, _pre_pendingFlashDecision_targetContract__user__assetBurnable, "pendingFlashDecision[targetContract][user].assetBurnable: post == pre");
     assertEq(_post_pendingFlashDecision_targetContract__user__unlockTime, _pre_pendingFlashDecision_targetContract__user__unlockTime, "pendingFlashDecision[targetContract][user].unlockTime: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_DAO, _pre_DAO, "DAO: post >= pre");
+    assertLe(_post_DAO, _pre_DAO, "DAO: post <= pre");
+    assertGe(_post_pendingFlashDecision_targetContract__user__amount, _pre_pendingFlashDecision_targetContract__user__amount, "pendingFlashDecision[targetContract][user].amount: post >= pre");
+    assertLe(_post_pendingFlashDecision_targetContract__user__amount, _pre_pendingFlashDecision_targetContract__user__amount, "pendingFlashDecision[targetContract][user].amount: post <= pre");
+    assertGe(_post_pendingFlashDecision_targetContract__user__asset, _pre_pendingFlashDecision_targetContract__user__asset, "pendingFlashDecision[targetContract][user].asset: post >= pre");
+    assertLe(_post_pendingFlashDecision_targetContract__user__asset, _pre_pendingFlashDecision_targetContract__user__asset, "pendingFlashDecision[targetContract][user].asset: post <= pre");
+    assertGe(_post_pendingFlashDecision_targetContract__user__unlockTime, _pre_pendingFlashDecision_targetContract__user__unlockTime, "pendingFlashDecision[targetContract][user].unlockTime: post >= pre");
+    assertLe(_post_pendingFlashDecision_targetContract__user__unlockTime, _pre_pendingFlashDecision_targetContract__user__unlockTime, "pendingFlashDecision[targetContract][user].unlockTime: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

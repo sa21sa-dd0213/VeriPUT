@@ -70,10 +70,10 @@ contract BasicProvenanceCovTest_BasicProvenance_TransferResponsibility_put2p1 is
     assertEq(_post_State, _pre_State, "State: post == pre");
     assertEq(_post_Counterparty, _pre_Counterparty, "Counterparty: post == pre");
     assertEq(_post_PreviousCounterparty, _pre_PreviousCounterparty, "PreviousCounterparty: post == pre");
-    
-    
-    
-    
+    assertGe(_post_Counterparty, _pre_Counterparty, "Counterparty: post >= pre");
+    assertLe(_post_Counterparty, _pre_Counterparty, "Counterparty: post <= pre");
+    assertGe(_post_PreviousCounterparty, _pre_PreviousCounterparty, "PreviousCounterparty: post >= pre");
+    assertLe(_post_PreviousCounterparty, _pre_PreviousCounterparty, "PreviousCounterparty: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

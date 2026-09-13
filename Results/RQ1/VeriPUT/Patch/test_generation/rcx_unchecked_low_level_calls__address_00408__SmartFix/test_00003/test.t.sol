@@ -1,15 +1,25 @@
 // SPDX-License-Identifier: MIT
 
+
+
+
+
+
 pragma solidity >=0.8.0;
 
 import {Test} from "forge-std/Test.sol";
 import {SimpleWallet} from "../src/flat.sol";
 
-contract SimpleWalletCovTest_SimpleWallet_withdraw_put2p1 is Test {
+contract SimpleWalletCovTest_0_SimpleWallet_sendMoney_put7p1_p1_part_part0_w_w is Test {
   SimpleWallet c0;
   function setUp() public {
+    vm.startPrank(address(uint160(1)), address(uint160(1)));
     c0 = new SimpleWallet();
+    vm.stopPrank();
   }
+  
+  
+  
   
 
   
@@ -50,32 +60,155 @@ contract SimpleWalletCovTest_SimpleWallet_withdraw_put2p1 is Test {
   
   
   
-  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value, uint256 _value) internal {
-    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
-    p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  function _veriput_parameterized(address p_msg_sender, address _target, uint256 _value) internal {
+    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 0, 4294967293)));
+    vm.assume(uint256(uint160(p_msg_sender)) != 0);
+    _target = address(uint160(bound(uint256(uint160(_target)), 0, 1461501637330902918203684832716283019655932542975)));
     _value = bound(_value, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    
+    
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(uint256(uint160(p_msg_sender))) & 1461501637330902918203684832716283019655932542975) << 0);
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
+    }
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(uint256(uint160(p_msg_sender))), "entry pin state.owner did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     uint256 _pre_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     
-    
-    vm.deal(p_msg_sender, p_msg_value);
+    vm.assume(uint256(uint160(p_msg_sender)) == _pre_owner);
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
     vm.prank(p_msg_sender);
-    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("withdraw(uint256)", _value));
+    
+    c0.sendMoney(_target, _value);
+    
+    if (p_msg_sender == address(uint160(0)) && _target == address(uint160(0)) && _value == uint256(0)) {
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+    }
     
     uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_owner, _pre_owner, "owner: post == pre");
-    
-    
-    
-    assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
-
-    
+    assertEq(_post_owner, uint256(uint160(p_msg_sender)), "owner: post == msg.sender");
+    assertGe(_post_owner, 0, "owner: post in [0, pre]");
+    assertLe(_post_owner, _pre_owner, "owner: post in [0, pre]");
+    assertGe(_post_owner, 0, "owner: post in [0, (pre + pre)]");
+    unchecked { assertLe(_post_owner, (uint256(_pre_owner) + uint256(_pre_owner)), "owner: post in [0, (pre + pre)]"); }
+    assertGe(_post_owner, 0, "owner: post in [0, (pre * pre)]");
+    unchecked { assertLe(_post_owner, (uint256(_pre_owner) * uint256(_pre_owner)), "owner: post in [0, (pre * pre)]"); }
+    assertGe(_post_owner, 0, "owner: post in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]");
+    unchecked { assertLe(_post_owner, (uint256(0) + uint256(1461501637330902918203684832716283019655932542975)), "owner: post in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]"); }
     
   }
 
 
   
-  function test_put_SimpleWallet_withdraw_path2p1(address p_msg_sender, uint256 p_msg_value, uint256 _value) public {
-    _veriput_parameterized(p_msg_sender, p_msg_value, _value);
+  function test_put_SimpleWallet_sendMoney_path7p1_part_part0_w_w(address p_msg_sender, address _target, uint256 _value) public {
+    _veriput_parameterized(p_msg_sender, _target, _value);
+    
+    { SimpleWalletCovTest_0_SimpleWallet_sendMoney_concrete7p1__basis_part0_w_w__W _veriput_w = new SimpleWalletCovTest_0_SimpleWallet_sendMoney_concrete7p1__basis_part0_w_w__W(); _veriput_w.setUp(); _veriput_w._w_test_cov_0(); }
+}
+}
+
+contract SimpleWalletCovTest_1 is Test {
+  SimpleWallet c0;
+  function setUp() public {
+    vm.startPrank(address(uint160(4294967295)), address(uint160(4294967295)));
+    c0 = new SimpleWallet();
+    vm.stopPrank();
   }
+  
+  
+}
+
+
+
+
+
+
+
+
+contract SimpleWalletCovTest_0_SimpleWallet_sendMoney_concrete7p1__basis_part0_w_w__W is Test {
+  SimpleWallet c0;
+  function setUp() public {
+    vm.startPrank(address(uint160(1)), address(uint160(1)));
+    c0 = new SimpleWallet();
+    vm.stopPrank();
+  }
+  
+  
+  function _w_test_cov_0() public {
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
+    }
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "entry pin state.depositsCount did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
+    }
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.owner did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
+    vm.prank(address(uint160(0)), address(uint160(0)));
+    c0.sendMoney(address(uint160(0)), uint256(0));
+    uint256 _veriput_fixed_state_depositsCount_0 = uint256(vm.load(address(c0), bytes32(uint256(1))));
+    assertEq(_veriput_fixed_state_depositsCount_0, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_owner_1 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_veriput_fixed_state_owner_1, uint256(0), "fixed witness state");
+  }
+  
+  
+}
+
+contract SimpleWalletCovTest_1__W is Test {
+  SimpleWallet c0;
+  function setUp() public {
+    vm.startPrank(address(uint160(4294967295)), address(uint160(4294967295)));
+    c0 = new SimpleWallet();
+    vm.stopPrank();
+  }
+  
+  
 }

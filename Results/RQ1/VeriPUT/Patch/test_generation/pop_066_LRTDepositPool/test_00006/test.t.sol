@@ -76,12 +76,12 @@ contract LRTDepositPoolCovTest_LRTDepositPool_initialize_put2p1 is Test {
     assertEq(_post_initialized, _pre_initialized, "_initialized: post == pre");
     assertEq(_post_initializing, _pre_initializing, "_initializing: post == pre");
     assertEq(_post_paused, _pre_paused, "_paused: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_maxNodeDelegatorCount, _pre_maxNodeDelegatorCount, "maxNodeDelegatorCount: post >= pre");
+    assertLe(_post_maxNodeDelegatorCount, _pre_maxNodeDelegatorCount, "maxNodeDelegatorCount: post <= pre");
+    assertGe(_post_status, _pre_status, "_status: post >= pre");
+    assertLe(_post_status, _pre_status, "_status: post <= pre");
+    assertGe(_post_initialized, _pre_initialized, "_initialized: post >= pre");
+    assertLe(_post_initialized, _pre_initialized, "_initialized: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

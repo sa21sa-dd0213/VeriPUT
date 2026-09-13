@@ -11,10 +11,10 @@ contract FrontRunnerCovTest_FrontRunner_drainToken_put2p1 is Test {
     c0 = new FrontRunner();
     
     address _esbmc_ext_mock_0 = address(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-
-
-
-
+    vm.etch(_esbmc_ext_mock_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("WETH()"), abi.encode(address(0)));
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("swapETHForExactTokens(uint256,address[],address,uint256)"), abi.encode(new uint256[](0)));
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("swapExactTokensForETH(uint256,uint256,address[],address,uint256)"), abi.encode(new uint256[](0)));
   }
   
 
@@ -73,10 +73,10 @@ contract FrontRunnerCovTest_FrontRunner_drainToken_put2p1 is Test {
     uint256 _post_EOA1 = (uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_manager, _pre_manager, "manager: post == pre");
     assertEq(_post_EOA1, _pre_EOA1, "EOA1: post == pre");
-    
-    
-    
-    
+    assertGe(_post_manager, _pre_manager, "manager: post >= pre");
+    assertLe(_post_manager, _pre_manager, "manager: post <= pre");
+    assertGe(_post_EOA1, _pre_EOA1, "EOA1: post >= pre");
+    assertLe(_post_EOA1, _pre_EOA1, "EOA1: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -105,8 +105,8 @@ contract EasyPayAndWithDrawCovTest_EasyPayAndWithDraw_withdraw_put14p1 is Test {
     
     uint256 _post_balances_5_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(4294967295)), uint256(0)))));
     assertEq(_post_balances_5_msg_sender, _pre_balances_5_msg_sender, "balances$5[msg.sender]: post == pre");
-    
-    
+    assertGe(_post_balances_5_msg_sender, _pre_balances_5_msg_sender, "balances$5[msg.sender]: post >= pre");
+    assertLe(_post_balances_5_msg_sender, _pre_balances_5_msg_sender, "balances$5[msg.sender]: post <= pre");
     
     assertFalse(_put_ok, "path enc=14p1 exits through a REVERT: the call must fail on the unmodified contract");
   }

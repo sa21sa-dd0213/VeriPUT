@@ -97,12 +97,12 @@ contract RubixiCovTest_Rubixi_DynamicPyramid_put3p1_p1_part_part0_w_r is Test {
     c0.DynamicPyramid();
     
     if (true) {
-
-
-
-
-
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975), uint256(4294967294), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(10), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(300), "fixed witness state");
     }
     
     uint256 _post_creator = (uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975);

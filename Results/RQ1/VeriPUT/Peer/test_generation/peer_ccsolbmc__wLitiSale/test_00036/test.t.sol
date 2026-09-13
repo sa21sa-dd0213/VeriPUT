@@ -70,10 +70,10 @@ contract wLitiSaleCovTest_wLitiSale_removeReferrer_put2p1 is Test {
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
     assertEq(_post_referrers_referrer__bonusPercent, _pre_referrers_referrer__bonusPercent, "_referrers[referrer].bonusPercent: post == pre");
     assertEq(_post_referrers_referrer__isReferrer, _pre_referrers_referrer__isReferrer, "_referrers[referrer].isReferrer: post == pre");
-    
-    
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
+    assertGe(_post_referrers_referrer__bonusPercent, _pre_referrers_referrer__bonusPercent, "_referrers[referrer].bonusPercent: post >= pre");
+    assertLe(_post_referrers_referrer__bonusPercent, _pre_referrers_referrer__bonusPercent, "_referrers[referrer].bonusPercent: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

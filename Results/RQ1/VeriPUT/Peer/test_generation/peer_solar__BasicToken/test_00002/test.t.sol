@@ -105,15 +105,15 @@ contract BasicTokenCovTest_BasicToken_balanceOf_put3p1 is Test {
     
     if (p_msg_sender == address(uint160(0)) && _owner == address(uint160(0))) {
       assertEq(_put_ret, uint256(0), "fixed witness return");
-
-
+      assertEq(uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(0)), uint256(1))))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(0), "fixed witness state");
     }
     
     uint256 _post_balances_7_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(1)))));
     assertEq(_post_balances_7_msg_sender, _pre_balances_7_msg_sender, "balances$7[msg.sender]: post == pre");
-    
-    
-    
+    assertGe(_post_balances_7_msg_sender, 0, "balances$7[msg.sender]: post in [0, pre]");
+    assertLe(_post_balances_7_msg_sender, _pre_balances_7_msg_sender, "balances$7[msg.sender]: post in [0, pre]");
+    assertGe(_post_balances_7_msg_sender, 0, "balances$7[msg.sender]: post in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]");
     unchecked { assertLe(_post_balances_7_msg_sender, (uint256(0) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "balances$7[msg.sender]: post in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]"); }
     assertEq(uint256(_put_ret), _ret_pre_balances__owner, "return: return == state.balances[_owner]");
     
@@ -148,15 +148,15 @@ contract BasicTokenCovTest_BasicToken_balanceOf_concrete3p1__basis_root__W is Te
     {
       uint256 _w = uint256(vm.load(address(c0), keccak256(abi.encode(uint256(0), uint256(1)))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), keccak256(abi.encode(uint256(0), uint256(1))), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), keccak256(abi.encode(uint256(0), uint256(1))))), uint256(0), "entry pin state.balances$7[msg.sender] did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(0), "entry pin state.initialSupply did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
@@ -170,9 +170,9 @@ contract BasicTokenCovTest_BasicToken_balanceOf_concrete3p1__basis_root__W is Te
     uint256 _veriput_concrete_return = c0.balanceOf(address(uint160(0)));
     assertEq(_veriput_concrete_return, uint256(0), "fixed witness return must match");
     uint256 _veriput_fixed_state_balances_0_0 = uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(0)), uint256(1)))));
-
+    assertEq(_veriput_fixed_state_balances_0_0, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_initialSupply_1 = uint256(vm.load(address(c0), bytes32(uint256(0))));
-
+    assertEq(_veriput_fixed_state_initialSupply_1, uint256(0), "fixed witness state");
   }
   
   

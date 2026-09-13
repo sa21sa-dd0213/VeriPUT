@@ -92,18 +92,18 @@ contract MultiSigWalletCovTest_MultiSigWallet_signTransaction_put2p1 is Test {
     assertEq(_post_transactions_transactionId__signatureCount, _pre_transactions_transactionId__signatureCount, "_transactions[transactionId].signatureCount: post == pre");
     assertEq(_post_transactions_transactionId__to, _pre_transactions_transactionId__to, "_transactions[transactionId].to: post == pre");
     assertEq(_post_owners_msg_sender, _pre_owners_msg_sender, "_owners[msg.sender]: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
+    assertGe(_post_transactions_transactionId__amount, _pre_transactions_transactionId__amount, "_transactions[transactionId].amount: post >= pre");
+    assertLe(_post_transactions_transactionId__amount, _pre_transactions_transactionId__amount, "_transactions[transactionId].amount: post <= pre");
+    assertGe(_post_transactions_transactionId__from, _pre_transactions_transactionId__from, "_transactions[transactionId].from: post >= pre");
+    assertLe(_post_transactions_transactionId__from, _pre_transactions_transactionId__from, "_transactions[transactionId].from: post <= pre");
+    assertGe(_post_transactions_transactionId__signatureCount, _pre_transactions_transactionId__signatureCount, "_transactions[transactionId].signatureCount: post >= pre");
+    assertLe(_post_transactions_transactionId__signatureCount, _pre_transactions_transactionId__signatureCount, "_transactions[transactionId].signatureCount: post <= pre");
+    assertGe(_post_transactions_transactionId__to, _pre_transactions_transactionId__to, "_transactions[transactionId].to: post >= pre");
+    assertLe(_post_transactions_transactionId__to, _pre_transactions_transactionId__to, "_transactions[transactionId].to: post <= pre");
+    assertGe(_post_owners_msg_sender, _pre_owners_msg_sender, "_owners[msg.sender]: post >= pre");
+    assertLe(_post_owners_msg_sender, _pre_owners_msg_sender, "_owners[msg.sender]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

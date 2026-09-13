@@ -100,32 +100,32 @@ contract StaxLPStakingCovTest_StaxLPStaking_addReward_put2p1 is Test {
     assertEq(_post_rewardData_state__owner__rewardRate, _pre_rewardData_state__owner__rewardRate, "rewardData[state._owner].rewardRate: post == pre");
     assertEq(_post_rewardData_state_migrator__rewardRate, _pre_rewardData_state_migrator__rewardRate, "rewardData[state.migrator].rewardRate: post == pre");
     assertEq(_post_rewardData_state_rewardDistributor__rewardRate, _pre_rewardData_state_rewardDistributor__rewardRate, "rewardData[state.rewardDistributor].rewardRate: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
+    assertGe(_post_rewardData__rewardToken__lastUpdateTime, _pre_rewardData__rewardToken__lastUpdateTime, "rewardData[_rewardToken].lastUpdateTime: post >= pre");
+    assertLe(_post_rewardData__rewardToken__lastUpdateTime, _pre_rewardData__rewardToken__lastUpdateTime, "rewardData[_rewardToken].lastUpdateTime: post <= pre");
+    assertGe(_post_rewardData__rewardToken__periodFinish, _pre_rewardData__rewardToken__periodFinish, "rewardData[_rewardToken].periodFinish: post >= pre");
+    assertLe(_post_rewardData__rewardToken__periodFinish, _pre_rewardData__rewardToken__periodFinish, "rewardData[_rewardToken].periodFinish: post <= pre");
+    assertGe(_post_rewardData_msg_sender__rewardPerTokenStored, _pre_rewardData_msg_sender__rewardPerTokenStored, "rewardData[msg.sender].rewardPerTokenStored: post >= pre");
+    assertLe(_post_rewardData_msg_sender__rewardPerTokenStored, _pre_rewardData_msg_sender__rewardPerTokenStored, "rewardData[msg.sender].rewardPerTokenStored: post <= pre");
+    assertGe(_post_rewardData__rewardToken__rewardPerTokenStored, _pre_rewardData__rewardToken__rewardPerTokenStored, "rewardData[_rewardToken].rewardPerTokenStored: post >= pre");
+    assertLe(_post_rewardData__rewardToken__rewardPerTokenStored, _pre_rewardData__rewardToken__rewardPerTokenStored, "rewardData[_rewardToken].rewardPerTokenStored: post <= pre");
+    assertGe(_post_rewardData_state__owner__rewardPerTokenStored, _pre_rewardData_state__owner__rewardPerTokenStored, "rewardData[state._owner].rewardPerTokenStored: post >= pre");
+    assertLe(_post_rewardData_state__owner__rewardPerTokenStored, _pre_rewardData_state__owner__rewardPerTokenStored, "rewardData[state._owner].rewardPerTokenStored: post <= pre");
+    assertGe(_post_rewardData_state_migrator__rewardPerTokenStored, _pre_rewardData_state_migrator__rewardPerTokenStored, "rewardData[state.migrator].rewardPerTokenStored: post >= pre");
+    assertLe(_post_rewardData_state_migrator__rewardPerTokenStored, _pre_rewardData_state_migrator__rewardPerTokenStored, "rewardData[state.migrator].rewardPerTokenStored: post <= pre");
+    assertGe(_post_rewardData_state_rewardDistributor__rewardPerTokenStored, _pre_rewardData_state_rewardDistributor__rewardPerTokenStored, "rewardData[state.rewardDistributor].rewardPerTokenStored: post >= pre");
+    assertLe(_post_rewardData_state_rewardDistributor__rewardPerTokenStored, _pre_rewardData_state_rewardDistributor__rewardPerTokenStored, "rewardData[state.rewardDistributor].rewardPerTokenStored: post <= pre");
+    assertGe(_post_rewardData_msg_sender__rewardRate, _pre_rewardData_msg_sender__rewardRate, "rewardData[msg.sender].rewardRate: post >= pre");
+    assertLe(_post_rewardData_msg_sender__rewardRate, _pre_rewardData_msg_sender__rewardRate, "rewardData[msg.sender].rewardRate: post <= pre");
+    assertGe(_post_rewardData__rewardToken__rewardRate, _pre_rewardData__rewardToken__rewardRate, "rewardData[_rewardToken].rewardRate: post >= pre");
+    assertLe(_post_rewardData__rewardToken__rewardRate, _pre_rewardData__rewardToken__rewardRate, "rewardData[_rewardToken].rewardRate: post <= pre");
+    assertGe(_post_rewardData_state__owner__rewardRate, _pre_rewardData_state__owner__rewardRate, "rewardData[state._owner].rewardRate: post >= pre");
+    assertLe(_post_rewardData_state__owner__rewardRate, _pre_rewardData_state__owner__rewardRate, "rewardData[state._owner].rewardRate: post <= pre");
+    assertGe(_post_rewardData_state_migrator__rewardRate, _pre_rewardData_state_migrator__rewardRate, "rewardData[state.migrator].rewardRate: post >= pre");
+    assertLe(_post_rewardData_state_migrator__rewardRate, _pre_rewardData_state_migrator__rewardRate, "rewardData[state.migrator].rewardRate: post <= pre");
+    assertGe(_post_rewardData_state_rewardDistributor__rewardRate, _pre_rewardData_state_rewardDistributor__rewardRate, "rewardData[state.rewardDistributor].rewardRate: post >= pre");
+    assertLe(_post_rewardData_state_rewardDistributor__rewardRate, _pre_rewardData_state_rewardDistributor__rewardRate, "rewardData[state.rewardDistributor].rewardRate: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

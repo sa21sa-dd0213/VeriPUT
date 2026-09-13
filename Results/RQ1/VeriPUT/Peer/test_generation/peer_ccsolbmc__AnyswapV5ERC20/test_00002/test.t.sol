@@ -72,10 +72,10 @@ contract AnyswapV5ERC20CovTest_AnyswapV5ERC20_Swapout_put2p1 is Test {
     assertEq(_post_totalSupply, _pre_totalSupply, "_totalSupply: post == pre");
     assertEq(_post_vaultOnly, _pre_vaultOnly, "_vaultOnly: post == pre");
     assertEq(_post_balanceOf_msg_sender, _pre_balanceOf_msg_sender, "balanceOf[msg.sender]: post == pre");
-    
-    
-    
-    
+    assertGe(_post_totalSupply, _pre_totalSupply, "_totalSupply: post >= pre");
+    assertLe(_post_totalSupply, _pre_totalSupply, "_totalSupply: post <= pre");
+    assertGe(_post_balanceOf_msg_sender, _pre_balanceOf_msg_sender, "balanceOf[msg.sender]: post >= pre");
+    assertLe(_post_balanceOf_msg_sender, _pre_balanceOf_msg_sender, "balanceOf[msg.sender]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

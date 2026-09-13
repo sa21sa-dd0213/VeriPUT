@@ -98,15 +98,15 @@ contract WickedCraniumsCovTest_WickedCraniums_getApproved_put6p1 is Test {
     try c0.getApproved(tokenId) {} catch { _put_ok = false; }
     
     if (p_msg_sender == address(uint160(0)) && tokenId == uint256(0)) {
-
-
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(12)))), uint256(10762), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(10)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(13)))) & 255), uint256(0), "fixed witness state");
     }
     
     uint256 _post_tokenApprovals_tokenId = (uint256(vm.load(address(c0), keccak256(abi.encode(tokenId, uint256(4))))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_tokenApprovals_tokenId, _pre_tokenApprovals_tokenId, "_tokenApprovals[tokenId]: post == pre");
-    
-    
+    assertGe(_post_tokenApprovals_tokenId, _pre_tokenApprovals_tokenId, "_tokenApprovals[tokenId]: post >= pre");
+    assertLe(_post_tokenApprovals_tokenId, _pre_tokenApprovals_tokenId, "_tokenApprovals[tokenId]: post <= pre");
     
     assertFalse(_put_ok, "path enc=6p1 exits through a REVERT: the call must fail on the unmodified contract");
   }
@@ -138,21 +138,21 @@ contract WickedCraniumsCovTest_WickedCraniums_getApproved_concrete6p1__basis_roo
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(12))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(10762) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(12)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(12)))), uint256(10762), "entry pin state.MAX_CRANIUMS did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(10))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(10)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(10)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state._owner$2733 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(13))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(13)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(13)))) & 255), uint256(0), "entry pin state.saleIsActive did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -170,11 +170,11 @@ contract WickedCraniumsCovTest_WickedCraniums_getApproved_concrete6p1__basis_roo
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_MAX_CRANIUMS_0 = uint256(vm.load(address(c0), bytes32(uint256(12))));
-
+    assertEq(_veriput_fixed_state_MAX_CRANIUMS_0, uint256(10762), "fixed witness state");
     uint256 _veriput_fixed_state_owner_2733_4 = (uint256(vm.load(address(c0), bytes32(uint256(10)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_owner_2733_4, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_saleIsActive_7 = (uint256(vm.load(address(c0), bytes32(uint256(13)))) & 255);
-
+    assertEq(_veriput_fixed_state_saleIsActive_7, uint256(0), "fixed witness state");
   }
   
   

@@ -10,8 +10,8 @@ contract FlashGovernanceArbiterCovTest_FlashGovernanceArbiter_enforceTolerance_p
   function setUp() public {
     c0 = new FlashGovernanceArbiter(address(uint160(1000)));
     
-
-
+    vm.etch(address(0), hex"60006000f3");
+    vm.mockCall(address(0), abi.encodeWithSignature("configured()"), abi.encode(false));
   }
   
 
@@ -80,14 +80,14 @@ contract FlashGovernanceArbiterCovTest_FlashGovernanceArbiter_enforceTolerance_p
     assertEq(_post_security_lastFlashGovernanceAct, _pre_security_lastFlashGovernanceAct, "security.lastFlashGovernanceAct: post == pre");
     assertEq(_post_security_maxGovernanceChangePerEpoch, _pre_security_maxGovernanceChangePerEpoch, "security.maxGovernanceChangePerEpoch: post == pre");
     assertEq(_post_enforceLimitsActive_msg_sender, _pre_enforceLimitsActive_msg_sender, "enforceLimitsActive[msg.sender]: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_security_changeTolerance, _pre_security_changeTolerance, "security.changeTolerance: post >= pre");
+    assertLe(_post_security_changeTolerance, _pre_security_changeTolerance, "security.changeTolerance: post <= pre");
+    assertGe(_post_security_epochSize, _pre_security_epochSize, "security.epochSize: post >= pre");
+    assertLe(_post_security_epochSize, _pre_security_epochSize, "security.epochSize: post <= pre");
+    assertGe(_post_security_lastFlashGovernanceAct, _pre_security_lastFlashGovernanceAct, "security.lastFlashGovernanceAct: post >= pre");
+    assertLe(_post_security_lastFlashGovernanceAct, _pre_security_lastFlashGovernanceAct, "security.lastFlashGovernanceAct: post <= pre");
+    assertGe(_post_security_maxGovernanceChangePerEpoch, _pre_security_maxGovernanceChangePerEpoch, "security.maxGovernanceChangePerEpoch: post >= pre");
+    assertLe(_post_security_maxGovernanceChangePerEpoch, _pre_security_maxGovernanceChangePerEpoch, "security.maxGovernanceChangePerEpoch: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -71,12 +71,12 @@ contract DAOCovTest_DAO_newGrantProposal_put2p1 is Test {
     assertEq(_post_proposalCount, _pre_proposalCount, "proposalCount: post == pre");
     assertEq(_post_mapPID_grant_state_proposalCount__amount, _pre_mapPID_grant_state_proposalCount__amount, "mapPID_grant[state.proposalCount].amount: post == pre");
     assertEq(_post_mapPID_grant_state_proposalCount__recipient, _pre_mapPID_grant_state_proposalCount__recipient, "mapPID_grant[state.proposalCount].recipient: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_proposalCount, _pre_proposalCount, "proposalCount: post >= pre");
+    assertLe(_post_proposalCount, _pre_proposalCount, "proposalCount: post <= pre");
+    assertGe(_post_mapPID_grant_state_proposalCount__amount, _pre_mapPID_grant_state_proposalCount__amount, "mapPID_grant[state.proposalCount].amount: post >= pre");
+    assertLe(_post_mapPID_grant_state_proposalCount__amount, _pre_mapPID_grant_state_proposalCount__amount, "mapPID_grant[state.proposalCount].amount: post <= pre");
+    assertGe(_post_mapPID_grant_state_proposalCount__recipient, _pre_mapPID_grant_state_proposalCount__recipient, "mapPID_grant[state.proposalCount].recipient: post >= pre");
+    assertLe(_post_mapPID_grant_state_proposalCount__recipient, _pre_mapPID_grant_state_proposalCount__recipient, "mapPID_grant[state.proposalCount].recipient: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

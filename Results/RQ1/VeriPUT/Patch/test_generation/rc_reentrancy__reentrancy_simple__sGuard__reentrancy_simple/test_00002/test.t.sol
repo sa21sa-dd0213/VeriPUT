@@ -107,8 +107,8 @@ contract ReentranceCovTest_Reentrance_addToBalance_put7p1_p1_part_part0_w_r is T
     c0.addToBalance{value: 115792089237316195423570985008687907853269984665640564039457584007913129639934}();
     
     if (p_msg_sender == address(uint160(1912875072))) {
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(1912875072)), uint256(1))))), uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934), "fixed witness state");
     }
     
     uint256 _post_locked = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255);

@@ -71,10 +71,10 @@ contract RoundFactoryCovTest_RoundFactory_create_put2p1 is Test {
     assertEq(_post_roundImplementation, _pre_roundImplementation, "roundImplementation: post == pre");
     assertEq(_post_alloSettings, _pre_alloSettings, "alloSettings: post == pre");
     assertEq(_post_programOperators_msg_sender, _pre_programOperators_msg_sender, "programOperators[msg.sender]: post == pre");
-    
-    
-    
-    
+    assertGe(_post_roundImplementation, _pre_roundImplementation, "roundImplementation: post >= pre");
+    assertLe(_post_roundImplementation, _pre_roundImplementation, "roundImplementation: post <= pre");
+    assertGe(_post_alloSettings, _pre_alloSettings, "alloSettings: post >= pre");
+    assertLe(_post_alloSettings, _pre_alloSettings, "alloSettings: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

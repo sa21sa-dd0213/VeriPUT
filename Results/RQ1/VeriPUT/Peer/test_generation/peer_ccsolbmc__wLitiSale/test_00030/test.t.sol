@@ -93,16 +93,16 @@ contract wLitiSaleCovTest_wLitiSale_isReferrer_put2p1 is Test {
     assertEq(_post_referrers_state__ETHWallet__bonusPercent, _pre_referrers_state__ETHWallet__bonusPercent, "_referrers[state._ETHWallet].bonusPercent: post == pre");
     assertEq(_post_referrers_state__masterReferrerWallet__bonusPercent, _pre_referrers_state__masterReferrerWallet__bonusPercent, "_referrers[state._masterReferrerWallet].bonusPercent: post == pre");
     assertEq(_post_referrers_state__owner__bonusPercent, _pre_referrers_state__owner__bonusPercent, "_referrers[state._owner].bonusPercent: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_referrers_msg_sender__bonusPercent, _pre_referrers_msg_sender__bonusPercent, "_referrers[msg.sender].bonusPercent: post >= pre");
+    assertLe(_post_referrers_msg_sender__bonusPercent, _pre_referrers_msg_sender__bonusPercent, "_referrers[msg.sender].bonusPercent: post <= pre");
+    assertGe(_post_referrers_referrer__bonusPercent, _pre_referrers_referrer__bonusPercent, "_referrers[referrer].bonusPercent: post >= pre");
+    assertLe(_post_referrers_referrer__bonusPercent, _pre_referrers_referrer__bonusPercent, "_referrers[referrer].bonusPercent: post <= pre");
+    assertGe(_post_referrers_state__ETHWallet__bonusPercent, _pre_referrers_state__ETHWallet__bonusPercent, "_referrers[state._ETHWallet].bonusPercent: post >= pre");
+    assertLe(_post_referrers_state__ETHWallet__bonusPercent, _pre_referrers_state__ETHWallet__bonusPercent, "_referrers[state._ETHWallet].bonusPercent: post <= pre");
+    assertGe(_post_referrers_state__masterReferrerWallet__bonusPercent, _pre_referrers_state__masterReferrerWallet__bonusPercent, "_referrers[state._masterReferrerWallet].bonusPercent: post >= pre");
+    assertLe(_post_referrers_state__masterReferrerWallet__bonusPercent, _pre_referrers_state__masterReferrerWallet__bonusPercent, "_referrers[state._masterReferrerWallet].bonusPercent: post <= pre");
+    assertGe(_post_referrers_state__owner__bonusPercent, _pre_referrers_state__owner__bonusPercent, "_referrers[state._owner].bonusPercent: post >= pre");
+    assertLe(_post_referrers_state__owner__bonusPercent, _pre_referrers_state__owner__bonusPercent, "_referrers[state._owner].bonusPercent: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -69,10 +69,10 @@ contract MyAdvancedTokenCovTest_MyAdvancedToken_transfer_put2p1 is Test {
     uint256 _post_balanceOf_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(5)))));
     assertEq(_post_balanceOf__to, _pre_balanceOf__to, "balanceOf[_to]: post == pre");
     assertEq(_post_balanceOf_msg_sender, _pre_balanceOf_msg_sender, "balanceOf[msg.sender]: post == pre");
-    
-    
-    
-    
+    assertGe(_post_balanceOf__to, _pre_balanceOf__to, "balanceOf[_to]: post >= pre");
+    assertLe(_post_balanceOf__to, _pre_balanceOf__to, "balanceOf[_to]: post <= pre");
+    assertGe(_post_balanceOf_msg_sender, _pre_balanceOf_msg_sender, "balanceOf[msg.sender]: post >= pre");
+    assertLe(_post_balanceOf_msg_sender, _pre_balanceOf_msg_sender, "balanceOf[msg.sender]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

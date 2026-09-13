@@ -23,7 +23,7 @@ contract CometRewardsCovTest_0_CometRewards_setRewardsClaimed_concrete31_fb is T
     
     try c0.setRewardsClaimed(address(uint160(55838)), new address[](4), new uint256[](4)) {} catch {}
     uint256 _veriput_fixed_state_governor_1 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_governor_1, uint256(4294967295), "fixed witness state");
   }
   
   

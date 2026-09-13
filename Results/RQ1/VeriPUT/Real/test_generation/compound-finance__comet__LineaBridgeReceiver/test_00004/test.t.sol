@@ -11,8 +11,8 @@ contract LineaBridgeReceiverCovTest_LineaBridgeReceiver_state_put2p1 is Test {
     c0 = new LineaBridgeReceiver(address(uint160(1000)));
     
     address _esbmc_ctor_state_mock_0_0 = address(uint160(1000));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("sender()"), abi.encode(address(0)));
   }
   
 
@@ -92,14 +92,14 @@ contract LineaBridgeReceiverCovTest_LineaBridgeReceiver_state_put2p1 is Test {
     assertEq(_post_proposals_proposalId__eta, _pre_proposals_proposalId__eta, "proposals[proposalId].eta: post == pre");
     assertEq(_post_proposals_proposalId__executed, _pre_proposals_proposalId__executed, "proposals[proposalId].executed: post == pre");
     assertEq(_post_proposals_proposalId__id, _pre_proposals_proposalId__id, "proposals[proposalId].id: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_localTimelock, _pre_localTimelock, "localTimelock: post >= pre");
+    assertLe(_post_localTimelock, _pre_localTimelock, "localTimelock: post <= pre");
+    assertGe(_post_proposalCount, _pre_proposalCount, "proposalCount: post >= pre");
+    assertLe(_post_proposalCount, _pre_proposalCount, "proposalCount: post <= pre");
+    assertGe(_post_proposals_proposalId__eta, _pre_proposals_proposalId__eta, "proposals[proposalId].eta: post >= pre");
+    assertLe(_post_proposals_proposalId__eta, _pre_proposals_proposalId__eta, "proposals[proposalId].eta: post <= pre");
+    assertGe(_post_proposals_proposalId__id, _pre_proposals_proposalId__id, "proposals[proposalId].id: post >= pre");
+    assertLe(_post_proposals_proposalId__id, _pre_proposals_proposalId__id, "proposals[proposalId].id: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

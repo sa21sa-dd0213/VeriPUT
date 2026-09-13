@@ -10,8 +10,8 @@ contract FlashGovernanceArbiterCovTest_FlashGovernanceArbiter_assertGovernanceAp
   function setUp() public {
     c0 = new FlashGovernanceArbiter(address(uint160(1000)));
     
-
-
+    vm.etch(address(0), hex"60006000f3");
+    vm.mockCall(address(0), abi.encodeWithSignature("transferFrom(address,address,uint256)"), abi.encode(false));
   }
   
 
@@ -107,28 +107,28 @@ contract FlashGovernanceArbiterCovTest_FlashGovernanceArbiter_assertGovernanceAp
     assertEq(_post_pendingFlashDecision_target__sender__assetBurnable, _pre_pendingFlashDecision_target__sender__assetBurnable, "pendingFlashDecision[target][sender].assetBurnable: post == pre");
     assertEq(_post_pendingFlashDecision_target__sender__unlockTime, _pre_pendingFlashDecision_target__sender__unlockTime, "pendingFlashDecision[target][sender].unlockTime: post == pre");
     assertEq(_post_governed_msg_sender, _pre_governed_msg_sender, "governed[msg.sender]: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_flashGovernanceConfig_amount, _pre_flashGovernanceConfig_amount, "flashGovernanceConfig.amount: post >= pre");
+    assertLe(_post_flashGovernanceConfig_amount, _pre_flashGovernanceConfig_amount, "flashGovernanceConfig.amount: post <= pre");
+    assertGe(_post_flashGovernanceConfig_asset, _pre_flashGovernanceConfig_asset, "flashGovernanceConfig.asset: post >= pre");
+    assertLe(_post_flashGovernanceConfig_asset, _pre_flashGovernanceConfig_asset, "flashGovernanceConfig.asset: post <= pre");
+    assertGe(_post_flashGovernanceConfig_unlockTime, _pre_flashGovernanceConfig_unlockTime, "flashGovernanceConfig.unlockTime: post >= pre");
+    assertLe(_post_flashGovernanceConfig_unlockTime, _pre_flashGovernanceConfig_unlockTime, "flashGovernanceConfig.unlockTime: post <= pre");
+    assertGe(_post_security_changeTolerance, _pre_security_changeTolerance, "security.changeTolerance: post >= pre");
+    assertLe(_post_security_changeTolerance, _pre_security_changeTolerance, "security.changeTolerance: post <= pre");
+    assertGe(_post_security_epochSize, _pre_security_epochSize, "security.epochSize: post >= pre");
+    assertLe(_post_security_epochSize, _pre_security_epochSize, "security.epochSize: post <= pre");
+    assertGe(_post_security_lastFlashGovernanceAct, _pre_security_lastFlashGovernanceAct, "security.lastFlashGovernanceAct: post >= pre");
+    assertLe(_post_security_lastFlashGovernanceAct, _pre_security_lastFlashGovernanceAct, "security.lastFlashGovernanceAct: post <= pre");
+    assertGe(_post_security_maxGovernanceChangePerEpoch, _pre_security_maxGovernanceChangePerEpoch, "security.maxGovernanceChangePerEpoch: post >= pre");
+    assertLe(_post_security_maxGovernanceChangePerEpoch, _pre_security_maxGovernanceChangePerEpoch, "security.maxGovernanceChangePerEpoch: post <= pre");
+    assertGe(_post_DAO, _pre_DAO, "DAO: post >= pre");
+    assertLe(_post_DAO, _pre_DAO, "DAO: post <= pre");
+    assertGe(_post_pendingFlashDecision_target__sender__amount, _pre_pendingFlashDecision_target__sender__amount, "pendingFlashDecision[target][sender].amount: post >= pre");
+    assertLe(_post_pendingFlashDecision_target__sender__amount, _pre_pendingFlashDecision_target__sender__amount, "pendingFlashDecision[target][sender].amount: post <= pre");
+    assertGe(_post_pendingFlashDecision_target__sender__asset, _pre_pendingFlashDecision_target__sender__asset, "pendingFlashDecision[target][sender].asset: post >= pre");
+    assertLe(_post_pendingFlashDecision_target__sender__asset, _pre_pendingFlashDecision_target__sender__asset, "pendingFlashDecision[target][sender].asset: post <= pre");
+    assertGe(_post_pendingFlashDecision_target__sender__unlockTime, _pre_pendingFlashDecision_target__sender__unlockTime, "pendingFlashDecision[target][sender].unlockTime: post >= pre");
+    assertLe(_post_pendingFlashDecision_target__sender__unlockTime, _pre_pendingFlashDecision_target__sender__unlockTime, "pendingFlashDecision[target][sender].unlockTime: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

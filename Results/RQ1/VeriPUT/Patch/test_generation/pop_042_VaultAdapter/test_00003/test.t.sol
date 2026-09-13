@@ -111,8 +111,7 @@ contract VaultAdapterCovTest_VaultAdapter_setLimits_put6p1 is Test {
     vm.expectRevert();
     
     { address _vp_ec0 = address(uint160(uint256(vm.load(address(c0), bytes32(uint256(0xb413d65cb88f23816c329284a0d3eb15a99df7963ab7402ade4c5da22bff6b00))))));
-
-}
+      vm.mockCall(_vp_ec0, abi.encodeWithSignature("checkAccess(bytes4,address,address)"), abi.encode(false)); }
     c0.setLimits(_maxMultiplier, _minMultiplier, _rate);
     
   }
@@ -144,8 +143,7 @@ contract VaultAdapterCovTest_VaultAdapter_setLimits_concrete6p1__basis_root__W i
     
     
     { address _vp_ec0 = address(uint160(uint256(vm.load(address(c0), bytes32(uint256(0xb413d65cb88f23816c329284a0d3eb15a99df7963ab7402ade4c5da22bff6b00))))));
-
-}
+      vm.mockCall(_vp_ec0, abi.encodeWithSignature("checkAccess(bytes4,address,address)"), abi.encode(false)); }
     
     vm.warp(57896044618658097711785492504343953926634992332820282019728792003956564819969);
     vm.roll(57896044618658097711785492504343953926634992332820282019728792003956564819969);

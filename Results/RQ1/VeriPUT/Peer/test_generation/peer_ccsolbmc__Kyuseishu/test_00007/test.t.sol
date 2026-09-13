@@ -1,28 +1,16 @@
 // SPDX-License-Identifier: MIT
 
-
-
-
-
-
 pragma solidity >=0.8.0;
 
 import {Test} from "forge-std/Test.sol";
 import {Kyuseishu} from "../src/flat.sol";
 
-contract KyuseishuCovTest_Kyuseishu_approve_put15p1_p1_part_part0_w_r is Test {
+contract KyuseishuCovTest_Kyuseishu_balanceOf_put2p1 is Test {
   Kyuseishu c0;
   function setUp() public {
     c0 = new Kyuseishu();
   }
   
-  
-  
-  
-  
-  
-  
-  
 
   
   
@@ -63,67 +51,32 @@ contract KyuseishuCovTest_Kyuseishu_approve_put15p1_p1_part_part0_w_r is Test {
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  function _veriput_parameterized(address p_msg_sender, address spender, uint256 amount) internal {
-    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1912875088, 3791923280)));
-    spender = address(uint160(bound(uint256(uint160(spender)), 1, 1461501637330902918203684832716283019655932542975)));
-    amount = bound(amount, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value, address account) internal {
+    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
+    p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    account = address(uint160(bound(uint256(uint160(account)), 0, 1461501637330902918203684832716283019655932542975)));
     
-    uint256 _pre_allowances_msg_sender__spender = uint256(vm.load(address(c0), keccak256(abi.encode(spender, keccak256(abi.encode(p_msg_sender, uint256(2)))))));
+    uint256 _pre_balances_account = uint256(vm.load(address(c0), keccak256(abi.encode(account, uint256(1)))));
     
-    vm.assume(uint256(uint160(p_msg_sender)) != 0);
-    vm.assume(uint256(uint160(spender)) != 0);
-    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-    vm.chainId(0);
-    vm.fee(0);
-    vm.blobBaseFee(0);
-    vm.prevrandao(uint256(0));
-    vm.txGasPrice(0);
-    vm.coinbase(address(uint160(0)));
+    
+    vm.deal(p_msg_sender, p_msg_value);
     vm.prank(p_msg_sender);
+    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("balanceOf(address)", account));
     
-    bool _put_ret = c0.approve(spender, amount);
+    uint256 _post_balances_account = uint256(vm.load(address(c0), keccak256(abi.encode(account, uint256(1)))));
+    assertEq(_post_balances_account, _pre_balances_account, "_balances[account]: post == pre");
+    assertGe(_post_balances_account, _pre_balances_account, "_balances[account]: post >= pre");
+    assertLe(_post_balances_account, _pre_balances_account, "_balances[account]: post <= pre");
     
-    if (p_msg_sender == address(uint160(1912875088)) && spender == address(uint160(1)) && amount == uint256(0)) {
-      assertEq(_put_ret, true, "fixed witness return");
+    assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 
-
-
-
-    }
     
-    uint256 _post_allowances_msg_sender__spender = uint256(vm.load(address(c0), keccak256(abi.encode(spender, keccak256(abi.encode(p_msg_sender, uint256(2)))))));
-    assertGe(_post_allowances_msg_sender__spender, _pre_allowances_msg_sender__spender, "_allowances[msg.sender][spender]: post >= pre");
-    assertEq(_post_allowances_msg_sender__spender, amount, "_allowances[msg.sender][spender]: post == amount");
-    assertTrue(_put_ret, "return: return == true");
     
   }
 
 
   
-  function test_put_Kyuseishu_approve_path15p1_part_part0_w_r(address p_msg_sender, address spender, uint256 amount) public {
-    _veriput_parameterized(p_msg_sender, spender, amount);
+  function test_put_Kyuseishu_balanceOf_path2p1(address p_msg_sender, uint256 p_msg_value, address account) public {
+    _veriput_parameterized(p_msg_sender, p_msg_value, account);
   }
 }

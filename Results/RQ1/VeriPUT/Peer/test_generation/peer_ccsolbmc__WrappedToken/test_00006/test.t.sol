@@ -126,33 +126,33 @@ contract WrappedTokenCovTest_WrappedToken_decimals_put3p1 is Test {
     
     if (p_msg_sender == address(uint160(0))) {
       assertEq(_put_ret, uint8(0), "fixed witness return");
-
-
-
-
-
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(9)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(9)))) >> 160) & 255), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(10)))), uint256(0), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 8) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 255), uint256(0), "fixed witness state");
     }
     
     uint256 _post_decimals = ((uint256(vm.load(address(c0), bytes32(uint256(9)))) >> 160) & 255);
     assertEq(_post_decimals, _pre_decimals, "decimals_: post == pre");
     assertEq(_post_decimals, 0, "decimals_: post == msg.value");
-    
+    assertEq(_post_decimals, _pre_decimals, "decimals_: post == state.decimals_");
     unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) + uint256(_pre_decimals)), "decimals_: post == (pre + pre)"); }
     unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) * uint256(_pre_decimals)), "decimals_: post == (pre * pre)"); }
-    
+    unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) + uint256(_pre_decimals)), "decimals_: post == (pre + state.decimals_)"); }
     unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) - uint256(_pre_decimals)), "decimals_: post == (pre - state.decimals_)"); }
-    
+    unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) * uint256(_pre_decimals)), "decimals_: post == (pre * state.decimals_)"); }
     unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) * uint256(255)), "decimals_: post == (pre * 255)"); }
     unchecked { assertEq(_post_decimals, (uint256(0) - uint256(_pre_decimals)), "decimals_: post == (msg.value - pre)"); }
-    
-    
-    
-    
-    
+    unchecked { assertEq(_post_decimals, (uint256(0) - uint256(_pre_decimals)), "decimals_: post == (msg.value - state.decimals_)"); }
+    unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) - uint256(_pre_decimals)), "decimals_: post == (state.decimals_ - pre)"); }
+    unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) + uint256(_pre_decimals)), "decimals_: post == (state.decimals_ + state.decimals_)"); }
+    unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) * uint256(_pre_decimals)), "decimals_: post == (state.decimals_ * state.decimals_)"); }
+    unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) * uint256(255)), "decimals_: post == (state.decimals_ * 255)"); }
     unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) / uint256(255)), "decimals_: post == (pre / 255)"); }
     unchecked { assertEq(_post_decimals, (uint256(0) / uint256(255)), "decimals_: post == (msg.value / 255)"); }
-    
+    unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) / uint256(255)), "decimals_: post == (state.decimals_ / 255)"); }
     assertEq(uint256(_put_ret), 0, "return: return == 0");
     assertEq(uint256(_put_ret), _ret_pre_decimals, "return: return == state.decimals_");
     
@@ -185,39 +185,39 @@ contract WrappedTokenCovTest_WrappedToken_decimals_concrete3p1__basis_root__W is
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(4)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(0), "entry pin state._totalSupply$317 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(9))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(9)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(9)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.backingTokenAddress_ did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(9))));
       _w = (_w & ~uint256(372682917519380244141939632342652170012262798458880)) | ((uint256(0) & 255) << 160);
-
+      vm.store(address(c0), bytes32(uint256(9)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(9)))) >> 160) & 255), uint256(0), "entry pin state.decimals_ did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(10))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(10)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(10)))), uint256(0), "entry pin state.heldAmtReq_ did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(374144419156711147060143317175368453031918731001600)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 8);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 8) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.owner_$1503 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 255), uint256(0), "entry pin state.paused_$1501 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -232,17 +232,17 @@ contract WrappedTokenCovTest_WrappedToken_decimals_concrete3p1__basis_root__W is
     uint8 _veriput_concrete_return = c0.decimals();
     assertEq(_veriput_concrete_return, uint8(0), "fixed witness return must match");
     uint256 _veriput_fixed_state_totalSupply_317_4 = uint256(vm.load(address(c0), bytes32(uint256(4))));
-
+    assertEq(_veriput_fixed_state_totalSupply_317_4, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_backingTokenAddress_5 = (uint256(vm.load(address(c0), bytes32(uint256(9)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_backingTokenAddress_5, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_decimals_6 = ((uint256(vm.load(address(c0), bytes32(uint256(9)))) >> 160) & 255);
-
+    assertEq(_veriput_fixed_state_decimals_6, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_heldAmtReq_7 = uint256(vm.load(address(c0), bytes32(uint256(10))));
-
+    assertEq(_veriput_fixed_state_heldAmtReq_7, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_owner__1503_8 = ((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 8) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_owner__1503_8, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_paused__1501_9 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 255);
-
+    assertEq(_veriput_fixed_state_paused__1501_9, uint256(0), "fixed witness state");
   }
   
   

@@ -113,11 +113,11 @@ contract DateTimeCovTest_DateTime_getDaysInMonth_put14p1_p1_part_part0_w_w is Te
       assertEq(_put_ret, uint8(30), "fixed witness return");
     }
     
-    
-    
-    
-    
-    
+    assertGe(uint256(_put_ret), 30, "return: return in [30, 30]");
+    assertLe(uint256(_put_ret), 30, "return: return in [30, 30]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, 30]");
+    assertLe(uint256(_put_ret), 30, "return: return in [0, 30]");
+    assertTrue(uint256(_put_ret) != 0, "return: return != 0");
     assertEq(uint256(_put_ret), 30, "return: return == 30");
     
   }
@@ -126,5 +126,50 @@ contract DateTimeCovTest_DateTime_getDaysInMonth_put14p1_p1_part_part0_w_w is Te
   
   function test_put_DateTime_getDaysInMonth_path14p1_part_part0_w_w(address p_msg_sender, uint256 p_block_timestamp, uint256 p_block_number, uint8 month, uint16 year) public {
     _veriput_parameterized(p_msg_sender, p_block_timestamp, p_block_number, month, year);
+    
+    { DateTimeCovTest_DateTime_getDaysInMonth_concrete14p1__basis_part0_w_w__W _veriput_w = new DateTimeCovTest_DateTime_getDaysInMonth_concrete14p1__basis_part0_w_w__W(); _veriput_w.setUp(); _veriput_w._w_test_cov_1(); }
+}
+}
+
+
+
+
+
+
+
+
+contract DateTimeCovTest_DateTime_getDaysInMonth_concrete14p1__basis_part0_w_w__W is Test {
+  DateTime c0;
+  function setUp() public {
+    c0 = new DateTime();
   }
+  
+  
+  
+  
+  function _w_test_cov_1() public {
+    
+    
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
+    vm.prank(address(uint160(0)), address(uint160(0)));
+    uint8 _veriput_concrete_return = c0.getDaysInMonth(uint8(6), uint16(0));
+    assertEq(_veriput_concrete_return, uint8(30), "fixed witness return must match");
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }

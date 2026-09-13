@@ -3065,7 +3065,6 @@ uint256 constant uEXP2_MAX_INPUT_1 = 192e18 - 1;
 UD60x18 constant EXP2_MAX_INPUT_1 = UD60x18.wrap(uEXP2_MAX_INPUT_1);
 
 
-
 uint256 constant uHALF_UNIT_1 = 0.5e18;
 UD60x18 constant HALF_UNIT_1 = UD60x18.wrap(uHALF_UNIT_1);
 

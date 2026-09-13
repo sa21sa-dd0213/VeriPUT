@@ -5,7 +5,7 @@ pragma solidity >=0.8.0;
 import {Test} from "forge-std/Test.sol";
 import {TestDateTime} from "../src/flat.sol";
 
-contract TestDateTimeCovTest_TestDateTime__isLeapYear_put15p1_p1_part_part0_r is Test {
+contract TestDateTimeCovTest_TestDateTime_getDayOfWeek_put2p1 is Test {
   TestDateTime c0;
   function setUp() public {
     c0 = new TestDateTime();
@@ -55,53 +55,24 @@ contract TestDateTimeCovTest_TestDateTime__isLeapYear_put15p1_p1_part_part0_r is
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  function _veriput_parameterized(address p_msg_sender, uint256 p_block_timestamp, uint256 year) internal {
+  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value, uint256 timestamp) internal {
     p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
-    p_block_timestamp = bound(p_block_timestamp, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-    year = bound(year, 96, 96);
+    p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    timestamp = bound(timestamp, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     
     
-    vm.warp(p_block_timestamp);
-    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
-    vm.chainId(0);
-    vm.fee(0);
-    vm.blobBaseFee(0);
-    vm.prevrandao(uint256(0));
-    vm.txGasPrice(0);
-    vm.coinbase(address(uint160(0)));
+    vm.deal(p_msg_sender, p_msg_value);
     vm.prank(p_msg_sender);
-    bool _put_ret = c0._isLeapYear(year);
-    
-    if (p_msg_sender == address(uint160(0)) && p_block_timestamp == uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) && year == uint256(96)) {
-      assertEq(_put_ret, true, "fixed witness return");
+    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("getDayOfWeek(uint256)", timestamp));
+    assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 
-    }
     
-    assertTrue(_put_ret, "return: return == true");
     
   }
 
 
   
-  function test_put_TestDateTime__isLeapYear_path15p1_part_part0_r(address p_msg_sender, uint256 p_block_timestamp, uint256 year) public {
-    _veriput_parameterized(p_msg_sender, p_block_timestamp, year);
+  function test_put_TestDateTime_getDayOfWeek_path2p1(address p_msg_sender, uint256 p_msg_value, uint256 timestamp) public {
+    _veriput_parameterized(p_msg_sender, p_msg_value, timestamp);
   }
 }

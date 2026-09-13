@@ -67,10 +67,10 @@ contract MyAdvancedTokenCovTest_MyAdvancedToken_migrate_and_destroy_put2p1 is Te
     uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_totalSupply, _pre_totalSupply, "totalSupply: post == pre");
     assertEq(_post_owner, _pre_owner, "owner: post == pre");
-    
-    
-    
-    
+    assertGe(_post_totalSupply, _pre_totalSupply, "totalSupply: post >= pre");
+    assertLe(_post_totalSupply, _pre_totalSupply, "totalSupply: post <= pre");
+    assertGe(_post_owner, _pre_owner, "owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "owner: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

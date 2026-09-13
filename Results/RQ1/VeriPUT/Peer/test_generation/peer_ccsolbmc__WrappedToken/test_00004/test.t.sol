@@ -100,142 +100,142 @@ contract WrappedTokenCovTest_WrappedToken_balanceOf_put3p1_p1_part_part0_w is Te
     
     if (p_msg_sender == address(uint160(0)) && account == address(uint160(0))) {
       assertEq(_put_ret, uint256(0), "fixed witness return");
-
-
-
-
-
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(9)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(9)))) >> 160) & 255), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(10)))), uint256(0), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 8) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 255), uint256(0), "fixed witness state");
     }
     
     uint256 _post_balances_account = uint256(vm.load(address(c0), keccak256(abi.encode(account, uint256(2)))));
     assertEq(_post_balances_account, _pre_balances_account, "_balances[account]: post == pre");
     assertEq(uint256(_put_ret), 0, "return: return == 0");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertEq(uint256(_put_ret), 0, "return: return == msg.value");
+    assertEq(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return == (msg.value + msg.value)");
+    assertEq(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return == (msg.value - msg.value)");
+    assertEq(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return == (msg.value * msg.value)");
+    assertEq(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return == (msg.value + 0)");
+    assertEq(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return == (msg.value - 0)");
+    assertEq(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return == (msg.value * 0)");
+    assertEq(uint256(_put_ret), (uint256(0) * uint256(1461501637330902918203684832716283019655932542975)), "return: return == (msg.value * 1461501637330902918203684832716283019655932542975)");
+    assertEq(uint256(_put_ret), (uint256(0) * uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)), "return: return == (msg.value * 115792089237316195423570985008687907853269984665640564039457584007913129639934)");
+    assertEq(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return == (0 + msg.value)");
+    assertEq(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return == (0 - msg.value)");
+    assertEq(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return == (0 * msg.value)");
+    assertEq(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return == (0 + 0)");
+    assertEq(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return == (0 - 0)");
+    assertEq(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return == (0 * 0)");
+    assertEq(uint256(_put_ret), (uint256(0) * uint256(1461501637330902918203684832716283019655932542975)), "return: return == (0 * 1461501637330902918203684832716283019655932542975)");
+    assertEq(uint256(_put_ret), (uint256(0) * uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)), "return: return == (0 * 115792089237316195423570985008687907853269984665640564039457584007913129639934)");
+    assertEq(uint256(_put_ret), (uint256(1461501637330902918203684832716283019655932542975) * uint256(0)), "return: return == (1461501637330902918203684832716283019655932542975 * msg.value)");
+    assertEq(uint256(_put_ret), (uint256(1461501637330902918203684832716283019655932542975) * uint256(0)), "return: return == (1461501637330902918203684832716283019655932542975 * 0)");
+    assertEq(uint256(_put_ret), (uint256(1461501637330902918203684832716283019655932542975) - uint256(1461501637330902918203684832716283019655932542975)), "return: return == (1461501637330902918203684832716283019655932542975 - 1461501637330902918203684832716283019655932542975)");
+    assertEq(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) * uint256(0)), "return: return == (115792089237316195423570985008687907853269984665640564039457584007913129639934 * msg.value)");
+    assertEq(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) * uint256(0)), "return: return == (115792089237316195423570985008687907853269984665640564039457584007913129639934 * 0)");
+    assertEq(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) - uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)), "return: return == (115792089237316195423570985008687907853269984665640564039457584007913129639934 - 115792089237316195423570985008687907853269984665640564039457584007913129639934)");
     assertEq(uint256(_put_ret), (uint256(0) / uint256(1461501637330902918203684832716283019655932542975)), "return: return == (msg.value / 1461501637330902918203684832716283019655932542975)");
     assertEq(uint256(_put_ret), (uint256(0) / uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)), "return: return == (msg.value / 115792089237316195423570985008687907853269984665640564039457584007913129639934)");
-    
-    
+    assertEq(uint256(_put_ret), (uint256(0) / uint256(1461501637330902918203684832716283019655932542975)), "return: return == (0 / 1461501637330902918203684832716283019655932542975)");
+    assertEq(uint256(_put_ret), (uint256(0) / uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)), "return: return == (0 / 115792089237316195423570985008687907853269984665640564039457584007913129639934)");
     assertEq(uint256(_put_ret), (uint256(1461501637330902918203684832716283019655932542975) / uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)), "return: return == (1461501637330902918203684832716283019655932542975 / 115792089237316195423570985008687907853269984665640564039457584007913129639934)");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(uint256(_put_ret), 0, "return: return in [msg.value, msg.value]");
+    assertLe(uint256(_put_ret), 0, "return: return in [msg.value, msg.value]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, 0]");
+    assertLe(uint256(_put_ret), 0, "return: return in [0, 0]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, msg.value]");
+    assertLe(uint256(_put_ret), 0, "return: return in [0, msg.value]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, 1461501637330902918203684832716283019655932542975]");
+    assertLe(uint256(_put_ret), 1461501637330902918203684832716283019655932542975, "return: return in [0, 1461501637330902918203684832716283019655932542975]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, 115792089237316195423570985008687907853269984665640564039457584007913129639934]");
+    assertLe(uint256(_put_ret), 115792089237316195423570985008687907853269984665640564039457584007913129639934, "return: return in [0, 115792089237316195423570985008687907853269984665640564039457584007913129639934]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value + msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return in [0, (msg.value + msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value - msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return in [0, (msg.value - msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value * msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return in [0, (msg.value * msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value + 0)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return in [0, (msg.value + 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value - 0)]");
+    assertLe(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return in [0, (msg.value - 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value * 0)]");
+    assertLe(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return in [0, (msg.value * 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(1461501637330902918203684832716283019655932542975)), "return: return in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value * 1461501637330902918203684832716283019655932542975)]");
+    assertLe(uint256(_put_ret), (uint256(0) * uint256(1461501637330902918203684832716283019655932542975)), "return: return in [0, (msg.value * 1461501637330902918203684832716283019655932542975)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)), "return: return in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value * 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertLe(uint256(_put_ret), (uint256(0) * uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)), "return: return in [0, (msg.value * 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 + msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return in [0, (0 + msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 - msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return in [0, (0 - msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 * msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return in [0, (0 * msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 + 0)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return in [0, (0 + 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 - 0)]");
+    assertLe(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return in [0, (0 - 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 * 0)]");
+    assertLe(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return in [0, (0 * 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 + 1461501637330902918203684832716283019655932542975)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(1461501637330902918203684832716283019655932542975)), "return: return in [0, (0 + 1461501637330902918203684832716283019655932542975)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 * 1461501637330902918203684832716283019655932542975)]");
+    assertLe(uint256(_put_ret), (uint256(0) * uint256(1461501637330902918203684832716283019655932542975)), "return: return in [0, (0 * 1461501637330902918203684832716283019655932542975)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 + 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)), "return: return in [0, (0 + 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 * 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertLe(uint256(_put_ret), (uint256(0) * uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)), "return: return in [0, (0 * 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (1461501637330902918203684832716283019655932542975 + msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(1461501637330902918203684832716283019655932542975) + uint256(0)), "return: return in [0, (1461501637330902918203684832716283019655932542975 + msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (1461501637330902918203684832716283019655932542975 - msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(1461501637330902918203684832716283019655932542975) - uint256(0)), "return: return in [0, (1461501637330902918203684832716283019655932542975 - msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (1461501637330902918203684832716283019655932542975 * msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(1461501637330902918203684832716283019655932542975) * uint256(0)), "return: return in [0, (1461501637330902918203684832716283019655932542975 * msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (1461501637330902918203684832716283019655932542975 + 0)]");
+    assertLe(uint256(_put_ret), (uint256(1461501637330902918203684832716283019655932542975) + uint256(0)), "return: return in [0, (1461501637330902918203684832716283019655932542975 + 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (1461501637330902918203684832716283019655932542975 - 0)]");
+    assertLe(uint256(_put_ret), (uint256(1461501637330902918203684832716283019655932542975) - uint256(0)), "return: return in [0, (1461501637330902918203684832716283019655932542975 - 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (1461501637330902918203684832716283019655932542975 * 0)]");
+    assertLe(uint256(_put_ret), (uint256(1461501637330902918203684832716283019655932542975) * uint256(0)), "return: return in [0, (1461501637330902918203684832716283019655932542975 * 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (1461501637330902918203684832716283019655932542975 + 1461501637330902918203684832716283019655932542975)]");
+    assertLe(uint256(_put_ret), (uint256(1461501637330902918203684832716283019655932542975) + uint256(1461501637330902918203684832716283019655932542975)), "return: return in [0, (1461501637330902918203684832716283019655932542975 + 1461501637330902918203684832716283019655932542975)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (1461501637330902918203684832716283019655932542975 - 1461501637330902918203684832716283019655932542975)]");
+    assertLe(uint256(_put_ret), (uint256(1461501637330902918203684832716283019655932542975) - uint256(1461501637330902918203684832716283019655932542975)), "return: return in [0, (1461501637330902918203684832716283019655932542975 - 1461501637330902918203684832716283019655932542975)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 + msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) + uint256(0)), "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 + msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 - msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) - uint256(0)), "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 - msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 * msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) * uint256(0)), "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 * msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 + 0)]");
+    assertLe(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) + uint256(0)), "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 + 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 - 0)]");
+    assertLe(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) - uint256(0)), "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 - 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 * 0)]");
+    assertLe(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) * uint256(0)), "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 * 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 - 1461501637330902918203684832716283019655932542975)]");
+    assertLe(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) - uint256(1461501637330902918203684832716283019655932542975)), "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 - 1461501637330902918203684832716283019655932542975)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 - 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertLe(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) - uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)), "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 - 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value / 1461501637330902918203684832716283019655932542975)]");
+    assertLe(uint256(_put_ret), (uint256(0) / uint256(1461501637330902918203684832716283019655932542975)), "return: return in [0, (msg.value / 1461501637330902918203684832716283019655932542975)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value / 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertLe(uint256(_put_ret), (uint256(0) / uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)), "return: return in [0, (msg.value / 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 / 1461501637330902918203684832716283019655932542975)]");
+    assertLe(uint256(_put_ret), (uint256(0) / uint256(1461501637330902918203684832716283019655932542975)), "return: return in [0, (0 / 1461501637330902918203684832716283019655932542975)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 / 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertLe(uint256(_put_ret), (uint256(0) / uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)), "return: return in [0, (0 / 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (1461501637330902918203684832716283019655932542975 / 1461501637330902918203684832716283019655932542975)]");
     assertLe(uint256(_put_ret), (uint256(1461501637330902918203684832716283019655932542975) / uint256(1461501637330902918203684832716283019655932542975)), "return: return in [0, (1461501637330902918203684832716283019655932542975 / 1461501637330902918203684832716283019655932542975)]");
-    
-    
-    
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (1461501637330902918203684832716283019655932542975 / 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertLe(uint256(_put_ret), (uint256(1461501637330902918203684832716283019655932542975) / uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)), "return: return in [0, (1461501637330902918203684832716283019655932542975 / 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 / 1461501637330902918203684832716283019655932542975)]");
     assertLe(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) / uint256(1461501637330902918203684832716283019655932542975)), "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 / 1461501637330902918203684832716283019655932542975)]");
-    
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 / 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
     assertLe(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) / uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934)), "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 / 115792089237316195423570985008687907853269984665640564039457584007913129639934)]");
     
   }
@@ -267,39 +267,39 @@ contract WrappedTokenCovTest_WrappedToken_balanceOf_concrete3p1__basis_part0_w__
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(4)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(0), "entry pin state._totalSupply$317 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(9))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(9)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(9)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.backingTokenAddress_ did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(9))));
       _w = (_w & ~uint256(372682917519380244141939632342652170012262798458880)) | ((uint256(0) & 255) << 160);
-
+      vm.store(address(c0), bytes32(uint256(9)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(9)))) >> 160) & 255), uint256(0), "entry pin state.decimals_ did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(10))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(10)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(10)))), uint256(0), "entry pin state.heldAmtReq_ did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(374144419156711147060143317175368453031918731001600)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 8);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 8) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.owner_$1503 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 255), uint256(0), "entry pin state.paused_$1501 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -314,17 +314,17 @@ contract WrappedTokenCovTest_WrappedToken_balanceOf_concrete3p1__basis_part0_w__
     uint256 _veriput_concrete_return = c0.balanceOf(address(uint160(0)));
     assertEq(_veriput_concrete_return, uint256(0), "fixed witness return must match");
     uint256 _veriput_fixed_state_totalSupply_317_4 = uint256(vm.load(address(c0), bytes32(uint256(4))));
-
+    assertEq(_veriput_fixed_state_totalSupply_317_4, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_backingTokenAddress_5 = (uint256(vm.load(address(c0), bytes32(uint256(9)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_backingTokenAddress_5, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_decimals_6 = ((uint256(vm.load(address(c0), bytes32(uint256(9)))) >> 160) & 255);
-
+    assertEq(_veriput_fixed_state_decimals_6, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_heldAmtReq_7 = uint256(vm.load(address(c0), bytes32(uint256(10))));
-
+    assertEq(_veriput_fixed_state_heldAmtReq_7, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_owner__1503_8 = ((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 8) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_owner__1503_8, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_paused__1501_9 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 255);
-
+    assertEq(_veriput_fixed_state_paused__1501_9, uint256(0), "fixed witness state");
   }
   
   

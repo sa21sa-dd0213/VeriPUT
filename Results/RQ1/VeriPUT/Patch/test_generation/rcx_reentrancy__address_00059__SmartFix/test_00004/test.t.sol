@@ -11,8 +11,8 @@ contract ACCURAL_DEPOSITCovTest_ACCURAL_DEPOSIT_SetLogFile_put2p1 is Test {
     c0 = new ACCURAL_DEPOSIT();
     
     address _esbmc_ext_mock_0 = address(0x0486cF65A2F2F3A392CBEa398AFB7F5f0B72FF46);
-
-
+    vm.etch(_esbmc_ext_mock_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("AddMessage(address,uint256,string)"), bytes(""));
   }
   
 

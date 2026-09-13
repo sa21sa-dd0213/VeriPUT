@@ -1,25 +1,15 @@
 // SPDX-License-Identifier: MIT
 
-
-
-
-
-
 pragma solidity >=0.8.0;
 
 import {Test} from "forge-std/Test.sol";
 import {Rootkit_finance} from "../src/flat.sol";
 
-contract Rootkit_financeCovTest_0_Rootkit_finance_transfer_put7p1 is Test {
+contract Rootkit_financeCovTest_Rootkit_finance_transfer_put2p1 is Test {
   Rootkit_finance c0;
   function setUp() public {
-    vm.startPrank(address(uint160(4294967295)), address(uint160(4294967295)));
     c0 = new Rootkit_finance();
-    vm.stopPrank();
   }
-  
-  
-  
   
 
   
@@ -61,158 +51,38 @@ contract Rootkit_financeCovTest_0_Rootkit_finance_transfer_put7p1 is Test {
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  function _veriput_parameterized(address to, uint256 value) internal {
+  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value, address to, uint256 value) internal {
+    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
+    p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     to = address(uint160(bound(uint256(uint160(to)), 0, 1461501637330902918203684832716283019655932542975)));
-    value = bound(value, 0, 0);
+    value = bound(value, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     
-    uint256 _pre_balances_105_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(4294967295)), uint256(2)))));
-    uint256 _pre_balances_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(4294967295)), uint256(2)))));
+    uint256 _pre_balances_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(2)))));
     uint256 _pre_balances_to = uint256(vm.load(address(c0), keccak256(abi.encode(to, uint256(2)))));
-    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-    vm.chainId(0);
-    vm.fee(0);
-    vm.blobBaseFee(0);
-    vm.prevrandao(uint256(0));
-    vm.txGasPrice(0);
-    vm.coinbase(address(uint160(0)));
-    vm.prank(address(uint160(4294967295)));
     
-    bool _put_ret = c0.transfer(to, value);
     
-    if (to == address(uint160(0)) && value == uint256(0)) {
-      assertEq(_put_ret, false, "fixed witness return");
-
-
-    }
+    vm.deal(p_msg_sender, p_msg_value);
+    vm.prank(p_msg_sender);
+    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("transfer(address,uint256)", to, value));
     
-    uint256 _post_balances_105_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(4294967295)), uint256(2)))));
-    uint256 _post_balances_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(4294967295)), uint256(2)))));
+    uint256 _post_balances_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(2)))));
     uint256 _post_balances_to = uint256(vm.load(address(c0), keccak256(abi.encode(to, uint256(2)))));
-    assertEq(_post_balances_105_msg_sender, _pre_balances_105_msg_sender, "balances$105[msg.sender]: post == pre");
+    assertEq(_post_balances_msg_sender, _pre_balances_msg_sender, "balances[msg.sender]: post == pre");
+    assertEq(_post_balances_to, _pre_balances_to, "balances[to]: post == pre");
+    assertGe(_post_balances_msg_sender, _pre_balances_msg_sender, "balances[msg.sender]: post >= pre");
+    assertLe(_post_balances_msg_sender, _pre_balances_msg_sender, "balances[msg.sender]: post <= pre");
+    assertGe(_post_balances_to, _pre_balances_to, "balances[to]: post >= pre");
+    assertLe(_post_balances_to, _pre_balances_to, "balances[to]: post <= pre");
     
+    assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
+
     
-    unchecked { assertLe(_pre_balances_msg_sender - _post_balances_msg_sender, value, "balances[msg.sender]: pre - post in [value, value] with pre >= post"); }
-    assertGe(_post_balances_to, _pre_balances_to, "balances[to]: post - pre in [value, value] with post >= pre");
-    
-    unchecked { assertLe(_post_balances_to - _pre_balances_to, value, "balances[to]: post - pre in [value, value] with post >= pre"); }
-    
-    
-    
-    unchecked { assertLe(_post_balances_105_msg_sender, (uint256(value) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "balances$105[msg.sender]: post in [0, (value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]"); }
-    assertFalse(_put_ret, "return: return == false");
     
   }
 
 
   
-  function test_put_Rootkit_finance_transfer_path7p1(address to, uint256 value) public {
-    _veriput_parameterized(to, value);
-    
-    { Rootkit_financeCovTest_0_Rootkit_finance_transfer_concrete7p1__basis_root__W _veriput_w = new Rootkit_financeCovTest_0_Rootkit_finance_transfer_concrete7p1__basis_root__W(); _veriput_w.setUp(); _veriput_w._w_test_cov_1(); }
-}
-}
-
-contract Rootkit_financeCovTest_1 is Test {
-  Rootkit_finance c0;
-  function setUp() public {
-    vm.startPrank(address(uint160(1)), address(uint160(1)));
-    c0 = new Rootkit_finance();
-    vm.stopPrank();
+  function test_put_Rootkit_finance_transfer_path2p1(address p_msg_sender, uint256 p_msg_value, address to, uint256 value) public {
+    _veriput_parameterized(p_msg_sender, p_msg_value, to, value);
   }
-  
-  
-}
-
-
-
-
-
-
-
-
-contract Rootkit_financeCovTest_0_Rootkit_finance_transfer_concrete7p1__basis_root__W is Test {
-  Rootkit_finance c0;
-  function setUp() public {
-    vm.startPrank(address(uint160(4294967295)), address(uint160(4294967295)));
-    c0 = new Rootkit_finance();
-    vm.stopPrank();
-  }
-  
-  
-  
-  
-  function _w_test_cov_1() public {
-    {
-      uint256 _w = uint256(vm.load(address(c0), keccak256(abi.encode(uint256(4294967295), uint256(2)))));
-      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(10000000000000000000000) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
-    }
-
-    {
-      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
-      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(10000000000000000000000) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
-    }
-
-    {
-      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
-      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(4294967295) & 1461501637330902918203684832716283019655932542975) << 0);
-
-    }
-
-    
-    
-    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-    vm.chainId(0);
-    vm.fee(0);
-    vm.blobBaseFee(0);
-    vm.prevrandao(uint256(0));
-    vm.txGasPrice(0);
-    vm.coinbase(address(uint160(0)));
-    vm.prank(address(uint160(4294967295)), address(uint160(0)));
-    bool _veriput_concrete_return = c0.transfer(address(uint160(0)), uint256(0));
-    assertEq(_veriput_concrete_return, false, "fixed witness return must match");
-    uint256 _veriput_fixed_state_initialSupply_2 = uint256(vm.load(address(c0), bytes32(uint256(0))));
-
-    uint256 _veriput_fixed_state_teamAddress_3 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
-
-  }
-}
-
-contract Rootkit_financeCovTest_1__W is Test {
-  Rootkit_finance c0;
-  function setUp() public {
-    vm.startPrank(address(uint160(1)), address(uint160(1)));
-    c0 = new Rootkit_finance();
-    vm.stopPrank();
-  }
-  
-  
 }

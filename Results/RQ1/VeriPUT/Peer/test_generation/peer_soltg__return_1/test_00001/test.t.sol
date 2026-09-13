@@ -107,7 +107,7 @@ contract Cr1CovTest_Cr1_add_put14p1 is Test {
     
     assertTrue(uint256(_put_ret) != 0, "return: return != 0");
     assertEq(uint256(_put_ret), (uint256(x) + uint256(1)), "return: return == (x + 1)");
-    
+    assertEq(uint256(_put_ret), (uint256(x) + uint256(y)), "return: return == (x + y)");
     assertGe(uint256(_put_ret), 1, "return: return in [1, 115792089237316195423570985008687907853269984665640564039457584007913129639935]");
     assertLe(uint256(_put_ret), 115792089237316195423570985008687907853269984665640564039457584007913129639935, "return: return in [1, 115792089237316195423570985008687907853269984665640564039457584007913129639935]");
     

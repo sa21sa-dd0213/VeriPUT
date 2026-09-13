@@ -5,10 +5,30 @@ pragma solidity >=0.8.0;
 import {Test} from "forge-std/Test.sol";
 import {CVXStaker, ICVXBooster, IERC20} from "../src/flat.sol";
 
-contract CVXStakerCovTest_CVXStaker_setCvxPoolInfo_put2p1 is Test {
+contract CVXStakerCovTest_CVXStaker_owner_put3p1 is Test {
   CVXStaker c0;
   function setUp() public {
     c0 = new CVXStaker(address(uint160(1000)), IERC20(address(uint160(1001))), ICVXBooster(address(uint160(1002))), new address[](0));
+    
+    address _esbmc_ctor_state_mock_0_0 = address(ICVXBooster(address(uint160(1002))));
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("deposit(uint256,uint256,bool)"), abi.encode(false));
+    
+    address _esbmc_ctor_state_mock_0_4 = address(ICVXBooster(address(uint160(1002))));
+    vm.etch(_esbmc_ctor_state_mock_0_4, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_4, abi.encodeWithSignature("poolInfo(uint256)"), abi.encode(ICVXBooster.PoolInfo({lptoken: address(0), token: address(0), gauge: address(0), crvRewards: address(0), stash: address(0), shutdown: false})));
+    
+    address _esbmc_ctor_state_mock_0_8 = address(IERC20(address(uint160(1001))));
+    vm.etch(_esbmc_ctor_state_mock_0_8, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_8, abi.encodeWithSignature("balanceOf(address)"), abi.encode(uint256(0)));
+    
+    address _esbmc_ctor_state_mock_0_12 = address(IERC20(address(uint160(1001))));
+    vm.etch(_esbmc_ctor_state_mock_0_12, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_12, abi.encodeWithSignature("safeIncreaseAllowance(IERC20,address,uint256)"), bytes(""));
+    
+    address _esbmc_ctor_state_mock_0_16 = address(IERC20(address(uint160(1001))));
+    vm.etch(_esbmc_ctor_state_mock_0_16, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_16, abi.encodeWithSignature("safeTransfer(IERC20,address,uint256)"), bytes(""));
   }
   
 
@@ -50,49 +70,171 @@ contract CVXStakerCovTest_CVXStaker_setCvxPoolInfo_put2p1 is Test {
   
   
   
-  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value, uint32 _pId, address _token, address _rewards) internal {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  function _veriput_parameterized(address p_msg_sender) internal {
     p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
-    p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-    _pId = uint32(bound(uint256(_pId), 0, 4294967295));
-    _token = address(uint160(bound(uint256(uint160(_token)), 0, 1461501637330902918203684832716283019655932542975)));
-    _rewards = address(uint160(bound(uint256(uint160(_rewards)), 0, 1461501637330902918203684832716283019655932542975)));
     
-    uint256 _pre_cvxPoolInfo_pId = ((uint256(vm.load(address(c0), bytes32(uint256(3)))) >> 160) & 4294967295);
-    uint256 _pre_cvxPoolInfo_rewards = (uint256(vm.load(address(c0), bytes32(uint256(3)))) & 1461501637330902918203684832716283019655932542975);
-    uint256 _pre_cvxPoolInfo_token = (uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975);
     uint256 _pre_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
+    uint256 _pre_owner_647 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     
     
-    vm.deal(p_msg_sender, p_msg_value);
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
     vm.prank(p_msg_sender);
-    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("setCvxPoolInfo(uint32,address,address)", _pId, _token, _rewards));
+    address _put_ret = c0.owner();
     
-    uint256 _post_cvxPoolInfo_pId = ((uint256(vm.load(address(c0), bytes32(uint256(3)))) >> 160) & 4294967295);
-    uint256 _post_cvxPoolInfo_rewards = (uint256(vm.load(address(c0), bytes32(uint256(3)))) & 1461501637330902918203684832716283019655932542975);
-    uint256 _post_cvxPoolInfo_token = (uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975);
+    if (p_msg_sender == address(uint160(0))) {
+      assertEq(_put_ret, address(uint160(0)), "fixed witness return");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+    }
+    
     uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-    assertEq(_post_cvxPoolInfo_pId, _pre_cvxPoolInfo_pId, "cvxPoolInfo.pId: post == pre");
-    assertEq(_post_cvxPoolInfo_rewards, _pre_cvxPoolInfo_rewards, "cvxPoolInfo.rewards: post == pre");
-    assertEq(_post_cvxPoolInfo_token, _pre_cvxPoolInfo_token, "cvxPoolInfo.token: post == pre");
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
-
-    
+    assertEq(_post_owner, _pre_owner_647, "_owner: post == state._owner$647");
+    assertGe(_post_owner, 0, "_owner: post in [0, pre]");
+    assertLe(_post_owner, _pre_owner, "_owner: post in [0, pre]");
+    assertGe(_post_owner, 0, "_owner: post in [0, (pre + pre)]");
+    unchecked { assertLe(_post_owner, (uint256(_pre_owner) + uint256(_pre_owner)), "_owner: post in [0, (pre + pre)]"); }
+    assertGe(_post_owner, 0, "_owner: post in [0, (pre * pre)]");
+    unchecked { assertLe(_post_owner, (uint256(_pre_owner) * uint256(_pre_owner)), "_owner: post in [0, (pre * pre)]"); }
+    assertGe(_post_owner, 0, "_owner: post in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]");
+    unchecked { assertLe(_post_owner, (uint256(0) + uint256(1461501637330902918203684832716283019655932542975)), "_owner: post in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]"); }
+    assertGe(_post_owner, 0, "_owner: post in [0, (1461501637330902918203684832716283019655932542975 - pre)]");
+    unchecked { assertLe(_post_owner, (uint256(1461501637330902918203684832716283019655932542975) - uint256(_pre_owner)), "_owner: post in [0, (1461501637330902918203684832716283019655932542975 - pre)]"); }
+    assertGe(uint256(uint160(_put_ret)), 0, "return: return in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]");
+    assertLe(uint256(uint160(_put_ret)), (uint256(0) + uint256(1461501637330902918203684832716283019655932542975)), "return: return in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]");
+    assertGe(uint256(uint160(_put_ret)), 0, "return: return in [0, (0 + 1461501637330902918203684832716283019655932542975)]");
+    assertLe(uint256(uint160(_put_ret)), (uint256(0) + uint256(1461501637330902918203684832716283019655932542975)), "return: return in [0, (0 + 1461501637330902918203684832716283019655932542975)]");
+    assertGe(uint256(uint160(_put_ret)), 0, "return: return in [0, (1461501637330902918203684832716283019655932542975 + msg.value)]");
+    assertLe(uint256(uint160(_put_ret)), (uint256(1461501637330902918203684832716283019655932542975) + uint256(0)), "return: return in [0, (1461501637330902918203684832716283019655932542975 + msg.value)]");
+    assertGe(uint256(uint160(_put_ret)), 0, "return: return in [0, (1461501637330902918203684832716283019655932542975 - msg.value)]");
+    assertLe(uint256(uint160(_put_ret)), (uint256(1461501637330902918203684832716283019655932542975) - uint256(0)), "return: return in [0, (1461501637330902918203684832716283019655932542975 - msg.value)]");
+    assertGe(uint256(uint160(_put_ret)), 0, "return: return in [0, (1461501637330902918203684832716283019655932542975 + 0)]");
+    assertLe(uint256(uint160(_put_ret)), (uint256(1461501637330902918203684832716283019655932542975) + uint256(0)), "return: return in [0, (1461501637330902918203684832716283019655932542975 + 0)]");
+    assertGe(uint256(uint160(_put_ret)), 0, "return: return in [0, (1461501637330902918203684832716283019655932542975 - 0)]");
+    assertLe(uint256(uint160(_put_ret)), (uint256(1461501637330902918203684832716283019655932542975) - uint256(0)), "return: return in [0, (1461501637330902918203684832716283019655932542975 - 0)]");
     
   }
 
 
   
-  function test_put_CVXStaker_setCvxPoolInfo_path2p1(address p_msg_sender, uint256 p_msg_value, uint32 _pId, address _token, address _rewards) public {
-    _veriput_parameterized(p_msg_sender, p_msg_value, _pId, _token, _rewards);
+  function test_put_CVXStaker_owner_path3p1(address p_msg_sender) public {
+    _veriput_parameterized(p_msg_sender);
+    
+    { CVXStakerCovTest_CVXStaker_owner_concrete3p1__basis_root__W _veriput_w = new CVXStakerCovTest_CVXStaker_owner_concrete3p1__basis_root__W(); _veriput_w.setUp(); _veriput_w._w_test_cov_0(); }
+}
+}
+
+
+
+contract CVXStakerCovTest_CVXStaker_owner_concrete3p1__basis_root__W is Test {
+  CVXStaker c0;
+  function setUp() public {
+    c0 = new CVXStaker(address(uint160(1000)), IERC20(address(uint160(1001))), ICVXBooster(address(uint160(1002))), new address[](0));
+    
+    address _esbmc_ctor_state_mock_0_0 = address(ICVXBooster(address(uint160(1002))));
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("deposit(uint256,uint256,bool)"), abi.encode(false));
+    
+    address _esbmc_ctor_state_mock_0_4 = address(ICVXBooster(address(uint160(1002))));
+    vm.etch(_esbmc_ctor_state_mock_0_4, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_4, abi.encodeWithSignature("poolInfo(uint256)"), abi.encode(ICVXBooster.PoolInfo({lptoken: address(0), token: address(0), gauge: address(0), crvRewards: address(0), stash: address(0), shutdown: false})));
+    
+    address _esbmc_ctor_state_mock_0_8 = address(IERC20(address(uint160(1001))));
+    vm.etch(_esbmc_ctor_state_mock_0_8, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_8, abi.encodeWithSignature("balanceOf(address)"), abi.encode(uint256(0)));
+    
+    address _esbmc_ctor_state_mock_0_12 = address(IERC20(address(uint160(1001))));
+    vm.etch(_esbmc_ctor_state_mock_0_12, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_12, abi.encodeWithSignature("safeIncreaseAllowance(IERC20,address,uint256)"), bytes(""));
+    
+    address _esbmc_ctor_state_mock_0_16 = address(IERC20(address(uint160(1001))));
+    vm.etch(_esbmc_ctor_state_mock_0_16, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_16, abi.encodeWithSignature("safeTransfer(IERC20,address,uint256)"), bytes(""));
+  }
+  
+  
+  function _w_test_cov_0() public {
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
+    }
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state._owner$647 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
+    }
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.cvxPoolInfo.token did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
+    }
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.operator did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(5))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+      vm.store(address(c0), bytes32(uint256(5)), bytes32(_w));
+    }
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(5)))), uint256(0), "entry pin state.rewardTokens_dynarray_len[(&_ESBMC_Object_CVXStaker)->$address] did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
+      vm.store(address(c0), bytes32(uint256(4)), bytes32(_w));
+    }
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.rewardsRecipient did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    
+    
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
+    vm.prank(address(uint160(0)), address(uint160(0)));
+    address _veriput_concrete_return = c0.owner();
+    assertEq(_veriput_concrete_return, address(uint160(0)), "fixed witness return must match");
+    uint256 _veriput_fixed_state_owner_647_0 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_veriput_fixed_state_owner_647_0, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_operator_2 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_veriput_fixed_state_operator_2, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_rewardsRecipient_4 = (uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_veriput_fixed_state_rewardsRecipient_4, uint256(0), "fixed witness state");
   }
 }

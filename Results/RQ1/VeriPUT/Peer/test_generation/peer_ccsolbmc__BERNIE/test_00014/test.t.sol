@@ -5,15 +5,15 @@ pragma solidity >=0.8.0;
 import {Test} from "forge-std/Test.sol";
 import {BERNIE} from "../src/flat.sol";
 
-contract BERNIECovTest_BERNIE_totalFees_put2p1 is Test {
+contract BERNIECovTest_BERNIE_totalSupply_put2p1 is Test {
   BERNIE c0;
   function setUp() public {
     c0 = new BERNIE();
     
     address _esbmc_ext_mock_0 = address(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-
-
-
+    vm.etch(_esbmc_ext_mock_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("WETH()"), abi.encode(address(0)));
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("factory()"), abi.encode(address(0)));
   }
   
 
@@ -61,17 +61,17 @@ contract BERNIECovTest_BERNIE_totalFees_put2p1 is Test {
     p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
     p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     
-    uint256 _pre_tFeeTotal = uint256(vm.load(address(c0), bytes32(uint256(15))));
+    uint256 _pre_tTotal = uint256(vm.load(address(c0), bytes32(uint256(13))));
     
     
     vm.deal(p_msg_sender, p_msg_value);
     vm.prank(p_msg_sender);
-    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("totalFees()"));
+    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("totalSupply()"));
     
-    uint256 _post_tFeeTotal = uint256(vm.load(address(c0), bytes32(uint256(15))));
-    assertEq(_post_tFeeTotal, _pre_tFeeTotal, "_tFeeTotal: post == pre");
-    
-    
+    uint256 _post_tTotal = uint256(vm.load(address(c0), bytes32(uint256(13))));
+    assertEq(_post_tTotal, _pre_tTotal, "_tTotal: post == pre");
+    assertGe(_post_tTotal, _pre_tTotal, "_tTotal: post >= pre");
+    assertLe(_post_tTotal, _pre_tTotal, "_tTotal: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 
@@ -81,7 +81,7 @@ contract BERNIECovTest_BERNIE_totalFees_put2p1 is Test {
 
 
   
-  function test_put_BERNIE_totalFees_path2p1(address p_msg_sender, uint256 p_msg_value) public {
+  function test_put_BERNIE_totalSupply_path2p1(address p_msg_sender, uint256 p_msg_value) public {
     _veriput_parameterized(p_msg_sender, p_msg_value);
   }
 }

@@ -5,7 +5,7 @@ pragma solidity >=0.8.0;
 import {Test} from "forge-std/Test.sol";
 import {Rubixi} from "../src/flat.sol";
 
-contract RubixiCovTest_Rubixi_currentPyramidBalanceApproximately_put2p1 is Test {
+contract RubixiCovTest_Rubixi_currentMultiplier_put2p1 is Test {
   Rubixi c0;
   function setUp() public {
     c0 = new Rubixi();
@@ -56,17 +56,17 @@ contract RubixiCovTest_Rubixi_currentPyramidBalanceApproximately_put2p1 is Test 
     p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
     p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     
-    uint256 _pre_balance = uint256(vm.load(address(c0), bytes32(uint256(0))));
+    uint256 _pre_pyramidMultiplier = uint256(vm.load(address(c0), bytes32(uint256(3))));
     
     
     vm.deal(p_msg_sender, p_msg_value);
     vm.prank(p_msg_sender);
-    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("currentPyramidBalanceApproximately()"));
+    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("currentMultiplier()"));
     
-    uint256 _post_balance = uint256(vm.load(address(c0), bytes32(uint256(0))));
-    assertEq(_post_balance, _pre_balance, "balance: post == pre");
-    
-    
+    uint256 _post_pyramidMultiplier = uint256(vm.load(address(c0), bytes32(uint256(3))));
+    assertEq(_post_pyramidMultiplier, _pre_pyramidMultiplier, "pyramidMultiplier: post == pre");
+    assertGe(_post_pyramidMultiplier, _pre_pyramidMultiplier, "pyramidMultiplier: post >= pre");
+    assertLe(_post_pyramidMultiplier, _pre_pyramidMultiplier, "pyramidMultiplier: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 
@@ -76,7 +76,7 @@ contract RubixiCovTest_Rubixi_currentPyramidBalanceApproximately_put2p1 is Test 
 
 
   
-  function test_put_Rubixi_currentPyramidBalanceApproximately_path2p1(address p_msg_sender, uint256 p_msg_value) public {
+  function test_put_Rubixi_currentMultiplier_path2p1(address p_msg_sender, uint256 p_msg_value) public {
     _veriput_parameterized(p_msg_sender, p_msg_value);
   }
 }

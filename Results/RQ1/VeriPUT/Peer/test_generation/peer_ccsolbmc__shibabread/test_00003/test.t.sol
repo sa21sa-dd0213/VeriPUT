@@ -11,9 +11,9 @@ contract SHIBABREADCovTest_SHIBABREAD_balanceOf_put2p1 is Test {
     c0 = new SHIBABREAD(payable(address(uint160(1000))), payable(address(uint160(1001))));
     
     address _esbmc_ext_mock_0 = address(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-
-
-
+    vm.etch(_esbmc_ext_mock_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("WETH()"), abi.encode(address(0)));
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("factory()"), abi.encode(address(0)));
   }
   
 
@@ -73,10 +73,10 @@ contract SHIBABREADCovTest_SHIBABREAD_balanceOf_put2p1 is Test {
     uint256 _post_rOwned_account = uint256(vm.load(address(c0), keccak256(abi.encode(account, uint256(2)))));
     assertEq(_post_rTotal, _pre_rTotal, "_rTotal: post == pre");
     assertEq(_post_rOwned_account, _pre_rOwned_account, "_rOwned[account]: post == pre");
-    
-    
-    
-    
+    assertGe(_post_rTotal, _pre_rTotal, "_rTotal: post >= pre");
+    assertLe(_post_rTotal, _pre_rTotal, "_rTotal: post <= pre");
+    assertGe(_post_rOwned_account, _pre_rOwned_account, "_rOwned[account]: post >= pre");
+    assertLe(_post_rOwned_account, _pre_rOwned_account, "_rOwned[account]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

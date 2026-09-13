@@ -60,7 +60,7 @@ contract PrivatePoolCovTest_PrivatePool_availableForFlashLoan_put2p1 is Test {
     p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     token = address(uint160(bound(uint256(uint160(token)), 0, 1461501637330902918203684832716283019655932542975)));
 
-
+vm.mockCall(token, abi.encodeWithSignature("ownerOf(uint256)"), abi.encode(address(0)));
     tokenId = bound(tokenId, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     
     

@@ -65,8 +65,8 @@ contract wLitiSaleCovTest_wLitiSale_getWeiRaised_put2p1 is Test {
     
     uint256 _post_weiRaised_sale = uint256(vm.load(address(c0), keccak256(abi.encode(sale, uint256(12)))));
     assertEq(_post_weiRaised_sale, _pre_weiRaised_sale, "_weiRaised[sale]: post == pre");
-    
-    
+    assertGe(_post_weiRaised_sale, _pre_weiRaised_sale, "_weiRaised[sale]: post >= pre");
+    assertLe(_post_weiRaised_sale, _pre_weiRaised_sale, "_weiRaised[sale]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

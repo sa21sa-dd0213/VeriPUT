@@ -76,14 +76,14 @@ contract ERC20CovTest_ERC20_ascf_put2p1 is Test {
     assertEq(_post_enable_0, _pre_enable_0, "_enable[0]: post == pre");
     assertEq(_post_balances_msg_sender, _pre_balances_msg_sender, "_balances[msg.sender]: post == pre");
     assertEq(_post_balances_state_uniswapV2Pair, _pre_balances_state_uniswapV2Pair, "_balances[state.uniswapV2Pair]: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_totalSupply, _pre_totalSupply, "_totalSupply: post >= pre");
+    assertLe(_post_totalSupply, _pre_totalSupply, "_totalSupply: post <= pre");
+    assertGe(_post_uniswapV2Pair, _pre_uniswapV2Pair, "uniswapV2Pair: post >= pre");
+    assertLe(_post_uniswapV2Pair, _pre_uniswapV2Pair, "uniswapV2Pair: post <= pre");
+    assertGe(_post_balances_msg_sender, _pre_balances_msg_sender, "_balances[msg.sender]: post >= pre");
+    assertLe(_post_balances_msg_sender, _pre_balances_msg_sender, "_balances[msg.sender]: post <= pre");
+    assertGe(_post_balances_state_uniswapV2Pair, _pre_balances_state_uniswapV2Pair, "_balances[state.uniswapV2Pair]: post >= pre");
+    assertLe(_post_balances_state_uniswapV2Pair, _pre_balances_state_uniswapV2Pair, "_balances[state.uniswapV2Pair]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

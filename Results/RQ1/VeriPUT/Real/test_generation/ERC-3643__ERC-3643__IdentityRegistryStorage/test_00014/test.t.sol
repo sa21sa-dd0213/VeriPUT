@@ -65,8 +65,8 @@ contract IdentityRegistryStorageCovTest_IdentityRegistryStorage_storedInvestorCo
     
     uint256 _post_identities__userAddress__investorCountry = ((uint256(vm.load(address(c0), keccak256(abi.encode(_userAddress, uint256(102))))) >> 160) & 65535);
     assertEq(_post_identities__userAddress__investorCountry, _pre_identities__userAddress__investorCountry, "_identities[_userAddress].investorCountry: post == pre");
-    
-    
+    assertGe(_post_identities__userAddress__investorCountry, _pre_identities__userAddress__investorCountry, "_identities[_userAddress].investorCountry: post >= pre");
+    assertLe(_post_identities__userAddress__investorCountry, _pre_identities__userAddress__investorCountry, "_identities[_userAddress].investorCountry: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

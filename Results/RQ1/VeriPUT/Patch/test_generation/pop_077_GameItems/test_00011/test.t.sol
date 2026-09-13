@@ -64,8 +64,8 @@ contract GameItemsCovTest_GameItems_transferOwnership_put2p1 is Test {
     
     uint256 _post_ownerAddress = (uint256(vm.load(address(c0), bytes32(uint256(7)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_ownerAddress, _pre_ownerAddress, "_ownerAddress: post == pre");
-    
-    
+    assertGe(_post_ownerAddress, _pre_ownerAddress, "_ownerAddress: post >= pre");
+    assertLe(_post_ownerAddress, _pre_ownerAddress, "_ownerAddress: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

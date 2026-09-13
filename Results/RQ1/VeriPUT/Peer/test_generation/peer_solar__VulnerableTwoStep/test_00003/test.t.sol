@@ -66,8 +66,8 @@ contract VulnerableTwoStepCovTest_VulnerableTwoStep_retrieve_put2p1 is Test {
     uint256 _post_claimed = ((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 160) & 255);
     assertEq(_post_player, _pre_player, "player: post == pre");
     assertEq(_post_claimed, _pre_claimed, "claimed: post == pre");
-    
-    
+    assertGe(_post_player, _pre_player, "player: post >= pre");
+    assertLe(_post_player, _pre_player, "player: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

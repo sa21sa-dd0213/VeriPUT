@@ -71,12 +71,12 @@ contract LocalConduitControllerCovTest_LocalConduitController_transferOwnership_
     assertEq(_post_conduits_conduit__potentialOwner, _pre_conduits_conduit__potentialOwner, "_conduits[conduit].potentialOwner: post == pre");
     assertEq(_post_conduits_conduit__owner, _pre_conduits_conduit__owner, "_conduits[conduit].owner: post == pre");
     assertEq(_post_conduits_conduit__key, _pre_conduits_conduit__key, "_conduits[conduit].key: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_conduits_conduit__potentialOwner, _pre_conduits_conduit__potentialOwner, "_conduits[conduit].potentialOwner: post >= pre");
+    assertLe(_post_conduits_conduit__potentialOwner, _pre_conduits_conduit__potentialOwner, "_conduits[conduit].potentialOwner: post <= pre");
+    assertGe(_post_conduits_conduit__owner, _pre_conduits_conduit__owner, "_conduits[conduit].owner: post >= pre");
+    assertLe(_post_conduits_conduit__owner, _pre_conduits_conduit__owner, "_conduits[conduit].owner: post <= pre");
+    assertGe(_post_conduits_conduit__key, _pre_conduits_conduit__key, "_conduits[conduit].key: post >= pre");
+    assertLe(_post_conduits_conduit__key, _pre_conduits_conduit__key, "_conduits[conduit].key: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

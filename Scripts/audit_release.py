@@ -35,7 +35,7 @@ EXPECTED_TRIALS = {
     "SynTest": 5,
     "FuzzUtils": 5,
 }
-EXPECTED_VERIPUT_VALID = {"Peer": 1929, "Real": 874, "Patch": 674}
+EXPECTED_VERIPUT_VALID = {"Peer": 1804, "Real": 579, "Patch": 774}
 EXPECTED_RQ4_ARMS = {"no_RR", "no_RC", "no_OS"}
 RETIRED_REAL = {"CometStorage", "CompatibilityFallbackHandler"}
 EXPECTED_PROTOCOL = {
@@ -269,6 +269,18 @@ def check_rq1(root: Path, targets: dict[str, set[str]], failures: list[str]) -> 
                             f"VeriPUT valid units {dataset}={valid}, "
                             f"expected {EXPECTED_VERIPUT_VALID[dataset]}"
                         )
+                    for row in trial_rows:
+                        subject = str(row.get("subject_id") or "")
+                        emitted = len(list(
+                            (base / "test_generation" / subject).glob(
+                                "test_*/test.t.sol"
+                            )
+                        ))
+                        if emitted != int(row.get("valid") or 0):
+                            failures.append(
+                                f"VeriPUT emitted-test count {dataset}/{subject}="
+                                f"{emitted}, expected {row.get('valid')}"
+                            )
                     total_veriput_valid += valid
             source_trials = source.get("trials") or []
             source_ids = {int(row.get("trial") or 1) for row in source_trials}
@@ -292,8 +304,8 @@ def check_rq1(root: Path, targets: dict[str, set[str]], failures: list[str]) -> 
                     )
                 if not row.get("subject_percentages"):
                     failures.append(f"path coverage has no observations: {tool}/{dataset}")
-    if total_veriput_valid != 3477:
-        failures.append(f"VeriPUT valid-unit total={total_veriput_valid}, expected 3477")
+    if total_veriput_valid != 3157:
+        failures.append(f"VeriPUT valid-unit total={total_veriput_valid}, expected 3157")
 
 
 def check_rq2(root: Path, targets: dict[str, set[str]], failures: list[str]) -> None:
@@ -303,6 +315,44 @@ def check_rq2(root: Path, targets: dict[str, set[str]], failures: list[str]) -> 
         subjects = {path.parent.name for path in manifests}
         if subjects != targets.get(dataset, set()) or len(manifests) != len(subjects):
             failures.append(f"RQ2 mutant inventory mismatch: {dataset}")
+        for manifest in manifests:
+            value = read_json(manifest, failures)
+            if not isinstance(value, dict):
+                continue
+            subject = manifest.parent.name
+            rows = value.get("mutants") or []
+            source_path = root / "Datasets" / dataset / subject / "flat.sol"
+            try:
+                source_lines = source_path.read_text().splitlines(keepends=True)
+            except OSError as exc:
+                failures.append(f"cannot read mutant source {source_path}: {exc}")
+                continue
+            expected_top = {"compile_failed", "compile_ok", "mutants", "subject_id"}
+            if set(value) != expected_top or value.get("subject_id") != subject:
+                failures.append(f"non-minimal mutant manifest: {dataset}/{subject}")
+            compile_ok = 0
+            expected_row = {
+                "compile_status", "end_line", "function", "mutant_id", "operator",
+                "original_expression", "replacement_expression", "start_line",
+            }
+            for number, row in enumerate(rows, 1):
+                if not isinstance(row, dict) or set(row) != expected_row:
+                    failures.append(f"non-minimal mutant row: {dataset}/{subject}/{number}")
+                    continue
+                if row.get("mutant_id") != f"m{number:06d}":
+                    failures.append(f"non-canonical mutant id: {dataset}/{subject}/{number}")
+                start = int(row.get("start_line") or 0)
+                end = int(row.get("end_line") or 0)
+                if not 1 <= start <= end <= len(source_lines):
+                    failures.append(f"invalid mutant span: {dataset}/{subject}/{number}")
+                else:
+                    span = "".join(source_lines[start - 1:end])
+                    if str(row.get("original_expression") or "") not in span:
+                        failures.append(f"mutant span mismatch: {dataset}/{subject}/{number}")
+                compile_ok += row.get("compile_status") == "ok"
+            if int(value.get("compile_ok") or 0) != compile_ok \
+                    or int(value.get("compile_failed") or 0) != len(rows) - compile_ok:
+                failures.append(f"mutant compile totals mismatch: {dataset}/{subject}")
     if (mutants_root / "Patch").exists():
         failures.append("RQ2/Mutants/Patch is unexpected; Patch uses one real bug per subject")
     for tool in sorted(EXPECTED_TOOLS):
@@ -371,7 +421,10 @@ def check_exported_tables(root: Path, failures: list[str]) -> None:
 
     try:
         module = runpy.run_path(str(script), run_name="publication_export_tables")
-        exporters = (module["rq1"], module["rq2"], module["rq4"])
+        exporters = (
+            module["rq1"], module["rq2"], module["paired_bootstrap"],
+            module["rq4"],
+        )
         for exporter in exporters:
             exporter.__globals__["write_csv"] = capture
             exporter(root)
@@ -380,6 +433,7 @@ def check_exported_tables(root: Path, failures: list[str]) -> None:
         return
     expected = {
         (root / "Results" / "RQ1" / "summary.csv").resolve(),
+        (root / "Results" / "RQ1" / "paired_bootstrap.csv").resolve(),
         (root / "Results" / "RQ2" / "population.csv").resolve(),
         (root / "Results" / "RQ2" / "summary.csv").resolve(),
         (root / "Results" / "RQ4" / "summary.csv").resolve(),
@@ -613,6 +667,9 @@ def audit(root: Path) -> list[str]:
         check_rq1(root, targets, failures)
         check_rq2(root, targets, failures)
     check_csv_shape(root / "Results" / "RQ1" / "summary.csv", 18, failures)
+    check_csv_shape(
+        root / "Results" / "RQ1" / "paired_bootstrap.csv", 60, failures
+    )
     check_csv_shape(root / "Results" / "RQ2" / "summary.csv", 18, failures)
     check_csv_shape(root / "Results" / "RQ2" / "population.csv", 3, failures)
     check_frozen_rq2(root, failures)
@@ -645,7 +702,9 @@ def audit(root: Path) -> list[str]:
                 failures.append(f"absolute host path in text: {rel}")
             if LEGACY_CAMPAIGN_MARKER.search(text):
                 failures.append(f"legacy campaign marker remains: {rel}")
-            if LEGACY_RESULT_COUNT.search(text):
+            if LEGACY_RESULT_COUNT.search(text) \
+                    and not (len(rel.parts) >= 4
+                             and rel.parts[:3] == ("Results", "RQ2", "Mutants")):
                 failures.append(f"legacy aggregate count remains: {rel}")
             if path.suffix in {".csv", ".json", ".jsonl", ".log", ".md", ".txt"}\
                     and not (len(rel.parts) >= 4

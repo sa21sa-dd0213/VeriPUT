@@ -25,11 +25,11 @@ contract MONEY_BOXCovTest_MONEY_BOX_Collect_concrete7_fb is Test {
     
     c0.Collect(1);
     uint256 _veriput_fixed_state_MinSum_0 = uint256(vm.load(address(c0), bytes32(uint256(2))));
-
+    assertEq(_veriput_fixed_state_MinSum_0, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_intitalized_1 = ((uint256(vm.load(address(c0), bytes32(uint256(3)))) >> 160) & 255);
-
+    assertEq(_veriput_fixed_state_intitalized_1, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_locked__46_2 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255);
-
+    assertEq(_veriput_fixed_state_locked__46_2, uint256(0), "fixed witness state");
   }
   
   

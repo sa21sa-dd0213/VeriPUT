@@ -107,10 +107,10 @@ contract LotteryMultipleWinnersCovTest_LotteryMultipleWinners_join_put15p1 is Te
     c0.join{value: 100000000000000000}(_chosenNumber);
     
     if (p_msg_sender == address(uint160(0)) && _chosenNumber == uint8(100)) {
-
-
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(4)))) & 255), uint256(0), "fixed witness state");
     }
   }
 

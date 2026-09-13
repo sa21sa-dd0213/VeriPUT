@@ -102,14 +102,14 @@ contract PausableZoneCovTest_0_PausableZone_assignOperator_put14p1 is Test {
     try c0.assignOperator(operatorToAssign) {} catch { _put_ok = false; }
     
     if (operatorToAssign == address(uint160(0))) {
-
-
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 160) & 255), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
     
     uint256 _post_operator = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_operator, _pre_operator, "operator: post == pre");
-    
-    
+    assertGe(_post_operator, _pre_operator, "operator: post >= pre");
+    assertLe(_post_operator, _pre_operator, "operator: post <= pre");
     
     assertFalse(_put_ok, "path enc=14p1 exits through a REVERT: the call must fail on the unmodified contract");
   }

@@ -15694,13 +15694,13 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 421,
+      "end_line": 425,
       "function": "resolve",
       "mutant_id": "m001570",
       "operator": "UORD",
       "original_expression": "!(\n                    coinType == COIN_TYPE_DEFAULT\n                        ? ENSIP19.isEVMCoinType(ct)\n                        : ct == coinType\n                )",
       "replacement_expression": " (\n                    coinType == COIN_TYPE_DEFAULT\n                        ? ENSIP19.isEVMCoinType(ct)\n                        : ct == coinType\n                )",
-      "start_line": 425
+      "start_line": 421
     },
     {
       "compile_status": "ok",

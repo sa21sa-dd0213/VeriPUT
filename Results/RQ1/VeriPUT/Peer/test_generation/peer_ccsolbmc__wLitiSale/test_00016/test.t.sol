@@ -65,8 +65,8 @@ contract wLitiSaleCovTest_wLitiSale_getSaleCount_put2p1 is Test {
     
     uint256 _post_saleCount = uint256(vm.load(address(c0), bytes32(uint256(6))));
     assertEq(_post_saleCount, _pre_saleCount, "_saleCount: post == pre");
-    
-    
+    assertGe(_post_saleCount, _pre_saleCount, "_saleCount: post >= pre");
+    assertLe(_post_saleCount, _pre_saleCount, "_saleCount: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

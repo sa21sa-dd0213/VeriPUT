@@ -112,15 +112,15 @@ contract RoninBridgeReceiverCovTest_RoninBridgeReceiver_sweepToken_put6p1 is Tes
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(372682917519380244141939632342652170012262798458880)) | ((uint256(uint256(s_initialized_65)) & 255) << 160);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertLe(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 160) & 255), uint256(1), "the entry state is OUTSIDE the certified region: state.initialized$65 was assumed in [0, 1] when the path was certified, so a value outside it means the assumption was vacuous and the rungs below were proved about no execution this test can reach");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.localTimelock$63 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     _pre_l2Router = (uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975);
@@ -144,11 +144,11 @@ contract RoninBridgeReceiverCovTest_RoninBridgeReceiver_sweepToken_put6p1 is Tes
     try c0.sweepToken(recipient, asset) {} catch { _put_ok = false; }
     
     if (p_msg_sender == address(uint160(1)) && recipient == address(uint160(0)) && asset == address(uint160(0)) && s_initialized_65 == uint8(0)) {
-
-
-
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 160) & 255), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(0), "fixed witness state");
     }
     
     _post_l2Router = (uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975);
@@ -161,14 +161,14 @@ contract RoninBridgeReceiverCovTest_RoninBridgeReceiver_sweepToken_put6p1 is Tes
     assertEq(_post_localTimelock, _pre_localTimelock, "localTimelock: post == pre");
     assertEq(_post_initialized, _pre_initialized, "initialized: post == pre");
     assertEq(_post_proposalCount, _pre_proposalCount, "proposalCount: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_l2Router, _pre_l2Router, "l2Router: post >= pre");
+    assertLe(_post_l2Router, _pre_l2Router, "l2Router: post <= pre");
+    assertGe(_post_govTimelock, _pre_govTimelock, "govTimelock: post >= pre");
+    assertLe(_post_govTimelock, _pre_govTimelock, "govTimelock: post <= pre");
+    assertGe(_post_localTimelock, _pre_localTimelock, "localTimelock: post >= pre");
+    assertLe(_post_localTimelock, _pre_localTimelock, "localTimelock: post <= pre");
+    assertGe(_post_proposalCount, _pre_proposalCount, "proposalCount: post >= pre");
+    assertLe(_post_proposalCount, _pre_proposalCount, "proposalCount: post <= pre");
     
     assertFalse(_put_ok, "path enc=6p1 exits through a REVERT: the call must fail on the unmodified contract");
   }
@@ -202,33 +202,33 @@ contract RoninBridgeReceiverCovTest_RoninBridgeReceiver_sweepToken_concrete6p1__
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.govTimelock$61 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(372682917519380244141939632342652170012262798458880)) | ((uint256(0) & 255) << 160);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 160) & 255), uint256(0), "entry pin state.initialized$65 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(4)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.l2Router did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.localTimelock$63 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(0), "entry pin state.proposalCount$67 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -246,15 +246,15 @@ contract RoninBridgeReceiverCovTest_RoninBridgeReceiver_sweepToken_concrete6p1__
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_govTimelock_61_1 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_govTimelock_61_1, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_initialized_65_2 = ((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 160) & 255);
-
+    assertEq(_veriput_fixed_state_initialized_65_2, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_l2Router_3 = (uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_l2Router_3, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_localTimelock_63_4 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_localTimelock_63_4, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_proposalCount_67_5 = uint256(vm.load(address(c0), bytes32(uint256(2))));
-
+    assertEq(_veriput_fixed_state_proposalCount_67_5, uint256(0), "fixed witness state");
   }
   
   

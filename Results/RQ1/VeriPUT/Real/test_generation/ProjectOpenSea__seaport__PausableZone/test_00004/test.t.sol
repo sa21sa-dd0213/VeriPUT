@@ -103,8 +103,8 @@ contract PausableZoneCovTest_0_PausableZone_assignOperator_put15p1_p1_part_part0
     c0.assignOperator(operatorToAssign);
     
     if (operatorToAssign == address(uint160(365375409332725729550921208179070754913983135743))) {
-
-
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 160) & 255), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(365375409332725729550921208179070754913983135743), "fixed witness state");
     }
     
     uint256 _post_operator = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
@@ -163,15 +163,15 @@ contract PausableZoneCovTest_0_PausableZone_assignOperator_concrete15p1__basis_p
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(372682917519380244141939632342652170012262798458880)) | ((uint256(0) & 255) << 160);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 160) & 255), uint256(0), "entry pin state.isPaused did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.operator did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -185,9 +185,9 @@ contract PausableZoneCovTest_0_PausableZone_assignOperator_concrete15p1__basis_p
     vm.prank(address(uint160(4294967295)), address(uint160(0)));
     c0.assignOperator(address(uint160(365375409332725729550921208179070754913983135743)));
     uint256 _veriput_fixed_state_isPaused_1 = ((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 160) & 255);
-
+    assertEq(_veriput_fixed_state_isPaused_1, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_operator_2 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_operator_2, uint256(365375409332725729550921208179070754913983135743), "fixed witness state");
   }
   
   

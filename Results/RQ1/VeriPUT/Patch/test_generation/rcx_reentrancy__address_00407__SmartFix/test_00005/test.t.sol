@@ -67,8 +67,8 @@ contract DEP_BANKCovTest_DEP_BANK_SetMinSum_put2p1 is Test {
     uint256 _post_intitalized = ((uint256(vm.load(address(c0), bytes32(uint256(2)))) >> 160) & 255);
     assertEq(_post_MinSum, _pre_MinSum, "MinSum: post == pre");
     assertEq(_post_intitalized, _pre_intitalized, "intitalized: post == pre");
-    
-    
+    assertGe(_post_MinSum, _pre_MinSum, "MinSum: post >= pre");
+    assertLe(_post_MinSum, _pre_MinSum, "MinSum: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

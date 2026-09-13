@@ -71,12 +71,12 @@ contract IdentityManagerCovTest_IdentityManager_recover_put2p1 is Test {
     assertEq(_post_identities_index__pointer, _pre_identities_index__pointer, "_identities[index].pointer: post == pre");
     assertEq(_post_index_newPointer, _pre_index_newPointer, "_index[newPointer]: post == pre");
     assertEq(_post_index_msg_sender, _pre_index_msg_sender, "_index[msg.sender]: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_identities_index__pointer, _pre_identities_index__pointer, "_identities[index].pointer: post >= pre");
+    assertLe(_post_identities_index__pointer, _pre_identities_index__pointer, "_identities[index].pointer: post <= pre");
+    assertGe(_post_index_newPointer, _pre_index_newPointer, "_index[newPointer]: post >= pre");
+    assertLe(_post_index_newPointer, _pre_index_newPointer, "_index[newPointer]: post <= pre");
+    assertGe(_post_index_msg_sender, _pre_index_msg_sender, "_index[msg.sender]: post >= pre");
+    assertLe(_post_index_msg_sender, _pre_index_msg_sender, "_index[msg.sender]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

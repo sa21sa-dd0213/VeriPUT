@@ -134,7 +134,7 @@ contract BallotCovTest_0_Ballot_con1F_put7p1 is Test {
     c0.con1F(proposalNames);
     
     if (p_msg_sender == address(uint160(0)) && proposalNames.length == uint256(0)) {
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
     
     _post_voters_msg_sender__weight = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(1)))));

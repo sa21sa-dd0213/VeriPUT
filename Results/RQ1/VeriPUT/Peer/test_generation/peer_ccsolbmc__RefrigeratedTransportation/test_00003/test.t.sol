@@ -116,15 +116,15 @@ contract RefrigeratedTransportationCovTest_RefrigeratedTransportation_IngestTele
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(13))));
       _w = (_w & ~uint256(255)) | ((uint256(uint256(s_ComplianceStatus)) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(13)), bytes32(_w));
     }
-
+    assertLe((uint256(vm.load(address(c0), bytes32(uint256(13)))) & 255), uint256(1), "the entry state is OUTSIDE the certified region: state.ComplianceStatus was assumed in [0, 1] when the path was certified, so a value outside it means the assumption was vacuous and the rungs below were proved about no execution this test can reach");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(4)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.Device did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     _pre_State = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255);
     _pre_Device = (uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975);
@@ -152,22 +152,22 @@ contract RefrigeratedTransportationCovTest_RefrigeratedTransportation_IngestTele
     try c0.IngestTelemetry(0, 0, 0) {} catch { _put_ok = false; }
     
     if (p_msg_sender == address(uint160(1)) && s_ComplianceStatus == uint8(0)) {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(12)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(11)))) & 255), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(13)))) & 255), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(15)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(8)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(10)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(7)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(9)))), uint256(0), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 8) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(3)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(6)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
     
     _post_State = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255);
@@ -190,8 +190,8 @@ contract RefrigeratedTransportationCovTest_RefrigeratedTransportation_IngestTele
     assertEq(_post_ComplianceSensorReading, _pre_ComplianceSensorReading, "ComplianceSensorReading: post == pre");
     assertEq(_post_ComplianceStatus, _pre_ComplianceStatus, "ComplianceStatus: post == pre");
     assertEq(_post_LastSensorUpdateTimestamp, _pre_LastSensorUpdateTimestamp, "LastSensorUpdateTimestamp: post == pre");
-    
-    
+    assertGe(_post_Device, _pre_Device, "Device: post >= pre");
+    assertLe(_post_Device, _pre_Device, "Device: post <= pre");
     
     assertFalse(_put_ok, "path enc=30p1 exits through a REVERT: the call must fail on the unmodified contract");
   }
@@ -229,99 +229,99 @@ contract RefrigeratedTransportationCovTest_RefrigeratedTransportation_IngestTele
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(12))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(12)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(12)))), uint256(0), "entry pin state.ComplianceSensorReading did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(11))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(11)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(11)))) & 255), uint256(0), "entry pin state.ComplianceSensorType did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(13))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(13)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(13)))) & 255), uint256(0), "entry pin state.ComplianceStatus did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.Counterparty did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(4)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.Device did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.InitiatingCounterparty did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(15))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(15)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(15)))), uint256(0), "entry pin state.LastSensorUpdateTimestamp did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(8))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(8)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(8)))), uint256(0), "entry pin state.MaxHumidity did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(10))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(10)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(10)))), uint256(0), "entry pin state.MaxTemperature did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(7))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(7)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(7)))), uint256(0), "entry pin state.MinHumidity did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(9))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(9)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(9)))), uint256(0), "entry pin state.MinTemperature did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(374144419156711147060143317175368453031918731001600)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 8);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 8) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.Owner did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(3))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(3)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(3)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.PreviousCounterparty did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255), uint256(0), "entry pin state.State did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(6))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(6)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(6)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.SupplyChainObserver did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(5))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(5)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.SupplyChainOwner did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -338,37 +338,37 @@ contract RefrigeratedTransportationCovTest_RefrigeratedTransportation_IngestTele
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_ComplianceSensorReading_0 = uint256(vm.load(address(c0), bytes32(uint256(12))));
-
+    assertEq(_veriput_fixed_state_ComplianceSensorReading_0, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_ComplianceSensorType_1 = (uint256(vm.load(address(c0), bytes32(uint256(11)))) & 255);
-
+    assertEq(_veriput_fixed_state_ComplianceSensorType_1, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_ComplianceStatus_2 = (uint256(vm.load(address(c0), bytes32(uint256(13)))) & 255);
-
+    assertEq(_veriput_fixed_state_ComplianceStatus_2, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_Counterparty_3 = (uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_Counterparty_3, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_Device_4 = (uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_Device_4, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_InitiatingCounterparty_5 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_InitiatingCounterparty_5, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_LastSensorUpdateTimestamp_6 = uint256(vm.load(address(c0), bytes32(uint256(15))));
-
+    assertEq(_veriput_fixed_state_LastSensorUpdateTimestamp_6, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_MaxHumidity_7 = uint256(vm.load(address(c0), bytes32(uint256(8))));
-
+    assertEq(_veriput_fixed_state_MaxHumidity_7, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_MaxTemperature_8 = uint256(vm.load(address(c0), bytes32(uint256(10))));
-
+    assertEq(_veriput_fixed_state_MaxTemperature_8, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_MinHumidity_9 = uint256(vm.load(address(c0), bytes32(uint256(7))));
-
+    assertEq(_veriput_fixed_state_MinHumidity_9, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_MinTemperature_10 = uint256(vm.load(address(c0), bytes32(uint256(9))));
-
+    assertEq(_veriput_fixed_state_MinTemperature_10, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_Owner_11 = ((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 8) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_Owner_11, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_PreviousCounterparty_12 = (uint256(vm.load(address(c0), bytes32(uint256(3)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_PreviousCounterparty_12, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_State_13 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255);
-
+    assertEq(_veriput_fixed_state_State_13, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_SupplyChainObserver_14 = (uint256(vm.load(address(c0), bytes32(uint256(6)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_SupplyChainObserver_14, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_SupplyChainOwner_15 = (uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_SupplyChainOwner_15, uint256(0), "fixed witness state");
   }
   
   

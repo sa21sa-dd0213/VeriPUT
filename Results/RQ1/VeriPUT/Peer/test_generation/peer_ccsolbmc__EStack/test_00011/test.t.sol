@@ -96,8 +96,8 @@ contract EStackCovTest_EStack_setBots_put2p1 is Test {
     assertEq(_post_bots_state__owner, _pre_bots_state__owner, "bots[state._owner]: post == pre");
     assertEq(_post_bots_state__previousOwner, _pre_bots_state__previousOwner, "bots[state._previousOwner]: post == pre");
     assertEq(_post_bots_state_uniswapV2Pair, _pre_bots_state_uniswapV2Pair, "bots[state.uniswapV2Pair]: post == pre");
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

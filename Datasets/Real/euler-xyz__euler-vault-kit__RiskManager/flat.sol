@@ -3065,7 +3065,6 @@ library TypesLib {
     }
 
     function toAssets(uint256 amount) internal pure returns (Assets) {
-
         if (amount > MAX_SANE_AMOUNT) revert Errors.E_AmountTooLargeToEncode();
         return Assets.wrap(uint112(amount));
     }

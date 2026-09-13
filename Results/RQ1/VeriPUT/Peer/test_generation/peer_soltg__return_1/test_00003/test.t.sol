@@ -105,11 +105,11 @@ contract Cr1CovTest_Cr1_add_put30p1_p1_part_part0_r is Test {
       assertEq(_put_ret, uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935), "fixed witness return");
     }
     
-    
-    
-    
+    assertGe(uint256(_put_ret), 2, "return: return in [2, 115792089237316195423570985008687907853269984665640564039457584007913129639935]");
+    assertLe(uint256(_put_ret), 115792089237316195423570985008687907853269984665640564039457584007913129639935, "return: return in [2, 115792089237316195423570985008687907853269984665640564039457584007913129639935]");
+    assertTrue(uint256(_put_ret) != 0, "return: return != 0");
     assertEq(uint256(_put_ret), (uint256(x) + uint256(2)), "return: return == (x + 2)");
-    
+    assertEq(uint256(_put_ret), (uint256(x) + uint256(y)), "return: return == (x + y)");
     
   }
 

@@ -109,22 +109,22 @@ contract L1BlockCovTest_L1Block_setL1BlockValues_put2p1 is Test {
     assertEq(_post_batcherHash, _pre_batcherHash, "batcherHash: post == pre");
     assertEq(_post_l1FeeOverhead, _pre_l1FeeOverhead, "l1FeeOverhead: post == pre");
     assertEq(_post_l1FeeScalar, _pre_l1FeeScalar, "l1FeeScalar: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_number, _pre_number, "number: post >= pre");
+    assertLe(_post_number, _pre_number, "number: post <= pre");
+    assertGe(_post_timestamp, _pre_timestamp, "timestamp: post >= pre");
+    assertLe(_post_timestamp, _pre_timestamp, "timestamp: post <= pre");
+    assertGe(_post_basefee, _pre_basefee, "basefee: post >= pre");
+    assertLe(_post_basefee, _pre_basefee, "basefee: post <= pre");
+    assertGe(_post_hash, _pre_hash, "hash: post >= pre");
+    assertLe(_post_hash, _pre_hash, "hash: post <= pre");
+    assertGe(_post_sequenceNumber, _pre_sequenceNumber, "sequenceNumber: post >= pre");
+    assertLe(_post_sequenceNumber, _pre_sequenceNumber, "sequenceNumber: post <= pre");
+    assertGe(_post_batcherHash, _pre_batcherHash, "batcherHash: post >= pre");
+    assertLe(_post_batcherHash, _pre_batcherHash, "batcherHash: post <= pre");
+    assertGe(_post_l1FeeOverhead, _pre_l1FeeOverhead, "l1FeeOverhead: post >= pre");
+    assertLe(_post_l1FeeOverhead, _pre_l1FeeOverhead, "l1FeeOverhead: post <= pre");
+    assertGe(_post_l1FeeScalar, _pre_l1FeeScalar, "l1FeeScalar: post >= pre");
+    assertLe(_post_l1FeeScalar, _pre_l1FeeScalar, "l1FeeScalar: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

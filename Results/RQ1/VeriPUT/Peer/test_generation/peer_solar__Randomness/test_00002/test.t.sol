@@ -88,9 +88,9 @@ contract RandomnessCovTest_Randomness_bet_put7p1 is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(65280)) | ((uint256(0) & 255) << 8);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 8) & 255), uint256(0), "entry pin state.betsClosed did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     uint256 _pre_betsClosed = ((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 8) & 255);
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
@@ -106,10 +106,10 @@ contract RandomnessCovTest_Randomness_bet_put7p1 is Test {
     c0.bet();
     
     if (p_msg_sender == address(uint160(0))) {
-
-
-
-
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 8) & 255), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 255), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(3)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
     
     uint256 _post_betsClosed = ((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 8) & 255);
@@ -146,27 +146,27 @@ contract RandomnessCovTest_Randomness_bet_concrete7p1__basis_root__W is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(65280)) | ((uint256(0) & 255) << 8);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 8) & 255), uint256(0), "entry pin state.betsClosed did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 255), uint256(0), "entry pin state.seedSet did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(0), "entry pin state.storedBlockNumber did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(3))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(3)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(3)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.trustedParty did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
@@ -179,13 +179,13 @@ contract RandomnessCovTest_Randomness_bet_concrete7p1__basis_root__W is Test {
     vm.prank(address(uint160(0)), address(uint160(0)));
     c0.bet();
     uint256 _veriput_fixed_state_betsClosed_0 = ((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 8) & 255);
-
+    assertEq(_veriput_fixed_state_betsClosed_0, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_seedSet_1 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 255);
-
+    assertEq(_veriput_fixed_state_seedSet_1, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_storedBlockNumber_2 = uint256(vm.load(address(c0), bytes32(uint256(2))));
-
+    assertEq(_veriput_fixed_state_storedBlockNumber_2, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_trustedParty_3 = (uint256(vm.load(address(c0), bytes32(uint256(3)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_trustedParty_3, uint256(0), "fixed witness state");
   }
   
   

@@ -55,7 +55,7 @@ contract ERC20RecoverableCovTest_ERC20Recoverable_recoverFunds_put2p1 is Test {
     p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     _token = address(uint160(bound(uint256(uint160(_token)), 0, 1461501637330902918203684832716283019655932542975)));
 
-
+vm.mockCall(_token, abi.encodeWithSignature("transfer(address,uint256)"), abi.encode(true));
     _to = address(uint160(bound(uint256(uint160(_to)), 0, 1461501637330902918203684832716283019655932542975)));
     _amount = bound(_amount, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     
@@ -68,8 +68,8 @@ contract ERC20RecoverableCovTest_ERC20Recoverable_recoverFunds_put2p1 is Test {
     
     uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

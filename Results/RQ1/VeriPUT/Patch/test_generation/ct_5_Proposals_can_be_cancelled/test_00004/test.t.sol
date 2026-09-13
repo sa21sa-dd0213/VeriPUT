@@ -68,10 +68,10 @@ contract DAOCovTest_DAO_hasMajority_put2p1 is Test {
     uint256 _post_mapPID_votes__proposalID = uint256(vm.load(address(c0), keccak256(abi.encode(_proposalID, uint256(9)))));
     assertEq(_post_VAULT, _pre_VAULT, "VAULT: post == pre");
     assertEq(_post_mapPID_votes__proposalID, _pre_mapPID_votes__proposalID, "mapPID_votes[_proposalID]: post == pre");
-    
-    
-    
-    
+    assertGe(_post_VAULT, _pre_VAULT, "VAULT: post >= pre");
+    assertLe(_post_VAULT, _pre_VAULT, "VAULT: post <= pre");
+    assertGe(_post_mapPID_votes__proposalID, _pre_mapPID_votes__proposalID, "mapPID_votes[_proposalID]: post >= pre");
+    assertLe(_post_mapPID_votes__proposalID, _pre_mapPID_votes__proposalID, "mapPID_votes[_proposalID]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -65,8 +65,8 @@ contract wLitiSaleCovTest_wLitiSale_getTokenPrice_put2p1 is Test {
     
     uint256 _post_tokenPrice = uint256(vm.load(address(c0), bytes32(uint256(7))));
     assertEq(_post_tokenPrice, _pre_tokenPrice, "_tokenPrice: post == pre");
-    
-    
+    assertGe(_post_tokenPrice, _pre_tokenPrice, "_tokenPrice: post >= pre");
+    assertLe(_post_tokenPrice, _pre_tokenPrice, "_tokenPrice: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -100,9 +100,9 @@ contract BirdOracleCovTest_BirdOracle_getRatingByAddress_put3p1 is Test {
     
     if (p_msg_sender == address(uint160(0)) && _addr == address(uint160(0))) {
       assertEq(_put_ret, uint256(0), "fixed witness return");
-
-
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(3), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(2), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(0), "fixed witness state");
     }
     
     uint256 _post_ratings__addr = uint256(vm.load(address(c0), keccak256(abi.encode(_addr, uint256(4)))));
@@ -139,21 +139,21 @@ contract BirdOracleCovTest_BirdOracle_getRatingByAddress_concrete3p1__basis_root
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(3) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(3), "entry pin state.birdNest did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(2) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(2), "entry pin state.minConsensus did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(3))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(3)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(0), "entry pin state.trackId did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
@@ -167,11 +167,11 @@ contract BirdOracleCovTest_BirdOracle_getRatingByAddress_concrete3p1__basis_root
     uint256 _veriput_concrete_return = c0.getRatingByAddress(address(uint160(0)));
     assertEq(_veriput_concrete_return, uint256(0), "fixed witness return must match");
     uint256 _veriput_fixed_state_birdNest_0 = uint256(vm.load(address(c0), bytes32(uint256(2))));
-
+    assertEq(_veriput_fixed_state_birdNest_0, uint256(3), "fixed witness state");
     uint256 _veriput_fixed_state_minConsensus_1 = uint256(vm.load(address(c0), bytes32(uint256(1))));
-
+    assertEq(_veriput_fixed_state_minConsensus_1, uint256(2), "fixed witness state");
     uint256 _veriput_fixed_state_trackId_2 = uint256(vm.load(address(c0), bytes32(uint256(3))));
-
+    assertEq(_veriput_fixed_state_trackId_2, uint256(0), "fixed witness state");
   }
   
   

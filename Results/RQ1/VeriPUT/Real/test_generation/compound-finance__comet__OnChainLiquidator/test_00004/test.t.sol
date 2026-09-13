@@ -10,9 +10,9 @@ contract OnChainLiquidatorCovTest_OnChainLiquidator_uniswapV3FlashCallback_put1p
   function setUp() public {
     c0 = new OnChainLiquidator(address(uint160(1000)), address(uint160(1001)), address(uint160(1002)), address(uint160(1003)), address(uint160(1004)), address(uint160(1005)), address(uint160(1006)));
     
-
-
-
+    vm.etch(address(0), hex"60006000f3");
+    vm.mockCall(address(0), abi.encodeWithSignature("baseToken()"), abi.encode(address(0)));
+    vm.mockCall(address(0), abi.encodeWithSignature("buyCollateral(address,uint256,uint256,address)"), bytes(""));
   }
   
 

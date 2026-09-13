@@ -64,8 +64,8 @@ contract IdentityRegistryCovTest_IdentityRegistry_setIdentityRegistryStorage_put
     
     uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(51)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

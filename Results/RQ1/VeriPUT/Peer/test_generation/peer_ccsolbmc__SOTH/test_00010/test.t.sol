@@ -11,9 +11,9 @@ contract SOTHCovTest_SOTH_setBots_put2p1 is Test {
     c0 = new SOTH();
     
     address _esbmc_ext_mock_0 = address(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-
-
-
+    vm.etch(_esbmc_ext_mock_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("WETH()"), abi.encode(address(0)));
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("factory()"), abi.encode(address(0)));
   }
   
 
@@ -101,8 +101,8 @@ contract SOTHCovTest_SOTH_setBots_put2p1 is Test {
     assertEq(_post_bots_state__owner, _pre_bots_state__owner, "bots[state._owner]: post == pre");
     assertEq(_post_bots_state__previousOwner, _pre_bots_state__previousOwner, "bots[state._previousOwner]: post == pre");
     assertEq(_post_bots_state_uniswapV2Pair, _pre_bots_state_uniswapV2Pair, "bots[state.uniswapV2Pair]: post == pre");
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

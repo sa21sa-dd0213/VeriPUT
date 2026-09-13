@@ -70,12 +70,12 @@ contract AnyswapV5ERC20CovTest_AnyswapV5ERC20_owner_put2p1 is Test {
     assertEq(_post_vault, _pre_vault, "vault: post == pre");
     assertEq(_post_pendingVault, _pre_pendingVault, "pendingVault: post == pre");
     assertEq(_post_delayVault, _pre_delayVault, "delayVault: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_vault, _pre_vault, "vault: post >= pre");
+    assertLe(_post_vault, _pre_vault, "vault: post <= pre");
+    assertGe(_post_pendingVault, _pre_pendingVault, "pendingVault: post >= pre");
+    assertLe(_post_pendingVault, _pre_pendingVault, "pendingVault: post <= pre");
+    assertGe(_post_delayVault, _pre_delayVault, "delayVault: post >= pre");
+    assertLe(_post_delayVault, _pre_delayVault, "delayVault: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

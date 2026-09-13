@@ -67,8 +67,8 @@ contract ModularComplianceCovTest_ModularCompliance_addModule_put2p1 is Test {
     uint256 _post_moduleBound__module = (uint256(vm.load(address(c0), keccak256(abi.encode(_module, uint256(103))))) & 255);
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
     assertEq(_post_moduleBound__module, _pre_moduleBound__module, "_moduleBound[_module]: post == pre");
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

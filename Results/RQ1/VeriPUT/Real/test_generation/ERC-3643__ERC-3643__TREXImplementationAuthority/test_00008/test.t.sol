@@ -65,8 +65,8 @@ contract TREXImplementationAuthorityCovTest_TREXImplementationAuthority_getTREXF
     
     uint256 _post_trexFactory = ((uint256(vm.load(address(c0), bytes32(uint256(3)))) >> 8) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_trexFactory, _pre_trexFactory, "_trexFactory: post == pre");
-    
-    
+    assertGe(_post_trexFactory, _pre_trexFactory, "_trexFactory: post >= pre");
+    assertLe(_post_trexFactory, _pre_trexFactory, "_trexFactory: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

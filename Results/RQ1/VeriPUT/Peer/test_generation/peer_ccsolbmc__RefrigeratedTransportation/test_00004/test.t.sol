@@ -87,14 +87,14 @@ contract RefrigeratedTransportationCovTest_RefrigeratedTransportation_TransferRe
     assertEq(_post_Counterparty, _pre_Counterparty, "Counterparty: post == pre");
     assertEq(_post_PreviousCounterparty, _pre_PreviousCounterparty, "PreviousCounterparty: post == pre");
     assertEq(_post_Device, _pre_Device, "Device: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_InitiatingCounterparty, _pre_InitiatingCounterparty, "InitiatingCounterparty: post >= pre");
+    assertLe(_post_InitiatingCounterparty, _pre_InitiatingCounterparty, "InitiatingCounterparty: post <= pre");
+    assertGe(_post_Counterparty, _pre_Counterparty, "Counterparty: post >= pre");
+    assertLe(_post_Counterparty, _pre_Counterparty, "Counterparty: post <= pre");
+    assertGe(_post_PreviousCounterparty, _pre_PreviousCounterparty, "PreviousCounterparty: post >= pre");
+    assertLe(_post_PreviousCounterparty, _pre_PreviousCounterparty, "PreviousCounterparty: post <= pre");
+    assertGe(_post_Device, _pre_Device, "Device: post >= pre");
+    assertLe(_post_Device, _pre_Device, "Device: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

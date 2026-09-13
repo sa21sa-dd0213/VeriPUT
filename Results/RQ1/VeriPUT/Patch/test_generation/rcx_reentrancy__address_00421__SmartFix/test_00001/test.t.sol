@@ -16,8 +16,8 @@ contract MY_BANKCovTest_MY_BANK_Collect_concrete3_fb is Test {
     c0 = new MY_BANK(address(uint160(0)));
     
     address _esbmc_ctor_state_mock_0_0 = address(uint160(0));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("AddMessage(address,uint256,string)"), bytes(""));
   }
   
   

@@ -65,8 +65,8 @@ contract GOLIATHCovTest_GOLIATH_balanceOf_put2p1 is Test {
     
     uint256 _post_balances_account = uint256(vm.load(address(c0), keccak256(abi.encode(account, uint256(1)))));
     assertEq(_post_balances_account, _pre_balances_account, "_balances[account]: post == pre");
-    
-    
+    assertGe(_post_balances_account, _pre_balances_account, "_balances[account]: post >= pre");
+    assertLe(_post_balances_account, _pre_balances_account, "_balances[account]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

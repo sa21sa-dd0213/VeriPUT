@@ -65,8 +65,8 @@ contract GOLIATHCovTest_GOLIATH_getTaxAddress_put2p1 is Test {
     
     uint256 _post_mainWallet = (uint256(vm.load(address(c0), bytes32(uint256(6)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_mainWallet, _pre_mainWallet, "mainWallet: post == pre");
-    
-    
+    assertGe(_post_mainWallet, _pre_mainWallet, "mainWallet: post >= pre");
+    assertLe(_post_mainWallet, _pre_mainWallet, "mainWallet: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

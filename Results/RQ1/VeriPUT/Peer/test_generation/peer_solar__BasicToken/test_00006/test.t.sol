@@ -43,9 +43,9 @@ contract BasicTokenCovTest_1_BasicToken_transfer_concrete62p1_fb is Test {
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_balances_0_0 = uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(0)), uint256(1)))));
-
+    assertEq(_veriput_fixed_state_balances_0_0, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_initialSupply_1 = uint256(vm.load(address(c0), bytes32(uint256(0))));
-
+    assertEq(_veriput_fixed_state_initialSupply_1, uint256(0), "fixed witness state");
   }
 }
 

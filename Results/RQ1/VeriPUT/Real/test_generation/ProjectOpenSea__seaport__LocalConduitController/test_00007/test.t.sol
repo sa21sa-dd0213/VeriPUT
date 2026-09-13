@@ -126,16 +126,16 @@ contract LocalConduitControllerCovTest_LocalConduitController_getChannel_put14p1
     assertEq(_post_conduits_conduit__owner, _pre_conduits_conduit__owner, "_conduits[conduit].owner: post == pre");
     assertEq(_post_conduits_msg_sender__potentialOwner, _pre_conduits_msg_sender__potentialOwner, "_conduits[msg.sender].potentialOwner: post == pre");
     assertEq(_post_conduits_conduit__potentialOwner, _pre_conduits_conduit__potentialOwner, "_conduits[conduit].potentialOwner: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_conduits_conduit__key, _pre_conduits_conduit__key, "_conduits[conduit].key: post >= pre");
+    assertLe(_post_conduits_conduit__key, _pre_conduits_conduit__key, "_conduits[conduit].key: post <= pre");
+    assertGe(_post_conduits_msg_sender__owner, _pre_conduits_msg_sender__owner, "_conduits[msg.sender].owner: post >= pre");
+    assertLe(_post_conduits_msg_sender__owner, _pre_conduits_msg_sender__owner, "_conduits[msg.sender].owner: post <= pre");
+    assertGe(_post_conduits_conduit__owner, _pre_conduits_conduit__owner, "_conduits[conduit].owner: post >= pre");
+    assertLe(_post_conduits_conduit__owner, _pre_conduits_conduit__owner, "_conduits[conduit].owner: post <= pre");
+    assertGe(_post_conduits_msg_sender__potentialOwner, _pre_conduits_msg_sender__potentialOwner, "_conduits[msg.sender].potentialOwner: post >= pre");
+    assertLe(_post_conduits_msg_sender__potentialOwner, _pre_conduits_msg_sender__potentialOwner, "_conduits[msg.sender].potentialOwner: post <= pre");
+    assertGe(_post_conduits_conduit__potentialOwner, _pre_conduits_conduit__potentialOwner, "_conduits[conduit].potentialOwner: post >= pre");
+    assertLe(_post_conduits_conduit__potentialOwner, _pre_conduits_conduit__potentialOwner, "_conduits[conduit].potentialOwner: post <= pre");
     
     assertFalse(_put_ok, "path enc=14p1 exits through a REVERT: the call must fail on the unmodified contract");
   }

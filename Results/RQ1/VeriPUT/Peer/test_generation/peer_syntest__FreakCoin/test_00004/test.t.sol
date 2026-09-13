@@ -123,9 +123,9 @@ contract FreakCoinCovTest_FreakCoin_approve_put3p1 is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(3))));
       _w = (_w & ~uint256(372682917519380244141939632342652170012262798458880)) | ((uint256(uint256(s_info_initialSetup)) & 255) << 160);
-
+      vm.store(address(c0), bytes32(uint256(3)), bytes32(_w));
     }
-
+    assertLe(((uint256(vm.load(address(c0), bytes32(uint256(3)))) >> 160) & 255), uint256(1), "the entry state is OUTSIDE the certified region: state.info.initialSetup was assumed in [0, 1] when the path was certified, so a value outside it means the assumption was vacuous and the rungs below were proved about no execution this test can reach");
     
     _pre_info_admin = (uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975);
     _pre_info_final_supply = uint256(vm.load(address(c0), bytes32(uint256(4))));

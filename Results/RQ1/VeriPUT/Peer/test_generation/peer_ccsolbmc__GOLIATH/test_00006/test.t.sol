@@ -113,15 +113,15 @@ contract GOLIATHCovTest_GOLIATH_getTaxAddress_put3p1 is Test {
     
     if (p_msg_sender == address(uint160(0))) {
       assertEq(_put_ret, address(uint160(0)), "fixed witness return");
-
-
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(6)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(6)))) >> 160) & 255), uint256(1), "fixed witness state");
     }
     
     uint256 _post_mainWallet = (uint256(vm.load(address(c0), bytes32(uint256(6)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_mainWallet, _pre_mainWallet, "mainWallet: post == pre");
-    
+    assertEq(_post_mainWallet, _pre_mainWallet, "mainWallet: post == state.mainWallet");
     assertEq(_post_mainWallet, 0, "mainWallet: post == msg.value");
     unchecked { assertEq(_post_mainWallet, (uint256(_pre_mainWallet) + uint256(_pre_mainWallet)), "mainWallet: post == (pre + pre)"); }
     unchecked { assertEq(_post_mainWallet, (uint256(_pre_mainWallet) * uint256(_pre_mainWallet)), "mainWallet: post == (pre * pre)"); }
@@ -161,27 +161,27 @@ contract GOLIATHCovTest_GOLIATH_getTaxAddress_concrete3p1__basis_root__W is Test
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state._owner$44 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(3))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(3)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(0), "entry pin state._totalSupply did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(6))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(6)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(6)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.mainWallet did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(6))));
       _w = (_w & ~uint256(372682917519380244141939632342652170012262798458880)) | ((uint256(1) & 255) << 160);
-
+      vm.store(address(c0), bytes32(uint256(6)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(6)))) >> 160) & 255), uint256(1), "entry pin state.taxPercent did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -195,13 +195,13 @@ contract GOLIATHCovTest_GOLIATH_getTaxAddress_concrete3p1__basis_root__W is Test
     address _veriput_concrete_return = c0.getTaxAddress();
     assertEq(_veriput_concrete_return, address(uint160(0)), "fixed witness return must match");
     uint256 _veriput_fixed_state_owner_44_0 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_owner_44_0, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_totalSupply_1 = uint256(vm.load(address(c0), bytes32(uint256(3))));
-
+    assertEq(_veriput_fixed_state_totalSupply_1, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_mainWallet_2 = (uint256(vm.load(address(c0), bytes32(uint256(6)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_mainWallet_2, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_taxPercent_3 = ((uint256(vm.load(address(c0), bytes32(uint256(6)))) >> 160) & 255);
-
+    assertEq(_veriput_fixed_state_taxPercent_3, uint256(1), "fixed witness state");
   }
   
   

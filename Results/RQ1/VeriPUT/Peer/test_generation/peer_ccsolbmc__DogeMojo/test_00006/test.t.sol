@@ -113,9 +113,9 @@ contract DogeMojoCovTest_DogeMojo_fun_put3p1 is Test {
       assertEq(_veriputFixedLogs[0].topics[1], bytes32(uint256(uint160(address(uint160(0))))));
       assertEq(_veriputFixedLogs[0].topics[2], bytes32(uint256(uint160(address(uint160(0))))));
       assertEq(_veriputFixedLogs[0].data, abi.encode(uint256(10000000000000000000000000000000)));
-
-
-
+      assertEq(uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(0)), uint256(0))))), uint256(10000000000000000000000000000000), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(5)))), uint256(18), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(10000000000000000000000000000000), "fixed witness state");
     }
     
     uint256 _post_totalSupply = uint256(vm.load(address(c0), bytes32(uint256(2))));
@@ -123,50 +123,50 @@ contract DogeMojoCovTest_DogeMojo_fun_put3p1 is Test {
     assertEq(_post_totalSupply, _pre_totalSupply, "totalSupply: post == pre");
     assertGt(_post_balances_msg_sender, _pre_balances_msg_sender, "balances[msg.sender]: post > pre");
     assertEq(_post_balances_msg_sender, _pre_totalSupply, "balances[msg.sender]: post == state.totalSupply");
-    
-    
-    
-    
-    
-    
+    assertEq(_post_totalSupply, _pre_totalSupply, "totalSupply: post == state.totalSupply");
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, pre]");
+    assertLe(_post_totalSupply, _pre_totalSupply, "totalSupply: post in [0, pre]");
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, state.totalSupply]");
+    assertLe(_post_totalSupply, _pre_totalSupply, "totalSupply: post in [0, state.totalSupply]");
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, 1461501637330902918203684832716283019655932542975]");
     assertLe(_post_totalSupply, 1461501637330902918203684832716283019655932542975, "totalSupply: post in [0, 1461501637330902918203684832716283019655932542975]");
-    
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, 115792089237316195423570985008687907853269984665640564039457584007913129639934]");
     assertLe(_post_totalSupply, 115792089237316195423570985008687907853269984665640564039457584007913129639934, "totalSupply: post in [0, 115792089237316195423570985008687907853269984665640564039457584007913129639934]");
-    
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (pre + pre)]");
     unchecked { assertLe(_post_totalSupply, (uint256(_pre_totalSupply) + uint256(_pre_totalSupply)), "totalSupply: post in [0, (pre + pre)]"); }
-    
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (pre * pre)]");
     unchecked { assertLe(_post_totalSupply, (uint256(_pre_totalSupply) * uint256(_pre_totalSupply)), "totalSupply: post in [0, (pre * pre)]"); }
-    
-    
-    
-    
-    
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (pre + state.totalSupply)]");
+    unchecked { assertLe(_post_totalSupply, (uint256(_pre_totalSupply) + uint256(_pre_totalSupply)), "totalSupply: post in [0, (pre + state.totalSupply)]"); }
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (pre * state.totalSupply)]");
+    unchecked { assertLe(_post_totalSupply, (uint256(_pre_totalSupply) * uint256(_pre_totalSupply)), "totalSupply: post in [0, (pre * state.totalSupply)]"); }
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (pre + 1461501637330902918203684832716283019655932542975)]");
     unchecked { assertLe(_post_totalSupply, (uint256(_pre_totalSupply) + uint256(1461501637330902918203684832716283019655932542975)), "totalSupply: post in [0, (pre + 1461501637330902918203684832716283019655932542975)]"); }
-    
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]");
     unchecked { assertLe(_post_totalSupply, (uint256(0) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "totalSupply: post in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]"); }
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (state.totalSupply + state.totalSupply)]");
+    unchecked { assertLe(_post_totalSupply, (uint256(_pre_totalSupply) + uint256(_pre_totalSupply)), "totalSupply: post in [0, (state.totalSupply + state.totalSupply)]"); }
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (state.totalSupply * state.totalSupply)]");
+    unchecked { assertLe(_post_totalSupply, (uint256(_pre_totalSupply) * uint256(_pre_totalSupply)), "totalSupply: post in [0, (state.totalSupply * state.totalSupply)]"); }
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (state.totalSupply + 1461501637330902918203684832716283019655932542975)]");
+    unchecked { assertLe(_post_totalSupply, (uint256(_pre_totalSupply) + uint256(1461501637330902918203684832716283019655932542975)), "totalSupply: post in [0, (state.totalSupply + 1461501637330902918203684832716283019655932542975)]"); }
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (1461501637330902918203684832716283019655932542975 - pre)]");
     unchecked { assertLe(_post_totalSupply, (uint256(1461501637330902918203684832716283019655932542975) - uint256(_pre_totalSupply)), "totalSupply: post in [0, (1461501637330902918203684832716283019655932542975 - pre)]"); }
-    
-    
-    
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (1461501637330902918203684832716283019655932542975 - state.totalSupply)]");
+    unchecked { assertLe(_post_totalSupply, (uint256(1461501637330902918203684832716283019655932542975) - uint256(_pre_totalSupply)), "totalSupply: post in [0, (1461501637330902918203684832716283019655932542975 - state.totalSupply)]"); }
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (1461501637330902918203684832716283019655932542975 + 1461501637330902918203684832716283019655932542975)]");
     unchecked { assertLe(_post_totalSupply, (uint256(1461501637330902918203684832716283019655932542975) + uint256(1461501637330902918203684832716283019655932542975)), "totalSupply: post in [0, (1461501637330902918203684832716283019655932542975 + 1461501637330902918203684832716283019655932542975)]"); }
-    
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - pre)]");
     unchecked { assertLe(_post_totalSupply, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) - uint256(_pre_totalSupply)), "totalSupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - pre)]"); }
-    
-    
-    
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - state.totalSupply)]");
+    unchecked { assertLe(_post_totalSupply, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) - uint256(_pre_totalSupply)), "totalSupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - state.totalSupply)]"); }
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - 1461501637330902918203684832716283019655932542975)]");
     unchecked { assertLe(_post_totalSupply, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) - uint256(1461501637330902918203684832716283019655932542975)), "totalSupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - 1461501637330902918203684832716283019655932542975)]"); }
-    
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 - pre)]");
     unchecked { assertLe(_post_totalSupply, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) - uint256(_pre_totalSupply)), "totalSupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 - pre)]"); }
-    
-    
-    
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 - state.totalSupply)]");
+    unchecked { assertLe(_post_totalSupply, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) - uint256(_pre_totalSupply)), "totalSupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 - state.totalSupply)]"); }
+    assertGe(_post_totalSupply, 0, "totalSupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 - 1461501637330902918203684832716283019655932542975)]");
     unchecked { assertLe(_post_totalSupply, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) - uint256(1461501637330902918203684832716283019655932542975)), "totalSupply: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 - 1461501637330902918203684832716283019655932542975)]"); }
     
   }

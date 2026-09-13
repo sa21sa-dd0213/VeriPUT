@@ -89,7 +89,7 @@ contract SimpleERC20CovTest_SimpleERC20_sdf_put3p1 is Test {
     c0.sdf(receiver, "");
     
     if (p_msg_sender == address(uint160(0)) && receiver == address(uint160(0))) {
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(0), "fixed witness state");
     }
   }
 

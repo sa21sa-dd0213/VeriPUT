@@ -28,12 +28,12 @@ contract escrowCovTest_escrow_confirm_payment_concrete2_fb is Test {
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_arbiter_0 = (uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_arbiter_0, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_buyer_1 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_buyer_1, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_seller_2 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_seller_2, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_state_3 = (uint256(vm.load(address(c0), bytes32(uint256(4)))) & 255);
-
+    assertEq(_veriput_fixed_state_state_3, uint256(0), "fixed witness state");
   }
 }

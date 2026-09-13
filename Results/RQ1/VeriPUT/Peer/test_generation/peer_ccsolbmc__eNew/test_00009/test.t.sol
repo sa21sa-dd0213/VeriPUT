@@ -70,10 +70,10 @@ contract eNewCovTest_eNew_includeAccount_put2p1 is Test {
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
     assertEq(_post_isExcluded_account, _pre_isExcluded_account, "_isExcluded[account]: post == pre");
     assertEq(_post_tOwned_account, _pre_tOwned_account, "_tOwned[account]: post == pre");
-    
-    
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
+    assertGe(_post_tOwned_account, _pre_tOwned_account, "_tOwned[account]: post >= pre");
+    assertLe(_post_tOwned_account, _pre_tOwned_account, "_tOwned[account]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

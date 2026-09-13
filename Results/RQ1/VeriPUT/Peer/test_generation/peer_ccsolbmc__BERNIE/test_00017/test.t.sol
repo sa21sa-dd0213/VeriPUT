@@ -1,29 +1,21 @@
 // SPDX-License-Identifier: MIT
 
-
-
-
-
-
 pragma solidity >=0.8.0;
 
 import {Test} from "forge-std/Test.sol";
 import {BERNIE} from "../src/flat.sol";
 
-contract BERNIECovTest_BERNIE_totalSupply_put3p1 is Test {
+contract BERNIECovTest_BERNIE_transferOwnership_put2p1 is Test {
   BERNIE c0;
   function setUp() public {
     c0 = new BERNIE();
     
     address _esbmc_ext_mock_0 = address(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-
-
-
+    vm.etch(_esbmc_ext_mock_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("WETH()"), abi.encode(address(0)));
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("factory()"), abi.encode(address(0)));
   }
   
-  
-  
-  
 
   
   
@@ -63,102 +55,32 @@ contract BERNIECovTest_BERNIE_totalSupply_put3p1 is Test {
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  function _veriput_parameterized(address p_msg_sender) internal {
+  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value, address newOwner) internal {
     p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
+    p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    newOwner = address(uint160(bound(uint256(uint160(newOwner)), 0, 1461501637330902918203684832716283019655932542975)));
     
-    uint256 _ret_pre_tTotal = uint256(vm.load(address(c0), bytes32(uint256(13))));
-    uint256 _pre_tTotal = uint256(vm.load(address(c0), bytes32(uint256(13))));
+    uint256 _pre_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     
-    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-    vm.chainId(0);
-    vm.fee(0);
-    vm.blobBaseFee(0);
-    vm.prevrandao(uint256(0));
-    vm.txGasPrice(0);
-    vm.coinbase(address(uint160(0)));
+    
+    vm.deal(p_msg_sender, p_msg_value);
     vm.prank(p_msg_sender);
-    uint256 _put_ret = c0.totalSupply();
+    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("transferOwnership(address)", newOwner));
     
-    if (p_msg_sender == address(uint160(0))) {
-      assertEq(_put_ret, uint256(100000000000000000000000000000), "fixed witness return");
+    uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_post_owner, _pre_owner, "_owner: post == pre");
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
+    
+    assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 
-
-
-
-
-
-
-
-
-
-
-    }
     
-    uint256 _post_tTotal = uint256(vm.load(address(c0), bytes32(uint256(13))));
-    assertEq(_post_tTotal, _pre_tTotal, "_tTotal: post == pre");
-    
-    
-    
-    
-    
-    
-    assertLe(_post_tTotal, 115792089237316195423570985008687907853269984665640564039457584007913129639934, "_tTotal: post in [0, 115792089237316195423570985008687907853269984665640564039457584007913129639934]");
-    
-    unchecked { assertLe(_post_tTotal, (uint256(_pre_tTotal) + uint256(_pre_tTotal)), "_tTotal: post in [0, (pre + pre)]"); }
-    
-    unchecked { assertLe(_post_tTotal, (uint256(_pre_tTotal) * uint256(_pre_tTotal)), "_tTotal: post in [0, (pre * pre)]"); }
-    
-    
-    
-    
-    
-    unchecked { assertLe(_post_tTotal, (uint256(0) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "_tTotal: post in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]"); }
-    
-    
-    
-    
-    
-    unchecked { assertLe(_post_tTotal, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) - uint256(_pre_tTotal)), "_tTotal: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - pre)]"); }
-    
-    
-    
-    unchecked { assertLe(_post_tTotal, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639934) - uint256(_pre_tTotal)), "_tTotal: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639934 - pre)]"); }
-    
-    
-    assertTrue(uint256(_put_ret) != 0, "return: return != 0");
-    assertEq(uint256(_put_ret), _ret_pre_tTotal, "return: return == state._tTotal");
     
   }
 
 
   
-  function test_put_BERNIE_totalSupply_path3p1(address p_msg_sender) public {
-    _veriput_parameterized(p_msg_sender);
+  function test_put_BERNIE_transferOwnership_path2p1(address p_msg_sender, uint256 p_msg_value, address newOwner) public {
+    _veriput_parameterized(p_msg_sender, p_msg_value, newOwner);
   }
 }

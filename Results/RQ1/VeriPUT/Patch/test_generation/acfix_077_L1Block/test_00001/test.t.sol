@@ -71,8 +71,8 @@ contract L1BlockCovTest_L1Block_setL1BlockValues_put2p1 is Test {
     
     uint256 _post_depositorAccount = (uint256(vm.load(address(c0), bytes32(uint256(7)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_depositorAccount, _pre_depositorAccount, "depositorAccount: post == pre");
-    
-    
+    assertGe(_post_depositorAccount, _pre_depositorAccount, "depositorAccount: post >= pre");
+    assertLe(_post_depositorAccount, _pre_depositorAccount, "depositorAccount: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

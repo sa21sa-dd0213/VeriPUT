@@ -64,8 +64,8 @@ contract ETHRegistrarControllerCovTest_ETHRegistrarController_commit_put2p1 is T
     
     uint256 _post_commitments_commitment = uint256(vm.load(address(c0), keccak256(abi.encode(bytes32(commitment), uint256(1)))));
     assertEq(_post_commitments_commitment, _pre_commitments_commitment, "commitments[commitment]: post == pre");
-    
-    
+    assertGe(_post_commitments_commitment, _pre_commitments_commitment, "commitments[commitment]: post >= pre");
+    assertLe(_post_commitments_commitment, _pre_commitments_commitment, "commitments[commitment]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

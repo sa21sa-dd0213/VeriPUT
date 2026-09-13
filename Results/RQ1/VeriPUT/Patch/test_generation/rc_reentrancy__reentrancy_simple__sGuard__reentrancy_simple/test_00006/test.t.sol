@@ -15,7 +15,7 @@ contract ReentranceCovTest_Reentrance_withdrawBalance_put15p1_p1_part_part0_r is
   function setUp() public {
     c0 = new Reentrance();
     
-
+    vm.deal(address(c0), uint256(1) << 128);
   }
   
   
@@ -109,8 +109,8 @@ contract ReentranceCovTest_Reentrance_withdrawBalance_put15p1_p1_part_part0_r is
     c0.withdrawBalance();
     
     if (p_msg_sender == address(uint160(3791923280))) {
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(3791923280)), uint256(1))))), uint256(0), "fixed witness state");
     }
     
     uint256 _post_locked = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255);
@@ -143,7 +143,7 @@ contract ReentranceCovTest_Reentrance_withdrawBalance_concrete15p1__basis_part0_
   function setUp() public {
     c0 = new Reentrance();
     
-
+    vm.deal(address(c0), uint256(1) << 128);
   }
   
   
@@ -151,9 +151,9 @@ contract ReentranceCovTest_Reentrance_withdrawBalance_concrete15p1__basis_part0_
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255), uint256(0), "entry pin state.locked_$27 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -166,9 +166,9 @@ contract ReentranceCovTest_Reentrance_withdrawBalance_concrete15p1__basis_part0_
     vm.prank(address(uint160(3791923280)), address(uint160(0)));
     c0.withdrawBalance();
     uint256 _veriput_fixed_state_locked__27_0 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255);
-
+    assertEq(_veriput_fixed_state_locked__27_0, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_userBalance_3791923280_1 = uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(3791923280)), uint256(1)))));
-
+    assertEq(_veriput_fixed_state_userBalance_3791923280_1, uint256(0), "fixed witness state");
   }
   
   

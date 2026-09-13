@@ -86,9 +86,9 @@ contract PredictTheBlockHashChallengeCovTest_PredictTheBlockHashChallenge_settle
     {
       uint256 _w = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0)))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0))), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0))))), uint256(0), "entry pin state.guesses$11[msg.sender].block did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     uint256 _pre_guesses_11_msg_sender__block = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0)))));
     uint256 _pre_guesses_msg_sender__block = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0)))));
@@ -108,8 +108,8 @@ contract PredictTheBlockHashChallengeCovTest_PredictTheBlockHashChallenge_settle
     
     uint256 _post_guesses_11_msg_sender__block = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0)))));
     assertEq(_post_guesses_11_msg_sender__block, _pre_guesses_11_msg_sender__block, "guesses$11[msg.sender].block: post == pre");
-    
-    
+    assertGe(_post_guesses_11_msg_sender__block, _pre_guesses_11_msg_sender__block, "guesses$11[msg.sender].block: post >= pre");
+    assertLe(_post_guesses_11_msg_sender__block, _pre_guesses_11_msg_sender__block, "guesses$11[msg.sender].block: post <= pre");
     
     assertFalse(_put_ok, "path enc=6p1 exits through a REVERT: the call must fail on the unmodified contract");
   }

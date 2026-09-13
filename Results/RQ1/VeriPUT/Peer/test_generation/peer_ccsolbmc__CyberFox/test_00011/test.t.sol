@@ -109,24 +109,24 @@ contract CyberFoxCovTest_CyberFox_approve_put2p1 is Test {
     assertEq(_post_allowances_state__owner__msg_sender, _pre_allowances_state__owner__msg_sender, "_allowances[state._owner][msg.sender]: post == pre");
     assertEq(_post_allowances_state__owner__spender, _pre_allowances_state__owner__spender, "_allowances[state._owner][spender]: post == pre");
     assertEq(_post_allowances_state__owner__state__owner, _pre_allowances_state__owner__state__owner, "_allowances[state._owner][state._owner]: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_allowances_msg_sender__msg_sender, _pre_allowances_msg_sender__msg_sender, "_allowances[msg.sender][msg.sender]: post >= pre");
+    assertLe(_post_allowances_msg_sender__msg_sender, _pre_allowances_msg_sender__msg_sender, "_allowances[msg.sender][msg.sender]: post <= pre");
+    assertGe(_post_allowances_msg_sender__spender, _pre_allowances_msg_sender__spender, "_allowances[msg.sender][spender]: post >= pre");
+    assertLe(_post_allowances_msg_sender__spender, _pre_allowances_msg_sender__spender, "_allowances[msg.sender][spender]: post <= pre");
+    assertGe(_post_allowances_msg_sender__state__owner, _pre_allowances_msg_sender__state__owner, "_allowances[msg.sender][state._owner]: post >= pre");
+    assertLe(_post_allowances_msg_sender__state__owner, _pre_allowances_msg_sender__state__owner, "_allowances[msg.sender][state._owner]: post <= pre");
+    assertGe(_post_allowances_spender__msg_sender, _pre_allowances_spender__msg_sender, "_allowances[spender][msg.sender]: post >= pre");
+    assertLe(_post_allowances_spender__msg_sender, _pre_allowances_spender__msg_sender, "_allowances[spender][msg.sender]: post <= pre");
+    assertGe(_post_allowances_spender__spender, _pre_allowances_spender__spender, "_allowances[spender][spender]: post >= pre");
+    assertLe(_post_allowances_spender__spender, _pre_allowances_spender__spender, "_allowances[spender][spender]: post <= pre");
+    assertGe(_post_allowances_spender__state__owner, _pre_allowances_spender__state__owner, "_allowances[spender][state._owner]: post >= pre");
+    assertLe(_post_allowances_spender__state__owner, _pre_allowances_spender__state__owner, "_allowances[spender][state._owner]: post <= pre");
+    assertGe(_post_allowances_state__owner__msg_sender, _pre_allowances_state__owner__msg_sender, "_allowances[state._owner][msg.sender]: post >= pre");
+    assertLe(_post_allowances_state__owner__msg_sender, _pre_allowances_state__owner__msg_sender, "_allowances[state._owner][msg.sender]: post <= pre");
+    assertGe(_post_allowances_state__owner__spender, _pre_allowances_state__owner__spender, "_allowances[state._owner][spender]: post >= pre");
+    assertLe(_post_allowances_state__owner__spender, _pre_allowances_state__owner__spender, "_allowances[state._owner][spender]: post <= pre");
+    assertGe(_post_allowances_state__owner__state__owner, _pre_allowances_state__owner__state__owner, "_allowances[state._owner][state._owner]: post >= pre");
+    assertLe(_post_allowances_state__owner__state__owner, _pre_allowances_state__owner__state__owner, "_allowances[state._owner][state._owner]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

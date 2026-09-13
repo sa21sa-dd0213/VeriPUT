@@ -65,8 +65,8 @@ contract MJCoin_TokenCovTest_MJCoin_Token_getTokenPrice_put2p1 is Test {
     
     uint256 _post_priceEthToken = uint256(vm.load(address(c0), bytes32(uint256(7))));
     assertEq(_post_priceEthToken, _pre_priceEthToken, "priceEthToken: post == pre");
-    
-    
+    assertGe(_post_priceEthToken, _pre_priceEthToken, "priceEthToken: post >= pre");
+    assertLe(_post_priceEthToken, _pre_priceEthToken, "priceEthToken: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

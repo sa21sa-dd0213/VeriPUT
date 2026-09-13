@@ -76,10 +76,10 @@ contract RyujinCovTest_Ryujin_addLiquidity_put2p1 is Test {
     assertEq(_post_swapEnabled, _pre_swapEnabled, "swapEnabled: post == pre");
     assertEq(_post_cooldownEnabled, _pre_cooldownEnabled, "cooldownEnabled: post == pre");
     assertEq(_post_maxTxAmount, _pre_maxTxAmount, "_maxTxAmount: post == pre");
-    
-    
-    
-    
+    assertGe(_post_uniswapV2Pair, _pre_uniswapV2Pair, "uniswapV2Pair: post >= pre");
+    assertLe(_post_uniswapV2Pair, _pre_uniswapV2Pair, "uniswapV2Pair: post <= pre");
+    assertGe(_post_maxTxAmount, _pre_maxTxAmount, "_maxTxAmount: post >= pre");
+    assertLe(_post_maxTxAmount, _pre_maxTxAmount, "_maxTxAmount: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

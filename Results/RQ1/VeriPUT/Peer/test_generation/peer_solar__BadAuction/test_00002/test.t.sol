@@ -106,8 +106,8 @@ contract BadAuctionCovTest_BadAuction_bid_put7p1_p1_part_part0_w_r is Test {
     c0.bid{value: 0}();
     
     if (true) {
-
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(4294967294), "fixed witness state");
     }
     
     uint256 _post_highestBid = uint256(vm.load(address(c0), bytes32(uint256(1))));

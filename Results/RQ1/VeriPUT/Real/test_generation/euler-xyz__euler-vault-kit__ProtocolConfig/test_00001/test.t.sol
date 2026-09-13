@@ -88,14 +88,14 @@ contract ProtocolConfigCovTest_ProtocolConfig_interestFeeRange_put2p1 is Test {
     assertEq(_post_interestFeeRanges_vault__exists, _pre_interestFeeRanges_vault__exists, "_interestFeeRanges[vault].exists: post == pre");
     assertEq(_post_interestFeeRanges_vault__maxInterestFee, _pre_interestFeeRanges_vault__maxInterestFee, "_interestFeeRanges[vault].maxInterestFee: post == pre");
     assertEq(_post_interestFeeRanges_vault__minInterestFee, _pre_interestFeeRanges_vault__minInterestFee, "_interestFeeRanges[vault].minInterestFee: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_minInterestFee, _pre_minInterestFee, "minInterestFee: post >= pre");
+    assertLe(_post_minInterestFee, _pre_minInterestFee, "minInterestFee: post <= pre");
+    assertGe(_post_maxInterestFee, _pre_maxInterestFee, "maxInterestFee: post >= pre");
+    assertLe(_post_maxInterestFee, _pre_maxInterestFee, "maxInterestFee: post <= pre");
+    assertGe(_post_interestFeeRanges_vault__maxInterestFee, _pre_interestFeeRanges_vault__maxInterestFee, "_interestFeeRanges[vault].maxInterestFee: post >= pre");
+    assertLe(_post_interestFeeRanges_vault__maxInterestFee, _pre_interestFeeRanges_vault__maxInterestFee, "_interestFeeRanges[vault].maxInterestFee: post <= pre");
+    assertGe(_post_interestFeeRanges_vault__minInterestFee, _pre_interestFeeRanges_vault__minInterestFee, "_interestFeeRanges[vault].minInterestFee: post >= pre");
+    assertLe(_post_interestFeeRanges_vault__minInterestFee, _pre_interestFeeRanges_vault__minInterestFee, "_interestFeeRanges[vault].minInterestFee: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -1,15 +1,25 @@
 // SPDX-License-Identifier: MIT
 
+
+
+
+
+
 pragma solidity >=0.8.0;
 
 import {Test} from "forge-std/Test.sol";
 import {NewIntelTechMedia} from "../src/flat.sol";
 
-contract NewIntelTechMediaCovTest_NewIntelTechMedia_burn_put2p1 is Test {
+contract NewIntelTechMediaCovTest_NewIntelTechMedia_balanceOf_put3p1 is Test {
   NewIntelTechMedia c0;
   function setUp() public {
+    vm.startPrank(address(uint160(1)), address(uint160(1)));
     c0 = new NewIntelTechMedia();
+    vm.stopPrank();
   }
+  
+  
+  
   
 
   
@@ -50,47 +60,151 @@ contract NewIntelTechMediaCovTest_NewIntelTechMedia_burn_put2p1 is Test {
   
   
   
-  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value, uint256 _value) internal {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  function _veriput_parameterized(address p_msg_sender, address _owner) internal {
     p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
-    p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-    _value = bound(_value, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    _owner = address(uint160(bound(uint256(uint160(_owner)), 0, 1461501637330902918203684832716283019655932542975)));
     
-    uint256 _pre_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-    uint256 _pre_totalSupply = uint256(vm.load(address(c0), bytes32(uint256(4))));
-    uint256 _pre_totalDistributed = uint256(vm.load(address(c0), bytes32(uint256(5))));
-    uint256 _pre_balances_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(1)))));
-    
-    
-    vm.deal(p_msg_sender, p_msg_value);
+    uint256 _ret_pre_balances__owner = uint256(vm.load(address(c0), keccak256(abi.encode(_owner, uint256(1)))));
+    uint256 _pre_balances__owner = uint256(vm.load(address(c0), keccak256(abi.encode(_owner, uint256(1)))));
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
     vm.prank(p_msg_sender);
-    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("burn(uint256)", _value));
     
-    uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-    uint256 _post_totalSupply = uint256(vm.load(address(c0), bytes32(uint256(4))));
-    uint256 _post_totalDistributed = uint256(vm.load(address(c0), bytes32(uint256(5))));
-    uint256 _post_balances_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(1)))));
-    assertEq(_post_owner, _pre_owner, "owner: post == pre");
-    assertEq(_post_totalSupply, _pre_totalSupply, "totalSupply: post == pre");
-    assertEq(_post_totalDistributed, _pre_totalDistributed, "totalDistributed: post == pre");
-    assertEq(_post_balances_msg_sender, _pre_balances_msg_sender, "balances[msg.sender]: post == pre");
+    uint256 _put_ret = c0.balanceOf(_owner);
     
+    if (p_msg_sender == address(uint160(0)) && _owner == address(uint160(0))) {
+      assertEq(_put_ret, uint256(0), "fixed witness return");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(8)))) & 255), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(5)))), uint256(250000000000000000000000000), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(6)))), uint256(250000000000000000000000000), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(500000000000000000000000000), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(7)))), uint256(2500000000000000000000), "fixed witness state");
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
-
-    
+    uint256 _post_balances__owner = uint256(vm.load(address(c0), keccak256(abi.encode(_owner, uint256(1)))));
+    assertEq(_post_balances__owner, _pre_balances__owner, "balances[_owner]: post == pre");
+    assertEq(uint256(_put_ret), 0, "return: return == 0");
+    assertEq(uint256(_put_ret), _ret_pre_balances__owner, "return: return == state.balances[_owner]");
     
   }
 
 
   
-  function test_put_NewIntelTechMedia_burn_path2p1(address p_msg_sender, uint256 p_msg_value, uint256 _value) public {
-    _veriput_parameterized(p_msg_sender, p_msg_value, _value);
+  function test_put_NewIntelTechMedia_balanceOf_path3p1(address p_msg_sender, address _owner) public {
+    _veriput_parameterized(p_msg_sender, _owner);
+    
+    { NewIntelTechMediaCovTest_NewIntelTechMedia_balanceOf_concrete3p1__basis_root__W _veriput_w = new NewIntelTechMediaCovTest_NewIntelTechMedia_balanceOf_concrete3p1__basis_root__W(); _veriput_w.setUp(); _veriput_w._w_test_cov_0(); }
+}
+}
+
+
+
+
+
+
+
+
+contract NewIntelTechMediaCovTest_NewIntelTechMedia_balanceOf_concrete3p1__basis_root__W is Test {
+  NewIntelTechMedia c0;
+  function setUp() public {
+    vm.startPrank(address(uint160(1)), address(uint160(1)));
+    c0 = new NewIntelTechMedia();
+    vm.stopPrank();
   }
+  
+  
+  function _w_test_cov_0() public {
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(8))));
+      _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
+      vm.store(address(c0), bytes32(uint256(8)), bytes32(_w));
+    }
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(8)))) & 255), uint256(0), "entry pin state.distributionFinished did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
+    }
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.owner did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(5))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(250000000000000000000000000) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+      vm.store(address(c0), bytes32(uint256(5)), bytes32(_w));
+    }
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(5)))), uint256(250000000000000000000000000), "entry pin state.totalDistributed did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(6))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(250000000000000000000000000) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+      vm.store(address(c0), bytes32(uint256(6)), bytes32(_w));
+    }
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(6)))), uint256(250000000000000000000000000), "entry pin state.totalRemaining did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(500000000000000000000000000) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+      vm.store(address(c0), bytes32(uint256(4)), bytes32(_w));
+    }
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(500000000000000000000000000), "entry pin state.totalSupply did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(7))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(2500000000000000000000) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+      vm.store(address(c0), bytes32(uint256(7)), bytes32(_w));
+    }
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(7)))), uint256(2500000000000000000000), "entry pin state.value did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    
+    
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
+    vm.prank(address(uint160(0)), address(uint160(0)));
+    uint256 _veriput_concrete_return = c0.balanceOf(address(uint160(0)));
+    assertEq(_veriput_concrete_return, uint256(0), "fixed witness return must match");
+    uint256 _veriput_fixed_state_distributionFinished_1 = (uint256(vm.load(address(c0), bytes32(uint256(8)))) & 255);
+    assertEq(_veriput_fixed_state_distributionFinished_1, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_owner_2 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_veriput_fixed_state_owner_2, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_totalDistributed_3 = uint256(vm.load(address(c0), bytes32(uint256(5))));
+    assertEq(_veriput_fixed_state_totalDistributed_3, uint256(250000000000000000000000000), "fixed witness state");
+    uint256 _veriput_fixed_state_totalRemaining_4 = uint256(vm.load(address(c0), bytes32(uint256(6))));
+    assertEq(_veriput_fixed_state_totalRemaining_4, uint256(250000000000000000000000000), "fixed witness state");
+    uint256 _veriput_fixed_state_totalSupply_5 = uint256(vm.load(address(c0), bytes32(uint256(4))));
+    assertEq(_veriput_fixed_state_totalSupply_5, uint256(500000000000000000000000000), "fixed witness state");
+    uint256 _veriput_fixed_state_value_6 = uint256(vm.load(address(c0), bytes32(uint256(7))));
+    assertEq(_veriput_fixed_state_value_6, uint256(2500000000000000000000), "fixed witness state");
+  }
+  
+  
 }

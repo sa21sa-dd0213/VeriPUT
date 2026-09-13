@@ -3065,7 +3065,6 @@ library Math {
             if (high >= 1 << n) {
                 Panic.panic(Panic.UNDER_OVERFLOW);
             }
-
             return (high << (256 - n)) | (low >> n);
         }
     }

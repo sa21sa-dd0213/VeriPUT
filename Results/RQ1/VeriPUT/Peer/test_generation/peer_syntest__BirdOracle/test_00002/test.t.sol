@@ -65,8 +65,8 @@ contract BirdOracleCovTest_BirdOracle_getRatingByAddress_put2p1 is Test {
     
     uint256 _post_ratings__addr = uint256(vm.load(address(c0), keccak256(abi.encode(_addr, uint256(4)))));
     assertEq(_post_ratings__addr, _pre_ratings__addr, "ratings[_addr]: post == pre");
-    
-    
+    assertGe(_post_ratings__addr, _pre_ratings__addr, "ratings[_addr]: post >= pre");
+    assertLe(_post_ratings__addr, _pre_ratings__addr, "ratings[_addr]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

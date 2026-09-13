@@ -11,8 +11,8 @@ contract MigrationHelperCovTest_MigrationHelper_migrateWrappedNames_put2p1 is Te
     c0 = new MigrationHelper(IBaseRegistrar(address(uint160(1000))), INameWrapper(address(uint160(1001))));
     
     address _esbmc_ctor_state_mock_0_0 = address(INameWrapper(address(uint160(1001))));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)"), bytes(""));
   }
   
 
@@ -71,8 +71,8 @@ contract MigrationHelperCovTest_MigrationHelper_migrateWrappedNames_put2p1 is Te
     uint256 _post_controllers_msg_sender = (uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(1))))) & 255);
     assertEq(_post_migrationTarget, _pre_migrationTarget, "migrationTarget: post == pre");
     assertEq(_post_controllers_msg_sender, _pre_controllers_msg_sender, "controllers[msg.sender]: post == pre");
-    
-    
+    assertGe(_post_migrationTarget, _pre_migrationTarget, "migrationTarget: post >= pre");
+    assertLe(_post_migrationTarget, _pre_migrationTarget, "migrationTarget: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

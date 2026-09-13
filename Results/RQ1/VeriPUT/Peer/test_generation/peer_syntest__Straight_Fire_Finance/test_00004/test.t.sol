@@ -79,14 +79,10 @@ contract Straight_Fire_FinanceCovTest_Straight_Fire_Finance_approve_put3p1 is Te
   
   
   
-  
-  
   function _veriput_parameterized(address p_msg_sender, address spender, uint256 value) internal {
     p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
     spender = address(uint160(bound(uint256(uint160(spender)), 0, 1461501637330902918203684832716283019655932542975)));
     value = bound(value, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-    
-    uint256 _pre_allowed_msg_sender__spender = uint256(vm.load(address(c0), keccak256(abi.encode(spender, keccak256(abi.encode(p_msg_sender, uint256(3)))))));
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
     vm.chainId(0);
@@ -98,11 +94,11 @@ contract Straight_Fire_FinanceCovTest_Straight_Fire_Finance_approve_put3p1 is Te
     vm.prank(p_msg_sender);
     
     vm.recordLogs();
-    bool _put_ret = c0.approve(spender, value);
+    bool _veriput_fixed_return_0 = c0.approve(spender, value);
     Vm.Log[] memory _veriputFixedLogs = vm.getRecordedLogs();
     
     if (p_msg_sender == address(uint160(0)) && spender == address(uint160(0)) && value == uint256(0)) {
-      assertEq(_put_ret, true, "fixed witness return");
+      assertEq(_veriput_fixed_return_0, true, "fixed witness return");
       assertEq(_veriputFixedLogs.length, 1);
       assertEq(_veriputFixedLogs[0].emitter, address(c0));
       assertEq(_veriputFixedLogs[0].topics.length, 3);
@@ -110,16 +106,10 @@ contract Straight_Fire_FinanceCovTest_Straight_Fire_Finance_approve_put3p1 is Te
       assertEq(_veriputFixedLogs[0].topics[1], bytes32(uint256(uint160(address(uint160(0))))));
       assertEq(_veriputFixedLogs[0].topics[2], bytes32(uint256(uint160(address(uint160(0))))));
       assertEq(_veriputFixedLogs[0].data, abi.encode(uint256(0)));
-
-
-
+      assertEq(uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(0)), keccak256(abi.encode(address(uint160(0)), uint256(3))))))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(80000000000000000000000), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
-    
-    uint256 _post_allowed_msg_sender__spender = uint256(vm.load(address(c0), keccak256(abi.encode(spender, keccak256(abi.encode(p_msg_sender, uint256(3)))))));
-    assertGe(_post_allowed_msg_sender__spender, _pre_allowed_msg_sender__spender, "allowed[msg.sender][spender]: post >= pre");
-    assertEq(_post_allowed_msg_sender__spender, value, "allowed[msg.sender][spender]: post == value");
-    assertTrue(_put_ret, "return: return == true");
-    
   }
 
 

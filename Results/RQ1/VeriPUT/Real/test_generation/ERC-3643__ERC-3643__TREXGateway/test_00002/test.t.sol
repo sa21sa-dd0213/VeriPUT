@@ -70,12 +70,12 @@ contract TREXGatewayCovTest_TREXGateway_getDeploymentFee_put2p1 is Test {
     assertEq(_post_deploymentFee_fee, _pre_deploymentFee_fee, "_deploymentFee.fee: post == pre");
     assertEq(_post_deploymentFee_feeCollector, _pre_deploymentFee_feeCollector, "_deploymentFee.feeCollector: post == pre");
     assertEq(_post_deploymentFee_feeToken, _pre_deploymentFee_feeToken, "_deploymentFee.feeToken: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_deploymentFee_fee, _pre_deploymentFee_fee, "_deploymentFee.fee: post >= pre");
+    assertLe(_post_deploymentFee_fee, _pre_deploymentFee_fee, "_deploymentFee.fee: post <= pre");
+    assertGe(_post_deploymentFee_feeCollector, _pre_deploymentFee_feeCollector, "_deploymentFee.feeCollector: post >= pre");
+    assertLe(_post_deploymentFee_feeCollector, _pre_deploymentFee_feeCollector, "_deploymentFee.feeCollector: post <= pre");
+    assertGe(_post_deploymentFee_feeToken, _pre_deploymentFee_feeToken, "_deploymentFee.feeToken: post >= pre");
+    assertLe(_post_deploymentFee_feeToken, _pre_deploymentFee_feeToken, "_deploymentFee.feeToken: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

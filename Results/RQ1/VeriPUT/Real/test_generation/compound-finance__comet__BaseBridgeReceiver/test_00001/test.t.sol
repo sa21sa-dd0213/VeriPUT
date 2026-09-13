@@ -56,7 +56,7 @@ contract BaseBridgeReceiverCovTest_BaseBridgeReceiver_initialize_put2p1 is Test 
     _govTimelock = address(uint160(bound(uint256(uint160(_govTimelock)), 0, 1461501637330902918203684832716283019655932542975)));
     _localTimelock = address(uint160(bound(uint256(uint160(_localTimelock)), 0, 1461501637330902918203684832716283019655932542975)));
 
-
+vm.mockCall(_localTimelock, abi.encodeWithSignature("admin()"), abi.encode(address(0)));
     
     uint256 _pre_govTimelock = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     uint256 _pre_localTimelock = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
@@ -73,10 +73,10 @@ contract BaseBridgeReceiverCovTest_BaseBridgeReceiver_initialize_put2p1 is Test 
     assertEq(_post_govTimelock, _pre_govTimelock, "govTimelock: post == pre");
     assertEq(_post_localTimelock, _pre_localTimelock, "localTimelock: post == pre");
     assertEq(_post_initialized, _pre_initialized, "initialized: post == pre");
-    
-    
-    
-    
+    assertGe(_post_govTimelock, _pre_govTimelock, "govTimelock: post >= pre");
+    assertLe(_post_govTimelock, _pre_govTimelock, "govTimelock: post <= pre");
+    assertGe(_post_localTimelock, _pre_localTimelock, "localTimelock: post >= pre");
+    assertLe(_post_localTimelock, _pre_localTimelock, "localTimelock: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

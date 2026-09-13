@@ -69,10 +69,10 @@ contract ClaimTopicsRegistryCovTest_ClaimTopicsRegistry_init_put2p1 is Test {
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
     assertEq(_post_initialized, _pre_initialized, "_initialized: post == pre");
     assertEq(_post_initializing, _pre_initializing, "_initializing: post == pre");
-    
-    
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
+    assertGe(_post_initialized, _pre_initialized, "_initialized: post >= pre");
+    assertLe(_post_initialized, _pre_initialized, "_initialized: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

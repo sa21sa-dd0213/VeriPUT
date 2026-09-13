@@ -1,16 +1,24 @@
 // SPDX-License-Identifier: MIT
 
+
+
+
+
+
 pragma solidity >=0.8.0;
 
 import {Test} from "forge-std/Test.sol";
 import {Rubixi} from "../src/flat.sol";
 
-contract RubixiCovTest_Rubixi_nextPayoutWhenPyramidBalanceTotalsApproximately_put2p1 is Test {
+contract RubixiCovTest_Rubixi_feesSeperateFromBalanceApproximately_put3p1 is Test {
   Rubixi c0;
   function setUp() public {
     c0 = new Rubixi();
   }
   
+  
+  
+  
 
   
   
@@ -52,31 +60,181 @@ contract RubixiCovTest_Rubixi_nextPayoutWhenPyramidBalanceTotalsApproximately_pu
   
   
   
-  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value) internal {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  function _veriput_parameterized(address p_msg_sender) internal {
     p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
-    p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     
-    uint256 _pre_payoutOrder = uint256(vm.load(address(c0), bytes32(uint256(4))));
+    uint256 _ret_pre_collectedFees = uint256(vm.load(address(c0), bytes32(uint256(1))));
+    uint256 _pre_collectedFees = uint256(vm.load(address(c0), bytes32(uint256(1))));
     
-    
-    vm.deal(p_msg_sender, p_msg_value);
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
     vm.prank(p_msg_sender);
-    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("nextPayoutWhenPyramidBalanceTotalsApproximately()"));
+    uint256 _put_ret = c0.feesSeperateFromBalanceApproximately();
     
-    uint256 _post_payoutOrder = uint256(vm.load(address(c0), bytes32(uint256(4))));
-    assertEq(_post_payoutOrder, _pre_payoutOrder, "payoutOrder: post == pre");
+    if (p_msg_sender == address(uint160(0))) {
+      assertEq(_put_ret, uint256(0), "fixed witness return");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(10), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(300), "fixed witness state");
+    }
     
-    
-    
-    assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
-
-    
+    uint256 _post_collectedFees = uint256(vm.load(address(c0), bytes32(uint256(1))));
+    assertEq(_post_collectedFees, _pre_collectedFees, "collectedFees: post == pre");
+    assertEq(_post_collectedFees, _pre_collectedFees, "collectedFees: post == state.collectedFees");
+    assertGe(_post_collectedFees, 0, "collectedFees: post in [0, pre]");
+    assertLe(_post_collectedFees, _pre_collectedFees, "collectedFees: post in [0, pre]");
+    assertGe(_post_collectedFees, 0, "collectedFees: post in [0, state.collectedFees]");
+    assertLe(_post_collectedFees, _pre_collectedFees, "collectedFees: post in [0, state.collectedFees]");
+    assertGe(_post_collectedFees, 0, "collectedFees: post in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]");
+    unchecked { assertLe(_post_collectedFees, (uint256(0) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "collectedFees: post in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]"); }
+    assertGe(uint256(_put_ret), 0, "return: return in [0, state.collectedFees]");
+    assertLe(uint256(_put_ret), _ret_pre_collectedFees, "return: return in [0, state.collectedFees]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]");
+    assertLe(uint256(_put_ret), 115792089237316195423570985008687907853269984665640564039457584007913129639935, "return: return in [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value + state.collectedFees)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(_ret_pre_collectedFees)), "return: return in [0, (msg.value + state.collectedFees)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "return: return in [0, (msg.value + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (state.collectedFees + msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(_ret_pre_collectedFees) + uint256(0)), "return: return in [0, (state.collectedFees + msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (state.collectedFees - msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(_ret_pre_collectedFees) - uint256(0)), "return: return in [0, (state.collectedFees - msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (state.collectedFees + 0)]");
+    assertLe(uint256(_put_ret), (uint256(_ret_pre_collectedFees) + uint256(0)), "return: return in [0, (state.collectedFees + 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (state.collectedFees - 0)]");
+    assertLe(uint256(_put_ret), (uint256(_ret_pre_collectedFees) - uint256(0)), "return: return in [0, (state.collectedFees - 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 + state.collectedFees)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(_ret_pre_collectedFees)), "return: return in [0, (0 + state.collectedFees)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "return: return in [0, (0 + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 + msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) + uint256(0)), "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 + msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) - uint256(0)), "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 + 0)]");
+    assertLe(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) + uint256(0)), "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 + 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - 0)]");
+    assertLe(uint256(_put_ret), (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) - uint256(0)), "return: return in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - 0)]");
     
   }
 
 
   
-  function test_put_Rubixi_nextPayoutWhenPyramidBalanceTotalsApproximately_path2p1(address p_msg_sender, uint256 p_msg_value) public {
-    _veriput_parameterized(p_msg_sender, p_msg_value);
+  function test_put_Rubixi_feesSeperateFromBalanceApproximately_path3p1(address p_msg_sender) public {
+    _veriput_parameterized(p_msg_sender);
+    
+    { RubixiCovTest_Rubixi_feesSeperateFromBalanceApproximately_concrete3p1__basis_root__W _veriput_w = new RubixiCovTest_Rubixi_feesSeperateFromBalanceApproximately_concrete3p1__basis_root__W(); _veriput_w.setUp(); _veriput_w._w_test_cov_0(); }
+}
+}
+
+
+
+
+
+
+
+
+contract RubixiCovTest_Rubixi_feesSeperateFromBalanceApproximately_concrete3p1__basis_root__W is Test {
+  Rubixi c0;
+  function setUp() public {
+    c0 = new Rubixi();
   }
+  
+  
+  function _w_test_cov_0() public {
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
+    }
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(0), "entry pin state.balance did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
+    }
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "entry pin state.collectedFees did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(5))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
+      vm.store(address(c0), bytes32(uint256(5)), bytes32(_w));
+    }
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.creator did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(10) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
+    }
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(10), "entry pin state.feePercent did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+      vm.store(address(c0), bytes32(uint256(4)), bytes32(_w));
+    }
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(0), "entry pin state.payoutOrder did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(3))));
+      _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(300) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
+      vm.store(address(c0), bytes32(uint256(3)), bytes32(_w));
+    }
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(300), "entry pin state.pyramidMultiplier did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
+    vm.prank(address(uint160(0)), address(uint160(0)));
+    uint256 _veriput_concrete_return = c0.feesSeperateFromBalanceApproximately();
+    assertEq(_veriput_concrete_return, uint256(0), "fixed witness return must match");
+    uint256 _veriput_fixed_state_balance_0 = uint256(vm.load(address(c0), bytes32(uint256(0))));
+    assertEq(_veriput_fixed_state_balance_0, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_collectedFees_1 = uint256(vm.load(address(c0), bytes32(uint256(1))));
+    assertEq(_veriput_fixed_state_collectedFees_1, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_creator_2 = (uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_veriput_fixed_state_creator_2, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_feePercent_3 = uint256(vm.load(address(c0), bytes32(uint256(2))));
+    assertEq(_veriput_fixed_state_feePercent_3, uint256(10), "fixed witness state");
+    uint256 _veriput_fixed_state_payoutOrder_4 = uint256(vm.load(address(c0), bytes32(uint256(4))));
+    assertEq(_veriput_fixed_state_payoutOrder_4, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_pyramidMultiplier_5 = uint256(vm.load(address(c0), bytes32(uint256(3))));
+    assertEq(_veriput_fixed_state_pyramidMultiplier_5, uint256(300), "fixed witness state");
+  }
+  
+  
 }

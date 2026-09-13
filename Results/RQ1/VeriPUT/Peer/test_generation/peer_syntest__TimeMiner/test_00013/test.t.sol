@@ -98,18 +98,18 @@ contract TimeMinerCovTest_TimeMiner_isWhitelisted_put2p1 is Test {
     assertEq(_post_info_supplydivision, _pre_info_supplydivision, "info.supplydivision: post == pre");
     assertEq(_post_info_supplymultiply, _pre_info_supplymultiply, "info.supplymultiply: post == pre");
     assertEq(_post_info_totalSupply, _pre_info_totalSupply, "info.totalSupply: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_info_admin, _pre_info_admin, "info.admin: post >= pre");
+    assertLe(_post_info_admin, _pre_info_admin, "info.admin: post <= pre");
+    assertGe(_post_info_coinCreationTime, _pre_info_coinCreationTime, "info.coinCreationTime: post >= pre");
+    assertLe(_post_info_coinCreationTime, _pre_info_coinCreationTime, "info.coinCreationTime: post <= pre");
+    assertGe(_post_info_coinWorkingTime, _pre_info_coinWorkingTime, "info.coinWorkingTime: post >= pre");
+    assertLe(_post_info_coinWorkingTime, _pre_info_coinWorkingTime, "info.coinWorkingTime: post <= pre");
+    assertGe(_post_info_supplydivision, _pre_info_supplydivision, "info.supplydivision: post >= pre");
+    assertLe(_post_info_supplydivision, _pre_info_supplydivision, "info.supplydivision: post <= pre");
+    assertGe(_post_info_supplymultiply, _pre_info_supplymultiply, "info.supplymultiply: post >= pre");
+    assertLe(_post_info_supplymultiply, _pre_info_supplymultiply, "info.supplymultiply: post <= pre");
+    assertGe(_post_info_totalSupply, _pre_info_totalSupply, "info.totalSupply: post >= pre");
+    assertLe(_post_info_totalSupply, _pre_info_totalSupply, "info.totalSupply: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

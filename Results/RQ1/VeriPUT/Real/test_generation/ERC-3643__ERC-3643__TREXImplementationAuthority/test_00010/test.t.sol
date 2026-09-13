@@ -71,12 +71,12 @@ contract TREXImplementationAuthorityCovTest_TREXImplementationAuthority_getToken
     assertEq(_post_currentVersion_major, _pre_currentVersion_major, "_currentVersion.major: post == pre");
     assertEq(_post_currentVersion_minor, _pre_currentVersion_minor, "_currentVersion.minor: post == pre");
     assertEq(_post_currentVersion_patch, _pre_currentVersion_patch, "_currentVersion.patch: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_currentVersion_major, _pre_currentVersion_major, "_currentVersion.major: post >= pre");
+    assertLe(_post_currentVersion_major, _pre_currentVersion_major, "_currentVersion.major: post <= pre");
+    assertGe(_post_currentVersion_minor, _pre_currentVersion_minor, "_currentVersion.minor: post >= pre");
+    assertLe(_post_currentVersion_minor, _pre_currentVersion_minor, "_currentVersion.minor: post <= pre");
+    assertGe(_post_currentVersion_patch, _pre_currentVersion_patch, "_currentVersion.patch: post >= pre");
+    assertLe(_post_currentVersion_patch, _pre_currentVersion_patch, "_currentVersion.patch: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

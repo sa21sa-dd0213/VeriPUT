@@ -104,7 +104,7 @@ contract ReentranceCovTest_Reentrance_donate_put3p1 is Test {
     c0.donate{value: 115792089237316195423570985008687907853269984665640564039457584007913129639935}(_to);
     
     if (p_msg_sender == address(uint160(0)) && _to == address(uint160(0))) {
-
+      assertEq(uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(0)), uint256(0))))), uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935), "fixed witness state");
     }
     
     uint256 _post_balances__to = uint256(vm.load(address(c0), keccak256(abi.encode(_to, uint256(0)))));

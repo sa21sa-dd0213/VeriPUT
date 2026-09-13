@@ -129,18 +129,18 @@ contract RefrigeratedTransportationCovTest_RefrigeratedTransportation_asadf_put2
     assertEq(_post_MaxTemperature, _pre_MaxTemperature, "MaxTemperature: post == pre");
     assertEq(_post_ComplianceSensorReading, _pre_ComplianceSensorReading, "ComplianceSensorReading: post == pre");
     assertEq(_post_ComplianceStatus, _pre_ComplianceStatus, "ComplianceStatus: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_Owner, _pre_Owner, "Owner: post >= pre");
+    assertLe(_post_Owner, _pre_Owner, "Owner: post <= pre");
+    assertGe(_post_InitiatingCounterparty, _pre_InitiatingCounterparty, "InitiatingCounterparty: post >= pre");
+    assertLe(_post_InitiatingCounterparty, _pre_InitiatingCounterparty, "InitiatingCounterparty: post <= pre");
+    assertGe(_post_Counterparty, _pre_Counterparty, "Counterparty: post >= pre");
+    assertLe(_post_Counterparty, _pre_Counterparty, "Counterparty: post <= pre");
+    assertGe(_post_Device, _pre_Device, "Device: post >= pre");
+    assertLe(_post_Device, _pre_Device, "Device: post <= pre");
+    assertGe(_post_SupplyChainOwner, _pre_SupplyChainOwner, "SupplyChainOwner: post >= pre");
+    assertLe(_post_SupplyChainOwner, _pre_SupplyChainOwner, "SupplyChainOwner: post <= pre");
+    assertGe(_post_SupplyChainObserver, _pre_SupplyChainObserver, "SupplyChainObserver: post >= pre");
+    assertLe(_post_SupplyChainObserver, _pre_SupplyChainObserver, "SupplyChainObserver: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

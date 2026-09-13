@@ -65,8 +65,8 @@ contract BasicTokenCovTest_BasicToken_balanceOf_put2p1 is Test {
     
     uint256 _post_balances__owner = uint256(vm.load(address(c0), keccak256(abi.encode(_owner, uint256(1)))));
     assertEq(_post_balances__owner, _pre_balances__owner, "balances[_owner]: post == pre");
-    
-    
+    assertGe(_post_balances__owner, _pre_balances__owner, "balances[_owner]: post >= pre");
+    assertLe(_post_balances__owner, _pre_balances__owner, "balances[_owner]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

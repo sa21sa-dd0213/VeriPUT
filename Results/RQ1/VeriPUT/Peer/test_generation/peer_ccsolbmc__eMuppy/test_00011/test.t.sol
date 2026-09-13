@@ -28,9 +28,9 @@ contract eMuppyCovTest_eMuppy_asdf_concrete6p1_fb is Test {
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_decimals_413_0 = (uint256(vm.load(address(c0), bytes32(uint256(5)))) & 255);
-
+    assertEq(_veriput_fixed_state_decimals_413_0, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_totalSupply_407_1 = uint256(vm.load(address(c0), bytes32(uint256(2))));
-
+    assertEq(_veriput_fixed_state_totalSupply_407_1, uint256(0), "fixed witness state");
   }
   
   

@@ -65,8 +65,8 @@ contract AnimaliaCovTest_Animalia_tokenFromReflection_put2p1 is Test {
     
     uint256 _post_rTotal = uint256(vm.load(address(c0), bytes32(uint256(6))));
     assertEq(_post_rTotal, _pre_rTotal, "_rTotal: post == pre");
-    
-    
+    assertGe(_post_rTotal, _pre_rTotal, "_rTotal: post >= pre");
+    assertLe(_post_rTotal, _pre_rTotal, "_rTotal: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

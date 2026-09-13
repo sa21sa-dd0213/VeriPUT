@@ -65,8 +65,8 @@ contract AnimaliaCovTest_Animalia_totalFees_put2p1 is Test {
     
     uint256 _post_tFeeTotal = uint256(vm.load(address(c0), bytes32(uint256(7))));
     assertEq(_post_tFeeTotal, _pre_tFeeTotal, "_tFeeTotal: post == pre");
-    
-    
+    assertGe(_post_tFeeTotal, _pre_tFeeTotal, "_tFeeTotal: post >= pre");
+    assertLe(_post_tFeeTotal, _pre_tFeeTotal, "_tFeeTotal: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

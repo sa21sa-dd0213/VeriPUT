@@ -69,8 +69,8 @@ contract GalaxiumCovTest_Galaxium_setBlackList_put2p1 is Test {
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
     assertEq(_post_bots_msg_sender, _pre_bots_msg_sender, "bots[msg.sender]: post == pre");
     assertEq(_post_bots_state__owner, _pre_bots_state__owner, "bots[state._owner]: post == pre");
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -70,8 +70,8 @@ contract eMastiffCovTest_eMastiff_openTrading_put2p1 is Test {
     assertEq(_post_tradingOpen, _pre_tradingOpen, "tradingOpen: post == pre");
     assertEq(_post_liquidityAdded, _pre_liquidityAdded, "liquidityAdded: post == pre");
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

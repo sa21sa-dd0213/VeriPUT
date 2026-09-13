@@ -102,9 +102,9 @@ contract VulnerableTwoStepCovTest_VulnerableTwoStep_claimOwnership_put6p1_p1_par
     c0.claimOwnership{value: 100000000000000000}();
     
     if (p_msg_sender == address(uint160(0))) {
-
-
-
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 160) & 255), uint256(1), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
     
     uint256 _post_player = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);

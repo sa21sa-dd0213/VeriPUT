@@ -66,8 +66,8 @@ contract salvadorCovTest_salvador_approve_put2p1 is Test {
     
     uint256 _post_allowed_msg_sender__delegate = uint256(vm.load(address(c0), keccak256(abi.encode(delegate, keccak256(abi.encode(p_msg_sender, uint256(7)))))));
     assertEq(_post_allowed_msg_sender__delegate, _pre_allowed_msg_sender__delegate, "allowed[msg.sender][delegate]: post == pre");
-    
-    
+    assertGe(_post_allowed_msg_sender__delegate, _pre_allowed_msg_sender__delegate, "allowed[msg.sender][delegate]: post >= pre");
+    assertLe(_post_allowed_msg_sender__delegate, _pre_allowed_msg_sender__delegate, "allowed[msg.sender][delegate]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

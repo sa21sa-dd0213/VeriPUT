@@ -100,14 +100,14 @@ contract ReentrancyDAOCovTest_ReentrancyDAO_withdrawAll_put7p1_p1_part_part0_r i
     c0.withdrawAll();
     
     if (p_msg_sender == address(uint160(4294967294))) {
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "fixed witness state");
     }
     
     uint256 _post_balance = uint256(vm.load(address(c0), bytes32(uint256(1))));
     uint256 _post_credit_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0)))));
     assertEq(_post_balance, _pre_balance, "balance: post == pre");
     assertEq(_post_credit_msg_sender, _pre_credit_msg_sender, "credit[msg.sender]: post == pre");
-    
+    assertGe(_pre_balance, _post_balance, "balance: pre - post in [state.credit[msg.sender], state.credit[msg.sender]] with pre >= post");
     unchecked { assertGe(_pre_balance - _post_balance, _pre_credit_msg_sender, "balance: pre - post in [state.credit[msg.sender], state.credit[msg.sender]] with pre >= post"); }
     unchecked { assertLe(_pre_balance - _post_balance, _pre_credit_msg_sender, "balance: pre - post in [state.credit[msg.sender], state.credit[msg.sender]] with pre >= post"); }
     assertEq(_post_credit_msg_sender, 0, "credit[msg.sender]: post == 0");
@@ -141,9 +141,9 @@ contract ReentrancyDAOCovTest_ReentrancyDAO_withdrawAll_concrete7p1__basis_part0
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "entry pin state.balance did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
@@ -156,7 +156,7 @@ contract ReentrancyDAOCovTest_ReentrancyDAO_withdrawAll_concrete7p1__basis_part0
     vm.prank(address(uint160(4294967294)), address(uint160(0)));
     c0.withdrawAll();
     uint256 _veriput_fixed_state_balance_0 = uint256(vm.load(address(c0), bytes32(uint256(1))));
-
+    assertEq(_veriput_fixed_state_balance_0, uint256(0), "fixed witness state");
   }
   
   

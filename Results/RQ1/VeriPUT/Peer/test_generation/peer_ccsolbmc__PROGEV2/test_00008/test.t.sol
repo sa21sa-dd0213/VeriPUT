@@ -74,10 +74,10 @@ contract PROGEV2CovTest_PROGEV2_asaf_put2p1 is Test {
     assertEq(_post_rogeTreasury, _pre_rogeTreasury, "_rogeTreasury: post == pre");
     assertEq(_post_isExcludedFromFee_addr1, _pre_isExcludedFromFee_addr1, "_isExcludedFromFee[addr1]: post == pre");
     assertEq(_post_isExcludedFromFee_addr2, _pre_isExcludedFromFee_addr2, "_isExcludedFromFee[addr2]: post == pre");
-    
-    
-    
-    
+    assertGe(_post_presa, _pre_presa, "_presa: post >= pre");
+    assertLe(_post_presa, _pre_presa, "_presa: post <= pre");
+    assertGe(_post_rogeTreasury, _pre_rogeTreasury, "_rogeTreasury: post >= pre");
+    assertLe(_post_rogeTreasury, _pre_rogeTreasury, "_rogeTreasury: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

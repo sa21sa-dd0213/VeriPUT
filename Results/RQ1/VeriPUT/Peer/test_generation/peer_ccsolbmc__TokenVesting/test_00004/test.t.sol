@@ -30,15 +30,15 @@ contract TokenVestingCovTest_TokenVesting_issue_into_tranche_concrete6_fb is Tes
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_controller_1 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_controller_1, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_total_locked_3 = uint256(vm.load(address(c0), bytes32(uint256(3))));
-
+    assertEq(_veriput_fixed_state_total_locked_3, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_tranche_count_6 = ((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 160) & 255);
-
+    assertEq(_veriput_fixed_state_tranche_count_6, uint256(1), "fixed witness state");
     uint256 _veriput_fixed_state_v1_address_8 = (uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_v1_address_8, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_v2_address_9 = (uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_v2_address_9, uint256(0), "fixed witness state");
   }
   
   

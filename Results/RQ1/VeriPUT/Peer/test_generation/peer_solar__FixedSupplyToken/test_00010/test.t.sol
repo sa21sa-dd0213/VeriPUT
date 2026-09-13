@@ -1,57 +1,82 @@
 // SPDX-License-Identifier: MIT
 
-
-
-
-
-
 pragma solidity >=0.8.0;
 
 import {Test} from "forge-std/Test.sol";
 import {FixedSupplyToken} from "../src/flat.sol";
 
-import {Vm} from "forge-std/Vm.sol";
-contract FixedSupplyTokenCovTest_0_FixedSupplyToken_transfer_concrete14_fb is Test {
+contract FixedSupplyTokenCovTest_FixedSupplyToken_totalSupply_put2p1 is Test {
   FixedSupplyToken c0;
   function setUp() public {
-    vm.startPrank(address(uint160(4294967295)), address(uint160(4294967295)));
     c0 = new FixedSupplyToken();
-    vm.stopPrank();
   }
   
+
   
-  function test_cov_0() public {
-    vm.recordLogs();
-    vm.prank(address(uint160(4294967295)));
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value) internal {
+    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
+    p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     
-    bool _veriput_concrete_return = c0.transfer(address(uint160(4294967295)), 1);
-    Vm.Log[] memory _veriputLogs = vm.getRecordedLogs();
-    assertEq(_veriputLogs.length, 1);
-    assertEq(_veriputLogs[0].emitter, address(c0));
-    assertEq(_veriputLogs[0].topics.length, 3);
-    assertEq(_veriputLogs[0].topics[0], keccak256("Transfer(address,address,uint256)"));
-    assertEq(_veriputLogs[0].topics[1], bytes32(uint256(uint160(address(uint160(4294967295))))));
-    assertEq(_veriputLogs[0].topics[2], bytes32(uint256(uint160(address(uint160(4294967295))))));
-    assertEq(_veriputLogs[0].data, abi.encode(uint256(1)));
-    assertEq(_veriput_concrete_return, true, "fixed witness return must match");
-    uint256 _veriput_fixed_state_totalSupply_0 = uint256(vm.load(address(c0), bytes32(uint256(0))));
+    uint256 _pre_totalSupply = uint256(vm.load(address(c0), bytes32(uint256(0))));
+    
+    
+    vm.deal(p_msg_sender, p_msg_value);
+    vm.prank(p_msg_sender);
+    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("totalSupply()"));
+    
+    uint256 _post_totalSupply = uint256(vm.load(address(c0), bytes32(uint256(0))));
+    assertEq(_post_totalSupply, _pre_totalSupply, "_totalSupply: post == pre");
+    assertGe(_post_totalSupply, _pre_totalSupply, "_totalSupply: post >= pre");
+    assertLe(_post_totalSupply, _pre_totalSupply, "_totalSupply: post <= pre");
+    
+    assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 
-    uint256 _veriput_fixed_state_balances_4294967295_2 = uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(4294967295)), uint256(2)))));
-
-    uint256 _veriput_fixed_state_owner_4 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
-
+    
+    
   }
-  
-  
-}
 
-contract FixedSupplyTokenCovTest_1 is Test {
-  FixedSupplyToken c0;
-  function setUp() public {
-    vm.startPrank(address(uint160(1)), address(uint160(1)));
-    c0 = new FixedSupplyToken();
-    vm.stopPrank();
+
+  
+  function test_put_FixedSupplyToken_totalSupply_path2p1(address p_msg_sender, uint256 p_msg_value) public {
+    _veriput_parameterized(p_msg_sender, p_msg_value);
   }
-  
-  
 }

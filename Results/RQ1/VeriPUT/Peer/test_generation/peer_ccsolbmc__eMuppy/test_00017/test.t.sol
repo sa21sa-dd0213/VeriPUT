@@ -169,109 +169,109 @@ contract eMuppyCovTest_eMuppy_decimals_put3p1 is Test {
     
     if (p_msg_sender == address(uint160(0))) {
       assertEq(_put_ret, uint8(0), "fixed witness return");
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(5)))) & 255), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(0), "fixed witness state");
     }
     
     uint256 _post_decimals = (uint256(vm.load(address(c0), bytes32(uint256(5)))) & 255);
     assertEq(_post_decimals, _pre_decimals, "_decimals: post == pre");
     assertEq(_post_decimals, 0, "_decimals: post == msg.value");
-    
+    assertEq(_post_decimals, _pre_decimals_413, "_decimals: post == state._decimals$413");
     unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) + uint256(_pre_decimals)), "_decimals: post == (pre + pre)"); }
     unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) * uint256(_pre_decimals)), "_decimals: post == (pre * pre)"); }
-    
+    unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) + uint256(_pre_decimals_413)), "_decimals: post == (pre + state._decimals$413)"); }
     unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) - uint256(_pre_decimals_413)), "_decimals: post == (pre - state._decimals$413)"); }
-    
+    unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) * uint256(_pre_decimals_413)), "_decimals: post == (pre * state._decimals$413)"); }
     unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) * uint256(255)), "_decimals: post == (pre * 255)"); }
     unchecked { assertEq(_post_decimals, (uint256(0) - uint256(_pre_decimals)), "_decimals: post == (msg.value - pre)"); }
-    
-    
-    
-    
-    
+    unchecked { assertEq(_post_decimals, (uint256(0) - uint256(_pre_decimals_413)), "_decimals: post == (msg.value - state._decimals$413)"); }
+    unchecked { assertEq(_post_decimals, (uint256(_pre_decimals_413) - uint256(_pre_decimals)), "_decimals: post == (state._decimals$413 - pre)"); }
+    unchecked { assertEq(_post_decimals, (uint256(_pre_decimals_413) + uint256(_pre_decimals_413)), "_decimals: post == (state._decimals$413 + state._decimals$413)"); }
+    unchecked { assertEq(_post_decimals, (uint256(_pre_decimals_413) * uint256(_pre_decimals_413)), "_decimals: post == (state._decimals$413 * state._decimals$413)"); }
+    unchecked { assertEq(_post_decimals, (uint256(_pre_decimals_413) * uint256(255)), "_decimals: post == (state._decimals$413 * 255)"); }
     unchecked { assertEq(_post_decimals, (uint256(_pre_decimals) / uint256(255)), "_decimals: post == (pre / 255)"); }
     unchecked { assertEq(_post_decimals, (uint256(0) / uint256(255)), "_decimals: post == (msg.value / 255)"); }
-    
+    unchecked { assertEq(_post_decimals, (uint256(_pre_decimals_413) / uint256(255)), "_decimals: post == (state._decimals$413 / 255)"); }
     assertEq(uint256(_put_ret), 0, "return: return == 0");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertEq(uint256(_put_ret), 0, "return: return == msg.value");
+    assertEq(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return == (msg.value + msg.value)");
+    assertEq(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return == (msg.value - msg.value)");
+    assertEq(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return == (msg.value * msg.value)");
+    assertEq(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return == (msg.value + 0)");
+    assertEq(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return == (msg.value - 0)");
+    assertEq(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return == (msg.value * 0)");
+    assertEq(uint256(_put_ret), (uint256(0) * uint256(255)), "return: return == (msg.value * 255)");
+    assertEq(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return == (0 + msg.value)");
+    assertEq(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return == (0 - msg.value)");
+    assertEq(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return == (0 * msg.value)");
+    assertEq(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return == (0 + 0)");
+    assertEq(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return == (0 - 0)");
+    assertEq(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return == (0 * 0)");
+    assertEq(uint256(_put_ret), (uint256(0) * uint256(255)), "return: return == (0 * 255)");
+    assertEq(uint256(_put_ret), (uint256(255) * uint256(0)), "return: return == (255 * msg.value)");
+    assertEq(uint256(_put_ret), (uint256(255) * uint256(0)), "return: return == (255 * 0)");
+    assertEq(uint256(_put_ret), (uint256(255) - uint256(255)), "return: return == (255 - 255)");
     assertEq(uint256(_put_ret), (uint256(0) / uint256(255)), "return: return == (msg.value / 255)");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertEq(uint256(_put_ret), (uint256(0) / uint256(255)), "return: return == (0 / 255)");
+    assertGe(uint256(_put_ret), 0, "return: return in [msg.value, msg.value]");
+    assertLe(uint256(_put_ret), 0, "return: return in [msg.value, msg.value]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, 0]");
+    assertLe(uint256(_put_ret), 0, "return: return in [0, 0]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, msg.value]");
+    assertLe(uint256(_put_ret), 0, "return: return in [0, msg.value]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, 255]");
+    assertLe(uint256(_put_ret), 255, "return: return in [0, 255]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value + msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return in [0, (msg.value + msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value - msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return in [0, (msg.value - msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value * msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return in [0, (msg.value * msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value + 0)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return in [0, (msg.value + 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value - 0)]");
+    assertLe(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return in [0, (msg.value - 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value * 0)]");
+    assertLe(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return in [0, (msg.value * 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value + 255)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(255)), "return: return in [0, (msg.value + 255)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value * 255)]");
+    assertLe(uint256(_put_ret), (uint256(0) * uint256(255)), "return: return in [0, (msg.value * 255)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 + msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return in [0, (0 + msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 - msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return in [0, (0 - msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 * msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return in [0, (0 * msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 + 0)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(0)), "return: return in [0, (0 + 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 - 0)]");
+    assertLe(uint256(_put_ret), (uint256(0) - uint256(0)), "return: return in [0, (0 - 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 * 0)]");
+    assertLe(uint256(_put_ret), (uint256(0) * uint256(0)), "return: return in [0, (0 * 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 + 255)]");
+    assertLe(uint256(_put_ret), (uint256(0) + uint256(255)), "return: return in [0, (0 + 255)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 * 255)]");
+    assertLe(uint256(_put_ret), (uint256(0) * uint256(255)), "return: return in [0, (0 * 255)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (255 + msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(255) + uint256(0)), "return: return in [0, (255 + msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (255 - msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(255) - uint256(0)), "return: return in [0, (255 - msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (255 * msg.value)]");
+    assertLe(uint256(_put_ret), (uint256(255) * uint256(0)), "return: return in [0, (255 * msg.value)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (255 + 0)]");
+    assertLe(uint256(_put_ret), (uint256(255) + uint256(0)), "return: return in [0, (255 + 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (255 - 0)]");
+    assertLe(uint256(_put_ret), (uint256(255) - uint256(0)), "return: return in [0, (255 - 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (255 * 0)]");
+    assertLe(uint256(_put_ret), (uint256(255) * uint256(0)), "return: return in [0, (255 * 0)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (255 - 255)]");
+    assertLe(uint256(_put_ret), (uint256(255) - uint256(255)), "return: return in [0, (255 - 255)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (msg.value / 255)]");
+    assertLe(uint256(_put_ret), (uint256(0) / uint256(255)), "return: return in [0, (msg.value / 255)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (0 / 255)]");
+    assertLe(uint256(_put_ret), (uint256(0) / uint256(255)), "return: return in [0, (0 / 255)]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, (255 / 255)]");
     assertLe(uint256(_put_ret), (uint256(255) / uint256(255)), "return: return in [0, (255 / 255)]");
     
   }
@@ -303,15 +303,15 @@ contract eMuppyCovTest_eMuppy_decimals_concrete3p1__basis_root__W is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(5))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(5)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(5)))) & 255), uint256(0), "entry pin state._decimals$413 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(0), "entry pin state._totalSupply$407 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -325,9 +325,9 @@ contract eMuppyCovTest_eMuppy_decimals_concrete3p1__basis_root__W is Test {
     uint8 _veriput_concrete_return = c0.decimals();
     assertEq(_veriput_concrete_return, uint8(0), "fixed witness return must match");
     uint256 _veriput_fixed_state_decimals_413_0 = (uint256(vm.load(address(c0), bytes32(uint256(5)))) & 255);
-
+    assertEq(_veriput_fixed_state_decimals_413_0, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_totalSupply_407_1 = uint256(vm.load(address(c0), bytes32(uint256(2))));
-
+    assertEq(_veriput_fixed_state_totalSupply_407_1, uint256(0), "fixed witness state");
   }
   
   

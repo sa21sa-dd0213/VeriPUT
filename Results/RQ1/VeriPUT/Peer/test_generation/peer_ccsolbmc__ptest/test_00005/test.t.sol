@@ -64,8 +64,8 @@ contract PrimalityCovTest_Primality_setY_put2p1 is Test {
     
     uint256 _post_y = uint256(vm.load(address(c0), bytes32(uint256(2))));
     assertEq(_post_y, _pre_y, "y: post == pre");
-    
-    
+    assertGe(_post_y, _pre_y, "y: post >= pre");
+    assertLe(_post_y, _pre_y, "y: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

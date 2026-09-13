@@ -11,13 +11,13 @@ contract AavePoolRewardCovTest_AavePoolReward_balanceOf_put2p1 is Test {
     c0 = new AavePoolReward();
     
     address _esbmc_ext_mock_0 = address(0xDFC14d2Af169B0D36C4EFF567Ada9b2E0CAE044f);
-
-
-
+    vm.etch(_esbmc_ext_mock_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("safeTransfer(IERC20,address,uint256)"), bytes(""));
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("safeTransferFrom(IERC20,address,address,uint256)"), bytes(""));
     
     address _esbmc_ext_mock_5 = address(0xe053a0D5b644ED2eaD581b866203bF63ab55BD1B);
-
-
+    vm.etch(_esbmc_ext_mock_5, hex"60006000f3");
+    vm.mockCall(_esbmc_ext_mock_5, abi.encodeWithSignature("safeTransfer(IERC20,address,uint256)"), bytes(""));
   }
   
 
@@ -74,8 +74,8 @@ contract AavePoolRewardCovTest_AavePoolReward_balanceOf_put2p1 is Test {
     
     uint256 _post_balances_account = uint256(vm.load(address(c0), keccak256(abi.encode(account, uint256(2)))));
     assertEq(_post_balances_account, _pre_balances_account, "_balances[account]: post == pre");
-    
-    
+    assertGe(_post_balances_account, _pre_balances_account, "_balances[account]: post >= pre");
+    assertLe(_post_balances_account, _pre_balances_account, "_balances[account]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -66,10 +66,10 @@ contract PORCUPINECovTest_PORCUPINE_initializeA_put2p1 is Test {
     uint256 _post_rOwned_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(1)))));
     assertEq(_post_rTotal, _pre_rTotal, "_rTotal: post == pre");
     assertEq(_post_rOwned_msg_sender, _pre_rOwned_msg_sender, "_rOwned[msg.sender]: post == pre");
-    
-    
-    
-    
+    assertGe(_post_rTotal, _pre_rTotal, "_rTotal: post >= pre");
+    assertLe(_post_rTotal, _pre_rTotal, "_rTotal: post <= pre");
+    assertGe(_post_rOwned_msg_sender, _pre_rOwned_msg_sender, "_rOwned[msg.sender]: post >= pre");
+    assertLe(_post_rOwned_msg_sender, _pre_rOwned_msg_sender, "_rOwned[msg.sender]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

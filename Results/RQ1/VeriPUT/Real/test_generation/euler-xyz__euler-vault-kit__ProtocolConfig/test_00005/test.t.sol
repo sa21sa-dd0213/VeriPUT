@@ -10,13 +10,22 @@ pragma solidity >=0.8.0;
 import {Test} from "forge-std/Test.sol";
 import {ProtocolConfig} from "../src/flat.sol";
 
-contract ProtocolConfigCovTest_ProtocolConfig_protocolFeeConfig_put7p1 is Test {
+contract ProtocolConfigCovTest_0 is Test {
   ProtocolConfig c0;
   function setUp() public {
-    c0 = new ProtocolConfig(address(uint160(1000)), address(uint160(1001)));
+    c0 = new ProtocolConfig(address(uint160(4294967295)), address(uint160(1001)));
   }
   
   
+  
+  
+}
+
+contract ProtocolConfigCovTest_1_ProtocolConfig_setAdmin_put6p1 is Test {
+  ProtocolConfig c0;
+  function setUp() public {
+    c0 = new ProtocolConfig(address(uint160(730750818665451459101842416358141509832261238783)), address(uint160(1001)));
+  }
   
   
 
@@ -79,32 +88,21 @@ contract ProtocolConfigCovTest_ProtocolConfig_protocolFeeConfig_put7p1 is Test {
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  function _veriput_parameterized(address p_msg_sender, address vault) internal {
-    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
-    vault = address(uint160(bound(uint256(uint160(vault)), 0, 1461501637330902918203684832716283019655932542975)));
+  function _veriput_parameterized(address p_msg_sender, address newAdmin) internal {
+    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 0, 1461501637330902918203684832716283019655932542975)));
+    vm.assume(uint256(uint160(p_msg_sender)) != 0);
+    vm.assume(uint256(uint160(p_msg_sender)) != 730750818665451459101842416358141509832261238783);
+    newAdmin = address(uint160(bound(uint256(uint160(newAdmin)), 0, 1461501637330902918203684832716283019655932542975)));
     
-    uint256 _pre_feeReceiver = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
-    uint256 _pre_protocolFeeShare = ((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 160) & 65535);
-    uint256 _pre_protocolFeeConfig_vault__exists = (uint256(vm.load(address(c0), keccak256(abi.encode(vault, uint256(3))))) & 255);
-    uint256 _pre_protocolFeeConfig_vault__feeReceiver = ((uint256(vm.load(address(c0), keccak256(abi.encode(vault, uint256(3))))) >> 8) & 1461501637330902918203684832716283019655932542975);
-    uint256 _pre_protocolFeeConfig_vault__protocolFeeShare = ((uint256(vm.load(address(c0), keccak256(abi.encode(vault, uint256(3))))) >> 168) & 65535);
     
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(730750818665451459101842416358141509832261238783) & 1461501637330902918203684832716283019655932542975) << 0);
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
+    }
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(730750818665451459101842416358141509832261238783), "entry pin state.admin did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    
+    uint256 _pre_admin = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
     vm.chainId(0);
@@ -114,46 +112,134 @@ contract ProtocolConfigCovTest_ProtocolConfig_protocolFeeConfig_put7p1 is Test {
     vm.txGasPrice(0);
     vm.coinbase(address(uint160(0)));
     vm.prank(p_msg_sender);
-    (address _veriput_fixed_return_0, uint16 _veriput_fixed_return_1) = c0.protocolFeeConfig(vault);
     
-    if (p_msg_sender == address(uint160(0)) && vault == address(uint160(0))) {
-      assertEq(_veriput_fixed_return_0, address(uint160(0)), "fixed witness return");
-      assertEq(_veriput_fixed_return_1, uint16(5000), "fixed witness return");
-
-
-
-
-
+    bool _put_ok = true;
+    try c0.setAdmin(newAdmin) {} catch { _put_ok = false; }
+    
+    if (p_msg_sender == address(uint160(4294967295)) && newAdmin == address(uint160(0))) {
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(730750818665451459101842416358141509832261238783), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 192) & 65535), uint256(10000), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 176) & 65535), uint256(1000), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 160) & 65535), uint256(5000), "fixed witness state");
     }
     
-    uint256 _post_feeReceiver = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
-    uint256 _post_protocolFeeShare = ((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 160) & 65535);
-    uint256 _post_protocolFeeConfig_vault__exists = (uint256(vm.load(address(c0), keccak256(abi.encode(vault, uint256(3))))) & 255);
-    uint256 _post_protocolFeeConfig_vault__feeReceiver = ((uint256(vm.load(address(c0), keccak256(abi.encode(vault, uint256(3))))) >> 8) & 1461501637330902918203684832716283019655932542975);
-    uint256 _post_protocolFeeConfig_vault__protocolFeeShare = ((uint256(vm.load(address(c0), keccak256(abi.encode(vault, uint256(3))))) >> 168) & 65535);
-    assertEq(_post_feeReceiver, _pre_feeReceiver, "feeReceiver: post == pre");
-    assertEq(_post_protocolFeeShare, _pre_protocolFeeShare, "protocolFeeShare: post == pre");
-    assertEq(_post_protocolFeeConfig_vault__exists, _pre_protocolFeeConfig_vault__exists, "_protocolFeeConfig[vault].exists: post == pre");
-    assertEq(_post_protocolFeeConfig_vault__feeReceiver, _pre_protocolFeeConfig_vault__feeReceiver, "_protocolFeeConfig[vault].feeReceiver: post == pre");
-    assertEq(_post_protocolFeeConfig_vault__protocolFeeShare, _pre_protocolFeeConfig_vault__protocolFeeShare, "_protocolFeeConfig[vault].protocolFeeShare: post == pre");
+    uint256 _post_admin = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_post_admin, _pre_admin, "admin: post == pre");
+    assertGe(_post_admin, _pre_admin, "admin: post >= pre");
+    assertLe(_post_admin, _pre_admin, "admin: post <= pre");
     
-    
-    
-    
-    unchecked { assertLe(_post_feeReceiver, (uint256(0) + uint256(1461501637330902918203684832716283019655932542975)), "feeReceiver: post in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]"); }
-    
-    
-    
-    
-    
-    
-    unchecked { assertLe(_post_protocolFeeShare, (uint256(0) + uint256(65535)), "protocolFeeShare: post in [0, (msg.value + 65535)]"); }
-    
+    assertFalse(_put_ok, "path enc=6p1 exits through a REVERT: the call must fail on the unmodified contract");
   }
 
 
   
-  function test_put_ProtocolConfig_protocolFeeConfig_path7p1(address p_msg_sender, address vault) public {
-    _veriput_parameterized(p_msg_sender, vault);
+  function test_put_ProtocolConfig_setAdmin_path6p1(address p_msg_sender, address newAdmin) public {
+    _veriput_parameterized(p_msg_sender, newAdmin);
+    
+    { ProtocolConfigCovTest_1_ProtocolConfig_setAdmin_concrete6p1__basis_root__W _veriput_w = new ProtocolConfigCovTest_1_ProtocolConfig_setAdmin_concrete6p1__basis_root__W(); _veriput_w.setUp(); _veriput_w._w_test_cov_2(); }
+}
+}
+
+contract ProtocolConfigCovTest_2 is Test {
+  ProtocolConfig c0;
+  function setUp() public {
+    c0 = new ProtocolConfig(address(uint160(1000)), address(uint160(1001)));
   }
+  
+  
+}
+
+
+
+
+
+
+
+
+contract ProtocolConfigCovTest_0__W is Test {
+  ProtocolConfig c0;
+  function setUp() public {
+    c0 = new ProtocolConfig(address(uint160(4294967295)), address(uint160(1001)));
+  }
+  
+  
+  
+  
+}
+
+contract ProtocolConfigCovTest_1_ProtocolConfig_setAdmin_concrete6p1__basis_root__W is Test {
+  ProtocolConfig c0;
+  function setUp() public {
+    c0 = new ProtocolConfig(address(uint160(730750818665451459101842416358141509832261238783)), address(uint160(1001)));
+  }
+  
+  
+  function _w_test_cov_2() public {
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(730750818665451459101842416358141509832261238783) & 1461501637330902918203684832716283019655932542975) << 0);
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
+    }
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(730750818665451459101842416358141509832261238783), "entry pin state.admin did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
+    }
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.feeReceiver did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
+      _w = (_w & ~uint256(411369862228566123857978459849914418579267864052950501802639360)) | ((uint256(10000) & 65535) << 192);
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
+    }
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 192) & 65535), uint256(10000), "entry pin state.maxInterestFee did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
+      _w = (_w & ~uint256(6277005954415376645782142026518469521778379273268898037760)) | ((uint256(1000) & 65535) << 176);
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
+    }
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 176) & 65535), uint256(1000), "entry pin state.minInterestFee did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
+      _w = (_w & ~uint256(95779509802480722744478485512061607693151539203932160)) | ((uint256(5000) & 65535) << 160);
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
+    }
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 160) & 65535), uint256(5000), "entry pin state.protocolFeeShare did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    
+    
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
+    vm.prank(address(uint160(4294967295)), address(uint160(0)));
+    bool _veriput_concrete_completed = false;
+    try c0.setAdmin(address(uint160(0))) {
+      _veriput_concrete_completed = true;
+    } catch {}
+    assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
+    uint256 _veriput_fixed_state_admin_3 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_veriput_fixed_state_admin_3, uint256(730750818665451459101842416358141509832261238783), "fixed witness state");
+    uint256 _veriput_fixed_state_feeReceiver_4 = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_veriput_fixed_state_feeReceiver_4, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_maxInterestFee_5 = ((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 192) & 65535);
+    assertEq(_veriput_fixed_state_maxInterestFee_5, uint256(10000), "fixed witness state");
+    uint256 _veriput_fixed_state_minInterestFee_6 = ((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 176) & 65535);
+    assertEq(_veriput_fixed_state_minInterestFee_6, uint256(1000), "fixed witness state");
+    uint256 _veriput_fixed_state_protocolFeeShare_7 = ((uint256(vm.load(address(c0), bytes32(uint256(1)))) >> 160) & 65535);
+    assertEq(_veriput_fixed_state_protocolFeeShare_7, uint256(5000), "fixed witness state");
+  }
+}
+
+contract ProtocolConfigCovTest_2__W is Test {
+  ProtocolConfig c0;
+  function setUp() public {
+    c0 = new ProtocolConfig(address(uint160(1000)), address(uint160(1001)));
+  }
+  
+  
 }

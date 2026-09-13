@@ -108,7 +108,7 @@ contract ENSRegistryCovTest_ENSRegistry_setApprovalForAll_put3p1 is Test {
       assertEq(_veriputFixedLogs[0].topics[1], bytes32(uint256(uint160(address(uint160(0))))));
       assertEq(_veriputFixedLogs[0].topics[2], bytes32(uint256(uint160(address(uint160(0))))));
       assertEq(_veriputFixedLogs[0].data, abi.encode(false));
-
+      assertEq((uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(0)), keccak256(abi.encode(address(uint160(0)), uint256(1))))))) & 255), uint256(0), "fixed witness state");
     }
     
     uint256 _post_operators_msg_sender__operator = (uint256(vm.load(address(c0), keccak256(abi.encode(operator, keccak256(abi.encode(p_msg_sender, uint256(1))))))) & 255);

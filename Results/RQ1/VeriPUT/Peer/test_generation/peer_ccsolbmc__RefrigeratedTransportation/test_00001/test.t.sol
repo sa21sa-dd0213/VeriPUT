@@ -75,14 +75,14 @@ contract RefrigeratedTransportationCovTest_RefrigeratedTransportation_Complete_p
     assertEq(_post_Counterparty, _pre_Counterparty, "Counterparty: post == pre");
     assertEq(_post_PreviousCounterparty, _pre_PreviousCounterparty, "PreviousCounterparty: post == pre");
     assertEq(_post_SupplyChainOwner, _pre_SupplyChainOwner, "SupplyChainOwner: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_Owner, _pre_Owner, "Owner: post >= pre");
+    assertLe(_post_Owner, _pre_Owner, "Owner: post <= pre");
+    assertGe(_post_Counterparty, _pre_Counterparty, "Counterparty: post >= pre");
+    assertLe(_post_Counterparty, _pre_Counterparty, "Counterparty: post <= pre");
+    assertGe(_post_PreviousCounterparty, _pre_PreviousCounterparty, "PreviousCounterparty: post >= pre");
+    assertLe(_post_PreviousCounterparty, _pre_PreviousCounterparty, "PreviousCounterparty: post <= pre");
+    assertGe(_post_SupplyChainOwner, _pre_SupplyChainOwner, "SupplyChainOwner: post >= pre");
+    assertLe(_post_SupplyChainOwner, _pre_SupplyChainOwner, "SupplyChainOwner: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -3304,223 +3304,223 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3185,
+      "end_line": 3184,
       "function": "registerPool",
       "mutant_id": "m000331",
       "operator": "DLR",
       "original_expression": "TokenConfig[] memory tokenConfig",
       "replacement_expression": "TokenConfig[] storage tokenConfig",
-      "start_line": 3185
+      "start_line": 3184
     },
     {
       "compile_status": "failed",
-      "end_line": 3214,
+      "end_line": 3213,
       "function": "initialize",
       "mutant_id": "m000332",
       "operator": "DLR",
       "original_expression": "IERC20[] memory tokens",
       "replacement_expression": "IERC20[] storage tokens",
-      "start_line": 3214
+      "start_line": 3213
     },
     {
       "compile_status": "failed",
-      "end_line": 3215,
+      "end_line": 3214,
       "function": "initialize",
       "mutant_id": "m000333",
       "operator": "DLR",
       "original_expression": "uint256[] memory exactAmountsIn",
       "replacement_expression": "uint256[] storage exactAmountsIn",
-      "start_line": 3215
+      "start_line": 3214
     },
     {
       "compile_status": "failed",
-      "end_line": 3217,
+      "end_line": 3216,
       "function": "initialize",
       "mutant_id": "m000334",
       "operator": "DLR",
       "original_expression": "bytes memory userData",
       "replacement_expression": "bytes storage userData",
-      "start_line": 3217
+      "start_line": 3216
     },
     {
       "compile_status": "failed",
-      "end_line": 3237,
+      "end_line": 3236,
       "function": "getPoolTokens",
       "mutant_id": "m000335",
       "operator": "DLR",
       "original_expression": "IERC20[] memory tokens",
       "replacement_expression": "IERC20[] storage tokens",
-      "start_line": 3237
+      "start_line": 3236
     },
     {
       "compile_status": "failed",
-      "end_line": 3251,
+      "end_line": 3250,
       "function": "getPoolTokenRates",
       "mutant_id": "m000336",
       "operator": "DLR",
       "original_expression": "uint256[] memory decimalScalingFactors",
       "replacement_expression": "uint256[] storage decimalScalingFactors",
-      "start_line": 3251
+      "start_line": 3250
     },
     {
       "compile_status": "failed",
-      "end_line": 3251,
+      "end_line": 3250,
       "function": "getPoolTokenRates",
       "mutant_id": "m000337",
       "operator": "DLR",
       "original_expression": "uint256[] memory tokenRates",
       "replacement_expression": "uint256[] storage tokenRates",
-      "start_line": 3251
+      "start_line": 3250
     },
     {
       "compile_status": "failed",
-      "end_line": 3259,
+      "end_line": 3258,
       "function": "getPoolData",
       "mutant_id": "m000338",
       "operator": "DLR",
       "original_expression": "PoolData memory poolData",
       "replacement_expression": "PoolData storage poolData",
-      "start_line": 3259
+      "start_line": 3258
     },
     {
       "compile_status": "failed",
-      "end_line": 3275,
+      "end_line": 3274,
       "function": "getPoolTokenInfo",
       "mutant_id": "m000339",
       "operator": "DLR",
       "original_expression": "IERC20[] memory tokens",
       "replacement_expression": "IERC20[] storage tokens",
+      "start_line": 3274
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3275,
+      "function": "getPoolTokenInfo",
+      "mutant_id": "m000340",
+      "operator": "DLR",
+      "original_expression": "TokenInfo[] memory tokenInfo",
+      "replacement_expression": "TokenInfo[] storage tokenInfo",
       "start_line": 3275
     },
     {
       "compile_status": "failed",
       "end_line": 3276,
       "function": "getPoolTokenInfo",
-      "mutant_id": "m000340",
+      "mutant_id": "m000341",
       "operator": "DLR",
-      "original_expression": "TokenInfo[] memory tokenInfo",
-      "replacement_expression": "TokenInfo[] storage tokenInfo",
+      "original_expression": "uint256[] memory balancesRaw",
+      "replacement_expression": "uint256[] storage balancesRaw",
       "start_line": 3276
     },
     {
       "compile_status": "failed",
       "end_line": 3277,
       "function": "getPoolTokenInfo",
-      "mutant_id": "m000341",
-      "operator": "DLR",
-      "original_expression": "uint256[] memory balancesRaw",
-      "replacement_expression": "uint256[] storage balancesRaw",
-      "start_line": 3277
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3278,
-      "function": "getPoolTokenInfo",
       "mutant_id": "m000342",
       "operator": "DLR",
       "original_expression": "uint256[] memory lastBalancesLiveScaled18",
       "replacement_expression": "uint256[] storage lastBalancesLiveScaled18",
-      "start_line": 3278
+      "start_line": 3277
     },
     {
       "compile_status": "failed",
-      "end_line": 3288,
+      "end_line": 3287,
       "function": "getCurrentLiveBalances",
       "mutant_id": "m000343",
       "operator": "DLR",
       "original_expression": "uint256[] memory balancesLiveScaled18",
       "replacement_expression": "uint256[] storage balancesLiveScaled18",
-      "start_line": 3288
+      "start_line": 3287
     },
     {
       "compile_status": "failed",
-      "end_line": 3296,
+      "end_line": 3295,
       "function": "getPoolConfig",
       "mutant_id": "m000344",
       "operator": "DLR",
       "original_expression": "PoolConfig memory poolConfig",
       "replacement_expression": "PoolConfig storage poolConfig",
-      "start_line": 3296
+      "start_line": 3295
     },
     {
       "compile_status": "failed",
-      "end_line": 3304,
+      "end_line": 3303,
       "function": "getHooksConfig",
       "mutant_id": "m000345",
       "operator": "DLR",
       "original_expression": "HooksConfig memory hooksConfig",
       "replacement_expression": "HooksConfig storage hooksConfig",
-      "start_line": 3304
+      "start_line": 3303
     },
     {
       "compile_status": "failed",
-      "end_line": 3438,
+      "end_line": 3437,
       "function": "getPoolRoleAccounts",
       "mutant_id": "m000346",
       "operator": "DLR",
       "original_expression": "PoolRoleAccounts memory roleAccounts",
       "replacement_expression": "PoolRoleAccounts storage roleAccounts",
-      "start_line": 3438
+      "start_line": 3437
     },
     {
       "compile_status": "failed",
-      "end_line": 3449,
+      "end_line": 3448,
       "function": "computeDynamicSwapFeePercentage",
       "mutant_id": "m000347",
       "operator": "DLR",
       "original_expression": "PoolSwapParams memory swapParams",
       "replacement_expression": "PoolSwapParams storage swapParams",
-      "start_line": 3449
+      "start_line": 3448
     },
     {
       "compile_status": "failed",
-      "end_line": 3485,
+      "end_line": 3484,
       "function": "removeLiquidityRecovery",
       "mutant_id": "m000348",
       "operator": "DLR",
       "original_expression": "uint256[] memory minAmountsOut",
       "replacement_expression": "uint256[] storage minAmountsOut",
-      "start_line": 3485
+      "start_line": 3484
     },
     {
       "compile_status": "failed",
-      "end_line": 3486,
+      "end_line": 3485,
       "function": "removeLiquidityRecovery",
       "mutant_id": "m000349",
       "operator": "DLR",
       "original_expression": "uint256[] memory amountsOut",
       "replacement_expression": "uint256[] storage amountsOut",
-      "start_line": 3486
+      "start_line": 3485
     },
     {
       "compile_status": "failed",
-      "end_line": 3506,
+      "end_line": 3505,
       "function": "quote",
       "mutant_id": "m000350",
       "operator": "DLR",
       "original_expression": "bytes memory result",
       "replacement_expression": "bytes storage result",
-      "start_line": 3506
+      "start_line": 3505
     },
     {
       "compile_status": "failed",
-      "end_line": 3744,
+      "end_line": 3743,
       "function": "collectAggregateFees",
       "mutant_id": "m000351",
       "operator": "DLR",
       "original_expression": "uint256[] memory swapFeeAmounts",
       "replacement_expression": "uint256[] storage swapFeeAmounts",
-      "start_line": 3744
+      "start_line": 3743
     },
     {
       "compile_status": "failed",
-      "end_line": 3744,
+      "end_line": 3743,
       "function": "collectAggregateFees",
       "mutant_id": "m000352",
       "operator": "DLR",
       "original_expression": "uint256[] memory yieldFeeAmounts",
       "replacement_expression": "uint256[] storage yieldFeeAmounts",
-      "start_line": 3744
+      "start_line": 3743
     },
     {
       "compile_status": "ok",
@@ -5554,123 +5554,123 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3069,
+      "end_line": 3068,
       "function": "withdrawPoolCreatorFees",
       "mutant_id": "m000556",
       "operator": "OLFD",
       "original_expression": "function withdrawPoolCreatorFees(address pool, address recipient) external;",
       "replacement_expression": "",
-      "start_line": 3069
+      "start_line": 3068
     },
     {
       "compile_status": "ok",
-      "end_line": 3078,
+      "end_line": 3077,
       "function": "withdrawPoolCreatorFees",
       "mutant_id": "m000557",
       "operator": "OLFD",
       "original_expression": "function withdrawPoolCreatorFees(address pool) external;",
       "replacement_expression": "",
-      "start_line": 3078
+      "start_line": 3077
     },
     {
       "compile_status": "failed",
-      "end_line": 3099,
+      "end_line": 3098,
       "function": "vault",
       "mutant_id": "m000558",
       "operator": "OLFD",
       "original_expression": "function vault() external view returns (IVault);",
       "replacement_expression": "",
-      "start_line": 3099
+      "start_line": 3098
     },
     {
       "compile_status": "ok",
-      "end_line": 3192,
+      "end_line": 3191,
       "function": "registerPool",
       "mutant_id": "m000559",
       "operator": "OLFD",
       "original_expression": "function registerPool(\n        address pool,\n        TokenConfig[] memory tokenConfig,\n        uint256 swapFeePercentage,\n        uint32 pauseWindowEndTime,\n        bool protocolFeeExempt,\n        PoolRoleAccounts calldata roleAccounts,\n        address poolHooksContract,\n        LiquidityManagement calldata liquidityManagement\n    ) external;",
       "replacement_expression": "",
-      "start_line": 3183
+      "start_line": 3182
     },
     {
       "compile_status": "failed",
-      "end_line": 3199,
+      "end_line": 3198,
       "function": "isPoolRegistered",
       "mutant_id": "m000560",
       "operator": "OLFD",
       "original_expression": "function isPoolRegistered(address pool) external view returns (bool registered);",
       "replacement_expression": "",
-      "start_line": 3199
+      "start_line": 3198
     },
     {
       "compile_status": "ok",
-      "end_line": 3322,
+      "end_line": 3321,
       "function": "totalSupply",
       "mutant_id": "m000561",
       "operator": "OLFD",
       "original_expression": "function totalSupply(address token) external view returns (uint256 tokenTotalSupply);",
       "replacement_expression": "",
-      "start_line": 3322
+      "start_line": 3321
     },
     {
       "compile_status": "ok",
-      "end_line": 3330,
+      "end_line": 3329,
       "function": "balanceOf",
       "mutant_id": "m000562",
       "operator": "OLFD",
       "original_expression": "function balanceOf(address token, address account) external view returns (uint256 tokenBalance);",
       "replacement_expression": "",
-      "start_line": 3330
+      "start_line": 3329
     },
     {
       "compile_status": "ok",
-      "end_line": 3339,
+      "end_line": 3338,
       "function": "allowance",
       "mutant_id": "m000563",
       "operator": "OLFD",
       "original_expression": "function allowance(address token, address owner, address spender) external view returns (uint256 tokenAllowance);",
       "replacement_expression": "",
-      "start_line": 3339
+      "start_line": 3338
     },
     {
       "compile_status": "ok",
-      "end_line": 3351,
+      "end_line": 3350,
       "function": "approve",
       "mutant_id": "m000564",
       "operator": "OLFD",
       "original_expression": "function approve(address owner, address spender, uint256 amount) external returns (bool success);",
       "replacement_expression": "",
-      "start_line": 3351
+      "start_line": 3350
     },
     {
       "compile_status": "failed",
-      "end_line": 3557,
+      "end_line": 3556,
       "function": "getAuthorizer",
       "mutant_id": "m000565",
       "operator": "OLFD",
       "original_expression": "function getAuthorizer() external view returns (IAuthorizer authorizer);",
       "replacement_expression": "",
-      "start_line": 3557
+      "start_line": 3556
     },
     {
       "compile_status": "failed",
-      "end_line": 3577,
+      "end_line": 3576,
       "function": "vault",
       "mutant_id": "m000566",
       "operator": "OLFD",
       "original_expression": "function vault() external view returns (IVault);",
       "replacement_expression": "",
-      "start_line": 3577
+      "start_line": 3576
     },
     {
       "compile_status": "ok",
-      "end_line": 3744,
+      "end_line": 3743,
       "function": "collectAggregateFees",
       "mutant_id": "m000567",
       "operator": "OLFD",
       "original_expression": "function collectAggregateFees(\n        address pool\n    ) external returns (uint256[] memory swapFeeAmounts, uint256[] memory yieldFeeAmounts);",
       "replacement_expression": "",
-      "start_line": 3742
+      "start_line": 3741
     },
     {
       "compile_status": "failed",
@@ -5714,13 +5714,13 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 4245,
+      "end_line": 4244,
       "function": "vault",
       "mutant_id": "m000572",
       "operator": "ORFD",
       "original_expression": "function vault() external view override(IVaultAdmin, IVaultExtension) returns (IVault);",
       "replacement_expression": "",
-      "start_line": 4245
+      "start_line": 4244
     },
     {
       "compile_status": "ok",
@@ -5974,83 +5974,83 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3251,
+      "end_line": 3250,
       "function": "getPoolTokenRates",
       "mutant_id": "m000598",
       "operator": "RVS",
       "original_expression": "uint256[] memory decimalScalingFactors, uint256[] memory tokenRates",
       "replacement_expression": "uint256[] memory tokenRates, uint256[] memory decimalScalingFactors",
-      "start_line": 3251
+      "start_line": 3250
     },
     {
       "compile_status": "ok",
-      "end_line": 3278,
+      "end_line": 3277,
       "function": "getPoolTokenInfo",
       "mutant_id": "m000599",
       "operator": "RVS",
       "original_expression": "IERC20[] memory tokens,\n            TokenInfo[] memory tokenInfo,\n            uint256[] memory balancesRaw,\n            uint256[] memory lastBalancesLiveScaled18",
       "replacement_expression": "TokenInfo[] memory tokenInfo,\n            IERC20[] memory tokens,\n            uint256[] memory balancesRaw,\n            uint256[] memory lastBalancesLiveScaled18",
-      "start_line": 3275
+      "start_line": 3274
     },
     {
       "compile_status": "ok",
-      "end_line": 3381,
+      "end_line": 3380,
       "function": "getPoolPausedState",
       "mutant_id": "m000600",
       "operator": "RVS",
       "original_expression": "bool poolPaused, uint32 poolPauseWindowEndTime, uint32 poolBufferPeriodEndTime, address pauseManager",
       "replacement_expression": "bool poolPaused, uint32 poolBufferPeriodEndTime, uint32 poolPauseWindowEndTime, address pauseManager",
-      "start_line": 3381
+      "start_line": 3380
     },
     {
       "compile_status": "ok",
-      "end_line": 3678,
+      "end_line": 3677,
       "function": "getVaultPausedState",
       "mutant_id": "m000601",
       "operator": "RVS",
       "original_expression": "bool vaultPaused, uint32 vaultPauseWindowEndTime, uint32 vaultBufferPeriodEndTime",
       "replacement_expression": "bool vaultPaused, uint32 vaultBufferPeriodEndTime, uint32 vaultPauseWindowEndTime",
-      "start_line": 3678
+      "start_line": 3677
     },
     {
       "compile_status": "ok",
-      "end_line": 3744,
+      "end_line": 3743,
       "function": "collectAggregateFees",
       "mutant_id": "m000602",
       "operator": "RVS",
       "original_expression": "uint256[] memory swapFeeAmounts, uint256[] memory yieldFeeAmounts",
       "replacement_expression": "uint256[] memory yieldFeeAmounts, uint256[] memory swapFeeAmounts",
-      "start_line": 3744
+      "start_line": 3743
     },
     {
       "compile_status": "ok",
-      "end_line": 3909,
+      "end_line": 3908,
       "function": "addLiquidityToBuffer",
       "mutant_id": "m000603",
       "operator": "RVS",
       "original_expression": "uint256 amountUnderlyingRaw, uint256 amountWrappedRaw",
       "replacement_expression": "uint256 amountWrappedRaw, uint256 amountUnderlyingRaw",
-      "start_line": 3909
+      "start_line": 3908
     },
     {
       "compile_status": "ok",
-      "end_line": 3937,
+      "end_line": 3936,
       "function": "removeLiquidityFromBuffer",
       "mutant_id": "m000604",
       "operator": "RVS",
       "original_expression": "uint256 removedUnderlyingBalanceRaw, uint256 removedWrappedBalanceRaw",
       "replacement_expression": "uint256 removedWrappedBalanceRaw, uint256 removedUnderlyingBalanceRaw",
-      "start_line": 3937
+      "start_line": 3936
     },
     {
       "compile_status": "ok",
-      "end_line": 3977,
+      "end_line": 3976,
       "function": "getBufferBalance",
       "mutant_id": "m000605",
       "operator": "RVS",
       "original_expression": "uint256 underlyingBalanceRaw, uint256 wrappedBalanceRaw",
       "replacement_expression": "uint256 wrappedBalanceRaw, uint256 underlyingBalanceRaw",
-      "start_line": 3977
+      "start_line": 3976
     },
     {
       "compile_status": "ok",

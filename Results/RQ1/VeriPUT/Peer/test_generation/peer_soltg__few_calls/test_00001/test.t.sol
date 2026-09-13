@@ -70,12 +70,12 @@ contract Cfc1CovTest_Cfc1_f_put2p1 is Test {
     assertEq(_post_a, _pre_a, "a: post == pre");
     assertEq(_post_b, _pre_b, "b: post == pre");
     assertEq(_post_c, _pre_c, "c: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_a, _pre_a, "a: post >= pre");
+    assertLe(_post_a, _pre_a, "a: post <= pre");
+    assertGe(_post_b, _pre_b, "b: post >= pre");
+    assertLe(_post_b, _pre_b, "b: post <= pre");
+    assertGe(_post_c, _pre_c, "c: post >= pre");
+    assertLe(_post_c, _pre_c, "c: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

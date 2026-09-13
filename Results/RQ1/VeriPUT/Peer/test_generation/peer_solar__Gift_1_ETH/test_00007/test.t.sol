@@ -93,9 +93,9 @@ contract Gift_1_ETHCovTest_Gift_1_ETH_SetPass_put5p1 is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255), uint256(0), "entry pin state.passHasBeenSet did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     uint256 _pre_passHasBeenSet = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255);
     uint256 _pre_hashPass = uint256(vm.load(address(c0), bytes32(uint256(1))));
@@ -114,7 +114,7 @@ contract Gift_1_ETHCovTest_Gift_1_ETH_SetPass_put5p1 is Test {
     c0.SetPass{value: p_msg_value}(bytes32(hash));
     
     if (p_msg_sender == address(uint160(0)) && p_msg_value == uint256(999999999999737856) && hash == uint256(0)) {
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255), uint256(0), "fixed witness state");
     }
     
     uint256 _post_passHasBeenSet = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 255);

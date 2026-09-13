@@ -8564,13 +8564,13 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 170,
+      "end_line": 174,
       "function": "resolve",
       "mutant_id": "m000857",
       "operator": "UORD",
       "original_expression": "!(\n                    coinType == COIN_TYPE_DEFAULT\n                        ? ENSIP19.isEVMCoinType(ct)\n                        : ct == coinType\n                )",
       "replacement_expression": " (\n                    coinType == COIN_TYPE_DEFAULT\n                        ? ENSIP19.isEVMCoinType(ct)\n                        : ct == coinType\n                )",
-      "start_line": 174
+      "start_line": 170
     },
     {
       "compile_status": "ok",

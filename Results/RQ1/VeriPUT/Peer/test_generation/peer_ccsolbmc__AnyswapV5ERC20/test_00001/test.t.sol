@@ -96,9 +96,9 @@ contract AnyswapV5ERC20CovTest_AnyswapV5ERC20_Swapout_put14p1 is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(6))));
       _w = (_w & ~uint256(65280)) | ((uint256(0) & 255) << 8);
-
+      vm.store(address(c0), bytes32(uint256(6)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(6)))) >> 8) & 255), uint256(0), "entry pin state._vaultOnly did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     uint256 _pre_totalSupply = uint256(vm.load(address(c0), bytes32(uint256(5))));
     uint256 _pre_vaultOnly = ((uint256(vm.load(address(c0), bytes32(uint256(6)))) >> 8) & 255);
@@ -117,19 +117,19 @@ contract AnyswapV5ERC20CovTest_AnyswapV5ERC20_Swapout_put14p1 is Test {
     try c0.Swapout(amount, bindaddr) {} catch { _put_ok = false; }
     
     if (p_msg_sender == address(uint160(0)) && amount == uint256(0) && bindaddr == address(uint160(0))) {
-
-
-
-
-
-
-
-
-
-
-
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(6)))) & 255), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(5)))), uint256(0), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(6)))) >> 8) & 255), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(2)))) & 255), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(7)))), uint256(172800), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(16)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(12)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(14)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(15)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(11)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(13)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(2)))) >> 8) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(10)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
     
     uint256 _post_totalSupply = uint256(vm.load(address(c0), bytes32(uint256(5))));
@@ -138,10 +138,10 @@ contract AnyswapV5ERC20CovTest_AnyswapV5ERC20_Swapout_put14p1 is Test {
     assertEq(_post_totalSupply, _pre_totalSupply, "_totalSupply: post == pre");
     assertEq(_post_vaultOnly, _pre_vaultOnly, "_vaultOnly: post == pre");
     assertEq(_post_balanceOf_msg_sender, _pre_balanceOf_msg_sender, "balanceOf[msg.sender]: post == pre");
-    
-    
-    
-    
+    assertGe(_post_totalSupply, _pre_totalSupply, "_totalSupply: post >= pre");
+    assertLe(_post_totalSupply, _pre_totalSupply, "_totalSupply: post <= pre");
+    assertGe(_post_balanceOf_msg_sender, _pre_balanceOf_msg_sender, "balanceOf[msg.sender]: post >= pre");
+    assertLe(_post_balanceOf_msg_sender, _pre_balanceOf_msg_sender, "balanceOf[msg.sender]: post <= pre");
     
     assertFalse(_put_ok, "path enc=14p1 exits through a REVERT: the call must fail on the unmodified contract");
   }
@@ -173,81 +173,81 @@ contract AnyswapV5ERC20CovTest_AnyswapV5ERC20_Swapout_concrete14p1__basis_root__
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(6))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(6)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(6)))) & 255), uint256(0), "entry pin state._init did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(5))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(5)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(5)))), uint256(0), "entry pin state._totalSupply did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(6))));
       _w = (_w & ~uint256(65280)) | ((uint256(0) & 255) << 8);
-
+      vm.store(address(c0), bytes32(uint256(6)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(6)))) >> 8) & 255), uint256(0), "entry pin state._vaultOnly did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
       _w = (_w & ~uint256(255)) | ((uint256(0) & 255) << 0);
-
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(2)))) & 255), uint256(0), "entry pin state.decimals did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(7))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(172800) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(7)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(7)))), uint256(172800), "entry pin state.delay did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(16))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(16)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(16)))), uint256(0), "entry pin state.delayDelay did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(12))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(12)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(12)))), uint256(0), "entry pin state.delayMinter did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(14))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(14)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(14)))), uint256(0), "entry pin state.delayVault did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(15))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(15)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(15)))), uint256(0), "entry pin state.pendingDelay did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(11))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(11)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(11)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.pendingMinter did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(13))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(13)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(13)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.pendingVault did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
       _w = (_w & ~uint256(374144419156711147060143317175368453031918731001600)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 8);
-
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(2)))) >> 8) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.underlying did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(10))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(10)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(10)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.vault did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -265,31 +265,31 @@ contract AnyswapV5ERC20CovTest_AnyswapV5ERC20_Swapout_concrete14p1__basis_root__
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_init_2 = (uint256(vm.load(address(c0), bytes32(uint256(6)))) & 255);
-
+    assertEq(_veriput_fixed_state_init_2, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_totalSupply_3 = uint256(vm.load(address(c0), bytes32(uint256(5))));
-
+    assertEq(_veriput_fixed_state_totalSupply_3, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_vaultOnly_4 = ((uint256(vm.load(address(c0), bytes32(uint256(6)))) >> 8) & 255);
-
+    assertEq(_veriput_fixed_state_vaultOnly_4, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_decimals_5 = (uint256(vm.load(address(c0), bytes32(uint256(2)))) & 255);
-
+    assertEq(_veriput_fixed_state_decimals_5, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_delay_6 = uint256(vm.load(address(c0), bytes32(uint256(7))));
-
+    assertEq(_veriput_fixed_state_delay_6, uint256(172800), "fixed witness state");
     uint256 _veriput_fixed_state_delayDelay_7 = uint256(vm.load(address(c0), bytes32(uint256(16))));
-
+    assertEq(_veriput_fixed_state_delayDelay_7, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_delayMinter_8 = uint256(vm.load(address(c0), bytes32(uint256(12))));
-
+    assertEq(_veriput_fixed_state_delayMinter_8, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_delayVault_9 = uint256(vm.load(address(c0), bytes32(uint256(14))));
-
+    assertEq(_veriput_fixed_state_delayVault_9, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_pendingDelay_10 = uint256(vm.load(address(c0), bytes32(uint256(15))));
-
+    assertEq(_veriput_fixed_state_pendingDelay_10, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_pendingMinter_11 = (uint256(vm.load(address(c0), bytes32(uint256(11)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_pendingMinter_11, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_pendingVault_12 = (uint256(vm.load(address(c0), bytes32(uint256(13)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_pendingVault_12, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_underlying_13 = ((uint256(vm.load(address(c0), bytes32(uint256(2)))) >> 8) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_underlying_13, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_vault_14 = (uint256(vm.load(address(c0), bytes32(uint256(10)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_vault_14, uint256(0), "fixed witness state");
   }
   
   

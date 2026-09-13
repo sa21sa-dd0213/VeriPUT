@@ -100,7 +100,7 @@ contract EasyPayAndWithDrawCovTest_EasyPayAndWithDraw_fallback_put1p1 is Test {
     (bool ok1, ) = address(c0).call{value: 115792089237316195423570985008687907853269984665640564039457584007913129639935}(hex"deadbeef");
     
     if (p_msg_sender == address(uint160(0))) {
-
+      assertEq(uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(0)), uint256(0))))), uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935), "fixed witness state");
     }
     
     uint256 _post_balances_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0)))));
@@ -150,6 +150,6 @@ contract EasyPayAndWithDrawCovTest_EasyPayAndWithDraw_fallback_concrete1p1__basi
     (bool ok1, ) = address(c0).call{value: 115792089237316195423570985008687907853269984665640564039457584007913129639935}(hex"deadbeef");
     assertTrue(ok1, "covered receive/fallback path must return normally");
     uint256 _veriput_fixed_state_balances_0_0 = uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(0)), uint256(0)))));
-
+    assertEq(_veriput_fixed_state_balances_0_0, uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935), "fixed witness state");
   }
 }

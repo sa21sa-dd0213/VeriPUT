@@ -59,7 +59,7 @@ contract LRTDepositPoolCovTest_LRTDepositPool_getAssetDistributionData_put2p1 is
     p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     asset = address(uint160(bound(uint256(uint160(asset)), 0, 1461501637330902918203684832716283019655932542975)));
 
-
+vm.mockCall(asset, abi.encodeWithSignature("balanceOf(address)"), abi.encode(uint256(1)));
     
     
     vm.deal(p_msg_sender, p_msg_value);

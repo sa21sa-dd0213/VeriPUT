@@ -63,8 +63,8 @@ contract EmergencyOracleFactoryCovTest_EmergencyOracleFactory_newEmergencyOracle
     
     uint256 _post_jojoTeam = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_jojoTeam, _pre_jojoTeam, "jojoTeam: post == pre");
-    
-    
+    assertGe(_post_jojoTeam, _pre_jojoTeam, "jojoTeam: post >= pre");
+    assertLe(_post_jojoTeam, _pre_jojoTeam, "jojoTeam: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

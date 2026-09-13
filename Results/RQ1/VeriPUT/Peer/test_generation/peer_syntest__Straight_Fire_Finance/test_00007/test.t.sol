@@ -65,8 +65,8 @@ contract Straight_Fire_FinanceCovTest_Straight_Fire_Finance_totalSupply_put2p1 i
     
     uint256 _post_initialSupply = uint256(vm.load(address(c0), bytes32(uint256(0))));
     assertEq(_post_initialSupply, _pre_initialSupply, "initialSupply: post == pre");
-    
-    
+    assertGe(_post_initialSupply, _pre_initialSupply, "initialSupply: post >= pre");
+    assertLe(_post_initialSupply, _pre_initialSupply, "initialSupply: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

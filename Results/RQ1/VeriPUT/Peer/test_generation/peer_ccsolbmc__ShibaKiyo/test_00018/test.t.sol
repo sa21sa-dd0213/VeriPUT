@@ -65,8 +65,8 @@ contract ShibaKiyoCovTest_ShibaKiyo_totalSupply_put2p1 is Test {
     
     uint256 _post_tTotal = uint256(vm.load(address(c0), bytes32(uint256(8))));
     assertEq(_post_tTotal, _pre_tTotal, "_tTotal: post == pre");
-    
-    
+    assertGe(_post_tTotal, _pre_tTotal, "_tTotal: post >= pre");
+    assertLe(_post_tTotal, _pre_tTotal, "_tTotal: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

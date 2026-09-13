@@ -4054,283 +4054,283 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3069,
+      "end_line": 3068,
       "function": "toAssets",
       "mutant_id": "m000406",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3069
+      "start_line": 3068
     },
     {
       "compile_status": "ok",
-      "end_line": 3069,
+      "end_line": 3068,
       "function": "toAssets",
       "mutant_id": "m000407",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3069
+      "start_line": 3068
     },
     {
       "compile_status": "ok",
-      "end_line": 3074,
+      "end_line": 3073,
       "function": "toOwed",
       "mutant_id": "m000408",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3074
+      "start_line": 3073
     },
     {
       "compile_status": "ok",
-      "end_line": 3074,
+      "end_line": 3073,
       "function": "toOwed",
       "mutant_id": "m000409",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3074
+      "start_line": 3073
     },
     {
       "compile_status": "ok",
-      "end_line": 3079,
+      "end_line": 3078,
       "function": "toConfigAmount",
       "mutant_id": "m000410",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3079
+      "start_line": 3078
     },
     {
       "compile_status": "ok",
-      "end_line": 3079,
+      "end_line": 3078,
       "function": "toConfigAmount",
       "mutant_id": "m000411",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3079
+      "start_line": 3078
     },
     {
       "compile_status": "ok",
-      "end_line": 3115,
+      "end_line": 3114,
       "function": "getOwed",
       "mutant_id": "m000412",
       "operator": "BOR",
       "original_expression": " >> ",
       "replacement_expression": " << ",
-      "start_line": 3115
+      "start_line": 3114
     },
     {
       "compile_status": "ok",
-      "end_line": 3115,
+      "end_line": 3114,
       "function": "getOwed",
       "mutant_id": "m000413",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " | ",
-      "start_line": 3115
+      "start_line": 3114
     },
     {
       "compile_status": "ok",
-      "end_line": 3115,
+      "end_line": 3114,
       "function": "getOwed",
       "mutant_id": "m000414",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " ^ ",
-      "start_line": 3115
+      "start_line": 3114
     },
     {
       "compile_status": "ok",
-      "end_line": 3131,
+      "end_line": 3130,
       "function": "setBalanceForwarder",
       "mutant_id": "m000415",
       "operator": "BOR",
       "original_expression": " | ",
       "replacement_expression": " & ",
-      "start_line": 3131
+      "start_line": 3130
     },
     {
       "compile_status": "ok",
-      "end_line": 3131,
+      "end_line": 3130,
       "function": "setBalanceForwarder",
       "mutant_id": "m000416",
       "operator": "BOR",
       "original_expression": " | ",
       "replacement_expression": " ^ ",
-      "start_line": 3131
+      "start_line": 3130
     },
     {
       "compile_status": "ok",
-      "end_line": 3131,
+      "end_line": 3130,
       "function": "setBalanceForwarder",
       "mutant_id": "m000417",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " | ",
-      "start_line": 3131
+      "start_line": 3130
     },
     {
       "compile_status": "ok",
-      "end_line": 3131,
+      "end_line": 3130,
       "function": "setBalanceForwarder",
       "mutant_id": "m000418",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " ^ ",
-      "start_line": 3131
+      "start_line": 3130
     },
     {
       "compile_status": "ok",
-      "end_line": 3137,
+      "end_line": 3136,
       "function": "setOwed",
       "mutant_id": "m000419",
       "operator": "BOR",
       "original_expression": " | ",
       "replacement_expression": " & ",
-      "start_line": 3137
+      "start_line": 3136
     },
     {
       "compile_status": "ok",
-      "end_line": 3137,
+      "end_line": 3136,
       "function": "setOwed",
       "mutant_id": "m000420",
       "operator": "BOR",
       "original_expression": " | ",
       "replacement_expression": " ^ ",
-      "start_line": 3137
+      "start_line": 3136
     },
     {
       "compile_status": "ok",
-      "end_line": 3137,
+      "end_line": 3136,
       "function": "setOwed",
       "mutant_id": "m000421",
       "operator": "BOR",
       "original_expression": " << ",
       "replacement_expression": " >> ",
-      "start_line": 3137
+      "start_line": 3136
     },
     {
       "compile_status": "ok",
-      "end_line": 3137,
+      "end_line": 3136,
       "function": "setOwed",
       "mutant_id": "m000422",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " | ",
-      "start_line": 3137
+      "start_line": 3136
     },
     {
       "compile_status": "ok",
-      "end_line": 3137,
+      "end_line": 3136,
       "function": "setOwed",
       "mutant_id": "m000423",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " ^ ",
-      "start_line": 3137
+      "start_line": 3136
     },
     {
       "compile_status": "ok",
-      "end_line": 3143,
+      "end_line": 3142,
       "function": "setBalance",
       "mutant_id": "m000424",
       "operator": "BOR",
       "original_expression": " | ",
       "replacement_expression": " & ",
-      "start_line": 3143
+      "start_line": 3142
     },
     {
       "compile_status": "ok",
-      "end_line": 3143,
+      "end_line": 3142,
       "function": "setBalance",
       "mutant_id": "m000425",
       "operator": "BOR",
       "original_expression": " | ",
       "replacement_expression": " ^ ",
-      "start_line": 3143
+      "start_line": 3142
     },
     {
       "compile_status": "ok",
-      "end_line": 3143,
+      "end_line": 3142,
       "function": "setBalance",
       "mutant_id": "m000426",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " | ",
-      "start_line": 3143
+      "start_line": 3142
     },
     {
       "compile_status": "ok",
-      "end_line": 3143,
+      "end_line": 3142,
       "function": "setBalance",
       "mutant_id": "m000427",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " ^ ",
-      "start_line": 3143
+      "start_line": 3142
     },
     {
       "compile_status": "ok",
-      "end_line": 3147,
+      "end_line": 3146,
       "function": "unpackBalance",
       "mutant_id": "m000428",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " | ",
-      "start_line": 3147
+      "start_line": 3146
     },
     {
       "compile_status": "ok",
-      "end_line": 3147,
+      "end_line": 3146,
       "function": "unpackBalance",
       "mutant_id": "m000429",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " ^ ",
-      "start_line": 3147
+      "start_line": 3146
     },
     {
       "compile_status": "ok",
-      "end_line": 3151,
+      "end_line": 3150,
       "function": "unpackBalanceForwarder",
       "mutant_id": "m000430",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3151
+      "start_line": 3150
     },
     {
       "compile_status": "ok",
-      "end_line": 3151,
+      "end_line": 3150,
       "function": "unpackBalanceForwarder",
       "mutant_id": "m000431",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3151
+      "start_line": 3150
     },
     {
       "compile_status": "ok",
-      "end_line": 3151,
+      "end_line": 3150,
       "function": "unpackBalanceForwarder",
       "mutant_id": "m000432",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " | ",
-      "start_line": 3151
+      "start_line": 3150
     },
     {
       "compile_status": "ok",
-      "end_line": 3151,
+      "end_line": 3150,
       "function": "unpackBalanceForwarder",
       "mutant_id": "m000433",
       "operator": "BOR",
       "original_expression": " & ",
       "replacement_expression": " ^ ",
-      "start_line": 3151
+      "start_line": 3150
     },
     {
       "compile_status": "ok",
@@ -5924,63 +5924,63 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3069,
+      "end_line": 3068,
       "function": "toAssets",
       "mutant_id": "m000593",
       "operator": "CSC",
       "original_expression": "amount > MAX_SANE_AMOUNT",
       "replacement_expression": "true",
-      "start_line": 3069
+      "start_line": 3068
     },
     {
       "compile_status": "ok",
-      "end_line": 3069,
+      "end_line": 3068,
       "function": "toAssets",
       "mutant_id": "m000594",
       "operator": "CSC",
       "original_expression": "amount > MAX_SANE_AMOUNT",
       "replacement_expression": "false",
-      "start_line": 3069
+      "start_line": 3068
     },
     {
       "compile_status": "ok",
-      "end_line": 3074,
+      "end_line": 3073,
       "function": "toOwed",
       "mutant_id": "m000595",
       "operator": "CSC",
       "original_expression": "amount > MAX_SANE_DEBT_AMOUNT",
       "replacement_expression": "true",
-      "start_line": 3074
+      "start_line": 3073
     },
     {
       "compile_status": "ok",
-      "end_line": 3074,
+      "end_line": 3073,
       "function": "toOwed",
       "mutant_id": "m000596",
       "operator": "CSC",
       "original_expression": "amount > MAX_SANE_DEBT_AMOUNT",
       "replacement_expression": "false",
-      "start_line": 3074
+      "start_line": 3073
     },
     {
       "compile_status": "ok",
-      "end_line": 3079,
+      "end_line": 3078,
       "function": "toConfigAmount",
       "mutant_id": "m000597",
       "operator": "CSC",
       "original_expression": "amount > CONFIG_SCALE",
       "replacement_expression": "true",
-      "start_line": 3079
+      "start_line": 3078
     },
     {
       "compile_status": "ok",
-      "end_line": 3079,
+      "end_line": 3078,
       "function": "toConfigAmount",
       "mutant_id": "m000598",
       "operator": "CSC",
       "original_expression": "amount > CONFIG_SCALE",
       "replacement_expression": "false",
-      "start_line": 3079
+      "start_line": 3078
     },
     {
       "compile_status": "failed",
@@ -6694,73 +6694,73 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3110,
+      "end_line": 3109,
       "function": "isBalanceForwarderEnabled",
       "mutant_id": "m000670",
       "operator": "DLR",
       "original_expression": "UserStorage storage self",
       "replacement_expression": "UserStorage memory self",
-      "start_line": 3110
+      "start_line": 3109
     },
     {
       "compile_status": "failed",
-      "end_line": 3114,
+      "end_line": 3113,
       "function": "getOwed",
       "mutant_id": "m000671",
       "operator": "DLR",
       "original_expression": "UserStorage storage self",
       "replacement_expression": "UserStorage memory self",
-      "start_line": 3114
+      "start_line": 3113
     },
     {
       "compile_status": "failed",
-      "end_line": 3118,
+      "end_line": 3117,
       "function": "getBalance",
       "mutant_id": "m000672",
       "operator": "DLR",
       "original_expression": "UserStorage storage self",
       "replacement_expression": "UserStorage memory self",
-      "start_line": 3118
+      "start_line": 3117
     },
     {
       "compile_status": "failed",
-      "end_line": 3122,
+      "end_line": 3121,
       "function": "getBalanceAndBalanceForwarder",
       "mutant_id": "m000673",
       "operator": "DLR",
       "original_expression": "UserStorage storage self",
       "replacement_expression": "UserStorage memory self",
-      "start_line": 3122
+      "start_line": 3121
     },
     {
       "compile_status": "failed",
-      "end_line": 3127,
+      "end_line": 3126,
       "function": "setBalanceForwarder",
       "mutant_id": "m000674",
       "operator": "DLR",
       "original_expression": "UserStorage storage self",
       "replacement_expression": "UserStorage memory self",
-      "start_line": 3127
+      "start_line": 3126
     },
     {
       "compile_status": "failed",
-      "end_line": 3134,
+      "end_line": 3133,
       "function": "setOwed",
       "mutant_id": "m000675",
       "operator": "DLR",
       "original_expression": "UserStorage storage self",
       "replacement_expression": "UserStorage memory self",
-      "start_line": 3134
+      "start_line": 3133
     },
     {
       "compile_status": "failed",
-      "end_line": 3140,
+      "end_line": 3139,
       "function": "setBalance",
       "mutant_id": "m000676",
       "operator": "DLR",
       "original_expression": "UserStorage storage self",
       "replacement_expression": "UserStorage memory self",
-      "start_line": 3140
+      "start_line": 3139
     },
     {
       "compile_status": "ok",
@@ -7014,43 +7014,43 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3070,
+      "end_line": 3069,
       "function": "toAssets",
       "mutant_id": "m000702",
       "operator": "ECS",
       "original_expression": "uint112(amount)",
       "replacement_expression": "uint104(amount)",
-      "start_line": 3070
+      "start_line": 3069
     },
     {
       "compile_status": "ok",
-      "end_line": 3075,
+      "end_line": 3074,
       "function": "toOwed",
       "mutant_id": "m000703",
       "operator": "ECS",
       "original_expression": "uint144(amount)",
       "replacement_expression": "uint136(amount)",
-      "start_line": 3075
+      "start_line": 3074
     },
     {
       "compile_status": "ok",
-      "end_line": 3115,
+      "end_line": 3114,
       "function": "getOwed",
       "mutant_id": "m000704",
       "operator": "ECS",
       "original_expression": "uint144((PackedUserSlot.unwrap(self.data) & OWED_MASK) >> OWED_OFFSET)",
       "replacement_expression": "uint136((PackedUserSlot.unwrap(self.data) & OWED_MASK) >> OWED_OFFSET)",
-      "start_line": 3115
+      "start_line": 3114
     },
     {
       "compile_status": "ok",
-      "end_line": 3147,
+      "end_line": 3146,
       "function": "unpackBalance",
       "mutant_id": "m000705",
       "operator": "ECS",
       "original_expression": "uint112(PackedUserSlot.unwrap(data) & SHARES_MASK)",
       "replacement_expression": "uint104(PackedUserSlot.unwrap(data) & SHARES_MASK)",
-      "start_line": 3147
+      "start_line": 3146
     },
     {
       "compile_status": "ok",
@@ -7314,33 +7314,33 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3069,
+      "end_line": 3068,
       "function": "toAssets",
       "mutant_id": "m000732",
       "operator": "EHD",
       "original_expression": "revert Errors.E_AmountTooLargeToEncode();",
       "replacement_expression": "/* revert Errors.E_AmountTooLargeToEncode(); */",
-      "start_line": 3069
+      "start_line": 3068
     },
     {
       "compile_status": "ok",
-      "end_line": 3074,
+      "end_line": 3073,
       "function": "toOwed",
       "mutant_id": "m000733",
       "operator": "EHD",
       "original_expression": "revert Errors.E_DebtAmountTooLargeToEncode();",
       "replacement_expression": "/* revert Errors.E_DebtAmountTooLargeToEncode(); */",
-      "start_line": 3074
+      "start_line": 3073
     },
     {
       "compile_status": "ok",
-      "end_line": 3079,
+      "end_line": 3078,
       "function": "toConfigAmount",
       "mutant_id": "m000734",
       "operator": "EHD",
       "original_expression": "revert Errors.E_ConfigAmountTooLargeToEncode();",
       "replacement_expression": "/* revert Errors.E_ConfigAmountTooLargeToEncode(); */",
-      "start_line": 3079
+      "start_line": 3078
     },
     {
       "compile_status": "ok",
@@ -9494,43 +9494,43 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3108,
+      "end_line": 3107,
       "function": "stateVariable",
       "mutant_id": "m000950",
       "operator": "ILR",
       "original_expression": "112",
       "replacement_expression": "111",
-      "start_line": 3108
+      "start_line": 3107
     },
     {
       "compile_status": "ok",
-      "end_line": 3108,
+      "end_line": 3107,
       "function": "stateVariable",
       "mutant_id": "m000951",
       "operator": "ILR",
       "original_expression": "112",
       "replacement_expression": "113",
-      "start_line": 3108
+      "start_line": 3107
     },
     {
       "compile_status": "ok",
-      "end_line": 3130,
+      "end_line": 3129,
       "function": "setBalanceForwarder",
       "mutant_id": "m000952",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3130
+      "start_line": 3129
     },
     {
       "compile_status": "ok",
-      "end_line": 3151,
+      "end_line": 3150,
       "function": "unpackBalanceForwarder",
       "mutant_id": "m000953",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3151
+      "start_line": 3150
     },
     {
       "compile_status": "ok",
@@ -10484,13 +10484,13 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3076,
+      "end_line": 3075,
       "function": "toOwed",
       "mutant_id": "m001049",
       "operator": "OLFD",
       "original_expression": "function toOwed(uint256 amount) internal pure returns (Owed) {\n        if (amount > MAX_SANE_DEBT_AMOUNT) revert Errors.E_DebtAmountTooLargeToEncode();\n        return Owed.wrap(uint144(amount));\n    }",
       "replacement_expression": "",
-      "start_line": 3073
+      "start_line": 3072
     },
     {
       "compile_status": "ok",
@@ -11664,93 +11664,93 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3070,
+      "end_line": 3069,
       "function": "toAssets",
       "mutant_id": "m001167",
       "operator": "RSD",
       "original_expression": "return Assets.wrap(uint112(amount));",
       "replacement_expression": "Assets.wrap(uint112(amount));",
-      "start_line": 3070
+      "start_line": 3069
     },
     {
       "compile_status": "ok",
-      "end_line": 3075,
+      "end_line": 3074,
       "function": "toOwed",
       "mutant_id": "m001168",
       "operator": "RSD",
       "original_expression": "return Owed.wrap(uint144(amount));",
       "replacement_expression": "Owed.wrap(uint144(amount));",
-      "start_line": 3075
+      "start_line": 3074
     },
     {
       "compile_status": "ok",
-      "end_line": 3080,
+      "end_line": 3079,
       "function": "toConfigAmount",
       "mutant_id": "m001169",
       "operator": "RSD",
       "original_expression": "return ConfigAmount.wrap(amount);",
       "replacement_expression": "ConfigAmount.wrap(amount);",
-      "start_line": 3080
+      "start_line": 3079
     },
     {
       "compile_status": "ok",
-      "end_line": 3111,
+      "end_line": 3110,
       "function": "isBalanceForwarderEnabled",
       "mutant_id": "m001170",
       "operator": "RSD",
       "original_expression": "return unpackBalanceForwarder(self.data);",
       "replacement_expression": "unpackBalanceForwarder(self.data);",
-      "start_line": 3111
+      "start_line": 3110
     },
     {
       "compile_status": "ok",
-      "end_line": 3115,
+      "end_line": 3114,
       "function": "getOwed",
       "mutant_id": "m001171",
       "operator": "RSD",
       "original_expression": "return Owed.wrap(uint144((PackedUserSlot.unwrap(self.data) & OWED_MASK) >> OWED_OFFSET));",
       "replacement_expression": "Owed.wrap(uint144((PackedUserSlot.unwrap(self.data) & OWED_MASK) >> OWED_OFFSET));",
-      "start_line": 3115
+      "start_line": 3114
     },
     {
       "compile_status": "ok",
-      "end_line": 3119,
+      "end_line": 3118,
       "function": "getBalance",
       "mutant_id": "m001172",
       "operator": "RSD",
       "original_expression": "return unpackBalance(self.data);",
       "replacement_expression": "unpackBalance(self.data);",
-      "start_line": 3119
+      "start_line": 3118
     },
     {
       "compile_status": "ok",
-      "end_line": 3124,
+      "end_line": 3123,
       "function": "getBalanceAndBalanceForwarder",
       "mutant_id": "m001173",
       "operator": "RSD",
       "original_expression": "return (unpackBalance(data), unpackBalanceForwarder(data));",
       "replacement_expression": "/* return (unpackBalance(data), unpackBalanceForwarder(data)); */",
-      "start_line": 3124
+      "start_line": 3123
     },
     {
       "compile_status": "ok",
-      "end_line": 3147,
+      "end_line": 3146,
       "function": "unpackBalance",
       "mutant_id": "m001174",
       "operator": "RSD",
       "original_expression": "return Shares.wrap(uint112(PackedUserSlot.unwrap(data) & SHARES_MASK));",
       "replacement_expression": "Shares.wrap(uint112(PackedUserSlot.unwrap(data) & SHARES_MASK));",
-      "start_line": 3147
+      "start_line": 3146
     },
     {
       "compile_status": "ok",
-      "end_line": 3151,
+      "end_line": 3150,
       "function": "unpackBalanceForwarder",
       "mutant_id": "m001175",
       "operator": "RSD",
       "original_expression": "return (PackedUserSlot.unwrap(data) & BALANCE_FORWARDER_MASK) > 0;",
       "replacement_expression": "/* return (PackedUserSlot.unwrap(data) & BALANCE_FORWARDER_MASK) > 0; */",
-      "start_line": 3151
+      "start_line": 3150
     },
     {
       "compile_status": "ok",
@@ -12104,33 +12104,33 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3131,
+      "end_line": 3130,
       "function": "setBalanceForwarder",
       "mutant_id": "m001211",
       "operator": "UORD",
       "original_expression": "~BALANCE_FORWARDER_MASK",
       "replacement_expression": " BALANCE_FORWARDER_MASK",
-      "start_line": 3131
+      "start_line": 3130
     },
     {
       "compile_status": "ok",
-      "end_line": 3137,
+      "end_line": 3136,
       "function": "setOwed",
       "mutant_id": "m001212",
       "operator": "UORD",
       "original_expression": "~OWED_MASK",
       "replacement_expression": " OWED_MASK",
-      "start_line": 3137
+      "start_line": 3136
     },
     {
       "compile_status": "ok",
-      "end_line": 3143,
+      "end_line": 3142,
       "function": "setBalance",
       "mutant_id": "m001213",
       "operator": "UORD",
       "original_expression": "~SHARES_MASK",
       "replacement_expression": " SHARES_MASK",
-      "start_line": 3143
+      "start_line": 3142
     }
   ],
   "subject_id": "euler-xyz__euler-vault-kit__RiskManager"

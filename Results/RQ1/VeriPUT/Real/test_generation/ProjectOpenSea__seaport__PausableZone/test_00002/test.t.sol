@@ -100,8 +100,8 @@ contract PausableZoneCovTest_0_PausableZone_assignOperator_put15p1_p1_part_part0
     c0.assignOperator(operatorToAssign);
     
     if (operatorToAssign == address(uint160(1461501637330902918203684832716283019655932542975))) {
-
-
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 160) & 255), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(1461501637330902918203684832716283019655932542975), "fixed witness state");
     }
     
     uint256 _post_operator = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);

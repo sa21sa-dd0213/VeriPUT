@@ -65,8 +65,8 @@ contract Arcadia_TokenCovTest_Arcadia_Token_delegates_put2p1 is Test {
     
     uint256 _post_delegates_delegator = (uint256(vm.load(address(c0), keccak256(abi.encode(delegator, uint256(17))))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_delegates_delegator, _pre_delegates_delegator, "_delegates[delegator]: post == pre");
-    
-    
+    assertGe(_post_delegates_delegator, _pre_delegates_delegator, "_delegates[delegator]: post >= pre");
+    assertLe(_post_delegates_delegator, _pre_delegates_delegator, "_delegates[delegator]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

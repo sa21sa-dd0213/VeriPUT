@@ -15,8 +15,8 @@ contract CoolerCovTest_Cooler_repayLoan_put6p1 is Test {
   function setUp() public {
     c0 = new Cooler();
     
-
-
+    vm.etch(address(0), hex"60006000f3");
+    vm.mockCall(address(0), abi.encodeWithSignature("onRepay(uint256,uint256)"), bytes(""));
   }
   
   
@@ -133,8 +133,8 @@ contract CoolerCovTest_Cooler_repayLoan_concrete6p1__basis_root__W is Test {
   function setUp() public {
     c0 = new Cooler();
     
-
-
+    vm.etch(address(0), hex"60006000f3");
+    vm.mockCall(address(0), abi.encodeWithSignature("onRepay(uint256,uint256)"), bytes(""));
   }
   
   

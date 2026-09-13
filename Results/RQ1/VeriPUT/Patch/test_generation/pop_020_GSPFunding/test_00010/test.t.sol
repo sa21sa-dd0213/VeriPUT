@@ -68,10 +68,10 @@ contract GSPFundingCovTest_GSPFunding_getVaultReserve_put2p1 is Test {
     uint256 _post_QUOTE_RESERVE = ((uint256(vm.load(address(c0), bytes32(uint256(4)))) >> 112) & 5192296858534827628530496329220095);
     assertEq(_post_BASE_RESERVE, _pre_BASE_RESERVE, "_BASE_RESERVE_: post == pre");
     assertEq(_post_QUOTE_RESERVE, _pre_QUOTE_RESERVE, "_QUOTE_RESERVE_: post == pre");
-    
-    
-    
-    
+    assertGe(_post_BASE_RESERVE, _pre_BASE_RESERVE, "_BASE_RESERVE_: post >= pre");
+    assertLe(_post_BASE_RESERVE, _pre_BASE_RESERVE, "_BASE_RESERVE_: post <= pre");
+    assertGe(_post_QUOTE_RESERVE, _pre_QUOTE_RESERVE, "_QUOTE_RESERVE_: post >= pre");
+    assertLe(_post_QUOTE_RESERVE, _pre_QUOTE_RESERVE, "_QUOTE_RESERVE_: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

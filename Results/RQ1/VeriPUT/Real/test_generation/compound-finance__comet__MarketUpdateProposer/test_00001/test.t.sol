@@ -88,12 +88,12 @@ contract MarketUpdateProposerCovTest_MarketUpdateProposer_getProposal_put2p1 is 
     assertEq(_post_proposals_proposalId__executed, _pre_proposals_proposalId__executed, "proposals[proposalId].executed: post == pre");
     assertEq(_post_proposals_proposalId__id, _pre_proposals_proposalId__id, "proposals[proposalId].id: post == pre");
     assertEq(_post_proposals_proposalId__proposer, _pre_proposals_proposalId__proposer, "proposals[proposalId].proposer: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_proposals_proposalId__eta, _pre_proposals_proposalId__eta, "proposals[proposalId].eta: post >= pre");
+    assertLe(_post_proposals_proposalId__eta, _pre_proposals_proposalId__eta, "proposals[proposalId].eta: post <= pre");
+    assertGe(_post_proposals_proposalId__id, _pre_proposals_proposalId__id, "proposals[proposalId].id: post >= pre");
+    assertLe(_post_proposals_proposalId__id, _pre_proposals_proposalId__id, "proposals[proposalId].id: post <= pre");
+    assertGe(_post_proposals_proposalId__proposer, _pre_proposals_proposalId__proposer, "proposals[proposalId].proposer: post >= pre");
+    assertLe(_post_proposals_proposalId__proposer, _pre_proposals_proposalId__proposer, "proposals[proposalId].proposer: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

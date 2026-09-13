@@ -29,9 +29,9 @@ contract PENNY_BY_PENNYCovTest_PENNY_BY_PENNY_Collect_concrete5_fb is Test {
     
     c0.Collect(115792089237316195423570985008687907853269984665640564039457584007913129639935);
     uint256 _veriput_fixed_state_MinSum_2 = uint256(vm.load(address(c0), bytes32(uint256(1))));
-
+    assertEq(_veriput_fixed_state_MinSum_2, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_intitalized_3 = ((uint256(vm.load(address(c0), bytes32(uint256(2)))) >> 160) & 255);
-
+    assertEq(_veriput_fixed_state_intitalized_3, uint256(0), "fixed witness state");
   }
   
   

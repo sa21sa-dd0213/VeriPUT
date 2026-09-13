@@ -5,7 +5,7 @@ pragma solidity >=0.8.0;
 import {Test} from "forge-std/Test.sol";
 import {TestDateTime} from "../src/flat.sol";
 
-contract TestDateTimeCovTest_TestDateTime__isLeapYear_put13p1 is Test {
+contract TestDateTimeCovTest_TestDateTime__isLeapYear_put2p1 is Test {
   TestDateTime c0;
   function setUp() public {
     c0 = new TestDateTime();
@@ -55,53 +55,24 @@ contract TestDateTimeCovTest_TestDateTime__isLeapYear_put13p1 is Test {
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  function _veriput_parameterized(address p_msg_sender, uint256 p_block_timestamp, uint256 p_block_number, uint256 year) internal {
+  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value, uint256 year) internal {
     p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
-    p_block_timestamp = bound(p_block_timestamp, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-    p_block_number = bound(p_block_number, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-    year = bound(year, 0, 0);
+    p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    year = bound(year, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     
     
-    vm.warp(p_block_timestamp);
-    vm.roll(p_block_number);
-    vm.chainId(0);
-    vm.fee(0);
-    vm.blobBaseFee(0);
-    vm.prevrandao(uint256(0));
-    vm.txGasPrice(0);
-    vm.coinbase(address(uint160(0)));
+    vm.deal(p_msg_sender, p_msg_value);
     vm.prank(p_msg_sender);
-    bool _put_ret = c0._isLeapYear(year);
-    
-    if (p_msg_sender == address(uint160(0)) && p_block_timestamp == uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) && p_block_number == uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) && year == uint256(0)) {
-      assertEq(_put_ret, true, "fixed witness return");
+    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("_isLeapYear(uint256)", year));
+    assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 
-    }
     
-    assertTrue(_put_ret, "return: return == true");
     
   }
 
 
   
-  function test_put_TestDateTime__isLeapYear_path13p1(address p_msg_sender, uint256 p_block_timestamp, uint256 p_block_number, uint256 year) public {
-    _veriput_parameterized(p_msg_sender, p_block_timestamp, p_block_number, year);
+  function test_put_TestDateTime__isLeapYear_path2p1(address p_msg_sender, uint256 p_msg_value, uint256 year) public {
+    _veriput_parameterized(p_msg_sender, p_msg_value, year);
   }
 }

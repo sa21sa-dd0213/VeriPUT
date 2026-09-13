@@ -65,8 +65,8 @@ contract theRunCovTest_theRun_PayoutQueueSize_put2p1 is Test {
     
     uint256 _post_Payout_id = uint256(vm.load(address(c0), bytes32(uint256(1))));
     assertEq(_post_Payout_id, _pre_Payout_id, "Payout_id: post == pre");
-    
-    
+    assertGe(_post_Payout_id, _pre_Payout_id, "Payout_id: post >= pre");
+    assertLe(_post_Payout_id, _pre_Payout_id, "Payout_id: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

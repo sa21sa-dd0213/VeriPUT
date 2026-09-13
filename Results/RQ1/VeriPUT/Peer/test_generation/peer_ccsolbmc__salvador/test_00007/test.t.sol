@@ -69,12 +69,12 @@ contract salvadorCovTest_salvador_sdfd_put2p1 is Test {
     assertEq(_post_initialsupply, _pre_initialsupply, "initialsupply: post == pre");
     assertEq(_post_admin, _pre_admin, "admin: post == pre");
     assertEq(_post_balances_msg_sender, _pre_balances_msg_sender, "balances[msg.sender]: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_initialsupply, _pre_initialsupply, "initialsupply: post >= pre");
+    assertLe(_post_initialsupply, _pre_initialsupply, "initialsupply: post <= pre");
+    assertGe(_post_admin, _pre_admin, "admin: post >= pre");
+    assertLe(_post_admin, _pre_admin, "admin: post <= pre");
+    assertGe(_post_balances_msg_sender, _pre_balances_msg_sender, "balances[msg.sender]: post >= pre");
+    assertLe(_post_balances_msg_sender, _pre_balances_msg_sender, "balances[msg.sender]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

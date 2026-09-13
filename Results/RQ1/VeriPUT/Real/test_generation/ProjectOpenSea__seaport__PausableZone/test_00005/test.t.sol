@@ -110,8 +110,8 @@ contract PausableZoneCovTest_0_PausableZone_assignOperator_put15p1_p1_part_part0
       assertEq(_veriputFixedLogs[0].topics.length, 1);
       assertEq(_veriputFixedLogs[0].topics[0], keccak256("OperatorUpdated(address)"));
       assertEq(_veriputFixedLogs[0].data, abi.encode(address(uint160(1))));
-
-
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 160) & 255), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(1), "fixed witness state");
     }
     
     uint256 _post_operator = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);

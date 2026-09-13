@@ -56,7 +56,7 @@ contract LRTDepositPoolCovTest_LRTDepositPool_transferAssetToNodeDelegator_put2p
     ndcIndex = bound(ndcIndex, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     asset = address(uint160(bound(uint256(uint160(asset)), 0, 1461501637330902918203684832716283019655932542975)));
 
-
+vm.mockCall(asset, abi.encodeWithSignature("transfer(address,uint256)"), abi.encode(true));
     amount = bound(amount, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     
     uint256 _pre_status = uint256(vm.load(address(c0), bytes32(uint256(101))));
@@ -68,8 +68,8 @@ contract LRTDepositPoolCovTest_LRTDepositPool_transferAssetToNodeDelegator_put2p
     
     uint256 _post_status = uint256(vm.load(address(c0), bytes32(uint256(101))));
     assertEq(_post_status, _pre_status, "_status: post == pre");
-    
-    
+    assertGe(_post_status, _pre_status, "_status: post >= pre");
+    assertLe(_post_status, _pre_status, "_status: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

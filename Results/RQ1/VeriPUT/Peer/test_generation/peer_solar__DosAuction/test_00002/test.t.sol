@@ -101,18 +101,18 @@ contract DosAuctionCovTest_DosAuction_bid_put2p1_p1_part_part0_r_w is Test {
     try c0.bid{value: 0}() {} catch { _put_ok = false; }
     
     if (p_msg_sender == address(uint160(3791923280))) {
-
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
     
     uint256 _post_currentFrontrunner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
     uint256 _post_currentBid = uint256(vm.load(address(c0), bytes32(uint256(1))));
     assertEq(_post_currentFrontrunner, _pre_currentFrontrunner, "currentFrontrunner: post == pre");
     assertEq(_post_currentBid, _pre_currentBid, "currentBid: post == pre");
-    
-    
-    
-    
+    assertGe(_post_currentFrontrunner, _pre_currentFrontrunner, "currentFrontrunner: post >= pre");
+    assertLe(_post_currentFrontrunner, _pre_currentFrontrunner, "currentFrontrunner: post <= pre");
+    assertGe(_post_currentBid, _pre_currentBid, "currentBid: post >= pre");
+    assertLe(_post_currentBid, _pre_currentBid, "currentBid: post <= pre");
     
     assertFalse(_put_ok, "path enc=2p1_part_part0_r_w exits through a REVERT: the call must fail on the unmodified contract");
   }
@@ -146,15 +146,15 @@ contract DosAuctionCovTest_DosAuction_bid_concrete2p1__basis_part0_r_w__W is Tes
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "entry pin state.currentBid$5 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.currentFrontrunner$3 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -171,8 +171,8 @@ contract DosAuctionCovTest_DosAuction_bid_concrete2p1__basis_part0_r_w__W is Tes
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_currentBid_5_0 = uint256(vm.load(address(c0), bytes32(uint256(1))));
-
+    assertEq(_veriput_fixed_state_currentBid_5_0, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_currentFrontrunner_3_1 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_currentFrontrunner_3_1, uint256(0), "fixed witness state");
   }
 }

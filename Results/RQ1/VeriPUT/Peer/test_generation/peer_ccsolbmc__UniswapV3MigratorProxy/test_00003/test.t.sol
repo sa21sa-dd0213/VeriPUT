@@ -97,7 +97,7 @@ contract UniswapV3MigratorProxyCovTest_UniswapV3MigratorProxy_fun_put3p1_p1_part
     c0.fun();
     
     if (true) {
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(4294967294), "fixed witness state");
     }
     
     uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);

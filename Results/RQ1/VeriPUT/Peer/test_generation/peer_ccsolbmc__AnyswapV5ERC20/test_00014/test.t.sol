@@ -65,8 +65,8 @@ contract AnyswapV5ERC20CovTest_AnyswapV5ERC20_totalSupply_put2p1 is Test {
     
     uint256 _post_totalSupply = uint256(vm.load(address(c0), bytes32(uint256(5))));
     assertEq(_post_totalSupply, _pre_totalSupply, "_totalSupply: post == pre");
-    
-    
+    assertGe(_post_totalSupply, _pre_totalSupply, "_totalSupply: post >= pre");
+    assertLe(_post_totalSupply, _pre_totalSupply, "_totalSupply: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

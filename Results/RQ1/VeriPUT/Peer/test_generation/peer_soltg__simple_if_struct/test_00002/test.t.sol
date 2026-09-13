@@ -85,9 +85,9 @@ contract Csi4CovTest_Csi4_check_put30p1 is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(0), "entry pin state.s.x did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     uint256 _pre_s_x = uint256(vm.load(address(c0), bytes32(uint256(0))));
     
@@ -106,8 +106,8 @@ contract Csi4CovTest_Csi4_check_put30p1 is Test {
     
     uint256 _post_s_x = uint256(vm.load(address(c0), bytes32(uint256(0))));
     assertEq(_post_s_x, _pre_s_x, "s.x: post == pre");
-    
-    
+    assertGe(_post_s_x, _pre_s_x, "s.x: post >= pre");
+    assertLe(_post_s_x, _pre_s_x, "s.x: post <= pre");
     
     assertFalse(_put_ok, "path enc=30p1 exits through a REVERT: the call must fail on the unmodified contract");
   }
@@ -139,9 +139,9 @@ contract Csi4CovTest_Csi4_check_concrete30p1__basis_root__W is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(0)))), uint256(0), "entry pin state.s.x did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);

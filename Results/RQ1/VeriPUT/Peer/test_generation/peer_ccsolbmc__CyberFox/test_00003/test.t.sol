@@ -71,12 +71,12 @@ contract CyberFoxCovTest_CyberFox_addSniperToBlacklist_put2p1 is Test {
     assertEq(_post_tTotal, _pre_tTotal, "_tTotal: post == pre");
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
     assertEq(_post_balances_receiver, _pre_balances_receiver, "_balances[receiver]: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_tTotal, _pre_tTotal, "_tTotal: post >= pre");
+    assertLe(_post_tTotal, _pre_tTotal, "_tTotal: post <= pre");
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
+    assertGe(_post_balances_receiver, _pre_balances_receiver, "_balances[receiver]: post >= pre");
+    assertLe(_post_balances_receiver, _pre_balances_receiver, "_balances[receiver]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

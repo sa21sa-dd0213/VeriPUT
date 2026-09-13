@@ -66,8 +66,8 @@ contract salvadorCovTest_salvador_allowance_put2p1 is Test {
     
     uint256 _post_allowed_tokenOwner__spender = uint256(vm.load(address(c0), keccak256(abi.encode(spender, keccak256(abi.encode(tokenOwner, uint256(7)))))));
     assertEq(_post_allowed_tokenOwner__spender, _pre_allowed_tokenOwner__spender, "allowed[tokenOwner][spender]: post == pre");
-    
-    
+    assertGe(_post_allowed_tokenOwner__spender, _pre_allowed_tokenOwner__spender, "allowed[tokenOwner][spender]: post >= pre");
+    assertLe(_post_allowed_tokenOwner__spender, _pre_allowed_tokenOwner__spender, "allowed[tokenOwner][spender]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

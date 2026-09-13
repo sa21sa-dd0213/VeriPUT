@@ -68,10 +68,10 @@ contract GSPFundingCovTest_GSPFunding_getUserFeeRate_put2p1 is Test {
     uint256 _post_LP_FEE_RATE = uint256(vm.load(address(c0), bytes32(uint256(16))));
     assertEq(_post_MT_FEE_RATE, _pre_MT_FEE_RATE, "_MT_FEE_RATE_: post == pre");
     assertEq(_post_LP_FEE_RATE, _pre_LP_FEE_RATE, "_LP_FEE_RATE_: post == pre");
-    
-    
-    
-    
+    assertGe(_post_MT_FEE_RATE, _pre_MT_FEE_RATE, "_MT_FEE_RATE_: post >= pre");
+    assertLe(_post_MT_FEE_RATE, _pre_MT_FEE_RATE, "_MT_FEE_RATE_: post <= pre");
+    assertGe(_post_LP_FEE_RATE, _pre_LP_FEE_RATE, "_LP_FEE_RATE_: post >= pre");
+    assertLe(_post_LP_FEE_RATE, _pre_LP_FEE_RATE, "_LP_FEE_RATE_: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

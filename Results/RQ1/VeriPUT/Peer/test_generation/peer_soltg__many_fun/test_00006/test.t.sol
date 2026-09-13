@@ -104,8 +104,8 @@ contract Cfc3CovTest_Cfc3_f2_put6p1 is Test {
     }
     
     assertEq(uint256(_put_ret), 0, "return: return == 0");
-    
-    
+    assertGe(uint256(_put_ret), 0, "return: return in [0, 0]");
+    assertLe(uint256(_put_ret), 0, "return: return in [0, 0]");
     
   }
 

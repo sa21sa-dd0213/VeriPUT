@@ -63,8 +63,8 @@ contract kia_quizCovTest_kia_quiz_Start_put2p1 is Test {
     
     uint256 _post_responseHash = uint256(vm.load(address(c0), bytes32(uint256(1))));
     assertEq(_post_responseHash, _pre_responseHash, "responseHash: post == pre");
-    
-    
+    assertGe(_post_responseHash, _pre_responseHash, "responseHash: post >= pre");
+    assertLe(_post_responseHash, _pre_responseHash, "responseHash: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

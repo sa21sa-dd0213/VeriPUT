@@ -67,10 +67,10 @@ contract DAOCovTest_DAO_newAddressProposal_put2p1 is Test {
     uint256 _post_mapPID_address_state_proposalCount = (uint256(vm.load(address(c0), keccak256(abi.encode(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(7))))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_proposalCount, _pre_proposalCount, "proposalCount: post == pre");
     assertEq(_post_mapPID_address_state_proposalCount, _pre_mapPID_address_state_proposalCount, "mapPID_address[state.proposalCount]: post == pre");
-    
-    
-    
-    
+    assertGe(_post_proposalCount, _pre_proposalCount, "proposalCount: post >= pre");
+    assertLe(_post_proposalCount, _pre_proposalCount, "proposalCount: post <= pre");
+    assertGe(_post_mapPID_address_state_proposalCount, _pre_mapPID_address_state_proposalCount, "mapPID_address[state.proposalCount]: post >= pre");
+    assertLe(_post_mapPID_address_state_proposalCount, _pre_mapPID_address_state_proposalCount, "mapPID_address[state.proposalCount]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -124,30 +124,30 @@ contract TokenVestingCovTest_TokenVesting_get_vested_for_tranche_put2p1 is Test 
     assertEq(_post_user_stats_state_controller__total_in_all_tranches, _pre_user_stats_state_controller__total_in_all_tranches, "user_stats[state.controller].total_in_all_tranches: post == pre");
     assertEq(_post_user_stats_state_v1_address__total_in_all_tranches, _pre_user_stats_state_v1_address__total_in_all_tranches, "user_stats[state.v1_address].total_in_all_tranches: post == pre");
     assertEq(_post_user_stats_state_v2_address__total_in_all_tranches, _pre_user_stats_state_v2_address__total_in_all_tranches, "user_stats[state.v2_address].total_in_all_tranches: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_tranches_tranche_id__cliff_start, _pre_tranches_tranche_id__cliff_start, "tranches[tranche_id].cliff_start: post >= pre");
+    assertLe(_post_tranches_tranche_id__cliff_start, _pre_tranches_tranche_id__cliff_start, "tranches[tranche_id].cliff_start: post <= pre");
+    assertGe(_post_tranches_tranche_id__duration, _pre_tranches_tranche_id__duration, "tranches[tranche_id].duration: post >= pre");
+    assertLe(_post_tranches_tranche_id__duration, _pre_tranches_tranche_id__duration, "tranches[tranche_id].duration: post <= pre");
+    assertGe(_post_user_stats_msg_sender__lien, _pre_user_stats_msg_sender__lien, "user_stats[msg.sender].lien: post >= pre");
+    assertLe(_post_user_stats_msg_sender__lien, _pre_user_stats_msg_sender__lien, "user_stats[msg.sender].lien: post <= pre");
+    assertGe(_post_user_stats_user__lien, _pre_user_stats_user__lien, "user_stats[user].lien: post >= pre");
+    assertLe(_post_user_stats_user__lien, _pre_user_stats_user__lien, "user_stats[user].lien: post <= pre");
+    assertGe(_post_user_stats_state_controller__lien, _pre_user_stats_state_controller__lien, "user_stats[state.controller].lien: post >= pre");
+    assertLe(_post_user_stats_state_controller__lien, _pre_user_stats_state_controller__lien, "user_stats[state.controller].lien: post <= pre");
+    assertGe(_post_user_stats_state_v1_address__lien, _pre_user_stats_state_v1_address__lien, "user_stats[state.v1_address].lien: post >= pre");
+    assertLe(_post_user_stats_state_v1_address__lien, _pre_user_stats_state_v1_address__lien, "user_stats[state.v1_address].lien: post <= pre");
+    assertGe(_post_user_stats_state_v2_address__lien, _pre_user_stats_state_v2_address__lien, "user_stats[state.v2_address].lien: post >= pre");
+    assertLe(_post_user_stats_state_v2_address__lien, _pre_user_stats_state_v2_address__lien, "user_stats[state.v2_address].lien: post <= pre");
+    assertGe(_post_user_stats_msg_sender__total_in_all_tranches, _pre_user_stats_msg_sender__total_in_all_tranches, "user_stats[msg.sender].total_in_all_tranches: post >= pre");
+    assertLe(_post_user_stats_msg_sender__total_in_all_tranches, _pre_user_stats_msg_sender__total_in_all_tranches, "user_stats[msg.sender].total_in_all_tranches: post <= pre");
+    assertGe(_post_user_stats_user__total_in_all_tranches, _pre_user_stats_user__total_in_all_tranches, "user_stats[user].total_in_all_tranches: post >= pre");
+    assertLe(_post_user_stats_user__total_in_all_tranches, _pre_user_stats_user__total_in_all_tranches, "user_stats[user].total_in_all_tranches: post <= pre");
+    assertGe(_post_user_stats_state_controller__total_in_all_tranches, _pre_user_stats_state_controller__total_in_all_tranches, "user_stats[state.controller].total_in_all_tranches: post >= pre");
+    assertLe(_post_user_stats_state_controller__total_in_all_tranches, _pre_user_stats_state_controller__total_in_all_tranches, "user_stats[state.controller].total_in_all_tranches: post <= pre");
+    assertGe(_post_user_stats_state_v1_address__total_in_all_tranches, _pre_user_stats_state_v1_address__total_in_all_tranches, "user_stats[state.v1_address].total_in_all_tranches: post >= pre");
+    assertLe(_post_user_stats_state_v1_address__total_in_all_tranches, _pre_user_stats_state_v1_address__total_in_all_tranches, "user_stats[state.v1_address].total_in_all_tranches: post <= pre");
+    assertGe(_post_user_stats_state_v2_address__total_in_all_tranches, _pre_user_stats_state_v2_address__total_in_all_tranches, "user_stats[state.v2_address].total_in_all_tranches: post >= pre");
+    assertLe(_post_user_stats_state_v2_address__total_in_all_tranches, _pre_user_stats_state_v2_address__total_in_all_tranches, "user_stats[state.v2_address].total_in_all_tranches: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

@@ -1,16 +1,26 @@
 // SPDX-License-Identifier: MIT
 
+
+
+
+
+
 pragma solidity >=0.8.0;
 
-import {Test} from "forge-std/Test.sol";
+import {Test, Vm} from "forge-std/Test.sol";
 import {CyberFox} from "../src/flat.sol";
 
-contract CyberFoxCovTest_CyberFox_totalSupply_put2p1 is Test {
+contract CyberFoxCovTest_CyberFox_renounceOwnership_put7p1_p1_part_part0_w_w is Test {
   CyberFox c0;
   function setUp() public {
     c0 = new CyberFox();
   }
   
+  
+  
+  
+  
+  
 
   
   
@@ -52,31 +62,87 @@ contract CyberFoxCovTest_CyberFox_totalSupply_put2p1 is Test {
   
   
   
-  function _veriput_parameterized(address p_msg_sender, uint256 p_msg_value) internal {
-    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
-    p_msg_value = bound(p_msg_value, 1, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  function _veriput_parameterized(address p_msg_sender) internal {
+    p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 0, 1073741823)));
+    vm.assume(uint256(uint160(p_msg_sender)) != 0);
     
-    uint256 _pre_tTotal = uint256(vm.load(address(c0), bytes32(uint256(5))));
     
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(uint256(uint160(p_msg_sender))) & 1461501637330902918203684832716283019655932542975) << 0);
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
+    }
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(uint256(uint160(p_msg_sender))), "entry pin state._owner$413 did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
-    vm.deal(p_msg_sender, p_msg_value);
+    uint256 _pre_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
+    uint256 _pre_owner_413 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
+    
+    vm.assume(_pre_owner_413 == uint256(uint160(p_msg_sender)));
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
     vm.prank(p_msg_sender);
-    (bool _esbmc_value_gate_ok, ) = address(c0).call{value: p_msg_value}(abi.encodeWithSignature("totalSupply()"));
     
-    uint256 _post_tTotal = uint256(vm.load(address(c0), bytes32(uint256(5))));
-    assertEq(_post_tTotal, _pre_tTotal, "_tTotal: post == pre");
+    vm.recordLogs();
+    c0.renounceOwnership();
+    Vm.Log[] memory _veriputFixedLogs = vm.getRecordedLogs();
     
+    if (p_msg_sender == address(uint160(0))) {
+      assertEq(_veriputFixedLogs.length, 1);
+      assertEq(_veriputFixedLogs[0].emitter, address(c0));
+      assertEq(_veriputFixedLogs[0].topics.length, 3);
+      assertEq(_veriputFixedLogs[0].topics[0], keccak256("OwnershipTransferred(address,address)"));
+      assertEq(_veriputFixedLogs[0].topics[1], bytes32(uint256(uint160(address(uint160(0))))));
+      assertEq(_veriputFixedLogs[0].topics[2], bytes32(uint256(uint160(address(uint160(0))))));
+      assertEq(_veriputFixedLogs[0].data, abi.encode());
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(8)))) & 255), uint256(18), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(5)))), uint256(50000000000000000000000000000), "fixed witness state");
+    }
     
-    
-    assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
-
-    
+    uint256 _post_owner = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_post_owner, _pre_owner, "_owner: post == pre");
+    assertEq(_post_owner, uint256(uint160(p_msg_sender)), "_owner: post == msg.sender");
+    assertGe(_post_owner, 0, "_owner: post in [0, pre]");
+    assertLe(_post_owner, _pre_owner, "_owner: post in [0, pre]");
+    assertGe(_post_owner, 0, "_owner: post in [0, (pre + pre)]");
+    unchecked { assertLe(_post_owner, (uint256(_pre_owner) + uint256(_pre_owner)), "_owner: post in [0, (pre + pre)]"); }
+    assertGe(_post_owner, 0, "_owner: post in [0, (pre * pre)]");
+    unchecked { assertLe(_post_owner, (uint256(_pre_owner) * uint256(_pre_owner)), "_owner: post in [0, (pre * pre)]"); }
+    assertGe(_post_owner, 0, "_owner: post in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]");
+    unchecked { assertLe(_post_owner, (uint256(0) + uint256(1461501637330902918203684832716283019655932542975)), "_owner: post in [0, (msg.value + 1461501637330902918203684832716283019655932542975)]"); }
     
   }
 
 
   
-  function test_put_CyberFox_totalSupply_path2p1(address p_msg_sender, uint256 p_msg_value) public {
-    _veriput_parameterized(p_msg_sender, p_msg_value);
+  function test_put_CyberFox_renounceOwnership_path7p1_part_part0_w_w(address p_msg_sender) public {
+    _veriput_parameterized(p_msg_sender);
   }
 }

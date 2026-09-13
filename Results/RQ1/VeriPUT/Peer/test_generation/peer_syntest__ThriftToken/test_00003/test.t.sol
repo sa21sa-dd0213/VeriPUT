@@ -116,10 +116,10 @@ contract ThriftTokenCovTest_ThriftToken_approve_put15p1 is Test {
       assertEq(_veriputFixedLogs[0].topics[1], bytes32(uint256(uint160(address(uint160(4294967295))))));
       assertEq(_veriputFixedLogs[0].topics[2], bytes32(uint256(uint160(address(uint160(730750818665451459101842416358141509832261238783))))));
       assertEq(_veriputFixedLogs[0].data, abi.encode(uint256(0)));
-
-
-
-
+      assertEq(uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(730750818665451459101842416358141509832261238783)), keccak256(abi.encode(address(uint160(0)), uint256(3))))))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(2)))), uint256(21000000000000000000000000), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(966461231210601665918981369454975247116058187488), "fixed witness state");
     }
   }
 

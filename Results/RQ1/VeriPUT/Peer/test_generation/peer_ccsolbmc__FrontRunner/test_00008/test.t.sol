@@ -30,10 +30,10 @@ contract FrontRunnerCovTest_1_FrontRunner_kill_put6p1_p1_part_part0_r_w is Test 
     c0 = new FrontRunner();
     
     address _esbmc_ext_mock_0 = address(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-
-
-
-
+    vm.etch(_esbmc_ext_mock_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("WETH()"), abi.encode(address(0)));
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("swapETHForExactTokens(uint256,address[],address,uint256)"), abi.encode(new uint256[](0)));
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("swapExactTokensForETH(uint256,uint256,address[],address,uint256)"), abi.encode(new uint256[](0)));
     vm.stopPrank();
   }
   
@@ -117,19 +117,19 @@ contract FrontRunnerCovTest_1_FrontRunner_kill_put6p1_p1_part_part0_r_w is Test 
     try c0.kill() {} catch { _put_ok = false; }
     
     if (p_msg_sender == address(uint160(2147483646))) {
-
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975), uint256(344069158476845065304731585372659152227292608404), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(3)))) & 1461501637330902918203684832716283019655932542975), uint256(1241825841301566910798618315133333510876706684831), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
     
     uint256 _post_manager = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
     uint256 _post_EOA1 = (uint256(vm.load(address(c0), bytes32(uint256(2)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_manager, _pre_manager, "manager: post == pre");
     assertEq(_post_EOA1, _pre_EOA1, "EOA1: post == pre");
-    
-    
-    
-    
+    assertGe(_post_manager, _pre_manager, "manager: post >= pre");
+    assertLe(_post_manager, _pre_manager, "manager: post <= pre");
+    assertGe(_post_EOA1, _pre_EOA1, "EOA1: post >= pre");
+    assertLe(_post_EOA1, _pre_EOA1, "EOA1: post <= pre");
     
     assertFalse(_put_ok, "path enc=6p1_part_part0_r_w exits through a REVERT: the call must fail on the unmodified contract");
   }

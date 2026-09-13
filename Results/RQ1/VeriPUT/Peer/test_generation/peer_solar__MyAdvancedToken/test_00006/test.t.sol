@@ -120,10 +120,10 @@ contract MyAdvancedTokenCovTest_MyAdvancedToken_transfer_put255p1_p1_part_part0_
       assertEq(_veriputFixedLogs[0].topics[1], bytes32(uint256(uint160(address(uint160(1))))));
       assertEq(_veriputFixedLogs[0].topics[2], bytes32(uint256(uint160(address(uint160(1))))));
       assertEq(_veriputFixedLogs[0].data, abi.encode(uint256(0)));
-
-
-
-
+      assertEq(uint256(vm.load(address(c0), keccak256(abi.encode(address(uint160(1)), uint256(5))))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(3)))) & 255), uint256(18), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(0), "fixed witness state");
     }
     
     uint256 _post_balanceOf__to = uint256(vm.load(address(c0), keccak256(abi.encode(_to, uint256(5)))));

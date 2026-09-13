@@ -148,12 +148,12 @@ contract L1BlockCovTest_L1Block_setL1BlockValues_put6p1 is Test {
     try c0.setL1BlockValues(_number, _timestamp, _basefee, bytes32(_hash), _sequenceNumber, bytes32(_batcherHash), _l1FeeOverhead, _l1FeeScalar) {} catch { _put_ok = false; }
     
     if (_number == uint64(0) && _timestamp == uint64(0) && _basefee == uint256(0) && _hash == uint256(0) && _sequenceNumber == uint64(0) && _batcherHash == uint256(0) && _l1FeeOverhead == uint256(0) && _l1FeeScalar == uint256(0)) {
-
-
-
-
-
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(5)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(6)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 18446744073709551615), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(3)))) & 18446744073709551615), uint256(0), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 64) & 18446744073709551615), uint256(0), "fixed witness state");
     }
     
     _post_number = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 18446744073709551615);
@@ -172,22 +172,22 @@ contract L1BlockCovTest_L1Block_setL1BlockValues_put6p1 is Test {
     assertEq(_post_batcherHash, _pre_batcherHash, "batcherHash: post == pre");
     assertEq(_post_l1FeeOverhead, _pre_l1FeeOverhead, "l1FeeOverhead: post == pre");
     assertEq(_post_l1FeeScalar, _pre_l1FeeScalar, "l1FeeScalar: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_number, _pre_number, "number: post >= pre");
+    assertLe(_post_number, _pre_number, "number: post <= pre");
+    assertGe(_post_timestamp, _pre_timestamp, "timestamp: post >= pre");
+    assertLe(_post_timestamp, _pre_timestamp, "timestamp: post <= pre");
+    assertGe(_post_basefee, _pre_basefee, "basefee: post >= pre");
+    assertLe(_post_basefee, _pre_basefee, "basefee: post <= pre");
+    assertGe(_post_hash, _pre_hash, "hash: post >= pre");
+    assertLe(_post_hash, _pre_hash, "hash: post <= pre");
+    assertGe(_post_sequenceNumber, _pre_sequenceNumber, "sequenceNumber: post >= pre");
+    assertLe(_post_sequenceNumber, _pre_sequenceNumber, "sequenceNumber: post <= pre");
+    assertGe(_post_batcherHash, _pre_batcherHash, "batcherHash: post >= pre");
+    assertLe(_post_batcherHash, _pre_batcherHash, "batcherHash: post <= pre");
+    assertGe(_post_l1FeeOverhead, _pre_l1FeeOverhead, "l1FeeOverhead: post >= pre");
+    assertLe(_post_l1FeeOverhead, _pre_l1FeeOverhead, "l1FeeOverhead: post <= pre");
+    assertGe(_post_l1FeeScalar, _pre_l1FeeScalar, "l1FeeScalar: post >= pre");
+    assertLe(_post_l1FeeScalar, _pre_l1FeeScalar, "l1FeeScalar: post <= pre");
     
     assertFalse(_put_ok, "path enc=6p1 exits through a REVERT: the call must fail on the unmodified contract");
   }
@@ -219,39 +219,39 @@ contract L1BlockCovTest_L1Block_setL1BlockValues_concrete6p1__basis_root__W is T
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(1))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(1)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "entry pin state.basefee did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(5))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(5)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(5)))), uint256(0), "entry pin state.l1FeeOverhead did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(6))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(6)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(6)))), uint256(0), "entry pin state.l1FeeScalar did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(18446744073709551615)) | ((uint256(0) & 18446744073709551615) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 18446744073709551615), uint256(0), "entry pin state.number did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(3))));
       _w = (_w & ~uint256(18446744073709551615)) | ((uint256(0) & 18446744073709551615) << 0);
-
+      vm.store(address(c0), bytes32(uint256(3)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(3)))) & 18446744073709551615), uint256(0), "entry pin state.sequenceNumber did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(340282366920938463444927863358058659840)) | ((uint256(0) & 18446744073709551615) << 64);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 64) & 18446744073709551615), uint256(0), "entry pin state.timestamp did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -269,17 +269,17 @@ contract L1BlockCovTest_L1Block_setL1BlockValues_concrete6p1__basis_root__W is T
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_basefee_1 = uint256(vm.load(address(c0), bytes32(uint256(1))));
-
+    assertEq(_veriput_fixed_state_basefee_1, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_l1FeeOverhead_4 = uint256(vm.load(address(c0), bytes32(uint256(5))));
-
+    assertEq(_veriput_fixed_state_l1FeeOverhead_4, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_l1FeeScalar_5 = uint256(vm.load(address(c0), bytes32(uint256(6))));
-
+    assertEq(_veriput_fixed_state_l1FeeScalar_5, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_number_6 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 18446744073709551615);
-
+    assertEq(_veriput_fixed_state_number_6, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_sequenceNumber_7 = (uint256(vm.load(address(c0), bytes32(uint256(3)))) & 18446744073709551615);
-
+    assertEq(_veriput_fixed_state_sequenceNumber_7, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_timestamp_8 = ((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 64) & 18446744073709551615);
-
+    assertEq(_veriput_fixed_state_timestamp_8, uint256(0), "fixed witness state");
   }
   
   

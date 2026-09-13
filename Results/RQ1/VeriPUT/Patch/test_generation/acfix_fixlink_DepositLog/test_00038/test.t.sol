@@ -67,8 +67,8 @@ contract DepositLogCovTest_DepositLog_setApprovedLogger_put2p1 is Test {
     uint256 _post_approvedLoggers__logger = (uint256(vm.load(address(c0), keccak256(abi.encode(_logger, uint256(1))))) & 255);
     assertEq(_post_contractOwner, _pre_contractOwner, "_contractOwner: post == pre");
     assertEq(_post_approvedLoggers__logger, _pre_approvedLoggers__logger, "approvedLoggers[_logger]: post == pre");
-    
-    
+    assertGe(_post_contractOwner, _pre_contractOwner, "_contractOwner: post >= pre");
+    assertLe(_post_contractOwner, _pre_contractOwner, "_contractOwner: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

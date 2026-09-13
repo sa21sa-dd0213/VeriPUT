@@ -69,12 +69,12 @@ contract ShibaSamuraiCovTest_ShibaSamurai_fun2_put2p1 is Test {
     assertEq(_post_rTotal, _pre_rTotal, "_rTotal: post == pre");
     assertEq(_post_rOwned_msg_sender, _pre_rOwned_msg_sender, "_rOwned[msg.sender]: post == pre");
     assertEq(_post_rOwned_state__owner, _pre_rOwned_state__owner, "_rOwned[state._owner]: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_rTotal, _pre_rTotal, "_rTotal: post >= pre");
+    assertLe(_post_rTotal, _pre_rTotal, "_rTotal: post <= pre");
+    assertGe(_post_rOwned_msg_sender, _pre_rOwned_msg_sender, "_rOwned[msg.sender]: post >= pre");
+    assertLe(_post_rOwned_msg_sender, _pre_rOwned_msg_sender, "_rOwned[msg.sender]: post <= pre");
+    assertGe(_post_rOwned_state__owner, _pre_rOwned_state__owner, "_rOwned[state._owner]: post >= pre");
+    assertLe(_post_rOwned_state__owner, _pre_rOwned_state__owner, "_rOwned[state._owner]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

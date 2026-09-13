@@ -3065,7 +3065,6 @@ function xor_1(UD60x18 x, UD60x18 y) pure returns (UD60x18 result) {
 
 function abs(SD59x18 x) pure returns (SD59x18 result) {
     int256 xInt = x.unwrap_2();
-
     if (xInt == uMIN_SD59x18) {
         revert PRBMath_SD59x18_Abs_MinSD59x18();
     }

@@ -67,8 +67,8 @@ contract PermissionGroupsCovTest_PermissionGroups_addOperator_put2p1 is Test {
     uint256 _post_operators_newOperator = (uint256(vm.load(address(c0), keccak256(abi.encode(newOperator, uint256(2))))) & 255);
     assertEq(_post_admin, _pre_admin, "admin: post == pre");
     assertEq(_post_operators_newOperator, _pre_operators_newOperator, "operators[newOperator]: post == pre");
-    
-    
+    assertGe(_post_admin, _pre_admin, "admin: post >= pre");
+    assertLe(_post_admin, _pre_admin, "admin: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

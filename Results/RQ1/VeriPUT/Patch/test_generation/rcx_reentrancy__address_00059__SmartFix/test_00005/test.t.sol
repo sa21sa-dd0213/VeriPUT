@@ -16,8 +16,8 @@ contract ACCURAL_DEPOSITCovTest_ACCURAL_DEPOSIT_SetLogFile_put7p1 is Test {
     c0 = new ACCURAL_DEPOSIT();
     
     address _esbmc_ext_mock_0 = address(0x0486cF65A2F2F3A392CBEa398AFB7F5f0B72FF46);
-
-
+    vm.etch(_esbmc_ext_mock_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("AddMessage(address,uint256,string)"), bytes(""));
   }
   
   
@@ -91,9 +91,9 @@ contract ACCURAL_DEPOSITCovTest_ACCURAL_DEPOSIT_SetLogFile_put7p1 is Test {
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
       _w = (_w & ~uint256(372682917519380244141939632342652170012262798458880)) | ((uint256(0) & 255) << 160);
-
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(2)))) >> 160) & 255), uint256(0), "entry pin state.intitalized did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     uint256 _pre_intitalized = ((uint256(vm.load(address(c0), bytes32(uint256(2)))) >> 160) & 255);
     
@@ -109,7 +109,7 @@ contract ACCURAL_DEPOSITCovTest_ACCURAL_DEPOSIT_SetLogFile_put7p1 is Test {
     c0.SetLogFile(_log);
     
     if (p_msg_sender == address(uint160(0)) && _log == address(uint160(0))) {
-
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(2)))) >> 160) & 255), uint256(0), "fixed witness state");
     }
     
     uint256 _post_intitalized = ((uint256(vm.load(address(c0), bytes32(uint256(2)))) >> 160) & 255);
@@ -139,8 +139,8 @@ contract ACCURAL_DEPOSITCovTest_ACCURAL_DEPOSIT_SetLogFile_concrete7p1__basis_ro
     c0 = new ACCURAL_DEPOSIT();
     
     address _esbmc_ext_mock_0 = address(0x0486cF65A2F2F3A392CBEa398AFB7F5f0B72FF46);
-
-
+    vm.etch(_esbmc_ext_mock_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ext_mock_0, abi.encodeWithSignature("AddMessage(address,uint256,string)"), bytes(""));
   }
   
   
@@ -148,9 +148,9 @@ contract ACCURAL_DEPOSITCovTest_ACCURAL_DEPOSIT_SetLogFile_concrete7p1__basis_ro
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(2))));
       _w = (_w & ~uint256(372682917519380244141939632342652170012262798458880)) | ((uint256(0) & 255) << 160);
-
+      vm.store(address(c0), bytes32(uint256(2)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(2)))) >> 160) & 255), uint256(0), "entry pin state.intitalized did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639934);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639934);
@@ -163,7 +163,7 @@ contract ACCURAL_DEPOSITCovTest_ACCURAL_DEPOSIT_SetLogFile_concrete7p1__basis_ro
     vm.prank(address(uint160(0)), address(uint160(0)));
     c0.SetLogFile(address(uint160(0)));
     uint256 _veriput_fixed_state_intitalized_0 = ((uint256(vm.load(address(c0), bytes32(uint256(2)))) >> 160) & 255);
-
+    assertEq(_veriput_fixed_state_intitalized_0, uint256(0), "fixed witness state");
   }
   
   

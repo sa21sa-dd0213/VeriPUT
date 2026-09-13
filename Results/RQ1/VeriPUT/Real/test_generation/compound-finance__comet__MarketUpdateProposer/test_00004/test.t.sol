@@ -11,8 +11,8 @@ contract MarketUpdateProposerCovTest_MarketUpdateProposer_state_put2p1 is Test {
     c0 = new MarketUpdateProposer(address(uint160(1000)), address(uint160(1001)), address(uint160(1002)), ITimelock(address(uint160(1003))));
     
     address _esbmc_ctor_state_mock_0_0 = address(ITimelock(address(uint160(1003))));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("GRACE_PERIOD()"), abi.encode(uint256(0)));
   }
   
 
@@ -97,14 +97,14 @@ contract MarketUpdateProposerCovTest_MarketUpdateProposer_state_put2p1 is Test {
     assertEq(_post_proposals_proposalId__executed, _pre_proposals_proposalId__executed, "proposals[proposalId].executed: post == pre");
     assertEq(_post_proposals_proposalId__id, _pre_proposals_proposalId__id, "proposals[proposalId].id: post == pre");
     assertEq(_post_proposals_proposalId__proposer, _pre_proposals_proposalId__proposer, "proposals[proposalId].proposer: post == pre");
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_proposalCount, _pre_proposalCount, "proposalCount: post >= pre");
+    assertLe(_post_proposalCount, _pre_proposalCount, "proposalCount: post <= pre");
+    assertGe(_post_proposals_proposalId__eta, _pre_proposals_proposalId__eta, "proposals[proposalId].eta: post >= pre");
+    assertLe(_post_proposals_proposalId__eta, _pre_proposals_proposalId__eta, "proposals[proposalId].eta: post <= pre");
+    assertGe(_post_proposals_proposalId__id, _pre_proposals_proposalId__id, "proposals[proposalId].id: post >= pre");
+    assertLe(_post_proposals_proposalId__id, _pre_proposals_proposalId__id, "proposals[proposalId].id: post <= pre");
+    assertGe(_post_proposals_proposalId__proposer, _pre_proposals_proposalId__proposer, "proposals[proposalId].proposer: post >= pre");
+    assertLe(_post_proposals_proposalId__proposer, _pre_proposals_proposalId__proposer, "proposals[proposalId].proposer: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

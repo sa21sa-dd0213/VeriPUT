@@ -110,10 +110,10 @@ contract LotteryMultipleWinnersCovTest_LotteryMultipleWinners_join_put2p1 is Tes
     try c0.join{value: p_msg_value}(_chosenNumber) {} catch { _put_ok = false; }
     
     if (p_msg_sender == address(uint160(0)) && p_msg_value == uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) && _chosenNumber == uint8(255)) {
-
-
-
-
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(1)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(4)))) & 255), uint256(0), "fixed witness state");
     }
     assertFalse(_put_ok, "path enc=2p1 exits through a REVERT: the call must fail on the unmodified contract");
   }

@@ -127,6 +127,6 @@ contract ReentranceCovTest_Reentrance_fallback_concrete1p1__basis_root__W is Tes
     vm.coinbase(address(uint160(0)));
     vm.prank(address(uint160(0)), address(uint160(0)));
     (bool ok1, ) = address(c0).call(hex"deadbeef");
-    
+    assertTrue(ok1, "covered receive/fallback path must return normally");
   }
 }

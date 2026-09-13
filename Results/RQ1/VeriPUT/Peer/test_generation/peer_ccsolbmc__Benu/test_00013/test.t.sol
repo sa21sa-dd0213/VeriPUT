@@ -67,8 +67,8 @@ contract BenuCovTest_Benu_list_put2p1 is Test {
     uint256 _post_enable_user = (uint256(vm.load(address(c0), keccak256(abi.encode(user, uint256(6))))) & 255);
     assertEq(_post_owner, _pre_owner, "_owner: post == pre");
     assertEq(_post_enable_user, _pre_enable_user, "_enable[user]: post == pre");
-    
-    
+    assertGe(_post_owner, _pre_owner, "_owner: post >= pre");
+    assertLe(_post_owner, _pre_owner, "_owner: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

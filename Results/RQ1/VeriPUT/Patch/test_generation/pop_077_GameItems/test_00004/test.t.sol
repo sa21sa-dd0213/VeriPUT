@@ -69,12 +69,12 @@ contract GameItemsCovTest_GameItems_balanceOfBatch_put2p1 is Test {
     assertEq(_post_balances_state__itemCount__msg_sender, _pre_balances_state__itemCount__msg_sender, "_balances[state._itemCount][msg.sender]: post == pre");
     assertEq(_post_balances_state__itemCount__state__ownerAddress, _pre_balances_state__itemCount__state__ownerAddress, "_balances[state._itemCount][state._ownerAddress]: post == pre");
     assertEq(_post_balances_state__itemCount__state_treasuryAddress, _pre_balances_state__itemCount__state_treasuryAddress, "_balances[state._itemCount][state.treasuryAddress]: post == pre");
-    
-    
-    
-    
-    
-    
+    assertGe(_post_balances_state__itemCount__msg_sender, _pre_balances_state__itemCount__msg_sender, "_balances[state._itemCount][msg.sender]: post >= pre");
+    assertLe(_post_balances_state__itemCount__msg_sender, _pre_balances_state__itemCount__msg_sender, "_balances[state._itemCount][msg.sender]: post <= pre");
+    assertGe(_post_balances_state__itemCount__state__ownerAddress, _pre_balances_state__itemCount__state__ownerAddress, "_balances[state._itemCount][state._ownerAddress]: post >= pre");
+    assertLe(_post_balances_state__itemCount__state__ownerAddress, _pre_balances_state__itemCount__state__ownerAddress, "_balances[state._itemCount][state._ownerAddress]: post <= pre");
+    assertGe(_post_balances_state__itemCount__state_treasuryAddress, _pre_balances_state__itemCount__state_treasuryAddress, "_balances[state._itemCount][state.treasuryAddress]: post >= pre");
+    assertLe(_post_balances_state__itemCount__state_treasuryAddress, _pre_balances_state__itemCount__state_treasuryAddress, "_balances[state._itemCount][state.treasuryAddress]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

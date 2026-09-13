@@ -65,8 +65,8 @@ contract WickedCraniumsCovTest_WickedCraniums_getApproved_put2p1 is Test {
     
     uint256 _post_tokenApprovals_tokenId = (uint256(vm.load(address(c0), keccak256(abi.encode(tokenId, uint256(4))))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_tokenApprovals_tokenId, _pre_tokenApprovals_tokenId, "_tokenApprovals[tokenId]: post == pre");
-    
-    
+    assertGe(_post_tokenApprovals_tokenId, _pre_tokenApprovals_tokenId, "_tokenApprovals[tokenId]: post >= pre");
+    assertLe(_post_tokenApprovals_tokenId, _pre_tokenApprovals_tokenId, "_tokenApprovals[tokenId]: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

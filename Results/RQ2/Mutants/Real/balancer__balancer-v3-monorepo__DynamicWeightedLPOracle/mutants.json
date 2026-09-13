@@ -6844,69 +6844,129 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3075,
+      "end_line": 3074,
       "function": "getSingleInputIndex",
       "mutant_id": "m000685",
       "operator": "BOR",
       "original_expression": " >= ",
       "replacement_expression": "  > ",
-      "start_line": 3075
+      "start_line": 3074
     },
     {
       "compile_status": "failed",
-      "end_line": 3075,
+      "end_line": 3074,
       "function": "getSingleInputIndex",
       "mutant_id": "m000686",
       "operator": "BOR",
       "original_expression": " >= ",
       "replacement_expression": " <= ",
-      "start_line": 3075
+      "start_line": 3074
     },
     {
       "compile_status": "failed",
-      "end_line": 3075,
+      "end_line": 3074,
       "function": "getSingleInputIndex",
       "mutant_id": "m000687",
       "operator": "BOR",
       "original_expression": " >= ",
       "replacement_expression": " == ",
-      "start_line": 3075
+      "start_line": 3074
     },
     {
       "compile_status": "failed",
-      "end_line": 3095,
+      "end_line": 3094,
       "function": "sortTokens",
       "mutant_id": "m000688",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3095
+      "start_line": 3094
     },
     {
       "compile_status": "failed",
-      "end_line": 3095,
+      "end_line": 3094,
       "function": "sortTokens",
       "mutant_id": "m000689",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3095
+      "start_line": 3094
     },
     {
       "compile_status": "failed",
-      "end_line": 3095,
+      "end_line": 3094,
       "function": "sortTokens",
       "mutant_id": "m000690",
       "operator": "BOR",
       "original_expression": " - ",
       "replacement_expression": " + ",
+      "start_line": 3094
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3094,
+      "function": "sortTokens",
+      "mutant_id": "m000691",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 3094
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3095,
+      "function": "sortTokens",
+      "mutant_id": "m000692",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
       "start_line": 3095
     },
     {
       "compile_status": "failed",
       "end_line": 3095,
       "function": "sortTokens",
-      "mutant_id": "m000691",
+      "mutant_id": "m000693",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 3095
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3095,
+      "function": "sortTokens",
+      "mutant_id": "m000694",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 3095
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3095,
+      "function": "sortTokens",
+      "mutant_id": "m000695",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 3095
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3095,
+      "function": "sortTokens",
+      "mutant_id": "m000696",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 3095
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3095,
+      "function": "sortTokens",
+      "mutant_id": "m000697",
       "operator": "BOR",
       "original_expression": " - ",
       "replacement_expression": " / ",
@@ -6916,261 +6976,201 @@
       "compile_status": "failed",
       "end_line": 3096,
       "function": "sortTokens",
-      "mutant_id": "m000692",
-      "operator": "BOR",
-      "original_expression": " < ",
-      "replacement_expression": " > ",
-      "start_line": 3096
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3096,
-      "function": "sortTokens",
-      "mutant_id": "m000693",
-      "operator": "BOR",
-      "original_expression": " < ",
-      "replacement_expression": " <= ",
-      "start_line": 3096
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3096,
-      "function": "sortTokens",
-      "mutant_id": "m000694",
-      "operator": "BOR",
-      "original_expression": " - ",
-      "replacement_expression": " + ",
-      "start_line": 3096
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3096,
-      "function": "sortTokens",
-      "mutant_id": "m000695",
-      "operator": "BOR",
-      "original_expression": " - ",
-      "replacement_expression": " / ",
-      "start_line": 3096
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3096,
-      "function": "sortTokens",
-      "mutant_id": "m000696",
-      "operator": "BOR",
-      "original_expression": " - ",
-      "replacement_expression": " + ",
-      "start_line": 3096
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3096,
-      "function": "sortTokens",
-      "mutant_id": "m000697",
-      "operator": "BOR",
-      "original_expression": " - ",
-      "replacement_expression": " / ",
-      "start_line": 3096
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3097,
-      "function": "sortTokens",
       "mutant_id": "m000698",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3097
+      "start_line": 3096
     },
     {
       "compile_status": "failed",
-      "end_line": 3097,
+      "end_line": 3096,
       "function": "sortTokens",
       "mutant_id": "m000699",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3097
+      "start_line": 3096
     },
     {
       "compile_status": "failed",
-      "end_line": 3097,
+      "end_line": 3096,
       "function": "sortTokens",
       "mutant_id": "m000700",
       "operator": "BOR",
       "original_expression": " + ",
       "replacement_expression": " - ",
-      "start_line": 3097
+      "start_line": 3096
     },
     {
       "compile_status": "failed",
-      "end_line": 3097,
+      "end_line": 3096,
       "function": "sortTokens",
       "mutant_id": "m000701",
       "operator": "BOR",
       "original_expression": " + ",
       "replacement_expression": " * ",
-      "start_line": 3097
+      "start_line": 3096
     },
     {
       "compile_status": "failed",
-      "end_line": 3099,
+      "end_line": 3098,
       "function": "sortTokens",
       "mutant_id": "m000702",
       "operator": "BOR",
       "original_expression": " + ",
       "replacement_expression": " - ",
-      "start_line": 3099
+      "start_line": 3098
     },
     {
       "compile_status": "failed",
-      "end_line": 3099,
+      "end_line": 3098,
       "function": "sortTokens",
       "mutant_id": "m000703",
       "operator": "BOR",
       "original_expression": " + ",
       "replacement_expression": " * ",
-      "start_line": 3099
+      "start_line": 3098
     },
     {
       "compile_status": "failed",
-      "end_line": 3099,
+      "end_line": 3098,
       "function": "sortTokens",
       "mutant_id": "m000704",
       "operator": "BOR",
       "original_expression": " + ",
       "replacement_expression": " - ",
-      "start_line": 3099
+      "start_line": 3098
     },
     {
       "compile_status": "failed",
-      "end_line": 3099,
+      "end_line": 3098,
       "function": "sortTokens",
       "mutant_id": "m000705",
       "operator": "BOR",
       "original_expression": " + ",
       "replacement_expression": " * ",
-      "start_line": 3099
+      "start_line": 3098
     },
     {
       "compile_status": "failed",
-      "end_line": 3109,
+      "end_line": 3108,
       "function": "ensureSortedTokens",
       "mutant_id": "m000706",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3109
+      "start_line": 3108
     },
     {
       "compile_status": "failed",
-      "end_line": 3109,
+      "end_line": 3108,
       "function": "ensureSortedTokens",
       "mutant_id": "m000707",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3109
+      "start_line": 3108
     },
     {
       "compile_status": "failed",
-      "end_line": 3115,
+      "end_line": 3114,
       "function": "ensureSortedTokens",
       "mutant_id": "m000708",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3115
+      "start_line": 3114
     },
     {
       "compile_status": "failed",
-      "end_line": 3115,
+      "end_line": 3114,
       "function": "ensureSortedTokens",
       "mutant_id": "m000709",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3115
+      "start_line": 3114
     },
     {
       "compile_status": "failed",
-      "end_line": 3118,
+      "end_line": 3117,
       "function": "ensureSortedTokens",
       "mutant_id": "m000710",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3118
+      "start_line": 3117
     },
     {
       "compile_status": "failed",
-      "end_line": 3118,
+      "end_line": 3117,
       "function": "ensureSortedTokens",
       "mutant_id": "m000711",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3118
+      "start_line": 3117
     },
     {
       "compile_status": "failed",
-      "end_line": 3128,
+      "end_line": 3127,
       "function": "ensureSortedAmounts",
       "mutant_id": "m000712",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3128
+      "start_line": 3127
     },
     {
       "compile_status": "failed",
-      "end_line": 3128,
+      "end_line": 3127,
       "function": "ensureSortedAmounts",
       "mutant_id": "m000713",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3128
+      "start_line": 3127
     },
     {
       "compile_status": "failed",
-      "end_line": 3134,
+      "end_line": 3133,
       "function": "ensureSortedAmounts",
       "mutant_id": "m000714",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " > ",
-      "start_line": 3134
+      "start_line": 3133
     },
     {
       "compile_status": "failed",
-      "end_line": 3134,
+      "end_line": 3133,
       "function": "ensureSortedAmounts",
       "mutant_id": "m000715",
       "operator": "BOR",
       "original_expression": " < ",
       "replacement_expression": " <= ",
-      "start_line": 3134
+      "start_line": 3133
     },
     {
       "compile_status": "failed",
-      "end_line": 3137,
+      "end_line": 3136,
       "function": "ensureSortedAmounts",
       "mutant_id": "m000716",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3137
+      "start_line": 3136
     },
     {
       "compile_status": "failed",
-      "end_line": 3137,
+      "end_line": 3136,
       "function": "ensureSortedAmounts",
       "mutant_id": "m000717",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3137
+      "start_line": 3136
     },
     {
       "compile_status": "failed",
@@ -10484,123 +10484,123 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3075,
+      "end_line": 3074,
       "function": "getSingleInputIndex",
       "mutant_id": "m001049",
       "operator": "CSC",
       "original_expression": "inputIndex >= length",
       "replacement_expression": "true",
-      "start_line": 3075
+      "start_line": 3074
     },
     {
       "compile_status": "failed",
-      "end_line": 3075,
+      "end_line": 3074,
       "function": "getSingleInputIndex",
       "mutant_id": "m001050",
       "operator": "CSC",
       "original_expression": "inputIndex >= length",
       "replacement_expression": "false",
-      "start_line": 3075
+      "start_line": 3074
     },
     {
       "compile_status": "failed",
-      "end_line": 3097,
+      "end_line": 3096,
       "function": "sortTokens",
       "mutant_id": "m001051",
       "operator": "CSC",
       "original_expression": "tokens[j] > tokens[j + 1]",
       "replacement_expression": "true",
-      "start_line": 3097
+      "start_line": 3096
     },
     {
       "compile_status": "failed",
-      "end_line": 3097,
+      "end_line": 3096,
       "function": "sortTokens",
       "mutant_id": "m001052",
       "operator": "CSC",
       "original_expression": "tokens[j] > tokens[j + 1]",
       "replacement_expression": "false",
-      "start_line": 3097
+      "start_line": 3096
     },
     {
       "compile_status": "failed",
-      "end_line": 3109,
+      "end_line": 3108,
       "function": "ensureSortedTokens",
       "mutant_id": "m001053",
       "operator": "CSC",
       "original_expression": "tokens.length < 2",
       "replacement_expression": "true",
-      "start_line": 3109
+      "start_line": 3108
     },
     {
       "compile_status": "failed",
-      "end_line": 3109,
+      "end_line": 3108,
       "function": "ensureSortedTokens",
       "mutant_id": "m001054",
       "operator": "CSC",
       "original_expression": "tokens.length < 2",
       "replacement_expression": "false",
-      "start_line": 3109
+      "start_line": 3108
     },
     {
       "compile_status": "failed",
-      "end_line": 3118,
+      "end_line": 3117,
       "function": "ensureSortedTokens",
       "mutant_id": "m001055",
       "operator": "CSC",
       "original_expression": "previous > current",
       "replacement_expression": "true",
-      "start_line": 3118
+      "start_line": 3117
     },
     {
       "compile_status": "failed",
-      "end_line": 3118,
+      "end_line": 3117,
       "function": "ensureSortedTokens",
       "mutant_id": "m001056",
       "operator": "CSC",
       "original_expression": "previous > current",
       "replacement_expression": "false",
-      "start_line": 3118
+      "start_line": 3117
     },
     {
       "compile_status": "failed",
-      "end_line": 3128,
+      "end_line": 3127,
       "function": "ensureSortedAmounts",
       "mutant_id": "m001057",
       "operator": "CSC",
       "original_expression": "amounts.length < 2",
       "replacement_expression": "true",
-      "start_line": 3128
+      "start_line": 3127
     },
     {
       "compile_status": "failed",
-      "end_line": 3128,
+      "end_line": 3127,
       "function": "ensureSortedAmounts",
       "mutant_id": "m001058",
       "operator": "CSC",
       "original_expression": "amounts.length < 2",
       "replacement_expression": "false",
-      "start_line": 3128
+      "start_line": 3127
     },
     {
       "compile_status": "failed",
-      "end_line": 3137,
+      "end_line": 3136,
       "function": "ensureSortedAmounts",
       "mutant_id": "m001059",
       "operator": "CSC",
       "original_expression": "previous > current",
       "replacement_expression": "true",
-      "start_line": 3137
+      "start_line": 3136
     },
     {
       "compile_status": "failed",
-      "end_line": 3137,
+      "end_line": 3136,
       "function": "ensureSortedAmounts",
       "mutant_id": "m001060",
       "operator": "CSC",
       "original_expression": "previous > current",
       "replacement_expression": "false",
-      "start_line": 3137
+      "start_line": 3136
     },
     {
       "compile_status": "failed",
@@ -11044,653 +11044,653 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3094,
+      "end_line": 3093,
       "function": "sortTokens",
       "mutant_id": "m001105",
       "operator": "DLR",
       "original_expression": "IERC20[] memory tokens",
       "replacement_expression": "IERC20[] storage tokens",
-      "start_line": 3094
+      "start_line": 3093
     },
     {
       "compile_status": "failed",
-      "end_line": 3094,
+      "end_line": 3093,
       "function": "sortTokens",
       "mutant_id": "m001106",
       "operator": "DLR",
       "original_expression": "IERC20[] memory",
       "replacement_expression": "IERC20[] storage",
-      "start_line": 3094
+      "start_line": 3093
     },
     {
       "compile_status": "failed",
-      "end_line": 3108,
+      "end_line": 3107,
       "function": "ensureSortedTokens",
       "mutant_id": "m001107",
       "operator": "DLR",
       "original_expression": "IERC20[] memory tokens",
       "replacement_expression": "IERC20[] storage tokens",
-      "start_line": 3108
+      "start_line": 3107
     },
     {
       "compile_status": "failed",
-      "end_line": 3127,
+      "end_line": 3126,
       "function": "ensureSortedAmounts",
       "mutant_id": "m001108",
       "operator": "DLR",
       "original_expression": "uint256[] memory amounts",
       "replacement_expression": "uint256[] storage amounts",
-      "start_line": 3127
+      "start_line": 3126
     },
     {
       "compile_status": "failed",
-      "end_line": 4115,
+      "end_line": 4114,
       "function": "onRegister",
       "mutant_id": "m001109",
       "operator": "DLR",
       "original_expression": "TokenConfig[] memory tokenConfig",
       "replacement_expression": "TokenConfig[] storage tokenConfig",
-      "start_line": 4115
+      "start_line": 4114
     },
     {
       "compile_status": "failed",
-      "end_line": 4127,
+      "end_line": 4126,
       "function": "getHookFlags",
       "mutant_id": "m001110",
       "operator": "DLR",
       "original_expression": "HookFlags memory hookFlags",
       "replacement_expression": "HookFlags storage hookFlags",
-      "start_line": 4127
+      "start_line": 4126
     },
     {
       "compile_status": "failed",
-      "end_line": 4142,
+      "end_line": 4141,
       "function": "onBeforeInitialize",
       "mutant_id": "m001111",
       "operator": "DLR",
       "original_expression": "uint256[] memory exactAmountsIn",
       "replacement_expression": "uint256[] storage exactAmountsIn",
-      "start_line": 4142
+      "start_line": 4141
     },
     {
       "compile_status": "failed",
-      "end_line": 4142,
+      "end_line": 4141,
       "function": "onBeforeInitialize",
       "mutant_id": "m001112",
       "operator": "DLR",
       "original_expression": "bytes memory userData",
       "replacement_expression": "bytes storage userData",
-      "start_line": 4142
+      "start_line": 4141
     },
     {
       "compile_status": "failed",
-      "end_line": 4155,
+      "end_line": 4154,
       "function": "onAfterInitialize",
       "mutant_id": "m001113",
       "operator": "DLR",
       "original_expression": "uint256[] memory exactAmountsIn",
       "replacement_expression": "uint256[] storage exactAmountsIn",
-      "start_line": 4155
+      "start_line": 4154
     },
     {
       "compile_status": "failed",
-      "end_line": 4157,
+      "end_line": 4156,
       "function": "onAfterInitialize",
       "mutant_id": "m001114",
       "operator": "DLR",
       "original_expression": "bytes memory userData",
       "replacement_expression": "bytes storage userData",
-      "start_line": 4157
+      "start_line": 4156
     },
     {
       "compile_status": "failed",
-      "end_line": 4182,
+      "end_line": 4181,
       "function": "onBeforeAddLiquidity",
       "mutant_id": "m001115",
       "operator": "DLR",
       "original_expression": "uint256[] memory maxAmountsInScaled18",
       "replacement_expression": "uint256[] storage maxAmountsInScaled18",
-      "start_line": 4182
+      "start_line": 4181
     },
     {
       "compile_status": "failed",
-      "end_line": 4184,
+      "end_line": 4183,
       "function": "onBeforeAddLiquidity",
       "mutant_id": "m001116",
       "operator": "DLR",
       "original_expression": "uint256[] memory balancesScaled18",
       "replacement_expression": "uint256[] storage balancesScaled18",
-      "start_line": 4184
+      "start_line": 4183
     },
     {
       "compile_status": "failed",
-      "end_line": 4185,
+      "end_line": 4184,
       "function": "onBeforeAddLiquidity",
       "mutant_id": "m001117",
       "operator": "DLR",
       "original_expression": "bytes memory userData",
       "replacement_expression": "bytes storage userData",
-      "start_line": 4185
+      "start_line": 4184
     },
     {
       "compile_status": "failed",
-      "end_line": 4209,
+      "end_line": 4208,
       "function": "onAfterAddLiquidity",
       "mutant_id": "m001118",
       "operator": "DLR",
       "original_expression": "uint256[] memory amountsInScaled18",
       "replacement_expression": "uint256[] storage amountsInScaled18",
-      "start_line": 4209
+      "start_line": 4208
     },
     {
       "compile_status": "failed",
-      "end_line": 4210,
+      "end_line": 4209,
       "function": "onAfterAddLiquidity",
       "mutant_id": "m001119",
       "operator": "DLR",
       "original_expression": "uint256[] memory amountsInRaw",
       "replacement_expression": "uint256[] storage amountsInRaw",
-      "start_line": 4210
+      "start_line": 4209
     },
     {
       "compile_status": "failed",
-      "end_line": 4212,
+      "end_line": 4211,
       "function": "onAfterAddLiquidity",
       "mutant_id": "m001120",
       "operator": "DLR",
       "original_expression": "uint256[] memory balancesScaled18",
       "replacement_expression": "uint256[] storage balancesScaled18",
+      "start_line": 4211
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 4212,
+      "function": "onAfterAddLiquidity",
+      "mutant_id": "m001121",
+      "operator": "DLR",
+      "original_expression": "bytes memory userData",
+      "replacement_expression": "bytes storage userData",
       "start_line": 4212
     },
     {
       "compile_status": "failed",
       "end_line": 4213,
       "function": "onAfterAddLiquidity",
-      "mutant_id": "m001121",
-      "operator": "DLR",
-      "original_expression": "bytes memory userData",
-      "replacement_expression": "bytes storage userData",
-      "start_line": 4213
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 4214,
-      "function": "onAfterAddLiquidity",
       "mutant_id": "m001122",
       "operator": "DLR",
       "original_expression": "uint256[] memory hookAdjustedAmountsInRaw",
       "replacement_expression": "uint256[] storage hookAdjustedAmountsInRaw",
-      "start_line": 4214
+      "start_line": 4213
     },
     {
       "compile_status": "failed",
-      "end_line": 4239,
+      "end_line": 4238,
       "function": "onBeforeRemoveLiquidity",
       "mutant_id": "m001123",
       "operator": "DLR",
       "original_expression": "uint256[] memory minAmountsOutScaled18",
       "replacement_expression": "uint256[] storage minAmountsOutScaled18",
+      "start_line": 4238
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 4239,
+      "function": "onBeforeRemoveLiquidity",
+      "mutant_id": "m001124",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory balancesScaled18",
+      "replacement_expression": "uint256[] storage balancesScaled18",
       "start_line": 4239
     },
     {
       "compile_status": "failed",
       "end_line": 4240,
       "function": "onBeforeRemoveLiquidity",
-      "mutant_id": "m001124",
-      "operator": "DLR",
-      "original_expression": "uint256[] memory balancesScaled18",
-      "replacement_expression": "uint256[] storage balancesScaled18",
-      "start_line": 4240
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 4241,
-      "function": "onBeforeRemoveLiquidity",
       "mutant_id": "m001125",
       "operator": "DLR",
       "original_expression": "bytes memory userData",
       "replacement_expression": "bytes storage userData",
-      "start_line": 4241
+      "start_line": 4240
     },
     {
       "compile_status": "failed",
-      "end_line": 4266,
+      "end_line": 4265,
       "function": "onAfterRemoveLiquidity",
       "mutant_id": "m001126",
       "operator": "DLR",
       "original_expression": "uint256[] memory amountsOutScaled18",
       "replacement_expression": "uint256[] storage amountsOutScaled18",
+      "start_line": 4265
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 4266,
+      "function": "onAfterRemoveLiquidity",
+      "mutant_id": "m001127",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory amountsOutRaw",
+      "replacement_expression": "uint256[] storage amountsOutRaw",
       "start_line": 4266
     },
     {
       "compile_status": "failed",
       "end_line": 4267,
       "function": "onAfterRemoveLiquidity",
-      "mutant_id": "m001127",
+      "mutant_id": "m001128",
       "operator": "DLR",
-      "original_expression": "uint256[] memory amountsOutRaw",
-      "replacement_expression": "uint256[] storage amountsOutRaw",
+      "original_expression": "uint256[] memory balancesScaled18",
+      "replacement_expression": "uint256[] storage balancesScaled18",
       "start_line": 4267
     },
     {
       "compile_status": "failed",
       "end_line": 4268,
       "function": "onAfterRemoveLiquidity",
-      "mutant_id": "m001128",
+      "mutant_id": "m001129",
       "operator": "DLR",
-      "original_expression": "uint256[] memory balancesScaled18",
-      "replacement_expression": "uint256[] storage balancesScaled18",
+      "original_expression": "bytes memory userData",
+      "replacement_expression": "bytes storage userData",
       "start_line": 4268
     },
     {
       "compile_status": "failed",
       "end_line": 4269,
       "function": "onAfterRemoveLiquidity",
-      "mutant_id": "m001129",
-      "operator": "DLR",
-      "original_expression": "bytes memory userData",
-      "replacement_expression": "bytes storage userData",
-      "start_line": 4269
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 4270,
-      "function": "onAfterRemoveLiquidity",
       "mutant_id": "m001130",
       "operator": "DLR",
       "original_expression": "uint256[] memory hookAdjustedAmountsOutRaw",
       "replacement_expression": "uint256[] storage hookAdjustedAmountsOutRaw",
-      "start_line": 4270
+      "start_line": 4269
     },
     {
       "compile_status": "failed",
-      "end_line": 4344,
+      "end_line": 4343,
       "function": "unlock",
       "mutant_id": "m001131",
       "operator": "DLR",
       "original_expression": "bytes memory result",
       "replacement_expression": "bytes storage result",
-      "start_line": 4344
+      "start_line": 4343
     },
     {
       "compile_status": "failed",
-      "end_line": 4392,
+      "end_line": 4391,
       "function": "swap",
       "mutant_id": "m001132",
       "operator": "DLR",
       "original_expression": "VaultSwapParams memory vaultSwapParams",
       "replacement_expression": "VaultSwapParams storage vaultSwapParams",
-      "start_line": 4392
+      "start_line": 4391
     },
     {
       "compile_status": "failed",
-      "end_line": 4410,
+      "end_line": 4409,
       "function": "addLiquidity",
       "mutant_id": "m001133",
       "operator": "DLR",
       "original_expression": "AddLiquidityParams memory params",
       "replacement_expression": "AddLiquidityParams storage params",
-      "start_line": 4410
+      "start_line": 4409
     },
     {
       "compile_status": "failed",
-      "end_line": 4411,
+      "end_line": 4410,
       "function": "addLiquidity",
       "mutant_id": "m001134",
       "operator": "DLR",
       "original_expression": "uint256[] memory amountsIn",
       "replacement_expression": "uint256[] storage amountsIn",
-      "start_line": 4411
+      "start_line": 4410
     },
     {
       "compile_status": "failed",
-      "end_line": 4411,
+      "end_line": 4410,
       "function": "addLiquidity",
       "mutant_id": "m001135",
       "operator": "DLR",
       "original_expression": "bytes memory returnData",
       "replacement_expression": "bytes storage returnData",
-      "start_line": 4411
+      "start_line": 4410
     },
     {
       "compile_status": "failed",
-      "end_line": 4429,
+      "end_line": 4428,
       "function": "removeLiquidity",
       "mutant_id": "m001136",
       "operator": "DLR",
       "original_expression": "RemoveLiquidityParams memory params",
       "replacement_expression": "RemoveLiquidityParams storage params",
-      "start_line": 4429
+      "start_line": 4428
     },
     {
       "compile_status": "failed",
-      "end_line": 4430,
+      "end_line": 4429,
       "function": "removeLiquidity",
       "mutant_id": "m001137",
       "operator": "DLR",
       "original_expression": "uint256[] memory amountsOut",
       "replacement_expression": "uint256[] storage amountsOut",
-      "start_line": 4430
+      "start_line": 4429
     },
     {
       "compile_status": "failed",
-      "end_line": 4430,
+      "end_line": 4429,
       "function": "removeLiquidity",
       "mutant_id": "m001138",
       "operator": "DLR",
       "original_expression": "bytes memory returnData",
       "replacement_expression": "bytes storage returnData",
-      "start_line": 4430
+      "start_line": 4429
     },
     {
       "compile_status": "failed",
-      "end_line": 4493,
+      "end_line": 4492,
       "function": "erc4626BufferWrapOrUnwrap",
       "mutant_id": "m001139",
       "operator": "DLR",
       "original_expression": "BufferWrapOrUnwrapParams memory params",
       "replacement_expression": "BufferWrapOrUnwrapParams storage params",
-      "start_line": 4493
+      "start_line": 4492
     },
     {
       "compile_status": "failed",
-      "end_line": 4553,
+      "end_line": 4552,
       "function": "computeInvariant",
       "mutant_id": "m001140",
       "operator": "DLR",
       "original_expression": "uint256[] memory balancesLiveScaled18",
       "replacement_expression": "uint256[] storage balancesLiveScaled18",
-      "start_line": 4553
+      "start_line": 4552
     },
     {
       "compile_status": "failed",
-      "end_line": 4568,
+      "end_line": 4567,
       "function": "computeBalance",
       "mutant_id": "m001141",
       "operator": "DLR",
       "original_expression": "uint256[] memory balancesLiveScaled18",
       "replacement_expression": "uint256[] storage balancesLiveScaled18",
-      "start_line": 4568
+      "start_line": 4567
     },
     {
       "compile_status": "failed",
-      "end_line": 4638,
+      "end_line": 4637,
       "function": "getNormalizedWeights",
       "mutant_id": "m001142",
       "operator": "DLR",
       "original_expression": "uint256[] memory normalizedWeights",
       "replacement_expression": "uint256[] storage normalizedWeights",
-      "start_line": 4638
+      "start_line": 4637
     },
     {
       "compile_status": "failed",
-      "end_line": 4644,
+      "end_line": 4643,
       "function": "getWeightedPoolDynamicData",
       "mutant_id": "m001143",
       "operator": "DLR",
       "original_expression": "WeightedPoolDynamicData memory data",
       "replacement_expression": "WeightedPoolDynamicData storage data",
-      "start_line": 4644
+      "start_line": 4643
     },
     {
       "compile_status": "failed",
-      "end_line": 4650,
+      "end_line": 4649,
       "function": "getWeightedPoolImmutableData",
       "mutant_id": "m001144",
       "operator": "DLR",
       "original_expression": "WeightedPoolImmutableData memory data",
       "replacement_expression": "WeightedPoolImmutableData storage data",
-      "start_line": 4650
+      "start_line": 4649
     },
     {
       "compile_status": "failed",
-      "end_line": 4657,
+      "end_line": 4656,
       "function": "getMinTokenBalances",
       "mutant_id": "m001145",
       "operator": "DLR",
       "original_expression": "uint256[] memory",
       "replacement_expression": "uint256[] storage",
-      "start_line": 4657
+      "start_line": 4656
     },
     {
       "compile_status": "failed",
-      "end_line": 4892,
+      "end_line": 4891,
       "function": "getProtocolFeeAmounts",
       "mutant_id": "m001146",
       "operator": "DLR",
       "original_expression": "uint256[] memory feeAmounts",
       "replacement_expression": "uint256[] storage feeAmounts",
-      "start_line": 4892
+      "start_line": 4891
     },
     {
       "compile_status": "failed",
-      "end_line": 4900,
+      "end_line": 4899,
       "function": "getPoolCreatorFeeAmounts",
       "mutant_id": "m001147",
       "operator": "DLR",
       "original_expression": "uint256[] memory feeAmounts",
       "replacement_expression": "uint256[] storage feeAmounts",
-      "start_line": 4900
+      "start_line": 4899
     },
     {
       "compile_status": "failed",
-      "end_line": 5155,
+      "end_line": 5154,
       "function": "registerPool",
       "mutant_id": "m001148",
       "operator": "DLR",
       "original_expression": "TokenConfig[] memory tokenConfig",
       "replacement_expression": "TokenConfig[] storage tokenConfig",
-      "start_line": 5155
+      "start_line": 5154
     },
     {
       "compile_status": "failed",
-      "end_line": 5184,
+      "end_line": 5183,
       "function": "initialize",
       "mutant_id": "m001149",
       "operator": "DLR",
       "original_expression": "IERC20[] memory tokens",
       "replacement_expression": "IERC20[] storage tokens",
-      "start_line": 5184
+      "start_line": 5183
     },
     {
       "compile_status": "failed",
-      "end_line": 5185,
+      "end_line": 5184,
       "function": "initialize",
       "mutant_id": "m001150",
       "operator": "DLR",
       "original_expression": "uint256[] memory exactAmountsIn",
       "replacement_expression": "uint256[] storage exactAmountsIn",
-      "start_line": 5185
+      "start_line": 5184
     },
     {
       "compile_status": "failed",
-      "end_line": 5187,
+      "end_line": 5186,
       "function": "initialize",
       "mutant_id": "m001151",
       "operator": "DLR",
       "original_expression": "bytes memory userData",
       "replacement_expression": "bytes storage userData",
-      "start_line": 5187
+      "start_line": 5186
     },
     {
       "compile_status": "failed",
-      "end_line": 5207,
+      "end_line": 5206,
       "function": "getPoolTokens",
       "mutant_id": "m001152",
       "operator": "DLR",
       "original_expression": "IERC20[] memory tokens",
       "replacement_expression": "IERC20[] storage tokens",
-      "start_line": 5207
+      "start_line": 5206
     },
     {
       "compile_status": "failed",
-      "end_line": 5221,
+      "end_line": 5220,
       "function": "getPoolTokenRates",
       "mutant_id": "m001153",
       "operator": "DLR",
       "original_expression": "uint256[] memory decimalScalingFactors",
       "replacement_expression": "uint256[] storage decimalScalingFactors",
-      "start_line": 5221
+      "start_line": 5220
     },
     {
       "compile_status": "failed",
-      "end_line": 5221,
+      "end_line": 5220,
       "function": "getPoolTokenRates",
       "mutant_id": "m001154",
       "operator": "DLR",
       "original_expression": "uint256[] memory tokenRates",
       "replacement_expression": "uint256[] storage tokenRates",
-      "start_line": 5221
+      "start_line": 5220
     },
     {
       "compile_status": "failed",
-      "end_line": 5229,
+      "end_line": 5228,
       "function": "getPoolData",
       "mutant_id": "m001155",
       "operator": "DLR",
       "original_expression": "PoolData_0 memory poolData",
       "replacement_expression": "PoolData_0 storage poolData",
-      "start_line": 5229
+      "start_line": 5228
     },
     {
       "compile_status": "failed",
-      "end_line": 5245,
+      "end_line": 5244,
       "function": "getPoolTokenInfo",
       "mutant_id": "m001156",
       "operator": "DLR",
       "original_expression": "IERC20[] memory tokens",
       "replacement_expression": "IERC20[] storage tokens",
+      "start_line": 5244
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 5245,
+      "function": "getPoolTokenInfo",
+      "mutant_id": "m001157",
+      "operator": "DLR",
+      "original_expression": "TokenInfo[] memory tokenInfo",
+      "replacement_expression": "TokenInfo[] storage tokenInfo",
       "start_line": 5245
     },
     {
       "compile_status": "failed",
       "end_line": 5246,
       "function": "getPoolTokenInfo",
-      "mutant_id": "m001157",
+      "mutant_id": "m001158",
       "operator": "DLR",
-      "original_expression": "TokenInfo[] memory tokenInfo",
-      "replacement_expression": "TokenInfo[] storage tokenInfo",
+      "original_expression": "uint256[] memory balancesRaw",
+      "replacement_expression": "uint256[] storage balancesRaw",
       "start_line": 5246
     },
     {
       "compile_status": "failed",
       "end_line": 5247,
       "function": "getPoolTokenInfo",
-      "mutant_id": "m001158",
-      "operator": "DLR",
-      "original_expression": "uint256[] memory balancesRaw",
-      "replacement_expression": "uint256[] storage balancesRaw",
-      "start_line": 5247
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 5248,
-      "function": "getPoolTokenInfo",
       "mutant_id": "m001159",
       "operator": "DLR",
       "original_expression": "uint256[] memory lastBalancesLiveScaled18",
       "replacement_expression": "uint256[] storage lastBalancesLiveScaled18",
-      "start_line": 5248
+      "start_line": 5247
     },
     {
       "compile_status": "failed",
-      "end_line": 5258,
+      "end_line": 5257,
       "function": "getCurrentLiveBalances",
       "mutant_id": "m001160",
       "operator": "DLR",
       "original_expression": "uint256[] memory balancesLiveScaled18",
       "replacement_expression": "uint256[] storage balancesLiveScaled18",
-      "start_line": 5258
+      "start_line": 5257
     },
     {
       "compile_status": "failed",
-      "end_line": 5266,
+      "end_line": 5265,
       "function": "getPoolConfig",
       "mutant_id": "m001161",
       "operator": "DLR",
       "original_expression": "PoolConfig_0 memory poolConfig",
       "replacement_expression": "PoolConfig_0 storage poolConfig",
-      "start_line": 5266
+      "start_line": 5265
     },
     {
       "compile_status": "failed",
-      "end_line": 5274,
+      "end_line": 5273,
       "function": "getHooksConfig",
       "mutant_id": "m001162",
       "operator": "DLR",
       "original_expression": "HooksConfig memory hooksConfig",
       "replacement_expression": "HooksConfig storage hooksConfig",
-      "start_line": 5274
+      "start_line": 5273
     },
     {
       "compile_status": "failed",
-      "end_line": 5408,
+      "end_line": 5407,
       "function": "getPoolRoleAccounts",
       "mutant_id": "m001163",
       "operator": "DLR",
       "original_expression": "PoolRoleAccounts memory roleAccounts",
       "replacement_expression": "PoolRoleAccounts storage roleAccounts",
-      "start_line": 5408
+      "start_line": 5407
     },
     {
       "compile_status": "failed",
-      "end_line": 5419,
+      "end_line": 5418,
       "function": "computeDynamicSwapFeePercentage",
       "mutant_id": "m001164",
       "operator": "DLR",
       "original_expression": "PoolSwapParams memory swapParams",
       "replacement_expression": "PoolSwapParams storage swapParams",
-      "start_line": 5419
+      "start_line": 5418
     },
     {
       "compile_status": "failed",
-      "end_line": 5455,
+      "end_line": 5454,
       "function": "removeLiquidityRecovery",
       "mutant_id": "m001165",
       "operator": "DLR",
       "original_expression": "uint256[] memory minAmountsOut",
       "replacement_expression": "uint256[] storage minAmountsOut",
-      "start_line": 5455
+      "start_line": 5454
     },
     {
       "compile_status": "failed",
-      "end_line": 5456,
+      "end_line": 5455,
       "function": "removeLiquidityRecovery",
       "mutant_id": "m001166",
       "operator": "DLR",
       "original_expression": "uint256[] memory amountsOut",
       "replacement_expression": "uint256[] storage amountsOut",
-      "start_line": 5456
+      "start_line": 5455
     },
     {
       "compile_status": "failed",
-      "end_line": 5476,
+      "end_line": 5475,
       "function": "quote",
       "mutant_id": "m001167",
       "operator": "DLR",
       "original_expression": "bytes memory result",
       "replacement_expression": "bytes storage result",
-      "start_line": 5476
+      "start_line": 5475
     },
     {
       "compile_status": "failed",
-      "end_line": 5714,
+      "end_line": 5713,
       "function": "collectAggregateFees",
       "mutant_id": "m001168",
       "operator": "DLR",
       "original_expression": "uint256[] memory swapFeeAmounts",
       "replacement_expression": "uint256[] storage swapFeeAmounts",
-      "start_line": 5714
+      "start_line": 5713
     },
     {
       "compile_status": "failed",
-      "end_line": 5714,
+      "end_line": 5713,
       "function": "collectAggregateFees",
       "mutant_id": "m001169",
       "operator": "DLR",
       "original_expression": "uint256[] memory yieldFeeAmounts",
       "replacement_expression": "uint256[] storage yieldFeeAmounts",
-      "start_line": 5714
+      "start_line": 5713
     },
     {
       "compile_status": "failed",
@@ -13154,43 +13154,43 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3069,
+      "end_line": 3068,
       "function": "getSingleInputIndex",
       "mutant_id": "m001316",
       "operator": "EHD",
       "original_expression": "revert MultipleNonZeroInputs();",
       "replacement_expression": "/* revert MultipleNonZeroInputs(); */",
-      "start_line": 3069
+      "start_line": 3068
     },
     {
       "compile_status": "failed",
-      "end_line": 3076,
+      "end_line": 3075,
       "function": "getSingleInputIndex",
       "mutant_id": "m001317",
       "operator": "EHD",
       "original_expression": "revert AllZeroInputs();",
       "replacement_expression": "/* revert AllZeroInputs(); */",
-      "start_line": 3076
+      "start_line": 3075
     },
     {
       "compile_status": "failed",
-      "end_line": 3119,
+      "end_line": 3118,
       "function": "ensureSortedTokens",
       "mutant_id": "m001318",
       "operator": "EHD",
       "original_expression": "revert TokensNotSorted();",
       "replacement_expression": "/* revert TokensNotSorted(); */",
-      "start_line": 3119
+      "start_line": 3118
     },
     {
       "compile_status": "failed",
-      "end_line": 3138,
+      "end_line": 3137,
       "function": "ensureSortedAmounts",
       "mutant_id": "m001319",
       "operator": "EHD",
       "original_expression": "revert TokensNotSorted();",
       "replacement_expression": "/* revert TokensNotSorted(); */",
-      "start_line": 3138
+      "start_line": 3137
     },
     {
       "compile_status": "failed",
@@ -17404,29 +17404,59 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3095,
+      "end_line": 3094,
       "function": "sortTokens",
       "mutant_id": "m001741",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3095
+      "start_line": 3094
     },
     {
       "compile_status": "failed",
-      "end_line": 3095,
+      "end_line": 3094,
       "function": "sortTokens",
       "mutant_id": "m001742",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
+      "start_line": 3094
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3094,
+      "function": "sortTokens",
+      "mutant_id": "m001743",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 3094
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3095,
+      "function": "sortTokens",
+      "mutant_id": "m001744",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
       "start_line": 3095
     },
     {
       "compile_status": "failed",
       "end_line": 3095,
       "function": "sortTokens",
-      "mutant_id": "m001743",
+      "mutant_id": "m001745",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 3095
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3095,
+      "function": "sortTokens",
+      "mutant_id": "m001746",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
@@ -17436,291 +17466,261 @@
       "compile_status": "failed",
       "end_line": 3096,
       "function": "sortTokens",
-      "mutant_id": "m001744",
-      "operator": "ILR",
-      "original_expression": "0",
-      "replacement_expression": "1",
-      "start_line": 3096
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3096,
-      "function": "sortTokens",
-      "mutant_id": "m001745",
-      "operator": "ILR",
-      "original_expression": "1",
-      "replacement_expression": "0",
-      "start_line": 3096
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3096,
-      "function": "sortTokens",
-      "mutant_id": "m001746",
-      "operator": "ILR",
-      "original_expression": "1",
-      "replacement_expression": "2",
-      "start_line": 3096
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3097,
-      "function": "sortTokens",
       "mutant_id": "m001747",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3097
+      "start_line": 3096
     },
     {
       "compile_status": "failed",
-      "end_line": 3097,
+      "end_line": 3096,
       "function": "sortTokens",
       "mutant_id": "m001748",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3097
+      "start_line": 3096
     },
     {
       "compile_status": "failed",
-      "end_line": 3099,
+      "end_line": 3098,
       "function": "sortTokens",
       "mutant_id": "m001749",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3099
+      "start_line": 3098
     },
     {
       "compile_status": "failed",
-      "end_line": 3099,
+      "end_line": 3098,
       "function": "sortTokens",
       "mutant_id": "m001750",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3099
+      "start_line": 3098
     },
     {
       "compile_status": "failed",
-      "end_line": 3099,
+      "end_line": 3098,
       "function": "sortTokens",
       "mutant_id": "m001751",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3099
+      "start_line": 3098
     },
     {
       "compile_status": "failed",
-      "end_line": 3099,
+      "end_line": 3098,
       "function": "sortTokens",
       "mutant_id": "m001752",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3099
+      "start_line": 3098
     },
     {
       "compile_status": "failed",
-      "end_line": 3109,
+      "end_line": 3108,
       "function": "ensureSortedTokens",
       "mutant_id": "m001753",
       "operator": "ILR",
       "original_expression": "2",
       "replacement_expression": "1",
-      "start_line": 3109
+      "start_line": 3108
     },
     {
       "compile_status": "failed",
-      "end_line": 3109,
+      "end_line": 3108,
       "function": "ensureSortedTokens",
       "mutant_id": "m001754",
       "operator": "ILR",
       "original_expression": "2",
       "replacement_expression": "3",
-      "start_line": 3109
+      "start_line": 3108
     },
     {
       "compile_status": "failed",
-      "end_line": 3113,
+      "end_line": 3112,
       "function": "ensureSortedTokens",
       "mutant_id": "m001755",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3113
+      "start_line": 3112
     },
     {
       "compile_status": "failed",
-      "end_line": 3115,
+      "end_line": 3114,
       "function": "ensureSortedTokens",
       "mutant_id": "m001756",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3115
+      "start_line": 3114
     },
     {
       "compile_status": "failed",
-      "end_line": 3115,
+      "end_line": 3114,
       "function": "ensureSortedTokens",
       "mutant_id": "m001757",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3115
+      "start_line": 3114
     },
     {
       "compile_status": "failed",
-      "end_line": 3128,
+      "end_line": 3127,
       "function": "ensureSortedAmounts",
       "mutant_id": "m001758",
       "operator": "ILR",
       "original_expression": "2",
       "replacement_expression": "1",
-      "start_line": 3128
+      "start_line": 3127
     },
     {
       "compile_status": "failed",
-      "end_line": 3128,
+      "end_line": 3127,
       "function": "ensureSortedAmounts",
       "mutant_id": "m001759",
       "operator": "ILR",
       "original_expression": "2",
       "replacement_expression": "3",
-      "start_line": 3128
+      "start_line": 3127
     },
     {
       "compile_status": "failed",
-      "end_line": 3132,
+      "end_line": 3131,
       "function": "ensureSortedAmounts",
       "mutant_id": "m001760",
       "operator": "ILR",
       "original_expression": "0",
       "replacement_expression": "1",
-      "start_line": 3132
+      "start_line": 3131
     },
     {
       "compile_status": "failed",
-      "end_line": 3134,
+      "end_line": 3133,
       "function": "ensureSortedAmounts",
       "mutant_id": "m001761",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "0",
-      "start_line": 3134
+      "start_line": 3133
     },
     {
       "compile_status": "failed",
-      "end_line": 3134,
+      "end_line": 3133,
       "function": "ensureSortedAmounts",
       "mutant_id": "m001762",
       "operator": "ILR",
       "original_expression": "1",
       "replacement_expression": "2",
-      "start_line": 3134
+      "start_line": 3133
     },
     {
       "compile_status": "failed",
-      "end_line": 4002,
+      "end_line": 4001,
       "function": "stateVariable",
       "mutant_id": "m001763",
       "operator": "ILR",
       "original_expression": "24",
       "replacement_expression": "23",
+      "start_line": 4001
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 4001,
+      "function": "stateVariable",
+      "mutant_id": "m001764",
+      "operator": "ILR",
+      "original_expression": "24",
+      "replacement_expression": "25",
+      "start_line": 4001
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 4002,
+      "function": "stateVariable",
+      "mutant_id": "m001765",
+      "operator": "ILR",
+      "original_expression": "1e11",
+      "replacement_expression": "99999999999",
       "start_line": 4002
     },
     {
       "compile_status": "failed",
       "end_line": 4002,
       "function": "stateVariable",
-      "mutant_id": "m001764",
-      "operator": "ILR",
-      "original_expression": "24",
-      "replacement_expression": "25",
-      "start_line": 4002
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 4003,
-      "function": "stateVariable",
-      "mutant_id": "m001765",
-      "operator": "ILR",
-      "original_expression": "1e11",
-      "replacement_expression": "99999999999",
-      "start_line": 4003
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 4003,
-      "function": "stateVariable",
       "mutant_id": "m001766",
       "operator": "ILR",
       "original_expression": "1e11",
       "replacement_expression": "100000000001",
-      "start_line": 4003
+      "start_line": 4002
     },
     {
       "compile_status": "failed",
-      "end_line": 4006,
+      "end_line": 4005,
       "function": "stateVariable",
       "mutant_id": "m001767",
       "operator": "ILR",
       "original_expression": "99.9999e16",
       "replacement_expression": "undefined",
-      "start_line": 4006
+      "start_line": 4005
     },
     {
       "compile_status": "failed",
-      "end_line": 4077,
+      "end_line": 4076,
       "function": "stateVariable",
       "mutant_id": "m001768",
       "operator": "ILR",
       "original_expression": "24",
       "replacement_expression": "23",
+      "start_line": 4076
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 4076,
+      "function": "stateVariable",
+      "mutant_id": "m001769",
+      "operator": "ILR",
+      "original_expression": "24",
+      "replacement_expression": "25",
+      "start_line": 4076
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 4077,
+      "function": "stateVariable",
+      "mutant_id": "m001770",
+      "operator": "ILR",
+      "original_expression": "1e11",
+      "replacement_expression": "99999999999",
       "start_line": 4077
     },
     {
       "compile_status": "failed",
       "end_line": 4077,
       "function": "stateVariable",
-      "mutant_id": "m001769",
-      "operator": "ILR",
-      "original_expression": "24",
-      "replacement_expression": "25",
-      "start_line": 4077
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 4078,
-      "function": "stateVariable",
-      "mutant_id": "m001770",
-      "operator": "ILR",
-      "original_expression": "1e11",
-      "replacement_expression": "99999999999",
-      "start_line": 4078
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 4078,
-      "function": "stateVariable",
       "mutant_id": "m001771",
       "operator": "ILR",
       "original_expression": "1e11",
       "replacement_expression": "100000000001",
-      "start_line": 4078
+      "start_line": 4077
     },
     {
       "compile_status": "failed",
-      "end_line": 4081,
+      "end_line": 4080,
       "function": "stateVariable",
       "mutant_id": "m001772",
       "operator": "ILR",
       "original_expression": "99.9999e16",
       "replacement_expression": "undefined",
-      "start_line": 4081
+      "start_line": 4080
     },
     {
       "compile_status": "failed",
@@ -17764,43 +17764,43 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3095,
+      "end_line": 3094,
       "function": "sortTokens",
       "mutant_id": "m001777",
       "operator": "LSC",
       "original_expression": "i < tokens.length - 1",
       "replacement_expression": "false",
-      "start_line": 3095
+      "start_line": 3094
     },
     {
       "compile_status": "failed",
-      "end_line": 3096,
+      "end_line": 3095,
       "function": "sortTokens",
       "mutant_id": "m001778",
       "operator": "LSC",
       "original_expression": "j < tokens.length - i - 1",
       "replacement_expression": "false",
-      "start_line": 3096
+      "start_line": 3095
     },
     {
       "compile_status": "failed",
-      "end_line": 3115,
+      "end_line": 3114,
       "function": "ensureSortedTokens",
       "mutant_id": "m001779",
       "operator": "LSC",
       "original_expression": "i < tokens.length",
       "replacement_expression": "false",
-      "start_line": 3115
+      "start_line": 3114
     },
     {
       "compile_status": "failed",
-      "end_line": 3134,
+      "end_line": 3133,
       "function": "ensureSortedAmounts",
       "mutant_id": "m001780",
       "operator": "LSC",
       "original_expression": "i < amounts.length",
       "replacement_expression": "false",
-      "start_line": 3134
+      "start_line": 3133
     },
     {
       "compile_status": "failed",
@@ -18284,183 +18284,183 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 4463,
+      "end_line": 4462,
       "function": "transfer",
       "mutant_id": "m001829",
       "operator": "OLFD",
       "original_expression": "function transfer(address owner, address to, uint256 amount) external returns (bool);",
       "replacement_expression": "",
-      "start_line": 4463
+      "start_line": 4462
     },
     {
       "compile_status": "failed",
-      "end_line": 4476,
+      "end_line": 4475,
       "function": "transferFrom",
       "mutant_id": "m001830",
       "operator": "OLFD",
       "original_expression": "function transferFrom(address spender, address from, address to, uint256 amount) external returns (bool success);",
       "replacement_expression": "",
-      "start_line": 4476
+      "start_line": 4475
     },
     {
       "compile_status": "failed",
-      "end_line": 4825,
+      "end_line": 4824,
       "function": "vault",
       "mutant_id": "m001831",
       "operator": "OLFD",
       "original_expression": "function vault() external view returns (IVault);",
       "replacement_expression": "",
-      "start_line": 4825
+      "start_line": 4824
     },
     {
       "compile_status": "failed",
-      "end_line": 4831,
+      "end_line": 4830,
       "function": "collectAggregateFees",
       "mutant_id": "m001832",
       "operator": "OLFD",
       "original_expression": "function collectAggregateFees(address pool) external;",
       "replacement_expression": "",
-      "start_line": 4831
+      "start_line": 4830
     },
     {
       "compile_status": "failed",
-      "end_line": 4850,
+      "end_line": 4849,
       "function": "isPoolRegistered",
       "mutant_id": "m001833",
       "operator": "OLFD",
       "original_expression": "function isPoolRegistered(address pool) external view returns (bool);",
       "replacement_expression": "",
-      "start_line": 4850
+      "start_line": 4849
     },
     {
       "compile_status": "failed",
-      "end_line": 4966,
+      "end_line": 4965,
       "function": "registerPool",
       "mutant_id": "m001834",
       "operator": "OLFD",
       "original_expression": "function registerPool(\n        address pool,\n        address poolCreator,\n        bool protocolFeeExempt\n    ) external returns (uint256 aggregateSwapFeePercentage, uint256 aggregateYieldFeePercentage);",
       "replacement_expression": "",
-      "start_line": 4962
+      "start_line": 4961
     },
     {
       "compile_status": "failed",
-      "end_line": 5039,
+      "end_line": 5038,
       "function": "withdrawPoolCreatorFees",
       "mutant_id": "m001835",
       "operator": "OLFD",
       "original_expression": "function withdrawPoolCreatorFees(address pool, address recipient) external;",
       "replacement_expression": "",
-      "start_line": 5039
+      "start_line": 5038
     },
     {
       "compile_status": "failed",
-      "end_line": 5048,
+      "end_line": 5047,
       "function": "withdrawPoolCreatorFees",
       "mutant_id": "m001836",
       "operator": "OLFD",
       "original_expression": "function withdrawPoolCreatorFees(address pool) external;",
       "replacement_expression": "",
-      "start_line": 5048
+      "start_line": 5047
     },
     {
       "compile_status": "failed",
-      "end_line": 5069,
+      "end_line": 5068,
       "function": "vault",
       "mutant_id": "m001837",
       "operator": "OLFD",
       "original_expression": "function vault() external view returns (IVault);",
       "replacement_expression": "",
-      "start_line": 5069
+      "start_line": 5068
     },
     {
       "compile_status": "failed",
-      "end_line": 5162,
+      "end_line": 5161,
       "function": "registerPool",
       "mutant_id": "m001838",
       "operator": "OLFD",
       "original_expression": "function registerPool(\n        address pool,\n        TokenConfig[] memory tokenConfig,\n        uint256 swapFeePercentage,\n        uint32 pauseWindowEndTime,\n        bool protocolFeeExempt,\n        PoolRoleAccounts calldata roleAccounts,\n        address poolHooksContract,\n        LiquidityManagement_0 calldata liquidityManagement\n    ) external;",
       "replacement_expression": "",
-      "start_line": 5153
+      "start_line": 5152
     },
     {
       "compile_status": "failed",
-      "end_line": 5169,
+      "end_line": 5168,
       "function": "isPoolRegistered",
       "mutant_id": "m001839",
       "operator": "OLFD",
       "original_expression": "function isPoolRegistered(address pool) external view returns (bool registered);",
       "replacement_expression": "",
-      "start_line": 5169
+      "start_line": 5168
     },
     {
       "compile_status": "failed",
-      "end_line": 5207,
+      "end_line": 5206,
       "function": "getPoolTokens",
       "mutant_id": "m001840",
       "operator": "OLFD",
       "original_expression": "function getPoolTokens(address pool) external view returns (IERC20[] memory tokens);",
       "replacement_expression": "",
-      "start_line": 5207
+      "start_line": 5206
     },
     {
       "compile_status": "failed",
-      "end_line": 5292,
+      "end_line": 5291,
       "function": "totalSupply",
       "mutant_id": "m001841",
       "operator": "OLFD",
       "original_expression": "function totalSupply(address token) external view returns (uint256 tokenTotalSupply);",
       "replacement_expression": "",
-      "start_line": 5292
+      "start_line": 5291
     },
     {
       "compile_status": "failed",
-      "end_line": 5300,
+      "end_line": 5299,
       "function": "balanceOf",
       "mutant_id": "m001842",
       "operator": "OLFD",
       "original_expression": "function balanceOf(address token, address account) external view returns (uint256 tokenBalance);",
       "replacement_expression": "",
-      "start_line": 5300
+      "start_line": 5299
     },
     {
       "compile_status": "failed",
-      "end_line": 5309,
+      "end_line": 5308,
       "function": "allowance",
       "mutant_id": "m001843",
       "operator": "OLFD",
       "original_expression": "function allowance(address token, address owner, address spender) external view returns (uint256 tokenAllowance);",
       "replacement_expression": "",
-      "start_line": 5309
+      "start_line": 5308
     },
     {
       "compile_status": "failed",
-      "end_line": 5321,
+      "end_line": 5320,
       "function": "approve",
       "mutant_id": "m001844",
       "operator": "OLFD",
       "original_expression": "function approve(address owner, address spender, uint256 amount) external returns (bool success);",
       "replacement_expression": "",
-      "start_line": 5321
+      "start_line": 5320
     },
     {
       "compile_status": "failed",
-      "end_line": 5547,
+      "end_line": 5546,
       "function": "vault",
       "mutant_id": "m001845",
       "operator": "OLFD",
       "original_expression": "function vault() external view returns (IVault);",
       "replacement_expression": "",
-      "start_line": 5547
+      "start_line": 5546
     },
     {
       "compile_status": "failed",
-      "end_line": 5714,
+      "end_line": 5713,
       "function": "collectAggregateFees",
       "mutant_id": "m001846",
       "operator": "OLFD",
       "original_expression": "function collectAggregateFees(\n        address pool\n    ) external returns (uint256[] memory swapFeeAmounts, uint256[] memory yieldFeeAmounts);",
       "replacement_expression": "",
-      "start_line": 5712
+      "start_line": 5711
     },
     {
       "compile_status": "failed",
@@ -18484,13 +18484,13 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 6215,
+      "end_line": 6214,
       "function": "vault",
       "mutant_id": "m001849",
       "operator": "ORFD",
       "original_expression": "function vault() external view override(IVaultAdmin, IVaultExtension) returns (IVault);",
       "replacement_expression": "",
-      "start_line": 6215
+      "start_line": 6214
     },
     {
       "compile_status": "failed",
@@ -19364,13 +19364,13 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3104,
+      "end_line": 3103,
       "function": "sortTokens",
       "mutant_id": "m001937",
       "operator": "RSD",
       "original_expression": "return tokens;",
       "replacement_expression": "/* return tokens; */",
-      "start_line": 3104
+      "start_line": 3103
     },
     {
       "compile_status": "failed",
@@ -19404,123 +19404,123 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 4393,
+      "end_line": 4392,
       "function": "swap",
       "mutant_id": "m001941",
       "operator": "RVS",
       "original_expression": "uint256 amountCalculatedRaw, uint256 amountInRaw, uint256 amountOutRaw",
       "replacement_expression": "uint256 amountOutRaw, uint256 amountCalculatedRaw, uint256 amountInRaw",
-      "start_line": 4393
+      "start_line": 4392
     },
     {
       "compile_status": "failed",
-      "end_line": 4447,
+      "end_line": 4446,
       "function": "getPoolTokenCountAndIndexOfToken",
       "mutant_id": "m001942",
       "operator": "RVS",
       "original_expression": "uint256 tokenCount, uint256 index",
       "replacement_expression": "uint256 index, uint256 tokenCount",
-      "start_line": 4447
+      "start_line": 4446
     },
     {
       "compile_status": "failed",
-      "end_line": 4494,
+      "end_line": 4493,
       "function": "erc4626BufferWrapOrUnwrap",
       "mutant_id": "m001943",
       "operator": "RVS",
       "original_expression": "uint256 amountCalculatedRaw, uint256 amountInRaw, uint256 amountOutRaw",
       "replacement_expression": "uint256 amountOutRaw, uint256 amountCalculatedRaw, uint256 amountInRaw",
-      "start_line": 4494
+      "start_line": 4493
     },
     {
       "compile_status": "failed",
-      "end_line": 4966,
+      "end_line": 4965,
       "function": "registerPool",
       "mutant_id": "m001944",
       "operator": "RVS",
       "original_expression": "uint256 aggregateSwapFeePercentage, uint256 aggregateYieldFeePercentage",
       "replacement_expression": "uint256 aggregateYieldFeePercentage, uint256 aggregateSwapFeePercentage",
-      "start_line": 4966
+      "start_line": 4965
     },
     {
       "compile_status": "failed",
-      "end_line": 5221,
+      "end_line": 5220,
       "function": "getPoolTokenRates",
       "mutant_id": "m001945",
       "operator": "RVS",
       "original_expression": "uint256[] memory decimalScalingFactors, uint256[] memory tokenRates",
       "replacement_expression": "uint256[] memory tokenRates, uint256[] memory decimalScalingFactors",
-      "start_line": 5221
+      "start_line": 5220
     },
     {
       "compile_status": "failed",
-      "end_line": 5248,
+      "end_line": 5247,
       "function": "getPoolTokenInfo",
       "mutant_id": "m001946",
       "operator": "RVS",
       "original_expression": "IERC20[] memory tokens,\n            TokenInfo[] memory tokenInfo,\n            uint256[] memory balancesRaw,\n            uint256[] memory lastBalancesLiveScaled18",
       "replacement_expression": "TokenInfo[] memory tokenInfo,\n            IERC20[] memory tokens,\n            uint256[] memory balancesRaw,\n            uint256[] memory lastBalancesLiveScaled18",
-      "start_line": 5245
+      "start_line": 5244
     },
     {
       "compile_status": "failed",
-      "end_line": 5351,
+      "end_line": 5350,
       "function": "getPoolPausedState",
       "mutant_id": "m001947",
       "operator": "RVS",
       "original_expression": "bool poolPaused, uint32 poolPauseWindowEndTime, uint32 poolBufferPeriodEndTime, address pauseManager",
       "replacement_expression": "bool poolPaused, uint32 poolBufferPeriodEndTime, uint32 poolPauseWindowEndTime, address pauseManager",
-      "start_line": 5351
+      "start_line": 5350
     },
     {
       "compile_status": "failed",
-      "end_line": 5648,
+      "end_line": 5647,
       "function": "getVaultPausedState",
       "mutant_id": "m001948",
       "operator": "RVS",
       "original_expression": "bool vaultPaused, uint32 vaultPauseWindowEndTime, uint32 vaultBufferPeriodEndTime",
       "replacement_expression": "bool vaultPaused, uint32 vaultBufferPeriodEndTime, uint32 vaultPauseWindowEndTime",
-      "start_line": 5648
+      "start_line": 5647
     },
     {
       "compile_status": "failed",
-      "end_line": 5714,
+      "end_line": 5713,
       "function": "collectAggregateFees",
       "mutant_id": "m001949",
       "operator": "RVS",
       "original_expression": "uint256[] memory swapFeeAmounts, uint256[] memory yieldFeeAmounts",
       "replacement_expression": "uint256[] memory yieldFeeAmounts, uint256[] memory swapFeeAmounts",
-      "start_line": 5714
+      "start_line": 5713
     },
     {
       "compile_status": "failed",
-      "end_line": 5879,
+      "end_line": 5878,
       "function": "addLiquidityToBuffer",
       "mutant_id": "m001950",
       "operator": "RVS",
       "original_expression": "uint256 amountUnderlyingRaw, uint256 amountWrappedRaw",
       "replacement_expression": "uint256 amountWrappedRaw, uint256 amountUnderlyingRaw",
-      "start_line": 5879
+      "start_line": 5878
     },
     {
       "compile_status": "failed",
-      "end_line": 5907,
+      "end_line": 5906,
       "function": "removeLiquidityFromBuffer",
       "mutant_id": "m001951",
       "operator": "RVS",
       "original_expression": "uint256 removedUnderlyingBalanceRaw, uint256 removedWrappedBalanceRaw",
       "replacement_expression": "uint256 removedWrappedBalanceRaw, uint256 removedUnderlyingBalanceRaw",
-      "start_line": 5907
+      "start_line": 5906
     },
     {
       "compile_status": "failed",
-      "end_line": 5947,
+      "end_line": 5946,
       "function": "getBufferBalance",
       "mutant_id": "m001952",
       "operator": "RVS",
       "original_expression": "uint256 underlyingBalanceRaw, uint256 wrappedBalanceRaw",
       "replacement_expression": "uint256 wrappedBalanceRaw, uint256 underlyingBalanceRaw",
-      "start_line": 5947
+      "start_line": 5946
     },
     {
       "compile_status": "failed",
@@ -19664,83 +19664,83 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3095,
+      "end_line": 3094,
       "function": "sortTokens",
       "mutant_id": "m001967",
       "operator": "UORD",
       "original_expression": "++i",
       "replacement_expression": "--i",
+      "start_line": 3094
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3094,
+      "function": "sortTokens",
+      "mutant_id": "m001968",
+      "operator": "UORD",
+      "original_expression": "++i",
+      "replacement_expression": " i",
+      "start_line": 3094
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 3095,
+      "function": "sortTokens",
+      "mutant_id": "m001969",
+      "operator": "UORD",
+      "original_expression": "++j",
+      "replacement_expression": "--j",
       "start_line": 3095
     },
     {
       "compile_status": "failed",
       "end_line": 3095,
       "function": "sortTokens",
-      "mutant_id": "m001968",
-      "operator": "UORD",
-      "original_expression": "++i",
-      "replacement_expression": " i",
-      "start_line": 3095
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3096,
-      "function": "sortTokens",
-      "mutant_id": "m001969",
-      "operator": "UORD",
-      "original_expression": "++j",
-      "replacement_expression": "--j",
-      "start_line": 3096
-    },
-    {
-      "compile_status": "failed",
-      "end_line": 3096,
-      "function": "sortTokens",
       "mutant_id": "m001970",
       "operator": "UORD",
       "original_expression": "++j",
       "replacement_expression": " j",
-      "start_line": 3096
+      "start_line": 3095
     },
     {
       "compile_status": "failed",
-      "end_line": 3115,
+      "end_line": 3114,
       "function": "ensureSortedTokens",
       "mutant_id": "m001971",
       "operator": "UORD",
       "original_expression": "++i",
       "replacement_expression": "--i",
-      "start_line": 3115
+      "start_line": 3114
     },
     {
       "compile_status": "failed",
-      "end_line": 3115,
+      "end_line": 3114,
       "function": "ensureSortedTokens",
       "mutant_id": "m001972",
       "operator": "UORD",
       "original_expression": "++i",
       "replacement_expression": " i",
-      "start_line": 3115
+      "start_line": 3114
     },
     {
       "compile_status": "failed",
-      "end_line": 3134,
+      "end_line": 3133,
       "function": "ensureSortedAmounts",
       "mutant_id": "m001973",
       "operator": "UORD",
       "original_expression": "++i",
       "replacement_expression": "--i",
-      "start_line": 3134
+      "start_line": 3133
     },
     {
       "compile_status": "failed",
-      "end_line": 3134,
+      "end_line": 3133,
       "function": "ensureSortedAmounts",
       "mutant_id": "m001974",
       "operator": "UORD",
       "original_expression": "++i",
       "replacement_expression": " i",
-      "start_line": 3134
+      "start_line": 3133
     }
   ],
   "subject_id": "balancer__balancer-v3-monorepo__DynamicWeightedLPOracle"

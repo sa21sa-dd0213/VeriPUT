@@ -56,7 +56,7 @@ contract SweepableBridgeReceiverCovTest_SweepableBridgeReceiver_sweepToken_put2p
     recipient = address(uint160(bound(uint256(uint160(recipient)), 0, 1461501637330902918203684832716283019655932542975)));
     asset = address(uint160(bound(uint256(uint160(asset)), 0, 1461501637330902918203684832716283019655932542975)));
 
-
+vm.mockCall(asset, abi.encodeWithSignature("balanceOf(address)"), abi.encode(uint256(1)));
     
     uint256 _pre_localTimelock = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
     
@@ -67,8 +67,8 @@ contract SweepableBridgeReceiverCovTest_SweepableBridgeReceiver_sweepToken_put2p
     
     uint256 _post_localTimelock = (uint256(vm.load(address(c0), bytes32(uint256(1)))) & 1461501637330902918203684832716283019655932542975);
     assertEq(_post_localTimelock, _pre_localTimelock, "localTimelock: post == pre");
-    
-    
+    assertGe(_post_localTimelock, _pre_localTimelock, "localTimelock: post >= pre");
+    assertLe(_post_localTimelock, _pre_localTimelock, "localTimelock: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

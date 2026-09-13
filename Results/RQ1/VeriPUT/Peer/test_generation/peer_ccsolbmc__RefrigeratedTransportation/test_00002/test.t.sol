@@ -111,8 +111,8 @@ contract RefrigeratedTransportationCovTest_RefrigeratedTransportation_IngestTele
     assertEq(_post_ComplianceSensorReading, _pre_ComplianceSensorReading, "ComplianceSensorReading: post == pre");
     assertEq(_post_ComplianceStatus, _pre_ComplianceStatus, "ComplianceStatus: post == pre");
     assertEq(_post_LastSensorUpdateTimestamp, _pre_LastSensorUpdateTimestamp, "LastSensorUpdateTimestamp: post == pre");
-    
-    
+    assertGe(_post_Device, _pre_Device, "Device: post >= pre");
+    assertLe(_post_Device, _pre_Device, "Device: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

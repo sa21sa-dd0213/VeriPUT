@@ -67,10 +67,10 @@ contract SafeToL2SetupCovTest_SafeToL2Setup_setupToL2_put2p1 is Test {
     uint256 _post_nonce = uint256(vm.load(address(c0), bytes32(uint256(5))));
     assertEq(_post_singleton, _pre_singleton, "singleton: post == pre");
     assertEq(_post_nonce, _pre_nonce, "nonce: post == pre");
-    
-    
-    
-    
+    assertGe(_post_singleton, _pre_singleton, "singleton: post >= pre");
+    assertLe(_post_singleton, _pre_singleton, "singleton: post <= pre");
+    assertGe(_post_nonce, _pre_nonce, "nonce: post >= pre");
+    assertLe(_post_nonce, _pre_nonce, "nonce: post <= pre");
     
     assertFalse(_esbmc_value_gate_ok, "value sent to a non-payable entry must revert");
 

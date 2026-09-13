@@ -139,12 +139,12 @@ contract DateTimeCovTest_DateTime_getDaysInMonth_put125p1 is Test {
       assertEq(_put_ret, uint8(28), "fixed witness return");
     }
     
-    
+    assertTrue(uint256(_put_ret) != 0, "return: return != 0");
     assertEq(uint256(_put_ret), 28, "return: return == 28");
-    
-    
-    
-    
+    assertGe(uint256(_put_ret), 28, "return: return in [28, 28]");
+    assertLe(uint256(_put_ret), 28, "return: return in [28, 28]");
+    assertGe(uint256(_put_ret), 0, "return: return in [0, 28]");
+    assertLe(uint256(_put_ret), 28, "return: return in [0, 28]");
     
   }
 
@@ -152,5 +152,50 @@ contract DateTimeCovTest_DateTime_getDaysInMonth_put125p1 is Test {
   
   function test_put_DateTime_getDaysInMonth_path125p1(address p_msg_sender, uint256 p_block_timestamp, uint256 p_block_number, uint8 month, uint16 year) public {
     _veriput_parameterized(p_msg_sender, p_block_timestamp, p_block_number, month, year);
+    
+    { DateTimeCovTest_DateTime_getDaysInMonth_concrete125p1__basis_root__W _veriput_w = new DateTimeCovTest_DateTime_getDaysInMonth_concrete125p1__basis_root__W(); _veriput_w.setUp(); _veriput_w._w_test_cov_5(); }
+}
+}
+
+
+
+
+
+
+
+
+contract DateTimeCovTest_DateTime_getDaysInMonth_concrete125p1__basis_root__W is Test {
+  DateTime c0;
+  function setUp() public {
+    c0 = new DateTime();
   }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  function _w_test_cov_5() public {
+    
+    
+    vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    vm.chainId(0);
+    vm.fee(0);
+    vm.blobBaseFee(0);
+    vm.prevrandao(uint256(0));
+    vm.txGasPrice(0);
+    vm.coinbase(address(uint160(0)));
+    vm.prank(address(uint160(0)), address(uint160(0)));
+    uint8 _veriput_concrete_return = c0.getDaysInMonth(uint8(255), uint16(65535));
+    assertEq(_veriput_concrete_return, uint8(28), "fixed witness return must match");
+  }
+  
+  
 }

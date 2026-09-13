@@ -126,10 +126,10 @@ contract SafeCovTest_Safe_domainSeparator_put3p1 is Test {
     
     if (p_msg_sender == address(uint160(0))) {
       assertEq(_veriput_fixed_return_0, bytes32(uint256(2657846193392590325221008060914672263604922630183307086739871769105775977753)), "fixed witness return");
-
-
-
-
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(5)))), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(4)))), uint256(1), "fixed witness state");
     }
     
     uint256 _post_nonce = uint256(vm.load(address(c0), bytes32(uint256(5))));

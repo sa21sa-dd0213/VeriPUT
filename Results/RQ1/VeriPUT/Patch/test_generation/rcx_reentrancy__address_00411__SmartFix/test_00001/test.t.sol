@@ -16,8 +16,8 @@ contract Private_BankCovTest_Private_Bank_Deposit_put3p1 is Test {
     c0 = new Private_Bank(address(uint160(0)));
     
     address _esbmc_ctor_state_mock_0_0 = address(uint160(0));
-
-
+    vm.etch(_esbmc_ctor_state_mock_0_0, hex"60006000f3");
+    vm.mockCall(_esbmc_ctor_state_mock_0_0, abi.encodeWithSignature("AddMessage(address,uint256,string)"), bytes(""));
   }
   
   
@@ -124,51 +124,51 @@ contract Private_BankCovTest_Private_Bank_Deposit_put3p1 is Test {
     uint256 _post_balances_msg_sender = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(0)))));
     assertEq(_post_MinDeposit, _pre_MinDeposit, "MinDeposit: post == pre");
     assertEq(_post_balances_5_msg_sender, _pre_balances_5_msg_sender, "balances$5[msg.sender]: post == pre");
-    
+    assertEq(_post_balances_msg_sender, _pre_balances_msg_sender, "balances[msg.sender]: post == pre");
     assertEq(_post_MinDeposit, 1000000000000000000, "MinDeposit: post == 1000000000000000000");
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, pre]");
+    assertLe(_post_MinDeposit, _pre_MinDeposit, "MinDeposit: post in [0, pre]");
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, 1000000000000000000]");
+    assertLe(_post_MinDeposit, 1000000000000000000, "MinDeposit: post in [0, 1000000000000000000]");
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, 115792089237316195423570985008687907853269984665640564039457584007913129639934]");
+    assertLe(_post_MinDeposit, 115792089237316195423570985008687907853269984665640564039457584007913129639934, "MinDeposit: post in [0, 115792089237316195423570985008687907853269984665640564039457584007913129639934]");
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (pre + pre)]");
     unchecked { assertLe(_post_MinDeposit, (uint256(_pre_MinDeposit) + uint256(_pre_MinDeposit)), "MinDeposit: post in [0, (pre + pre)]"); }
-    
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (pre * pre)]");
     unchecked { assertLe(_post_MinDeposit, (uint256(_pre_MinDeposit) * uint256(_pre_MinDeposit)), "MinDeposit: post in [0, (pre * pre)]"); }
-    
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (pre + msg.value)]");
     unchecked { assertLe(_post_MinDeposit, (uint256(_pre_MinDeposit) + uint256(p_msg_value)), "MinDeposit: post in [0, (pre + msg.value)]"); }
-    
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (pre + 50499692625)]");
     unchecked { assertLe(_post_MinDeposit, (uint256(_pre_MinDeposit) + uint256(50499692625)), "MinDeposit: post in [0, (pre + 50499692625)]"); }
-    
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (pre * 50499692625)]");
     unchecked { assertLe(_post_MinDeposit, (uint256(_pre_MinDeposit) * uint256(50499692625)), "MinDeposit: post in [0, (pre * 50499692625)]"); }
-    
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (pre + 1000000000000000000)]");
     unchecked { assertLe(_post_MinDeposit, (uint256(_pre_MinDeposit) + uint256(1000000000000000000)), "MinDeposit: post in [0, (pre + 1000000000000000000)]"); }
-    
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (pre * 1000000000000000000)]");
     unchecked { assertLe(_post_MinDeposit, (uint256(_pre_MinDeposit) * uint256(1000000000000000000)), "MinDeposit: post in [0, (pre * 1000000000000000000)]"); }
-    
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (msg.value + 1000000000000000000)]");
     unchecked { assertLe(_post_MinDeposit, (uint256(p_msg_value) + uint256(1000000000000000000)), "MinDeposit: post in [0, (msg.value + 1000000000000000000)]"); }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (0 + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]");
+    unchecked { assertLe(_post_MinDeposit, (uint256(0) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "MinDeposit: post in [0, (0 + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]"); }
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (50499692625 * 50499692625)]");
+    unchecked { assertLe(_post_MinDeposit, (uint256(50499692625) * uint256(50499692625)), "MinDeposit: post in [0, (50499692625 * 50499692625)]"); }
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (50499692625 + 1000000000000000000)]");
+    unchecked { assertLe(_post_MinDeposit, (uint256(50499692625) + uint256(1000000000000000000)), "MinDeposit: post in [0, (50499692625 + 1000000000000000000)]"); }
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (50499692625 * 1000000000000000000)]");
+    unchecked { assertLe(_post_MinDeposit, (uint256(50499692625) * uint256(1000000000000000000)), "MinDeposit: post in [0, (50499692625 * 1000000000000000000)]"); }
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (1000000000000000000 + 1000000000000000000)]");
+    unchecked { assertLe(_post_MinDeposit, (uint256(1000000000000000000) + uint256(1000000000000000000)), "MinDeposit: post in [0, (1000000000000000000 + 1000000000000000000)]"); }
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (1000000000000000000 * 1000000000000000000)]");
+    unchecked { assertLe(_post_MinDeposit, (uint256(1000000000000000000) * uint256(1000000000000000000)), "MinDeposit: post in [0, (1000000000000000000 * 1000000000000000000)]"); }
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - pre)]");
     unchecked { assertLe(_post_MinDeposit, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) - uint256(_pre_MinDeposit)), "MinDeposit: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - pre)]"); }
-    
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - msg.value)]");
     unchecked { assertLe(_post_MinDeposit, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) - uint256(p_msg_value)), "MinDeposit: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - msg.value)]"); }
-    
-    
-    
-    
-    
+    assertGe(_post_MinDeposit, 0, "MinDeposit: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - 50499692625)]");
+    unchecked { assertLe(_post_MinDeposit, (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) - uint256(50499692625)), "MinDeposit: post in [0, (115792089237316195423570985008687907853269984665640564039457584007913129639935 - 50499692625)]"); }
+    assertGe(_post_balances_5_msg_sender, 0, "balances$5[msg.sender]: post in [0, pre]");
+    assertLe(_post_balances_5_msg_sender, _pre_balances_5_msg_sender, "balances$5[msg.sender]: post in [0, pre]");
+    assertGe(_post_balances_5_msg_sender, 0, "balances$5[msg.sender]: post in [0, (0 + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]");
     unchecked { assertLe(_post_balances_5_msg_sender, (uint256(0) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)), "balances$5[msg.sender]: post in [0, (0 + 115792089237316195423570985008687907853269984665640564039457584007913129639935)]"); }
     
   }

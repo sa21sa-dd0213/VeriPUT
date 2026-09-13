@@ -3065,7 +3065,6 @@ library InputHelpers {
         for (uint256 i = 0; i < length; ++i) {
             if (maxAmountsIn[i] != 0) {
                 if (inputIndex != length) {
-
                     revert MultipleNonZeroInputs();
                 }
                 inputIndex = i;

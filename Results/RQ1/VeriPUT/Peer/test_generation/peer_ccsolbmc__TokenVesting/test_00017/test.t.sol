@@ -10,7 +10,7 @@ pragma solidity >=0.8.0;
 import {Test} from "forge-std/Test.sol";
 import {TokenVesting} from "../src/flat.sol";
 
-contract TokenVestingCovTest_TokenVesting_stake_tokens_put14p1 is Test {
+contract TokenVestingCovTest_TokenVesting_set_controller_put6p1 is Test {
   TokenVesting c0;
   function setUp() public {
     c0 = new TokenVesting();
@@ -83,33 +83,21 @@ contract TokenVestingCovTest_TokenVesting_stake_tokens_put14p1 is Test {
   
   
   
-  
-  
-  
-  
-  uint256 _pre_v1_address; 
-  uint256 _pre_user_stats_134_msg_sender__lien; 
-  uint256 _pre_user_stats_msg_sender__lien; 
-  uint256 _pre_user_stats_msg_sender__total_in_all_tranches; 
-  uint256 _pre_address_migration_msg_sender; 
-  uint256 _pre_v1_migrated_msg_sender; 
-  uint256 _post_v1_address; 
-  uint256 _post_user_stats_134_msg_sender__lien; 
-  uint256 _post_user_stats_msg_sender__lien; 
-  uint256 _post_user_stats_msg_sender__total_in_all_tranches; 
-  uint256 _post_address_migration_msg_sender; 
-  uint256 _post_v1_migrated_msg_sender; 
-  function _veriput_parameterized(address p_msg_sender, uint256 amount, uint256 vega_public_key) internal {
+  function _veriput_parameterized(address p_msg_sender, address new_controller) internal {
     p_msg_sender = address(uint160(bound(uint256(uint160(p_msg_sender)), 1, 1461501637330902918203684832716283019655932542975)));
-    amount = bound(amount, 0, 0);
-    vega_public_key = bound(vega_public_key, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
+    new_controller = address(uint160(bound(uint256(uint160(new_controller)), 0, 1461501637330902918203684832716283019655932542975)));
     
-    _pre_v1_address = (uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975);
-    _pre_user_stats_134_msg_sender__lien = uint256(vm.load(address(c0), bytes32(uint256(keccak256(abi.encode(p_msg_sender, uint256(2)))) + 1)));
-    _pre_user_stats_msg_sender__lien = uint256(vm.load(address(c0), bytes32(uint256(keccak256(abi.encode(p_msg_sender, uint256(2)))) + 1)));
-    _pre_user_stats_msg_sender__total_in_all_tranches = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(2)))));
-    _pre_address_migration_msg_sender = (uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(6))))) & 1461501637330902918203684832716283019655932542975);
-    _pre_v1_migrated_msg_sender = (uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(1))))) & 255);
+    
+    {
+      uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
+      _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
+    }
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.controller did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
+    
+    uint256 _pre_controller = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
+    uint256 _pre_permitted_issuance_264_new_controller = uint256(vm.load(address(c0), keccak256(abi.encode(new_controller, uint256(8)))));
+    uint256 _pre_permitted_issuance_new_controller = uint256(vm.load(address(c0), keccak256(abi.encode(new_controller, uint256(8)))));
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
     vm.roll(115792089237316195423570985008687907853269984665640564039457584007913129639935);
     vm.chainId(0);
@@ -121,48 +109,38 @@ contract TokenVestingCovTest_TokenVesting_stake_tokens_put14p1 is Test {
     vm.prank(p_msg_sender);
     
     bool _put_ok = true;
-    try c0.stake_tokens(amount, bytes32(vega_public_key)) {} catch { _put_ok = false; }
+    try c0.set_controller(new_controller) {} catch { _put_ok = false; }
     
-    if (p_msg_sender == address(uint160(0)) && amount == uint256(0) && vega_public_key == uint256(0)) {
-
-
-
-
-
+    if (p_msg_sender == address(uint160(4294967295)) && new_controller == address(uint160(0))) {
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(0), "fixed witness state");
+      assertEq(((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 160) & 255), uint256(1), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
+      assertEq((uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "fixed witness state");
     }
     
-    _post_v1_address = (uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975);
-    _post_user_stats_134_msg_sender__lien = uint256(vm.load(address(c0), bytes32(uint256(keccak256(abi.encode(p_msg_sender, uint256(2)))) + 1)));
-    _post_user_stats_msg_sender__lien = uint256(vm.load(address(c0), bytes32(uint256(keccak256(abi.encode(p_msg_sender, uint256(2)))) + 1)));
-    _post_user_stats_msg_sender__total_in_all_tranches = uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(2)))));
-    _post_address_migration_msg_sender = (uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(6))))) & 1461501637330902918203684832716283019655932542975);
-    _post_v1_migrated_msg_sender = (uint256(vm.load(address(c0), keccak256(abi.encode(p_msg_sender, uint256(1))))) & 255);
-    assertEq(_post_v1_address, _pre_v1_address, "v1_address: post == pre");
-    assertEq(_post_user_stats_134_msg_sender__lien, _pre_user_stats_134_msg_sender__lien, "user_stats$134[msg.sender].lien: post == pre");
-    assertEq(_post_user_stats_msg_sender__lien, _pre_user_stats_msg_sender__lien, "user_stats[msg.sender].lien: post == pre");
-    assertEq(_post_user_stats_msg_sender__total_in_all_tranches, _pre_user_stats_msg_sender__total_in_all_tranches, "user_stats[msg.sender].total_in_all_tranches: post == pre");
-    assertEq(_post_address_migration_msg_sender, _pre_address_migration_msg_sender, "address_migration[msg.sender]: post == pre");
-    assertEq(_post_v1_migrated_msg_sender, _pre_v1_migrated_msg_sender, "v1_migrated[msg.sender]: post == pre");
+    uint256 _post_controller = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
+    uint256 _post_permitted_issuance_264_new_controller = uint256(vm.load(address(c0), keccak256(abi.encode(new_controller, uint256(8)))));
+    uint256 _post_permitted_issuance_new_controller = uint256(vm.load(address(c0), keccak256(abi.encode(new_controller, uint256(8)))));
+    assertEq(_post_controller, _pre_controller, "controller: post == pre");
+    assertEq(_post_permitted_issuance_264_new_controller, _pre_permitted_issuance_264_new_controller, "permitted_issuance$264[new_controller]: post == pre");
+    assertEq(_post_permitted_issuance_new_controller, _pre_permitted_issuance_new_controller, "permitted_issuance[new_controller]: post == pre");
+    assertGe(_post_controller, _pre_controller, "controller: post >= pre");
+    assertLe(_post_controller, _pre_controller, "controller: post <= pre");
+    assertGe(_post_permitted_issuance_264_new_controller, _pre_permitted_issuance_264_new_controller, "permitted_issuance$264[new_controller]: post >= pre");
+    assertLe(_post_permitted_issuance_264_new_controller, _pre_permitted_issuance_264_new_controller, "permitted_issuance$264[new_controller]: post <= pre");
+    assertGe(_post_permitted_issuance_new_controller, _pre_permitted_issuance_new_controller, "permitted_issuance[new_controller]: post >= pre");
+    assertLe(_post_permitted_issuance_new_controller, _pre_permitted_issuance_new_controller, "permitted_issuance[new_controller]: post <= pre");
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    assertFalse(_put_ok, "path enc=14p1 exits through a REVERT: the call must fail on the unmodified contract");
+    assertFalse(_put_ok, "path enc=6p1 exits through a REVERT: the call must fail on the unmodified contract");
   }
 
 
   
-  function test_put_TokenVesting_stake_tokens_path14p1(address p_msg_sender, uint256 amount, uint256 vega_public_key) public {
-    _veriput_parameterized(p_msg_sender, amount, vega_public_key);
+  function test_put_TokenVesting_set_controller_path6p1(address p_msg_sender, address new_controller) public {
+    _veriput_parameterized(p_msg_sender, new_controller);
     
-    { TokenVestingCovTest_TokenVesting_stake_tokens_concrete14p1__basis_root__W _veriput_w = new TokenVestingCovTest_TokenVesting_stake_tokens_concrete14p1__basis_root__W(); _veriput_w.setUp(); _veriput_w._w_test_cov_1(); }
+    { TokenVestingCovTest_TokenVesting_set_controller_concrete6p1__basis_root__W _veriput_w = new TokenVestingCovTest_TokenVesting_set_controller_concrete6p1__basis_root__W(); _veriput_w.setUp(); _veriput_w._w_test_cov_1(); }
 }
 }
 
@@ -173,7 +151,7 @@ contract TokenVestingCovTest_TokenVesting_stake_tokens_put14p1 is Test {
 
 
 
-contract TokenVestingCovTest_TokenVesting_stake_tokens_concrete14p1__basis_root__W is Test {
+contract TokenVestingCovTest_TokenVesting_set_controller_concrete6p1__basis_root__W is Test {
   TokenVesting c0;
   function setUp() public {
     c0 = new TokenVesting();
@@ -186,33 +164,33 @@ contract TokenVestingCovTest_TokenVesting_stake_tokens_concrete14p1__basis_root_
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.controller did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(3))));
       _w = (_w & ~uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | ((uint256(0) & 115792089237316195423570985008687907853269984665640564039457584007913129639935) << 0);
-
+      vm.store(address(c0), bytes32(uint256(3)), bytes32(_w));
     }
-
+    assertEq(uint256(vm.load(address(c0), bytes32(uint256(3)))), uint256(0), "entry pin state.total_locked did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(0))));
       _w = (_w & ~uint256(372682917519380244141939632342652170012262798458880)) | ((uint256(1) & 255) << 160);
-
+      vm.store(address(c0), bytes32(uint256(0)), bytes32(_w));
     }
-
+    assertEq(((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 160) & 255), uint256(1), "entry pin state.tranche_count did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(4))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(4)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.v1_address did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     {
       uint256 _w = uint256(vm.load(address(c0), bytes32(uint256(5))));
       _w = (_w & ~uint256(1461501637330902918203684832716283019655932542975)) | ((uint256(0) & 1461501637330902918203684832716283019655932542975) << 0);
-
+      vm.store(address(c0), bytes32(uint256(5)), bytes32(_w));
     }
-
+    assertEq((uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975), uint256(0), "entry pin state.v2_address did NOT land: vm.store wrote a word the contract does not read back at this slot, so the test is not inside the certified region and every rung below is about a different state");
     
     
     vm.warp(115792089237316195423570985008687907853269984665640564039457584007913129639935);
@@ -223,22 +201,22 @@ contract TokenVestingCovTest_TokenVesting_stake_tokens_concrete14p1__basis_root_
     vm.prevrandao(uint256(0));
     vm.txGasPrice(0);
     vm.coinbase(address(uint160(0)));
-    vm.prank(address(uint160(0)), address(uint160(0)));
+    vm.prank(address(uint160(4294967295)), address(uint160(0)));
     bool _veriput_concrete_completed = false;
-    try c0.stake_tokens(uint256(0), bytes32(uint256(0))) {
+    try c0.set_controller(address(uint160(0))) {
       _veriput_concrete_completed = true;
     } catch {}
     assertFalse(_veriput_concrete_completed, "fixed witness call must revert");
     uint256 _veriput_fixed_state_controller_1 = (uint256(vm.load(address(c0), bytes32(uint256(0)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_controller_1, uint256(0), "fixed witness state");
     uint256 _veriput_fixed_state_total_locked_3 = uint256(vm.load(address(c0), bytes32(uint256(3))));
-
-    uint256 _veriput_fixed_state_tranche_count_4 = ((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 160) & 255);
-
-    uint256 _veriput_fixed_state_v1_address_5 = (uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975);
-
-    uint256 _veriput_fixed_state_v2_address_6 = (uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975);
-
+    assertEq(_veriput_fixed_state_total_locked_3, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_tranche_count_6 = ((uint256(vm.load(address(c0), bytes32(uint256(0)))) >> 160) & 255);
+    assertEq(_veriput_fixed_state_tranche_count_6, uint256(1), "fixed witness state");
+    uint256 _veriput_fixed_state_v1_address_8 = (uint256(vm.load(address(c0), bytes32(uint256(4)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_veriput_fixed_state_v1_address_8, uint256(0), "fixed witness state");
+    uint256 _veriput_fixed_state_v2_address_9 = (uint256(vm.load(address(c0), bytes32(uint256(5)))) & 1461501637330902918203684832716283019655932542975);
+    assertEq(_veriput_fixed_state_v2_address_9, uint256(0), "fixed witness state");
   }
   
   
