@@ -2,14 +2,14 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "debt",
       "n": 2,
       "value": 0
@@ -18,7 +18,7 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -27,7 +27,7 @@
       "args": [
         23202689223937563891661077111033385924631670600415578127363225265899388907988
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "isDefaulted",
       "n": 2,
       "value": 0
@@ -37,7 +37,7 @@
         10,
         false
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "setDirectRepay",
       "n": 3,
       "value": 0
@@ -46,7 +46,7 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -55,7 +55,7 @@
       "args": [
         363
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "isActive",
       "n": 2,
       "value": 0
@@ -64,7 +64,7 @@
       "args": [
         46416952476130626111561798897680388300560936463639796781069895402432276989004
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "claimDefaulted",
       "n": 3,
       "value": 0
@@ -73,7 +73,7 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -82,7 +82,7 @@
       "args": [
         100
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "getLoan",
       "n": 2,
       "value": 0
@@ -92,7 +92,7 @@
         10,
         false
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "setDirectRepay",
       "n": 3,
       "value": 0
@@ -101,7 +101,7 @@
   [
     {
       "args": [],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -110,7 +110,7 @@
       "args": [
         365
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "rescindRequest",
       "n": 2,
       "value": 0
@@ -120,7 +120,7 @@
         10,
         false
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "setDirectRepay",
       "n": 3,
       "value": 0
@@ -129,7 +129,7 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -141,14 +141,14 @@
         59426226485103754220343155441904637882528164292389246215572196004368364004934,
         100
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "requestLoan",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "collateral",
       "n": 3,
       "value": 0
@@ -157,26 +157,26 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00404"
+        "anonymous_hex_00027"
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "delegateVoting",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00023",
+        "anonymous_hex_00019",
         365
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "approveTransfer",
       "n": 3,
       "value": 0
@@ -185,7 +185,7 @@
   [
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -194,7 +194,7 @@
       "args": [
         6037363936610000000000000000000000000000000000000000000000000000
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "isActive",
       "n": 2,
       "value": 0
@@ -203,7 +203,7 @@
   [
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -213,7 +213,7 @@
         365,
         85573022731292056884932774622723397105354637609304544572891540895272095416620
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "repayLoan",
       "n": 2,
       "value": 0
@@ -223,7 +223,7 @@
         10,
         false
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "setDirectRepay",
       "n": 3,
       "value": 0
@@ -232,7 +232,7 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -241,7 +241,7 @@
       "args": [
         61098909292457226985795476889474654734749645411021366663185354873683693667068
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "newCollateralFor",
       "n": 2,
       "value": 0
@@ -250,14 +250,14 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "owner",
       "n": 2,
       "value": 0
@@ -267,7 +267,7 @@
         10,
         false
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "setDirectRepay",
       "n": 3,
       "value": 0
@@ -276,7 +276,7 @@
   [
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -285,7 +285,7 @@
       "args": [
         2
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "claimRepaid",
       "n": 2,
       "value": 0
@@ -294,14 +294,14 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "factory",
       "n": 2,
       "value": 0
@@ -311,7 +311,7 @@
         10,
         false
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "setDirectRepay",
       "n": 3,
       "value": 0
@@ -320,7 +320,7 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -329,7 +329,7 @@
       "args": [
         15
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "transferOwnership",
       "n": 2,
       "value": 0
@@ -338,7 +338,7 @@
   [
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -347,7 +347,7 @@
       "args": [
         7514755224329681676394356520966700209417162505338681014502314408499033205962
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getRequest",
       "n": 2,
       "value": 0
@@ -356,7 +356,7 @@
       "args": [
         2
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "claimRepaid",
       "n": 3,
       "value": 0
@@ -365,7 +365,7 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -376,7 +376,7 @@
         100,
         40380545668452083354392589433698632187191795754105506830186489143049173637971
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "interestFor",
       "n": 2,
       "value": 0
@@ -385,7 +385,7 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -395,7 +395,7 @@
         26073115575537060897389338055639914113448038183547087178053958740381457209059,
         112517257465947050635790497404036115194641038604570380413636332210033463270299
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "collateralFor",
       "n": 2,
       "value": 0
@@ -404,14 +404,14 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "collateral",
       "n": 2,
       "value": 0
@@ -420,7 +420,7 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -431,7 +431,7 @@
         true,
         false
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "clearRequest",
       "n": 2,
       "value": 0
@@ -440,7 +440,7 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -451,7 +451,7 @@
         false,
         false
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "clearRequest",
       "n": 2,
       "value": 0
@@ -463,7 +463,7 @@
         14730554952983910921732661790592935930102153761839871677878842736503509034180,
         9584090660445873998926962868470369384410462907212227875974039434380793334501
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "provideNewTermsForRoll",
       "n": 3,
       "value": 0
@@ -473,7 +473,7 @@
         10,
         false
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "setDirectRepay",
       "n": 4,
       "value": 0
@@ -482,7 +482,7 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -491,7 +491,7 @@
       "args": [
         32
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "rollLoan",
       "n": 2,
       "value": 0
@@ -502,7 +502,7 @@
         13,
         34
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "interestFor",
       "n": 3,
       "value": 0
@@ -512,7 +512,7 @@
         10,
         false
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "setDirectRepay",
       "n": 4,
       "value": 0
@@ -521,7 +521,7 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -531,7 +531,7 @@
         10,
         false
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "setDirectRepay",
       "n": 2,
       "value": 0
@@ -540,17 +540,17 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00023",
+        "anonymous_hex_00019",
         34
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "approveTransfer",
       "n": 2,
       "value": 0
@@ -559,7 +559,7 @@
       "args": [
         2
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "claimRepaid",
       "n": 3,
       "value": 0

@@ -11,19 +11,19 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new VulnerableTwoStep();
     }
 
     function test_ce_0_claimOwnership() public {
-        
+
 
         target.claimOwnership();
     }
     function test_ce_1_retrieve() public {
-        
+
 
         target.retrieve();
     }

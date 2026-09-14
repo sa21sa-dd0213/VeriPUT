@@ -2,14 +2,14 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "getSaleSupplyLeft",
       "n": 2,
       "value": 0
@@ -18,21 +18,21 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "getSaleEndTime",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "withdrawAllTokens",
       "n": 3,
       "value": 0
@@ -41,14 +41,14 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "withdrawAllTokens",
       "n": 2,
       "value": 0
@@ -57,21 +57,21 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "getSaleSupplyTotal",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "withdrawAllTokens",
       "n": 3,
       "value": 0
@@ -80,24 +80,24 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00404",
+        "anonymous_hex_00027",
         20
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "setReferrerBonusPercent",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "getETHWallet",
       "n": 3,
       "value": 0
@@ -106,7 +106,7 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -115,14 +115,14 @@
       "args": [
         106512574706718684763055984162001691456893483547389027044790069596121450069754
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "withdrawToken",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "getSaleSupplyLeft",
       "n": 3,
       "value": 0
@@ -131,21 +131,21 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "isSaleActive",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getSaleEndTime",
       "n": 3,
       "value": 0
@@ -154,21 +154,21 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "getTokenPrice",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "getSaleSupplyLeft",
       "n": 3,
       "value": 0
@@ -177,7 +177,7 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -186,7 +186,7 @@
       "args": [
         522
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "getWeiRaised",
       "n": 2,
       "value": 0
@@ -195,7 +195,7 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -206,14 +206,14 @@
         1,
         0
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "createSale",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "getSaleStartTime",
       "n": 3,
       "value": 0
@@ -222,7 +222,7 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -231,7 +231,7 @@
       "args": [
         20
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "setTokenPrice",
       "n": 2,
       "value": 0
@@ -240,16 +240,16 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00401"
+        "anonymous_hex_00026"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "setMasterReferrerWallet",
       "n": 2,
       "value": 0
@@ -258,7 +258,7 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -267,7 +267,7 @@
       "args": [
         0
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "setMaxBonusPercent",
       "n": 2,
       "value": 0
@@ -276,21 +276,21 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "getMaxBonusPercent",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "getSaleSupplyLeft",
       "n": 3,
       "value": 0
@@ -299,23 +299,23 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00401"
+        "anonymous_hex_00026"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "removeReferrer",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "getSaleSupplyLeft",
       "n": 3,
       "value": 0
@@ -324,24 +324,24 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00032",
+        "anonymous_hex_00020",
         7187778664082073404535128181907510776386348971620623673230612967334791515378
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "addReferrer",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "withdrawAllTokens",
       "n": 3,
       "value": 0
@@ -350,16 +350,16 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00019"
+        "anonymous_hex_00016"
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "getReferrerBonusPercent",
       "n": 2,
       "value": 0
@@ -368,14 +368,14 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getTokenPrice",
       "n": 2,
       "value": 0
@@ -383,10 +383,10 @@
     {
       "args": [
         0,
-        "address_00404",
-        "address_00410"
+        "anonymous_hex_00027",
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "purchaseTokens",
       "n": 3,
       "value": 1000000000000000000
@@ -395,14 +395,14 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "getSaleStartTime",
       "n": 2,
       "value": 0
@@ -411,23 +411,23 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00184"
+        "anonymous_hex_00022"
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "setETHWallet",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "withdrawAllTokens",
       "n": 3,
       "value": 0
@@ -436,23 +436,23 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00032"
+        "anonymous_hex_00020"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "isReferrer",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "getSaleSupplyLeft",
       "n": 3,
       "value": 0
@@ -461,28 +461,28 @@
   [
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getSaleEndTime",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "getSaleCount",
       "n": 3,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "getSaleStartTime",
       "n": 4,
       "value": 0

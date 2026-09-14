@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 STRONG_RECIPE_VERSION = "veriput-strong/30-free-state-coords"
 STRONG_PROBE_WITNESSES = 16
 STRONG_PROBE_LADDER_BUDGET = 8
@@ -34,14 +35,14 @@ STRONG_CERTIFY_ARGS = [
     "--skip-bracket",
     "--env-coord-disagreed",
     "--pin-agreed-establishable-env",
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
     "--pin-agreed-state",
     "--max-holes", str(STRONG_MAX_HOLES),
     "--max-region-pieces", str(STRONG_MAX_REGION_PIECES),
@@ -54,26 +55,26 @@ STRONG_CERTIFY_ARGS = [
     "--esbmc-arg=--path-cov-arith-resolve",
     "--esbmc-arg=--unwindsetname",
     "--esbmc-arg=_ESBMC_alloc_nested_2d:0:16,nondet_string:0:33",
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
     "--esbmc-arg=--extcall-nondet",
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     "--certify-esbmc-arg=--overflow-check",
     "--certify-esbmc-arg=--div-by-zero-check",
     "--certify-esbmc-arg=--path-cov-arith-resolve",

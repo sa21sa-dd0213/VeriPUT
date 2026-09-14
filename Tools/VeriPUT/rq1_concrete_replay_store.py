@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 from __future__ import annotations
 
 import hashlib
@@ -114,6 +115,11 @@ def replay_identity(row: dict) -> dict:
         "stage2_source": row.get("stage2_source") or record.get("stage2_source"),
         "stage2_witness_check": (row.get("stage2_witness_check")
                                  or record.get("stage2_witness_check")),
+
+
+
+
+
     }
 
 
@@ -246,8 +252,8 @@ def _entry_is_currently_not_generalized(entry: dict, put_keys: set[tuple]) -> bo
     origin = entry.get("origin") if isinstance(entry, dict) else None
     if not isinstance(origin, dict):
         return False
-    
-    
+
+
     key = _artifact_key(origin)
     if key in put_keys:
         return False
@@ -273,17 +279,17 @@ def _authenticated_put_basis_hashes(entry: dict, subject_dir: Path | None = None
     hashes = {
         str(put_origin["sha256"]): "authenticated-put-json-sha256",
     }
-    
-    
+
+
     rel_path = str(put_origin.get("path") or "")
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
     sibling = re.match(r"^(.*)__basis_concrete(?:__[A-Za-z0-9_]+)?/put\.json$", rel_path)
     if subject_dir is not None and sibling:
         put_path = subject_dir / (sibling.group(1) + "/put.json")
@@ -1487,13 +1493,13 @@ def _storage_slot_binding_errors(body: str,
         return ["storage-slot oracle is not an exact fixed assertEq"]
 
     semantic = re.sub(r"\s+", "", _semantic_solidity(body))
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     calls = list(
         re.finditer(
             r"(?<![A-Za-z0-9_$])(?:(try))?" + re.escape(receiver) + r"\." + re.escape(unit) +
@@ -1512,13 +1518,13 @@ def _storage_slot_binding_errors(body: str,
     if len(raw_low_level_calls) == len(semantic_low_level_calls) == 1:
         calls.extend(semantic_low_level_calls)
     if unit in ("fallback", "receive"):
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
         calls.extend(
             re.finditer(
                 r"address\(" + re.escape(receiver) + r"\)\.call(?:\{[^{}]*\})?\(", semantic))
@@ -1527,11 +1533,11 @@ def _storage_slot_binding_errors(body: str,
         return ["storage-slot oracle is not bound to exactly one selected target call"]
     call_end = semantic.find(";", calls[0].start())
     if calls[0].lastindex and calls[0].group(1) == "try":
-        
-        
-        
-        
-        
+
+
+
+
+
         call_open = semantic.find("(", calls[0].start() + len("try"))
         cursor = _matching_delimiter(semantic, call_open, "(", ")")
         cursor = -1 if cursor is None else cursor + 1
@@ -1920,8 +1926,8 @@ def invalidation_applies(case: str,
             retained_mtimes.append(Path(str(test.get("file") or "")).stat().st_mtime)
         except OSError:
             continue
-    
-    
+
+
     return not retained_mtimes or max(retained_mtimes) <= ledger_mtime
 
 
@@ -2105,11 +2111,11 @@ def persist_concrete_replay(subject_dir: Path,
     source_grounded_stage2 = identity.get("stage2_source") in {
         "source-grounded-manual-concrete-replay",
         "source_grounded_callable_recovery",
-        
-        
-        
-        
-        
+
+
+
+
+
         "source_constructor_revert_fallback",
     }
     if not source_grounded_stage2 and (not identity.get("path_function")
@@ -2174,7 +2180,7 @@ def persist_concrete_replay(subject_dir: Path,
             original_source = source_test.read_text(errors="replace")
             recovered_source = recovered_from.read_text(errors="replace")
             recovery_errors = []
-            
+
             injected = "".join(
                 _storage_slot_statements(oracle)[0] + _storage_slot_statements(oracle)[1]
                 for oracle in storage_oracles)
@@ -2402,8 +2408,8 @@ def persistence_coverage(valid_tests: list[dict],
     puts = [row for row in valid if row.get("kind") == "put"]
     concretes = [row for row in valid if row.get("kind") == "concrete"]
     unrecognized_valid_count = len(valid) - len(puts) - len(concretes)
-    
-    
+
+
     all_put_keys = {_artifact_key(row) for row in valid if _physical_test_kind(row) == "put"}
     put_keys = {
         _artifact_key(row)

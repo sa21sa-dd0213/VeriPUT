@@ -2,20 +2,20 @@
   [
     {
       "args": [
-        "address_00401",
-        "address_003125257726b614e4c4b63546246"
+        "anonymous_hex_00026",
+        "0x6e4f794c6e7a6a7954514f754c6e47637854784d5257726b614e4c4b63546246"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_001866653746750784f49666d4270",
-        "address_00036"
+        "0x544757645620475a514d6f726d4c796278595a4a6653746750784f49666d4270",
+        "anonymous_hex_00021"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "register",
       "n": 2,
       "value": 0

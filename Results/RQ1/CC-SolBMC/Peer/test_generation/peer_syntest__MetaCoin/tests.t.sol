@@ -11,24 +11,24 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new MetaCoin();
     }
 
     function test_ce_0_sendCoin() public {
-        
+
 
         target.sendCoin(address(uint160(0)), 39);
     }
     function test_ce_1_sendCoin() public {
-        
+
 
         target.sendCoin(address(uint160(0)), 0);
     }
     function test_ce_2_sendCoin() public {
-        
+
 
         target.sendCoin(address(uint160(0)), 9001);
     }

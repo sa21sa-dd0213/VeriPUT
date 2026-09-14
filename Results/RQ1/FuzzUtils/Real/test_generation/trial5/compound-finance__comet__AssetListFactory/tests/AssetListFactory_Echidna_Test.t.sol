@@ -15,8 +15,8 @@ contract AssetListFactory_Echidna_Test is Test {
     function setUp() public {
         target = new AssetListFactory();
     }
-    
-    function test_auto_createAssetList_0() public { 
+
+    function test_auto_createAssetList_0() public {
         CometConfiguration.AssetConfig[] memory dynCometConfiguration.AssetConfigArr_0 = new CometConfiguration.AssetConfig[](31);
 		dynCometConfiguration.AssetConfigArr_0[0] = CometConfiguration.AssetConfig(0x00000000000000000000000000000000FFFFfFFF,0x0000000000000000000000000000000000000000,uint8(21),uint64(23),uint64(6053969848800071944),uint64(13757525801414485603),uint128(288098268060475324325000584487806694851));
 		dynCometConfiguration.AssetConfigArr_0[1] = CometConfiguration.AssetConfig(0x00000000000000000000000000000001fffffffE,0x0000000000000000000000000000000000030000,uint8(245),uint64(8212297364013860585),uint64(11541365804202278986),uint64(7644203789748870633),uint128(4));
@@ -2436,9 +2436,9 @@ contract AssetListFactory_Echidna_Test is Test {
         vm.prank(0x0000000000000000000000000000000000020000);
         target.createAssetList(dynCometConfiguration.AssetConfigArr_0);
     }
-    
-    
-    function test_auto_createAssetList_1() public { 
+
+
+    function test_auto_createAssetList_1() public {
         CometConfiguration.AssetConfig[] memory dynCometConfiguration.AssetConfigArr_0 = new CometConfiguration.AssetConfig[](31);
 		dynCometConfiguration.AssetConfigArr_0[0] = CometConfiguration.AssetConfig(0x00000000000000000000000000000000FFFFfFFF,0x0000000000000000000000000000000000000000,uint8(21),uint64(23),uint64(6053969848800071944),uint64(13757525801414485603),uint128(288098268060475324325000584487806694851));
 		dynCometConfiguration.AssetConfigArr_0[1] = CometConfiguration.AssetConfig(0x00000000000000000000000000000001fffffffE,0x0000000000000000000000000000000000030000,uint8(245),uint64(8212297364013860585),uint64(11541365804202278986),uint64(7644203789748870633),uint128(4));
@@ -5469,9 +5469,9 @@ contract AssetListFactory_Echidna_Test is Test {
         vm.prank(0x0000000000000000000000000000000000030000);
         target.createAssetList(dynCometConfiguration.AssetConfigArr_0);
     }
-    
-    
-    function test_auto_createAssetList_2() public { 
+
+
+    function test_auto_createAssetList_2() public {
         CometConfiguration.AssetConfig[] memory dynCometConfiguration.AssetConfigArr_0 = new CometConfiguration.AssetConfig[](31);
 		dynCometConfiguration.AssetConfigArr_0[0] = CometConfiguration.AssetConfig(0x00000000000000000000000000000000FFFFfFFF,0x0000000000000000000000000000000000000000,uint8(21),uint64(23),uint64(6053969848800071944),uint64(13757525801414485603),uint128(288098268060475324325000584487806694851));
 		dynCometConfiguration.AssetConfigArr_0[1] = CometConfiguration.AssetConfig(0x00000000000000000000000000000001fffffffE,0x0000000000000000000000000000000000030000,uint8(245),uint64(8212297364013860585),uint64(11541365804202278986),uint64(7644203789748870633),uint128(4));
@@ -8226,9 +8226,9 @@ contract AssetListFactory_Echidna_Test is Test {
         vm.prank(0x0000000000000000000000000000000000030000);
         target.createAssetList(dynCometConfiguration.AssetConfigArr_0);
     }
-    
-    
-    function test_auto_createAssetList_3() public { 
+
+
+    function test_auto_createAssetList_3() public {
         CometConfiguration.AssetConfig[] memory dynCometConfiguration.AssetConfigArr_0 = new CometConfiguration.AssetConfig[](31);
 		dynCometConfiguration.AssetConfigArr_0[0] = CometConfiguration.AssetConfig(0x00000000000000000000000000000000FFFFfFFF,0x0000000000000000000000000000000000000000,uint8(21),uint64(23),uint64(6053969848800071944),uint64(13757525801414485603),uint128(288098268060475324325000584487806694851));
 		dynCometConfiguration.AssetConfigArr_0[1] = CometConfiguration.AssetConfig(0x00000000000000000000000000000001fffffffE,0x0000000000000000000000000000000000030000,uint8(245),uint64(8212297364013860585),uint64(11541365804202278986),uint64(7644203789748870633),uint128(4));
@@ -10969,7 +10969,5 @@ contract AssetListFactory_Echidna_Test is Test {
         vm.prank(0x0000000000000000000000000000000000030000);
         target.createAssetList(dynCometConfiguration.AssetConfigArr_0);
     }
-    
-}
 
-    
+}

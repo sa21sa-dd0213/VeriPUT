@@ -2,21 +2,21 @@
   [
     {
       "args": [
-        "address_00184"
+        "anonymous_hex_00022"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00404",
-        "address_00032",
-        "address_00410",
+        "anonymous_hex_00027",
+        "anonymous_hex_00020",
+        "anonymous_hex_00028",
         false
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "claimTo",
       "n": 2,
       "value": 0
@@ -25,19 +25,19 @@
   [
     {
       "args": [
-        "address_00032"
+        "anonymous_hex_00020"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00398",
-        "address_00184"
+        "anonymous_hex_00025",
+        "anonymous_hex_00022"
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "getRewardOwed",
       "n": 2,
       "value": 0
@@ -46,30 +46,30 @@
   [
     {
       "args": [
-        "address_00032"
+        "anonymous_hex_00020"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00401",
-        "address_00021",
+        "anonymous_hex_00026",
+        "anonymous_hex_00017",
         3687638616209724946033150629940299381883153654486186017528001204371947526603
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "withdrawToken",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00398",
-        "address_00184"
+        "anonymous_hex_00025",
+        "anonymous_hex_00022"
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "getRewardOwed",
       "n": 3,
       "value": 0
@@ -78,20 +78,20 @@
   [
     {
       "args": [
-        "address_00404"
+        "anonymous_hex_00027"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00401",
-        "address_00036",
+        "anonymous_hex_00026",
+        "anonymous_hex_00021",
         true
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "claim",
       "n": 2,
       "value": 0
@@ -100,18 +100,18 @@
   [
     {
       "args": [
-        "address_00023"
+        "anonymous_hex_00019"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00036"
+        "anonymous_hex_00021"
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "transferGovernor",
       "n": 2,
       "value": 0
@@ -120,20 +120,20 @@
   [
     {
       "args": [
-        "address_00032"
+        "anonymous_hex_00020"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00398",
-        "address_00021",
+        "anonymous_hex_00025",
+        "anonymous_hex_00017",
         25322800358685107543235516687752060370503033412594663525139328934603026095036
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "setRewardConfigWithMultiplier",
       "n": 2,
       "value": 0
@@ -142,19 +142,19 @@
   [
     {
       "args": [
-        "address_00398"
+        "anonymous_hex_00025"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00019",
-        "address_00398"
+        "anonymous_hex_00016",
+        "anonymous_hex_00025"
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "setRewardConfig",
       "n": 2,
       "value": 0

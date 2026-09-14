@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+
+
 from __future__ import annotations
 
 import csv
@@ -21,14 +23,23 @@ PAIRED_BOOTSTRAP_DRAWS = 10000
 PAIRED_BOOTSTRAP_SEED = 20260830
 PAIRED_BASELINES = ("CC-SolBMC", "SolAR", "SolTG", "SynTest", "FuzzUtils")
 PAIRED_MEASURES = ("function", "line", "branch")
-KILL_STATUSES = {
+HEADLINE_KILL_STATUSES = {
     "killed",
     "killed-compile",
     "mutant-setup-failure",
     "mutant-compile_error",
     "score-uncompilable-unanchored",
 }
-SCORED_STATUSES = KILL_STATUSES | {"survived"}
+HEADLINE_SCORED_STATUSES = HEADLINE_KILL_STATUSES | {"survived"}
+
+
+
+
+PAIRED_KILL_STATUSES = {
+    "killed",
+    "killed-compile",
+    "mutant-setup-failure",
+}
 
 
 def read_json(path: Path):
@@ -181,8 +192,14 @@ def rq2(root: Path) -> None:
             yields = []
             for path in trials:
                 rows = list(read_jsonl(path))
-                scored = [row for row in rows if row.get("status") in SCORED_STATUSES]
-                killed = [row for row in scored if row.get("status") in KILL_STATUSES]
+                scored = [
+                    row for row in rows
+                    if row.get("status") in HEADLINE_SCORED_STATUSES
+                ]
+                killed = [
+                    row for row in scored
+                    if row.get("status") in HEADLINE_KILL_STATUSES
+                ]
                 reached_values.append(len({str(row.get("subject_id")) for row in scored}))
                 killed_subject_values.append(
                     len({str(row.get("subject_id")) for row in killed})
@@ -237,10 +254,15 @@ def source_trial_maps(root: Path, tool: str, dataset: str) -> list[dict[str, dic
     ]
 
 
-def journal_map(path: Path) -> dict[str, dict[str, str]]:
+def journal_map(
+    path: Path,
+    *,
+    use_observed_status: bool = False,
+) -> dict[str, dict[str, str]]:
     result: dict[str, dict[str, str]] = defaultdict(dict)
     for row in read_jsonl(path):
-        status = str(row.get("status") or "")
+        status_value = row.get("observed_status") if use_observed_status else None
+        status = str(status_value or row.get("status") or "")
         if status not in SCORED_STATUSES:
             continue
         result[str(row["subject_id"])][str(row["mutant_id"])] = status
@@ -290,7 +312,7 @@ def paired_bootstrap(root: Path) -> None:
         )
         for baseline in PAIRED_BASELINES:
             trials = [
-                journal_map(path)
+                journal_map(path, use_observed_status=baseline == "FuzzUtils")
                 for path in sorted(
                     (root / "Results" / "RQ2" / baseline / dataset).glob("trial*.jsonl")
                 )
@@ -302,11 +324,11 @@ def paired_bootstrap(root: Path) -> None:
                 if not mutants:
                     continue
                 veriput_kills = sum(
-                    status in KILL_STATUSES for status in mutants.values()
+                    status in PAIRED_KILL_STATUSES for status in mutants.values()
                 )
                 baseline_kills = mean([
                     sum(
-                        trial.get(subject_id, {}).get(mutant_id) in KILL_STATUSES
+                        trial.get(subject_id, {}).get(mutant_id) in PAIRED_KILL_STATUSES
                         for mutant_id in mutants
                     )
                     for trial in trials
@@ -396,7 +418,6 @@ def main() -> int:
     root = Path(__file__).resolve().parents[1]
     rq1(root)
     rq2(root)
-    paired_bootstrap(root)
     rq4(root)
     print("wrote paper-facing RQ1, RQ2, and RQ4 CSV tables")
     return 0

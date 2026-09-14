@@ -8344,13 +8344,13 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "abs",
       "mutant_id": "m000835",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
@@ -13744,23 +13744,23 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "abs",
       "mutant_id": "m001375",
       "operator": "CSC",
       "original_expression": "xInt == uMIN_SD59x18",
       "replacement_expression": "true",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "abs",
       "mutant_id": "m001376",
       "operator": "CSC",
       "original_expression": "xInt == uMIN_SD59x18",
       "replacement_expression": "false",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",

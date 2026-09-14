@@ -11,19 +11,19 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new DefaultReverseRegistrar(address(this));
     }
 
     function test_ce_0_renounceOwnership() public {
-        
+
 
         target.renounceOwnership();
     }
     function test_ce_1_transferOwnership() public {
-        
+
 
         target.transferOwnership(address(uint160(0)));
     }

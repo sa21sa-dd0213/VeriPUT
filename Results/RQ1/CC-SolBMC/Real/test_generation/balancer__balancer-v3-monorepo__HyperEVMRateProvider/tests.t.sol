@@ -11,14 +11,14 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new HyperEVMRateProvider(0, 0);
     }
 
     function test_ce_0_getRate() public {
-        
+
 
         target.getRate();
     }

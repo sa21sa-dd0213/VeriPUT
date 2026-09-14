@@ -9,6 +9,6 @@ contract Cr5_Test is Test {
 	}
 	function test_Cr5_0() public {
 		vm.prank(0x4f22562ef5F89000F00000000000000000000000);
-		cr50.f( false, 0); 
+		cr50.f( false, 0);
 	}
 }

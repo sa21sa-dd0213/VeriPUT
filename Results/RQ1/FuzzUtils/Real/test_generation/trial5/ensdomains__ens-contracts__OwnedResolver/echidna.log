@@ -7,13 +7,13 @@ Loaded 0 transaction sequences from corpus/coverage
 Saved reproducer to corpus/coverage/1367761411519450610.txt
 [Worker 0] Test setDNSRecords(bytes32,bytes) falsified!
   Call sequence:
-OwnedResolver.setAddr("\b\172>\DC4\254qp\198\150R\193e3\158\169Ore\237H\228\NUL\SO\255K\246\237\194y\155\225U",115792089237316195423570985008687907853269984665640564039457584007913129639934,"Ownable: caller is not the owner") from: address_00010 Time delay: 525476 seconds Block delay: 45259
-OwnedResolver.setText("\236\222\246QJ\212]\148:\NULOI`\203\r\US\183T\196\164:\195nx\251>\151\&2\153\STXe4","supportsInterface(byte4s)","Owable: caller is not the owner") from: address_00008 Time delay: 440100 seconds Block delay: 4798
-OwnedResolver.setAddr("D\196\190\225NvK3q\SYN\231\160\155\132\203\185n\202t\bz\193\195\212\131\FS\186{\216\183\&2Q",0x20000) from: address_00010 Time delay: 16802 seconds Block delay: 17000
-OwnedResolver.setPubkey("Ownable: caller is not te ownerN","\243$\239\129oZ\233%o\210\viU\195O\162\154\DC4}\165+\225\222MP@&\241(\144\193\&5","\n\ETX\146\253\171R3\141\SOH\DEL\249S`\200uz\148B\179\ETX\174\247k~\148\181\180\GS\155\r{\152") from: address_00008 Time delay: 519847 seconds Block delay: 30011
-OwnedResolver.setInterface("\EOT\169\149\185\&4~6\166\167\136\189-\187\144\202\252V\bjQ\185\&9aX\238\GS\183\203\ETB\234&!","\135\129\170\172",0x1fffffffe) from: address_00009 Time delay: 34 seconds Block delay: 5019
-OwnedResolver.setZonehash("supprtsInterface(bytes4)\NUL\NUL\NUL\NUL\NUL\NUL\NUL\182","Ownable: new owner is the zero address") from: address_00010 Time delay: 511822 seconds Block delay: 57684
-OwnedResolver.setDNSRecords("\249\222\NAK\145q\170\128w\203M\129Y\255\245>F\135j\137w\159\b\208g\n\DEL\SO\219\217\203\182\137",")\205b\234Ownable: caller is not the owner\251\ETX>\179\227\226\SUB#\133S\157\153\219#\131\159*\177\GSDz\174\194\236e\132 \202zB#\230supportsInterface(bytes4)\NUL\NUL\NUL\NUL\NUL\NUL\NUL") from: address_00010 Time delay: 289103 seconds Block delay: 240
+OwnedResolver.setAddr("\b\172>\DC4\254qp\198\150R\193e3\158\169Ore\237H\228\NUL\SO\255K\246\237\194y\155\225U",115792089237316195423570985008687907853269984665640564039457584007913129639934,"Ownable: caller is not the owner") from: anonymous_hex_00010 Time delay: 525476 seconds Block delay: 45259
+OwnedResolver.setText("\236\222\246QJ\212]\148:\NULOI`\203\r\US\183T\196\164:\195nx\251>\151\&2\153\STXe4","supportsInterface(byte4s)","Owable: caller is not the owner") from: anonymous_hex_00008 Time delay: 440100 seconds Block delay: 4798
+OwnedResolver.setAddr("D\196\190\225NvK3q\SYN\231\160\155\132\203\185n\202t\bz\193\195\212\131\FS\186{\216\183\&2Q",0x20000) from: anonymous_hex_00010 Time delay: 16802 seconds Block delay: 17000
+OwnedResolver.setPubkey("Ownable: caller is not te ownerN","\243$\239\129oZ\233%o\210\viU\195O\162\154\DC4}\165+\225\222MP@&\241(\144\193\&5","\n\ETX\146\253\171R3\141\SOH\DEL\249S`\200uz\148B\179\ETX\174\247k~\148\181\180\GS\155\r{\152") from: anonymous_hex_00008 Time delay: 519847 seconds Block delay: 30011
+OwnedResolver.setInterface("\EOT\169\149\185\&4~6\166\167\136\189-\187\144\202\252V\bjQ\185\&9aX\238\GS\183\203\ETB\234&!","\135\129\170\172",0x1fffffffe) from: anonymous_hex_00009 Time delay: 34 seconds Block delay: 5019
+OwnedResolver.setZonehash("supprtsInterface(bytes4)\NUL\NUL\NUL\NUL\NUL\NUL\NUL\182","Ownable: new owner is the zero address") from: anonymous_hex_00010 Time delay: 511822 seconds Block delay: 57684
+OwnedResolver.setDNSRecords("\249\222\NAK\145q\170\128w\203M\129Y\255\245>F\135j\137w\159\b\208g\n\DEL\SO\219\217\203\182\137",")\205b\234Ownable: caller is not the owner\251\ETX>\179\227\226\SUB#\133S\157\153\219#\131\159*\177\GSDz\174\194\236e\132 \202zB#\230supportsInterface(bytes4)\NUL\NUL\NUL\NUL\NUL\NUL\NUL") from: anonymous_hex_00010 Time delay: 289103 seconds Block delay: 240
 
 Saved reproducer to corpus/reproducers-unshrunk/6331004421334578333.txt
 [Worker 0] New coverage: 5031 instr, 1 contracts, 2 seqs in corpus

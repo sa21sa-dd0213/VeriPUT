@@ -2,14 +2,14 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "check",
       "n": 2,
       "value": 0

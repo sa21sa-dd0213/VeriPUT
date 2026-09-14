@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 from __future__ import annotations
 
 import json
@@ -633,8 +634,8 @@ def enumerate_subject_units(subject: PreparedSubject) -> UnitEnumeration:
                            f"{ast_path}: matching AST ids {ids}")
     target = target_matches[0]
 
-    
-    
+
+
     target_id = target.get("id")
     ordered_ids = [
         cid for cid in (target.get("linearizedBaseContracts") or [target_id]) if cid in contracts
@@ -673,8 +674,8 @@ def enumerate_subject_units(subject: PreparedSubject) -> UnitEnumeration:
                         tuple(getter_info.get("parameter_types") or ()),
                     )
                 if getter_sig is not None:
-                    
-                    
+
+
                     seen_signatures.add(getter_sig)
                 skipped.append({
                     "contract": owner,
@@ -718,12 +719,10 @@ def subject_dirs(benchmark: str, root: str | None = None):
         if benchmark not in KNOWN_SUBJECT_ROOTS:
             raise SubjectError(f"unknown subject benchmark {benchmark!r}; known: " +
                                ", ".join(sorted(KNOWN_SUBJECT_ROOTS)))
-        base = next((r for r in subject_roots(benchmark) if r.is_dir()),
-                    KNOWN_SUBJECT_ROOTS[benchmark])
+        base = KNOWN_SUBJECT_ROOTS[benchmark]
     if not base.is_dir():
         raise SubjectError(f"subject root does not exist: {base}")
-    dirs = sorted(p for p in base.iterdir() if (p / "meta.json").exists())
-    return dirs
+    return sorted(p for p in base.iterdir() if (p / "meta.json").exists())
 
 
 def _solc_cmd(subject: PreparedSubject) -> list[str]:

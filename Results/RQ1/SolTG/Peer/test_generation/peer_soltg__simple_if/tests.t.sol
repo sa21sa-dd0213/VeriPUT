@@ -11,10 +11,10 @@ contract Csi1_Test is Test {
 	}
 	function test_Csi1_0() public {
 		vm.prank(0x2A89c3f42c9810E1f00000000000000000000000);
-		csi10.simple_if( 0); 
+		csi10.simple_if( 0);
 	}
 	function test_Csi1_1() public {
 		vm.prank(0x4DFB135c5E6CBa59c00000000000000000000000);
-		csi11.simple_if( 5); 
+		csi11.simple_if( 5);
 	}
 }

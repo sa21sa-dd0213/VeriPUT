@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 from __future__ import annotations
 
 import argparse
@@ -14,10 +15,10 @@ ROOT = SCRIPT_DIR.parents[2]
 CERTIFY_ALL = SCRIPT_DIR / "certify_all.py"
 sys.path.insert(0, str(SCRIPT_DIR))
 sys.path.insert(0, str(ROOT / "scripts"))
-from solidity_path_generalise import direct_recursive_helpers_in_unit_closure  
-from solidity_ast_dependencies import path_function_artifact_suffix  
-from veriput_path_guard import ensure_path_not_protected  
-from veriput_recipe import STRONG_RECIPE_VERSION, strong_certify_args  
+from solidity_path_generalise import direct_recursive_helpers_in_unit_closure
+from solidity_ast_dependencies import path_function_artifact_suffix
+from veriput_path_guard import ensure_path_not_protected
+from veriput_recipe import STRONG_RECIPE_VERSION, strong_certify_args
 
 DEFAULT_TIMEOUT_S = 600
 DEFAULT_RUN_TIMEOUT_S = 60
@@ -227,7 +228,7 @@ def default_workdir_root(cert_out: str,
     if cert_out:
         return str(Path(cert_out).expanduser().resolve().parent / f"certify-work-{suffix}")
     recipe = STRONG_RECIPE_VERSION.replace("/", "_")
-    return str(Path(".veriput-work") / "certify" / recipe / suffix)
+    return str(Path.cwd() / ".veriput-work" / recipe / suffix)
 
 
 def budgeted_certify_argv(argv: list[str],
@@ -416,15 +417,15 @@ def _unit_cost_rank(unit: str, unit_info: dict | None) -> tuple[int, int, int]:
     else:
         tier = 30
     if unit_info.get("delegating_wrapper"):
-        
-        
-        
-        
+
+
+
+
         tier += 20
     if mutability == "payable":
         tier += 10
-    
-    
+
+
     return (tier, int(unit_info.get("internal_call_count") or 0), params, returns)
 
 
@@ -686,13 +687,13 @@ def _ast_unit_infos(row: dict, subject: dict, unit: str, templates: list[dict]) 
                 "delegating_wrapper": _is_single_return_call(declaration),
                 "internal_call_count": _internal_call_count(declaration, declarations_by_id),
             })
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
             owner_name = str(owner.get("name") or "")
             if owner_name and owner_name != str(subject.get("contract") or ""):
                 info["inherited_from_contract"] = owner_name
@@ -791,11 +792,11 @@ def build_schedule(manifest: dict,
                 continue
             expanded_names.add(unit)
             matches = infos.get(unit) or [None]
-            
-            
-            
-            
-            
+
+
+
+
+
             if matches != [None]:
                 matches = _ast_unit_infos(row, subject, unit, matches)
             if len(matches) > 1 and not all(

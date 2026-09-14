@@ -11,14 +11,14 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new Csi5();
     }
 
     function test_ce_0_check() public {
-        
+
 
         target.check();
     }

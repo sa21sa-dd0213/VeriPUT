@@ -2,9 +2,9 @@
   [
     {
       "args": [
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -13,7 +13,7 @@
       "args": [
         256
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "shuffledGateways",
       "n": 2,
       "value": 0

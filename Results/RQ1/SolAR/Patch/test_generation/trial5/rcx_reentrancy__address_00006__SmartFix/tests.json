@@ -1,0 +1,140 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "SetLogFile",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        77452776889704753371595952885135554722304045866830039784315936429130039417852
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "Collect",
+      "n": 2,
+      "value": 1000000000000000000
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        5
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "SetMinSum",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        77452776889704753371595952885135554722304045866830039784315936429130039417852
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "Collect",
+      "n": 3,
+      "value": 1000000000000000000
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "Deposit",
+      "n": 2,
+      "value": 182975133173944906
+    },
+    {
+      "args": [
+        66430880541045464564875460477309374244376425339005868685914913146325559908348
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "Collect",
+      "n": 3,
+      "value": 11797777688185977
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "Initialized",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        77452776889704753371595952885135554722304045866830039784315936429130039417852
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "Collect",
+      "n": 3,
+      "value": 1000000000000000000
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "Deposit",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "SetLogFile",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

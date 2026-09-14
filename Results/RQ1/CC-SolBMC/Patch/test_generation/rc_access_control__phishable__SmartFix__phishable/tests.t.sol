@@ -11,14 +11,14 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new Phishable(address(this));
     }
 
     function test_ce_0_withdrawAll() public {
-        
+
 
         target.withdrawAll(address(uint160(0)));
     }

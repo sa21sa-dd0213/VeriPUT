@@ -2,17 +2,17 @@
   [
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00019",
+        "anonymous_hex_00016",
         10608792017667314690778250916710254467638662265619761022932806927196839459983
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "sendCoin",
       "n": 2,
       "value": 0

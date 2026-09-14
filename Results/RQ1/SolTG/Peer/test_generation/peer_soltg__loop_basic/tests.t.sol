@@ -9,6 +9,6 @@ contract Simplelb_Test is Test {
 	}
 	function test_Simplelb_0() public {
 		vm.prank(0x530E91F903881075000000000000000000000000);
-		simplelb0.f( 1); 
+		simplelb0.f( 1);
 	}
 }

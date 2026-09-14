@@ -27,15 +27,15 @@ contract BaseBulker_Test is Test {
 	}
 	function test_BaseBulker_0() public {
 		vm.prank(0x1140Db85A26D5737a00000000000000000000000);
-		cometmaininterface0.transferAdmin( 1); 
+		cometmaininterface0.transferAdmin( 1);
 	}
 	function test_BaseBulker_1() public {
 		vm.prank(0x1000000000000000000000000000000000000000);
-		cometmaininterface1.transferAdmin( 1); 
+		cometmaininterface1.transferAdmin( 1);
 	}
 	function test_BaseBulker_2() public {
 		vm.prank(0x53285FA72609E857200000000000000000000000);
-		cometmaininterface2.transferAdmin( 0); 
+		cometmaininterface2.transferAdmin( 0);
 	}
 	function test_BaseBulker_3() public {
 	}

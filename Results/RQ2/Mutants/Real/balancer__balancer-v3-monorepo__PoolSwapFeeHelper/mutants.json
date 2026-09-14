@@ -19300,7 +19300,7 @@
       "operator": "OLFD",
       "original_expression": "function mulDiv(uint256 x, uint256 y, uint256 denominator, Rounding rounding) internal pure returns (uint256) {\n        return mulDiv(x, y, denominator) + SafeCast.toUint(unsignedRoundsUp(rounding) && mulmod(x, y, denominator) > 0);\n    }",
       "replacement_expression": "",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "failed",

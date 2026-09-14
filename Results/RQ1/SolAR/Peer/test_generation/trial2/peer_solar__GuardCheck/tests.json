@@ -2,16 +2,16 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00023"
+        "anonymous_hex_00019"
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "donate",
       "n": 2,
       "value": 111817089243421002

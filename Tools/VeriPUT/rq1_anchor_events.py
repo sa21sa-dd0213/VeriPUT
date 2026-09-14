@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 from __future__ import annotations
 
 import argparse
@@ -332,8 +333,8 @@ def indexed_topic(abi_type: str, literal: str) -> str:
         return f"bytes32(uint256(int256({literal})))"
     if re.fullmatch(r"bytes[0-9]+", abi_type):
         return f"bytes32({literal})"
-    
-    
+
+
     raise ValueError(f"indexed event type {abi_type!r} needs unsupported in-place encoding")
 
 
@@ -631,12 +632,12 @@ def inject_event_oracles(source: str, test_name: str, unit: str,
             if line not in seen:
                 assertion_lines.append(indent + line)
                 seen.add(line)
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     record_prefix = (body[:statement_start] + indent.lstrip("\n")
                      + "vm.recordLogs();\n")
     after = ("\n" + indent + "Vm.Log[] memory _veriputLogs = vm.getRecordedLogs();\n"
@@ -690,7 +691,7 @@ def recover_entry(entry: dict[str, Any], ast_paths: list[Path]) -> dict[str, Any
     raw_identity = entry.get("identity") or []
     if not isinstance(raw_identity, list) or len(raw_identity) != 5:
         raise ValueError("manifest entry has no five-part identity")
-    identity: Identity = tuple(str(value or "") for value in raw_identity)  
+    identity: Identity = tuple(str(value or "") for value in raw_identity)
     put_json = Path(str(entry.get("put_json") or ""))
     report_path = put_json.parent / "emit" / "cov-report.json"
     report = json.loads(report_path.read_text(encoding="utf-8"))
@@ -847,7 +848,7 @@ def main() -> int:
         try:
             report = json.loads(report_path.read_text(encoding="utf-8"))
             identity = tuple(str(value or "") for value in entry["identity"])
-            claim = _exact_claim(report, identity)  
+            claim = _exact_claim(report, identity)
         except (OSError, json.JSONDecodeError, KeyError, ValueError):
             continue
         if not claim.get("events"):

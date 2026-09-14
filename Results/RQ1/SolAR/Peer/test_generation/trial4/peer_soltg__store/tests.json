@@ -2,14 +2,14 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "deposit",
       "n": 2,
       "value": 10955855803229065
@@ -18,14 +18,14 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "deposit",
       "n": 2,
       "value": 0
@@ -34,21 +34,21 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "deposit",
       "n": 2,
       "value": 10955855803229065
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "balanceCheck",
       "n": 3,
       "value": 0
@@ -57,14 +57,14 @@
   [
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "balanceCheck",
       "n": 2,
       "value": 0

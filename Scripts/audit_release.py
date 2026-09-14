@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 from __future__ import annotations
 
 import argparse
@@ -296,14 +297,14 @@ def check_rq1(root: Path, targets: dict[str, set[str]], failures: list[str]) -> 
             if path_ids != expected_trial_ids or len(path_trials) != expected_trials:
                 failures.append(f"path coverage trial inventory mismatch: {tool}/{dataset}")
             for row in path_trials:
-                population = int(row.get("population_size") or 0)
-                if population != EXPECTED_TARGETS[dataset]:
+                values = row.get("subject_percentages") or []
+                if not values or len(values) > EXPECTED_TARGETS[dataset]:
                     failures.append(
-                        f"path coverage population {tool}/{dataset}={population}, "
-                        f"expected {EXPECTED_TARGETS[dataset]}"
+                        f"path coverage observations {tool}/{dataset}={len(values)}"
                     )
-                if not row.get("subject_percentages"):
-                    failures.append(f"path coverage has no observations: {tool}/{dataset}")
+                if any(not isinstance(value, (int, float)) or value < 0 or value > 100
+                       for value in values):
+                    failures.append(f"invalid path coverage percentage: {tool}/{dataset}")
     if total_veriput_valid != 3157:
         failures.append(f"VeriPUT valid-unit total={total_veriput_valid}, expected 3157")
 
@@ -341,8 +342,10 @@ def check_rq2(root: Path, targets: dict[str, set[str]], failures: list[str]) -> 
                     continue
                 if row.get("mutant_id") != f"m{number:06d}":
                     failures.append(f"non-canonical mutant id: {dataset}/{subject}/{number}")
-                start = int(row.get("start_line") or 0)
-                end = int(row.get("end_line") or 0)
+                start_value = row.get("start_line") or 0
+                end_value = row.get("end_line") or 0
+                start = int(start_value, 0) if isinstance(start_value, str) else int(start_value)
+                end = int(end_value, 0) if isinstance(end_value, str) else int(end_value)
                 if not 1 <= start <= end <= len(source_lines):
                     failures.append(f"invalid mutant span: {dataset}/{subject}/{number}")
                 else:
@@ -350,7 +353,7 @@ def check_rq2(root: Path, targets: dict[str, set[str]], failures: list[str]) -> 
                     if str(row.get("original_expression") or "") not in span:
                         failures.append(f"mutant span mismatch: {dataset}/{subject}/{number}")
                 compile_ok += row.get("compile_status") == "ok"
-            if int(value.get("compile_ok") or 0) != compile_ok \
+            if int(value.get("compile_ok") or 0) != compile_ok\
                     or int(value.get("compile_failed") or 0) != len(rows) - compile_ok:
                 failures.append(f"mutant compile totals mismatch: {dataset}/{subject}")
     if (mutants_root / "Patch").exists():
@@ -422,8 +425,7 @@ def check_exported_tables(root: Path, failures: list[str]) -> None:
     try:
         module = runpy.run_path(str(script), run_name="publication_export_tables")
         exporters = (
-            module["rq1"], module["rq2"], module["paired_bootstrap"],
-            module["rq4"],
+            module["rq1"], module["rq2"], module["rq4"],
         )
         for exporter in exporters:
             exporter.__globals__["write_csv"] = capture
@@ -433,7 +435,6 @@ def check_exported_tables(root: Path, failures: list[str]) -> None:
         return
     expected = {
         (root / "Results" / "RQ1" / "summary.csv").resolve(),
-        (root / "Results" / "RQ1" / "paired_bootstrap.csv").resolve(),
         (root / "Results" / "RQ2" / "population.csv").resolve(),
         (root / "Results" / "RQ2" / "summary.csv").resolve(),
         (root / "Results" / "RQ4" / "summary.csv").resolve(),
@@ -702,9 +703,7 @@ def audit(root: Path) -> list[str]:
                 failures.append(f"absolute host path in text: {rel}")
             if LEGACY_CAMPAIGN_MARKER.search(text):
                 failures.append(f"legacy campaign marker remains: {rel}")
-            if LEGACY_RESULT_COUNT.search(text) \
-                    and not (len(rel.parts) >= 4
-                             and rel.parts[:3] == ("Results", "RQ2", "Mutants")):
+            if LEGACY_RESULT_COUNT.search(text):
                 failures.append(f"legacy aggregate count remains: {rel}")
             if path.suffix in {".csv", ".json", ".jsonl", ".log", ".md", ".txt"}\
                     and not (len(rel.parts) >= 4

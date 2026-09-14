@@ -11,29 +11,29 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new MyAdvancedToken("", "");
     }
 
     function test_ce_0_migrate_and_destroy() public {
-        
+
 
         target.migrate_and_destroy();
     }
     function test_ce_1_buy() public {
-        
+
 
         target.buy();
     }
     function test_ce_2_transferFrom() public {
-        
+
 
         target.transferFrom(address(uint160(2437)), address(uint160(0)), 0);
     }
     function test_ce_3_transferFrom() public {
-        
+
 
         target.transferFrom(address(uint160(2437)), address(uint160(0)), 39);
     }

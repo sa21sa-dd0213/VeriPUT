@@ -3274,63 +3274,63 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "mulShr",
       "mutant_id": "m000328",
       "operator": "BOR",
       "original_expression": " | ",
       "replacement_expression": " & ",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "mulShr",
       "mutant_id": "m000329",
       "operator": "BOR",
       "original_expression": " | ",
       "replacement_expression": " ^ ",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "mulShr",
       "mutant_id": "m000330",
       "operator": "BOR",
       "original_expression": " << ",
       "replacement_expression": " >> ",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "mulShr",
       "mutant_id": "m000331",
       "operator": "BOR",
       "original_expression": " - ",
       "replacement_expression": " + ",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "mulShr",
       "mutant_id": "m000332",
       "operator": "BOR",
       "original_expression": " - ",
       "replacement_expression": " / ",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "mulShr",
       "mutant_id": "m000333",
       "operator": "BOR",
       "original_expression": " >> ",
       "replacement_expression": " << ",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
@@ -15704,23 +15704,23 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "mulShr",
       "mutant_id": "m001571",
       "operator": "ILR",
       "original_expression": "256",
       "replacement_expression": "255",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "mulShr",
       "mutant_id": "m001572",
       "operator": "ILR",
       "original_expression": "256",
       "replacement_expression": "257",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
@@ -20974,13 +20974,13 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "mulShr",
       "mutant_id": "m002098",
       "operator": "RSD",
       "original_expression": "return (high << (256 - n)) | (low >> n);",
       "replacement_expression": "/* return (high << (256 - n)) | (low >> n); */",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",

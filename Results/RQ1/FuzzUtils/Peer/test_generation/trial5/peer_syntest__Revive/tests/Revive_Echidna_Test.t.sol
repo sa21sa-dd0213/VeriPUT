@@ -16,5 +16,3 @@ contract Revive_Echidna_Test is Test {
         target = new Revive();
     }
 }
-
-    

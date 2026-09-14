@@ -13,16 +13,16 @@ contract FactoryWidePauseWindow_Test is Test {
 	}
 	function test_FactoryWidePauseWindow_0() public {
 		vm.prank(0x43FF7d4ee6598762600000000000000000000000);
-		factorywidepausewindow0.getNewPoolPauseWindowEndTime(); 
+		factorywidepausewindow0.getNewPoolPauseWindowEndTime();
 	}
 	function test_FactoryWidePauseWindow_1() public {
 		vm.prank(0xFFfFfFffFFfffFFfFFfFFFFFffFFFffffFfFFFfF);
-		factorywidepausewindow1.getOriginalPauseWindowEndTime(); 
+		factorywidepausewindow1.getOriginalPauseWindowEndTime();
 	}
 	function test_FactoryWidePauseWindow_2() public {
 		vm.prank(0x3BD87C1c50fCfA36D00000000000000000000000);
-		factorywidepausewindow2.getPauseWindowDuration(); 
+		factorywidepausewindow2.getPauseWindowDuration();
 		vm.prank(0xFFfFfFffFFfffFFfFFfFFFFFffFFFffffFfFFFfF);
-		factorywidepausewindow2.getOriginalPauseWindowEndTime(); 
+		factorywidepausewindow2.getOriginalPauseWindowEndTime();
 	}
 }

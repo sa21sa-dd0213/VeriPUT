@@ -11,19 +11,19 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new Csc();
     }
 
     function test_ce_0_call_1() public {
-        
+
 
         target.call_1();
     }
     function test_ce_1_call_2() public {
-        
+
 
         target.call_2();
     }

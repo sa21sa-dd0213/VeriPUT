@@ -2,7 +2,7 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 1000000000000000000
@@ -11,7 +11,7 @@
       "args": [
         1
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "guess",
       "n": 2,
       "value": 2000000000000000000
@@ -20,14 +20,14 @@
   [
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 1000000000000000000
     },
     {
       "args": [],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "isComplete",
       "n": 2,
       "value": 0

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 import argparse
 import concurrent.futures
 import json
@@ -8,7 +9,6 @@ import re
 import signal
 import subprocess
 import sys
-import tempfile
 import threading
 import time
 
@@ -16,9 +16,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ESBMC_ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(ESBMC_ROOT, "scripts"))
-from solidity_ast_dependencies import path_function_artifact_suffix  
-from veriput_path_guard import ensure_path_not_protected  
-from veriput_recipe import STRONG_CERTIFY_ARGS, STRONG_RECIPE_VERSION  
+from solidity_ast_dependencies import path_function_artifact_suffix
+from veriput_path_guard import ensure_path_not_protected
+from veriput_recipe import STRONG_CERTIFY_ARGS, STRONG_RECIPE_VERSION
 from veriput_subjects import (SubjectError, ensure_solast,
                               enumerate_subject_units, resolve_subject)
 
@@ -389,10 +389,10 @@ def run_driver_subprocess(cmd, timeout_s):
         out, _ = proc.communicate(timeout=timeout_s)
         rc = proc.returncode
     except subprocess.TimeoutExpired:
-        
-        
-        
-        
+
+
+
+
         try:
             os.kill(proc.pid, signal.SIGTERM)
         except (OSError, ProcessLookupError):
@@ -678,31 +678,31 @@ def bounded_holds_retry_cmd(cmd, workdir, retry_hint=None):
             out, "--unwindset"):
         out = append_driver_esbmc_value_arg(
             out, "--unwind", hinted_unwind or 16)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     if "--esbmc-arg=--partial-loops" not in out:
         out.append("--esbmc-arg=--partial-loops")
     return out
@@ -727,7 +727,7 @@ def no_coordinate_writer_scope(cmd):
         sys.path.insert(0, os.path.dirname(os.path.abspath(DRIVER)))
         from state_writer_scope import writer_scope_for_unit
         scope, _evidence = writer_scope_for_unit(ast_path, contract, unit)
-    except Exception:  
+    except Exception:
         return None
     if not scope or len(scope) < 2:
         return None
@@ -755,11 +755,11 @@ def deployment_coords_retry_reason(out, rc):
     if not any(RE_DEPLOY_COORDS_AVAILABLE.match(line) for line in (out or "").splitlines()):
         return None
     rec = parse_driver(out or "")
-    
-    
-    
-    
-    
+
+
+
+
+
     if any("STRUCTURAL ABI value gate" not in str(text) for text in rec["certified"].values()):
         return None
     return "deployment-coordinate-retry"
@@ -819,10 +819,10 @@ def job_memlimit_gib(jobs, reserve_frac=0.60, floor_gib=4, want_gib=8):
         return None, ("cannot read MemAvailable from /proc/meminfo, so the "
                       "memory budget cannot be computed. Refusing to guess")
     budget = avail * reserve_frac
-    
-    
-    
-    
+
+
+
+
     if want_gib * jobs > budget:
         return None, (
             f"--memlimit {want_gib}g x --jobs {jobs} = {want_gib * jobs} GiB "
@@ -837,13 +837,13 @@ def job_memlimit_gib(jobs, reserve_frac=0.60, floor_gib=4, want_gib=8):
             f"--memlimit {want_gib}g is below the {floor_gib} GiB floor, under "
             f"which a real benchmark unit starts dying of the limit rather "
             f"than of the problem")
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     return want_gib, None
 
 
@@ -916,27 +916,27 @@ RE_DRIVER_REFUSED = re.compile(r"^\[([A-Za-z0-9_-]+)\] REFUS(?:ING|ED)\b")
 def parse_driver(out):
     pass
     rec = {"witnessed": None, "coords": [], "pins": None,
-           
-           
-           
-           
+
+
+
+
            "coords_line": None,
            "no_coordinate_reason": None, "certified": {}, "not_certified": {},
            "msg_value_pin": "not seen",
-           
-           
-           
-           
+
+
+
+
            "empty_witness_verdict": None, "empty_witness_reason": None,
-           
-           
-           
-           
+
+
+
+
            "level0_points": {}, "level0_vacuity_risk": {},
            "level0_round_s": None, "level0_coords": None,
-           
-           
-           
+
+
+
            "driver_refusal": None, "driver_refusal_tag": None}
     for line in out.splitlines():
         m = RE_LEVEL0_POINT.match(line)
@@ -955,9 +955,9 @@ def parse_driver(out):
             continue
         m = RE_DRIVER_REFUSED.match(line)
         if m and rec["driver_refusal"] is None:
-            
-            
-            
+
+
+
             rec["driver_refusal"] = line.strip()
             rec["driver_refusal_tag"] = m.group(1)
             continue
@@ -980,10 +980,10 @@ def parse_driver(out):
         if m:
             rec["no_coordinate_reason"] = m.group(1)
             continue
-        
-        
-        
-        
+
+
+
+
         m = RE_COORDS_FREE.match(line)
         if m:
             rec["coords"] = [c.strip() for c in m.group(1).split(",")
@@ -998,8 +998,8 @@ def parse_driver(out):
                  "[coords] UNSUPPORTED", "[coords] ACCOUNTING",
                  "[coords] --pin-agreed-state",
                  "[coords] ESBMC query pins OMIT",
-                 
-                 
+
+
                  "[coords] MAPPING SLOT", "[coords] mapping(s)",
                  "[coords] mapping READ slot access priority",
                  "[coords] mapping dependency policy",
@@ -1016,11 +1016,11 @@ def parse_driver(out):
         if m:
             rec["not_certified"][m.group(1)] = m.group(2)
             continue
-        
-        
-        
-        
-        
+
+
+
+
+
         m = RE_CERT_PIECE.match(line)
         if m:
             rec["certified"][f"{m.group(1)}#{m.group(2)}"] = m.group(3)
@@ -1435,12 +1435,12 @@ def complete_journal_concrete_fallback_details(
         if enc_s is None:
             continue
         paths.append((str(pf), enc_s, path))
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     functions_per_enc = {}
     for pf, enc_s, _path in paths:
         functions_per_enc.setdefault(enc_s, set()).add(pf)
@@ -2201,10 +2201,10 @@ def unwindset_retry_args(diagnostic, existing_args, *, unwind=512):
         return []
     args = []
     if "--unwind" not in (existing_args or []):
-        
-        
-        
-        
+
+
+
+
         args += ["--unwind", "4"]
     args += ["--unwindset", ",".join(
         f"{lid}:{unwind}" for lid in loop_ids)]
@@ -2436,9 +2436,9 @@ def merge_parsed_driver_outputs(command_logs):
             rec["level0_round_s"] = earlier.get("level0_round_s")
             rec["level0_coords"] = earlier.get("level0_coords")
         rec["not_certified"].update(earlier.get("not_certified") or {})
-        
-        
-        
+
+
+
         if final_certified:
             rec["certified"].update(earlier.get("certified") or {})
     rec["observed_certified"] = dict(rec.get("certified") or {})
@@ -2471,10 +2471,10 @@ def apply_subject_ast_cache(subject, cache_root):
 def bucket(rec, rc, out):
     pass
     if "[run] TIMEOUT after" in out or rc == 124:
-        
-        
-        
-        
+
+
+
+
         if rec.get("certified") and rec.get("partial_after_signal"):
             rec["partial_after_kill"] = True
             return "CERTIFIED"
@@ -2489,10 +2489,10 @@ def bucket(rec, rc, out):
     if rc not in (0, 1):
         return "CRASHED"
     if rec.get("certification_artifact_gap") or certified_artifact_gap(rec):
-        
-        
-        
-        
+
+
+
+
         return "NO-WITNESS-UNKNOWN"
     if (
         isinstance(diag, dict) and
@@ -2506,9 +2506,9 @@ def bucket(rec, rc, out):
         not rec["no_coordinate_reason"]
     ):
         return "DRIVER-REFUSED"
-    
-    
-    
+
+
+
     if (rec.get("driver_refusal") and rec["witnessed"] is None
             and not rec["certified"] and not rec["no_coordinate_reason"]):
         return "DRIVER-REFUSED"
@@ -2517,17 +2517,17 @@ def bucket(rec, rc, out):
     if rec["no_coordinate_reason"]:
         return "NO-COORDINATE"
     if rec["witnessed"] is None:
-        
-        
-        
-        
+
+
+
+
         v = rec.get("empty_witness_verdict")
         if v == "REFUSED":
             return "NO-WITNESS-UNDECIDED"
         if v is None:
-            
-            
-            
+
+
+
             return "NO-WITNESS-UNKNOWN"
         return "NO-PATH"
     return "NOT-CERTIFIED"
@@ -2807,37 +2807,37 @@ def main():
                          "because the geometric bracket alone takes 50-70s on a "
                          "TOY contract. A budget below the bracket's own cost "
                          "measures the budget, not the method.")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ap.add_argument("--shrink-rounds", type=int, default=3,
                     help="how many refutations one region may absorb. BELOW the "
                          "driver's own default of 4, and the value is UNARGUED "
@@ -2898,21 +2898,21 @@ def main():
                          "under it is a statement about that entry-state "
                          "slice.")
     ap.add_argument("--level0", action="store_true", default=True)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ap.add_argument("--level0-perturb", action="store_true",
                     help="passed to the driver: after the level-0 round, "
                          "re-probe each at-risk coordinate at its value's "
@@ -2922,24 +2922,24 @@ def main():
                          "the path is excluded from the slice -- not that the "
                          "domain is that point. ⚠ Use --out to give this arm "
                          "its OWN file.")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ap.add_argument("--probe-witnesses", type=int, default=0, metavar="N",
                     help="passed to the driver: ask the ENUMERATION run for up "
                          "to N distinct inputs per path (--all-witnesses "
@@ -2972,26 +2972,26 @@ def main():
                          "same 24 pairs lay about 156. ⚠ It is a LOSS and the "
                          "driver prints it -- a boundary beyond the last kept "
                          "rung comes back as a span reaching the type limit.")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ap.add_argument("--no-auto-pin-value", action="store_true",
                     help="passed to the driver: do NOT pin msg.value to 0 on a "
                          "unit the source declares non-payable. This is the arm "
@@ -3052,33 +3052,33 @@ def main():
                          "limit would turn a scheduling decision into a "
                          "measurement change -- units would start dying of the "
                          "limit instead of the problem.")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ap.add_argument("--env-coord", action="append", default=[],
                     help="passed to the driver: promote an environment quantity "
                          "(e.g. msg.sender, msg.value, block.timestamp) to a FREE "
@@ -3094,37 +3094,37 @@ def main():
                          "never share a table. ⚠ Use --out to give this arm its "
                          "OWN file: writing it into results.jsonl would put two "
                          "arms under one (benchmark, unit) key.")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ap.add_argument("--max-holes", type=int, default=0,
                     help="passed to the driver: per coordinate, how many values "
                          "the region may PUNCH OUT before falling back to a side "
@@ -3138,52 +3138,52 @@ def main():
                          "may be split into. 1 (the driver's default) throws the "
                          "non-counterexample side of every cut away, and is also "
                          "the setting under which --max-holes cannot fire.")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ap.add_argument("--run-timeout", type=int, default=180,
                     help="per ESBMC INVOCATION, in seconds. NOT --timeout, "
                          "which is the whole driver loop for one unit. This is "
@@ -3210,33 +3210,33 @@ def main():
                          "dash. Recorded on every row, because a bound that differs "
                          "between two rows makes them two measurements wearing "
                          "one name.")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ap.add_argument("--slot-coords", type=int, default=0, metavar="N",
                     help="propose up to N mapping slots as free coordinates "
                          "(driver --slot-coords). Read from solc's "
@@ -3279,7 +3279,13 @@ def main():
                          "alphabet widened to the units that WRITE the state "
                          "this unit reads (derived from the AST by "
                          "state_writer_scope), so the guard state can be "
-                         "established by an earlier transaction. The case wall budget is "
+                         "established by an earlier transaction. "
+                         "MEASURED over the development campaign before wiring it: "
+                         "the trigger plus the widening gate fires on 29 "
+                         "driver runs across 23 subjects, but 17 of those "
+                         "subjects ALREADY have counted PUTs; adding the "
+                         "coords-empty gate narrows it to 6 runs of which 5 "
+                         "are likewise already green. The case wall budget is "
                          "SHARED, so a retry spends time a later unit would "
                          "otherwise get -- which is exactly the kind of "
                          "option-level effect on the existing PUT set that is "
@@ -3401,20 +3407,20 @@ def main():
                          "wearing one name -- which is why the value is "
                          "recorded on every row and why this needs its own "
                          "--out.")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ap.add_argument("--cut-policy", choices=("spec", "tool"), default="spec",
                     help="passed to the driver. `spec` (default, and the "
                          "driver's) follows §Certification; `tool` is the "
@@ -3433,14 +3439,9 @@ def main():
                          "Passed through to the generalisation driver; the "
                          "result row records the resolved identity.")
     ap.add_argument("--redo", action="store_true")
-    ap.add_argument(
-        "--workdir",
-        default=os.environ.get(
-            "VERIPUT_WORKDIR", os.path.join(tempfile.gettempdir(), "veriput-certify")
-        ),
-                    help="scratch root. The ARM's own subdirectory is added "
-                         "under it automatically -- see below; pass this only "
-                         "to move the whole tree.")
+    ap.add_argument("--workdir",
+                    default=os.path.join(os.getcwd(), ".veriput-work"),
+                    help="scratch root; the arm subdirectory is added automatically")
     ap.add_argument("--dry-run", action="store_true",
                     help="resolve inputs and print child commands, but do not "
                          "run ESBMC, write driver logs, append JSONL rows, or "
@@ -3462,11 +3463,11 @@ def main():
         print(f"[sweep] REFUSED: {exc}", file=sys.stderr)
         return 1
 
-    
-    
-    
-    
-    
+
+
+
+
+
     want_units = set(args.unit)
 
     subject = None
@@ -3523,17 +3524,17 @@ def main():
     names = [subject.benchmark_key] if subject else (
         args.benchmarks or [b for b in BENCHMARKS if b != "st1inch_St1inch"])
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
     if len(names) != 1 or len(want_units) != 1:
         print(
             f"[sweep] REFUSED: this driver now certifies exactly ONE unit of "
@@ -3549,14 +3550,14 @@ def main():
         return 1
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
 
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
     if args.probe_ladder and not args.probe_witnesses:
         print("[sweep] REFUSED: --probe-ladder needs --probe-witnesses. The "
               "ladder is anchored at each path's own KNOWN MEMBERS, and "
@@ -3569,31 +3570,31 @@ def main():
               "passed together")
         return 1
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     arm_dir = os.path.splitext(os.path.basename(args.out))[0]
     arm_root = os.path.join(args.workdir, arm_dir)
     if args.redo and os.path.isdir(arm_root):
@@ -3604,9 +3605,9 @@ def main():
               "overwrite old query artefacts")
     os.makedirs(arm_root, exist_ok=True)
 
-    
-    
-    
+
+
+
     if args.jobs <= 0 or args.memlimit_gib <= 0 or args.mem_fraction <= 0:
         print("[sweep] REFUSING: --jobs, --memlimit-gib and --mem-fraction "
               "must be positive")
@@ -3630,13 +3631,13 @@ def main():
 
     ident = binary_identity()
 
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     if args.redo and os.path.exists(args.out):
         keep = f"{args.out}.superseded.{time.time_ns()}"
         os.replace(args.out, keep)
@@ -3644,20 +3645,20 @@ def main():
               f"than appending beside them; two records with one "
               f"(benchmark, unit) key would be read by parsing order")
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     done = set()
     if os.path.exists(args.out) and not args.redo:
         stale = []
@@ -3675,12 +3676,12 @@ def main():
                                   r.get("binary")))
         if stale:
             shown = stale[:5]
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
             mt_now = (ident or {}).get("binaryMtime")
             mt_moved = sum(1 for _b, _u, was in stale
                            if (was or {}).get("binaryMtime") != mt_now)
@@ -3741,10 +3742,10 @@ def main():
                 print(f"[sweep] {bench}: {poc_why}")
                 why = None
         if got is None:
-            
-            
-            
-            
+
+
+
+
             print(f"[sweep] {bench}: NO UNIT LIST — {why}")
             with open(args.out, "a") as f:
                 f.write(json.dumps({"benchmark": bench, "unit": None,
@@ -3756,9 +3757,9 @@ def main():
         if want_units:
             missing = sorted(want_units - set(units))
             if missing:
-                
-                
-                
+
+
+
                 print(f"[sweep] {bench}: --unit named {missing}, which the "
                       f"round-trip's emit.jsonl does not list. Its units are: "
                       f"{', '.join(units)}. Refusing rather than sweeping the "
@@ -3774,10 +3775,10 @@ def main():
             print(f"[sweep] {bench}: {len(units)} unit(s) from the "
                   f"round-trip's emit.jsonl: {', '.join(units)}")
         if killed_in_roundtrip:
-            
-            
-            
-            
+
+
+
+
             print(f"[sweep] {bench}: {len(killed_in_roundtrip)} of these were "
                   f"KILLED in the round-trip's own enumeration and are "
                   f"expected to be killed here too: "
@@ -3888,18 +3889,18 @@ def main():
                     print(f"  [{i}/{len(units)}] {unit}: {rec['bucket']}, "
                           f"{reason}, 0s", flush=True)
                 return rec
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
             stage2_refine_rounds, stage2_shrink_rounds, stage2_retreat_after_tiny_cuts = (
                 stage2_region_refinement_controls(args))
             cmd = [sys.executable, "-u", DRIVER,
@@ -3914,42 +3915,42 @@ def main():
                    "--shrink-rounds", str(stage2_shrink_rounds),
                    "--safety-retreat-after-tiny-cuts",
                    str(stage2_retreat_after_tiny_cuts),
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                    "--timeout", str(min(args.timeout, args.run_timeout)),
                    "--memlimit", f"{memlimit}g", "--workdir", uwd,
-                   
-                   
-                   
-                   
-                   
-                   
-                   
+
+
+
+
+
+
+
                    "--max-holes", str(args.max_holes),
                    "--max-region-pieces", str(args.max_region_pieces)]
             if args.ce_collection_only:
@@ -3960,12 +3961,12 @@ def main():
                 cmd += ["--path-function", args.path_function]
             if args.level0_perturb:
                 cmd.append("--level0-perturb")
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
             if args.probe_witnesses:
                 cmd += ["--probe-witnesses", str(args.probe_witnesses)]
             if args.probe_ladder:
@@ -3998,10 +3999,10 @@ def main():
                 cmd.append("--pin-agreed-state")
             for ec in args.env_coord:
                 cmd += ["--env-coord", ec]
-            
-            
-            
-            
+
+
+
+
             cmd += ["--slot-coords", str(args.slot_coords)]
             if args.state_struct_fields:
                 cmd.append("--state-struct-fields")
@@ -4010,19 +4011,19 @@ def main():
                         "--enumeration-report", args.enumeration_report]
             for sc in args.slot_coord:
                 cmd += ["--slot-coord", sc]
-            
-            
-            
-            
+
+
+
+
             for p in args.pin:
                 cmd += ["--pin", p]
-            
-            
-            
+
+
+
             cmd += ["--cut-policy", args.cut_policy]
-            
-            
-            
+
+
+
             for a in args.esbmc_arg:
                 cmd.append(f"--esbmc-arg={a}")
             if args.dry_run:
@@ -4031,12 +4032,12 @@ def main():
                         "bucket": "DRY-RUN", "subject": subject_record}
             t1 = time.time()
             artifact_runs = [("initial", uwd, t1)]
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
             out, rc, wall = run_driver_subprocess(cmd, args.timeout)
             active_uwd = uwd
             effective_esbmc_args = list(args.esbmc_arg)
@@ -4229,11 +4230,11 @@ def main():
                 out, rc = retry_out, retry_rc
                 wall += retry_wall
                 t1 = retry_since
-            
-            
-            
-            
-            
+
+
+
+
+
             no_coord_reason = None
             no_coord_scope = None
             if (retry_allowed and not bounded_reason
@@ -4301,8 +4302,8 @@ def main():
                 out, rc = retry_out, retry_rc
                 wall += retry_wall
                 t1 = retry_since
-            
-            
+
+
             dc_reason = (deployment_coords_retry_reason(out, rc)
                          if retry_allowed and "--deployment-coords" not in cmd else None)
             if dc_reason and int(args.timeout - wall) < CHEAP_RETRY_MIN_BUDGET_S:
@@ -4354,10 +4355,10 @@ def main():
                     and no_coordinate_retry is None and deployment_coords_retry is None
                     and result_driver_diagnostic(out) is None):
                 cheap_reason = empty_witness_retry_reason(out, rc)
-            
-            
-            
-            
+
+
+
+
             if cheap_reason and int(args.timeout - wall) < CHEAP_RETRY_MIN_BUDGET_S:
                 cheap_stage2_retry = {
                     "reason": cheap_reason,
@@ -4584,129 +4585,129 @@ def main():
                         "jobs": args.jobs,
                         "recipe_version": args.recipe_version,
                         "scope": args.scope, "max_tx": args.max_tx,
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
                         "skip_bracket": bool(args.skip_bracket),
-                        
-                        
-                        
-                        
+
+
+
+
                         "geometric_bracket": not bool(args.skip_bracket),
                         "sibling_subtraction": bool(
                             (rec.get("witnessed") or 0) > 1),
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
                         "env_coord_disagreed": bool(args.env_coord_disagreed),
                         "pin_agreed_establishable_env": bool(
                             args.pin_agreed_establishable_env),
                         "pin_agreed_state": bool(args.pin_agreed_state),
                         "level0": bool(args.level0),
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
                         "level0_perturb": bool(args.level0_perturb),
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
                         "probe_witnesses": args.probe_witnesses,
                         "probe_ladder": bool(args.probe_ladder),
                         "probe_ladder_budget": args.probe_ladder_budget,
-                        
-                        
-                        
-                        
+
+
+
+
                         "no_auto_pin_value": bool(args.no_auto_pin_value),
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
+
                         "env_coords": list(args.env_coord),
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
+
                         "env_coord": (args.env_coord[0]
                                       if len(args.env_coord) == 1 else None),
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
                         "max_holes": args.max_holes,
                         "max_region_pieces": args.max_region_pieces,
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
                         "slot_coords": args.slot_coords,
                         "slot_coord": list(args.slot_coord),
                         "state_struct_fields": bool(args.state_struct_fields),
                         "enumeration_index": args.enumeration_index,
                         "enumeration_report": enumeration_report_path,
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
                         "pin_requested": list(args.pin),
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
                         "pin_extcall": bool(args.pin_extcall),
-                        
-                        
-                        
-                        
+
+
+
+
                         "free_entry_state": bool(args.free_entry_state),
-                        
-                        
-                        
-                        
+
+
+
+
                         "static_extcall_inseparable":
                             bool(args.static_extcall_inseparable),
                         "static_uncontrolled_inseparable":
                             bool(args.static_uncontrolled_inseparable),
-                        
-                        
-                        
-                        
+
+
+
+
                         "cut_policy": args.cut_policy,
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
                         "esbmc_args": list(effective_esbmc_args),
                         "auto_unwind_retry": retry,
                         "auto_probe_goal_cap_retry": probe_goal_cap_retry,
@@ -4729,18 +4730,18 @@ def main():
                             bool(args.no_region_refinement),
                         "unit_timeout_s": args.timeout,
                         "subject": subject_record,
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
+
                         "run_timeout_s": min(args.timeout, args.run_timeout),
-                        
-                        
-                        
+
+
+
                         "binary": ident})
             if rec.get("pins") is None and machine_pins is not None:
                 rec["pins"] = machine_pins
@@ -4756,17 +4757,17 @@ def main():
                 generalise_progress)
             if evidence:
                 rec["failure_evidence"] = evidence
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
             with open(os.path.join(active_uwd, "driver.log"), "w") as f:
                 for idx, entry in enumerate(command_logs, 1):
                     f.write(f"### {idx}. {entry['label']} "
@@ -4776,35 +4777,35 @@ def main():
                     f.write(entry["out"])
                     if not str(entry["out"]).endswith("\n"):
                         f.write("\n")
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
             with write_lock:
                 with open(args.out, "a") as f:
                     f.write(json.dumps(rec) + "\n")
                     f.flush()
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 nw = rec.get("witnessed")
                 nc, nn = len(rec["certified"]), len(rec["not_certified"])
                 if nw is None:
@@ -4821,29 +4822,29 @@ def main():
                     tally = (f"{nc} certified / {nn} not / {nw} witnessed"
                              + (f" ⚠ {gap} path(s) reached NO verdict"
                                 if gap else ""))
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     if gap and rec["level0_points"]:
                         nv = len(rec["level0_vacuity_risk"])
                         tally += (
@@ -4860,15 +4861,15 @@ def main():
             return rec
 
         def guarded(item):
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
             try:
                 return run_unit(item)
-            except Exception as e:                       
+            except Exception as e:
                 i, unit = item
                 rec = {"benchmark": bench, "unit": unit,
                        "bucket": "SWEEP-ERROR", "reason": f"{type(e).__name__}: {e}",
@@ -4887,18 +4888,18 @@ def main():
         else:
             with concurrent.futures.ThreadPoolExecutor(
                     max_workers=args.jobs) as pool:
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
+
+
+
                 list(pool.map(guarded, todo))
 
     if args.dry_run:

@@ -11,19 +11,19 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new GuessTheNumberChallenge();
     }
 
     function test_ce_0_guess() public {
-        
+
 
         target.guess(0);
     }
     function test_ce_1_guess() public {
-        
+
 
         target.guess(1);
     }

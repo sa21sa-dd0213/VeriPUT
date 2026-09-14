@@ -2,14 +2,14 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "flipSaleState",
       "n": 2,
       "value": 0
@@ -18,14 +18,14 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "withdraw",
       "n": 2,
       "value": 0
@@ -34,7 +34,7 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -43,7 +43,7 @@
       "args": [
         "\"if\""
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "setBaseURI",
       "n": 2,
       "value": 0
@@ -52,7 +52,7 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -61,7 +61,7 @@
       "args": [
         ""
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "setBaseURI",
       "n": 2,
       "value": 0
@@ -70,14 +70,14 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "asdf5",
       "n": 2,
       "value": 0
@@ -86,14 +86,14 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "reserveCraniums",
       "n": 2,
       "value": 0
@@ -102,7 +102,7 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -111,7 +111,7 @@
       "args": [
         57115942631392983736220838100273987298071011162757028747356869102969522117615
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "mintCraniums",
       "n": 2,
       "value": 148319136235963294

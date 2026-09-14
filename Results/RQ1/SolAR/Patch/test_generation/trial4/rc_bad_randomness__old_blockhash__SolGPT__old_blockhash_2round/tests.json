@@ -2,14 +2,14 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 1000000000000000000
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "settle",
       "n": 2,
       "value": 0
@@ -18,30 +18,30 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 1000000000000000000
     },
     {
       "args": [
-        "address_00001000000000000000000000000"
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "lockInGuess",
       "n": 2,
       "value": 1000000000000000000
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "settle",
       "n": 3,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "settle",
       "n": 4,
       "value": 0
@@ -50,23 +50,23 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 1000000000000000000
     },
     {
       "args": [
-        "address_00001000000000000000000000000"
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "lockInGuess",
       "n": 2,
       "value": 1000000000000000000
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "settle",
       "n": 3,
       "value": 0
@@ -75,16 +75,16 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 1000000000000000000
     },
     {
       "args": [
-        "address_00001000000000000000000000000"
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "lockInGuess",
       "n": 2,
       "value": 1000000000000000000

@@ -2,16 +2,16 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00021"
+        "anonymous_hex_00017"
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "setOwner",
       "n": 2,
       "value": 0

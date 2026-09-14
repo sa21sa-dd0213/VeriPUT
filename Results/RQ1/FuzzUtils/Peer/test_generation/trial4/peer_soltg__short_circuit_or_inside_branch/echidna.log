@@ -5,8 +5,8 @@ Loaded 0 transaction sequences from corpus/reproducers
 Loaded 0 transaction sequences from corpus/coverage
 [Worker 0] Test g(bool) falsified!
   Call sequence:
-cs6.g(true) from: address_00009 Time delay: 412373 seconds Block delay: 22664
-cs6.g(false) from: address_00008 Time delay: 31594 seconds Block delay: 15369
+cs6.g(true) from: anonymous_hex_00009 Time delay: 412373 seconds Block delay: 22664
+cs6.g(false) from: anonymous_hex_00008 Time delay: 31594 seconds Block delay: 15369
 
 Saved reproducer to corpus/reproducers-unshrunk/152012790298902765.txt
 [Worker 0] New coverage: 334 instr, 1 contracts, 1 seqs in corpus

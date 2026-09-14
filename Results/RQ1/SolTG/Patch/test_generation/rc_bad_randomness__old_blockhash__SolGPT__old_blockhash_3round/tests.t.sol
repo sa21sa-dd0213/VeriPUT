@@ -13,15 +13,15 @@ contract PredictTheBlockHashChallenge_Test is Test {
 	}
 	function test_PredictTheBlockHashChallenge_0() public {
 		vm.prank(0x1E27000000000000000000000000000000000000);
-		predicttheblockhashchallenge0.settle(); 
+		predicttheblockhashchallenge0.settle();
 	}
 	function test_PredictTheBlockHashChallenge_1() public {
 		vm.prank(0x52F6000000000000000000000000000000000000);
-		predicttheblockhashchallenge1.settle(); 
+		predicttheblockhashchallenge1.settle();
 	}
 	function test_PredictTheBlockHashChallenge_2() public {
 		vm.prank(0x2600000000000000000000000000000000000000);
 		vm.deal(0x2600000000000000000000000000000000000000,  1000000000000000000 wei );
-		predicttheblockhashchallenge2.lockInGuess{ value:  1000000000000000000 wei }( 0); 
+		predicttheblockhashchallenge2.lockInGuess{ value:  1000000000000000000 wei }( 0);
 	}
 }

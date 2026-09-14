@@ -11,10 +11,10 @@ contract Cb8_Test is Test {
 	}
 	function test_Cb8_0() public {
 		vm.prank(0x1c377DE1E9537a76100000000000000000000000);
-		cb80.f( 11); 
+		cb80.f( 11);
 	}
 	function test_Cb8_1() public {
 		vm.prank(0x50a29f326A407641600000000000000000000000);
-		cb81.f( 0); 
+		cb81.f( 0);
 	}
 }

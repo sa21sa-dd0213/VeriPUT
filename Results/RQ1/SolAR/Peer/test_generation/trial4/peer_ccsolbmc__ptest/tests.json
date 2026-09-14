@@ -2,7 +2,7 @@
   [
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -11,7 +11,7 @@
       "args": [
         6
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "setX",
       "n": 2,
       "value": 0
@@ -20,7 +20,7 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -29,7 +29,7 @@
       "args": [
         3
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "setX",
       "n": 2,
       "value": 0
@@ -38,14 +38,14 @@
       "args": [
         4
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "setY",
       "n": 3,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "verifyPrime",
       "n": 4,
       "value": 0
@@ -54,7 +54,7 @@
       "args": [
         973013
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "setX",
       "n": 5,
       "value": 0
@@ -63,7 +63,7 @@
   [
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -72,7 +72,7 @@
       "args": [
         973013
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "setY",
       "n": 2,
       "value": 0
@@ -81,14 +81,14 @@
       "args": [
         6
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "setX",
       "n": 3,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "verifyPrime",
       "n": 4,
       "value": 0
@@ -97,7 +97,7 @@
   [
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -106,14 +106,14 @@
       "args": [
         6
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "setX",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "verifyPrime",
       "n": 3,
       "value": 0
@@ -122,7 +122,7 @@
   [
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -131,7 +131,7 @@
       "args": [
         1
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "setY",
       "n": 2,
       "value": 0
@@ -140,14 +140,14 @@
       "args": [
         3
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "setX",
       "n": 3,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "verifyPrime",
       "n": 4,
       "value": 0
@@ -156,7 +156,7 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -165,14 +165,14 @@
       "args": [
         973013
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "setX",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "verifyPrime",
       "n": 3,
       "value": 0
@@ -181,14 +181,14 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "verifyPrime",
       "n": 2,
       "value": 0
@@ -197,7 +197,7 @@
   [
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -206,7 +206,7 @@
       "args": [
         0
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "setY",
       "n": 2,
       "value": 0
@@ -215,7 +215,7 @@
       "args": [
         973013
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "setX",
       "n": 3,
       "value": 0

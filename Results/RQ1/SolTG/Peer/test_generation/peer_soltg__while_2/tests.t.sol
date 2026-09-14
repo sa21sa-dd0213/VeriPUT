@@ -9,6 +9,6 @@ contract Cwb7_Test is Test {
 	}
 	function test_Cwb7_0() public {
 		vm.prank(0x180aaB7EdF143B6B200000000000000000000000);
-		cwb70.f( 0); 
+		cwb70.f( 0);
 	}
 }

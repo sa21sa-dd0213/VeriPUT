@@ -9,6 +9,6 @@ contract Csi4_Test is Test {
 	}
 	function test_Csi4_0() public {
 		vm.prank(0x34A5fA4C48007241100000000000000000000000);
-		csi40.check(); 
+		csi40.check();
 	}
 }

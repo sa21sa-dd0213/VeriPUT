@@ -2,12 +2,12 @@
   [
     {
       "args": [
-        "address_00023",
-        "address_00021",
+        "anonymous_hex_00019",
+        "anonymous_hex_00017",
         "\"19I_z01\"",
         " DanyZkbcyxWivQbfOVlgKPshFYqWeCsH TXVzyrgAl BFBlSHsxhapQILXIlZHmeQQNUIqNZHzEjZeMritiLI xlfwmtDkqQpHOilwdIj wuralFRjOLnBvNcIOw ojyiQeJEuNQvTpJSYXXoWhdPtMXGjEiiljWbCTsQWMPaXqKAPCCuUIukyGuCQDpmeutxxMALkcNupocXVLYVAzE dpmrkMctdiEIWUHXXbsqPGksTlZMOTmW XCFxm"
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -16,7 +16,7 @@
       "args": [
         47
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "burn",
       "n": 2,
       "value": 0
@@ -25,12 +25,12 @@
   [
     {
       "args": [
-        "address_00023",
-        "address_00401",
+        "anonymous_hex_00019",
+        "anonymous_hex_00026",
         "\"19_01\"",
         " DanyZkbcyxWivQbfOVlgKPshFYqWeCsH TXVzyrgAl BFBlSHsxhapQILXIlZHmeQQNUIqNZHzEjZeMritiLI xlfwmtDkqQpHOilwdIj wuralFRjOLnBvNcIOw ojyiQeJEuNQvTpJSYXXoWhdPtMXGjEiiljWbCTsQWMPaXqKAPCCuUIukyGuCQDpmeutxxMALkcNupocXVLYVAzE dpmrkMctdiEIWUHXXbsqPGksTlZMOTmW XCFxm"
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -39,7 +39,7 @@
       "args": [
         56153649271184493703717936383253797121647498439341875087288781598089976366330
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "mint",
       "n": 2,
       "value": 0
@@ -48,22 +48,22 @@
   [
     {
       "args": [
-        "address_00410",
-        "address_00036",
+        "anonymous_hex_00028",
+        "anonymous_hex_00021",
         "NSCpQdTWNQrOkzaMSGscxZVGLgfIQehtvOyJIEyzagKbHQYUtkTEPzSDbUHaqJjluexOMeNxTjuGHFRgZchAQLdbqterktRzvfjXmOOOhJ",
         "\"\""
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00032",
+        "anonymous_hex_00020",
         1
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "burnFrom",
       "n": 2,
       "value": 0

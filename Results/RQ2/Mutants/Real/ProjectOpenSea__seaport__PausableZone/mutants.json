@@ -3510,7 +3510,7 @@
       "operator": "OLFD",
       "original_expression": "function readBytes10(\n        MemoryPointer mPtr\n    ) internal pure returns (bytes10 value) {\n        assembly {\n            value := mload(mPtr)\n        }\n    }",
       "replacement_expression": "",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",

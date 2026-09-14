@@ -2,7 +2,7 @@
   [
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -10,9 +10,9 @@
     {
       "args": [
         1,
-        "address_00032"
+        "anonymous_hex_00020"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "deposit",
       "n": 2,
       "value": 0
@@ -21,14 +21,14 @@
   [
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "isHookTarget",
       "n": 2,
       "value": 0

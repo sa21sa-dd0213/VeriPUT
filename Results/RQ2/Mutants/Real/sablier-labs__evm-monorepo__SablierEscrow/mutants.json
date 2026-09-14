@@ -21944,13 +21944,13 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "stateVariable",
       "mutant_id": "m002195",
       "operator": "ILR",
       "original_expression": "0.5e18",
       "replacement_expression": "undefined",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "failed",

@@ -2,14 +2,14 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "getMyKilo",
       "n": 2,
       "value": 0
@@ -18,7 +18,7 @@
   [
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -27,7 +27,7 @@
       "args": [
         10
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "devFee",
       "n": 2,
       "value": 0
@@ -36,7 +36,7 @@
       "args": [
         65
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "calculateDrugBuySimple",
       "n": 3,
       "value": 0
@@ -45,14 +45,14 @@
       "args": [
         108818597641216910599024288996734656409872478657230213890043911453610592289863
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "seedMarket",
       "n": 4,
       "value": 152340224579729138
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "sellDrugs",
       "n": 5,
       "value": 0
@@ -62,28 +62,28 @@
         6018803338332668827294372404388350422693175256929921498771885801019425639984,
         64620779705023739865182557905162655969628818981264074941100599910501901101267
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "calculateDrugBuy",
       "n": 6,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "getBalance",
       "n": 7,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "getBalance",
       "n": 8,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getFreeKilo",
       "n": 9,
       "value": 0
@@ -93,7 +93,7 @@
         4,
         4891
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "calculateDrugBuy",
       "n": 10,
       "value": 0
@@ -102,7 +102,7 @@
       "args": [
         10000
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "devFee",
       "n": 11,
       "value": 0
@@ -111,14 +111,14 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "sellDrugs",
       "n": 2,
       "value": 0
@@ -127,16 +127,16 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getDrugsSinceLastCollect",
       "n": 2,
       "value": 0
@@ -145,14 +145,14 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "getMyDrugs",
       "n": 2,
       "value": 0
@@ -161,14 +161,14 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "getMyDrugs",
       "n": 2,
       "value": 0
@@ -178,14 +178,14 @@
         50,
         86400
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "calculateDrugBuy",
       "n": 3,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "sellDrugs",
       "n": 4,
       "value": 0
@@ -194,14 +194,14 @@
       "args": [
         87845309537190078028080189253818747520369615923939525878660681392948500341520
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "calculateDrugSell",
       "n": 5,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "getMyDrugs",
       "n": 6,
       "value": 0
@@ -212,21 +212,21 @@
         51219593642454441415260390538629900686451511775245698157823428599024009553382,
         1
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "calculateTrade",
       "n": 7,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "buyDrugs",
       "n": 8,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "getBalance",
       "n": 9,
       "value": 0
@@ -235,7 +235,7 @@
       "args": [
         201
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "seedMarket",
       "n": 10,
       "value": 0
@@ -245,14 +245,14 @@
         88964303915354328700070010911266719662092433871789203233928129277363747733824,
         5
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "calculateDrugBuy",
       "n": 11,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "buyDrugs",
       "n": 12,
       "value": 50760442451630716
@@ -261,21 +261,21 @@
   [
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "sellDrugs",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "sellDrugs",
       "n": 3,
       "value": 0
@@ -284,21 +284,21 @@
       "args": [
         115361965120144923858568544674969271351164972831882757577172246569906322283653
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "seedMarket",
       "n": 4,
       "value": 149438721425633339
     },
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "DrugDealer",
       "n": 5,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "buyDrugs",
       "n": 6,
       "value": 95029332733753349
@@ -307,23 +307,23 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "buyDrugs",
       "n": 2,
       "value": 13289709877946886
     },
     {
       "args": [
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getDrugsSinceLastCollect",
       "n": 3,
       "value": 0
@@ -332,14 +332,14 @@
   [
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "DrugDealer",
       "n": 2,
       "value": 0
@@ -348,25 +348,25 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "collectDrugs",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getDrugsSinceLastCollect",
       "n": 3,
       "value": 0
@@ -375,7 +375,7 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -385,7 +385,7 @@
         4891,
         77851892353866959107134526616808965130813594674095757004594068059697898638952
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "calculateDrugBuy",
       "n": 2,
       "value": 0
@@ -394,7 +394,7 @@
   [
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -405,7 +405,7 @@
         3,
         97209771861128726887875309035039950678159965242767031335570283921269047760024
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "calculateTrade",
       "n": 2,
       "value": 0
@@ -414,7 +414,7 @@
   [
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -423,42 +423,42 @@
       "args": [
         86400
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "seedMarket",
       "n": 2,
       "value": 31456834393621821
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "DrugDealer",
       "n": 3,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "getMyKilo",
       "n": 4,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "getBalance",
       "n": 5,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "buyDrugs",
       "n": 6,
       "value": 95029332733753349
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "getFreeKilo",
       "n": 7,
       "value": 0
@@ -467,7 +467,7 @@
       "args": [
         10000
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "devFee",
       "n": 8,
       "value": 0
@@ -476,21 +476,21 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "getFreeKilo",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "getMyKilo",
       "n": 3,
       "value": 0
@@ -499,21 +499,21 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "getBalance",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "getMyKilo",
       "n": 3,
       "value": 0
@@ -522,14 +522,14 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "DrugDealer",
       "n": 2,
       "value": 0
@@ -538,16 +538,16 @@
       "args": [
         101452943070337695976518636592884352929616020172915787784535183671681475903228
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "calculateDrugBuySimple",
       "n": 3,
       "value": 0
     },
     {
       "args": [
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getDrugsSinceLastCollect",
       "n": 4,
       "value": 0
@@ -556,7 +556,7 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -565,7 +565,7 @@
       "args": [
         86400
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "calculateDrugSell",
       "n": 2,
       "value": 0
@@ -574,7 +574,7 @@
   [
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -583,16 +583,16 @@
       "args": [
         5759633007070543106626578197963798998435621544678309530010610979761933079839
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "seedMarket",
       "n": 2,
       "value": 62576695770842520
     },
     {
       "args": [
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getDrugsSinceLastCollect",
       "n": 3,
       "value": 0
@@ -601,7 +601,7 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -610,16 +610,16 @@
       "args": [
         10
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "devFee",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getDrugsSinceLastCollect",
       "n": 3,
       "value": 0

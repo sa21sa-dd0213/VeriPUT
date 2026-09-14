@@ -9,6 +9,6 @@ contract Csi7_Test is Test {
 	}
 	function test_Csi7_0() public {
 		vm.prank(0x21c437f04e009e92F00000000000000000000000);
-		csi70.f(); 
+		csi70.f();
 	}
 }

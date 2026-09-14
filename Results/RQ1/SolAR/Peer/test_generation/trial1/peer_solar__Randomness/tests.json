@@ -2,25 +2,25 @@
   [
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00313535a43726e7a546a6f5a6266"
+        "0x6e51587268646f624c7061686f42796747704a70535a43726e7a546a6f5a6266"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "reveal",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00248586d6976456555526c4b4e70"
+        "0x64714661785168764a41204d65506e6261505177586d6976456555526c4b4e70"
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "reveal",
       "n": 3,
       "value": 0
@@ -29,25 +29,25 @@
   [
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_003034d57442057686c6c556a7957"
+        "0x6d6c496b4b6c59525a68564a69474b63734d4a204d57442057686c6c556a7957"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "setSealedSeed",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_0034374625a696e41756142524577"
+        "0x73537720526a4a7a206a476b695a75564b61764174625a696e41756142524577"
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "setSealedSeed",
       "n": 3,
       "value": 0
@@ -56,32 +56,32 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00390504d50445267494a5774786c"
+        "0x7a71206b4c786b6a7577554f436f43766c795050504d50445267494a5774786c"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "setSealedSeed",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "bet",
       "n": 3,
       "value": 0
     },
     {
       "args": [
-        "address_0002668726953444c4170504d624a"
+        "0x204a6a7a49584a4162794f78776544736c77546168726953444c4170504d624a"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "setSealedSeed",
       "n": 4,
       "value": 0

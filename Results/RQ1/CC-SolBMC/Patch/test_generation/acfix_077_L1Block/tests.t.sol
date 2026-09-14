@@ -11,14 +11,14 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new L1Block();
     }
 
     function test_ce_0_setL1BlockValues() public {
-        
+
 
         target.setL1BlockValues(0, 0, 0, bytes32(uint256(0)), 0, bytes32(uint256(0)), 0, 0);
     }

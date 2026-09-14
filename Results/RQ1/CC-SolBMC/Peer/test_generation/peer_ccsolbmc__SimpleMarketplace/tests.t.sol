@@ -11,29 +11,29 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new SimpleMarketplace();
     }
 
     function test_ce_0_MakeOffer() public {
-        
+
 
         target.MakeOffer(0);
     }
     function test_ce_1_MakeOffer() public {
-        
+
 
         target.MakeOffer(1);
     }
     function test_ce_2_Reject() public {
-        
+
 
         target.Reject();
     }
     function test_ce_3_AcceptOffer() public {
-        
+
 
         target.AcceptOffer();
     }

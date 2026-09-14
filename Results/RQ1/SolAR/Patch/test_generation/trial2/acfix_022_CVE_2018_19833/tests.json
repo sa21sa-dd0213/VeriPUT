@@ -6,17 +6,17 @@
         "bjPHuURXvmEeVrdozCzrTdaJgszIAPhrhkkJhPMhXbl oLedsQMXk",
         "bzsayhdwdjsIaGsEXwKNofmnFXoVnKyDXsXDPDJPtgrVclSrYjErFwxGfcRtoiRlGcqOTKrABYwozvkZDPXRBDf UPSuGNQLDnXaaLiYTfZKtwdQOtruJprKJaauGUBACxBHQp VhBNVCVXLVKRWoNIRMFZFpieDxY"
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00404",
+        "anonymous_hex_00027",
         0
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "transfer",
       "n": 2,
       "value": 0
@@ -29,17 +29,17 @@
         "sZkZuoceqoEkxzutoQdBFzZpekkOYPahFdneKZICwvZXtmgwnjcGIpXJcJFSN jBtXr",
         "kPiJMHYYczAjMeAnluyIBmDZWQ QtcdHeRRSTOAAYJontTNXgV dGNmkWUwdqNwYToAseafrZdUtlASnaYpqVIYKJobwvJkGlxxfgvDShGgdsIwCqURAHDQRoTvGgqUHaxkIlIwWvkWSHBlBbyppPP INeExGeFUzUBehTuVaPbrvQlqAJdBayyGeXpNaRYPpkjlTmTQTXIcbVWOlckutHUgxSEtCstRIW"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00410",
+        "anonymous_hex_00028",
         false
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "freezeAccount",
       "n": 2,
       "value": 0
@@ -52,24 +52,24 @@
         "bjPHuURXvmEeVrdozCzrTdaJgszIAPhrhkkJhPMhXbl oLedsQMXk",
         "bzsayhdwdjsIaGsEXwKNofmnFXoVnKyDXsXDPDJPtgrVclSrYjErFwxGfcRtoiRlGcqOTKrABYwozvkZDPXRBDf UPSuGNQLDnXaaLiYTfZKtwdQOtruJprKJaauGUBACxBHQp VhBNVCVXLVKRWoNIRMFZFpieDxY"
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00398",
+        "anonymous_hex_00025",
         12574607628755596996422390731456072584870032026115540070413016439861116906851
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "mintToken",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "owned",
       "n": 3,
       "value": 0
@@ -78,7 +78,7 @@
       "args": [
         76634436384750128179849781279824456086880330720350592060891210693560538902825
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "burn",
       "n": 4,
       "value": 0
@@ -91,14 +91,14 @@
         "YbrytMoKprqXqclqwzeCCHUaeG",
         "NusVzaXQXuOduxjfLe TdYKYwejDKRgBkNuKCFtcQLXXeQJBQLqQkezJHAomLRFoDshcyTISkYueDkJOzGbdSvnarUXfQnpJrnC  IEKgYQGDgjYorLJlBdizSavVVVANtBhmNsXEz iFlOy Q jxvQvlifY"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "owned",
       "n": 2,
       "value": 0
@@ -111,17 +111,17 @@
         "NHuWXSHnnyJHPMMfRt pbUTQIW",
         "NusVzaXQXuOduxjfLe TdYKYwejDKRgBkNuKCFtcQLXXeQJBQLqQkezJHAomLRFoDshcyTISkYueDkJOzGbdSvnarUXfQnpJrnC  IEKgYQGDgjYorLJlBdizSavVVVANtBhmNsXEz iFlOy Q jxvQvlifY"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00398",
+        "anonymous_hex_00025",
         69407736148300971928519661776928736841927580560206404983504719901120252755992
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "mintToken",
       "n": 2,
       "value": 0
@@ -134,7 +134,7 @@
         "bjPHuURXvmEeVrdozCzrTdaJgszIAPhrhkkJhPMhXbl oLedsQMXk",
         "bzsayhdwdjsIaGsEXwKNofmnFXoVnKyDXsXDPDJPtgrVclSrYjErFwxGfcRtoiRlGcqOTKrABYwozvkZDPXRBDf UPSuGNQLDnXaaLiYTfZKtwdQOtruJprKJaauGUBACxBHQp VhBNVCVXLVKRWoNIRMFZFpieDxY"
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -143,7 +143,7 @@
       "args": [
         76634436384750128179849781279824456086880330720350592060891210693560538902825
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "burn",
       "n": 2,
       "value": 0

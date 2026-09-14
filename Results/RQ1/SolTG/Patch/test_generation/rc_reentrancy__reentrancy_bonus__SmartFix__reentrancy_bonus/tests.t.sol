@@ -9,6 +9,6 @@ contract Reentrancy_bonus_Test is Test {
 	}
 	function test_Reentrancy_bonus_0() public {
 		vm.prank(0x2ec55201CA4fA9F8500000000000000000000000);
-		reentrancy_bonus0.withdrawReward(0x0000000000000000000000000000000000000000); 
+		reentrancy_bonus0.withdrawReward(0x0000000000000000000000000000000000000000);
 	}
 }

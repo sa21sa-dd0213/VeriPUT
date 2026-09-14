@@ -11,29 +11,29 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new theRun();
     }
 
     function test_ce_0_CollectAllFees() public {
-        
+
 
         target.CollectAllFees();
     }
     function test_ce_1_GetAndReduceFeesByFraction() public {
-        
+
 
         target.GetAndReduceFeesByFraction(0);
     }
     function test_ce_2_PlayerInfo() public {
-        
+
 
         target.PlayerInfo(0);
     }
     function test_ce_3_PlayerInfo() public {
-        
+
 
         target.PlayerInfo(1);
     }

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 import argparse
 import hashlib
 import itertools
@@ -33,9 +34,9 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RQ1_SCRIPT_DIR = os.path.join(REPO_ROOT, "notes", "coverage", "scripts")
 if RQ1_SCRIPT_DIR not in sys.path:
     sys.path.insert(0, RQ1_SCRIPT_DIR)
-from rq1_concrete_replay_store import (  
+from rq1_concrete_replay_store import (
     _oracle_binding_errors, _structured_oracle_errors)
-from rq1_anchor_events import (  
+from rq1_anchor_events import (
     inject_event_oracles as inject_fixed_event_oracles, load_solast as load_fixed_event_ast,
     render_event_oracles as render_fixed_event_oracles)
 from solidity_ast_dependencies import (SLOT_DEPENDENCY_POLICY, contract_state_esbmc_store_names,
@@ -44,6 +45,13 @@ from solidity_ast_dependencies import (SLOT_DEPENDENCY_POLICY, contract_state_es
 
 UINT256_MAX = (1 << 256) - 1
 ADDRESS_MAX = (1 << 160) - 1
+PRECOMPILE_MAX = 9
+def nonprecompile_sender(value):
+    pass
+    v = int(value)
+    if 1 <= v <= PRECOMPILE_MAX:
+        return v + 0x1000
+    return v
 CHAIN_ID_MAX = (1 << 64) - 1
 DYNAMIC_RENDERED_WIDTH = 2
 
@@ -356,22 +364,22 @@ def run_esbmc(esbmc,
     t0 = time.time()
     p = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
     out = p.stdout + p.stderr
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     with open(os.path.join(cwd, "run.log"), "w") as f:
         f.write(" ".join(cmd) + "\n\n" + out)
     n = 1
@@ -639,13 +647,13 @@ def claim_oracle_ce_values(claim):
             return None
         for raw_name, raw_value in group.items():
             name = prefix + str(raw_name)
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
             try:
                 int(str(raw_value), 0)
                 values[name] = str(raw_value)
@@ -741,17 +749,17 @@ def rung_asserts_a_change(text):
     text = canonical_oracle_rung_text(text)
     if re.match(r"^(?:post (!=|>|<) pre|pre (!=|>|<) post)$", text):
         return True
-    
-    
-    
-    
+
+
+
+
     if text.startswith("post == ") and text != "post == pre":
         return True
     if text.startswith("post in ["):
         return True
-    
-    
-    
+
+
+
     m = re.match(r"^(?:post - pre|pre - post) in \[([^,]+),", text)
     return bool(m) and m.group(1).strip() != "0"
 
@@ -872,10 +880,10 @@ def propose_r2_specs(ladder_rows, params, log=None, var_bytes=None):
             say(f"[put]   R2 not proposed for {var}: the ordering rungs did "
                 f"not both decide (ge={ge}, le={le})")
 
-    
-    
-    
-    
+
+
+
+
     allvars = sorted(verdicts)
     ends = [e for e in endpoint_candidates(params) if e[1] != "bool"]
     numeric = [pn for pn, k, _b in ends if k == "num"]
@@ -890,20 +898,20 @@ def propose_r2_specs(ladder_rows, params, log=None, var_bytes=None):
             "candidate, so there is nothing for a bound to be about")
         return []
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     if var_bytes is None:
         slotted, unslotted = allvars, []
     else:
@@ -917,7 +925,7 @@ def propose_r2_specs(ladder_rows, params, log=None, var_bytes=None):
 
     out, dropped = [], []
     for p in numeric:
-        
+
         entries = []
         for v in slotted:
             e = {"name": v, "abs_lo": p, "abs_hi": p}
@@ -939,14 +947,14 @@ def propose_r2_specs(ladder_rows, params, log=None, var_bytes=None):
             fit = [v for v in allvars if var_bytes.get(v) == pbytes]
             unfit = [v for v in allvars if v not in fit]
         if unfit:
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
             say(f"[put]     identity `{p}` is {pbytes} byte(s), so "
                 f"{len(unfit)} candidate(s) of a different (or unknown) "
                 f"width are NOT asked about it -- an equality between values "
@@ -968,11 +976,11 @@ def propose_r2_specs(ladder_rows, params, log=None, var_bytes=None):
                 "abs_hi": p
             } for v in fit]
         })
-    
-    
+
+
     for p in numeric:
-        
-        
+
+
         cap_vars = [v for v in sorted(direction) if v in slotted]
         if cap_vars:
             out.append({
@@ -1182,11 +1190,11 @@ def source_assignment_r2_specs(ast_path,
     definition_scopes = []
     if owner is not None:
         chain = owner.get("linearizedBaseContracts") or [owner.get("id")]
-        
-        
-        
-        
-        
+
+
+
+
+
         state_scopes = [by_id[c] for c in reversed(chain) if c in by_id]
         definition_scopes = state_scopes
     if not state_scopes:
@@ -2792,14 +2800,14 @@ def boundary_observation_r2_spec(observations, directions=None):
     for name, samples in sorted(grouped.items()):
         posts = [post for _pre, post in samples]
         lo, hi = min(posts), max(posts)
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         absolute_candidates = [_r22_abs_candidate("boundary_abs", lo, hi)]
         if lo > 0:
             absolute_candidates.append(_r22_abs_candidate("boundary_abs_lo", lo, UINT256_MAX))
@@ -2810,10 +2818,10 @@ def boundary_observation_r2_spec(observations, directions=None):
             "equals": [],
             "abs": absolute_candidates,
             "deltas": [],
-            
-            
-            
-            
+
+
+
+
             "search": {"lo_obs": str(lo), "hi_obs": str(hi),
                        "up": {"refuted": None, "proved": None},
                        "down": {"refuted": None, "proved": None}},
@@ -3478,10 +3486,10 @@ def run_r2_passes(specs, base_spec, write_spec, runner, parse, log=print, proven
     pass
     seen = set()
     out = []
-    
-    
-    
-    
+
+
+
+
     exact_delta = {}
     proven_r2_vars = set()
     pending_specs = list(specs or [])
@@ -3538,11 +3546,11 @@ def run_r2_passes(specs, base_spec, write_spec, runner, parse, log=print, proven
                 "proofs and cannot enter a PUT oracle")
             continue
 
-        
-        
-        
-        
-        
+
+
+
+
+
         def is_r2_row(text):
             if text.startswith(("post in [", "post - pre in [", "pre - post in [", "return in [")):
                 return True
@@ -3768,6 +3776,10 @@ def oracle_detail(layer,
         "emitted_in_test": emitted_in_test,
         "guarded": bool(guarded),
         "r2_subfamily": r2_subfamily,
+
+
+
+
     }
 
 
@@ -4114,12 +4126,12 @@ def promote_zero_sender_owner_slice(region,
             canonical = canonical_state_coord_name(name, state_store_names)
             candidates.append((name, canonical))
 
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     raw_had_candidates = bool(candidates)
     if dep_coords:
         candidates = [c for c in candidates if c[0] in dep_coords or c[1] in dep_coords]
@@ -4151,18 +4163,18 @@ def promote_zero_sender_owner_slice(region,
         return region, holes, pins, establish, note
 
     if not raw_had_candidates:
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
         pins.pop("msg.sender", None)
         if region.get("msg.sender") == (0, 0) or region.get("msg.sender") == [0, 0]:
             region.pop("msg.sender", None)
@@ -4348,9 +4360,9 @@ def source_return_scalar_terms_for_path_guards(path_decisions, source_text=None)
             if not calls or call_fname is None:
                 continue
             decl_cache.setdefault(call_fname, _source_function_decl_infos(source, call_fname))
-            
-            
-            
+
+
+
             call_index = [s for s, f in symbols].index(symbol)
             call = calls[min(call_index, len(calls) - 1)]
             args = split_top_level(call.group(1))
@@ -4693,10 +4705,10 @@ def propose_slot_vars(maps,
             log(f"[put]   mapping candidates excluded by "
                 f"{SLOT_DEPENDENCY_POLICY}: {', '.join(excluded)}")
     for mname in map_names:
-        
-        
-        
-        
+
+
+
+
         _s, ktype, _n, _o, base, member = maps[mname][:6]
         query_base = mapping_query_base(mname, maps[mname])
         if not map_esbmc_certifiable(query_base):
@@ -4708,11 +4720,11 @@ def propose_slot_vars(maps,
         ktypes = list(ktype) if isinstance(ktype, tuple) else [ktype]
         per_level = []
         for kt in ktypes:
-            
-            
-            
-            
-            
+
+
+
+
+
             cands = sorted(pn for pn, pt in (params or []) if pn and _norm_ty(pt) == _norm_ty(kt))
             state_cands = sorted("state." + sn for sn, st in (state_types or {}).items()
                                  if sn in (layout or {}) and state_key_type_compatible(st, kt))
@@ -4720,16 +4732,16 @@ def propose_slot_vars(maps,
                 cands = ["msg.sender"] + cands
             cands += state_cands
             per_level.append(cands)
-        
-        
-        
+
+
+
         if not all(per_level):
             continue
         combos = list(itertools.product(*per_level))
-        
-        
-        
-        
+
+
+
+
         if len(combos) > budget:
             log(f"[put]   {base}: {len(ktypes)} level(s) x per-level matches "
                 f"{[len(x) for x in per_level]} = {len(combos)} candidate slot "
@@ -4961,10 +4973,10 @@ def antichain(rows, revert_tolerant=False, point_values=None):
                     d.add(exact)
                 if term == "0":
                     for candidate in texts:
-                        
-                        
-                        
-                        
+
+
+
+
                         if _zero_lower_interval(candidate):
                             d.add(candidate)
             ret_lit = _return_literal(text)
@@ -5230,7 +5242,7 @@ def rung_assertions(text, pre, post, label, idents=None, idents_abs=None, r2_ter
 
     m = re.match(r"^post in \[%s, %s\]$" % (_BND, _BND), text)
     if m:
-        
+
         lo = bound_term(m.group(1), idents_abs)
         hi = bound_term(m.group(2), idents_abs)
         e = None if lo is None or hi is None else (lo, hi)
@@ -5808,17 +5820,17 @@ def storage_layout(project, contract):
                        capture_output=True,
                        text=True)
     if p.returncode != 0:
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
         text = (p.stdout + p.stderr).lower()
         config = os.path.join(project, "foundry.toml")
         if (("too deep in the stack" in text or "stack too deep" in text)
@@ -5847,113 +5859,113 @@ def storage_layout(project, contract):
         if enc == "mapping":
             kt = (types.get(ty.get("key")) or {}).get("label") or ""
             vt = types.get(ty.get("value")) or {}
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             maps.update(_storage_layout_mapping_entries(e["label"], e["slot"], kt, vt, types))
             continue
         if enc == "dynamic_array":
@@ -5962,9 +5974,9 @@ def storage_layout(project, contract):
             except (KeyError, TypeError, ValueError):
                 pass
             continue
-        
-        
-        
+
+
+
         if enc != "inplace":
             continue
         nb = ty.get("numberOfBytes")
@@ -6212,25 +6224,25 @@ def _visible_contract_scopes(ast_path, contract):
     index(ast)
     if target is None:
         return [ast]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     chain = []
     for base_id in target.get("linearizedBaseContracts") or [target.get("id")]:
         base = by_id.get(base_id)
@@ -6402,7 +6414,7 @@ def _select_def(defs, arity, declaration_id=None):
         fit = [d for d in defs if len(_decl_list(d, "parameters")) == arity]
         if len(fit) == 1:
             return fit[0]
-        
+
         if fit:
             return fit[-1]
     return defs[-1]
@@ -7174,8 +7186,8 @@ def _constructor_guard_lower_bounds(body, params, constants):
     for name, rhs in re.findall(
             r"if\s*\(\s*" + ident + r"\s*<\s*" + operand + r"\s*\)\s*(?:revert|\{)", body):
         raise_to(name, value_of(rhs))
-    
-    
+
+
     for lhs, rhs in re.findall(
             r"if\s*\(\s*" + ident + r"\s*<=\s*" + ident + r"\s*\)\s*(?:revert|\{)", body):
         if lhs in names and rhs in names:
@@ -7228,9 +7240,9 @@ def constructor_guard_param_overrides(source, contract, constructor_params):
     overrides = {}
     notes = []
 
-    
-    
-    
+
+
+
     authority = _authority_state_vars_reachable_from_constructor(masked_chunk, body)
     if authority:
         assigned = dict(
@@ -7311,7 +7323,7 @@ def _immutable_constructor_param_route(source, contract, var, _depth=0):
     for idx, (pname, ptype) in enumerate(params):
         if re.search(r"(?<![\w.])" + re.escape(var) + r"\s*=\s*" + re.escape(pname) + r"\s*;", body):
             return idx, pname, ptype
-    
+
     pindex = {pname: i for i, (pname, _t) in enumerate(params)}
     for base, args in _constructor_initializer_calls(chunk):
         if base == contract:
@@ -7346,12 +7358,12 @@ def _deployment_statement(lines, contract):
 def deployment_coordinate_param(name, ptype, lo, hi, coord_holes, used, sig, rendered_width):
     pass
     ptype = (ptype or "").strip()
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     if ptype in ("address", "address payable") or re.fullmatch(r"[A-Z]\w*", ptype):
         return None
     lo, hi = int(lo), int(hi)
@@ -7369,9 +7381,9 @@ def deployment_coordinate_param(name, ptype, lo, hi, coord_holes, used, sig, ren
         if m.group(1) == "u":
             var, lines = freed_state_fuzz_param(name, bits, lo, hi, hs, used, sig, rendered_width)
             return var, lines
-        
-        
-        
+
+
+
         var, lines = freed_state_fuzz_param(name, bits, lo, hi, hs, used, sig, rendered_width)
         return f"int{bits}({var})", lines
     if ptype == "bool":
@@ -7384,11 +7396,11 @@ def _source_constructor_params_from_source(source, contract):
     chunk = _source_contract_chunk(source, contract)
     if not chunk:
         return []
-    
-    
-    
-    
-    
+
+
+
+
+
     chunk = _mask_solidity_comments_and_strings(chunk)
     m = re.search(r"\bconstructor\s*\((.*?)\)", chunk, re.S)
     if m is None:
@@ -7918,9 +7930,9 @@ def source_inherited_function_params(source, contract, unit, arity=None):
                 matches.extend(params for params, _body in defs if len(params) == arity)
             else:
                 matches.extend(params for params, _body in defs)
-        
-        
-        
+
+
+
         for base_name in _source_inheritance_names(chunk):
             visit(base_name)
         for base_name, _args in _constructor_initializer_calls(chunk):
@@ -8211,8 +8223,8 @@ def _modifier_always_runs_body(source, chunk, name):
         body = _source_modifier_body(text, name)
         if body is not None:
             bodies.append(body)
-    
-    
+
+
     for match in re.finditer(r"modifier\s+" + re.escape(name) + r"\s*(?:\([^)]*\))?\s*[^;{]*\{",
                              source or "", re.S):
         body = _source_modifier_body((source or "")[match.start():], name)
@@ -8739,8 +8751,8 @@ def constructor_param_strict_order_specs(source, contract, unit=None):
         return []
     specs = []
     for left, op, right in comparisons:
-        
-        
+
+
         if op == "<=" and left in indices and right in indices:
             higher, lower = left, right
         elif op == ">=" and left in indices and right in indices:
@@ -8842,8 +8854,8 @@ def _body_has_nonempty_dynamic_guard(body, name):
     if not body or not name:
         return False
     name_rx = re.compile(r"\b" + re.escape(name) + r"\b")
-    
-    
+
+
     for stmt in body.split(";"):
         if not name_rx.search(stmt):
             continue
@@ -8955,9 +8967,9 @@ def constructor_param_dynarray_min_lengths(source, contract):
             rx = re.compile(r"\b" + re.escape(pname) + r"\s*\[\s*(\d+)\s*\]")
             for match in rx.finditer(body):
                 value = int(match.group(1))
-                
-                
-                
+
+
+
                 guarded = False
                 for guard in re.finditer(r"\bif\s*\([^{};]*>\s*(\d+)\s*\)\s*\{"
                                          r"(.*?)\}", body, re.S):
@@ -9280,8 +9292,8 @@ class EmittedFile:
     def __init__(self, path):
         self.path = path
         self.lines = open(path).read().splitlines()
-        self.blocks = []  
-        self.cases = []  
+        self.blocks = []
+        self.cases = []
         self.case_fingerprints = {}
         cur_c, cur_start = None, None
         depth = 0
@@ -9303,13 +9315,13 @@ class EmittedFile:
                 if mh:
                     pending_fingerprint = mh.group(1)
                 mf = self.FN_RE.match(ln)
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
                 if mf:
                     j, d2 = i + 1, 1
                     while j < len(self.lines) and d2 > 0:
@@ -9451,13 +9463,13 @@ def _lit_int(expr):
     while True:
         m = re.match(r"^(?:address|payable|u?int\d*|bytes\d+)\s*\(\s*(.*)\s*\)$", s)
         if m is None:
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
             m = re.match(r"^[A-Za-z_]\w*(?:\s*\.\s*[A-Za-z_]\w*)*\s*\(\s*"
                          r"((?:address|uint8)\s*\(.*\))\s*\)$", s)
         if not m:
@@ -9550,7 +9562,7 @@ def extcall_fixture_ce_projection(source, contract, unit, expected, params, regi
     source_params = [(name, _norm_ty(typ)) for name, typ in named_params(declared_params)]
     if requested_params != source_params:
         return None
-    
+
     header_words = set(re.findall(r"[A-Za-z_]\w*", header_tail or ""))
     if header_words - {
             "public", "external", "view", "pure", "payable", "virtual", "override", "returns"
@@ -9706,10 +9718,10 @@ def _ce_projection_error(name,
         if (not isinstance(source_sha, str) or not re.fullmatch(r"[0-9a-f]{64}", source_sha)):
             return "strict low-level-call fixture lacks its source function hash"
         return None
-    
-    
-    
-    
+
+
+
+
     if not name.startswith("state."):
         return "constructor/setup evidence is restricted to state coordinates"
     if certificate != CONSTRUCTOR_SETUP_PROJECTION:
@@ -9820,8 +9832,8 @@ def observed_complete_env(body, call_i, call_line):
         if arguments is None or len(arguments) < 2:
             continue
         origin = arguments[1].strip()
-        
-        
+
+
         if origin in ("true", "false"):
             continue
         observed["tx.origin"] = (_lit_int(origin), line.strip())
@@ -9855,9 +9867,9 @@ def bind_emitted_source_to_certified_ce(body,
     bindings = {}
     unconstrained_dynamic = {}
     for index, ((name, typ), expr) in enumerate(zip(params, args)):
-        
-        
-        
+
+
+
         alias = f"omitted_param_{index}"
         if (name not in expected_ce
                 and not any(k.startswith((name + ".", name + "[")) for k in expected_ce)
@@ -9889,12 +9901,12 @@ def bind_emitted_source_to_certified_ce(body,
                     "certified": 0,
                 }
                 continue
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
             fixed_len = None
             m_arr = re.match(r"^new\s+[A-Za-z_][\w.]*(?:\[\d*\])*\[\]\(\s*(\d+)\s*\)$",
                              expr.strip())
@@ -9916,10 +9928,10 @@ def bind_emitted_source_to_certified_ce(body,
                     "certified": fixed_len,
                 }
                 continue
-            
-            
-            
-            
+
+
+
+
             dynamic = (str(typ).strip() in ("bytes", "bytes memory", "bytes calldata", "string",
                                             "string memory", "string calldata")
                        or dynamic_calldata_signature_type(typ) is not None)
@@ -10014,9 +10026,9 @@ def bind_emitted_source_to_certified_ce(body,
             "coordinates": bindings,
         })
         if unconstrained_dynamic:
-            
-            
-            
+
+
+
             audit["unconstrained_dynamic_arguments"] = unconstrained_dynamic
     return digest, None
 
@@ -10447,9 +10459,9 @@ def _certified_ce_call_arg_expr(name, sol_type, certified_ce):
         return None
     value = expected[name]
     if not isinstance(value, int) or isinstance(value, bool):
-        
-        
-        
+
+
+
         return None
     return _concrete_return_literal(sol_type, value)
 
@@ -10504,8 +10516,8 @@ def synthesize_minimal_emitted_case(out_dir,
         call_args.append(expr)
 
     constructor_params = list(constructor_params or [])
-    
-    
+
+
     guard_overrides, guard_notes = constructor_guard_param_overrides(
         flat_source or "", contract, constructor_params)
     ctor_overrides, ctor_override_notes =\
@@ -10677,41 +10689,41 @@ def establish_env_sender(body, call_i, region, holes, pins, used, call_value_exp
     if lo is None:
         return body, call_i, None, None, [], None, None
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     sig_add, pre_add = None, []
     if hi > lo:
@@ -10719,14 +10731,14 @@ def establish_env_sender(body, call_i, region, holes, pins, used, call_value_exp
         while var in used:
             var += "_"
         sig_add = ("address", var)
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         sender_holes = set(holes.get("msg.sender", ()))
         if lo <= 0 <= hi:
             sender_holes.add(0)
@@ -10757,28 +10769,28 @@ def establish_env_sender(body, call_i, region, holes, pins, used, call_value_exp
                 f"not the value this region is a statement about")
 
     new_body = list(body)
-    
-    
-    
+
+
+
     stmt_i = (statement_start(new_body, call_i) if 0 <= call_i < len(new_body) else call_i)
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     fund = None
     if call_value_expr is not None:
         fund = f"    vm.deal({sender_expr}, {call_value_expr});"
@@ -10819,9 +10831,9 @@ def establish_env_sender(body, call_i, region, holes, pins, used, call_value_exp
     else:
         note += f" (replacing `{new_body[last].strip()}`)"
         new_body[last] = prank
-        
-        
-        
+
+
+
         if fund:
             new_body.insert(last, fund)
             call_i += 1
@@ -10884,9 +10896,9 @@ def planned_env_value(body,
     stmt_i = statement_start(body, call_i)
     statement = "\n".join(body[stmt_i:call_i + 1])
     if ".call" in statement and _VALUE_RE.search(statement):
-        
-        
-        
+
+
+
         return value_expr if hi > lo else None
     if (allow_high_level_value and unit and _high_level_value_call_statement(statement, unit)):
         return value_expr
@@ -10954,9 +10966,9 @@ def establish_env_value(body,
     if not replaced:
         return body, call_i, None, None, [], None
 
-    
-    
-    
+
+
+
     if sender_expr is None:
         payer = "address(this)"
         prank_i = None
@@ -10997,11 +11009,11 @@ def establish_block_env(body, call_i, region, holes, pins, used, coord, cheatcod
     else:
         return body, call_i, None, None, [], None, None
 
-    
-    
-    
-    
-    
+
+
+
+
+
     if coord == "block.chainid" and (lo < 0 or hi > CHAIN_ID_MAX):
         return (body, call_i, None, None, [],
                 f"{coord} in [{lo}, {hi}] cannot be established: Foundry "
@@ -11116,46 +11128,46 @@ def env_disagreements(body, call_i, call_line, region, pins, established=()):
     for n, (lo, hi) in region.items():
         if not n.startswith(ENV_PREFIXES):
             continue
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
         if n in established:
             continue
         if lo == hi:
             want[n] = lo
         else:
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             ranged[n] = (lo, hi)
     for n, v in pins.items():
         if n.startswith(ENV_PREFIXES) and n not in want and n not in established:
             want[n] = v
     obs = observed_env(body, call_i, call_line)
     refusals, unchecked = [], []
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     for n, (lo, hi) in sorted(ranged.items()):
         if n not in obs:
             refusals.append(f"{n} is certified over [{lo}, {hi}], but this emitter cannot "
@@ -11274,7 +11286,7 @@ def call_arg_span(line, unit):
         m = re.search(LOWLEVEL_CALL_RE_TMPL.format(unit=re.escape(unit)), line)
         if not m:
             return None
-        
+
         k = line.find("(", m.start())
         start = k + 1
         sig_offset = 1
@@ -11299,9 +11311,9 @@ def find_unit_call(lines, unit):
     pass
     rx = member_call_re(unit, anchored=True)
     rx_any = member_call_re(unit, anchored=False)
-    
-    
-    
+
+
+
     rx_low = re.compile(LOWLEVEL_CALL_RE_TMPL.format(unit=re.escape(unit)))
     special = None
     if unit in ("fallback", "receive"):
@@ -11317,15 +11329,15 @@ def find_unit_call(lines, unit):
 
 def rewrite_call_args(line, unit, replacements):
     pass
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
     span = call_arg_span(line, unit)
     if span is None:
         return None, None
@@ -11334,9 +11346,9 @@ def rewrite_call_args(line, unit, replacements):
     for idx, txt in replacements.items():
         if idx + sig_offset < len(new):
             new[idx + sig_offset] = txt
-    
-    
-    
+
+
+
     return line[:start] + ", ".join(new) + line[i:], args[sig_offset:]
 
 
@@ -11433,6 +11445,8 @@ def _concrete_point_for_region(name, region, pins, avoid_zero=False):
     value = int(lo)
     if avoid_zero and value == 0 and int(hi) > 0:
         value = 1
+    if avoid_zero and 1 <= value <= PRECOMPILE_MAX and value + 0x1000 <= int(hi):
+        value = value + 0x1000
     if value < int(lo) or value > int(hi):
         return None
     return value
@@ -11483,13 +11497,14 @@ def materialize_concrete_nonpayable_value_gate(lines,
             return list(lines), 0, "certified CE msg.value differs from the certified pin"
         if "msg.sender" in (pins or {}) and sender != int(pins["msg.sender"]):
             return list(lines), 0, "certified CE msg.sender differs from the certified pin"
-        
-        
-        
-        
-        
+
+
+
+
+
         if sender == 0:
             sender = 1
+        sender = nonprecompile_sender(sender)
         if "msg.sender" in (region or {}):
             sender_lo, sender_hi = region["msg.sender"]
             if sender < int(sender_lo) or sender > int(sender_hi):
@@ -11523,8 +11538,8 @@ def materialize_concrete_nonpayable_value_gate(lines,
             break
         return start if saw_target_prelude else statement_i
 
-    
-    
+
+
     for i, line in reversed(list(enumerate(out))):
         _rewritten, args = rewrite_call_args(line, unit, {})
         if args is None:
@@ -11559,7 +11574,7 @@ def materialize_concrete_nonpayable_value_gate(lines,
 
 def materialize_concrete_certified_sender_point(lines, region, pins):
     pass
-    sender = _concrete_point_for_region("msg.sender", region or {}, pins or {})
+    sender = _concrete_point_for_region("msg.sender", region or {}, pins or {}, avoid_zero=True)
     if sender is None:
         return list(lines), 0
     value = _concrete_point_for_region("msg.value", region or {}, pins or {})
@@ -11686,6 +11701,10 @@ def materialize_concrete_certified_env_point(source, test_name, unit, certified_
         return source, 0, reason
     sender = expected_ce.get("msg.sender")
     origin = expected_ce.get("tx.origin")
+    if sender is not None:
+        sender = nonprecompile_sender(sender)
+    if origin is not None:
+        origin = nonprecompile_sender(origin)
     if origin is not None and sender is None:
         return source, 0, "tx.origin cannot be established without an exact msg.sender prank"
     if sender is not None:
@@ -11701,16 +11720,16 @@ def materialize_concrete_certified_env_point(source, test_name, unit, certified_
         return source, 0, None
     prelude_start = _target_env_prelude_start(body, stmt_i)
     if prelude_start < stmt_i:
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
         kept = [line for line in body[prelude_start:stmt_i] if line.strip().startswith("//")]
         del lines[start + 1 + prelude_start:start + 1 + stmt_i]
         stmt_i = prelude_start
@@ -11736,13 +11755,13 @@ def materialize_concrete_certified_state_point(source,
                    if name.startswith("state.")]
     if not state_items:
         return source, 0, None
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     if not isinstance(layout, dict):
         return source, 0, "certified CE has state coordinates but storage layout is unavailable"
     lines = source.splitlines()
@@ -11773,14 +11792,14 @@ def materialize_concrete_certified_state_point(source,
         if not isinstance(scalar_value, int):
             return source, 0, f"certified state coordinate {name} is not a scalar integer"
         raw_state_name = name[len("state."):]
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         dyn_len = re.match(r"^([A-Za-z_$][A-Za-z0-9_$]*)_dynarray_len\[", raw_state_name)
         if dyn_len is not None:
             length_key = layout_scalar_key(dyn_len.group(1) + ".length", layout,
@@ -11794,32 +11813,32 @@ def materialize_concrete_certified_state_point(source,
             continue
         mname, map_keys, map_tail = parse_slot_name(raw_state_name)
         if mname is not None:
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
             mkey = mname + map_tail
             spec = (maps or {}).get(mkey)
             if not spec and name in (deployment_established or ()):
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 projected[name] = {
                     "kind": "fixed-replay-state-deployment-established",
                     "certificate": FIXED_REPLAY_STATE_DEPLOYMENT_PROJECTION,
@@ -11842,33 +11861,33 @@ def materialize_concrete_certified_state_point(source,
                     kexprs.append(key_expr_typed(k))
                     continue
                 key_value = expected_ce.get(k)
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
                 if key_value is None:
-                    
-                    
+
+
                     obj_member = re.fullmatch(
                         r"(?:\(\s*(?:unsigned\s+|signed\s+)?_ExtInt\(\d+\)\s*\)\s*)?"
                         r"\(\s*&\s*_ESBMC_Object_[A-Za-z_]\w*\s*\)\s*->\s*"
                         r"([A-Za-z_$][\w$]*)", k)
                     if obj_member is not None:
                         member = obj_member.group(1)
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
+
+
+
+
+
                         if member == "$address":
                             kexprs.append(key_expr_typed(receiver))
                             continue
@@ -12337,15 +12356,15 @@ def path_decision_assumes(path_decisions, coord_ident_abs, assigned_terms=None):
             texts = []
             tautology = False
             for lhs, op, rhs in group:
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
                 stale_terms = [
                     t for t in (lhs, rhs)
                     if re.match(r"^[A-Za-z_]\w*(?:\$\d+)?$", t)
@@ -12492,8 +12511,8 @@ def drop_free_param_ordering_asserts(assert_lines, body_lines):
         return assert_lines, []
     post_bound = dict(_FREE_ORDER_POST_EQ.findall(text))
     pre_bound = dict(_FREE_ORDER_PRE_EQ.findall(text))
-    
-    
+
+
     def pre_param(var):
         return next((v for k, v in pre_bound.items() if k == var or k.startswith(var + "_")),
                     None)
@@ -12555,7 +12574,7 @@ def build_put(contract,
         return None, None
     call_line = body[call_i]
 
-    
+
     _new, args = rewrite_call_args(call_line, unit, {})
     if args is None:
         notes.append("could not parse the emitted call's argument list")
@@ -12600,11 +12619,11 @@ def build_put(contract,
                      "revert-tolerant setup; the PUT's exit oracle belongs only to "
                      "the lifted target call")
 
-    
-    
-    
-    
-    
+
+
+
+
+
     if (lift_unconstrained_sender and "msg.sender" not in region and "msg.sender" not in pins):
         region = dict(region)
         region["msg.sender"] = (1, (1 << 160) - 1)
@@ -12615,33 +12634,33 @@ def build_put(contract,
     lifted, repl, sig, pre_lines = [], {}, [], []
     implicit_full = set(implicit_full)
     point_texts = point_value_texts(region, pins)
-    
-    
+
+
     rendered_width = {}
     dynamic_fuzz_coords = []
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     coord_ident = {}
-    
-    
-    
+
+
+
     coord_ident_abs = {}
-    
-    
-    
-    
+
+
+
+
     coord_ident_return = {}
     used = {b[0] for b in emitted.blocks}
     param_interface_specs_by_name = {}
@@ -12653,17 +12672,17 @@ def build_put(contract,
         if isinstance(spec, dict) and spec.get("coord")
     ]
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
     nonpayable_abi_signature = None
     env_value_bounds = _env_value_bounds(region, pins)
     if (not unit_payable and env_value_bounds is not None and env_value_bounds[0] > 0):
@@ -12697,20 +12716,20 @@ def build_put(contract,
             pre_lines += pre_add
             lifted.append("msg.sender")
             used.add(sig_add[1])
-            
-            
-            
+
+
+
             if "msg.sender" in region:
                 _slo, _shi = region["msg.sender"]
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
                 sender_render_holes = set(holes.get("msg.sender", ()))
                 if _slo <= 0 <= _shi:
                     sender_render_holes.add(0)
@@ -12933,7 +12952,7 @@ def build_put(contract,
                              f"region; lifting it as a full-domain calldata fuzz input "
                              f"because the certification proof leaves it unconstrained")
         else:
-            continue  
+            continue
         if dynamic_sig_ty is not None:
             var = pname if pname not in used and pname != "c0" else "p_" + pname
             sig.append((dynamic_sig_ty, var))
@@ -12961,14 +12980,14 @@ def build_put(contract,
                 else:
                     fixed_ctor = fixed_length_dynamic_ctor(var, ptype, lo, hi, param_holes)
                     if fixed_ctor is not None:
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
+
                         pre_lines.append(fixed_ctor)
                     else:
                         pre_lines += dynamic_length_assume_lines(var, ptype, lo, hi, param_holes)
@@ -13016,27 +13035,27 @@ def build_put(contract,
             param_interface_mock_calls += 1
         repl[idx] = call_arg_expr(ptype, kind, width, var, flat_source or "")
         lifted.append(pname)
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         if kind == "address":
             coord_ident_abs[pname] = f"uint256(uint160({var}))"
         elif kind == "bool":
@@ -13049,64 +13068,64 @@ def build_put(contract,
         else:
             coord_ident[pname] = var
             coord_ident_abs[pname] = var
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
         rendered_width[pname] = (hi - lo + 1) - len({h for h in param_holes if lo <= h <= hi})
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     _empty = sorted(n for n, w in rendered_width.items() if w < 1)
     if _empty:
         notes.append("REFUSED: the certified region leaves NO value for " +
@@ -13132,10 +13151,10 @@ def build_put(contract,
                      "emitted call; refusing to guess storage oracle address")
         return None, None
 
-    
-    
-    
-    
+
+
+
+
     key_expr_of = {}
     for idx, (pname, _pt) in enumerate(params):
         key_expr_of[pname] = repl.get(idx, args[idx].strip())
@@ -13147,9 +13166,9 @@ def build_put(contract,
         if lk is None:
             continue
         kind, _width = lk
-        
-        
-        
+
+
+
         if kind == "address":
             coord_ident_abs[pname] = f"uint256(uint160({expr}))"
         elif kind == "bool":
@@ -13174,79 +13193,79 @@ def build_put(contract,
             store_name = (state_store_names or {}).get(sname)
             if store_name and store_name != sname:
                 key_expr_of["state." + store_name] = expr
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     if env_sender_expr is not None:
         key_expr_of["msg.sender"] = env_sender_expr
     for env_key in (["msg.value"] + list(NUMERIC_ENV_SETTERS) + list(ADDRESS_ENV_SETTERS)):
         if env_key in coord_ident:
             key_expr_of[env_key] = coord_ident[env_key]
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     store_lines, stored, state_skipped = [], [], []
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
     projected_constants = {}
     established_relations = []
     established_state_targets = set()
-    
-    
-    
-    
+
+
+
+
     freed_state_targets = set()
     for rel in establish or []:
         if not isinstance(rel, dict):
@@ -13261,53 +13280,53 @@ def build_put(contract,
             notes.append(f"REFUSED: establish target `{target}` is not an entry-state "
                          "coordinate")
             return None, None
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         if source == "*":
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
             canonical_target = canonical_state_coord_name(target, state_store_names)
             if (target in (region or {}) or target in (pins or {})
                     or canonical_target in (region or {}) or canonical_target in (pins or {})):
                 freed_state_targets.add(target)
                 freed_state_targets.add(canonical_target)
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
                 continue
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
             notes.append(f"freed entry-state coordinate `{target}` is not bounded by this "
                          "build's region or pins: the statement holds for all its "
                          "values, nothing is established for it")
@@ -13345,27 +13364,27 @@ def build_put(contract,
         if canonical_name in established_state_targets:
             continue
         v = name[6:]
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         mname, pin_keys, pin_tail = parse_slot_name(v)
         if mname is not None:
             kname = ", ".join(pin_keys)
@@ -13377,15 +13396,15 @@ def build_put(contract,
                                      f"word the contract never reads)")
                 continue
             if lo != hi:
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
                 _mspec = maps[mkey]
                 _mslot, _kt2, vnb2, voff2, _mb2, _mm2 = _mspec[:6]
                 kx, kerr2 = [], None
@@ -13398,33 +13417,33 @@ def build_put(contract,
                 chk = ([] if kerr2 is not None else slot_inside_region_check_at(
                     target_addr, map_value_slot_expr(kx, _mspec), voff2, vnb2, lo, hi, name))
                 if chk:
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     if (name in freed_state_targets
                             or canonical_name in freed_state_targets):
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
+
+
+
                         _fv, _fpre = freed_state_fuzz_param(name, vnb2 * 8, lo, hi,
                                                             holes.get(name, ()), used, sig,
                                                             rendered_width)
@@ -13449,13 +13468,13 @@ def build_put(contract,
                 continue
             _mspec = maps[mkey]
             _mslot, _kt, vnb, voff, _mb, _mm = _mspec[:6]
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
             nlev = 1 if isinstance(_kt, str) else len(_kt)
             if len(pin_keys) != nlev:
                 state_skipped.append(f"{name} (`{mname}` is a {nlev}-level store but the name "
@@ -13473,30 +13492,30 @@ def build_put(contract,
                 state_skipped.append(f"{name} ({kerr})")
                 continue
             kexpr = kexprs
-            
-            
-            
+
+
+
             store_lines += slot_write_lines_at(target_addr, map_value_slot_expr(kexpr, _mspec),
                                                voff, vnb, str(lo))
-            
-            
-            
-            
-            
+
+
+
+
+
             store_lines += slot_landing_check_at(target_addr, map_value_slot_expr(kexpr, _mspec),
                                                  voff, vnb, str(lo), name)
             stored.append(f"{name} := {lo}")
             continue
         layout_name = layout_scalar_key(v, layout, state_store_names)
         if layout_name is None:
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
             _route = _immutable_constructor_param_route(flat_source or "", contract, v)
             _deploy = _deployment_statement(emitted.lines, contract) if _route else None
             if _route is not None and _deploy is not None:
@@ -13534,59 +13553,59 @@ def build_put(contract,
             continue
         slot, off, nb = layout[layout_name]
         if lo != hi:
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             chk = slot_inside_region_check(target_addr, slot, off, nb, lo, hi, name)
             if chk:
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
                 if (name in freed_state_targets
                         or canonical_name in freed_state_targets):
-                    
+
                     _fv, _fpre = freed_state_fuzz_param(name, nb * 8, lo, hi,
                                                         holes.get(name, ()), used, sig,
                                                         rendered_width)
@@ -13612,29 +13631,29 @@ def build_put(contract,
             continue
         val = str(lo)
         store_lines += slot_write_lines(target_addr, slot, off, nb, val)
-        
-        
-        
+
+
+
         store_lines += slot_landing_check(target_addr, slot, off, nb, val, name)
         stored.append(f"{name} := {val}")
         established_state_targets.add(canonical_name)
 
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     call_is_revert_tolerant = new_call.strip().startswith("try ")
 
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     ret_rows_all = [(var, t, v) for var, t, v in ladder_rows
                     if var == RETURN_VAR or var.startswith(RETURN_VAR + ".")]
     ret_asserts, ret_skipped, ret_pre_reads = [], [], []
@@ -13650,7 +13669,7 @@ def build_put(contract,
         live = [
             v for var, t, v in ret_rows_all if var == RETURN_VAR and t.startswith(RETLIVE_PREFIX)
         ]
-        
+
         holds = {}
         for var, t, v in ret_rows_all:
             if t.startswith(RETLIVE_PREFIX) or v != "HOLDS":
@@ -13710,10 +13729,10 @@ def build_put(contract,
                     lhs = f"{rk[0]} {base}"
                     plan = [(None, rk, base)]
             else:
-                
-                
-                
-                
+
+
+
+
                 slots = []
                 for i, (_nm, ty) in enumerate(rettypes):
                     rk = return_kind(ty)
@@ -13828,18 +13847,18 @@ def build_put(contract,
                 if planned_ret_asserts:
                     ret_pre_reads += planned_ret_pre_reads
                 if not ret_asserts:
-                    
-                    
-                    
+
+
+
                     new_call, _ = rewrite_call_args(call_line, unit, repl)
         if why is not None:
             ret_skipped.append(f"all return rungs DROPPED: {why}")
 
-    
+
     pre_reads, post_reads = list(ret_pre_reads), []
     asserts, oracle_skipped = [], []
-    
-    
+
+
     guarded, guard_notes = [], []
     okvar = "_put_ok"
     while any(okvar in ln for ln in body):
@@ -13946,20 +13965,20 @@ def build_put(contract,
                       or layout_scalar_key(svar, layout, state_store_names) is not None):
                     materialize_r2_state_coord(cname)
 
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
     raw_ladder_rows = list(ladder_rows)
     ladder_rows, implied_rows = antichain(raw_ladder_rows, call_is_revert_tolerant, point_texts)
-    
-    
-    
-    
+
+
+
+
     ladder_rows = preserve_reverting_frame_rows(raw_ladder_rows, ladder_rows,
                                                 bool(rollback_exit or exit_kind == "revert"))
     retained_frame_keys = {(var, canonical_oracle_rung_text(text))
@@ -13975,28 +13994,28 @@ def build_put(contract,
         f"one misses)" for v, t, _d in implied_rows
     ]
     for var, text, verdict in ladder_rows:
-        
-        
-        
-        
-        
+
+
+
+
+
         if var == RETURN_VAR or var.startswith(RETURN_VAR + "."):
             continue
         if verdict != "HOLDS":
             continue
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
         mname, slot_keys, slot_tail = parse_slot_name(var)
         if mname is not None:
             kname = ", ".join(slot_keys)
@@ -14009,18 +14028,18 @@ def build_put(contract,
                 continue
             _mspec = maps[mkey]
             _mslot, _ktype, vnb, voff, _mb, _mm = _mspec[:6]
-            
-            
-            
+
+
+
             nlev = 1 if isinstance(_ktype, str) else len(_ktype)
             if len(slot_keys) != nlev:
                 oracle_skipped.append(f"{var} (`{mname}` is a {nlev}-level store but the name "
                                       f"gives {len(slot_keys)} key(s); a name with the wrong "
                                       f"depth reads a word nothing wrote)")
                 continue
-            
-            
-            
+
+
+
             kexprs, kerr = [], None
             for kn in slot_keys:
                 ke, err = slot_key_expr(kn, key_expr_of)
@@ -14042,7 +14061,7 @@ def build_put(contract,
             coord_ident_abs["state." + var] = "_pre_" + ident
             if not materialize_r2_state_terms(text):
                 continue
-            
+
             _chg = ((call_is_revert_tolerant or rollback_exit) and rung_asserts_a_change(text))
             a = rung_assertions(text, f"_pre_{ident}", f"_post_{ident}",
                                 oracle_label_prefix + f"{var}: {text}", coord_ident,
@@ -14084,7 +14103,7 @@ def build_put(contract,
         coord_ident_abs["state." + var] = "_pre_" + _slot_ident(var)
         if not materialize_r2_state_terms(text):
             continue
-        
+
         _chg = ((call_is_revert_tolerant or rollback_exit) and rung_asserts_a_change(text))
         ident = _slot_ident(var)
         a = rung_assertions(text, f"_pre_{ident}", f"_post_{ident}",
@@ -14115,10 +14134,10 @@ def build_put(contract,
     path_guard_coord_ident_abs.update(
         source_path_guard_aliases(path_decisions, path_guard_coord_ident_abs, maps,
                                   state_store_names, flat_source))
-    
-    
-    
-    
+
+
+
+
     path_guard_coord_ident_abs.update(
         expand_path_guard_coord_idents(point_texts, maps, state_store_names))
     assigned_path_guard_terms = assigned_source_locals(flat_source or "", contract, unit)
@@ -14127,21 +14146,21 @@ def build_put(contract,
                                                                  assigned_path_guard_terms)
     early_path_guard_lines = [item for item in path_guard_lines if ".balance" not in item[1]]
     late_path_guard_lines = [item for item in path_guard_lines if ".balance" in item[1]]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     existing_expect_revert = any("vm.expectRevert()" in ln for ln in body[:call_i])
     low_level_exit_asserted = low_level_value_gate_asserts_exit(
         list(body[:call_i]) + [new_call] + list(body[call_i + 1:]), call_i, new_call)
@@ -14188,23 +14207,23 @@ def build_put(contract,
             oracle_details = [d for d in oracle_details if not d.get("guarded")]
     oracle_skipped += ret_skipped
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     fname = f"test_put_{contract}_{unit}_path{enc}{piece_label}"
     sig_txt = ", ".join(f"{t} {n}" for t, n in sig)
 
@@ -14231,11 +14250,11 @@ def build_put(contract,
         hs = sorted(holes.get(n, ()))
         out.append(f"  //   {n} in [{lo}, {hi}]" +
                    ("  \\ {" + ", ".join(str(h) for h in hs) + "}" if hs else ""))
-    
-    
-    
-    
-    
+
+
+
+
+
     established = {s.split(" := ", 1)[0] for s in stored}
     for n, v in sorted(pins.items()):
         if n in established:
@@ -14246,18 +14265,18 @@ def build_put(contract,
                        f"dropped-bound line]")
         else:
             out.append(f"  //   PIN {n} == {v}")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
     if derived_by:
         _ladder = bool(derived_by.get("geometric_bracket"))
         _subtract = bool(derived_by.get("sibling_subtraction"))
@@ -14342,28 +14361,28 @@ def build_put(contract,
                    f"when this path was")
         out.append(f"  // shown to reach a return at all.")
     else:
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         headline, why = no_oracle_reason(ladder_rows)
         if insert_expect_revert or exit_kind_asserted(
                 list(body[:call_i]) + [new_call] + list(body[call_i + 1:]), unit):
@@ -14414,21 +14433,21 @@ def build_put(contract,
     for s in env_unchecked:
         out.append(f"  //   environment NOT CHECKED: {s}")
     for s in env_established:
-        
-        
-        
-        
-        
+
+
+
+
+
         out.append(f"  //   environment ESTABLISHED: {s}")
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
     _snapshot_locals = len(pre_reads) + len(post_reads)
     hoisted_decls = []
     if len(sig) + _snapshot_locals > PUT_LOCAL_STACK_BUDGET:
@@ -14453,28 +14472,28 @@ def build_put(contract,
         out += hoisted_decls
     out.append(f"  function {fname}({sig_txt}) public {{")
     out += pre_lines
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     head_end = statement_start(body, call_i)
     while head_end > 0:
         prev = body[head_end - 1].strip()
@@ -14544,12 +14563,14 @@ def build_put(contract,
     if insert_expect_revert:
         out.append("    vm.expectRevert();")
     out.append(new_call)
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+    if post_reads or asserts or guarded or ret_asserts:
+        out.append("    // VERIPUT_ORACLE_ASSERTIONS_BEGIN")
     out += post_reads
     asserts, dropped_free_order = drop_free_param_ordering_asserts(asserts, out)
     for line in dropped_free_order:
@@ -14562,11 +14583,13 @@ def build_put(contract,
         out += guarded
         out.append("    }")
     out += ret_asserts
+    if post_reads or asserts or guarded or ret_asserts:
+        out.append("    // VERIPUT_ORACLE_ASSERTIONS_END")
     if catch_assert_revert:
-        
-        
-        
-        
+
+
+
+
         out.append(f'    assertFalse({okvar}, "path enc={enc}{piece_label} exits '
                    f'through a REVERT: the call must fail on the unmodified '
                    f'contract");')
@@ -14592,35 +14615,35 @@ def build_put(contract,
         "rendered_width": dict(sorted(rendered_width.items())),
         "wide_fuzz_coords": sorted(n for n, width in rendered_width.items() if width > 1),
         "dynamic_fuzz_coords": sorted(dynamic_fuzz_coords),
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
         "asserts": (len(asserts) + len(ret_asserts) + len(guarded) + exit_kind_asserts),
         "verifier_asserts": verifier_asserts,
         "state_asserts": len(asserts) + len(guarded),
         "guarded_asserts": len(guarded),
         "exit_kind_asserts": exit_kind_asserts,
-        
-        
-        
+
+
+
         "rollback_exit": bool(rollback_exit),
         "exit_kind": exit_kind,
         "return_asserts": len(ret_asserts),
         **oracle_summary,
         "assertion_oracles": oracle_details,
         "oracle_skipped": oracle_skipped,
-        
-        
-        
-        
+
+
+
+
         "oracle_implied": oracle_implied,
         "state_stored": stored,
         "state_skipped": state_skipped,
@@ -14646,18 +14669,18 @@ def no_oracle_reason(ladder_rows):
     held = [(v, t) for v, t, d in ladder_rows
             if d == "HOLDS" and not (v == RETURN_VAR and t.startswith(RETLIVE_PREFIX))]
     if held:
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
         return ("EVERY RUNG THAT HOLDS WAS DROPPED",
                 f"{len(held)} rung(s) HOLD over the certified region and not "
                 f"one could be rendered as an assertion. WHY differs per rung "
@@ -15039,14 +15062,14 @@ def _bytesn_literal_value(raw):
     if width is None:
         return 0 if all(byte == 0 for byte in values) else None
     if len(values) > width:
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         if any(byte != 0 for byte in values[width:]):
             return None
         values = values[:width]
@@ -15170,7 +15193,7 @@ def flatten_rendered_aggregate(text, prefix=""):
             name = t[i + 1:j].strip()
             k = j + 1
             if t[k:].lstrip().startswith("{"):
-                
+
                 k = t.find("{", k)
                 d2, m = 0, k
                 while m < n:
@@ -15215,27 +15238,27 @@ def claim_concrete_ce(claim, params=None):
         for raw_name, raw_value in values.items():
             name = prefix + str(raw_name)
             value = _normalized_concrete_ce_value(raw_value)
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             if value is None and not prefix and param_types.get(name) in ("bytes", "bytes memory",
                                                                           "bytes calldata"):
                 match = re.search(r"\.length\s*=\s*(0x[0-9A-Fa-f]+|[0-9]+)", str(raw_value))
                 if match is None or int(match.group(1), 0) != 0:
-                    
-                    
-                    
+
+
+
                     return None
                 name = name + ".length"
                 value = 0
@@ -15265,51 +15288,51 @@ def bind_emitted_claim_to_certified_ce(claim, expected, params=None):
         return None, "certified CE contains a non-scalar or malformed coordinate"
     if actual_ce is None:
         return None, "emitted claim contains a non-scalar or malformed coordinate"
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     for name in [n for n in actual_ce if n.startswith("state.") and n not in expected_ce]:
         sibling = name + ".length"
         if (sibling in expected_ce and sibling in actual_ce
                 and expected_ce[sibling] == actual_ce[sibling]
                 and isinstance(actual_ce[name], int)):
             del actual_ce[name]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     _member_key_re = re.compile(r"\[\(&[A-Za-z0-9_]+\)->([A-Za-z_$][A-Za-z0-9_$]*)\]")
 
     def _resolve_member(match):
         field = match.group(1)
         for spelled in ("state." + field, "state." + field.split("$", 1)[0]):
             value = actual_ce.get(spelled, expected_ce.get(spelled))
-            
-            
-            
-            
+
+
+
+
             if isinstance(value, str) and value.lstrip("-").isdigit():
                 value = int(value)
             if isinstance(value, int):
@@ -15323,20 +15346,20 @@ def bind_emitted_claim_to_certified_ce(claim, expected, params=None):
         if resolved not in actual_ce:
             actual_ce[resolved] = actual_ce.pop(name)
         elif actual_ce[resolved] == actual_ce[name]:
-            
-            
-            
+
+
+
             del actual_ce[name]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
     for name in [n for n in expected_ce if n.startswith("state.") and n not in actual_ce]:
         mname, keys, tail = parse_slot_name(name[len("state."):])
         if mname is None:
@@ -15359,9 +15382,9 @@ def bind_emitted_claim_to_certified_ce(claim, expected, params=None):
             if literal_name in actual_ce and literal_name not in expected_ce:
                 actual_ce[name] = actual_ce.pop(literal_name)
                 break
-    
-    
-    
+
+
+
     for name in [n for n in expected_ce
                  if n.startswith("state.") and "(&" in n and n not in actual_ce]:
         resolved = _member_key_re.sub(_resolve_member, name)
@@ -15521,11 +15544,11 @@ def apply_foundry_fixture(lines,
                 else:
                     out.append(f"{indent}vm.etch(_esbmc_fixture_{inst}, "
                                f"type({contract}).runtimeCode);")
-                
-                
-                
-                
-                
+
+
+
+
+
                 out.append(f"{indent}{inst} = "
                            f"{contract}(payable(_esbmc_fixture_{inst}));")
             else:
@@ -16465,11 +16488,11 @@ def constructor_param_interface_mock_specs(forge_project, contract):
                 "_bool_mock_preferences":
                 set(bool_preferences),
             })
-        
-        
-        
-        
-        
+
+
+
+
+
         cast_rx = re.compile(r"\(?\s*\b([A-Za-z_]\w*)\s*\(\s*address\s*\(\s*" +
                              re.escape(spec_pname) + r"\s*\)\s*\)\s*\.\s*"
                              r"([A-Za-z_]\w*)\s*(?:\{[^}]*\})?\s*\(")
@@ -16523,15 +16546,15 @@ def constructor_param_interface_mock_specs(forge_project, contract):
             continue
         add_cast_calls(body, pname, pname, idx)
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
     interface_aliases = {}
     alias_rx = re.compile(r"\b([A-Za-z_]\w*)\s+([A-Za-z_]\w*)\s*=\s*"
                           r"([A-Za-z_]\w*)\s*\(\s*([A-Za-z_]\w*)\s*\)\s*;")
@@ -16544,19 +16567,19 @@ def constructor_param_interface_mock_specs(forge_project, contract):
             continue
         interface_aliases[alias_name] = (idx, param_name, _alias_type)
 
-    
-    
-    
-    
+
+
+
+
     for pname, (idx, ptype) in by_name.items():
         if not contract_like_type(ptype):
             continue
         interface_aliases.setdefault(pname, (idx, pname, ptype))
 
-    
-    
-    
-    
+
+
+
+
     for state_name, source_name in re.findall(r"\b([A-Za-z_]\w*)\s*=\s*([A-Za-z_]\w*)\s*;", body):
         found = by_name.get(source_name)
         if found is None:
@@ -16630,9 +16653,9 @@ def constructor_param_interface_mock_specs(forge_project, contract):
     nested_return_aliases = {}
 
     def add_nested_aliases(scan_body, aliases):
-        
-        
-        
+
+
+
         nested_rx = re.compile(r"\b([A-Za-z_]\w*)\s+([A-Za-z_]\w*)\s*=\s*"
                                r"([A-Za-z_]\w*)\s*\(\s*([A-Za-z_]\w*)\s*\.\s*"
                                r"([A-Za-z_]\w*)\s*\(([^()]*)\)\s*\)\s*;")
@@ -16656,10 +16679,10 @@ def constructor_param_interface_mock_specs(forge_project, contract):
                              guard_body=scan_body)
 
     def add_return_aliases(scan_body, aliases):
-        
-        
-        
-        
+
+
+
+
         return_rx = re.compile(r"\b([A-Za-z_]\w*)\s+([A-Za-z_]\w*)\s*=\s*"
                                r"([A-Za-z_]\w*)\s*\.\s*([A-Za-z_]\w*)\s*"
                                r"\(([^()]*)\)\s*;")
@@ -16759,11 +16782,11 @@ def constructor_param_interface_mock_specs(forge_project, contract):
                                  fname,
                                  "address(0)",
                                  array_element=True)
-            
-            
-            
-            
-            
+
+
+
+
+
             if scan_chunk is None:
                 continue
             passed_rx = re.compile(r"\b([A-Za-z_]\w*)\s*\(\s*" + re.escape(alias_name) +
@@ -16794,13 +16817,13 @@ def constructor_param_interface_mock_specs(forge_project, contract):
     add_return_alias_cast_methods(body, interface_aliases)
     add_array_element_methods(body, interface_aliases)
 
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     chained_rx = re.compile(r"\b([A-Za-z_]\w*)\s*\(\s*"
                             r"([A-Za-z_]\w*)\s*\.\s*([A-Za-z_]\w*)\s*\([^)]*\)\s*\)"
                             r"\s*\.\s*([A-Za-z_]\w*)\s*\(")
@@ -16962,12 +16985,12 @@ def constructor_param_interface_mock_specs(forge_project, contract):
             idx, ptype = found
             if not contract_like_type(ptype):
                 continue
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
             matches = [
                 (params2, body2)
                 for params2, header_tail, body2 in _source_function_decl_infos(chunk, m.group(1)) if
@@ -16985,19 +17008,19 @@ def constructor_param_interface_mock_specs(forge_project, contract):
                 continue
             add_cast_calls(body2, arg, callee_name, idx)
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
     for base_name, init_args in _constructor_initializer_calls(chunk):
         base_params = _source_constructor_params_from_source(source, base_name)
         if not base_params:
@@ -17024,11 +17047,11 @@ def constructor_param_interface_mock_specs(forge_project, contract):
             add_array_element_methods(base_body, interface_aliases, base_chunk)
             add_chained_methods(base_body, {base_pname: (idx, arg.strip(), base_ptype)})
 
-    
-    
-    
-    
-    
+
+
+
+
+
     def resolve_binding(expr, bindings):
         text = (expr or "").strip()
         if text in bindings:
@@ -17059,11 +17082,11 @@ def constructor_param_interface_mock_specs(forge_project, contract):
             if contract_like_type(local_type):
                 local_aliases[local_name] = (idx, target_name, local_type)
             add_cast_calls(base_body, target_name, local_name, idx)
-        
-        
-        
-        
-        
+
+
+
+
+
         for alias_type, alias_name, _cast_type, param_name in alias_rx.findall(base_body):
             binding = local_aliases.get(param_name)
             if binding is None:
@@ -17114,10 +17137,10 @@ def constructor_param_interface_mock_specs(forge_project, contract):
         if base_bindings:
             scan_base_chain(base_name, base_bindings, set())
 
-    
-    
-    
-    
+
+
+
+
     for nested_name, nested_args in _constructor_nested_deployments(body):
         nested_params = _source_constructor_params_from_source(source, nested_name)
         if not nested_params:
@@ -17217,12 +17240,12 @@ def constructor_param_runtime_interface_mock_specs(forge_project, contract, unit
         visited.add(name)
         chunks.append(chunk)
         body = _constructor_body_text(chunk)
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
         for lhs, rhs in re.findall(
                 r"\b([A-Za-z_]\w*)\s*=\s*(?:[A-Za-z_]\w*\s*\(\s*)?([A-Za-z_]\w*)\s*\)?\s*;",
                 body):
@@ -17352,11 +17375,11 @@ def constructor_param_runtime_interface_mock_specs(forge_project, contract, unit
                 found = assigned.get(state_var)
                 if found is None:
                     continue
-                
-                
-                
-                
-                
+
+
+
+
+
                 typed = _source_type_function_abis(source, iface).get(fname) or []
                 choice = _unique_function_choice(typed or functions.get(fname) or [])
                 if choice is None:
@@ -17384,14 +17407,14 @@ def constructor_param_runtime_interface_mock_specs(forge_project, contract, unit
                     bytes_payload_returns(chunk, state_var, fname)
                     if returns == ["bytes"] and allow_bytes_payload_returns else [],
                 })
-        
-        
-        
-        
+
+
+
+
         for state_var, (idx, pname) in sorted(assigned.items()):
             direct_rx = re.compile(r"\b" + re.escape(state_var) + r"\s*\.\s*([A-Za-z_]\w*)\s*\(")
-            
-            
+
+
             decl_rx = re.compile(
                 r"^\s*([A-Za-z_][\w.]*)\s+(?:(?:public|private|internal|immutable|constant|"
                 r"override|payable)\s+)*" + re.escape(state_var) + r"\s*(?:=|;)", re.M)
@@ -17821,10 +17844,10 @@ def apply_constructor_param_interface_mocks(lines, contract, specs, source, inde
                 if idx < len(ctor_params):
                     param_type = ctor_params[idx][1]
             if spec.get("array_element"):
-                
-                
-                
-                
+
+
+
+
                 local.append(f"{indent}vm.mockCall({target_expr}, "
                              f"abi.encodeWithSignature(\"{signature}\"), {ret});")
                 continue
@@ -18845,20 +18868,20 @@ def runtime_low_level_success_mock_lines(forge_project, contract, unit, extcall_
     chunk = _source_contract_chunk(source, contract)
     fm = re.search(r"\bfunction\s+" + re.escape(unit) + r"\s*\([^)]*\)[^{]*\{", chunk)
     if not fm:
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         seen = set()
         queue = list(_source_inheritance_names(chunk))
         while queue and not fm:
@@ -18890,8 +18913,8 @@ def runtime_low_level_success_mock_lines(forge_project, contract, unit, extcall_
         for name, typ in (source_inherited_function_params(source, contract, unit, None) or [])
     }
 
-    
-    
+
+
     rx = re.compile(
         r"\(\s*bool\s+([A-Za-z_]\w*)\s*,[^)]*\)\s*=\s*\(?\s*"
         r"(msg\.sender|[A-Za-z_]\w*|0x[0-9A-Fa-f]{40})\s*\)?\s*\.\s*"
@@ -18933,32 +18956,32 @@ def runtime_low_level_success_mock_lines(forge_project, contract, unit, extcall_
             pin_value = int(str(raw_value), 0)
         except ValueError:
             return [], f"external-call pin `{full_name}` is not numeric"
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
         if carries_value and pin_value == 1:
             lines.append(f"{indent}// VERIPUT_EXTCALL_DEAL_CONTRACT")
         target_param = None
         if target == "msg.sender":
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
             if pin_value != 1:
                 return [], ("external-call FAILURE pin on `msg.sender` is not "
                             "renderable: a reverting caller cannot be chosen for "
@@ -18970,14 +18993,14 @@ def runtime_low_level_success_mock_lines(forge_project, contract, unit, extcall_
                 r"\baddress(?:\s+payable)?\s+" + re.escape(target) +
                 r"\s*=\s*(0x[0-9A-Fa-f]{40})\s*;", body)
             target_type = str(params.get(target) or "").strip()
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
             state_decl = re.search(
                 r"\baddress(?:\s+payable)?(?:\s+(?:public|private|internal|immutable))*\s+" +
                 re.escape(target) + r"\b", chunk)
@@ -19117,9 +19140,9 @@ def apply_runtime_interface_mocks(lines, emitted, case, unit, contract, mock_lin
             out += static_mock_lines
             if deal_contract and inst is not None:
                 indent_ = m.group(1)
-                
-                
-                
+
+
+
                 out.append(f"{indent_}// certified extcall success pin: the value "
                            "transfer must not fail for want of balance")
                 out.append(f"{indent_}vm.deal(address({inst}), uint256(1) << 128);")
@@ -19129,9 +19152,9 @@ def apply_runtime_interface_mocks(lines, emitted, case, unit, contract, mock_lin
         out.append(lines[i])
         i += 1
     if sender_eoa:
-        
-        
-        
+
+
+
         call_idx = None
         for idx, line in enumerate(out):
             _rw, args = rewrite_call_args(line, unit, {})
@@ -19151,15 +19174,15 @@ def apply_runtime_interface_mocks(lines, emitted, case, unit, contract, mock_lin
                     ]
                     break
     if iface_slot_specs or iface_state_specs:
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
         rendered, placed = [], False
         for line in out:
             _rewritten, args = rewrite_call_args(line, unit, {})
@@ -19204,10 +19227,10 @@ def apply_runtime_interface_mocks(lines, emitted, case, unit, contract, mock_lin
                 calldata_expr = args[calldata_i]
                 if re.fullmatch(r'\s*hex"[0-9A-Fa-f]*"\s*', calldata_expr):
                     calldata_expr = f"bytes({calldata_expr.strip()})"
-                
-                
-                
-                
+
+
+
+
                 rendered.append(f"{indent}vm.assume({args[target_i]} != "
                                 "address(uint160(uint256(keccak256(\"hevm cheat code\")))));")
                 rendered.append(f"{indent}vm.assume({args[target_i]} != "
@@ -19331,19 +19354,19 @@ def assemble_put_source(emitted,
     seen_hoisted = set()
     for put in puts:
         for ln in put:
-            
-            
+
+
             if ln.endswith("// VERIPUT_HOISTED_SNAPSHOT"):
                 if ln in seen_hoisted:
                     continue
                 seen_hoisted.add(ln)
             inserted.append(ln)
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     insert_at = cend
     for _ci, _name, _claims, (fs, fe) in emitted.cases:
         if fs < cend:
@@ -19416,17 +19439,17 @@ def assemble_put_source(emitted,
         for mock_spec in mock_spec_group:
             for mock_type in (mock_spec.get("returns", []) +
                               mock_spec.get("runtime_return_types", [])):
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
+
+
                 symbol = (_source_custom_type_import_symbol(mock_type, flat_source or "")
                           or _source_custom_type_symbol(mock_type))
                 if symbol:
@@ -19438,7 +19461,7 @@ def assemble_put_source(emitted,
     source, _abstract_harness = materialize_abstract_target(source, flat_source or "", contract,
                                                             constructor_params, new_contract)
     source = re.sub(r'from "\./', 'from "../src/', source)
-    
+
     for mock in sorted(set(re.findall(r"ESBMCMock_(\w+)", source)), key=len, reverse=True):
         source = re.sub(r"ESBMCMock_" + re.escape(mock) + r"\b", f"ESBMCMock_{mock}_{new_contract}",
                         source)
@@ -19489,6 +19512,81 @@ def fund_pranked_value_calls_for_case(source, test_name):
         lines.insert(i, f"    vm.deal({target}, {v.group(1)});")
         return "\n".join(lines) + ("\n" if source.endswith("\n") else "")
     return source
+
+
+_REPLAY_PRANK_SENDER_RE = re.compile(
+    r"(vm\.(?:start)?[Pp]rank\(\s*address\(uint160\()(\d+)(\)\))")
+_REPLAY_PRANK_ORIGIN_RE = re.compile(
+    r"(vm\.(?:start)?[Pp]rank\(\s*address\(uint160\(\d+\)\)\s*,\s*address\(uint160\()(\d+)(\)\))")
+_REPLAY_DEAL_TARGET_RE = re.compile(
+    r"(vm\.deal\(\s*address\(uint160\()(\d+)(\)\))")
+
+
+def remap_precompile_replay_senders(source, region=None, pins=None):
+    pass
+    region = region or {}
+    pins = pins or {}
+    pinned = pins.get("msg.sender")
+    if pinned is not None and 1 <= int(pinned) <= PRECOMPILE_MAX:
+        return source, 0, "msg.sender is pinned to a precompile by the certificate"
+    bounds = region.get("msg.sender")
+    lo = hi = None
+    if bounds is not None:
+        lo, hi = int(bounds[0]), int(bounds[1])
+        if lo == hi and 1 <= lo <= PRECOMPILE_MAX:
+            return source, 0, "certified msg.sender region is the precompile point itself"
+    senders = set()
+    for match in _REPLAY_PRANK_SENDER_RE.finditer(source):
+        value = int(match.group(2))
+        if 1 <= value <= PRECOMPILE_MAX:
+            senders.add(value)
+    if lo is not None:
+        for value in senders:
+            if not lo <= nonprecompile_sender(value) <= hi:
+                return source, 0, ("the non-precompile representative falls outside the "
+                                   "certified msg.sender region")
+
+
+
+    origins = set()
+    for match in _REPLAY_PRANK_ORIGIN_RE.finditer(source):
+        value = int(match.group(2))
+        if 1 <= value <= PRECOMPILE_MAX:
+            origins.add(value)
+    if origins:
+        origin_pin = pins.get("tx.origin")
+        origin_bounds = region.get("tx.origin")
+        if origin_pin is not None and 1 <= int(origin_pin) <= PRECOMPILE_MAX:
+            origins = set()
+        elif origin_bounds is not None:
+            olo, ohi = int(origin_bounds[0]), int(origin_bounds[1])
+            if olo == ohi and 1 <= olo <= PRECOMPILE_MAX:
+                origins = set()
+            elif any(not olo <= nonprecompile_sender(v) <= ohi for v in origins):
+                origins = set()
+    if not senders and not origins:
+        return source, 0, None
+    counter = {"n": 0}
+
+    def swap(match, only):
+        value = int(match.group(2))
+        if value not in only:
+            return match.group(0)
+        counter["n"] += 1
+        return match.group(1) + str(nonprecompile_sender(value)) + match.group(3)
+
+    source = _REPLAY_PRANK_ORIGIN_RE.sub(lambda m: swap(m, origins), source)
+    source = _REPLAY_PRANK_SENDER_RE.sub(lambda m: swap(m, senders), source)
+
+
+    source = _REPLAY_DEAL_TARGET_RE.sub(lambda m: swap(m, senders), source)
+    if not counter["n"]:
+        return source, 0, None
+    moved = sorted(senders | origins)
+    return source, counter["n"], (
+        "replay sender/origin value(s) %s are EVM precompiles, which reject plain ETH "
+        "transfers; moved to the non-precompile representative(s) %s inside the same "
+        "certified slice" % (moved, sorted(nonprecompile_sender(v) for v in moved)))
 
 
 def assemble_concrete_source(emitted,
@@ -19608,17 +19706,17 @@ def assemble_concrete_source(emitted,
         for mock_spec in mock_spec_group:
             for mock_type in (mock_spec.get("returns", []) +
                               mock_spec.get("runtime_return_types", [])):
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
+
+
                 symbol = (_source_custom_type_import_symbol(mock_type, flat_source or "")
                           or _source_custom_type_symbol(mock_type))
                 if symbol:
@@ -19649,6 +19747,8 @@ def assemble_concrete_source(emitted,
     for mock in sorted(set(re.findall(r"ESBMCMock_(\w+)", source)), key=len, reverse=True):
         source = re.sub(r"ESBMCMock_" + re.escape(mock) + r"\b", f"ESBMCMock_{mock}_{new_contract}",
                         source)
+    source, _precompile_sender_repairs, _precompile_sender_note =\
+        remap_precompile_replay_senders(source, region, pins)
     reason = concrete_replay_refusal_reason(source, case[1], unit)
     if reason is not None:
         raise ValueError(reason)
@@ -19669,12 +19769,12 @@ def materialize_concrete_certified_call_point(source, test_name, unit, params, c
         return source, 0, "certified CE target call is absent"
     replacements = {}
     for index, (name, sol_type) in enumerate(declared):
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
         alias = f"omitted_param_{index}"
         if (name not in expected
                 and not any(k.startswith((name + ".", name + "[")) for k in expected)
@@ -19695,16 +19795,16 @@ def materialize_concrete_certified_call_point(source, test_name, unit, params, c
               and int(expected.get(name + ".length")) >= 0
               and not any(key == name or key.startswith(name + "[")
                           for key in expected)):
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
             literal = dynamic_fixed_length_call_arg(
                 sol_type, int(expected.get(name + ".length")))
         elif ((str(sol_type).strip() in ("bytes", "bytes memory", "bytes calldata", "string",
@@ -19713,17 +19813,17 @@ def materialize_concrete_certified_call_point(source, test_name, unit, params, c
               and name + ".length" not in expected
               and not any(key == name or key.startswith(name + "[") or
                           key.startswith(name + ".") for key in expected)):
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
             continue
         else:
             literal = None
@@ -19849,10 +19949,10 @@ def _try_target_statement_span(body_text, unit):
             body_text))
     if not calls:
         return None
-    
-    
-    
-    
+
+
+
+
     call = calls[-1]
     tries = list(re.finditer(r"\btry\b", body_text[:call.start()]))
     if not tries:
@@ -20003,27 +20103,27 @@ def add_concrete_normal_exit_oracle(source, test_name, unit, expected_exit="norm
             "target_receiver": receiver,
             "assertion": assertion,
         }]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     if expected_exit == "revert":
         _foreign_tail = [line for line in body[statement_end + 1:]
                          if "_veriput_fixed_" not in line]
@@ -20031,10 +20131,10 @@ def add_concrete_normal_exit_oracle(source, test_name, unit, expected_exit="norm
         _foreign_tail = body[statement_end + 1:]
     semantic_body = _concrete_oracle_code_mask("\n".join(_foreign_tail))
     if re.search(r"\b(?:assert|assertEq|assertTrue|assertFalse)\s*\(", semantic_body):
-        
-        
-        
-        
+
+
+
+
         return source, []
     body_text = "\n".join(body)
     try_span = _try_target_statement_span(body_text, unit)
@@ -20258,8 +20358,8 @@ def _canonical_event_abi_type(type_string):
     elif text == "address payable" or text.startswith("contract "):
         text = "address"
     elif text.startswith("enum "):
-        
-        
+
+
         return None
     elif text.startswith(("struct ", "tuple")) or not re.fullmatch(
             r"(?:u?int(?:[0-9]+)?|address|bool|string|bytes(?:[0-9]+)?|function)", text):
@@ -20326,18 +20426,18 @@ def _oracle_claim_coverage_error(claim, oracles, event_signatures=None, unreadab
             return False, None
 
     report_return = claim.get("return_value")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
     if (report_return is not None
             and normalize_exit_kind(claim.get("exit_kind")) == "revert"
             and any(oracle.get("kind") == "call-status" and oracle.get("expected") is False
@@ -20392,20 +20492,20 @@ def _oracle_claim_coverage_error(claim, oracles, event_signatures=None, unreadab
         return left_ok and right_ok and left_value == right_value
 
     def same_value(left, right):
-        
-        
-        
-        
-        
+
+
+
+
+
         if same_scalar(left, right):
             return True
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
         if (isinstance(left, str) and isinstance(right, str)
                 and left.strip() == right.strip()):
             return True
@@ -20414,15 +20514,15 @@ def _oracle_claim_coverage_error(claim, oracles, event_signatures=None, unreadab
         return (left_members is not None and right_members is not None
                 and left_members == right_members)
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
     unreadable = {str(name) for name in (unreadable_state or ())}
     changed_state = {
         str(name): value
@@ -20434,7 +20534,7 @@ def _oracle_claim_coverage_error(claim, oracles, event_signatures=None, unreadab
             oracle for oracle in oracles if oracle.get("kind") == "storage-slot-post-state"
         ]
         covered = {str(oracle.get("storage_variable") or "") for oracle in state_oracles}
-        
+
         required = set()
         for name, value in changed_state.items():
             members = _struct_literal_members(value)
@@ -20554,24 +20654,24 @@ def _concrete_return_literal(sol_type, value):
         match = re.fullmatch(r"bytes([1-9]|[12][0-9]|3[0-2])", typ)
         if match:
             return f"{typ}(uint{int(match.group(1)) * 8}({int(raw, 0)}))"
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         identity = _source_identity_type_name(sol_type)
         if identity is not None:
             return f"{identity}(address(uint160({int(raw, 0)})))"
@@ -20899,10 +20999,10 @@ def concrete_state_materialization_allowed(concrete_only, stage2_source, witness
     pass
     if concrete_return_mode_allowed(concrete_only, stage2_source, witness_check):
         return True
-    
-    
-    
-    
+
+
+
+
     return (concrete_only and bool(witness_check)
             and stage2_source in ("cleared-concrete-fallback",
                                   "cleared_not_certified_fallback",
@@ -20948,13 +21048,13 @@ def certified_basis_missing_return_witness(concrete_only,
     has_exact_observable = any(
         isinstance(oracle, dict) and oracle.get("kind") in CONCRETE_STRUCTURED_ORACLE_KINDS
         for oracle in (concrete_oracles or []))
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     if not _return_witness_expressible(rettypes) or not _fixed_return_observable(rettypes):
         return False
     return (concrete_return_mode_allowed(concrete_only, stage2_source, witness_check)
@@ -21111,12 +21211,12 @@ def run_forge_r2_prefilter(project,
         str(fuzz_runs),
     ]
     stdout, stderr, timed_out, returncode = "", "", False, None
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     prefilter_started = time.monotonic()
     try:
         proc = subprocess.Popen(command,
@@ -21259,29 +21359,29 @@ def run_forge_boundary_observations(project,
                                          piece_label=piece,
                                          derived_by=derived_by,
                                          rollback_exit=False,
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
+
+
+
+
+
+
+
+
+
+
+
                                          exit_kind=exit_kind,
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
+
+
+
+
+
+
+
+
+
+
+
                                          lift_unconstrained_sender=lift_unconstrained_sender,
                                          r2_terms={"0": {
                                              "kind": "literal",
@@ -21294,10 +21394,10 @@ def run_forge_boundary_observations(project,
                                          flat_source=flat_source,
                                          extcall_length_coordinates=extcall_length_coordinates)
             except ConcreteFallback as exc:
-                
-                
-                
-                
+
+
+
+
                 log(f"[put]   boundary probe NOT BUILT for {var} at point "
                     f"{point_index}: concrete fallback ({exc})")
                 continue
@@ -21546,7 +21646,17 @@ def main():
                     "synthesizes the preamble itself, spell a target parameter "
                     "the region and the pins do NOT fix from the authenticated "
                     "CE instead of from the type's default. Default OFF. "
-                    "A parameter the region or the pins already "
+                    "MEASURED (the development campaign): 40 emitted rows over 29 "
+                    "subjects carry a `stage2-witness` return oracle that was "
+                    "NOT observed by Foundry, i.e. a witness return asserted "
+                    "beside a default-valued argument; 7 of those subjects have "
+                    "no counted PUT at all. On "
+                    "StaticBulkRenewal.supportsInterface enc=7 the default "
+                    "`bytes4(0)` made the replay RED (`false != true`), it was "
+                    "disabled, and the row was refused as \"concrete replay "
+                    "test test_cov_0 is absent\"; the CE's own "
+                    "`interfaceID = 0xf14869c5` makes the same file GREEN and "
+                    "walking path 7. A parameter the region or the pins already "
                     "fix is untouched, so a case that had a value is "
                     "bit-identical.")
     ap.add_argument("--concrete-only",
@@ -21825,17 +21935,17 @@ def main():
 
     os.makedirs(a.workdir, exist_ok=True)
     emit_dir = os.path.join(a.workdir, "emit")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
     a.workdir = os.path.abspath(a.workdir)
     assert_dir = os.path.join(a.workdir, "assert")
     os.makedirs(emit_dir, exist_ok=True)
@@ -21855,46 +21965,46 @@ def main():
 
     notes = []
 
-    
+
     cell_name, cell_rule = cell_of(a.scope, a.max_tx)
     print(f"[put] {a.contract}.{a.unit} enc={a.enc} depth={a.depth}")
     print(f"[put] CELL {cell_name}: {cell_rule}")
     print("[put] step 1: emit the concrete suite (preamble source of truth)")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     stage4_kind = (a.stage4_kind or (stage4_kind_from_stage2_source(
         a.concrete_stage2_source, concrete_only=True) if a.concrete_only else "certified-region"))
     deploy_only = stage4_kind == "deploy-only"
@@ -22049,21 +22159,21 @@ def main():
         ] + a.esbmc_arg, emit_dir, a.max_tx, capped_emit_budget, a.memlimit, a.scope)
     produced = sorted(f for f in os.listdir(emit_dir) if f.endswith(".cov.t.sol"))
     print(f"[put]   exit={rc1} {w1:.1f}s  emitted={produced}")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     if produced and a.path_function:
         shell_files = []
         for name in produced:
@@ -22171,9 +22281,9 @@ def main():
         emitted = EmittedFile(os.path.join(emit_dir, produced[0]))
     flat_source = _flat_source_for_project(a.forge_project) or ""
 
-    
-    
-    
+
+
+
     force_concrete_reason = None
     force_concrete_fallback_reason = None
     if synthetic_claim is not None:
@@ -22282,21 +22392,21 @@ def main():
                     print("[put] REFUSED: certified-basis observation claim is not bound "
                           "to its CE: " + str(supplied_error))
                     return 1
-                
-                
-                
+
+
+
                 claim = dict(supplied_concrete_claim)
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
+
+
                 _cli_exit = normalize_exit_kind(a.exit_kind)
                 _claim_exit = normalize_exit_kind(claim.get("exit_kind"))
                 if _cli_exit in ("normal", "revert") and _claim_exit not in (None, _cli_exit):
@@ -22307,14 +22417,14 @@ def main():
                                  f"overridden by the path's exit {_cli_exit!r}")
                     claim["exit_kind"] = _cli_exit
                     claim["representative_claim_exit_kind"] = _claim_exit
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
+
+
+
                     if _cli_exit == "revert":
                         entry_state = claim.get("entry_storage")
                         if isinstance(entry_state, dict):
@@ -22322,17 +22432,17 @@ def main():
                         elif isinstance(claim.get("final_state"), dict):
                             claim["final_state"] = {}
                         claim["rolled_back_final_state"] = True
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
             _ce_map = normalized_concrete_ce(certified_ce) or {}
             _entry = dict(claim.get("entry_storage") or {})\
                 if isinstance(claim.get("entry_storage"), dict) else {}
@@ -22343,14 +22453,14 @@ def main():
                 _bare = _name[len("state."):]
                 if _bare in _entry or _name in _entry:
                     continue
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
                 _mname, _keys, _tail = parse_slot_name(_bare)
                 if _mname is not None:
                     _lits = []
@@ -22374,14 +22484,14 @@ def main():
                                 _present = True
                                 break
                         if not _present:
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
+
+
+
+
+
+
+
+
                             _mkre = re.compile(
                                 r"\[\(&[A-Za-z0-9_]+\)->([A-Za-z_$][A-Za-z0-9_$]*)\]")
 
@@ -22409,10 +22519,10 @@ def main():
                 claim["entry_storage"] = _entry
                 print("[put]   certified-basis: entry state pinned from the certified CE "
                       "(not in the fresh witness): " + ", ".join(sorted(_filled)))
-            
-            
-            
-            
+
+
+
+
             deployment_established = []
             for _name, _value in _ce_map.items():
                 if not _name.startswith("state."):
@@ -22476,20 +22586,20 @@ def main():
             "piece": a.piece,
         })
     case = emitted.case_for(pf, a.enc)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     if case is not None:
         _shell_body, _shell_call_i = emitted_case_body_and_call(emitted, case, a.unit)
         if _shell_call_i is None:
@@ -22539,11 +22649,11 @@ def main():
     print(f"[put]   concrete case: {case[1]} in contract {emitted.blocks[case[0]][0]}")
     if certified_ce_binding is not None:
         if claim.get("veriput_synthetic_emitter") is True:
-            
-            
-            
-            
-            
+
+
+
+
+
             synthetic_fingerprint = certified_ce_binding["ce_sha256"]
             case_start = case[3][0]
             emitted.lines.insert(case_start,
@@ -22556,37 +22666,37 @@ def main():
         report_fingerprint = str(claim.get("foundry_testcase_fingerprint_sha256") or "")
         emitted_fingerprint = str(emitted.fingerprint_for(case) or "")
         if not report_fingerprint and emitted_fingerprint:
-            
-            
-            
-            
-            
+
+
+
+
+
             report_fingerprint = emitted_fingerprint
             claim["foundry_testcase_fingerprint_sha256"] = emitted_fingerprint
             certified_ce_binding["fingerprint_recovered_from_exact_report_ce"] = True
         if report_fingerprint != emitted_fingerprint or not report_fingerprint:
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             resolved = certified_ce_binding["ce_sha256"]
             case_start = case[3][0]
             emitted.lines.insert(case_start,
@@ -22605,9 +22715,9 @@ def main():
                   "different witnesses of the same path (exact-CE binding "
                   "authenticated)")
         if not report_fingerprint or not emitted_fingerprint:
-            
-            
-            
+
+
+
             reason = ("certified CE report and emitted Foundry case lack the same "
                       "solver-witness fingerprint")
             print(f"[put] REFUSED: {reason}")
@@ -22772,12 +22882,12 @@ def main():
                           if certified_ce_binding is not None else None)
     difficulty_projection = (prevrandao_difficulty_ce_projection(certified_ce)
                              if certified_ce_binding is not None else None)
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     fallback_witness_ce_mode = (certified_ce is not None
                                 and not concrete_return_mode_allowed(
                                     a.concrete_only, a.concrete_stage2_source,
@@ -23110,13 +23220,13 @@ def main():
                             and len(concrete_rettypes) > 1
                             and _return_witness_expressible(concrete_rettypes)
                             and _claim_tuple.startswith("(") and _claim_tuple.endswith(")")):
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
                         witness_return = claim.get("return_value")
                         notes.append("fixed replay tuple return taken from the retained "
                                      "report claim (Foundry observes one scalar only); "
@@ -23124,15 +23234,15 @@ def main():
                     elif (path_exit_kind == "normal" and concrete_rettypes
                             and (not _return_witness_expressible(concrete_rettypes)
                                  or not _fixed_return_observable(concrete_rettypes))):
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
+
+
                         notes.append("fixed replay return observation skipped: return type "
                                      "cannot be spelled as a scalar witness; no return oracle")
                     elif path_exit_kind == "normal" and concrete_rettypes:
@@ -23143,9 +23253,9 @@ def main():
                             newc, remaining, normal_exit=True)
                         if witness_return is None:
                             if fallback_witness_ce_mode:
-                                
-                                
-                                
+
+
+
                                 notes.append("fixed replay return observation "
                                              "unavailable; no return oracle: " +
                                              str(return_error))
@@ -23263,8 +23373,16 @@ def main():
                     indent=2)
             return 1
         fixed_stats = concrete_oracle_stats(concrete_oracles)
-        if a.concrete_stage2_witness_check == "HASH-UNDECIDED-FORGE":
-            txt = fund_pranked_value_calls_for_case(txt, case[1])
+
+
+
+
+
+
+
+
+
+        txt = fund_pranked_value_calls_for_case(txt, case[1])
         dest = os.path.join(a.forge_project, "test", f"{newc}.t.sol")
         with open(dest, "w") as f:
             f.write(txt)
@@ -23395,15 +23513,15 @@ def main():
                 indent=2)
         return 0
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
     layout_unavailable_reason = None
     layout, maps, err = storage_layout(a.forge_project, a.contract)
     if layout is None:
@@ -23471,8 +23589,8 @@ def main():
         "storage_layout_error": layout_unavailable_reason,
     }
 
-    
-    
+
+
     params, rettypes, arity, state_types = None, None, None, {}
     unit_mutability = None
     if a.ast:
@@ -23510,12 +23628,12 @@ def main():
         print("[put]   repaired unsupported concrete skeleton with a "
               "source-synthesized deployment and target call")
     establish_spec = json.loads(a.establish or "[]")
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     _kept_est = []
     for _e in establish_spec:
         _t = str((_e or {}).get("target") or "")
@@ -23717,19 +23835,19 @@ def main():
             print(f"[put]   {note}")
             notes.append(note)
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     slot_vars = []
     slot_dependencies, slot_dependency_evidence = unit_state_dependencies(
@@ -23811,7 +23929,7 @@ def main():
         print(f"[put]   mapping slots proposed to the ladder: "
               f"{', '.join(slot_vars)}")
 
-    
+
     region, holes, pins, establish_spec, promotion_note = (promote_zero_sender_owner_slice(
         region, holes, pins, establish_spec, state_types, state_store_names, scalar_vars))
     if promotion_note:
@@ -23842,10 +23960,10 @@ def main():
     }
     if establish_spec:
         spec["establish"] = establish_spec
-    
-    
-    
-    
+
+
+
+
     spec["vars_policy"] = "state-exact"
     spec["vars"] = [{
         "name": assert_query_var_name(name, layout, state_store_names)
@@ -23869,11 +23987,11 @@ def main():
         print("[put]   ESBMC ladder probe capped at "
               f"{capped_ladder_budget}s to reserve "
               f"{a.min_r2_esbmc_budget}s for verifier-backed R2 proof")
-    
-    
-    
-    
-    
+
+
+
+
+
     proof_esbmc_args = k_induction_proof_args(a.esbmc_arg) + [str(x) for x in a.proof_esbmc_arg]
     out2, rc2, w2 = run_esbmc(
         a.esbmc, a.sol, a.ast, a.contract, a.unit,
@@ -23891,14 +24009,14 @@ def main():
         for candidate_row in rows:
             key = (str(candidate_row[0]), canonical_oracle_rung_text(candidate_row[1]))
             oracle_candidate_cache[key] = (candidate_row[2], oracle_refutations.get(key))
-    
-    
-    
-    
+
+
+
+
     rollback_here = any(e == int(a.enc) for _u, e in rollback_exit_paths(out2))
 
-    
-    
+
+
     unwind_attempts, unwind_applied = [], []
     if refusal:
         print(f"[put]   ladder REFUSED: {refusal}")
@@ -23914,11 +24032,11 @@ def main():
         notes.append(f"ladder refused: {refusal}")
     print(f"[put]   exit={rc2} {w2:.1f}s  rows={len(rows)} summary={summary}")
 
-    
-    
-    
-    
-    
+
+
+
+
+
     unanswered, unasked = ladder_answer_gap(ladder_slot_vars, rows)
     if ladder_slot_vars:
         print(f"[put]   slot candidates: {len(ladder_slot_vars)} asked, "
@@ -23940,13 +24058,13 @@ def main():
     notes.append(f"slot candidates asked={len(ladder_slot_vars)} "
                  f"unanswered={len(unanswered)}")
 
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     r2_term_lookup = {}
     r2_subfamilies = {}
     _r2 = []
@@ -24004,13 +24122,13 @@ def main():
             notes.append("R2 ESBMC skipped: partial R1 ladder already rendered "
                          "a strict fuzz PUT oracle")
         else:
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
             _var_bytes = {}
             for _v, (_slot, _off, _nb) in (layout or {}).items():
                 _var_bytes[_v] = _nb
@@ -24091,19 +24209,19 @@ def main():
                                          term_budget=a.r2_term_budget,
                                          candidate_budget=a.r2_candidate_budget,
                                          log=print)
-            
-            
-            
-            
+
+
+
+
             _boundary_specs = []
             _base_ce = claim_concrete_ce(claim, params=params)
             _boundary_points = boundary_observation_points(region, params, _base_ce, max_points=5)
             _boundary_observables = []
-            
-            
-            
-            
-            
+
+
+
+
+
             _unchanged = {v for v, t, d in rows if t == "post == pre" and d == "HOLDS"}
             for _spec in _typed_r2:
                 for _entry in _spec.get("vars", []):
@@ -24349,19 +24467,19 @@ def main():
                   f"{r2_ladder['survivors_sent_to_esbmc']} sent to ESBMC, "
                   f"{r2_ladder['esbmc_proved']} proved")
     else:
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
         r2_requested = False
         print("[put]   R2 NOT REQUESTED (`--propose-r2` is off). The absolute "
               "and delta bounds were not asked for on this run, so their "
@@ -24371,54 +24489,54 @@ def main():
     for v, t, verdict in rows:
         print(f"[put]     {v}: {t}  {verdict}")
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     if blocker == "truncated":
         print("[put] REFUSED: the assertion ladder returned "
               "UNDECIDED-TRUNCATED -- a loop was cut at the unwind bound "
@@ -24460,9 +24578,9 @@ def main():
                     "timing":
                     stage4_timing_record(put_start, a.timeout),
                     **storage_layout_status,
-                    
-                    
-                    
+
+
+
                     "unwind_attempts":
                     unwind_attempts,
                     "constructor_staticcall_mocks":
@@ -24532,15 +24650,15 @@ def main():
                 indent=2)
         return 2
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
     overload_label = overload_artifact_label(a.ast, a.contract, a.unit, ast_declaration_id)
     plabel = overload_label + (f"p{a.piece}" if a.piece else "")
     try:
@@ -24938,9 +25056,9 @@ def main():
                 getter_signature,
                 "file":
                 physical_files[0],
-                
-                
-                
+
+
+
                 "test":
                 f"test_put_{a.contract}_{a.unit}"
                 f"_path{a.enc}{plabel}",
@@ -24973,13 +25091,13 @@ def main():
                 summary,
                 "ladder_refusal":
                 refusal,
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
                 "r2_requested":
                 r2_requested,
                 "r2_depth":
@@ -24998,19 +25116,19 @@ def main():
                 list(slot_dependencies or ()),
                 "oracle_vars":
                 list(oracle_vars),
-                
-                
-                
-                
-                
+
+
+
+
+
                 "slot_candidates": {
                     "asked": list(ladder_slot_vars),
                     "unanswered": unanswered,
                     "rows_for_unasked_names": unasked
                 },
-                
-                
-                
+
+
+
                 "esbmc_extra_args":
                 a.esbmc_arg,
                 "proof_strategy": {
@@ -25019,7 +25137,7 @@ def main():
                     "solidity_max_tx": 1,
                     "esbmc_args": proof_esbmc_args,
                 },
-                
+
                 "unwind_applied_to_ladder_only":
                 unwind_applied,
                 "unwind_attempts":
@@ -25053,11 +25171,11 @@ def main():
                 "materialization":
                 stage4_materialization_metadata(
                     "put", stats, r2_requested=r2_requested, r2_fuzz_prefilter=r2_fuzz_prefilter),
-                
-                
-                
-                
-                
+
+
+
+
+
                 "binary":
                 binary_identity(a.esbmc),
                 "stats":

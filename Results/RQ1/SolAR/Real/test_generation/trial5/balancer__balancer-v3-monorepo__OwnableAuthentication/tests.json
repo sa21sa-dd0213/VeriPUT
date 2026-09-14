@@ -2,17 +2,17 @@
   [
     {
       "args": [
-        "address_00019",
-        "address_00023"
+        "anonymous_hex_00016",
+        "anonymous_hex_00019"
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "getAuthorizer",
       "n": 2,
       "value": 0
@@ -21,19 +21,19 @@
   [
     {
       "args": [
-        "address_00032",
-        "address_00036"
+        "anonymous_hex_00020",
+        "anonymous_hex_00021"
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00184"
+        "anonymous_hex_00022"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "forceTransferOwnership",
       "n": 2,
       "value": 0

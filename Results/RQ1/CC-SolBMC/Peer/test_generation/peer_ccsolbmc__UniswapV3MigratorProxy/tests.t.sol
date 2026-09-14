@@ -11,14 +11,14 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new UniswapV3MigratorProxy();
     }
 
     function test_ce_0_transferUniswapV3MigratorProxy() public {
-        
+
 
         target.transferUniswapV3MigratorProxy(IERC20Token(address(uint160(0))), address(uint160(0)), address(uint160(0)), 0);
     }

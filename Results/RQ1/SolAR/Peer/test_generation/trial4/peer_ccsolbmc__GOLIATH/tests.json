@@ -2,14 +2,14 @@
   [
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "name",
       "n": 2,
       "value": 0
@@ -18,24 +18,24 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00184",
+        "anonymous_hex_00022",
         1
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "approve",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "name",
       "n": 3,
       "value": 0
@@ -44,23 +44,23 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "totalSupply",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00398"
+        "anonymous_hex_00025"
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "setTaxWallet",
       "n": 3,
       "value": 0
@@ -69,18 +69,18 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00032",
-        "address_00404",
+        "anonymous_hex_00020",
+        "anonymous_hex_00027",
         15791123125441237370778004733863668719902815682851381442799354601998507567628
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "transferFrom",
       "n": 2,
       "value": 0
@@ -89,33 +89,33 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00021",
+        "anonymous_hex_00017",
         6
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "burn",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "totalSupply",
       "n": 3,
       "value": 0
     },
     {
       "args": [
-        "address_00032"
+        "anonymous_hex_00020"
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "balanceOf",
       "n": 4,
       "value": 0
@@ -124,24 +124,24 @@
   [
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00023",
+        "anonymous_hex_00019",
         77501128895506656182060744393832198010856679408190027369646581361956124029954
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "increaseAllowance",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "getTaxPercent",
       "n": 3,
       "value": 0
@@ -150,21 +150,21 @@
   [
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "decimals",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "name",
       "n": 3,
       "value": 0
@@ -173,17 +173,17 @@
   [
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00404",
+        "anonymous_hex_00027",
         27794826807184387975000180160730298158231302051684434646805343835569925492302
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "burn",
       "n": 2,
       "value": 0
@@ -192,24 +192,24 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00398",
+        "anonymous_hex_00025",
         104819846508617614862677555592735775257086607789669495196071320190584505256034
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "decreaseAllowance",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getTaxAddress",
       "n": 3,
       "value": 0
@@ -218,26 +218,26 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00398",
+        "anonymous_hex_00025",
         0
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "transfer",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00398"
+        "anonymous_hex_00025"
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "setTaxWallet",
       "n": 3,
       "value": 0
@@ -246,14 +246,14 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "getTaxPercent",
       "n": 2,
       "value": 0
@@ -262,24 +262,24 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "symbol",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00184",
+        "anonymous_hex_00022",
         27262890302046592506330536742516317703237763138226324262774578479661121187111
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "burn",
       "n": 3,
       "value": 0
@@ -288,14 +288,14 @@
   [
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getTaxAddress",
       "n": 2,
       "value": 0
@@ -304,16 +304,16 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00398"
+        "anonymous_hex_00025"
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "setTaxWallet",
       "n": 2,
       "value": 0
@@ -322,17 +322,17 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00401",
-        "address_00021"
+        "anonymous_hex_00026",
+        "anonymous_hex_00017"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "allowance",
       "n": 2,
       "value": 0
@@ -341,7 +341,7 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -350,7 +350,7 @@
       "args": [
         26
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "setNewTaxPercent",
       "n": 2,
       "value": 0

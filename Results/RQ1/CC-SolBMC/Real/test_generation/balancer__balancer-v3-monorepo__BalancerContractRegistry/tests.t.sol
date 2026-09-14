@@ -11,24 +11,24 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new BalancerContractRegistry(IVault(address(0xDEAD0000000000000000000000000000BEEF)));
     }
 
     function test_ce_0_deprecateBalancerContract() public {
-        
+
 
         target.deprecateBalancerContract(address(uint160(0)));
     }
     function test_ce_1_deprecateBalancerContract() public {
-        
+
 
         target.deprecateBalancerContract(address(uint160(1)));
     }
     function test_ce_2_deprecateBalancerContract() public {
-        
+
 
         target.deprecateBalancerContract(address(uint160(38)));
     }

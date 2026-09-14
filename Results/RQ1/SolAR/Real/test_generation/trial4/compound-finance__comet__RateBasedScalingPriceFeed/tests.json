@@ -2,19 +2,19 @@
   [
     {
       "args": [
-        "address_00404",
+        "anonymous_hex_00027",
         15,
         0,
         "DgwesUsmZQnqZiiQYxfHYHMhhXEOfRGeHlqdkOiOmmiZbJvZHeVIjoMNMSatvajin TTvcTYncNUVCZowsoyHcoQALHEmTugADRpfoZKACrdc"
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "latestRoundData",
       "n": 2,
       "value": 0
@@ -23,19 +23,19 @@
   [
     {
       "args": [
-        "address_00021",
+        "anonymous_hex_00017",
         8,
         24,
         "m UYhcVEerXODZDwicBmaHQcKOdrLDqgdYbTeWpjzlgEPf cLorRliSmSyB O zOeEDBozPtAERdPqLoUhHfiipkLpcXkkCiXeAWkoOWIViNSNucIHtNcMhLeBPhgE XoQhTutpBynVRIvVorIujNttihtIjvLPUJxxFViCBtvixPxjCOPsNNJCJndAVqfW"
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "version",
       "n": 2,
       "value": 0

@@ -11,19 +11,19 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new ReentrancyDAO();
     }
 
     function test_ce_0_withdrawAll() public {
-        
+
 
         target.withdrawAll();
     }
     function test_ce_1_withdrawAll() public {
-        
+
         vm.deal(caller, 39);
         vm.prank(caller);
         target.deposit{value: 39}();

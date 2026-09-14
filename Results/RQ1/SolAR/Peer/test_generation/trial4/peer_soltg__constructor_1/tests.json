@@ -4,7 +4,7 @@
       "args": [
         71737933042797604812148632223165292944284815842927475154271168679389746436208
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -14,7 +14,7 @@
         3,
         1
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "set_max1",
       "n": 2,
       "value": 0
@@ -25,7 +25,7 @@
       "args": [
         5
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -34,7 +34,7 @@
       "args": [
         97044248610234960179838468995439126447948814312453619591284018189179465317293
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "f1",
       "n": 2,
       "value": 0

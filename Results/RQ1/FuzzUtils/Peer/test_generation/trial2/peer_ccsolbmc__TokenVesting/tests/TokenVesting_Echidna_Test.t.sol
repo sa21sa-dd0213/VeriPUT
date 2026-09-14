@@ -15,24 +15,24 @@ contract TokenVesting_Echidna_Test is Test {
     function setUp() public {
         target = new TokenVesting();
     }
-    
-    function test_auto_move_into_tranche_0() public { 
-        
+
+    function test_auto_move_into_tranche_0() public {
+
         vm.warp(block.timestamp + 495050);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 16193);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -52,37 +52,37 @@ address[] memory dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 306352);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639933, bytes32(hex"2b59eaec230a3f99184d496bd3e2eda6830837b64ab8292f959ac0e6657b322a"));
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 59154);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(1);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -122,17 +122,17 @@ dynaddressArr_1 = new address[](1);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(1);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -153,82 +153,82 @@ dynaddressArr_1 = new address[](4);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639931, bytes32(hex"c54ebffb1d1b919b413aeecb77196dcb2726c0b168ec203f95ddb62fa18e8cc5"));
-        
+
         vm.warp(block.timestamp + 271957);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 114108);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(46563384661771466981636771695422545247405673126565686188547613955519928008172, 97222881599677509087285085853496385333402162265436285031915367924955298532228);
-        
+
         vm.warp(block.timestamp + 388258);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x0000000000000000000000000000000000020000, 46, 104003665526141983377155973793361766451339854866144829859469335384254288391629);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 57354);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 156, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 22882);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 29425367007821663686096441376764256864873924789256934596538044900993857478300);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(3);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 145, 4369999);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 159, 453);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -248,132 +248,132 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 253774);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 273807);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(115792089237316195423570985008687907853269984665640564039457584007813129639937);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 49311);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 21, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
-        
+
         vm.warp(block.timestamp + 92211);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 2, 107476158389138175446452139544976839994429233742301287235589721061156496606350);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 49308);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 1524785993);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 25956);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 100000000001);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(38083471853470413859735219149558674944590508169668873238688079469031746921803, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 312046);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 2446);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(74850076175731848068196309414742654939546006842882325948699596060876209967044, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 62, 6590307407166764048051642401633695703656419580310743319574841254726044381618);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 2);
-        
+
         vm.warp(block.timestamp + 388254);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(14817044786681045895822953978721124146417999573945714607940881948319400329234, bytes32(hex"e458cf263672652209fd5e1a2c1abe4293cc0050cb1c042db4255498e67219269a"));
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(110);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 318197);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(105971719239231507741470903103811542249142300454397708302334059546282216391471, 15294123058193292055576540097711896107559716737055162092200451153177439257358);
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x0000000000000000000000000000000000030000, 200, 100000000002);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -421,27 +421,27 @@ dynaddressArr_1 = new address[](5);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(16822753682867890354818092667194609671353107899964860830643499035215142432504, bytes32(hex"59ee0cf7502dda80de9eecd184044dcd860b16e82327febb05227c922637076568"));
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 127);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 1);
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -461,12 +461,12 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0, 4892775409606141646777765619525908708974343793963214689382915506591818869229);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 16351);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -522,22 +522,22 @@ dynaddressArr_1 = new address[](19);
         vm.roll(block.number + 2559);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 3830);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 64344344759757512804824476507870491843306571638310547654478842438472941385610);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(2881640053575707299176307066981688756830518980014739933329192954434196698472, bytes32(hex"75aea6d1c048fc7fa9fc82d27e86068c9062a780263406cd6bd364c29e8014b6e1"));
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -557,12 +557,12 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -613,90 +613,90 @@ dynaddressArr_1 = new address[](30);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aaa4cb420f0c0f1e6f37f86e8ee628eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 202474);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(23925780106279029052654208778821224706976719836996592133935147069851107685718);
-        
+
         vm.warp(block.timestamp + 547158);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 0, 890);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(86941630493036664720409903380513143597060439908995044899399366964077984746467, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(340);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"cd28442da5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa6862a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 388259);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 499);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007913129639934, 113954398261145934446920348244948773555688274943858629279682964549556254947182);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 28756244278443882021992358817874207654495672647133944980866953801005672801907);
-        
+
         vm.warp(block.timestamp + 127);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(85777584942450817810458565539683643649081362053172609353810673321215851559625, bytes32(hex"e03a15695d20d6c176d2cc2636580209ea2355bb3b0dd8472bd1f7f6f787f7ac3c"));
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(88);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -716,31 +716,31 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 115166);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 253, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
     }
-    
-    
-    function test_auto_move_into_tranche_1() public { 
-        
+
+
+    function test_auto_move_into_tranche_1() public {
+
         vm.warp(block.timestamp + 495050);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 16193);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -760,160 +760,160 @@ address[] memory dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 192, 115792089237316195423570985008687907853269984665640564039457584007813129639938);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(1050459654392933145545335076490742297017156641352141637442550236660893981884, 100000000001);
-        
+
         vm.warp(block.timestamp + 28949);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 107898896912723264490978399712802089204385576384550214887079304384523458919760);
-        
+
         vm.warp(block.timestamp + 133083);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 326924);
         vm.roll(block.number + 11784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(49179579903020807585464254633893796759371375934949696369296402801022577224668, 100000000000);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(69917246502176076742929533323306685361437940896369870890024148215268712249013);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(64854663961504552362964275204241975878165621223224429561208111375045378195671, bytes32(hex"bf424613e63f7eb955bf2f17e6ebd559e9bba0bd3f93d74f1f3e8ccf693249"));
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 1, 103144111518822644403788118810147695243993379302901340476772210505260654655507);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 7257);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(3);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 82670);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 271957);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 538918);
         vm.roll(block.number + 57440);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(50);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(27275267857693740449459842442736230960936590412058273100466936931598128218071, 51137766960464769247728803601429423026744567657739250817349838955683364085786);
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 16198);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639932, bytes32(hex"8499914f3edf26344832ae8621206ad98e617a8645b451cb8ceea48d0594e58612"));
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(0, 997);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 150637);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(99999999997);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 9914002597037327836725479884871409306131429750596001164971720423574238122060);
         dynaddressArr_0 = new address[](5);
@@ -930,27 +930,27 @@ dynaddressArr_1 = new address[](2);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 21369);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x0000000000000000000000000000000000010000, 65, 15867139278524368688349257696314351345015102315295120258630534761670023695842);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 403693);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 49, 96777823103759335694377999245271344127698628055178215365953848591695106516558);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 16194);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -999,58 +999,58 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(62666522494524907032197420322768580503151543607538684270539894423323965554995);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(245);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007813129639939);
-        
+
         vm.warp(block.timestamp + 537419);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007813129639933);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 49308);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 762224600027316673404959812187811133385918675737059500070);
-        
+
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(0);
-        
+
         vm.warp(block.timestamp + 417112);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(0, 74399840702206566662878133544755295929936321044364425931254964848172835644564);
-        
+
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(3007967905103772015613988091927880557811481537303712059632493689358582373910);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 16194);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -1070,234 +1070,234 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 49308);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 96, 115792089237316195423570985008687907853269984665640564039457584007813129639934);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007813129639933, 4370000);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(181);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 16193);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x0000000000000000000000000000000000030000, 255, 0);
-        
+
         vm.warp(block.timestamp + 557561);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 388255);
         vm.roll(block.number + 45225);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(100000000000, bytes32(hex"693a4239e85dd5e7f17edf2f033117911d3e996d9593c3f487e8a4ed3c36ce2635"));
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 40383632035628896255322751526653665953811932049543021576931049953787492541894);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.get_vested_for_tranche(0x0000000000000000000000000000000000030000, 191);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(40);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 84, 17547708743238545476065750756397672777409368482403510960468907834687133283758);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 2, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(1524785992, bytes32(hex"c8ad7e4d925a8f3d6b30a8dd22e1b9dfac263345eaf15ae708edfd8e2635c6d1fc99"));
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007913129639931, 31596977486791576757147014864305211133126148323634193124706962528487733737771);
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 388258);
         vm.roll(block.number + 5486);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x0000000000000000000000000000000000010000, 74, 40601846428493543283857427399833185267496662012663861926547503853132561140034);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 3, 382);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 48660);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x0000000000000000000000000000000000030000, 4, 1524785993);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 216500);
         vm.roll(block.number + 49311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(4);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 255, 4);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x0000000000000000000000000000000000000000, 239, 77651970898395378583696787583575921243731386968465069740970545483812996918374);
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(193);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(58781823976957378461918750674594929138075311209836531645655656483385996330664, 22147836243);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 19074);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(12);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 40108);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(100000000000, bytes32(hex"da0c75256e433e678250d9f8548126381a691361c0f4f9f9e8a2496b2a4e8e5d9a"));
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 30304);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 165, 115792089237316195423570985008687907853269984665640564039457584007813129639933);
     }
-    
-    
-    function test_auto_remove_stake_2() public { 
-        
+
+
+    function test_auto_remove_stake_2() public {
+
         vm.warp(block.timestamp + 495050);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 16193);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -1317,52 +1317,52 @@ address[] memory dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 306352);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639933, bytes32(hex"2b59eaec230a3f99184d496bd3e2eda6830837b64ab8292f959ac0e6657b322a"));
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 59154);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(1);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 455662);
         vm.roll(block.number + 31848);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(69822446246314923034278220206370057265328140919507282130314297247079960033716, 97732783715068864954164698526778413996551845677276768794243736405151130135559);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -1403,27 +1403,27 @@ dynaddressArr_1 = new address[](24);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(46354362842207886620905388756308829028475283864359434786227912137533388112548, 115792089237316195423570985008687907853269984665640564039457584007813129639935);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(251);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 49310);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(37334907497041349823531351293968133878396327243395102525985280625369106383877, bytes32(hex"46721495efa37492b9da0ac481a1ef50371f6b2de441c920a6d2f6760d199da9"));
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 99078);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -1441,17 +1441,17 @@ dynaddressArr_1 = new address[](2);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(94948525103306124210912937123004995165558192703489674943856635519415867476348, 101502424730126919448720794818342463017161921864838227466852414768238643605381);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -1512,82 +1512,82 @@ dynaddressArr_1 = new address[](21);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(3);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 57891);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(248);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(85945889403672618447488898262240568213939879107678457289672663478209915470151, bytes32(hex"bf415d5d9a263871bf8b4640d0b68b9d8a7b8fbdc7e64382c2a603728fddd4b762"));
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 65976679084202280874600739094070819944042669293093944826367949101100495097054);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(1);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 1524785991);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 39600);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 155203);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 1, 86550677527982717703267814114674931685431520731813321990524123192126368118071);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x0000000000000000000000000000000000020000, 194, 12561616419057466779091193057578922880274367889933033504962222389083840275161);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 49312);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 135, 25092045604718011175118195515371519652602394270706484836849189633111423659203);
-        
+
         vm.warp(block.timestamp + 573933);
         vm.roll(block.number + 13922);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(106874748164066078063730111460050561860816849418935053917082120009734475174670);
-        
+
         vm.warp(block.timestamp + 388258);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -1634,65 +1634,65 @@ dynaddressArr_1 = new address[](26);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(1524785991);
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(14712609653176679714936338739288327787942819877691348041000621313908327468682, 1);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 48094);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(14141000813261398743473004848528524276931957949629235721594467875675731921423, bytes32(hex"38439f0b29d4921320c626308abdca27e241a2e39b5b5200bccfcfedbf44aa27bc"));
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(5327580046077857291391327162846684350752480276605400414486114516354839999626, 115792089237316195423570985008687907853269984665640564039457584007813129639933);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 23980);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(65852591101822564351546605003698872922177952274361360479078788058478243519601, 76751455531399411198799855693451910422292764931191863923432557587945913440689);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(4);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(16551097435776762345266254342612029141163262521560621019937019099284149015281);
-        
+
         vm.warp(block.timestamp + 86551);
         vm.roll(block.number + 15461);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x0000000000000000000000000000000000010000, 108849699561506295285511180502381111955660439528791904985641547591252217915570);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 111, 80300227966152446558039595743339845785296257179304848165088208769062739741361);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -1758,45 +1758,45 @@ dynaddressArr_1 = new address[](27);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(0, bytes32(hex"cb9c5dccbad104221259e4afe2c426319689fd664b27258a7d784e0064d80f171d"));
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x0000000000000000000000000000000000010000, 198, 115792089237316195423570985008687907853269984665640564039457584007813129639937);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(4704445606454196094570484603290926624063100729597872852217321344260457091969);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 1);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 47164);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 49306);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0, 61540215053857464428767453964849425280167617230690602222793741948031562355110);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 16198);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -1851,27 +1851,27 @@ dynaddressArr_1 = new address[](22);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(4);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(251);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(79191649998993768947718092450999481918677816378268383438241072037341956701544, 0);
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 63363391583283680968285698156087320587343382546445072586249093223116916952050);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -1896,12 +1896,12 @@ dynaddressArr_1 = new address[](2);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 100000000003);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -1950,37 +1950,37 @@ dynaddressArr_1 = new address[](8);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(81320156938097213974542187550606954762546152353955115913996131482674463600313, 78284476793416106088503675340228022975298723932091611033467637800082200271266);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 49310);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 35, 1524785993);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(57772766239309341499469800078797611723478180150335313158947002104765008330529);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(100000000002, 54);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 184, 13128591670365068642773940003963863471527101357733400423509772710262426865664);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -2000,106 +2000,106 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 271272);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639933, bytes32(hex"e04be8636afab5e06d243148bff5b4564ccbee25bcf591b9c46439277ffdbede"));
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 57010);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(0);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 30831821726555125867921058725242980188075870263789137882884855430405255124621);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a50143aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e02"));
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 28975935510493999001347689460757456814330688165359257069877535894841228442286);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(99999999998, bytes32(hex"392c9965456733e9caef0db85e82cc60c7f02638b0c6985451874ebfedf0c183a8"));
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007813129639939, bytes32(hex"7ea63a06345a2e4e103774a5ed79235b0f93f45860d0efbfc9bc0acc07b8f83f"));
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 251, 36120753316297768696217060660908934244582611084718938008309995563841407660740);
-        
+
         vm.warp(block.timestamp + 592526);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(68489864832001755016055032421376851314937921331365407434416371637857656816244);
     }
-    
-    
-    function test_auto_move_into_tranche_3() public { 
-        
+
+
+    function test_auto_move_into_tranche_3() public {
+
         vm.warp(block.timestamp + 495050);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 16193);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2119,50 +2119,50 @@ address[] memory dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 192, 115792089237316195423570985008687907853269984665640564039457584007813129639938);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(1050459654392933145545335076490742297017156641352141637442550236660893981884, 100000000001);
-        
+
         vm.warp(block.timestamp + 28949);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 107898896912723264490978399712802089204385576384550214887079304384523458919760);
-        
+
         vm.warp(block.timestamp + 133083);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 326924);
         vm.roll(block.number + 11784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(49179579903020807585464254633893796759371375934949696369296402801022577224668, 100000000000);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(69917246502176076742929533323306685361437940896369870890024148215268712249013);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2218,37 +2218,37 @@ dynaddressArr_1 = new address[](25);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(122);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 4128);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 1);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 43750);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x0000000000000000000000000000000000030000, 51, 25945651085882217357318829009658607037887065257774214432170551265904963013225);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 15816);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -2270,42 +2270,42 @@ dynaddressArr_1 = new address[](5);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(4369999, bytes32(hex"cdaa4486a5012b4328e6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(4370000, bytes32(hex"ce875955642b4d4d0397fd0c1b1e13d53e35c77ddffac4fab0189f9be38056b5"));
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(4);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -2325,52 +2325,52 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 388255);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(179);
-        
+
         vm.warp(block.timestamp + 44681);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 46931);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(22117201074531082885280423325754148297525285625306441567190514897709391692118, bytes32(hex"6b91581c925d359e6d18f97c20c799c9208f5f5264c126344dfd1319f35e73d0ad"));
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(45004886481113, bytes32(hex"833f2f0cac4b4da8aad1d70882bbd14c7cb6a8af63ef2633ce977cbca5b114d88c"));
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 49311);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x0000000000000000000000000000000000000000, 3, 112987184314525941612772398276900730920386700325297926560909026755089897156291);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 0, 42466736533205134508456454964696950028137595420885810685497468828859580633950);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 16194);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 127, 80647476595691454625686445290204137423449225906356977711491252110432049835018);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x0000000000000000000000000000000000000000, 2, 98516164593350518475110326111041763588226596879441324429768614819141612053871);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 31442);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2423,55 +2423,55 @@ dynaddressArr_1 = new address[](13);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 49311);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(99999999997);
-        
+
         vm.warp(block.timestamp + 318197);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(99999999998, bytes32(hex"a0be03c4cd832639a4243dcb17c31efa1c10d103c1bc14f65b79565e0d4e2e73"));
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e4c"));
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 49306);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(78843771292972604388254838005996429338744954645081312887941471682734984212428);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639932, bytes32(hex"a3bdce3f2f9207d9735559d470f24c8387e9ecae5429d276295f2754d09ba23e"));
-        
+
         vm.warp(block.timestamp + 538916);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 15367212401622210097927781969178684789775744063035549068528817194385421839483);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x0000000000000000000000000000000000000000, 83325473743542242221534388804551981630392384891841944263070979888342169197172);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 16194);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2544,67 +2544,67 @@ dynaddressArr_1 = new address[](30);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 49310);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 38323);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 15, 0);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 16195);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(176);
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 49308);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(49);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 45504);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(474, bytes32(hex"c1d1c6f926aa912345ba523ac4bdd987e5196476f8acdae2a1dba7af63f7004a"));
-        
+
         vm.warp(block.timestamp + 117472);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007813129639937, 14472209658840974851537460270997566549055336916815370252603387060228834877232);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 16194);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 16198);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(68113674668757501337926655103298426912176097618094183175200062680677245685190, 80554961355616280107936335728125682367213019211535120062554781847246386867857);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 17681);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -2624,57 +2624,57 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 520625);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(3);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(204);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -2694,12 +2694,12 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 388257);
         vm.roll(block.number + 1);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -2719,7 +2719,7 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 49308);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -2765,86 +2765,86 @@ dynaddressArr_1 = new address[](27);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000010000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x0000000000000000000000000000000000010000, 0, 1);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 16195);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 49307);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007813129639939, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(24056028217069541909414071487493175286355780641311736754352567653480615493419, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 3257);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 506494);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 375312);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x0000000000000000000000000000000000000000, 2, 115792089237316195423570985008687907853269984665640564039457584007813129639933);
     }
-    
-    
-    function test_auto_xyz1_4() public { 
-        
+
+
+    function test_auto_xyz1_4() public {
+
         vm.warp(block.timestamp + 495050);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 16193);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2864,52 +2864,52 @@ address[] memory dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 306352);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639933, bytes32(hex"2b59eaec230a3f99184d496bd3e2eda6830837b64ab8292f959ac0e6657b322a"));
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 59154);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(1);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 455662);
         vm.roll(block.number + 31848);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(69822446246314923034278220206370057265328140919507282130314297247079960033716, 97732783715068864954164698526778413996551845677276768794243736405151130135559);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -2950,27 +2950,27 @@ dynaddressArr_1 = new address[](24);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(46354362842207886620905388756308829028475283864359434786227912137533388112548, 115792089237316195423570985008687907853269984665640564039457584007813129639935);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(251);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 49310);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(37334907497041349823531351293968133878396327243395102525985280625369106383877, bytes32(hex"46721495efa37492b9da0ac481a1ef50371f6b2de441c920a6d2f6760d199da9"));
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 99078);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2988,17 +2988,17 @@ dynaddressArr_1 = new address[](2);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(94948525103306124210912937123004995165558192703489674943856635519415867476348, 101502424730126919448720794818342463017161921864838227466852414768238643605381);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -3059,82 +3059,82 @@ dynaddressArr_1 = new address[](21);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(3);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 57891);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(248);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(85945889403672618447488898262240568213939879107678457289672663478209915470151, bytes32(hex"bf415d5d9a263871bf8b4640d0b68b9d8a7b8fbdc7e64382c2a603728fddd4b762"));
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 65976679084202280874600739094070819944042669293093944826367949101100495097054);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(1);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 1524785991);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 39600);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 155203);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 1, 86550677527982717703267814114674931685431520731813321990524123192126368118071);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x0000000000000000000000000000000000020000, 194, 12561616419057466779091193057578922880274367889933033504962222389083840275161);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 49312);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 135, 25092045604718011175118195515371519652602394270706484836849189633111423659203);
-        
+
         vm.warp(block.timestamp + 573933);
         vm.roll(block.number + 13922);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(106874748164066078063730111460050561860816849418935053917082120009734475174670);
-        
+
         vm.warp(block.timestamp + 388258);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3181,65 +3181,65 @@ dynaddressArr_1 = new address[](26);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(1524785991);
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(14712609653176679714936338739288327787942819877691348041000621313908327468682, 1);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 48094);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(14141000813261398743473004848528524276931957949629235721594467875675731921423, bytes32(hex"38439f0b29d4921320c626308abdca27e241a2e39b5b5200bccfcfedbf44aa27bc"));
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(5327580046077857291391327162846684350752480276605400414486114516354839999626, 115792089237316195423570985008687907853269984665640564039457584007813129639933);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 23980);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(65852591101822564351546605003698872922177952274361360479078788058478243519601, 76751455531399411198799855693451910422292764931191863923432557587945913440689);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(4);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(16551097435776762345266254342612029141163262521560621019937019099284149015281);
-        
+
         vm.warp(block.timestamp + 86551);
         vm.roll(block.number + 15461);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x0000000000000000000000000000000000010000, 108849699561506295285511180502381111955660439528791904985641547591252217915570);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 111, 80300227966152446558039595743339845785296257179304848165088208769062739741361);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3305,30 +3305,30 @@ dynaddressArr_1 = new address[](27);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(0, bytes32(hex"cb9c5dccbad104221259e4afe2c426319689fd664b27258a7d784e0064d80f171d"));
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x0000000000000000000000000000000000010000, 198, 115792089237316195423570985008687907853269984665640564039457584007813129639937);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(4704445606454196094570484603290926624063100729597872852217321344260457091969);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 1);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 47164);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 49306);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3346,15 +3346,15 @@ dynaddressArr_1 = new address[](2);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x0000000000000000000000000000000000000000, 236, 115792089237316195423570985008687907853269984665640564039457584007813129639934);
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3401,12 +3401,12 @@ dynaddressArr_1 = new address[](20);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(114695700303454280807527634745654193301074414322742182474051438679710338003597);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -3430,85 +3430,85 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 60039);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 63, 6082524245071052687704890355716475779750416147182695251505);
-        
+
         vm.warp(block.timestamp + 116453);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x0000000000000000000000000000000000000000, 158, 2);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 34180);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 169, 4369999);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(60144540794026193520365279384532684522558814950182729261374615829138700462338, 3);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 29576);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(40);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 31580);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 2, 3607212704600756214027202466067866337221165295735883287510714482482571786564);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 49311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(91);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3551,47 +3551,47 @@ dynaddressArr_1 = new address[](10);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 342012);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 16196);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639932, bytes32(hex"3b6219475200eab4c892e38fcb450ccda6a5764e832115fe9ea59d211deb3c7c"));
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(100000000000, bytes32(hex"382413b2417ef351ac48ac3b6b1c1ad8ff002929aaed7c725efd61554eb44de0"));
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 99999999999);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x0000000000000000000000000000000000020000, 148271209761);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(255);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3644,25 +3644,25 @@ dynaddressArr_1 = new address[](26);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
     }
-    
-    
-    function test_auto_remove_stake_5() public { 
-        
+
+
+    function test_auto_remove_stake_5() public {
+
         vm.warp(block.timestamp + 495050);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 16193);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3682,52 +3682,52 @@ address[] memory dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 306352);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639933, bytes32(hex"2b59eaec230a3f99184d496bd3e2eda6830837b64ab8292f959ac0e6657b322a"));
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 59154);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(1);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 455662);
         vm.roll(block.number + 31848);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(69822446246314923034278220206370057265328140919507282130314297247079960033716, 97732783715068864954164698526778413996551845677276768794243736405151130135559);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3768,27 +3768,27 @@ dynaddressArr_1 = new address[](24);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(46354362842207886620905388756308829028475283864359434786227912137533388112548, 115792089237316195423570985008687907853269984665640564039457584007813129639935);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(251);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 49310);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(37334907497041349823531351293968133878396327243395102525985280625369106383877, bytes32(hex"46721495efa37492b9da0ac481a1ef50371f6b2de441c920a6d2f6760d199da9"));
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 99078);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3806,17 +3806,17 @@ dynaddressArr_1 = new address[](2);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(94948525103306124210912937123004995165558192703489674943856635519415867476348, 101502424730126919448720794818342463017161921864838227466852414768238643605381);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -3877,82 +3877,82 @@ dynaddressArr_1 = new address[](21);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(3);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 57891);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(248);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(85945889403672618447488898262240568213939879107678457289672663478209915470151, bytes32(hex"bf415d5d9a263871bf8b4640d0b68b9d8a7b8fbdc7e64382c2a603728fddd4b762"));
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 65976679084202280874600739094070819944042669293093944826367949101100495097054);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(1);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 1524785991);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 39600);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 155203);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 1, 86550677527982717703267814114674931685431520731813321990524123192126368118071);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x0000000000000000000000000000000000020000, 194, 12561616419057466779091193057578922880274367889933033504962222389083840275161);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 49312);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 135, 25092045604718011175118195515371519652602394270706484836849189633111423659203);
-        
+
         vm.warp(block.timestamp + 573933);
         vm.roll(block.number + 13922);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(106874748164066078063730111460050561860816849418935053917082120009734475174670);
-        
+
         vm.warp(block.timestamp + 388258);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3999,65 +3999,65 @@ dynaddressArr_1 = new address[](26);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(1524785991);
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(14712609653176679714936338739288327787942819877691348041000621313908327468682, 1);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 48094);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(14141000813261398743473004848528524276931957949629235721594467875675731921423, bytes32(hex"38439f0b29d4921320c626308abdca27e241a2e39b5b5200bccfcfedbf44aa27bc"));
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(5327580046077857291391327162846684350752480276605400414486114516354839999626, 115792089237316195423570985008687907853269984665640564039457584007813129639933);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 23980);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(65852591101822564351546605003698872922177952274361360479078788058478243519601, 76751455531399411198799855693451910422292764931191863923432557587945913440689);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(4);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(16551097435776762345266254342612029141163262521560621019937019099284149015281);
-        
+
         vm.warp(block.timestamp + 86551);
         vm.roll(block.number + 15461);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x0000000000000000000000000000000000010000, 108849699561506295285511180502381111955660439528791904985641547591252217915570);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 111, 80300227966152446558039595743339845785296257179304848165088208769062739741361);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -4123,30 +4123,30 @@ dynaddressArr_1 = new address[](27);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(0, bytes32(hex"cb9c5dccbad104221259e4afe2c426319689fd664b27258a7d784e0064d80f171d"));
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x0000000000000000000000000000000000010000, 198, 115792089237316195423570985008687907853269984665640564039457584007813129639937);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(4704445606454196094570484603290926624063100729597872852217321344260457091969);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 1);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 47164);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 49306);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4164,78 +4164,78 @@ dynaddressArr_1 = new address[](2);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x0000000000000000000000000000000000000000, 236, 115792089237316195423570985008687907853269984665640564039457584007813129639934);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 16501);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(100000000002, 35584659598142041901413870273451731892030373325508551217639806550598752175261);
-        
+
         vm.warp(block.timestamp + 328163);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(94);
-        
+
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(70353304350496104369730177888421263953135520826908363181199627334787939967794, 542);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(83);
-        
+
         vm.warp(block.timestamp + 159966);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(0);
-        
+
         vm.warp(block.timestamp + 308603);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x0000000000000000000000000000000000010000, 1);
-        
+
         vm.warp(block.timestamp + 283776);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(59728262618434405881611305659567843834895904272585224026350447368278992233213, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d2c3"));
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 16194);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -4270,12 +4270,12 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x0000000000000000000000000000000000010000, 3, 107561973875445350062598731465624136646581016111120759645285076016944165273221);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -4295,57 +4295,57 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 16196);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 61843);
         vm.roll(block.number + 51988);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(41293003376417579424506032168501811023466421290107359124989903559233233401327, 1359133116278315596170556653421220672101502673449339653922318978069242668249);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 49312);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007813129639933);
-        
+
         vm.warp(block.timestamp + 423932);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 49307);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 33111);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639931, bytes32(hex"6ca026b74292c06703332895b063b8a087b86e6347e189ec06caf32631c17db22631"));
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 40123);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -4396,36 +4396,36 @@ dynaddressArr_1 = new address[](7);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 531053);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(8651703410724361327984018414169095514775441168794743005492698010943585110181, bytes32(hex"6727f4e4b4e7716f8b883ed8763529f15413d123300998cf73ff4f8955f8ca14"));
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(7592004841124917494493318265795816291353863618506939213004553196442853704446);
     }
-    
-    
-    function test_auto_create_tranche_6() public { 
-        
+
+
+    function test_auto_create_tranche_6() public {
+
         vm.warp(block.timestamp + 495050);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 16193);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4445,52 +4445,52 @@ address[] memory dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 306352);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639933, bytes32(hex"2b59eaec230a3f99184d496bd3e2eda6830837b64ab8292f959ac0e6657b322a"));
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 59154);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(1);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 455662);
         vm.roll(block.number + 31848);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(69822446246314923034278220206370057265328140919507282130314297247079960033716, 97732783715068864954164698526778413996551845677276768794243736405151130135559);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -4531,27 +4531,27 @@ dynaddressArr_1 = new address[](24);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(46354362842207886620905388756308829028475283864359434786227912137533388112548, 115792089237316195423570985008687907853269984665640564039457584007813129639935);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(251);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 49310);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(37334907497041349823531351293968133878396327243395102525985280625369106383877, bytes32(hex"46721495efa37492b9da0ac481a1ef50371f6b2de441c920a6d2f6760d199da9"));
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 99078);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4569,17 +4569,17 @@ dynaddressArr_1 = new address[](2);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(94948525103306124210912937123004995165558192703489674943856635519415867476348, 101502424730126919448720794818342463017161921864838227466852414768238643605381);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -4640,82 +4640,82 @@ dynaddressArr_1 = new address[](21);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(3);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 57891);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(248);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(85945889403672618447488898262240568213939879107678457289672663478209915470151, bytes32(hex"bf415d5d9a263871bf8b4640d0b68b9d8a7b8fbdc7e64382c2a603728fddd4b762"));
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 65976679084202280874600739094070819944042669293093944826367949101100495097054);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(1);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 1524785991);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 39600);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 155203);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 1, 86550677527982717703267814114674931685431520731813321990524123192126368118071);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x0000000000000000000000000000000000020000, 194, 12561616419057466779091193057578922880274367889933033504962222389083840275161);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 49312);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 135, 25092045604718011175118195515371519652602394270706484836849189633111423659203);
-        
+
         vm.warp(block.timestamp + 573933);
         vm.roll(block.number + 13922);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(106874748164066078063730111460050561860816849418935053917082120009734475174670);
-        
+
         vm.warp(block.timestamp + 388258);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -4762,65 +4762,65 @@ dynaddressArr_1 = new address[](26);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(1524785991);
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(14712609653176679714936338739288327787942819877691348041000621313908327468682, 1);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 48094);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(14141000813261398743473004848528524276931957949629235721594467875675731921423, bytes32(hex"38439f0b29d4921320c626308abdca27e241a2e39b5b5200bccfcfedbf44aa27bc"));
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(5327580046077857291391327162846684350752480276605400414486114516354839999626, 115792089237316195423570985008687907853269984665640564039457584007813129639933);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 23980);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(65852591101822564351546605003698872922177952274361360479078788058478243519601, 76751455531399411198799855693451910422292764931191863923432557587945913440689);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(4);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(16551097435776762345266254342612029141163262521560621019937019099284149015281);
-        
+
         vm.warp(block.timestamp + 86551);
         vm.roll(block.number + 15461);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x0000000000000000000000000000000000010000, 108849699561506295285511180502381111955660439528791904985641547591252217915570);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 111, 80300227966152446558039595743339845785296257179304848165088208769062739741361);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -4886,45 +4886,45 @@ dynaddressArr_1 = new address[](27);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(0, bytes32(hex"cb9c5dccbad104221259e4afe2c426319689fd664b27258a7d784e0064d80f171d"));
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x0000000000000000000000000000000000010000, 198, 115792089237316195423570985008687907853269984665640564039457584007813129639937);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(4704445606454196094570484603290926624063100729597872852217321344260457091969);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 1);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 47164);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 49306);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0, 61540215053857464428767453964849425280167617230690602222793741948031562355110);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 16198);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4979,27 +4979,27 @@ dynaddressArr_1 = new address[](22);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(4);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(251);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(79191649998993768947718092450999481918677816378268383438241072037341956701544, 0);
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 63363391583283680968285698156087320587343382546445072586249093223116916952050);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5024,12 +5024,12 @@ dynaddressArr_1 = new address[](2);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 100000000003);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -5078,77 +5078,77 @@ dynaddressArr_1 = new address[](8);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000030000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(81320156938097213974542187550606954762546152353955115913996131482674463600313, 78284476793416106088503675340228022975298723932091611033467637800082200271266);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 49310);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 35, 1524785993);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(57772766239309341499469800078797611723478180150335313158947002104765008330529);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(100000000002, 54);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(100000000000, 114773109587235875231047926346385663121306647179373741286267871251571839207067);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 3, 1524785991);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 49312);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(37541056479081856904199298105450220110387657311651986498345516563943238338256, 112479965430377707524270342954222751526868198216456934326515799517998255358530);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(228);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x0000000000000000000000000000000000030000, 255, 100000000000);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x0000000000000000000000000000000000030000, 157, 45194629292063205908899337837552225912510425114341428375319000054964373600819);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(130);
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 166, 115792089237316195423570985008687907853269984665640564039457584007813129639939);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(74608164710954940368279343544351270861649210167653084129780615859923060143521);
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007813129639935);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5174,56 +5174,56 @@ dynaddressArr_1 = new address[](8);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(0, 14861947739040717529788129491040920028885907081295717717216909399768696361962);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 16103);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 135, 2);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(70886482491580095425649494625777679482374444388372538081039613295037637979570);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 0, 4370001);
-        
+
         vm.warp(block.timestamp + 594673);
         vm.roll(block.number + 30304);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(70929860150991886538309480288307739945073110161788687069038203502485700525207, 100000000001);
-        
+
         vm.warp(block.timestamp + 388257);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x0000000000000000000000000000000000020000, 18, 115792089237316195423570985008687907853269984665640564039457584007813129639933);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(172);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 16195);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(72302617547145725882002643488968651362935551061150920513866988448600287722395, 94134064741230791832995800360118179983376365100456568815284348015321260221769);
     }
-    
-    
-    function test_auto_move_into_tranche_7() public { 
-        
+
+
+    function test_auto_move_into_tranche_7() public {
+
         vm.warp(block.timestamp + 538918);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 67016409481273563695308506077647403647576932613493823007934942300166301750369);
-        
+
         vm.warp(block.timestamp + 55459);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5258,35 +5258,35 @@ address[] memory dynaddressArr_1 = new address[](7);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(38229769591859542931822849668580952804273566283553841093594148731286818290239, bytes32(hex"01a9cb2636b82635e480ce6f62fb28ec7fed950d7007260d23d654b6b1461b06d058"));
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 247727);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 4369999);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 147122);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -5308,107 +5308,107 @@ dynaddressArr_1 = new address[](6);
 
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 16194);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 16198);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(157);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(1);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 49310);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 388258);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 5943);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 3, 1);
-        
+
         vm.warp(block.timestamp + 388258);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x0000000000000000000000000000000000000000, 2, 115792089237316195423570985008687907853269984665640564039457584007813129639934);
-        
+
         vm.warp(block.timestamp + 255);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 16196);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 599821);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(22005366080648766768788600619362042878210408744402393948562458243686914220123, 100000000002);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007913129639934, 76194678258269653980173057737476961014174290305053583907947435023789791864037);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 4, 98650819503786701123760802007174197043561868284354633651238736563337589216538);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5464,47 +5464,47 @@ dynaddressArr_1 = new address[](29);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000010000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 196, 574);
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 11828);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(128);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(41062390069179455986103852241718030506370422151414556995387232047354440787218, bytes32(hex"26e8ff11a96c8728b0d1d0870ae64c63d8ad7f2914f46509dce873262203637f"));
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639934, bytes32(hex"aedabab42e9180c80720b112bf462b744f778aac48b1b12bad819726391dfd21bb"));
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x0000000000000000000000000000000000020000, 63, 100000000003);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5524,86 +5524,86 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(162);
-        
+
         vm.warp(block.timestamp + 495050);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 16193);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
     }
-    
-    
-    function test_auto_stake_tokens_8() public { 
-        
+
+
+    function test_auto_stake_tokens_8() public {
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x0000000000000000000000000000000000030000, 117, 29953964978342515993174144505952498654181382938625023450685930792555460499487);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 1524785992);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 1282);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(3, 115792089237316195423570985008687907853269984665640564039457584007813129639935);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x0000000000000000000000000000000000000000, 216, 479);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 1);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x0000000000000000000000000000000000020000, 193, 103592931250723663342526236566674589979350664709891541905090633920979259354568);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -5623,22 +5623,22 @@ address[] memory dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5710,67 +5710,67 @@ dynaddressArr_1 = new address[](30);
         vm.roll(block.number + 49311);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 49310);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 295976);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 6, 79567917822880853354550345665867835185750617321988201846794004409006999971509);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 335555);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(85298254127461032419856310083757554113773271449005234389456006839077406038864);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 253, 100000000000);
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 40737);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(4369999, bytes32(hex"a6284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eacd2d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5789,7 +5789,7 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -5854,7 +5854,7 @@ dynaddressArr_1 = new address[](32);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5875,12 +5875,12 @@ dynaddressArr_1 = new address[](6);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 289103);
         vm.roll(block.number + 46697);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 49308);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -5929,22 +5929,22 @@ dynaddressArr_1 = new address[](31);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(76943077572640037625344590375377849823812408090030739970205677941751053640606);
-        
+
         vm.warp(block.timestamp + 538918);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(89036664435057989453354584332185551292683893660752030406259571937468745629005, 62589651008341486126973045047860766543739545707433526397684032086346921573706);
-        
+
         vm.warp(block.timestamp + 538918);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 49310);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -5964,35 +5964,35 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 84389696500194565819550590130381082357514634063932711863799532442030727709837);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.get_vested_for_tranche(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 233209);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 7706);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6053,72 +6053,72 @@ dynaddressArr_1 = new address[](21);
 
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007813129639933, 56773471326075291304140022175427837740745687377902571674427279718540994354197);
-        
+
         vm.warp(block.timestamp + 318197);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(137754096912, bytes32(hex"fe9e729451c9d7ce8758e5af1028251afa7ef0f11a1dd9dc2bad0ebc68df8e5b"));
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 16198);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 82670);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(110394555060345242258205744769607075202563113316003952709688975961941082308309, 52798567164023668834816797557148011595188412746986896678579384654481855526334);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -6168,17 +6168,17 @@ dynaddressArr_1 = new address[](6);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6240,15 +6240,15 @@ dynaddressArr_1 = new address[](7);
         vm.roll(block.number + 49308);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 218, 115792089237316195423570985008687907853269984665640564039457584007813129639935);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x0000000000000000000000000000000000000000, 97, 77144884216451221144728934362747036656325176442757685723831415912606257940449);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 14954);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6300,12 +6300,12 @@ dynaddressArr_1 = new address[](19);
         vm.roll(block.number + 49312);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(103);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6325,27 +6325,27 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(0);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 31213);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 251, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 39048);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 20, 105695307260863576353622959340027234655583649927796553686113302780084402930239);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 49307);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6370,12 +6370,12 @@ dynaddressArr_1 = new address[](5);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(4370001, bytes32(hex"11341d9a26326db16d86626c5e503fdfa76c4ac5573f047df27226bba903fdcd"));
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -6395,7 +6395,7 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 539952);
         vm.roll(block.number + 51830);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6438,91 +6438,91 @@ dynaddressArr_1 = new address[](1);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 21834);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(252);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 127);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(1, 58887443718870356696355450641901687366949326277346192888960591609500406373294);
-        
+
         vm.warp(block.timestamp + 12290);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(90755032797177294395216969940352621886263526016672930285178860319933092387421, bytes32(hex"54888842959c8987c78a814f534a8e507920e3f76e004397c02634fbd577b9fb81"));
-        
+
         vm.warp(block.timestamp + 579885);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 41096);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639932, bytes32(hex"8aa425107d517c0d05075fd6d8e6886114ea7429c7b37f42de17964092990454"));
-        
+
         vm.warp(block.timestamp + 277232);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 49312);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007813129639937, bytes32(hex"71554e7df66e96a701e842a5877e4cc0128df2fe894a10fcc0b36d8b29dc40ee"));
-        
+
         vm.warp(block.timestamp + 538920);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb900f0c0f1e6f37f86e8ea428eaa62d2a4142b0d23e"));
     }
-    
-    
-    function test_auto_move_into_tranche_9() public { 
-        
+
+
+    function test_auto_move_into_tranche_9() public {
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x0000000000000000000000000000000000030000, 117, 29953964978342515993174144505952498654181382938625023450685930792555460499487);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 1524785992);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 1282);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(34860273062104173140043296338563573440245184396207736496331603277884255344678);
-        
+
         vm.warp(block.timestamp + 144361);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6561,12 +6561,12 @@ address[] memory dynaddressArr_1 = new address[](20);
         vm.roll(block.number + 34326);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 444071);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6665,132 +6665,132 @@ dynaddressArr_1 = new address[](22);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 435415);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 92, 12158226021412178169156658430674497712021832769702038107482275047110785545668);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 362120);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x0000000000000000000000000000000000000000, 32, 105263080336718050180893117501887336090317484363966329711255345426148414299909);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 54055);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(1524785992, 100000000001);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 56696);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 538916);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(112740001030232284919318281232054919329088009192961780487581440317356854276527);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 42200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007813129639935, bytes32(hex"01c8e5ddb3f6482099529df817c8d8606ba4036c2369a0cda3a1f484a4abdd2636"));
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 103, 78156002002191175391690760765228715327157008615227480962206329204028643084709);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 47112);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 43, 59912251740436248633540615260653465186969675058853348352623922703108210379441);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 10981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 39875);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 204, 83595674343045599636645802403528099161671899856354384924749058388370200001177);
-        
+
         vm.warp(block.timestamp + 255);
         vm.roll(block.number + 16195);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(81232135279483506368149570689065807643351798049769008095655274294582290362613, 98);
-        
+
         vm.warp(block.timestamp + 388259);
         vm.roll(block.number + 16193);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 9006);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(29212973539135356764736627915377696703841300427151545872944715496492471809929, bytes32(hex"ee5263129218879e5d45b05585c1726481638a07297820fa10ac5152f817a11c"));
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 16198);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 124719);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 1, 115792089237316195423570985008687907853269984665640564039457584007813129639937);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 82670);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 4, 60378160918218159825985059887136389267528784676712389105539307250830405878735);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6833,7 +6833,7 @@ dynaddressArr_1 = new address[](24);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 522677);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6854,7 +6854,7 @@ dynaddressArr_1 = new address[](4);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6889,67 +6889,67 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 538920);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 255, 99999999999);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 388259);
         vm.roll(block.number + 23967);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(100000000000, 115792089237316195423570985008687907853269984665640564039457584007813129639933);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 255);
         vm.roll(block.number + 40159);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007813129639933, bytes32(hex"cb8751e26882e4d878aa40d5bdaa62907b872daf451360830e1189a2ae45e091"));
-        
+
         vm.warp(block.timestamp + 292800);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 184, 110011966951534659891753919580441214756875998496834865656475560148751552993621);
-        
+
         vm.warp(block.timestamp + 475745);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 316983);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(10089679266280462771649235565590942039741863963310668101560170778206623559034);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 82670);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6990,52 +6990,52 @@ dynaddressArr_1 = new address[](11);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 521065);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 63, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(22053152811422005728715785467405210811268338958464841993728062156621353905515);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(33879229523);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7090,22 +7090,22 @@ dynaddressArr_1 = new address[](29);
         vm.roll(block.number + 54772);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 290754);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 271957);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(4);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7145,37 +7145,37 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 44459);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(100000000003);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 49306);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 388254);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(1524785991, 2085690544);
-        
+
         vm.warp(block.timestamp + 271957);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 0, 2070556440847668733879085665268914718015402286883843277679749147469055);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7238,52 +7238,52 @@ dynaddressArr_1 = new address[](32);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 420145);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 388257);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 55159);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 55468);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639934, bytes32(hex"71086289d4e5d69cc6c789bbffdd05dc28b6f2a35bb54dd16732d812841daa"));
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 16194);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8e28eaa62d2a4190b0d23e1f"));
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420c0f1e6f37f86e8ea428eaa62d2a4190b0d23e6b"));
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7343,41 +7343,41 @@ dynaddressArr_1 = new address[](30);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 538918);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(269, 0);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 388255);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 74, 1524785991);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 48, 1293728066168331845289584695542640817654504640276063044492449008509313820736);
-        
+
         vm.warp(block.timestamp + 255);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
     }
-    
-    
-    function test_auto_revoke_issuer_10() public { 
-        
+
+
+    function test_auto_revoke_issuer_10() public {
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 16198);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7421,47 +7421,47 @@ address[] memory dynaddressArr_1 = new address[](7);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x0000000000000000000000000000000000020000, 255, 29447651823291632989828299714522936985891876497578494967851011756371405180230);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(3);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 49307);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 4, 115792089237316195423570985008687907853269984665640564039457584007813129639939);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7514,47 +7514,47 @@ dynaddressArr_1 = new address[](23);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 16196);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 49307);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 349796);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428a62d2a4190b0d23eae"));
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(16);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 8146846438973579364508956077198924913533406681534839531276679182396261738154);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7621,17 +7621,17 @@ dynaddressArr_1 = new address[](23);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 291412);
         vm.roll(block.number + 58346);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 188, 1524785992);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 1524785993);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7676,17 +7676,17 @@ dynaddressArr_1 = new address[](30);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 58821);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 7080);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -7706,163 +7706,163 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(4369999, bytes32(hex"ed566c971aaf62e0787f8b052bc27624eb4cbdd8a62633a593bc106e1eaada1a6a"));
-        
+
         vm.warp(block.timestamp + 271957);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(4369999);
-        
+
         vm.warp(block.timestamp + 538922);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x0000000000000000000000000000000000030000, 113, 3);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5472);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 59205);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(87475195620778215130982599672836927236874614586902780235781495326040135358295, 50219523286431144114781754814993274970944344371062829352169329227802941755266);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 16194);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(99659139158037186920577103260453917880050529646455136542008610194742075137062, bytes32(hex"b0c124fb4ec6fd2fda2634fa5eab079dd1a47b601d0d17a649e6a9a35678cbb7d1"));
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(99195794903877321569323372767426181369003119470306752830607712398971729066531, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 277232);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 45979916223292962141429372250425736932223346547040278281688990924248774020801);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(60745830500434400826618052265286359158225751567412087389487404913258995172240, bytes32(hex"ed72e899487f52578aa12636f49270470941a0e083e592c275ce286b8f197b53de"));
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 47037);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"790e4d173bbbdb52041069278d68f5d216c8a7ab85fddae9c34c8d1af4c7bf2631"));
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(73880328775873407053784643971912661775939193611571588158769427516804007694742, 115792089237316195423570985008687907853269984665640564039457584007813129639935);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 155, 1524785992);
-        
+
         vm.warp(block.timestamp + 538916);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(107288035896135892624540421814393972928408687608518259088339552232503384843553);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(98204613690376151967786882162267298502883096317138858386678658974857688990418);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 132369);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 538920);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 101, 100000000002);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(4, bytes32(hex"ce64506ca9f828a30e3bd5e9d8bd5b93a9b76c96065a428868bf2c88c1d90020"));
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 49306);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(255);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 105, 0);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7912,72 +7912,72 @@ dynaddressArr_1 = new address[](11);
         vm.roll(block.number + 16927);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 388257);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x0000000000000000000000000000000000010000, 2, 73675456136554927483608720352461156763946701466742372668078411666215377798438);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(111058852482170894292299196803232102305811482260685436346350593441948319724666, 0);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 88702);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(49237853231958703548788619770259904924853007379915741986699820103316811635211);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(38450358761388145118884871989761261141018478585583012503365125415772330780369, 2);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(7183302507890027182405940736434581335513121732049355690303854919079848538869, 115792089237316195423570985008687907853269984665640564039457584007813129639934);
-        
+
         vm.warp(block.timestamp + 388255);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(1524785992, bytes32(hex"f550d5782feeb56d21778928d0feba0df8efe303783d8ead52d0151a5aeac087"));
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 0, 7661187250780507345038821185146560714045686329102928239653762461519826713925);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(108810358542197542098787350977591521472352148963074787636631250815121577033112);
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -8009,42 +8009,42 @@ dynaddressArr_1 = new address[](3);
 
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(1186846904);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 28253);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420c0f1e6f37f86e8ea428eaa62d2a4190b0d23efa"));
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(4369999, 29012592230554110215388072699567049242565320669781931089724218665733795849285);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 49311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(85144285979492579194298461110324014074554457734262925495188156138720077526568, bytes32(hex"3296ef011d97ceebdf570c023149516f211d838c41da263334aae46cc2518ff200"));
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 30902);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8102,96 +8102,96 @@ dynaddressArr_1 = new address[](25);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 388255);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 117472);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 49197219000419753294862600477829860031298073017837205689466275910684344235958);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
     }
-    
-    
-    function test_auto_stake_tokens_11() public { 
-        
+
+
+    function test_auto_stake_tokens_11() public {
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 1);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4370001, bytes32(hex"e0bf76fc0119320582ee417cbc68f0e7bd41a9929d806599e5241487633238dd"));
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 9733);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x0000000000000000000000000000000000000000, 251, 115792089237316195423570985008687907853269984665640564039457584007813129639933);
-        
+
         vm.warp(block.timestamp + 388255);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 31488);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 29, 59976692825418485977701537482914774283052153471129773402842744005147742449163);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 4383);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(3, bytes32(hex"3082f1d0af6d7ee3d1d7fb00070e8e130bd1fc120384e686729e2638586ec82639c1"));
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 49310);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -8231,30 +8231,30 @@ address[] memory dynaddressArr_1 = new address[](16);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 143262);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(1524785991, 2);
-        
+
         vm.warp(block.timestamp + 538916);
         vm.roll(block.number + 49311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(223);
-        
+
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -8274,67 +8274,67 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 49312);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(77348543405615556722177874733340713504003900421994372817930815114767589451763, 52987950424883801775198343276698583238620834653113933358791586345958368294167);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x0000000000000000000000000000000000030000, 8);
-        
+
         vm.warp(block.timestamp + 223129);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(100000000000, bytes32(hex"40fbb1bca408690c5f96e96007f1621335a3dbe6dbddbd1fe1d1e08da11349bc"));
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(1524785991, bytes32(hex"b5828bb58026384dab44ebfe3cc9476738004cce157810f97b6cc4ca7be57fe5fb"));
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639935, bytes32(hex"6aac19ec436557045a70318bcf8409629fdd1be602fa51a0c94bd06a889583b0"));
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(4, bytes32(hex"060ca072a557ffa1c3b02cc36d4bebfaf5cb030b0df34327c58216d2ade26081"));
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 103667149618287207177843124280827533490437366367997187532657187771147747121483);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(115792089237316195423570985008687907853269984665640564039457584007813129639938);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8376,47 +8376,47 @@ dynaddressArr_1 = new address[](21);
         vm.roll(block.number + 16198);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(67535414272107493530459448220913782461234233770221961229722171508878532291618, bytes32(hex"99ad11183c52e6939abb2a24efbeaeb459e69c654e95535a955bb7aaf3658cb8"));
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 49307);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 16195);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 132, 20990185016751594263325839146131577522594120507048545915238418319321122832670);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 49311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(184);
-        
+
         vm.warp(block.timestamp + 208935);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -8444,17 +8444,17 @@ dynaddressArr_1 = new address[](11);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 8, 109646060814519238394861793816429687499029926920973416175939548052523741593440);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639934, bytes32(hex"5ec0189db5ab090145ee3cb9766c43e9214bfe9806f24130e74de5f18a6f2e47"));
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -8480,12 +8480,12 @@ dynaddressArr_1 = new address[](6);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 456335);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 59639);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -8530,37 +8530,37 @@ dynaddressArr_1 = new address[](17);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 129, 1524785991);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0ff86f371e6e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 16193);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 133, 80455640888735081455355693756883016851877802274529272882191489268536546276471);
-        
+
         vm.warp(block.timestamp + 225019);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x0000000000000000000000000000000000030000, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 4, 4370000);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8585,62 +8585,62 @@ dynaddressArr_1 = new address[](4);
         vm.roll(block.number + 50094);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 880);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 49312);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(43790729101680434488663706242659883471495116628380409067173390868931357103725, bytes32(hex"9293b28966bcb588580bbe40a12b64847e195eeb6c2de8ea13e2b87b75b7ccbd"));
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639934, bytes32(hex"8a482bdacb982e3492f12551f8a0d50e8990f16d75c10f5f878284d6ae5d88e0"));
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(140);
-        
+
         vm.warp(block.timestamp + 388255);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(0);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x0000000000000000000000000000000000030000, 12, 4370001);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8693,57 +8693,57 @@ dynaddressArr_1 = new address[](9);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 145077);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 145795);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 47803807963724480453537836157576822990993141386488280418229821251002927704193);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 52, 101975790540607891223239876738647939992460371362116377933345063246165773661259);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 75767);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 79556080881813126965719772406380679652567621692371968807076616726158786333732);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000010000);
         dynaddressArr_0 = new address[](14);
@@ -8783,17 +8783,17 @@ dynaddressArr_1 = new address[](16);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 388255);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 538918);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 67016409481273563695308506077647403647576932613493823007934942300166301750369);
-        
+
         vm.warp(block.timestamp + 55459);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -8828,35 +8828,35 @@ dynaddressArr_1 = new address[](7);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(38229769591859542931822849668580952804273566283553841093594148731286818290239, bytes32(hex"01a9cb2636b82635e480ce6f62fb28ec7fed950d7007260d23d654b6b1461b06d058"));
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 247727);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 4369999);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 147122);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8878,71 +8878,71 @@ dynaddressArr_1 = new address[](6);
 
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 16194);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
     }
-    
-    
-    function test_auto_set_controller_12() public { 
-        
+
+
+    function test_auto_set_controller_12() public {
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x0000000000000000000000000000000000030000, 117, 29953964978342515993174144505952498654181382938625023450685930792555460499487);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 1524785992);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 1282);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(34860273062104173140043296338563573440245184396207736496331603277884255344678);
-        
+
         vm.warp(block.timestamp + 144361);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -8981,12 +8981,12 @@ address[] memory dynaddressArr_1 = new address[](20);
         vm.roll(block.number + 34326);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 444071);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9085,155 +9085,155 @@ dynaddressArr_1 = new address[](22);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 435415);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 92, 12158226021412178169156658430674497712021832769702038107482275047110785545668);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 362120);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x0000000000000000000000000000000000000000, 32, 105263080336718050180893117501887336090317484363966329711255345426148414299909);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 54055);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(1524785992, 100000000001);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 56696);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 538916);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(112740001030232284919318281232054919329088009192961780487581440317356854276527);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 22482);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007813129639935, 72769624572719097173417830295141097146906944254711248690725774083679376378691);
-        
+
         vm.warp(block.timestamp + 570553);
         vm.roll(block.number + 57717);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x0000000000000000000000000000000000010000, 6371368357717196238146380946587551627004813495676335224957720933);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 388254);
         vm.roll(block.number + 20567);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(109077657442001188306017647713938875403748454104980639471391263452055832308977, bytes32(hex"7d94f70c1d9299a16775d071274ce311f4d0a026336c4b4130e7b284c9bd9482a5"));
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 36338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 4, 255752909);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 339);
-        
+
         vm.warp(block.timestamp + 538922);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007913129639933, 65472968553177029349518279278790709406692682688215422142405174156041473251314);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(87324553133972207815747538265410618587175844373377606369243431121383517085390);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 1);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 73286);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9287,7 +9287,7 @@ dynaddressArr_1 = new address[](12);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 42806);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -9343,72 +9343,72 @@ dynaddressArr_1 = new address[](16);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(96504217562402428424934751429890397521304961443113327019228348949328948317539, 6431315762433127201631293263713300740866045164701024865873043416868080741548);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 19431);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 388257);
         vm.roll(block.number + 16194);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 16193);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x0000000000000000000000000000000000010000, 45, 100000000003);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 32743211412941055840551794927907412572201808875017866014973681343565711705461);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 49307);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9447,17 +9447,17 @@ dynaddressArr_1 = new address[](14);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 16194);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 56791);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -9485,132 +9485,132 @@ dynaddressArr_1 = new address[](4);
         vm.roll(block.number + 49307);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x0000000000000000000000000000000000010000, 27486962583721096221967800025768610426681803714337582511122469530247567392751);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 23968);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(91219620391050822295592403268083353122670425195343019179738177199604922684678, bytes32(hex"e182b03dbf3daaa1e585b728a70d97f6b0f3ef24da5a68ea1d8e73a68aa39996"));
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 528025);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(33440643614624707902968899259488705068098968302777182687013598096175926028294, 4);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(997165578485846914, bytes32(hex"aa3bd90d328293d26513b71a15d7977c5d03e1f18bc6ee4bd4967d1b1df5162e"));
-        
+
         vm.warp(block.timestamp + 318197);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x0000000000000000000000000000000000010000, 2, 89176036788376400446583174434318223970373659056331265967166076047256308042865);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x0000000000000000000000000000000000020000, 60, 57490814764193575871988585332515643180716182628370047150185359355299354359919);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(6071826906811500954257789555426348264672167185458886356044272336927957155130, 4);
-        
+
         vm.warp(block.timestamp + 405224);
         vm.roll(block.number + 49312);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(255);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 16196);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 14004819396130243672557743338770851859300199409262689416328712795631700892621);
-        
+
         vm.warp(block.timestamp + 82670);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 161, 115792089237316195423570985008687907853269984665640564039457584007813129639936);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(144604867156544115075105311959354397739269274668022531318502090031, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 538918);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 67016409481273563695308506077647403647576932613493823007934942300166301750369);
-        
+
         vm.warp(block.timestamp + 55459);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -9645,49 +9645,49 @@ dynaddressArr_1 = new address[](7);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(38229769591859542931822849668580952804273566283553841093594148731286818290239, bytes32(hex"01a9cb2636b82635e480ce6f62fb28ec7fed950d7007260d23d654b6b1461b06d058"));
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 247727);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 4369999);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 147122);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
     }
-    
-    
-    function test_auto_create_tranche_13() public { 
-        
+
+
+    function test_auto_create_tranche_13() public {
+
         vm.warp(block.timestamp + 538918);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 67016409481273563695308506077647403647576932613493823007934942300166301750369);
-        
+
         vm.warp(block.timestamp + 55459);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -9722,35 +9722,35 @@ address[] memory dynaddressArr_1 = new address[](7);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(38229769591859542931822849668580952804273566283553841093594148731286818290239, bytes32(hex"01a9cb2636b82635e480ce6f62fb28ec7fed950d7007260d23d654b6b1461b06d058"));
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 247727);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 4369999);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 147122);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -9772,107 +9772,107 @@ dynaddressArr_1 = new address[](6);
 
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 16194);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 16198);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(157);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(1);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 49310);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 388258);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 5943);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 3, 1);
-        
+
         vm.warp(block.timestamp + 388258);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x0000000000000000000000000000000000000000, 2, 115792089237316195423570985008687907853269984665640564039457584007813129639934);
-        
+
         vm.warp(block.timestamp + 255);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 16196);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 599821);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(22005366080648766768788600619362042878210408744402393948562458243686914220123, 100000000002);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007913129639934, 76194678258269653980173057737476961014174290305053583907947435023789791864037);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 4, 98650819503786701123760802007174197043561868284354633651238736563337589216538);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9928,47 +9928,47 @@ dynaddressArr_1 = new address[](29);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000010000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 196, 574);
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 11828);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(128);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(41062390069179455986103852241718030506370422151414556995387232047354440787218, bytes32(hex"26e8ff11a96c8728b0d1d0870ae64c63d8ad7f2914f46509dce873262203637f"));
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639934, bytes32(hex"aedabab42e9180c80720b112bf462b744f778aac48b1b12bad819726391dfd21bb"));
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x0000000000000000000000000000000000020000, 63, 100000000003);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9988,7 +9988,7 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -10039,27 +10039,27 @@ dynaddressArr_1 = new address[](10);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 251, 10166067235004814480504250270491132119855256990449420867487642970234808821020);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 16195);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 7663617372316731217204632945136810402751130243272349917974000);
-        
+
         vm.warp(block.timestamp + 82670);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 126407);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -10101,57 +10101,57 @@ dynaddressArr_1 = new address[](14);
         vm.roll(block.number + 49306);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 193, 0);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 59, 30629340880551136913730215950078380485858740110707456481752736494857299498014);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(80846067585471488781683037685107354109766954547736675123287583095093794916328);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(4);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 36, 0);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 36648);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 117472);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(4370000);
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(12712873873296451336794279851773889223910122669876212181508824723378519755058, 115792089237316195423570985008687907853269984665640564039457584007813129639935);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -10242,17 +10242,17 @@ dynaddressArr_1 = new address[](30);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007913129639932, 4369999);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x0000000000000000000000000000000000020000, 211, 115792089237316195423570985008687907853269984665640564039457584007813129639938);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -10272,22 +10272,22 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 127);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(162);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(73381990498134998153478508320810673998023950897636890565157343452400474028422, bytes32(hex"6ef9dfb4c16071512a85a1eb505b792c3505c3db4241b3ec50e968f7d72631506e"));
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -10306,72 +10306,72 @@ dynaddressArr_1 = new address[](2);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 51345);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(3, 55520357130422886812507720399389715735763674464760578311629638904025249330374);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 235, 27308498928431621440457394705866845094433158748760539428339125249568141389164);
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x0000000000000000000000000000000000020000, 131);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(16);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007813129639933);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 11119701080799325158427295148188970827475818437734751927434743819176226531461);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(2);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007913129639934, 55156489416687227949094156577555559768750160658407216998420659182853804382028);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 16195);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -10393,96 +10393,96 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 227990);
         vm.roll(block.number + 17401);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a52b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23ef8"));
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 541570);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(210);
-        
+
         vm.warp(block.timestamp + 472566);
         vm.roll(block.number + 18868);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 179171);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(11049196751580879029422101509897443705065884154312705228291753458584922303383);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
     }
-    
-    
-    function test_auto_issue_into_tranche_14() public { 
-        
+
+
+    function test_auto_issue_into_tranche_14() public {
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x0000000000000000000000000000000000030000, 117, 29953964978342515993174144505952498654181382938625023450685930792555460499487);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 1524785992);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 1282);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(34860273062104173140043296338563573440245184396207736496331603277884255344678);
-        
+
         vm.warp(block.timestamp + 144361);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -10521,12 +10521,12 @@ address[] memory dynaddressArr_1 = new address[](20);
         vm.roll(block.number + 34326);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 444071);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -10625,142 +10625,142 @@ dynaddressArr_1 = new address[](22);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 435415);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 92, 12158226021412178169156658430674497712021832769702038107482275047110785545668);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 362120);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x0000000000000000000000000000000000000000, 32, 105263080336718050180893117501887336090317484363966329711255345426148414299909);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 54055);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(1524785992, 100000000001);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 56696);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 538916);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(112740001030232284919318281232054919329088009192961780487581440317356854276527);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 42200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007813129639935, bytes32(hex"01c8e5ddb3f6482099529df817c8d8606ba4036c2369a0cda3a1f484a4abdd2636"));
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 103, 78156002002191175391690760765228715327157008615227480962206329204028643084709);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 47112);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 43, 59912251740436248633540615260653465186969675058853348352623922703108210379441);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 10981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 39875);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 204, 83595674343045599636645802403528099161671899856354384924749058388370200001177);
-        
+
         vm.warp(block.timestamp + 255);
         vm.roll(block.number + 16195);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(81232135279483506368149570689065807643351798049769008095655274294582290362613, 98);
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x0000000000000000000000000000000000000000, 152, 49460099961181327875820458057013308036002436085276493571520704809764061859914);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 81, 7901672768179316247516118096592833732444205758566458430512461440740108152234);
-        
+
         vm.warp(block.timestamp + 338653);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(121);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 2, 102112470615890720783539767621419773809540758863239363219102891418217238257057);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -10812,77 +10812,77 @@ dynaddressArr_1 = new address[](18);
         vm.roll(block.number + 49312);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 7234);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(6977551, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 16194);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 165, 1524785991);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 198, 47495029373061631421823918739323671355889745830816630487785286938435132470074);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x0000000000000000000000000000000000010000, 64, 15235763216518947136058);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(100440836985082265460927770039993694500812082384666127130321470645060079144868, 2);
-        
+
         vm.warp(block.timestamp + 511638);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 0, 2986611325735941504698722154357784629863756759088377630472011047741967760771);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 2, 0);
-        
+
         vm.warp(block.timestamp + 381204);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 165, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007813129639939, 27654811941079656462933242818857905018346751608016069345155207870360416337000);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -10902,62 +10902,62 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x0000000000000000000000000000000000010000, 4);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(1524785993, bytes32(hex"2a7c27e1d7f7d09b7c86254a14252a14e324dcef288b7f851c836bb62631ca4905"));
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea4283ea62d2a4190b0d2ea"));
-        
+
         vm.warp(block.timestamp + 538922);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 98794084438883855098861210713349375366393398454852164789760507355268430904052);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 4, 4);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 15147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(1);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 27918);
         vm.roll(block.number + 46959);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -10981,42 +10981,42 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 388254);
         vm.roll(block.number + 49812);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(54202875330875845150435236380052322342083907762497654793265849022998546686807);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 181, 33504598214690779692048004696681606027019466391157836012517606142236605424095);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(66);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 49310);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(22);
-        
+
         vm.warp(block.timestamp + 255);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 47107);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -11036,60 +11036,60 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d219"));
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 23513789817222929104272479258940081992848904753249050585740993887392436256895);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x0000000000000000000000000000000000000000, 5867658804269920237613021466639197306806098388905464372040213101275632689117);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 16193);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(21086881302445689546216974541239390713264504555185014756661956468006541370967);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 41230);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(89);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 2, 100000000000);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(56136277494964778780116220854987971344064583449967650586493983217456344681609, 42527066535302605984193712143454634117635821153313199947793702550246416801064);
-        
+
         vm.warp(block.timestamp + 117472);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -11109,71 +11109,71 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 42341);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 24166);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 109, 115792089237316195423570985008687907853269984665640564039457584007813129639939);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x0000000000000000000000000000000000030000, 0, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
     }
-    
-    
-    function test_auto_remove_stake_15() public { 
-        
+
+
+    function test_auto_remove_stake_15() public {
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x0000000000000000000000000000000000030000, 117, 29953964978342515993174144505952498654181382938625023450685930792555460499487);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 1524785992);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 1282);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(34860273062104173140043296338563573440245184396207736496331603277884255344678);
-        
+
         vm.warp(block.timestamp + 144361);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -11212,12 +11212,12 @@ address[] memory dynaddressArr_1 = new address[](20);
         vm.roll(block.number + 34326);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 444071);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -11316,155 +11316,155 @@ dynaddressArr_1 = new address[](22);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 435415);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 92, 12158226021412178169156658430674497712021832769702038107482275047110785545668);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 538921);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 362120);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x0000000000000000000000000000000000000000, 32, 105263080336718050180893117501887336090317484363966329711255345426148414299909);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 54055);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(1524785992, 100000000001);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 56696);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 538916);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(112740001030232284919318281232054919329088009192961780487581440317356854276527);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 22482);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007813129639935, 72769624572719097173417830295141097146906944254711248690725774083679376378691);
-        
+
         vm.warp(block.timestamp + 570553);
         vm.roll(block.number + 57717);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x0000000000000000000000000000000000010000, 6371368357717196238146380946587551627004813495676335224957720933);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 388254);
         vm.roll(block.number + 20567);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(109077657442001188306017647713938875403748454104980639471391263452055832308977, bytes32(hex"7d94f70c1d9299a16775d071274ce311f4d0a026336c4b4130e7b284c9bd9482a5"));
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 36338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 4, 255752909);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 339);
-        
+
         vm.warp(block.timestamp + 538922);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007913129639933, 65472968553177029349518279278790709406692682688215422142405174156041473251314);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(87324553133972207815747538265410618587175844373377606369243431121383517085390);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 1);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 73286);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -11518,7 +11518,7 @@ dynaddressArr_1 = new address[](12);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 42806);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -11574,32 +11574,32 @@ dynaddressArr_1 = new address[](16);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 251, 101168718184516878557140307144935867011805851405511873612642062776925723852243);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -11619,12 +11619,12 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 538922);
         vm.roll(block.number + 36660);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -11701,92 +11701,92 @@ dynaddressArr_1 = new address[](47);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(1524785992, 28075726528710096377921410);
-        
+
         vm.warp(block.timestamp + 538920);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 27168);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(2, bytes32(hex"4daaa8ff28688842949009fb2e21cc9121c443e6cc2fdb3b65c6ce5ae72ff75b"));
-        
+
         vm.warp(block.timestamp + 538918);
         vm.roll(block.number + 36268);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 49311);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(100000000000);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 37336);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 243009);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 388259);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 16195);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 3, 47305824994574029868375518772623808790676780111683804788140059155267742356727);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 49307);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(4);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(1524785991);
-        
+
         vm.warp(block.timestamp + 105266);
         vm.roll(block.number + 1);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -11809,17 +11809,17 @@ dynaddressArr_1 = new address[](10);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 388255);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(23127813370591258678587230374116025372891550690790303403973130024619454969973, bytes32(hex"94025eed76ed3b05832630d2f577bec191202ce4df0b1e248c9c25fe77169667"));
-        
+
         vm.warp(block.timestamp + 388257);
         vm.roll(block.number + 19205);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -11841,109 +11841,109 @@ dynaddressArr_1 = new address[](5);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 238224);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 237, 100000000002);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 0, 4370001);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 2);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 49308);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 10112);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(19548416236564919964393497582253619532231119972549436089969484119791340390753, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 1, 58276809074031921047938615949591869752987069252705723126259245795869054955327);
-        
+
         vm.warp(block.timestamp + 538919);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(210);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 289103);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 49311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007913129639934, 115792089237316195423570985008687907853269984665640564039457584007813129639934);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007813129639936, bytes32(hex"9517453c6152e07d64a44aed7007f34d5f4463acfdef41710c1ecc11d9440dfd"));
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
     }
-    
-    
-    function test_auto_revoke_issuer_16() public { 
-        
+
+
+    function test_auto_revoke_issuer_16() public {
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 16198);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -11987,152 +11987,152 @@ address[] memory dynaddressArr_1 = new address[](7);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x0000000000000000000000000000000000020000, 255, 29447651823291632989828299714522936985891876497578494967851011756371405180230);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(3);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 49307);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 16193);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(485, 31375056407823877377966740974931805306730870421635816904224930233771606530255);
-        
+
         vm.warp(block.timestamp + 117472);
         vm.roll(block.number + 2613);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(100000000002, bytes32(hex"f457698514857747d9762f8724bc9c2606a9507c99f9b70fb74e6edc2fb151e7"));
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 60221);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(16274674301785280849477824263561800019450896561030327938886456747803925347301, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(255);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000001fffffffE, 738);
-        
+
         vm.warp(block.timestamp + 7977);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(115792089237316195423570985008687907853269984665640564039457584007913129639934, bytes32(hex"e183a8bc96d40dfdb8a37df025d8c2f4b778e72c7b672e1d1275c1c88b0bb872"));
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 99816053920696999569088551321697133820332024693360944587306064744299409364796);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x0000000000000000000000000000000000010000, 247, 16445092769845373147256463763005379304083748690004759289833941767054345349086);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 26444);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 16195);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 42210);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(99999999998, bytes32(hex"501065e3f58e0bf8ce27831a87e1b2831ab2820f68df465a59e86f05b4f7740f"));
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(6459578020655113000263277221952386491035958073556565489593217079809993678230, 4370000);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 16196);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -12151,22 +12151,22 @@ dynaddressArr_1 = new address[](2);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x0000000000000000000000000000000000010000, 106933770356866478716624568269670078386693243692811255072322067400004440361186);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 4487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -12188,137 +12188,137 @@ dynaddressArr_1 = new address[](5);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd2844863e012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d2a5"));
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 1);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 49306);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(103364505746636656350021207115670082333197115960533197269250023757725620184046, bytes32(hex"24850303dbf0fd7195e23c01fb677b05eef4ec8b0c88563374e21fd4263961adb4"));
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(100000000003, bytes32(hex"e8fb17d59860e41b0546648ebaa1403d3bd2fba22a3d67d86e9e0ae9c94f7374"));
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x0000000000000000000000000000000000000000, 2, 105313406564334510432556991797605633069377972473402502949415541370437482731769);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(4662272599763099893964349053256761472163327802919568829822121470315780659305, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 16195);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(42657761942049650725455742446700838524840870716099814001236131016299501044686, 15198379187732653767425163962735313630491235391440126824053358542407462285137);
-        
+
         vm.warp(block.timestamp + 377137);
         vm.roll(block.number + 31229);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(209);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 1, 4370001);
-        
+
         vm.warp(block.timestamp + 388257);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 579737);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 24116033250455037884242776300231610479925897322231616456008282513645751010716);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 29, 1524785991);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 538922);
         vm.roll(block.number + 49311);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(6);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -12339,56 +12339,56 @@ dynaddressArr_1 = new address[](4);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e37f86e8ea428eaa62d2a4190b0d23eca"));
-        
+
         vm.warp(block.timestamp + 325756);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
     }
-    
-    
-    function test_auto_xyz1_17() public { 
-        
+
+
+    function test_auto_xyz1_17() public {
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x0000000000000000000000000000000000030000, 117, 29953964978342515993174144505952498654181382938625023450685930792555460499487);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 1524785992);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 1282);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(34860273062104173140043296338563573440245184396207736496331603277884255344678);
-        
+
         vm.warp(block.timestamp + 144361);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -12427,12 +12427,12 @@ address[] memory dynaddressArr_1 = new address[](20);
         vm.roll(block.number + 34326);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 444071);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -12531,32 +12531,32 @@ dynaddressArr_1 = new address[](22);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 435415);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 92, 12158226021412178169156658430674497712021832769702038107482275047110785545668);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 45615);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -12610,32 +12610,32 @@ dynaddressArr_1 = new address[](22);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(37034730128267706326648317861323938217349599687645792190393190332336090816282, 71549730268880265629670604162245950907697509480497923970825891943726795832669);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 32972);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(105274830921775608524381904175084506961207893131347420341622256348224398622683, 70417754331431547076582513242190588010160336009277982714693058829317214646445);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.permit_issuer(0x0000000000000000000000000000000000000000, 45034212632636223005021244810562805534926714031521651631633693185141442244156);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -12681,17 +12681,17 @@ dynaddressArr_1 = new address[](20);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x0000000000000000000000000000000000020000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 49307);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x0000000000000000000000000000000000010000, 243, 115792089237316195423570985008687907853269984665640564039457584007813129639937);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -12742,7 +12742,7 @@ dynaddressArr_1 = new address[](11);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000010000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -12763,82 +12763,82 @@ dynaddressArr_1 = new address[](4);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.user_total_all_tranches(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x0000000000000000000000000000000000000000, 251, 60428887593610361004955165393168601340771899684041763600682437215594279957716);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 198961);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(57821759423076664749792099810616243771956995031631459770280960865496809926914);
-        
+
         vm.warp(block.timestamp + 497536);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 388257);
         vm.roll(block.number + 37394);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 0, 3);
-        
+
         vm.warp(block.timestamp + 538918);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 37483);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 100000000002);
-        
+
         vm.warp(block.timestamp + 107907);
         vm.roll(block.number + 23486);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 520880);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -12894,30 +12894,30 @@ dynaddressArr_1 = new address[](20);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 318197);
         vm.roll(block.number + 14732);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 1, 1524785992);
-        
+
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(923779663, bytes32(hex"f88f2dd7f2e048bed507280b4a549e2decd011d2fa996ea3bb97bd25cc931a"));
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 388255);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -12936,7 +12936,7 @@ dynaddressArr_1 = new address[](2);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 388257);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -13000,77 +13000,77 @@ dynaddressArr_1 = new address[](30);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(113843467405535963570793477314545538282048174151027629479440352264755627456827, 1524785991);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(1, 115792089237316195423570985008687907853269984665640564039457584007813129639938);
-        
+
         vm.warp(block.timestamp + 594247);
         vm.roll(block.number + 49311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 127);
         vm.roll(block.number + 25543);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 190, 18034812453418412782634014654421748030425581841535586904974482022964838493267);
-        
+
         vm.warp(block.timestamp + 538918);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4370000, bytes32(hex"6fb67edd3e6af9698e7e0d684ef73fa30cea7518d922bcfc4980f119522a459b"));
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 233, 4370001);
-        
+
         vm.warp(block.timestamp + 453876);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x0000000000000000000000000000000000020000, 1524785992);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 12175);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 16195);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(73711134067822769686537894919770424577734584246515991283314496395632171865033, bytes32(hex"9e10db0bac73f62639b1bf2bae0887d2bc44dde769a017c25830d5f1a5db8d280a"));
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 49310);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 388255);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -13106,37 +13106,37 @@ dynaddressArr_1 = new address[](9);
         vm.roll(block.number + 16197);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000002fFffFffD, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 388260);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(100000000002, 1005);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 16195);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb0f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e7e"));
-        
+
         vm.warp(block.timestamp + 388254);
         vm.roll(block.number + 30423);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(71900507489605391865362324198899797491276890421792058288688436100727781486530, 99999999999);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(30205580476035026517608193290786592071895754122709400043628417066910842594570, bytes32(hex"93770708d723345d089843802638edab7a02bd2632882f0a634f4e9cae06b16d8b"));
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 42134);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -13186,47 +13186,47 @@ dynaddressArr_1 = new address[](24);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 121291);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 463835);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x0000000000000000000000000000000000030000, 980025253243392328);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(224);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 100000000001);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 49309);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(109699113777170403900452469251947328687909471323638391465458744503984149334047, bytes32(hex"e9f89448a29a5ebeeda570017e54b69b7bfa110da01ce179715d0af28e4b25"));
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(107097280212039285297399186171081840106735491394364599369461126956558261816381, 57299024693654937188038160158882020205934712156099055736277466453704055399598);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -13307,32 +13307,32 @@ dynaddressArr_1 = new address[](61);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000030000, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 180, 89129904363062123397693179507434582611571731334670978423808951723961695103585);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(3);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(73659344048449665579908899334656744299515195332823031608158814351110549252550);
-        
+
         vm.warp(block.timestamp + 460193);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.remove_stake(6346415987462458215886813775006969830124279256350181779502106410085336058242);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 49306);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -13353,20 +13353,20 @@ dynaddressArr_1 = new address[](3);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
     }
-    
-    
-    function test_auto_permit_issuer_18() public { 
-        
+
+
+    function test_auto_permit_issuer_18() public {
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 4487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -13388,137 +13388,137 @@ address[] memory dynaddressArr_1 = new address[](5);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd2844863e012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d2a5"));
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 1);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 49306);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(103364505746636656350021207115670082333197115960533197269250023757725620184046, bytes32(hex"24850303dbf0fd7195e23c01fb677b05eef4ec8b0c88563374e21fd4263961adb4"));
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 388256);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(100000000003, bytes32(hex"e8fb17d59860e41b0546648ebaa1403d3bd2fba22a3d67d86e9e0ae9c94f7374"));
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x0000000000000000000000000000000000000000, 2, 105313406564334510432556991797605633069377972473402502949415541370437482731769);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.create_tranche(4662272599763099893964349053256761472163327802919568829822121470315780659305, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 16195);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(42657761942049650725455742446700838524840870716099814001236131016299501044686, 15198379187732653767425163962735313630491235391440126824053358542407462285137);
-        
+
         vm.warp(block.timestamp + 377137);
         vm.roll(block.number + 31229);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(209);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 1, 4370001);
-        
+
         vm.warp(block.timestamp + 388257);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 579737);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 24116033250455037884242776300231610479925897322231616456008282513645751010716);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 29, 1524785991);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 538922);
         vm.roll(block.number + 49311);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(6);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -13539,57 +13539,57 @@ dynaddressArr_1 = new address[](4);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e37f86e8ea428eaa62d2a4190b0d23eca"));
-        
+
         vm.warp(block.timestamp + 325756);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 388254);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x0000000000000000000000000000000000010000, 90321440554293952885628274436905939019202876952943149485651859531709825973148);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 34227);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 16199);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 333044);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b430fe6cb420f0caa1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(99999999997, bytes32(hex"ab8857568790102832e4ce4a61731d2b1c55b1deb355f3b65d2ceaccea22a44a"));
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -13608,182 +13608,182 @@ dynaddressArr_1 = new address[](2);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 69114);
         vm.roll(block.number + 50725);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 999);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.revoke_issuer(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 16194);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(2);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
-        
+
         vm.warp(block.timestamp + 388255);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(52);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.stake_tokens(2418448, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(0);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.remove_stake(95519934942958939764963586852828794965030876713108428670765193128119871189378);
-        
+
         vm.warp(block.timestamp + 538917);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 0);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 255, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 191209);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 0, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.withdraw_from_tranche(1);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.move_into_tranche(0x00000000000000000000000000000002fFffFffD, 241, 0);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(313, bytes32(hex"775ad3cae0a97789fee249c322a840fd0fed09926a8c18b1c6f12639b504c6263784"));
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x0000000000000000000000000000000000010000, 44, 2);
-        
+
         vm.warp(block.timestamp + 277232);
         vm.roll(block.number + 28640);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.issue_into_tranche(0x0000000000000000000000000000000000030000, 9, 72275140369905700764551569376415871249772210367955804017220699544194664353889);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(7649702761996868714801047463729628379647458662721562808707760664182656461354, 59487900726773094789976305168059272025554501828120638502089328338658715180421);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 395176);
         vm.roll(block.number + 49306);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 23035);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.revoke_issuer(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000000FFFFfFFF, 12, 115792089237316195423570985008687907853269984665640564039457584007813129639933);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(30726638449240838222925799693546656569136782692735928956263091444913690063753);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 17731);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(115792089237316195423570985008687907853269984665640564039457584007913129639935, 51805397759330499531424052602627937426738502348904223968699496593892459448675);
-        
+
         vm.warp(block.timestamp + 388255);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(30970006288096129071490093878651333291474925295163140415139247307252216675);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd2886a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23ef2"));
-        
+
         vm.warp(block.timestamp + 388255);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.move_into_tranche(0x00000000000000000000000000000001fffffffE, 3, 35383791796752673905440569292031501540779861531267251860900934301990589222790);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.stake_tokens(81627265462391592525873317158422409691155050964851350949151947097877558576571, bytes32(hex"287cd5c4c545e78d021a22f582f1a60795b6cd986a283fa096e5ca2631abe178"));
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.withdraw_from_tranche(223);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.set_controller(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -13839,37 +13839,37 @@ dynaddressArr_1 = new address[](14);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.xyz1(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.withdraw_from_tranche(35);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(112680274512565811534678955191505997525920096131405009963785257543298483449443, 40320844273306659760610197559956235852275847243756614776615432145431245489323);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.remove_stake(13905550388491855489106026554130244286880948278866441782558010001733325899721);
-        
+
         vm.warp(block.timestamp + 495050);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.set_controller(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 16193);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.permit_issuer(0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.stake_tokens(4369999, bytes32(hex"cd284486a5012b43aae6cb420f0c0f1e6f37f86e8ea428eaa62d2a4190b0d23e"));
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -13889,23 +13889,21 @@ dynaddressArr_1 = new address[](3);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.xyz1(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, dynaddressArr_0, dynaddressArr_1);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.issue_into_tranche(0x00000000000000000000000000000001fffffffE, 192, 115792089237316195423570985008687907853269984665640564039457584007813129639938);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.create_tranche(1050459654392933145545335076490742297017156641352141637442550236660893981884, 100000000001);
-        
+
         vm.warp(block.timestamp + 28949);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.permit_issuer(0x00000000000000000000000000000000FFFFfFFF, 107898896912723264490978399712802089204385576384550214887079304384523458919760);
     }
-    
-}
 
-    
+}

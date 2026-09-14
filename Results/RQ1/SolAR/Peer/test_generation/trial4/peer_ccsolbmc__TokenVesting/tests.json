@@ -2,18 +2,18 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00401",
+        "anonymous_hex_00026",
         63,
         81926842858332292995358351227387871083987251121940526950304034102720883570683
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "move_into_tranche",
       "n": 2,
       "value": 0
@@ -22,7 +22,7 @@
   [
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -31,7 +31,7 @@
       "args": [
         1
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "withdraw_from_tranche",
       "n": 2,
       "value": 0
@@ -40,16 +40,16 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00398"
+        "anonymous_hex_00025"
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "revoke_issuer",
       "n": 2,
       "value": 0
@@ -58,16 +58,16 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00036"
+        "anonymous_hex_00021"
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "set_controller",
       "n": 2,
       "value": 0
@@ -76,7 +76,7 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -84,9 +84,9 @@
     {
       "args": [
         62732347733807999213803877299784069430160463642690179294607766764386101940433,
-        "address_00001000000000000000000000000"
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "stake_tokens",
       "n": 2,
       "value": 0
@@ -95,29 +95,29 @@
   [
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00021",
+        "anonymous_hex_00017",
         0,
         1
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "issue_into_tranche",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00398",
+        "anonymous_hex_00025",
         92,
         115707202853336400023558865175880667413521061212117415646480525016448560147655
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "move_into_tranche",
       "n": 3,
       "value": 0
@@ -126,7 +126,7 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -135,7 +135,7 @@
       "args": [
         0
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "remove_stake",
       "n": 2,
       "value": 0
@@ -144,17 +144,17 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00019",
+        "anonymous_hex_00016",
         107
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "get_tranche_balance",
       "n": 2,
       "value": 0
@@ -163,17 +163,17 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00036",
+        "anonymous_hex_00021",
         32
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "get_vested_for_tranche",
       "n": 2,
       "value": 0
@@ -182,17 +182,17 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00032",
+        "anonymous_hex_00020",
         1
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "permit_issuer",
       "n": 2,
       "value": 0
@@ -201,16 +201,16 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00184"
+        "anonymous_hex_00022"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "user_total_all_tranches",
       "n": 2,
       "value": 0
@@ -219,7 +219,7 @@
   [
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -229,7 +229,7 @@
         249,
         25720262500591148485874864488958332633826720743621935875867500610238442324154
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "create_tranche",
       "n": 2,
       "value": 0

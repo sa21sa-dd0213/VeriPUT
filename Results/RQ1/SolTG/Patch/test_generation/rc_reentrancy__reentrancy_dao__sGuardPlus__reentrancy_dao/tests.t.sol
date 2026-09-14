@@ -11,10 +11,10 @@ contract ReentrancyDAO_Test is Test {
 	}
 	function test_ReentrancyDAO_0() public {
 		vm.prank(0x1E27000000000000000000000000000000000000);
-		reentrancydao0.deposit(); 
+		reentrancydao0.deposit();
 	}
 	function test_ReentrancyDAO_1() public {
 		vm.prank(0x36E51052EA92805A000000000000000000000000);
-		reentrancydao1.withdrawAll(); 
+		reentrancydao1.withdrawAll();
 	}
 }

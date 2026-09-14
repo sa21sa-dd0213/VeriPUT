@@ -11,114 +11,114 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new HOTDOGE();
     }
 
     function test_ce_0_renounceOwnership() public {
-        
+
 
         target.renounceOwnership();
     }
     function test_ce_1_transferOwnership() public {
-        
+
 
         target.transferOwnership(address(uint160(1)));
     }
     function test_ce_2_transferOwnership() public {
-        
+
 
         target.transferOwnership(address(uint160(0)));
     }
     function test_ce_3_balanceOf() public {
-        
+
 
         target.balanceOf(address(uint160(38)));
     }
     function test_ce_4_tokenFromReflection() public {
-        
+
 
         target.tokenFromReflection(0);
     }
     function test_ce_5_tokenFromReflection() public {
-        
+
 
         target.tokenFromReflection(39);
     }
     function test_ce_6_transfer() public {
-        
+
 
         target.transfer(address(uint160(0)), 0);
     }
     function test_ce_7_transfer() public {
-        
+
 
         target.transfer(address(uint160(1)), 0);
     }
     function test_ce_8_transfer() public {
-        
+
 
         target.transfer(address(uint160(1)), 1);
     }
     function test_ce_9_transfer() public {
-        
+
 
         target.transfer(address(uint160(7720)), 1);
     }
     function test_ce_10_transfer() public {
-        
+
 
         target.transfer(address(uint160(21239)), 1);
     }
     function test_ce_11_transfer() public {
-        
+
 
         target.transfer(address(uint160(41)), 1);
     }
     function test_ce_12_approve() public {
-        
+
 
         target.approve(address(uint160(0)), 0);
     }
     function test_ce_13_approve() public {
-        
+
 
         target.approve(address(uint160(1)), 0);
     }
     function test_ce_14_reflect() public {
-        
+
 
         target.reflect(0);
     }
     function test_ce_15_reflectionFromToken() public {
-        
+
 
         target.reflectionFromToken(0, false);
     }
     function test_ce_16_reflectionFromToken() public {
-        
+
 
         target.reflectionFromToken(0, true);
     }
     function test_ce_17_excludeAccount() public {
-        
+
 
         target.excludeAccount(address(uint160(38)));
     }
     function test_ce_18_excludeAccount() public {
-        
+
 
         target.excludeAccount(address(uint160(7719)));
     }
     function test_ce_19_includeAccount() public {
-        
+
 
         target.includeAccount(address(uint160(38)));
     }
     function test_ce_20_uniswapPair() public {
-        
+
 
         target.uniswapPair();
     }

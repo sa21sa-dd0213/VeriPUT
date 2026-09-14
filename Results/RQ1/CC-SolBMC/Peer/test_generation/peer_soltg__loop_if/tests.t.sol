@@ -11,24 +11,24 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new Cfc2();
     }
 
     function test_ce_0_loop_if() public {
-        
+
 
         target.loop_if(0, 0);
     }
     function test_ce_1_loop_if() public {
-        
+
 
         target.loop_if(11, 0);
     }
     function test_ce_2_loop_if() public {
-        
+
 
         target.loop_if(0, 11);
     }

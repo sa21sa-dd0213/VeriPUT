@@ -2,18 +2,18 @@
   [
     {
       "args": [
-        "address_00032"
+        "anonymous_hex_00020"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00261774e492055526b42786d4250"
+        "0x66625579667a71774d68506d41504c7654464d59774e492055526b42786d4250"
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "lock",
       "n": 2,
       "value": 0
@@ -22,9 +22,9 @@
   [
     {
       "args": [
-        "address_00032"
+        "anonymous_hex_00020"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -33,7 +33,7 @@
       "args": [
         "0x61706171"
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "supportsInterface",
       "n": 2,
       "value": 0
@@ -42,18 +42,18 @@
   [
     {
       "args": [
-        "address_00032"
+        "anonymous_hex_00020"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00401"
+        "anonymous_hex_00026"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "setResolver",
       "n": 2,
       "value": 0
@@ -62,19 +62,19 @@
   [
     {
       "args": [
-        "address_00032"
+        "anonymous_hex_00020"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00391664449564e447057557a4178",
-        "address_00410"
+        "0x7a71785270514b4270744f756e4d75674d447943664449564e447057557a4178",
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "setSubnodeOwner",
       "n": 2,
       "value": 0

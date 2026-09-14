@@ -15,18 +15,18 @@ contract AssetTransfer_Test is Test {
 	}
 	function test_AssetTransfer_0() public {
 		vm.prank(0x1000000000000000000000000000000000000000);
-		assettransfer0.MakeOffer(0x1000000000000000000000000000000000000000,0x1000000000000000000000000000000000000000, 1); 
+		assettransfer0.MakeOffer(0x1000000000000000000000000000000000000000,0x1000000000000000000000000000000000000000, 1);
 	}
 	function test_AssetTransfer_1() public {
 		vm.prank(0x1b80AD37Ca185ACEe00000000000000000000000);
-		assettransfer1.Modify(const-array(INT, 0)), 0); 
+		assettransfer1.Modify(const-array(INT, 0)), 0);
 	}
 	function test_AssetTransfer_2() public {
 		vm.prank(0x51554c9A2E839f7dA00000000000000000000000);
-		assettransfer2.Terminate(); 
+		assettransfer2.Terminate();
 	}
 	function test_AssetTransfer_3() public {
 		vm.prank(0x2B5CC7D115D85085700000000000000000000000);
-		assettransfer3.initialize(const-array(INT, 0)), 0); 
+		assettransfer3.initialize(const-array(INT, 0)), 0);
 	}
 }

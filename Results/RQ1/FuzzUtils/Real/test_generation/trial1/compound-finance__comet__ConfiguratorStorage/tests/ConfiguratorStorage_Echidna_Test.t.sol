@@ -15,14 +15,12 @@ contract ConfiguratorStorage_Echidna_Test is Test {
     function setUp() public {
         target = new ConfiguratorStorage();
     }
-    
-    function test_auto_() public { 
-    }
-    
-    
-    function test_auto_() public { 
-    }
-    
-}
 
-    
+    function test_auto_() public {
+    }
+
+
+    function test_auto_() public {
+    }
+
+}

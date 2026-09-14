@@ -11,14 +11,14 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new Owned();
     }
 
     function test_ce_0_setOwner() public {
-        
+
 
         target.setOwner(address(uint160(0)));
     }

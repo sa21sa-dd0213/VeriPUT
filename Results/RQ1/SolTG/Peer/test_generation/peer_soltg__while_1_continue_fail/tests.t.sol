@@ -13,14 +13,14 @@ contract Cwb5_Test is Test {
 	}
 	function test_Cwb5_0() public {
 		vm.prank(0x46a078aAbBfc5863900000000000000000000000);
-		cwb50.f( 10, false); 
+		cwb50.f( 10, false);
 	}
 	function test_Cwb5_1() public {
 		vm.prank(0x2df596559CC55c98300000000000000000000000);
-		cwb51.f( 0, true); 
+		cwb51.f( 0, true);
 	}
 	function test_Cwb5_2() public {
 		vm.prank(0x4D9b7dDDFD0524dE700000000000000000000000);
-		cwb52.f( 0, false); 
+		cwb52.f( 0, false);
 	}
 }

@@ -2,22 +2,22 @@
   [
     {
       "args": [
-        "address_00184",
-        "address_00036",
+        "anonymous_hex_00022",
+        "anonymous_hex_00021",
         "\"EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)\"",
         "LPdHdampQdPHZTqdLcUdeBwkAdLVFpHUAqbfgDQraYBllviOTuWBX cyeAclMQEIgMKhmFH fSMXFsbGBeQXzQLVNntNUiuexDTelClYrVxUrsfJsxcRUgErQMatZPWJjZIcXbJYTPexJ W NSRz"
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00036",
+        "anonymous_hex_00021",
         89863452827141728281246299222225451595502278876140070402370670045357448250876
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "burnFrom",
       "n": 2,
       "value": 0
@@ -26,12 +26,12 @@
   [
     {
       "args": [
-        "address_00401",
-        "address_00404",
+        "anonymous_hex_00026",
+        "anonymous_hex_00027",
         "f yfFkJGgydrwpPkGhjDIcDpeySLdLGBNvomyKjZCLpeEwvDkfHYCCcKHAQnUwekXUVfDTnaHJTSPaUckzHaCrVauK zNbExTPFp OphbcCmmrHdyffLapVnyBKKOBvQJHXuEKobUIlj GaNyYgsdvwvTAZxSKMksoAQBmv",
         "GxyQktSvwVMDeyGjB AFXQXnE EBqwoJFgj daVcyUSUacrgSPvMJVwPNvzSxajqjFraUJvqXIUqOjnfZMefeCzKzBhfuYQjIOK JnhkBVgRTPYWufjZFlmDQpRNiQPbPUALufQzwpVSHKQuDjZca"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -40,7 +40,7 @@
       "args": [
         87
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "mint",
       "n": 2,
       "value": 0
@@ -49,7 +49,7 @@
       "args": [
         63109807431770853540153508749912604775740136905831597384447357925325786529949
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "burn",
       "n": 3,
       "value": 0
@@ -58,12 +58,12 @@
   [
     {
       "args": [
-        "address_00184",
-        "address_00023",
+        "anonymous_hex_00022",
+        "anonymous_hex_00019",
         "\"t\"",
         "\"1\""
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -72,7 +72,7 @@
       "args": [
         8
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "burn",
       "n": 2,
       "value": 0

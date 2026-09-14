@@ -11,24 +11,24 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new Gift_1_ETH();
     }
 
     function test_ce_0_SetPass() public {
-        
+
 
         target.SetPass(bytes32(uint256(0)));
     }
     function test_ce_1_PassHasBeenSet() public {
-        
+
 
         target.PassHasBeenSet(bytes32(uint256(0)));
     }
     function test_ce_2_PassHasBeenSet() public {
-        
+
 
         target.PassHasBeenSet(bytes32(uint256(1)));
     }

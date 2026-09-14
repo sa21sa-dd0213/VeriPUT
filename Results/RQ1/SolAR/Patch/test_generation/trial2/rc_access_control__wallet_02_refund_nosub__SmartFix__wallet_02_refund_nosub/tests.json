@@ -2,14 +2,14 @@
   [
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "deposit",
       "n": 2,
       "value": 0
@@ -18,14 +18,14 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "deposit",
       "n": 2,
       "value": 46514872699269975
@@ -34,14 +34,14 @@
   [
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "refund",
       "n": 2,
       "value": 0
@@ -50,16 +50,16 @@
   [
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00021"
+        "anonymous_hex_00017"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "migrateTo",
       "n": 2,
       "value": 0
@@ -68,7 +68,7 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -77,7 +77,7 @@
       "args": [
         104765734690447184444519906950630154724519283383972299355383535750330373431725
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "withdraw",
       "n": 2,
       "value": 0

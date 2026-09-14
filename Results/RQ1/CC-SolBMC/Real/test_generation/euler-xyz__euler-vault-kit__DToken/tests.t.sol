@@ -11,14 +11,14 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new DToken();
     }
 
     function test_ce_0_emitTransfer() public {
-        
+
 
         target.emitTransfer(address(uint160(0)), address(uint160(0)), 0);
     }

@@ -7,10 +7,10 @@ Loaded 0 transaction sequences from corpus/coverage
 Saved reproducer to corpus/coverage/5564350354270473656.txt
 [Worker 0] Test setDNSRecords(bytes32,bytes) falsified!
   Call sequence:
-OwnedResolver.setAddr("\234\226x\145\183\217\ACK\144\207\255\183,8*\185\a\167\155\174g\166\202\251\131\ETB\SYN\209\135\168\"g\SI",2206026119328013843528261401483427059852879,"Ownable: callrr is not the ownee") from: address_00008 Time delay: 322344 seconds Block delay: 34272
-OwnedResolver.setDNSRecords("Ownable: caller is not the owner","\242\253\227\139\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\163)\192d\135i\167:\250\199\249\&8\RS\b\251C\219\234r") from: address_00009 Time delay: 322318 seconds Block delay: 1984
-OwnedResolver.setABI("@\196\DELB\204\180#\164\DC1a\CANw\156\USu\EMg\134h\ETX\DC4\132f\NAKGZ\171kkI\221n",30,"\"8\244\189\210") from: address_00010 Time delay: 45142 seconds Block delay: 59
-OwnedResolver.setDNSRecords("\229L\204\218\US\235a+a\192m\131K\211j\246\GS2\DC2\226b\167\155\223\176\150%\SI\229A\179Z","Ownable: new owner is the zero address") from: address_00010 Time delay: 444463 seconds Block delay: 1984
+OwnedResolver.setAddr("\234\226x\145\183\217\ACK\144\207\255\183,8*\185\a\167\155\174g\166\202\251\131\ETB\SYN\209\135\168\"g\SI",2206026119328013843528261401483427059852879,"Ownable: callrr is not the ownee") from: anonymous_hex_00008 Time delay: 322344 seconds Block delay: 34272
+OwnedResolver.setDNSRecords("Ownable: caller is not the owner","\242\253\227\139\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\163)\192d\135i\167:\250\199\249\&8\RS\b\251C\219\234r") from: anonymous_hex_00009 Time delay: 322318 seconds Block delay: 1984
+OwnedResolver.setABI("@\196\DELB\204\180#\164\DC1a\CANw\156\USu\EMg\134h\ETX\DC4\132f\NAKGZ\171kkI\221n",30,"\"8\244\189\210") from: anonymous_hex_00010 Time delay: 45142 seconds Block delay: 59
+OwnedResolver.setDNSRecords("\229L\204\218\US\235a+a\192m\131K\211j\246\GS2\DC2\226b\167\155\223\176\150%\SI\229A\179Z","Ownable: new owner is the zero address") from: anonymous_hex_00010 Time delay: 444463 seconds Block delay: 1984
 
 Saved reproducer to corpus/reproducers-unshrunk/6188083593343877401.txt
 [Worker 0] New coverage: 2271 instr, 1 contracts, 2 seqs in corpus

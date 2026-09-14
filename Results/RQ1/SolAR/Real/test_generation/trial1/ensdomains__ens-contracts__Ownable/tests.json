@@ -2,16 +2,16 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00023"
+        "anonymous_hex_00019"
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "transferOwnership",
       "n": 2,
       "value": 0
@@ -20,16 +20,16 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00404"
+        "anonymous_hex_00027"
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "isOwner",
       "n": 2,
       "value": 0

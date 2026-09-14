@@ -11,19 +11,19 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new PredictTheBlockHashChallenge();
     }
 
     function test_ce_0_lockInGuess() public {
-        
+
 
         target.lockInGuess(bytes32(uint256(0)));
     }
     function test_ce_1_settle() public {
-        
+
 
         target.settle();
     }

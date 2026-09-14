@@ -15,4943 +15,4941 @@ contract CyberFox_Echidna_Test is Test {
     function setUp() public {
         target = new CyberFox();
     }
-    
-    function test_auto_addSniperToBlacklist_0() public { 
-        
+
+    function test_auto_addSniperToBlacklist_0() public {
+
         vm.warp(block.timestamp + 540358);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 49);
-        
+
         vm.warp(block.timestamp + 496528);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 32346366488215078502789667809630509470480469936022545363487435705906040661836);
-        
+
         vm.warp(block.timestamp + 322328);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 386815);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007912129639938);
-        
+
         vm.warp(block.timestamp + 430649);
         vm.roll(block.number + 46151);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 69212894943699384676815825049162068129138322301271758279012063976725256570239);
-        
+
         vm.warp(block.timestamp + 496530);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 46153);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 203493);
         vm.roll(block.number + 11);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 10545711304830174951884775314135101938167011998358492168619107007950248366978);
-        
+
         vm.warp(block.timestamp + 151638);
         vm.roll(block.number + 10610);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322369);
         vm.roll(block.number + 7144);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 4973);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000030000, 100143781586772328900447473473123524695828641877897160297990254236117157046315);
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 53);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 18);
-        
+
         vm.warp(block.timestamp + 430649);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 430648);
         vm.roll(block.number + 46156);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 226056498588541059841);
-        
+
         vm.warp(block.timestamp + 471564);
         vm.roll(block.number + 1);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 430648);
         vm.roll(block.number + 5004);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 263946);
         vm.roll(block.number + 7);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 81164976380346154234558177986265021649216387791002571012834009964468682896453);
-        
+
         vm.warp(block.timestamp + 19);
         vm.roll(block.number + 15);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 597);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 540360);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 430650);
         vm.roll(block.number + 4976);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 53);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 50000000001);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 58361);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322362);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 49999999999);
-        
+
         vm.warp(block.timestamp + 540360);
         vm.roll(block.number + 5015);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 30606363114787782102165876351034846630160881360138626882400478134832813222283);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 49308);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 322354);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 82670);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000010000, 71866206235717216197144297260451970293080848763734911804865666290348764002160);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 7149);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 10);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 9);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 322367);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000, 83321339102278523363334800171404364437855686190177986926405530692104978685428);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 10);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 5462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 545838);
         vm.roll(block.number + 4974);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 7067753962420117490580479582825068765030745479379747707346304174725219569039);
-        
+
         vm.warp(block.timestamp + 322355);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 27819587707327729647183284955907995483015416970344241882573485456436717687965);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 7);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 322358);
         vm.roll(block.number + 47);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 183246162651612549382387640188371847496598930558748046566977442968865792695);
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 47);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 944);
-        
+
         vm.warp(block.timestamp + 322323);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 277232);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 120373);
         vm.roll(block.number + 10608);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000000000, 14188034777612047914626105943445851031204930371343233714492951748052845644799);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 43904);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 4);
-        
+
         vm.warp(block.timestamp + 58428);
         vm.roll(block.number + 192);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 322328);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 28158093994200443947130520794006956);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639883);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 8632);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 5017);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 22632834329309115294526956526766501867011960811231900675438216729239004464480);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 47);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 263947);
         vm.roll(block.number + 10611);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 269718);
         vm.roll(block.number + 42246);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 8072347710860141356196777100291954144641203238931449931048089069680804534142);
-        
+
         vm.warp(block.timestamp + 21);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 5007);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 79354684169835108844247232715320645150126799023553445990883491100388006073885);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 10607);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 36306649230319000391256971977255478717396756575494388563217255153724568840266);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 75205907265506892117772621486328419676851155563412999792906428230048473740130);
-        
+
         vm.warp(block.timestamp + 13);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 263944);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000001fffffffE, 101206761576242203446731667438935291592576780900859823715652532434303360520114);
-        
+
         vm.warp(block.timestamp + 277232);
         vm.roll(block.number + 5006);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 58427);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 19);
-        
+
         vm.warp(block.timestamp + 322368);
         vm.roll(block.number + 7148);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 1000000001);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 54892);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 58427);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 52);
         vm.roll(block.number + 46156);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 13);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322357);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 47);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 48);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 28892628596759430815103072961109800721000717671925774598925167970781729983579);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 7144);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 64551168746268735716405426986592794894448511797708344314610548793652886196612);
-        
+
         vm.warp(block.timestamp + 10);
         vm.roll(block.number + 46150);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322327);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 52009);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x0000000000000000000000000000000000030000, 24744368262895725867531465175076346901737590492733209436469411548706579908309);
-        
+
         vm.warp(block.timestamp + 263945);
         vm.roll(block.number + 10611);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000030000, 89420259127179711904425790280543034068480745693911637601142299925649447763702);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 15);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 7248244607933983833992420423432224278923729238372088769622179797755163876024);
-        
+
         vm.warp(block.timestamp + 198843);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 33197);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 263946);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 73402119890166577742242283109863859401388525004);
     }
-    
-    
-    function test_auto_owner_1() public { 
-        
+
+
+    function test_auto_owner_1() public {
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 43059);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 534242);
         vm.roll(block.number + 11);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 407757);
         vm.roll(block.number + 58358);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 199080);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 67630236077);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 58357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 20);
         vm.roll(block.number + 5008);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 263948);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 1524785993);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 386821);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000000000, 21);
-        
+
         vm.warp(block.timestamp + 8270);
         vm.roll(block.number + 56828);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 17);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 263946);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 497647);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 13);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 228732894418183531522865892642523740196794006592795837297681070718127474374);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 10);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 35545704928771974352606945301987775198447582867521994533979498585842338823783);
-        
+
         vm.warp(block.timestamp + 422079);
         vm.roll(block.number + 33700);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322356);
         vm.roll(block.number + 10607);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 89886);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 11363981159765974505451659714273507731101358799051676002077997562129130317995);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322364);
         vm.roll(block.number + 10526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 5011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 322368);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 58428);
         vm.roll(block.number + 53);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322357);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 15);
         vm.roll(block.number + 5011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039456584007913129639934);
-        
+
         vm.warp(block.timestamp + 366656);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 322357);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 19);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 13865570034227562128677218419620047719168967296687004436480438347266244215496);
-        
+
         vm.warp(block.timestamp + 322362);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 0x0000000000000000000000000000000000010000, 4370001);
-        
+
         vm.warp(block.timestamp + 322369);
         vm.roll(block.number + 51);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 96184946092968621451190253770794050773587430592175219257321334914580504899723);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322324);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 20501558286210155054889828272198066447245640916616566807594574907601993542469);
-        
+
         vm.warp(block.timestamp + 48);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 1000000003);
-        
+
         vm.warp(block.timestamp + 430645);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 51);
-        
+
         vm.warp(block.timestamp + 322357);
         vm.roll(block.number + 58304);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 540358);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 53);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 46155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639918);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 53);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 1000000000000000001);
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 47115);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 46919);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000010000, 1000000000000000000);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 19790218136006159212861843034025037251130632479943548691613827594874645708040);
-        
+
         vm.warp(block.timestamp + 430646);
         vm.roll(block.number + 30304);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322357);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 93507197354115256077561683677379548094991038946816068743610067744005883702182);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 54897);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 7149);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 561841053497722062183526267744002034652322341257187345049005881773228419837);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 7148);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 79517839825626560129154027972555757446097025780093159239466595617703451882927);
-        
+
         vm.warp(block.timestamp + 496529);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 496532);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 19);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000030000, 29434983115842042931309763682987150904465173233631376934019495995480064777740);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 10607);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000000000, 27079863444789103835);
-        
+
         vm.warp(block.timestamp + 263944);
         vm.roll(block.number + 50);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 79785957477440566796434066847858880324011595779118920543828447700986138573472);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 66519014494562958484294629435272885146421104060619496016887297981375282186501);
-        
+
         vm.warp(block.timestamp + 322357);
         vm.roll(block.number + 19350);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 30086961452288669999883855965916431993817495532145532434544620259053153571168);
-        
+
         vm.warp(block.timestamp + 322326);
         vm.roll(block.number + 10607);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-        
+
         vm.warp(block.timestamp + 318197);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 27631767447923890034589817166306995476659629613042926558048616889879927195826);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 5018);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 5011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639883);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 10610);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 19349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 21);
         vm.roll(block.number + 10612);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 1000000000000000001);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 20791);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 19349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000, 84883912263178463106362735602382008686409120328667528094733292683139911847355);
-        
+
         vm.warp(block.timestamp + 318197);
         vm.roll(block.number + 51);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 67034903237281813419051155044991833703133391805211211176623112063402298119562);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000000000, 31061645992297129389854328497563943449365889879598134834202003405108179869268);
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 51);
-        
+
         vm.warp(block.timestamp + 91669);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 11125930860517260537546769061622490526583766328255588924418382613705117073227);
-        
+
         vm.warp(block.timestamp + 58431);
         vm.roll(block.number + 11413);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 3393);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 49);
         vm.roll(block.number + 10610);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 12428954256763019995554526654575549176633027148002916760483195066207016533849);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 5016);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 386818);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 999999999999999997);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 16249);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 58430);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 32185);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007863129639934);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 9);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 18);
-        
+
         vm.warp(block.timestamp + 322327);
         vm.roll(block.number + 19349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 21);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 110236997120095980409996624246880846284751933095312275692368597147199750994061);
-        
+
         vm.warp(block.timestamp + 263944);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 697);
-        
+
         vm.warp(block.timestamp + 127);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322360);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.owner();
     }
-    
-    
-    function test_auto_renounceOwnership_2() public { 
-        
+
+
+    function test_auto_renounceOwnership_2() public {
+
         vm.warp(block.timestamp + 540358);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 49);
-        
+
         vm.warp(block.timestamp + 496528);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 32346366488215078502789667809630509470480469936022545363487435705906040661836);
-        
+
         vm.warp(block.timestamp + 322328);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 386815);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007912129639938);
-        
+
         vm.warp(block.timestamp + 430649);
         vm.roll(block.number + 46151);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 69212894943699384676815825049162068129138322301271758279012063976725256570239);
-        
+
         vm.warp(block.timestamp + 496530);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 430650);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-        
+
         vm.warp(block.timestamp + 496529);
         vm.roll(block.number + 6);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639926);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 10608);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007863129639939);
-        
+
         vm.warp(block.timestamp + 540747);
         vm.roll(block.number + 4971);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 8780654967949649094571952647096635530721333384653411688616880953837047254202);
-        
+
         vm.warp(block.timestamp + 117472);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 5014);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 193109);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 146641);
         vm.roll(block.number + 30304);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 89376422018160280199239302628524685386697379625290074977770241015447858218430);
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 54895);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 3133491036256270325288318384603281469162);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 30805);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 58427);
         vm.roll(block.number + 19355);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 64486048630173004633654348128144503347528951358655998925451045235372872696967);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 58816);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639925);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 540361);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000030000, 37734742821349166050502986162995668465014660933410187603031194002937797266203);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 36962085674092630392799486906765354605389151285344863758852969874626079464271);
-        
+
         vm.warp(block.timestamp + 496531);
         vm.roll(block.number + 19355);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 70804815709657008855694108226855227771530564326259871981103888160286115842872);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 5398);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 53);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 58359);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 332333);
         vm.roll(block.number + 58356);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 16659626710052692989464787956550127646507088425141780157030397259385048062930);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 19352);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 95937421782297209567349822815824498903003514276724548935435157906247136675226);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 15);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322363);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 50000000003);
-        
+
         vm.warp(block.timestamp + 58426);
         vm.roll(block.number + 54894);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 98);
-        
+
         vm.warp(block.timestamp + 185492);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 471122);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 1);
-        
+
         vm.warp(block.timestamp + 334576);
         vm.roll(block.number + 7144);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 10);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 555095);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 5014);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 1524785991);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 1000000001);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 7);
         vm.roll(block.number + 5008);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 430645);
         vm.roll(block.number + 9373);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 127);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 263947);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 49);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 17);
         vm.roll(block.number + 5013);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 21);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 430648);
         vm.roll(block.number + 5017);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 43592327583012955523044643832265528032782694255692746535105897655720059206040);
-        
+
         vm.warp(block.timestamp + 280461);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 322323);
         vm.roll(block.number + 19351);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 36176067557023775271498780625412535353943263704734500586574879410184097353189);
-        
+
         vm.warp(block.timestamp + 255);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 54893);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322364);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 263946);
         vm.roll(block.number + 19349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 17);
         vm.roll(block.number + 4974);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 2683374971691881145795687550979814832224757831782819724227529644353293373486);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 10608);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 33450806536723813020059515636449917299482247911753560290022738054707593646661);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 19349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 10);
         vm.roll(block.number + 5018);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322326);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 753);
-        
+
         vm.warp(block.timestamp + 15);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 348145);
         vm.roll(block.number + 16);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 54894);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 430645);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322359);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 92598851883259229410710606667553141685061463250872286136981280108851897654023);
-        
+
         vm.warp(block.timestamp + 540358);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039456584007913129639935);
-        
+
         vm.warp(block.timestamp + 540360);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 496528);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 7143);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322364);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 20595339311425595773124368339559578660712612368719190803458942032584795644920);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 48);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 32759);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.totalSupply();
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 62);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 58428);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 496530);
         vm.roll(block.number + 53494);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 115792089237316195423570985008687907853269984665640564039457584007913129639916);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 14629);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 21);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 9);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322359);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 15);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 54895);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 7148);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 54898);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
     }
-    
-    
-    function test_auto_transferFrom_3() public { 
-        
+
+
+    function test_auto_transferFrom_3() public {
+
         vm.warp(block.timestamp + 540358);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 49);
-        
+
         vm.warp(block.timestamp + 496528);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 32346366488215078502789667809630509470480469936022545363487435705906040661836);
-        
+
         vm.warp(block.timestamp + 322328);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 386815);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007912129639938);
-        
+
         vm.warp(block.timestamp + 430649);
         vm.roll(block.number + 46151);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 69212894943699384676815825049162068129138322301271758279012063976725256570239);
-        
+
         vm.warp(block.timestamp + 496530);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 430650);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-        
+
         vm.warp(block.timestamp + 496529);
         vm.roll(block.number + 6);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639926);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 10608);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007863129639939);
-        
+
         vm.warp(block.timestamp + 540747);
         vm.roll(block.number + 4971);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 8780654967949649094571952647096635530721333384653411688616880953837047254202);
-        
+
         vm.warp(block.timestamp + 117472);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 5014);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 193109);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 146641);
         vm.roll(block.number + 30304);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 89376422018160280199239302628524685386697379625290074977770241015447858218430);
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 54895);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 3133491036256270325288318384603281469162);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 30805);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 58427);
         vm.roll(block.number + 19355);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 64486048630173004633654348128144503347528951358655998925451045235372872696967);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 58816);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639925);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 540361);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000030000, 37734742821349166050502986162995668465014660933410187603031194002937797266203);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 36962085674092630392799486906765354605389151285344863758852969874626079464271);
-        
+
         vm.warp(block.timestamp + 496531);
         vm.roll(block.number + 19355);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 70804815709657008855694108226855227771530564326259871981103888160286115842872);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 5398);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 53);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 58359);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 332333);
         vm.roll(block.number + 58356);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 16659626710052692989464787956550127646507088425141780157030397259385048062930);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 19352);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 95937421782297209567349822815824498903003514276724548935435157906247136675226);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 15);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322363);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 50000000003);
-        
+
         vm.warp(block.timestamp + 58426);
         vm.roll(block.number + 54894);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 98);
-        
+
         vm.warp(block.timestamp + 185492);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 471122);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 1);
-        
+
         vm.warp(block.timestamp + 334576);
         vm.roll(block.number + 7144);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 10);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 555095);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 5014);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 1524785991);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 1000000001);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 7);
         vm.roll(block.number + 5008);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 430645);
         vm.roll(block.number + 9373);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 127);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 263947);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 49);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 17);
         vm.roll(block.number + 5013);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 21);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000010000, 18);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 207384);
         vm.roll(block.number + 46152);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322324);
         vm.roll(block.number + 46155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 581090);
         vm.roll(block.number + 46151);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322328);
         vm.roll(block.number + 7);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322362);
         vm.roll(block.number + 51171);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 10612);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-        
+
         vm.warp(block.timestamp + 82670);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 52);
         vm.roll(block.number + 10607);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 540361);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000030000, 11690141597284973058263881009538594887380966624808289867405025836520142964746);
-        
+
         vm.warp(block.timestamp + 496532);
         vm.roll(block.number + 5007);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039456584007913129639935);
-        
+
         vm.warp(block.timestamp + 49);
         vm.roll(block.number + 18);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 46151);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039456584007913129639936);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 230843);
         vm.roll(block.number + 19349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 47);
-        
+
         vm.warp(block.timestamp + 496530);
         vm.roll(block.number + 5015);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 346488);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 18);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 430645);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000000000, 36682844577246975334108541856025743122995087558648114882067213953526284437272);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 109148313031633918355765257240772378494385709691834225118638013927808732410570);
-        
+
         vm.warp(block.timestamp + 9);
         vm.roll(block.number + 5017);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 127);
         vm.roll(block.number + 46150);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639924);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 289103);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.symbol();
-        
+
         vm.warp(block.timestamp + 17);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 58431);
         vm.roll(block.number + 7);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 62244355197780318979112672950784914542392347111792306512666719656013538965374);
-        
+
         vm.warp(block.timestamp + 386817);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 57787828831589212460348822650202667173242113569125270628646177846024168261134);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 10613);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 322324);
         vm.roll(block.number + 2554);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 88573079960932953667501858267073961514612856177619820489799055845686072509434);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 53);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 16);
-        
+
         vm.warp(block.timestamp + 9);
         vm.roll(block.number + 51);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000030000, 81835047618734198916572180902361931658110503332124795236637491354553822079104);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 48);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 311801);
         vm.roll(block.number + 21);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 540359);
         vm.roll(block.number + 54892);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 322011);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
     }
-    
-    
-    function test_auto_transferFrom_4() public { 
-        
+
+
+    function test_auto_transferFrom_4() public {
+
         vm.warp(block.timestamp + 540358);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 49);
-        
+
         vm.warp(block.timestamp + 496528);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 32346366488215078502789667809630509470480469936022545363487435705906040661836);
-        
+
         vm.warp(block.timestamp + 322328);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 386815);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007912129639938);
-        
+
         vm.warp(block.timestamp + 430649);
         vm.roll(block.number + 46151);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 69212894943699384676815825049162068129138322301271758279012063976725256570239);
-        
+
         vm.warp(block.timestamp + 496530);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 46153);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 203493);
         vm.roll(block.number + 11);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 10545711304830174951884775314135101938167011998358492168619107007950248366978);
-        
+
         vm.warp(block.timestamp + 151638);
         vm.roll(block.number + 10610);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322369);
         vm.roll(block.number + 7144);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 4973);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000030000, 100143781586772328900447473473123524695828641877897160297990254236117157046315);
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 53);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 18);
-        
+
         vm.warp(block.timestamp + 430649);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 496531);
         vm.roll(block.number + 5009);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 5016);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 52);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 63162229717343648119614521825458035467128569712271620528378308655336748491461);
-        
+
         vm.warp(block.timestamp + 111563);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 15068721192763912232638751171829942756252056548422145911470859812526232663228);
-        
+
         vm.warp(block.timestamp + 364145);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 50723169167405506916048292339100342280143349186417503698990500536234687046792);
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 58362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 86171338848782941202556607925716735961075716159080366889313235220146175086207);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 17290);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639884);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 5012);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 13);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 41455);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.name();
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 93914371357975572432721243578451098082916989190997977407968663702584437559135);
-        
+
         vm.warp(block.timestamp + 322369);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 430646);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 71801801395633606922473953327224406143921462960124142613674146530306948483008);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 4976);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 20);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322369);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 7);
         vm.roll(block.number + 54894);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 46155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 68876045330635343830320168494616134190702912400601523933737316428262078943312);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 7148);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 38706);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 261103);
         vm.roll(block.number + 21708);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 255520);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007863129639935);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 46981402510127476954772137957462000926538581626631362461863392900287920776609);
-        
+
         vm.warp(block.timestamp + 430647);
         vm.roll(block.number + 5009);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000030000, 40890790770324688902146662525320940643449132047287863382802833442199314165784);
-        
+
         vm.warp(block.timestamp + 489604);
         vm.roll(block.number + 7);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 78024479214470844398087793143032167181720533313795401176098698490679931889288);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 37644);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000001fffffffE, 2221030608665776304587093449048872522822528116598357188234457);
-        
+
         vm.warp(block.timestamp + 496532);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 581696);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 19351);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000030000, 21580395133862778795230428273899303691804103281129984225135486496799435701840);
-        
+
         vm.warp(block.timestamp + 58428);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 1980782556);
-        
+
         vm.warp(block.timestamp + 147401);
         vm.roll(block.number + 5016);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 263948);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 48);
         vm.roll(block.number + 51);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, 999999997);
-        
+
         vm.warp(block.timestamp + 19);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 529640);
         vm.roll(block.number + 52);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 46151);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 4033544055307315031195301153926403594665065223708630150802457334473801466115);
-        
+
         vm.warp(block.timestamp + 540360);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 540360);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x0000000000000000000000000000000000020000, 45051095834);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 19);
         vm.roll(block.number + 20);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 53148863921812775678559108164433771055199161784226298606475461596569920451350);
-        
+
         vm.warp(block.timestamp + 322363);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039456584007913129639937);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 6601654566302288638633889204760991425909165341474178682142613516984454388578);
-        
+
         vm.warp(block.timestamp + 416137);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 19352);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 54894);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 79551842417303445797849721172428042584376436377840982631844505091685212263316);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 263944);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 49999999997);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 10611);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 49);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 16);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 5015);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 540360);
         vm.roll(block.number + 54893);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 1000000000000000000);
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 13049);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 5013);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 4557323657943497294775268769613292748561206827329411041076733870491362112232);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 58362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 430645);
         vm.roll(block.number + 3323);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 255);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000010000, 999999999);
-        
+
         vm.warp(block.timestamp + 233867);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 49);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039456584007913129639937);
-        
+
         vm.warp(block.timestamp + 322358);
         vm.roll(block.number + 11);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 7147);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 540356);
         vm.roll(block.number + 48);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639884);
-        
+
         vm.warp(block.timestamp + 496526);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 17);
         vm.roll(block.number + 52138);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322358);
         vm.roll(block.number + 18461);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 328094);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000001fffffffE, 36758494629689486496461999717330779226873414205286231755023553257490189468217);
-        
+
         vm.warp(block.timestamp + 8);
         vm.roll(block.number + 15);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 25052928835783179155175391353043);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 1);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 31731517382282446540893260275839589712292463487798021044692721860618597572360);
     }
-    
-    
-    function test_auto_addBotToBlackList_5() public { 
-        
+
+
+    function test_auto_addBotToBlackList_5() public {
+
         vm.warp(block.timestamp + 540358);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 49);
-        
+
         vm.warp(block.timestamp + 496528);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 32346366488215078502789667809630509470480469936022545363487435705906040661836);
-        
+
         vm.warp(block.timestamp + 322328);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 386815);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007912129639938);
-        
+
         vm.warp(block.timestamp + 430649);
         vm.roll(block.number + 46151);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 69212894943699384676815825049162068129138322301271758279012063976725256570239);
-        
+
         vm.warp(block.timestamp + 496530);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 46153);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 203493);
         vm.roll(block.number + 11);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 10545711304830174951884775314135101938167011998358492168619107007950248366978);
-        
+
         vm.warp(block.timestamp + 151638);
         vm.roll(block.number + 10610);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322369);
         vm.roll(block.number + 7144);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 4973);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000030000, 100143781586772328900447473473123524695828641877897160297990254236117157046315);
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 53);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 18);
-        
+
         vm.warp(block.timestamp + 430649);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 430648);
         vm.roll(block.number + 46156);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 226056498588541059841);
-        
+
         vm.warp(block.timestamp + 471564);
         vm.roll(block.number + 1);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 430648);
         vm.roll(block.number + 5004);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 263946);
         vm.roll(block.number + 7);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 81164976380346154234558177986265021649216387791002571012834009964468682896453);
-        
+
         vm.warp(block.timestamp + 19);
         vm.roll(block.number + 15);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 597);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 540360);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 430650);
         vm.roll(block.number + 4976);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 53);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 50000000001);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 58361);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322362);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 49999999999);
-        
+
         vm.warp(block.timestamp + 540360);
         vm.roll(block.number + 5015);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 30606363114787782102165876351034846630160881360138626882400478134832813222283);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 49308);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 322354);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 82670);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000010000, 71866206235717216197144297260451970293080848763734911804865666290348764002160);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x0000000000000000000000000000000000000000, 999999998);
-        
+
         vm.warp(block.timestamp + 540357);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639920);
-        
+
         vm.warp(block.timestamp + 496530);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 15);
         vm.roll(block.number + 19349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322356);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 124);
-        
+
         vm.warp(block.timestamp + 13);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000010000, 6514169422585973488052112933195213802850264155857999068387291649768715993197);
-        
+
         vm.warp(block.timestamp + 322367);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 18);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 54898);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 5919525556854675006050207556750508390304919976850688081542068638234753919269);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 107293438599001754344366537969070731714717080013397842755712212524963278341497);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 20899);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 21);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 7149);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 263944);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 50);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 43059);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 534242);
         vm.roll(block.number + 11);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 407757);
         vm.roll(block.number + 58358);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 199080);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 67630236077);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 58357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 20);
         vm.roll(block.number + 5008);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 263948);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 1524785993);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 386821);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000000000, 21);
-        
+
         vm.warp(block.timestamp + 8270);
         vm.roll(block.number + 56828);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 17);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 263946);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 497647);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 13);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 228732894418183531522865892642523740196794006592795837297681070718127474374);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 10);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 35545704928771974352606945301987775198447582867521994533979498585842338823783);
-        
+
         vm.warp(block.timestamp + 422079);
         vm.roll(block.number + 33700);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322356);
         vm.roll(block.number + 10607);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 89886);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 11363981159765974505451659714273507731101358799051676002077997562129130317995);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322364);
         vm.roll(block.number + 10526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 5011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x0000000000000000000000000000000000010000);
     }
-    
-    
-    function test_auto_renounceOwnership_6() public { 
-        
+
+
+    function test_auto_renounceOwnership_6() public {
+
         vm.warp(block.timestamp + 540358);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 49);
-        
+
         vm.warp(block.timestamp + 496528);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 32346366488215078502789667809630509470480469936022545363487435705906040661836);
-        
+
         vm.warp(block.timestamp + 322328);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 386815);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007912129639938);
-        
+
         vm.warp(block.timestamp + 430649);
         vm.roll(block.number + 46151);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 69212894943699384676815825049162068129138322301271758279012063976725256570239);
-        
+
         vm.warp(block.timestamp + 496530);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 430650);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-        
+
         vm.warp(block.timestamp + 496529);
         vm.roll(block.number + 6);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639926);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 10608);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007863129639939);
-        
+
         vm.warp(block.timestamp + 540747);
         vm.roll(block.number + 4971);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 8780654967949649094571952647096635530721333384653411688616880953837047254202);
-        
+
         vm.warp(block.timestamp + 117472);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 5014);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 193109);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 146641);
         vm.roll(block.number + 30304);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 89376422018160280199239302628524685386697379625290074977770241015447858218430);
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 54895);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 3133491036256270325288318384603281469162);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 30805);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 58427);
         vm.roll(block.number + 19355);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 64486048630173004633654348128144503347528951358655998925451045235372872696967);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 58816);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639925);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 540360);
         vm.roll(block.number + 51);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 322363);
         vm.roll(block.number + 19349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 24931624834093243472552437521674358047890914800745468852133551178905131111179);
-        
+
         vm.warp(block.timestamp + 58426);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 39420767777557009678274069958140841822095622388091899718839071951632681376131);
-        
+
         vm.warp(block.timestamp + 322323);
         vm.roll(block.number + 54893);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 430650);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322326);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 88778225452336947740814208659110137264877092101289730099715021478469328687120);
-        
+
         vm.warp(block.timestamp + 58425);
         vm.roll(block.number + 58361);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639885);
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 91291151553390284299272503019939480394679750444108921748226224861590750059429);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 10612);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 263946);
         vm.roll(block.number + 27535);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.balanceOf(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 83898681641648162274837014234763234852675762516773702031679350783437006314043);
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 54892);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639927);
-        
+
         vm.warp(block.timestamp + 430647);
         vm.roll(block.number + 4973);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 4709086573633822119244716305206057885259619730775554723170986464264513955342);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 9);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD, 35918067603951897722505970585333968096905126148971505101983149687607058612385);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 47);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000020000, 19298424592599746970522565540995244379286172020989862100925768341563437537593);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 54893);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 17);
         vm.roll(block.number + 35599);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 322362);
         vm.roll(block.number + 19355);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000010000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039456584007913129639933);
-        
+
         vm.warp(block.timestamp + 430645);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 3831);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 28706947513288100928793159453771457559183752921792636126126846766288464623256);
-        
+
         vm.warp(block.timestamp + 322360);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 115792089237316195423570985008687907853269984665640564039457584007863129639933);
-        
+
         vm.warp(block.timestamp + 15);
         vm.roll(block.number + 5018);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000001fffffffE, 436875036803549978663397152795317145);
-        
+
         vm.warp(block.timestamp + 523311);
         vm.roll(block.number + 17779);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007912129639938);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 58358);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 68758);
         vm.roll(block.number + 20);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 496531);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639887);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 58357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 308686);
         vm.roll(block.number + 19280);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 4376906219815226700257976854481155773679459023515141041622692482035402726894);
-        
+
         vm.warp(block.timestamp + 51);
         vm.roll(block.number + 54893);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 496532);
         vm.roll(block.number + 47);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 1000000000);
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 50000000000);
-        
+
         vm.warp(block.timestamp + 496532);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 52);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322328);
         vm.roll(block.number + 46156);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 4977);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 16);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 58426);
         vm.roll(block.number + 19351);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 49);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 0x00000000000000000000000000000000FFFFfFFF, 50000000002);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 322323);
         vm.roll(block.number + 19350);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 41685);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 71777073413784706334793017325232104668536766531408964861048610608974161298793);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 10613);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000030000, 327);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 11);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 7);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 39509);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 5015);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639916);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 386818);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000010000, 10124560002140566216233004071855956466517450498174174222403744015117769596172);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 415);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 322362);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 5011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 49);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 54893);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322354);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 322367);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 49999999998);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 50475);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000020000, 109976195341628796072881045623325783515640820858660601665046528123291881979831);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 49);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 103294909631259564339848664335604813144862252135511751085253039827525580608694);
-        
+
         vm.warp(block.timestamp + 568131);
         vm.roll(block.number + 33170);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 49999999997);
-        
+
         vm.warp(block.timestamp + 58430);
         vm.roll(block.number + 19351);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 54146);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
     }
-    
-    
-    function test_auto_addBotToBlackList_7() public { 
-        
+
+
+    function test_auto_addBotToBlackList_7() public {
+
         vm.warp(block.timestamp + 540358);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 49);
-        
+
         vm.warp(block.timestamp + 496528);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 32346366488215078502789667809630509470480469936022545363487435705906040661836);
-        
+
         vm.warp(block.timestamp + 322328);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 386815);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007912129639938);
-        
+
         vm.warp(block.timestamp + 430649);
         vm.roll(block.number + 46151);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 69212894943699384676815825049162068129138322301271758279012063976725256570239);
-        
+
         vm.warp(block.timestamp + 496530);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 46153);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 203493);
         vm.roll(block.number + 11);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 10545711304830174951884775314135101938167011998358492168619107007950248366978);
-        
+
         vm.warp(block.timestamp + 151638);
         vm.roll(block.number + 10610);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322369);
         vm.roll(block.number + 7144);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 4973);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000030000, 100143781586772328900447473473123524695828641877897160297990254236117157046315);
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 53);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 18);
-        
+
         vm.warp(block.timestamp + 430649);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 430648);
         vm.roll(block.number + 46156);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 226056498588541059841);
-        
+
         vm.warp(block.timestamp + 471564);
         vm.roll(block.number + 1);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 430648);
         vm.roll(block.number + 5004);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 263946);
         vm.roll(block.number + 7);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 81164976380346154234558177986265021649216387791002571012834009964468682896453);
-        
+
         vm.warp(block.timestamp + 19);
         vm.roll(block.number + 15);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 597);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 540360);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 430650);
         vm.roll(block.number + 4976);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 53);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 50000000001);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 58361);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322362);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 49999999999);
-        
+
         vm.warp(block.timestamp + 540360);
         vm.roll(block.number + 5015);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 30606363114787782102165876351034846630160881360138626882400478134832813222283);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 49308);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 322354);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 36788);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 412562);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 5011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639885);
-        
+
         vm.warp(block.timestamp + 386819);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 48);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007863129639938);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 540359);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 540356);
         vm.roll(block.number + 46156);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 58356);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 102677652110632423613519767286912921235100520143320399405410718747409073879638);
-        
+
         vm.warp(block.timestamp + 58426);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 322355);
         vm.roll(block.number + 7148);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007912129639939);
-        
+
         vm.warp(block.timestamp + 564320);
         vm.roll(block.number + 10904);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 53);
         vm.roll(block.number + 47);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 53);
         vm.roll(block.number + 5017);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 598215);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 277232);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 6);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 5004);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 7147);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 27096);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 127533);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 17);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 263946);
         vm.roll(block.number + 11);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 18);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 50399998604389726887033273013869152873843679893697445771765112291154361243432);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 9977);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 11257);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 17);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 36184680457377501017747934107195816438100962399474432769251060985666856894823);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 54892);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 3923138855941743887423046420908869845321405943263033450882737252409431583306);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 46153);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 83460735363865147730797935390515666708056328715117511130967499704309973985662);
-        
+
         vm.warp(block.timestamp + 50);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 10611);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 307763);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 386821);
         vm.roll(block.number + 5015);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 11310887111152321356434495648662851375407288110886237806484783747610602328532);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322354);
         vm.roll(block.number + 17);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 54898);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 496528);
         vm.roll(block.number + 20);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 996);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 54893);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 46153);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 53155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 51);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000030000, 25593276916729398016171300645903655833994878482641869353594413067791461090401);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 4976);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 12901);
         vm.roll(block.number + 4975);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 18748);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 58358);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 581163);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 0x00000000000000000000000000000000FFFFfFFF, 15);
-        
+
         vm.warp(block.timestamp + 322365);
         vm.roll(block.number + 5012);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 5013);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 9);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 430644);
         vm.roll(block.number + 19351);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x0000000000000000000000000000000000000000, 75943825415482356156290945204229495773992204837806154966253494722261688463770);
-        
+
         vm.warp(block.timestamp + 127);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
     }
-    
-    
-    function test_auto_transferOwnership_8() public { 
-        
+
+
+    function test_auto_transferOwnership_8() public {
+
         vm.warp(block.timestamp + 540358);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 49);
-        
+
         vm.warp(block.timestamp + 496528);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 32346366488215078502789667809630509470480469936022545363487435705906040661836);
-        
+
         vm.warp(block.timestamp + 53);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 49999999999);
-        
+
         vm.warp(block.timestamp + 386821);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 430649);
         vm.roll(block.number + 10608);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 19355);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.allowance(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 52);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039456584007913129639937);
-        
+
         vm.warp(block.timestamp + 53);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 46152);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 21);
-        
+
         vm.warp(block.timestamp + 175315);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 8);
-        
+
         vm.warp(block.timestamp + 318197);
         vm.roll(block.number + 18);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 19353);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 99348497425966604176393959084520570256936619479087886786680590561296350385070);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 6);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 104748322991699578226210873006507128150865487477970759995260262204227110281304);
-        
+
         vm.warp(block.timestamp + 322322);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 496530);
         vm.roll(block.number + 18);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 36830058154619107313873555043082631103853345952152881006025215224461751436899);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322363);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 386815);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 386818);
         vm.roll(block.number + 4976);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x0000000000000000000000000000000000000000, 43099842121628470255655433098866053688312643567223329128465325959129929918090);
-        
+
         vm.warp(block.timestamp + 53);
         vm.roll(block.number + 17);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000030000, 703);
-        
+
         vm.warp(block.timestamp + 188421);
         vm.roll(block.number + 19350);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000001fffffffE, 1000000000000000002);
-        
+
         vm.warp(block.timestamp + 53);
         vm.roll(block.number + 50967);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 7);
-        
+
         vm.warp(block.timestamp + 117472);
         vm.roll(block.number + 5004);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 430649);
         vm.roll(block.number + 5006);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322360);
         vm.roll(block.number + 58361);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 98394238616329790938779927144682048806100116760801492779305042479591150160574);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 46151);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 386815);
         vm.roll(block.number + 33214);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 19355);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 17);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 496530);
         vm.roll(block.number + 11);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 322358);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322360);
         vm.roll(block.number + 42557);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 322362);
         vm.roll(block.number + 11);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x0000000000000000000000000000000000030000, 0);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 19349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 50);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 73618617211145349502455599425404517979017742134333488470794458601227394920915);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000030000, 62701053026623133082261838775277610052655997344411027129818477205827419997268);
-        
+
         vm.warp(block.timestamp + 17);
         vm.roll(block.number + 4249);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 59035120696);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 386817);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 220941);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007863129639938);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 12707);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 40468940436040521223832510868280589743357228763486235968175867879139828567905);
-        
+
         vm.warp(block.timestamp + 8);
         vm.roll(block.number + 46155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 58427);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 11783);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 1000000000000000003);
-        
+
         vm.warp(block.timestamp + 58426);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 322322);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 5016);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 7149);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039456584007913129639939);
-        
+
         vm.warp(block.timestamp + 20);
         vm.roll(block.number + 37726);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 999999997);
-        
+
         vm.warp(block.timestamp + 58426);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 324480);
         vm.roll(block.number + 44907);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000010000, 18);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 19);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 10613);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 6256228717520596609189984634300828877015794249019548341743399368974207313463);
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 786012990231);
-        
+
         vm.warp(block.timestamp + 93948);
         vm.roll(block.number + 5013);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 48494);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 540357);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000030000, 72412692548329721650234507403419273956091531961989389632786613265065798306113);
-        
+
         vm.warp(block.timestamp + 263948);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000020000, 84978064967695219439971198443939866357402839428549607833208875137064888981192);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 637);
-        
+
         vm.warp(block.timestamp + 558097);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 17);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000, 67864513875853833528817783457221807169072425308119046997888876134647986254211);
-        
+
         vm.warp(block.timestamp + 322326);
         vm.roll(block.number + 18);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322369);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322354);
         vm.roll(block.number + 11);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 999999997);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 8092331092171913625628483807755260283997842510459075715031939805130266265415);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 8);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 56265447802059599360377564683878602114241491521702600784148836943887698844601);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 19355);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000001fffffffE, 4);
-        
+
         vm.warp(block.timestamp + 10);
         vm.roll(block.number + 46155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639929);
-        
+
         vm.warp(block.timestamp + 386818);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 28314991750723090560159429001441172725118005716784266093072372556956502562141);
-        
+
         vm.warp(block.timestamp + 526914);
         vm.roll(block.number + 54892);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 51);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28562777877847287227708084976393070342310047364590749497000936443334289314009);
-        
+
         vm.warp(block.timestamp + 199226);
         vm.roll(block.number + 46386);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 7291);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 496529);
         vm.roll(block.number + 5006);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 38954);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 88188568408697785218649900209296106092004342503997787471670597104010703039024);
-        
+
         vm.warp(block.timestamp + 117472);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000010000, 85576239425556565193167053384253692264748383270059558322834704592126943961757);
-        
+
         vm.warp(block.timestamp + 322356);
         vm.roll(block.number + 49);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
     }
-    
-    
-    function test_auto_transfer_9() public { 
-        
+
+
+    function test_auto_transfer_9() public {
+
         vm.warp(block.timestamp + 540358);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000001fffffffE, 49);
-        
+
         vm.warp(block.timestamp + 496528);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 32346366488215078502789667809630509470480469936022545363487435705906040661836);
-        
+
         vm.warp(block.timestamp + 322328);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 386815);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007912129639938);
-        
+
         vm.warp(block.timestamp + 430649);
         vm.roll(block.number + 46151);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 69212894943699384676815825049162068129138322301271758279012063976725256570239);
-        
+
         vm.warp(block.timestamp + 322323);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 10611);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 430647);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 0);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 46153);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 496529);
         vm.roll(block.number + 7384);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 430648);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 540357);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x0000000000000000000000000000000000000000, 4370000);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000030000, 4369999);
-        
+
         vm.warp(block.timestamp + 50);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 50000000000);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 54093628548254516648035431468964525011834018159379015677538128275621918719313);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 102252944491236596127606719203221055942172549549418611356578256342830654279844);
-        
+
         vm.warp(block.timestamp + 289103);
         vm.roll(block.number + 58356);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 19);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 322328);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 35373);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x0000000000000000000000000000000000020000, 53965112634066652521536773271213762203433281617837328209511493716204585465360);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639916);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 58356);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 386816);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 322325);
         vm.roll(block.number + 10533);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000000000, 29760242679959289737261418397584204650689802504608370404586882319511087882956);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 5017);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 160432);
         vm.roll(block.number + 7148);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000030000, 10974046592441307068301159884076758580608240975969893855722955433604588291136);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 1524785992);
-        
+
         vm.warp(block.timestamp + 528010);
         vm.roll(block.number + 5007);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 10609);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 496529);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 497937);
         vm.roll(block.number + 4977);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322359);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 372801);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 19353);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 322360);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 19355);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 386818);
         vm.roll(block.number + 19352);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 322324);
         vm.roll(block.number + 19355);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 430649);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x0000000000000000000000000000000000020000, 30326689681095396448683799054009993960174459975778862895443807016311491754214);
-        
+
         vm.warp(block.timestamp + 263945);
         vm.roll(block.number + 54616);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 540357);
         vm.roll(block.number + 4972);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 51);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 350298);
         vm.roll(block.number + 20);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 12);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 7);
         vm.roll(block.number + 4971);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 7);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 550151);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 7);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 5016);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 289586);
         vm.roll(block.number + 18);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 318197);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 14839);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 46154);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000001fffffffE, 49);
-        
+
         vm.warp(block.timestamp + 496529);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 11);
         vm.roll(block.number + 49307);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 386819);
         vm.roll(block.number + 58356);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, 17);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addSniperToBlacklist(0x00000000000000000000000000000000FFFFfFFF, 46367566527084082410165133043897556368598846078463874814637922864079903012594);
-        
+
         vm.warp(block.timestamp + 53);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 322356);
         vm.roll(block.number + 5009);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 51);
         vm.roll(block.number + 51);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 48);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 4972);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 496526);
         vm.roll(block.number + 17);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.addBotToBlackList(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 17);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 34113);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 263949);
         vm.roll(block.number + 5011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 58426);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639928);
-        
+
         vm.warp(block.timestamp + 496530);
         vm.roll(block.number + 5016);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039456584007913129639937);
-        
+
         vm.warp(block.timestamp + 430646);
         vm.roll(block.number + 58357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferOwnership(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 555786);
         vm.roll(block.number + 4973);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addSniperToBlacklist(0x00000000000000000000000000000002fFffFffD, 91664797270478811241779124957399627717473238859532083786480702428023189711001);
-        
+
         vm.warp(block.timestamp + 277232);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
-        
+
         vm.warp(block.timestamp + 58426);
         vm.roll(block.number + 4971);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.addBotToBlackList(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 540359);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 4975);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferOwnership(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 58665346813151604675613465870294069674020190233019453729916114435320177543646);
-        
+
         vm.warp(block.timestamp + 127);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 25995399103262840474033682279858766591236466859955986928534297294043963370046);
-        
+
         vm.warp(block.timestamp + 10);
         vm.roll(block.number + 58362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639917);
-        
+
         vm.warp(block.timestamp + 496526);
         vm.roll(block.number + 49);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferOwnership(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.decimals();
-        
+
         vm.warp(block.timestamp + 52);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 271957);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564039457584007913129639886);
     }
-    
-}
 
-    
+}

@@ -9,6 +9,6 @@ contract Csi3_Test is Test {
 	}
 	function test_Csi3_0() public {
 		vm.prank(0xbfF50e1c0a03bE36000000000000000000000000);
-		csi30.check(); 
+		csi30.check();
 	}
 }

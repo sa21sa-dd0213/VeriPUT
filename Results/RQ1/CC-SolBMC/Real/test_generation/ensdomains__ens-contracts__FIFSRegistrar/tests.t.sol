@@ -11,14 +11,14 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new FIFSRegistrar(ENS(address(0xDEAD0000000000000000000000000000BEEF)), bytes32(0));
     }
 
     function test_ce_0_register() public {
-        
+
 
         target.register(bytes32(uint256(0)), address(uint160(0)));
     }

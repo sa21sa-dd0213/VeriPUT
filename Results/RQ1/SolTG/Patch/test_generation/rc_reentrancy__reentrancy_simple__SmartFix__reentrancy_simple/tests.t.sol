@@ -11,10 +11,10 @@ contract Reentrance_Test is Test {
 	}
 	function test_Reentrance_0() public {
 		vm.prank(0x1E27000000000000000000000000000000000000);
-		reentrance0.addToBalance(); 
+		reentrance0.addToBalance();
 	}
 	function test_Reentrance_1() public {
 		vm.prank(0xc54D4c36e1018307000000000000000000000000);
-		reentrance1.getBalance(0x0000000000000000000000000000000000000000); 
+		reentrance1.getBalance(0x0000000000000000000000000000000000000000);
 	}
 }

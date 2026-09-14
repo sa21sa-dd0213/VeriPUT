@@ -2,10 +2,10 @@
   [
     {
       "args": [
-        "address_00184",
-        "address_0004646734d79546272764a6d5a4f"
+        "anonymous_hex_00022",
+        "0x41677343437667577254486948484f6c4772664d46734d79546272764a6d5a4f"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -15,7 +15,7 @@
         6998448714956187111743552509874209986147772384494706144126527588411694943774,
         63886683274197448771185190322945600336965013930470950078014510369006275901740
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "renew",
       "n": 2,
       "value": 0
@@ -24,7 +24,7 @@
       "args": [
         27454272039794426553767549459313087602888006495037432343017374413682881582309
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "available",
       "n": 3,
       "value": 0
@@ -33,19 +33,19 @@
   [
     {
       "args": [
-        "address_00404",
-        "address_00125417276734d6c786d55526c4f"
+        "anonymous_hex_00027",
+        "0x4c6856706a68506a5743797669764f4374504858417276734d6c786d55526c4f"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00021"
+        "anonymous_hex_00017"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "addController",
       "n": 2,
       "value": 0
@@ -54,10 +54,10 @@
   [
     {
       "args": [
-        "address_00404",
-        "address_00125417276734d6c786d55526c4f"
+        "anonymous_hex_00027",
+        "0x4c6856706a68506a5743797669764f4374504858417276734d6c786d55526c4f"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -67,7 +67,7 @@
         105435692758756342873906009469825386137952302301452304549638645071936340030288,
         20
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "renew",
       "n": 2,
       "value": 0
@@ -76,10 +76,10 @@
   [
     {
       "args": [
-        "address_00404",
-        "address_00125417276734d6c786d55526c4f"
+        "anonymous_hex_00027",
+        "0x4c6856706a68506a5743797669764f4374504858417276734d6c786d55526c4f"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -88,7 +88,7 @@
       "args": [
         3
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "nameExpires",
       "n": 2,
       "value": 0
@@ -97,19 +97,19 @@
   [
     {
       "args": [
-        "address_00404",
-        "address_00125417276734d6c786d55526c4f"
+        "anonymous_hex_00027",
+        "0x4c6856706a68506a5743797669764f4374504858417276734d6c786d55526c4f"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00021"
+        "anonymous_hex_00017"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "removeController",
       "n": 2,
       "value": 0
@@ -118,10 +118,10 @@
   [
     {
       "args": [
-        "address_00410",
-        "address_002646345207774776d7452417367"
+        "anonymous_hex_00028",
+        "0x667264415a4576617a6e4c66766c7179534358566345207774776d7452417367"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -131,7 +131,7 @@
         1,
         90
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "renew",
       "n": 2,
       "value": 0
@@ -139,10 +139,10 @@
     {
       "args": [
         256,
-        "address_00021",
+        "anonymous_hex_00017",
         16
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "register",
       "n": 3,
       "value": 0
@@ -151,10 +151,10 @@
   [
     {
       "args": [
-        "address_00404",
-        "address_00125417276734d6c786d55526c4f"
+        "anonymous_hex_00027",
+        "0x4c6856706a68506a5743797669764f4374504858417276734d6c786d55526c4f"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -162,10 +162,10 @@
     {
       "args": [
         3709996309613496264276146669139849559126108903467035648535575473800157972836,
-        "address_00184",
+        "anonymous_hex_00022",
         90
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "registerOnly",
       "n": 2,
       "value": 0
@@ -174,7 +174,7 @@
       "args": [
         8308180210415575054397828580523790355527660553521036357190551938649756766494
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "ownerOf",
       "n": 3,
       "value": 0
@@ -183,19 +183,19 @@
   [
     {
       "args": [
-        "address_00404",
-        "address_00125417276734d6c786d55526c4f"
+        "anonymous_hex_00027",
+        "0x4c6856706a68506a5743797669764f4374504858417276734d6c786d55526c4f"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00184"
+        "anonymous_hex_00022"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "setResolver",
       "n": 2,
       "value": 0
@@ -204,10 +204,10 @@
   [
     {
       "args": [
-        "address_00001",
-        "address_00125417276734d6c786d55526c4f"
+        "anonymous_hex_00001",
+        "0x4c6856706a68506a5743797669764f4374504858417276734d6c786d55526c4f"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -215,10 +215,10 @@
     {
       "args": [
         1796443467329766489485819916918387652321906099388826170877320633342209560925,
-        "address_00410",
+        "anonymous_hex_00028",
         128
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "registerOnly",
       "n": 2,
       "value": 0
@@ -227,10 +227,10 @@
   [
     {
       "args": [
-        "address_00404",
-        "address_00326765177794a74785465644344"
+        "anonymous_hex_00027",
+        "0x70734a77784c68515272744651707a716f455165765177794a74785465644344"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -238,9 +238,9 @@
     {
       "args": [
         29583913487517543067145997411013135513946982712571269568565652648754973375671,
-        "address_00398"
+        "anonymous_hex_00025"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "reclaim",
       "n": 2,
       "value": 0
@@ -249,10 +249,10 @@
   [
     {
       "args": [
-        "address_00404",
-        "address_00125417276734d6c786d55526c4f"
+        "anonymous_hex_00027",
+        "0x4c6856706a68506a5743797669764f4374504858417276734d6c786d55526c4f"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -261,7 +261,7 @@
       "args": [
         "0x4a695743"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "supportsInterface",
       "n": 2,
       "value": 0

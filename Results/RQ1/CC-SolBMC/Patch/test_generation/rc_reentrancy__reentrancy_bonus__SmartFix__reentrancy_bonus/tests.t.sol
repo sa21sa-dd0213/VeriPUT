@@ -11,19 +11,19 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new Reentrancy_bonus();
     }
 
     function test_ce_0_withdrawReward() public {
-        
+
 
         target.withdrawReward(address(uint160(0)));
     }
     function test_ce_1_getFirstWithdrawalBonus() public {
-        
+
 
         target.getFirstWithdrawalBonus(address(uint160(38)));
     }

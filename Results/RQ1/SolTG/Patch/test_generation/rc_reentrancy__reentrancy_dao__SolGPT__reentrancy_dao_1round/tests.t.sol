@@ -13,17 +13,17 @@ contract ReentrancyDAO_Test is Test {
 	}
 	function test_ReentrancyDAO_0() public {
 		vm.prank(0x1E27000000000000000000000000000000000000);
-		reentrancydao0.deposit(); 
+		reentrancydao0.deposit();
 	}
 	function test_ReentrancyDAO_1() public {
 		vm.prank(0xAD95D6c45a0E5714000000000000000000000000);
-		reentrancydao1.withdrawAll(); 
+		reentrancydao1.withdrawAll();
 	}
 	function test_ReentrancyDAO_2() public {
 		vm.prank(0x36Fe0aC7c3F8cad0F00000000000000000000000);
 		vm.deal(0x36Fe0aC7c3F8cad0F00000000000000000000000,  10451 wei );
-		reentrancydao2.deposit{ value:  10451 wei }(); 
+		reentrancydao2.deposit{ value:  10451 wei }();
 		vm.prank(0x2Ed2FBF5ffBEb6c3C00000000000000000000000);
-		reentrancydao2.withdrawAll(); 
+		reentrancydao2.withdrawAll();
 	}
 }

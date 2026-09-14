@@ -11,24 +11,24 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new FundRaising(0, 0);
     }
 
     function test_ce_0_add() public {
-        
+
 
         target.add();
     }
     function test_ce_1_withdrawOwner() public {
-        
+
 
         target.withdrawOwner();
     }
     function test_ce_2_withdraw() public {
-        
+
 
         target.withdraw();
     }

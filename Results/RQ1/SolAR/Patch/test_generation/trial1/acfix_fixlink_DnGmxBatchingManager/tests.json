@@ -2,23 +2,23 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00401"
+        "anonymous_hex_00026"
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "claimAndRedeem",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "roundGlpStaked",
       "n": 3,
       "value": 0
@@ -27,14 +27,14 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "roundGlpStaked",
       "n": 2,
       "value": 0
@@ -43,25 +43,25 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00023",
+        "anonymous_hex_00019",
         12,
         104360106128197207804294787605885412047836756902267645632222429234792121283404
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "depositToken",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "unpauseDeposit",
       "n": 3,
       "value": 0
@@ -70,24 +70,24 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00410",
+        "anonymous_hex_00028",
         22207492108980790414042330028170089800115154123291999180996629094457931630288
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "claim",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "executeBatchDeposit",
       "n": 3,
       "value": 0
@@ -96,14 +96,14 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "roundUsdcBalance",
       "n": 2,
       "value": 0
@@ -112,28 +112,28 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00401",
-        "address_00021",
-        "address_00401",
-        "address_00023",
-        "address_00401",
-        "address_00404"
+        "anonymous_hex_00026",
+        "anonymous_hex_00017",
+        "anonymous_hex_00026",
+        "anonymous_hex_00019",
+        "anonymous_hex_00026",
+        "anonymous_hex_00027"
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "initialize",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "executeBatchDeposit",
       "n": 3,
       "value": 0
@@ -142,7 +142,7 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -151,14 +151,14 @@
       "args": [
         30
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "roundDeposits",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "executeBatchDeposit",
       "n": 3,
       "value": 0
@@ -167,25 +167,25 @@
   [
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00398"
+        "anonymous_hex_00025"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "unclaimedShares",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00404"
+        "anonymous_hex_00027"
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "usdcBalance",
       "n": 3,
       "value": 0
@@ -194,21 +194,21 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "grantAllowances",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "roundGlpStaked",
       "n": 3,
       "value": 0
@@ -217,16 +217,16 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00184"
+        "anonymous_hex_00022"
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "usdcBalance",
       "n": 2,
       "value": 0
@@ -235,14 +235,14 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "unpauseDeposit",
       "n": 2,
       "value": 0
@@ -251,7 +251,7 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -260,16 +260,16 @@
       "args": [
         30
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "setThresholds",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00404"
+        "anonymous_hex_00027"
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "usdcBalance",
       "n": 3,
       "value": 0
@@ -278,14 +278,14 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "executeBatchDeposit",
       "n": 2,
       "value": 0
@@ -294,7 +294,7 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -303,23 +303,23 @@
       "args": [
         22
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "setThresholds",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "pauseDeposit",
       "n": 3,
       "value": 0
     },
     {
       "args": [
-        "address_00401"
+        "anonymous_hex_00026"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "usdcBalance",
       "n": 4,
       "value": 0
@@ -328,7 +328,7 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -337,30 +337,30 @@
       "args": [
         8198309860387811269941246541131100473667022007444016192082719969273172239554
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "roundDeposits",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00036"
+        "anonymous_hex_00021"
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "setKeeper",
       "n": 3,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "currentRound",
       "n": 4,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "executeBatchDeposit",
       "n": 5,
       "value": 0
@@ -369,21 +369,21 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "currentRound",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "roundGlpStaked",
       "n": 3,
       "value": 0
@@ -392,21 +392,21 @@
   [
     {
       "args": [],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "executeBatchStake",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "unpauseDeposit",
       "n": 3,
       "value": 0

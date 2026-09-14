@@ -2,7 +2,7 @@
   [
     {
       "args": [],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -12,7 +12,7 @@
         30,
         "aDpKtBAeAtmMxzlfkjekznTRZeJmfBTAGJVzQQdSkLgBfIIa"
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "changeHello",
       "n": 2,
       "value": 0
@@ -21,7 +21,7 @@
       "args": [
         186
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "sayHello",
       "n": 3,
       "value": 0
@@ -30,7 +30,7 @@
   [
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -40,7 +40,7 @@
         0,
         "\"Goodbye!\""
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "changeGoodbye",
       "n": 2,
       "value": 0
@@ -49,7 +49,7 @@
   [
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -58,7 +58,7 @@
       "args": [
         3
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "sayGoodbye",
       "n": 2,
       "value": 0

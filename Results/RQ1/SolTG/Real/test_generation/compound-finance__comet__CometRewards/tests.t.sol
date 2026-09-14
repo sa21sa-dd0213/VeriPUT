@@ -22,11 +22,11 @@ contract CometRewards_Test is Test {
 	}
 	function test_CometRewards_0() public {
 		vm.prank(0x2206D846E1F12FE3200000000000000000000000);
-		cometmaininterface0.transferGovernor( 0); 
+		cometmaininterface0.transferGovernor( 0);
 	}
 	function test_CometRewards_1() public {
 		vm.prank(0x1000000000000000000000000000000000000000);
-		cometmaininterface1.transferGovernor( 0); 
+		cometmaininterface1.transferGovernor( 0);
 	}
 	function test_CometRewards_2() public {
 	}

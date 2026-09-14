@@ -73,7 +73,7 @@ Saved reproducer to corpus/coverage/1494051726730093731.txt
 [status] tests: 0/27, fuzzing: 247439/100000000, values: [], cov: 2126, corpus: 16, gas/s: 74852229
 [Worker 0] Crashed:
 
-Internal Error: unimplemented precompiled contract address_00003 -- CallStack (from HasCallStack):
+Internal Error: unimplemented precompiled contract anonymous_hex_00003 -- CallStack (from HasCallStack):
   internalError, called at src/EVM.hs:2925:10 in hevm-0.57.0-BrlEaXZTAyMON9Utv9KwA:EVM
 CallStack (from HasCallStack):
   error, called at src/EVM/Types.hs:1539:19 in hevm-0.57.0-BrlEaXZTAyMON9Utv9KwA:EVM.Types

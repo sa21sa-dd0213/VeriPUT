@@ -2,14 +2,14 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "echidna_all_states",
       "n": 2,
       "value": 0
@@ -18,21 +18,21 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "echidna_all_states",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "echidna_all_states",
       "n": 3,
       "value": 0
@@ -43,21 +43,21 @@
         -103255866047013004476529437412372585390376469523073741282320211077965169012455,
         1
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "baz",
       "n": 4,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "echidna_all_states",
       "n": 5,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "echidna_all_states",
       "n": 6,
       "value": 0
@@ -68,7 +68,7 @@
         42,
         -31386349938043112896662393356577889794175040740063931966870528905126778131623
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "baz",
       "n": 7,
       "value": 0
@@ -79,7 +79,7 @@
         2,
         45676358944324333042619683851937216669650328865331933394468885815182968064370
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "baz",
       "n": 8,
       "value": 0
@@ -90,14 +90,14 @@
         49394808731494750554446645317823750673737730464492164648696586005171112469569,
         45356406461733886915793455743288106013678570701045775936038410548485016400490
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "baz",
       "n": 9,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "echidna_all_states",
       "n": 10,
       "value": 0
@@ -108,7 +108,7 @@
         3,
         5
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "baz",
       "n": 11,
       "value": 0
@@ -119,28 +119,28 @@
         42026148532562290954600368503405139822011655911757565975853889664099116557003,
         5
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "baz",
       "n": 12,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "echidna_all_states",
       "n": 13,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "echidna_all_states",
       "n": 14,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "echidna_all_states",
       "n": 15,
       "value": 0
@@ -151,7 +151,7 @@
         -71196208177490838351951886481721981272918078604915489697804219569742581313829,
         1
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "baz",
       "n": 16,
       "value": 0
@@ -162,14 +162,14 @@
         1,
         -99856305335803978862917327938374486032757181636852001664141856382456854403128
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "baz",
       "n": 17,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "echidna_all_states",
       "n": 18,
       "value": 0
@@ -180,21 +180,21 @@
         3,
         99916778810463476353800452732279064381554195574861105879328723775687982567120
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "baz",
       "n": 19,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "echidna_all_states",
       "n": 20,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "echidna_all_states",
       "n": 21,
       "value": 0
@@ -205,7 +205,7 @@
         1,
         56143500447376294152900940965736879122573652905943667741391383150743304455459
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "baz",
       "n": 22,
       "value": 0
@@ -216,14 +216,14 @@
         0,
         0
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "baz",
       "n": 23,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "echidna_all_states",
       "n": 24,
       "value": 0
@@ -234,7 +234,7 @@
         -66791969037833333078329006652882783053599885463769699196569527483921689883279,
         42
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "baz",
       "n": 25,
       "value": 0
@@ -245,14 +245,14 @@
         -52459701194560286010934610745932407378214244631006562601008279728748501344308,
         13426644649039777919592035895164070246229485806734187111611606488939782624006
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "baz",
       "n": 26,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "echidna_all_states",
       "n": 27,
       "value": 0
@@ -263,7 +263,7 @@
         4,
         1
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "baz",
       "n": 28,
       "value": 0
@@ -274,7 +274,7 @@
         0,
         1
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "baz",
       "n": 29,
       "value": 0
@@ -285,14 +285,14 @@
         -73277533008239547238825081018758666078059319949355490461031214600107475668706,
         -64031022036592796689572718853428238676973752303264192715374915386842764375060
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "baz",
       "n": 30,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "echidna_all_states",
       "n": 31,
       "value": 0
@@ -301,7 +301,7 @@
   [
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -312,14 +312,14 @@
         1,
         63611321918234225208556262452104733960911445707218918218130004696963627794491
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "baz",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "echidna_all_states",
       "n": 3,
       "value": 0
@@ -330,7 +330,7 @@
         90666331230564817568277594488999708727741847420323058223250621814770832698076,
         -76908755556225266470109009744257177904120061402745312856157819934000868858342
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "baz",
       "n": 4,
       "value": 0
@@ -339,7 +339,7 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -350,14 +350,14 @@
         41,
         4
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "baz",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "echidna_all_states",
       "n": 3,
       "value": 0
@@ -368,7 +368,7 @@
         90666331230564817568277594488999708727741847420323058223250621814770832698076,
         -76908755556225266470109009744257177904120061402745312856157819934000868858342
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "baz",
       "n": 4,
       "value": 0

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 import json
 import sys
 
@@ -8,10 +9,10 @@ _UNARY_WRITE = {"++", "--", "delete"}
 
 
 def _ast_root(ast_path):
-    
-    
-    
-    
+
+
+
+
     try:
         with open(ast_path, "r", errors="replace") as stream:
             text = stream.read()
@@ -75,8 +76,8 @@ def _root_state_name(expr, state_ids):
             node = node.get("baseExpression")
             continue
         if kind == "MemberAccess":
-            
-            
+
+
             node = node.get("expression")
             continue
         if kind == "TupleExpression":
@@ -130,9 +131,9 @@ def _storage_pointer_aliases(definition, state_ids):
 def unit_state_writes(definition, state_ids):
     pass
     aliases = _storage_pointer_aliases(definition, state_ids)
-    
-    
-    
+
+
+
     resolved = dict(state_ids)
     resolved.update(aliases)
     written = set()
@@ -182,8 +183,8 @@ def writer_scope_for_unit(ast_path, contract, unit):
     self_written = set()
     for target in targets:
         self_written |= unit_state_writes(target, state_ids)
-    
-    
+
+
     wanted = read - self_written
     if not wanted:
         return [], [f"scope derivation: {unit} writes every state variable it reads"]

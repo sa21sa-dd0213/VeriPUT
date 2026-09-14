@@ -5,21 +5,21 @@
         65,
         95009535800485010862370939246812634796337550136352375036901638126063878240928
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "latestRoundData",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "latestRoundData",
       "n": 3,
       "value": 0

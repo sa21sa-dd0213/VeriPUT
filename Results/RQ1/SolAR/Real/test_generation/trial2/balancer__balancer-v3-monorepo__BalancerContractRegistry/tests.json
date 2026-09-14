@@ -2,9 +2,9 @@
   [
     {
       "args": [
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -12,9 +12,9 @@
     {
       "args": [
         "PVbV",
-        "address_00023"
+        "anonymous_hex_00019"
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "addOrUpdateBalancerContractAlias",
       "n": 2,
       "value": 0
@@ -23,18 +23,18 @@
   [
     {
       "args": [
-        "address_00032"
+        "anonymous_hex_00020"
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00021"
+        "anonymous_hex_00017"
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "deprecateBalancerContract",
       "n": 2,
       "value": 0
@@ -42,9 +42,9 @@
     {
       "args": [
         35,
-        "address_00184"
+        "anonymous_hex_00022"
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "isActiveBalancerContract",
       "n": 3,
       "value": 0
@@ -53,9 +53,9 @@
   [
     {
       "args": [
-        "address_00021"
+        "anonymous_hex_00017"
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -65,7 +65,7 @@
         38,
         ""
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "getBalancerContract",
       "n": 2,
       "value": 0
@@ -74,18 +74,18 @@
   [
     {
       "args": [
-        "address_00184"
+        "anonymous_hex_00022"
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00398"
+        "anonymous_hex_00025"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "isTrustedRouter",
       "n": 2,
       "value": 0
@@ -94,9 +94,9 @@
   [
     {
       "args": [
-        "address_00021"
+        "anonymous_hex_00017"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -104,18 +104,18 @@
     {
       "args": [
         165,
-        "address_00019"
+        "anonymous_hex_00016"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "isActiveBalancerContract",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "getBalancerContractInfo",
       "n": 3,
       "value": 0
@@ -124,9 +124,9 @@
   [
     {
       "args": [
-        "address_00036"
+        "anonymous_hex_00021"
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -134,9 +134,9 @@
     {
       "args": [
         35,
-        "address_00184"
+        "anonymous_hex_00022"
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "isActiveBalancerContract",
       "n": 2,
       "value": 0
@@ -145,9 +145,9 @@
   [
     {
       "args": [
-        "address_00021"
+        "anonymous_hex_00017"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -156,7 +156,7 @@
       "args": [
         ""
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "deregisterBalancerContract",
       "n": 2,
       "value": 0
@@ -165,9 +165,9 @@
   [
     {
       "args": [
-        "address_00021"
+        "anonymous_hex_00017"
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -176,7 +176,7 @@
       "args": [
         "FiJpthvYapZTWUiPaKvijRu qNxqLWbTiQNnRzsyqFqzbI MOQtSOLofdTxIcBZWmlVS"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "deregisterBalancerContract",
       "n": 2,
       "value": 0
@@ -185,9 +185,9 @@
   [
     {
       "args": [
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -197,7 +197,7 @@
         4,
         "cibMTDVEnLNOYNtTqIDWOlUxIuc DkCkpViSdUsXzMXWfxslGZVYLzDQwrrRVijJrFxvtmsfoYdsMCHLQb"
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "getBalancerContract",
       "n": 2,
       "value": 0
@@ -206,9 +206,9 @@
   [
     {
       "args": [
-        "address_00184"
+        "anonymous_hex_00022"
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -217,9 +217,9 @@
       "args": [
         172,
         "",
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "registerBalancerContract",
       "n": 2,
       "value": 0

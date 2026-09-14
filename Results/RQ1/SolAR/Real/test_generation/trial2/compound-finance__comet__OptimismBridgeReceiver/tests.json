@@ -2,18 +2,18 @@
   [
     {
       "args": [
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00401"
+        "anonymous_hex_00026"
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "changeCrossDomainMessenger",
       "n": 2,
       "value": 0

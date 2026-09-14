@@ -11,14 +11,14 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new Primality();
     }
 
     function test_ce_0_verifyPrime() public {
-        
+
 
         target.verifyPrime();
     }

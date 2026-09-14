@@ -11,24 +11,24 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new RoomThermostat();
     }
 
     function test_ce_0_StartThermostat() public {
-        
+
 
         target.StartThermostat();
     }
     function test_ce_1_SetTargetTemperature() public {
-        
+
 
         target.SetTargetTemperature(0);
     }
     function test_ce_2_SetMode() public {
-        
+
 
         target.SetMode(RoomThermostat.ModeEnum(0));
     }

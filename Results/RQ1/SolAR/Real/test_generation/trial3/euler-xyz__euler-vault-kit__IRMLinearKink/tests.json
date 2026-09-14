@@ -7,18 +7,18 @@
         8,
         8
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00036",
+        "anonymous_hex_00021",
         8,
         8599192725208125246829483121863339754986320441281747585145669159126860312396
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "computeInterestRateView",
       "n": 2,
       "value": 0
@@ -32,18 +32,18 @@
         1,
         2
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00410",
+        "anonymous_hex_00028",
         0,
         43768071969431696179452935442143199485247355349844594436668584172251668864013
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "computeInterestRate",
       "n": 2,
       "value": 0

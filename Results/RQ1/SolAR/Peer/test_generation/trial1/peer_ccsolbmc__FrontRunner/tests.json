@@ -2,7 +2,7 @@
   [
     {
       "args": [],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -11,7 +11,7 @@
       "args": [
         250
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "drainETH",
       "n": 2,
       "value": 0
@@ -20,16 +20,16 @@
   [
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00036"
+        "anonymous_hex_00021"
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "approve",
       "n": 2,
       "value": 0
@@ -38,16 +38,16 @@
   [
     {
       "args": [],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00023"
+        "anonymous_hex_00019"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "drainToken",
       "n": 2,
       "value": 0
@@ -56,7 +56,7 @@
   [
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -65,9 +65,9 @@
       "args": [
         109360479413451088350238387766506222822381554638199903146251506744132490242510,
         51,
-        "address_00032"
+        "anonymous_hex_00020"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "tokenToEth",
       "n": 2,
       "value": 0
@@ -76,7 +76,7 @@
   [
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -84,9 +84,9 @@
     {
       "args": [
         437,
-        "address_00032"
+        "anonymous_hex_00020"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "ethToToken",
       "n": 2,
       "value": 0

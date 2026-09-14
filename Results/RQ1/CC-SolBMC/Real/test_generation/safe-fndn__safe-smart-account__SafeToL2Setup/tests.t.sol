@@ -11,14 +11,14 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new SafeToL2Setup();
     }
 
     function test_ce_0_setupToL2() public {
-        
+
 
         target.setupToL2(address(uint160(0)));
     }

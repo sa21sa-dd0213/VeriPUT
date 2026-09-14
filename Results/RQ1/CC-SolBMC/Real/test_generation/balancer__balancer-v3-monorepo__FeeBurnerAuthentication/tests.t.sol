@@ -11,24 +11,24 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new FeeBurnerAuthentication(IProtocolFeeSweeper(address(0xDEAD0000000000000000000000000000BEEF)), address(this));
     }
 
     function test_ce_0_renounceOwnership() public {
-        
+
 
         target.renounceOwnership();
     }
     function test_ce_1_transferOwnership() public {
-        
+
 
         target.transferOwnership(address(uint160(0)));
     }
     function test_ce_2_acceptOwnership() public {
-        
+
 
         target.acceptOwnership();
     }

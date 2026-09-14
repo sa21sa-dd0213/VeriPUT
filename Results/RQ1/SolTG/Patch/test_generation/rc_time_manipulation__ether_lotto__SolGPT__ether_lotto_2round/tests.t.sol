@@ -10,6 +10,6 @@ contract EtherLotto_Test is Test {
 	function test_EtherLotto_0() public {
 		vm.prank(0x9850000000000000000000000000000000000000);
 		vm.deal(0x9850000000000000000000000000000000000000,  10 wei );
-		etherlotto0.play{ value:  10 wei }(); 
+		etherlotto0.play{ value:  10 wei }();
 	}
 }

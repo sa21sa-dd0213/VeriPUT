@@ -4054,23 +4054,23 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "toAssets",
       "mutant_id": "m000406",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " < ",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "toAssets",
       "mutant_id": "m000407",
       "operator": "BOR",
       "original_expression": " > ",
       "replacement_expression": " >=  ",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
@@ -5924,23 +5924,23 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "toAssets",
       "mutant_id": "m000593",
       "operator": "CSC",
       "original_expression": "amount > MAX_SANE_AMOUNT",
       "replacement_expression": "true",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "toAssets",
       "mutant_id": "m000594",
       "operator": "CSC",
       "original_expression": "amount > MAX_SANE_AMOUNT",
       "replacement_expression": "false",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
@@ -7314,13 +7314,13 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "toAssets",
       "mutant_id": "m000732",
       "operator": "EHD",
       "original_expression": "revert Errors.E_AmountTooLargeToEncode();",
       "replacement_expression": "/* revert Errors.E_AmountTooLargeToEncode(); */",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",

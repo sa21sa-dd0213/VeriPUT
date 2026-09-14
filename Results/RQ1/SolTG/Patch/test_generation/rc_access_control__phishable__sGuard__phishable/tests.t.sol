@@ -11,7 +11,7 @@ contract Phishable_Test is Test {
 	}
 	function test_Phishable_0() public {
 		vm.prank(0xBFFC8e8D5Cbb7f3D000000000000000000000000);
-		phishable0.withdrawAll(0x0000000000000000000000000000000000000000); 
+		phishable0.withdrawAll(0x0000000000000000000000000000000000000000);
 	}
 	function test_Phishable_1() public {
 	}

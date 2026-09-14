@@ -2,18 +2,18 @@
   [
     {
       "args": [
-        "address_00036",
+        "anonymous_hex_00021",
         0,
         "fjleblDpBfYGISaVaDHVzMvzAaDKAumKWgYbwIWSvxHQRvuGSvnBWRLWHlTLpZanhJnwvrlTbVvOFAPWcNvAzIwYUoGZTJhBJrVYPlco uoXmzfQ"
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "version",
       "n": 2,
       "value": 0
@@ -22,18 +22,18 @@
   [
     {
       "args": [
-        "address_00019",
+        "anonymous_hex_00016",
         8,
         "ZugOLOQlIWESvJFjeGAvsrikSUVPOzccHOaaEcvsOYoKXYHGSqZCtpYHaVAqakOTPSwauVTJ"
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "latestRoundData",
       "n": 2,
       "value": 0

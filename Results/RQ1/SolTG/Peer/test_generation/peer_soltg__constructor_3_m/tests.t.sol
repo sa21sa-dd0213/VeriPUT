@@ -11,10 +11,10 @@ contract A3_Test is Test {
 	}
 	function test_A3_0() public {
 		vm.prank(0x41D84a664479f1B7B00000000000000000000000);
-		a30.f3(); 
+		a30.f3();
 	}
 	function test_A3_1() public {
 		vm.prank(0x3fB65DcEbc2858C5f00000000000000000000000);
-		a31.f3(); 
+		a31.f3();
 	}
 }

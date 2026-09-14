@@ -9,6 +9,6 @@ contract MyContract_Test is Test {
 	}
 	function test_MyContract_0() public {
 		vm.prank(0x675C100c13752B46000000000000000000000000);
-		mycontract0.sendTo(0x1e28000000000000000000000000000000000000, 1); 
+		mycontract0.sendTo(0x1e28000000000000000000000000000000000000, 1);
 	}
 }

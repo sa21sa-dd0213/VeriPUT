@@ -2,14 +2,14 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "name",
       "n": 2,
       "value": 0
@@ -18,14 +18,14 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "decimals",
       "n": 2,
       "value": 0
@@ -34,18 +34,18 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00023",
-        "address_00184",
+        "anonymous_hex_00019",
+        "anonymous_hex_00022",
         1
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "transferFrom",
       "n": 2,
       "value": 0
@@ -54,14 +54,14 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "totalSupply",
       "n": 2,
       "value": 0
@@ -70,17 +70,17 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00019",
+        "anonymous_hex_00016",
         40416892181194895217721689172690865328053140686839664464720120874370552326049
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "approve",
       "n": 2,
       "value": 0
@@ -89,17 +89,17 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00404",
-        "address_00398"
+        "anonymous_hex_00027",
+        "anonymous_hex_00025"
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "allowance",
       "n": 2,
       "value": 0
@@ -108,17 +108,17 @@
   [
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00032",
+        "anonymous_hex_00020",
         2488
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "transfer",
       "n": 2,
       "value": 0
@@ -127,28 +127,28 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00184",
+        "anonymous_hex_00022",
         649386
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "decreaseAllowance",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00023",
-        "address_00184",
+        "anonymous_hex_00019",
+        "anonymous_hex_00022",
         1
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "transferFrom",
       "n": 3,
       "value": 0
@@ -157,14 +157,14 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "symbol",
       "n": 2,
       "value": 0
@@ -173,16 +173,16 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00404"
+        "anonymous_hex_00027"
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "balanceOf",
       "n": 2,
       "value": 0
@@ -191,27 +191,27 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00036",
-        "address_00410"
+        "anonymous_hex_00021",
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "allowance",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00410",
+        "anonymous_hex_00028",
         4
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "increaseAllowance",
       "n": 3,
       "value": 0

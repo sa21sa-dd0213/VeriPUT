@@ -2,18 +2,18 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00410",
-        "address_00404",
+        "anonymous_hex_00028",
+        "anonymous_hex_00027",
         1071617273385084745775296557788224096536522027728491747656909835935974884770
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "transferFrom",
       "n": 2,
       "value": 0
@@ -22,17 +22,17 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00019",
+        "anonymous_hex_00016",
         9
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "approve",
       "n": 2,
       "value": 0
@@ -41,26 +41,26 @@
   [
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00398"
+        "anonymous_hex_00025"
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "balanceOf",
       "n": 2,
       "value": 0
     },
     {
       "args": [
-        "address_00184",
+        "anonymous_hex_00022",
         76736779752828647716305383121154579661683813632647821598763693198186018322332
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "approve",
       "n": 3,
       "value": 0
@@ -69,14 +69,14 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "cda",
       "n": 2,
       "value": 0
@@ -85,17 +85,17 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00032",
+        "anonymous_hex_00020",
         2021
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "transfer",
       "n": 2,
       "value": 0

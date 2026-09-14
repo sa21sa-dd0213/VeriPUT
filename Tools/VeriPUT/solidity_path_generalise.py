@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 import argparse
 import copy
 import json
@@ -58,11 +59,11 @@ import time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from solidity_path_put import (
     CHAIN_ID_MAX,
-    ESTABLISHABLE_ENV_COORDS,  
+    ESTABLISHABLE_ENV_COORDS,
     STRATEGY_FLAGS_REFUSED,
     check_esbmc_args,
     contract_state_types)
-from solidity_ast_dependencies import (  
+from solidity_ast_dependencies import (
     SLOT_DEPENDENCY_POLICY, contract_state_esbmc_store_names, path_function_declaration_id,
     unit_mapping_slot_accesses, unit_contains_inline_assembly, unit_state_dependencies,
     unit_state_member_dependencies,
@@ -160,13 +161,13 @@ def _run_esbmc_once(esbmc,
         result_only=True,
         probe_claim_stop=None):
     pass
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     cmd = [os.path.abspath(esbmc) if os.sep in esbmc else esbmc]
     if ast:
         cmd.append(os.path.abspath(ast))
@@ -176,84 +177,84 @@ def _run_esbmc_once(esbmc,
         "--solidity-max-tx",
         str(max_tx), "--memlimit", memlimit
     ]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     if result_only:
         cmd.append("--result-only")
     if focus:
         cmd += ["--focus-function", focus]
     cmd += extra
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     cmd += list(esbmc_args)
     cmd_line = " ".join(shlex.quote(part) for part in cmd)
     if probe_claim_stop is None:
         try:
             p = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, timeout=timeout)
         except subprocess.TimeoutExpired as e:
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
             out = _timeout_output(e)
             return (out + f"\n[run] CMD {cmd_line}\n"
                     f"[run] TIMEOUT after {timeout}s: {cmd_line}\n")
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
         return (p.stdout + p.stderr + f"\n[run] CMD {cmd_line}\n[run] EXIT {p.returncode}\n")
 
     output = []
@@ -653,12 +654,12 @@ def struct_fields(text, nested=False):
                 except ValueError:
                     pass
             elif nested and name and val.startswith("{"):
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
                 b, d2 = j + 1, 0
                 while b < n and text[b] != "{":
                     b += 1
@@ -673,18 +674,18 @@ def struct_fields(text, nested=False):
                     e += 1
                 for sub, sv in struct_fields(text[b:e + 1], nested=True).items():
                     out[f"{name}.{sub}"] = sv
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
+
+
+
                 i = e + 1
                 continue
             i = j
@@ -706,22 +707,22 @@ def coord_values(c,
         for spec in (extcall_coord_specs or []) if isinstance(spec, dict) and spec.get("coord")
     }
     for n, v in named_value_items(c.get("env"), env=True):
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         try:
             ce[n] = parse_int(v)
         except ValueError:
@@ -751,12 +752,12 @@ def coord_values(c,
                     refused.append(f"{n} ({bty}: dynamic bytes aggregate without a "
                                    "concrete length field)")
                 continue
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
             fields = struct_fields(v)
             for fn, fv in fields.items():
                 ce[f"{n}.{fn}"] = fv
@@ -779,26 +780,26 @@ def coord_values(c,
                 refused.append(f"state.{n} ({sty}: counterexample value is not a "
                                "concrete bytesN aggregate)")
                 continue
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             fields = struct_fields(v, nested=True) if state_structs else {}
             for fn, fv in fields.items():
                 ce[f"state.{n}.{fn}"] = fv
@@ -897,11 +898,11 @@ def bytes_static_value_from_ce(type_string, raw_value):
             if b < 0 or b > 255:
                 return None
             data.append(b)
-        
-        
-        
-        
-        
+
+
+
+
+
         if len(data) > n:
             if any(data[n:]):
                 return None
@@ -1002,12 +1003,12 @@ def path_cov_probe_enum_timeout(timeout, probe_witnesses):
     if not probe_witnesses:
         return timeout
     if timeout <= PATH_PROBE_ENUM_MIN_S + 30:
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
         return max(1, int(timeout * PATH_PROBE_ENUM_FRACTION))
     fractional = int(timeout * PATH_PROBE_ENUM_FRACTION)
     capped = min(PATH_PROBE_ENUM_CAP_S, fractional)
@@ -1285,8 +1286,8 @@ def _claim_reads_keccak_local(decision, fallback_path=None):
     if not claim:
         return False
     if not path or not os.path.isfile(path):
-        
-        
+
+
         path = fallback_path
     if not path:
         return False
@@ -1491,9 +1492,9 @@ def write_ce_collection(cwd,
             "members": _ce_collection_value(members.get(enc, [])),
             "decisions": _ce_collection_value(path_decisions.get(enc, [])),
         } for enc, depth, ce in paths],
-        
-        
-        
+
+
+
         "ce_artifacts":
         ce_artifacts,
         "ce_artifact_schema":
@@ -1612,30 +1613,30 @@ def enumerate_paths(esbmc,
                     state_types=None,
                     extcall_coord_specs=None):
     pass
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     report = os.path.join(cwd, "cov-report.json")
     report_snapshot = enumeration_report_snapshot_path(cwd)
     salvage_sidecar = enumeration_salvage_path(cwd)
@@ -1660,12 +1661,12 @@ def enumerate_paths(esbmc,
         if os.path.exists(stale_probe_journal):
             os.remove(stale_probe_journal)
         enum_args = ["--cov-report-json"]
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
         enum_args += path_function_instrument_args(path_function)
         if probe_witnesses:
             enum_args += [
@@ -1742,7 +1743,7 @@ def enumerate_paths(esbmc,
                       f"{meta.get('claims_total')} claims decided); regions "
                       "still require independent certification")
             else:
-                
+
                 raise SystemExit("[enumerate] ESBMC produced no cov-report.json. "
                                  "Its output was:\n" + log)
     with open(report) as f:
@@ -1760,11 +1761,11 @@ def enumerate_paths(esbmc,
     if path_function:
         claims = [c for c in claims if same_path_function(c.get("path_function"), path_function)]
 
-    
-    
-    
-    
-    
+
+
+
+
+
     pfs = sorted({c.get("path_function") for c in claims})
     if len(pfs) > 1:
         raise SystemExit(f"[enumerate] '{unit}' names {len(pfs)} overloads; their path-id "
@@ -1773,12 +1774,12 @@ def enumerate_paths(esbmc,
 
     witnessed = [c for c in claims if c.get("status") == "F"]
 
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     if not witnessed:
         any_f = [c for c in rep.get("claims", []) if c.get("status") == "F"]
         if any_f:
@@ -1788,10 +1789,10 @@ def enumerate_paths(esbmc,
                              f"That is a wiring failure, not a result.")
 
     out, refused = [], set()
-    
-    
-    
-    
+
+
+
+
     path_extras = {}
     path_decisions = {}
     probe_members = {}
@@ -1815,25 +1816,25 @@ def enumerate_paths(esbmc,
                                state_types=state_types,
                                extcall_coord_specs=extcall_coord_specs)
         enc = int(c["path_id"])
-        
-        
-        
+
+
+
         path_extras.setdefault(enc, payload_extras(c))
         path_decisions.setdefault(enc, [dict(d) for d in (c.get("decisions") or [])])
         refused.update(ref)
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
         vecs = [ce]
         for w in (c.get("witnesses") or []):
             wce, _ = coord_values(w,
@@ -1844,7 +1845,7 @@ def enumerate_paths(esbmc,
             vecs.append(wce)
         vecs.extend(probe_members.get((enc, int(c["path_depth"])), ()))
         out.append((enc, int(c["path_depth"]), ce, vecs))
-    
+
     seen, uniq, members = set(), [], {}
     for enc, depth, ce, vecs in out:
         if enc in seen:
@@ -1863,8 +1864,8 @@ def abi_gate_class(decisions):
     gates = [d for d in (decisions or []) if d.get("synthetic_abi_gate")]
     if not gates:
         return None
-    
-    
+
+
     return "body" if gates[0].get("arm") == "taken" else "reject"
 
 
@@ -1986,9 +1987,9 @@ def _boolean_decision_relation(inner, was_not, arm=None):
         return None
     if SIMPLE_BRANCH_RE.match(term):
         return None
-    
-    
-    
+
+
+
     want_true = negated if not was_not else not negated
     if arm == "fall-through":
         want_true = not want_true
@@ -1998,11 +1999,11 @@ def _boolean_decision_relation(inner, was_not, arm=None):
 def _decision_relation(branch_claim, arm=None):
     pass
     inner, was_not = _unwrap_not(branch_claim)
-    
-    
-    
-    
-    
+
+
+
+
+
     if "->" in (inner or ""):
         return None
     m = SIMPLE_BRANCH_RE.match(inner)
@@ -2152,8 +2153,8 @@ def _relation_retreat_coord(lhs, rhs, ce, coord_set):
         return None
     if lhs not in ce or rhs not in ce:
         return None
-    
-    
+
+
     if lhs.startswith("state.") and not rhs.startswith("state."):
         return lhs
     if rhs.startswith("state.") and not lhs.startswith("state."):
@@ -2236,8 +2237,8 @@ def _structural_decision_region(decisions,
         if lt[0] == "coord" and rt[0] == "const":
             name, value = lt[1], rt[1]
             if name not in coord_set:
-                
-                
+
+
                 if name not in pins:
                     return None
                 ok = _compare_values(pins[name], op, value)
@@ -2292,8 +2293,8 @@ def _structural_decision_region(decisions,
             retreated[pin_name] = value
             clauses.append(f"{lt[1]} {op} {rt[1]} (retreat {pin_name}=={value})")
             continue
-        
-        
+
+
         return None
     reason = ("STRUCTURAL simple decision region: every complete-path decision "
               "is a comparison over a rendered coordinate and a constant, "
@@ -2615,10 +2616,10 @@ def uncontrolled_decision_splits(paths,
                                  constants=None,
                                  path_extras=None):
     pass
-    
-    
-    
-    
+
+
+
+
     path_extras = path_extras or {}
     excluded = pinned_slice_exclusions(paths, pins, path_extras)
     paths = [path for path in paths if path[0] not in excluded]
@@ -2627,10 +2628,10 @@ def uncontrolled_decision_splits(paths,
     encs = sorted(by_enc)
     for i, enc_a in enumerate(encs):
         _depth_a, ce_a = by_enc[enc_a]
-        
-        
-        
-        
+
+
+
+
         dec_a = [
             d for d in (path_decisions.get(enc_a) or [])
             if not _decision_is_pinned_msg_value_gate(d, pins=pins)
@@ -2668,60 +2669,60 @@ def uncontrolled_decision_splits(paths,
                 evidence.append(f"decision#{d.get('index')} {claim}")
             if not evidence:
                 continue
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             if _hash_split_is_env_forceable(dec_a, dec_b, ce_a, ce_b,
                                             extcall_context, by_key):
                 continue
@@ -2907,7 +2908,7 @@ def bounded_holds_retry_scope(ast_path, contract, unit):
             return "focus", ["writer-scope derivation unavailable (module not importable)"]
     try:
         scope, evidence = writer_scope_for_unit(ast_path, contract, unit)
-    except Exception as exc:  
+    except Exception as exc:
         return "focus", [f"writer-scope derivation failed: {exc}"]
     if not scope or len(scope) < 2:
         return "focus", evidence
@@ -2968,9 +2969,9 @@ def empty_enumeration_diagnostic(cwd, unit, ast_path=None, contract=None):
             "unwind": 8,
             "scope": retry_scope,
         }
-        
-        
-        
+
+
+
         diag["retry_scope_evidence"] = list(scope_evidence)
     return diag
 
@@ -2981,7 +2982,7 @@ def state_mutability(ast_path):
         return {}
     try:
         txt = open(ast_path).read()
-        
+
         i = txt.index("{")
         ast = json.loads(txt[i:])
     except (OSError, ValueError):
@@ -2993,10 +2994,10 @@ def state_mutability(ast_path):
             if (n.get("nodeType") == "VariableDeclaration" and n.get("stateVariable")):
                 nm, mu = n.get("name"), n.get("mutability")
                 if nm and mu:
-                    
-                    
-                    
-                    
+
+
+
+
                     if out.get(nm) in (None, mu) or mu == "mutable":
                         out[nm] = mu
             for v in n.values():
@@ -3034,10 +3035,10 @@ def function_mutability(ast_path, contract=None):
         return out
 
     if contract:
-        
-        
-        
-        
+
+
+
+
         by_id, target = {}, None
 
         def index(node):
@@ -3063,7 +3064,7 @@ def function_mutability(ast_path, contract=None):
                 if inherited is not None:
                     collect(inherited, out)
             return out
-        
+
     return collect(ast, {})
 
 
@@ -3174,8 +3175,8 @@ def _call_fallback_key_candidates(call):
     if expr.get("nodeType") == "MemberAccess":
         name = expr.get("memberName")
         if name:
-            
-            
+
+
             return [(name, nargs), (name, nargs + 1)]
     return []
 
@@ -3409,11 +3410,11 @@ def mapping_state_vars(ast_path, contract=None):
     if nodes is None:
         nodes = [ast]
     out, refused = {}, []
-    
-    
-    
-    
-    
+
+
+
+
+
     structs = _struct_scalar_fields(ast)
     struct_nodes = {}
 
@@ -3639,7 +3640,7 @@ def normalise_state_member_keyed_payloads(paths):
             target = f"state.{name}[{key_value}]{tail}"
             if target == coord:
                 continue
-            
+
             fresh.setdefault(target, ce[coord])
             fresh.pop(coord, None)
             renamed.append(f"{coord} -> {target}")
@@ -3829,10 +3830,10 @@ def state_coord_source_name(coord):
     head = text[len("state."):]
     for sep in ("[", "."):
         head = head.split(sep, 1)[0]
-    
-    
-    
-    
+
+
+
+
     return re.sub(r"\$\d+$", "", head)
 
 
@@ -3855,10 +3856,10 @@ def filter_unreferenced_state_coords(coords, dependencies, budget=STATE_SLOT_COO
             subscripted.append(coord)
         else:
             kept.append(coord)
-    
-    
-    
-    
+
+
+
+
     subscripted.sort(key=lambda c: (len(str(c)), str(c)))
     kept.extend(subscripted[:budget])
     for coord in subscripted[budget:]:
@@ -3874,15 +3875,15 @@ def unit_params(ast_path, contract, unit, declaration_id=None):
     if ast is None:
         return []
     if contract:
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
         nodes = _chain_nodes(ast, contract)
         if not nodes:
             target = next(
@@ -3905,11 +3906,11 @@ def unit_params(ast_path, contract, unit, declaration_id=None):
                 params = []
                 declared_names = {p.get("name") for p in ps if p.get("name")}
                 for ordinal, p in enumerate(ps):
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
                     name = p.get("name")
                     if not name:
                         name = f"omitted_param_{ordinal}"
@@ -3927,9 +3928,9 @@ def unit_params(ast_path, contract, unit, declaration_id=None):
 
     for node in nodes:
         walk(node)
-    
-    
-    
+
+
+
     return found[-1] if found else []
 
 
@@ -3960,8 +3961,8 @@ def propose_slot_coords(maps,
 
     def spec_parts(spec):
         kts = spec[0]
-        
-        
+
+
         if isinstance(kts, str):
             kts = (kts, )
         tails = list(spec[2]) if len(spec) > 2 else [""]
@@ -4064,7 +4065,7 @@ def propose_slot_coords(maps,
         spec = maps[m]
         kts, tails = spec_parts(spec)
 
-        
+
         per_level, bad = [], False
         for lvl, kt in enumerate(kts):
             keys = [key_name(p) for p, pt in params if key_matches(p, kt)]
@@ -4083,14 +4084,14 @@ def propose_slot_coords(maps,
         if bad:
             continue
 
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         combos = [[]]
         for keys in per_level:
             combos = [c + [k] for c in combos for k in keys]
@@ -4180,10 +4181,10 @@ def constructor_param_immutables(ast_path, contract):
                 if (n.get("nodeType") == "Assignment" and n.get("operator") == "="
                         and ident_ref(n.get("rightHandSide")) in free):
                     d = decls.get(ident_ref(n.get("leftHandSide")))
-                    
-                    
-                    
-                    
+
+
+
+
                     ty = str(((d or {}).get("typeDescriptions") or {}).get("typeString") or "")
                     if (d is not None and d.get("mutability") == "immutable"
                             and not ty.startswith(("address", "contract ", "interface "))):
@@ -4219,11 +4220,11 @@ def unsettable_coords(coords, mutability):
         source_name = state_coord_source_name(c)
         if source_name is None:
             continue
-        
-        
-        
-        
-        
+
+
+
+
+
         mu = mutability.get(source_name)
         if mu in ("immutable", "constant"):
             out[c] = mu
@@ -4231,9 +4232,9 @@ def unsettable_coords(coords, mutability):
 
 
 def _pin_source_name(name):
-    
-    
-    
+
+
+
     resolved = state_coord_source_name(name)
     if resolved is not None:
         return resolved
@@ -4342,12 +4343,12 @@ def level0_candidates(paths, coords, perturb=False, type_ranges=None):
             nb = []
             if v - 1 >= (lo if lo is not None else 0):
                 nb.append(v - 1)
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
             if hi is not None and v + 1 <= hi:
                 nb.append(v + 1)
             vals = sorted(set(vals) | set(nb))
@@ -4368,8 +4369,8 @@ def outward_ladder(m, M, tlo, thi, budget=0):
         down.append(m - step)
         step *= 2
     if budget > 0:
-        
-        
+
+
         up, down = up[:budget], down[:budget]
     vals.update(up)
     vals.update(down)
@@ -4398,9 +4399,9 @@ def known_inside(paths, members, coords, pins, type_ranges=None):
     for c in coords:
         per_path = [kept[enc].get(c) for enc, _, _ in paths]
         if any(v is None for v in per_path):
-            
-            
-            
+
+
+
             continue
         los = [v[0] for v in per_path]
         his = [v[-1] for v in per_path]
@@ -4504,8 +4505,8 @@ INTERVAL_RE = re.compile(r"(\S+) in \[(" + _INT + r"), (" + _INT + r")\](?: \\ \
 
 
 def parse_intervals(text):
-    
-    
+
+
     return {m.group(1): (int(m.group(2)), int(m.group(3))) for m in INTERVAL_RE.finditer(text)}
 
 
@@ -4527,44 +4528,44 @@ def brackets_for(coord, brackets, type_range=None):
                 re.escape(coord) + r" (upper|lower) in [\[(](" + _INT + r"), (" + _INT + r")[\])]",
                 txt):
             a, b = int(m.group(2)), int(m.group(3))
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             if m.group(1) == "upper" and a <= 0 and b >= UINT256_MAX:
                 continue
             if m.group(1) == "lower" and a <= 0 and b >= UINT256_MAX:
                 continue
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             if a <= type_lo and b >= type_hi:
                 continue
             lo = a if lo is None else min(lo, a)
@@ -4627,17 +4628,17 @@ def log_ladder_values(lo, hi, probes):
     n = max(2, int(probes) + 2)
     half = max(1, n // 2)
     vals = set()
-    
-    
-    
-    
-    
+
+
+
+
+
     L = math.log2(max(lo, 1))
     H = math.log2(hi)
     for i in range(1, half + 1):
         vals.add(int(round(2 ** (L + i * (H - L) / (half + 1)))))
-    
-    
+
+
     bits = width.bit_length() - 1
     js = sorted({round(i * bits / max(1, half - 1)) for i in range(half)}) if half > 1 else [0]
     for j in js:
@@ -4651,10 +4652,10 @@ LOG_LADDER_MIN_WIDTH = 1 << 16
 def free_entry_state_establish(names, existing=None):
     pass
     out = dict(existing or {})
-    
-    
-    
-    
+
+
+
+
     keep = set(out) | {v for v in out.values() if isinstance(v, str)}
     for n in names:
         if isinstance(n, str) and n.startswith("state.") and n not in keep:
@@ -4697,42 +4698,42 @@ def outer_round(esbmc,
         if c in values_by_coord:
             spec_coords.append({"name": c, "values": [str(v) for v in values_by_coord[c]]})
             continue
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         extra = [str(v) for v in sorted(extra_values.get(c, ()))]
         if geometric:
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
             tr = (type_ranges or {}).get(c, (0, UINT256_MAX))
             vals = [str(v) for v in geometric_values(tr[1], tr[0])]
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
             pr = (prune_inside or {}).get(c)
             if pr:
                 before = len(vals)
@@ -4742,29 +4743,29 @@ def outer_round(esbmc,
             spec_coords.append({"name": c, "values": None})
         else:
             if spans is None:
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 raise SystemExit(f"[round] a LEVEL-0 round was asked about coordinate "
                                  f"'{c}', which has no candidate list. Level 0's candidates "
                                  f"are the values the siblings' own counterexamples take, so "
@@ -4776,18 +4777,18 @@ def outer_round(esbmc,
                                  f"coordinate nobody asked about")
             lo, hi = spans[c]
             if log_ladder and int(hi) - int(lo) > LOG_LADDER_MIN_WIDTH:
-                
-                
-                
+
+
+
                 rungs = [str(v) for v in log_ladder_values(lo, hi, probes)]
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
                 member_vals = set()
                 for _enc, _d, _ce in paths:
                     v = _ce.get(c)
@@ -4827,37 +4828,37 @@ def outer_round(esbmc,
         } for e, d, ce in paths]
     }
     if establish:
-        
-        
+
+
         spec["establish"] = [{
             "target": target,
             "source": source
         } for target, source in sorted(establish.items())]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     pv_note = None
     if path_values and claim_budget > 0:
         npair = sum(len(p) for p in path_values.values()) or 1
@@ -4904,12 +4905,12 @@ def outer_round(esbmc,
         for sc in spec_coords:
             if sc.get("values") is None:
                 sc["values"] = geo[sc["name"]]
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     if geometric and prune_inside is not None:
         if pruned:
             print("[probe] LADDER PRUNED: " +
@@ -4937,22 +4938,22 @@ def outer_round(esbmc,
         candidate_values_per_direction=n_probe,
         timeout_s=timeout,
     )
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     claim_lower_bound = n_probe * 2 * len(paths)
     shard_specs = single_path_outer_claim_shards(spec, claim_lower_bound)
     round_specs = []
@@ -4985,38 +4986,38 @@ def outer_round(esbmc,
             print(f"[round] outer-box coordinate shard {shard_index}/"
                   f"{len(round_specs)}: "
                   f"{round_specs[shard_index - 1][1]['coords'][0]['name']}")
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         shard_log = run(esbmc,
                         sol,
                         contract,
@@ -5034,40 +5035,40 @@ def outer_round(esbmc,
             break
     log = "\n".join(logs)
     _wall = time.time() - _t0
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     print(f"[round] {kind}: {_wall:.1f}s wall, {len(spec_coords)} coordinate(s),"
           f" ~{n_probe} candidate value(s) per direction, {len(paths)} path(s)")
     print("[round] " + round_accounting(log))
-    
-    
+
+
     _m_reached = REACHED_RE.search(log)
     try:
         _decided = int(_m_reached.group(1)) if _m_reached else 0
@@ -5075,18 +5076,18 @@ def outer_round(esbmc,
         _decided = 0
     if _decided > 0 and _wall > 0:
         LAST_ROUND_PER_CLAIM_S[0] = _wall / _decided
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
     failure = shard_failure or round_failure_reason(log)
     write_generalise_progress(
         cwd,
@@ -5320,8 +5321,8 @@ def round_accounting(log):
         dist = (f"per-query wall: n={len(times)} max={times[-1]:.3f}s "
                 f"median={med:.3f}s total={sum(times):.1f}s")
     else:
-        
-        
+
+
         dist = "per-query wall: NO query reported a decision time"
     return (f"accounting: {decided} of {total} probe(s) reached the solver; "
             f"{dist}; verdicts PASSED={npass} FAILED={nfail}")
@@ -5329,28 +5330,28 @@ def round_accounting(log):
 
 def unresolvable_coords(log):
     pass
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     return sorted(
         set(re.findall(r"has no input named '([^']+)'", log))
         | set(re.findall(r"REFUSING coordinate '([^']+)'", log)))
@@ -5359,24 +5360,24 @@ def unresolvable_coords(log):
 def round_failure_reason(log):
     pass
     unresolved = unresolvable_coords(log)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     if unresolved and not BOX_RE.search(log):
         return ("the outer-box round rejected coordinate(s) " + ", ".join(unresolved) +
                 " as unresolvable and produced no box at all, so nothing was "
@@ -5385,18 +5386,18 @@ def round_failure_reason(log):
     if "[run] TIMEOUT after" in log:
         return ("no outer-box round finished, so nothing was measured for "
                 "this path (a BUDGET outcome, not a property of the path)")
-    
-    
-    
-    
-    
+
+
+
+
+
     m = re.search(r"\[run\] EXIT (-?\d+)", log)
     if m and m.group(1) not in ("0", "1"):
         code = m.group(1)
-        
-        
-        
-        
+
+
+
+
         why = {
             "6": "conversion error",
             "124": "killed on timeout",
@@ -5487,14 +5488,14 @@ def witness_values(cwd,
         return claim_unit(c) == unit or same_path_function(c.get("path_function"), unit)
 
     def _fold(ce):
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         folded, _ev = normalise_sender_keyed_payloads([(0, 0, ce)], slot_alias)
         return folded[0][2] if folded else ce
 
@@ -5566,8 +5567,8 @@ def _dep_ast_root(ast_path):
     try:
         with open(ast_path) as f:
             txt = f.read()
-        
-        
+
+
         root = json.loads(txt[txt.index("{"):])
     except (OSError, ValueError, TypeError):
         root = None
@@ -5730,22 +5731,22 @@ def payload_extras(c):
             else None
         if not name:
             continue
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         if name in ("old_sender", "old_value"):
             continue
         try:
@@ -5900,9 +5901,9 @@ def structural_extcall_length_no_loop_regions(paths, path_decisions, coords, spe
             ]
             if not guards:
                 continue
-            
-            
-            
+
+
+
             first_guard = min(guards, key=lambda d: int(d.get("index") or 0))
             if not _is_positive_loop_guard_claim(first_guard.get("branch_claim"), loop_var, coord):
                 continue
@@ -5976,15 +5977,15 @@ def divergence_text(path_ce, wit_ce, bounded, caveats=None, ranges=None, holes=N
         return ("; the refutation carried NO payload, so the differing quantity "
                 "could not be read at all -- that is a missing harvest, NOT a "
                 "finding of 'no difference'")
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
     diff, untrusted, only_path, only_wit = divergence_pairs(path_ce, wit_ce, ranges, holes)
     asym = ""
     if only_path or only_wit:
@@ -5992,14 +5993,14 @@ def divergence_text(path_ce, wit_ce, bounded, caveats=None, ranges=None, holes=N
                 "comparison above covers only the shared ones" +
                 (f" -- only in this path's: {', '.join(only_path)}" if only_path else "") +
                 (f" -- only in the witness's: {', '.join(only_wit)}" if only_wit else ""))
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
     untrusted_note = ""
     if untrusted:
 
@@ -6017,12 +6018,12 @@ def divergence_text(path_ce, wit_ce, bounded, caveats=None, ranges=None, holes=N
                           "a nested call overwrites msg.sender with the callee's identity; "
                           "either way the reported value says nothing about what separates "
                           "these paths")
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     if not diff and untrusted:
         return ("; every difference between the witness and this path's "
                 "counterexample was on a quantity whose reported value "
@@ -6030,8 +6031,8 @@ def divergence_text(path_ce, wit_ce, bounded, caveats=None, ranges=None, holes=N
                 "usable. This is NOT the empty-divergence case: it is a payload "
                 "that could not be compared" + asym + untrusted_note)
     if not diff and asym:
-        
-        
+
+
         return ("; the witness agrees with this path's counterexample on every "
                 "scalar the two payloads have in common" + asym + untrusted_note)
     if not diff:
@@ -6040,9 +6041,9 @@ def divergence_text(path_ce, wit_ce, bounded, caveats=None, ranges=None, holes=N
                "separates the two is not in the payload at all -- an unnamed "
                "intermediate, an external-call return, or a non-scalar. This "
                "is the explicit unknown bucket, not an empty result")
-        
-        
-        
+
+
+
         for fam, why in sorted((caveats or {}).items()):
             msg += (f". The report additionally states that '{fam}' is NOT "
                     f"harvested at all, so it could not have shown up in the "
@@ -6141,8 +6142,8 @@ def multi_difference_retreat(box, holes, ce, usable, pins):
     retreatable = [item for item in actionable if item["name"] != survivor["name"]]
     if not retreatable:
         return {}
-    
-    
+
+
     retreatable.sort(key=lambda item: (item["retreat"], item["width"], item["name"]))
     return {item["name"]: item["value"] for item in retreatable}
 
@@ -6153,18 +6154,18 @@ def refutation_response(box, holes, ce, wit, pins, ranges=None, assumed_hs=None,
     if not wit:
         return "no-payload", None
     if restrict:
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
         narrowed = [t for t in usable if t[0] in restrict]
         if narrowed:
             usable = narrowed
@@ -6183,17 +6184,17 @@ def refutation_response(box, holes, ce, wit, pins, ranges=None, assumed_hs=None,
     best, best_removed, retreat = None, None, {}
     for name, pv, wv in usable:
         if name in pins or name not in box:
-            
-            
-            
-            
+
+
+
+
             continue
         lo, hi = box[name]
         hs = tuple(holes.get(name, ()))
-        
-        
-        
-        
+
+
+
+
         if not (lo <= wv <= hi and lo <= pv <= hi):
             continue
         if pv in hs:
@@ -6204,14 +6205,14 @@ def refutation_response(box, holes, ce, wit, pins, ranges=None, assumed_hs=None,
         nlo, nhi = nb
         before, after = coord_kept(lo, hi, hs), coord_kept(nlo, nhi, hs)
         if after <= 0 or after >= before:
-            
-            
+
+
             continue
         if after == 1:
-            
-            
-            
-            
+
+
+
+
             retreat[name] = pv
             continue
         removed = before - after
@@ -6222,35 +6223,35 @@ def refutation_response(box, holes, ce, wit, pins, ranges=None, assumed_hs=None,
         return "cut", (best[1], best[2], best[3], best[0])
     if retreat:
         return "pin", retreat
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     fallback = {
         n: pv
         for n, pv, _wv in usable if n in box and n not in pins and box[n][0] != box[n][1]
@@ -6258,13 +6259,13 @@ def refutation_response(box, holes, ce, wit, pins, ranges=None, assumed_hs=None,
     }
     if fallback:
         return "pin", fallback
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     outside = sorted(n for n, pv, _wv in usable
                      if n in box and n not in pins and not (box[n][0] <= pv <= box[n][1]))
     if outside:
@@ -6321,9 +6322,9 @@ def split_on_cut(box, coord, lo, hi):
     olo, ohi = box[coord]
     lo, hi = max(lo, olo), min(hi, ohi)
     if lo > hi:
-        
-        
-        
+
+
+
         return dict(box), []
     kept = dict(box)
     kept[coord] = (lo, hi)
@@ -6422,12 +6423,12 @@ def certify(esbmc,
     path = os.path.abspath(os.path.join(cwd, "cert.json"))
     with open(path, "w") as f:
         json.dump(spec, f)
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     stale = os.path.join(cwd, "cov-report.json")
     if os.path.exists(stale):
         os.remove(stale)
@@ -6446,18 +6447,18 @@ def certify(esbmc,
     log = run(esbmc,
               sol,
               contract, ["--path-cov-certify", path, "--cov-report-json"],
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
+
+
+
+
+
+
+
+
+
+
+
+
               max_tx,
               timeout,
               cwd,
@@ -6469,9 +6470,9 @@ def certify(esbmc,
     _wall = time.time() - _t0
     v = verdict(log)
     if v in ("UNKNOWN", "UNDECIDED_TRUNCATED"):
-        
-        
-        
+
+
+
         diagnostic_path = os.path.join(cwd, f"singlepoint_enc{enc}_unknown.log")
         try:
             with open(diagnostic_path, "w", encoding="utf-8") as stream:
@@ -6494,27 +6495,27 @@ def certify(esbmc,
         failure=round_failure_reason(log) if v == "UNKNOWN" else None,
     )
     why = "UNSAFE" if "RESULT: UNSAFE" in log else None
-    
-    
-    
-    
-    
+
+
+
+
+
     unexp = unexpressible_coords(log)
     if v != "FAILED":
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         if v == "UNKNOWN":
             why = round_failure_reason(log)
         elif v == "UNDECIDED_TRUNCATED":
@@ -6525,14 +6526,14 @@ def certify(esbmc,
                    "this line")
         return v, None, {}, [], unexp, why, []
     if want_property:
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         try:
             with open(os.path.join(cwd, "singlepoint_enc%s.log" % enc), "w") as _lf:
                 _lf.write(log)
@@ -6540,9 +6541,9 @@ def certify(esbmc,
             print("[certify] could not persist the single-point log for "
                   "enc=%s: %s -- the verdict below still stands, only the "
                   "trace behind it is unavailable" % (enc, _e))
-        
-        
-        
+
+
+
         blocks = violated_properties(log)
         if blocks:
             why = ("ESBMC's own `Violated property` block(s) on this "
@@ -6554,9 +6555,9 @@ def certify(esbmc,
                    "about --result-only -- but it still leaves which cause "
                    "applies UNKNOWN, and is never evidence that no inserted "
                    "check was tripped")
-    
-    
-    
+
+
+
     wit = witness_values(cwd,
                          unit,
                          state_structs=state_structs,
@@ -6571,12 +6572,12 @@ def certify(esbmc,
                                       state_types=state_types,
                                       extcall_coord_specs=extcall_coord_specs,
                                       slot_alias=slot_alias) if why == "UNSAFE" else []
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     punches = punch_targets(log, pins, box)
     cut = shrink_target(log, pins)
     if cut is None:
@@ -6606,10 +6607,10 @@ def resolve_scope(scope, focus_flag, unit):
         raise SystemExit(f"[scope] --scope {scope!r} names no unit. Use 'whole', 'focus', "
                          f"or a comma-separated list of public/external function names.")
     if unit not in names:
-        
-        
-        
-        
+
+
+
+
         raise SystemExit(f"[scope] --scope names {', '.join(names)}, which does not include "
                          f"the unit being generalised ('{unit}'). The dispatcher could then "
                          f"never enter it, so every path would come back unwitnessed and "
@@ -6836,10 +6837,10 @@ def arg_value(args, name, default=None):
 
 def run_config(args, scope_label):
     pass
-    
-    
-    
-    
+
+
+
+
     return {
         "schema":
         RUN_CONFIG_SCHEMA,
@@ -7676,16 +7677,16 @@ def main():
                     "flattened wrappers shaped as `return f(args...)`.")
     ap.add_argument("--workdir", default=None)
     args = ap.parse_args()
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
     query_max_tx = int(args.query_max_tx or 0) or args.max_tx
     if query_max_tx != args.max_tx:
         print(f"[query] --query-max-tx {query_max_tx}: outer-box rounds and certification "
@@ -7703,9 +7704,9 @@ def main():
         raise SystemExit("--enumeration-index and --enumeration-report must be "
                          "passed together")
 
-    
-    
-    
+
+
+
     refusal = check_esbmc_args(args.esbmc_arg)
     if refusal:
         raise SystemExit("[esbmc-arg] " + refusal)
@@ -7740,9 +7741,9 @@ def main():
     cwd = args.workdir or tempfile.mkdtemp(prefix="pathgen-")
     os.makedirs(cwd, exist_ok=True)
 
-    
-    
-    
+
+
+
     scope_label, focus = resolve_scope(args.scope, args.focus, args.unit)
     stamp_workdir(cwd, run_config(args, scope_label))
     write_generalise_progress(
@@ -7831,11 +7832,11 @@ def main():
                                                extcall_coord_specs=extcall_length_specs)
     args.path_function = resolved_path_function
 
-    
-    
-    
-    
-    
+
+
+
+
+
     sender_key_alias = {}
     if args.ast:
         try:
@@ -7882,14 +7883,14 @@ def main():
         salvage=read_enumeration_salvage(cwd),
     )
     if not paths:
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         fatal, why = empty_enumeration_reason(cwd, args.unit)
         empty_diag = empty_enumeration_diagnostic(cwd, args.unit,
                                                   ast_path=getattr(args, 'ast', None),
@@ -7956,56 +7957,56 @@ def main():
               ", ".join(f"enc={enc}:{kind}"
                         for enc, kind in sorted(abi_classes.items()) if kind is not None))
     if refused:
-        
-        
+
+
         print(f"[coords] UNSUPPORTED, refused as coordinates (not scalar): "
               f"{', '.join(refused)}. Every region below is a statement about "
               f"the slice through whatever values they took in the "
               f"counterexample, and does NOT generalise over them.")
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     env_names = sorted({k for _, _, ce in paths for k in ce if is_env(k)} - set(args.env_coord))
     if args.env_coord:
         print(f"[env] probed as free coordinate(s): "
               f"{', '.join(sorted(args.env_coord))}")
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     fn_mut = function_mutability(args.ast, args.contract)
     mu = fn_mut.get(args.unit)
     if args.no_auto_pin_value:
@@ -8014,13 +8015,13 @@ def main():
               "on msg.value, so leaving it unconstrained refuses certification "
               "however far the box is shrunk")
     elif "msg.value" not in {k for _, _, ce in paths for k in ce}:
-        pass  
+        pass
     elif "msg.value" in pins:
-        pass  
+        pass
     elif mu is None:
-        
-        
-        
+
+
+
         print("[env] msg.value NOT auto-pinned: this unit's stateMutability "
               "could not be read" +
               (" (no --ast given)"
@@ -8028,9 +8029,9 @@ def main():
                f"'{args.unit}')") + ". A non-payable unit cannot certify while msg.value is "
               "unconstrained, so this is a yield loss with a nameable cause")
     elif mu == "payable":
-        
-        
-        
+
+
+
         print("[env] msg.value NOT pinned: this unit is PAYABLE, so a call may "
               "carry value and pinning it to 0 would exclude reachable inputs")
     else:
@@ -8049,21 +8050,21 @@ def main():
                                                    f"{candidate['arm']}"
                                                    for candidate in candidates)
                         for enc, candidates in sorted(abi_candidates.items())))
-    
-    
-    
+
+
+
     initial_pin_excluded = pinned_slice_exclusions(paths, pins, path_extras)
     paths = [path for path in paths if path[0] not in initial_pin_excluded]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
     if args.env_coord_disagreed:
         promoted, kept = derive_env_coord_disagreed(paths, env_names, pins)
         if promoted:
@@ -8074,8 +8075,8 @@ def main():
                   "so pinning it is impossible and leaving it unconstrained "
                   "refuses certification however far the box is shrunk")
         else:
-            
-            
+
+
             print("[env] --env-coord-disagreed derived NOTHING" +
                   (": no environment quantity is in this unit's payload"
                    if not env_names else ": every candidate was excluded -- " + "; ".join(kept)) +
@@ -8126,7 +8127,7 @@ def main():
             else:
                 disagreed.append(n)
         for n, v in agreed.items():
-            pins.setdefault(n, v)  
+            pins.setdefault(n, v)
         if agreed:
             print(f"[env] pinned (all {len(paths)} paths agree): " +
                   ", ".join(f"{n}={v}" for n, v in sorted(agreed.items())))
@@ -8135,11 +8136,11 @@ def main():
                   f"{', '.join(disagreed)}. Left unconstrained, so a path "
                   f"guarded by one of these cannot certify.")
     elif env_names:
-        
-        
-        
-        
-        
+
+
+
+
+
         loose = [n for n in env_names if n not in pins]
         if loose:
             print(f"[env] {len(loose)} environment quantity(s) left "
@@ -8151,13 +8152,13 @@ def main():
 
     coords = sorted({k for _, _, ce in paths for k in ce} - set(pins) - set(env_names))
 
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     observed_payload_names = {k for _, _, ce in paths for k in ce}
     unobserved_param_coords = unobserved_scalar_parameter_coords(enumeration_param_types,
                                                                  observed_payload_names, pins,
@@ -8169,11 +8170,11 @@ def main():
               ". The path did not read these caller inputs; it did not prove "
               "that they are fixed")
 
-    
-    
-    
-    
-    
+
+
+
+
+
     state_dependency_filter = {
         "mode": "disabled",
         "live": [],
@@ -8190,13 +8191,13 @@ def main():
                                                                     args.unit,
                                                                     declaration_id=declaration_id)
     if state_deps is not None and not has_assembly:
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
         if member_key_sources:
             kept_keys = sorted(k for k in member_key_sources
                                if k not in {str(n) for n in state_deps})
@@ -8246,24 +8247,24 @@ def main():
             print("[coords] state dependency filtering disabled: inline "
                   "assembly is present in the target closure")
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     artifacts = lowering_artifacts(coords, declared_struct_fields(args.ast),
                                    enumeration_param_types)
     if artifacts:
@@ -8276,16 +8277,16 @@ def main():
 
     unsettable_query_pins = set()
     unsettable = unsettable_coords(coords, state_mutability(args.ast))
-    
-    
+
+
     deploy_coords = constructor_param_immutables(args.ast, args.contract)
     deploy_kept = sorted(c for c in unsettable
                          if state_coord_source_name(c) in deploy_coords)
     if deploy_kept and not args.deployment_coords:
-        
-        
-        
-        
+
+
+
+
         print("[coords] DEPLOYMENT coordinate(s) AVAILABLE but pinned in this run: " +
               ", ".join(deploy_kept) + ". Each is an immutable copied straight from a "
               "constructor parameter; a retry with --deployment-coords frees them and "
@@ -8327,27 +8328,27 @@ def main():
               "generalised over as if a test could set it. Pass --ast to have "
               "them pinned instead")
 
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
     if args.pin_agreed_state and args.free_entry_state:
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
         state_coords = [c for c in coords if c.startswith("state.")]
         print("[coords] --pin-agreed-state is a no-op under --free-entry-state: "
               f"{len(state_coords)} state coordinate(s) stay FREE (the query frees "
@@ -8380,7 +8381,7 @@ def main():
                 if len(vals) > 1:
                     witness_varied.append(c)
         for n, v in agreed_state.items():
-            pins.setdefault(n, v)  
+            pins.setdefault(n, v)
         if agreed_state:
             coords = [c for c in coords if c not in agreed_state]
             print(f"[coords] STATE PINNED (all {len(paths)} paths' "
@@ -8414,7 +8415,7 @@ def main():
                       "as `state.owner := msg.sender` instead of collapsing "
                       "the caller coordinate to a point")
         else:
-            
+
             if relation_kept and not varying:
                 why_state = (": every agreed state coordinate is relation-"
                              "establishable")
@@ -8440,13 +8441,13 @@ def main():
                       ", ".join(sorted(relation_kept)) +
                       ". No agreed-state pin was added for these coordinate(s)")
 
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     pin_excluded = pinned_slice_exclusions(all_paths, pins)
     if pin_excluded:
         print("[slice] excluding " + ", ".join(f"enc={enc}" for enc in sorted(pin_excluded)) +
@@ -8456,20 +8457,20 @@ def main():
         active_names = {name for _, _, ce in paths for name in ce}
         coords = [name for name in coords if name in active_names]
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     slot_added = []
     static_slot_type_ranges = {}
     slot_decision_cands = {}
@@ -8514,9 +8515,9 @@ def main():
         skipped += key_literal_skipped
         if not args.slot_coords:
             proposed, skipped = [], []
-        
-        
-        
+
+
+
         for c in args.slot_coord:
             if c not in proposed:
                 proposed.append(c)
@@ -8579,15 +8580,15 @@ def main():
                   "about the source and the budget, not about the tool: see "
                   "the lines above for each candidate's reason")
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
     payload_names = {k for _, _, ce in paths for k in ce}
     unaccounted, _where = coordinate_accounting(
         payload_names, {
@@ -8609,14 +8610,14 @@ def main():
         return 1
 
     if not coords:
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         why = []
         if unsettable:
             why.append(f"{len(unsettable)} coordinate(s) are fixed at deployment "
@@ -8764,19 +8765,19 @@ def main():
             reason=no_coord_reason,
         )
         return 0 if no_coord_certified else 1
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
     literal_constant_types = literal_state_constant_types(args.ast, args.contract)
     nonquery_pins = nonquery_literal_constant_pins(pins, literal_constant_types)
     if nonquery_pins:
@@ -8848,10 +8849,10 @@ def main():
         pass
         est = dict(relation_establishes or {})
         if args.free_entry_state:
-            
-            
-            
-            
+
+
+
+
             est = free_entry_state_establish(
                 [n for n in list(box_names) + list(query_pins()) if n not in unsettable], est)
         return est
@@ -9009,24 +9010,24 @@ def main():
             args.probe_witnesses = 0
             args.probe_ladder = False
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
     eq_values, cand = {}, {}
-    
-    
-    
-    
+
+
+
+
     unresolvable = set()
     pre_dropped_unresolvable = set()
 
@@ -9049,12 +9050,12 @@ def main():
                   "refusing the batch.")
         return dropped
 
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     type_ranges = dict(declared_type_ranges)
 
     def merge_type_ranges(measured):
@@ -9072,20 +9073,20 @@ def main():
                 print(f"[types] ignoring contradictory measured range for "
                       f"{name}: source={previous}, measured={measured_range}")
 
-    
-    
-    
-    
+
+
+
+
     at_risk = set()
     if args.level0:
         cand = level0_candidates(paths, coords)
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
         for slot_c, slot_vals in (slot_decision_cands or {}).items():
             if slot_c not in coords or slot_c in cand:
                 continue
@@ -9105,19 +9106,19 @@ def main():
                   "the value the source decision constrains it to is the only "
                   "candidate a payload cannot supply; ESBMC certification still "
                   "decides whether the region holds")
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
         l0_coords = [c for c in coords if c in cand]
         l0_skipped = [c for c in coords if c not in cand]
         if l0_skipped:
@@ -9150,14 +9151,14 @@ def main():
                 "any of them), so no level-0 round was issued at all", {}, {}, [])
         unresolvable.update(unres)
         drop_unresolvable_query_pins("level0", unres)
-        
-        
-        
-        
+
+
+
+
         merge_type_ranges(tr_new)
         if l0_failure:
-            
-            
+
+
             print(f"[level0] round measured NOTHING — {l0_failure}; "
                   f"descending to the geometric ladder for every coordinate")
         else:
@@ -9166,43 +9167,43 @@ def main():
                 pts = single_point_coords(b)
                 print(f"[level0] enc={enc} single-point on: " +
                       (", ".join(f"{n}=={b[n][0]}" for n in pts) if pts else "(none)"))
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 blind = []
                 confirmed_by_member = []
                 for n in pts:
@@ -9213,11 +9214,11 @@ def main():
                         confirmed_by_member.append(n)
                     else:
                         blind.append(n)
-                
-                
-                
-                
-                
+
+
+
+
+
                 at_risk.update(blind)
                 if confirmed_by_member:
                     print(f"[level0] enc={enc}: point on " + ", ".join(confirmed_by_member) +
@@ -9248,25 +9249,25 @@ def main():
                       "is NOT the same as 'no path has a point projection' -- "
                       "the per-path results are printed above")
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         if args.level0_perturb and at_risk:
             pert = level0_candidates(paths, coords, perturb=True, type_ranges=type_ranges)
             widened = {
@@ -9275,11 +9276,11 @@ def main():
             }
             no_range = [c for c in sorted(at_risk) if c not in type_ranges]
             if no_range:
-                
-                
-                
-                
-                
+
+
+
+
+
                 print("[level0b] ⚠ no TYPE RANGE published for " + ", ".join(no_range) +
                       ": only the LOWER neighbour is probed there. That can "
                       "refute a point but cannot establish vacuity, because "
@@ -9343,31 +9344,31 @@ def main():
                             print(f"[level0b] enc={enc}: CONFIRMED point on " + ", ".join(still) +
                                   " — the neighbour was refuted, so this is a "
                                   "genuine single-value domain")
-                    
-                    
-                    
+
+
+
                     cand = cand2
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
     prune, endpoints, kept_pool = {}, {}, {}
     probe_extra = dict(cand)
     if args.probe_witnesses:
         n_vec = {enc: len(members.get(enc) or []) for enc, _, _ in paths}
         if max(n_vec.values(), default=0) <= 1:
-            
-            
-            
-            
+
+
+
+
             print(f"[probe] ⚠ --probe-witnesses {args.probe_witnesses} was "
                   f"requested and every path came back with ONE input vector. "
                   f"Nothing below can fire. That is a statement about this "
@@ -9379,10 +9380,10 @@ def main():
             print(n)
         varied = sorted(
             (enc, c, vs) for enc, per in kept_pool.items() for c, vs in per.items() if len(vs) > 1)
-        
-        
-        
-        
+
+
+
+
         print(f"[probe] pool: {sum(n_vec.values())} input vector(s) COLLECTED "
               f"over {len(paths)} path(s) (the DISCARD line above, if any, "
               f"says how many of them were kept out of the pool); "
@@ -9390,10 +9391,10 @@ def main():
         for enc, c, vs in varied:
             print(f"[probe]   enc={enc} {c}: known members bracket "
                   f"[{vs[0]}, {vs[-1]}] ({len(vs)} distinct)")
-        
-        
-        
-        
+
+
+
+
         if not varied:
             print("[probe] no (path, coordinate) pair varied. ⛔ That is NOT "
                   "evidence that any of them is a point -- a single value "
@@ -9408,7 +9409,7 @@ def main():
         for c, vs in endpoints.items():
             probe_extra[c] = sorted(set(probe_extra.get(c, ())) | set(vs))
 
-    
+
     path_ladders = None
     if args.probe_ladder:
         if not args.probe_witnesses:
@@ -9420,11 +9421,11 @@ def main():
         for enc, _, _ in paths:
             for c, vs in sorted((kept_pool.get(enc) or {}).items()):
                 if c not in type_ranges:
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
                     no_tr.add(c)
                     continue
                 tlo, thi = type_ranges[c]
@@ -9453,14 +9454,14 @@ def main():
                 mem = kept_pool[enc][c]
                 print(f"[probe]   enc={enc} {c}: anchored at [{mem[0]}, "
                       f"{mem[-1]}], {len(vs)} rung(s)")
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         n_dropped = sum(dropped.values())
         if n_dropped:
             print(f"[probe] LADDER CAPPED at --probe-ladder-budget "
@@ -9477,16 +9478,16 @@ def main():
                 if n:
                     print(f"[probe]   enc={enc} {c}: {n} rung(s) dropped")
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
     structural_region_source = {}
     structural_holes = {}
     structural_reasons = {}
@@ -9575,7 +9576,7 @@ def main():
                     f"{target}:={source}"
                     for target, source in sorted(structural_region_establishes[enc].items())))
     elif paths:
-        
+
         if args.skip_bracket:
             brackets, regions, warned, round_failure = {}, {}, set(), None
             region_holes = {}
@@ -9611,25 +9612,25 @@ def main():
             unresolvable.update(unres)
             drop_unresolvable_query_pins("bracket", unres)
             print(f"[bracket] {brackets}")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
     last_failure = round_failure
 
-    
+
     def _span(c):
-        
-        
-        
-        
+
+
+
+
         lo, hi = (brackets_for(c, brackets, type_ranges.get(c)) or (0, UINT256_MAX))
         tlo, thi = type_ranges.get(c, (0, UINT256_MAX))
         return (max(lo, tlo), min(hi, thi))
@@ -9637,30 +9638,30 @@ def main():
     if structural_regions is None:
         spans = {c: _span(c) for c in coords}
         for r in range(args.refine_rounds):
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
             first_round_cutoff = (1.0 - DRIVER_CERTIFY_RESERVE) * args.timeout
             cutoff = first_round_cutoff if r == 0 else DRIVER_REFINE_SHARE * args.timeout
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             round_probes = args.probes
             per_claim = LAST_ROUND_PER_CLAIM_S[0]
             if per_claim and coords and paths:
@@ -9720,14 +9721,14 @@ def main():
 
     dropped_by_certify = set(pre_dropped_unresolvable)
     if unresolvable:
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         pinned_too = sorted(n for n in unresolvable if n in pins)
         print("[coords] the outer-box rounds refused " + ", ".join(sorted(unresolvable)) +
               " as coordinate(s) of this unit, so no OUTER BOX carries a "
@@ -9748,29 +9749,29 @@ def main():
                   "certified region below therefore holds for ALL values of "
                   "the dropped name(s)")
 
-    
+
     failed = dict(pin_excluded)
     failed.update(pre_failed)
     ok, ok_holes, ok_retreated, ok_established, ok_source =\
         {}, {}, {}, {}, {}
-    
-    
-    
-    
+
+
+
+
     ok_refinement_used = {}
-    
-    
-    
-    
+
+
+
+
     ok_extcall = {}
-    
-    
-    
+
+
+
     witness_check = {}
 
-    
-    
-    
+
+
+
 
     def run_single_point_witness_check(enc, depth, ce, xpins, establishes,
                                        witness_timeout=None):
@@ -9818,28 +9819,28 @@ def main():
                     "DISCHARGED, so this path's witness satisfies the "
                     "compiler-inserted checks and its concrete replay test stands")
         if wv == "FAILED":
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             _pd = path_decisions.get(enc) or {}
             _decs = _pd.get("decisions") if isinstance(_pd, dict) else _pd
             _decs = [d for d in (_decs or []) if isinstance(d, dict)]
@@ -9894,9 +9895,9 @@ def main():
             return False
         if not args.witness_check:
             return True
-        
-        
-        
+
+
+
         return witness_check.get(enc) in ("SUCCESSFUL", "HASH-UNDECIDED-FORGE")
 
     for enc, box in sorted(pre_structural_regions.items()):
@@ -9922,24 +9923,24 @@ def main():
     except (ValueError, OSError):
         pass
     try:
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       def _unbounded_coord_count(_enc):
           _box = regions.get(_enc)
           if not _box:
@@ -9959,22 +9960,22 @@ def main():
                           paths[_i][1], paths[_i][0]))
       for _region_idx, _orig_idx in enumerate(_certify_seq):
         enc, depth, ce = paths[_orig_idx]
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         _regions_left = len(paths) - _region_idx
         _budget_remaining = args.timeout - driver_elapsed()
         certify_timeout = int(max(
@@ -10003,42 +10004,42 @@ def main():
                 continue
             failed[enc] = (last_failure or "no fully bounded region was measured")
             continue
-        
-        
-        
-        
-        
+
+
+
+
+
         holes = dict(structural_seed_holes.get(enc) or (region_holes.get(enc) or {}))
         xpins = dict(path_extras.get(enc, {})) if args.pin_extcall else {}
         empty = empty_coords(box, holes)
         if empty:
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             excluded_by_pin = ce_in_region({n: (pv, pv) for n, pv in pins.items()}, {}, ce)
             if excluded_by_pin:
                 failed[enc] = (f"EXCLUDED FROM THE SLICE by the pins "
@@ -10052,10 +10053,10 @@ def main():
                                f"applied. Counting it against the certification rate "
                                f"prices a stated design cost as a search result")
                 continue
-            
-            
-            
-            
+
+
+
+
             point = {n: (ce[n], ce[n]) for n in box if n in ce}
             point_bad = ce_in_region(point, holes, ce)
             missing = sorted(set(box) - set(point))
@@ -10078,8 +10079,8 @@ def main():
                     witness_timeout=certify_timeout)
                 continue
         if enc in warned:
-            
-            
+
+
             print(f"[certify enc={enc}] region overlaps an unseparated sibling; "
                   f"certifying anyway, the query is what decides")
         if enc in structural_region_source:
@@ -10096,51 +10097,51 @@ def main():
             print(f"[certify enc={enc}] structural ABI gate recognized: "
                   f"{structural}. The normal ESBMC k-induction and non-vacuity "
                   "query is still required.")
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         if xpins:
             print(f"[certify enc={enc}] --pin-extcall: fixing " +
                   ", ".join(f"{n}=={v}" for n, v in sorted(xpins.items())) +
@@ -10161,17 +10162,17 @@ def main():
             tag = (f"enc={enc}" if args.max_region_pieces <= 1 else f"enc={enc} piece {piece_no}")
             last_wit, last_wit_box = {}, dict(box)
             last_safety_wits = []
-            
-            
-            
-            
-            
+
+
+
+
+
             prev_size = region_size(box, holes)
             reason = None
-            
-            
-            
-            
+
+
+
+
             retreated = dict(
                 structural_seed_retreats.get(enc) or structural_region_retreats.get(enc) or {})
             established = certify_establish(
@@ -10204,37 +10205,37 @@ def main():
                     state_types=enumeration_state_types,
                     extcall_coord_specs=extcall_length_specs,
                     slot_alias=sender_key_alias)
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
+
+
+
                 while unexp:
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
                     gone = [n for n in unexp if n in pins or n in box or n in holes or n in xpins]
                     if not gone:
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
+
+
+
+
                         reason = ("the certification query was REFUSED on " + ", ".join(unexp) +
                                   ", and this driver holds no pin, bound or hole "
                                   "under that spelling, so it could not drop them "
@@ -10247,19 +10248,19 @@ def main():
                         xpins.pop(n, None)
                         box.pop(n, None)
                         holes.pop(n, None)
-                        
-                        
-                        
+
+
+
                         if established.get(n) == "*":
                             established.pop(n, None)
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
+
+
+
                     dropped_by_certify.update(gone)
                     print(f"[certify {tag}] DROPPED " + ", ".join(gone) +
                           " — the certification query cannot express "
@@ -10289,17 +10290,17 @@ def main():
                         focus=focus,
                         memlimit=args.memlimit,
                         holes=holes,
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
+
+
+
+
                         esbmc_args=tuple(args.esbmc_arg),
                     certify_extra=tuple(args.certify_esbmc_arg),
                         state_structs=args.state_struct_fields,
@@ -10309,50 +10310,50 @@ def main():
                         extcall_coord_specs=extcall_length_specs,
                         slot_alias=sender_key_alias)
                 if reason is not None:
-                    
-                    
-                    
+
+
+
                     break
                 if wit:
                     last_wit = wit
                     last_wit_box = dict(box)
                     last_safety_wits = list(safety_wits or [])
                 if v == "SUCCESSFUL":
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
+
+
+
+
+
+
                     if has_ce:
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         excluded = ce_in_region({n: (v, v) for n, v in pins.items()}, {}, ce)
                         if excluded:
                             reason = ("this path is EXCLUDED FROM THE SLICE by the "
@@ -10383,16 +10384,16 @@ def main():
                               f"non-emptiness guarantee is the tool's "
                               f"non-vacuity witness alone")
                     ok[(enc, piece_no)] = box
-                    
-                    
-                    
-                    
+
+
+
+
                     ok_holes[(enc, piece_no)] = copy_holes(holes)
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
                     ok_retreated[(enc, piece_no)] = dict(retreated)
                     ok_refinement_used[(enc, piece_no)] = bool(refinement_used)
                     ok_established[(enc, piece_no)] = dict(established)
@@ -10406,19 +10407,19 @@ def main():
                               ", ".join(f"{n}=={v}" for n, v in sorted(retreated.items())))
                     break
                 if v == "VACUOUS":
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
+
+
+
+
+
+
+
+
                     reason = ("region is VACUOUS: the certification query witnessed "
                               "NO execution admitted by it that walks this path, so "
                               "every exit assert held for want of an execution. "
@@ -10426,21 +10427,21 @@ def main():
                               "a certificate")
                     break
                 if v == "UNDECIDED_TRUNCATED":
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     reason = ("the certification query returned "
                               "UNDECIDED-TRUNCATED: a loop was cut at the unwind "
                               "bound while unwinding assertions were disabled, so "
@@ -10454,17 +10455,17 @@ def main():
                               "to get a verdict")
                     break
                 if v == "UNKNOWN":
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
+
+
+
+
+
+
                     reason = ("no verdict from the certification query "
                               "(ESBMC printed neither SUCCESSFUL nor FAILED)" +
                               (f" — {unknown_why}"
@@ -10473,45 +10474,45 @@ def main():
                                "cause is NOT one of the three this driver "
                                "knows how to name"))
                     break
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 _sib_members = [sce for _se, _sd, sce in paths if _se != enc]
                 _cmp = [c for c in box if c in last_wit]
                 _known_sibling_point = bool(_cmp) and any(
@@ -10543,12 +10544,12 @@ def main():
                     print(f"[punch {tag}] " + ", ".join(f"{c} != {val}"
                                                         for c, val in usable) + f"  |R| {new_size}")
                     continue
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
                 if args.cut_policy == "spec":
                     _rng = assumed_ranges(last_wit_box, pins)
                     _ahs = assumed_holes(holes, pins)
@@ -10567,10 +10568,10 @@ def main():
                     if kind is None:
                         kind, payload = refutation_response(box, holes, ce, last_wit, pins, _rng, _ahs)
                     if kind == "coords-gate":
-                        
-                        
-                        
-                        
+
+
+
+
                         reason = (
                             "REFERRED TO THE COORDINATE GATE (method "
                             "§Coordinates), not retried: the refuting witness "
@@ -10593,18 +10594,18 @@ def main():
                                             set(last_wit_box) | set(pins), caveats, _rng, _ahs))
                         break
                     if kind == "no-retreat":
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
+
+
+
+
+
                         reason = (
                             "refuted, and §Certification's retreat does not "
                             "apply to this PIECE: every coordinate the "
@@ -10622,13 +10623,13 @@ def main():
                         break
                     if kind == "pin":
                         tiny_safety_cut_coord, tiny_safety_cut_streak = None, 0
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
                         applied = {n: v for n, v in payload.items() if box.get(n) != (v, v)}
                         if applied:
                             refinement_used = True
@@ -10641,8 +10642,8 @@ def main():
                                   f" at its x_pi value and carrying on with "
                                   f"the others  |R| {prev_size}")
                             continue
-                        
-                        
+
+
                         reason = (
                             "refuted, and every coordinate the refutation "
                             "points at is ALREADY pinned at its x_pi value, so "
@@ -10694,16 +10695,16 @@ def main():
                         set(last_wit_box) | set(pins), caveats, assumed_ranges(last_wit_box, pins),
                         assumed_holes(holes, pins)))
                     break
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
+
                 new_size = region_size(nb, holes)
                 if new_size > prev_size:
                     reason = (f"INVARIANT VIOLATED: the shrink WIDENED the region "
@@ -10712,24 +10713,24 @@ def main():
                               f"inputs that were never measured. Refusing to continue "
                               f"this path")
                     break
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
                 coord = cut_of(box, nb)
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
                 if coord is not None and coord in box:
                     olo, ohi = box[coord]
                     nlo, nhi = nb[coord]
@@ -10768,43 +10769,43 @@ def main():
                                     assumed_ranges(last_wit_box, pins), assumed_holes(holes, pins)))
             if reason is not None:
                 piece_fail.append(reason)
-        
-        
-        
-        
+
+
+
+
         if not any(k[0] == enc for k in ok):
             failed[enc] = piece_fail[0] if piece_fail else "no piece was measured"
             if len(piece_fail) > 1:
                 failed[enc] += (f" (and {len(piece_fail) - 1} further piece(s) of this "
                                 f"path also failed: " + "; ".join(piece_fail[1:]) + ")")
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             failed[enc] += run_single_point_witness_check(
                 enc, depth, ce, xpins,
                 dict(
@@ -10812,16 +10813,16 @@ def main():
                     or {}),
                 witness_timeout=certify_timeout)
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
     except BudgetStop:
         partial_after_signal = True
         print(f"[certify] BUDGET SIGNAL (SIGTERM) at {driver_elapsed():.0f}s: the certification "
@@ -10846,10 +10847,10 @@ def main():
         return 1
 
     print("\n=== CERTIFIED REGIONS ===")
-    
-    
-    
-    
+
+
+
+
     by_enc = {}
     for key in ok:
         by_enc.setdefault(key[0], []).append(key)
@@ -10861,20 +10862,20 @@ def main():
             hs = ok_holes.get(key) or {}
 
             def _one(n, lo, hi, hs=hs):
-                
-                
-                
-                
-                
+
+
+
+
+
                 v = sorted(hs.get(n, ()))
                 return (f"{n} in [{lo}, {hi}]" +
                         (" \\ {" + ", ".join(str(x) for x in v) + "}" if v else ""))
 
-            
-            
-            
-            
-            
+
+
+
+
+
             label = (f"enc={enc}"
                      if len(keys) == 1 else f"enc={enc} piece {key[1]} ({i} of {len(keys)} "
                      f"certified)")
@@ -10898,12 +10899,12 @@ def main():
             suffix = "; this path falls back to its concrete counterexample test"
         print(f"  enc={enc}: NOT CERTIFIED — {why}{suffix}")
     if dropped_by_certify:
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
         print("\n  COORDINATE ACCOUNTING, amended: " + ", ".join(sorted(dropped_by_certify)) +
               " left every bucket during certification — the query could not "
               "express them, so the pins were dropped. Every region above is "
@@ -10911,28 +10912,28 @@ def main():
               "STRONGER than the slice originally asked for. They appear in "
               "no pin list above because the list is printed after the drop")
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ce_by_enc = {e: ce for e, _d, ce in all_paths}
     depth_by_enc = {e: d for e, d, _ce in all_paths}
     enumeration_report_path = (args.enumeration_report or enumeration_report_snapshot_path(cwd))
@@ -10953,11 +10954,11 @@ def main():
         bool(args.log_ladder),
         "certify_esbmc_args":
         list(args.certify_esbmc_arg),
-        
-        
-        
-        
-        
+
+
+
+
+
         "scope":
         scope_label,
         "extcall_length_coordinates":
@@ -10968,8 +10969,8 @@ def main():
             "report": file_identity(enumeration_report_path),
             "salvage": read_enumeration_salvage(cwd),
         },
-        
-        
+
+
         "pins": {
             n: str(v)
             for n, v in sorted(pins.items())
@@ -10997,24 +10998,24 @@ def main():
                 depth_by_enc.get(key[0]),
                 "verdict":
                 "CERTIFIED",
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 "retreated": {
                     n: str(v)
                     for n, v in sorted((ok_retreated.get(key) or {}).items())
@@ -11024,10 +11025,10 @@ def main():
                     "target": target,
                     "source": source
                 } for target, source in sorted((ok_established.get(key) or {}).items())],
-                
-                
-                
-                
+
+
+
+
                 "extcall_pins": {
                     n: str(v)
                     for n, v in sorted((ok_extcall.get(key) or {}).items())
@@ -11048,10 +11049,10 @@ def main():
                 },
             } for key in sorted(ok)
         ],
-        
-        
-        
-        
+
+
+
+
         "not_certified": [
             {
                 "enc": e,
@@ -11059,12 +11060,12 @@ def main():
                 "verdict": "NOT_CERTIFIED",
                 "reason": why,
                 "concrete_fallback": concrete_fallback_cleared(e),
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
                 "witness_check": witness_check.get(e),
                 "ce": {
                     n: str(v)

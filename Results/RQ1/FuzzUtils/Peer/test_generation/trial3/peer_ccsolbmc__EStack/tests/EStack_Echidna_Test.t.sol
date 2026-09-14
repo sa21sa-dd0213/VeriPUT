@@ -15,34 +15,34 @@ contract EStack_Echidna_Test is Test {
     function setUp() public {
         target = new EStack();
     }
-    
-    function test_auto_manualswap_0() public { 
-        
+
+    function test_auto_manualswap_0() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -81,22 +81,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -159,67 +159,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 424619);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 506915);
         vm.roll(block.number + 49418);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 95357016749707917473}(67514786703852731155175145645128407547450740720877518001492349424953033066398);
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 54196);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 38916);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 6842996456625988747}(103703044317503526812056612683671758819672244137173001705073055742852217427565);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 243589);
         vm.roll(block.number + 18679);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -248,67 +248,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 25831);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 129342);
         vm.roll(block.number + 18038);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 12047);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 263949);
         vm.roll(block.number + 10965);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 115491699562441903721181332721491592033646133453293114568868767977792941109927);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 24606755554841888186426186245326738728348054951422031906148754785850260425705);
-        
+
         vm.warp(block.timestamp + 322273);
         vm.roll(block.number + 34492);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 8441665095982265751905224295594857633681952947052824624122746475969469508708);
-        
+
         vm.warp(block.timestamp + 577018);
         vm.roll(block.number + 3817);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 27987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 171278);
         vm.roll(block.number + 58561);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 275518);
         vm.roll(block.number + 44807);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 24617);
         vm.roll(block.number + 46909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000000000, 51146183154921541826182249091302042660636884845281909136487382538055575673827);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 53620);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 12923022889079523132}(81070415406908625716706734074116534309457130030857713054726070212728639944885);
-        
+
         vm.warp(block.timestamp + 322272);
         vm.roll(block.number + 273);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -346,12 +346,12 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 4924);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 22);
         vm.roll(block.number + 44307);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 253765);
         vm.roll(block.number + 6944);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -416,102 +416,102 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 775);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 172512);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 351658);
         vm.roll(block.number + 13107);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 326630);
         vm.roll(block.number + 37365);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 37139575787076060721}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 88031494308799076029045980424970156867943761765119488070711694261662588840278);
-        
+
         vm.warp(block.timestamp + 20);
         vm.roll(block.number + 42636);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 17189);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 6944);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(17588734675234304586375110901738529001426656642381693116081504436321418277428);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 12047);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(3931480);
-        
+
         vm.warp(block.timestamp + 222068);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 22527813810088912154092920647950547523862762586928872252619348392328598942827);
-        
+
         vm.warp(block.timestamp + 283451);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(22890895923534804544233645028802184103146776280130313835603055391993034516415);
-        
+
         vm.warp(block.timestamp + 499271);
         vm.roll(block.number + 26144);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 573961);
         vm.roll(block.number + 43626);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 313866);
         vm.roll(block.number + 58362);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 101);
         vm.roll(block.number + 6404);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 38278);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 30510);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 331466);
         vm.roll(block.number + 50466);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 493400);
         vm.roll(block.number + 55900);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 44807);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 176062);
         vm.roll(block.number + 31318);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -549,85 +549,85 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 6945);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 293261);
         vm.roll(block.number + 11596);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 268056);
         vm.roll(block.number + 7148);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000030000, 80329823010467695330889204180576941534608925802092452444644705958580825703789);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 5317);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 35122);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 391558);
         vm.roll(block.number + 9242);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 79238);
         vm.roll(block.number + 44456);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 565465);
         vm.roll(block.number + 25792);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 348333);
         vm.roll(block.number + 2417);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 473499);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 14962);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 36767740894760905036672526586856433992640613682187487404673914957432901904661);
-        
+
         vm.warp(block.timestamp + 389141);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 520469);
         vm.roll(block.number + 25195);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 48083314022631072526}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 363177);
         vm.roll(block.number + 39201);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 287930);
         vm.roll(block.number + 31519);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 439485);
         vm.roll(block.number + 48410);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 220469);
         vm.roll(block.number + 14762);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -669,32 +669,32 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 70030769731286873558009576036080956039043949092874546501603353386296426500410);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 144800);
         vm.roll(block.number + 40967);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 61183241434822606824}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 263949);
         vm.roll(block.number + 52324);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 97091612835302691455}(99195007024521435171022802812638647437177132632804839737374876223531993098448);
-        
+
         vm.warp(block.timestamp + 363343);
         vm.roll(block.number + 17);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 566183);
         vm.roll(block.number + 57424);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -706,86 +706,86 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 350159);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 263945);
         vm.roll(block.number + 49417);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 392284);
         vm.roll(block.number + 41818);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 322353);
         vm.roll(block.number + 56263);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x0000000000000000000000000000000000000000, 39607784767542578575904195948414021395511821089617109008723412686306386413062);
-        
+
         vm.warp(block.timestamp + 473499);
         vm.roll(block.number + 4436);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 592992);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(250);
-        
+
         vm.warp(block.timestamp + 120218);
         vm.roll(block.number + 35427);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 350164);
         vm.roll(block.number + 47696);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 64614342835016691706}(28479292037008463788326252228265389600709200607079606264296143237694261067710);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 8747);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 94977);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
     }
-    
-    
-    function test_auto_sendETHToFee_1() public { 
-        
+
+
+    function test_auto_sendETHToFee_1() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -824,22 +824,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -902,67 +902,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 424619);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 506915);
         vm.roll(block.number + 49418);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 95357016749707917473}(67514786703852731155175145645128407547450740720877518001492349424953033066398);
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 54196);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 38916);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 6842996456625988747}(103703044317503526812056612683671758819672244137173001705073055742852217427565);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 243589);
         vm.roll(block.number + 18679);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -991,42 +991,42 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 25831);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 58428);
         vm.roll(block.number + 30510);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 221380);
         vm.roll(block.number + 40496);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 322356);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 594559);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 363676);
         vm.roll(block.number + 58356);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 263944);
         vm.roll(block.number + 19);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -1085,42 +1085,42 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 28130);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 92172);
         vm.roll(block.number + 37605);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 16718273977008838050867439177119438358088498672163759671664908249605676057688);
-        
+
         vm.warp(block.timestamp + 392284);
         vm.roll(block.number + 56262);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 19);
         vm.roll(block.number + 161);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, 103645976065586339507658782533584639515229710401838830592885657615179533747402);
-        
+
         vm.warp(block.timestamp + 14567);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 321858);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 356860);
         vm.roll(block.number + 26766);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 45910);
         vm.roll(block.number + 56263);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 145153);
         vm.roll(block.number + 20271);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -1144,42 +1144,42 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 322356);
         vm.roll(block.number + 20271);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 322363);
         vm.roll(block.number + 41294);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(18578692222272876831954268729385149088471936899458798533125011391868515334778);
-        
+
         vm.warp(block.timestamp + 593);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000010000, 18187334815730354543302633610444724741160134756975828498189781268411689011510);
-        
+
         vm.warp(block.timestamp + 15677);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(37246352846530404514284515854234865431202009388386549451768947317501914295169);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 17144);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.allowance(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 103);
         vm.roll(block.number + 27467);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 363676);
         vm.roll(block.number + 25831);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 363676);
         vm.roll(block.number + 15175);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -1197,17 +1197,17 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 29646);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 493400);
         vm.roll(block.number + 4925);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 58562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 77966);
         vm.roll(block.number + 48343);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -1225,22 +1225,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 15570);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 497895);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 39378157350442139626}(20843681225789918111586038061729854477170014620332946001863260031663718425701);
-        
+
         vm.warp(block.timestamp + 289103);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 39442);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 95434);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -1282,177 +1282,177 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 42636);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 400062);
         vm.roll(block.number + 53620);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 489484);
         vm.roll(block.number + 9242);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 58361);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 14046254531898543325}(8398646297151494563631012315686);
-        
+
         vm.warp(block.timestamp + 178852);
         vm.roll(block.number + 4925);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(76753236335404601645787030017935182088222911778993545200682341510859494030105);
-        
+
         vm.warp(block.timestamp + 47977);
         vm.roll(block.number + 5016);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 525787);
         vm.roll(block.number + 14762);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 499);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 68613);
         vm.roll(block.number + 42980);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 323587);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 46067);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 13);
         vm.roll(block.number + 29544);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 68255057854594412241}(54405673680772601804905070636970270513349497320117531645254382905956464105485);
-        
+
         vm.warp(block.timestamp + 538382);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 322352);
         vm.roll(block.number + 2709);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 845);
-        
+
         vm.warp(block.timestamp + 107499);
         vm.roll(block.number + 47696);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 910);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 30667);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 558867);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 253761);
         vm.roll(block.number + 34759);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 519022);
         vm.roll(block.number + 20262);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 292598);
         vm.roll(block.number + 16092);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 235);
         vm.roll(block.number + 15952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 90611698015991967433}(78102527308552839715294657695011828557963627766886280519436328671515983513826);
-        
+
         vm.warp(block.timestamp + 32113);
         vm.roll(block.number + 30510);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 16624445025254914126237716466671447389645844156231570611800367019541224593277);
-        
+
         vm.warp(block.timestamp + 550262);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000010000, 111700670030081499368297320867067398647491482211515564874352574026352473932807);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 567454);
         vm.roll(block.number + 29467);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 56260);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 535263);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 263947);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 383243);
         vm.roll(block.number + 41455);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(17786885512799893068896610525150703975764372001402649947039289219088069054215);
-        
+
         vm.warp(block.timestamp + 158661);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 333722);
         vm.roll(block.number + 58670);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 5001);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 456614);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 470671);
         vm.roll(block.number + 4921);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 97540913937036339137318807626534554178230667508627998826318901578806256520839);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 44314);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -1493,161 +1493,161 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 52448);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 292598);
         vm.roll(block.number + 40209);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 60282471211729485384}(80765177916987035037354252212238638053496238114875683583123392424403904860574);
     }
-    
-    
-    function test_auto_setBots_2() public { 
-        
+
+
+    function test_auto_setBots_2() public {
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 38691);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 445391);
         vm.roll(block.number + 28191);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322353);
         vm.roll(block.number + 32067);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 363343);
         vm.roll(block.number + 10699);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 364695);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 60025);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 351876);
         vm.roll(block.number + 8);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 35122);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 22337);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 6478834794943663417380);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 38691);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x0000000000000000000000000000000000030000, 31389765365703423474943448110434036489431865684807386810500125433005480636470);
-        
+
         vm.warp(block.timestamp + 23);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 47977);
         vm.roll(block.number + 40967);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 321556);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 210393);
         vm.roll(block.number + 100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(36545587499608733775639177939718670864912248650982966452016063318392140768291);
-        
+
         vm.warp(block.timestamp + 113383);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 469752);
         vm.roll(block.number + 43817);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 68612);
         vm.roll(block.number + 14762);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 82670);
         vm.roll(block.number + 8);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 28191);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 425010);
         vm.roll(block.number + 23);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 1099511627775}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 53579);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 1831110531086604377697684123681709211664530103453818178571188194218145773055);
-        
+
         vm.warp(block.timestamp + 577013);
         vm.roll(block.number + 18459);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000001fffffffE, 93117549090709898185694091001568559883442399169982015550161969653480094157108);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 3545);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 300105);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 80);
-        
+
         vm.warp(block.timestamp + 322276);
         vm.roll(block.number + 4205);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 81260737830886551318}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 283451);
         vm.roll(block.number + 37);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 35353);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 156420);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, 33679811126920081599874512288571129575480545596505204008931488061705463420243);
-        
+
         vm.warp(block.timestamp + 23914);
         vm.roll(block.number + 5303);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -1659,272 +1659,272 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 18459);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 505788);
         vm.roll(block.number + 17189);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 237137);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 14161595573929943019469483686936465789187555287998308194102069932608906124608);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 49670);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 65815783370167752800}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 283451);
         vm.roll(block.number + 9195);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 85761);
         vm.roll(block.number + 5014);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 389141);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.balanceOf(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 18);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 120292);
         vm.roll(block.number + 12699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(27488319812026558368991984702067543162355406726284999184193605837898807819974);
-        
+
         vm.warp(block.timestamp + 407183);
         vm.roll(block.number + 56266);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 92197331262585146789825918892442514753322831831043348079988318955205560167612);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 53620);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 55857);
         vm.roll(block.number + 34695);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 108857428837508884250951802096303076912974632111732710802281714883024650590293);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 40651);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 275518);
         vm.roll(block.number + 47864);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 819);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 511445);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 9}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 99696);
         vm.roll(block.number + 58356);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 44802365959024946176915093260689319229975603097787142732615965479808810230244);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 40993436129603299321894226815406308159740660295705863178660687203907720964396);
-        
+
         vm.warp(block.timestamp + 253761);
         vm.roll(block.number + 37710);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 93161945612904532792488547578858056187419129499912955989815153190704437276660);
-        
+
         vm.warp(block.timestamp + 9);
         vm.roll(block.number + 25553);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 517671);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 5001);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 68614);
         vm.roll(block.number + 54255);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 517671);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 33562733834177737065}(73310713384504851502072433212360994750263906150402983971109287018519468432504);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 174024);
         vm.roll(block.number + 6352);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(0);
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 56260);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000020000, 61848076706284824591826121763257662539983660942674587495630745161943514184025);
-        
+
         vm.warp(block.timestamp + 58425);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000002fFffFffD, 196186516729428501749147);
-        
+
         vm.warp(block.timestamp + 604090);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 150132);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 253761);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(82559710970221043803327812840394059764844683000334229439047488304725432487315);
-        
+
         vm.warp(block.timestamp + 566183);
         vm.roll(block.number + 58357);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 350163);
         vm.roll(block.number + 8776);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 614);
         vm.roll(block.number + 19551);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 298268);
         vm.roll(block.number + 56264);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(12058133334680047758845330377852897906923562597833255748189902854954507148678);
-        
+
         vm.warp(block.timestamp + 220725);
         vm.roll(block.number + 20636);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 270057);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 332555);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 401313);
         vm.roll(block.number + 51071);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 391558);
         vm.roll(block.number + 56482);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 390112);
         vm.roll(block.number + 40066);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(67785608216316221751998050763692842469557463412341091932949312620592568995299);
-        
+
         vm.warp(block.timestamp + 290827);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322275);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 290827);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 16860);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 35580);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639916);
-        
+
         vm.warp(block.timestamp + 99696);
         vm.roll(block.number + 54920);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 20045);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -1963,22 +1963,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -2041,37 +2041,37 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 300105);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 50057046024760173954}(5001466312153302285940785262791377484949555659812217006906854753544211094209);
-        
+
         vm.warp(block.timestamp + 319566);
         vm.roll(block.number + 235);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 410165);
         vm.roll(block.number + 40209);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -2110,55 +2110,55 @@ contract EStack_Echidna_Test is Test {
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
     }
-    
-    
-    function test_auto_sendETHToFee_3() public { 
-        
+
+
+    function test_auto_sendETHToFee_3() public {
+
         vm.warp(block.timestamp + 242365);
         vm.roll(block.number + 25831);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 322370);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 61426);
         vm.roll(block.number + 41455);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 75685537553121465635789661213597068838298984520221371019310355029642714814902);
-        
+
         vm.warp(block.timestamp + 503651);
         vm.roll(block.number + 59235);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 89054854061790343387853055066714954366931046410845952923137675462849739283174);
-        
+
         vm.warp(block.timestamp + 497895);
         vm.roll(block.number + 7144);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 253766);
         vm.roll(block.number + 25102);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 15231);
         vm.roll(block.number + 59439);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 693);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 37733689117400603645111576631242867550153538479830938452672288540140291072319);
-        
+
         vm.warp(block.timestamp + 322365);
         vm.roll(block.number + 53954);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2184,117 +2184,117 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 57259);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 558867);
         vm.roll(block.number + 52863);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 176062);
         vm.roll(block.number + 9985);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 567520);
         vm.roll(block.number + 48833);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(110283680102319131336543641244387555443686783853318709010929132874189981895555);
-        
+
         vm.warp(block.timestamp + 103);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000010000, 2234247529449919651151224527196);
-        
+
         vm.warp(block.timestamp + 113383);
         vm.roll(block.number + 5004);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(5661671257051306655294997209079619376153887129986859351248307752525120645777);
-        
+
         vm.warp(block.timestamp + 566691);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 99);
         vm.roll(block.number + 12147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 41025603287301889694837475192065534266897541273766440288657302515638261731344);
-        
+
         vm.warp(block.timestamp + 274548);
         vm.roll(block.number + 183);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 56759908634851465257153204582688126613800633975876876588670208140162757318825);
-        
+
         vm.warp(block.timestamp + 353767);
         vm.roll(block.number + 43626);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 63598646290586890714}(57084899842708644720699650500310211789822327341645268206337966578928463492641);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 34287);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(18125425084649188873081117703049075526958711795485708492638866823550246547720);
-        
+
         vm.warp(block.timestamp + 66322);
         vm.roll(block.number + 23);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 350158);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000030000, 10903931688577387034064255693626201845236776172473905664135628927258580505217);
-        
+
         vm.warp(block.timestamp + 587288);
         vm.roll(block.number + 56736);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 2226754429915048793}(58892632966910282109052791342810363131931764794067831989649255343158305270430);
-        
+
         vm.warp(block.timestamp + 300806);
         vm.roll(block.number + 12228);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564038457584007913129639938);
-        
+
         vm.warp(block.timestamp + 285857);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 442553);
         vm.roll(block.number + 28795);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 402894);
         vm.roll(block.number + 3817);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x0000000000000000000000000000000000010000, 1060792772465261843989697478523837);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 31241);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322356);
         vm.roll(block.number + 24323);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 35965736404288531348}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 396292);
         vm.roll(block.number + 48831);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 19184443245062725409986520300203489420501257426295822462176533961637934530083);
-        
+
         vm.warp(block.timestamp + 47977);
         vm.roll(block.number + 11830);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 210393);
         vm.roll(block.number + 27726);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2343,17 +2343,17 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 17621);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 59020);
         vm.roll(block.number + 58960);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 16175);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 444810);
         vm.roll(block.number + 44002);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -2370,17 +2370,17 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 58563);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 373761);
         vm.roll(block.number + 9239);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000001fffffffE, 1659144561678737689093574702790494623901743788584137566021828602120735332905);
-        
+
         vm.warp(block.timestamp + 97163);
         vm.roll(block.number + 30129);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF, 275);
-        
+
         vm.warp(block.timestamp + 69);
         vm.roll(block.number + 32810);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2404,57 +2404,57 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 52078);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 129342);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 282168);
         vm.roll(block.number + 31652);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 208535);
         vm.roll(block.number + 59362);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 472654);
         vm.roll(block.number + 7147);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 96353879407287535542609244671317037092738953128926722860871108604181221247774);
-        
+
         vm.warp(block.timestamp + 373761);
         vm.roll(block.number + 47696);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 32491996868159468648}(76753236335404601645787030017935182088222911778993545200682341510859494030105);
-        
+
         vm.warp(block.timestamp + 54699);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 67125467668355474034}(79388327260439962397934099139171543966793848979359858361877280456564482212796);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 27791);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 7);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 322277);
         vm.roll(block.number + 5428);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 456793);
         vm.roll(block.number + 6943);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 321858);
         vm.roll(block.number + 101);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2489,102 +2489,102 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 39180);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 110405);
         vm.roll(block.number + 100);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 355147);
         vm.roll(block.number + 35122);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 62982398172158511582774818413147960426835816820679730816488964297079851600799);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 6947);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 67125467666207990484}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 39201);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 582417);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 83);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 218329);
         vm.roll(block.number + 924);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 69997838556906848222774879370182242171061398682069730811804126442369731278801);
-        
+
         vm.warp(block.timestamp + 527942);
         vm.roll(block.number + 20224);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 21);
         vm.roll(block.number + 235);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 66322);
         vm.roll(block.number + 2263);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 183);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 36327);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 174024);
         vm.roll(block.number + 12982);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000001fffffffE, 6478834794943663417380);
-        
+
         vm.warp(block.timestamp + 402894);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 91);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 263944);
         vm.roll(block.number + 6943);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 21164150056920522208}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 488678);
         vm.roll(block.number + 103);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(17883012668396022813757966701793511246075467635273695154762445826741335649497);
-        
+
         vm.warp(block.timestamp + 100520);
         vm.roll(block.number + 26331);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 348333);
         vm.roll(block.number + 7610);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 431385);
         vm.roll(block.number + 7144);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2596,12 +2596,12 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 31325);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 10);
-        
+
         vm.warp(block.timestamp + 278161);
         vm.roll(block.number + 5007);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2632,37 +2632,37 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 28233);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 79238);
         vm.roll(block.number + 40873);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -2701,22 +2701,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -2779,71 +2779,71 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 424619);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 506915);
         vm.roll(block.number + 49418);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 95357016749707917473}(67514786703852731155175145645128407547450740720877518001492349424953033066398);
     }
-    
-    
-    function test_auto_setBots_4() public { 
-        
+
+
+    function test_auto_setBots_4() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -2882,22 +2882,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -2960,67 +2960,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 424619);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 506915);
         vm.roll(block.number + 49418);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 95357016749707917473}(67514786703852731155175145645128407547450740720877518001492349424953033066398);
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 54196);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 38916);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 6842996456625988747}(103703044317503526812056612683671758819672244137173001705073055742852217427565);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 243589);
         vm.roll(block.number + 18679);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3049,7 +3049,7 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 25831);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3062,77 +3062,77 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 26220);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000030000, 34215330029928707337605092093020462048953138538552291164249906544643730911549);
-        
+
         vm.warp(block.timestamp + 14476);
         vm.roll(block.number + 35353);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 222068);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 42618);
         vm.roll(block.number + 47529);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 300105);
         vm.roll(block.number + 4922);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 3945171957010411790745901493888633600151496872295663012761031648383709319688);
-        
+
         vm.warp(block.timestamp + 582417);
         vm.roll(block.number + 58361);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 274937);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 19151685646757927282791786670634553793844618674709960784309789252340965169262);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 57044312877165518957}(1895021818019067269593020947426806926314730719578206489919318851533588189455);
-        
+
         vm.warp(block.timestamp + 511445);
         vm.roll(block.number + 16479);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 289103);
         vm.roll(block.number + 25782);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 108893);
         vm.roll(block.number + 37605);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(68977453354267597264503155533724003721136636164521245922598928133211051797121);
-        
+
         vm.warp(block.timestamp + 490669);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 208535);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 125199);
         vm.roll(block.number + 161);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 19340846066920710700013907497717845662977955688365641967277423809629359644018);
-        
+
         vm.warp(block.timestamp + 119645);
         vm.roll(block.number + 25195);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3178,87 +3178,87 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 351876);
         vm.roll(block.number + 18459);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 23609961678563834278619380855799618343714405990168613432635800138518811636896);
-        
+
         vm.warp(block.timestamp + 288329);
         vm.roll(block.number + 9239);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 137599);
         vm.roll(block.number + 52011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 523850);
         vm.roll(block.number + 17192);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 52964);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 222068);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 9418);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322370);
         vm.roll(block.number + 16860);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 214864);
         vm.roll(block.number + 24876);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 6942);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 18679);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 150132);
         vm.roll(block.number + 4205);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 6352);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 58427);
         vm.roll(block.number + 6404);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 284496);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 40085012954628596802474167308276686192572887682415976570722613153818682711475);
-        
+
         vm.warp(block.timestamp + 748);
         vm.roll(block.number + 56260);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 36028797018963967}(368424839593529143369016871399080833704634405751994010280205756739);
-        
+
         vm.warp(block.timestamp + 24617);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -3300,142 +3300,142 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 9243);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 2);
-        
+
         vm.warp(block.timestamp + 11);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 1000000000000000000003);
-        
+
         vm.warp(block.timestamp + 577016);
         vm.roll(block.number + 30418);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 230923);
         vm.roll(block.number + 775);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 492914);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 32929);
         vm.roll(block.number + 57817);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 6352);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 26298974063256471114797973629957497277524069239448854430581490333529812970666);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 58529);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 82130);
         vm.roll(block.number + 43966);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 15984);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 391558);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 25240692);
-        
+
         vm.warp(block.timestamp + 308137);
         vm.roll(block.number + 5015);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 775);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 137599);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 32113);
         vm.roll(block.number + 58561);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 80158052229355063408458347693644224506912462289552376209292180814001132007636);
-        
+
         vm.warp(block.timestamp + 319711);
         vm.roll(block.number + 16092);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 6);
         vm.roll(block.number + 5001);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 1596779672071631567210670597709743207601867436415767746177724628383253687884);
-        
+
         vm.warp(block.timestamp + 336004);
         vm.roll(block.number + 14762);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 558867);
         vm.roll(block.number + 51071);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 322358);
         vm.roll(block.number + 8);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000000000, 39252321298278766337560213117099191638309591057024457746810324484421079330006);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 484820);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, 51319017431797891115955071588317830888539061175653595871443509340526770023318);
-        
+
         vm.warp(block.timestamp + 369604);
         vm.roll(block.number + 56927);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(377);
-        
+
         vm.warp(block.timestamp + 253761);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 282168);
         vm.roll(block.number + 9245);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 10465);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3527,12 +3527,12 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 400062);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 577012);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3569,17 +3569,17 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 12788);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 284496);
         vm.roll(block.number + 36560);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 181515);
         vm.roll(block.number + 31751);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 52011);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3611,35 +3611,35 @@ contract EStack_Echidna_Test is Test {
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
     }
-    
-    
-    function test_auto_openTrading_5() public { 
-        
+
+
+    function test_auto_openTrading_5() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -3678,22 +3678,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3756,67 +3756,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 424619);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 506915);
         vm.roll(block.number + 49418);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 95357016749707917473}(67514786703852731155175145645128407547450740720877518001492349424953033066398);
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 54196);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 38916);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 6842996456625988747}(103703044317503526812056612683671758819672244137173001705073055742852217427565);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 243589);
         vm.roll(block.number + 18679);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3845,87 +3845,87 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 25831);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 58428);
         vm.roll(block.number + 30510);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 221380);
         vm.roll(block.number + 40496);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 322356);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 594559);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 363676);
         vm.roll(block.number + 58356);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 68609);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 82537902484676033579517124042628972912412221184161521163139208268931610959096);
-        
+
         vm.warp(block.timestamp + 161);
         vm.roll(block.number + 9245);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 62909807314587347043}(115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 333478);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 883);
         vm.roll(block.number + 14407);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000000000, 23111716527185795845974706591789958501944754072178772044568417186168520801481);
-        
+
         vm.warp(block.timestamp + 278161);
         vm.roll(block.number + 23498);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(99195007024521435171022802812638647437177132632804839737374876223531993098448);
-        
+
         vm.warp(block.timestamp + 51905);
         vm.roll(block.number + 6947);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 282168);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 68610);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 6);
         vm.roll(block.number + 51853);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 197719);
         vm.roll(block.number + 15527);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -3969,32 +3969,32 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 60041);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 68614);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 9387131495725718302}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 339256);
         vm.roll(block.number + 7610);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 343291);
         vm.roll(block.number + 32810);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 81070415406908625716706734074116534309457130030857713054726070212728639944885);
-        
+
         vm.warp(block.timestamp + 567454);
         vm.roll(block.number + 35353);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 492914);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -4026,142 +4026,142 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 323529);
         vm.roll(block.number + 15175);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 581079);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.totalSupply();
-        
+
         vm.warp(block.timestamp + 219970);
         vm.roll(block.number + 3895);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 263947);
         vm.roll(block.number + 3036);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 558867);
         vm.roll(block.number + 6943);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 599503);
         vm.roll(block.number + 5334);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 611);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 524045);
         vm.roll(block.number + 499);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 14476);
         vm.roll(block.number + 5004);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 581079);
         vm.roll(block.number + 8571);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 253765);
         vm.roll(block.number + 16610);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 553461);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 95478018775500104130781169293194657586283148499430085415051793704376065129063);
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 4923);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 497);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 38916);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x0000000000000000000000000000000000000000, 18);
-        
+
         vm.warp(block.timestamp + 593);
         vm.roll(block.number + 56033);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 566691);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 581079);
         vm.roll(block.number + 28191);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000030000, 69301961009864646865681806987640278299082686474546);
-        
+
         vm.warp(block.timestamp + 440889);
         vm.roll(block.number + 53998);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(722122803365257019387158614246959870877918944391436708058133187359381);
-        
+
         vm.warp(block.timestamp + 246256);
         vm.roll(block.number + 53053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 555478);
         vm.roll(block.number + 33805);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 439485);
         vm.roll(block.number + 24323);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 616);
         vm.roll(block.number + 16860);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 22723701338542751534}(57277936316901548157191496798719834357109194291774768930946535179189668675829);
-        
+
         vm.warp(block.timestamp + 15231);
         vm.roll(block.number + 40066);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 484820);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 10);
         vm.roll(block.number + 43966);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 100898);
         vm.roll(block.number + 6942);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 311869);
         vm.roll(block.number + 26190);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4211,22 +4211,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 20262);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 367018);
         vm.roll(block.number + 42863);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 31815367906725386101}(115792089237316195423570985008687907853269984665640564039457584007913129639926);
-        
+
         vm.warp(block.timestamp + 145007);
         vm.roll(block.number + 5011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 13955);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -4255,47 +4255,47 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 44296);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 187034);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 58562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 361422);
         vm.roll(block.number + 51202);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 591347);
         vm.roll(block.number + 32512);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 220547);
         vm.roll(block.number + 5007);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 350163);
         vm.roll(block.number + 43394);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 48858);
         vm.roll(block.number + 46067);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000020000, 21373175397060284434851956220578288632837532605861462547402837142450996896851);
-        
+
         vm.warp(block.timestamp + 58425);
         vm.roll(block.number + 48410);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -4313,51 +4313,51 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 50093);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 529080);
         vm.roll(block.number + 2067);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 799);
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 350161);
         vm.roll(block.number + 11479);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
     }
-    
-    
-    function test_auto_transfer_6() public { 
-        
+
+
+    function test_auto_transfer_6() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -4396,22 +4396,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -4474,77 +4474,77 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 350159);
         vm.roll(block.number + 9239);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 30680210278194226423}(457355005);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(879772454245542546750444433919263133548041385604020727217654789675760999720);
-        
+
         vm.warp(block.timestamp + 255378);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 67125467668355474033}(115232702113611104070679681843942173198501601746512139866732166515043186775224);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 18);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 17);
-        
+
         vm.warp(block.timestamp + 350160);
         vm.roll(block.number + 22);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 110146886897647536759084945162256454297009417409380585743824478512154331582860);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 51495);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 19);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 322357);
         vm.roll(block.number + 18);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4605,42 +4605,42 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 103);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 8879);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 5006);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 10479);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 322354);
         vm.roll(block.number + 13328);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 55415);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 151619);
         vm.roll(block.number + 56263);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4679,47 +4679,47 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 42181);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 6);
         vm.roll(block.number + 35122);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 68611);
         vm.roll(block.number + 48556);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(87154325087023409661427696847720268520900198247473965168837949278088267528431);
-        
+
         vm.warp(block.timestamp + 58430);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 101);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000030000, 70505105810034265796149624156356814178535676972665636887526172226618326669001);
-        
+
         vm.warp(block.timestamp + 277232);
         vm.roll(block.number + 35427);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 22869);
         vm.roll(block.number + 56265);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 253763);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -4757,82 +4757,82 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 17189);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 748);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 500809);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000030000, 8748528222420616328806417835127937110116291986400326309953101152955196741193);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 58359);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 577014);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 263946);
         vm.roll(block.number + 43687);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 4370000);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 350159);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 20);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 322363);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 577016);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 6}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 22);
         vm.roll(block.number + 14762);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4853,57 +4853,57 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 350158);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 94977);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 253763);
         vm.roll(block.number + 30125);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 350162);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 13);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 6);
         vm.roll(block.number + 58358);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 67125467668355474127}(9219922517613986519297802962007698947044359441852122218696722958426650421004);
-        
+
         vm.warp(block.timestamp + 253764);
         vm.roll(block.number + 10874);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584006913129639937);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 188803);
         vm.roll(block.number + 50690);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000010000, 115792089237316195423570985008687907853269984665640564039457584007912129639934);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 20);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -4929,17 +4929,17 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 41869);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 8);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, 0);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 67971);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5023,7 +5023,7 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5054,42 +5054,42 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 7148);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 5018);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(84953868331476068552395253266729973357709055448731543411871521988927851933726);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 65267483169329029655}(772);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 9242);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 27121);
         vm.roll(block.number + 5011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 98);
         vm.roll(block.number + 54255);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -5127,91 +5127,91 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 8);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322358);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 550822);
         vm.roll(block.number + 58559);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x0000000000000000000000000000000000020000, 78478048691324244570614665210643948193904708714400522624009829528009770839839);
     }
-    
-    
-    function test_auto_transfer_7() public { 
-        
+
+
+    function test_auto_transfer_7() public {
+
         vm.warp(block.timestamp + 184118);
         vm.roll(block.number + 246);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 54699);
         vm.roll(block.number + 48569);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 593);
         vm.roll(block.number + 21711);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 236375);
         vm.roll(block.number + 183);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 99999999999999999988}(0);
-        
+
         vm.warp(block.timestamp + 592286);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 305156);
         vm.roll(block.number + 37042);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 49);
         vm.roll(block.number + 42910);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 338676);
         vm.roll(block.number + 44307);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 105778);
         vm.roll(block.number + 28233);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 775);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 439749);
         vm.roll(block.number + 31505);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 322275);
         vm.roll(block.number + 7888);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5300,22 +5300,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 20444);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 360641);
         vm.roll(block.number + 29197);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x0000000000000000000000000000000000000000, 42836225627465476601781919814486474590616907121028001797461096273707031640653);
-        
+
         vm.warp(block.timestamp + 241556);
         vm.roll(block.number + 26766);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 257887);
         vm.roll(block.number + 48374);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 197675);
         vm.roll(block.number + 46236);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5334,17 +5334,17 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 44251);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 40873);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 351876);
         vm.roll(block.number + 27171);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 58425);
         vm.roll(block.number + 28314);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5363,262 +5363,262 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 50465);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 227136);
         vm.roll(block.number + 7032);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000, 395537651489439342354597272212969399829174157037756563094829025598);
-        
+
         vm.warp(block.timestamp + 434023);
         vm.roll(block.number + 52011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 111087);
         vm.roll(block.number + 37);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 83);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 384414);
         vm.roll(block.number + 33807);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 43929);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 535263);
         vm.roll(block.number + 53053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 50148);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 550991);
         vm.roll(block.number + 56299);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 67125467668347085524}(40268720461582393217719989049078621967203626713549687423238630689428727120889);
-        
+
         vm.warp(block.timestamp + 79840);
         vm.roll(block.number + 40066);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 473188);
         vm.roll(block.number + 870);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 274548);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 226512);
         vm.roll(block.number + 43395);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(3582564798096685369658269914823853754213575456528912335976805411615803393273);
-        
+
         vm.warp(block.timestamp + 566957);
         vm.roll(block.number + 5830);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 175014);
         vm.roll(block.number + 30667);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 45043197273004513128}(65397146566141826007855128183775257007714615617987009088857987856638961754384);
-        
+
         vm.warp(block.timestamp + 602350);
         vm.roll(block.number + 22238);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 91859812381547987129}(25820839062296523556604317415065072520367222170695911832196990087391540499427);
-        
+
         vm.warp(block.timestamp + 298443);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 102}(74785681241277044005493626733815754222322539750298406957975847102003539261413);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 7149);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 322277);
         vm.roll(block.number + 25954);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 54699);
         vm.roll(block.number + 43003);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 5012);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 464155);
         vm.roll(block.number + 4249);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 350163);
         vm.roll(block.number + 58564);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 515687);
         vm.roll(block.number + 45053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(292);
-        
+
         vm.warp(block.timestamp + 290827);
         vm.roll(block.number + 6942);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 31387);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(49070068791806685427394957108780418403390287877059054090760066510876022932752);
-        
+
         vm.warp(block.timestamp + 470671);
         vm.roll(block.number + 281);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 149823);
         vm.roll(block.number + 23883);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 115792089237316195423570985008687907853269984665640564038457584007913129639937);
-        
+
         vm.warp(block.timestamp + 551923);
         vm.roll(block.number + 53792);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 230923);
         vm.roll(block.number + 144);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
-        
+
         vm.warp(block.timestamp + 227136);
         vm.roll(block.number + 9241);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 598933);
         vm.roll(block.number + 17223);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 407183);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 493029);
         vm.roll(block.number + 42788);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 18601);
         vm.roll(block.number + 37042);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 283220);
         vm.roll(block.number + 49030);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x0000000000000000000000000000000000010000, 41941796869975964683711575470004834403013684187602003080354453761381833876310);
-        
+
         vm.warp(block.timestamp + 338612);
         vm.roll(block.number + 5019);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 720);
-        
+
         vm.warp(block.timestamp + 158661);
         vm.roll(block.number + 55480);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 227195);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 211817);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 444810);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 844);
         vm.roll(block.number + 9242);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 285857);
         vm.roll(block.number + 36327);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(19009443464475962295394132665892707104798823898213883635056341775614290201730);
-        
+
         vm.warp(block.timestamp + 547871);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 351135);
         vm.roll(block.number + 50200);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 213730);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 355147);
         vm.roll(block.number + 4926);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 693);
         vm.roll(block.number + 19397);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 90469060165283144878}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 149296);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 620);
         vm.roll(block.number + 4921);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(17);
-        
+
         vm.warp(block.timestamp + 7567);
         vm.roll(block.number + 11797);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322367);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5658,17 +5658,17 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 239801);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 574931);
         vm.roll(block.number + 18679);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 20444);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5685,136 +5685,136 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 28717);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 424090);
         vm.roll(block.number + 44314);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 303270);
         vm.roll(block.number + 30304);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 12);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 56019281254454183465}(26117273988179155868741750759986806893911578962471491485041698261334573959708);
-        
+
         vm.warp(block.timestamp + 747);
         vm.roll(block.number + 13409);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 356366);
         vm.roll(block.number + 18205);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 51502);
         vm.roll(block.number + 44977);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 56263);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322354);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 61109027263404765965}(106796113228854700215572622374042104100018881344297032924428553393744177765719);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 58529);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 559752);
         vm.roll(block.number + 55340);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 94323);
         vm.roll(block.number + 39254);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 394398);
         vm.roll(block.number + 13107);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639931);
-        
+
         vm.warp(block.timestamp + 570);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x0000000000000000000000000000000000000000, 550);
-        
+
         vm.warp(block.timestamp + 170557);
         vm.roll(block.number + 21);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 60312557832174881639821968168897285102911019306211344164992161687087901390844);
-        
+
         vm.warp(block.timestamp + 384414);
         vm.roll(block.number + 37937);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 351135);
         vm.roll(block.number + 58356);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 113607);
         vm.roll(block.number + 11797);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 22}(12689907922577829323451717330420901746789879840698500262112195826191958003834);
-        
+
         vm.warp(block.timestamp + 250846);
         vm.roll(block.number + 18164);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 198388);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 3639);
         vm.roll(block.number + 38693);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 999999999997);
     }
-    
-    
-    function test_auto_setMaxTxPercent_8() public { 
-        
+
+
+    function test_auto_setMaxTxPercent_8() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5853,22 +5853,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -5931,32 +5931,32 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 424619);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5995,17 +5995,17 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 253762);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 70973721834623635867171961155649549912771916810785053647896799766125211853933);
-        
+
         vm.warp(block.timestamp + 525248);
         vm.roll(block.number + 18);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(103);
-        
+
         vm.warp(block.timestamp + 10);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -6035,32 +6035,32 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 5014);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 322276);
         vm.roll(block.number + 56261);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 58427);
         vm.roll(block.number + 18);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 5136);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 565465);
         vm.roll(block.number + 29658);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 5007);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639926);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -6085,42 +6085,42 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000001fffffffE, 57431675592348423220740124222621878799530024379650717987050584796202441978312);
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 4922);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 68610);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 39318432347403358160569959173306709034188391235859540768430531962491197348405);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(52491235667669113709974021546235028841830977181121891716191993603759383799528);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 356229);
         vm.roll(block.number + 4925);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 577012);
         vm.roll(block.number + 4922);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 16608);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6145,67 +6145,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 100520);
         vm.roll(block.number + 18459);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000001fffffffE, 999999997);
-        
+
         vm.warp(block.timestamp + 45910);
         vm.roll(block.number + 22);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 46421);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 322363);
         vm.roll(block.number + 25831);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 235);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, 48418073111541525438075502022807289007705112225681558392683559909268765980835);
-        
+
         vm.warp(block.timestamp + 565465);
         vm.roll(block.number + 51737);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 58560);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 263944);
         vm.roll(block.number + 32840);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(8804338786497184125244709030538282693427701803223859100589325436844328601842);
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 68611);
         vm.roll(block.number + 21);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6240,12 +6240,12 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 350160);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 269238);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6284,12 +6284,12 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 19634);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 520134);
         vm.roll(block.number + 614);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 264617);
         vm.roll(block.number + 58358);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -6330,7 +6330,7 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 10479);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 23473);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6359,12 +6359,12 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 161);
         vm.roll(block.number + 7148);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6414,112 +6414,112 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 21);
         vm.roll(block.number + 55063);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 101);
         vm.roll(block.number + 4921);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 14006);
         vm.roll(block.number + 33633);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 58431);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 577017);
         vm.roll(block.number + 28191);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 391558);
         vm.roll(block.number + 5004);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 63687964049510352983888013275971655455473775150689684675250687733109887988893);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 577014);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 12);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 7144);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 323587);
         vm.roll(block.number + 5001);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 102);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 62350762660644561572302870730585309458248363563722497208712276510446017296889);
-        
+
         vm.warp(block.timestamp + 7);
         vm.roll(block.number + 58358);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(999999999999999999998);
-        
+
         vm.warp(block.timestamp + 99097);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000001fffffffE, 32238469609407644630827146444933261559636563370625264787517438516262642971642);
-        
+
         vm.warp(block.timestamp + 173183);
         vm.roll(block.number + 48556);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6580,91 +6580,91 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 49670);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 22);
         vm.roll(block.number + 7147);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 13);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 565465);
         vm.roll(block.number + 48556);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 6943);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.owner();
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 322356);
         vm.roll(block.number + 17189);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 6);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 356229);
         vm.roll(block.number + 50021);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(14426382405004484528652540140050383733040806213581465681328244157966568831770);
     }
-    
-    
-    function test_auto_openTrading_9() public { 
-        
+
+
+    function test_auto_openTrading_9() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6703,22 +6703,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6781,37 +6781,37 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 300105);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 50057046024760173954}(5001466312153302285940785262791377484949555659812217006906854753544211094209);
-        
+
         vm.warp(block.timestamp + 319566);
         vm.roll(block.number + 235);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 410165);
         vm.roll(block.number + 40209);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6849,7 +6849,7 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 58561);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 9245);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -6897,57 +6897,57 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 26331);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 355219);
         vm.roll(block.number + 6943);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 5011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 351876);
         vm.roll(block.number + 19);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 23059187854974705116}(93273122158123867541035949571202514395106454366962270380598323685942006549539);
-        
+
         vm.warp(block.timestamp + 32113);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 0);
-        
+
         vm.warp(block.timestamp + 427537);
         vm.roll(block.number + 1773);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(418);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 31318);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000000FFFFfFFF, 88884101212971101987533919562217530561427381850107478676683864368500660417053);
-        
+
         vm.warp(block.timestamp + 237137);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 8);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 171278);
         vm.roll(block.number + 5019);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6995,47 +6995,47 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 56260);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 322369);
         vm.roll(block.number + 658);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 150132);
         vm.roll(block.number + 57783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 350163);
         vm.roll(block.number + 499);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 43333);
         vm.roll(block.number + 39883);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 331466);
         vm.roll(block.number + 56448);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 93774129939587720066}(69647560959925167796666617340337666052054873563138364560867819081180724821819);
-        
+
         vm.warp(block.timestamp + 542766);
         vm.roll(block.number + 18679);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 562541);
         vm.roll(block.number + 20);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 35073210559582176182}(103259286989980614755682454319394038884043760417179063314250157445794301306504);
-        
+
         vm.warp(block.timestamp + 351876);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 52011);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7074,17 +7074,17 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 285623);
         vm.roll(block.number + 43687);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 355345);
         vm.roll(block.number + 54255);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 109841588451845120232936645154927331005607221524493839519762362170867445965910);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -7123,7 +7123,7 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49514);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 66322);
         vm.roll(block.number + 16608);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -7182,22 +7182,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 2417);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 567520);
         vm.roll(block.number + 58563);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 79378865190768214598071245229454788619219144430040783166830747384464788286615);
-        
+
         vm.warp(block.timestamp + 479453);
         vm.roll(block.number + 19);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 278161);
         vm.roll(block.number + 19);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -7224,122 +7224,122 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 21124);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 101);
         vm.roll(block.number + 6944);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 331466);
         vm.roll(block.number + 44207);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 89100628066640559705661633895519286049898793431782515901048927865143905683908);
-        
+
         vm.warp(block.timestamp + 532030);
         vm.roll(block.number + 5478);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 573961);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639835);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 13947);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639919);
-        
+
         vm.warp(block.timestamp + 322368);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 577017);
         vm.roll(block.number + 6947);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(1431);
-        
+
         vm.warp(block.timestamp + 407183);
         vm.roll(block.number + 28913);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 38278);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 363676);
         vm.roll(block.number + 10471);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 407497);
         vm.roll(block.number + 5013);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 142160);
         vm.roll(block.number + 17);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 577014);
         vm.roll(block.number + 1927);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 577017);
         vm.roll(block.number + 41855);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 5);
-        
+
         vm.warp(block.timestamp + 883);
         vm.roll(block.number + 25553);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(0);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 40209);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 71614953773722837499}(75393087066272515481355937411227253760475808577168738361272718467434153580833);
-        
+
         vm.warp(block.timestamp + 145981);
         vm.roll(block.number + 54196);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 187034);
         vm.roll(block.number + 38278);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 35353);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 44456);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 445227);
         vm.roll(block.number + 4693);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7377,57 +7377,57 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 8195);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 253764);
         vm.roll(block.number + 17189);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 466070);
         vm.roll(block.number + 883);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 389141);
         vm.roll(block.number + 10465);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 208535);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 4369999}(53191643185441470701618884692741155971975700405612464306712204874742667159398);
-        
+
         vm.warp(block.timestamp + 539322);
         vm.roll(block.number + 4924);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 101385341474008051043120228614669356154004592031342325039788996316582201198723);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 550822);
         vm.roll(block.number + 59449);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 322278);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 113191881445120181122458857756091625122856137745163939132203648278388692375445);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 18459);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.allowance(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 6216);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 592992);
         vm.roll(block.number + 1);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7454,7 +7454,7 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 100);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 6);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7477,61 +7477,61 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 214864);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 304711);
         vm.roll(block.number + 33783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 577016);
         vm.roll(block.number + 30667);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 506381);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322357);
         vm.roll(block.number + 19069);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
     }
-    
-    
-    function test_auto_manualswap_10() public { 
-        
+
+
+    function test_auto_manualswap_10() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -7570,22 +7570,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7648,102 +7648,102 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 424619);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 506915);
         vm.roll(block.number + 49418);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 95357016749707917473}(67514786703852731155175145645128407547450740720877518001492349424953033066398);
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 367938);
         vm.roll(block.number + 50689);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF, 5794216904);
-        
+
         vm.warp(block.timestamp + 486527);
         vm.roll(block.number + 844);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 577014);
         vm.roll(block.number + 26244);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 418899);
         vm.roll(block.number + 18667);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 41715);
         vm.roll(block.number + 27193);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 177776);
         vm.roll(block.number + 45281);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 231622);
         vm.roll(block.number + 900);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 471827);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 15175177272427267948}(40894828006121610479269194144327753447929491983164367097697132116453576122560);
-        
+
         vm.warp(block.timestamp + 361350);
         vm.roll(block.number + 56639);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 155372);
         vm.roll(block.number + 48833);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 464155);
         vm.roll(block.number + 5014);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 3639);
         vm.roll(block.number + 5108);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7819,37 +7819,37 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 44207);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 439561);
         vm.roll(block.number + 749);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 245916);
         vm.roll(block.number + 13817);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 390112);
         vm.roll(block.number + 58399);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 616);
         vm.roll(block.number + 51582);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 74161588523062394569}(14199211325191360569363372753109677749286182967064655154875195229290808450235);
-        
+
         vm.warp(block.timestamp + 369130);
         vm.roll(block.number + 58485);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000001fffffffE, 874);
-        
+
         vm.warp(block.timestamp + 439904);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000020000, 35136122000023718443907931118890027429170832100251051735142694794898752771218);
-        
+
         vm.warp(block.timestamp + 88461);
         vm.roll(block.number + 3429);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7914,47 +7914,47 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 55927);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 99);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 131043);
         vm.roll(block.number + 1828);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 232006);
         vm.roll(block.number + 38341);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 214331);
         vm.roll(block.number + 20464);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 335380);
         vm.roll(block.number + 48254);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 368171);
         vm.roll(block.number + 7535);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 68854057747518627000}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 497);
         vm.roll(block.number + 27193);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 211817);
         vm.roll(block.number + 41827);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 337718);
         vm.roll(block.number + 20464);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7975,391 +7975,391 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 12307);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 539123);
         vm.roll(block.number + 31325);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 353760);
         vm.roll(block.number + 16610);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(1084945228396118301848621676688626870063728352309793369628581);
-        
+
         vm.warp(block.timestamp + 233149);
         vm.roll(block.number + 25195);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 281);
-        
+
         vm.warp(block.timestamp + 119);
         vm.roll(block.number + 10538);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 105);
         vm.roll(block.number + 56262);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 197719);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 218729);
         vm.roll(block.number + 23972);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 6502810954581446841}(26751563020317676078116904896633438398807494885379687512401830778968926764228);
-        
+
         vm.warp(block.timestamp + 174);
         vm.roll(block.number + 13078);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 54109);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 39320);
         vm.roll(block.number + 5866);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 61214820366590948089}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 257562);
         vm.roll(block.number + 25340);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 40156);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 246256);
         vm.roll(block.number + 25130);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 302520);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 205476);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 274266);
         vm.roll(block.number + 7147);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 120703);
         vm.roll(block.number + 51814);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 51710393059710916400}(105907369595805725573804898260977923435145459473339721149438415563191677792852);
-        
+
         vm.warp(block.timestamp + 178852);
         vm.roll(block.number + 4387);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 83209);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 58431);
         vm.roll(block.number + 57407);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 22571);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639919);
-        
+
         vm.warp(block.timestamp + 492914);
         vm.roll(block.number + 56230);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 315300);
         vm.roll(block.number + 22156);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 427675);
         vm.roll(block.number + 46845);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 585053);
         vm.roll(block.number + 55404);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 118038);
         vm.roll(block.number + 4252);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 322273);
         vm.roll(block.number + 40636);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 59824302090147074982}(19872574762322488811097582665416913423462519760260647920898257664199024630020);
-        
+
         vm.warp(block.timestamp + 517401);
         vm.roll(block.number + 16985);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 383035);
         vm.roll(block.number + 1852);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 56302313734777596579}(50499155802355968623811217067397369854807253028209711065871206411823068726825);
-        
+
         vm.warp(block.timestamp + 495324);
         vm.roll(block.number + 5361);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 44296);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 10083352073798498967}(78516065149491141413839597554691394970767853014750138024272630927550873226315);
-        
+
         vm.warp(block.timestamp + 81);
         vm.roll(block.number + 57139);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 604145);
         vm.roll(block.number + 38693);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 253762);
         vm.roll(block.number + 21612);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 0);
-        
+
         vm.warp(block.timestamp + 386);
         vm.roll(block.number + 47107);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x0000000000000000000000000000000000020000, 791145923761929593932242375721186175187337071969355255524031781764280107811);
-        
+
         vm.warp(block.timestamp + 46774);
         vm.roll(block.number + 43609);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 111486442235950907171096631087408394549611778053923103044573557462386452317151);
-        
+
         vm.warp(block.timestamp + 305156);
         vm.roll(block.number + 43821);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 29093);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 55664760380668475032259308843842367757681401398025002633796702935711221163153);
-        
+
         vm.warp(block.timestamp + 457802);
         vm.roll(block.number + 8571);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 360261);
         vm.roll(block.number + 11420);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000010000, 113191881445120181122458857756091625122856137745163939132203648278388692375445);
-        
+
         vm.warp(block.timestamp + 332974);
         vm.roll(block.number + 5002);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 51363262510197645676630026765379857217103022066857580749953618233011382332893);
-        
+
         vm.warp(block.timestamp + 26918);
         vm.roll(block.number + 57720);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.owner();
-        
+
         vm.warp(block.timestamp + 7567);
         vm.roll(block.number + 22254);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 445391);
         vm.roll(block.number + 57516);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 31110);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 490219);
         vm.roll(block.number + 7874);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 440898);
         vm.roll(block.number + 10224);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
     }
-    
-    
-    function test_auto_setCooldownEnabled_11() public { 
-        
+
+
+    function test_auto_setCooldownEnabled_11() public {
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 38691);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 445391);
         vm.roll(block.number + 28191);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322353);
         vm.roll(block.number + 32067);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 363343);
         vm.roll(block.number + 10699);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 364695);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 60025);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 351876);
         vm.roll(block.number + 8);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 35122);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 22337);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 6478834794943663417380);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 38691);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x0000000000000000000000000000000000030000, 31389765365703423474943448110434036489431865684807386810500125433005480636470);
-        
+
         vm.warp(block.timestamp + 23);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 47977);
         vm.roll(block.number + 40967);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 321556);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 210393);
         vm.roll(block.number + 100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(36545587499608733775639177939718670864912248650982966452016063318392140768291);
-        
+
         vm.warp(block.timestamp + 113383);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 469752);
         vm.roll(block.number + 43817);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 68612);
         vm.roll(block.number + 14762);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 82670);
         vm.roll(block.number + 8);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 28191);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 425010);
         vm.roll(block.number + 23);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 1099511627775}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 53579);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 1831110531086604377697684123681709211664530103453818178571188194218145773055);
-        
+
         vm.warp(block.timestamp + 577013);
         vm.roll(block.number + 18459);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000001fffffffE, 93117549090709898185694091001568559883442399169982015550161969653480094157108);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 3545);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 300105);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 80);
-        
+
         vm.warp(block.timestamp + 322276);
         vm.roll(block.number + 4205);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 81260737830886551318}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 283451);
         vm.roll(block.number + 37);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 35353);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 156420);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, 33679811126920081599874512288571129575480545596505204008931488061705463420243);
-        
+
         vm.warp(block.timestamp + 23914);
         vm.roll(block.number + 5303);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -8371,147 +8371,147 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 18459);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 505788);
         vm.roll(block.number + 17189);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 237137);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x00000000000000000000000000000001fffffffE, 14161595573929943019469483686936465789187555287998308194102069932608906124608);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 49670);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 65815783370167752800}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 283451);
         vm.roll(block.number + 9195);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 85761);
         vm.roll(block.number + 5014);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 8019);
         vm.roll(block.number + 2709);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 285857);
         vm.roll(block.number + 51925);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 483724);
         vm.roll(block.number + 1181);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.decimals();
-        
+
         vm.warp(block.timestamp + 17);
         vm.roll(block.number + 10);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 555478);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 292598);
         vm.roll(block.number + 26925);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 277232);
         vm.roll(block.number + 19);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 76753236335404601645787030017935182088222911778993545200682341510859494030105);
-        
+
         vm.warp(block.timestamp + 125199);
         vm.roll(block.number + 7904);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 764);
         vm.roll(block.number + 31382);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 336501);
         vm.roll(block.number + 51853);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 444172);
         vm.roll(block.number + 3895);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 243506);
         vm.roll(block.number + 16091);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 461951);
         vm.roll(block.number + 30308);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x0000000000000000000000000000000000030000, 103259286989980614755682454319394038884043760417179063314250157445794301306504);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 1773);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 336974);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
-        
+
         vm.warp(block.timestamp + 271868);
         vm.roll(block.number + 57503);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 8441665095982265751905224295594857633681952947052824624122746475969469508708);
-        
+
         vm.warp(block.timestamp + 119088);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(16259603379614350680020474107422975816531942653329918192111670944854369263180);
-        
+
         vm.warp(block.timestamp + 577013);
         vm.roll(block.number + 27573);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 236375);
         vm.roll(block.number + 10);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 520134);
         vm.roll(block.number + 57259);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 41529781038374635789}(81693764471121939241492762903336096550010787942194288051718222918112084091382);
-        
+
         vm.warp(block.timestamp + 863);
         vm.roll(block.number + 19397);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 99742432077476155698}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 574931);
         vm.roll(block.number + 34305);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 570);
         vm.roll(block.number + 6216);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 181560);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -8549,72 +8549,72 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 155326);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 398932);
         vm.roll(block.number + 559);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 39975567635124649596}(193);
-        
+
         vm.warp(block.timestamp + 350158);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 572378);
         vm.roll(block.number + 26320);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 95990709328237063725}(44575332745708878429518615966433064864745445295475268574152427985309807890952);
-        
+
         vm.warp(block.timestamp + 194698);
         vm.roll(block.number + 54209);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 257887);
         vm.roll(block.number + 7143);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 562428);
         vm.roll(block.number + 25831);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 109892012143888412760118709475381501528381195238835645533575495772780926454116);
-        
+
         vm.warp(block.timestamp + 389146);
         vm.roll(block.number + 23739);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 9821345068721686205}(115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 563608);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 220479);
         vm.roll(block.number + 27348);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 156420);
         vm.roll(block.number + 45281);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 247553);
         vm.roll(block.number + 39883);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 3446);
         vm.roll(block.number + 16475);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 202942);
         vm.roll(block.number + 56262);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8627,156 +8627,156 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 56927);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 37);
         vm.roll(block.number + 43497);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 96919552295407092770}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 17197);
         vm.roll(block.number + 780);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 246);
-        
+
         vm.warp(block.timestamp + 580768);
         vm.roll(block.number + 39454);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 243506);
         vm.roll(block.number + 37605);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 231442);
         vm.roll(block.number + 231);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 65838442640575761280391239843256451335619647029789879499148075491436027062598);
-        
+
         vm.warp(block.timestamp + 538382);
         vm.roll(block.number + 28462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 300105);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 444172);
         vm.roll(block.number + 231);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 175014);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x0000000000000000000000000000000000030000, 9897286363237291304610012461181200106837951733999593731885822369540275847095);
-        
+
         vm.warp(block.timestamp + 567339);
         vm.roll(block.number + 25440);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 218729);
         vm.roll(block.number + 34385);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 247553);
         vm.roll(block.number + 20887);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000001fffffffE, 100415385603629234196911139725147989408096800525029165843225937213380707284585);
-        
+
         vm.warp(block.timestamp + 594559);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 424961);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 493400);
         vm.roll(block.number + 23165);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x0000000000000000000000000000000000010000, 104373231925979589680254052750031637369528553667004663904249305215316781975891);
-        
+
         vm.warp(block.timestamp + 506520);
         vm.roll(block.number + 12147);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 519022);
         vm.roll(block.number + 31802);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 492914);
         vm.roll(block.number + 18287);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 14567);
         vm.roll(block.number + 26267);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 138781);
         vm.roll(block.number + 29197);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 10);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000000000, 33781393604303392298596892586201417021002369424405122091990668654679528299869);
-        
+
         vm.warp(block.timestamp + 547871);
         vm.roll(block.number + 52424);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 497);
         vm.roll(block.number + 45053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 350160);
         vm.roll(block.number + 3895);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
     }
-    
-    
-    function test_auto_manualswap_12() public { 
-        
+
+
+    function test_auto_manualswap_12() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -8815,22 +8815,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8893,67 +8893,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 424619);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 506915);
         vm.roll(block.number + 49418);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 95357016749707917473}(67514786703852731155175145645128407547450740720877518001492349424953033066398);
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 54196);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 38916);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 6842996456625988747}(103703044317503526812056612683671758819672244137173001705073055742852217427565);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 243589);
         vm.roll(block.number + 18679);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8982,87 +8982,87 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 25831);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 58428);
         vm.roll(block.number + 30510);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 221380);
         vm.roll(block.number + 40496);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 322356);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 594559);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 363676);
         vm.roll(block.number + 58356);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 68609);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 82537902484676033579517124042628972912412221184161521163139208268931610959096);
-        
+
         vm.warp(block.timestamp + 161);
         vm.roll(block.number + 9245);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 62909807314587347043}(115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 333478);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 883);
         vm.roll(block.number + 14407);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000000000, 23111716527185795845974706591789958501944754072178772044568417186168520801481);
-        
+
         vm.warp(block.timestamp + 278161);
         vm.roll(block.number + 23498);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(99195007024521435171022802812638647437177132632804839737374876223531993098448);
-        
+
         vm.warp(block.timestamp + 51905);
         vm.roll(block.number + 6947);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 282168);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 68610);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 6);
         vm.roll(block.number + 51853);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 197719);
         vm.roll(block.number + 15527);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9106,62 +9106,62 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 60041);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 68614);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 9387131495725718302}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 13);
         vm.roll(block.number + 42455);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 41320429133440510966808614756214590599702930204598729951457434073876664799922);
-        
+
         vm.warp(block.timestamp + 356229);
         vm.roll(block.number + 5015);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 25257);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584006913129639936);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 35963);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 283451);
         vm.roll(block.number + 34305);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000030000, 81875130786843824794218373461965784709574228230197398237618629074516479296523);
-        
+
         vm.warp(block.timestamp + 350158);
         vm.roll(block.number + 45270);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 94323);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(614);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 51905);
         vm.roll(block.number + 49670);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9203,17 +9203,17 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 103);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 477774);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 253766);
         vm.roll(block.number + 2417);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 56264);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9231,142 +9231,142 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 58561);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 553461);
         vm.roll(block.number + 693);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 58427);
         vm.roll(block.number + 32025);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 151619);
         vm.roll(block.number + 58563);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 338676);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 263946);
         vm.roll(block.number + 53620);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 391558);
         vm.roll(block.number + 26331);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 492914);
         vm.roll(block.number + 43626);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 82670);
         vm.roll(block.number + 28293);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 8);
         vm.roll(block.number + 9242);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 210393);
         vm.roll(block.number + 5011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 230923);
         vm.roll(block.number + 5013);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 499648);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 210393);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 44307);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 163930);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 280908);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 94977);
         vm.roll(block.number + 9240);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 425010);
         vm.roll(block.number + 56266);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 274548);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 545077);
         vm.roll(block.number + 54255);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 5);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 298268);
         vm.roll(block.number + 56736);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 11}(999999999998);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 34759);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 32929);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 43966);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(49);
-        
+
         vm.warp(block.timestamp + 582417);
         vm.roll(block.number + 6);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9378,76 +9378,76 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 35122);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 235);
         vm.roll(block.number + 47529);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 67125467668355474131}(70733239434062468976518305327911566581356311833729068069328231925064703042801);
-        
+
         vm.warp(block.timestamp + 331466);
         vm.roll(block.number + 43821);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 38457978950056007172085518095213153040826923868302719680270367487449411849345);
-        
+
         vm.warp(block.timestamp + 390112);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 350160);
         vm.roll(block.number + 4923);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 45043197273004513128}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 58428);
         vm.roll(block.number + 58832);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(1524785993);
-        
+
         vm.warp(block.timestamp + 11);
         vm.roll(block.number + 15964);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
     }
-    
-    
-    function test_auto_manualsend_13() public { 
-        
+
+
+    function test_auto_manualsend_13() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9486,22 +9486,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -9564,22 +9564,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 577014);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9635,32 +9635,32 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 48811);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 19);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 614);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, 0);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 35397);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 14762);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 23);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9698,52 +9698,52 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 29027);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 58561);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 66191);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 71486995237020922406}(115792089237316195423570985008687907853269984665640564038457584007913129639936);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 322367);
         vm.roll(block.number + 48943);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 2}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 350159);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 322356);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 30182685689853723315}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 533632);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 322278);
         vm.roll(block.number + 5018);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -9767,22 +9767,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 13);
         vm.roll(block.number + 9241);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 253766);
         vm.roll(block.number + 40560);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 270057);
         vm.roll(block.number + 5014);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9814,12 +9814,12 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 282168);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 263949);
         vm.roll(block.number + 56260);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -9861,12 +9861,12 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 38278);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 572689);
         vm.roll(block.number + 56263);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 100520);
         vm.roll(block.number + 43966);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -9904,232 +9904,232 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 6941);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 19);
         vm.roll(block.number + 14762);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 322357);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 91666054978610821704613711346929322341886737719611580065975325361647713997491);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 43930);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 550822);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 332974);
         vm.roll(block.number + 7);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 103259286989980614755682454319394038884043760417179063314250157445794301306504);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 4926);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 5017);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 17449708858079513570}(97529740191471118908907362667081256947060822935788350534070836158993773696006);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 572689);
         vm.roll(block.number + 56261);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 253763);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 367864);
         vm.roll(block.number + 4965);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 70052917466197109166560322431897844134381521706290448499707146399283055051476);
-        
+
         vm.warp(block.timestamp + 322364);
         vm.roll(block.number + 6941);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 5698143962613436549}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 253766);
         vm.roll(block.number + 58356);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 447209);
         vm.roll(block.number + 58562);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 161);
         vm.roll(block.number + 33137);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 99696);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 81065934619725748879}(23008262171342426312311409480824952764073177467018177994115699630464185184279);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322355);
         vm.roll(block.number + 5015);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000000000, 63687964049510352983888013275971655455473775150689684675250687733109887988893);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 18667);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 25631317086064091220548516033508790718537641632193313329);
-        
+
         vm.warp(block.timestamp + 492914);
         vm.roll(block.number + 9242);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 68609);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 356229);
         vm.roll(block.number + 58361);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000001fffffffE, 98);
-        
+
         vm.warp(block.timestamp + 66322);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(57495221284190883886220550869006513709769425503659728929787853019973689011793);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 9240);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639926);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 17);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.receive();
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 214864);
         vm.roll(block.number + 19);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 68613);
         vm.roll(block.number + 54196);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 413285);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 322364);
         vm.roll(block.number + 20);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 5);
         vm.roll(block.number + 18);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 4911);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000010000, 1091820545650107460018518043296376357170504131);
-        
+
         vm.warp(block.timestamp + 322357);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000010000, 64676481301465685295537855977189986456920348393987542593968622144031779806130);
-        
+
         vm.warp(block.timestamp + 577013);
         vm.roll(block.number + 14846);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 99999999999999999993}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 99696);
         vm.roll(block.number + 4923);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 350163);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 214864);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 438125);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 55480);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -10167,66 +10167,66 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 5012);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 43877);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 170202);
         vm.roll(block.number + 614);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 73202831401624779111188827735551586637189870509189185458744556394864980);
-        
+
         vm.warp(block.timestamp + 45910);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 1676286079979738535643271121321751511655600365866793913949066997238285385722);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 4921);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 11);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
     }
-    
-    
-    function test_auto_manualswap_14() public { 
-        
+
+
+    function test_auto_manualswap_14() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -10265,22 +10265,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -10343,107 +10343,107 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 350159);
         vm.roll(block.number + 9239);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 30680210278194226423}(457355005);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(879772454245542546750444433919263133548041385604020727217654789675760999720);
-        
+
         vm.warp(block.timestamp + 255378);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 67125467668355474033}(115232702113611104070679681843942173198501601746512139866732166515043186775224);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 18);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 17);
-        
+
         vm.warp(block.timestamp + 350160);
         vm.roll(block.number + 22);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 110146886897647536759084945162256454297009417409380585743824478512154331582860);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 5018);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 58425);
         vm.roll(block.number + 13);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 95092135764801322279}(554);
-        
+
         vm.warp(block.timestamp + 102);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 19);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 68611);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 289103);
         vm.roll(block.number + 38259);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(67739379969718977018375680809616057338857482016234034356691201738792488860703);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 4927);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -10491,42 +10491,42 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 58559);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 4926);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 14426382405004484528652540140050383733040806213581465681328244157966568831770);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 58559);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 16777215}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000000000, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 20532797513371346290780373566529514707928505384353604389119815787025285602016);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(20795682156775910004164741959042556418854059903122558651396140521618797084558);
-        
+
         vm.warp(block.timestamp + 322357);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -10571,17 +10571,17 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 5);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 7);
         vm.roll(block.number + 5019);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 39273);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 46258696759921407060533073389200061337126604844094366258652402856651403777960);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -10593,177 +10593,177 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 524194);
         vm.roll(block.number + 43687);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 1673884455371816689573);
-        
+
         vm.warp(block.timestamp + 577017);
         vm.roll(block.number + 8056);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 31283);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 318197);
         vm.roll(block.number + 5006);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 22);
         vm.roll(block.number + 24005);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 4370001);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 7149);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 67125467668355474144}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 79374);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 103);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 255}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 168698);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 253762);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 56260);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 18446744073709551615}(115792089237316195423570985008687907853269984665640564039457584007912129639935);
-        
+
         vm.warp(block.timestamp + 28837);
         vm.roll(block.number + 58039);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 161);
         vm.roll(block.number + 49100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 25318);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 60001050584308864680}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 324776);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 748);
-        
+
         vm.warp(block.timestamp + 520134);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 235);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 44785);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 542766);
         vm.roll(block.number + 5004);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 594555);
         vm.roll(block.number + 101);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(619);
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 77639203105295782493295627724546237240655950933525284739979042910590014265543);
-        
+
         vm.warp(block.timestamp + 322353);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 378240);
         vm.roll(block.number + 7);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564038457584007913129639936);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 55627);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 21);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 9}(115792089237316195423570985008687907853269984665640564039457584007913129639931);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 59243);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 24606755554841888186426186245326738728348054951422031906148754785850260425705);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 102);
         vm.roll(block.number + 56264);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 19198);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 22);
         vm.roll(block.number + 101);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -10788,116 +10788,116 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564039457584007913129639923);
-        
+
         vm.warp(block.timestamp + 13);
         vm.roll(block.number + 50211);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 80730866249422206303722461201818431694800079802053598314784344036793690266066);
-        
+
         vm.warp(block.timestamp + 577018);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 84202808066541322313234370962362044988967425051476212484376330199479884559530);
-        
+
         vm.warp(block.timestamp + 253761);
         vm.roll(block.number + 57430);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 71294147042612928523}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322272);
         vm.roll(block.number + 161);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 14819);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 43687);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 94437);
         vm.roll(block.number + 103);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 322355);
         vm.roll(block.number + 235);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 68613);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 36126339382616726370045026218359701200182784153474825009352519119598888153540);
-        
+
         vm.warp(block.timestamp + 577013);
         vm.roll(block.number + 5014);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 42373158053944005109}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
     }
-    
-    
-    function test_auto_renounceOwnership_15() public { 
-        
+
+
+    function test_auto_renounceOwnership_15() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -10936,22 +10936,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -11014,67 +11014,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 424619);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 506915);
         vm.roll(block.number + 49418);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 95357016749707917473}(67514786703852731155175145645128407547450740720877518001492349424953033066398);
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 54196);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 38916);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 6842996456625988747}(103703044317503526812056612683671758819672244137173001705073055742852217427565);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 243589);
         vm.roll(block.number + 18679);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -11103,87 +11103,87 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 25831);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 58428);
         vm.roll(block.number + 30510);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 221380);
         vm.roll(block.number + 40496);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 322356);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 594559);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 363676);
         vm.roll(block.number + 58356);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 68609);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 82537902484676033579517124042628972912412221184161521163139208268931610959096);
-        
+
         vm.warp(block.timestamp + 161);
         vm.roll(block.number + 9245);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 62909807314587347043}(115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 333478);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 883);
         vm.roll(block.number + 14407);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000000000, 23111716527185795845974706591789958501944754072178772044568417186168520801481);
-        
+
         vm.warp(block.timestamp + 278161);
         vm.roll(block.number + 23498);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(99195007024521435171022802812638647437177132632804839737374876223531993098448);
-        
+
         vm.warp(block.timestamp + 51905);
         vm.roll(block.number + 6947);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 282168);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 68610);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 6);
         vm.roll(block.number + 51853);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 197719);
         vm.roll(block.number + 15527);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -11227,97 +11227,97 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 60041);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 68614);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 9387131495725718302}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 13);
         vm.roll(block.number + 42455);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 41320429133440510966808614756214590599702930204598729951457434073876664799922);
-        
+
         vm.warp(block.timestamp + 356229);
         vm.roll(block.number + 5015);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 476216);
         vm.roll(block.number + 15984);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 300105);
         vm.roll(block.number + 32746);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(41807759055217571076504183625936185450458012296896130026666379579527732832682);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 42910);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000010000, 60033233610122341589138134437420557321092308582793078013671700187287094510215);
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(95561983959827490381516880079581575748136992368467642853690756626820896959183);
-        
+
         vm.warp(block.timestamp + 497895);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 206826);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 91);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 230662);
         vm.roll(block.number + 9241);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 58428);
         vm.roll(block.number + 48833);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 79060417869875171410}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 158661);
         vm.roll(block.number + 25257);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 550262);
         vm.roll(block.number + 5);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 221485);
         vm.roll(block.number + 21);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -11328,206 +11328,206 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 3036);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 243589);
         vm.roll(block.number + 42636);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 26812);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 105784385349481536142154050321361763338021406625790167954679372100058324287510);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 21164150056920522208}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 36232);
         vm.roll(block.number + 17636);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 17626302649408088201}(235);
-        
+
         vm.warp(block.timestamp + 322357);
         vm.roll(block.number + 5);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 556289);
         vm.roll(block.number + 44307);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 322365);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 266940);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 55721814387623671025}(42396339745831652169871788291196332755423736414660197212066663721384122453188);
-        
+
         vm.warp(block.timestamp + 499271);
         vm.roll(block.number + 56263);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 594365);
         vm.roll(block.number + 6943);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 82670);
         vm.roll(block.number + 7919);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 256992);
         vm.roll(block.number + 40967);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 348333);
         vm.roll(block.number + 38916);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 220725);
         vm.roll(block.number + 18287);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 38916);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(72552695532559757623725651226832229342075943513343734820550838485129714139021);
-        
+
         vm.warp(block.timestamp + 253766);
         vm.roll(block.number + 45270);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 565465);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(70439339626698995809107296120420837844208015828775932298403884967980124157272);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 50897);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 577016);
         vm.roll(block.number + 20636);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 53954);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 129050);
         vm.roll(block.number + 1243);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 9752);
         vm.roll(block.number + 4927);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 8848358923383552814788951807356644433148899557762331587205965834499041558369);
-        
+
         vm.warp(block.timestamp + 577014);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 39898293541618764269297676569174287491578615865818572997943377363137058845786);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 9418);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 22337);
         vm.roll(block.number + 5013);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 29897164872790743395041804096528807018999389274717731837141280938139739309624);
-        
+
         vm.warp(block.timestamp + 29366);
         vm.roll(block.number + 4922);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 0);
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 45256);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 94323);
         vm.roll(block.number + 775);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 17930);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 6923480786352555890}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 270057);
         vm.roll(block.number + 52078);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 553461);
         vm.roll(block.number + 43966);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.name();
-        
+
         vm.warp(block.timestamp + 555478);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 35073210559582176182}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 577015);
         vm.roll(block.number + 748);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 25553);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
     }
-    
-    
-    function test_auto_transferFrom_16() public { 
-        
+
+
+    function test_auto_transferFrom_16() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -11566,22 +11566,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -11644,67 +11644,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 424619);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 506915);
         vm.roll(block.number + 49418);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 95357016749707917473}(67514786703852731155175145645128407547450740720877518001492349424953033066398);
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 54196);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 38916);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 6842996456625988747}(103703044317503526812056612683671758819672244137173001705073055742852217427565);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 243589);
         vm.roll(block.number + 18679);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -11733,87 +11733,87 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 25831);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 58428);
         vm.roll(block.number + 30510);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 221380);
         vm.roll(block.number + 40496);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 322356);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 594559);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 363676);
         vm.roll(block.number + 58356);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 68609);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x0000000000000000000000000000000000030000, 82537902484676033579517124042628972912412221184161521163139208268931610959096);
-        
+
         vm.warp(block.timestamp + 161);
         vm.roll(block.number + 9245);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 62909807314587347043}(115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 333478);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 883);
         vm.roll(block.number + 14407);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000000000, 23111716527185795845974706591789958501944754072178772044568417186168520801481);
-        
+
         vm.warp(block.timestamp + 278161);
         vm.roll(block.number + 23498);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(99195007024521435171022802812638647437177132632804839737374876223531993098448);
-        
+
         vm.warp(block.timestamp + 51905);
         vm.roll(block.number + 6947);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 282168);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 68610);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 6);
         vm.roll(block.number + 51853);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 197719);
         vm.roll(block.number + 15527);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -11857,62 +11857,62 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33783);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 60041);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 68614);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 9387131495725718302}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 13);
         vm.roll(block.number + 42455);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000020000, 41320429133440510966808614756214590599702930204598729951457434073876664799922);
-        
+
         vm.warp(block.timestamp + 356229);
         vm.roll(block.number + 5015);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 25257);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584006913129639936);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 35963);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 283451);
         vm.roll(block.number + 34305);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000030000, 81875130786843824794218373461965784709574228230197398237618629074516479296523);
-        
+
         vm.warp(block.timestamp + 350158);
         vm.roll(block.number + 45270);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 94323);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(614);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 51905);
         vm.roll(block.number + 49670);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -11954,17 +11954,17 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 103);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 477774);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 253766);
         vm.roll(block.number + 2417);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 56264);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -11982,77 +11982,77 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 58561);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 553461);
         vm.roll(block.number + 693);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 58427);
         vm.roll(block.number + 32025);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 151619);
         vm.roll(block.number + 58563);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 338676);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 263946);
         vm.roll(block.number + 53620);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 391558);
         vm.roll(block.number + 26331);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 492914);
         vm.roll(block.number + 43626);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 82670);
         vm.roll(block.number + 28293);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 8);
         vm.roll(block.number + 9242);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 3036);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 34305);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 484820);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 32417579187838217099930428845260043457366348743542489713293503861639631352148);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 658);
         vm.roll(block.number + 58357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 42268895597320287512078070452335997421376011070935910763704674846776128809649);
-        
+
         vm.warp(block.timestamp + 292598);
         vm.roll(block.number + 183);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -12070,7 +12070,7 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 56265);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -12109,12 +12109,12 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 21711);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 55063);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 92355073929516428842}(12855576546081256801298679624395969813002538433359521616365904909085315669109);
-        
+
         vm.warp(block.timestamp + 142160);
         vm.roll(block.number + 1);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -12149,47 +12149,47 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 53007);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 98);
         vm.roll(block.number + 48943);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 171278);
         vm.roll(block.number + 819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 270057);
         vm.roll(block.number + 13);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 158661);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 137599);
         vm.roll(block.number + 7);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 43333);
         vm.roll(block.number + 6);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 89280754031498465540}(10547547149684835534787484681032652139823280333565332999251597858064695751423);
-        
+
         vm.warp(block.timestamp + 125199);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 3088515412067559143}(4646569707915351510264954272524894233377028858688804016498367773840889648178);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 15231);
         vm.roll(block.number + 58832);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -12208,66 +12208,66 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 91);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 58430);
         vm.roll(block.number + 44207);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 56261);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 356229);
         vm.roll(block.number + 56264);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 102);
         vm.roll(block.number + 59160);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 4922);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000, 280619436756330352174342133178);
-        
+
         vm.warp(block.timestamp + 263948);
         vm.roll(block.number + 32025);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000020000, 99061825240078583534488724114523173913188954891199441613962444862292852291012);
     }
-    
-    
-    function test_auto_sendETHToFee_17() public { 
-        
+
+
+    function test_auto_sendETHToFee_17() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -12306,22 +12306,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -12384,67 +12384,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 424619);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 506915);
         vm.roll(block.number + 49418);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 95357016749707917473}(67514786703852731155175145645128407547450740720877518001492349424953033066398);
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 54196);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 38916);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 6842996456625988747}(103703044317503526812056612683671758819672244137173001705073055742852217427565);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 243589);
         vm.roll(block.number + 18679);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -12473,67 +12473,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 25831);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 129342);
         vm.roll(block.number + 18038);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 12047);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 263949);
         vm.roll(block.number + 10965);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 115491699562441903721181332721491592033646133453293114568868767977792941109927);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 24606755554841888186426186245326738728348054951422031906148754785850260425705);
-        
+
         vm.warp(block.timestamp + 322273);
         vm.roll(block.number + 34492);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 8441665095982265751905224295594857633681952947052824624122746475969469508708);
-        
+
         vm.warp(block.timestamp + 577018);
         vm.roll(block.number + 3817);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 27987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 171278);
         vm.roll(block.number + 58561);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 275518);
         vm.roll(block.number + 44807);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 24617);
         vm.roll(block.number + 46909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000000000, 51146183154921541826182249091302042660636884845281909136487382538055575673827);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 53620);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 12923022889079523132}(81070415406908625716706734074116534309457130030857713054726070212728639944885);
-        
+
         vm.warp(block.timestamp + 322272);
         vm.roll(block.number + 273);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -12571,12 +12571,12 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 4924);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 22);
         vm.roll(block.number + 44307);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 253765);
         vm.roll(block.number + 6944);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -12641,12 +12641,12 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 775);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 172512);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 215168);
         vm.roll(block.number + 48530);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -12682,67 +12682,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 52078);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 230);
         vm.roll(block.number + 23001);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 105778);
         vm.roll(block.number + 43701);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 18629);
         vm.roll(block.number + 14762);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 598284);
         vm.roll(block.number + 54691);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x0000000000000000000000000000000000020000, 79053842002368269447488120576384999923328735023387522753727706477760996454068);
-        
+
         vm.warp(block.timestamp + 431305);
         vm.roll(block.number + 54691);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 599503);
         vm.roll(block.number + 5001);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 40607864733731487047}(259);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 38242);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564038457584007913129639938);
-        
+
         vm.warp(block.timestamp + 533125);
         vm.roll(block.number + 5018);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 44802365959024946176915093260689319229975603097787142732615965479808810230244);
-        
+
         vm.warp(block.timestamp + 439003);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 5278);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 16281361670143885424}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 543677);
         vm.roll(block.number + 25222);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 551285);
         vm.roll(block.number + 28191);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -12797,137 +12797,137 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 53053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 356119);
         vm.roll(block.number + 46978);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 218729);
         vm.roll(block.number + 58559);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 351135);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 567454);
         vm.roll(block.number + 25162);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 566691);
         vm.roll(block.number + 24398);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(230360472311127032544);
-        
+
         vm.warp(block.timestamp + 435726);
         vm.roll(block.number + 17409);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 172205);
         vm.roll(block.number + 33618);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 68610);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 389211);
         vm.roll(block.number + 48556);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 494387);
         vm.roll(block.number + 74);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 107356);
         vm.roll(block.number + 12390);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x0000000000000000000000000000000000000000, 15480274721306966118482741640640379521970229405923057318167104451148687469210);
-        
+
         vm.warp(block.timestamp + 218729);
         vm.roll(block.number + 51582);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 236375);
         vm.roll(block.number + 47853);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 194);
-        
+
         vm.warp(block.timestamp + 529080);
         vm.roll(block.number + 27936);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 252901);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 64535);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 179305);
         vm.roll(block.number + 19522);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 50904);
         vm.roll(block.number + 52319);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(16508015669863385903185275014676982173745997537061824491328705749100312211221);
-        
+
         vm.warp(block.timestamp + 474107);
         vm.roll(block.number + 36937);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 439749);
         vm.roll(block.number + 6699);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 166557);
         vm.roll(block.number + 101);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 9404541686367760798}(30057484503753048885737431066439413203831631971588817442090380498827479473196);
-        
+
         vm.warp(block.timestamp + 883);
         vm.roll(block.number + 36035);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 61);
-        
+
         vm.warp(block.timestamp + 327009);
         vm.roll(block.number + 23165);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 350159);
         vm.roll(block.number + 31046);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 58430);
         vm.roll(block.number + 28567);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00000000000000000000000000000001fffffffE, 84302758333955010923062349942901476698533225881903850518094104853039178551463);
-        
+
         vm.warp(block.timestamp + 369130);
         vm.roll(block.number + 58154);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 591331);
         vm.roll(block.number + 2683);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -12956,91 +12956,91 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 43104);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 10471);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 251928);
         vm.roll(block.number + 28467);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 70051601459612874107685710694204599120446498424240381149858792231704986839685);
-        
+
         vm.warp(block.timestamp + 587413);
         vm.roll(block.number + 3891);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 583193);
         vm.roll(block.number + 20464);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 572689);
         vm.roll(block.number + 7760);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564038457584007913129639939);
-        
+
         vm.warp(block.timestamp + 298443);
         vm.roll(block.number + 37207);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 520134);
         vm.roll(block.number + 44456);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 237374);
         vm.roll(block.number + 3786);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 451252);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 68610);
         vm.roll(block.number + 5002);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 135884);
         vm.roll(block.number + 58038);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 45787395831081393669}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
     }
-    
-    
-    function test_auto_renounceOwnership_18() public { 
-        
+
+
+    function test_auto_renounceOwnership_18() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -13079,22 +13079,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -13157,67 +13157,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 424619);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 506915);
         vm.roll(block.number + 49418);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 95357016749707917473}(67514786703852731155175145645128407547450740720877518001492349424953033066398);
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 54196);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 38916);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 6842996456625988747}(103703044317503526812056612683671758819672244137173001705073055742852217427565);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 243589);
         vm.roll(block.number + 18679);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -13246,67 +13246,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 25831);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 129342);
         vm.roll(block.number + 18038);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 12047);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 263949);
         vm.roll(block.number + 10965);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 115491699562441903721181332721491592033646133453293114568868767977792941109927);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 24606755554841888186426186245326738728348054951422031906148754785850260425705);
-        
+
         vm.warp(block.timestamp + 322273);
         vm.roll(block.number + 34492);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 8441665095982265751905224295594857633681952947052824624122746475969469508708);
-        
+
         vm.warp(block.timestamp + 577018);
         vm.roll(block.number + 3817);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 27987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 171278);
         vm.roll(block.number + 58561);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 275518);
         vm.roll(block.number + 44807);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 24617);
         vm.roll(block.number + 46909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x0000000000000000000000000000000000000000, 51146183154921541826182249091302042660636884845281909136487382538055575673827);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 53620);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 12923022889079523132}(81070415406908625716706734074116534309457130030857713054726070212728639944885);
-        
+
         vm.warp(block.timestamp + 322272);
         vm.roll(block.number + 273);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -13344,12 +13344,12 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 4924);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 22);
         vm.roll(block.number + 44307);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 253765);
         vm.roll(block.number + 6944);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -13414,102 +13414,102 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 775);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 172512);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 351658);
         vm.roll(block.number + 13107);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 326630);
         vm.roll(block.number + 37365);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 37139575787076060721}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 88031494308799076029045980424970156867943761765119488070711694261662588840278);
-        
+
         vm.warp(block.timestamp + 20);
         vm.roll(block.number + 42636);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 17189);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 6944);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(17588734675234304586375110901738529001426656642381693116081504436321418277428);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 12047);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(3931480);
-        
+
         vm.warp(block.timestamp + 222068);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 22527813810088912154092920647950547523862762586928872252619348392328598942827);
-        
+
         vm.warp(block.timestamp + 283451);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(22890895923534804544233645028802184103146776280130313835603055391993034516415);
-        
+
         vm.warp(block.timestamp + 499271);
         vm.roll(block.number + 26144);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 573961);
         vm.roll(block.number + 43626);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 313866);
         vm.roll(block.number + 58362);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 101);
         vm.roll(block.number + 6404);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 38278);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 30510);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 331466);
         vm.roll(block.number + 50466);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 493400);
         vm.roll(block.number + 55900);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 44807);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 176062);
         vm.roll(block.number + 31318);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -13547,72 +13547,72 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 6945);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 293261);
         vm.roll(block.number + 11596);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 268056);
         vm.roll(block.number + 7148);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000030000, 80329823010467695330889204180576941534608925802092452444644705958580825703789);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 5317);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 20);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 350161);
         vm.roll(block.number + 9918);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 7405489491230130171350057516432485872888871852366573634836811666726147513106);
-        
+
         vm.warp(block.timestamp + 333478);
         vm.roll(block.number + 5014);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 277232);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 111681848223720073403700705251065841626302538765028211358348357585952221902746);
-        
+
         vm.warp(block.timestamp + 37);
         vm.roll(block.number + 30510);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 150951);
         vm.roll(block.number + 9918);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 90611698015991967433}(99580989262688890770777302698004454887709700192444303945015530295120319108635);
-        
+
         vm.warp(block.timestamp + 171829);
         vm.roll(block.number + 34305);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000030000, 62909233613282771075053659986162448811319562341004982100405495598722523014591);
-        
+
         vm.warp(block.timestamp + 338676);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 36445257390161247708}(46304218843394121115336746895826331657346532138657522198944932852214275017860);
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 56264);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 58428);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -13650,7 +13650,7 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 21379);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 495227);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -13668,67 +13668,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 304711);
         vm.roll(block.number + 22981);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 23635);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 68611);
         vm.roll(block.number + 14912);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 22366482869645213648}(235);
-        
+
         vm.warp(block.timestamp + 45910);
         vm.roll(block.number + 5014);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 338676);
         vm.roll(block.number + 16860);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(62100152968689099606035054807602790888726489840030658079129516363131192213385);
-        
+
         vm.warp(block.timestamp + 356229);
         vm.roll(block.number + 58357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 492914);
         vm.roll(block.number + 40967);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 31325);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 108787);
         vm.roll(block.number + 9);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 409511);
         vm.roll(block.number + 41281);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 177912);
         vm.roll(block.number + 19597);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 443189);
         vm.roll(block.number + 13);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -13767,56 +13767,56 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 54255);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 350162);
         vm.roll(block.number + 25195);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 21907668051400753380628286369413375293317134636428169558777748374668463429598);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 20);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 26254);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 289103);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
     }
-    
-    
-    function test_auto_renounceOwnership_19() public { 
-        
+
+
+    function test_auto_renounceOwnership_19() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -13855,22 +13855,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -13933,67 +13933,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 424619);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 506915);
         vm.roll(block.number + 49418);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 95357016749707917473}(67514786703852731155175145645128407547450740720877518001492349424953033066398);
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 54196);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 38916);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 6842996456625988747}(103703044317503526812056612683671758819672244137173001705073055742852217427565);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 243589);
         vm.roll(block.number + 18679);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -14022,87 +14022,87 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 25831);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 129342);
         vm.roll(block.number + 18038);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 12047);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 263949);
         vm.roll(block.number + 10965);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000020000, 115491699562441903721181332721491592033646133453293114568868767977792941109927);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 24606755554841888186426186245326738728348054951422031906148754785850260425705);
-        
+
         vm.warp(block.timestamp + 322273);
         vm.roll(block.number + 34492);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 8441665095982265751905224295594857633681952947052824624122746475969469508708);
-        
+
         vm.warp(block.timestamp + 577018);
         vm.roll(block.number + 3817);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 27987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 5019);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 127811);
         vm.roll(block.number + 36946);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 360128);
         vm.roll(block.number + 12841);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 568169);
         vm.roll(block.number + 25800);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 169542);
         vm.roll(block.number + 16923);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 151);
         vm.roll(block.number + 1618);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 583342);
         vm.roll(block.number + 35353);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 156420);
         vm.roll(block.number + 14843);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000000000, 0x00000000000000000000000000000000FFFFfFFF, 495475305464934485169365393691936319489197086352230363120226943);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 50852);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -14141,137 +14141,137 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 12969);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 221601);
         vm.roll(block.number + 780);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 383877);
         vm.roll(block.number + 49617);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(79809782987753057179056068017398668041818800359820264714752671121672102533796);
-        
+
         vm.warp(block.timestamp + 150782);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 336974);
         vm.roll(block.number + 32472);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000000FFFFfFFF, 75767180444105407728397323580862982916860205515572745932552873402020668758612);
-        
+
         vm.warp(block.timestamp + 169542);
         vm.roll(block.number + 41752);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 571139);
         vm.roll(block.number + 46885);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 474288);
         vm.roll(block.number + 58563);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 339243);
         vm.roll(block.number + 23883);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 308653);
         vm.roll(block.number + 26461);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(3894982453976657653183474853208157471032857397362244277731210266365054802717);
-        
+
         vm.warp(block.timestamp + 164712);
         vm.roll(block.number + 10479);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 1009);
         vm.roll(block.number + 41067);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 331729);
         vm.roll(block.number + 645);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 350161);
         vm.roll(block.number + 56448);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 48956931371941975977951824885877645407105667423171574526235059765875846992840);
-        
+
         vm.warp(block.timestamp + 522);
         vm.roll(block.number + 231);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 772);
         vm.roll(block.number + 28230);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 49214);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 19866504719985663207}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 88625);
         vm.roll(block.number + 2851);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 21741779427160889180839746846356601895525459914738315308937160159784911376738);
-        
+
         vm.warp(block.timestamp + 539123);
         vm.roll(block.number + 27987);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 83783155660841857885}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 410336);
         vm.roll(block.number + 18357);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 227136);
         vm.roll(block.number + 38137);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000010000, 0x0000000000000000000000000000000000010000, 16993197858606420786491329947683960764484047910593878781740069730690916512989);
-        
+
         vm.warp(block.timestamp + 71621);
         vm.roll(block.number + 18831);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 298268);
         vm.roll(block.number + 31637);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 277291);
         vm.roll(block.number + 41205);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 184888);
         vm.roll(block.number + 46294);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 153133);
         vm.roll(block.number + 15175);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 326630);
         vm.roll(block.number + 7144);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 30141962563133900305}(87682419367199842714979836867036768567011371703913637118890090527127569086350);
-        
+
         vm.warp(block.timestamp + 396291);
         vm.roll(block.number + 923);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -14337,67 +14337,67 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 3817);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 574931);
         vm.roll(block.number + 44721);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 658);
-        
+
         vm.warp(block.timestamp + 438986);
         vm.roll(block.number + 14912);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 119251);
         vm.roll(block.number + 58154);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 553461);
         vm.roll(block.number + 1433);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 477342);
         vm.roll(block.number + 323);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 492914);
         vm.roll(block.number + 6761);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 66612904758167825155674633819596526644233830011652777154996317002627334434645);
-        
+
         vm.warp(block.timestamp + 484820);
         vm.roll(block.number + 21786);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(110802551024017943640391832001117054431654204794803722927845835609530206233889);
-        
+
         vm.warp(block.timestamp + 286635);
         vm.roll(block.number + 7760);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 339256);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 34772292038480661042}(111711232590123457642280169786304416412392144074285885701011807946641554775464);
-        
+
         vm.warp(block.timestamp + 179);
         vm.roll(block.number + 29467);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 231093);
         vm.roll(block.number + 10451);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 593}(17194834848028939397861338997129092093772477);
-        
+
         vm.warp(block.timestamp + 252901);
         vm.roll(block.number + 56030);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 308653);
         vm.roll(block.number + 46646);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -14436,96 +14436,96 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 32027);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 120703);
         vm.roll(block.number + 27116);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 38359039587676152039}(241);
-        
+
         vm.warp(block.timestamp + 591347);
         vm.roll(block.number + 53954);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 202942);
         vm.roll(block.number + 9592);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 16887433357853888114401399682483406892315850809778395931702236027937473531963);
-        
+
         vm.warp(block.timestamp + 373354);
         vm.roll(block.number + 50186);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 49893979582509596274}(113564407983067633409272020280831484478756517038020137178415371514422623870833);
-        
+
         vm.warp(block.timestamp + 145362);
         vm.roll(block.number + 58560);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 419584);
         vm.roll(block.number + 40474);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 235892);
         vm.roll(block.number + 614);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 62164549177956011076}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 432613);
         vm.roll(block.number + 14667);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000020000, 36518211116874615571090206181444285845209079817522672910905250424400982676402);
-        
+
         vm.warp(block.timestamp + 324157);
         vm.roll(block.number + 48374);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 212818);
         vm.roll(block.number + 10860);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 426694);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 286697);
         vm.roll(block.number + 15216);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
     }
-    
-    
-    function test_auto_manualsend_20() public { 
-        
+
+
+    function test_auto_manualsend_20() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -14564,22 +14564,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -14642,147 +14642,147 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 350159);
         vm.roll(block.number + 9239);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 30680210278194226423}(457355005);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(879772454245542546750444433919263133548041385604020727217654789675760999720);
-        
+
         vm.warp(block.timestamp + 255378);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 67125467668355474033}(115232702113611104070679681843942173198501601746512139866732166515043186775224);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 18);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000002fFffFffD, 17);
-        
+
         vm.warp(block.timestamp + 350160);
         vm.roll(block.number + 22);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 110146886897647536759084945162256454297009417409380585743824478512154331582860);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 5018);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 58425);
         vm.roll(block.number + 13);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 95092135764801322279}(554);
-        
+
         vm.warp(block.timestamp + 102);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 19);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 68611);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 10);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000010000, 5706596606014713326114153679043892240760146411866717569034820057437515876161);
-        
+
         vm.warp(block.timestamp + 350161);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 322368);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000010000, 999999999999999999997);
-        
+
         vm.warp(block.timestamp + 322355);
         vm.roll(block.number + 23);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 10584902599223410115591697711084655696403751541503674573885955059460495991987);
-        
+
         vm.warp(block.timestamp + 238303);
         vm.roll(block.number + 20);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(514310870870519716554);
-        
+
         vm.warp(block.timestamp + 350160);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 42453085450900341960972273943117558317389473924095748202401301597288417778331);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 3);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 58362);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -14799,152 +14799,152 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 6);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 22);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 263949);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584006913129639935);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 6942);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(19280872359548908901687304460431948208902080898102757266801445189806479127184);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 581802);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 253764);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 4925);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 20795470395950257828439660391466215759951716665941686167909863710068956292189);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 22366482869645213648}(103);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 5007);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 999999999999}(87499206695679207160063224568112223283685403725839199380736454497175565702976);
-        
+
         vm.warp(block.timestamp + 271957);
         vm.roll(block.number + 9245);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000010000, 101789913686415419872028831798129797311362543116227878796166911516193591395016);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 58564);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 235);
-        
+
         vm.warp(block.timestamp + 322273);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 6);
         vm.roll(block.number + 56261);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 48788742307625996340194887085076741681227136711628429586778864232551627464713);
-        
+
         vm.warp(block.timestamp + 322275);
         vm.roll(block.number + 58357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(64935628230782997553457141945649667305655750501889661085714889452545191256324);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 7);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 263947);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 78849562270389549009}(44049502904038472522196166547709884935538129968001325016062669570380794155040);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 5019);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 17);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 350161);
         vm.roll(block.number + 5004);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x0000000000000000000000000000000000010000, 855873974096699703044624669937692630296689899547829152431966577466622208518);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 7148);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 58564);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(72532543044132400436958178484923881983963663391501829394567777337394626124522);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 4922);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 115792089237316195423570985008687907853269984665640564039457584006913129639933);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 58362);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 263950);
         vm.roll(block.number + 5002);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 5698143962613436549}(870236789710021598503730972582264843899441528455589151261);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 41318);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(1245728520396455154271799749258496810926829098449839658285832933314285365795);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 8205);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000000000, 11);
-        
+
         vm.warp(block.timestamp + 7);
         vm.roll(block.number + 5007);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -14973,32 +14973,32 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 24847);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639930);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x0000000000000000000000000000000000020000, 115792089237316195423570985008687907853269984665640564039457584007913129639836);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 7143);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 170518);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 5013);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -15010,52 +15010,52 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 58357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 99}(23);
-        
+
         vm.warp(block.timestamp + 263945);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 55664760380668475032259308843842367757681401398025002633796702935711221163153);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 68608);
         vm.roll(block.number + 5001);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639931);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 760);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000001fffffffE, 161);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 70089742150289225956}(115792089237316195423570985008687907853269984665640564039457584007913129639838);
-        
+
         vm.warp(block.timestamp + 7);
         vm.roll(block.number + 103);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(59403757490443533995657143758858051945584356383478240999613381030915966842605);
-        
+
         vm.warp(block.timestamp + 255);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 56260);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -15097,22 +15097,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 43821);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 19);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 99);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 8);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 253767);
         vm.roll(block.number + 58559);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -15146,71 +15146,71 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 4922);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 45802);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007913129639919);
-        
+
         vm.warp(block.timestamp + 6);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 4370000}(2053667839988226987872993033215733676602176740855256258246482001599228481336);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
     }
-    
-    
-    function test_auto_setCooldownEnabled_21() public { 
-        
+
+
+    function test_auto_setCooldownEnabled_21() public {
+
         vm.warp(block.timestamp + 242365);
         vm.roll(block.number + 25831);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 322370);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 61426);
         vm.roll(block.number + 41455);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000002fFffFffD, 75685537553121465635789661213597068838298984520221371019310355029642714814902);
-        
+
         vm.warp(block.timestamp + 503651);
         vm.roll(block.number + 59235);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 89054854061790343387853055066714954366931046410845952923137675462849739283174);
-        
+
         vm.warp(block.timestamp + 497895);
         vm.roll(block.number + 7144);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 253766);
         vm.roll(block.number + 25102);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 15231);
         vm.roll(block.number + 59439);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 693);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000020000, 37733689117400603645111576631242867550153538479830938452672288540140291072319);
-        
+
         vm.warp(block.timestamp + 322365);
         vm.roll(block.number + 53954);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -15236,117 +15236,117 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 57259);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 558867);
         vm.roll(block.number + 52863);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 176062);
         vm.roll(block.number + 9985);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 567520);
         vm.roll(block.number + 48833);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(110283680102319131336543641244387555443686783853318709010929132874189981895555);
-        
+
         vm.warp(block.timestamp + 103);
         vm.roll(block.number + 7145);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000010000, 2234247529449919651151224527196);
-        
+
         vm.warp(block.timestamp + 113383);
         vm.roll(block.number + 5004);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(5661671257051306655294997209079619376153887129986859351248307752525120645777);
-        
+
         vm.warp(block.timestamp + 566691);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 99);
         vm.roll(block.number + 12147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 41025603287301889694837475192065534266897541273766440288657302515638261731344);
-        
+
         vm.warp(block.timestamp + 274548);
         vm.roll(block.number + 183);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000001fffffffE, 56759908634851465257153204582688126613800633975876876588670208140162757318825);
-        
+
         vm.warp(block.timestamp + 353767);
         vm.roll(block.number + 43626);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 63598646290586890714}(57084899842708644720699650500310211789822327341645268206337966578928463492641);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 34287);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(18125425084649188873081117703049075526958711795485708492638866823550246547720);
-        
+
         vm.warp(block.timestamp + 66322);
         vm.roll(block.number + 23);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 350158);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000030000, 10903931688577387034064255693626201845236776172473905664135628927258580505217);
-        
+
         vm.warp(block.timestamp + 587288);
         vm.roll(block.number + 56736);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 2226754429915048793}(58892632966910282109052791342810363131931764794067831989649255343158305270430);
-        
+
         vm.warp(block.timestamp + 300806);
         vm.roll(block.number + 12228);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564038457584007913129639938);
-        
+
         vm.warp(block.timestamp + 285857);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 442553);
         vm.roll(block.number + 28795);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 402894);
         vm.roll(block.number + 3817);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x0000000000000000000000000000000000010000, 1060792772465261843989697478523837);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 31241);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 322356);
         vm.roll(block.number + 24323);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 35965736404288531348}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 396292);
         vm.roll(block.number + 48831);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 19184443245062725409986520300203489420501257426295822462176533961637934530083);
-        
+
         vm.warp(block.timestamp + 47977);
         vm.roll(block.number + 11830);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 210393);
         vm.roll(block.number + 27726);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -15395,17 +15395,17 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 17621);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 59020);
         vm.roll(block.number + 58960);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 16175);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 444810);
         vm.roll(block.number + 44002);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -15418,42 +15418,42 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 4926);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 7124);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 398985);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 1787950978342310099377053781282417661620537920002093512617520571985515331783);
-        
+
         vm.warp(block.timestamp + 470671);
         vm.roll(block.number + 56263);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 85802);
         vm.roll(block.number + 39180);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 492543);
         vm.roll(block.number + 20444);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 155372);
         vm.roll(block.number + 273);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 506520);
         vm.roll(block.number + 7146);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 96066774791923641423426406852963427444653490290254596171795588475702381154928);
-        
+
         vm.warp(block.timestamp + 152955);
         vm.roll(block.number + 33106);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -15491,27 +15491,27 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 51202);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 452459);
         vm.roll(block.number + 42788);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.symbol();
-        
+
         vm.warp(block.timestamp + 24617);
         vm.roll(block.number + 48410);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 107499);
         vm.roll(block.number + 25792);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 350158);
         vm.roll(block.number + 58362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 77545860057519723671304907534823880333893581985253669406225116511600840905017);
-        
+
         vm.warp(block.timestamp + 68609);
         vm.roll(block.number + 50466);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -15548,12 +15548,12 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 28446);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(1000000000003);
-        
+
         vm.warp(block.timestamp + 558867);
         vm.roll(block.number + 27987);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -15567,251 +15567,251 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 34287);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 423040);
         vm.roll(block.number + 4925);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 12682180630951679960}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 440889);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 999999999998}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 239088);
         vm.roll(block.number + 21786);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 199377);
         vm.roll(block.number + 748);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(81070415406908625716706734074116534309457130030857713054726070212728639944885);
-        
+
         vm.warp(block.timestamp + 358350);
         vm.roll(block.number + 35122);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 71719853403170818302}(83133784110963725478886387823999922926068751230692645317984521645995654147774);
-        
+
         vm.warp(block.timestamp + 119685);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 17);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 9821345068721686205}(115792089237316195423570985008687907853269984665640564039457584007912129639936);
-        
+
         vm.warp(block.timestamp + 390385);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 85802);
         vm.roll(block.number + 6942);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 94323);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 244861);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 308137);
         vm.roll(block.number + 28191);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 13);
         vm.roll(block.number + 883);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 102);
         vm.roll(block.number + 9241);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000030000, 14261524540328801669245266031124820583092028406352263314497017469018526878100);
-        
+
         vm.warp(block.timestamp + 574348);
         vm.roll(block.number + 59963);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x00000000000000000000000000000000FFFFfFFF, 12642691814666977269674708229841469753829279664793947746302450117415054483814);
-        
+
         vm.warp(block.timestamp + 263944);
         vm.roll(block.number + 33304);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 8776);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 205973396587357}(21);
-        
+
         vm.warp(block.timestamp + 326630);
         vm.roll(block.number + 28567);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 43395);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(58740379777088504622716307031491431792329119376904244499183864264258261045354);
-        
+
         vm.warp(block.timestamp + 520931);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 185797);
         vm.roll(block.number + 53871);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 209614);
         vm.roll(block.number + 41827);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(111101973989514331625011196964482119356364977805032725114128841509893781585307);
-        
+
         vm.warp(block.timestamp + 322363);
         vm.roll(block.number + 57817);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 535263);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000010000, 616);
-        
+
         vm.warp(block.timestamp + 91344);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 55480);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 46067);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 39436554412059116029}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 137795);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 693);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 407497);
         vm.roll(block.number + 26318);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00000000000000000000000000000002fFffFffD, 34602919746047017688360363976090149218481150210498650163575887843603104195359);
-        
+
         vm.warp(block.timestamp + 135949);
         vm.roll(block.number + 37417);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 90868465024307690128}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 11506);
         vm.roll(block.number + 33783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 251928);
         vm.roll(block.number + 5);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000002fFffFffD, 4);
-        
+
         vm.warp(block.timestamp + 58426);
         vm.roll(block.number + 42788);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 577018);
         vm.roll(block.number + 6943);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 230923);
         vm.roll(block.number + 12951);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 583342);
         vm.roll(block.number + 16692);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 59788889787717229300307617590812322483580640909937891363851520863354495372174);
-        
+
         vm.warp(block.timestamp + 204490);
         vm.roll(block.number + 9240);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 13267654447209302761}(3231521988281243524624725543839292893915427117458109928117013386144212618);
-        
+
         vm.warp(block.timestamp + 567454);
         vm.roll(block.number + 17230);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 164712);
         vm.roll(block.number + 39180);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 267417);
         vm.roll(block.number + 10);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 69715232915581172172}(112587018960419691087132231461186561394224331223274783070901676240991551367441);
-        
+
         vm.warp(block.timestamp + 525787);
         vm.roll(block.number + 15984);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
     }
-    
-    
-    function test_auto_setMaxTxPercent_22() public { 
-        
+
+
+    function test_auto_setMaxTxPercent_22() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -15850,22 +15850,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -15928,102 +15928,102 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 424619);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 506915);
         vm.roll(block.number + 49418);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 95357016749707917473}(67514786703852731155175145645128407547450740720877518001492349424953033066398);
-        
+
         vm.warp(block.timestamp + 580719);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 367938);
         vm.roll(block.number + 50689);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 0x00000000000000000000000000000000FFFFfFFF, 5794216904);
-        
+
         vm.warp(block.timestamp + 486527);
         vm.roll(block.number + 844);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 577014);
         vm.roll(block.number + 26244);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 418899);
         vm.roll(block.number + 18667);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 41715);
         vm.roll(block.number + 27193);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 177776);
         vm.roll(block.number + 45281);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 231622);
         vm.roll(block.number + 900);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 471827);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 15175177272427267948}(40894828006121610479269194144327753447929491983164367097697132116453576122560);
-        
+
         vm.warp(block.timestamp + 361350);
         vm.roll(block.number + 56639);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 155372);
         vm.roll(block.number + 48833);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 464155);
         vm.roll(block.number + 5014);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 3639);
         vm.roll(block.number + 5108);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -16099,37 +16099,37 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 44207);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 439561);
         vm.roll(block.number + 749);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 245916);
         vm.roll(block.number + 13817);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 390112);
         vm.roll(block.number + 58399);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 616);
         vm.roll(block.number + 51582);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 74161588523062394569}(14199211325191360569363372753109677749286182967064655154875195229290808450235);
-        
+
         vm.warp(block.timestamp + 369130);
         vm.roll(block.number + 58485);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x00000000000000000000000000000001fffffffE, 874);
-        
+
         vm.warp(block.timestamp + 439904);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x0000000000000000000000000000000000020000, 35136122000023718443907931118890027429170832100251051735142694794898752771218);
-        
+
         vm.warp(block.timestamp + 88461);
         vm.roll(block.number + 3429);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -16194,47 +16194,47 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 55927);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 99);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 131043);
         vm.roll(block.number + 1828);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 232006);
         vm.roll(block.number + 38341);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 214331);
         vm.roll(block.number + 20464);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 335380);
         vm.roll(block.number + 48254);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 368171);
         vm.roll(block.number + 7535);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 68854057747518627000}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 497);
         vm.roll(block.number + 27193);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 211817);
         vm.roll(block.number + 41827);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 337718);
         vm.roll(block.number + 20464);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -16255,77 +16255,77 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 12307);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 539123);
         vm.roll(block.number + 31325);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 353760);
         vm.roll(block.number + 16610);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(1084945228396118301848621676688626870063728352309793369628581);
-        
+
         vm.warp(block.timestamp + 233149);
         vm.roll(block.number + 25195);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000000FFFFfFFF, 281);
-        
+
         vm.warp(block.timestamp + 119);
         vm.roll(block.number + 10538);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 105);
         vm.roll(block.number + 56262);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 197719);
         vm.roll(block.number + 5005);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 218729);
         vm.roll(block.number + 23972);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 6502810954581446841}(26751563020317676078116904896633438398807494885379687512401830778968926764228);
-        
+
         vm.warp(block.timestamp + 174);
         vm.roll(block.number + 13078);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 54109);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 39320);
         vm.roll(block.number + 5866);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 61214820366590948089}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 257562);
         vm.roll(block.number + 25340);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 40156);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 246256);
         vm.roll(block.number + 25130);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 302520);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 205476);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -16363,27 +16363,27 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 5002);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 52692);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 585053);
         vm.roll(block.number + 43701);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 502819);
         vm.roll(block.number + 38242);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 452448);
         vm.roll(block.number + 27460);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 501835);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -16421,12 +16421,12 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 4921);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 179);
         vm.roll(block.number + 1127);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 48317);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -16439,27 +16439,27 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 467438);
         vm.roll(block.number + 12284);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 114727006929729025005414804695649721485231239088210196420163101256832079612381);
-        
+
         vm.warp(block.timestamp + 401313);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 497);
         vm.roll(block.number + 44294);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 580597);
         vm.roll(block.number + 60036);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 455319);
         vm.roll(block.number + 35442);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -16498,22 +16498,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 44296);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 534665);
         vm.roll(block.number + 51202);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(1251120835409678028805026671970994160057911423283303218662345155592917658335);
-        
+
         vm.warp(block.timestamp + 219970);
         vm.roll(block.number + 33269);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00000000000000000000000000000000FFFFfFFF, 5850133498988192123696010691676193475222178419055308140295687558112448155945);
-        
+
         vm.warp(block.timestamp + 444810);
         vm.roll(block.number + 27467);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(197);
-        
+
         vm.warp(block.timestamp + 13055);
         vm.roll(block.number + 658);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -16536,91 +16536,91 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 15008);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 633);
         vm.roll(block.number + 16505);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 289856);
         vm.roll(block.number + 7699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 59746);
         vm.roll(block.number + 113);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x0000000000000000000000000000000000010000, 17);
-        
+
         vm.warp(block.timestamp + 319880);
         vm.roll(block.number + 51853);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 46036462842791885121}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 420127);
         vm.roll(block.number + 49514);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 395306);
         vm.roll(block.number + 17899);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 336974);
         vm.roll(block.number + 5019);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 93070);
         vm.roll(block.number + 8200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 55816);
         vm.roll(block.number + 45270);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 429500);
         vm.roll(block.number + 39790);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 14246);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(107410124565760022719054858895242035703684818080706130123470913127502978356036);
     }
-    
-    
-    function test_auto_delBot_23() public { 
-        
+
+
+    function test_auto_delBot_23() public {
+
         vm.warp(block.timestamp + 142684);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(15588350406533744796374200279499539461194406049100874763420063376972315936325);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 40174);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 11715136140718190487}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 322274);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 528954);
         vm.roll(block.number + 99);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -16659,22 +16659,22 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 49487);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 100);
         vm.roll(block.number + 102);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 97);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000020000, 0x0000000000000000000000000000000000020000, 77392927070503272506772284707867796575059637401574921289029168288078382726009);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 9244);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x0000000000000000000000000000000000010000, 106709056134561691320306259657232487936967624012985051134856371561971100071234);
-        
+
         vm.warp(block.timestamp + 58429);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -16737,267 +16737,267 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 97);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 33562733834177737066}(38217343684066584629904233907069398058228995948626332488320216195146586928628);
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 58360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(934);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(30554228114298244678417160722265421450425519477479526094937779496763692075312);
-        
+
         vm.warp(block.timestamp + 94646);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 454620);
         vm.roll(block.number + 98);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 872);
         vm.roll(block.number + 46091);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 48556);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 12028);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 41067);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 116928);
         vm.roll(block.number + 53123);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 247553);
         vm.roll(block.number + 25340);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 322352);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 63115);
         vm.roll(block.number + 1927);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 283650);
         vm.roll(block.number + 45281);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 150132);
         vm.roll(block.number + 55528);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 85802);
         vm.roll(block.number + 20708);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 506381);
         vm.roll(block.number + 7147);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 99999999999999999993}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 839);
         vm.roll(block.number + 13);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322364);
         vm.roll(block.number + 37475);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 356229);
         vm.roll(block.number + 467);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 82821403876360389795}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 28519);
         vm.roll(block.number + 550);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 100898);
         vm.roll(block.number + 39454);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 99);
         vm.roll(block.number + 658);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 322366);
         vm.roll(block.number + 31283);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 127869);
         vm.roll(block.number + 33805);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.approve(0x00000000000000000000000000000002fFffFffD, 621);
-        
+
         vm.warp(block.timestamp + 161);
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 9);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.approve(0x00000000000000000000000000000001fffffffE, 25028104174586617359357525567521360203365777829050806080542790251110935024530);
-        
+
         vm.warp(block.timestamp + 596388);
         vm.roll(block.number + 35122);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 204358);
         vm.roll(block.number + 6946);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 459567);
         vm.roll(block.number + 5014);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 88184305672439517515}(55330647738660573827695003122499862886465241133182012857889618490879910734669);
-        
+
         vm.warp(block.timestamp + 559);
         vm.roll(block.number + 20371);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 764);
-        
+
         vm.warp(block.timestamp + 558775);
         vm.roll(block.number + 5013);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 550991);
         vm.roll(block.number + 2212);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000002fFffFffD, 0x0000000000000000000000000000000000030000, 3309254552220056765766268050645828276371066489805927388462530522305876506634);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 38278);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 8);
         vm.roll(block.number + 5003);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 23914);
         vm.roll(block.number + 50465);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 839}(36962613733074145652838811438210253288057379523204878743887840493921148418791);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 3895);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 19);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 151619);
         vm.roll(block.number + 4011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 100520);
         vm.roll(block.number + 614);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 285857);
         vm.roll(block.number + 40066);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.sendETHToFee{value: 81260737830886551318}(16693110065262899471557984196790795720258848054013474516452881889473234317740);
-        
+
         vm.warp(block.timestamp + 285857);
         vm.roll(block.number + 26414);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 246256);
         vm.roll(block.number + 18357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 65293380657383570497}(185);
-        
+
         vm.warp(block.timestamp + 322363);
         vm.roll(block.number + 10465);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 332555);
         vm.roll(block.number + 46459);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 95434);
         vm.roll(block.number + 42910);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 42428160732365714684}(42268895597320287512078070452335997421376011070935910763704674846776128809649);
-        
+
         vm.warp(block.timestamp + 524794);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 202942);
         vm.roll(block.number + 44763);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 364695);
         vm.roll(block.number + 8930);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setCooldownEnabled(false);
-        
+
         vm.warp(block.timestamp + 20);
         vm.roll(block.number + 43898);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 18);
         vm.roll(block.number + 30953);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 137795);
         vm.roll(block.number + 45053);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -17014,32 +17014,32 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 5013);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 943);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(4401172907768209235389721062051);
-        
+
         vm.warp(block.timestamp + 339256);
         vm.roll(block.number + 17930);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x0000000000000000000000000000000000010000, 0x00000000000000000000000000000000FFFFfFFF, 115792089237316195423570985008687907853269984665640564038457584007913129639933);
-        
+
         vm.warp(block.timestamp + 547871);
         vm.roll(block.number + 281);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 281030);
         vm.roll(block.number + 48207);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000000FFFFfFFF, 0x00000000000000000000000000000000FFFFfFFF, 50271968292182978337756784102517153978314294817030093965014857237836174090861);
-        
+
         vm.warp(block.timestamp + 542988);
         vm.roll(block.number + 16692);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.approve(0x0000000000000000000000000000000000000000, 115792089237316195423570985008687907853269984665640564039457584007912129639937);
-        
+
         vm.warp(block.timestamp + 435591);
         vm.roll(block.number + 59362);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -17077,32 +17077,32 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 9);
         vm.roll(block.number + 1025);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 540811);
         vm.roll(block.number + 52067);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 482767);
         vm.roll(block.number + 31387);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 567520);
         vm.roll(block.number + 56482);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.manualsend();
-        
+
         vm.warp(block.timestamp + 178852);
         vm.roll(block.number + 614);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -17141,57 +17141,57 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 29556);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 241551);
         vm.roll(block.number + 55528);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transfer(0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 28957320152348754112640661007003629024335045802161180356947887966938244681275);
-        
+
         vm.warp(block.timestamp + 253763);
         vm.roll(block.number + 19360);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.sendETHToFee{value: 1000000000}(39000795982279372824195814925105910907579863387906302878489923849956211958130);
-        
+
         vm.warp(block.timestamp + 519022);
         vm.roll(block.number + 23498);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 161743);
         vm.roll(block.number + 52078);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.openTrading();
-        
+
         vm.warp(block.timestamp + 439561);
         vm.roll(block.number + 550);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 285857);
         vm.roll(block.number + 32025);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setMaxTxPercent(115792089237316195423570985008687907853269984665640564039457584007913129639931);
-        
+
         vm.warp(block.timestamp + 578182);
         vm.roll(block.number + 26766);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.manualswap();
-        
+
         vm.warp(block.timestamp + 220725);
         vm.roll(block.number + 32025);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.renounceOwnership();
-        
+
         vm.warp(block.timestamp + 396292);
         vm.roll(block.number + 14912);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.transferFrom(0x00000000000000000000000000000001fffffffE, 0x00a329c0648769A73afAc7F9381E08FB43dBEA72, 60446019261355100681591079704776390173061236082121229112576390707476389213035);
-        
+
         vm.warp(block.timestamp + 469752);
         vm.roll(block.number + 22571);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.sendETHToFee{value: 68255057854594412241}(398343439052695472106852264987089653936783564668905159015274281780);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -17229,7 +17229,7 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 5248);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 173421);
         vm.roll(block.number + 30025);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -17266,33 +17266,31 @@ contract EStack_Echidna_Test is Test {
         vm.roll(block.number + 39201);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setBots(dynaddressArr_0);
-        
+
         vm.warp(block.timestamp + 22337);
         vm.roll(block.number + 40066);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.setCooldownEnabled(true);
-        
+
         vm.warp(block.timestamp + 577015);
         vm.roll(block.number + 56927);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 14006);
         vm.roll(block.number + 50262);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.transferFrom(0x0000000000000000000000000000000000030000, 0x00000000000000000000000000000002fFffFffD, 115792089237316195423570985008687907853269984665640564039457584007912129639933);
-        
+
         vm.warp(block.timestamp + 129050);
         vm.roll(block.number + 32025);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delBot(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 3817);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delBot(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
     }
-    
-}
 
-    
+}

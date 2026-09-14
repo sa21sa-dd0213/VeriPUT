@@ -2,18 +2,18 @@
   [
     {
       "args": [
-        "address_00398"
+        "anonymous_hex_00025"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00032"
+        "anonymous_hex_00020"
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "withdrawAll",
       "n": 2,
       "value": 0

@@ -3,7 +3,9 @@
   "kill_statuses": [
     "killed",
     "killed-compile",
-    "mutant-setup-failure"
+    "mutant-compile_error",
+    "mutant-setup-failure",
+    "score-uncompilable-unanchored"
   ],
   "tool": "VeriPUT",
   "trials": 1

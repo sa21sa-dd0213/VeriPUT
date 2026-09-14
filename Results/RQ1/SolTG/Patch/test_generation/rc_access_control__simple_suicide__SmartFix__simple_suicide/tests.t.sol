@@ -9,6 +9,6 @@ contract SimpleSuicide_Test is Test {
 	}
 	function test_SimpleSuicide_0() public {
 		vm.prank(0x3bf89eE6E2363F33600000000000000000000000);
-		simplesuicide0.sudicideAnyone(); 
+		simplesuicide0.sudicideAnyone();
 	}
 }

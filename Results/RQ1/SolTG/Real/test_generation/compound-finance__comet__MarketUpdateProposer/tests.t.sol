@@ -23,34 +23,34 @@ contract MarketUpdateProposer_Test is Test {
 	}
 	function test_MarketUpdateProposer_0() public {
 		vm.prank(0x46a59595E5104166000000000000000000000000);
-		marketupdateproposer0.getProposal( 0); 
+		marketupdateproposer0.getProposal( 0);
 	}
 	function test_MarketUpdateProposer_1() public {
 		vm.prank(0x3Bc1F3B32fc0c7c5000000000000000000000000);
-		marketupdateproposer1.getProposal( 0); 
+		marketupdateproposer1.getProposal( 0);
 	}
 	function test_MarketUpdateProposer_2() public {
 		vm.prank(0x1000000000000000000000000000000000000000);
-		marketupdateproposer2.setMarketAdmin(0x0000000000000000000000000000000000000000); 
+		marketupdateproposer2.setMarketAdmin(0x0000000000000000000000000000000000000000);
 	}
 	function test_MarketUpdateProposer_3() public {
 		vm.prank(0x2000000000000000000000000000000000000000);
-		marketupdateproposer3.setMarketAdmin(0x0000000000000000000000000000000000000000); 
+		marketupdateproposer3.setMarketAdmin(0x0000000000000000000000000000000000000000);
 	}
 	function test_MarketUpdateProposer_4() public {
 		vm.prank(0x1000000000000000000000000000000000000000);
-		marketupdateproposer4.setProposalGuardian(0x0000000000000000000000000000000000000000); 
+		marketupdateproposer4.setProposalGuardian(0x0000000000000000000000000000000000000000);
 	}
 	function test_MarketUpdateProposer_5() public {
 		vm.prank(0x2000000000000000000000000000000000000000);
-		marketupdateproposer5.setProposalGuardian(0x0000000000000000000000000000000000000000); 
+		marketupdateproposer5.setProposalGuardian(0x0000000000000000000000000000000000000000);
 	}
 	function test_MarketUpdateProposer_6() public {
 		vm.prank(0x1000000000000000000000000000000000000000);
-		marketupdateproposer6.setGovernor(0x1000000000000000000000000000000000000000); 
+		marketupdateproposer6.setGovernor(0x1000000000000000000000000000000000000000);
 	}
 	function test_MarketUpdateProposer_7() public {
 		vm.prank(0x2000000000000000000000000000000000000000);
-		marketupdateproposer7.setGovernor(0x1000000000000000000000000000000000000000); 
+		marketupdateproposer7.setGovernor(0x1000000000000000000000000000000000000000);
 	}
 }

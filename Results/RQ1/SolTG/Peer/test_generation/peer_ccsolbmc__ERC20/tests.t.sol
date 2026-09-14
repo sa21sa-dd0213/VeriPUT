@@ -19,26 +19,26 @@ contract ERC20_Test is Test {
 	}
 	function test_ERC20_0() public {
 		vm.prank(0x217258defF538530e00000000000000000000000);
-		erc200.allowance(0x0000000000000000000000000000000000000000,0x1E27000000000000000000000000000000000000); 
+		erc200.allowance(0x0000000000000000000000000000000000000000,0x1E27000000000000000000000000000000000000);
 	}
 	function test_ERC20_1() public {
 		vm.prank(0x2EA86bEAbcADe7c7400000000000000000000000);
-		erc201.balanceOf(0x0000000000000000000000000000000000000000); 
+		erc201.balanceOf(0x0000000000000000000000000000000000000000);
 	}
 	function test_ERC20_2() public {
 		vm.prank(0x159bfB4C6C728Dd6B00000000000000000000000);
-		erc202.totalSupply(); 
+		erc202.totalSupply();
 	}
 	function test_ERC20_3() public {
 		vm.prank(0x10E016E59D90140A200000000000000000000000);
-		erc203.decimals(); 
+		erc203.decimals();
 	}
 	function test_ERC20_4() public {
 		vm.prank(0x18f4c37957AF2Ab5c00000000000000000000000);
-		erc204.symbol(); 
+		erc204.symbol();
 	}
 	function test_ERC20_5() public {
 		vm.prank(0x2ab2945a3503Fcf0d00000000000000000000000);
-		erc205.name(); 
+		erc205.name();
 	}
 }

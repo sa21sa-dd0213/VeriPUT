@@ -39,63 +39,63 @@ contract theRun_Test is Test {
 	}
 	function test_theRun_0() public {
 		vm.prank(0x2d65E3072974481E300000000000000000000000);
-		therun0.PayoutQueueSize(); 
+		therun0.PayoutQueueSize();
 	}
 	function test_theRun_1() public {
 		vm.prank(0x4766D64463e7292B000000000000000000000000);
-		therun1.PlayerInfo( 1); 
+		therun1.PlayerInfo( 1);
 	}
 	function test_theRun_2() public {
 		vm.prank(0x4E07335fDD0Cff6Ef00000000000000000000000);
-		therun2.PlayerInfo( 0); 
+		therun2.PlayerInfo( 0);
 	}
 	function test_theRun_3() public {
 		vm.prank(0x1f152402C60F9C39000000000000000000000000);
-		therun3.Total_of_Players(); 
+		therun3.Total_of_Players();
 	}
 	function test_theRun_4() public {
 		vm.prank(0x159a96fE13d59d04800000000000000000000000);
-		therun4.WatchLastPayout(); 
+		therun4.WatchLastPayout();
 	}
 	function test_theRun_5() public {
 		vm.prank(0x1aB81F272f44Ff9E200000000000000000000000);
-		therun5.WatchWinningPot(); 
+		therun5.WatchWinningPot();
 	}
 	function test_theRun_6() public {
 		vm.prank(0x55ff8a0aF3727411a00000000000000000000000);
-		therun6.WatchFees(); 
+		therun6.WatchFees();
 	}
 	function test_theRun_7() public {
 		vm.prank(0xf3FC1C1AC7e38331000000000000000000000000);
-		therun7.NextPayout(); 
+		therun7.NextPayout();
 	}
 	function test_theRun_8() public {
 		vm.prank(0x1000000000000000000000000000000000000000);
-		therun8.GetAndReduceFeesByFraction( 0); 
+		therun8.GetAndReduceFeesByFraction( 0);
 	}
 	function test_theRun_9() public {
 		vm.prank(0x398845E45678c6bf000000000000000000000000);
-		therun9.GetAndReduceFeesByFraction( 0); 
+		therun9.GetAndReduceFeesByFraction( 0);
 	}
 	function test_theRun_10() public {
 		vm.prank(0x1000000000000000000000000000000000000000);
-		therun10.CollectAllFees(); 
+		therun10.CollectAllFees();
 	}
 	function test_theRun_11() public {
 		vm.prank(0x422AbBB93C2a5372400000000000000000000000);
-		therun11.WatchBalanceInEther(); 
+		therun11.WatchBalanceInEther();
 	}
 	function test_theRun_12() public {
 		vm.prank(0x358b9ca47e95Cc83400000000000000000000000);
-		therun12.WatchBalance(); 
+		therun12.WatchBalance();
 	}
 	function test_theRun_13() public {
 		vm.prank(0x1000000000000000000000000000000000000000);
-		therun13.ChangeOwnership(0x0000000000000000000000000000000000000000); 
+		therun13.ChangeOwnership(0x0000000000000000000000000000000000000000);
 	}
 	function test_theRun_14() public {
 		vm.prank(0xE8ad5220E69C4fd2000000000000000000000000);
-		therun14.ChangeOwnership(0x0000000000000000000000000000000000000000); 
+		therun14.ChangeOwnership(0x0000000000000000000000000000000000000000);
 	}
 	function test_theRun_15() public {
 	}

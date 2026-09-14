@@ -11,14 +11,14 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new SafeMigration(address(this), address(this), address(this));
     }
 
     function test_ce_0_migrateSingleton() public {
-        
+
 
         target.migrateSingleton();
     }

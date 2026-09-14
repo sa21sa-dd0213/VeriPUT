@@ -2,14 +2,14 @@
   [
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "claim",
       "n": 2,
       "value": 0
@@ -18,7 +18,7 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -27,7 +27,7 @@
       "args": [
         95
       ],
-      "frm": "address_00021",
+      "frm": "anonymous_hex_00017",
       "method": "buyTicket",
       "n": 2,
       "value": 0
@@ -36,14 +36,14 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "checkWinner",
       "n": 2,
       "value": 0
@@ -52,7 +52,7 @@
   [
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -62,7 +62,7 @@
         79483729560823693019789441367814967481643804548297199048988788789359632411325,
         1
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "unsafeEntry",
       "n": 2,
       "value": 40632514347130113
@@ -71,7 +71,7 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -81,7 +81,7 @@
         1000,
         256
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "generateHash",
       "n": 2,
       "value": 0

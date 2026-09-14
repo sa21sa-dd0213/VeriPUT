@@ -11,10 +11,10 @@ contract Cwb9_Test is Test {
 	}
 	function test_Cwb9_0() public {
 		vm.prank(0x1B5329465Cd813B0600000000000000000000000);
-		cwb90.f( 9, 0, true, false); 
+		cwb90.f( 9, 0, true, false);
 	}
 	function test_Cwb9_1() public {
 		vm.prank(0x36EDEeA3ABaaFeFb600000000000000000000000);
-		cwb91.f( 0, 0, false, false); 
+		cwb91.f( 0, 0, false, false);
 	}
 }

@@ -9,6 +9,6 @@ contract Ci1_Test is Test {
 	}
 	function test_Ci1_0() public {
 		vm.prank(0x40AAfcd44085C08E600000000000000000000000);
-		ci10.f(); 
+		ci10.f();
 	}
 }

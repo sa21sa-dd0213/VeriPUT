@@ -1,4 +1,4 @@
-pass
+
 
 import json
 import os
@@ -391,7 +391,7 @@ def unit_state_member_dependencies(ast_path, contract, unit, arity=None, declara
         if getter is None:
             return None, _unit_not_found_reason("member dependency walk", contract, unit,
                                                 arity, declaration_id)
-        
+
         return {getter["name"]: None}, [
             f"state.{getter['name']}: whole variable (public state getter)"]
     callables = _callables(by_id)
@@ -991,8 +991,8 @@ def unit_mapping_slot_accesses(
                             old = found.get((name, keys))
                             if old is None or candidate < old:
                                 found[(name, keys)] = candidate
-                    
-                    
+
+
                     scan(value.get("indexExpression"))
                     return
                 if value.get("nodeType") == "MemberAccess":

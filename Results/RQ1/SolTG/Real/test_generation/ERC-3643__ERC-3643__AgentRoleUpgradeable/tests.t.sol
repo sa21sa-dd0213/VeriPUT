@@ -13,7 +13,7 @@ contract AgentRoleUpgradeable_Test is Test {
 	}
 	function test_AgentRoleUpgradeable_0() public {
 		vm.prank(0x3E1Fde9a84DBEf54500000000000000000000000);
-		agentroleupgradeable0.isAgent(0x1000000000000000000000000000000000000000); 
+		agentroleupgradeable0.isAgent(0x1000000000000000000000000000000000000000);
 	}
 	function test_AgentRoleUpgradeable_1() public {
 	}

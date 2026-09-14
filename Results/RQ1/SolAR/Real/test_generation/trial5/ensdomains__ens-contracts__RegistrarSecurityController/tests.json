@@ -2,18 +2,18 @@
   [
     {
       "args": [
-        "address_00398"
+        "anonymous_hex_00025"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00019"
+        "anonymous_hex_00016"
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "disableRegistrarController",
       "n": 2,
       "value": 0
@@ -22,18 +22,18 @@
   [
     {
       "args": [
-        "address_00019"
+        "anonymous_hex_00016"
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "removeRegistrarController",
       "n": 2,
       "value": 0
@@ -42,18 +42,18 @@
   [
     {
       "args": [
-        "address_00404"
+        "anonymous_hex_00027"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00036"
+        "anonymous_hex_00021"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "setRegistrarResolver",
       "n": 2,
       "value": 0
@@ -62,18 +62,18 @@
   [
     {
       "args": [
-        "address_00398"
+        "anonymous_hex_00025"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "transferRegistrarOwnership",
       "n": 2,
       "value": 0
@@ -82,18 +82,18 @@
   [
     {
       "args": [
-        "address_00398"
+        "anonymous_hex_00025"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00184"
+        "anonymous_hex_00022"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "addRegistrarController",
       "n": 2,
       "value": 0

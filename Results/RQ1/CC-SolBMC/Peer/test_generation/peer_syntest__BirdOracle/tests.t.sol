@@ -11,29 +11,29 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new BirdOracle();
     }
 
     function test_ce_0_updatedChainRequest() public {
-        
+
 
         target.updatedChainRequest(38, 0);
     }
     function test_ce_1_updatedChainRequest() public {
-        
+
 
         target.updatedChainRequest(7719, 0);
     }
     function test_ce_2_updatedChainRequest() public {
-        
+
 
         target.updatedChainRequest(11797, 21238);
     }
     function test_ce_3_updatedChainRequest() public {
-        
+
 
         target.updatedChainRequest(11797, 38);
     }

@@ -11,14 +11,14 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new EtherLotto();
     }
 
     function test_ce_0_play() public {
-        
+
 
         target.play();
     }

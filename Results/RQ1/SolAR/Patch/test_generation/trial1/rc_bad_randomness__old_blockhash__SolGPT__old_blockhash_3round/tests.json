@@ -2,23 +2,23 @@
   [
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 1000000000000000000
     },
     {
       "args": [
-        "address_003527051686d20666d5552516f7a"
+        "0x745377554c737563446a70584f744762485041587051686d20666d5552516f7a"
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "lockInGuess",
       "n": 2,
       "value": 91962526028852435
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "settle",
       "n": 3,
       "value": 0
@@ -27,32 +27,32 @@
   [
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 1000000000000000000
     },
     {
       "args": [
-        "address_00001000000000000000000000000"
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "lockInGuess",
       "n": 2,
       "value": 1000000000000000000
     },
     {
       "args": [
-        "address_003527051686d20666d5552516f7a"
+        "0x745377554c737563446a70584f744762485041587051686d20666d5552516f7a"
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "lockInGuess",
       "n": 3,
       "value": 91962526028852435
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "settle",
       "n": 4,
       "value": 0
@@ -61,37 +61,37 @@
   [
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 1000000000000000000
     },
     {
       "args": [],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "settle",
       "n": 2,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "settle",
       "n": 3,
       "value": 0
     },
     {
       "args": [
-        "address_00001000000000000000000000000"
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "lockInGuess",
       "n": 4,
       "value": 1000000000000000000
     },
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "settle",
       "n": 5,
       "value": 0

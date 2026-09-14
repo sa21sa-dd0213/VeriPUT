@@ -59,130 +59,130 @@ contract DepositLog_Test is Test {
 	}
 	function test_DepositLog_0() public {
 		vm.prank(0x3f7438084979D0aaD00000000000000000000000);
-		depositlog0.logExitedCourtesyCall(); 
+		depositlog0.logExitedCourtesyCall();
 	}
 	function test_DepositLog_1() public {
 		vm.prank(0x18f78ed4F7d7a5F1D00000000000000000000000);
-		depositlog1.logLiquidated(); 
+		depositlog1.logLiquidated();
 	}
 	function test_DepositLog_2() public {
 		vm.prank(0x28687954FAe9110F900000000000000000000000);
-		depositlog2.logRedeemed( 0); 
+		depositlog2.logRedeemed( 0);
 	}
 	function test_DepositLog_3() public {
 		vm.prank(0x37b43dB0e9AcBc03C00000000000000000000000);
-		depositlog3.logStartedLiquidation( false); 
+		depositlog3.logStartedLiquidation( false);
 	}
 	function test_DepositLog_4() public {
 		vm.prank(0x497Fe3706df82537200000000000000000000000);
-		depositlog4.logCourtesyCalled(); 
+		depositlog4.logCourtesyCalled();
 	}
 	function test_DepositLog_5() public {
 		vm.prank(0x1d93e7E69E36b41D900000000000000000000000);
-		depositlog5.logFunded(); 
+		depositlog5.logFunded();
 	}
 	function test_DepositLog_6() public {
 		vm.prank(0x23aF6208Ec8EBCf1d00000000000000000000000);
-		depositlog6.logFraudDuringSetup(); 
+		depositlog6.logFraudDuringSetup();
 	}
 	function test_DepositLog_7() public {
 		vm.prank(0x128Fd5276433Fb53b00000000000000000000000);
-		depositlog7.logSetupFailed(); 
+		depositlog7.logSetupFailed();
 	}
 	function test_DepositLog_8() public {
 		vm.prank(0x16a7a1991BeFbfe6200000000000000000000000);
-		depositlog8.logRegisteredPubkey( 0, 0); 
+		depositlog8.logRegisteredPubkey( 0, 0);
 	}
 	function test_DepositLog_9() public {
 		vm.prank(0x1eb17e7Cace8Afc0600000000000000000000000);
-		depositlog9.logGotRedemptionSignature( 0, 0, 0); 
+		depositlog9.logGotRedemptionSignature( 0, 0, 0);
 	}
 	function test_DepositLog_10() public {
 		vm.prank(0x725846a8B1163946000000000000000000000000);
-		depositlog10.logRedemptionRequested(0x0000000000000000000000000000000000000000, 0, 0, ((bytes_tuple_accessor_length _tg_136)=0), 0, ((bytes_tuple_accessor_length _tg_138)=0)); 
+		depositlog10.logRedemptionRequested(0x0000000000000000000000000000000000000000, 0, 0, ((bytes_tuple_accessor_length _tg_136)=0), 0, ((bytes_tuple_accessor_length _tg_138)=0));
 	}
 	function test_DepositLog_11() public {
 		vm.prank(0x2aC81DED0Ea30037F00000000000000000000000);
-		depositlog11.logCreated(0x0000000000000000000000000000000000000000); 
+		depositlog11.logCreated(0x0000000000000000000000000000000000000000);
 	}
 	function test_DepositLog_12() public {
 		vm.prank(0x3bC2797B331950d1d00000000000000000000000);
-		depositlog12.setApprovedLogger(0x1E27000000000000000000000000000000000000, false); 
+		depositlog12.setApprovedLogger(0x1E27000000000000000000000000000000000000, false);
 	}
 	function test_DepositLog_13() public {
 		vm.prank(0x20091bd7D39F581c400000000000000000000000);
-		depositlog13.approvedToLog(0x0000000000000000000000000000000000000000); 
+		depositlog13.approvedToLog(0x0000000000000000000000000000000000000000);
 	}
 	function test_DepositLog_14() public {
 		vm.prank(0x3f1db230dC86E2fEb00000000000000000000000);
-		depositlog14.setApprovedLogger(0x0000000000000000000000000000000000000000, true); 
+		depositlog14.setApprovedLogger(0x0000000000000000000000000000000000000000, true);
 		vm.prank(0x4e6a4B5b713dE7BF300000000000000000000000);
-		depositlog14.logExitedCourtesyCall(); 
+		depositlog14.logExitedCourtesyCall();
 	}
 	function test_DepositLog_15() public {
 		vm.prank(0x49741fB375935AD8100000000000000000000000);
-		depositlog15.setApprovedLogger(0x0000000000000000000000000000000000000000, true); 
+		depositlog15.setApprovedLogger(0x0000000000000000000000000000000000000000, true);
 		vm.prank(0x529aAB730cF970D9e00000000000000000000000);
-		depositlog15.logLiquidated(); 
+		depositlog15.logLiquidated();
 	}
 	function test_DepositLog_16() public {
 		vm.prank(0x63d6B0122A683F51000000000000000000000000);
-		depositlog16.setApprovedLogger(0x0000000000000000000000000000000000000000, true); 
+		depositlog16.setApprovedLogger(0x0000000000000000000000000000000000000000, true);
 		vm.prank(0x3A3528c4BB6EFc40000000000000000000000000);
-		depositlog16.logRedeemed( 0); 
+		depositlog16.logRedeemed( 0);
 	}
 	function test_DepositLog_17() public {
 		vm.prank(0x34be74565bAFd896F00000000000000000000000);
-		depositlog17.setApprovedLogger(0x0000000000000000000000000000000000000000, true); 
+		depositlog17.setApprovedLogger(0x0000000000000000000000000000000000000000, true);
 		vm.prank(0x186abc80f162d1ddb00000000000000000000000);
-		depositlog17.logStartedLiquidation( false); 
+		depositlog17.logStartedLiquidation( false);
 	}
 	function test_DepositLog_18() public {
 		vm.prank(0x1655d04689fE9998000000000000000000000000);
-		depositlog18.setApprovedLogger(0x0000000000000000000000000000000000000000, true); 
+		depositlog18.setApprovedLogger(0x0000000000000000000000000000000000000000, true);
 		vm.prank(0x388f1E8193984128f00000000000000000000000);
-		depositlog18.logCourtesyCalled(); 
+		depositlog18.logCourtesyCalled();
 	}
 	function test_DepositLog_19() public {
 		vm.prank(0x243DfA8e5910Ff17900000000000000000000000);
-		depositlog19.setApprovedLogger(0x0000000000000000000000000000000000000000, true); 
+		depositlog19.setApprovedLogger(0x0000000000000000000000000000000000000000, true);
 		vm.prank(0x2918dEA781bA62E5B00000000000000000000000);
-		depositlog19.logFunded(); 
+		depositlog19.logFunded();
 	}
 	function test_DepositLog_20() public {
 		vm.prank(0x46aA4AD64BbC51d7700000000000000000000000);
-		depositlog20.setApprovedLogger(0x0000000000000000000000000000000000000000, true); 
+		depositlog20.setApprovedLogger(0x0000000000000000000000000000000000000000, true);
 		vm.prank(0x460c061c803f806bD00000000000000000000000);
-		depositlog20.logFraudDuringSetup(); 
+		depositlog20.logFraudDuringSetup();
 	}
 	function test_DepositLog_21() public {
 		vm.prank(0x2C17c7D7c461C036500000000000000000000000);
-		depositlog21.setApprovedLogger(0x0000000000000000000000000000000000000000, true); 
+		depositlog21.setApprovedLogger(0x0000000000000000000000000000000000000000, true);
 		vm.prank(0x5033a6B734C88403A00000000000000000000000);
-		depositlog21.logSetupFailed(); 
+		depositlog21.logSetupFailed();
 	}
 	function test_DepositLog_22() public {
 		vm.prank(0x8d259289B7C2125A000000000000000000000000);
-		depositlog22.setApprovedLogger(0x0000000000000000000000000000000000000000, true); 
+		depositlog22.setApprovedLogger(0x0000000000000000000000000000000000000000, true);
 		vm.prank(0x33fB8a1A7511ccBe300000000000000000000000);
-		depositlog22.logRegisteredPubkey( 0, 0); 
+		depositlog22.logRegisteredPubkey( 0, 0);
 	}
 	function test_DepositLog_23() public {
 		vm.prank(0x21F8D344825Fa9Fb000000000000000000000000);
-		depositlog23.setApprovedLogger(0x0000000000000000000000000000000000000000, true); 
+		depositlog23.setApprovedLogger(0x0000000000000000000000000000000000000000, true);
 		vm.prank(0xdFCe51457B53a84f000000000000000000000000);
-		depositlog23.logGotRedemptionSignature( 0, 0, 0); 
+		depositlog23.logGotRedemptionSignature( 0, 0, 0);
 	}
 	function test_DepositLog_24() public {
 		vm.prank(0x10c62f8f20D151ce800000000000000000000000);
-		depositlog24.setApprovedLogger(0x0000000000000000000000000000000000000000, true); 
+		depositlog24.setApprovedLogger(0x0000000000000000000000000000000000000000, true);
 		vm.prank(0x39d4406E094DcE2Bc00000000000000000000000);
-		depositlog24.logRedemptionRequested(0x0000000000000000000000000000000000000000, 0, 0, ((bytes_tuple_accessor_length _tg_369)=0), 0, ((bytes_tuple_accessor_length _tg_371)=0)); 
+		depositlog24.logRedemptionRequested(0x0000000000000000000000000000000000000000, 0, 0, ((bytes_tuple_accessor_length _tg_369)=0), 0, ((bytes_tuple_accessor_length _tg_371)=0));
 	}
 	function test_DepositLog_25() public {
 		vm.prank(0x4eD4b0D3C012f1b1000000000000000000000000);
-		depositlog25.setApprovedLogger(0x0000000000000000000000000000000000000000, true); 
+		depositlog25.setApprovedLogger(0x0000000000000000000000000000000000000000, true);
 		vm.prank(0x13Ef612E410B85ee200000000000000000000000);
-		depositlog25.logCreated(0x0000000000000000000000000000000000000000); 
+		depositlog25.logCreated(0x0000000000000000000000000000000000000000);
 	}
 }

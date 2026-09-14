@@ -1,0 +1,745 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        30435610213469542725267970777092586820352981376940259194191768934631510847084
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "OpenToThePublic",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "play",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "wager",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00017",
+        256
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "play",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00017",
+        256
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "currentBetLimit",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        30435610213469542725267970777092586820352981376940259194191768934631510847084
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        256
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "AdjustBetAmounts",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        30435610213469542725267970777092586820352981376940259194191768934631510847084
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021",
+        "anonymous_hex_00017",
+        1
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "transferAnyERC20Token",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "currentBetLimit",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        30435610213469542725267970777092586820352981376940259194191768934631510847084
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "OpenToThePublic",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "donate",
+      "n": 3,
+      "value": 164397347151315632
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00019",
+        2
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "transferAnyERC20Token",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "wager",
+      "n": 5,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        30435610213469542725267970777092586820352981376940259194191768934631510847084
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "OpenToThePublic",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "play",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "play",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "donate",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "wager",
+      "n": 6,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        30435610213469542725267970777092586820352981376940259194191768934631510847084
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "donate",
+      "n": 2,
+      "value": 164397347151315632
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        30435610213469542725267970777092586820352981376940259194191768934631510847084
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "hasPlayerWagered",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        30435610213469542725267970777092586820352981376940259194191768934631510847084
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        "anonymous_hex_00025",
+        110673387401962735039730647882991215149530554421512408822549249226902411303351
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "transferAnyERC20Token",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        256
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "AdjustDifficulty",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        256
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        256
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "AdjustDifficulty",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "ethBalance",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "ethBalance",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        30435610213469542725267970777092586820352981376940259194191768934631510847084
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "OpenToThePublic",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "wager",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00020",
+        0
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "currentDifficulty",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "donate",
+      "n": 3,
+      "value": 164397347151315632
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00019",
+        2
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "transferAnyERC20Token",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "_fallback",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        "anonymous_hex_00019",
+        74969543378546495729754249158598954240897645918494105636996718022272742464944
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "transferAnyERC20Token",
+      "n": 6,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "hasPlayerWagered",
+      "n": 7,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "currentDifficulty",
+      "n": 8,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "ethBalance",
+      "n": 9,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "winnersPot",
+      "n": 10,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "wager",
+      "n": 11,
+      "value": 93948237760502139
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "currentDifficulty",
+      "n": 12,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "ethBalance",
+      "n": 13,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "winnersPot",
+      "n": 14,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "ethBalance",
+      "n": 15,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "_fallback",
+      "n": 16,
+      "value": 18987453807974597
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "_fallback",
+      "n": 17,
+      "value": 146014703000762089
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "donate",
+      "n": 18,
+      "value": 105776868465007134
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "wager",
+      "n": 19,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "wager",
+      "n": 20,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "OpenToThePublic",
+      "n": 21,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "winnersPot",
+      "n": 22,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "donate",
+      "n": 23,
+      "value": 82595766022398109
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "donate",
+      "n": 24,
+      "value": 11950327273350953
+    },
+    {
+      "args": [
+        79354755763803999491243872915167585836404436116189348937977898196321440610688
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "AdjustDifficulty",
+      "n": 25,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "hasPlayerWagered",
+      "n": 26,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "currentDifficulty",
+      "n": 27,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "wager",
+      "n": 28,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "currentDifficulty",
+      "n": 29,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "OpenToThePublic",
+      "n": 30,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "ethBalance",
+      "n": 31,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027",
+        "anonymous_hex_00017",
+        1
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "transferAnyERC20Token",
+      "n": 32,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "play",
+      "n": 33,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "winnersPot",
+      "n": 34,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "currentDifficulty",
+      "n": 35,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        "anonymous_hex_00025",
+        20
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "transferAnyERC20Token",
+      "n": 36,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        30435610213469542725267970777092586820352981376940259194191768934631510847084
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "wager",
+      "n": 2,
+      "value": 35976837868196518
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        30435610213469542725267970777092586820352981376940259194191768934631510847084
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "winnersPot",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        256
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "AdjustBetAmounts",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00020",
+        0
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "currentDifficulty",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        30435610213469542725267970777092586820352981376940259194191768934631510847084
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "play",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "OpenToThePublic",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        30435610213469542725267970777092586820352981376940259194191768934631510847084
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "OpenToThePublic",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "currentBetLimit",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

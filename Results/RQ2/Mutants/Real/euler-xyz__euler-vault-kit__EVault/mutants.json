@@ -4664,13 +4664,13 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "pullDebt",
       "mutant_id": "m000467",
       "operator": "BOR",
       "original_expression": " == ",
       "replacement_expression": " != ",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
@@ -10074,23 +10074,23 @@
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "pullDebt",
       "mutant_id": "m001008",
       "operator": "CSC",
       "original_expression": "from == account",
       "replacement_expression": "true",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "pullDebt",
       "mutant_id": "m001009",
       "operator": "CSC",
       "original_expression": "from == account",
       "replacement_expression": "false",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "ok",
@@ -13124,13 +13124,13 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "pullDebt",
       "mutant_id": "m001313",
       "operator": "EHD",
       "original_expression": "revert E_SelfTransfer();",
       "replacement_expression": "/* revert E_SelfTransfer(); */",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "failed",

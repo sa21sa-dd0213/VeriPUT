@@ -1,0 +1,8 @@
+{
+  "contract": "PENNY_BY_PENNY",
+  "dataset": "Patch",
+  "solc": "0.8.35",
+  "solc_bin": "solc",
+  "source_form": "normalized-flat",
+  "subject_id": "rcx_reentrancy__address_00016__sGuard"
+}

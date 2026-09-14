@@ -13,6 +13,6 @@ contract EasyPayAndWithDraw_Test is Test {
 	}
 	function test_EasyPayAndWithDraw_1() public {
 		vm.prank(0x685963384cf5FDCB000000000000000000000000);
-		easypayandwithdraw1.withdraw( 282); 
+		easypayandwithdraw1.withdraw( 282);
 	}
 }

@@ -9,6 +9,6 @@ contract BaseBridgeReceiver_Test is Test {
 	}
 	function test_BaseBridgeReceiver_0() public {
 		vm.prank(0x1A668529b9d08421a00000000000000000000000);
-		basebridgereceiver0.state( 1); 
+		basebridgereceiver0.state( 1);
 	}
 }

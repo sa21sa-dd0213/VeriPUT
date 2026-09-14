@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 import argparse
 import ast
 import hashlib
@@ -34,21 +35,21 @@ REPO = os.path.abspath(
     or os.path.join(HERE, "..", "..", ".."))
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(REPO, "scripts"))
-from solidity_ast_dependencies import (  
+from solidity_ast_dependencies import (
     path_function_artifact_suffix, path_function_declaration_id, unit_callable_facts,
     unit_contains_inline_assembly, unit_env_dependencies, unit_state_dependencies)
-from solidity_path_put import (  
+from solidity_path_put import (
     _concrete_return_literal, _public_state_getter_decl, _source_type_default_expr,
     authenticated_concrete_oracle_error, bind_return_lhs, find_unit_call,
     flatten_rendered_aggregate, public_state_getter_signature, split_top_level)
 from veriput_subjects import (
     SubjectError,
-    enumerate_subject_units,  
+    enumerate_subject_units,
     subject_from_record)
-from veriput_path_guard import ensure_path_not_protected  
+from veriput_path_guard import ensure_path_not_protected
 from veriput_recipe import (
     STRONG_RECIPE_VERSION,
-    STRONG_PUT_AUTO_UNWIND,  
+    STRONG_PUT_AUTO_UNWIND,
     STRONG_PUT_AUTO_PARTIAL_LOOPS,
     STRONG_PUT_FUZZ_R2_CANDIDATE_BUDGET,
     STRONG_PUT_PROOF_ESBMC_ARGS,
@@ -138,11 +139,11 @@ CONCRETE_FALLBACK_WITNESS_CHECKS = {
     "NOT-CERTIFIED-CE-FALLBACK",
     "PARTIAL-WITNESS-JOURNAL-CE",
     "UNKNOWN",
-    
-    
-    
-    
-    
+
+
+
+
+
     "HASH-UNDECIDED-FORGE",
 }
 CONCRETE_ONLY_STAGE2_SOURCES = {
@@ -171,31 +172,31 @@ CERTIFIED_REGION_CONCRETE_FALLBACK_REFUSALS = {
     "no-assertions",
     "path-depth-unavailable",
     "zero-assertions",
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     "ladder-undecided-truncated",
 }
 
@@ -241,8 +242,8 @@ def parse_certified(text):
     consumed = set(region)
     pins = {}
     for m in PIN_RE.finditer(text):
-        
-        
+
+
         if m.group(1) in consumed:
             continue
         pins[m.group(1)] = int(m.group(2))
@@ -327,10 +328,10 @@ def parse_certified_detail_region(details, row_pins):
             "structural-abi-gate-no-coordinate":
         reject_gate = ("msg.value" in region and region["msg.value"][0] > 0)
         if reject_gate:
-            
-            
-            
-            
+
+
+
+
             pins = {}
         else:
             pins = {k: v for k, v in pins.items() if k == "msg.value" or k.startswith("state.")}
@@ -517,9 +518,9 @@ def cleared_concrete_fallback_rows(record):
         ce = parse_concrete_ce(detail.get("ce") or {})
         if ce is None:
             continue
-        
-        
-        
+
+
+
         if pin_excluded:
             fallback_pins = {}
         else:
@@ -637,14 +638,14 @@ def stage2_witness_return(record, enc, path_function, certified_detail):
         ce = path.get("ce") or {}
         if not isinstance(ce, dict) or ce.get("return") is None:
             continue
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         flat_ce = dict(ce)
         aggregate_names = set()
         for name, value in ce.items():
@@ -1299,7 +1300,7 @@ def _solidity_function_spans(source, name):
         if open_brace < 0:
             spans.append((None, "function has no body"))
             continue
-        
+
         if mask.find(";", close_paren, open_brace) >= 0:
             spans.append((None, "function is only a declaration"))
             continue
@@ -1424,11 +1425,11 @@ def _enclosing_brace_pair(source, position):
 
 
 def certified_ce_sha256(raw):
-    
-    
-    
-    
-    
+
+
+
+
+
     if isinstance(raw, dict):
         raw = {k: v for k, v in raw.items() if k != "return"}
     parsed = parse_concrete_ce(raw)
@@ -1800,14 +1801,14 @@ def attach_certified_ce_anchor(put_rec, basis_rec, certified_detail, representat
     if not unit:
         return None, "certified basis replay did not record its target unit"
     if not re.search(r"\b" + re.escape(unit) + r"\s*(?:\{|\()", semantic_function):
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         invoked = re.search(r"[\"']" + re.escape(unit) + r"\s*\(", function_source) is not None
         if not invoked and unit in ("fallback", "receive"):
             payload = r'hex"deadbeef"' if unit == "fallback" else r'hex""'
@@ -1835,11 +1836,11 @@ def attach_certified_ce_anchor(put_rec, basis_rec, certified_detail, representat
             return None, "certified basis replay assertion omits its observed result"
     expected_return = certified_ce_return(ce)
     return_oracles = [oracle for oracle in oracles if oracle.get("kind") == "return-value"]
-    
-    
-    
-    
-    
+
+
+
+
+
     reverting_basis = any(oracle.get("kind") == "call-status" and oracle.get("expected") is False
                           for oracle in oracles)
     if expected_return is not None and not reverting_basis:
@@ -1870,24 +1871,24 @@ def attach_certified_ce_anchor(put_rec, basis_rec, certified_detail, representat
             return None, "PUT fuzz parameter declaration is not scalar and exact"
         solidity_type, name = match.groups()
         bare = name[2:] if name.startswith("p_") else None
-        
-        
+
+
         m_arg = re.fullmatch(r"(?:p_)?_arg(\d+)", name)
         keys = (aliases.get(name), name, bare,
                 f"omitted_param_{m_arg.group(1)}" if m_arg else None)
         raw_value = next((ce[key] for key in keys if key is not None and key in ce), None)
         if raw_value is None and name.startswith("s_"):
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
             want = name[2:]
             for _key, _value in ce.items():
                 if not _key.startswith("state."):
@@ -1895,12 +1896,12 @@ def attach_certified_ce_anchor(put_rec, basis_rec, certified_detail, representat
                 if re.sub(r"[^0-9A-Za-z_]", "_", _key[len("state."):]).strip("_") == want:
                     raw_value = _value
                     break
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
         _bare_type = re.sub(r"\s+(memory|calldata)$", "", solidity_type.strip())
         dynamic_type = _bare_type in ("bytes", "string") or _bare_type.endswith("[]")
         bare = name[2:] if name.startswith("p_") else name
@@ -1908,11 +1909,11 @@ def attach_certified_ce_anchor(put_rec, basis_rec, certified_detail, representat
                 and not any(key == bare or key == name or key.startswith(bare + ".")
                             or key.startswith(bare + "[") for key in ce)):
             continue
-        
-        
-        
-        
-        
+
+
+
+
+
         if raw_value is None and dynamic_type:
             length_value = next((ce[key] for key in (bare + ".length", name + ".length")
                                  if key in ce), None)
@@ -1946,14 +1947,14 @@ def attach_certified_ce_anchor(put_rec, basis_rec, certified_detail, representat
         return_oracles = ordered
         lhs_match = re.match(r"^(\s*)(.*?)\s*=(?!=)\s*(.*)$", body_lines[call_index], re.S)
         if lhs_match is not None:
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
             lhs_text = lhs_match.group(2).strip()
             if lhs_text.startswith("(") and lhs_text.endswith(")"):
                 components = [c.strip() for c in split_top_level(lhs_text[1:-1])]
@@ -2038,8 +2039,8 @@ def attach_certified_ce_anchor(put_rec, basis_rec, certified_detail, representat
             return None, "fixed tuple oracle cannot be bound to the PUT target call"
         elif kind not in {"return-value", "revert", "call-status", "normal-exit"}:
             return None, f"fixed replay oracle kind {kind!r} is unsupported"
-    
-    
+
+
     if fixed_assertions:
         after_call.extend((indent + marker, indent + f"if ({condition}) {{"))
         after_call.extend(indent + "  " + assertion for assertion in fixed_assertions)
@@ -2457,8 +2458,8 @@ def apply_strong_put_recipe(args):
     args.fuzz_r2_prefilter = True
     args.fuzz_runs = STRONG_PUT_FUZZ_RUNS
     args.fuzz_r2_candidate_budget = STRONG_PUT_FUZZ_R2_CANDIDATE_BUDGET
-    
-    
+
+
     if not getattr(args, "proof_esbmc_arg", None):
         args.proof_esbmc_arg = list(STRONG_PUT_PROOF_ESBMC_ARGS)
     return STRONG_RECIPE_VERSION
@@ -2507,18 +2508,18 @@ def append_stage4_driver_options(cmd, args, path_function, exit_kind, stage2_sou
         cmd.append(f"--esbmc-arg={extra}")
     for extra in getattr(args, "proof_esbmc_arg", None) or []:
         cmd.append(f"--proof-esbmc-arg={extra}")
-    
-    
+
+
     if piece:
         cmd += ["--piece", str(piece)]
     for n, v in pins.items():
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
         if str(n).startswith("extcall."):
             continue
         cmd += ["--pin", f"{n}={v}"]
@@ -3021,7 +3022,7 @@ def _ce_path_witnesses(path_summary):
     nested = path_summary.get("witnesses")
     if isinstance(nested, list) and nested:
         return [item for item in nested if isinstance(item, dict)]
-    
+
     return [path_summary] if isinstance(path_summary, dict) else []
 
 
@@ -3039,8 +3040,8 @@ def _ce_row_for_path(rows, unit, path_function, path_id):
                 str(item.get("path_id")) == str(path_id) for item in paths
                 if isinstance(item, dict)):
             return row
-        
-        
+
+
         if path_function == row.get("path_function"):
             return row
     return None
@@ -3691,7 +3692,7 @@ def main():
     if not os.path.exists(cert_path):
         sys.exit(f"no certify sweep at {cert_path}")
     rows = []
-    n_certified = 0  
+    n_certified = 0
     n_cleared_fallback = 0
     n_timeout_fallback = 0
     n_partial_journal_fallback = 0
@@ -3702,11 +3703,11 @@ def main():
         if not line:
             continue
         r = json.loads(line)
-        
-        
-        
-        
-        
+
+
+
+
+
         key = r.get("benchmark") or r.get("poc")
         is_poc = "poc" in r
         try:
@@ -3844,12 +3845,12 @@ def main():
                              fb_detail.get("certification_source"), fb_detail))
         elif (not args.emit_cleared_concrete_fallbacks and not selected_static_pure
               and authenticated_pin_excluded_fallback_rows(r)):
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
             for fb in authenticated_pin_excluded_fallback_rows(r):
                 try:
                     enc_i = int(fb["enc"])
@@ -3875,24 +3876,24 @@ def main():
             continue
         certified_details = r.get("certified_details") or {}
         for enc, text in (r.get("certified") or {}).items():
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             enc_s = str(enc)
             base, _, piece = enc_s.partition("#")
             try:
@@ -3930,19 +3931,19 @@ def main():
             establish = details.get("established") or []
             detail_region, detail_holes, detail_pins =\
                 parse_certified_detail_region(details, parse_pins(r.get("pins")))
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
             deriv = {
                 k: r.get(k)
                 for k in ("level0", "level0_perturb", "level0_points", "probe_ladder",
@@ -3987,23 +3988,23 @@ def main():
                  ("CERTIFIED-BASIS-REPLAY" if args.certified_concrete_only else None),
                  detail_stage4_kind, details.get("certification_source"), details))
 
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
     arm = ""
     default_cert = POC_CERT if args.poc else CERT
     if os.path.abspath(cert_path) != os.path.abspath(default_cert):
         arm = "__" + os.path.splitext(os.path.basename(cert_path))[0]
 
-    
-    
-    
-    
+
+
+
+
     print(
         f"=== {n_certified} CERTIFIED region(s) recorded by stage 2 "
         f"({os.path.basename(cert_path)}) ===" +
@@ -4036,11 +4037,11 @@ def main():
     certified_detail_by_basis_record = {}
     retained_basis_targets = {}
     record_paths = {}
-    
-    
-    
-    
-    
+
+
+
+
+
     if args.only and not rows:
         total_rows = (n_certified + n_cleared_fallback + n_timeout_fallback +
                       n_partial_journal_fallback + n_static_subject_fallback)
@@ -4065,13 +4066,13 @@ def main():
         return 1 if is_concrete_only_stage2_source(source) else 0
 
     def _structural_priority(stage4_kind, certification_source):
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
         return 1 if is_structural_certificate_row({
             "stage4_kind": stage4_kind, "certification_source": certification_source}) else 0
 
@@ -4088,18 +4089,18 @@ def main():
               "exit kinds. This changes scheduling only; regions and "
               "certification are unchanged")
     cleaned_projects = set()
-    
-    
+
+
     shape_refused_units = {}
     shape_refusal_skips = []
     for (bench, is_poc, unit, path_function, enc, piece, text, establish, pin_extcall, deriv,
          exit_kind, stage2_depth, row_subject, stage2_source, region_override, holes_override,
          pins_override, stage2_witness_check, stage4_kind, certification_source,
          certified_detail) in ordered_rows:
-        
-        
-        
-        
+
+
+
+
         encs = f"{enc}#{piece}" if piece else str(enc)
         row_timeout = args.timeout
         if args.wall_deadline and args.wall_deadline > 0:
@@ -4145,9 +4146,9 @@ def main():
                       f"AST is missing at {ast}")
                 continue
         elif is_poc:
-            
-            
-            
+
+
+
             flat = os.path.join(POC_SRC, bench + ".sol")
             contract = bench
             if not os.path.exists(flat):
@@ -4160,13 +4161,13 @@ def main():
         else:
             flat_name, contract = BENCHES[bench]
             is_corpus = True
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
             own = corpus_inputs_dir(bench, unit)
             flat = os.path.join(own or INPUTS, flat_name)
             if own and not os.path.exists(flat):
@@ -4177,27 +4178,27 @@ def main():
                       f"notes/coverage/scripts/poc_split.py rather than "
                       f"letting stage 4 resolve somewhere else")
                 continue
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         if row_subject is None:
             ast = (os.path.splitext(flat)[0] + ".solast") if is_poc\
                 else (flat + ".solast")
@@ -4266,10 +4267,10 @@ def main():
             str(row_timeout),
             "--memlimit",
             f"{args.memlimit_gib}g",
-            
-            
-            
-            
+
+
+
+
             "--scope",
             stage4_scope,
             "--max-tx",
@@ -4281,15 +4282,15 @@ def main():
         ]
         if stage4_kind:
             base_cmd += ["--stage4-kind", str(stage4_kind)]
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
         if getattr(args, "synthetic_args_from_ce", False):
             row_ce = (certified_detail or {}).get("ce") or {}
             if isinstance(row_ce, dict) and row_ce:
@@ -4312,20 +4313,20 @@ def main():
                               "no-coordinate-concrete-fallback")
                 and stage2_witness_check
                 and isinstance(certified_detail, dict) and certified_detail.get("ce")):
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
             cmd += ["--concrete-certified-ce-json", json.dumps(certified_detail["ce"])]
         j = os.path.join(wd, "put.json")
         if args.forge_only:
-            
-            
-            
-            
-            
+
+
+
+
+
             rec = (json.load(open(j)) if os.path.exists(j) else stage4_missing_record(
                 stage2_source,
                 stage2_witness_check,
@@ -4374,11 +4375,11 @@ def main():
             print(f"  [fallback] {bench}.{unit} enc={encs}: certified PUT "
                   f"refused as {fallback_reason}; retrying as concrete replay "
                   "only, which will not count as PUT")
-            
-            
-            
-            
-            
+
+
+
+
+
             fallback_depth = stage2_depth
             if (fallback_depth is None and fallback_reason == "path-depth-unavailable"):
                 fallback_depth = 0
@@ -4426,16 +4427,16 @@ def main():
             certified_detail_by_put_record[id(rec)] = certified_detail
         results.append(
             (bench, unit, enc, piece, p.returncode, rec, proj, region, is_corpus, contract))
-        
-        
-        
+
+
+
         _shape_reason = shape_level_concrete_refusal_reason(stage2_source, rec)
         if _shape_reason and (bench, unit) not in shape_refused_units:
             shape_refused_units[(bench, unit)] = {"enc": encs, "reason": _shape_reason}
-        
-        
-        
-        
+
+
+
+
         if (args.retain_certified_concrete_replays and p.returncode == 0
                 and rec.get("kind") == "put" and isinstance(certified_detail, dict)
                 and not requires_structural_abi_gate_anchor(certification_source,
@@ -4517,10 +4518,10 @@ def main():
     print("STAGE 4: certified region -> PUT with oracle")
     if stage4_recipe_version:
         print(f"  Stage-4 recipe                  : {stage4_recipe_version}")
-    
-    
-    
-    
+
+
+
+
     cells, n_norun = cells_of(results)
     print(f"CELL: scope={args.scope} --solidity-max-tx={args.max_tx} "
           f"-> {', '.join(cells) if cells else 'no run recorded one'}" +
@@ -4544,11 +4545,11 @@ def main():
         st = rec.get("stats") or {}
         kind = rec.get("kind") or "put"
         fz, ar = st.get("fuzz_params", 0), st.get("asserts", 0)
-        
-        
-        
-        
-        
+
+
+
+
+
         gd = st.get("guarded_asserts", 0)
         ar_txt = f"{ar - gd}+{gd}c" if gd else str(ar)
         uncond = ar - gd
@@ -4566,13 +4567,13 @@ def main():
         elif rc == 2:
             outcome = "REFUSED: " + str(rec.get("refused"))
         elif args.forge_only:
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
             outcome = "NOT EMITTED YET (no put.json; re-run without --forge-only)"
         else:
             outcome = "REFUSED (see log above)"
@@ -4711,8 +4712,8 @@ def main():
                     put_rec.get("fixed_replay_fusion_error")
             rewrite_stage4_record(target.get("record_path"), parent_rec)
     if fused_any:
-        
-        
+
+
         b_summary = b_report(results, args.forge_timeout, args.esbmc, record_paths)
     quality = b_summary.get("quality", {})
     if quality:
@@ -4729,8 +4730,8 @@ def main():
             {
                 "schema": "veriput-put-summary/1",
                 "cert_path": os.path.abspath(cert_path),
-                
-                
+
+
                 "cleared_fallback_shape_skips": shape_refusal_skips,
                 "only": args.only,
                 "scope": args.scope,
@@ -4815,7 +4816,7 @@ def disable_red_replays(projects, forge_timeout):
             if status == "Failure" and name.startswith("test_cov"):
                 red.setdefault(path, []).append(name)
         for path, fns in sorted(red.items()):
-            
+
             if path is None:
                 print(f"  [self-check] {os.path.basename(proj)}: forge JSON "
                       f"reported red concrete tests {sorted(fns)} without a "
@@ -4926,9 +4927,9 @@ def b_report(results, forge_timeout, esbmc=ESBMC, record_paths=None):
     replay_timing = disable_red_replays(sorted({r[6] for r in results if r[6]}), forge_timeout)
     final_gate_wall_s = 0.0
 
-    
-    
-    
+
+
+
     verdicts = {}
     forge_outputs = {}
     suite_failures = {}
@@ -4973,14 +4974,14 @@ def b_report(results, forge_timeout, esbmc=ESBMC, record_paths=None):
         replay_timing["wall_s"] += wall_s
         final_gate_wall_s += wall_s
         forge_outputs[proj] = stdout
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         _write_forge_replay_log(proj, stdout, stderr, timed_out, wall_s, forge_timeout)
         if timed_out:
             print(f"  [forge] {os.path.basename(proj)}: timed out after "
@@ -4988,8 +4989,8 @@ def b_report(results, forge_timeout, esbmc=ESBMC, record_paths=None):
             continue
         statuses, name_statuses, project_suite_failures = (forge_json_status_map(stdout))
         if not statuses and not name_statuses and not project_suite_failures:
-            
-            
+
+
             print(f"  [forge] {os.path.basename(proj)}: could NOT parse `forge "
                   f"test --json` output -- every row in this project is UNKNOWN "
                   f"below, which is NOT a pass. First 200 chars of stderr: "
@@ -5013,8 +5014,8 @@ def b_report(results, forge_timeout, esbmc=ESBMC, record_paths=None):
     n_stale = 0
     n_refused = 0
     row_summaries = []
-    
-    
+
+
     _now_binary = current_binary_identity(esbmc)
     print(f"  this tree: head={_now_binary['head']} "
           f"srcDirty={_now_binary['srcDirty']} "
@@ -5024,11 +5025,11 @@ def b_report(results, forge_timeout, esbmc=ESBMC, record_paths=None):
     storage_layout_counts = Counter()
     for bench, unit, enc, piece, rc, rec, proj, region, is_corpus,\
             contract_name in results:
-        
-        
-        
-        
-        
+
+
+
+
+
         plabel = f"p{piece}" if piece else ""
         encs = f"{enc}#{piece}" if piece else str(enc)
         st = rec.get("stats") or {}
@@ -5044,34 +5045,34 @@ def b_report(results, forge_timeout, esbmc=ESBMC, record_paths=None):
             if rec.get("refused"):
                 storage_layout_counts["unavailable_refused"] += 1
         fz, ar = st.get("fuzz_params", 0), st.get("asserts", 0)
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         guarded = st.get("guarded_asserts", 0)
         uncond = ar - guarded
         concrete_fallback = (kind == "concrete" or is_concrete_only_stage2_source(stage2_source))
         if concrete_fallback:
             kind = "concrete"
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
         refused = rc != 0
         stale = stale_reason(rec, _now_binary) if rc == 0 else None
         if kind == "refusal":
@@ -5296,62 +5297,62 @@ def b_report(results, forge_timeout, esbmc=ESBMC, record_paths=None):
                 n_refused += 1
             continue
 
-        
-        
-        
+
+
+
         fixed_replay_refusal = missing_fixed_replay_fusion_reason(rec)
         refused = refused or uncond <= 0 or fixed_replay_refusal is not None
         g1 = rc == 0 and not refused and fz > 0
         g2 = any(width > 1 for width in (st.get("rendered_width") or {}).values())
         g3 = uncond > 0
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
         contract = contract_name or (BENCHES[bench][1] if bench in BENCHES else bench)
         legacy_piece = f"p{piece}" if piece else ""
         want = rec.get("test") or (f"test_put_{contract}_{unit}_path{enc}{legacy_piece}")
         status = row_forge_status(proj, rec, want)
         g4 = status == "Success"
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
         g5 = is_corpus
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         reference_ok = g3 and g4 and g5 and not stale and not refused
         ok = g1 and g2 and reference_ok
         b += 1 if ok else 0

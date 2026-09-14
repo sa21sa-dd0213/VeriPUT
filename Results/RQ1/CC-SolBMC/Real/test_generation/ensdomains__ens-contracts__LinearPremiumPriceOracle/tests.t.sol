@@ -11,19 +11,19 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new LinearPremiumPriceOracle(AggregatorInterface(address(0xDEAD0000000000000000000000000000BEEF)), new uint256[](0), 0, 0);
     }
 
     function test_ce_0_timeUntilPremium() public {
-        
+
 
         target.timeUntilPremium(0, 0);
     }
     function test_ce_1_timeUntilPremium() public {
-        
+
 
         target.timeUntilPremium(0, 1);
     }

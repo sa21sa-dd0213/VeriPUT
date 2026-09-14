@@ -15,8 +15,8 @@ contract AssetListFactory_Echidna_Test is Test {
     function setUp() public {
         target = new AssetListFactory();
     }
-    
-    function test_auto_createAssetList_0() public { 
+
+    function test_auto_createAssetList_0() public {
         CometConfiguration.AssetConfig[] memory dynCometConfiguration.AssetConfigArr_0 = new CometConfiguration.AssetConfig[](4);
 		dynCometConfiguration.AssetConfigArr_0[0] = CometConfiguration.AssetConfig(0x00000000000000000000000000000000FFFFfFFF,0x00a329c0648769A73afAc7F9381E08FB43dBEA72,uint8(162),uint64(17437672370991816300),uint64(17057395826567289639),uint64(18446744073709551612),uint128(160));
 		dynCometConfiguration.AssetConfigArr_0[1] = CometConfiguration.AssetConfig(0x0000000000000000000000000000000000000000,0x0000000000000000000000000000000000000000,uint8(175),uint64(29),uint64(2851992114867353551),uint64(189),uint128(1000000000000000003));
@@ -2094,9 +2094,9 @@ contract AssetListFactory_Echidna_Test is Test {
         vm.prank(0x0000000000000000000000000000000000030000);
         target.createAssetList(dynCometConfiguration.AssetConfigArr_0);
     }
-    
-    
-    function test_auto_createAssetList_1() public { 
+
+
+    function test_auto_createAssetList_1() public {
         CometConfiguration.AssetConfig[] memory dynCometConfiguration.AssetConfigArr_0 = new CometConfiguration.AssetConfig[](4);
 		dynCometConfiguration.AssetConfigArr_0[0] = CometConfiguration.AssetConfig(0x00000000000000000000000000000000FFFFfFFF,0x00a329c0648769A73afAc7F9381E08FB43dBEA72,uint8(162),uint64(17437672370991816300),uint64(17057395826567289639),uint64(18446744073709551612),uint128(160));
 		dynCometConfiguration.AssetConfigArr_0[1] = CometConfiguration.AssetConfig(0x0000000000000000000000000000000000000000,0x0000000000000000000000000000000000000000,uint8(175),uint64(29),uint64(2851992114867353551),uint64(189),uint128(1000000000000000003));
@@ -3956,9 +3956,9 @@ contract AssetListFactory_Echidna_Test is Test {
         vm.prank(0x0000000000000000000000000000000000010000);
         target.createAssetList(dynCometConfiguration.AssetConfigArr_0);
     }
-    
-    
-    function test_auto_createAssetList_2() public { 
+
+
+    function test_auto_createAssetList_2() public {
         CometConfiguration.AssetConfig[] memory dynCometConfiguration.AssetConfigArr_0 = new CometConfiguration.AssetConfig[](4);
 		dynCometConfiguration.AssetConfigArr_0[0] = CometConfiguration.AssetConfig(0x00000000000000000000000000000000FFFFfFFF,0x00a329c0648769A73afAc7F9381E08FB43dBEA72,uint8(162),uint64(17437672370991816300),uint64(17057395826567289639),uint64(18446744073709551612),uint128(160));
 		dynCometConfiguration.AssetConfigArr_0[1] = CometConfiguration.AssetConfig(0x0000000000000000000000000000000000000000,0x0000000000000000000000000000000000000000,uint8(175),uint64(29),uint64(2851992114867353551),uint64(189),uint128(1000000000000000003));
@@ -6374,9 +6374,9 @@ contract AssetListFactory_Echidna_Test is Test {
         vm.prank(0x0000000000000000000000000000000000030000);
         target.createAssetList(dynCometConfiguration.AssetConfigArr_0);
     }
-    
-    
-    function test_auto_createAssetList_3() public { 
+
+
+    function test_auto_createAssetList_3() public {
         CometConfiguration.AssetConfig[] memory dynCometConfiguration.AssetConfigArr_0 = new CometConfiguration.AssetConfig[](4);
 		dynCometConfiguration.AssetConfigArr_0[0] = CometConfiguration.AssetConfig(0x00000000000000000000000000000000FFFFfFFF,0x00a329c0648769A73afAc7F9381E08FB43dBEA72,uint8(162),uint64(17437672370991816300),uint64(17057395826567289639),uint64(18446744073709551612),uint128(160));
 		dynCometConfiguration.AssetConfigArr_0[1] = CometConfiguration.AssetConfig(0x0000000000000000000000000000000000000000,0x0000000000000000000000000000000000000000,uint8(175),uint64(29),uint64(2851992114867353551),uint64(189),uint128(1000000000000000003));
@@ -8173,7 +8173,5 @@ contract AssetListFactory_Echidna_Test is Test {
         vm.prank(0x0000000000000000000000000000000000020000);
         target.createAssetList(dynCometConfiguration.AssetConfigArr_0);
     }
-    
-}
 
-    
+}

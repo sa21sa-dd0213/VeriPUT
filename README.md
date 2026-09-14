@@ -74,6 +74,12 @@ its scrubbed `echidna.log` and `fuzzutils.log` files.  A tool that recorded its
 outcome directly in the statistics or verdict journal does not receive a
 synthetic placeholder log.
 
+VeriPUT's generated Solidity tests retain their explanatory comments because
+those comments document the synthesized region and oracle.  Machine-local
+paths and internal campaign labels inside those comments are scrubbed.  Source
+comments are removed only from the other generators' emitted tests and from
+the released Python implementation.
+
 ## Coverage
 
 Source coverage uses the frozen per-subject function, line, and branch targets
@@ -81,10 +87,12 @@ derived from Foundry LCOV.  Only tests that pass on the unmodified subject are
 credited.  Foundry-native suites use target-specific trap evidence; native
 transaction traces from the other generators are projected onto the same
 target manifests.  Reported source percentages are macro means over subjects.
-Bytecode path coverage uses a patched Foundry build that records executed
-bytecode-path identifiers.  Each tool's observed paths are intersected with the
-same frozen per-subject denominator; the reported comparison is restricted to
-the common subject set.
+Bytecode path coverage uses a patched Foundry build that records each ordered
+sequence of branch-item outcomes together with the observable EVM boundary of
+one target invocation.  Each tool's observed paths are intersected with the
+same frozen per-subject bounded structural denominator.  Static infeasible
+paths remain in that denominator, as they do in conservative branch-coverage
+denominators.
 
 ## Reproducing the released tables
 
@@ -97,9 +105,11 @@ python3 Scripts/export_tables.py
 
 The first command checks the frozen subject counts, directory allowlist,
 metadata minimization, file-size limits, and result completeness.  The second
-rebuilds only the CSV tables used by the paper from the released records:
-`Results/RQ1/summary.csv`, `Results/RQ1/paired_bootstrap.csv`,
-`Results/RQ2/{population,summary}.csv`, and `Results/RQ4/summary.csv`.
+rebuilds the headline CSVs from the released records:
+`Results/RQ1/summary.csv`, `Results/RQ2/{population,summary}.csv`, and
+`Results/RQ4/summary.csv`.  `Results/RQ1/paired_bootstrap.csv` is a minimal CSV
+projection of the frozen official 10,000-draw analysis record; the large
+internal reporting program and its intermediate diagnostics are not released.
 
 The repository does not include `node_modules`, Foundry `out/`, `cache/` or
 `lib/`, Echidna corpora, temporary projects, transfer archives, or machine-local

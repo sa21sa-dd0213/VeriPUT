@@ -11,29 +11,29 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new Csi2();
     }
 
     function test_ce_0_simple_if_2() public {
-        
+
 
         target.simple_if_2(0);
     }
     function test_ce_1_simple_if_2() public {
-        
+
 
         target.simple_if_2(5);
     }
     function test_ce_2_simple_if_2() public {
-        
+
 
         target.simple_if_2(2);
     }
     function test_ce_3_simple_if_2() public {
-        
+
 
         target.simple_if_2(3);
     }

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 from __future__ import annotations
 
 import argparse
@@ -12,7 +13,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
-from veriput_subjects import (  
+from veriput_subjects import (
     DEFAULT_AST_TIMEOUT_S,
     KNOWN_SUBJECT_ROOTS,
     PreparedSubject,
@@ -22,7 +23,7 @@ from veriput_subjects import (
     resolve_subject,
     subject_dirs,
 )
-from veriput_path_guard import ensure_path_not_protected  
+from veriput_path_guard import ensure_path_not_protected
 
 
 def _parse_shard(text: str):

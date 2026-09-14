@@ -11,14 +11,14 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new ShuffledGatewayProvider(IGatewayProvider(address(0xDEAD0000000000000000000000000000BEEF)));
     }
 
     function test_ce_0_shuffledGateways() public {
-        
+
 
         target.shuffledGateways(0);
     }

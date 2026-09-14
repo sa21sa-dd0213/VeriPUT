@@ -9,6 +9,6 @@ contract Cfc1_Test is Test {
 	}
 	function test_Cfc1_0() public {
 		vm.prank(0x42C82902d78b993a000000000000000000000000);
-		cfc10.f(); 
+		cfc10.f();
 	}
 }

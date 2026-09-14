@@ -11,24 +11,24 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new EtherBank();
     }
 
     function test_ce_0_withdraw() public {
-        
+
 
         target.withdraw(0);
     }
     function test_ce_1_withdraw() public {
-        
+
 
         target.withdraw(39);
     }
     function test_ce_2_refund() public {
-        
+
 
         target.refund();
     }

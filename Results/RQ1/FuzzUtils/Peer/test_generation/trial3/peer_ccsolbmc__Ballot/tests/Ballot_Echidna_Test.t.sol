@@ -15,29 +15,29 @@ contract Ballot_Echidna_Test is Test {
     function setUp() public {
         target = new Ballot();
     }
-    
-    function test_auto_con1F_0() public { 
-        
+
+    function test_auto_con1F_0() public {
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7066);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -57,32 +57,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 47636);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(94273137864308938549772808760160309927225672468739401022604197568736305912912);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -110,17 +110,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -140,12 +140,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 271957);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -157,7 +157,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 22546);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -169,102 +169,102 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 48318);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(81807581464818880458216707956650055691141326410332499727099052915682094270263);
-        
+
         vm.warp(block.timestamp + 76588);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 277170);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(39545929609700931058987743990438651580871065064727584158792943467040584747508);
-        
+
         vm.warp(block.timestamp + 413722);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 185582);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(27072662653784770086110195793778193790180163379393737050130670936806656516368);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(71198117237522860577975926428387821799612921420212482415218036900633295963764);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(29890986452802841114735935979394988861636295832837030546787026723490592430374);
-        
+
         vm.warp(block.timestamp + 537029);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(113765036569167651849915141996317909637510229411350253125615395375485226653938);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -304,52 +304,52 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(38482950003129361761891293437163897058000108783091833797515545107208472436754);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(1524785993);
-        
+
         vm.warp(block.timestamp + 271957);
         vm.roll(block.number + 37668);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(193433010013234899232595629782868883764549534073374037450527106273033059447);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 887);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -430,27 +430,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 103624);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 574758);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 182449);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 204824);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -477,7 +477,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -506,22 +506,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(4370000);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -540,22 +540,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 30304);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 82670);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -613,7 +613,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 33747);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -625,12 +625,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -672,17 +672,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 21464);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -697,12 +697,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 16503);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 57222);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -714,7 +714,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -783,22 +783,22 @@ contract Ballot_Echidna_Test is Test {
 
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 194051);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(75937045599478227018695230030568729279904294942529834305339026550508071828108);
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -831,30 +831,30 @@ contract Ballot_Echidna_Test is Test {
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
     }
-    
-    
-    function test_auto_vote_1() public { 
-        
+
+
+    function test_auto_vote_1() public {
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7066);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -874,32 +874,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 47636);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(94273137864308938549772808760160309927225672468739401022604197568736305912912);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -927,17 +927,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -957,17 +957,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -979,17 +979,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.winnerName();
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(2);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -1000,37 +1000,37 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -1051,22 +1051,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -1093,32 +1093,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(59627864197669919978431889986313106977799022586210731272742314969266780161976);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -1134,77 +1134,77 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(34849399823509414809019861559436543107260530764523364453804358916133911104926);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 10538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(52735618951514382245711852343000530853197720199315286244146540772894711403946);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 41548);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(100987226212354772937767269107411965942779801166136879661755504328416060132082);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 384608);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 537862);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 28310);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -1216,32 +1216,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 80595);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 47563);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(53);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -1253,12 +1253,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -1309,72 +1309,72 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(1316480222499830785323064375046630404442788898860103286914827353760400092387);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(77397825926547355838255719211316458102634861492318310842030235985977983486263);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 23447);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(58656702631775894167495601375900);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 32592);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(4370000);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 472549);
         vm.roll(block.number + 53275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -1385,12 +1385,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 58462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(85570906523023121519913197681412704941949239468185756033367708841370985028596);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -1420,27 +1420,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 574118);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 128769);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -1485,41 +1485,41 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 58948);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
     }
-    
-    
-    function test_auto_vote_2() public { 
-        
+
+
+    function test_auto_vote_2() public {
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7066);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -1539,32 +1539,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 47636);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(94273137864308938549772808760160309927225672468739401022604197568736305912912);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -1592,17 +1592,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -1622,32 +1622,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(99567512388302199585339454582053090161009901812058417729507960869022843328599);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -1684,87 +1684,87 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 425507);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 47594);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 132943);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(726);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 7931);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -1832,27 +1832,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(45323502859945177021421248771390193423005513068650828969029639337222117870106);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 2512);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -1864,37 +1864,37 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 57532);
         vm.roll(block.number + 30304);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(1897452408);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -1923,27 +1923,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 25732);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 48506);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -1988,27 +1988,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 277232);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(29232294885300870629679731274036670767458335220885376581096243536041025015978);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -2045,7 +2045,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -2105,37 +2105,37 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 289103);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(2);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 326752);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 186451);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -2168,17 +2168,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 450765);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -2205,27 +2205,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 127);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -2264,7 +2264,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 511472);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -2283,7 +2283,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2294,16 +2294,16 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
     }
-    
-    
-    function test_auto_vote_3() public { 
-        
+
+
+    function test_auto_vote_3() public {
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -2330,27 +2330,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 2061);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 19445);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2374,22 +2374,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 277232);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(86049006098400575926420695595396320645772500997157627739554939114971853289958);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -2413,17 +2413,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 324364);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(46981200136694643968512855127183217859964529307577975974211170561713525853653);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -2502,27 +2502,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7066);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2542,32 +2542,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 47636);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(94273137864308938549772808760160309927225672468739401022604197568736305912912);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2595,17 +2595,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -2625,17 +2625,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -2647,46 +2647,46 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.winnerName();
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(2);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(85456420590226601126582613922513942483726532482756881441132729520149454310465);
     }
-    
-    
-    function test_auto_delegate_4() public { 
-        
+
+
+    function test_auto_delegate_4() public {
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7066);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2706,32 +2706,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 47636);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(94273137864308938549772808760160309927225672468739401022604197568736305912912);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2759,17 +2759,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -2789,7 +2789,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2830,47 +2830,47 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 318197);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 30304);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(4370001);
-        
+
         vm.warp(block.timestamp + 322610);
         vm.roll(block.number + 773);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 303345);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -2882,12 +2882,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(1524785992);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -2926,12 +2926,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -2968,12 +2968,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3008,17 +3008,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(690);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3053,12 +3053,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -3117,7 +3117,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3151,27 +3151,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 59983);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 21879);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -3197,12 +3197,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 36377);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -3226,22 +3226,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 205316);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(4);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3268,12 +3268,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 30304);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3292,7 +3292,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -3304,17 +3304,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 521319);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 529358);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(21766331060257072941157709915501334152517666971507040216212111003686165514965);
-        
+
         vm.warp(block.timestamp + 255);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -3355,12 +3355,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 554325);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3372,17 +3372,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(53236497077201731303129736952462661063693074842422731152486500432275086522627);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3415,22 +3415,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3442,42 +3442,42 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 562574);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(738);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(28273001793348894672329675071562343344513852667466501584942519937660506880103);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 153215);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.winningProposal();
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -3489,7 +3489,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 34844);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -3501,31 +3501,31 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000000000);
     }
-    
-    
-    function test_auto_delegate_5() public { 
-        
+
+
+    function test_auto_delegate_5() public {
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7066);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(16633398583336287522256650846910428099008084118643013843355496614966757301834);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3536,17 +3536,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 28031);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3557,12 +3557,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -3582,42 +3582,42 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.winnerName();
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 550570);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(4);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3640,17 +3640,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 50559);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 47636);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(94273137864308938549772808760160309927225672468739401022604197568736305912912);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3684,22 +3684,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3711,12 +3711,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(4370001);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -3736,12 +3736,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(4);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3833,62 +3833,62 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 318197);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(18189815324657757489489947123636769982774546536994776089504192428419599620175);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7066);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3908,32 +3908,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 47636);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(94273137864308938549772808760160309927225672468739401022604197568736305912912);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -3961,17 +3961,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -3991,17 +3991,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -4013,17 +4013,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.winnerName();
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(2);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4034,37 +4034,37 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -4085,22 +4085,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -4127,32 +4127,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(59627864197669919978431889986313106977799022586210731272742314969266780161976);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -4168,76 +4168,76 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(34849399823509414809019861559436543107260530764523364453804358916133911104926);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 10538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(52735618951514382245711852343000530853197720199315286244146540772894711403946);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 41548);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(100987226212354772937767269107411965942779801166136879661755504328416060132082);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
     }
-    
-    
-    function test_auto_giveRightToVote_6() public { 
-        
+
+
+    function test_auto_giveRightToVote_6() public {
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7066);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4257,42 +4257,42 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 423918);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 277232);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4330,17 +4330,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4383,27 +4383,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 36208);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 129);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4425,27 +4425,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 20330);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 206186);
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -4477,17 +4477,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(8563974649449384797604045245173903976411646582165121426071446928846558429184);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4526,12 +4526,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -4554,7 +4554,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 20186);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4591,7 +4591,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -4620,72 +4620,72 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 60054);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 45727);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(4370000);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(30120458601708300898806657647321783184246781631620235295762109620513976677258);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 42290);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(3);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(4370001);
-        
+
         vm.warp(block.timestamp + 117472);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -4758,12 +4758,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4845,30 +4845,30 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 9404);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(108713155417096215431012240369613268729367692652947479300550356121025083248927);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(50240787514789148838196978301447375194376458747320096151595339348238438262154);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 36523);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -4879,27 +4879,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 33605);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 255);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -4911,17 +4911,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 30304);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -4933,37 +4933,37 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 401699);
         vm.roll(block.number + 55747);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(103869239165028217151852260074262360565581913264838648509599913352773387908653);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 147147);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(1);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 9395);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(6125018647334295535677482547246482075197037487249);
-        
+
         vm.warp(block.timestamp + 435606);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 53011);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5047,12 +5047,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 255);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5064,16 +5064,16 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 7411);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
     }
-    
-    
-    function test_auto_delegate_7() public { 
-        
+
+
+    function test_auto_delegate_7() public {
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5084,7 +5084,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 28031);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5095,27 +5095,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.winnerName();
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 550570);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5138,7 +5138,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 50559);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -5149,12 +5149,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5166,12 +5166,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5227,37 +5227,37 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(18189815324657757489489947123636769982774546536994776089504192428419599620175);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7066);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5277,32 +5277,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 47636);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(94273137864308938549772808760160309927225672468739401022604197568736305912912);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5330,17 +5330,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5360,17 +5360,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -5382,17 +5382,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.winnerName();
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(2);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5403,37 +5403,37 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5454,22 +5454,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -5496,32 +5496,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(59627864197669919978431889986313106977799022586210731272742314969266780161976);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5537,27 +5537,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(34849399823509414809019861559436543107260530764523364453804358916133911104926);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 10538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(52735618951514382245711852343000530853197720199315286244146540772894711403946);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 41548);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5596,22 +5596,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(47781208760553707803299978610479462503109603774358118550763308872559206530224);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 14275);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -5623,17 +5623,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(3);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -5652,32 +5652,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 800);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5689,66 +5689,66 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 4);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 437838);
         vm.roll(block.number + 1);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(108272864799636612700536024199285317268158551532891320591736703092739195881146);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 358061);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(66847874140704295501991043302625233645024671246409983883114757511135282673652);
-        
+
         vm.warp(block.timestamp + 318197);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
     }
-    
-    
-    function test_auto_vote_8() public { 
-        
+
+
+    function test_auto_vote_8() public {
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -5760,32 +5760,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 34715);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 517508);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 256313);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 289103);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5850,7 +5850,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -5871,60 +5871,60 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(112105065106301911300920139922777067955221463233414698325538649715240992572374);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(70604849354431822770756981212247343527984697929893744364664417422317516926515);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 127);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(28622168084248315974644007427548566232305566808527526784918846735033281144604);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 30211);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 277232);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -5967,17 +5967,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 334186);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(27051119030777105299605505332418415139212344039480968159914712203887459228743);
-        
+
         vm.warp(block.timestamp + 360513);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -5991,22 +5991,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 44883);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6028,27 +6028,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 43628);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(1734071);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 519534);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6149,27 +6149,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 599146);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 16802);
         vm.roll(block.number + 20243);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(1524785991);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 544248);
         vm.roll(block.number + 15517);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6181,7 +6181,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6377,7 +6377,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 6721);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6415,22 +6415,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 218438);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 52782);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6482,52 +6482,52 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 24169);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(1);
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(1);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6596,22 +6596,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 487636);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -6657,30 +6657,30 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 53166);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 1);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(74614235346344227475513676424072639616579824504199718901826604316585075080402);
-        
+
         vm.warp(block.timestamp + 322371);
         vm.roll(block.number + 30304);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(73220350198917141492236708563926941612341643860032612481949345488720403060208);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -6740,7 +6740,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -6757,7 +6757,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 1123);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6785,46 +6785,46 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 136394);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(5687447794303591111714137304003931188051577067021800727858575571759393213368);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 8961);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(2603639028593024359469031886883750211985799394983151611934246750472184);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(73832053852803838955348356162670631930428485880873117447795958175856345275316);
     }
-    
-    
-    function test_auto_giveRightToVote_9() public { 
-        
+
+
+    function test_auto_giveRightToVote_9() public {
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 166184);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 460713);
         vm.roll(block.number + 5237);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -6836,47 +6836,47 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 322373);
         vm.roll(block.number + 907);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 127);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 414736);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(10665252415533573816343943066722551206684458743663226868828031888054260196036);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -6918,17 +6918,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 57777);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 56852);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 207289);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -6974,22 +6974,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 22699);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 1088);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(17517209777951982496613667041824276054768468424079923185351377514074454320097);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7063,7 +7063,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 30256);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7086,67 +7086,67 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 277232);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 254414);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 11905);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(102243937494092851056017121125442904598035489777580702775770636962959863972038);
-        
+
         vm.warp(block.timestamp + 198598);
         vm.roll(block.number + 30304);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 463588);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(817);
         dynbytes32Arr_0 = new bytes32[](53);
@@ -7208,47 +7208,47 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 494907);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 30304);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 440097);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7260,27 +7260,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 136393);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -7297,7 +7297,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 38100);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7309,37 +7309,37 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(2);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7066);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7359,16 +7359,16 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
     }
-    
-    
-    function test_auto_giveRightToVote_10() public { 
-        
+
+
+    function test_auto_giveRightToVote_10() public {
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7379,7 +7379,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 28031);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -7390,27 +7390,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 18429);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.winnerName();
-        
+
         vm.warp(block.timestamp + 50417);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 550570);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7433,7 +7433,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 50559);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 3);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7444,12 +7444,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 112444);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -7461,12 +7461,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 255);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 32767);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -7522,37 +7522,37 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 11942);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(18189815324657757489489947123636769982774546536994776089504192428419599620175);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7066);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7572,32 +7572,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 47636);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(94273137864308938549772808760160309927225672468739401022604197568736305912912);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7625,17 +7625,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -7655,17 +7655,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7677,17 +7677,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.winnerName();
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(2);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -7698,37 +7698,37 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -7749,22 +7749,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7791,32 +7791,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(59627864197669919978431889986313106977799022586210731272742314969266780161976);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -7832,87 +7832,87 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(34849399823509414809019861559436543107260530764523364453804358916133911104926);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 10538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(52735618951514382245711852343000530853197720199315286244146540772894711403946);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 41548);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(100987226212354772937767269107411965942779801166136879661755504328416060132082);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 384608);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 537862);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 28310);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7945,42 +7945,42 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.winningProposal();
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(1);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -7991,12 +7991,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54505);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8008,25 +8008,25 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(39129690510393916801131215571640274493080859911110658309565887493746979705329);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
     }
-    
-    
-    function test_auto_con1F_11() public { 
+
+
+    function test_auto_con1F_11() public {
         bytes32[] memory dynbytes32Arr_0 = new bytes32[](5);
 		dynbytes32Arr_0[0] = bytes32(hex"2b1b088887fffb753d9ebaf9690671898cfe1d11cc263197439de38e2b1e48b111");
 		dynbytes32Arr_0[1] = bytes32(hex"70ee1d6b079fa2f8c8ec28113e16fae54482ee4e16c16dd6b676778baea3a0");
@@ -8038,77 +8038,77 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(34849399823509414809019861559436543107260530764523364453804358916133911104926);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 10538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(52735618951514382245711852343000530853197720199315286244146540772894711403946);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 41548);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(100987226212354772937767269107411965942779801166136879661755504328416060132082);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 384608);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 537862);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 28310);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -8120,32 +8120,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 80595);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 47563);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(53);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -8157,12 +8157,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8213,72 +8213,72 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(1316480222499830785323064375046630404442788898860103286914827353760400092387);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(77397825926547355838255719211316458102634861492318310842030235985977983486263);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 23447);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(58656702631775894167495601375900);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 32592);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(4370000);
-        
+
         vm.warp(block.timestamp + 434894);
         vm.roll(block.number + 561);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 472549);
         vm.roll(block.number + 53275);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8289,12 +8289,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 58462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(85570906523023121519913197681412704941949239468185756033367708841370985028596);
-        
+
         vm.warp(block.timestamp + 24867);
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -8324,27 +8324,27 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 574118);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 128769);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -8389,17 +8389,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 58948);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 3661);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -8411,32 +8411,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 34715);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 127251);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 517508);
         vm.roll(block.number + 5054);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 256313);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639933);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 289103);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -8502,30 +8502,30 @@ contract Ballot_Echidna_Test is Test {
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
     }
-    
-    
-    function test_auto_giveRightToVote_12() public { 
-        
+
+
+    function test_auto_giveRightToVote_12() public {
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7066);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 1);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 415353);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 490448);
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -8545,32 +8545,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 566039);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 195123);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 47636);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(94273137864308938549772808760160309927225672468739401022604197568736305912912);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -8598,17 +8598,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54809);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 42595);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -8628,17 +8628,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 23275);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 554465);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8650,17 +8650,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 12338);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 65535);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.winnerName();
-        
+
         vm.warp(block.timestamp + 360624);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(2);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -8671,37 +8671,37 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 60248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 23722);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 5020);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -8722,22 +8722,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 322372);
         vm.roll(block.number + 32767);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 115085);
         vm.roll(block.number + 6234);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 289607);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8764,32 +8764,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(59627864197669919978431889986313106977799022586210731272742314969266780161976);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639935);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 36859);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 414579);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -8805,87 +8805,87 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(34849399823509414809019861559436543107260530764523364453804358916133911104926);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 10538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(52735618951514382245711852343000530853197720199315286244146540772894711403946);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 41548);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(100987226212354772937767269107411965942779801166136879661755504328416060132082);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 384608);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 537862);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 28310);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8918,42 +8918,42 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 38350);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639932);
-        
+
         vm.warp(block.timestamp + 3);
         vm.roll(block.number + 12155);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.winningProposal();
-        
+
         vm.warp(block.timestamp + 361136);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(1);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 57086);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 478623);
         vm.roll(block.number + 53678);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8964,12 +8964,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 54505);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 225906);
         vm.roll(block.number + 30011);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -8981,52 +8981,52 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 50499);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 11349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 150273);
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(39129690510393916801131215571640274493080859911110658309565887493746979705329);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 385572);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(85401596300791609413859600125278220386231041758934324507069259304687089204395);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 23403);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 47075);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 522178);
         vm.roll(block.number + 50271);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 38059);
         vm.roll(block.number + 9647);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 4177);
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -9038,22 +9038,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 569114);
         vm.roll(block.number + 24311);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(115792089237316195423570985008687907853269984665640564039457584007913129639934);
-        
+
         vm.warp(block.timestamp + 487078);
         vm.roll(block.number + 34272);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 436727);
         vm.roll(block.number + 30042);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 419861);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -9065,12 +9065,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 59552);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 15367);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 547623);
         vm.roll(block.number + 11891);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -9087,7 +9087,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 2);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9103,25 +9103,25 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 15369);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 34720);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 19933);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
     }
-    
-    
-    function test_auto_delegate_13() public { 
+
+
+    function test_auto_delegate_13() public {
         bytes32[] memory dynbytes32Arr_0 = new bytes32[](5);
 		dynbytes32Arr_0[0] = bytes32(hex"2b1b088887fffb753d9ebaf9690671898cfe1d11cc263197439de38e2b1e48b111");
 		dynbytes32Arr_0[1] = bytes32(hex"70ee1d6b079fa2f8c8ec28113e16fae54482ee4e16c16dd6b676778baea3a0");
@@ -9133,77 +9133,77 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 1362);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 463587);
         vm.roll(block.number + 5952);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(34849399823509414809019861559436543107260530764523364453804358916133911104926);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 5023);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 10538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(52735618951514382245711852343000530853197720199315286244146540772894711403946);
-        
+
         vm.warp(block.timestamp + 420078);
         vm.roll(block.number + 41548);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x0000000000000000000000000000000000010000);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 4462);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 32737);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(100987226212354772937767269107411965942779801166136879661755504328416060132082);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 53562);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 60267);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 384608);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 537862);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 60364);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 66543);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 28310);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 136392);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9215,32 +9215,32 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 9966);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 46422);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 80595);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 100835);
         vm.roll(block.number + 16089);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 47563);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(53);
-        
+
         vm.warp(block.timestamp + 275394);
         vm.roll(block.number + 9920);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9252,12 +9252,12 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 11826);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 30784);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 482712);
         vm.roll(block.number + 27404);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -9308,75 +9308,75 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 49735);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(1316480222499830785323064375046630404442788898860103286914827353760400092387);
-        
+
         vm.warp(block.timestamp + 322247);
         vm.roll(block.number + 5140);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(77397825926547355838255719211316458102634861492318310842030235985977983486263);
-        
+
         vm.warp(block.timestamp + 67960);
         vm.roll(block.number + 23447);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 322374);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 400981);
         vm.roll(block.number + 12053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 407328);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 305572);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 31232);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(58656702631775894167495601375900);
-        
+
         vm.warp(block.timestamp + 82671);
         vm.roll(block.number + 45261);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 379552);
         vm.roll(block.number + 23885);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 82672);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 376096);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 45142);
         vm.roll(block.number + 53451);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -9388,7 +9388,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 447588);
         vm.roll(block.number + 23978);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -9422,7 +9422,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 33995);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 49415);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9444,22 +9444,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 15368);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 135921);
         vm.roll(block.number + 8839);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 156190);
         vm.roll(block.number + 35200);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(102809466817959551626792718235874869716016010688127202625338396196778854553419);
-        
+
         vm.warp(block.timestamp + 487768);
         vm.roll(block.number + 32147);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 519847);
         vm.roll(block.number + 22154);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -9470,37 +9470,37 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 24987);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 412373);
         vm.roll(block.number + 55538);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 332369);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 405856);
         vm.roll(block.number + 4);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00a329c0648769A73afAc7F9381E08FB43dBEA72);
-        
+
         vm.warp(block.timestamp + 111322);
         vm.roll(block.number + 12493);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 297507);
         vm.roll(block.number + 4896);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -9523,17 +9523,17 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 32);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 338920);
         vm.roll(block.number + 53349);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 404997);
         vm.roll(block.number + 2497);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 448552);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -9545,42 +9545,42 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 511822);
         vm.roll(block.number + 2526);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 292304);
         vm.roll(block.number + 8447);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 73040);
         vm.roll(block.number + 22909);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 31594);
         vm.roll(block.number + 4223);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 512439);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 116188);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 5022);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 19029);
         vm.roll(block.number + 42101);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -9597,22 +9597,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 42229);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 588255);
         vm.roll(block.number + 33357);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 172101);
         vm.roll(block.number + 58783);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 127);
         vm.roll(block.number + 45852);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.giveRightToVote(0x0000000000000000000000000000000000020000);
-        
+
         vm.warp(block.timestamp + 490446);
         vm.roll(block.number + 18010);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -9633,22 +9633,22 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 7323);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 344203);
         vm.roll(block.number + 59981);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000000FFFFfFFF);
-        
+
         vm.warp(block.timestamp + 33271);
         vm.roll(block.number + 5021);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x00000000000000000000000000000002fFffFffD);
-        
+
         vm.warp(block.timestamp + 525476);
         vm.roll(block.number + 5053);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 143893);
         vm.roll(block.number + 23653);
         vm.prank(0x0000000000000000000000000000000000010000);
@@ -9678,7 +9678,7 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 1984);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 209930);
         vm.roll(block.number + 49966);
         vm.prank(0x0000000000000000000000000000000000020000);
@@ -9753,37 +9753,37 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 2511);
         vm.prank(0x0000000000000000000000000000000000020000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.warp(block.timestamp + 439556);
         vm.roll(block.number + 59982);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.giveRightToVote(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 117472);
         vm.roll(block.number + 127);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x00000000000000000000000000000001fffffffE);
-        
+
         vm.warp(block.timestamp + 390247);
         vm.roll(block.number + 35248);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.giveRightToVote(0x0000000000000000000000000000000000030000);
-        
+
         vm.warp(block.timestamp + 444463);
         vm.roll(block.number + 45819);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000000000);
-        
+
         vm.warp(block.timestamp + 526194);
         vm.roll(block.number + 54155);
         vm.prank(0x0000000000000000000000000000000000030000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 2);
         vm.roll(block.number + 15005);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.vote(0);
-        
+
         vm.warp(block.timestamp + 362403);
         vm.roll(block.number + 30574);
         vm.prank(0x0000000000000000000000000000000000030000);
@@ -9796,11 +9796,9 @@ contract Ballot_Echidna_Test is Test {
         vm.roll(block.number + 44167);
         vm.prank(0x0000000000000000000000000000000000010000);
         target.con1F(dynbytes32Arr_0);
-        
+
         vm.prank(0x0000000000000000000000000000000000010000);
         target.delegate(0x0000000000000000000000000000000000020000);
     }
-    
-}
 
-    
+}

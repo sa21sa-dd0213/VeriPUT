@@ -11,10 +11,10 @@ contract Cdw1_Test is Test {
 	}
 	function test_Cdw1_0() public {
 		vm.prank(0x215239c5127dce19400000000000000000000000);
-		cdw10.f( 9); 
+		cdw10.f( 9);
 	}
 	function test_Cdw1_1() public {
 		vm.prank(0x313e9dC222577C08800000000000000000000000);
-		cdw11.f( 8); 
+		cdw11.f( 8);
 	}
 }

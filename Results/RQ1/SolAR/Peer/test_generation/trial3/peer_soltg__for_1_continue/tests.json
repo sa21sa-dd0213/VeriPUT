@@ -2,7 +2,7 @@
   [
     {
       "args": [],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -12,7 +12,7 @@
         18040253813659146188260785592527921603745870192367848887577184502633400593410,
         true
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "f",
       "n": 2,
       "value": 0

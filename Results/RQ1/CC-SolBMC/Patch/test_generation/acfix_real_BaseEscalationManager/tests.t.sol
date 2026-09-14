@@ -11,14 +11,14 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new BaseEscalationManager(address(this));
     }
 
     function test_ce_0_assertionDisputedCallback() public {
-        
+
 
         target.assertionDisputedCallback(bytes32(uint256(0)));
     }

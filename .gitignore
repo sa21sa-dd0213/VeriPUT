@@ -6,4 +6,5 @@ cache/
 lib/
 corpus/
 crytic-export/
+.veriput-work/
 .DS_Store

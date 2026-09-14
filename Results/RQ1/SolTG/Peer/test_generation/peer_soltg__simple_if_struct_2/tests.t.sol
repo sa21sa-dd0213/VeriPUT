@@ -9,6 +9,6 @@ contract Csi5_Test is Test {
 	}
 	function test_Csi5_0() public {
 		vm.prank(0x2bF2F5bE6A2b96b6400000000000000000000000);
-		csi50.check(); 
+		csi50.check();
 	}
 }

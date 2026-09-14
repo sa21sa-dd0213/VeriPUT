@@ -19,26 +19,26 @@ contract IdentityManager_Test is Test {
 	}
 	function test_IdentityManager_0() public {
 		vm.prank(0x2888F44e300a35b1100000000000000000000000);
-		identitymanager0.isSender( 7719); 
+		identitymanager0.isSender( 7719);
 	}
 	function test_IdentityManager_1() public {
 		vm.prank(0x33bE168971DA1924500000000000000000000000);
-		identitymanager1.identityExists( 7719); 
+		identitymanager1.identityExists( 7719);
 	}
 	function test_IdentityManager_2() public {
 		vm.prank(0x2B4b0f9e3308C37ED00000000000000000000000);
-		identitymanager2.getIdentity(0x0000000000000000000000000000000000000000); 
+		identitymanager2.getIdentity(0x0000000000000000000000000000000000000000);
 	}
 	function test_IdentityManager_3() public {
 		vm.prank(0x1f1820D0475F570A000000000000000000000000);
-		identitymanager3.equals( 7719,0x0000000000000000000000000000000000000000); 
+		identitymanager3.equals( 7719,0x0000000000000000000000000000000000000000);
 	}
 	function test_IdentityManager_4() public {
 		vm.prank(0x22275675745528f4800000000000000000000000);
-		identitymanager4.convertAddress(0x1E27000000000000000000000000000000000000); 
+		identitymanager4.convertAddress(0x1E27000000000000000000000000000000000000);
 	}
 	function test_IdentityManager_5() public {
 		vm.prank(0x4831ECbD076b42fFc00000000000000000000000);
-		identitymanager5.addressKnown(0x0000000000000000000000000000000000000000); 
+		identitymanager5.addressKnown(0x0000000000000000000000000000000000000000);
 	}
 }

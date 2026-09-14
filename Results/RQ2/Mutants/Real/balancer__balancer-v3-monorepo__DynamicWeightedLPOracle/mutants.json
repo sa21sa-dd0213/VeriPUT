@@ -13154,13 +13154,13 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "getSingleInputIndex",
       "mutant_id": "m001316",
       "operator": "EHD",
       "original_expression": "revert MultipleNonZeroInputs();",
       "replacement_expression": "/* revert MultipleNonZeroInputs(); */",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "failed",

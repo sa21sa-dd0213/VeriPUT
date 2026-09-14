@@ -5,17 +5,17 @@
         "\"memory-safe\"",
         "\"memory-safe\"",
         122,
-        "address_00404",
+        "anonymous_hex_00027",
         67671843913849756223532151147634609196496093980825280811577234672753825386232
       ],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "decimals",
       "n": 2,
       "value": 0
@@ -27,10 +27,10 @@
         "mpckwgu cIHNfswIHRIjuWH SIfRhaEKbrovEuwPFInJChVWEsWhaxZAzAtoCLZgKajoyezFkbMpQfHxMObVIcdFzPMIUKUdhfNLfwRhJWVoNUWZs FJwpkRSGdKJNjQcOqFJwsTdtJTYSZBDIHvhZQEPHgvTeWXztLEASTwvHx WWySalDtLaAayIdJeKxiOnlFNpShfOxPvNnUjaXbsaYyHPSHcMVTIEv",
         "shkGcDBpXGckdxnvbvNrFjlOXYrHyT hLSfmnOWxQ",
         60,
-        "address_00023",
+        "anonymous_hex_00019",
         4
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -38,10 +38,10 @@
     {
       "args": [
         85630990587216964544280989667134622263475665542331065899740362854360401468951,
-        "address_00021",
+        "anonymous_hex_00017",
         60859789024525052950760932066492995107147090270947720539324461692520262906483
       ],
-      "frm": "address_00404",
+      "frm": "anonymous_hex_00027",
       "method": "burn",
       "n": 2,
       "value": 0
@@ -53,10 +53,10 @@
         "mpckwgu cIHNfswIHRIjuWH SIfRhaEKbrovEuwPFInJChVWEsWhaxZAzAtoCLZgKajoyezFkbMpQfHxMObVIcdFzPMIUKUdhfNLfwRhJWVoNUWZs FJwpkRSGdKJNjQcOqFJwsTdtJTYSZBDIHvhZQEPHgvTeWXztLEASTwvHx WWySalDtLaAayIdJeKxiOnlFNpShfOxPvNnUjaXbsaYyHPSHcMVTIEv",
         "shkGcDBpXGckdxnvbvNrFjlOXYrHyT hLSfmnOWxQ",
         60,
-        "address_00184",
+        "anonymous_hex_00022",
         5
       ],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -64,10 +64,10 @@
     {
       "args": [
         5586,
-        "address_00021",
+        "anonymous_hex_00017",
         91718176505470664614544901705786994658647467292867644448036509729360758303210
       ],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "mint",
       "n": 2,
       "value": 0

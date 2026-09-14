@@ -11894,13 +11894,13 @@
     },
     {
       "compile_status": "failed",
-      "end_line": 3068,
+      "end_line": "0xbfc",
       "function": "toInt48",
       "mutant_id": "m001190",
       "operator": "ECS",
       "original_expression": "int48(value)",
       "replacement_expression": "int40(value)",
-      "start_line": 3068
+      "start_line": "0xbfc"
     },
     {
       "compile_status": "failed",

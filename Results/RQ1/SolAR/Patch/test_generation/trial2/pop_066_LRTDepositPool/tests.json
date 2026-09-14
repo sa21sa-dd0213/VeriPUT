@@ -2,14 +2,14 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00019",
+      "frm": "anonymous_hex_00016",
       "method": "unpause",
       "n": 2,
       "value": 0
@@ -18,17 +18,17 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00401",
+        "anonymous_hex_00026",
         94583322518743133427496241046143161990759446959522217032069210641892551685077
       ],
-      "frm": "address_00184",
+      "frm": "anonymous_hex_00022",
       "method": "depositAsset",
       "n": 2,
       "value": 0
@@ -37,16 +37,16 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00410"
+        "anonymous_hex_00028"
       ],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "getTotalAssetDeposits",
       "n": 2,
       "value": 0
@@ -55,17 +55,17 @@
   [
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00032",
+        "anonymous_hex_00020",
         112593530999026669543322539370068163460279446316189717242175079355597550689030
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "getRsETHAmountToMint",
       "n": 2,
       "value": 0
@@ -74,16 +74,16 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00036"
+        "anonymous_hex_00021"
       ],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "initialize",
       "n": 2,
       "value": 0
@@ -92,14 +92,14 @@
   [
     {
       "args": [],
-      "frm": "address_00036",
+      "frm": "anonymous_hex_00021",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00401",
+      "frm": "anonymous_hex_00026",
       "method": "pause",
       "n": 2,
       "value": 0
@@ -108,7 +108,7 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -117,7 +117,7 @@
       "args": [
         32
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "updateMaxNodeDelegatorCount",
       "n": 2,
       "value": 0
@@ -126,14 +126,14 @@
   [
     {
       "args": [],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getNodeDelegatorQueue",
       "n": 2,
       "value": 0
@@ -142,16 +142,16 @@
   [
     {
       "args": [],
-      "frm": "address_00032",
+      "frm": "anonymous_hex_00020",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00401"
+        "anonymous_hex_00026"
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getAssetCurrentLimit",
       "n": 2,
       "value": 0
@@ -160,7 +160,7 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
@@ -168,10 +168,10 @@
     {
       "args": [
         1,
-        "address_00021",
+        "anonymous_hex_00017",
         116874728462509168878918304709530269146322988781705122747402588913385795138
       ],
-      "frm": "address_00398",
+      "frm": "anonymous_hex_00025",
       "method": "transferAssetToNodeDelegator",
       "n": 2,
       "value": 0
@@ -180,16 +180,16 @@
   [
     {
       "args": [],
-      "frm": "address_00023",
+      "frm": "anonymous_hex_00019",
       "method": "constructor",
       "n": 1,
       "value": 0
     },
     {
       "args": [
-        "address_00401"
+        "anonymous_hex_00026"
       ],
-      "frm": "address_00410",
+      "frm": "anonymous_hex_00028",
       "method": "getAssetDistributionData",
       "n": 2,
       "value": 0

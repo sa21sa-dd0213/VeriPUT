@@ -11,19 +11,19 @@ contract CCSolBMCDerived is Test {
     receive() external payable {}
 
     function setUp() public {
-        
-        
-        
+
+
+
         target = new escrow();
     }
 
     function test_ce_0_confirm_payment() public {
-        
+
 
         target.confirm_payment();
     }
     function test_ce_1_ReturnPayment() public {
-        
+
 
         target.ReturnPayment();
     }
