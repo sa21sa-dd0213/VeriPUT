@@ -1,0 +1,111 @@
+{
+  "contract": "B",
+  "dataset": "Patch",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 4
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "bfdfecb147b17e0bcb075a4e32507750540002f965c49f371638879309a2bcc5",
+  "subject_id": "rcx_unchecked_low_level_calls__address_00027__sGuard",
+  "targets": [
+    {
+      "declaration_line": 5,
+      "external_selector": "0f59f83a",
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 5,
+        "name": "B.go",
+        "record": "FN"
+      },
+      "length": 176,
+      "line": 5,
+      "name": "go",
+      "site": "body-entry",
+      "src": "96:176:0",
+      "start": 96,
+      "trap_id": 1,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 5,
+      "external_selector": "0f59f83a",
+      "id": "line:5",
+      "kind": "line",
+      "lcov": {
+        "line": 5,
+        "record": "DA"
+      },
+      "length": 176,
+      "line": 5,
+      "site": "body-entry",
+      "src": "96:176:0",
+      "start": 96,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "public"
+    },
+    {
+      "id": "line:6",
+      "kind": "line",
+      "lcov": {
+        "line": 6,
+        "record": "DA"
+      },
+      "length": 59,
+      "line": 6,
+      "site": "statement-entry",
+      "src": "106:59:0",
+      "start": 106,
+      "statement_type": "VariableDeclarationStatement",
+      "trap_id": 3
+    },
+    {
+      "id": "line:8",
+      "kind": "line",
+      "lcov": {
+        "line": 8,
+        "record": "DA"
+      },
+      "length": 33,
+      "line": 8,
+      "site": "statement-entry",
+      "src": "176:33:0",
+      "start": 176,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 4
+    },
+    {
+      "id": "line:9",
+      "kind": "line",
+      "lcov": {
+        "line": 9,
+        "record": "DA"
+      },
+      "length": 46,
+      "line": 9,
+      "site": "statement-entry",
+      "src": "219:46:0",
+      "start": 219,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 5
+    }
+  ],
+  "totals": {
+    "all": 5,
+    "branch": 0,
+    "function": 1,
+    "line": 4
+  }
+}

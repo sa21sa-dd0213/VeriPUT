@@ -1,0 +1,175 @@
+# ESBMC path-witness (non-vacuity counterexample) for FeeVault.withdraw enc=119
+# Harness: esbmc_path119_witness.sol  (freeT certified region, the region the presented PUT uses)
+# Command: esbmc esbmc_path119_witness.sol --solidity-max-tx 1 --extcall-nondet
+# Binary : $ESBMC_REPO/build-release-static/src/esbmc/esbmc (ESBMC 8.2.0), solc 0.8.34, bitwuzla
+#
+# The target-exit assertion assert(tr==123 && cnt==6) is NEGATED, so VERIFICATION FAILED
+# returns a concrete input reaching enc=119's normal exit == the non-vacuity witness.
+#
+# WITNESS (concrete assignment in the certified region):
+#   msg.sender               = 0x0
+#   deposits[msg.sender]     = 1          in [1, 2^256-1]
+#   amount                   = 1          == 1
+#   discountBps[msg.sender]  = 1          in [1, 250]
+#   => rate = feeBps - disc  = 250 - 1 = 249
+#   => fee  = amount*rate/10000 = 1*249/10000 = 0    (g4=0, not capped)
+#   => net  = amount - fee   = 1 - 0 = 1
+#   => ok1 = ok2 = 1 (both external calls succeed)
+# PATH SIGNATURE (guards g1..g4, ok1, ok2): 1,1,1,0,1,1  ->  tr = 64+32+16+8+0+2+1 = 123, cnt = 6
+#   i.e. amount>0 & amount<=d & discount>0 & fee<=maxFee & both calls succeed  ==  withdraw enc=119 (normal exit)
+# VERDICT: VERIFICATION FAILED  (the negated target assertion is violated == the witness exists)
+
+===== raw ESBMC trace (recursion-unwind lines elided) =====
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Solidity: auto-selecting 'bitwuzla' as SMT backend (Z3 is much slower on 256-bit bit-vector arithmetic). Override with --z3 / --cvc5 / --bitwuzla / --boolector or --default-solver.
+Parsing <workspace>
+Compiling Solidity AST using: /usr/local/bin/solc (v0.8.34)
+Converting
+WARNING: Solidity harness: transaction sequence bounded to 1 tx (default). A VERIFICATION SUCCESSFUL result is bounded -- it means no violation within 1 transaction(s), NOT an unbounded proof; bugs requiring more transactions are not explored. Use --solidity-precise (or --solidity-max-tx 0) for an unbounded proof.
+Generating GOTO Program
+GOTO program creation time: 0.553s
+GOTO program processing time: 0.004s
+Starting Bounded Model Checking
+Symex completed in: 0.003s (300 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 243 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (57 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.006s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file <workspace> line 13 thread 0
+----------------------------------------------------
+  deposits = { 0 }
+
+State 2 file <workspace> line 14 thread 0
+----------------------------------------------------
+  discountBps = { 0 }
+
+State 5  thread 0
+----------------------------------------------------
+  this->$codehash = { .feeReceiver=0, .feeBps=0, .anon_pad$2=0, .maxFee=0,
+    .anon_pad$4=0, .$address=1, .anon_pad$6=0,
+    .$codehash=0, .$balance=0, .$code=0,
+    .$dynamic_pool={ .pool=nil, .pool_cursor=nil }, ._ESBMC_bind_cname={ .pointer_object=nil, .pointer_offset=nil },
+    .anon_pad$12=0 }
+
+State 6 file <workspace> line 15 function W thread 0
+----------------------------------------------------
+  this->$balance = { .feeReceiver=0, .feeBps=0, .anon_pad$2=0, .maxFee=0,
+    .anon_pad$4=0, .$address=1, .anon_pad$6=0,
+    .$codehash=0, .$balance=0, .$code=0,
+    .$dynamic_pool={ .pool=nil, .pool_cursor=nil }, ._ESBMC_bind_cname={ .pointer_object=nil, .pointer_offset=nil },
+    .anon_pad$12=0 }
+
+State 7  thread 0
+----------------------------------------------------
+  this->$code = { .feeReceiver=0, .feeBps=0, .anon_pad$2=0, .maxFee=0,
+    .anon_pad$4=0, .$address=1, .anon_pad$6=0,
+    .$codehash=0, .$balance=0, .$code=0,
+    .$dynamic_pool={ .pool=nil, .pool_cursor=nil }, ._ESBMC_bind_cname={ .pointer_object=nil, .pointer_offset=nil },
+    .anon_pad$12=0 }
+
+State 8  thread 0
+----------------------------------------------------
+  this->_ESBMC_bind_cname = { .feeReceiver=0, .feeBps=0, .anon_pad$2=0, .maxFee=0,
+    .anon_pad$4=0, .$address=1, .anon_pad$6=0,
+    .$codehash=0, .$balance=0, .$code=0,
+    .$dynamic_pool={ .pool=&$W_pool#[0], .pool_cursor=0 }, ._ESBMC_bind_cname=&"W"[0],
+    .anon_pad$12=0 }
+
+State 9 file <workspace> line 15 function W thread 0
+----------------------------------------------------
+  this->feeReceiver = { .feeReceiver=0, .feeBps=250, .anon_pad$2=0, .maxFee=100000000000000000,
+    .anon_pad$4=0, .$address=1,
+    .anon_pad$6=0, .$codehash=0, .$balance=0,
+    .$code=0, .$dynamic_pool={ .pool=&$W_pool#[0], .pool_cursor=0 }, ._ESBMC_bind_cname=&"W"[0],
+    .anon_pad$12=0 }
+
+State 12 file <workspace> line 21 function certify thread 0
+----------------------------------------------------
+  deposits[0] = 1 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001)
+
+State 13 file <workspace> line 22 function certify thread 0
+----------------------------------------------------
+  discountBps[0] = 1 (00000000 00000001)
+
+State 14 file <workspace> line 24 function certify thread 0
+----------------------------------------------------
+  d = 1 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001)
+
+State 15 file <workspace> line 25 function certify thread 0
+----------------------------------------------------
+  g1 = 1
+
+State 16 file <workspace> line 25 function certify thread 0
+----------------------------------------------------
+  tr = 3 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000011)
+
+State 17 file <workspace> line 26 function certify thread 0
+----------------------------------------------------
+  g2 = 1
+
+State 18 file <workspace> line 26 function certify thread 0
+----------------------------------------------------
+  tr = 7 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000111)
+
+State 19 file <workspace> line 27 function certify thread 0
+----------------------------------------------------
+  rate = 250 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 11111010)
+
+State 20 file <workspace> line 28 function certify thread 0
+----------------------------------------------------
+  g3 = 1
+
+State 21 file <workspace> line 28 function certify thread 0
+----------------------------------------------------
+  tr = 15 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00001111)
+
+State 22 file <workspace> line 28 function certify thread 0
+----------------------------------------------------
+  rate = 249 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 11111001)
+
+State 23 file <workspace> line 29 function certify thread 0
+----------------------------------------------------
+  fee = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 24 file <workspace> line 30 function certify thread 0
+----------------------------------------------------
+  g4 = 0
+
+State 25 file <workspace> line 30 function certify thread 0
+----------------------------------------------------
+  tr = 30 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00011110)
+
+State 26  thread 0
+----------------------------------------------------
+  ok1 = 1
+
+State 27 file <workspace> line 33 function certify thread 0
+----------------------------------------------------
+  tr = 61 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00111101)
+
+State 28  thread 0
+----------------------------------------------------
+  ok2 = 1
+
+State 29 file <workspace> line 34 function certify thread 0
+----------------------------------------------------
+  tr = 123 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 01111011)
+
+State 30 file <workspace> line 35 function certify thread 0
+----------------------------------------------------
+Violated property:
+  file <workspace> line 35 function certify
+  assertion !(tr == 123 && cnt == 6)
+  !(tr == 123 && cnt == 6)
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 linux

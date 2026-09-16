@@ -1,0 +1,1092 @@
+{
+  "certified": [
+    {
+      "box": [
+        {
+          "hi": "0",
+          "holes": [],
+          "lo": "0",
+          "name": "amount"
+        },
+        {
+          "hi": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "holes": [],
+          "lo": "0",
+          "name": "block.number"
+        },
+        {
+          "hi": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "holes": [],
+          "lo": "0",
+          "name": "block.timestamp"
+        },
+        {
+          "hi": "4294967295",
+          "holes": [],
+          "lo": "0",
+          "name": "msg.sender"
+        },
+        {
+          "hi": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "holes": [],
+          "lo": "0",
+          "name": "state.deposits$19[msg.sender]"
+        },
+        {
+          "hi": "65535",
+          "holes": [],
+          "lo": "0",
+          "name": "state.discountBps$23[msg.sender]"
+        },
+        {
+          "hi": "1461501637330902918203684832716283019655932542975",
+          "holes": [],
+          "lo": "0",
+          "name": "state.feeReceiver"
+        }
+      ],
+      "ce": {
+        "amount": "0",
+        "block.basefee": "0",
+        "block.blobbasefee": "0",
+        "block.chainid": "0",
+        "block.coinbase": "0",
+        "block.difficulty": "0",
+        "block.gaslimit": "0",
+        "block.number": "0",
+        "block.prevrandao": "0",
+        "block.timestamp": "0",
+        "msg.data": "0",
+        "msg.sender": "0",
+        "msg.sig": "0",
+        "msg.value": "0",
+        "state.feeBps": "250",
+        "state.feeReceiver": "0",
+        "state.maxFee": "100000000000000000",
+        "state.owner": "0",
+        "tx.gasprice": "0",
+        "tx.origin": "0"
+      },
+      "certification_source": "esbmc-certify",
+      "depth": 2,
+      "enc": 6,
+      "established": [
+        {
+          "source": "*",
+          "target": "state.deposits$19[msg.sender]"
+        },
+        {
+          "source": "*",
+          "target": "state.discountBps$23[msg.sender]"
+        },
+        {
+          "source": "*",
+          "target": "state.feeReceiver"
+        }
+      ],
+      "extcall_length_coordinates": [],
+      "extcall_pins": {
+        "extcall.ok1": "1",
+        "extcall.ok2": "1"
+      },
+      "piece": 1,
+      "refinement_used": false,
+      "retreated": {},
+      "verdict": "CERTIFIED"
+    },
+    {
+      "box": [
+        {
+          "hi": "1",
+          "holes": [],
+          "lo": "1",
+          "name": "amount"
+        },
+        {
+          "hi": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "holes": [],
+          "lo": "0",
+          "name": "block.number"
+        },
+        {
+          "hi": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "holes": [],
+          "lo": "0",
+          "name": "block.timestamp"
+        },
+        {
+          "hi": "4294967295",
+          "holes": [],
+          "lo": "0",
+          "name": "msg.sender"
+        },
+        {
+          "hi": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "holes": [],
+          "lo": "1",
+          "name": "state.deposits$19[msg.sender]"
+        },
+        {
+          "hi": "250",
+          "holes": [],
+          "lo": "1",
+          "name": "state.discountBps$23[msg.sender]"
+        },
+        {
+          "hi": "1461501637330902918203684832716283019655932542975",
+          "holes": [],
+          "lo": "0",
+          "name": "state.feeReceiver"
+        }
+      ],
+      "ce": {
+        "amount": "1",
+        "block.basefee": "0",
+        "block.blobbasefee": "0",
+        "block.chainid": "0",
+        "block.coinbase": "0",
+        "block.difficulty": "0",
+        "block.gaslimit": "0",
+        "block.number": "0",
+        "block.prevrandao": "0",
+        "block.timestamp": "0",
+        "msg.data": "0",
+        "msg.sender": "0",
+        "msg.sig": "0",
+        "msg.value": "0",
+        "state.deposits$19[msg.sender]": "1",
+        "state.discountBps$23[msg.sender]": "1",
+        "state.feeBps": "250",
+        "state.feeReceiver": "0",
+        "state.maxFee": "100000000000000000",
+        "state.owner": "0",
+        "tx.gasprice": "0",
+        "tx.origin": "0"
+      },
+      "certification_source": "esbmc-certify",
+      "depth": 6,
+      "enc": 119,
+      "established": [
+        {
+          "source": "*",
+          "target": "state.deposits$19[msg.sender]"
+        },
+        {
+          "source": "*",
+          "target": "state.discountBps$23[msg.sender]"
+        },
+        {
+          "source": "*",
+          "target": "state.feeReceiver"
+        }
+      ],
+      "extcall_length_coordinates": [],
+      "extcall_pins": {
+        "extcall.ok1": "1",
+        "extcall.ok2": "1"
+      },
+      "piece": 1,
+      "refinement_used": true,
+      "retreated": {
+        "amount": "1"
+      },
+      "verdict": "CERTIFIED"
+    },
+    {
+      "box": [
+        {
+          "hi": "463168356949264781694283940034751631413079938662562256157830336031652518559",
+          "holes": [],
+          "lo": "4000000000000000040",
+          "name": "amount"
+        },
+        {
+          "hi": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "holes": [],
+          "lo": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "name": "block.number"
+        },
+        {
+          "hi": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "holes": [],
+          "lo": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "name": "block.timestamp"
+        },
+        {
+          "hi": "2147483647",
+          "holes": [],
+          "lo": "2147483647",
+          "name": "msg.sender"
+        },
+        {
+          "hi": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "holes": [],
+          "lo": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "name": "state.deposits$19[msg.sender]"
+        },
+        {
+          "hi": "0",
+          "holes": [],
+          "lo": "0",
+          "name": "state.discountBps$23[msg.sender]"
+        },
+        {
+          "hi": "2147483647",
+          "holes": [],
+          "lo": "2147483647",
+          "name": "state.feeReceiver"
+        }
+      ],
+      "ce": {
+        "amount": "9223656295591932067",
+        "block.basefee": "0",
+        "block.blobbasefee": "0",
+        "block.chainid": "0",
+        "block.coinbase": "0",
+        "block.difficulty": "0",
+        "block.gaslimit": "0",
+        "block.number": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "block.prevrandao": "0",
+        "block.timestamp": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "msg.data": "0",
+        "msg.sender": "2147483647",
+        "msg.sig": "0",
+        "msg.value": "0",
+        "state.deposits$19[msg.sender]": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "state.feeBps": "250",
+        "state.feeReceiver": "2147483647",
+        "state.maxFee": "100000000000000000",
+        "state.owner": "2147483647",
+        "tx.gasprice": "0",
+        "tx.origin": "0"
+      },
+      "certification_source": "esbmc-certify",
+      "depth": 6,
+      "enc": 123,
+      "established": [
+        {
+          "source": "*",
+          "target": "state.deposits$19[msg.sender]"
+        },
+        {
+          "source": "*",
+          "target": "state.discountBps$23[msg.sender]"
+        },
+        {
+          "source": "*",
+          "target": "state.feeReceiver"
+        }
+      ],
+      "extcall_length_coordinates": [],
+      "extcall_pins": {
+        "extcall.ok1": "1",
+        "extcall.ok2": "1"
+      },
+      "piece": 1,
+      "refinement_used": true,
+      "retreated": {
+        "block.number": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "block.timestamp": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "msg.sender": "2147483647",
+        "state.deposits$19[msg.sender]": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "state.feeReceiver": "2147483647"
+      },
+      "verdict": "CERTIFIED"
+    },
+    {
+      "box": [
+        {
+          "hi": "1",
+          "holes": [],
+          "lo": "1",
+          "name": "amount"
+        },
+        {
+          "hi": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "holes": [],
+          "lo": "0",
+          "name": "block.number"
+        },
+        {
+          "hi": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "holes": [],
+          "lo": "0",
+          "name": "block.timestamp"
+        },
+        {
+          "hi": "4294967295",
+          "holes": [],
+          "lo": "0",
+          "name": "msg.sender"
+        },
+        {
+          "hi": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "holes": [],
+          "lo": "1",
+          "name": "state.deposits$19[msg.sender]"
+        },
+        {
+          "hi": "0",
+          "holes": [],
+          "lo": "0",
+          "name": "state.discountBps$23[msg.sender]"
+        },
+        {
+          "hi": "1461501637330902918203684832716283019655932542975",
+          "holes": [],
+          "lo": "0",
+          "name": "state.feeReceiver"
+        }
+      ],
+      "ce": {
+        "amount": "1",
+        "block.basefee": "0",
+        "block.blobbasefee": "0",
+        "block.chainid": "0",
+        "block.coinbase": "0",
+        "block.difficulty": "0",
+        "block.gaslimit": "0",
+        "block.number": "0",
+        "block.prevrandao": "0",
+        "block.timestamp": "0",
+        "msg.data": "0",
+        "msg.sender": "0",
+        "msg.sig": "0",
+        "msg.value": "0",
+        "state.deposits$19[msg.sender]": "1",
+        "state.feeBps": "250",
+        "state.feeReceiver": "0",
+        "state.maxFee": "100000000000000000",
+        "state.owner": "0",
+        "tx.gasprice": "0",
+        "tx.origin": "0"
+      },
+      "certification_source": "esbmc-certify",
+      "depth": 6,
+      "enc": 127,
+      "established": [
+        {
+          "source": "*",
+          "target": "state.deposits$19[msg.sender]"
+        },
+        {
+          "source": "*",
+          "target": "state.discountBps$23[msg.sender]"
+        },
+        {
+          "source": "*",
+          "target": "state.feeReceiver"
+        }
+      ],
+      "extcall_length_coordinates": [],
+      "extcall_pins": {
+        "extcall.ok1": "1",
+        "extcall.ok2": "1"
+      },
+      "piece": 1,
+      "refinement_used": true,
+      "retreated": {
+        "amount": "1"
+      },
+      "verdict": "CERTIFIED"
+    }
+  ],
+  "certify_esbmc_args": [
+    "--overflow-check",
+    "--div-by-zero-check",
+    "--path-cov-arith-resolve"
+  ],
+  "contract": "FeeVault",
+  "dropped_by_certify": [],
+  "enumerated": [
+    {
+      "depth": 6,
+      "enc": 115
+    },
+    {
+      "depth": 6,
+      "enc": 119
+    },
+    {
+      "depth": 6,
+      "enc": 123
+    },
+    {
+      "depth": 6,
+      "enc": 127
+    },
+    {
+      "depth": 1,
+      "enc": 2
+    },
+    {
+      "depth": 5,
+      "enc": 56
+    },
+    {
+      "depth": 5,
+      "enc": 58
+    },
+    {
+      "depth": 2,
+      "enc": 6
+    },
+    {
+      "depth": 5,
+      "enc": 60
+    },
+    {
+      "depth": 5,
+      "enc": 62
+    }
+  ],
+  "enumeration_source": {
+    "index": null,
+    "mode": "direct",
+    "report": {
+      "mtime_ns": 1787305951570337191,
+      "path": "<workspace>",
+      "size": 148431
+    },
+    "salvage": null
+  },
+  "extcall_length_coordinates": [],
+  "log_ladder": true,
+  "max_tx": 3,
+  "not_certified": [
+    {
+      "ce": {
+        "amount": "0",
+        "block.basefee": "0",
+        "block.blobbasefee": "0",
+        "block.chainid": "0",
+        "block.coinbase": "0",
+        "block.difficulty": "0",
+        "block.gaslimit": "0",
+        "block.number": "0",
+        "block.prevrandao": "0",
+        "block.timestamp": "0",
+        "msg.data": "0",
+        "msg.sender": "0",
+        "msg.sig": "0",
+        "msg.value": "1",
+        "state.feeBps": "250",
+        "state.feeReceiver": "0",
+        "state.maxFee": "100000000000000000",
+        "state.owner": "0",
+        "tx.gasprice": "0",
+        "tx.origin": "0"
+      },
+      "concrete_fallback": false,
+      "depth": 1,
+      "enc": 2,
+      "reason": "EXCLUDED FROM THE SLICE by the pins (msg.value: CE 1 outside [0, 0]), so this path is not an input to region search",
+      "verdict": "NOT_CERTIFIED",
+      "witness_check": null
+    },
+    {
+      "ce": {
+        "amount": "57896044618658097711785492504343953926634992332820282019728792003956564819969",
+        "block.basefee": "0",
+        "block.blobbasefee": "0",
+        "block.chainid": "0",
+        "block.coinbase": "0",
+        "block.difficulty": "0",
+        "block.gaslimit": "0",
+        "block.number": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "block.prevrandao": "0",
+        "block.timestamp": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "msg.data": "0",
+        "msg.sender": "4294967295",
+        "msg.sig": "0",
+        "msg.value": "0",
+        "state.deposits$19[msg.sender]": "57896044618658097711785492504343953926634992332820282019728792003956564819969",
+        "state.discountBps$23[msg.sender]": "127",
+        "state.feeBps": "250",
+        "state.feeReceiver": "4294967295",
+        "state.maxFee": "100000000000000000",
+        "state.owner": "4294967295",
+        "tx.gasprice": "0",
+        "tx.origin": "0"
+      },
+      "concrete_fallback": false,
+      "depth": 6,
+      "enc": 115,
+      "reason": "REFERRED TO THE COORDINATE GATE (method \u00a7Coordinates), not retried: the refuting witness and this path's counterexample agree on every coordinate, so what separates them is a quantity no test can set. \u00a7Certification sends such a path to the coordinate gate INSTEAD of to another shrink round, because no cut on any coordinate could answer it; the witness differs from this path's counterexample on: extcall.rate (path=250, witness=123) [NOT a bounded coordinate], state.owner (path=4294967295, witness=0) [NOT a bounded coordinate]; NOTE: the two payloads do not carry the same keys, so the comparison above covers only the shared ones -- only in this path's: extcall.fee, extcall.net, extcall.ok1, extcall.ok2, extcall.u; NOTE: the witness value reported for state.feeReceiver (=0, assumed in [1, 1461501637330902918203684832716283019655932542975]) lies OUTSIDE the bound this query assumed, so it is NOT the entry-time value and is excluded from the difference above. A path that never reads the quantity leaves it unconstrained, and a nested call overwrites msg.sender with the callee's identity; either way the reported value says nothing about what separates these paths (and 3 further piece(s) of this path also failed: refuted, and \u00a7Certification's retreat does not apply to this PIECE: every coordinate the refutation points at (state.discountBps$23[msg.sender]) has its x_pi value OUTSIDE this piece's own interval. A piece produced by a split excludes x_pi by construction, so pinning at x_pi would not narrow the piece -- it would replace it with a point that is not in it, and every piece of this path would collapse onto the same set. \u26d4 This is NOT the coordinate gate: the witness and x_pi DO differ here; the witness differs from this path's counterexample on: extcall.rate (path=250, witness=65535) [NOT a bounded coordinate], state.discountBps$23[msg.sender] (path=127, witness=251), state.owner (path=4294967295, witness=0) [NOT a bounded coordinate]; NOTE: the two payloads do not carry the same keys, so the comparison above covers only the shared ones -- only in this path's: extcall.fee, extcall.net, extcall.ok1, extcall.ok2, extcall.u; NOTE: the witness value reported for state.feeReceiver (=0, assumed in [1, 1461501637330902918203684832716283019655932542975]) lies OUTSIDE the bound this query assumed, so it is NOT the entry-time value and is excluded from the difference above. A path that never reads the quantity leaves it unconstrained, and a nested call overwrites msg.sender with the callee's identity; either way the reported value says nothing about what separates these paths; refuted, and \u00a7Certification's retreat does not apply to this PIECE: every coordinate the refutation points at (state.feeReceiver) has its x_pi value OUTSIDE this piece's own interval. A piece produced by a split excludes x_pi by construction, so pinning at x_pi would not narrow the piece -- it would replace it with a point that is not in it, and every piece of this path would collapse onto the same set. \u26d4 This is NOT the coordinate gate: the witness and x_pi DO differ here; the witness differs from this path's counterexample on: extcall.rate (path=250, witness=123) [NOT a bounded coordinate], state.feeReceiver (path=4294967295, witness=0), state.owner (path=4294967295, witness=0) [NOT a bounded coordinate]; NOTE: the two payloads do not carry the same keys, so the comparison above covers only the shared ones -- only in this path's: extcall.fee, extcall.net, extcall.ok1, extcall.ok2, extcall.u; refuted, and \u00a7Certification's retreat does not apply to this PIECE: every coordinate the refutation points at (amount, state.discountBps$23[msg.sender]) has its x_pi value OUTSIDE this piece's own interval. A piece produced by a split excludes x_pi by construction, so pinning at x_pi would not narrow the piece -- it would replace it with a point that is not in it, and every piece of this path would collapse onto the same set. \u26d4 This is NOT the coordinate gate: the witness and x_pi DO differ here; the witness differs from this path's counterexample on: amount (path=57896044618658097711785492504343953926634992332820282019728792003956564819969, witness=99999999999999999), state.discountBps$23[msg.sender] (path=127, witness=251), state.owner (path=4294967295, witness=0) [NOT a bounded coordinate]; NOTE: the two payloads do not carry the same keys, so the comparison above covers only the shared ones -- only in this path's: extcall.fee, extcall.net, extcall.ok1, extcall.ok2, extcall.rate, extcall.u; NOTE: the witness value reported for state.feeReceiver (=0, assumed in [1, 1461501637330902918203684832716283019655932542975]) lies OUTSIDE the bound this query assumed, so it is NOT the entry-time value and is excluded from the difference above. A path that never reads the quantity leaves it unconstrained, and a nested call overwrites msg.sender with the callee's identity; either way the reported value says nothing about what separates these paths). \u26d4 AND NO TEST IS EMITTED FOR IT. The single-point check of \u00a7Certification was put on {x_pi} and REFUTED: some input satisfying every pinned coordinate does NOT walk this path. \u26a0 TWO causes are possible and this verdict does not separate them, so neither may be quoted as the reason. (a) the witness trips a compiler-inserted check -- enumeration keeps those out of a path's identity and certification turns them on, which is why the method puts this query at all. (b) a quantity OUTSIDE the coordinate set is still free: the point pins only the free coordinates, and the method says of the rest that certification 'quantifies over it: where varying it can lead away from \u03c0, that query is refuted'. On this unit the refused and unmodelled quantities include the mapping slots and any external-call return. Either way the path's own counterexample is not shown to walk it under the checks a real run performs, so no test is emitted. ESBMC's own `Violated property` block(s) on this refutation, quoted: Violated property: /   file <workspace> line 22 function withdraw /   sol:@C@FeeVault@F@withdraw#193:path:115#nonvacuous /   path_tr$4 != 115 || path_cnt$5 != 6",
+      "verdict": "NOT_CERTIFIED",
+      "witness_check": "FAILED"
+    }
+  ],
+  "partial_after_signal": false,
+  "path_decisions": {
+    "115": {
+      "abi_gate_class": "body",
+      "decisions": [
+        {
+          "arm": "taken",
+          "branch_claim": "!(msg.value == 0)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 1,
+          "line": 22,
+          "operand": 0,
+          "synthetic_abi_gate": true
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!(amount > 0 && amount <= d)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 2,
+          "line": 24,
+          "operand": 0
+        },
+        {
+          "arm": "fall-through",
+          "branch_claim": "!((discountBps[msg.sender]) > 0)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 3,
+          "line": 26,
+          "operand": 0
+        },
+        {
+          "arm": "fall-through",
+          "branch_claim": "!(fee > maxFee)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 4,
+          "line": 32,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!ok1",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 5,
+          "line": 38,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!ok2",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 6,
+          "line": 40,
+          "operand": 0
+        }
+      ]
+    },
+    "119": {
+      "abi_gate_class": "body",
+      "decisions": [
+        {
+          "arm": "taken",
+          "branch_claim": "!(msg.value == 0)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 1,
+          "line": 22,
+          "operand": 0,
+          "synthetic_abi_gate": true
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!(amount > 0 && amount <= d)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 2,
+          "line": 24,
+          "operand": 0
+        },
+        {
+          "arm": "fall-through",
+          "branch_claim": "!((discountBps[msg.sender]) > 0)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 3,
+          "line": 26,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "fee > maxFee",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 4,
+          "line": 32,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!ok1",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 5,
+          "line": 38,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!ok2",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 6,
+          "line": 40,
+          "operand": 0
+        }
+      ]
+    },
+    "123": {
+      "abi_gate_class": "body",
+      "decisions": [
+        {
+          "arm": "taken",
+          "branch_claim": "!(msg.value == 0)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 1,
+          "line": 22,
+          "operand": 0,
+          "synthetic_abi_gate": true
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!(amount > 0 && amount <= d)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 2,
+          "line": 24,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "(discountBps[msg.sender]) > 0",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 3,
+          "line": 26,
+          "operand": 0
+        },
+        {
+          "arm": "fall-through",
+          "branch_claim": "!(fee > maxFee)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 4,
+          "line": 32,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!ok1",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 5,
+          "line": 38,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!ok2",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 6,
+          "line": 40,
+          "operand": 0
+        }
+      ]
+    },
+    "127": {
+      "abi_gate_class": "body",
+      "decisions": [
+        {
+          "arm": "taken",
+          "branch_claim": "!(msg.value == 0)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 1,
+          "line": 22,
+          "operand": 0,
+          "synthetic_abi_gate": true
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!(amount > 0 && amount <= d)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 2,
+          "line": 24,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "(discountBps[msg.sender]) > 0",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 3,
+          "line": 26,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "fee > maxFee",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 4,
+          "line": 32,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!ok1",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 5,
+          "line": 38,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!ok2",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 6,
+          "line": 40,
+          "operand": 0
+        }
+      ]
+    },
+    "2": {
+      "abi_gate_class": "reject",
+      "decisions": [
+        {
+          "arm": "fall-through",
+          "branch_claim": "msg.value == 0",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 1,
+          "line": 22,
+          "operand": 0,
+          "synthetic_abi_gate": true
+        }
+      ]
+    },
+    "56": {
+      "abi_gate_class": "body",
+      "decisions": [
+        {
+          "arm": "taken",
+          "branch_claim": "!(msg.value == 0)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 1,
+          "line": 22,
+          "operand": 0,
+          "synthetic_abi_gate": true
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!(amount > 0 && amount <= d)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 2,
+          "line": 24,
+          "operand": 0
+        },
+        {
+          "arm": "fall-through",
+          "branch_claim": "!((discountBps[msg.sender]) > 0)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 3,
+          "line": 26,
+          "operand": 0
+        },
+        {
+          "arm": "fall-through",
+          "branch_claim": "!(fee > maxFee)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 4,
+          "line": 32,
+          "operand": 0
+        },
+        {
+          "arm": "fall-through",
+          "branch_claim": "!(!ok1)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 5,
+          "line": 38,
+          "operand": 0
+        }
+      ]
+    },
+    "58": {
+      "abi_gate_class": "body",
+      "decisions": [
+        {
+          "arm": "taken",
+          "branch_claim": "!(msg.value == 0)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 1,
+          "line": 22,
+          "operand": 0,
+          "synthetic_abi_gate": true
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!(amount > 0 && amount <= d)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 2,
+          "line": 24,
+          "operand": 0
+        },
+        {
+          "arm": "fall-through",
+          "branch_claim": "!((discountBps[msg.sender]) > 0)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 3,
+          "line": 26,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "fee > maxFee",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 4,
+          "line": 32,
+          "operand": 0
+        },
+        {
+          "arm": "fall-through",
+          "branch_claim": "!(!ok1)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 5,
+          "line": 38,
+          "operand": 0
+        }
+      ]
+    },
+    "6": {
+      "abi_gate_class": "body",
+      "decisions": [
+        {
+          "arm": "taken",
+          "branch_claim": "!(msg.value == 0)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 1,
+          "line": 22,
+          "operand": 0,
+          "synthetic_abi_gate": true
+        },
+        {
+          "arm": "fall-through",
+          "branch_claim": "!(!(amount > 0 && amount <= d))",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 2,
+          "line": 24,
+          "operand": 0
+        }
+      ]
+    },
+    "60": {
+      "abi_gate_class": "body",
+      "decisions": [
+        {
+          "arm": "taken",
+          "branch_claim": "!(msg.value == 0)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 1,
+          "line": 22,
+          "operand": 0,
+          "synthetic_abi_gate": true
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!(amount > 0 && amount <= d)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 2,
+          "line": 24,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "(discountBps[msg.sender]) > 0",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 3,
+          "line": 26,
+          "operand": 0
+        },
+        {
+          "arm": "fall-through",
+          "branch_claim": "!(fee > maxFee)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 4,
+          "line": 32,
+          "operand": 0
+        },
+        {
+          "arm": "fall-through",
+          "branch_claim": "!(!ok1)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 5,
+          "line": 38,
+          "operand": 0
+        }
+      ]
+    },
+    "62": {
+      "abi_gate_class": "body",
+      "decisions": [
+        {
+          "arm": "taken",
+          "branch_claim": "!(msg.value == 0)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 1,
+          "line": 22,
+          "operand": 0,
+          "synthetic_abi_gate": true
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "!(amount > 0 && amount <= d)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 2,
+          "line": 24,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "(discountBps[msg.sender]) > 0",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 3,
+          "line": 26,
+          "operand": 0
+        },
+        {
+          "arm": "taken",
+          "branch_claim": "fee > maxFee",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 4,
+          "line": 32,
+          "operand": 0
+        },
+        {
+          "arm": "fall-through",
+          "branch_claim": "!(!ok1)",
+          "column": 0,
+          "file": "<workspace>",
+          "function": "withdraw",
+          "index": 5,
+          "line": 38,
+          "operand": 0
+        }
+      ]
+    }
+  },
+  "path_function": "sol:@C@FeeVault@F@withdraw#193",
+  "pins": {
+    "block.basefee": "0",
+    "block.blobbasefee": "0",
+    "block.chainid": "0",
+    "block.coinbase": "0",
+    "block.difficulty": "0",
+    "block.prevrandao": "0",
+    "extcall.ok1": "1",
+    "extcall.ok2": "1",
+    "msg.value": "0",
+    "state.feeBps": "250",
+    "state.maxFee": "100000000000000000",
+    "tx.gasprice": "0"
+  },
+  "query_max_tx": 1,
+  "schema": "path-generalise-result/1",
+  "scope": "focus:deposit,setDiscount,withdraw",
+  "state_dependency_filter": {
+    "dropped": [
+      "state.owner"
+    ],
+    "evidence": [
+      "state.deposits dependency distance 0: function withdraw#193 at AST src 1270:8:0",
+      "state.discountBps dependency distance 0: function withdraw#193 at AST src 1017:11:0",
+      "state.feeBps dependency distance 0: function withdraw#193 at AST src 1008:6:0",
+      "state.feeReceiver dependency distance 0: function withdraw#193 at AST src 1328:11:0",
+      "state.maxFee dependency distance 0: function withdraw#193 at AST src 1188:6:0"
+    ],
+    "live": [
+      "deposits",
+      "discountBps",
+      "feeBps",
+      "feeReceiver",
+      "maxFee"
+    ],
+    "mode": "source-closure-no-inline-assembly"
+  },
+  "unit": "withdraw"
+}

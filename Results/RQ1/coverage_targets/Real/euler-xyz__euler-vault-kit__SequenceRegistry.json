@@ -1,0 +1,111 @@
+{
+  "contract": "SequenceRegistry",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 4
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "13647ab69dc50486eb964842569c671282755843e1d56528e11116f2557c5bce",
+  "subject_id": "euler-xyz__euler-vault-kit__SequenceRegistry",
+  "targets": [
+    {
+      "declaration_line": 37,
+      "external_selector": "2b0cb55e",
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 37,
+        "name": "SequenceRegistry.reserveSeqId",
+        "record": "FN"
+      },
+      "length": 143,
+      "line": 37,
+      "name": "reserveSeqId",
+      "site": "body-entry",
+      "src": "496:143:0",
+      "start": 496,
+      "trap_id": 1,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 37,
+      "external_selector": "2b0cb55e",
+      "id": "line:37",
+      "kind": "line",
+      "lcov": {
+        "line": 37,
+        "record": "DA"
+      },
+      "length": 143,
+      "line": 37,
+      "site": "body-entry",
+      "src": "496:143:0",
+      "start": 496,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "external"
+    },
+    {
+      "id": "line:38",
+      "kind": "line",
+      "lcov": {
+        "line": 38,
+        "record": "DA"
+      },
+      "length": 38,
+      "line": 38,
+      "site": "statement-entry",
+      "src": "506:38:0",
+      "start": 506,
+      "statement_type": "VariableDeclarationStatement",
+      "trap_id": 3
+    },
+    {
+      "id": "line:40",
+      "kind": "line",
+      "lcov": {
+        "line": 40,
+        "record": "DA"
+      },
+      "length": 54,
+      "line": 40,
+      "site": "statement-entry",
+      "src": "555:54:0",
+      "start": 555,
+      "statement_type": "EmitStatement",
+      "trap_id": 4
+    },
+    {
+      "id": "line:42",
+      "kind": "line",
+      "lcov": {
+        "line": 42,
+        "record": "DA"
+      },
+      "length": 12,
+      "line": 42,
+      "site": "statement-entry",
+      "src": "620:12:0",
+      "start": 620,
+      "statement_type": "Return",
+      "trap_id": 5
+    }
+  ],
+  "totals": {
+    "all": 5,
+    "branch": 0,
+    "function": 1,
+    "line": 4
+  }
+}

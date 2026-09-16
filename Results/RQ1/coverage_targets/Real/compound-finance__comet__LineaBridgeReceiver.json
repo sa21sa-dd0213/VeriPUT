@@ -1,0 +1,169 @@
+{
+  "contract": "LineaBridgeReceiver",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 1,
+    "FNF": 2,
+    "LF": 5
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "4002e24d93ee7b86da979a00b19314c96466541ab82a30a0e6c73cbf43e42ec7",
+  "subject_id": "compound-finance__comet__LineaBridgeReceiver",
+  "targets": [
+    {
+      "declaration_line": 216,
+      "external_selector": null,
+      "function_kind": "constructor",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 216,
+        "name": "LineaBridgeReceiver.constructor",
+        "record": "FN"
+      },
+      "length": 66,
+      "line": 216,
+      "name": "constructor",
+      "site": "body-entry",
+      "src": "5590:66:0",
+      "start": 5590,
+      "trap_id": 1,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 220,
+      "external_selector": null,
+      "function_kind": "fallback",
+      "id": "function:2",
+      "kind": "function",
+      "lcov": {
+        "line": 220,
+        "name": "LineaBridgeReceiver.fallback",
+        "record": "FN"
+      },
+      "length": 140,
+      "line": 220,
+      "name": "fallback",
+      "site": "body-entry",
+      "src": "5690:140:0",
+      "start": 5690,
+      "trap_id": 2,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 216,
+      "external_selector": null,
+      "id": "line:216",
+      "kind": "line",
+      "lcov": {
+        "line": 216,
+        "record": "DA"
+      },
+      "length": 66,
+      "line": 216,
+      "site": "body-entry",
+      "src": "5590:66:0",
+      "start": 5590,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 3,
+      "visibility": "public"
+    },
+    {
+      "id": "line:217",
+      "kind": "line",
+      "lcov": {
+        "line": 217,
+        "record": "DA"
+      },
+      "length": 49,
+      "line": 217,
+      "site": "statement-entry",
+      "src": "5600:49:0",
+      "start": 5600,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 4
+    },
+    {
+      "declaration_line": 220,
+      "external_selector": null,
+      "id": "line:220",
+      "kind": "line",
+      "lcov": {
+        "line": 220,
+        "record": "DA"
+      },
+      "length": 140,
+      "line": 220,
+      "site": "body-entry",
+      "src": "5690:140:0",
+      "start": 5690,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 5,
+      "visibility": "external"
+    },
+    {
+      "id": "line:221",
+      "kind": "line",
+      "lcov": {
+        "line": 221,
+        "record": "DA"
+      },
+      "length": 64,
+      "line": 221,
+      "site": "statement-entry",
+      "src": "5700:64:0",
+      "start": 5700,
+      "statement_type": "IfStatement",
+      "trap_id": 6
+    },
+    {
+      "id": "line:222",
+      "kind": "line",
+      "lcov": {
+        "line": 222,
+        "record": "DA"
+      },
+      "length": 49,
+      "line": 222,
+      "site": "statement-entry",
+      "src": "5774:49:0",
+      "start": 5774,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 7
+    },
+    {
+      "branch_id": "branch:3",
+      "condition_src": "5704:37:0",
+      "id": "branch:3:true",
+      "kind": "branch",
+      "lcov": {
+        "block": 15,
+        "branch": 0,
+        "line": 221,
+        "record": "BRDA"
+      },
+      "lcov_branch": 0,
+      "length": 21,
+      "line": 221,
+      "outcome": true,
+      "site": "branch-entry",
+      "src": "5743:21:0",
+      "start": 5743,
+      "trap_id": 8
+    }
+  ],
+  "totals": {
+    "all": 8,
+    "branch": 1,
+    "function": 2,
+    "line": 5
+  }
+}

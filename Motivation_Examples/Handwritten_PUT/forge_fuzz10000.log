@@ -1,0 +1,64 @@
+===== FeeVault =====  (src/FeeVault.sol = Motivation_Examples/FeeVault.sol; test/GroundTruth.t.sol = hand-written PUT)
+$ forge test --fuzz-runs 10000 --fuzz-seed 0x56657269505554 -vv
+Compiling 22 files with Solc 0.8.34
+Solc 0.8.34 finished in 471.11ms
+Compiler run successful with warnings:
+Warning (3420): Source file does not specify required compiler version! Consider adding "pragma solidity ^0.8.34;"
+--> test/GroundTruth.t.sol
+
+
+Ran 1 test for test/GroundTruth.t.sol:GroundTruthTest
+[PASS] test_put_withdraw_path123(uint256,uint256,uint16) (runs: 10000, μ: 132554, ~: 132435)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 116.12ms (115.80ms CPU time)
+
+Ran 1 test suite in 116.96ms (116.12ms CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)
+
+===== FeeVault_M1 =====  (src/FeeVault.sol = Motivation_Examples/FeeVault_M1.sol; test/GroundTruth.t.sol = hand-written PUT)
+$ forge test --fuzz-runs 10000 --fuzz-seed 0x56657269505554 -vv
+Compiling 3 files with Solc 0.8.34
+Solc 0.8.34 finished in 410.58ms
+Compiler run successful with warnings:
+Warning (3420): Source file does not specify required compiler version! Consider adding "pragma solidity ^0.8.34;"
+--> test/GroundTruth.t.sol
+
+
+Ran 1 test for test/GroundTruth.t.sol:GroundTruthTest
+[FAIL: panic: arithmetic underflow or overflow (0x11); counterexample: calldata=0x8c369c6b0000000000000000000000000000000000182cb9b4f084afab06a3bc40fe097c00000000000000000000000000007f940c137a5908e62262382d24102d45ba1c0000000000000000000000000000000000000000000000000000000000000013 args=[125522263835532232915132920604002684 [1.255e35], 11113638155508947980070677155646436901501468 [1.111e43], 19]] test_put_withdraw_path123(uint256,uint256,uint16) (runs: 0, μ: 0, ~: 0)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 5.65ms (5.34ms CPU time)
+
+Ran 1 test suite in 6.34ms (5.65ms CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/GroundTruth.t.sol:GroundTruthTest
+[FAIL: panic: arithmetic underflow or overflow (0x11); counterexample: calldata=0x8c369c6b0000000000000000000000000000000000182cb9b4f084afab06a3bc40fe097c00000000000000000000000000007f940c137a5908e62262382d24102d45ba1c0000000000000000000000000000000000000000000000000000000000000013 args=[125522263835532232915132920604002684 [1.255e35], 11113638155508947980070677155646436901501468 [1.111e43], 19]] test_put_withdraw_path123(uint256,uint256,uint16) (runs: 0, μ: 0, ~: 0)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+
+Fuzz seed: 0x56657269505554 (use `--fuzz-seed` to reproduce)
+
+===== FeeVault_M2 =====  (src/FeeVault.sol = Motivation_Examples/FeeVault_M2.sol; test/GroundTruth.t.sol = hand-written PUT)
+$ forge test --fuzz-runs 10000 --fuzz-seed 0x56657269505554 -vv
+Compiling 3 files with Solc 0.8.34
+Solc 0.8.34 finished in 483.64ms
+Compiler run successful with warnings:
+Warning (3420): Source file does not specify required compiler version! Consider adding "pragma solidity ^0.8.34;"
+--> test/GroundTruth.t.sol
+
+
+Ran 1 test for test/GroundTruth.t.sol:GroundTruthTest
+[FAIL: net >= 9751: 7678 < 9751; counterexample: calldata=0x8c369c6b0000000000000000000000000000000000000000000000003100481e9252627500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004acf args=[3530901403999560309 [3.53e18], 0, 19151 [1.915e4]]] test_put_withdraw_path123(uint256,uint256,uint16) (runs: 12, μ: 132408, ~: 131757)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 4.49ms (4.19ms CPU time)
+
+Ran 1 test suite in 6.15ms (4.49ms CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/GroundTruth.t.sol:GroundTruthTest
+[FAIL: net >= 9751: 7678 < 9751; counterexample: calldata=0x8c369c6b0000000000000000000000000000000000000000000000003100481e9252627500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004acf args=[3530901403999560309 [3.53e18], 0, 19151 [1.915e4]]] test_put_withdraw_path123(uint256,uint256,uint16) (runs: 12, μ: 132408, ~: 131757)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+
+Fuzz seed: 0x56657269505554 (use `--fuzz-seed` to reproduce)

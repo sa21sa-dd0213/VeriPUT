@@ -23,7 +23,8 @@ from typing import Any, Iterable
 
 
 MAX_GITHUB_BLOB = 100 * 1024 * 1024
-EXPECTED_TOP = {".gitignore", "README.md", "Datasets", "Results", "Scripts", "Tools"}
+EXPECTED_TOP = {".gitignore", "LICENSE", "README.md", "requirements.txt",
+                "Datasets", "Motivation_Examples", "Results", "Scripts", "Tools"}
 EXPECTED_RQS = {"RQ1", "RQ2", "RQ4"}
 EXPECTED_TOOLS = {"VeriPUT", "CC-SolBMC", "SolTG", "SolAR", "SynTest", "FuzzUtils"}
 EXPECTED_DATASETS = {"Peer", "Real", "Patch"}
@@ -38,6 +39,24 @@ EXPECTED_TRIALS = {
 }
 EXPECTED_VERIPUT_VALID = {"Peer": 1804, "Real": 579, "Patch": 774}
 EXPECTED_RQ4_ARMS = {"no_RR", "no_RC", "no_OS"}
+EXPECTED_CERTIFICATION_SOURCES = {
+    "esbmc-certify", "structural-abi-gate-no-coordinate",
+    "structural-simple-decision", "none",
+}
+EXPECTED_ORACLE_FAMILIES = (
+    "R0 exit behavior", "R2.1 value behavior", "fixed replay assertion",
+    "R2.2 source-derived relation", "R1 change behavior",
+)
+EXPECTED_ORACLE_ATTRIBUTIONS = {
+    "R0 exit behavior": 1367,
+    "R2.1 value behavior": 603,
+    "fixed replay assertion": 516,
+    "R2.2 source-derived relation": 377,
+    "R1 change behavior": 37,
+}
+EXPECTED_KILL_ATTRIBUTION_MUTANTS = 2792
+EXPECTED_FUZZ_REFERENCE_SUBJECTS = 350
+EXPECTED_FUZZ_MATERIALIZED = 3206
 RETIRED_REAL = {"CometStorage", "CompatibilityFallbackHandler"}
 EXPECTED_PROTOCOL = {
     "coverage_fuzz_runs": 10000,
@@ -101,6 +120,16 @@ LEGACY_CAMPAIGN_MARKER = re.compile(r"full-\d{8}-v\d+", re.IGNORECASE)
 LEGACY_RESULT_COUNT = re.compile(r"(?<![0-9A-Za-z_])3,?068(?![0-9A-Za-z_])")
 
 
+def address_literal_scope(rel: Path) -> bool:
+    if len(rel.parts) >= 4 and rel.parts[:3] == ("Results", "RQ2", "Mutants"):
+        return True
+    if rel.as_posix() == "Results/RQ2/kill_attribution.jsonl":
+        return True
+    if rel.parts[:1] == ("Motivation_Examples",):
+        return True
+    return False
+
+
 def files(root: Path) -> Iterable[Path]:
     for path in root.rglob("*"):
         if ".git" in path.parts or not path.is_file():
@@ -120,7 +149,19 @@ def json_values(value: Any) -> Iterable[Any]:
         yield value
 
 
-def check_json(path: Path, failures: list[str]) -> None:
+def structural_offset_scope(rel: Path) -> bool:
+    return rel.parts[:3] == ("Results", "RQ1", "coverage_targets")
+
+
+def source_digest_scope(path: Path, root: Path) -> bool:
+    try:
+        rel = path.relative_to(root)
+    except ValueError:
+        return False
+    return rel.parts[:3] == ("Results", "RQ1", "coverage_targets")
+
+
+def check_json(path: Path, failures: list[str], digest_allowed: bool = False) -> None:
     try:
         if path.suffix == ".jsonl":
             values = [json.loads(line) for line in path.read_text(errors="replace").splitlines() if line.strip()]
@@ -137,6 +178,8 @@ def check_json(path: Path, failures: list[str]) -> None:
                 for key, child in node.items():
                     folded = str(key).lower()
                     hash_key = bool(re.search(r"(?:^|_)(?:sha\d*|hash|checksum)(?:_|$)", folded))
+                    if folded == "source_sha256" and digest_allowed:
+                        hash_key = False
                     if folded in BANNED_JSON_KEYS or hash_key:
                         failures.append(f"banned JSON key {key!r}: {path}")
                     stack.append(child)
@@ -426,6 +469,7 @@ def check_exported_tables(root: Path, failures: list[str]) -> None:
         module = runpy.run_path(str(script), run_name="publication_export_tables")
         exporters = (
             module["rq1"], module["rq2"], module["rq4"],
+            module["oracle_attribution"], module["certification"],
         )
         for exporter in exporters:
             exporter.__globals__["write_csv"] = capture
@@ -434,7 +478,9 @@ def check_exported_tables(root: Path, failures: list[str]) -> None:
         failures.append(f"cannot regenerate publication CSVs: {exc}")
         return
     expected = {
+        (root / "Results" / "RQ1" / "certification.csv").resolve(),
         (root / "Results" / "RQ1" / "summary.csv").resolve(),
+        (root / "Results" / "RQ2" / "oracle_attribution.csv").resolve(),
         (root / "Results" / "RQ2" / "population.csv").resolve(),
         (root / "Results" / "RQ2" / "summary.csv").resolve(),
         (root / "Results" / "RQ4" / "summary.csv").resolve(),
@@ -610,6 +656,268 @@ def check_foundry(path: Path, failures: list[str]) -> None:
         failures.append(f"invalid Foundry gzip: {exc}")
 
 
+def check_certification(root: Path, failures: list[str]) -> None:
+    total = 0
+    for dataset in sorted(EXPECTED_DATASETS):
+        path = (root / "Results" / "RQ1" / "VeriPUT" / dataset
+                / "test_generation" / "statistics.json")
+        blob = read_json(path, failures)
+        if not isinstance(blob, dict):
+            continue
+        for row in blob.get("rows") or []:
+            for entry in row.get("entries") or []:
+                total += 1
+                source = str(entry.get("certification_source") or "")
+                if source not in EXPECTED_CERTIFICATION_SOURCES:
+                    failures.append(
+                        f"unknown region certification source {source!r}: "
+                        f"{dataset}/{row.get('subject_id')}/{entry.get('entry_id')}"
+                    )
+                if entry.get("forge_status") != "Success":
+                    failures.append(
+                        f"released unit without a passing reference run: "
+                        f"{dataset}/{row.get('subject_id')}/{entry.get('entry_id')}"
+                    )
+                if not isinstance(entry.get("has_r1r2"), bool):
+                    failures.append(
+                        f"missing oracle-carriage flag: "
+                        f"{dataset}/{row.get('subject_id')}/{entry.get('entry_id')}"
+                    )
+    if total != 3157:
+        failures.append(f"region certification covers {total} units, expected 3157")
+
+
+def check_kill_attribution(root: Path, targets: dict[str, set[str]],
+                           failures: list[str]) -> None:
+    path = root / "Results" / "RQ2" / "kill_attribution.jsonl"
+    if not path.is_file():
+        failures.append("missing Results/RQ2/kill_attribution.jsonl")
+        return
+    module_path = root / "Scripts" / "oracle_family.py"
+    if not module_path.is_file():
+        failures.append("missing Scripts/oracle_family.py")
+        return
+    try:
+        module = runpy.run_path(str(module_path), run_name="publication_oracle_family")
+        reason_family = module["reason_family"]
+    except Exception as exc:
+        failures.append(f"cannot load the oracle taxonomy module: {exc}")
+        return
+    seen: set[tuple[str, str, str]] = set()
+    counts: Counter[str] = Counter()
+    expected_keys = {"dataset", "mutant_id", "reasons", "subject_id"}
+    for number, line in enumerate(path.read_text().splitlines(), 1):
+        if not line.strip():
+            continue
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError as exc:
+            failures.append(f"invalid kill attribution row {number}: {exc}")
+            continue
+        if set(row) != expected_keys:
+            failures.append(f"non-minimal kill attribution row {number}")
+            continue
+        dataset = str(row.get("dataset") or "")
+        subject = str(row.get("subject_id") or "")
+        mutant = str(row.get("mutant_id") or "")
+        key = (dataset, subject, mutant)
+        if subject not in targets.get(dataset, set()):
+            failures.append(f"kill attribution names a non-target subject: {key}")
+        if key in seen:
+            failures.append(f"duplicate kill attribution identity: {key}")
+        seen.add(key)
+        reasons = row.get("reasons") or []
+        if not isinstance(reasons, list) or not reasons:
+            failures.append(f"kill attribution row {number} carries no reason")
+            continue
+        families = []
+        for reason in reasons:
+            family = reason_family(str(reason))
+            if family == "UNMAPPED":
+                failures.append(f"unclassifiable kill reason in row {number}")
+            if family.startswith("infra") or family in families:
+                continue
+            families.append(family)
+        for family in families:
+            counts[family] += 1
+    if len(seen) != EXPECTED_KILL_ATTRIBUTION_MUTANTS:
+        failures.append(
+            f"kill attribution covers {len(seen)} mutants, "
+            f"expected {EXPECTED_KILL_ATTRIBUTION_MUTANTS}"
+        )
+    observed = {family: counts[family] for family in EXPECTED_ORACLE_ATTRIBUTIONS}
+    if observed != EXPECTED_ORACLE_ATTRIBUTIONS:
+        failures.append(
+            f"paper oracle attribution mismatch: {observed}, "
+            f"expected {EXPECTED_ORACLE_ATTRIBUTIONS}"
+        )
+
+
+def check_rq4_arms(root: Path, failures: list[str]) -> None:
+    base = root / "Results" / "RQ4" / "arms"
+    if not base.is_dir():
+        failures.append("missing Results/RQ4/arms")
+        return
+    arms = {path.name for path in base.iterdir() if path.is_dir()}
+    if arms != EXPECTED_RQ4_ARMS:
+        failures.append(f"RQ4 arm inputs must be {sorted(EXPECTED_RQ4_ARMS)}, got {sorted(arms)}")
+    for arm in sorted(arms & EXPECTED_RQ4_ARMS):
+        for name in ("bundle.jsonl", "report.json"):
+            path = base / arm / name
+            if not path.is_file():
+                failures.append(f"RQ4 arm {arm} lacks {name}")
+    unit_counts = root / "Results" / "RQ4" / "unit_counts.csv"
+    if not unit_counts.is_file():
+        failures.append("missing Results/RQ4/unit_counts.csv")
+        return
+    try:
+        with unit_counts.open(newline="") as stream:
+            rows = list(csv.DictReader(stream))
+    except OSError as exc:
+        failures.append(f"cannot read RQ4 unit counts: {exc}")
+        return
+    if {row.get("arm") for row in rows} != EXPECTED_RQ4_ARMS:
+        failures.append("RQ4 unit counts do not cover exactly the three arms")
+
+
+def check_supplementary_files(root: Path, failures: list[str]) -> None:
+    licence = root / "LICENSE"
+    text = licence.read_text() if licence.is_file() else ""
+    if "Apache License" not in text or "Version 2.0" not in text:
+        failures.append("missing or unrecognized LICENSE")
+    notice = root / "Tools" / "ESBMC" / "COPYING"
+    if not notice.is_file() or "ESBMC" not in notice.read_text():
+        failures.append("missing the upstream ESBMC licence notice")
+    if not (root / "requirements.txt").is_file():
+        failures.append("missing requirements.txt")
+    plan_path = root / "Scripts" / "plan.example.json"
+    plan = read_json(plan_path, failures)
+    if isinstance(plan, dict):
+        if str(plan.get("tool") or "") not in EXPECTED_TOOLS:
+            failures.append("Scripts/plan.example.json names no supported tool")
+        if not isinstance(plan.get("synthesis"), list) or not plan.get("synthesis"):
+            failures.append("Scripts/plan.example.json carries no synthesis command")
+    trap = root / "Scripts" / "coverage" / "targets.py"
+    if not trap.is_file():
+        failures.append("missing Scripts/coverage/targets.py")
+        return
+    text = trap.read_text()
+    for marker in ('TRAP_ERROR = "VeriPUTCoverageHit"', 'HIT_FILE = ',
+                   "def build_targets(", "def instrument("):
+        if marker not in text:
+            failures.append(f"coverage trap module lacks {marker!r}")
+    motivation = root / "Motivation_Examples"
+    if not motivation.is_dir() or not any(motivation.rglob("*.sol")):
+        failures.append("Motivation_Examples carries no Solidity source")
+
+
+
+
+def check_coverage_targets(root: Path, targets: dict[str, set[str]],
+                           failures: list[str]) -> None:
+    base = root / "Results" / "RQ1" / "coverage_targets"
+    if not base.is_dir():
+        failures.append("missing Results/RQ1/coverage_targets")
+        return
+    for dataset in sorted(EXPECTED_DATASETS):
+        present = {path.stem for path in (base / dataset).glob("*.json")}\
+            if (base / dataset).is_dir() else set()
+        if present != targets.get(dataset, set()):
+            failures.append(f"frozen target manifest inventory mismatch: {dataset}")
+            continue
+        frozen = read_json(
+            root / "Results" / "RQ1" / "VeriPUT" / dataset / "coverage" / "source.json",
+            failures,
+        )
+        if not isinstance(frozen, dict):
+            continue
+        denominators = {
+            str(row.get("subject_id") or ""): row.get("metrics") or {}
+            for row in (frozen.get("trials") or [{}])[0].get("subjects") or []
+        }
+        for subject in sorted(present):
+            manifest = read_json(base / dataset / f"{subject}.json", failures)
+            if not isinstance(manifest, dict):
+                continue
+            if manifest.get("schema") != "veriput-eval/coverage-targets/v8":
+                failures.append(f"unexpected target manifest schema: {dataset}/{subject}")
+            if manifest.get("denominator_source") != "foundry-lcov":
+                failures.append(f"target manifest is not LCOV-aligned: {dataset}/{subject}")
+            if not str(manifest.get("source_sha256") or ""):
+                failures.append(f"target manifest without a source digest: {dataset}/{subject}")
+            totals = manifest.get("totals") or {}
+            reference = denominators.get(subject) or {}
+            for measure in ("function", "line", "branch"):
+                expected = (reference.get(measure) or {}).get("total")
+                if expected is None:
+                    continue
+                if int(totals.get(measure) or 0) != int(expected):
+                    failures.append(
+                        f"target manifest denominator {dataset}/{subject}/{measure}="
+                        f"{totals.get(measure)}, frozen coverage says {expected}"
+                    )
+            rows = manifest.get("targets") or []
+            declared = totals.get("all")
+            if declared is None or len(rows) != int(declared):
+                failures.append(f"target manifest total mismatch: {dataset}/{subject}")
+            trap_ids = {int(row.get("trap_id") or 0) for row in rows}
+            if len(trap_ids) != len(rows):
+                failures.append(f"duplicate trap identifiers: {dataset}/{subject}")
+
+
+
+def check_fuzz_reference(root: Path, failures: list[str]) -> None:
+    subjects = 0
+    green = 0
+    materialized = 0
+    for dataset in sorted(EXPECTED_DATASETS):
+        path = (root / "Results" / "RQ1" / "VeriPUT" / dataset
+                / "test_generation" / "statistics.json")
+        blob = read_json(path, failures)
+        if not isinstance(blob, dict):
+            continue
+        for row in blob.get("rows") or []:
+            subject = str(row.get("subject_id") or "")
+            valid = int(row.get("valid") or 0)
+            record = row.get("fuzz_reference")
+            if record is None:
+                if valid:
+                    failures.append(
+                        f"released units without 10,000-fuzz reference evidence: "
+                        f"{dataset}/{subject}"
+                    )
+                continue
+            subjects += 1
+            kept = int(record.get("reference_green_units") or 0)
+            total = int(record.get("materialized_units") or 0)
+            green += kept
+            materialized += total
+            if record.get("status") != "ok":
+                failures.append(f"fuzz hardening did not complete: {dataset}/{subject}")
+            if kept != valid:
+                failures.append(
+                    f"fuzz reference-green units {dataset}/{subject}={kept}, "
+                    f"released valid units={valid}"
+                )
+            dropped = record.get("dropped")
+            if not isinstance(dropped, list) or total - kept != len(dropped):
+                failures.append(
+                    f"fuzz hardening drop record inconsistent: {dataset}/{subject}"
+                )
+    if subjects != EXPECTED_FUZZ_REFERENCE_SUBJECTS:
+        failures.append(
+            f"fuzz reference covers {subjects} subjects, "
+            f"expected {EXPECTED_FUZZ_REFERENCE_SUBJECTS}"
+        )
+    if green != 3157:
+        failures.append(f"fuzz reference-green total={green}, expected 3157")
+    if materialized != EXPECTED_FUZZ_MATERIALIZED:
+        failures.append(
+            f"fuzz materialized total={materialized}, "
+            f"expected {EXPECTED_FUZZ_MATERIALIZED}"
+        )
+
+
 def audit(root: Path) -> list[str]:
     failures: list[str] = []
     if not root.is_dir():
@@ -628,6 +936,7 @@ def audit(root: Path) -> list[str]:
             failures.append(f"Results must contain exactly {sorted(EXPECTED_RQS)}, got {sorted(rqs)}")
         rq1 = results / "RQ1"
         rq1_tools = {path.name for path in rq1.iterdir() if path.is_dir()} if rq1.is_dir() else set()
+        rq1_tools -= {"coverage_targets"}
         if rq1_tools != EXPECTED_TOOLS:
             failures.append(
                 f"RQ1 tool directories must be {sorted(EXPECTED_TOOLS)}, got {sorted(rq1_tools)}"
@@ -678,6 +987,13 @@ def audit(root: Path) -> list[str]:
     check_budget_runner(root, failures)
     check_tool_protocol(root, failures)
     check_rq4(root, failures)
+    check_rq4_arms(root, failures)
+    check_certification(root, failures)
+    check_fuzz_reference(root, failures)
+    if targets:
+        check_kill_attribution(root, targets, failures)
+        check_coverage_targets(root, targets, failures)
+    check_supplementary_files(root, failures)
     check_exported_tables(root, failures)
     for path in files(root):
         rel = path.relative_to(root)
@@ -692,7 +1008,7 @@ def audit(root: Path) -> list[str]:
         if size >= MAX_GITHUB_BLOB:
             failures.append(f"GitHub-size file ({size} bytes): {rel}")
         if path.suffix in {".json", ".jsonl"}:
-            check_json(path, failures)
+            check_json(path, failures, source_digest_scope(path, root))
         if path.suffix in TEXT_SUFFIXES:
             try:
                 text = path.read_text(errors="replace")
@@ -703,11 +1019,10 @@ def audit(root: Path) -> list[str]:
                 failures.append(f"absolute host path in text: {rel}")
             if LEGACY_CAMPAIGN_MARKER.search(text):
                 failures.append(f"legacy campaign marker remains: {rel}")
-            if LEGACY_RESULT_COUNT.search(text):
+            if LEGACY_RESULT_COUNT.search(text) and not structural_offset_scope(rel):
                 failures.append(f"legacy aggregate count remains: {rel}")
             if path.suffix in {".csv", ".json", ".jsonl", ".log", ".md", ".txt"}\
-                    and not (len(rel.parts) >= 4
-                             and rel.parts[:3] == ("Results", "RQ2", "Mutants"))\
+                    and not address_literal_scope(rel)\
                     and METADATA_ADDRESS.search(text):
                 failures.append(f"address-shaped identifier in publication metadata: {rel}")
             if rel.parts[:2] == ("Tools", "VeriPUT") and ORACLE_REFINEMENT.search(text):

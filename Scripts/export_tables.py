@@ -7,8 +7,9 @@ import csv
 import json
 import math
 import random
+import runpy
 import statistics
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Iterable
 
@@ -414,14 +415,93 @@ def rq4(root: Path) -> None:
     write_csv(root / "Results" / "RQ4" / "summary.csv", fields, output)
 
 
+def oracle_attribution(root: Path) -> None:
+    module = runpy.run_path(
+        str(root / "Scripts" / "oracle_family.py"),
+        run_name="publication_oracle_family",
+    )
+    reason_family = module["reason_family"]
+    infrastructure = module["INFRASTRUCTURE"]
+    order = module["FAMILY_ORDER"]
+    families: Counter[str] = Counter()
+    per_dataset: dict[str, Counter[str]] = defaultdict(Counter)
+    mutants = 0
+    for row in read_jsonl(root / "Results" / "RQ2" / "kill_attribution.jsonl"):
+        mutants += 1
+        dataset = str(row.get("dataset") or "")
+        seen: list[str] = []
+        for reason in row.get("reasons") or []:
+            family = reason_family(str(reason))
+            if family == infrastructure or family in seen:
+                continue
+            seen.append(family)
+        for family in seen:
+            families[family] += 1
+            per_dataset[dataset][family] += 1
+    total = sum(families.values())
+    output = []
+    for family in order:
+        output.append({
+            "attributions": families[family],
+            "dataset": "all",
+            "oracle_family": family,
+            "share_of_attributions_pct": number(rate(families[family], total)),
+            "share_of_killed_mutants_pct": number(rate(families[family], mutants)),
+        })
+    for dataset in DATASETS:
+        counts = per_dataset.get(dataset) or Counter()
+        subtotal = sum(counts.values())
+        for family in order:
+            output.append({
+                "attributions": counts[family],
+                "dataset": dataset,
+                "oracle_family": family,
+                "share_of_attributions_pct": number(rate(counts[family], subtotal)),
+                "share_of_killed_mutants_pct": "",
+            })
+    fields = ["dataset", "oracle_family", "attributions",
+              "share_of_attributions_pct", "share_of_killed_mutants_pct"]
+    write_csv(root / "Results" / "RQ2" / "oracle_attribution.csv", fields, output)
+
+
+def certification(root: Path) -> None:
+    counts: dict[tuple[str, str], int] = defaultdict(int)
+    carriage: dict[tuple[str, str], int] = defaultdict(int)
+    for dataset in DATASETS:
+        blob = read_json(root / "Results" / "RQ1" / "VeriPUT" / dataset
+                         / "test_generation" / "statistics.json")
+        for row in blob.get("rows") or []:
+            for entry in row.get("entries") or []:
+                key = (dataset, str(entry.get("certification_source") or "none"))
+                counts[key] += 1
+                carriage[key] += bool(entry.get("has_r1r2"))
+    sources = sorted({key[1] for key in counts})
+    output = []
+    for dataset in DATASETS:
+        total = sum(value for key, value in counts.items() if key[0] == dataset)
+        for source in sources:
+            value = counts[(dataset, source)]
+            output.append({
+                "certification_source": source,
+                "dataset": dataset,
+                "share_of_units_pct": number(rate(value, total)),
+                "units": value,
+                "units_carrying_r1_or_r2": carriage[(dataset, source)],
+            })
+    fields = ["dataset", "certification_source", "units",
+              "share_of_units_pct", "units_carrying_r1_or_r2"]
+    write_csv(root / "Results" / "RQ1" / "certification.csv", fields, output)
+
+
 def main() -> int:
     root = Path(__file__).resolve().parents[1]
     rq1(root)
     rq2(root)
     rq4(root)
+    oracle_attribution(root)
+    certification(root)
     print("wrote paper-facing RQ1, RQ2, and RQ4 CSV tables")
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())

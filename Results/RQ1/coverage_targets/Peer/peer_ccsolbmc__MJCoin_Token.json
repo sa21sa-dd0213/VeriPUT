@@ -1,0 +1,27 @@
+{
+  "contract": "MJCoin_Token",
+  "dataset": "Peer",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 0,
+    "LF": 0
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "a5d3e5c82ce27ce853e0053d1fbd68bc0ebe4b6df28cddce1f1c3ae8ccb60323",
+  "subject_id": "peer_ccsolbmc__MJCoin_Token",
+  "targets": [],
+  "totals": {
+    "all": 0,
+    "branch": 0,
+    "function": 0,
+    "line": 0
+  }
+}

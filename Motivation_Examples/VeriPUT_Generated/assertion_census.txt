@@ -1,0 +1,27 @@
+== FeeVault_withdraw_put119.t.sol
+   call under test      : line 172
+   LIVE assert*         : 20
+     entry-guard:   3   lines 148-150
+     post-state :  16   lines 179-213
+     return     :   1   lines 215-215
+     other      :   0   -
+   REMOVED in place by Scripts/rq/assertion_dedup.py : 92   by rule {'2': 12, '3': 42, '4': 15, '5': 23}
+     post-state :  19
+     return     :  73
+   EMITTED by the generator (live + removed) : 112   {'entry-guard': 3, 'post-state': 35, 'return': 74}
+   in executable code: try/catch 0, vm.store 0
+   generator's own // ORACLE: line says 109 oracle assertion(s) -> AGREES with EMITTED post-state+return (109)
+   generator's split 35 post-state / 74 return -> AGREES (35 / 74)
+   => the file holds 109 oracle assertion(s) as text and executes 17 of them, plus 3 entry-state guard(s)
+== FeeVault_withdraw_put119_condensed.t.sol
+   call under test      : line 47
+   LIVE assert*         : 4
+     entry-guard:   0   -
+     post-state :   3   lines 52-54
+     return     :   1   lines 55-55
+     other      :   0   -
+   REMOVED in place by Scripts/rq/assertion_dedup.py : 0
+   EMITTED by the generator (live + removed) : 4   {'post-state': 3, 'return': 1}
+   in executable code: try/catch 0, vm.store 0
+   no // ORACLE: comment (hand-condensed copy, not tool output)
+CENSUS PASS

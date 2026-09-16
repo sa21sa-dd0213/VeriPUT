@@ -1,0 +1,142 @@
+{
+  "contract": "SimpleSuicide",
+  "dataset": "Patch",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 2,
+    "FNF": 1,
+    "LF": 3
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "05eba59a5344752882e08c4fc51826937be301f1b60171d61935197d6f51738e",
+  "subject_id": "rc_access_control__simple_suicide__SmartFix__simple_suicide",
+  "targets": [
+    {
+      "declaration_line": 10,
+      "external_selector": "a56a3b5a",
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 10,
+        "name": "SimpleSuicide.sudicideAnyone",
+        "record": "FN"
+      },
+      "length": 89,
+      "line": 10,
+      "name": "sudicideAnyone",
+      "site": "body-entry",
+      "src": "176:89:0",
+      "start": 176,
+      "trap_id": 1,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 10,
+      "external_selector": "a56a3b5a",
+      "id": "line:10",
+      "kind": "line",
+      "lcov": {
+        "line": 10,
+        "record": "DA"
+      },
+      "length": 89,
+      "line": 10,
+      "site": "body-entry",
+      "src": "176:89:0",
+      "start": 176,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "public"
+    },
+    {
+      "id": "line:11",
+      "kind": "line",
+      "lcov": {
+        "line": 11,
+        "record": "DA"
+      },
+      "length": 39,
+      "line": 11,
+      "site": "statement-entry",
+      "src": "182:39:0",
+      "start": 182,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 3
+    },
+    {
+      "id": "line:12",
+      "kind": "line",
+      "lcov": {
+        "line": 12,
+        "record": "DA"
+      },
+      "length": 33,
+      "line": 12,
+      "site": "statement-entry",
+      "src": "227:33:0",
+      "start": 227,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 4
+    },
+    {
+      "branch_id": "branch:2",
+      "condition_src": "190:30:0",
+      "id": "branch:2:require-fail",
+      "kind": "branch",
+      "lcov": {
+        "block": 0,
+        "branch": 0,
+        "line": 11,
+        "record": "BRDA"
+      },
+      "lcov_branch": 0,
+      "length": 39,
+      "line": 11,
+      "outcome": false,
+      "require_arg_srcs": [
+        "190:30:0"
+      ],
+      "site": "require-branch",
+      "src": "182:39:0",
+      "start": 182,
+      "trap_id": 5
+    },
+    {
+      "branch_id": "branch:2",
+      "condition_src": "190:30:0",
+      "id": "branch:2:require-pass",
+      "kind": "branch",
+      "lcov": {
+        "block": 0,
+        "branch": 1,
+        "line": 11,
+        "record": "BRDA"
+      },
+      "lcov_branch": 1,
+      "length": 39,
+      "line": 11,
+      "outcome": true,
+      "require_arg_srcs": [
+        "190:30:0"
+      ],
+      "site": "require-branch",
+      "src": "182:39:0",
+      "start": 182,
+      "trap_id": 6
+    }
+  ],
+  "totals": {
+    "all": 6,
+    "branch": 2,
+    "function": 1,
+    "line": 3
+  }
+}

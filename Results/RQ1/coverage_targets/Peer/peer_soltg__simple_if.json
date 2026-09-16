@@ -1,0 +1,181 @@
+{
+  "contract": "Csi1",
+  "dataset": "Peer",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 2,
+    "FNF": 1,
+    "LF": 6
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "d98afb8e34c978749a58d653396289ba28ba3ccfb14f89949fb503cd901ae1f4",
+  "subject_id": "peer_soltg__simple_if",
+  "targets": [
+    {
+      "declaration_line": 5,
+      "external_selector": "df391d8e",
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 5,
+        "name": "Csi1.simple_if",
+        "record": "FN"
+      },
+      "length": 158,
+      "line": 5,
+      "name": "simple_if",
+      "site": "body-entry",
+      "src": "143:158:0",
+      "start": 143,
+      "trap_id": 1,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 5,
+      "external_selector": "df391d8e",
+      "id": "line:5",
+      "kind": "line",
+      "lcov": {
+        "line": 5,
+        "record": "DA"
+      },
+      "length": 158,
+      "line": 5,
+      "site": "body-entry",
+      "src": "143:158:0",
+      "start": 143,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "public"
+    },
+    {
+      "id": "line:6",
+      "kind": "line",
+      "lcov": {
+        "line": 6,
+        "record": "DA"
+      },
+      "length": 151,
+      "line": 6,
+      "site": "statement-entry",
+      "src": "147:151:0",
+      "start": 147,
+      "statement_type": "IfStatement",
+      "trap_id": 3
+    },
+    {
+      "id": "line:7",
+      "kind": "line",
+      "lcov": {
+        "line": 7,
+        "record": "DA"
+      },
+      "length": 9,
+      "line": 7,
+      "site": "statement-entry",
+      "src": "184:9:0",
+      "start": 184,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 4
+    },
+    {
+      "id": "line:8",
+      "kind": "line",
+      "lcov": {
+        "line": 8,
+        "record": "DA"
+      },
+      "length": 8,
+      "line": 8,
+      "site": "statement-entry",
+      "src": "219:8:0",
+      "start": 219,
+      "statement_type": "Return",
+      "trap_id": 5
+    },
+    {
+      "id": "line:11",
+      "kind": "line",
+      "lcov": {
+        "line": 11,
+        "record": "DA"
+      },
+      "length": 14,
+      "line": 11,
+      "site": "statement-entry",
+      "src": "266:14:0",
+      "start": 266,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 6
+    },
+    {
+      "id": "line:12",
+      "kind": "line",
+      "lcov": {
+        "line": 12,
+        "record": "DA"
+      },
+      "length": 8,
+      "line": 12,
+      "site": "statement-entry",
+      "src": "285:8:0",
+      "start": 285,
+      "statement_type": "Return",
+      "trap_id": 7
+    },
+    {
+      "branch_id": "branch:2",
+      "condition_src": "151:5:0",
+      "id": "branch:2:true",
+      "kind": "branch",
+      "lcov": {
+        "block": 0,
+        "branch": 0,
+        "line": 6,
+        "record": "BRDA"
+      },
+      "lcov_branch": 0,
+      "length": 74,
+      "line": 6,
+      "outcome": true,
+      "site": "branch-entry",
+      "src": "158:74:0",
+      "start": 158,
+      "trap_id": 8
+    },
+    {
+      "branch_id": "branch:2",
+      "condition_src": "151:5:0",
+      "id": "branch:2:false",
+      "kind": "branch",
+      "lcov": {
+        "block": 0,
+        "branch": 1,
+        "line": 6,
+        "record": "BRDA"
+      },
+      "lcov_branch": 1,
+      "length": 58,
+      "line": 10,
+      "outcome": false,
+      "site": "branch-entry",
+      "src": "240:58:0",
+      "start": 240,
+      "trap_id": 9
+    }
+  ],
+  "totals": {
+    "all": 9,
+    "branch": 2,
+    "function": 1,
+    "line": 6
+  }
+}

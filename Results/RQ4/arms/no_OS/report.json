@@ -1,0 +1,6704 @@
+{
+  "rows": [
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__AIRBets",
+      "witnesses": 31
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__Address",
+      "witnesses": 31
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_31",
+          "test_cov_32",
+          "test_cov_33",
+          "test_cov_34",
+          "test_cov_35",
+          "test_cov_36",
+          "test_cov_37",
+          "test_cov_38",
+          "test_cov_39",
+          "test_cov_4",
+          "test_cov_40",
+          "test_cov_41",
+          "test_cov_42",
+          "test_cov_43",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__AnyswapV5ERC20",
+      "witnesses": 43
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__AssetTransfer",
+      "witnesses": 25
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__BERNIE",
+      "witnesses": 31
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7"
+        ]
+      },
+      "subject": "peer_ccsolbmc__Ballot",
+      "witnesses": 8
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6"
+        ]
+      },
+      "subject": "peer_ccsolbmc__BasicProvenance",
+      "witnesses": 7
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__Benu",
+      "witnesses": 19
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__CyberFox",
+      "witnesses": 18
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__DigitalLocker",
+      "witnesses": 31
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__DogeMojo",
+      "witnesses": 10
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__DogeRocket",
+      "witnesses": 23
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__ERC20",
+      "witnesses": 19
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__FrontRunner",
+      "witnesses": 8
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__GOLIATH",
+      "witnesses": 28
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__Galaxium",
+      "witnesses": 31
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__HOTDOGE",
+      "witnesses": 31
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_31",
+          "test_cov_32",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__HotinuFinance",
+      "witnesses": 33
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__KOALA",
+      "witnesses": 27
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__KizunaInu",
+      "witnesses": 24
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__LILY",
+      "witnesses": 24
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__Lunar",
+      "witnesses": 27
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__MJCoin_Token",
+      "witnesses": 22
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__MayoOcho",
+      "witnesses": 18
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_31",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__MiraNft",
+      "witnesses": 32
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__PONY",
+      "witnesses": 29
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__PORCUPINE",
+      "witnesses": 29
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__PipiCoin",
+      "witnesses": 16
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__RBC",
+      "witnesses": 20
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__RIAS",
+      "witnesses": 19
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__RefrigeratedTransportation",
+      "witnesses": 14
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6"
+        ]
+      },
+      "subject": "peer_ccsolbmc__RoomThermostat",
+      "witnesses": 7
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__ShibaAstronaut",
+      "witnesses": 10
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_31",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__ShibaKiyo",
+      "witnesses": 32
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__ShibaSamurai",
+      "witnesses": 31
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__SimpleECR20",
+      "witnesses": 17
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "peer_ccsolbmc__SimpleMarketplace",
+      "witnesses": 9
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__TOAD",
+      "witnesses": 27
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__Thicc",
+      "witnesses": 23
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__Token",
+      "witnesses": 10
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_12",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__TokenVesting",
+      "witnesses": 12
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "peer_ccsolbmc__UniswapV3MigratorProxy",
+      "witnesses": 3
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__VamprireDoge",
+      "witnesses": 10
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "peer_ccsolbmc__WickedCraniums",
+      "witnesses": 9
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__eMuppy",
+      "witnesses": 16
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__eNew",
+      "witnesses": 28
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__goldinu",
+      "witnesses": 20
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "peer_ccsolbmc__kia_quiz",
+      "witnesses": 9
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6"
+        ]
+      },
+      "subject": "peer_ccsolbmc__payments",
+      "witnesses": 7
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__salvador",
+      "witnesses": 11
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_ccsolbmc__wLitiSale",
+      "witnesses": 25
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "peer_solar__BadAuction",
+      "witnesses": 1
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_7"
+        ]
+      },
+      "subject": "peer_solar__BasicToken",
+      "witnesses": 7
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_12",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_solar__Casino",
+      "witnesses": 12
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_solar__DateTime",
+      "witnesses": 14
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "peer_solar__EIP20StandardToken",
+      "witnesses": 9
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "peer_solar__EasyPayAndWithDraw",
+      "witnesses": 3
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7"
+        ]
+      },
+      "subject": "peer_solar__EtherBank",
+      "witnesses": 8
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "peer_solar__EzToken",
+      "witnesses": 8
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "peer_solar__FixedSupplyToken",
+      "witnesses": 9
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "peer_solar__FundRaising",
+      "witnesses": 6
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7"
+        ]
+      },
+      "subject": "peer_solar__Gift_1_ETH",
+      "witnesses": 8
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7"
+        ]
+      },
+      "subject": "peer_solar__Greeter2",
+      "witnesses": 8
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_solar__Greeter3",
+      "witnesses": 12
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6"
+        ]
+      },
+      "subject": "peer_solar__GuardCheck",
+      "witnesses": 7
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5"
+        ]
+      },
+      "subject": "peer_solar__GuessTheNumberChallenge",
+      "witnesses": 6
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_21",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_solar__Identity",
+      "witnesses": 21
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_solar__IdentityManager",
+      "witnesses": 13
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "peer_solar__LotteryFor10",
+      "witnesses": 4
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_solar__MyAdvancedToken",
+      "witnesses": 12
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_solar__OpenAddressLottery",
+      "witnesses": 17
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_solar__PermissionGroups",
+      "witnesses": 14
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7"
+        ]
+      },
+      "subject": "peer_solar__Prover",
+      "witnesses": 8
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "peer_solar__Randomness",
+      "witnesses": 4
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_solar__Rubixi",
+      "witnesses": 19
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "peer_solar__SecureAuction",
+      "witnesses": 3
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "peer_solar__VulnerableTwoStep",
+      "witnesses": 5
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5"
+        ]
+      },
+      "subject": "peer_solar__array-utils",
+      "witnesses": 6
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_solar__theRun",
+      "witnesses": 11
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7"
+        ]
+      },
+      "subject": "peer_soltg__Math",
+      "witnesses": 8
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "peer_soltg__branches_in_modifiers_2",
+      "witnesses": 2
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "peer_soltg__branches_inside_modifiers_2",
+      "witnesses": 1
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "peer_soltg__branches_inside_modifiers_3",
+      "witnesses": 1
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "peer_soltg__branches_merge_variables_3",
+      "witnesses": 3
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "peer_soltg__branches_merge_variables_5",
+      "witnesses": 3
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "peer_soltg__branches_merge_variables_6",
+      "witnesses": 3
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "peer_soltg__constructor_2_fun_overloading",
+      "witnesses": 4
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "peer_soltg__constructor_3",
+      "witnesses": 2
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "peer_soltg__constructor_3_m",
+      "witnesses": 1
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "peer_soltg__constructor_5",
+      "witnesses": 4
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "peer_soltg__constructor_6",
+      "witnesses": 2
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "peer_soltg__constructor_7",
+      "witnesses": 2
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ],
+        "1": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "peer_soltg__constructor_8",
+      "witnesses": 3
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "peer_soltg__do_while_1_fail",
+      "witnesses": 5
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "peer_soltg__exampl",
+      "witnesses": 3
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "peer_soltg__few_calls",
+      "witnesses": 1
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "peer_soltg__for_1_break",
+      "witnesses": 5
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "peer_soltg__for_1_break_fail",
+      "witnesses": 4
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "peer_soltg__for_1_continue",
+      "witnesses": 5
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "peer_soltg__loop_basic",
+      "witnesses": 3
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_soltg__many_fun",
+      "witnesses": 15
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "peer_soltg__microWeth",
+      "witnesses": 2
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "peer_soltg__overloading",
+      "witnesses": 3
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "peer_soltg__return_1",
+      "witnesses": 5
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "peer_soltg__revert_complex_flow",
+      "witnesses": 4
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "peer_soltg__seq_calls",
+      "witnesses": 2
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "peer_soltg__short_circuit_and",
+      "witnesses": 1
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "peer_soltg__short_circuit_or_inside_branch",
+      "witnesses": 2
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "peer_soltg__simple_if",
+      "witnesses": 3
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "peer_soltg__simple_if_2",
+      "witnesses": 4
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "peer_soltg__simple_if_array",
+      "witnesses": 1
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "peer_soltg__simple_if_state_var",
+      "witnesses": 1
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "peer_soltg__simple_if_struct",
+      "witnesses": 1
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "peer_soltg__simple_if_struct_2",
+      "witnesses": 1
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "peer_soltg__state_machine_1",
+      "witnesses": 4
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "peer_soltg__state_machine_1_fail",
+      "witnesses": 4
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "peer_soltg__store",
+      "witnesses": 2
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "peer_soltg__store_state",
+      "witnesses": 3
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "peer_soltg__triple_nested_if",
+      "witnesses": 1
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5"
+        ]
+      },
+      "subject": "peer_soltg__while_1",
+      "witnesses": 6
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "peer_soltg__while_1_continue",
+      "witnesses": 5
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "peer_soltg__while_2",
+      "witnesses": 1
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_soltg__while_nested_break",
+      "witnesses": 10
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "peer_soltg__while_nested_continue",
+      "witnesses": 9
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "peer_syntest__AavePoolReward",
+      "witnesses": 9
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7"
+        ]
+      },
+      "subject": "peer_syntest__Baz",
+      "witnesses": 8
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7"
+        ]
+      },
+      "subject": "peer_syntest__BirdOracle",
+      "witnesses": 8
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_syntest__CryptoSecureBankToken",
+      "witnesses": 19
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_syntest__FreakCoin",
+      "witnesses": 21
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_syntest__GAZ_ERC20",
+      "witnesses": 11
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "peer_syntest__MetaCoin",
+      "witnesses": 4
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_31",
+          "test_cov_32",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_syntest__SLTDETHlpReward",
+      "witnesses": 28
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_31",
+          "test_cov_32",
+          "test_cov_33",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_syntest__TetherToken",
+      "witnesses": 30
+    },
+    {
+      "dataset": "peer182",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_32",
+          "test_cov_33",
+          "test_cov_34",
+          "test_cov_35",
+          "test_cov_37",
+          "test_cov_38",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "peer_syntest__TimeMiner",
+      "witnesses": 36
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "ERC-3643__ERC-3643__AgentRoleUpgradeable",
+      "witnesses": 9
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6"
+        ]
+      },
+      "subject": "ERC-3643__ERC-3643__ClaimTopicsRegistry",
+      "witnesses": 7
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "ERC-3643__ERC-3643__DefaultCompliance",
+      "witnesses": 18
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_5",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "ERC-3643__ERC-3643__IdentityRegistry",
+      "witnesses": 15
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_1",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_28",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_31",
+          "test_cov_33",
+          "test_cov_34",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6"
+        ]
+      },
+      "subject": "ERC-3643__ERC-3643__ModularCompliance",
+      "witnesses": 26
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6"
+        ]
+      },
+      "subject": "ERC-3643__ERC-3643__Token",
+      "witnesses": 7
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "ProjectOpenSea__seaport__LocalConduit",
+      "witnesses": 2
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "ProjectOpenSea__seaport__PausableZone",
+      "witnesses": 4
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "ProjectOpenSea__seaport__PausableZoneController",
+      "witnesses": 24
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "ProjectOpenSea__seaport__ReferenceConduit",
+      "witnesses": 2
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "ProjectOpenSea__seaport__SeaportNavigator",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_3"
+        ]
+      },
+      "subject": "ProjectOpenSea__seaport__SeaportRouter",
+      "witnesses": 3
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "Uniswap__v4-core__PoolManager",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__BalancerContractRegistry",
+      "witnesses": 11
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__BalancerFeeBurner",
+      "witnesses": 4
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__BaseSplitCodeFactory",
+      "witnesses": 2
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__BufferRouter",
+      "witnesses": 6
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__CallAndRevert",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_12",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__CowRouter",
+      "witnesses": 14
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_4",
+          "test_cov_7"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__CowSwapFeeBurner",
+      "witnesses": 5
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__ERC4626CowSwapFeeBurner",
+      "witnesses": 3
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_3",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__HyperEVMRateProviderFactory",
+      "witnesses": 8
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__MevCaptureHook",
+      "witnesses": 9
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__OwnableAuthentication",
+      "witnesses": 5
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__PoolPauseHelper",
+      "witnesses": 5
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_17",
+          "test_cov_2",
+          "test_cov_21",
+          "test_cov_23",
+          "test_cov_27",
+          "test_cov_3",
+          "test_cov_7"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__PoolSwapFeeHelper",
+      "witnesses": 9
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__PriceImpactHelper",
+      "witnesses": 2
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__ProtocolFeeControllerMigration",
+      "witnesses": 15
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_18",
+          "test_cov_2",
+          "test_cov_22",
+          "test_cov_24",
+          "test_cov_28",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_8"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__ProtocolFeeHelper",
+      "witnesses": 10
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_3",
+          "test_cov_35",
+          "test_cov_36",
+          "test_cov_4",
+          "test_cov_5"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__ProtocolFeePercentagesProvider",
+      "witnesses": 16
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_19",
+          "test_cov_20",
+          "test_cov_3",
+          "test_cov_6",
+          "test_cov_7"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__ProtocolFeeSweeper",
+      "witnesses": 11
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__TimelockAuthorizerMigrator",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__TimelockExecutionHelper",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_13",
+          "test_cov_17",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_9"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__TokenPairRegistry",
+      "witnesses": 9
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__UnbalancedAddViaSwapRouter",
+      "witnesses": 3
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__Version",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "balancer__balancer-v3-monorepo__WrappedBalancerPoolTokenFactory",
+      "witnesses": 4
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_2",
+          "test_cov_4",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "compound-finance__comet__ArbitrumBridgeReceiver",
+      "witnesses": 11
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "compound-finance__comet__BaseBridgeReceiver",
+      "witnesses": 5
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "compound-finance__comet__CometExt",
+      "witnesses": 27
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "compound-finance__comet__CometExtAssetList",
+      "witnesses": 26
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "compound-finance__comet__CometFactoryWithExtendedAssetList",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_4",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "compound-finance__comet__CometProxyAdmin",
+      "witnesses": 15
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "compound-finance__comet__CometRewards",
+      "witnesses": 15
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_31",
+          "test_cov_32",
+          "test_cov_33",
+          "test_cov_34",
+          "test_cov_35",
+          "test_cov_36",
+          "test_cov_37",
+          "test_cov_38",
+          "test_cov_39",
+          "test_cov_4",
+          "test_cov_40",
+          "test_cov_41",
+          "test_cov_42",
+          "test_cov_43",
+          "test_cov_45",
+          "test_cov_46",
+          "test_cov_47",
+          "test_cov_5",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "compound-finance__comet__ConfiguratorOld",
+      "witnesses": 46
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "compound-finance__comet__ConstantPriceFeed",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_11",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7"
+        ]
+      },
+      "subject": "compound-finance__comet__MarketAdminPermissionChecker",
+      "witnesses": 9
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_11",
+          "test_cov_14",
+          "test_cov_17",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_28",
+          "test_cov_6"
+        ]
+      },
+      "subject": "compound-finance__comet__MarketUpdateProposer",
+      "witnesses": 8
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "compound-finance__comet__MarketUpdateTimelock",
+      "witnesses": 20
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "compound-finance__comet__OptimismBridgeReceiver",
+      "witnesses": 15
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "compound-finance__comet__PolygonBridgeReceiver",
+      "witnesses": 9
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "compound-finance__comet__RateBasedScalingPriceFeed",
+      "witnesses": 2
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "compound-finance__comet__RoninBridgeReceiver",
+      "witnesses": 17
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "compound-finance__comet__RsETHScalingPriceFeed",
+      "witnesses": 2
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "compound-finance__comet__ScrollBridgeReceiver",
+      "witnesses": 15
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__BaseRegistrarImplementation",
+      "witnesses": 10
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__BulkRenewal",
+      "witnesses": 5
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__ChainReverseResolver",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__Controllable",
+      "witnesses": 3
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__DNSSECImpl",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_2",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__DefaultReverseRegistrar",
+      "witnesses": 10
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__DefaultReverseResolver",
+      "witnesses": 6
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__ENSRegistry",
+      "witnesses": 30
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__ERC20Recoverable",
+      "witnesses": 3
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_6",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__ETHRegistrarController",
+      "witnesses": 10
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__ExtendedDNSResolver",
+      "witnesses": 2
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__ExtendedResolver",
+      "witnesses": 2
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__FIFSRegistrar",
+      "witnesses": 2
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_16",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_30",
+          "test_cov_7"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__L2ReverseRegistrar",
+      "witnesses": 10
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__L2ReverseRegistrarWithMigration",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__MigrationHelper",
+      "witnesses": 4
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_3"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__OffchainDNSResolver",
+      "witnesses": 3
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__Ownable",
+      "witnesses": 3
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__P256SHA256Algorithm",
+      "witnesses": 5
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__RSASHA1Algorithm",
+      "witnesses": 2
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__RSASHA256Algorithm",
+      "witnesses": 2
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__RegistrarSecurityController",
+      "witnesses": 3
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_2",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_31",
+          "test_cov_32",
+          "test_cov_33",
+          "test_cov_34",
+          "test_cov_35",
+          "test_cov_36",
+          "test_cov_37",
+          "test_cov_38",
+          "test_cov_39",
+          "test_cov_4",
+          "test_cov_40",
+          "test_cov_41",
+          "test_cov_42",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__ReverseRegistrar",
+      "witnesses": 41
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__RootSecurityController",
+      "witnesses": 4
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__SHA1Digest",
+      "witnesses": 3
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__ShuffledGatewayProvider",
+      "witnesses": 5
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__SimplePublicSuffixList",
+      "witnesses": 3
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__StandaloneReverseRegistrar",
+      "witnesses": 4
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__StaticMetadataService",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__TLDPublicSuffixList",
+      "witnesses": 2
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5"
+        ]
+      },
+      "subject": "ensdomains__ens-contracts__UniversalSigValidator",
+      "witnesses": 6
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "euler-xyz__euler-vault-kit__DToken",
+      "witnesses": 12
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "euler-xyz__euler-vault-kit__HookTargetSynth",
+      "witnesses": 4
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "euler-xyz__euler-vault-kit__IRMLinearKink",
+      "witnesses": 10
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "euler-xyz__euler-vault-kit__PegStabilityModule",
+      "witnesses": 4
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_21",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_31",
+          "test_cov_33",
+          "test_cov_34",
+          "test_cov_35",
+          "test_cov_36",
+          "test_cov_37",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "euler-xyz__euler-vault-kit__ProtocolConfig",
+      "witnesses": 32
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "euler-xyz__euler-vault-kit__SequenceRegistry",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "morpho-org__morpho-blue__Morpho",
+      "witnesses": 8
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "sablier-labs__evm-monorepo__FlowNFTDescriptor",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5"
+        ]
+      },
+      "subject": "safe-fndn__safe-smart-account__CompatibilityFallbackHandler",
+      "witnesses": 5
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "safe-fndn__safe-smart-account__CreateCall",
+      "witnesses": 2
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "safe-fndn__safe-smart-account__MultiSend",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "safe-fndn__safe-smart-account__MultiSendCallOnly",
+      "witnesses": 1
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "safe-fndn__safe-smart-account__SafeProxyFactory",
+      "witnesses": 15
+    },
+    {
+      "dataset": "real203",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "safe-fndn__safe-smart-account__TokenCallbackHandler",
+      "witnesses": 3
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "acfix_002_Templedao",
+      "witnesses": 14
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "acfix_016_CVE_2018_10705",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "acfix_021_CVE_2018_19832",
+      "witnesses": 28
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "acfix_022_CVE_2018_19833",
+      "witnesses": 5
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_15",
+          "test_cov_17",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "acfix_032_CVE_2021_39167",
+      "witnesses": 16
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_15",
+          "test_cov_17",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "acfix_033_CVE_2021_39168",
+      "witnesses": 16
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "acfix_077_L1Block",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "acfix_3_5_015_CVE_2018_10666",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "acfix_3_5_077_L1Block",
+      "witnesses": 3
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "acfix_fixlink_DepositLog",
+      "witnesses": 25
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "acfix_fixlink_DnGmxBatchingManager",
+      "witnesses": 25
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_12",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_9"
+        ]
+      },
+      "subject": "acfix_fixlink_MStableYieldSource",
+      "witnesses": 9
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "acfix_llama3_002_Templedao",
+      "witnesses": 14
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "acfix_llama3_017_CVE_2018_11329",
+      "witnesses": 20
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6"
+        ]
+      },
+      "subject": "acfix_llama3_022_CVE_2018_19833",
+      "witnesses": 7
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "acfix_llama3_024_CVE_2019_15078",
+      "witnesses": 30
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "acfix_real_BaseEscalationManager",
+      "witnesses": 12
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5"
+        ]
+      },
+      "subject": "acfix_real_FlashGovernanceArbiter",
+      "witnesses": 6
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ],
+        "1": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "ct_5_Proposals_can_be_cancelled",
+      "witnesses": 12
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "pop_020_GSPFunding",
+      "witnesses": 30
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "pop_042_VaultAdapter",
+      "witnesses": 5
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "pop_046_CVXStaker",
+      "witnesses": 7
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_24",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_27",
+          "test_cov_28",
+          "test_cov_29",
+          "test_cov_3",
+          "test_cov_30",
+          "test_cov_31",
+          "test_cov_32",
+          "test_cov_33",
+          "test_cov_34",
+          "test_cov_35",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "pop_049_Cooler",
+      "witnesses": 36
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_14",
+          "test_cov_15",
+          "test_cov_16",
+          "test_cov_17",
+          "test_cov_18",
+          "test_cov_19",
+          "test_cov_2",
+          "test_cov_20",
+          "test_cov_21",
+          "test_cov_22",
+          "test_cov_23",
+          "test_cov_25",
+          "test_cov_26",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "pop_051_LiquidityPool",
+      "witnesses": 26
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8"
+        ]
+      },
+      "subject": "pop_066_LRTDepositPool",
+      "witnesses": 9
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "pop_077_GameItems",
+      "witnesses": 10
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rc_access_control__mycontract__SolGPT__mycontract_2round",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rc_access_control__mycontract__SolGPT__mycontract_3round",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "rc_access_control__mycontract__sGuard__mycontract",
+      "witnesses": 2
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "rc_access_control__phishable__SmartFix__phishable",
+      "witnesses": 2
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "rc_access_control__phishable__TIPS__phishable",
+      "witnesses": 2
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "rc_access_control__phishable__sGuardPlus__phishable",
+      "witnesses": 2
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "rc_access_control__phishable__sGuard__phishable",
+      "witnesses": 2
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rc_access_control__proxy__SolGPT__proxy_4round",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "rc_access_control__simple_suicide__SmartFix__simple_suicide",
+      "witnesses": 3
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5"
+        ]
+      },
+      "subject": "rc_access_control__wallet_02_refund_nosub__SmartFix__wallet_02_refund_nosub",
+      "witnesses": 6
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5"
+        ]
+      },
+      "subject": "rc_access_control__wallet_02_refund_nosub__SolGPT__wallet_02_refund_nosub_2round",
+      "witnesses": 6
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_1round",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_2round",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rc_bad_randomness__old_blockhash__SolGPT__old_blockhash_3round",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rc_reentrancy__reentrancy_bonus__SmartFix__reentrancy_bonus",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_1round",
+      "witnesses": 2
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1"
+        ]
+      },
+      "subject": "rc_reentrancy__reentrancy_dao__SolGPT__reentrancy_dao_4round",
+      "witnesses": 2
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rc_reentrancy__reentrancy_dao__sGuardPlus__reentrancy_dao",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rc_reentrancy__reentrancy_simple__SmartFix__reentrancy_simple",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rc_reentrancy__reentrancy_simple__sGuard__reentrancy_simple",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_1round",
+      "witnesses": 3
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_2round",
+      "witnesses": 3
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2"
+        ]
+      },
+      "subject": "rc_time_manipulation__ether_lotto__SolGPT__ether_lotto_3round",
+      "witnesses": 3
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "rc_time_manipulation__roulette__SolGPT__roulette_1round",
+      "witnesses": 5
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "rc_time_manipulation__roulette__SolGPT__roulette_2round",
+      "witnesses": 5
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "rc_time_manipulation__roulette__SolGPT__roulette_3round",
+      "witnesses": 5
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "rc_time_manipulation__roulette__SolGPT__roulette_4round",
+      "witnesses": 5
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5"
+        ]
+      },
+      "subject": "rc_unchecked_low_level_calls__address_00001__SolGPT__address_00001_3round",
+      "witnesses": 6
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rc_unchecked_low_level_calls__address_00003__SolGPT__address_00003_3round",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rc_unchecked_low_level_calls__address_00005__SolGPT__address_00005_2round",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rc_unchecked_low_level_calls__address_00005__SolGPT__address_00005_3round",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rc_unchecked_low_level_calls__address_00008__SolGPT__address_00008_1round",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rc_unchecked_low_level_calls__address_00008__SolGPT__address_00008_2round",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rc_unchecked_low_level_calls__address_00008__SolGPT__address_00008_3round",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rc_unchecked_low_level_calls__address_00022__sGuardPlus__address_00022",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7"
+        ]
+      },
+      "subject": "rcx_reentrancy__address_00002__SmartFix",
+      "witnesses": 8
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "rcx_reentrancy__address_00006__SmartFix",
+      "witnesses": 13
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "rcx_reentrancy__address_00009__SmartFix",
+      "witnesses": 12
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "rcx_reentrancy__address_00010__SmartFix",
+      "witnesses": 12
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rcx_reentrancy__address_00013__SmartFix",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4"
+        ]
+      },
+      "subject": "rcx_reentrancy__address_00013__sGuard",
+      "witnesses": 5
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rcx_reentrancy__address_00015__SmartFix",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "rcx_reentrancy__address_00016__SmartFix",
+      "witnesses": 14
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "rcx_reentrancy__address_00016__sGuard",
+      "witnesses": 14
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "rcx_reentrancy__address_00019__SmartFix",
+      "witnesses": 12
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6"
+        ]
+      },
+      "subject": "rcx_reentrancy__address_00021__SmartFix",
+      "witnesses": 7
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "rcx_reentrancy__address_00023__SmartFix",
+      "witnesses": 14
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_10",
+          "test_cov_11",
+          "test_cov_12",
+          "test_cov_13",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6",
+          "test_cov_7",
+          "test_cov_8",
+          "test_cov_9"
+        ]
+      },
+      "subject": "rcx_reentrancy__address_00023__sGuard",
+      "witnesses": 14
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rcx_reentrancy__address_00026__SmartFix",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00004__SmartFix",
+      "witnesses": 7
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00007__SmartFix",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00007__TIPS",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00007__sGuard",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3",
+          "test_cov_4",
+          "test_cov_5",
+          "test_cov_6"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00011__SmartFix",
+      "witnesses": 7
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00012__SmartFix",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00012__TIPS",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00012__sGuardPlus",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00018__TIPS",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00018__sGuard",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00020__SmartFix",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00020__TIPS",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00020__sGuard",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0",
+          "test_cov_1",
+          "test_cov_2",
+          "test_cov_3"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00020__sGuardPlus",
+      "witnesses": 4
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00024__sGuard",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00027__TIPS",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00027__sGuard",
+      "witnesses": 1
+    },
+    {
+      "dataset": "bugfix124",
+      "fused_into": "new-unit",
+      "puts": 0,
+      "retained": {
+        "0": [
+          "test_cov_0"
+        ]
+      },
+      "subject": "rcx_unchecked_low_level_calls__address_00027__sGuardPlus",
+      "witnesses": 1
+    }
+  ],
+  "stats": {
+    "cap-raised": 0,
+    "skip:no-passing-test": 103,
+    "subjects-bundled": 327,
+    "witness-files:plain": 329
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "cwd": ".",
+  "finalize": [
+    "python3",
+    "-c",
+    "print('materialize outputs here')"
+  ],
+  "synthesis": [
+    "python3",
+    "-c",
+    "print('run the generator here')"
+  ],
+  "tool": "VeriPUT"
+}

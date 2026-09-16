@@ -1,0 +1,119 @@
+{
+  "contract": "CometExtAssetList",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 2,
+    "LF": 3
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "e78aa2d1955f56646173ab1288f654225a422f84054fa8a0bb9bf5efe6f47a9b",
+  "subject_id": "compound-finance__comet__CometExtAssetList",
+  "targets": [
+    {
+      "declaration_line": 597,
+      "external_selector": null,
+      "function_kind": "constructor",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 597,
+        "name": "CometExtAssetList.constructor.1",
+        "record": "FN"
+      },
+      "length": 59,
+      "line": 597,
+      "name": "constructor",
+      "site": "body-entry",
+      "src": "14265:59:0",
+      "start": 14265,
+      "trap_id": 1,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 603,
+      "external_selector": "94b2294b",
+      "function_kind": "function",
+      "id": "function:2",
+      "kind": "function",
+      "lcov": {
+        "line": 603,
+        "name": "CometExtAssetList.maxAssets.1",
+        "record": "FN"
+      },
+      "length": 37,
+      "line": 603,
+      "name": "maxAssets",
+      "site": "body-entry",
+      "src": "14455:37:0",
+      "start": 14455,
+      "trap_id": 2,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 597,
+      "external_selector": null,
+      "id": "line:597",
+      "kind": "line",
+      "lcov": {
+        "line": 597,
+        "record": "DA"
+      },
+      "length": 59,
+      "line": 597,
+      "site": "body-entry",
+      "src": "14265:59:0",
+      "start": 14265,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 3,
+      "visibility": "public"
+    },
+    {
+      "id": "line:598",
+      "kind": "line",
+      "lcov": {
+        "line": 598,
+        "record": "DA"
+      },
+      "length": 42,
+      "line": 598,
+      "site": "statement-entry",
+      "src": "14275:42:0",
+      "start": 14275,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 4
+    },
+    {
+      "declaration_line": 603,
+      "external_selector": "94b2294b",
+      "id": "line:603",
+      "kind": "line",
+      "lcov": {
+        "line": 603,
+        "record": "DA"
+      },
+      "length": 37,
+      "line": 603,
+      "site": "body-entry",
+      "src": "14455:37:0",
+      "start": 14455,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 5,
+      "visibility": "external"
+    }
+  ],
+  "totals": {
+    "all": 5,
+    "branch": 0,
+    "function": 2,
+    "line": 3
+  }
+}

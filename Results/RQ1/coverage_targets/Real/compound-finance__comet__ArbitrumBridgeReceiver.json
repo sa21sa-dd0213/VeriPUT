@@ -1,0 +1,81 @@
+{
+  "contract": "ArbitrumBridgeReceiver",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 2
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "3a7c51453c43745840beb4a763f10f09de4a123f80fa007682a9b3c05a6fb8ee",
+  "subject_id": "compound-finance__comet__ArbitrumBridgeReceiver",
+  "targets": [
+    {
+      "declaration_line": 213,
+      "external_selector": null,
+      "function_kind": "fallback",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 213,
+        "name": "ArbitrumBridgeReceiver.fallback",
+        "record": "FN"
+      },
+      "length": 89,
+      "line": 213,
+      "name": "fallback",
+      "site": "body-entry",
+      "src": "5535:89:0",
+      "start": 5535,
+      "trap_id": 1,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 213,
+      "external_selector": null,
+      "id": "line:213",
+      "kind": "line",
+      "lcov": {
+        "line": 213,
+        "record": "DA"
+      },
+      "length": 89,
+      "line": 213,
+      "site": "body-entry",
+      "src": "5535:89:0",
+      "start": 5535,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "external"
+    },
+    {
+      "id": "line:214",
+      "kind": "line",
+      "lcov": {
+        "line": 214,
+        "record": "DA"
+      },
+      "length": 72,
+      "line": 214,
+      "site": "statement-entry",
+      "src": "5545:72:0",
+      "start": 5545,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 3
+    }
+  ],
+  "totals": {
+    "all": 3,
+    "branch": 0,
+    "function": 1,
+    "line": 2
+  }
+}

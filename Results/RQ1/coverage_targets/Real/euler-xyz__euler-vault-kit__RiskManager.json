@@ -1,0 +1,27 @@
+{
+  "contract": "RiskManager",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 0,
+    "LF": 0
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "f85c0349d2c5c0dfda18ef2732d9d8dbe67f467e657e4c5000f49032b78c03e8",
+  "subject_id": "euler-xyz__euler-vault-kit__RiskManager",
+  "targets": [],
+  "totals": {
+    "all": 0,
+    "branch": 0,
+    "function": 0,
+    "line": 0
+  }
+}
