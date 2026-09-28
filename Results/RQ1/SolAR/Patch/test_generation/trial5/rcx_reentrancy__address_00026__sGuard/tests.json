@@ -1,0 +1,31 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00020"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "Collect",
+      "n": 2,
+      "value": 1000000000000000000
+    },
+    {
+      "args": [
+        17624881407733359580266920084621830103026447523696508447989900209817845153656
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "Put",
+      "n": 3,
+      "value": 21181287577391231
+    }
+  ]
+]

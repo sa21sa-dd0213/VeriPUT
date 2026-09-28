@@ -1,0 +1,71 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "withdrawAll",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "withdrawAll",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026",
+        54773548365338160855062862785711977522816491276808303407575433764638404478289
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "sendMoney",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1280122795444581408844753726441497833552671616677863812679469209633994639225
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "withdraw",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

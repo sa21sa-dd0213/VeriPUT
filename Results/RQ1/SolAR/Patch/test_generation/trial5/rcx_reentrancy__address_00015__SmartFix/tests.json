@@ -1,0 +1,42 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "Put",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00016"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        6750685056851220812787308419768083618906651511527475724515056641408641451183
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "Collect",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

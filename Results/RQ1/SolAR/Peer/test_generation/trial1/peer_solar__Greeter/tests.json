@@ -1,0 +1,86 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        75,
+        "\"Hello\""
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "changeHello",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        4,
+        "\"\uc548\ub155?\""
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "changeGoodbye",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        67,
+        ""
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "changeHello",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "sayGoodbye",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        145
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "sayHello",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (5.377787529s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (3.143285762s)
+
+echidna: Constructor arguments are required: [("vault",address),("defaultMaxSurgeFeePercentage",uint256),("defaultSurgeThresholdPercentage",uint256),("version",string)]

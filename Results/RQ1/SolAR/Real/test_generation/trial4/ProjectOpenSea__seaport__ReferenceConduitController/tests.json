@@ -1,0 +1,278 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "getChannels",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x5564757578564872645875577754516d495475445564764870446759667a2065"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "getConduit",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "getPotentialOwner",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "getKey",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "cancelOwnershipTransfer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x5564757578564872645875577754516d495475445564764870446759667a2065"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "getConduit",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x744b6572746e574c5146465a54657642416a5456525a4a416a49634c56426561",
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "createConduit",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x5564757578564872645875577754516d495475445564764870446759667a2065"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "getConduit",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        "anonymous_hex_00020"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "transferOwnership",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x5564757578564872645875577754516d495475445564764870446759667a2065"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "getConduit",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00016"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "ownerOf",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x5564757578564872645875577754516d495475445564764870446759667a2065"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "getConduit",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        4
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "getChannel",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "acceptOwnership",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "getTotalChannels",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x55647a7578564872645875577754516d495475445541764870446759667a2065"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "getConduit",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "getChannelStatus",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027",
+        "anonymous_hex_00028",
+        true
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "updateChannel",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

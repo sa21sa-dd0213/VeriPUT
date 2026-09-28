@@ -1,0 +1,230 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "WatchWinningPot",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "NextPayout",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "CollectAllFees",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "CollectAllFees",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "PayoutQueueSize",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        33152064295002260632212952540894411516759604200216161655049213741471296402154
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "PlayerInfo",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "ChangeOwnership",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "PayoutQueueSize",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "WatchFees",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "NextPayout",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "GetAndReduceFeesByFraction",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "Total_of_Players",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "WatchBalanceInEther",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "WatchBalance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "WatchLastPayout",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

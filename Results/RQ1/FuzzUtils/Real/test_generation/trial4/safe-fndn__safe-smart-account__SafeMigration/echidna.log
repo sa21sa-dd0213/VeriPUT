@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.557081242s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.631889354s)
+
+echidna: Constructor arguments are required: [("safeSingleton",address),("safeL2Singleton",address),("fallbackHandler",address)]

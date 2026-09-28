@@ -1,0 +1,837 @@
+{
+  "compile_failed": 3,
+  "compile_ok": 80,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "addressKnown",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "addressKnown",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 57,
+      "function": "equals",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 57
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "equals",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "equals",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "equals",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "identityExists",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "isSender",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "isSender",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "isSender",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 80,
+      "function": "isValidatorOf",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 80,
+      "function": "isValidatorOf",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "isValidatorOf",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "isValidatorOf",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "isValidatorOf",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 98,
+      "function": "removeValidator",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 98
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 98,
+      "function": "removeValidator",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 98
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "removeValidator",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "removeValidator",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "removeValidator",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 109,
+      "function": "stopValidatingFor",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 109,
+      "function": "stopValidatingFor",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "stopValidatingFor",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "stopValidatingFor",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "stopValidatingFor",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "equals",
+      "mutant_id": "m000026",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 82,
+      "function": "isValidatorOf",
+      "mutant_id": "m000027",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 82
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "isValidatorOf",
+      "mutant_id": "m000028",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "convertAddress",
+      "mutant_id": "m000029",
+      "operator": "CSC",
+      "original_expression": "!addressKnown(account)",
+      "replacement_expression": "true",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "convertAddress",
+      "mutant_id": "m000030",
+      "operator": "CSC",
+      "original_expression": "!addressKnown(account)",
+      "replacement_expression": "false",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 57,
+      "function": "equals",
+      "mutant_id": "m000031",
+      "operator": "CSC",
+      "original_expression": "addressKnown(account) && identityExists(identity)",
+      "replacement_expression": "true",
+      "start_line": 57
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 57,
+      "function": "equals",
+      "mutant_id": "m000032",
+      "operator": "CSC",
+      "original_expression": "addressKnown(account) && identityExists(identity)",
+      "replacement_expression": "false",
+      "start_line": 57
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "isValidatorOf",
+      "mutant_id": "m000033",
+      "operator": "CSC",
+      "original_expression": "_identities[identity].validators[i] == validator",
+      "replacement_expression": "true",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "isValidatorOf",
+      "mutant_id": "m000034",
+      "operator": "CSC",
+      "original_expression": "_identities[identity].validators[i] == validator",
+      "replacement_expression": "false",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "removeValidator",
+      "mutant_id": "m000035",
+      "operator": "CSC",
+      "original_expression": "_identities[index].validators[i] == validator",
+      "replacement_expression": "true",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "removeValidator",
+      "mutant_id": "m000036",
+      "operator": "CSC",
+      "original_expression": "_identities[index].validators[i] == validator",
+      "replacement_expression": "false",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "stopValidatingFor",
+      "mutant_id": "m000037",
+      "operator": "CSC",
+      "original_expression": "_identities[identity].validators[i] == valIndex",
+      "replacement_expression": "true",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "stopValidatingFor",
+      "mutant_id": "m000038",
+      "operator": "CSC",
+      "original_expression": "_identities[identity].validators[i] == valIndex",
+      "replacement_expression": "false",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "removeValidator",
+      "mutant_id": "m000039",
+      "operator": "DOD",
+      "original_expression": "delete _identities[index].validators[i]",
+      "replacement_expression": "_identities[index].validators[i]",
+      "start_line": 100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 111,
+      "function": "stopValidatingFor",
+      "mutant_id": "m000040",
+      "operator": "DOD",
+      "original_expression": "delete _identities[identity].validators[i]",
+      "replacement_expression": "_identities[identity].validators[i]",
+      "start_line": 111
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "modifier:requiresExistanceOf",
+      "mutant_id": "m000041",
+      "operator": "EHD",
+      "original_expression": "require(identityExists(index));",
+      "replacement_expression": "/* require(identityExists(index)); */",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "modifier:requiresValidatorOf",
+      "mutant_id": "m000042",
+      "operator": "EHD",
+      "original_expression": "require(identityExists(index));",
+      "replacement_expression": "/* require(identityExists(index)); */",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "modifier:requiresValidatorOf",
+      "mutant_id": "m000043",
+      "operator": "EHD",
+      "original_expression": "require(isValidatorOf(index, _index[msg.sender]));",
+      "replacement_expression": "/* require(isValidatorOf(index, _index[msg.sender])); */",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 32,
+      "function": "addValidator",
+      "mutant_id": "m000044",
+      "operator": "EHD",
+      "original_expression": "require(addressKnown(msg.sender));",
+      "replacement_expression": "/* require(addressKnown(msg.sender)); */",
+      "start_line": 32
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "addValidator",
+      "mutant_id": "m000045",
+      "operator": "EHD",
+      "original_expression": "require(addressKnown(newValidator));",
+      "replacement_expression": "/* require(addressKnown(newValidator)); */",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "removeValidator",
+      "mutant_id": "m000046",
+      "operator": "EHD",
+      "original_expression": "require(addressKnown(msg.sender));",
+      "replacement_expression": "/* require(addressKnown(msg.sender)); */",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 107,
+      "function": "stopValidatingFor",
+      "mutant_id": "m000047",
+      "operator": "EHD",
+      "original_expression": "require(addressKnown(msg.sender));",
+      "replacement_expression": "/* require(addressKnown(msg.sender)); */",
+      "start_line": 107
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 17,
+      "function": "modifier:requiresExistanceOf",
+      "mutant_id": "m000048",
+      "operator": "FCD",
+      "original_expression": "identityExists(index))",
+      "replacement_expression": "/*identityExists(index))*/",
+      "start_line": 17
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 22,
+      "function": "modifier:requiresValidatorOf",
+      "mutant_id": "m000049",
+      "operator": "FCD",
+      "original_expression": "identityExists(index))",
+      "replacement_expression": "/*identityExists(index))*/",
+      "start_line": 22
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 23,
+      "function": "modifier:requiresValidatorOf",
+      "mutant_id": "m000050",
+      "operator": "FCD",
+      "original_expression": "isValidatorOf(index, _index[msg.sender]))",
+      "replacement_expression": "/*isValidatorOf(index, _index[msg.sender]))*/",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "convertAddress",
+      "mutant_id": "m000051",
+      "operator": "FCD",
+      "original_expression": "createIdentity(account);",
+      "replacement_expression": "/*createIdentity(account);*/",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "stateVariable",
+      "mutant_id": "m000052",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "addressKnown",
+      "mutant_id": "m000053",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "createIdentity",
+      "mutant_id": "m000054",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "identityExists",
+      "mutant_id": "m000055",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 80,
+      "function": "isValidatorOf",
+      "mutant_id": "m000056",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "recover",
+      "mutant_id": "m000057",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 98,
+      "function": "removeValidator",
+      "mutant_id": "m000058",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 98
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 109,
+      "function": "stopValidatingFor",
+      "mutant_id": "m000059",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 80,
+      "function": "isValidatorOf",
+      "mutant_id": "m000060",
+      "operator": "LSC",
+      "original_expression": "i < _identities[identity].validators.length",
+      "replacement_expression": "false",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 98,
+      "function": "removeValidator",
+      "mutant_id": "m000061",
+      "operator": "LSC",
+      "original_expression": "i < _identities[index].validators.length",
+      "replacement_expression": "false",
+      "start_line": 98
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 109,
+      "function": "stopValidatingFor",
+      "mutant_id": "m000062",
+      "operator": "LSC",
+      "original_expression": "i < _identities[identity].validators.length",
+      "replacement_expression": "false",
+      "start_line": 109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 88,
+      "function": "recover",
+      "mutant_id": "m000063",
+      "operator": "MOD",
+      "original_expression": "function recover(uint index, address newPointer) public requiresValidatorOf(index) ",
+      "replacement_expression": "function recover(uint index, address newPointer) public  ",
+      "start_line": 88
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "stopValidatingFor",
+      "mutant_id": "m000064",
+      "operator": "MOD",
+      "original_expression": "function stopValidatingFor(uint identity) public requiresExistanceOf(identity) requiresValidatorOf(identity) ",
+      "replacement_expression": "function stopValidatingFor(uint identity) public  requiresValidatorOf(identity) ",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "stopValidatingFor",
+      "mutant_id": "m000065",
+      "operator": "MOD",
+      "original_expression": "function stopValidatingFor(uint identity) public requiresExistanceOf(identity) requiresValidatorOf(identity) ",
+      "replacement_expression": "function stopValidatingFor(uint identity) public requiresExistanceOf(identity)  ",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "addressKnown",
+      "mutant_id": "m000066",
+      "operator": "RSD",
+      "original_expression": "return _index[account] > 0;",
+      "replacement_expression": "/* return _index[account] > 0; */",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 43,
+      "function": "convertAddress",
+      "mutant_id": "m000067",
+      "operator": "RSD",
+      "original_expression": "return _index[account];",
+      "replacement_expression": "/* return _index[account]; */",
+      "start_line": 43
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "createIdentity",
+      "mutant_id": "m000068",
+      "operator": "RSD",
+      "original_expression": "return index;",
+      "replacement_expression": "/* return index; */",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "equals",
+      "mutant_id": "m000069",
+      "operator": "RSD",
+      "original_expression": "return identity == _index[account];",
+      "replacement_expression": "/* return identity == _index[account]; */",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "getAddress",
+      "mutant_id": "m000070",
+      "operator": "RSD",
+      "original_expression": "return _identities[index].pointer;",
+      "replacement_expression": "/* return _identities[index].pointer; */",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 68,
+      "function": "getIdentity",
+      "mutant_id": "m000071",
+      "operator": "RSD",
+      "original_expression": "return _index[account];",
+      "replacement_expression": "/* return _index[account]; */",
+      "start_line": 68
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "identityExists",
+      "mutant_id": "m000072",
+      "operator": "RSD",
+      "original_expression": "return _identities[index].pointer != address(0);",
+      "replacement_expression": "/* return _identities[index].pointer != address(0); */",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "isSender",
+      "mutant_id": "m000073",
+      "operator": "RSD",
+      "original_expression": "return (_identities[identity].pointer == msg.sender);",
+      "replacement_expression": "/* return (_identities[identity].pointer == msg.sender); */",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 82,
+      "function": "isValidatorOf",
+      "mutant_id": "m000074",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 82
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "convertAddress",
+      "mutant_id": "m000075",
+      "operator": "UORD",
+      "original_expression": "!addressKnown(account)",
+      "replacement_expression": " addressKnown(account)",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 47,
+      "function": "createIdentity",
+      "mutant_id": "m000076",
+      "operator": "UORD",
+      "original_expression": "++_currentIndex",
+      "replacement_expression": "--_currentIndex",
+      "start_line": 47
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 47,
+      "function": "createIdentity",
+      "mutant_id": "m000077",
+      "operator": "UORD",
+      "original_expression": "++_currentIndex",
+      "replacement_expression": " _currentIndex",
+      "start_line": 47
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 80,
+      "function": "isValidatorOf",
+      "mutant_id": "m000078",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 80,
+      "function": "isValidatorOf",
+      "mutant_id": "m000079",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 98,
+      "function": "removeValidator",
+      "mutant_id": "m000080",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 98
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 98,
+      "function": "removeValidator",
+      "mutant_id": "m000081",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 98
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 109,
+      "function": "stopValidatingFor",
+      "mutant_id": "m000082",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 109,
+      "function": "stopValidatingFor",
+      "mutant_id": "m000083",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 109
+    }
+  ],
+  "subject_id": "peer_solar__IdentityManager"
+}

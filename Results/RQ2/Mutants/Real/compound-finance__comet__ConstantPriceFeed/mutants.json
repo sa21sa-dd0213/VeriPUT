@@ -1,0 +1,167 @@
+{
+  "compile_failed": 6,
+  "compile_ok": 10,
+  "mutants": [
+    {
+      "compile_status": "failed",
+      "end_line": 56,
+      "function": "constructor",
+      "mutant_id": "m000001",
+      "operator": "CCD",
+      "original_expression": "constructor(uint8 decimals_, int256 constantPrice_) {\n        decimals = decimals_;\n        constantPrice = constantPrice_;\n    }",
+      "replacement_expression": "",
+      "start_line": 53
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 13,
+      "function": "description",
+      "mutant_id": "m000002",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 13
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 73,
+      "function": "latestRoundData",
+      "mutant_id": "m000003",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 73
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 73,
+      "function": "latestRoundData",
+      "mutant_id": "m000004",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "stateVariable",
+      "mutant_id": "m000005",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "stateVariable",
+      "mutant_id": "m000006",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 73,
+      "function": "latestRoundData",
+      "mutant_id": "m000007",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 73,
+      "function": "latestRoundData",
+      "mutant_id": "m000008",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 73,
+      "function": "latestRoundData",
+      "mutant_id": "m000009",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 73,
+      "function": "latestRoundData",
+      "mutant_id": "m000010",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "latestRoundData",
+      "mutant_id": "m000011",
+      "operator": "OLFD",
+      "original_expression": "function latestRoundData()\n    external\n    view\n    returns (\n      uint80 roundId,\n      int256 answer,\n      uint256 startedAt,\n      uint256 updatedAt,\n      uint80 answeredInRound\n    );",
+      "replacement_expression": "",
+      "start_line": 17
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 74,
+      "function": "latestRoundData",
+      "mutant_id": "m000012",
+      "operator": "OLFD",
+      "original_expression": "function latestRoundData() external view returns (\n        uint80 roundId,\n        int256 answer,\n        uint256 startedAt,\n        uint256 updatedAt,\n        uint80 answeredInRound\n    ) {\n        return (1, constantPrice, block.timestamp, block.timestamp, 1);\n    }",
+      "replacement_expression": "",
+      "start_line": 66
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 73,
+      "function": "latestRoundData",
+      "mutant_id": "m000013",
+      "operator": "RSD",
+      "original_expression": "return (1, constantPrice, block.timestamp, block.timestamp, 1);",
+      "replacement_expression": "/* return (1, constantPrice, block.timestamp, block.timestamp, 1); */",
+      "start_line": 73
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 25,
+      "function": "latestRoundData",
+      "mutant_id": "m000014",
+      "operator": "RVS",
+      "original_expression": "uint80 roundId,\n      int256 answer,\n      uint256 startedAt,\n      uint256 updatedAt,\n      uint80 answeredInRound",
+      "replacement_expression": "uint80 answeredInRound,\n      int256 answer,\n      uint80 roundId,\n      uint256 startedAt,\n      uint256 updatedAt",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 73,
+      "function": "latestRoundData",
+      "mutant_id": "m000015",
+      "operator": "RVS",
+      "original_expression": "1, constantPrice, block.timestamp, block.timestamp, 1",
+      "replacement_expression": "1, constantPrice, block.timestamp, block.timestamp, 1",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "stateVariable",
+      "mutant_id": "m000016",
+      "operator": "SLR",
+      "original_expression": "\"Constant price feed\"",
+      "replacement_expression": "\"\"",
+      "start_line": 41
+    }
+  ],
+  "subject_id": "compound-finance__comet__ConstantPriceFeed"
+}

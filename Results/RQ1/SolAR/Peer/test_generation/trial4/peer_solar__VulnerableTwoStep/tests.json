@@ -1,0 +1,120 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 100000000000000000
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "claimOwnership",
+      "n": 2,
+      "value": 100000000000000000
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "retrieve",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "claimOwnership",
+      "n": 4,
+      "value": 16221629313465597
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "retrieve",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "claimOwnership",
+      "n": 6,
+      "value": 103218286519574227
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "retrieve",
+      "n": 7,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "retrieve",
+      "n": 8,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 72995411405606262
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "claimOwnership",
+      "n": 2,
+      "value": 123829400154628584
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "retrieve",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "retrieve",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 188524834873312872
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "claimOwnership",
+      "n": 2,
+      "value": 48027843819492253
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "retrieve",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "claimOwnership",
+      "n": 4,
+      "value": 100000000000000000
+    }
+  ]
+]

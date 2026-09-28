@@ -1,0 +1,104 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "SetLogFile",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        49674016736779925589520896668954026584699982126971685831289252224362956983834
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "Collect",
+      "n": 2,
+      "value": 109376865801386975
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "SetMinSum",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "Deposit",
+      "n": 2,
+      "value": 180974923120105316
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "Initialized",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "Deposit",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

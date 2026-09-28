@@ -1,0 +1,47 @@
+{
+  "compile_failed": 2,
+  "compile_ok": 2,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "constructor",
+      "mutant_id": "m000001",
+      "operator": "CCD",
+      "original_expression": "constructor(string memory _metaDataUri) {\n        _uri = _metaDataUri;\n    }",
+      "replacement_expression": "",
+      "start_line": 9
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 9,
+      "function": "constructor",
+      "mutant_id": "m000002",
+      "operator": "DLR",
+      "original_expression": "string memory _metaDataUri",
+      "replacement_expression": "string storage _metaDataUri",
+      "start_line": 9
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 13,
+      "function": "uri",
+      "mutant_id": "m000003",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "uri",
+      "mutant_id": "m000004",
+      "operator": "RSD",
+      "original_expression": "return _uri;",
+      "replacement_expression": "/* return _uri; */",
+      "start_line": 14
+    }
+  ],
+  "subject_id": "ensdomains__ens-contracts__StaticMetadataService"
+}

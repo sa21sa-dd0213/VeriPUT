@@ -1,0 +1,120 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "reserveCraniums",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        41907169587347605790164611555849662660841366824661511423707373220656104371563
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "mintCraniums",
+      "n": 2,
+      "value": 69645771087088360
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "asdf5",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "zEmDGoqFnVDeLHsedmEuIFWtatDwLuftiUYTwzePRBWxLzVBcVQPueCOcMcfCqNVelroLWLigCBSttNJfgdSnndV WlgPxpzXokSN KdAGRDfJyuznArkwlpbocwEhaWtblsvNRQGPouaPZpGrgi LZZrVkqUOTVwSdCwxU RfwJldnrNYTtwL iaGwAhqtTB Ll pqgyaAiqFqaODwXrQunvIYLlOUEpOrSzJhNxfVqIGDlTubZGPxZrvKbs"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "setBaseURI",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "zEmDGoqFnVDeLHsedmEuIFWtatDwLuftiUYTwzePRBWxLzVBcVQPueCOcMcfCqNVelroLWLigCBSttNJfgdSnndV WulgPxpzXokSN KdAdGRDfJyuznArkwlpbocwEhaWtblsvNRQGPouaPZpGrgi LZZrVkqUOTVwSdCwxU RfwJldnroNYTtwL iaGwAhqtTB Ll pqgyaAiqFqaODwXrQunvIYLlOUEpOrSzJhNxfVqIGDlTubZGPxZrvKbs"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "setBaseURI",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "withdraw",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "flipSaleState",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

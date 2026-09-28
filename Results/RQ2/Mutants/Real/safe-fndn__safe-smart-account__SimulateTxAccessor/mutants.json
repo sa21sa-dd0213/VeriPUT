@@ -1,0 +1,207 @@
+{
+  "compile_failed": 2,
+  "compile_ok": 18,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "execute",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "execute",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "execute",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 69,
+      "function": "modifier:onlyDelegateCall",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "simulate",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "simulate",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 62,
+      "function": "constructor",
+      "mutant_id": "m000007",
+      "operator": "CCD",
+      "original_expression": "constructor() {\n        ACCESSOR_SINGLETON = address(this);\n    }",
+      "replacement_expression": "",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "execute",
+      "mutant_id": "m000008",
+      "operator": "CSC",
+      "original_expression": "operation == Enum.Operation.DelegateCall",
+      "replacement_expression": "true",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "execute",
+      "mutant_id": "m000009",
+      "operator": "CSC",
+      "original_expression": "operation == Enum.Operation.DelegateCall",
+      "replacement_expression": "false",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 43,
+      "function": "execute",
+      "mutant_id": "m000010",
+      "operator": "CSC",
+      "original_expression": "else {\n            \n            \n            assembly {\n                success := call(txGas, to, value, add(data, 0x20), mload(data), 0, 0)\n            }\n            \n        }",
+      "replacement_expression": "",
+      "start_line": 36
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 25,
+      "function": "execute",
+      "mutant_id": "m000011",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 25
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 92,
+      "function": "simulate",
+      "mutant_id": "m000012",
+      "operator": "DLR",
+      "original_expression": "bytes memory returnData",
+      "replacement_expression": "bytes storage returnData",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 69,
+      "function": "modifier:onlyDelegateCall",
+      "mutant_id": "m000013",
+      "operator": "EHD",
+      "original_expression": "require(address(this) != ACCESSOR_SINGLETON, \"SimulateTxAccessor should only be called via delegatecall\");",
+      "replacement_expression": "/* require(address(this) != ACCESSOR_SINGLETON, \"SimulateTxAccessor should only be called via delegatecall\"); */",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 93,
+      "function": "simulate",
+      "mutant_id": "m000014",
+      "operator": "GVR",
+      "original_expression": "gasleft()",
+      "replacement_expression": "gasleft()+1",
+      "start_line": 93
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 93,
+      "function": "simulate",
+      "mutant_id": "m000015",
+      "operator": "GVR",
+      "original_expression": "gasleft()",
+      "replacement_expression": "gasleft()-1",
+      "start_line": 93
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "simulate",
+      "mutant_id": "m000016",
+      "operator": "GVR",
+      "original_expression": "gasleft()",
+      "replacement_expression": "gasleft()+1",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "simulate",
+      "mutant_id": "m000017",
+      "operator": "GVR",
+      "original_expression": "gasleft()",
+      "replacement_expression": "gasleft()-1",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "simulate",
+      "mutant_id": "m000018",
+      "operator": "GVR",
+      "original_expression": "gasleft()",
+      "replacement_expression": "gasleft()+1",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "simulate",
+      "mutant_id": "m000019",
+      "operator": "GVR",
+      "original_expression": "gasleft()",
+      "replacement_expression": "gasleft()-1",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "simulate",
+      "mutant_id": "m000020",
+      "operator": "MOD",
+      "original_expression": "function simulate(\n        address to,\n        uint256 value,\n        bytes calldata data,\n        Enum.Operation operation\n    ) external onlyDelegateCall returns (uint256 estimate, bool success, bytes memory returnData) ",
+      "replacement_expression": "function simulate(\n        address to,\n        uint256 value,\n        bytes calldata data,\n        Enum.Operation operation\n    ) external  returns (uint256 estimate, bool success, bytes memory returnData) ",
+      "start_line": 87
+    }
+  ],
+  "subject_id": "safe-fndn__safe-smart-account__SimulateTxAccessor"
+}

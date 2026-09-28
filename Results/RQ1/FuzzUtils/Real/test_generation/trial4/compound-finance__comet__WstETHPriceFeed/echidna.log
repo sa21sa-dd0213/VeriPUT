@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.567233815s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.667895099s)
+
+echidna: Constructor arguments are required: [("stETHtoETHPriceFeed_",address),("wstETH_",address),("decimals_",uint8)]

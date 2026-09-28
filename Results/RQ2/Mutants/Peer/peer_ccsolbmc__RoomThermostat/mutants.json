@@ -1,0 +1,347 @@
+{
+  "compile_failed": 0,
+  "compile_ok": 34,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "initialize",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "thermostatInstaller",
+      "replacement_expression": "address(this)",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "initialize",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "thermostatInstaller",
+      "replacement_expression": "address(0)",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "initialize",
+      "mutant_id": "m000003",
+      "operator": "AVR",
+      "original_expression": "thermostatUser",
+      "replacement_expression": "address(this)",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "initialize",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "thermostatUser",
+      "replacement_expression": "address(0)",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "StartThermostat",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "StartThermostat",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "StartThermostat",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "StartThermostat",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "StartThermostat",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "SetTargetTemperature",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "SetTargetTemperature",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "SetTargetTemperature",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "SetTargetTemperature",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "SetTargetTemperature",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 47,
+      "function": "SetMode",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 47
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 47,
+      "function": "SetMode",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 47
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 47,
+      "function": "SetMode",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 47
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 47,
+      "function": "SetMode",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 47
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 47,
+      "function": "SetMode",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 47
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "StartThermostat",
+      "mutant_id": "m000020",
+      "operator": "CSC",
+      "original_expression": "Installer != msg.sender || State != StateType.Created",
+      "replacement_expression": "true",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "StartThermostat",
+      "mutant_id": "m000021",
+      "operator": "CSC",
+      "original_expression": "Installer != msg.sender || State != StateType.Created",
+      "replacement_expression": "false",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "SetTargetTemperature",
+      "mutant_id": "m000022",
+      "operator": "CSC",
+      "original_expression": "User != msg.sender || State != StateType.InUse",
+      "replacement_expression": "true",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "SetTargetTemperature",
+      "mutant_id": "m000023",
+      "operator": "CSC",
+      "original_expression": "User != msg.sender || State != StateType.InUse",
+      "replacement_expression": "false",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 47,
+      "function": "SetMode",
+      "mutant_id": "m000024",
+      "operator": "CSC",
+      "original_expression": "User != msg.sender || State != StateType.InUse",
+      "replacement_expression": "true",
+      "start_line": 47
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 47,
+      "function": "SetMode",
+      "mutant_id": "m000025",
+      "operator": "CSC",
+      "original_expression": "User != msg.sender || State != StateType.InUse",
+      "replacement_expression": "false",
+      "start_line": 47
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 30,
+      "function": "StartThermostat",
+      "mutant_id": "m000026",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 30
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "SetTargetTemperature",
+      "mutant_id": "m000027",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "SetMode",
+      "mutant_id": "m000028",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "StartThermostat",
+      "mutant_id": "m000029",
+      "operator": "ER",
+      "original_expression": "StateType.Created",
+      "replacement_expression": "StateType.InUse",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "StartThermostat",
+      "mutant_id": "m000030",
+      "operator": "ER",
+      "original_expression": "StateType.InUse",
+      "replacement_expression": "StateType.Created",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "SetTargetTemperature",
+      "mutant_id": "m000031",
+      "operator": "ER",
+      "original_expression": "StateType.InUse",
+      "replacement_expression": "StateType.Created",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 47,
+      "function": "SetMode",
+      "mutant_id": "m000032",
+      "operator": "ER",
+      "original_expression": "StateType.InUse",
+      "replacement_expression": "StateType.Created",
+      "start_line": 47
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "initialize",
+      "mutant_id": "m000033",
+      "operator": "ILR",
+      "original_expression": "70",
+      "replacement_expression": "69",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "initialize",
+      "mutant_id": "m000034",
+      "operator": "ILR",
+      "original_expression": "70",
+      "replacement_expression": "71",
+      "start_line": 23
+    }
+  ],
+  "subject_id": "peer_ccsolbmc__RoomThermostat"
+}

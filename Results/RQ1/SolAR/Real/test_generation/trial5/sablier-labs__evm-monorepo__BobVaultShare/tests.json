@@ -1,0 +1,83 @@
+[
+  [
+    {
+      "args": [
+        "\"memory-safe\"",
+        "xiBvJaDAOZyX RbMbnqiSFTzoBQGnFlReNjaRtheMZplotfOxxGLO",
+        76,
+        "anonymous_hex_00016",
+        8158170498630415420663650510250892939785553718252717062224365388331689956152
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        100000000000000000000000000000000000000000000000000000000000000000,
+        "anonymous_hex_00021",
+        29097144787233125670497727800066029241466679821880619164268615780235779963389
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "\"memory-safe\"",
+        "ONgdFuNMEp vLtLHKo RcjPlRyfLwIWKZiebRvCqdUEHbNhtbJzyXMapRhOduXXVIkqMQnjoxpmKvIolECBPpMoiAgUDPRUPeFCulhTsVdwEQqMLpnZOVsGADLcYzQLsJsDvqbIu aJeTkUpjPzhLWXPQPWa mXRMNXBlgMtSAxwqwTugUOnzKqbCYGdBgzQinYEOHEorOOHmMq",
+        37,
+        "anonymous_hex_00022",
+        96199158759239040551206339062890076320249322806346791527875858667065969396877
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        80937144112591840690030511328922759100652257760951655726498923309132917174475,
+        "anonymous_hex_00019",
+        223372036854775807
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "mint",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "decimals",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "\"memory-safe\"",
+        "\"memory-safe\"",
+        13,
+        "anonymous_hex_00016",
+        49295677604486615291514708987598013099770184820282316834609174299991341375305
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "decimals",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

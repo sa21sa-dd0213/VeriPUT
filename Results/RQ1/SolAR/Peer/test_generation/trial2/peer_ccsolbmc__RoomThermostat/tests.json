@@ -1,0 +1,247 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "initialize",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "initialize",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "StartThermostat",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        69
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "SetMode",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "initialize",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        70
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "SetTargetTemperature",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "StartThermostat",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "StartThermostat",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021",
+        "anonymous_hex_00016"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "initialize",
+      "n": 6,
+      "value": 0
+    },
+    {
+      "args": [
+        -88980703949865608403848132433226641107369074514040711817373490719678455870223
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "SetTargetTemperature",
+      "n": 7,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "StartThermostat",
+      "n": 8,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "StartThermostat",
+      "n": 9,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00021"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "initialize",
+      "n": 10,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "StartThermostat",
+      "n": 11,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "SetMode",
+      "n": 12,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "StartThermostat",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "SetTargetTemperature",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "SetMode",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "initialize",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "initialize",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        69
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "SetMode",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

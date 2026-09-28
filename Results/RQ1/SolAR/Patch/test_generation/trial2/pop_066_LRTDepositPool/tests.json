@@ -1,0 +1,198 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "unpause",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026",
+        94583322518743133427496241046143161990759446959522217032069210641892551685077
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "depositAsset",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "getTotalAssetDeposits",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        112593530999026669543322539370068163460279446316189717242175079355597550689030
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "getRsETHAmountToMint",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "initialize",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "pause",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        32
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "updateMaxNodeDelegatorCount",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "getNodeDelegatorQueue",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "getAssetCurrentLimit",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1,
+        "anonymous_hex_00017",
+        116874728462509168878918304709530269146322988781705122747402588913385795138
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "transferAssetToNodeDelegator",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "getAssetDistributionData",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

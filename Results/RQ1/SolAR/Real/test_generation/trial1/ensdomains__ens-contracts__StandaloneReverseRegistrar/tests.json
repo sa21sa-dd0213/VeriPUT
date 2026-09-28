@@ -1,0 +1,38 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x4f76475a"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "supportsInterface",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "nameForAddr",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

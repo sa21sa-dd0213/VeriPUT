@@ -1,0 +1,274 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "acceptOwnership",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "cancelOwnershipTransfer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "getPotentialOwner",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "getTotalChannels",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00016"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "getKey",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "getChannels",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "getConduitCodeHashes",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x624955736d66446664616151747052576a784a6279596f765455537061466a68",
+        "anonymous_hex_00021"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "createConduit",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "getConduitCodeHashes",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x7351414b7a73557953524c416d70794b4a796c616e446f4a6658437442695a70"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "getConduit",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "getConduitCodeHashes",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "transferOwnership",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "getConduitCodeHashes",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00016"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "ownerOf",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x75454d5656556e516a4f676e6f4b544c78647169497946636278625061466f49"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "getConduit",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        "anonymous_hex_00021"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "getChannelStatus",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "getConduitCodeHashes",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "getTotalChannels",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00026",
+        false
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "updateChannel",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "getConduitCodeHashes",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

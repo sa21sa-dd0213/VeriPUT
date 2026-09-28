@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.685116432s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.737362052s)
+
+echidna: Constructor arguments are required: [("tokenName",string),("tokenSymbol",string)]

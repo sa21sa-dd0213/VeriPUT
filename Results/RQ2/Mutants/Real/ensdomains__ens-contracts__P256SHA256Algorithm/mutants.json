@@ -1,0 +1,287 @@
+{
+  "compile_failed": 5,
+  "compile_ok": 23,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "verify",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "verify",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "verify",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "verify",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "verify",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "verify",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "verify",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "verify",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "verify",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 93,
+      "function": "verify",
+      "mutant_id": "m000010",
+      "operator": "CSC",
+      "original_expression": "success",
+      "replacement_expression": "true",
+      "start_line": 93
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 93,
+      "function": "verify",
+      "mutant_id": "m000011",
+      "operator": "CSC",
+      "original_expression": "success",
+      "replacement_expression": "false",
+      "start_line": 93
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 77,
+      "function": "verify",
+      "mutant_id": "m000012",
+      "operator": "DLR",
+      "original_expression": "bytes memory input",
+      "replacement_expression": "bytes storage input",
+      "start_line": 77
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 79,
+      "function": "verify",
+      "mutant_id": "m000013",
+      "operator": "DLR",
+      "original_expression": "bytes memory output",
+      "replacement_expression": "bytes storage output",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "verify",
+      "mutant_id": "m000014",
+      "operator": "EHD",
+      "original_expression": "require(signature.length == 64, \"Invalid p256 signature length\");",
+      "replacement_expression": "/* require(signature.length == 64, \"Invalid p256 signature length\"); */",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "verify",
+      "mutant_id": "m000015",
+      "operator": "EHD",
+      "original_expression": "require(key.length == 68, \"Invalid p256 key length\");",
+      "replacement_expression": "/* require(key.length == 68, \"Invalid p256 key length\"); */",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "verify",
+      "mutant_id": "m000016",
+      "operator": "ILR",
+      "original_expression": "64",
+      "replacement_expression": "63",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "verify",
+      "mutant_id": "m000017",
+      "operator": "ILR",
+      "original_expression": "64",
+      "replacement_expression": "65",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "verify",
+      "mutant_id": "m000018",
+      "operator": "ILR",
+      "original_expression": "68",
+      "replacement_expression": "67",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "verify",
+      "mutant_id": "m000019",
+      "operator": "ILR",
+      "original_expression": "68",
+      "replacement_expression": "69",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 79,
+      "function": "verify",
+      "mutant_id": "m000020",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "31",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 79,
+      "function": "verify",
+      "mutant_id": "m000021",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "33",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "verify",
+      "mutant_id": "m000022",
+      "operator": "ILR",
+      "original_expression": "31",
+      "replacement_expression": "30",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "verify",
+      "mutant_id": "m000023",
+      "operator": "ILR",
+      "original_expression": "31",
+      "replacement_expression": "32",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "verify",
+      "mutant_id": "m000024",
+      "operator": "MCR",
+      "original_expression": "sha256",
+      "replacement_expression": "keccak256",
+      "start_line": 55
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 17,
+      "function": "verify",
+      "mutant_id": "m000025",
+      "operator": "OLFD",
+      "original_expression": "function verify(\n        bytes calldata key,\n        bytes calldata data,\n        bytes calldata signature\n    ) external view virtual returns (bool);",
+      "replacement_expression": "",
+      "start_line": 13
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 96,
+      "function": "verify",
+      "mutant_id": "m000026",
+      "operator": "OLFD",
+      "original_expression": "function verify(\n        bytes32 messageHash,\n        bytes32 r,\n        bytes32 s,\n        bytes32 qx,\n        bytes32 qy\n    ) internal view returns (bool success) {\n        \n        bytes memory input = abi.encodePacked(messageHash, r, s, qx, qy);\n\n        bytes memory output = new bytes(32);\n\n        assembly {\n            success := staticcall(\n                gas(),\n                0x100, \n                add(input, 32),\n                mload(input), \n                add(output, 32),\n                32 \n            )\n        }\n\n        \n        if (success) {\n            success = (output[31] == bytes1(0x01));\n        }\n    }",
+      "replacement_expression": "",
+      "start_line": 69
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 56,
+      "function": "verify",
+      "mutant_id": "m000027",
+      "operator": "ORFD",
+      "original_expression": "function verify(\n        bytes calldata key,\n        bytes calldata data,\n        bytes calldata signature\n    ) external view override returns (bool) {\n        require(signature.length == 64, \"Invalid p256 signature length\");\n        require(key.length == 68, \"Invalid p256 key length\");\n\n        \n        \n        bytes32 r;\n        bytes32 s;\n        bytes32 qx;\n        bytes32 qy;\n\n        assembly {\n            \n            r := calldataload(signature.offset)\n            s := calldataload(add(signature.offset, 32))\n            \n            qx := calldataload(add(key.offset, 4))\n            qy := calldataload(add(key.offset, 36))\n        }\n\n        return P256Precompile.verify(sha256(data), r, s, qx, qy);\n    }",
+      "replacement_expression": "",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "verify",
+      "mutant_id": "m000028",
+      "operator": "RSD",
+      "original_expression": "return P256Precompile.verify(sha256(data), r, s, qx, qy);",
+      "replacement_expression": "P256Precompile.verify(sha256(data), r, s, qx, qy);",
+      "start_line": 55
+    }
+  ],
+  "subject_id": "ensdomains__ens-contracts__P256SHA256Algorithm"
+}

@@ -1,0 +1,164 @@
+{
+  "contract": "SafeL2",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 2,
+    "LF": 6
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "45cc92e785c9f4bd024076f102fd919cec3effb811ed84361fd5f6023597f91f",
+  "subject_id": "safe-fndn__safe-smart-account__SafeL2",
+  "targets": [
+    {
+      "declaration_line": 2112,
+      "external_selector": null,
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 2112,
+        "name": "SafeL2.onBeforeExecTransaction.1",
+        "record": "FN"
+      },
+      "length": 427,
+      "line": 2123,
+      "name": "onBeforeExecTransaction",
+      "site": "body-entry",
+      "src": "36608:427:0",
+      "start": 36608,
+      "trap_id": 1,
+      "visibility": "internal"
+    },
+    {
+      "declaration_line": 2146,
+      "external_selector": null,
+      "function_kind": "function",
+      "id": "function:2",
+      "kind": "function",
+      "lcov": {
+        "line": 2146,
+        "name": "SafeL2.onBeforeExecTransactionFromModule.1",
+        "record": "FN"
+      },
+      "length": 83,
+      "line": 2146,
+      "name": "onBeforeExecTransactionFromModule",
+      "site": "body-entry",
+      "src": "37181:83:0",
+      "start": 37181,
+      "trap_id": 2,
+      "visibility": "internal"
+    },
+    {
+      "declaration_line": 2112,
+      "external_selector": null,
+      "id": "line:2112",
+      "kind": "line",
+      "lcov": {
+        "line": 2112,
+        "record": "DA"
+      },
+      "length": 427,
+      "line": 2123,
+      "site": "body-entry",
+      "src": "36608:427:0",
+      "start": 36608,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 3,
+      "visibility": "internal"
+    },
+    {
+      "id": "line:2124",
+      "kind": "line",
+      "lcov": {
+        "line": 2124,
+        "record": "DA"
+      },
+      "length": 27,
+      "line": 2124,
+      "site": "statement-entry",
+      "src": "36618:27:0",
+      "start": 36618,
+      "statement_type": "VariableDeclarationStatement",
+      "trap_id": 4
+    },
+    {
+      "id": "line:2126",
+      "kind": "line",
+      "lcov": {
+        "line": 2126,
+        "record": "DA"
+      },
+      "length": 57,
+      "line": 2126,
+      "site": "statement-entry",
+      "src": "36669:57:0",
+      "start": 36669,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 5
+    },
+    {
+      "id": "line:2128",
+      "kind": "line",
+      "lcov": {
+        "line": 2128,
+        "record": "DA"
+      },
+      "length": 282,
+      "line": 2128,
+      "site": "statement-entry",
+      "src": "36746:282:0",
+      "start": 36746,
+      "statement_type": "EmitStatement",
+      "trap_id": 6
+    },
+    {
+      "declaration_line": 2146,
+      "external_selector": null,
+      "id": "line:2146",
+      "kind": "line",
+      "lcov": {
+        "line": 2146,
+        "record": "DA"
+      },
+      "length": 83,
+      "line": 2146,
+      "site": "body-entry",
+      "src": "37181:83:0",
+      "start": 37181,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 7,
+      "visibility": "internal"
+    },
+    {
+      "id": "line:2147",
+      "kind": "line",
+      "lcov": {
+        "line": 2147,
+        "record": "DA"
+      },
+      "length": 66,
+      "line": 2147,
+      "site": "statement-entry",
+      "src": "37191:66:0",
+      "start": 37191,
+      "statement_type": "EmitStatement",
+      "trap_id": 8
+    }
+  ],
+  "totals": {
+    "all": 8,
+    "branch": 0,
+    "function": 2,
+    "line": 6
+  }
+}

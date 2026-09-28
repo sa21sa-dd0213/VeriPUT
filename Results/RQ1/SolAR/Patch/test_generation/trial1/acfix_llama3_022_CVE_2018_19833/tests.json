@@ -1,0 +1,140 @@
+[
+  [
+    {
+      "args": [
+        0,
+        "WjRMHJQOyFBxYkeeXBsblikFijeOadJThqWNKuTFbqzNxsXwWWJYJqJeodN KAEasWYTzcrclfEJZTGwEgrjqKNjCaPLcjtVtlwiwweKRcliVOmUHTYweCZ",
+        "UhoHBOLVO PCuiGKjz"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "KCga bAQEo bLPxiizHTUSPWnnoztSH VIxCKnpyIXltVVvVPLplQ rCleLrpWMQxXgBzktfVzDCtjHGbHbQvVoqNBfoBjVT",
+        "wUGObVZDaisCXSKCLKaJbCYjTljyHDvHYzWPNKaqHRRguLMrgBCSKcwpaezzRgPuMDkVAeCwkzucmUAUxmCamDjpnlT ZWATbbKASxuicShCFOZQCGU FqGtGWgfZKWhgoKZpoN ByJKDwKLknihxSFQyDqzxePYIGLLFoedSJegJWALezdjNHYsDvwuGxnFwiJEtWboDTlqXgVaxgjOXCwXXGnutPMyKfIRRELRiCjfjjMsDAl"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026",
+        10
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "mintToken",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "owned",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "KCga bAQEo bLPxiizHTUSPWnnoztSH VIxCKnpyIXltVVvVPLplQ rCleLrpWMQxXgBzktfVzDCtjHGbHbQvVoqNBfoBjVT",
+        "wUGObVZDaisCXSKCLKaJbCYjTljyHDvHYzWPNKaqHRRguLMrgBCSKcwpaezzRgPuMDkVAeCwkzucmUAUxmCamDjpnlT ZWATbbKASxuicShCFOZQCGU FqGtGWgfZKWhgoKZpoN ByJKDwKLknihxSFQyDqzxePYIGLLFoedSJegJWALezdjNHYsDvwuGxnFwiJEtWboDTlqXgVaxgjOXCwXXGnutPMyKfIRRELRiCjfjjMsDAl"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "owned",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "ywatIhXfPXfRGxAJFVsZyDpbEfcOePq xWgWPUxmAEAlvptAFhvBmcGrqtmGAZTJyOdRIVVVOmclFdRwLtLE ihhgAyGff",
+        "CbxpjZWb fQlKEoDxfyArLrcrHZIkLffgDyoQkSZVPEqMOAhjcFFmcOm zDRuzRM gbGZKBjifMJTYxSaRqhttGIpkzgzmnMLxxYTbYvutqt UZwpMNdkymZhCLFJsXskNhFwOiYqiWNYOHUZJsvnVlaLuNO NvhHhyaAIoDuYSpWlItDXqGIelxsYZpXPAztWLqElxqzYb"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "owned",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "KCga bAQEo bLPxiizHTUSPWnnoztSH VIxCKnpyIXltVVvVPLplQ rCleLrpWMQxXgBzktfVzDCtjHGbHbQvVoqNBfoBjVT",
+        "wUGObVZDaisCXSKCLKaJbCYjTljyHDvHYzWPNKaqHRRguLMrgBCSKcwpaezzRgPuMDkVAeCwkzucmUAUxmCamDjpnlT ZWATbbKASxuicShCFOZQCGU FqGtGWgfZKWhgoKZpoN ByJKDwKLknihxSFQyDqzxePYIGLLFoedSJegJWALezdjNHYsDvwuGxnFwiJEtWboDTlqXgVaxgjOXCwXXGnutPMyKfIRRELRiCjfjjMsDAl"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026",
+        false
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "freezeAccount",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "WjRMHJQOyFBxYkeeXBsblikFijeOadJThqWNKuTFbqzNxsXwWWJYJqJeodN KAEasWYTzcrclfEJZTGwEgrjqKNjCaPLcjtVtlwiwweKRcliVOmUHTYweCZ",
+        "UhoHBOLVO PCuiGKjz"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027",
+        89772209935769813345788419732865875376026673420367787317738164169646267080506
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

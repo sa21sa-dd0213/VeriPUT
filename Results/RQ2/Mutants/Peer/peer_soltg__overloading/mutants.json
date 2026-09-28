@@ -1,0 +1,267 @@
+{
+  "compile_failed": 2,
+  "compile_ok": 24,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 8,
+      "function": "f",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 8
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "f",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "f",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "f",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "f",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "f",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "f",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "f",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "f",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "f",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "f",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 8,
+      "function": "f",
+      "mutant_id": "m000012",
+      "operator": "CSC",
+      "original_expression": "x == 0",
+      "replacement_expression": "true",
+      "start_line": 8
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 8,
+      "function": "f",
+      "mutant_id": "m000013",
+      "operator": "CSC",
+      "original_expression": "x == 0",
+      "replacement_expression": "false",
+      "start_line": 8
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 12,
+      "function": "f",
+      "mutant_id": "m000014",
+      "operator": "CSC",
+      "original_expression": "lse{\n\t\t\ta = x;\n\t\t}",
+      "replacement_expression": "",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "f",
+      "mutant_id": "m000015",
+      "operator": "CSC",
+      "original_expression": "x > y",
+      "replacement_expression": "true",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "f",
+      "mutant_id": "m000016",
+      "operator": "CSC",
+      "original_expression": "x > y",
+      "replacement_expression": "false",
+      "start_line": 17
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 21,
+      "function": "f",
+      "mutant_id": "m000017",
+      "operator": "CSC",
+      "original_expression": "lse{\n\t\t\ta = y;\n\t\t}",
+      "replacement_expression": "",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "f",
+      "mutant_id": "m000018",
+      "operator": "EHD",
+      "original_expression": "assert(a >= 0);",
+      "replacement_expression": "/* assert(a >= 0); */",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "f",
+      "mutant_id": "m000019",
+      "operator": "EHD",
+      "original_expression": "assert(a >= 0);",
+      "replacement_expression": "/* assert(a >= 0); */",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 8,
+      "function": "f",
+      "mutant_id": "m000020",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 8
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "f",
+      "mutant_id": "m000021",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "f",
+      "mutant_id": "m000022",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "f",
+      "mutant_id": "m000023",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "f",
+      "mutant_id": "m000024",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "f",
+      "mutant_id": "m000025",
+      "operator": "OLFD",
+      "original_expression": "function f(uint x) public {\n\t\tif (x == 0){\n\t\t\ta = a + 1;\n\t\t}else{\n\t\t\ta = x;\n\t\t}\n\t\tassert(a >= 0);\n\t}",
+      "replacement_expression": "",
+      "start_line": 7
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "f",
+      "mutant_id": "m000026",
+      "operator": "OLFD",
+      "original_expression": "function f(uint x, uint y) public {\n\t\tif (x > y){\n\t\t\ta = x;\n\t\t}else{\n\t\t\ta = y;\n\t\t}\n\t\tassert(a >= 0);\n\t}",
+      "replacement_expression": "",
+      "start_line": 16
+    }
+  ],
+  "subject_id": "peer_soltg__overloading"
+}

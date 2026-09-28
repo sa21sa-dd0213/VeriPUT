@@ -1,0 +1,455 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        16568167625821727694330608587945262783981107914339169391175759524037945963021
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        94854427236314352180487726070077314794792591788468148932793987759868292796204
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "increaseAllowance",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        89421147224134796727955862278875549106407043280666046568773401031306542731073
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "decreaseAllowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "symbol",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "includeAccount",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00021"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "includeAccount",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        12
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "setMaxTxPercent",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "isExcluded",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "excludeAccount",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "includeAccount",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        false
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "setBuyCooldown",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "includeAccount",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "includeAccount",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        52054438140843185130234499073298221413340197120832045800046806113966501823570,
+        false
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "reflectionFromToken",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "decimals",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "includeAccount",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        52054438140843185130234499073298221413340197120832045800046806113966501823570,
+        false
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "reflectionFromToken",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        52054438140843185130234499073298221413340197120832045800046806113966501823570,
+        false
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "reflectionFromToken",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00016",
+        84987632022078340025183090008890000528912732224083388024092777061767384534887
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        "anonymous_hex_00028",
+        44261860060062303824796146951756961576960422623094599397752515667507517540932
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        38
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "tokenFromReflection",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "includeAccount",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "totalFees",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        108295235546519171109177587499228475555483829707837490624641121815497017890021
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "decreaseAllowance",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        75165
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "reflect",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "name",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026",
+        50
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "includeAccount",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

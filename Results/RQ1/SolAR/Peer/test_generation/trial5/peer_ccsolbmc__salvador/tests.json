@@ -1,0 +1,113 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        33776321110839638454855429099158907512946132359981729402722368580143145919434
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "sdfd",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        104940622498837698447099819290566311950419173213137385610895225130991430938410
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        "anonymous_hex_00016",
+        17392650794481940677048952985514943647757433606378966186800855600911601505385
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (1.338849856s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (1.075368408s)
+
+echidna: Constructor arguments are required: [("_owner",address),("coinType",uint256),("_defaultRegistrar",address),("_chainRegistrar",address),("verifier",address),("gateways",string[])]

@@ -1,0 +1,219 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027",
+        2691
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "transferBackingTokenFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "queryToken",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        88424903394369640145210890388798649038645425821885934992635166748136905426929
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "wrap",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        22693225682469620464533867350033841506375057152436876593106431426370853221385
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "setHeldAmtReq",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        198246239
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "unwrap",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        "\"_MINTTO\"",
+        "\"safeDecreaseAllowance\"",
+        148,
+        0,
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "abca4",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        42146
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "transferBackingTokenTo",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        4
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "burnFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        "\"_MINTTO\"",
+        "\"safeDecreaseAllowance\"",
+        148,
+        0,
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "abca4",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        10248500856511231284970336234031060070140482571878677663025335935390166182653
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "mintTo",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        88424903394369640145210890388798649038645425821885934992635166748136905426923
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "wrap",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "decimals",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        88424903394369640145210890388798649038645425821885934992635166748136905426929
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "wrap",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

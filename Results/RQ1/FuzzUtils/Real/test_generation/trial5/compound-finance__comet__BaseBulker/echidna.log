@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.745208209s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.676374713s)
+
+echidna: Constructor arguments are required: [("admin_",address),("wrappedNativeToken_",address)]

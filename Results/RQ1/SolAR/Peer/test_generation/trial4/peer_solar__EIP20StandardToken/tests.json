@@ -1,0 +1,97 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        "anonymous_hex_00025",
+        8865509674486820784995607171422449424925416225698606180861827180115344554822
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021",
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        2
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        2
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

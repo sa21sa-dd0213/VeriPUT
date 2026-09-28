@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (1.953121813s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (2.55331416s)
+
+echidna: Constructor arguments are required: [("_proxyRegistryAddress",address)]

@@ -1,0 +1,81 @@
+{
+  "contract": "SimpleSuicide",
+  "dataset": "Patch",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 2
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "e2aa7dc17bd7f25331886d7594e51e1cf4fbd0d40a330cefd54fa5217c6acb39",
+  "subject_id": "rc_access_control__simple_suicide__sGuardPlus__simple_suicide",
+  "targets": [
+    {
+      "declaration_line": 18,
+      "external_selector": "a56a3b5a",
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 18,
+        "name": "SimpleSuicide.sudicideAnyone",
+        "record": "FN"
+      },
+      "length": 38,
+      "line": 18,
+      "name": "sudicideAnyone",
+      "site": "body-entry",
+      "src": "516:38:0",
+      "start": 516,
+      "trap_id": 1,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 18,
+      "external_selector": "a56a3b5a",
+      "id": "line:18",
+      "kind": "line",
+      "lcov": {
+        "line": 18,
+        "record": "DA"
+      },
+      "length": 38,
+      "line": 18,
+      "site": "body-entry",
+      "src": "516:38:0",
+      "start": 516,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "public"
+    },
+    {
+      "id": "line:19",
+      "kind": "line",
+      "lcov": {
+        "line": 19,
+        "record": "DA"
+      },
+      "length": 33,
+      "line": 19,
+      "site": "statement-entry",
+      "src": "518:33:0",
+      "start": 518,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 3
+    }
+  ],
+  "totals": {
+    "all": 3,
+    "branch": 0,
+    "function": 1,
+    "line": 2
+  }
+}

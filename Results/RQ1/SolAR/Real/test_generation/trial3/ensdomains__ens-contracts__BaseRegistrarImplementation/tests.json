@@ -1,0 +1,252 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "0x526a6b564642635241686561444b696b5671696b724b46634a52777847494161"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        27990528851187644645472298570757267578516030923812218497371564375656710895998
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "nameExpires",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00020",
+        "0x684574417a644d696e42734344565144466f754657415a4e4f41516853544369"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        65003827094844606898013107858079817813794928949933748843268673584511562074028,
+        "anonymous_hex_00028",
+        37189858634565976515453888770272610406437918831747588612697123661529198950070
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "register",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00017",
+        "0x436576646c576c49525055487278436b77786d7167634e446d544245516c6464"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "removeController",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        42705734290082041855190248778874595927161114185042926310466905377319596539039
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "available",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        42705734290082041855190248778874595927161114185042926310466905377319596539045
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "available",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00017",
+        "0x436576646c576c49525055487278436b77786d7167634e446d544245516c6464"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        58076920055407563472863283905693292538040794605062245837402728890747800501145,
+        28368934140245754514394504687957540100598992427032914320359483037625625709960
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "renew",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x77665153"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "supportsInterface",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "addController",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        8,
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "reclaim",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        255
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "available",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x77665153"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "supportsInterface",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        20
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "ownerOf",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x77665153"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "supportsInterface",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00016"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "setResolver",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

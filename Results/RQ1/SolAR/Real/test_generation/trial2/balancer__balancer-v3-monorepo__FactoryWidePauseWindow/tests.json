@@ -1,0 +1,77 @@
+[
+  [
+    {
+      "args": [
+        35
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "getPauseWindowDuration",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "getNewPoolPauseWindowEndTime",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        35
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "getOriginalPauseWindowEndTime",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "getPauseWindowDuration",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "getNewPoolPauseWindowEndTime",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "getPauseWindowDuration",
+      "n": 5,
+      "value": 0
+    }
+  ]
+]

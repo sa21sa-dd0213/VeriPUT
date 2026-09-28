@@ -1,0 +1,447 @@
+{
+  "compile_failed": 1,
+  "compile_ok": 43,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "Reject",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(this)",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "Reject",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(0)",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "MakeOffer",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "MakeOffer",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "MakeOffer",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "MakeOffer",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "MakeOffer",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "Reject",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "Reject",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "Reject",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "Reject",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 69,
+      "function": "AcceptOffer",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "MakeOffer",
+      "mutant_id": "m000013",
+      "operator": "CSC",
+      "original_expression": "offerPrice == 0",
+      "replacement_expression": "true",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "MakeOffer",
+      "mutant_id": "m000014",
+      "operator": "CSC",
+      "original_expression": "offerPrice == 0",
+      "replacement_expression": "false",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "MakeOffer",
+      "mutant_id": "m000015",
+      "operator": "CSC",
+      "original_expression": "State != StateType.ItemAvailable",
+      "replacement_expression": "true",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "MakeOffer",
+      "mutant_id": "m000016",
+      "operator": "CSC",
+      "original_expression": "State != StateType.ItemAvailable",
+      "replacement_expression": "false",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "MakeOffer",
+      "mutant_id": "m000017",
+      "operator": "CSC",
+      "original_expression": "InstanceOwner == msg.sender",
+      "replacement_expression": "true",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "MakeOffer",
+      "mutant_id": "m000018",
+      "operator": "CSC",
+      "original_expression": "InstanceOwner == msg.sender",
+      "replacement_expression": "false",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "Reject",
+      "mutant_id": "m000019",
+      "operator": "CSC",
+      "original_expression": "State != StateType.OfferPlaced",
+      "replacement_expression": "true",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "Reject",
+      "mutant_id": "m000020",
+      "operator": "CSC",
+      "original_expression": "State != StateType.OfferPlaced",
+      "replacement_expression": "false",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "Reject",
+      "mutant_id": "m000021",
+      "operator": "CSC",
+      "original_expression": "InstanceOwner != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "Reject",
+      "mutant_id": "m000022",
+      "operator": "CSC",
+      "original_expression": "InstanceOwner != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 69,
+      "function": "AcceptOffer",
+      "mutant_id": "m000023",
+      "operator": "CSC",
+      "original_expression": "msg.sender != InstanceOwner",
+      "replacement_expression": "true",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 69,
+      "function": "AcceptOffer",
+      "mutant_id": "m000024",
+      "operator": "CSC",
+      "original_expression": "msg.sender != InstanceOwner",
+      "replacement_expression": "false",
+      "start_line": 69
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 21,
+      "function": "acbd",
+      "mutant_id": "m000025",
+      "operator": "DLR",
+      "original_expression": "string memory description",
+      "replacement_expression": "string storage description",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "MakeOffer",
+      "mutant_id": "m000026",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "MakeOffer",
+      "mutant_id": "m000027",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 43,
+      "function": "MakeOffer",
+      "mutant_id": "m000028",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 43
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "Reject",
+      "mutant_id": "m000029",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "Reject",
+      "mutant_id": "m000030",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 71,
+      "function": "AcceptOffer",
+      "mutant_id": "m000031",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 71
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "acbd",
+      "mutant_id": "m000032",
+      "operator": "ER",
+      "original_expression": "StateType.ItemAvailable",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "acbd",
+      "mutant_id": "m000033",
+      "operator": "ER",
+      "original_expression": "StateType.ItemAvailable",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "MakeOffer",
+      "mutant_id": "m000034",
+      "operator": "ER",
+      "original_expression": "StateType.ItemAvailable",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "MakeOffer",
+      "mutant_id": "m000035",
+      "operator": "ER",
+      "original_expression": "StateType.ItemAvailable",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "MakeOffer",
+      "mutant_id": "m000036",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.ItemAvailable",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "MakeOffer",
+      "mutant_id": "m000037",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "Reject",
+      "mutant_id": "m000038",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.ItemAvailable",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "Reject",
+      "mutant_id": "m000039",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "Reject",
+      "mutant_id": "m000040",
+      "operator": "ER",
+      "original_expression": "StateType.ItemAvailable",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "Reject",
+      "mutant_id": "m000041",
+      "operator": "ER",
+      "original_expression": "StateType.ItemAvailable",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "AcceptOffer",
+      "mutant_id": "m000042",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.ItemAvailable",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "AcceptOffer",
+      "mutant_id": "m000043",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "MakeOffer",
+      "mutant_id": "m000044",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 31
+    }
+  ],
+  "subject_id": "peer_ccsolbmc__SimpleMarketplace"
+}

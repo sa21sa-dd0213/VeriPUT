@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (3.252223983s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (2.16452859s)
+
+echidna: Constructor arguments are required: [("vault",address),("registry",address),("defaultMevTaxMultiplier",uint256),("defaultMevTaxThreshold",uint256)]

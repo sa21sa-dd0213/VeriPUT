@@ -1,0 +1,27 @@
+{
+  "contract": "Vault",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 0,
+    "LF": 0
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "fd49dc8dbd8cae1eebeebc6a3fe4eb769c5d0e8dd0dfbe188412b82490299462",
+  "subject_id": "euler-xyz__euler-vault-kit__Vault",
+  "targets": [],
+  "totals": {
+    "all": 0,
+    "branch": 0,
+    "function": 0,
+    "line": 0
+  }
+}

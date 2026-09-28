@@ -1,0 +1,113 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        "anonymous_hex_00016",
+        82975737496373525398211338987872408620209870633090313726909349381966440556797
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 19840019391992192
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        105105242725651001007907974761420200490674377385061561352129469149213703023034
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00016",
+        "anonymous_hex_00016"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 64711442763834081
+    },
+    {
+      "args": [
+        "anonymous_hex_00021",
+        255
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 64711442763834081
+    },
+    {
+      "args": [
+        "anonymous_hex_00022"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

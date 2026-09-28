@@ -1,0 +1,5957 @@
+{
+  "compile_failed": 2,
+  "compile_ok": 593,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 69,
+      "function": "MakeOffer",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "inspector",
+      "replacement_expression": "address(this)",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 69,
+      "function": "MakeOffer",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "inspector",
+      "replacement_expression": "address(0)",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "MakeOffer",
+      "mutant_id": "m000003",
+      "operator": "AVR",
+      "original_expression": "appraiser",
+      "replacement_expression": "address(this)",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 70,
+      "function": "MakeOffer",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "appraiser",
+      "replacement_expression": "address(0)",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "Reject",
+      "mutant_id": "m000005",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(this)",
+      "start_line": 100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "Reject",
+      "mutant_id": "m000006",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(0)",
+      "start_line": 100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "RescindOffer",
+      "mutant_id": "m000007",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(this)",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "RescindOffer",
+      "mutant_id": "m000008",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(0)",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "Terminate",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "Modify",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "Modify",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "Modify",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 42,
+      "function": "Modify",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 42
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "MakeOffer",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "MakeOffer",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "MakeOffer",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "MakeOffer",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "MakeOffer",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "MakeOffer",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "MakeOffer",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "MakeOffer",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "MakeOffer",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "MakeOffer",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "MakeOffer",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "MakeOffer",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "MakeOffer",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "AcceptOffer",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "AcceptOffer",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "AcceptOffer",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "AcceptOffer",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000043",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000044",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000045",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000046",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000047",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000048",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000049",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000050",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000051",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000052",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000053",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "Reject",
+      "mutant_id": "m000054",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "Accept",
+      "mutant_id": "m000055",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "Accept",
+      "mutant_id": "m000056",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "Accept",
+      "mutant_id": "m000057",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "Accept",
+      "mutant_id": "m000058",
+      "operator": "BOR",
+      "original_expression": " &&\n            ",
+      "replacement_expression": " ||\n            ",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "Accept",
+      "mutant_id": "m000059",
+      "operator": "BOR",
+      "original_expression": " &&\n            ",
+      "replacement_expression": " ||\n            ",
+      "start_line": 111
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 111,
+      "function": "Accept",
+      "mutant_id": "m000060",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 111
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "Accept",
+      "mutant_id": "m000061",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "Accept",
+      "mutant_id": "m000062",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "Accept",
+      "mutant_id": "m000063",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "Accept",
+      "mutant_id": "m000064",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 113
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "Accept",
+      "mutant_id": "m000065",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 113
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "Accept",
+      "mutant_id": "m000066",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 113
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "Accept",
+      "mutant_id": "m000067",
+      "operator": "BOR",
+      "original_expression": " &&\n            ",
+      "replacement_expression": " ||\n            ",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "Accept",
+      "mutant_id": "m000068",
+      "operator": "BOR",
+      "original_expression": " &&\n            ",
+      "replacement_expression": " ||\n            ",
+      "start_line": 118
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 118,
+      "function": "Accept",
+      "mutant_id": "m000069",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 118
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "Accept",
+      "mutant_id": "m000070",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "Accept",
+      "mutant_id": "m000071",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "Accept",
+      "mutant_id": "m000072",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "Accept",
+      "mutant_id": "m000073",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "Accept",
+      "mutant_id": "m000074",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "Accept",
+      "mutant_id": "m000075",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 125,
+      "function": "Accept",
+      "mutant_id": "m000076",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 125
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "Accept",
+      "mutant_id": "m000077",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "Accept",
+      "mutant_id": "m000078",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "Accept",
+      "mutant_id": "m000079",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "Accept",
+      "mutant_id": "m000080",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "Accept",
+      "mutant_id": "m000081",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "Accept",
+      "mutant_id": "m000082",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Accept",
+      "mutant_id": "m000083",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Accept",
+      "mutant_id": "m000084",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Accept",
+      "mutant_id": "m000085",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "Accept",
+      "mutant_id": "m000086",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "Accept",
+      "mutant_id": "m000087",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "Accept",
+      "mutant_id": "m000088",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "ModifyOffer",
+      "mutant_id": "m000089",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "ModifyOffer",
+      "mutant_id": "m000090",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "ModifyOffer",
+      "mutant_id": "m000091",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 155,
+      "function": "ModifyOffer",
+      "mutant_id": "m000092",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 155
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 155,
+      "function": "ModifyOffer",
+      "mutant_id": "m000093",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 155
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 155,
+      "function": "ModifyOffer",
+      "mutant_id": "m000094",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 155
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000095",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000096",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000097",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000098",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000099",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000100",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000101",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000102",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000103",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000104",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000105",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000106",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000107",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000108",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000109",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000110",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000111",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000112",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000113",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000114",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000115",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000116",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000117",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 169,
+      "function": "RescindOffer",
+      "mutant_id": "m000118",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 169
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 181,
+      "function": "MarkAppraised",
+      "mutant_id": "m000119",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 181
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "MarkAppraised",
+      "mutant_id": "m000120",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "MarkAppraised",
+      "mutant_id": "m000121",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "MarkAppraised",
+      "mutant_id": "m000122",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 190,
+      "function": "MarkAppraised",
+      "mutant_id": "m000123",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 190
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 190,
+      "function": "MarkAppraised",
+      "mutant_id": "m000124",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 190
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 190,
+      "function": "MarkAppraised",
+      "mutant_id": "m000125",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 190
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 202,
+      "function": "MarkInspected",
+      "mutant_id": "m000126",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 202
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 207,
+      "function": "MarkInspected",
+      "mutant_id": "m000127",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 207,
+      "function": "MarkInspected",
+      "mutant_id": "m000128",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 207,
+      "function": "MarkInspected",
+      "mutant_id": "m000129",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "MarkInspected",
+      "mutant_id": "m000130",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "MarkInspected",
+      "mutant_id": "m000131",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "MarkInspected",
+      "mutant_id": "m000132",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "Terminate",
+      "mutant_id": "m000133",
+      "operator": "CSC",
+      "original_expression": "InstanceOwner != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "Terminate",
+      "mutant_id": "m000134",
+      "operator": "CSC",
+      "original_expression": "InstanceOwner != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "Modify",
+      "mutant_id": "m000135",
+      "operator": "CSC",
+      "original_expression": "State != StateType.Active",
+      "replacement_expression": "true",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "Modify",
+      "mutant_id": "m000136",
+      "operator": "CSC",
+      "original_expression": "State != StateType.Active",
+      "replacement_expression": "false",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 42,
+      "function": "Modify",
+      "mutant_id": "m000137",
+      "operator": "CSC",
+      "original_expression": "InstanceOwner != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 42
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 42,
+      "function": "Modify",
+      "mutant_id": "m000138",
+      "operator": "CSC",
+      "original_expression": "InstanceOwner != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 42
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "MakeOffer",
+      "mutant_id": "m000139",
+      "operator": "CSC",
+      "original_expression": "inspector == 0x0000000000000000000000000000000000000000 || appraiser == 0x0000000000000000000000000000000000000000 || offerPrice == 0",
+      "replacement_expression": "true",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "MakeOffer",
+      "mutant_id": "m000140",
+      "operator": "CSC",
+      "original_expression": "inspector == 0x0000000000000000000000000000000000000000 || appraiser == 0x0000000000000000000000000000000000000000 || offerPrice == 0",
+      "replacement_expression": "false",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "MakeOffer",
+      "mutant_id": "m000141",
+      "operator": "CSC",
+      "original_expression": "State != StateType.Active",
+      "replacement_expression": "true",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "MakeOffer",
+      "mutant_id": "m000142",
+      "operator": "CSC",
+      "original_expression": "State != StateType.Active",
+      "replacement_expression": "false",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "MakeOffer",
+      "mutant_id": "m000143",
+      "operator": "CSC",
+      "original_expression": "InstanceOwner == msg.sender",
+      "replacement_expression": "true",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 63,
+      "function": "MakeOffer",
+      "mutant_id": "m000144",
+      "operator": "CSC",
+      "original_expression": "InstanceOwner == msg.sender",
+      "replacement_expression": "false",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "AcceptOffer",
+      "mutant_id": "m000145",
+      "operator": "CSC",
+      "original_expression": "State != StateType.OfferPlaced",
+      "replacement_expression": "true",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "AcceptOffer",
+      "mutant_id": "m000146",
+      "operator": "CSC",
+      "original_expression": "State != StateType.OfferPlaced",
+      "replacement_expression": "false",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "AcceptOffer",
+      "mutant_id": "m000147",
+      "operator": "CSC",
+      "original_expression": "InstanceOwner != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "AcceptOffer",
+      "mutant_id": "m000148",
+      "operator": "CSC",
+      "original_expression": "InstanceOwner != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000149",
+      "operator": "CSC",
+      "original_expression": "State != StateType.OfferPlaced && State != StateType.PendingInspection && State != StateType.Inspected && State != StateType.Appraised && State != StateType.NotionalAcceptance && State != StateType.BuyerAccepted",
+      "replacement_expression": "true",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000150",
+      "operator": "CSC",
+      "original_expression": "State != StateType.OfferPlaced && State != StateType.PendingInspection && State != StateType.Inspected && State != StateType.Appraised && State != StateType.NotionalAcceptance && State != StateType.BuyerAccepted",
+      "replacement_expression": "false",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "Reject",
+      "mutant_id": "m000151",
+      "operator": "CSC",
+      "original_expression": "InstanceOwner != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "Reject",
+      "mutant_id": "m000152",
+      "operator": "CSC",
+      "original_expression": "InstanceOwner != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "Accept",
+      "mutant_id": "m000153",
+      "operator": "CSC",
+      "original_expression": "msg.sender != InstanceBuyer && msg.sender != InstanceOwner",
+      "replacement_expression": "true",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "Accept",
+      "mutant_id": "m000154",
+      "operator": "CSC",
+      "original_expression": "msg.sender != InstanceBuyer && msg.sender != InstanceOwner",
+      "replacement_expression": "false",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "Accept",
+      "mutant_id": "m000155",
+      "operator": "CSC",
+      "original_expression": "msg.sender == InstanceOwner &&\n            State != StateType.NotionalAcceptance &&\n            State != StateType.BuyerAccepted",
+      "replacement_expression": "true",
+      "start_line": 111
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "Accept",
+      "mutant_id": "m000156",
+      "operator": "CSC",
+      "original_expression": "msg.sender == InstanceOwner &&\n            State != StateType.NotionalAcceptance &&\n            State != StateType.BuyerAccepted",
+      "replacement_expression": "false",
+      "start_line": 111
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "Accept",
+      "mutant_id": "m000157",
+      "operator": "CSC",
+      "original_expression": "msg.sender == InstanceBuyer &&\n            State != StateType.NotionalAcceptance &&\n            State != StateType.SellerAccepted",
+      "replacement_expression": "true",
+      "start_line": 118
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "Accept",
+      "mutant_id": "m000158",
+      "operator": "CSC",
+      "original_expression": "msg.sender == InstanceBuyer &&\n            State != StateType.NotionalAcceptance &&\n            State != StateType.SellerAccepted",
+      "replacement_expression": "false",
+      "start_line": 118
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 125,
+      "function": "Accept",
+      "mutant_id": "m000159",
+      "operator": "CSC",
+      "original_expression": "msg.sender == InstanceBuyer",
+      "replacement_expression": "true",
+      "start_line": 125
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 125,
+      "function": "Accept",
+      "mutant_id": "m000160",
+      "operator": "CSC",
+      "original_expression": "msg.sender == InstanceBuyer",
+      "replacement_expression": "false",
+      "start_line": 125
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "Accept",
+      "mutant_id": "m000161",
+      "operator": "CSC",
+      "original_expression": "        else\n        {\n            if (State == StateType.NotionalAcceptance)\n            {\n                State = StateType.SellerAccepted;\n            }\n            else if (State == StateType.BuyerAccepted)\n            {\n                State = StateType.Accepted;\n            }\n        }",
+      "replacement_expression": "",
+      "start_line": 135
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "Accept",
+      "mutant_id": "m000162",
+      "operator": "CSC",
+      "original_expression": "State == StateType.NotionalAcceptance",
+      "replacement_expression": "true",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "Accept",
+      "mutant_id": "m000163",
+      "operator": "CSC",
+      "original_expression": "State == StateType.NotionalAcceptance",
+      "replacement_expression": "false",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "Accept",
+      "mutant_id": "m000164",
+      "operator": "CSC",
+      "original_expression": "State == StateType.SellerAccepted",
+      "replacement_expression": "true",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "Accept",
+      "mutant_id": "m000165",
+      "operator": "CSC",
+      "original_expression": "State == StateType.SellerAccepted",
+      "replacement_expression": "false",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Accept",
+      "mutant_id": "m000166",
+      "operator": "CSC",
+      "original_expression": "State == StateType.NotionalAcceptance",
+      "replacement_expression": "true",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Accept",
+      "mutant_id": "m000167",
+      "operator": "CSC",
+      "original_expression": "State == StateType.NotionalAcceptance",
+      "replacement_expression": "false",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "Accept",
+      "mutant_id": "m000168",
+      "operator": "CSC",
+      "original_expression": "State == StateType.BuyerAccepted",
+      "replacement_expression": "true",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "Accept",
+      "mutant_id": "m000169",
+      "operator": "CSC",
+      "original_expression": "State == StateType.BuyerAccepted",
+      "replacement_expression": "false",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "ModifyOffer",
+      "mutant_id": "m000170",
+      "operator": "CSC",
+      "original_expression": "State != StateType.OfferPlaced",
+      "replacement_expression": "true",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "ModifyOffer",
+      "mutant_id": "m000171",
+      "operator": "CSC",
+      "original_expression": "State != StateType.OfferPlaced",
+      "replacement_expression": "false",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 155,
+      "function": "ModifyOffer",
+      "mutant_id": "m000172",
+      "operator": "CSC",
+      "original_expression": "InstanceBuyer != msg.sender || offerPrice == 0",
+      "replacement_expression": "true",
+      "start_line": 155
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 155,
+      "function": "ModifyOffer",
+      "mutant_id": "m000173",
+      "operator": "CSC",
+      "original_expression": "InstanceBuyer != msg.sender || offerPrice == 0",
+      "replacement_expression": "false",
+      "start_line": 155
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000174",
+      "operator": "CSC",
+      "original_expression": "State != StateType.OfferPlaced && State != StateType.PendingInspection && State != StateType.Inspected && State != StateType.Appraised && State != StateType.NotionalAcceptance && State != StateType.SellerAccepted",
+      "replacement_expression": "true",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000175",
+      "operator": "CSC",
+      "original_expression": "State != StateType.OfferPlaced && State != StateType.PendingInspection && State != StateType.Inspected && State != StateType.Appraised && State != StateType.NotionalAcceptance && State != StateType.SellerAccepted",
+      "replacement_expression": "false",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 169,
+      "function": "RescindOffer",
+      "mutant_id": "m000176",
+      "operator": "CSC",
+      "original_expression": "InstanceBuyer != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 169
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 169,
+      "function": "RescindOffer",
+      "mutant_id": "m000177",
+      "operator": "CSC",
+      "original_expression": "InstanceBuyer != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 169
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 181,
+      "function": "MarkAppraised",
+      "mutant_id": "m000178",
+      "operator": "CSC",
+      "original_expression": "InstanceAppraiser != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 181
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 181,
+      "function": "MarkAppraised",
+      "mutant_id": "m000179",
+      "operator": "CSC",
+      "original_expression": "InstanceAppraiser != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 181
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "MarkAppraised",
+      "mutant_id": "m000180",
+      "operator": "CSC",
+      "original_expression": "State == StateType.PendingInspection",
+      "replacement_expression": "true",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "MarkAppraised",
+      "mutant_id": "m000181",
+      "operator": "CSC",
+      "original_expression": "State == StateType.PendingInspection",
+      "replacement_expression": "false",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 190,
+      "function": "MarkAppraised",
+      "mutant_id": "m000182",
+      "operator": "CSC",
+      "original_expression": "State == StateType.Inspected",
+      "replacement_expression": "true",
+      "start_line": 190
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 190,
+      "function": "MarkAppraised",
+      "mutant_id": "m000183",
+      "operator": "CSC",
+      "original_expression": "State == StateType.Inspected",
+      "replacement_expression": "false",
+      "start_line": 190
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 197,
+      "function": "MarkAppraised",
+      "mutant_id": "m000184",
+      "operator": "CSC",
+      "original_expression": "        else\n        {\n            revert();\n        }",
+      "replacement_expression": "",
+      "start_line": 193
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 202,
+      "function": "MarkInspected",
+      "mutant_id": "m000185",
+      "operator": "CSC",
+      "original_expression": "InstanceInspector != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 202
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 202,
+      "function": "MarkInspected",
+      "mutant_id": "m000186",
+      "operator": "CSC",
+      "original_expression": "InstanceInspector != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 202
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 207,
+      "function": "MarkInspected",
+      "mutant_id": "m000187",
+      "operator": "CSC",
+      "original_expression": "State == StateType.PendingInspection",
+      "replacement_expression": "true",
+      "start_line": 207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 207,
+      "function": "MarkInspected",
+      "mutant_id": "m000188",
+      "operator": "CSC",
+      "original_expression": "State == StateType.PendingInspection",
+      "replacement_expression": "false",
+      "start_line": 207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "MarkInspected",
+      "mutant_id": "m000189",
+      "operator": "CSC",
+      "original_expression": "State == StateType.Appraised",
+      "replacement_expression": "true",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "MarkInspected",
+      "mutant_id": "m000190",
+      "operator": "CSC",
+      "original_expression": "State == StateType.Appraised",
+      "replacement_expression": "false",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 218,
+      "function": "MarkInspected",
+      "mutant_id": "m000191",
+      "operator": "CSC",
+      "original_expression": "        else\n        {\n            revert();\n        }",
+      "replacement_expression": "",
+      "start_line": 214
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 18,
+      "function": "initialize",
+      "mutant_id": "m000192",
+      "operator": "DLR",
+      "original_expression": "string memory description",
+      "replacement_expression": "string storage description",
+      "start_line": 18
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 36,
+      "function": "Modify",
+      "mutant_id": "m000193",
+      "operator": "DLR",
+      "original_expression": "string memory description",
+      "replacement_expression": "string storage description",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 30,
+      "function": "Terminate",
+      "mutant_id": "m000194",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 30
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "Modify",
+      "mutant_id": "m000195",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 44,
+      "function": "Modify",
+      "mutant_id": "m000196",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 44
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 57,
+      "function": "MakeOffer",
+      "mutant_id": "m000197",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 57
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "MakeOffer",
+      "mutant_id": "m000198",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "MakeOffer",
+      "mutant_id": "m000199",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 79,
+      "function": "AcceptOffer",
+      "mutant_id": "m000200",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 79
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 83,
+      "function": "AcceptOffer",
+      "mutant_id": "m000201",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 83
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 93,
+      "function": "Reject",
+      "mutant_id": "m000202",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 93
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "Reject",
+      "mutant_id": "m000203",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "Accept",
+      "mutant_id": "m000204",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 115,
+      "function": "Accept",
+      "mutant_id": "m000205",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 115
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 122,
+      "function": "Accept",
+      "mutant_id": "m000206",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 122
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 153,
+      "function": "ModifyOffer",
+      "mutant_id": "m000207",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 153
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 157,
+      "function": "ModifyOffer",
+      "mutant_id": "m000208",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 157
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 167,
+      "function": "RescindOffer",
+      "mutant_id": "m000209",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 167
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 171,
+      "function": "RescindOffer",
+      "mutant_id": "m000210",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 171
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 183,
+      "function": "MarkAppraised",
+      "mutant_id": "m000211",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 183
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 196,
+      "function": "MarkAppraised",
+      "mutant_id": "m000212",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 196
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 204,
+      "function": "MarkInspected",
+      "mutant_id": "m000213",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 204
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 217,
+      "function": "MarkInspected",
+      "mutant_id": "m000214",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 217
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "initialize",
+      "mutant_id": "m000215",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "initialize",
+      "mutant_id": "m000216",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "initialize",
+      "mutant_id": "m000217",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "initialize",
+      "mutant_id": "m000218",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "initialize",
+      "mutant_id": "m000219",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "initialize",
+      "mutant_id": "m000220",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "initialize",
+      "mutant_id": "m000221",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "initialize",
+      "mutant_id": "m000222",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "initialize",
+      "mutant_id": "m000223",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "Terminate",
+      "mutant_id": "m000224",
+      "operator": "ER",
+      "original_expression": "StateType.Terminated",
+      "replacement_expression": "StateType.Active",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "Terminate",
+      "mutant_id": "m000225",
+      "operator": "ER",
+      "original_expression": "StateType.Terminated",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "Terminate",
+      "mutant_id": "m000226",
+      "operator": "ER",
+      "original_expression": "StateType.Terminated",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "Terminate",
+      "mutant_id": "m000227",
+      "operator": "ER",
+      "original_expression": "StateType.Terminated",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "Terminate",
+      "mutant_id": "m000228",
+      "operator": "ER",
+      "original_expression": "StateType.Terminated",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "Terminate",
+      "mutant_id": "m000229",
+      "operator": "ER",
+      "original_expression": "StateType.Terminated",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "Terminate",
+      "mutant_id": "m000230",
+      "operator": "ER",
+      "original_expression": "StateType.Terminated",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "Terminate",
+      "mutant_id": "m000231",
+      "operator": "ER",
+      "original_expression": "StateType.Terminated",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "Terminate",
+      "mutant_id": "m000232",
+      "operator": "ER",
+      "original_expression": "StateType.Terminated",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "Modify",
+      "mutant_id": "m000233",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "Modify",
+      "mutant_id": "m000234",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "Modify",
+      "mutant_id": "m000235",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "Modify",
+      "mutant_id": "m000236",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "Modify",
+      "mutant_id": "m000237",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "Modify",
+      "mutant_id": "m000238",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "Modify",
+      "mutant_id": "m000239",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "Modify",
+      "mutant_id": "m000240",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "Modify",
+      "mutant_id": "m000241",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "MakeOffer",
+      "mutant_id": "m000242",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "MakeOffer",
+      "mutant_id": "m000243",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "MakeOffer",
+      "mutant_id": "m000244",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "MakeOffer",
+      "mutant_id": "m000245",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "MakeOffer",
+      "mutant_id": "m000246",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "MakeOffer",
+      "mutant_id": "m000247",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "MakeOffer",
+      "mutant_id": "m000248",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "MakeOffer",
+      "mutant_id": "m000249",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "MakeOffer",
+      "mutant_id": "m000250",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "MakeOffer",
+      "mutant_id": "m000251",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Active",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "MakeOffer",
+      "mutant_id": "m000252",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "MakeOffer",
+      "mutant_id": "m000253",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "MakeOffer",
+      "mutant_id": "m000254",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "MakeOffer",
+      "mutant_id": "m000255",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "MakeOffer",
+      "mutant_id": "m000256",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "MakeOffer",
+      "mutant_id": "m000257",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "MakeOffer",
+      "mutant_id": "m000258",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "MakeOffer",
+      "mutant_id": "m000259",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "AcceptOffer",
+      "mutant_id": "m000260",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Active",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "AcceptOffer",
+      "mutant_id": "m000261",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "AcceptOffer",
+      "mutant_id": "m000262",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "AcceptOffer",
+      "mutant_id": "m000263",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "AcceptOffer",
+      "mutant_id": "m000264",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "AcceptOffer",
+      "mutant_id": "m000265",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "AcceptOffer",
+      "mutant_id": "m000266",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "AcceptOffer",
+      "mutant_id": "m000267",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "AcceptOffer",
+      "mutant_id": "m000268",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "AcceptOffer",
+      "mutant_id": "m000269",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Active",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "AcceptOffer",
+      "mutant_id": "m000270",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "AcceptOffer",
+      "mutant_id": "m000271",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "AcceptOffer",
+      "mutant_id": "m000272",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "AcceptOffer",
+      "mutant_id": "m000273",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "AcceptOffer",
+      "mutant_id": "m000274",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "AcceptOffer",
+      "mutant_id": "m000275",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "AcceptOffer",
+      "mutant_id": "m000276",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "AcceptOffer",
+      "mutant_id": "m000277",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000278",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Active",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000279",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000280",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000281",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000282",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000283",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000284",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000285",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000286",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000287",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Active",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000288",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000289",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000290",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000291",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000292",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000293",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000294",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000295",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000296",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Active",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000297",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000298",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000299",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000300",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000301",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000302",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000303",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000304",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000305",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Active",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000306",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000307",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000308",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000309",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000310",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000311",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000312",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000313",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000314",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Active",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000315",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000316",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000317",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000318",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000319",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000320",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000321",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000322",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000323",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Active",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000324",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000325",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000326",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000327",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000328",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000329",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000330",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "Reject",
+      "mutant_id": "m000331",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "Reject",
+      "mutant_id": "m000332",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "Reject",
+      "mutant_id": "m000333",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "Reject",
+      "mutant_id": "m000334",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "Reject",
+      "mutant_id": "m000335",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "Reject",
+      "mutant_id": "m000336",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "Reject",
+      "mutant_id": "m000337",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "Reject",
+      "mutant_id": "m000338",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "Reject",
+      "mutant_id": "m000339",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "Reject",
+      "mutant_id": "m000340",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "Accept",
+      "mutant_id": "m000341",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Active",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "Accept",
+      "mutant_id": "m000342",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "Accept",
+      "mutant_id": "m000343",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "Accept",
+      "mutant_id": "m000344",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "Accept",
+      "mutant_id": "m000345",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "Accept",
+      "mutant_id": "m000346",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "Accept",
+      "mutant_id": "m000347",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "Accept",
+      "mutant_id": "m000348",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "Accept",
+      "mutant_id": "m000349",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "Accept",
+      "mutant_id": "m000350",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Active",
+      "start_line": 113
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "Accept",
+      "mutant_id": "m000351",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 113
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "Accept",
+      "mutant_id": "m000352",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 113
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "Accept",
+      "mutant_id": "m000353",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 113
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "Accept",
+      "mutant_id": "m000354",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 113
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "Accept",
+      "mutant_id": "m000355",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 113
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "Accept",
+      "mutant_id": "m000356",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 113
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "Accept",
+      "mutant_id": "m000357",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 113
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "Accept",
+      "mutant_id": "m000358",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 113
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "Accept",
+      "mutant_id": "m000359",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Active",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "Accept",
+      "mutant_id": "m000360",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "Accept",
+      "mutant_id": "m000361",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "Accept",
+      "mutant_id": "m000362",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "Accept",
+      "mutant_id": "m000363",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "Accept",
+      "mutant_id": "m000364",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "Accept",
+      "mutant_id": "m000365",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "Accept",
+      "mutant_id": "m000366",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "Accept",
+      "mutant_id": "m000367",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "Accept",
+      "mutant_id": "m000368",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Active",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "Accept",
+      "mutant_id": "m000369",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "Accept",
+      "mutant_id": "m000370",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "Accept",
+      "mutant_id": "m000371",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "Accept",
+      "mutant_id": "m000372",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "Accept",
+      "mutant_id": "m000373",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "Accept",
+      "mutant_id": "m000374",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "Accept",
+      "mutant_id": "m000375",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 120,
+      "function": "Accept",
+      "mutant_id": "m000376",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "Accept",
+      "mutant_id": "m000377",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Active",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "Accept",
+      "mutant_id": "m000378",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "Accept",
+      "mutant_id": "m000379",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "Accept",
+      "mutant_id": "m000380",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "Accept",
+      "mutant_id": "m000381",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "Accept",
+      "mutant_id": "m000382",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "Accept",
+      "mutant_id": "m000383",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "Accept",
+      "mutant_id": "m000384",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "Accept",
+      "mutant_id": "m000385",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "Accept",
+      "mutant_id": "m000386",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Active",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "Accept",
+      "mutant_id": "m000387",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "Accept",
+      "mutant_id": "m000388",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "Accept",
+      "mutant_id": "m000389",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "Accept",
+      "mutant_id": "m000390",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "Accept",
+      "mutant_id": "m000391",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "Accept",
+      "mutant_id": "m000392",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "Accept",
+      "mutant_id": "m000393",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "Accept",
+      "mutant_id": "m000394",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "Accept",
+      "mutant_id": "m000395",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Active",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "Accept",
+      "mutant_id": "m000396",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "Accept",
+      "mutant_id": "m000397",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "Accept",
+      "mutant_id": "m000398",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "Accept",
+      "mutant_id": "m000399",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "Accept",
+      "mutant_id": "m000400",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "Accept",
+      "mutant_id": "m000401",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "Accept",
+      "mutant_id": "m000402",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "Accept",
+      "mutant_id": "m000403",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Accept",
+      "mutant_id": "m000404",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.Active",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Accept",
+      "mutant_id": "m000405",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Accept",
+      "mutant_id": "m000406",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Accept",
+      "mutant_id": "m000407",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Accept",
+      "mutant_id": "m000408",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Accept",
+      "mutant_id": "m000409",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Accept",
+      "mutant_id": "m000410",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Accept",
+      "mutant_id": "m000411",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "Accept",
+      "mutant_id": "m000412",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Accept",
+      "mutant_id": "m000413",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Active",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Accept",
+      "mutant_id": "m000414",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Accept",
+      "mutant_id": "m000415",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Accept",
+      "mutant_id": "m000416",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Accept",
+      "mutant_id": "m000417",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Accept",
+      "mutant_id": "m000418",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Accept",
+      "mutant_id": "m000419",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Accept",
+      "mutant_id": "m000420",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "Accept",
+      "mutant_id": "m000421",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "Accept",
+      "mutant_id": "m000422",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Active",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "Accept",
+      "mutant_id": "m000423",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "Accept",
+      "mutant_id": "m000424",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "Accept",
+      "mutant_id": "m000425",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "Accept",
+      "mutant_id": "m000426",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "Accept",
+      "mutant_id": "m000427",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "Accept",
+      "mutant_id": "m000428",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "Accept",
+      "mutant_id": "m000429",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "Accept",
+      "mutant_id": "m000430",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "Accept",
+      "mutant_id": "m000431",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Active",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "Accept",
+      "mutant_id": "m000432",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "Accept",
+      "mutant_id": "m000433",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "Accept",
+      "mutant_id": "m000434",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "Accept",
+      "mutant_id": "m000435",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "Accept",
+      "mutant_id": "m000436",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "Accept",
+      "mutant_id": "m000437",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "Accept",
+      "mutant_id": "m000438",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "Accept",
+      "mutant_id": "m000439",
+      "operator": "ER",
+      "original_expression": "StateType.BuyerAccepted",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 144,
+      "function": "Accept",
+      "mutant_id": "m000440",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.Active",
+      "start_line": 144
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 144,
+      "function": "Accept",
+      "mutant_id": "m000441",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 144
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 144,
+      "function": "Accept",
+      "mutant_id": "m000442",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 144
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 144,
+      "function": "Accept",
+      "mutant_id": "m000443",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 144
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 144,
+      "function": "Accept",
+      "mutant_id": "m000444",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 144
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 144,
+      "function": "Accept",
+      "mutant_id": "m000445",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 144
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 144,
+      "function": "Accept",
+      "mutant_id": "m000446",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 144
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 144,
+      "function": "Accept",
+      "mutant_id": "m000447",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 144
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 144,
+      "function": "Accept",
+      "mutant_id": "m000448",
+      "operator": "ER",
+      "original_expression": "StateType.Accepted",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 144
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "ModifyOffer",
+      "mutant_id": "m000449",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Active",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "ModifyOffer",
+      "mutant_id": "m000450",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "ModifyOffer",
+      "mutant_id": "m000451",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "ModifyOffer",
+      "mutant_id": "m000452",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "ModifyOffer",
+      "mutant_id": "m000453",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "ModifyOffer",
+      "mutant_id": "m000454",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "ModifyOffer",
+      "mutant_id": "m000455",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "ModifyOffer",
+      "mutant_id": "m000456",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "ModifyOffer",
+      "mutant_id": "m000457",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000458",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Active",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000459",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000460",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000461",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000462",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000463",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000464",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000465",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000466",
+      "operator": "ER",
+      "original_expression": "StateType.OfferPlaced",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000467",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Active",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000468",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000469",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000470",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000471",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000472",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000473",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000474",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000475",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000476",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Active",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000477",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000478",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000479",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000480",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000481",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000482",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000483",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000484",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000485",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Active",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000486",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000487",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000488",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000489",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000490",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000491",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000492",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000493",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000494",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Active",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000495",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000496",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000497",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000498",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000499",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000500",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000501",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000502",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000503",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Active",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000504",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000505",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000506",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000507",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000508",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000509",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000510",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 165,
+      "function": "RescindOffer",
+      "mutant_id": "m000511",
+      "operator": "ER",
+      "original_expression": "StateType.SellerAccepted",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 165
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 176,
+      "function": "RescindOffer",
+      "mutant_id": "m000512",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 176
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 176,
+      "function": "RescindOffer",
+      "mutant_id": "m000513",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 176
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 176,
+      "function": "RescindOffer",
+      "mutant_id": "m000514",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 176
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 176,
+      "function": "RescindOffer",
+      "mutant_id": "m000515",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 176
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 176,
+      "function": "RescindOffer",
+      "mutant_id": "m000516",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 176
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 176,
+      "function": "RescindOffer",
+      "mutant_id": "m000517",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 176
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 176,
+      "function": "RescindOffer",
+      "mutant_id": "m000518",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 176
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 176,
+      "function": "RescindOffer",
+      "mutant_id": "m000519",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 176
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 176,
+      "function": "RescindOffer",
+      "mutant_id": "m000520",
+      "operator": "ER",
+      "original_expression": "StateType.Active",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 176
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "MarkAppraised",
+      "mutant_id": "m000521",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Active",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "MarkAppraised",
+      "mutant_id": "m000522",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "MarkAppraised",
+      "mutant_id": "m000523",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "MarkAppraised",
+      "mutant_id": "m000524",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "MarkAppraised",
+      "mutant_id": "m000525",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "MarkAppraised",
+      "mutant_id": "m000526",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "MarkAppraised",
+      "mutant_id": "m000527",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "MarkAppraised",
+      "mutant_id": "m000528",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "MarkAppraised",
+      "mutant_id": "m000529",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 188,
+      "function": "MarkAppraised",
+      "mutant_id": "m000530",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Active",
+      "start_line": 188
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 188,
+      "function": "MarkAppraised",
+      "mutant_id": "m000531",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 188
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 188,
+      "function": "MarkAppraised",
+      "mutant_id": "m000532",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 188
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 188,
+      "function": "MarkAppraised",
+      "mutant_id": "m000533",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 188
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 188,
+      "function": "MarkAppraised",
+      "mutant_id": "m000534",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 188
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 188,
+      "function": "MarkAppraised",
+      "mutant_id": "m000535",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 188
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 188,
+      "function": "MarkAppraised",
+      "mutant_id": "m000536",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 188
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 188,
+      "function": "MarkAppraised",
+      "mutant_id": "m000537",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 188
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 188,
+      "function": "MarkAppraised",
+      "mutant_id": "m000538",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 188
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 190,
+      "function": "MarkAppraised",
+      "mutant_id": "m000539",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Active",
+      "start_line": 190
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 190,
+      "function": "MarkAppraised",
+      "mutant_id": "m000540",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 190
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 190,
+      "function": "MarkAppraised",
+      "mutant_id": "m000541",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 190
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 190,
+      "function": "MarkAppraised",
+      "mutant_id": "m000542",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 190
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 190,
+      "function": "MarkAppraised",
+      "mutant_id": "m000543",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 190
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 190,
+      "function": "MarkAppraised",
+      "mutant_id": "m000544",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 190
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 190,
+      "function": "MarkAppraised",
+      "mutant_id": "m000545",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 190
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 190,
+      "function": "MarkAppraised",
+      "mutant_id": "m000546",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 190
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 190,
+      "function": "MarkAppraised",
+      "mutant_id": "m000547",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 190
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 192,
+      "function": "MarkAppraised",
+      "mutant_id": "m000548",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Active",
+      "start_line": 192
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 192,
+      "function": "MarkAppraised",
+      "mutant_id": "m000549",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 192
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 192,
+      "function": "MarkAppraised",
+      "mutant_id": "m000550",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 192
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 192,
+      "function": "MarkAppraised",
+      "mutant_id": "m000551",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 192
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 192,
+      "function": "MarkAppraised",
+      "mutant_id": "m000552",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 192
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 192,
+      "function": "MarkAppraised",
+      "mutant_id": "m000553",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 192
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 192,
+      "function": "MarkAppraised",
+      "mutant_id": "m000554",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 192
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 192,
+      "function": "MarkAppraised",
+      "mutant_id": "m000555",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 192
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 192,
+      "function": "MarkAppraised",
+      "mutant_id": "m000556",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 192
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 207,
+      "function": "MarkInspected",
+      "mutant_id": "m000557",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Active",
+      "start_line": 207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 207,
+      "function": "MarkInspected",
+      "mutant_id": "m000558",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 207,
+      "function": "MarkInspected",
+      "mutant_id": "m000559",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 207,
+      "function": "MarkInspected",
+      "mutant_id": "m000560",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 207,
+      "function": "MarkInspected",
+      "mutant_id": "m000561",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 207,
+      "function": "MarkInspected",
+      "mutant_id": "m000562",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 207,
+      "function": "MarkInspected",
+      "mutant_id": "m000563",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 207,
+      "function": "MarkInspected",
+      "mutant_id": "m000564",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 207,
+      "function": "MarkInspected",
+      "mutant_id": "m000565",
+      "operator": "ER",
+      "original_expression": "StateType.PendingInspection",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 209,
+      "function": "MarkInspected",
+      "mutant_id": "m000566",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Active",
+      "start_line": 209
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 209,
+      "function": "MarkInspected",
+      "mutant_id": "m000567",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 209
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 209,
+      "function": "MarkInspected",
+      "mutant_id": "m000568",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 209
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 209,
+      "function": "MarkInspected",
+      "mutant_id": "m000569",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 209
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 209,
+      "function": "MarkInspected",
+      "mutant_id": "m000570",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 209
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 209,
+      "function": "MarkInspected",
+      "mutant_id": "m000571",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 209
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 209,
+      "function": "MarkInspected",
+      "mutant_id": "m000572",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 209
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 209,
+      "function": "MarkInspected",
+      "mutant_id": "m000573",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 209
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 209,
+      "function": "MarkInspected",
+      "mutant_id": "m000574",
+      "operator": "ER",
+      "original_expression": "StateType.Inspected",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 209
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "MarkInspected",
+      "mutant_id": "m000575",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Active",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "MarkInspected",
+      "mutant_id": "m000576",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "MarkInspected",
+      "mutant_id": "m000577",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "MarkInspected",
+      "mutant_id": "m000578",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "MarkInspected",
+      "mutant_id": "m000579",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.NotionalAcceptance",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "MarkInspected",
+      "mutant_id": "m000580",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "MarkInspected",
+      "mutant_id": "m000581",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "MarkInspected",
+      "mutant_id": "m000582",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "MarkInspected",
+      "mutant_id": "m000583",
+      "operator": "ER",
+      "original_expression": "StateType.Appraised",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "MarkInspected",
+      "mutant_id": "m000584",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Active",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "MarkInspected",
+      "mutant_id": "m000585",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.OfferPlaced",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "MarkInspected",
+      "mutant_id": "m000586",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.PendingInspection",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "MarkInspected",
+      "mutant_id": "m000587",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Inspected",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "MarkInspected",
+      "mutant_id": "m000588",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Appraised",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "MarkInspected",
+      "mutant_id": "m000589",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.BuyerAccepted",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "MarkInspected",
+      "mutant_id": "m000590",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.SellerAccepted",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "MarkInspected",
+      "mutant_id": "m000591",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Accepted",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "MarkInspected",
+      "mutant_id": "m000592",
+      "operator": "ER",
+      "original_expression": "StateType.NotionalAcceptance",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "MakeOffer",
+      "mutant_id": "m000593",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 155,
+      "function": "ModifyOffer",
+      "mutant_id": "m000594",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 155
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 175,
+      "function": "RescindOffer",
+      "mutant_id": "m000595",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 175
+    }
+  ],
+  "subject_id": "peer_ccsolbmc__AssetTransfer"
+}

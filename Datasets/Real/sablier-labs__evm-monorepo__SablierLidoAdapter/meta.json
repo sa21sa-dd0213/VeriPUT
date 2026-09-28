@@ -1,0 +1,8 @@
+{
+  "contract": "SablierLidoAdapter",
+  "dataset": "Real",
+  "solc": "0.8.35",
+  "solc_bin": "solc",
+  "source_form": "normalized-flat",
+  "subject_id": "sablier-labs__evm-monorepo__SablierLidoAdapter"
+}

@@ -1,0 +1,529 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "debt",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        40
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "claimDefaulted",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        109125564368937048997239323235086916897042773255157995014951073835218831383892
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "getLoan",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        104662971428545123225473939481849195490793465566350026173582153261788692713480
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "approveTransfer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        79883789415331379443190388531610543438416436775072506189976533435787275981828
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "isDefaulted",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        19
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "rescindRequest",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        19,
+        112063372668165509929647868852665968879677293832605169702951301543354948006614
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "repayLoan",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        7,
+        0,
+        60,
+        21726484498363989307989106946256077640202407854838813738281687637915989307257
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "requestLoan",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "delegateVoting",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        104662971428545123225473939481849195490793465566350026173582153261788692713487
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "approveTransfer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        20
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "isActive",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        104662971428545123225473939481849195490793465566350026173582153261788692713487
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "approveTransfer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "owner",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        5
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "newCollateralFor",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        70573026444675070441170492307243836201585912972857395736958331393300250989796,
+        0
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "repayLoan",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        104662971428545123225473939481849195490793465566350026173582153261788692713487
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "approveTransfer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        65598278429953565743757964877563966893839613971950721036650684755030692435380,
+        100
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "collateralFor",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0,
+        365,
+        6230861821435550459434849020505317082503291202383075786283907536579817091927
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "interestFor",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        6037363936610000000000000000000000000000000000000000000000000000
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "transferOwnership",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        81600
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "getRequest",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "factory",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        255
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "approveTransfer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        365
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "claimRepaid",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        104662971428545123225473939481849195490793465566350026173582153261788692713487
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "approveTransfer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        712,
+        712,
+        107069293990630930070753930642450112236206270651948984682290135817896051677527
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "interestFor",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "collateral",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "factory",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        39,
+        true,
+        true
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "clearRequest",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1814480833790245683786500919831418527113403117618694930949624624366998421531,
+        70865307578127084462510022414897213768109491451739055465555188889142714618909,
+        300000000000000000000000000000000000000,
+        52257278421994720843107571380825014806284583892627486994858918077275698539849
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "provideNewTermsForRoll",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        104662971428545123225473939481849195490793465566350026173582153261788692713487
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "approveTransfer",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        104662971428545123225473939481849195490793465566350026173582153261788692713487
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "approveTransfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        14,
+        false
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "setDirectRepay",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        60176222785101399669600026866686944000992672051349626189181095770248238536184
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "isDefaulted",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        82544955290145507901029778387656681599293430143393382973867769133639185384095
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "rollLoan",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

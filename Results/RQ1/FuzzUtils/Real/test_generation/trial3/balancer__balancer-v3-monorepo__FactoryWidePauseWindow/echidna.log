@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.51633804s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.486867104s)
+
+echidna: Constructor arguments are required: [("pauseWindowDuration",uint32)]

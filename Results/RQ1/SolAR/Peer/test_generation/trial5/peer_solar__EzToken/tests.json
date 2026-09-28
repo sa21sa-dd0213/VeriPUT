@@ -1,0 +1,122 @@
+[
+  [
+    {
+      "args": [
+        35642702121252619034667948495550291674188306377848933820105520569076680569209,
+        "dyZlngiJZFhRlHaptUnSAUVmvBKk",
+        0,
+        "zMDUINeQEDtjhmBvCUWcNqwiQzLHHBiVJeBs bCmCVVgpiewCHbHxOpVzpBCtBznDrflwDNgwmTKPjbNdqKieOJ VmbLcZtmkqepudiNZYyt EbnEIESMibKGPsEGbXYWsSXWWgtjTwGeuyINlqCJuemnhRCjdiHPuNGKDzttmlBbVzitJZXViDNAMtPCH SymDTmEoHgTMFETTyqnIyARFmD"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        "anonymous_hex_00016",
+        2019
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "NV EoOlnfbiwnXqdwWvuWQoYiBvjPwAKRzgcLSjDPrJHAPkNgPbym",
+        0,
+        "fGIEnoPTuXmvriXjAEHXzWEFISlD phWqVFyiIdMIDFSlWiVHTXyetngtbmqBYVhxGciSIHUZxixVaLINDFgg hredaMT tIEJWxibDfpOkSLDKfnHshskynLuewYchqJknvpQDhdMMJgRHTRTg orKcTaNkI"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00016",
+        13783776053213341620608823164218334306513795369963751671599754165482546407279
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        75936432439777758112303684801829986376337351896972309871651782940733113643916,
+        "cxadQNn",
+        0,
+        "Standard String"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        62536432613452640159843568072197729032943001308968102636691134957445074891373
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        2019,
+        "qDXpCtDuUWJSenQDNuuGqr ohzZyiWUHlHkVFaAJbCzpZbhFHbymYVrtFwxDIyIOCzfihvjtQbzrCwrWxoiteFlsPk",
+        0,
+        "a UmJewLjamPHxFPHbWBUuWnxslXeHkxOZ"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00016",
+        "anonymous_hex_00016"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        39414391807420631351090429992871765898202233464766946264342267258619495911175,
+        "AvzBqZjXHKKOWirLYXraJhNLfZxMOKkOEqNiHLeysIrHYesEYkfXVMxWOpAvJVcretTkVtrHeeLHxNpiDIa YNCkqeRCXsMJCgvcXMECAIG zbWyPCZKyqGrqHniAZyLTSKmFZQtVCJAiXcsWUYRcXMyxzHgocXnvXbpBd YDfNCsJnsgNeDaHPuQtFAvNscZqkES",
+        0,
+        "CmqWHRCeaZMlMp uZQhrfmNLPwckuIWJqpHiYxWEcynNoeRRknTIRpTfHrQLnSYzBQnj hUHqSttRxbzqSaFxJJpZq EsMmAklJljJWlzUXK"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

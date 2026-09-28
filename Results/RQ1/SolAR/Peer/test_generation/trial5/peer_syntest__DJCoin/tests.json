@@ -1,0 +1,238 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026",
+        1
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        85776340993336604076540297501580970351505738818185063124641247145153849228695
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "decreaseAllowance",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00001",
+        "anonymous_hex_00017",
+        255
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        85776340993336604076540297501580970351505738818185063124641247145153849228695
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "decreaseAllowance",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        5
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "increaseAllowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021",
+        1
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "decreaseAllowance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00016"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "balanceOf",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        85776340993336604076540297501580970351505738818185063124641247145153849228695
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "decreaseAllowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027",
+        31178097020789051082799205034776630874652821330973138054746746449584896665197
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        85776340993336604076540297501580970351505738818185063124641247145153849228695
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "decreaseAllowance",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        30695896706778716255339826464144906153210675548623791623786099634178350870601
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "changetokensPerBlock",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        85776340993336604076540297501580970351505738818185063124641247145153849228695
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "decreaseAllowance",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        2,
+        4
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

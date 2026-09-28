@@ -1,0 +1,167 @@
+{
+  "compile_failed": 2,
+  "compile_ok": 14,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "bid",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "bid",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "bid",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 15,
+      "function": "bid",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 15
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 15,
+      "function": "bid",
+      "mutant_id": "m000005",
+      "operator": "CSC",
+      "original_expression": "highestBidder != address(0)",
+      "replacement_expression": "true",
+      "start_line": 15
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 15,
+      "function": "bid",
+      "mutant_id": "m000006",
+      "operator": "CSC",
+      "original_expression": "highestBidder != address(0)",
+      "replacement_expression": "false",
+      "start_line": 15
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "bid",
+      "mutant_id": "m000007",
+      "operator": "EHD",
+      "original_expression": "require(msg.value >= highestBid);",
+      "replacement_expression": "/* require(msg.value >= highestBid); */",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "bid",
+      "mutant_id": "m000008",
+      "operator": "ETR",
+      "original_expression": "payable(highestBidder).transfer",
+      "replacement_expression": "payable(highestBidder).send",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "bid",
+      "mutant_id": "m000009",
+      "operator": "ETR",
+      "original_expression": "payable(highestBidder).transfer",
+      "replacement_expression": "payable(highestBidder).call{value: highestBid}(\"\")",
+      "start_line": 16
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 16,
+      "function": "bid",
+      "mutant_id": "m000010",
+      "operator": "FCD",
+      "original_expression": "payable(highestBidder).",
+      "replacement_expression": "/*payable(highestBidder).*/",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "bid",
+      "mutant_id": "m000011",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "bid",
+      "mutant_id": "m000012",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "bid",
+      "mutant_id": "m000013",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "bid",
+      "mutant_id": "m000014",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 15,
+      "function": "bid",
+      "mutant_id": "m000015",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 15
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 12,
+      "function": "bid",
+      "mutant_id": "m000016",
+      "operator": "PKD",
+      "original_expression": "function bid() public payable ",
+      "replacement_expression": "function bid() public  ",
+      "start_line": 12
+    }
+  ],
+  "subject_id": "peer_solar__BadAuction"
+}

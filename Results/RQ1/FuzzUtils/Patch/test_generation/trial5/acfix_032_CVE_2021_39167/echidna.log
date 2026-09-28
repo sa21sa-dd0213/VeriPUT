@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.541777946s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.582175897s)
+
+echidna: Constructor arguments are required: [("minDelay",uint256),("proposers",address[]),("executors",address[])]

@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00021",
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        5
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "setStaticSwapFeePercentage",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

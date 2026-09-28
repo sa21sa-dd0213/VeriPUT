@@ -1,0 +1,211 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00016",
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027",
+        false,
+        20723,
+        40306
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "setVaultInterestFeeRange",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "setAdmin",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026",
+        false,
+        "anonymous_hex_00025",
+        0
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "setVaultFeeConfig",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "setFeeReceiver",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027",
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        5,
+        5
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "setInterestFeeRange",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00020",
+        "anonymous_hex_00025"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00016"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "protocolFeeConfig",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00017",
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021",
+        24689
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "isValidInterestFee",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00021",
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "interestFeeRange",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00016",
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        35
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "setProtocolFeeShare",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027",
+        false,
+        20723,
+        40306
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "setVaultInterestFeeRange",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

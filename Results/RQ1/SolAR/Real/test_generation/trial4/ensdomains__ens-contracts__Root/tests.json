@@ -1,0 +1,83 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00020"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x66625579667a71774d68506d41504c7654464d59774e492055526b42786d4250"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "lock",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00020"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x61706171"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "supportsInterface",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00020"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "setResolver",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00020"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x7a71785270514b4270744f756e4d75674d447943664449564e447057557a4178",
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "setSubnodeOwner",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

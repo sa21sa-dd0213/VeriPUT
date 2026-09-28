@@ -1,0 +1,17 @@
+Compiling `src/flat.sol`... Done! (1.076148469s)
+
+echidna: Couldn't compile given file
+stdout:
+stderr:
+INFO:CryticCompile:'forge clean' running (wd: <workspace>
+INFO:CryticCompile:'forge config --json' running
+INFO:CryticCompile:'forge build --build-info src/flat.sol' running (wd: <workspace>
+ERROR:CryticCompile:'forge' returned non-zero exit code 1
+ERROR:CryticCompile:Error: Compiler run failed:
+stderr: Error: Compiler error (/solidity/libsolidity/codegen/LValue.cpp:52):Stack too deep. Try compiling with `--via-ir` (cli) or the equivalent `viaIR: true` (standard JSON) while enabling the optimizer. Otherwise, try removing local variables.
+stderr:    --> src/flat.sol:259:17:
+stderr:     |
+stderr: 259 |                 comet,
+stderr:     |                 ^^^^^
+ERROR:CryticCompile:Compilation failed. Can you run build command?
+<workspace> is not a directory.

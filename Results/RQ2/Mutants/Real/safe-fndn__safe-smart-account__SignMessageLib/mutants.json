@@ -1,0 +1,207 @@
+{
+  "compile_failed": 12,
+  "compile_ok": 8,
+  "mutants": [
+    {
+      "compile_status": "failed",
+      "end_line": 94,
+      "function": "getMessageHash",
+      "mutant_id": "m000001",
+      "operator": "DLR",
+      "original_expression": "bytes memory message",
+      "replacement_expression": "bytes storage message",
+      "start_line": 94
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 310,
+      "function": "getOwners",
+      "mutant_id": "m000002",
+      "operator": "DLR",
+      "original_expression": "address[] memory",
+      "replacement_expression": "address[] storage",
+      "start_line": 310
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 326,
+      "function": "getStorageAt",
+      "mutant_id": "m000003",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 326
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 337,
+      "function": "simulateAndRevert",
+      "mutant_id": "m000004",
+      "operator": "DLR",
+      "original_expression": "bytes memory calldataPayload",
+      "replacement_expression": "bytes storage calldataPayload",
+      "start_line": 337
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 429,
+      "function": "execTransactionFromModule",
+      "mutant_id": "m000005",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 429
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 445,
+      "function": "execTransactionFromModuleReturnData",
+      "mutant_id": "m000006",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 445
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 447,
+      "function": "execTransactionFromModuleReturnData",
+      "mutant_id": "m000007",
+      "operator": "DLR",
+      "original_expression": "bytes memory returnData",
+      "replacement_expression": "bytes storage returnData",
+      "start_line": 447
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 464,
+      "function": "getModulesPaginated",
+      "mutant_id": "m000008",
+      "operator": "DLR",
+      "original_expression": "address[] memory array",
+      "replacement_expression": "address[] storage array",
+      "start_line": 464
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 585,
+      "function": "execTransaction",
+      "mutant_id": "m000009",
+      "operator": "DLR",
+      "original_expression": "bytes memory signatures",
+      "replacement_expression": "bytes storage signatures",
+      "start_line": 585
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 597,
+      "function": "checkSignatures",
+      "mutant_id": "m000010",
+      "operator": "DLR",
+      "original_expression": "bytes memory signatures",
+      "replacement_expression": "bytes storage signatures",
+      "start_line": 597
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 610,
+      "function": "checkNSignatures",
+      "mutant_id": "m000011",
+      "operator": "DLR",
+      "original_expression": "bytes memory signatures",
+      "replacement_expression": "bytes storage signatures",
+      "start_line": 610
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 658,
+      "function": "VERSION",
+      "mutant_id": "m000012",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 658
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "signMessage",
+      "mutant_id": "m000013",
+      "operator": "EED",
+      "original_expression": "emit SignMsg(msgHash);",
+      "replacement_expression": "/* emit SignMsg(msgHash); */",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "signMessage",
+      "mutant_id": "m000014",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "signMessage",
+      "mutant_id": "m000015",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "getMessageHash",
+      "mutant_id": "m000016",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "getMessageHash",
+      "mutant_id": "m000017",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "getMessageHash",
+      "mutant_id": "m000018",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 586,
+      "function": "execTransaction",
+      "mutant_id": "m000019",
+      "operator": "PKD",
+      "original_expression": "function execTransaction(\n        address to,\n        uint256 value,\n        bytes calldata data,\n        Enum.Operation operation,\n        uint256 safeTxGas,\n        uint256 baseGas,\n        uint256 gasPrice,\n        address gasToken,\n        address payable refundReceiver,\n        bytes memory signatures\n    ) external payable returns (bool success)",
+      "replacement_expression": "function execTransaction(\n        address to,\n        uint256 value,\n        bytes calldata data,\n        Enum.Operation operation,\n        uint256 safeTxGas,\n        uint256 baseGas,\n        uint256 gasPrice,\n        address gasToken,\n        address payable refundReceiver,\n        bytes memory signatures\n    ) external  returns (bool success)",
+      "start_line": 575
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "getMessageHash",
+      "mutant_id": "m000020",
+      "operator": "RSD",
+      "original_expression": "return keccak256(abi.encodePacked(bytes1(0x19), bytes1(0x01), ISafe(payable(address(this))).domainSeparator(), safeMessageHash));",
+      "replacement_expression": "keccak256(abi.encodePacked(bytes1(0x19), bytes1(0x01), ISafe(payable(address(this))).domainSeparator(), safeMessageHash));",
+      "start_line": 96
+    }
+  ],
+  "subject_id": "safe-fndn__safe-smart-account__SignMessageLib"
+}

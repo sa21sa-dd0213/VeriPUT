@@ -1,0 +1,61 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        "anonymous_hex_00019",
+        4
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "transferred",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021",
+        "anonymous_hex_00020",
+        80880079162751813312262918777522700873245394512760357904426066862695401644458
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "canTransfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        734
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "created",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

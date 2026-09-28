@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (2.781318407s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (5.298070948s)
+
+echidna: Constructor arguments are required: [("vault_",address),("pool_",address),("feeds",address[]),("sequencerUptimeFeed",address),("uptimeResyncWindow",uint256),("shouldUseBlockTimeForOldestFeedUpdate",bool),("shouldRevertIfVaultUnlocked",bool),("version_",uint256)]
